@@ -11,8 +11,8 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = {
-		x = 2000
-		y = 3500
+		x = 1800
+		y = 1200
 	}
 	default = no
 	#focus = {
@@ -370,6 +370,9 @@ focus_tree = {
 		id = ITA_PIE_focus_Budget_Restrictions_on_the_Navy
 		icon = GFX_Focus_Law_Vote_1
 		cost = 70
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		
 		prerequisite = {
 			focus = ITA_PIE_focus_Commission_on_the_Admirals
 		}
@@ -544,6 +547,9 @@ focus_tree = {
 		id = ITA_PIE_focus_Regional_Economic_Administrations
 		icon = GFX_Focus_Economy_Increase_Wages
 		cost = 70
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
 		prerequisite = {
 			focus = ITA_PIE_focus_Southern_Development
 		}
@@ -911,10 +917,13 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {
+	focus = {	
 		id = ITA_PIE_focus_Send_an_Agent_to_Berlin
 		icon = GFX_focus_bismark
 		cost = 70
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
 		prerequisite = {
 			focus = ITA_PIE_focus_News_from_Nigra
 		}
