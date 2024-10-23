@@ -163,21 +163,22 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
+			#improve garrisons or resistance or smth
 		}
 	}
-	focus = {
-		id = ITA_PIE_focus_Law_no_616
-		icon = GFX_Focus_Law_Vote_1
-		cost = 70
-		prerequisite = {
-			focus = ITA_PIE_focus_Carabinieri
-		}
-		relative_position_id = ITA_PIE_focus_Carabinieri
-		x = 0
-		y = 1
-		completion_reward = {
-		}
-	}
+	#focus = {							#idk what this is
+	#	id = ITA_PIE_focus_Law_no_616					-rose
+	#	icon = GFX_Focus_Law_Vote_1
+	#	cost = 70
+	#	prerequisite = {
+	#		focus = ITA_PIE_focus_Carabinieri
+	#	}
+	#	relative_position_id = ITA_PIE_focus_Carabinieri
+	#	x = 0
+	#	y = 1
+	#	completion_reward = {
+	#	}
+	#}
 	focus = {
 		id = ITA_PIE_focus_Bersaglieri
 		icon = GFX_focus_PIE_Bersaglieri
@@ -189,21 +190,22 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
+			#unlock a new battalion
 		}
 	}
-	focus = {
-		id = ITA_PIE_focus_Law_no_143
-		icon = GFX_Focus_Law_Vote_1
-		cost = 70
-		prerequisite = {
-			focus = ITA_PIE_focus_Bersaglieri
-		}
-		relative_position_id = ITA_PIE_focus_Bersaglieri
-		x = 0
-		y = 1
-		completion_reward = {
-		}
-	}
+	#focus = {							# i also dont know what this is
+	#	id = ITA_PIE_focus_Law_no_143								-rose
+	#	icon = GFX_Focus_Law_Vote_1
+	#	cost = 70
+	#	prerequisite = {
+	#		focus = ITA_PIE_focus_Bersaglieri
+	#	}
+	#	relative_position_id = ITA_PIE_focus_Bersaglieri
+	#	x = 0
+	#	y = 1
+	#	completion_reward = {
+	#	}
+	#}
 	focus = {
 		id = ITA_PIE_focus_Regio_Marina
 		icon = GFX_goal_focus_Italian_Navy
@@ -1632,7 +1634,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_PIE_focus_Approve_the_Sale_of_Church_Estates
-		icon = GFX_focus_SWE_landsverk
+		icon = GFX_Focus_Catholism_Cross_Burning
 		cost = 70
 		prerequisite = {
 			focus = ITA_PIE_focus_Agriculture_of_Italy
