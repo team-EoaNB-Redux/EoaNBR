@@ -1540,7 +1540,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEX_focus_plan_of_tacubaya
-		# icon = GFX_Focus_mexican_intervention
+		icon = GFX_focus_mex_tacubaya_plan
 		relative_position_id = MEX_focus_national_insurrection
 		x = 1
 		y = 1
