@@ -1404,7 +1404,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEX_focus_national_insurrection
-		# icon = GFX_Focus_mexican_intervention
+		icon = GFX_focus_mex_confirm_comonfort
 		relative_position_id = MEX_focus_comonforts_interim_powers
 		x = 1
 		y = 2
@@ -1521,7 +1521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEX_focus_confirm_comonfort
-		# icon = GFX_Focus_mexican_intervention
+		icon = GFX_focus_mex_national_insurrection
 		relative_position_id = MEX_focus_request_emergency_powers
 		x = -2
 		y = 1
