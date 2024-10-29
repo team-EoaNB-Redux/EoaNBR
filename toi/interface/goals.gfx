@@ -3813,6 +3813,18 @@ spriteTypes = {
 		name = "GFX_focus_mex_1857_congressional_elections"
 		texturefile = "gfx/interface/goals/mex/mexican_congressional_elections_1857.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_mex_confirm_comonfort"
+		texturefile = "gfx/interface/goals/mex/confirm_comonfort.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_mex_national_insurrection"
+		texturefile = "gfx/interface/goals/mex/national_insurrection.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_mex_tacubaya_plan"
+		texturefile = "gfx/interface/goals/mex/tacubaya_plan.png"
+	}
 
 	### MXE
 	SpriteType = {
