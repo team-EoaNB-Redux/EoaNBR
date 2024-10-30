@@ -3716,6 +3716,23 @@ guiTypes = {
 
 			pdx_tooltip = rgo_productivity_tt
 		}
+
+		buttonType ={
+			name ="rgo_prospecting_button"
+			spriteType = "GFX_prospecting_button"
+			position = { x = 239 y = 6 }
+			clicksound = click_checkbox
+
+			pdx_tooltip = rgo_prospecting_tt
+		}
+		buttonType ={
+			name ="rgo_prospecting_button_active"
+			spriteType = "GFX_prospecting_button_active"
+			position = { x = 239 y = 6 }
+			clicksound = click_checkbox
+			
+			pdx_tooltip = rgo_prospecting_tt
+		}
 	}
 	containerWindowType = { #GDP Graph Point
 		name = "state_gdp_point_entry"

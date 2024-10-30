@@ -1419,6 +1419,45 @@
 			}
 		}
 	}
+	update_prospecting = {
+		# r_token
+
+		set_variable = { reserves_total@var:r_token = potential_reserves@var:r_token }
+		add_to_variable = { reserves_total@var:r_token = known_reserves@var:r_token }
+		add_to_variable = { reserves_total@var:r_token = base_resource@var:r_token }
+
+		# Percentage of total that has been found
+		set_temp_variable = { reserves_temp = base_resource@var:r_token }
+		add_to_temp_variable = { reserves_temp = known_reserves@var:r_token }
+		divide_temp_variable = { reserves_temp = reserves_total@var:r_token }
+
+		set_temp_variable = { chance_temp = 1 }
+		subtract_from_temp_variable = { chance_temp = reserves_temp }
+		
+		# Minor Discoveries
+		set_variable = { discovery_chance@var:r_token = controller:modiifer@prospecting_ability_factor }
+		add_to_variable = { discovery_chance@var:r_token = 0.25 }
+		add_to_variable = { discovery_chance@var:r_token = chance_temp }
+
+		# Major Discoveries
+		set_variable = { major_discovery_chance@var:r_token = controller:modiifer@prospecting_ability_factor }
+		multiply_variable = { major_discovery_chance@var:r_token = 0.2 }
+		add_to_variable = { major_discovery_chance@var:r_token = 0.02 }
+		multiply_temp_variable = { chance_temp = 0.25 }
+		add_to_variable = { major_discovery_chance@var:r_token = chance_temp }
+
+		set_temp_variable = { major_discoveries_temp = major_discoveries@var:r_token }
+		multiply_temp_variable = { major_discoveries_temp = 0.2 }
+		subtract_from_variable = { major_discovery_chance@var:r_token = major_discoveries_temp }
+
+		# Clamping
+		clamp_variable = { var = major_discovery_chance@var:r_token max = 1 min = 0 }
+
+		set_temp_variable = { chance_temp = 1 }
+		subtract_from_temp_variable = { chance_temp = major_discovery_chance@var:r_token }
+		clamp_variable = { var = discovery_chance@var:r_token max = chance_temp min = 0 }
+	
+	}
 	special_buildings_update = {
 		# Infrastructure, Railway, Port
 		calc_industrial_capacity = yes # nil secs

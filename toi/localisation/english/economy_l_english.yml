@@ -1037,6 +1037,12 @@
         urban_throughput_factor: "£urban_texticon  §OUrban§! Goods Throughput"
         urban_attractiveness_modifier: "£urban_texticon  §OUrban§! Investment Attractiveness"
         urban_attractiveness_factor: "£urban_texticon  §OUrban§! Investment Attractiveness"
+        
+        prospecting_ability_factor: "£industry_texticon Prospecting Ability"
+        mining_prospecting_ability_factor: "£mining_texticon Mining Prospecting Ability"
+        oil_prospecting_ability_factor: "£oil_texticon Oil Prospecting Ability"
+        logging_prospecting_ability_factor: "£wood_texticon Logging Prospecting Ability"
+        agriculture_prospecting_ability_factor: "£agriculture_texticon Agriculture Prospecting Ability"
       #
       # Building Modifiers
         subsistence_farm_output_factor: "£subsistence_farm_texticon  §OSubsistence Farm§! Goods Output"
@@ -2105,10 +2111,11 @@
       rgo_employment: "§S[?employment@var:v]K§!"
       rgo_productivity: "[GetIndustryProductivityV]§![GetCurrencyTextIconState]"
 
-      rgo_tt: "§O[?v.GetTokenLocalizedKey] Deposit:§!\n[?v.GetTokenLocalizedKey] Output: £[GetOutputTextIcon0] [?production@var:v^0|Y]\nBase [?v.GetTokenLocalizedKey] Deposit: £[GetOutputTextIcon0] §Y[?base_resource@var:v]§!\nBase Workforce Requirement: §S[GetIndustryBaseWorkforceRequirement]§!\n\nPotential Deposits: £[GetOutputTextIcon0] §Y0§!\n\n[GetIndustryPMTotalLoc]\n[GetIndustryEmployment]\n§YFinances:§!\nRevenue:     [GetIndustryRevenue]§![GetCurrencyTextIconState] \nExpenses:    [GetIndustryExpenses]§![GetCurrencyTextIconState] \nProfit:            [GetIndustryProfit]§![GetCurrencyTextIconState] \n\nProfitability:  [GetIndustryProfitability] \nProductivity:  [GetIndustryProductivity]§![GetCurrencyTextIconState] \nBase Wage:  §Y[GetBaseWage]§![GetCurrencyTextIconState] \n"
+      rgo_tt: "§O[?v.GetTokenLocalizedKey] Deposit:§!\n[?v.GetTokenLocalizedKey] Output: £[GetOutputTextIcon0] [?production@var:v^0|Y]\nBase [?v.GetTokenLocalizedKey] Deposit: £[GetOutputTextIcon0] §Y[?base_resource@var:v]§!\nBase Workforce Requirement: §S[GetIndustryBaseWorkforceRequirement]§!\n\nExtraction Output: §Y+0.0%§!\nKnown Reserves: £[GetOutputTextIcon0] §Y0§!\nPotential Reserves: £[GetOutputTextIcon0] §Y0§!\n\n[GetIndustryPMTotalLoc]\n[GetIndustryEmployment]\n§YFinances:§!\nRevenue:     [GetIndustryRevenue]§![GetCurrencyTextIconState] \nExpenses:    [GetIndustryExpenses]§![GetCurrencyTextIconState] \nProfit:            [GetIndustryProfit]§![GetCurrencyTextIconState] \n\nProfitability:  [GetIndustryProfitability] \nProductivity:  [GetIndustryProductivity]§![GetCurrencyTextIconState] \nBase Wage:  §Y[GetBaseWage]§![GetCurrencyTextIconState] \n"
       rgo_productivity_tt: "[GetIndustryFinances]"
       rgo_production_method_tt: "[GetIndustryPMLoc]\n[GetIndustryPMRetooling]"
       rgo_automation_method_tt: "[GetIndustryAMLoc]\n[GetIndustryAMRetooling]"
+      rgo_prospecting_tt: "§YProspecting:§!\nProspecting Ability: [?controller:modiifer@prospecting_ability_factor|+=1%]\nDiscovery Chance: §Y[?discovery_chance@var:v|1%]§!\nMajor Discovery Chance: §Y[?major_discovery_chance@var:v|1%]§!\n\nExtraction Output: [?extraction_output@var:v|+=1%]\nKnown Reserves: £[GetOutputTextIcon0] §Y[?known_reserves@var:v]§!\nPotential Reserves: £[GetOutputTextIcon0] §Y[?potential_reserves@var:v]§!\n\nNOTE: §RProspecting is Disabled§!"
 
       # Subsistence Farms & Arable Land
       arable_land_loc: "Arable Land: [?arable_land|0Y]"

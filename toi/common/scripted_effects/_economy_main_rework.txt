@@ -6350,6 +6350,8 @@
 			set_variable = { industry_throughput_factor@var:modifier_token = modifier@industry_throughput_factor }
 			set_variable = { industry_attractiveness_modifier@var:modifier_token = modifier@industry_attractiveness_modifier }
 			set_variable = { industry_attractiveness_factor@var:modifier_token = modifier@industry_attractiveness_factor }
+
+			set_variable = { industry_prospecting_ability_factor@var:modifier_token = modifier@prospecting_ability_factor }
         }
 
         for_each_loop = {
@@ -6370,7 +6372,10 @@
 			add_to_variable = { industry_throughput_factor@var:modifier_token = modifier@agriculture_throughput_factor }
 			add_to_variable = { industry_attractiveness_modifier@var:modifier_token = modifier@agriculture_attractiveness_modifier }
 			add_to_variable = { industry_attractiveness_factor@var:modifier_token = modifier@agriculture_attractiveness_factor }
+			add_to_variable = { industry_prospecting_ability_factor@var:modifier_token = modifier@agriculture_prospecting_ability_factor }
         }
+		subtract_from_variable = { industry_prospecting_ability_factor@wood = modifier@agriculture_prospecting_ability_factor }
+		add_to_variable = { industry_prospecting_ability_factor@wood = modifier@logging_prospecting_ability_factor }
 
         for_each_loop = {
             array = global.mining_modifier_array
@@ -6380,8 +6385,10 @@
 			add_to_variable = { industry_throughput_factor@var:modifier_token = modifier@mining_throughput_factor }
 			add_to_variable = { industry_attractiveness_modifier@var:modifier_token = modifier@mining_attractiveness_modifier }
 			add_to_variable = { industry_attractiveness_factor@var:modifier_token = modifier@mining_attractiveness_factor }
+			add_to_variable = { industry_prospecting_ability_factor@var:modifier_token = modifier@mining_prospecting_ability_factor }
         }
-
+		add_to_variable = { industry_prospecting_ability_factor@oil = modifier@oil_prospecting_ability_factor }
+		
         for_each_loop = {
             array = global.urban_modifier_array
             value = modifier_token
