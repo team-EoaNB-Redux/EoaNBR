@@ -2211,7 +2211,7 @@ country_event = { #Debt system initial announcement
 	}
 
 	##########################
-	country_event = {
+	country_event = {#congress reconvenes
 		id = mexico_civil_war.40
 		title = mexico_civil_war.40.t
 		desc = mexico_civil_war.40.d
@@ -2221,6 +2221,27 @@ country_event = { #Debt system initial announcement
 
 		immediate = {
 			set_cosmetic_tag = MEX_cosmetic_tacubaya
+			country_event = {
+				event = mexico_civil_war.41
+				days = 8
+			}
+		}
+	}
+	
+	country_event = {#vera cruz abandons tacubaya
+		id = mexico_civil_war.41
+		title = mexico_civil_war.41.t
+		desc = mexico_civil_war.41.d
+
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		immediate = {
+			# set_cosmetic_tag = MEX_cosmetic_tacubaya
+			country_event = {
+				event = mexico_civil_war.42
+				days = 8
+			}
 		}
 	}
 	##########################
