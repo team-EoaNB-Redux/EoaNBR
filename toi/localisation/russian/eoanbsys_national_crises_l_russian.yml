@@ -4,8 +4,10 @@
  EOANBSYS_spirit_national_crisis_desc: "[EOANBSYS_national_crisis_desc_scripted]" #NT!
  # Decisions 
  EOANBSYS_national_crisis_decision_category: "§L[EOANBSYS_national_crisis_name_scripted]§! (Фрагментация: [EOANBSYS_national_crisis_progress_scripted])" #NT!
- EOANBSYS_national_crisis_decision_category_desc: "\n§RНациональный кризис§! : §H[EOANBSYS_national_crisis_name_scripted]§_1\n§SBackground§_1 : [EOANBSYS_national_crisis_desc_scripted]\n \n§SНациональный кризис§! возникает, когда в вашей стране наступает экономическая или политическая нестабильность. Могут возникнуть фракционные беспорядки, гражданская радикализация и многое другое, что нарушит стабильность вашей страны до тех пор, пока кризис не будет разрешен.\n \n§CFragmention§_1 отслеживает уровень нестабильности, вызванный §H[EOANBSYS_national_crisis_name_scripted]§_1, и будет продолжать увеличиваться §S[EOANBSYS_national_crisis_time_scripted]§! без каких-либо вмешательство. Выполнение задач, событий и других действий, связанных с кризисом, может увеличить или уменьшить вашу фрагментацию. Достижение §R100 Фрагментация§! принесёт ещё большую катастрофу. Достижение §!20 Фрагментации§! положит конец кризису и позволит избежать катастрофических последствий.\n" #NT!
+ EOANBSYS_national_crisis_decision_category_desc: "\n§RНациональный кризис§! : §H[EOANBSYS_national_crisis_name_scripted]§!\n§SПредыстория§! : [EOANBSYS_national_crisis_desc_scripted]\n \n§SНациональные кризисы§! происходят, когда ваша страна сталкивается с экономической или политической нестабильностью. Могут возникнуть фракционные беспорядки, гражданская радикализация и многое другое, нарушая стабильность вашей страны до тех пор, пока кризис не будет разрешен.\n \n§CFragmention§! отслеживает уровень нестабильности, вызванный §H[EOANBSYS_national_crisis_name_scripted]§!, и будет продолжать расти §S[EOANBSYS_national_crisis_time_scripted]§! без какого-либо вмешательства. Выполнение задач, событий и других действий, связанных с кризисом, может увеличить или уменьшить вашу фрагментацию. Достижение §R100 Фрагментация§! принесет большую катастрофу. Достижение §!20 Фрагментация§! положит конец кризису и позволит избежать катастрофических последствий.\n" #NT!
   
+ EOANBSYS_national_crisis_progress_counter_7: "§R[EOANBSYS_national_crisis_name_scripted] Прогресс§!" #NT!
+ EOANBSYS_national_crisis_progress_counter_7_desc: "Текущий прогресс кризиса: §R[?ROOT.EOANBSYS_national_crisis_progress_var]%§!" #NT!
  EOANBSYS_national_crisis_progress_counter_14: "§R[EOANBSYS_national_crisis_name_scripted] Прогресс§!" #NT!
  EOANBSYS_national_crisis_progress_counter_14_desc: ""
  EOANBSYS_national_crisis_progress_counter_30: "§R[EOANBSYS_national_crisis_name_scripted] Прогресс§!" #NT!
@@ -22,23 +24,26 @@
   
   
  # Scripted Localisation 
- EOANBSYS_national_crisis_name_default: "Гражданское восстание" #NT!
- EOANBSYS_national_crisis_desc_default: "§HГражданское восстание§! возникает, когда население стало крайне неуверенно или не одобряет свое правительство и получило средства для выражения своего недовольства." #NT!
- EOANBSYS_national_crisis_name_luddite_movement_crisis: "Луддитское движение" #NT!
- EOANBSYS_national_crisis_desc_luddite_movement_crisis: "Вставьте сюда описание движения луддитов Fam" #NT!
+ EOANBSYS_national_crisis_name_default: "Гражданский мятеж" #NT!
+ EOANBSYS_national_crisis_desc_default: "§HГражданское восстание§! происходит, когда население становится крайне неуверенным в своем правительстве или не одобряет его и получает возможность выразить свое недовольство." #NT!
+ EOANBSYS_national_crisis_name_luddite_movement_crisis: "Движение луддитов" #NT!
+ EOANBSYS_national_crisis_desc_luddite_movement_crisis: "Вставьте здесь описание движения луддитов Fam" #NT!
  EOANBSYS_national_crisis_name_aspirations_for_liberty_crisis: "Стремление к свободе" #NT!
- EOANBSYS_national_crisis_desc_aspirations_for_liberty_crisis: "Вставьте сюда описание стремления к свободе" #NT!
- EOANBSYS_national_crisis_name_worker_revolt_crisis: "Рабочее восстание" #NT!
- EOANBSYS_national_crisis_desc_worker_revolt_crisis: "Вставьте сюда описание рабочего восстания Fam" #NT!
+ EOANBSYS_national_crisis_desc_aspirations_for_liberty_crisis: "Вставьте здесь описание стремления к свободе" #NT!
+ EOANBSYS_national_crisis_name_worker_revolt_crisis: "Восстание рабочих" #NT!
+ EOANBSYS_national_crisis_desc_worker_revolt_crisis: "Вставьте здесь описание восстания рабочих." #NT!
  EOANBSYS_national_crisis_name_military_coup_crisis: "Военный переворот" #NT!
- EOANBSYS_national_crisis_desc_military_coup_crisis: "Вставьте сюда описание военного переворота Fam" #NT!
+ EOANBSYS_national_crisis_desc_military_coup_crisis: "Вставьте здесь описание военного переворота Fam" #NT!
  EOANBSYS_national_crisis_name_bakumatsu_crisis: "Bakumatsu Crisis" #NT!
- EOANBSYS_national_crisis_desc_bakumatsu_crisis: "На протяжении веков Японские острова оставались изолированными и в мире от мира. Сейчас, с ростом взаимосвязанности глобальной торговли, иностранные державы все больше заинтересованы в доступе к нашим берегам и рынкам. Теперь наши лидеры разделились во мнениях относительно того, какое открытие миру нас ждет. Некоторые видят в этом возможность вывести Японию из многолетнего застоя. Другие видят в иностранцах на нашей земле угрозу существованию самой Японии." #NT!
+ EOANBSYS_national_crisis_desc_bakumatsu_crisis: "На протяжении столетий Японские острова оставались изолированными и мирными от мира. Теперь, с ростом взаимосвязанности мировой торговли, иностранные державы все больше заинтересованы в доступе к нашим берегам и рынкам. Теперь наши лидеры разделились во мнении о том, какое открытие миру уготовит нам судьбу. Некоторые видят в этом возможность вывести Японию из поколений застоя. Другие видят в иностранцах на нашей земле экзистенциальную угрозу самой Японии." #NT!
+ EOANBSYS_national_crisis_name_mexican_reform_war: "Реформа" #NT!
+ EOANBSYS_national_crisis_desc_mexican_reform_war: "После свержения печально известного военного диктатора Санта-Анны новый либеральный режим начал проводить реформы по всей Мексике, которые уже давно назрели; ослабляя власть церкви и военных над гражданскими лицами. В ответ реакционеры разжигают беспорядки по всей стране." #NT!
   
- EOANBSYS_national_crisis_time_scripted_14: "Раз в две недели" #NT!
+ EOANBSYS_national_crisis_time_scripted_7: "Еженедельно" #NT!
+ EOANBSYS_national_crisis_time_scripted_14: "Раз в полнедели" #NT!
  EOANBSYS_national_crisis_time_scripted_30: "Ежемесячно" #NT!
- EOANBSYS_national_crisis_time_scripted_60: "Раз в два месяца" #NT!
- EOANBSYS_national_crisis_time_scripted_90: "Раз в три месяца" #NT!
+ EOANBSYS_national_crisis_time_scripted_60: "Раз в полмесяца" #NT!
+ EOANBSYS_national_crisis_time_scripted_90: "Три раза в месяц" #NT!
   
  # Scripted Effects 
  EOANBSYS_national_crisis_progress_add_tt: "§R$RIGHT|0$%§! §HFragmentation§!" #NT!
