@@ -103,17 +103,35 @@ defined_text = {
 
 defined_text = {
   name = dyn_mod_or_a
-  text = { trigger = { has_variable = param_or } localization_key = "Or a" } text = { localization_key = "A" }
+  text = { 
+    trigger = { has_variable = param_or } 
+    localization_key = "Or a" 
+  } 
+  text = { 
+    localization_key = "A" 
+  }
 }
 
 defined_text = {
   name = dyn_mod_or_r
-  text = { trigger = { has_variable = param_or } localization_key = "Or r" } text = { localization_key = "R" }
+  text = { 
+    trigger = { has_variable = param_or } 
+    localization_key = "Or r" 
+  } 
+  text = { 
+    localization_key = "R" 
+  }
 }
 
 defined_text = {
   name = dyn_mod_or_m
-  text = { trigger = { has_variable = param_or } localization_key = "Or m" } text = { localization_key = "M" }
+  text = { 
+    trigger = { has_variable = param_or } 
+    localization_key = "Or m" 
+  } 
+  text = { 
+    localization_key = "M" 
+  }
 }
 
 defined_text = {
