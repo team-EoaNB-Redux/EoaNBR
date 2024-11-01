@@ -1,0 +1,399 @@
+﻿l_russian:
+ generic: "Общее дерево фокуса" #NT!
+  # Ideas 
+ generic_vic_idea_central_management: "Центральное управление" #NT!
+ generic_vic_idea_regional_autonomy: "Региональная автономия" #NT!
+ generic_vic_idea_regional_autonomy_desc: "Мы решили предоставить наиболее мятежным частям нашей страны больше автономии в решении своих собственных дел." #NT!
+ generic_vic_idea_bureaucracy_1: "Бюрократическая структура" #NT!
+ generic_vic_idea_bureaucracy_2: "Бюрократическая структура" #NT!
+ generic_vic_idea_bureaucracy_3: "Бюрократическая структура" #NT!
+ generic_vic_idea_bureaucracy_4: "Бюрократическая структура" #NT!
+ generic_vic_idea_bureaucracy_5: "Бюрократическая структура" #NT!
+ generic_vic_idea_laissez_faire_1: "Экономика невмешательства" #NT!
+ generic_vic_idea_laissez_faire_2: "Экономика невмешательства" #NT!
+ generic_vic_idea_laissez_faire_3: "Экономика невмешательства" #NT!
+ generic_vic_idea_economic_interventionism_1: "Интервенционистская экономика" #NT!
+ generic_vic_idea_economic_interventionism_2: "Интервенционистская экономика" #NT!
+ generic_vic_idea_economic_interventionism_3: "Интервенционистская экономика" #NT!
+  
+ generic_vic_idea_literacy_program: "Программа обучения грамоте" #NT!
+ generic_vic_idea_literacy_program_desc: "Наша страна приступила к программе обучения людей чтению. Таким образом, дети приходят в школы и учатся читать и писать." #NT!
+ generic_vic_idea_education_program: "Образовательная программа" #NT!
+ generic_vic_idea_education_program_desc: ""
+ generic_vic_idea_research_program: "Программа исследований" #NT!
+ generic_vic_idea_research_program_desc: ""
+  
+ generic_vic_idea_locals_outcompeted: "Местные жители выбыли из конкуренции" #NT!
+ generic_vic_idea_isolationism_1: "Изоляционизм" #NT!
+ generic_vic_idea_isolationism_1_1: "Изоляционизм" #NT!
+ generic_vic_idea_isolationism_1_2: "Изоляционизм" #NT!
+ generic_vic_idea_isolationism_2: "Изоляционизм" #NT!
+ generic_vic_idea_isolationism_2_1: "Изоляционизм" #NT!
+ generic_vic_idea_isolationism_2_2: "Изоляционизм" #NT!
+ generic_vic_idea_isolationism_3: "Изоляционизм" #NT!
+  
+  # Government / Research 
+ generic_focus_vic_strengthen_government: "Укрепить правительство" #NT!
+ generic_focus_vic_strengthen_government_desc: ""
+ generic_focus_vic_centralization: "Централизация" #NT!
+ generic_focus_vic_centralization_desc: ""
+ generic_focus_vic_central_management: "Центральное управление" #NT!
+ generic_focus_vic_central_management_desc: ""
+ generic_focus_vic_decentralization: "Децентрализация" #NT!
+ generic_focus_vic_decentralization_desc: ""
+ generic_focus_vic_regional_autonomy: "Региональная автономия" #NT!
+ generic_focus_vic_regional_autonomy_desc: ""
+ generic_focus_vic_literacy_program: "Программа обучения грамоте" #NT!
+ generic_focus_vic_literacy_program_desc: ""
+ generic_focus_vic_establish_centers_of_learning: "Создание центров обучения" #NT!
+ generic_focus_vic_establish_centers_of_learning_desc: ""
+ generic_focus_vic_establish_the_press: "Создание прессы" #NT!
+ generic_focus_vic_establish_the_press_desc: ""
+ generic_focus_vic_political_reform: "Политическая реформа" #NT!
+ generic_focus_vic_political_reform_desc: ""
+ generic_focus_vic_bureaucratic_structure: "Бюрократическая структура" #NT!
+ generic_focus_vic_bureaucratic_structure_desc: ""
+ generic_focus_vic_laissez_faire: "Невмешательство" #NT!
+ generic_focus_vic_laissez_faire_desc: ""
+ generic_focus_vic_invisible_hand: "Невидимая рука" #NT!
+ generic_focus_vic_invisible_hand_desc: ""
+ generic_focus_vic_promote_free_trade: "Содействовать свободной торговле" #NT!
+ generic_focus_vic_promote_free_trade_desc: ""
+ generic_focus_vic_economic_interventionism: "Экономический интервенционизм" #NT!
+ generic_focus_vic_economic_interventionism_desc: ""
+ generic_focus_vic_regulate_financial_markets: "Регулировать финансовые рынки" #NT!
+ generic_focus_vic_regulate_financial_markets_desc: ""
+ generic_focus_vic_central_banking: "Центральный банк" #NT!
+ generic_focus_vic_central_banking_desc: ""
+ generic_focus_vic_education_reform: "Реформа образования" #NT!
+ generic_focus_vic_education_reform_desc: ""
+ generic_focus_vic_mechanical_engineering: "Машиностроение" #NT!
+ generic_focus_vic_mechanical_engineering_desc: ""
+ generic_focus_vic_mining_research: "Исследования в области горного дела" #NT!
+ generic_focus_vic_mining_research_desc: ""
+ generic_focus_vic_scientific_studies: "Научные исследования" #NT!
+ generic_focus_vic_scientific_studies_desc: ""
+ generic_focus_vic_electronic_devices: "Электронные устройства" #NT!
+ generic_focus_vic_electronic_devices_desc: ""
+ generic_focus_vic_expand_research_facilities: "Расширить исследовательские возможности" #NT!
+ generic_focus_vic_expand_research_facilities_desc: ""
+ generic_focus_vic_dream_of_flight: "Мечта о полете" #NT!
+ generic_focus_vic_dream_of_flight_desc: ""
+ generic_focus_vic_tax_reform: "Налоговая реформа" #NT!
+ generic_focus_vic_tax_reform_desc: ""
+ generic_focus_vic_property_reform: "Реформа собственности" #NT!
+ generic_focus_vic_property_reform_desc: ""
+ generic_focus_vic_labor_reform: "Реформа трудового законодательства" #NT!
+ generic_focus_vic_labor_reform_desc: ""
+ generic_focus_vic_extend_the_education_program: "Продлить образовательную программу" #NT!
+ generic_focus_vic_extend_the_education_program_desc: ""
+ generic_focus_vic_modern_state: "Современное государство" #NT!
+ generic_focus_vic_modern_state_desc: ""
+  
+  # Pre-Industrial 
+ generic_focus_vic_diplomacy_with_the_great_powers: "Дипломатия с великими державами" #NT!
+ generic_focus_vic_diplomacy_with_the_great_powers_desc: ""
+ generic_focus_vic_invite_foreigners: "Пригласить иностранцев" #NT!
+ generic_focus_vic_invite_foreigners_desc: ""
+ generic_focus_vic_embrace_western_ideas: "Примите западные идеи" #NT!
+ generic_focus_vic_embrace_western_ideas_desc: ""
+ generic_focus_vic_establish_trade_ties: "Установить торговые связи" #NT!
+ generic_focus_vic_establish_trade_ties_desc: ""
+ generic_focus_vic_allow_foreign_investment: "Разрешить иностранные инвестиции" #NT!
+ generic_focus_vic_allow_foreign_investment_desc: ""
+ generic_focus_vic_create_universities: "Создать университеты" #NT!
+ generic_focus_vic_create_universities_desc: ""
+ generic_focus_vic_adopt_a_constitution: "Принять Конституцию" #NT!
+ generic_focus_vic_adopt_a_constitution_desc: ""
+ generic_focus_vic_liberalization: "Либерализация" #NT!
+ generic_focus_vic_liberalization_desc: ""
+ generic_focus_vic_retreat_into_isolationism: "Отступление в изоляционизм" #NT!
+ generic_focus_vic_retreat_into_isolationism_desc: ""
+ generic_focus_vic_self_reliance_initiative: "Инициатива по самообеспечению" #NT!
+ generic_focus_vic_self_reliance_initiative_desc: ""
+ generic_focus_vic_prevent_foreign_influence: "Предотвратить иностранное влияние" #NT!
+ generic_focus_vic_prevent_foreign_influence_desc: ""
+ generic_focus_vic_noblesse_oblige: "Благородство обязывает" #NT!
+ generic_focus_vic_noblesse_oblige_desc: ""
+ generic_focus_vic_traditional_economy: "Традиционная экономика" #NT!
+ generic_focus_vic_traditional_economy_desc: ""
+ generic_focus_vic_infrastructure_projects: "Инфраструктурные проекты" #NT!
+ generic_focus_vic_infrastructure_projects_desc: ""
+ generic_focus_vic_fund_industrial_development: "Фонд промышленного развития" #NT!
+ generic_focus_vic_fund_industrial_development_desc: ""
+  
+  # Industrial Revolution 
+ generic_focus_vic_industrial_revolution: "Промышленная революция" #NT!
+ generic_focus_vic_industrial_revolution_desc: ""
+ generic_focus_vic_embrace_industry: "Принять промышленность" #NT!
+ generic_focus_vic_embrace_industry_desc: ""
+ generic_focus_vic_balanced_approach: "Сбалансированный подход" #NT!
+ generic_focus_vic_balanced_approach_desc: ""
+ generic_focus_vic_agricultural_focus: "Сельскохозяйственный фокус" #NT!
+ generic_focus_vic_agricultural_focus_desc: ""
+ generic_focus_vic_captains_of_industry: "Капитаны промышленности" #NT!
+ generic_focus_vic_captains_of_industry_desc: ""
+ generic_focus_vic_urbanization: "Урбанизация" #NT!
+ generic_focus_vic_urbanization_desc: ""
+ generic_focus_vic_expand_the_consumer_goods_sector: "Расширение сектора потребительских товаров" #NT!
+ generic_focus_vic_expand_the_consumer_goods_sector_desc: ""
+ generic_focus_vic_farm_enclosures: "Фермерские вольеры" #NT!
+ generic_focus_vic_farm_enclosures_desc: ""
+ generic_focus_vic_preserve_the_landowners: "Сохраните землевладельцев" #NT!
+ generic_focus_vic_preserve_the_landowners_desc: ""
+ generic_focus_vic_invest_in_chemical_production: "Инвестируйте в химическое производство" #NT!
+ generic_focus_vic_invest_in_chemical_production_desc: ""
+ generic_focus_vic_rapid_innovation: "Быстрые инновации" #NT!
+ generic_focus_vic_rapid_innovation_desc: ""
+ generic_focus_vic_rapid_growth: "Быстрый рост" #NT!
+ generic_focus_vic_rapid_growth_desc: ""
+ generic_focus_vic_build_logging_camps: "Построить лесозаготовительные лагеря" #NT!
+ generic_focus_vic_build_logging_camps_desc: ""
+ generic_focus_vic_locate_iron_reserves: "Найдите запасы железа" #NT!
+ generic_focus_vic_locate_iron_reserves_desc: ""
+ generic_focus_vic_expand_sheep_farming: "Расширить овцеводство" #NT!
+ generic_focus_vic_expand_sheep_farming_desc: ""
+ generic_focus_vic_acquire_luxuries: "Приобретайте предметы роскоши" #NT!
+ generic_focus_vic_acquire_luxuries_desc: ""
+ generic_focus_vic_adopt_modern_business_practices: "Внедрение современных методов ведения бизнеса" #NT!
+ generic_focus_vic_adopt_modern_business_practices_desc: ""
+ generic_focus_vic_encourage_the_domestic_steel_industry: "Поощрять отечественную сталелитейную промышленность" #NT!
+ generic_focus_vic_encourage_the_domestic_steel_industry_desc: ""
+ generic_focus_vic_tooling_workshops: "Мастерские по изготовлению инструментов" #NT!
+ generic_focus_vic_tooling_workshops_desc: ""
+ generic_focus_vic_textile_production: "Текстильное производство" #NT!
+ generic_focus_vic_textile_production_desc: ""
+ generic_focus_vic_modern_plows: "Современные плуги" #NT!
+ generic_focus_vic_modern_plows_desc: ""
+ generic_focus_vic_adoption_of_artificial_fertilizers: "Внедрение искусственных удобрений" #NT!
+ generic_focus_vic_adoption_of_artificial_fertilizers_desc: ""
+ generic_focus_vic_maintain_traditional_values: "Сохраняйте традиционные ценности" #NT!
+ generic_focus_vic_maintain_traditional_values_desc: ""
+ generic_focus_vic_import_machinery: "Импортное оборудование" #NT!
+ generic_focus_vic_import_machinery_desc: ""
+ generic_focus_vic_railway_investments: "Железнодорожные инвестиции" #NT!
+ generic_focus_vic_railway_investments_desc: ""
+ generic_focus_vic_coal_mining: "Добыча угля" #NT!
+ generic_focus_vic_coal_mining_desc: ""
+ generic_focus_vic_land_surveys: "Земельные изыскания" #NT!
+ generic_focus_vic_land_surveys_desc: ""
+ generic_focus_vic_plant_cotton_plantations: "Плантации хлопка" #NT!
+ generic_focus_vic_plant_cotton_plantations_desc: ""
+ generic_focus_vic_the_corporate_architecture: "Корпоративная архитектура" #NT!
+ generic_focus_vic_the_corporate_architecture_desc: ""
+ generic_focus_vic_a_new_way_of_life: "Новый образ жизни" #NT!
+ generic_focus_vic_a_new_way_of_life_desc: ""
+ generic_focus_vic_telegraph_cables: "Телеграфные кабели" #NT!
+ generic_focus_vic_telegraph_cables_desc: ""
+ generic_focus_vic_new_production_methods: "Новые методы производства" #NT!
+ generic_focus_vic_new_production_methods_desc: ""
+ generic_focus_vic_mechanized_agriculture: "Механизированное сельское хозяйство" #NT!
+ generic_focus_vic_mechanized_agriculture_desc: ""
+ generic_focus_vic_a_smooth_transition: "Плавный переход" #NT!
+ generic_focus_vic_a_smooth_transition_desc: ""
+ generic_focus_vic_aristocratic_state: "Аристократическое государство" #NT!
+ generic_focus_vic_aristocratic_state_desc: ""
+ generic_focus_vic_industrial_age: "Индустриальный век" #NT!
+ generic_focus_vic_industrial_age_desc: ""
+  
+  # Army 
+ generic_focus_vic_establish_a_professional_army: "Создать профессиональную армию" #NT!
+ generic_focus_vic_establish_a_professional_army_desc: ""
+ generic_focus_vic_cavalry_warfare: "Кавалерийская война" #NT!
+ generic_focus_vic_cavalry_warfare_desc: ""
+ generic_focus_vic_napoleonic_artillery: "Наполеоновская артиллерия" #NT!
+ generic_focus_vic_napoleonic_artillery_desc: ""
+ generic_focus_vic_concentrated_fire: "Концентрированный огонь" #NT!
+ generic_focus_vic_concentrated_fire_desc: ""
+ generic_focus_vic_integrated_artillery: "Интегрированная артиллерия" #NT!
+ generic_focus_vic_integrated_artillery_desc: ""
+ generic_focus_vic_import_artillery: "Импорт артиллерии" #NT!
+ generic_focus_vic_import_artillery_desc: ""
+ generic_focus_vic_army_command_structure: "Структура командования армии" #NT!
+ generic_focus_vic_army_command_structure_desc: ""
+ generic_focus_vic_study_foreign_tactics: "Изучайте зарубежную тактику" #NT!
+ generic_focus_vic_study_foreign_tactics_desc: ""
+ generic_focus_vic_follow_the_prussian_model: "Следуйте прусской модели" #NT!
+ generic_focus_vic_follow_the_prussian_model_desc: ""
+ generic_focus_vic_follow_the_french_model: "Следуйте французской модели" #NT!
+ generic_focus_vic_follow_the_french_model_desc: ""
+ generic_focus_vic_follow_the_american_model: "Следуйте американской модели" #NT!
+ generic_focus_vic_follow_the_american_model_desc: ""
+ generic_focus_vic_local_initiative: "Местная инициатива" #NT!
+ generic_focus_vic_local_initiative_desc: ""
+ generic_focus_vic_defensive_stratagems: "Защитные стратегии" #NT!
+ generic_focus_vic_defensive_stratagems_desc: ""
+ generic_focus_vic_marksmanship: "Меткость стрельбы" #NT!
+ generic_focus_vic_marksmanship_desc: ""
+ generic_focus_vic_import_breech_loading_rifles: "Импортные казнозарядные винтовки" #NT!
+ generic_focus_vic_import_breech_loading_rifles_desc: ""
+ generic_focus_vic_import_muzzle_loading_rifles: "Импортные дульнозарядные винтовки" #NT!
+ generic_focus_vic_import_muzzle_loading_rifles_desc: ""
+ generic_focus_vic_rely_on_local_tactics: "Положитесь на местную тактику" #NT!
+ generic_focus_vic_rely_on_local_tactics_desc: ""
+ generic_focus_vic_foraging_expertise: "Экспертиза в области добычи пищи" #NT!
+ generic_focus_vic_foraging_expertise_desc: ""
+ generic_focus_vic_hit_and_run_warfare: "Война типа «бей и беги»" #NT!
+ generic_focus_vic_hit_and_run_warfare_desc: ""
+ generic_focus_vic_new_weapon_designs: "Новые образцы оружия" #NT!
+ generic_focus_vic_new_weapon_designs_desc: ""
+ generic_focus_vic_new_uniforms: "Новая униформа" #NT!
+ generic_focus_vic_new_uniforms_desc: ""
+ generic_focus_vic_gun_metallurgy_advances: "Достижения в области оружейной металлургии" #NT!
+ generic_focus_vic_gun_metallurgy_advances_desc: ""
+ generic_focus_vic_army_support_battalions: "Батальоны поддержки армии" #NT!
+ generic_focus_vic_army_support_battalions_desc: ""
+ generic_focus_vic_the_national_armory: "Национальная Оружейная Палата" #NT!
+ generic_focus_vic_the_national_armory_desc: ""
+ generic_focus_vic_streamlined_small_arms_manufacturing: "Оптимизированное производство стрелкового оружия" #NT!
+ generic_focus_vic_streamlined_small_arms_manufacturing_desc: ""
+ generic_focus_vic_mass_production_of_uniforms: "Массовое производство униформы" #NT!
+ generic_focus_vic_mass_production_of_uniforms_desc: ""
+ generic_focus_vic_expand_the_armory: "Расширить арсенал" #NT!
+ generic_focus_vic_expand_the_armory_desc: ""
+ generic_focus_vic_artillery_production: "Артиллерийское производство" #NT!
+ generic_focus_vic_artillery_production_desc: ""
+  
+  # Navy 
+ generic_focus_vic_establish_a_modern_navy: "Создать современный флот" #NT!
+ generic_focus_vic_establish_a_modern_navy_desc: ""
+ generic_focus_vic_new_shipyards: "Новые верфи" #NT!
+ generic_focus_vic_new_shipyards_desc: ""
+ generic_focus_vic_learn_from_the_british: "Учитесь у британцев" #NT!
+ generic_focus_vic_learn_from_the_british_desc: ""
+ generic_focus_vic_learn_from_the_french: "Учитесь у французов" #NT!
+ generic_focus_vic_learn_from_the_french_desc: ""
+ generic_focus_vic_learn_from_the_americans: "Учитесь у американцев" #NT!
+ generic_focus_vic_learn_from_the_americans_desc: ""
+ generic_focus_vic_naval_college: "Военно-морской колледж" #NT!
+ generic_focus_vic_naval_college_desc: ""
+ generic_focus_vic_extend_the_shipyards: "Расширить верфи" #NT!
+ generic_focus_vic_extend_the_shipyards_desc: ""
+ generic_focus_vic_blue_water_navy: "Синий Военно-Морской Флот" #NT!
+ generic_focus_vic_blue_water_navy_desc: ""
+ generic_focus_vic_purchasing_ships: "Покупка кораблей" #NT!
+ generic_focus_vic_purchasing_ships_desc: ""
+ generic_focus_vic_brown_water_navy: "Коричневый Военно-морской флот" #NT!
+ generic_focus_vic_brown_water_navy_desc: ""
+ generic_focus_vic_use_rifled_muzzle_loaders: "Используйте нарезные дульнозарядные ружья" #NT!
+ generic_focus_vic_use_rifled_muzzle_loaders_desc: ""
+ generic_focus_vic_use_rifled_breech_loaders: "Используйте нарезные ружья-казнозарядники" #NT!
+ generic_focus_vic_use_rifled_breech_loaders_desc: ""
+ generic_focus_vic_monitors: "Мониторы" #NT!
+ generic_focus_vic_monitors_desc: ""
+ generic_focus_vic_ironclad_navy: "Броненосный флот" #NT!
+ generic_focus_vic_ironclad_navy_desc: ""
+ generic_focus_vic_submarines: "Подводные лодки" #NT!
+ generic_focus_vic_submarines_desc: ""
+ generic_focus_vic_naval_design_bureau: "Военно-морское конструкторское бюро" #NT!
+ generic_focus_vic_naval_design_bureau_desc: ""
+ generic_focus_vic_victorian_army: "Викторианская армия" #NT!
+ generic_focus_vic_victorian_army_desc: ""
+ generic_focus_vic_victorian_navy: "Викторианский флот" #NT!
+ generic_focus_vic_victorian_navy_desc: ""
+ generic_focus_vic_victorian_warfare: "Викторианская война" #NT!
+ generic_focus_vic_victorian_warfare_desc: ""
+  
+  #Outdated 
+ generic_focus_industry: "Новые методы производства" #NT!
+ generic_focus_industry_desc: "Необходимо исследовать новые методы производства, чтобы наша промышленность работала более эффективно." #NT!
+ generic_focus_mechanical_engineering: "Исследования в области машиностроения" #NT!
+ generic_focus_mechanical_engineering_desc: "Мы будем финансировать некоторые исследовательские компании, занимающиеся разработками в области машиностроения." #NT!
+ generic_focus_electronics_devices: "Производство электронных устройств" #NT!
+ generic_focus_electronics_devices_desc: "Нам необходимо инвестировать в методы, которые позволят нам производить электронные устройства." #NT!
+ generic_focus_expand_research_facilities: "Расширить исследовательские возможности" #NT!
+ generic_focus_expand_research_facilities_desc: "Расширение наших научно-исследовательских институтов позволит нам инвестировать в более передовые технологии, такие как биохимия." #NT!
+ generic_focus_build_civ_factory: "Фонд промышленного развития" #NT!
+ generic_focus_build_civ_factory_desc: "Нам необходимо финансировать промышленное развитие в наших городах, чтобы построить новые заводы." #NT!
+ generic_focus_build_mil_factory: "Субсидировать военную промышленность" #NT!
+ generic_focus_build_mil_factory_desc: "Нашей стране необходимо оружие, а для его производства нам нужна достаточно крупная военная промышленность, поэтому нам следует финансировать уже существующую военную промышленность для ее расширения." #NT!
+ generic_focus_military_research: "Военные технологические разработки" #NT!
+ generic_focus_military_research_desc: "Инвестиции в военные исследования могут оказаться полезными, если в будущем возникнут конфликты." #NT!
+ generic_focus_aviation_research: "Инвестируйте в авиационные исследования" #NT!
+ generic_focus_aviation_research_desc: "Мечта о полете постепенно начинает сбываться, и нам нужно быть в авангарде этого процесса." #NT!
+ generic_focus_naval_research: "Новые проекты кораблей" #NT!
+ generic_focus_naval_research_desc: "Нам понадобятся более быстрые и прочные корабли для грядущих эпох." #NT!
+ generic_focus_new_roads: "Улучшить нашу дорожную сеть" #NT!
+ generic_focus_new_roads_desc: "Нам нужно больше дорог для поддержки как нашей военной, так и гражданской инфраструктуры." #NT!
+ generic_focus_new_roads_2: "Строить больше дорог" #NT!
+ generic_focus_new_roads_2_desc: "Мы построим дополнительные дороги для увеличения объемов торговли и поездок между нашими крупными городами." #NT!
+ generic_focus_new_roads_3: "Железнодорожная инфраструктура" #NT!
+ generic_focus_new_roads_3_desc: "Мы начнем строительство нескольких железных дорог вдоль наших важнейших торговых путей." #NT!
+ generic_focus_cotton_farms: "Приобретите ткань для униформы" #NT!
+ generic_focus_cotton_farms_desc: "Во многих производственных процессах используются различные типы тканей, мы постараемся приобрести некоторые из них." #NT!
+ generic_focus_coal_mine: "Расширение угольной промышленности" #NT!
+ generic_focus_coal_mine_desc: "Мы уже видим, как угольное топливо используется в большинстве основных отраслей промышленности в крупных европейских странах, способствуя промышленной революции, и пришло время нам адаптироваться." #NT!
+ generic_focus_logging_camp: "Построить лесозаготовительные лагеря" #NT!
+ generic_focus_logging_camp_desc: "Древесина — универсальный материал, используемый, в частности, в строительстве кораблей. Нам понадобится достаточное количество древесины, чтобы обеспечить потребности наших стран, поэтому мы должны построить несколько лесозаготовительных лагерей." #NT!
+ generic_focus_improve_army: "Улучшить нашу армию" #NT!
+ generic_focus_improve_army_desc: "Нам нужно искать хороших людей в нашей армии и лучше обучать наши силы, чтобы получить опыт в области создания сильной армии." #NT!
+ generic_focus_doctrines_1: "Новые Тактики" #NT!
+ generic_focus_doctrines_1_desc: "Мы улучшим нашу тактику во всех областях ведения войны." #NT!
+ generic_focus_doctrines_2: "Пересмотренные стратегии" #NT!
+ generic_focus_doctrines_2_desc: "Мы объединим наших лучших офицеров для разработки новых боевых стратегий." #NT!
+ generic_focus_new_weapons: "Новые образцы оружия" #NT!
+ generic_focus_new_weapons_desc: "Наша пехота, ядро ​​нашей армии, нуждается в новом оружии, чтобы побеждать в войнах. Мы будем финансировать исследования." #NT!
+ generic_focus_intel_staff: "Дипломатический шпионаж" #NT!
+ generic_focus_intel_staff_desc: "Мы попытаемся собрать информацию об амбициях других стран и их армиях." #NT!
+ generic_focus_better_staff: "Улучшить военный состав" #NT!
+ generic_focus_better_staff_desc: "Нам необходимо отобрать лучших людей из наших рядов и собрать их на централизованных совещаниях военного штаба." #NT!
+ generic_focus_support_corps: "Поддержите нашу пехоту" #NT!
+ generic_focus_support_corps_desc: "Наша пехота будет сражаться гораздо лучше, если ее будут поддерживать роты поддержки и артиллерия. Мы должны исследовать эти концепции дальше..." #NT!
+ generic_focus_navy: "Улучшить наши Военно-морские силы" #NT!
+ generic_focus_navy_desc: "Нам нужны сильные военно-морские силы, чтобы доминировать на морях!" #NT!
+ generic_focus_naval_dockyards: "Новые верфи" #NT!
+ generic_focus_naval_dockyards_desc: "Нам нужно больше верфей, чтобы строить больше кораблей." #NT!
+ generic_focus_naval_innovation: "Военно-морские инновации" #NT!
+ generic_focus_naval_innovation_desc: "Нам необходимо продвигать инновации в военно-морском секторе, чтобы наши корабли были лучше кораблей других стран." #NT!
+ generic_focus_fleet_infrastructure: "Инфраструктура порта" #NT!
+ generic_focus_fleet_infrastructure_desc: "Нам необходимо инвестировать в военно-морскую инфраструктуру по всему миру для поддержки нашего флота." #NT!
+ generic_focus_naval_dockyards_2: "Еще верфи" #NT!
+ generic_focus_naval_dockyards_2_desc: "Нам нужно построить еще больше кораблей!" #NT!
+ generic_focus_victorian_air_corps: "Ранний Воздушный Корпус" #NT!
+ generic_focus_victorian_air_corps_desc: "Нам необходимо создать авиационный корпус для эпохи полетов, которая, несомненно, наступит скоро..." #NT!
+ generic_focus_locate_iron_deposits: "Найдите месторождения железа" #NT!
+ generic_focus_locate_iron_deposits_desc: "Мы будем исследовать жилы на наших горнодобывающих предприятиях, чтобы обнаружить месторождения железа." #NT!
+ generic_focus_manage_national_forests: "Управляйте национальными лесами" #NT!
+ generic_focus_manage_national_forests_desc: "Некоторые из наших национальных лесов не организованы и не управляются должным образом, хотя они действительно должны быть. Мы профинансируем административные расходы." #NT!
+ generic_focus_nationalize_resources: "Национализация ресурсов" #NT!
+ generic_focus_nationalize_resources_desc: "Нам необходимо обеспечить доступ к нашим национальным ресурсам." #NT!
+ generic_focus_victorian_industrial_society: "Общество в индустриальную эпоху" #NT!
+ generic_focus_victorian_industrial_society_desc: "Наша страна должна подготовиться к решению некоторых вопросов, которые поставят перед нами промышленная революция и надвигающиеся общественные изменения." #NT!
+ generic_focus_aviation_projects: "Проекты авиационной техники" #NT!
+ generic_focus_aviation_projects_desc: "Мы будем инвестировать средства в проекты в области авиационной инженерии, чтобы углубить наши знания в области авиации." #NT!
+ generic_focus_cavalry_tech: "Современные кавалерийские технологии" #NT!
+ generic_focus_cavalry_tech_desc: "Мы модернизируем нашу кавалерийскую технику." #NT!
+ eoanb_idea_generic_focus_ideology: "Идеологическая стабилизация" #NT!
+ eoanb_idea_generic_focus_ideology_desc: "Эта страна укрепляет власть своего нынешнего правительства." #NT!
+ generic_focus_strengthen_government: "Укрепить правительство" #NT!
+ generic_focus_strengthen_government_desc: "Мы укрепим правительство." #NT!
+ generic_focus_internal_stabilization: "Внутренняя стабилизация" #NT!
+ generic_focus_internal_stabilization_desc: "Мы должны попытаться стабилизировать внутреннюю ситуацию." #NT!
+ generic_focus_war_rhetoric: "Военная риторика" #NT!
+ generic_focus_war_rhetoric_desc: "Готовьте людей к войне!" #NT!
+ generic_focus_defend_ideology: "Защитим нашу идеологию" #NT!
+ generic_focus_defend_ideology_desc: "Нашу идеологию необходимо защищать." #NT!
+ generic_focus_decide_future_gov: "Планы на будущее" #NT!
+ generic_focus_decide_future_gov_desc: "Нам необходимо составить планы на будущее нашей администрации." #NT!
+ generic_focus_gov_centralized: "Централизация" #NT!
+ generic_focus_gov_centralized_desc: "Централизация, безусловно, пойдет нам на пользу." #NT!
+ generic_focus_centralized_administration: "Центральная администрация" #NT!
+ generic_focus_centralized_administration_desc: "Мы реформируем нашу администрацию, сделав ее более централизованной." #NT!
+ generic_focus_centralized_economic_management: "Экономическое управление" #NT!
+ generic_focus_centralized_economic_management_desc: "Экономическое управление должно осуществляться более структурированным образом." #NT!
+ generic_focus_centralized_army: "Структура командования армии" #NT!
+ generic_focus_centralized_army_desc: "Решения по командованию армией будут приниматься центральным советом." #NT!
+ generic_focus_high_command_reform: "Реформа высшего командования" #NT!
+ generic_focus_high_command_reform_desc: "Мы реформируем структуру нашей армии." #NT!
+ generic_focus_stabilized_centralization: "Стабилизированная централизация" #NT!
+ generic_focus_stabilized_centralization_desc: "Мы стабилизировали и централизовали нашу страну." #NT!
+ generic_focus_gov_decentralized: "Децентрализация" #NT!
+ generic_focus_gov_decentralized_desc: "Децентрализация, безусловно, пойдет нам на пользу." #NT!
+ generic_focus_decentralized_autonomy: "Региональная автономия" #NT!
+ generic_focus_decentralized_autonomy_desc: "Мы предоставим региональную автономию городам и провинциям." #NT!
+ generic_focus_spread_military: "Военная автономия" #NT!
+ generic_focus_spread_military_desc: "Нашим военным нужно больше автономии в их операциях!" #NT!
+ generic_focus_decentralized_government: "Децентрализованное правительство" #NT!
+ generic_focus_decentralized_government_desc: "Нам удалось провести реформы по децентрализации." #NT!
+ generic_focus_limited_constitution: "Принять Конституцию" #NT!
+ generic_focus_limited_constitution_desc: "Мы примем конституцию." #NT!

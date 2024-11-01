@@ -4271,7 +4271,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 10 }
                 }
-                localization_key = "US Steel" #Pops up in 1883 via "Carnegie Acquires Homestead Steel Works"
+                localization_key = "US Steel" #Pops up in 1883 via 'Carnegie Acquires Homestead Steel Works'
             }
             text = {
                 trigger = {

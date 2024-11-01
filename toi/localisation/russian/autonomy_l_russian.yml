@@ -1,5 +1,5 @@
 ﻿l_russian:
- autonomy_hispanic_crown_union: "Юнион де ла Корона" #NT!
+ autonomy_hispanic_crown_union: "Союз Короны" #NT!
  autonomy_dominion: "Доминион"
  autonomy_supervised_state: "Подконтрольное государство"
  autonomy_confederation_member: "Член Конфедерации" #NT!
@@ -19,12 +19,12 @@
  autonomy_wtt_imperial_protectorate: "Протекторат империи"
  autonomy_wtt_imperial_subject: "Субъект империи"
  autonomy_collaboration_government: "Коллаборационистское правительство"
- autonomy_personal_union: "Персональный партнер Союза" #NT!
- autonomy_personal_union_2: "Персональный партнер Союза" #NT!
- autonomy_personal_union_3: "Персональный партнер Союза" #NT!
- autonomy_principality: "Княжество" #NT!
+ autonomy_personal_union: "Партнер по личному союзу" #NT!
+ autonomy_personal_union_2: "Партнер по личному союзу" #NT!
+ autonomy_personal_union_3: "Партнер по личному союзу" #NT!
+ autonomy_principality: "княжество" #NT!
  autonomy_grand_principality: "Великое княжество" #NT!
- autonomy_autonomous_territory: "Автономный край" #NT!
+ autonomy_autonomous_territory: "Автономная Территория" #NT!
  AUTONOMY_CAN_TAKE_DESC: "$OWNER|UH$ может получить статус $NEXTLEVEL|H$"
  AUTONOMY_CANT_TAKE_DESC: "$OWNER|UH$ пока не может получить статус $NEXTLEVEL|H$"
  AUTONOMY_CAN_LOSE_DESC: "$OWNER|UH$ может быть понижено до статуса $PREVLEVEL|H$"
@@ -38,7 +38,7 @@
  AUTONOMY_RELATION_DESC2: "$SUBJECT|UH$ — $LEVEL|H$ зарубежного государства"
  AUTONOMY_COUNTRY_EFFECT: "Государство"
  AUTONOMY_MASTER_COUNTRY_EFFECT: "Метрополия"
- SHOW_SUBJECTS_DESC: "§GНажмите, чтобы управлять своими предметами.§!" #NT!
+ SHOW_SUBJECTS_DESC: "§GНажмите, чтобы управлять своими темами.§!" #NT!
  SHOW_SUBJECTS_DISABLED_DESC: "§RУ нас нет субъектов§!"
  MANAGE_SUBJECTS_HEADER: "Субъекты"
  CONTINUOUS_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
@@ -72,7 +72,7 @@
  FOREIGN_EXILE_TEMPLATE_DESC: "Это шаблон государства $COUNTRY_ADJ|H$, чье изгнанное правительство нашло у нас убежище. Мы можем скопировать этот шаблон и создавать на его основе войска в изгнании. Войска в изгнании задействуют людские ресурсы правительства в изгнании."
  EXILE_TEMPLATE_DESC: "Это ссыльный шаблон государства $COUNTRY_DEF|H$. Войска в изгнании задействуют людские ресурсы правительства в изгнании."
  CONSTRUCTION_MASTER_BUILDING_LEVELS: "Государство $MASTER|UH$ сейчас строит для нас здание $BUILDING|H$ $LVL|H$ уровня."
- CONSTRUCTION_MASTER_BUILDING_REDUCE_LEVELS: "Нам разрешено уменьшать этот уровень построения только на $LVL|R$." #NT!
+ CONSTRUCTION_MASTER_BUILDING_REDUCE_LEVELS: "Нам разрешено уменьшить этот уровень строительства только на $LVL|R$." #NT!
  CONSTRUCTION_MASTER_BUILDING_CANT_REDUCE: "§RНам запрещено понижать уровень или отменять строительство этого здания.§!"
  CONSTRUCTION_INFO_MASTER: "Строительство ведется на территории государства $WHO|H$. Если мы не используем все фабрики, они могут помочь, задействовав свои."
  CONSTRUCTION_INFO_SUBJECT: "Государство $WHO|H$ возводит это здание для нас. Если они не используют все фабрики, мы можем помочь, задействовав свои."

@@ -1043,6 +1043,15 @@ spriteTypes = {
 			name = "GFX_refresh_prod_budget_button"
 			texturefile = "gfx/interface/buttons/refresh_prod_budget_button.dds"
 		}
+		
+		spriteType = {
+			name = "GFX_prospecting_button"
+			texturefile = "gfx/interface/buttons/prospecting_button.dds"
+		}
+		spriteType = {
+			name = "GFX_prospecting_button_active"
+			texturefile = "gfx/interface/buttons/prospecting_button_active.dds"
+		}
 	#
 
 	#Currency Icons

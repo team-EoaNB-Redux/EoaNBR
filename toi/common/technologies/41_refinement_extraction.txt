@@ -2161,6 +2161,7 @@ technologies = {
 					}
 					custom_modifier_tooltip = pm_drilling_mud_steam_powered_derricks_tt
 				}
+				oil_prospecting_ability_factor = 0.1
 				
 			#
 		}
@@ -2472,7 +2473,7 @@ technologies = {
 					}
 					custom_modifier_tooltip = pm_direction_drilling_experiments_steam_powered_derricks_tt
 				}
-				
+				oil_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_steel_derricks = {
@@ -3533,6 +3534,7 @@ technologies = {
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_steam_pump_unlock_tt
+				mining_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_mine_organization = {
@@ -3647,6 +3649,7 @@ technologies = {
 					}
 					custom_modifier_tooltip = pm_drilling_drilling_fluid_tt
 				}
+				mining_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_pneumatic_drill = {
@@ -3721,6 +3724,8 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				mining_input_factor = -0.01
+				mining_prospecting_ability_factor = 0.2
 			#
 		}
 		tech_conveyor_belts = {
@@ -3733,7 +3738,7 @@ technologies = {
 					leads_to_tech = tech_hydraulic_excavators
 				}
 				dependencies = {
-					tech_vulcanizaion = 1
+					tech_vulcanization = 1
 					transformer = 1
 				}
 			#
@@ -4297,6 +4302,7 @@ technologies = {
 			#
 			#Modifier
 				coal_input_factor = -0.01
+				mining_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_hopper_railway_carts = {
@@ -4363,6 +4369,7 @@ technologies = {
 			#
 			#Modifier
 				valuables_output_factor = 0.04
+				mining_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_coal_strip_mining = {
@@ -4400,6 +4407,7 @@ technologies = {
 			#
 			#Modifier
 				coal_throughput_factor = 0.08
+				mining_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_wheel_cutters = {
@@ -4659,6 +4667,7 @@ technologies = {
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_river_power_unlock_tt
+				logging_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_wind_powered_sawmill = {
@@ -4699,6 +4708,7 @@ technologies = {
 					}
 					custom_modifier_tooltip = pm_river_power_wind_powered_sawmill_tt
 				}
+				logging_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_circular_saw = {
@@ -4857,6 +4867,7 @@ technologies = {
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_steam_power_unlock_tt
+				logging_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_steel_rail_logging_roads = {
@@ -4897,6 +4908,7 @@ technologies = {
 					}
 					custom_modifier_tooltip = pm_saw_mills_steel_rail_logging_roads_tt
 				}
+				logging_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_donkey_engine = {
@@ -4937,6 +4949,7 @@ technologies = {
 					}
 					custom_modifier_tooltip = pm_steam_power_donkey_engine_tt
 				}
+				logging_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_power_loaders = {
@@ -5081,6 +5094,7 @@ technologies = {
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_diesel_power_unlock_tt
+				logging_prospecting_ability_factor = 0.1
 			#
 		}
 		tech_bucksaw = {

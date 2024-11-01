@@ -1,4 +1,8 @@
 ﻿l_russian:
+ tooltip_white_line: "\н" #NT!
+ offmap_military_factories_tooltip: "Внеплановые военные заводы" #NT!
+ offmap_civilian_factories_tooltip: "Гражданские фабрики вне карты" #NT!
+ offmap_dockyards_tooltip: "Верфи вне карты" #NT!
  EFFECT_LIST_OTHERS: "$LIST$ и еще $NUMBER|Y$ других"
  EFFECT_LIST_COUNTRY: "@$TAG$$COUNTRY|UH$"
  EFFECT_TRANSFER_STATE: "Станет владельцем региона $STATE|Y$ и получит контроль."
@@ -145,7 +149,7 @@
  EFFECT_SET_PARTY_RULE: "Будет установлено правило партии: $IDEOLOGY|Y$ "
  EFFECT_ADD_RELATION_RULE_OVERRIDE: "Добавить отмену правила отношений от $ORIGIN|Y$ к $TARGET|Y$:"
  EFFECT_REMOVE_RELATION_RULE_OVERRIDE: "Убрать правило отношений от $ORIGIN|Y$ к $TARGET|Y$:"
- EFFECT_SET_RELATION_RULE: "Установите правило связи от $ORIGIN|Y$ до $TARGET|Y$:" #NT!
+ EFFECT_SET_RELATION_RULE: "Установите правило отношения $ORIGIN|Y$ к $TARGET|Y$:" #NT!
  EFFECT_SET_CAPITAL: "Столица будет перенесена в регион $STATE|Y$."
  EFFECT_REMOVE_FM_LEADER: "$NAME|H$ перестанет быть фельдмаршалом.\n"
  EFFECT_REMOVE_CC_LEADER: "$NAME|H$ перестанет быть генералом.\n"
@@ -214,9 +218,9 @@
  EFFECT_ADD_COUNTRY_TO_TECH_SHARING_GROUP: "@$TAG$$COUNTRY|H$ присоединяется к группе по обмену исследованиями $GROUPNAME|Y$."
  EFFECT_REMOVE_COUNTRY_FROM_TECH_SHARING_GROUP: "@$TAG$$COUNTRY|H$ покидает группу по обмену исследованиями $GROUPNAME|Y$."
  EFFECT_ADD_COUNTRY_TO_TECH_SHARING_GROUP: "@$TAG$$COUNTRY|H$ присоединяется к $GROUPNAME|Y$." #NT!
- EFFECT_REMOVE_COUNTRY_FROM_TECH_SHARING_GROUP: "@$TAG$$COUNTRY|H$ оставляет $GROUPNAME|Y$." #NT!
+ EFFECT_REMOVE_COUNTRY_FROM_TECH_SHARING_GROUP: "@$TAG$$COUNTRY|H$ покидает $GROUPNAME|Y$." #NT!
  EFFECT_MODIFY_COUNTRY_TECH_SHARING_BONUS: "Бонус за обмен технологиями от группы $GROUPNAME|Y$: $BONUS|+%0$."
- EFFECT_CREATE_UNIT: "Будет создана боевая единица"
+ EFFECT_CREATE_UNIT: "Создать боевую единицу $OWNER|H$"
  EFFECT_CREATE_UNIT_LOCATION: "Создать $OWNER|H$ боевую единицу в государстве $STATE|H$\n"
  EFFECT_CREATE_UNIT_WITH_COUNT: "Создать боевую единицу $OWNER|H$ ($COUNT|H$)"
  EFFECT_CREATE_UNIT_LOCATION_WITH_COUNT: "Создать боевую единицу $OWNER|H$ ($COUNT|H$) в государстве $STATE|H$\n"
@@ -225,6 +229,7 @@
  EFFECT_SET_COSMETIC_TAG: "Государство $COUNTRY|UH$ отныне будет называться $COSMETIC_NAME|H$."
  EFFECT_AUTONOMY_FREE: "Государство $COUNTRY|UY$ станет свободным."
  EFFECT_SET_STATE_CATEGORY: "Категория региона будет изменена на тип $CATEGORY|Y$."
+ increase_state_category_by_one_level_tt: "Это обеспечивает §G1§! дополнительный слот для строительства базы.\n" #NT!
  EFFECT_ADD_STATE_MODIFIER: "Будет добавлено следующее: $MODIFIERS$"
  EFFECT_SET_STATE_NAME: "Будет изменено название на $NAME|Y$."
  EFFECT_RESET_STATE_NAME: "Будет возвращено первоначальное название."
@@ -437,7 +442,7 @@
  EFFECT_ADD_POWER_BALANCE_SIDE: "$POWER_BALANCE|Y$ приобретает черту $SIDE|Y$"
  EFFECT_REMOVE_POWER_BALANCE_SIDE: "$POWER_BALANCE|Y$ теряет черту $SIDE|Y$"
  EFFECT_SET_POWER_BALANCE_VALUE: "$POWER_BALANCE|Y$ устанавливается на значение $VALUE|Y$ ($TRENDING_SIDE|Y$)"
- EFFECT_ADD_POWER_BALANCE_VALUE: "$POWER_BALANCE|Y$ перемещает $TREND$$PERCENT|%1Y$ в сторону $SIDE|Y$." #NT!
+ EFFECT_ADD_POWER_BALANCE_VALUE: "$POWER_BALANCE|Y$ перемещается $TREND$$PERCENT|%1Y$ в сторону $SIDE|Y$" #NT!
  EFFECT_ADD_POWER_BALANCE_MODIFIER: "Добавляет коэффициент $MODIFIER|H$: $POWER_BALANCE|Y$ — $DESC$"
  EFFECT_REMOVE_POWER_BALANCE_MODIFIER: "Отнимает коэффициент $MODIFIER|H$: $POWER_BALANCE|Y$ — $DESC$"
  EFFECT_REMOVE_ALL_POWER_BALANCE_MODIFIERS: "Отнимает все коэффициенты: $POWER_BALANCE|Y$ — $LIST$"
