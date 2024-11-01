@@ -25,8 +25,8 @@
  LICENSED_PRODUCTION_RESEARCH_BONUS_VALUE_DESC: "Лицензированное производство: $VALUE|+%0$\n"
  TECH_SHARNG_RESEARCH_BONUS_VALUE_DETAILED_DESC: "\nУчастие в группе $NAME|H$ дает бонус $VALUE|G%0$ (максимум $MAX|H%0$) от государств:"
  TECH_SHARNG_RESEARCH_BONUS_VALUE_DETAILED_COUNTRY: "\n@$TAG$$COUNTRY|H$"
- continuous_tech_share_group_name: "Пакт исследования фракций" #NT!
- continuous_tech_share_group_desc: "Сокращено время исследований для стран вашей фракции из-за вашего активного непрерывного фокуса." #NT!
+ continuous_tech_share_group_name: "Пакт об исследовании фракции" #NT!
+ continuous_tech_share_group_desc: "Сокращение времени исследований для стран вашей фракции из-за вашего активного Непрерывного Фокуса." #NT!
  NO_OTHER_SHARING_GROUPS: "Не входит в группу по обмену технологиями"
  little_entente_research_group_desc: "Сокращается время исследования технологий, которыми уже владеют страны чешской Малой Антанты."
  YUG_SOV_research_group_desc: "Сокращается время исследования технологий, которыми уже владеют Советский Союз и Югославия."

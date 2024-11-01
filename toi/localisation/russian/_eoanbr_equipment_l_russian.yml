@@ -2,150 +2,174 @@
  #Infantry Arms 
   #Small Arms 
  infantry_equipment_pre_rifle_0: "Племенное оружие" #NT!
- infantry_equipment_pre_rifle_0_desc: ""
+ infantry_equipment_pre_rifle_0_desc: "Элементы типичного оружия ручной работы, в некоторых случаях датируемые еще ранним каменным веком. Сюда входит все, от примитивных копий и дубинок до луков и пращей, а также любые другие орудия, предназначенные как для охоты и выживания, так и для войны." #NT!
  infantry_equipment_pre_rifle_1: "Средневековое вооружение" #NT!
- infantry_equipment_pre_rifle_1_desc: ""
- infantry_equipment_pre_rifle_2: "Щука и выстрел" #NT!
- infantry_equipment_pre_rifle_2_desc: ""
- QNG_infantry_equipment_pre_rifle_2: "Щука и выстрел" #NT!
- QNG_infantry_equipment_pre_rifle_2_desc: "До появления штыка в конце 17 века пика и дробь представляли собой историческую тактическую формацию пехоты, первоначально возникшую во время итальянских войн конца 15 - начала 16 веков. Войска, вооруженные пиками, и солдаты, оснащенные аркебузами и/или мушкетами, образовали такую ​​структуру. Иногда использовалось и другое оружие, например, мечи, алебарды и арбалеты." #NT!
- SWE_infantry_equipment_pre_rifle_2: "Флинтлосгевар м/1799 г." #NT!
- SWE_infantry_equipment_pre_rifle_2_short: "Флинтлосгевар м/1799 г." #NT!
- infantry_equipment_pre_rifle_3: "Гладкоствольный мушкет с кремневым замком" #NT!
- infantry_equipment_pre_rifle_3_desc: "Гладкоствольные мушкеты с кремневым замком более точны и имеют большую дальность действия, чем предыдущие версии мушкетов, и более надежны, чем более ранние фитильные замки." #NT!
- ASA_infantry_equipment_pre_rifle_3: "Спрингфилдский мушкет M1795" #NT!
- ASA_infantry_equipment_pre_rifle_3_short: "Спрингфилдский мушкет" #NT!
+ infantry_equipment_pre_rifle_1_desc: "С развитием металлургии и кузнечного дела в Средние века и в ранний современный период многие страны мира, и особенно в Европе, разработали новые орудия войны, которые использовались как на поле боя, так и во время осады. Оружие этой технологической эпохи включало широкий спектр изготовленных вручную мечей, древкового оружия, топоров, молотов, луков (коротких или длинных) и арбалетов, среди многих других примеров." #NT!
+ infantry_equipment_pre_rifle_2: "Щука и дробь" #NT!
+ infantry_equipment_pre_rifle_2_desc: "До введения штыка в конце 17 века пика и выстрел были историческим тактическим формированием пехоты, которое первоначально возникло во время Итальянских войн конца 15 и начала 16 веков. Войска, вооруженные пиками, и солдаты, оснащенные аркебузами и/или мушкетами, образовывали такую ​​конфигурацию. Другое оружие, такое как мечи, алебарды и арбалеты, использовалось время от времени." #NT!
+ SWE_infantry_equipment_pre_rifle_2: "Luntlåsmusköt m/1688" #NT!
+ SWE_infantry_equipment_pre_rifle_2_short: "Luntlåsmusköt m/1688" #NT!
+ SWE_infantry_equipment_pre_rifle_2_desc: "Гладкоствольное ружье калибра 18 мм с фитильным замком, стандартный шведский мушкет, использовавшийся в конце XVII века." #NT!
+ infantry_equipment_pre_rifle_3: "Мушкет гладкоствольный кремневый" #NT!
+ infantry_equipment_pre_rifle_3_desc: "Гладкоствольные кремневые мушкеты более точны и имеют большую дальность стрельбы, чем предыдущие версии мушкетов, а также более надежны, чем более ранние фитильные мушкеты." #NT!
+ ASA_infantry_equipment_pre_rifle_3: "Спрингфилдский мушкет, модель 1795 г." #NT!
+ ASA_infantry_equipment_pre_rifle_3_desc: "Гладкоствольный кремневый мушкет калибра 17,526 мм, заряжаемый с дула, с максимальной эффективной дальностью стрельбы 274,32 метра. Разработан Эли Уитни на оружейных заводах США в Спрингфилде и Харперс-Ферри и активно использовался во время войны 1812 года. Его конструкция основана на французской модели Charleville 1763/66." #NT!
+ ASA_infantry_equipment_pre_rifle_3_short: "Спрингфилд М1795" #NT!
  AUS_infantry_equipment_pre_rifle_3: "Infanteriegewehr Modell 1842 Augustin" #NT!
- AUS_infantry_equipment_pre_rifle_3_short: "Огюстен М/1842" #NT!
- BAD_infantry_equipment_pre_rifle_3: "Пехотный гевер М/1842" #NT!
+ AUS_infantry_equipment_pre_rifle_3_desc: "Гладкоствольный мушкет с трубчатым замком калибра 17,6 мм, заряжаемый с дула, использующий систему зажигания Augustin Consol. Производство началось в Австрийской империи в 1842 году, он нашел применение во время революций 1848 года и итальянской войны за независимость." #NT!
+ AUS_infantry_equipment_pre_rifle_3_short: "Августин М/1842" #NT!
+ BAD_infantry_equipment_pre_rifle_3: "Infanteriegewehr Модель 1842" #NT!
  BAD_infantry_equipment_pre_rifle_3_short: "Гевер М/1842" #NT!
- BAV_infantry_equipment_pre_rifle_3: "Пехотный гевер М/1842" #NT!
+ BAD_infantry_equipment_pre_rifle_3_desc: "Дульнозарядный гладкоствольный капсюльный мушкет калибра 18 мм, впервые представленный в качестве стандартной служебной винтовки Швейцарской Конфедерации в 1842 году." #NT!
+ BAV_infantry_equipment_pre_rifle_3: "Infanteriegewehr Модель 1842" #NT!
  BAV_infantry_equipment_pre_rifle_3_short: "Гевер М/1842" #NT!
- BRE_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер М/41" #NT!
+ BAV_infantry_equipment_pre_rifle_3_desc: "Дульнозарядный гладкоствольный капсюльный мушкет калибра 18 мм, впервые представленный в качестве стандартной служебной винтовки Швейцарской Конфедерации в 1842 году." #NT!
+ BRE_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер Модель 1841 г." #NT!
  BRE_infantry_equipment_pre_rifle_3_short: "Дрейзе М/41" #NT!
- CSA_infantry_equipment_pre_rifle_3: "Ударный мушкет образца 1842 г." #NT!
- CSA_infantry_equipment_pre_rifle_3_desc: "Спрингфилдский мушкет" #NT!
- DEN_infantry_equipment_pre_rifle_3: "Датская модель 1848 года Таприффель" #NT!
- DEN_infantry_equipment_pre_rifle_3_short: "М/1848 Таприфель" #NT!
- FIN_infantry_equipment_pre_rifle_3: "Флинтлосгевар м/1799 г." #NT!
- FIN_infantry_equipment_pre_rifle_3_short: "Флинтлосгевар м/1799 г." #NT!
- FRA_infantry_equipment_pre_rifle_3: "Винтовка Дельвиня" #NT!
- FRA_infantry_equipment_pre_rifle_3_short: "Винтовка Дельвиня" #NT!
- FRA_infantry_equipment_pre_rifle_3_desc: "В 1826 году лейтенант Анри-Гюстав Дельвинь изобрел новый метод стрельбы из нарезного оружия. Патронник винтовки был меньше канала ствола, с которым он соединялся сферической поверхностью, равной по радиусу используемому шарику. Порох высыпался из дульного среза в патронник, на который упиралась пуля при падении в канал ствола. При надавливании на край патронника путем тарана (тремя ударами тяжелого плунжера) пуля деформируется и сплющивается, расширяясь в диаметре относительно внутренней части канала ствола, позволяя пуле прижиматься к нарезным канавкам. При выстреле пуля сопровождала нарезы и вращение." #NT!
- HAM_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер М/41" #NT!
+ BRE_infantry_equipment_pre_rifle_3_desc: "Разработанная в Пруссии казнозарядная винтовка с продольно-скользящим затвором калибра 15,4 мм с эффективной дальностью стрельбы 730–1100 метров. Ее название означает «винтовка с игольчатым воспламенением» на немецком языке, так как боек проходил как игла через бумажный патрон, чтобы ударить по капсюлю у основания пули. В сочетании с системой заряжания это оружие может поддерживать скорострельность 6–12 выстрелов в минуту. Она использовалась во время немецких революций 1848 года." #NT!
+ CSA_infantry_equipment_pre_rifle_3: "Мушкет Springfield Percussion, модель 1842 г." #NT!
+ CSA_infantry_equipment_pre_rifle_3_short: "Спрингфилд М1842" #NT!
+ CSA_infantry_equipment_pre_rifle_3_desc: "Гладкоствольный мушкет с ударным замком калибра 17,526 мм, заряжаемый с дула, с максимальной эффективной дальностью стрельбы 274,32 метра. Модель 1842 является продолжением старой линейки мушкетов модели 1816 и была первым мушкетом, произведенным в США, который был произведен с ударным замком. Это также было первое стрелковое оружие в США, произведенное с полностью взаимозаменяемыми частями." #NT!
+ DEN_infantry_equipment_pre_rifle_3: "Багладерифель м/1848" #NT!
+ DEN_infantry_equipment_pre_rifle_3_short: "Багладерифель м/1848" #NT!
+ DEN_infantry_equipment_pre_rifle_3_desc: "Гладкоствольная ударная винтовка датской конструкции с колонным затвором, эффективная дальность стрельбы около 548,64 м. Принимала участие в Первой Шлезвигской войне." #NT!
+ FIN_infantry_equipment_pre_rifle_3: "Кремневые рудники m/1799" #NT!
+ FIN_infantry_equipment_pre_rifle_3_short: "Кремневые рудники m/1799" #NT!
+ FIN_infantry_equipment_pre_rifle_3_desc: "Гладкоствольное ружье с кремневым замком калибра 20,3 мм, заряжаемое с дула, изначально шведской разработки, с максимальной эффективной дальностью стрельбы 274,32 метра." #NT!
+ FRA_infantry_equipment_pre_rifle_3: "Модель 1842 года Дельвинь-Пончарра" #NT!
+ FRA_infantry_equipment_pre_rifle_3_short: "Модель 1842 года Дельвинь" #NT!
+ FRA_infantry_equipment_pre_rifle_3_desc: "В 1826 году лейтенант Анри-Гюстав Дельвинь изобрел новый метод проектирования нарезного оружия. Патронник винтовки был меньше канала ствола, с которым он соединялся сферической поверхностью, равной по радиусу используемому шару. Порох высыпался из дула в патронник, на который шар опирался при падении в канал ствола. При нажатии на ободок патронника трамбовкой (тремя ударами тяжелого тарана) пуля деформировалась и сплющивалась, так что расширялась в диаметре по внутренней стороне канала ствола, позволяя пуле прижиматься к канавкам нарезов. При выстреле пуля следовала за нарезами и вращалась." #NT!
+ HAM_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер Модель 1841 г." #NT!
  HAM_infantry_equipment_pre_rifle_3_short: "Дрейзе М/41" #NT!
- HAN_infantry_equipment_pre_rifle_3: "Перкуссионсбюксе М/1843" #NT!
- HAN_infantry_equipment_pre_rifle_3_short: "Крауз М/43" #NT!
- HES_infantry_equipment_pre_rifle_3: "Пехотный гевер М/1842" #NT!
+ HAM_infantry_equipment_pre_rifle_3_desc: "Разработанная в Пруссии казнозарядная винтовка с продольно-скользящим затвором калибра 15,4 мм с эффективной дальностью стрельбы 730–1100 метров. Ее название означает «винтовка с игольчатым воспламенением» на немецком языке, так как боек проходил как игла через бумажный патрон, чтобы ударить по капсюлю у основания пули. В сочетании с системой заряжания это оружие может поддерживать скорострельность 6–12 выстрелов в минуту. Она использовалась во время немецких революций 1848 года." #NT!
+ HAN_infantry_equipment_pre_rifle_3: "Perkussionsbüchse M/1843" #NT!
+ HAN_infantry_equipment_pre_rifle_3_short: "Краузе М/43" #NT!
+ HAN_infantry_equipment_pre_rifle_3_desc: "Ударная винтовка, разработанная производителем оружия Crause из Герцберга и принятая на вооружение королевской ганноверской армии в 1843 году, в первую очередь для использования пехотой и егерскими батальонами. В 1849 году она получила ствольный замок с «отмычкой» для разрывания бумажных патронов." #NT!
+ HES_infantry_equipment_pre_rifle_3: "Infanteriegewehr Модель 1842" #NT!
  HES_infantry_equipment_pre_rifle_3_short: "Гевер М/1842" #NT!
- HSD_infantry_equipment_pre_rifle_3: "Пехотный гевер М/1842" #NT!
+ HES_infantry_equipment_pre_rifle_3_desc: "Дульнозарядный гладкоствольный капсюльный мушкет калибра 18 мм, впервые представленный в качестве стандартной служебной винтовки Швейцарской Конфедерации в 1842 году." #NT!
+ HSD_infantry_equipment_pre_rifle_3: "Infanteriegewehr Модель 1842" #NT!
  HSD_infantry_equipment_pre_rifle_3_short: "Гевер М/1842" #NT!
+ HSD_infantry_equipment_pre_rifle_3_desc: "Дульнозарядный гладкоствольный капсюльный мушкет калибра 18 мм, впервые представленный в качестве стандартной служебной винтовки Швейцарской Конфедерации в 1842 году." #NT!
  JAP_infantry_equipment_pre_rifle_3: "Tanegashima" #NT!
  JAP_infantry_equipment_pre_rifle_3_short: "Tanegashima" #NT!
- LCK_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер М/41" #NT!
+ JAP_infantry_equipment_pre_rifle_3_desc: "Аркебуза с фитильным замком, изначально завезенная в Японию португальцами в 1543 году. В период Сэнгоку она использовалась классом самураев и их пехотинцами асигару в большом количестве. После объединения Японии под властью сёгуната Токугава, танегасима оставалась в ограниченном использовании в течение 200 долгих лет изоляции Сакоку, хотя в основном для охоты и стрельбы по мишеням самураев, а остальное было отправлено в оружейные склады различных даймё. Несмотря на свою устаревшую природу, она осталась одним из наиболее часто используемых огнестрельных оружий позднего периода Эдо в Японии." #NT!
+ LCK_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер Модель 1841 г." #NT!
  LCK_infantry_equipment_pre_rifle_3_short: "Дрейзе М/41" #NT!
- LUX_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер М/41" #NT!
+ LCK_infantry_equipment_pre_rifle_3_desc: "Разработанная в Пруссии казнозарядная винтовка с продольно-скользящим затвором калибра 15,4 мм с эффективной дальностью стрельбы 730–1100 метров. Ее название означает «винтовка с игольчатым воспламенением» на немецком языке, так как боек проходил как игла через бумажный патрон, чтобы ударить по капсюлю у основания пули. В сочетании с системой заряжания это оружие может поддерживать скорострельность 6–12 выстрелов в минуту. Она использовалась во время немецких революций 1848 года." #NT!
+ LUX_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер Модель 1841 г." #NT!
  LUX_infantry_equipment_pre_rifle_3_short: "Дрейзе М/41" #NT!
+ LUX_infantry_equipment_pre_rifle_3_desc: "Разработанная в Пруссии казнозарядная винтовка с продольно-скользящим затвором калибра 15,4 мм с эффективной дальностью стрельбы 730–1100 метров. Ее название означает «винтовка с игольчатым воспламенением» на немецком языке, так как боек проходил как игла через бумажный патрон, чтобы ударить по капсюлю у основания пули. В сочетании с системой заряжания это оружие может поддерживать скорострельность 6–12 выстрелов в минуту. Она использовалась во время немецких революций 1848 года." #NT!
  LVN_infantry_equipment_pre_rifle_3: "Infanteriegewehr Modell 1842 Augustin" #NT!
- LVN_infantry_equipment_pre_rifle_3_short: "Огюстен М/1842" #NT!
- MCK_infantry_equipment_pre_rifle_3: "Пехотный гевер М/1842" #NT!
+ LVN_infantry_equipment_pre_rifle_3_short: "Августин М/1842" #NT!
+ LVN_infantry_equipment_pre_rifle_3_desc: "Гладкоствольный мушкет с трубчатым замком калибра 17,6 мм, заряжаемый с дула, использующий систему зажигания Augustin Consol. Производство началось в Австрийской империи в 1842 году, он использовался во время революций 1848 года и итальянской войны за независимость." #NT!
+ MCK_infantry_equipment_pre_rifle_3: "Infanteriegewehr Модель 1842" #NT!
  MCK_infantry_equipment_pre_rifle_3_short: "Гевер М/1842" #NT!
- NAS_infantry_equipment_pre_rifle_3: "Пехотный гевер М/1842" #NT!
+ MCK_infantry_equipment_pre_rifle_3_desc: "Дульнозарядный гладкоствольный капсюльный мушкет калибра 18 мм, впервые представленный в качестве стандартной служебной винтовки Швейцарской Конфедерации в 1842 году." #NT!
+ NAS_infantry_equipment_pre_rifle_3: "Infanteriegewehr Модель 1842" #NT!
  NAS_infantry_equipment_pre_rifle_3_short: "Гевер М/1842" #NT!
- NOR_infantry_equipment_pre_rifle_3: "М1807 Инфантеримушкет" #NT!
- NOR_infantry_equipment_pre_rifle_3_short: "М1807 Инфантеримушкет" #NT!
- OLD_infantry_equipment_pre_rifle_3: "Перкуссионсбюксе М/1843" #NT!
- OLD_infantry_equipment_pre_rifle_3_short: "Крауз М/43" #NT!
- PRS_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер М/41" #NT!
+ NAS_infantry_equipment_pre_rifle_3_desc: "Дульнозарядный гладкоствольный капсюльный мушкет калибра 18 мм, впервые представленный в качестве стандартной служебной винтовки Швейцарской Конфедерации в 1842 году." #NT!
+ NOR_infantry_equipment_pre_rifle_3: "М1794 пехотный мушкет" #NT!
+ NOR_infantry_equipment_pre_rifle_3_short: "М1794 пехотный мушкет" #NT!
+ NOR_infantry_equipment_pre_rifle_3_desc: "Разработанный Копенгагенским арсеналом, M1794 был широко используемым гладкоствольным кремневым пехотным мушкетом в Норвегии. Хотя многие из этих видов оружия были модернизированы в Дании около 1808 года с добавлением замка Kyhl's, состоящего из молотка на внутренней стороне замочной пластины, английская блокада во время Наполеоновских войн вынудила Норвегию в первую очередь сохранить старые модели для своих пехотных войск." #NT!
+ OLD_infantry_equipment_pre_rifle_3: "Perkussionsbüchse M/1843" #NT!
+ OLD_infantry_equipment_pre_rifle_3_short: "Краузе М/43" #NT!
+ OLD_infantry_equipment_pre_rifle_3_desc: "Ударная винтовка, разработанная оружейным производителем Краузе из Герцберга. В 1849 году она получила ствольный замок с «отмычкой» для разрывания бумажных патронов." #NT!
+ PRS_infantry_equipment_pre_rifle_3: "Leichtes Perkussionsgewehr Modell 1841 г." #NT!
  PRS_infantry_equipment_pre_rifle_3_short: "Дрейзе М/41" #NT!
+ PRS_infantry_equipment_pre_rifle_3_desc: "Винтовка с затвором и болтовым затвором калибра 15,4 мм с эффективной дальностью стрельбы 730–1100 метров, изначально разработанная Иоганном Николаусом фон Дрейзе в 1836 году. Ее настоящее название, «Zündnadelgewehr Modell 1841», означает «винтовка с игольчатым зажиганием» на немецком языке, так как боек проходил как игла через бумажный патрон, чтобы ударить по капсюлю у основания пули. В сочетании с системой заряжания это оружие может поддерживать скорострельность 6–12 выстрелов в минуту. Поскольку это оружие уже было революционным к моменту его принятия на вооружение Королевской прусской армией в 1841 году, ее официальное служебное название было изменено на просто винтовку с ударным замком, чтобы скрыть ее фактические характеристики. Она использовалась во время немецких революций 1848 года и Первой Шлезвигской войны." #NT!
  RUS_infantry_equipment_pre_rifle_3: "Модель 1777 года, исправленная в стиле IX." #NT!
- RUS_infantry_equipment_pre_rifle_3_short: "Модель 1777 корриге" #NT!
+ RUS_infantry_equipment_pre_rifle_3_short: "Модель 1777 исправленная" #NT!
  SAX_infantry_equipment_pre_rifle_3: "Infanteriegewehr Modell 1842 Augustin" #NT!
- SAX_infantry_equipment_pre_rifle_3_short: "Огюстен М/1842" #NT!
- SWE_infantry_equipment_pre_rifle_3: "М/1815 Мушкет" #NT!
- SWE_early_machine_gun_equipment_1: "Кулспрутегевар Фм/Кьельман" #NT!
- THU_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер М/41" #NT!
+ SAX_infantry_equipment_pre_rifle_3_short: "Августин М/1842" #NT!
+ SAX_infantry_equipment_pre_rifle_3_desc: "Гладкоствольный мушкет с трубчатым замком калибра 17,6 мм, заряжаемый с дула, использующий систему зажигания Augustin Consol. Производство началось в Австрийской империи в 1842 году, он использовался во время революций 1848 года и итальянской войны за независимость." #NT!
+ SWE_infantry_equipment_pre_rifle_3: "Мушкет M/1815" #NT!
+ SWE_early_machine_gun_equipment_1: "Kulsprutegevär Fm/Kjellman" #NT!
+ THU_infantry_equipment_pre_rifle_3: "Дрейзе Цюнднадельгевер Модель 1841 г." #NT!
  THU_infantry_equipment_pre_rifle_3_short: "Дрейзе М/41" #NT!
- USA_infantry_equipment_pre_rifle_3: "Спрингфилдский мушкет M1795" #NT!
- USA_infantry_equipment_pre_rifle_3_short: "Спрингфилдский мушкет" #NT!
- WUR_infantry_equipment_pre_rifle_3: "Пехотный гевер М/1842" #NT!
+ THU_infantry_equipment_pre_rifle_3_desc: "Разработанная в Пруссии казнозарядная винтовка с продольно-скользящим затвором калибра 15,4 мм с эффективной дальностью стрельбы 730–1100 метров. Ее название означает «винтовка с игольчатым воспламенением» на немецком языке, так как боек проходил как игла через бумажный патрон, чтобы ударить по капсюлю у основания пули. В сочетании с системой заряжания это оружие может поддерживать скорострельность 6–12 выстрелов в минуту. Она использовалась во время немецких революций 1848 года." #NT!
+ USA_infantry_equipment_pre_rifle_3: "Спрингфилдский мушкет, модель 1795 г." #NT!
+ USA_infantry_equipment_pre_rifle_3_short: "Спрингфилд М1795" #NT!
+ USA_infantry_equipment_pre_rifle_3_desc: "Гладкоствольный кремневый мушкет калибра 17,526 мм, заряжаемый с дула, с максимальной эффективной дальностью стрельбы 274,32 метра. Разработан Эли Уитни на оружейных заводах США в Спрингфилде и Харперс-Ферри и активно использовался во время войны 1812 года. Его конструкция основана на французской модели Charleville 1763/66." #NT!
+ WUR_infantry_equipment_pre_rifle_3: "Infanteriegewehr Модель 1842" #NT!
  WUR_infantry_equipment_pre_rifle_3_short: "Гевер М/1842" #NT!
+ WUR_infantry_equipment_pre_rifle_3_desc: "Дульнозарядный гладкоствольный капсюльный мушкет калибра 18 мм, впервые представленный в качестве стандартной служебной винтовки Швейцарской Конфедерации в 1842 году." #NT!
  infantry_equipment_rifle_1: "Винтовка Минье" #NT!
- infantry_equipment_rifle_1_desc: "Винтовка Minié позволяет быстро заряжать дуло и, следовательно, стрелять быстрее." #NT!
- ASA_infantry_equipment_rifle_1: "Нарезной мушкет Спрингфилд образца 1855 года" #NT!
- ASA_infantry_equipment_rifle_1_short: "Спрингфилдский нарезной мушкет" #NT!
+ infantry_equipment_rifle_1_desc: "Винтовка Минье обеспечивает быстрое заряжание с дула и, следовательно, более высокую скорость стрельбы." #NT!
+ ASA_infantry_equipment_rifle_1: "Спрингфилдский нарезной мушкет, модель 1855 г." #NT!
+ ASA_infantry_equipment_rifle_1_short: "Нарезной мушкет Спрингфилд" #NT!
  AUS_infantry_equipment_rifle_1: "Infanteriegewehr Modell 1854 Лоренц" #NT!
  AUS_infantry_equipment_rifle_1_short: "Лоренц М/1854" #NT!
- BAD_infantry_equipment_rifle_1: "Ферайнсгевер М/1857" #NT!
+ BAD_infantry_equipment_rifle_1: "Союзное общество М/1857" #NT!
  BAD_infantry_equipment_rifle_1_short: "Гевер М/1857" #NT!
- BAV_infantry_equipment_rifle_1: "Пехотный гевер М/1858" #NT!
+ BAV_infantry_equipment_rifle_1: "Infanteriegewehr M/1858" #NT!
  BAV_infantry_equipment_rifle_1_short: "Гевер М/1858" #NT!
- BRE_infantry_equipment_rifle_1: "Дрейзе Цюнднадельбюхсе М/54" #NT!
+ BRE_infantry_equipment_rifle_1: "Dreyse Zündnadelbüchse M/54" #NT!
  BRE_infantry_equipment_rifle_1_short: "Дрейзе М/54" #NT!
- DEN_infantry_equipment_rifle_1: "Датская снайдерская винтовка 1853/66 г." #NT!
- DEN_infantry_equipment_rifle_1_short: "1853/66 Снайдерская винтовка" #NT!
- FIN_infantry_equipment_rifle_1: "Модель 1857 г. Шесть линий" #NT!
- FIN_infantry_equipment_rifle_1_short: "Модель 1857 г. Шесть линий" #NT!
+ DEN_infantry_equipment_rifle_1: "Датская снайперская винтовка 1853/66 г." #NT!
+ DEN_infantry_equipment_rifle_1_short: "1853/66 Снайдер Винтовка" #NT!
+ FIN_infantry_equipment_rifle_1: "Модель 1857 года, шестилинейная" #NT!
+ FIN_infantry_equipment_rifle_1_short: "Модель 1857 года, шестилинейная" #NT!
  FRA_infantry_equipment_rifle_1: "P1851 Минье" #NT!
  FRA_infantry_equipment_rifle_1_short: "P1851 Минье" #NT!
- FRA_infantry_equipment_rifle_1_desc: "Капитан Клод-Этьен Минье и Анри-Гюстав Дельвинь изобрели мяч Минье в 1847 году. В модели 1851 Минье используется эта дульно заряжающаяся пуля со стабилизированным вращением." #NT!
- HAM_infantry_equipment_rifle_1: "Дрейзе Цюнднадельбюхсе М/54" #NT!
+ FRA_infantry_equipment_rifle_1_desc: "Капитан Клод-Этьен Минье и Анри-Гюстав Дельвинь изобрели пулю Минье в 1847 году. В патроне Минье образца 1851 года используется эта дульнозарядная пуля со стабилизацией вращением." #NT!
+ HAM_infantry_equipment_rifle_1: "Dreyse Zündnadelbüchse M/54" #NT!
  HAM_infantry_equipment_rifle_1_short: "Дрейзе М/54" #NT!
- HAN_infantry_equipment_rifle_1: "Пикель-Infanteriegewehr M/1854" #NT!
+ HAN_infantry_equipment_rifle_1: "Пикель-Инфантеригевер М/1854" #NT!
  HAN_infantry_equipment_rifle_1_short: "Пикель М/54" #NT!
- HES_infantry_equipment_rifle_1: "Ферайнсгевер М/1857" #NT!
+ HES_infantry_equipment_rifle_1: "Союзное общество М/1857" #NT!
  HES_infantry_equipment_rifle_1_short: "Гевер М/1857" #NT!
- HSD_infantry_equipment_rifle_1: "Ферайнсгевер М/1857" #NT!
+ HSD_infantry_equipment_rifle_1: "Союзное общество М/1857" #NT!
  HSD_infantry_equipment_rifle_1_short: "Гевер М/1857" #NT!
- LCK_infantry_equipment_rifle_1: "Дрейзе Цюнднадельбюхсе М/54" #NT!
+ LCK_infantry_equipment_rifle_1: "Dreyse Zündnadelbüchse M/54" #NT!
  LCK_infantry_equipment_rifle_1_short: "Дрейзе М/54" #NT!
- LUX_infantry_equipment_rifle_1: "Дрейзе Цюнднадельбюхсе М/54" #NT!
+ LUX_infantry_equipment_rifle_1: "Dreyse Zündnadelbüchse M/54" #NT!
  LUX_infantry_equipment_rifle_1_short: "Дрейзе М/54" #NT!
  LVN_infantry_equipment_rifle_1: "Infanteriegewehr Modell 1854 Лоренц" #NT!
  LVN_infantry_equipment_rifle_1_short: "Лоренц М/1854" #NT!
- MCK_infantry_equipment_rifle_1: "Дрейзе Цюнднадельбюхсе М/54" #NT!
+ MCK_infantry_equipment_rifle_1: "Dreyse Zündnadelbüchse M/54" #NT!
  MCK_infantry_equipment_rifle_1_short: "Дрейзе М/54" #NT!
- NAS_infantry_equipment_rifle_1: "Пехотный гевер М/1858" #NT!
+ NAS_infantry_equipment_rifle_1: "Infanteriegewehr M/1858" #NT!
  NAS_infantry_equipment_rifle_1_short: "Гевер М/1858" #NT!
- NOR_infantry_equipment_rifle_1: "М1825 Инфантеримушкет" #NT!
- NOR_infantry_equipment_rifle_1_short: "М1825 Инфантеримушкет" #NT!
- OLD_infantry_equipment_rifle_1: "Дрейзе Цюнднадельбюхсе М/54" #NT!
+ NOR_infantry_equipment_rifle_1: "М1825 пехотный мушкет" #NT!
+ NOR_infantry_equipment_rifle_1_short: "М1825 пехотный мушкет" #NT!
+ OLD_infantry_equipment_rifle_1: "Dreyse Zündnadelbüchse M/54" #NT!
  OLD_infantry_equipment_rifle_1_short: "Дрейзе М/54" #NT!
- PRS_infantry_equipment_rifle_1: "Дрейзе Цюнднадельбюхсе М/54" #NT!
+ PRS_infantry_equipment_rifle_1: "Dreyse Zündnadelbüchse M/54" #NT!
  PRS_infantry_equipment_rifle_1_short: "Дрейзе М/54" #NT!
- RUS_infantry_equipment_rifle_1: "Ферейнгевер 1857 г." #NT!
- SAX_infantry_equipment_rifle_1: "Люттичер Гевер М/1854" #NT!
+ RUS_infantry_equipment_rifle_1: "Союзное общество 1857 г." #NT!
+ SAX_infantry_equipment_rifle_1: "Lütticher Gewehr M/1854" #NT!
  SAX_infantry_equipment_rifle_1_short: "Гевер М/1854" #NT!
- SWE_infantry_equipment_rifle_1: "Слаглосгевар м/1815-49" #NT!
- SWE_infantry_equipment_rifle_1_short: "Слаглосгевар м/1815-49" #NT!
- THU_infantry_equipment_rifle_1: "Дрейзе Цюнднадельбюхсе М/54" #NT!
+ SWE_infantry_equipment_rifle_1: "Slaglåsgevär m/1815-49" #NT!
+ SWE_infantry_equipment_rifle_1_short: "Slaglåsgevär m/1815-49" #NT!
+ THU_infantry_equipment_rifle_1: "Dreyse Zündnadelbüchse M/54" #NT!
  THU_infantry_equipment_rifle_1_short: "Дрейзе М/54" #NT!
- USA_infantry_equipment_rifle_1: "Нарезной мушкет Спрингфилд образца 1855 года" #NT!
- USA_infantry_equipment_rifle_1_short: "Спрингфилдский нарезной мушкет" #NT!
- WUR_infantry_equipment_rifle_1: "Ферайнсгевер М/1857" #NT!
+ USA_infantry_equipment_rifle_1: "Спрингфилдский нарезной мушкет, модель 1855 г." #NT!
+ USA_infantry_equipment_rifle_1_short: "Нарезной мушкет Спрингфилд" #NT!
+ WUR_infantry_equipment_rifle_1: "Союзное общество М/1857" #NT!
  WUR_infantry_equipment_rifle_1_short: "Гевер М/1857" #NT!
  infantry_equipment_rifle_2: "Дульнозарядная винтовка последнего поколения" #NT!
- infantry_equipment_rifle_2_short: "Энфилдская винтовка" #NT!
- infantry_equipment_rifle_2_desc: "Винтовка Энфилд имеет в целом улучшенную конструкцию и намного превосходит винтовку Минье." #NT!
- infantry_equipment_rifle_2_short_desc: "Винтовка Энфилд имеет в целом улучшенную конструкцию и намного превосходит винтовку Минье." #NT!
- ASA_infantry_equipment_rifle_2: "Винтовка-мушкет ударного действия образца 1861 г." #NT!
+ infantry_equipment_rifle_2_short: "Винтовка Энфилд" #NT!
+ infantry_equipment_rifle_2_desc: "Винтовка Энфилда представляет собой в целом улучшенную конструкцию и значительно превосходит винтовку Минье." #NT!
+ infantry_equipment_rifle_2_short_desc: "Винтовка Энфилда представляет собой в целом улучшенную конструкцию и значительно превосходит винтовку Минье." #NT!
+ ASA_infantry_equipment_rifle_2: "Ударная винтовка-мушкет образца 1861 года" #NT!
  ASA_infantry_equipment_rifle_2_short: "Спрингфилдская винтовка-мушкет" #NT!
  AUS_infantry_equipment_rifle_2: "Infanteriegewehr Modell 1862 Лоренц" #NT!
  AUS_infantry_equipment_rifle_2_short: "Лоренц М/1862" #NT!
  BAD_infantry_equipment_rifle_2: "Badisches Infanteriegewehr M/1861" #NT!
  BAD_infantry_equipment_rifle_2_short: "Гевер М/1861" #NT!
- BAV_infantry_equipment_rifle_2: "Пехотный гевер М1842/60" #NT!
- BAV_infantry_equipment_rifle_2_short: "Гевер М1842/60" #NT!
- BRE_infantry_equipment_rifle_2: "Дрейзе Цюнднадельгевер М/62" #NT!
+ BAV_infantry_equipment_rifle_2: "Infanteriegewehr M1842/60" #NT!
+ BAV_infantry_equipment_rifle_2_short: "Гевер M1842/60" #NT!
+ BRE_infantry_equipment_rifle_2: "Dreyse Zündnadelgewehr M/62" #NT!
  BRE_infantry_equipment_rifle_2_short: "Дрейзе М/62" #NT!
- CSA_infantry_equipment_rifle_2: "Винтовка-мушкет ударного действия образца 1861 г." #NT!
+ CSA_infantry_equipment_rifle_2: "Ударная винтовка-мушкет образца 1861 года" #NT!
  CSA_infantry_equipment_rifle_2_short: "Ричмонд Мушкет" #NT!
- FRA_infantry_equipment_rifle_2: "17,8-мм пехотная винтовка образца 1857 г." #NT!
- FRA_infantry_equipment_rifle_2_short: "Модель 1857 года" #NT!
- FRA_infantry_equipment_rifle_2_desc: "Модель 1857 представляет собой усовершенствованную версию модели 1853 с нарезным стволом." #NT!
+ FRA_infantry_equipment_rifle_2: "17,8-мм пехотная винтовка образца 1857 года" #NT!
+ FRA_infantry_equipment_rifle_2_short: "Модель 1857 г." #NT!
+ FRA_infantry_equipment_rifle_2_desc: "Модель 1857 года представляет собой усовершенствованную версию модели 1853 года с нарезным стволом." #NT!
  FIN_infantry_equipment_rifle_2: "Крнка М1867" #NT!
  FIN_infantry_equipment_rifle_2_short: "Крнка М1867" #NT!
- HAM_infantry_equipment_rifle_2: "Дрейзе Цюнднадельгевер М/62" #NT!
+ HAM_infantry_equipment_rifle_2: "Dreyse Zündnadelgewehr M/62" #NT!
  HAM_infantry_equipment_rifle_2_short: "Дрейзе М/62" #NT!
  HAN_infantry_equipment_rifle_2: "Infanteriegewehr Modell 1862 Лоренц" #NT!
  HAN_infantry_equipment_rifle_2_short: "Лоренц М/1862" #NT!
@@ -153,189 +177,241 @@
  HES_infantry_equipment_rifle_2_short: "Гевер М/1860" #NT!
  HSD_infantry_equipment_rifle_2: "Hessisches Vereinsgewehr M/1860" #NT!
  HSD_infantry_equipment_rifle_2_short: "Гевер М/1860" #NT!
- LCK_infantry_equipment_rifle_2: "Дрейзе Цюнднадельгевер М/62" #NT!
+ LCK_infantry_equipment_rifle_2: "Dreyse Zündnadelgewehr M/62" #NT!
  LCK_infantry_equipment_rifle_2_short: "Дрейзе М/62" #NT!
- LUX_infantry_equipment_rifle_2: "Дрейзе Цюнднадельгевер М/62" #NT!
+ LUX_infantry_equipment_rifle_2: "Dreyse Zündnadelgewehr M/62" #NT!
  LUX_infantry_equipment_rifle_2_short: "Дрейзе М/62" #NT!
  LVN_infantry_equipment_rifle_2: "Infanteriegewehr Modell 1862 Лоренц" #NT!
  LVN_infantry_equipment_rifle_2_short: "Лоренц М/1862" #NT!
- MCK_infantry_equipment_rifle_2: "Дрейзе Цюнднадельгевер М/62" #NT!
+ MCK_infantry_equipment_rifle_2: "Dreyse Zündnadelgewehr M/62" #NT!
  MCK_infantry_equipment_rifle_2_short: "Дрейзе М/62" #NT!
  NAS_infantry_equipment_rifle_2: "Infanteriegewehr Modell 1862 Лоренц" #NT!
  NAS_infantry_equipment_rifle_2_short: "Лоренц М/1862" #NT!
- NOR_infantry_equipment_rifle_2: "M1860 Каммерладнингсгевер" #NT!
- NOR_infantry_equipment_rifle_2_short: "M1860 Каммерладнингсгевер" #NT!
- OLD_infantry_equipment_rifle_2: "Дрейзе Цюнднадельгевер М/62" #NT!
+ NOR_infantry_equipment_rifle_2: "M1860 Kammerladningsgevær" #NT!
+ NOR_infantry_equipment_rifle_2_short: "M1860 Kammerladningsgevær" #NT!
+ OLD_infantry_equipment_rifle_2: "Dreyse Zündnadelgewehr M/62" #NT!
  OLD_infantry_equipment_rifle_2_short: "Дрейзе М/62" #NT!
- PRS_infantry_equipment_rifle_2: "Дрейзе Цюнднадельгевер М/62" #NT!
+ PRS_infantry_equipment_rifle_2: "Dreyse Zündnadelgewehr M/62" #NT!
  PRS_infantry_equipment_rifle_2_short: "Дрейзе М/62" #NT!
  SAX_infantry_equipment_rifle_2: "Infanteriegewehr Modell 1862 Лоренц" #NT!
  SAX_infantry_equipment_rifle_2_short: "Лоренц М/1862" #NT!
- SWE_infantry_equipment_rifle_2: "Слаглосгевар м/1860 г." #NT!
- SWE_infantry_equipment_rifle_2_short: "Слаглосгевар м/1860 г." #NT!
- THU_infantry_equipment_rifle_2: "Дрейзе Цюнднадельгевер М/62" #NT!
+ SWE_infantry_equipment_rifle_2: "Slaglåsgevär m/1860" #NT!
+ SWE_infantry_equipment_rifle_2_short: "Slaglåsgevär m/1860" #NT!
+ THU_infantry_equipment_rifle_2: "Dreyse Zündnadelgewehr M/62" #NT!
  THU_infantry_equipment_rifle_2_short: "Дрейзе М/62" #NT!
- USA_infantry_equipment_rifle_2: "Винтовка-мушкет ударного действия образца 1861 г." #NT!
+ USA_infantry_equipment_rifle_2: "Ударная винтовка-мушкет образца 1861 года" #NT!
  USA_infantry_equipment_rifle_2_short: "Спрингфилдская винтовка-мушкет" #NT!
- WUR_infantry_equipment_rifle_2: "Пехотный гевер М/1861" #NT!
+ WUR_infantry_equipment_rifle_2: "Infanteriegewehr M/1861" #NT!
  WUR_infantry_equipment_rifle_2_short: "Гевер М/1861" #NT!
  infantry_equipment_rifle_3: "Винтовка Снайдер-Энфилд" #NT!
- infantry_equipment_rifle_3_desc: "Винтовка Снайдер-Энфилд является более точной версией винтовки Энфилд." #NT!
- ASA_infantry_equipment_rifle_3: "Винтовка Спрингфилд с люком, модель 1866 г." #NT!
- ASA_infantry_equipment_rifle_3_short: "Спрингфилдская винтовка" #NT!
- AUS_infantry_equipment_rifle_3: "Верндль-Голюб Модель 1867 г." #NT!
- AUS_infantry_equipment_rifle_3_short: "Верндль-Голуб М/1867" #NT!
- BAD_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ infantry_equipment_rifle_3_desc: "Винтовка Снайдер-Энфилд — более точная версия винтовки Энфилд." #NT!
+ ASA_infantry_equipment_rifle_3: "Спрингфилдская винтовка-ловушка, модель 1866 г." #NT!
+ ASA_infantry_equipment_rifle_3_short: "Винтовка Спрингфилд" #NT!
+ AUS_infantry_equipment_rifle_3: "Верндл-Голуб Модель 1867" #NT!
+ AUS_infantry_equipment_rifle_3_short: "Верндл–Голуб М/1867" #NT!
+ BAD_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  BAD_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- BAV_infantry_equipment_rifle_3: "Система Вердера M69" #NT!
+ BAV_infantry_equipment_rifle_3: "Вердер-Система М69" #NT!
  BAV_infantry_equipment_rifle_3_short: "Гевер М69" #NT!
- BRE_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ BRE_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  BRE_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- CSA_infantry_equipment_rifle_3: "Спрингфилд Модель 1866 г." #NT!
- CSA_infantry_equipment_rifle_3_short: "Спрингфилдская винтовка" #NT!
+ CSA_infantry_equipment_rifle_3: "Спрингфилд Модель 1866" #NT!
+ CSA_infantry_equipment_rifle_3_short: "Винтовка Спрингфилд" #NT!
  FIN_infantry_equipment_rifle_3: "Бердан киваари нро. 2 'Пертаани'" #NT!
  FIN_infantry_equipment_rifle_3_short: "Бердан киваари нро. 2 'Пертаани'" #NT!
- FRA_infantry_equipment_rifle_3: "Чассспот" #NT!
- FRA_infantry_equipment_rifle_3_short: "Чассспот" #NT!
- FRA_infantry_equipment_rifle_3_desc: "Chassespot был разработан Антуаном Альфонсом Шасспо, который экспериментировал с некоторыми формами заряжания с казенной части. Успех прусских винтовок Дрейзе в битве при Садовой побудил французскую армию выбрать Chassepot в качестве модели 1866 года." #NT!
- HAM_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ FRA_infantry_equipment_rifle_3: "Шассеспо" #NT!
+ FRA_infantry_equipment_rifle_3_short: "Шассеспо" #NT!
+ FRA_infantry_equipment_rifle_3_desc: "Шассеспо был разработан Антуаном Альфонсом Шассепо, который экспериментировал с некоторыми формами заряжающихся с казенной части винтовок. Успех прусских винтовок Дрейзе в битве при Садовой побудил французскую армию выбрать Шассепо в качестве модели 1866 года." #NT!
+ HAM_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  HAM_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- HAN_infantry_equipment_rifle_3: "Ганноверский Гевер М/66" #NT!
+ HAN_infantry_equipment_rifle_3: "Ганноверский артиллерийский ствол М/66" #NT!
  HAN_infantry_equipment_rifle_3_short: "Гевер М/66" #NT!
- HES_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ HES_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  HES_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- HSD_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ HSD_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  HSD_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- LCK_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ LCK_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  LCK_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- LUX_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ LUX_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  LUX_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- MCK_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ MCK_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  MCK_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- NAS_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ NAS_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  NAS_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- NOR_infantry_equipment_rifle_3: "M1860/67 Каммерладнингсгевер" #NT!
- NOR_infantry_equipment_rifle_3_short: "M1860/67 Каммерладнингсгевер" #NT!
- OLD_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ NOR_infantry_equipment_rifle_3: "M1860/67 Камерные палатки" #NT!
+ NOR_infantry_equipment_rifle_3_short: "M1860/67 Камерные палатки" #NT!
+ OLD_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  OLD_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- PRS_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ PRS_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  PRS_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- SAX_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ SAX_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  SAX_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- SWE_infantry_equipment_rifle_3: "Каммарладдаре м/1867 г." #NT!
- SWE_infantry_equipment_rifle_3_short: "Каммарладдаре м/1867 г." #NT!
+ SWE_infantry_equipment_rifle_3: "Каммарладдаре м/1867" #NT!
+ SWE_infantry_equipment_rifle_3_short: "Каммарладдаре м/1867" #NT!
  SPR_infantry_equipment_rifle_3: "Испанская пехотная винтовка Бердана 1859/67 г." #NT!
- SPR_infantry_equipment_rifle_3_short: "1859/67 г. Пехотная винтовка Бердана" #NT!
- THU_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ SPR_infantry_equipment_rifle_3_short: "1859/67 Пехотная винтовка Бердана" #NT!
+ THU_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  THU_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
- USA_infantry_equipment_rifle_3: "Винтовка Спрингфилд с люком, модель 1866 г." #NT!
- USA_infantry_equipment_rifle_3_short: "Спрингфилдская винтовка" #NT!
- WUR_infantry_equipment_rifle_3: "Дрейзе Цюнднадельбюхсе М/65" #NT!
+ USA_infantry_equipment_rifle_3: "Спрингфилдская винтовка-ловушка, модель 1866 г." #NT!
+ USA_infantry_equipment_rifle_3_short: "Винтовка Спрингфилд" #NT!
+ WUR_infantry_equipment_rifle_3: "Dreyse Zündnadelbüchse M/65" #NT!
  WUR_infantry_equipment_rifle_3_short: "Дрейзе М/65" #NT!
  infantry_equipment_rifle_4: "Винтовка Мартини-Генри" #NT!
- infantry_equipment_rifle_4_desc: "Винтовка Мартини-Генри имеет более высокую скорострельность и большую дальность стрельбы, чем ее предшественница, винтовка Снайдер-Энфилд." #NT!
- AUS_infantry_equipment_rifle_4: "Верндль-Голюб Модель 1873/77 г." #NT!
- AUS_infantry_equipment_rifle_4_short: "Верндль–Голуб М/73/77" #NT!
+ infantry_equipment_rifle_4_desc: "Винтовка Мартини-Генри имеет более высокую скорострельность и большую дальность стрельбы, чем ее предшественница — винтовка Снайдера-Энфилда." #NT!
+ AUS_infantry_equipment_rifle_4: "Верндл-Голуб Модель 1873/77" #NT!
+ AUS_infantry_equipment_rifle_4_short: "Верндл–Голуб М/73/77" #NT!
+ CAN_infantry_equipment_rifle_4: "Многозарядная винтовка Спенсера" #NT!
+ CAN_infantry_equipment_rifle_4_short: "Винтовка Спенсера" #NT!
  FRA_infantry_equipment_rifle_4: "Гра" #NT!
- FRA_infantry_equipment_rifle_4_desc: "Поражение во франко-прусской войне показало проблемы Шасспо. Кроме того, в 1871 году у пруссаков появилась винтовка с металлическими патронами Маузер. Французская армия решила использовать металлические патроны и поэтому ей необходимо сменить винтовки. Принимать на вооружение новую винтовку, подобную той, что разработал Де Бомон, слишком дорого. Была выбрана трансформация Шасспо, предложенная полковником Базилем Гра." #NT!
+ FRA_infantry_equipment_rifle_4_desc: "Поражение во франко-прусской войне показало проблемы Шасспо. Кроме того, в 1871 году у пруссаков появилась винтовка с металлическими патронами, Маузер. Французская армия решила использовать металлические патроны, и поэтому им пришлось менять винтовки. Принять новую винтовку, такую ​​как та, что была разработана Де Бомоном, слишком дорого. Была выбрана трансформация Шасспо, предложенная полковником Базилем Гра." #NT!
  HES_infantry_equipment_rifle_4: "Гевер 71" #NT!
- NOR_infantry_equipment_rifle_4: "М1867 Ремингтон" #NT!
- NOR_infantry_equipment_rifle_4_short: "М1867 Ремингтон" #NT!
+ NOR_infantry_equipment_rifle_4: "Ремингтон М1867" #NT!
+ NOR_infantry_equipment_rifle_4_short: "Ремингтон М1867" #NT!
  OLD_infantry_equipment_rifle_4: "Гевер 71" #NT!
  PRS_infantry_equipment_rifle_4: "Маузер М/71" #NT!
  SWE_infantry_equipment_rifle_4: "Каммарладдаре м/1867-74" #NT!
  SAX_infantry_equipment_rifle_4: "Гевер 71" #NT!
- SPR_infantry_equipment_rifle_4: "Испанская винтовка Ремингтон М1871/89." #NT!
- SPR_infantry_equipment_rifle_4_short: "Винтовка Ремингтон М1871/89" #NT!
+ SPR_infantry_equipment_rifle_4: "Испанская винтовка Ремингтон М1871/89" #NT!
+ SPR_infantry_equipment_rifle_4_short: "Винтовка Ремингтона М1871/89" #NT!
  THU_infantry_equipment_rifle_4: "Гевер 71" #NT!
- USA_infantry_equipment_rifle_4: "Спрингфилд Модель 1873 г." #NT!
+ USA_infantry_equipment_rifle_4: "Спрингфилд Модель 1873" #NT!
  WUR_infantry_equipment_rifle_4: "Гевер 71" #NT!
  infantry_equipment_rifle_5: "Винтовка Ли-Метфорда" #NT!
- infantry_equipment_rifle_5_desc: "Винтовка Ли-Метфорда оснащена продольно-скользящим затвором, что значительно ускоряет ее работу." #NT!
- AUS_infantry_equipment_rifle_5: "Манлихер Модель 1886 г." #NT!
- AUS_infantry_equipment_rifle_5_short: "Манлихер М/1886" #NT!
+ infantry_equipment_rifle_5_desc: "Винтовка Ли-Метфорда оснащена продольно-скользящим поворотным затвором, что значительно ускоряет ее использование." #NT!
+ AUS_infantry_equipment_rifle_5: "Маннлихер Модель 1886" #NT!
+ AUS_infantry_equipment_rifle_5_short: "Маннлихер М/1886" #NT!
  BAV_infantry_equipment_rifle_5: "Гевер 88" #NT!
  FRA_infantry_equipment_rifle_5: "Лебель" #NT!
  FRA_infantry_equipment_rifle_5_short: "Лебель" #NT!
- FRA_infantry_equipment_rifle_5_desc: "Морской пехотинец использовал магазинную винтовку «Кропачек» (модель 1878 г.), разработанную австрийцами. Модели 1884 и 1885 созданы на основе тех же патронов, что и Gras. Но в 1884 году Поль Вьей изобрел бездымный порох, позволяющий использовать боеприпасы диаметром менее 11 мм. Военный министр генерал Буланже попросил сделать новую винтовку образца 1886 года. Подполковник Николя Лебель изобрел 8-миллиметровую пулю FMJ с плоским носом. На основе этих изобретений полковник Гра сконструировал новую винтовку." #NT!
+ FRA_infantry_equipment_rifle_5_desc: "Морской пехотинец использовал Кропачек (модель 1878), многозарядную винтовку, разработанную австрийцем. Модели 1884 и 1885 произошли от нее, используя те же патроны, что и Гра. Но в 1884 году Поль Вьей изобрел бездымный порох, который позволял использовать боеприпасы калибра менее 11 мм. Военный министр генерал Буланже поручил создать новую винтовку модели 1886. Подполковник Николя Лебель изобрел 8-мм пулю FMJ с плоским носом. Полковник Гра спроектировал новую винтовку с этими изобретениями." #NT!
  HES_infantry_equipment_rifle_5: "Гевер 88" #NT!
  NOR_infantry_equipment_rifle_5: "M1876 Краг Петерссон" #NT!
  NOR_infantry_equipment_rifle_5_short: "M1876 Краг Петерссон" #NT!
  OLD_infantry_equipment_rifle_5: "Гевер 88" #NT!
  PRS_infantry_equipment_rifle_5: "Маузер М71/84" #NT!
  PRS_infantry_equipment_rifle_5_short: "Маузер М71/84" #NT!
- SWE_infantry_equipment_rifle_5: "Гевар FM/1884" #NT!
- SWE_infantry_equipment_rifle_5_short: "Гевар FM/1884" #NT!
+ SWE_infantry_equipment_rifle_5: "Gevär fm/1884" #NT!
+ SWE_infantry_equipment_rifle_5_short: "Gevär fm/1884" #NT!
  SAX_infantry_equipment_rifle_5: "Гевер 88" #NT!
  THU_infantry_equipment_rifle_5: "Гевер 88" #NT!
- USA_infantry_equipment_rifle_5: "Спрингфилд Модель 1884 г." #NT!
+ USA_infantry_equipment_rifle_5: "Спрингфилд Модель 1884" #NT!
  WUR_infantry_equipment_rifle_5: "Гевер 88" #NT!
- infantry_equipment_rifle_6: "Винтовка Мосина – Нагана" #NT!
- infantry_equipment_rifle_6_desc: "Винтовка Мосина-Нагана совершенствует конструкцию более ранней винтовки Ли-Метфорда." #NT!
- AUS_infantry_equipment_rifle_6: "Манлихер Модель 1890 г." #NT!
- AUS_infantry_equipment_rifle_6_short: "Манлихер М/1890" #NT!
+ infantry_equipment_rifle_6: "Винтовка Мосина-Нагана" #NT!
+ infantry_equipment_rifle_6_desc: "Винтовка Мосина-Нагана представляет собой усовершенствованную версию более ранней винтовки Ли-Метфорда." #NT!
+ AUS_infantry_equipment_rifle_6: "Маннлихер Модель 1890" #NT!
+ AUS_infantry_equipment_rifle_6_short: "Маннлихер М/1890" #NT!
+ CAN_infantry_equipment_rifle_6: "Поздняя винтовка Ли-Метфорда" #NT!
+ CAN_infantry_equipment_rifle_6_short: "Поздняя винтовка Ли-Метфорда" #NT!
+ ENG_infantry_equipment_rifle_6: "Поздняя винтовка Ли-Метфорда" #NT!
+ ENG_infantry_equipment_rifle_6_short: "Поздняя винтовка Ли-Метфорда" #NT!
+ NSW_infantry_equipment_rifle_6: "Поздняя винтовка Ли-Метфорда" #NT!
+ NSW_infantry_equipment_rifle_6_short: "Поздняя винтовка Ли-Метфорда" #NT!
+ RAJ_infantry_equipment_rifle_6: "Поздняя винтовка Ли-Метфорда" #NT!
+ RAJ_infantry_equipment_rifle_6_short: "Поздняя винтовка Ли-Метфорда" #NT!
+ SAF_infantry_equipment_rifle_6: "Поздняя винтовка Ли-Метфорда" #NT!
+ SAF_infantry_equipment_rifle_6_short: "Поздняя винтовка Ли-Метфорда" #NT!
+ NZL_infantry_equipment_rifle_6: "Поздняя винтовка Ли-Метфорда" #NT!
+ NZL_infantry_equipment_rifle_6_short: "Поздняя винтовка Ли-Метфорда" #NT!
  FRA_infantry_equipment_rifle_6: "Лебель М93" #NT!
  FRA_infantry_equipment_rifle_6_short: "Лебель М93" #NT!
- FRA_infantry_equipment_rifle_6_desc: "Самым полезным усовершенствованием была модификация головки затвора, чтобы она отводила от лица стрелка горячие газы, выходящие из разорванной гильзы. В модификации 1893 года также была существенно улучшена фиксация целика на стволе." #NT!
+ FRA_infantry_equipment_rifle_6_desc: "Самым полезным усовершенствованием стала модификация головки затвора, которая отводила от лица стрелка горячие газы, вырывающиеся из разорванной гильзы. Крепление целика на стволе также было существенно улучшено в модификации 1893 года." #NT!
  PRS_infantry_equipment_rifle_6: "Гевер 88" #NT!
- SWE_infantry_equipment_rifle_6: "Гевар м/1896 г." #NT!
- USA_infantry_equipment_rifle_6: "Спрингфилд Модель 1888 г." #NT!
+ SWE_infantry_equipment_rifle_6: "Gevär m/1896" #NT!
+ USA_infantry_equipment_rifle_6: "Спрингфилд Модель 1888" #NT!
  infantry_equipment_rifle_7: "Карабин MLE" #NT!
- infantry_equipment_rifle_7_desc: "Журнальная винтовка Lee-Enfield Carbine Rifle Mk.I представляет собой улучшенную версию более ранней винтовки Lee-Enfield, в которой используется магазин и продольно-скользящий механизм." #NT!
- AUS_infantry_equipment_rifle_7: "Манлихер Модель 1895 г." #NT!
- AUS_infantry_equipment_rifle_7_short: "Манлихер М/1895" #NT!
+ infantry_equipment_rifle_7_desc: "Карабиновая винтовка Ли-Энфилд с магазином Mk.I представляет собой улучшенную версию более ранней винтовки Ли-Энфилд, в которой используется магазин и продольно-скользящий поворотный затвор." #NT!
+ AUS_infantry_equipment_rifle_7: "Маннлихер Модель 1895" #NT!
+ AUS_infantry_equipment_rifle_7_short: "Маннлихер М/1895" #NT!
+ CAN_infantry_equipment_rifle_7: "Винтовка Росса" #NT!
+ CAN_infantry_equipment_rifle_7_short: "Росс" #NT!
  FRA_infantry_equipment_rifle_7: "Лебель М98" #NT!
  FRA_infantry_equipment_rifle_7_short: "Лебель М98" #NT!
- FRA_infantry_equipment_rifle_7_desc: "В 1898 году ростборд был приспособлен для замены боеприпасов с патрона модели 1886 М на патрон модели 1886 D." #NT!
+ FRA_infantry_equipment_rifle_7_desc: "В 1898 году плата роста была адаптирована для замены боеприпасов с патрона модели 1886 M на патрон модели 1886 D." #NT!
  PRS_infantry_equipment_rifle_7: "Маузер М/98" #NT!
  PRS_infantry_equipment_rifle_7_short: "Гевер 98" #NT!
  USA_infantry_equipment_rifle_7: "Краг-Йоргенсен 30-06" #NT!
  USA_infantry_equipment_rifle_7_desc: "Высокоэффективное траншейное ружье." #NT!
- infantry_equipment_rifle_8: "СМЛЭ №1" #NT!
- infantry_equipment_rifle_8_desc: "Эта укороченная версия карабинной винтовки Ли-Энфилда более точна и имеет улучшенный магазин и затворный механизм, что позволяет ей стрелять быстрее и с большей останавливающей силой." #NT!
- AUS_infantry_equipment_rifle_8: "Многозарядная винтовка Манлихера-Шёнауэра образца 1903 г." #NT!
- AUS_infantry_equipment_rifle_8_short: "Манлихер-Шенауэр М/1903" #NT!
+ infantry_equipment_rifle_8: "SMLE Mk.I" #NT!
+ infantry_equipment_rifle_8_desc: "Эта укороченная версия карабина Ли-Энфилда более точна и имеет улучшенный магазин и затворный механизм, что позволяет стрелять быстрее и с большей останавливающей силой." #NT!
+ AUS_infantry_equipment_rifle_8: "Магазинная винтовка Манлихера-Шёнауэра образца 1903 г." #NT!
+ AUS_infantry_equipment_rifle_8_short: "Манлихер-Шёнауэр М/1903" #NT!
  FRA_infantry_equipment_rifle_8: "Бертье 07" #NT!
- FRA_infantry_equipment_rifle_8_desc: "Французский гражданский инженер алжирских железных дорог Эмиль Бертье предложил новую систему увеличения скорости перезарядки. Карабин Бертье был принят на вооружение французской армии в 1890 году. Французская армия адаптировала его в 1907 году для производства винтовки Бертье." #NT!
- PRS_infantry_equipment_rifle_8: "Карабинер 98А" #NT!
+ FRA_infantry_equipment_rifle_8_desc: "Французский гражданский инженер Алжирских железных дорог Эмиль Бертье предложил новую систему для увеличения скорости перезарядки. Карабин Бертье был принят на вооружение французской армией в 1890 году. Французская армия адаптировала его в 1907 году для производства винтовки Бертье." #NT!
+ PRS_infantry_equipment_rifle_8: "Карабин 98А" #NT!
  PRS_infantry_equipment_rifle_8_short: "Кар 98А" #NT!
- USA_infantry_equipment_rifle_8: "Модель 1903 года Спрингфилд" #NT!
+ USA_infantry_equipment_rifle_8: "Модель 1903 Спрингфилд" #NT!
  USA_infantry_equipment_rifle_8_short: "М1903" #NT!
  infantry_equipment_rifle_9: "Винтовка Энфилд образца 1914 года" #NT!
- infantry_equipment_rifle_9_desc: "Эта новейшая конструкция винтовки Энфилда была существенно модернизирована, а ее затворный механизм улучшен." #NT!
+ infantry_equipment_rifle_9_desc: "Эта новейшая конструкция винтовки Энфилд была существенно модернизирована, а ее поворотный затвор был усовершенствован." #NT!
  AUS_infantry_equipment_rifle_9: "Многозарядная винтовка Манлихера образца 1913 года." #NT!
- AUS_infantry_equipment_rifle_9_short: "Манлихер М/1913" #NT!
+ AUS_infantry_equipment_rifle_9_short: "Маннлихер М/1913" #NT!
  FRA_infantry_equipment_rifle_9: "Бертье 15" #NT!
  FRA_infantry_equipment_rifle_9_short: "Бертье 15" #NT!
- FRA_infantry_equipment_rifle_9_desc: "В связи с Первой мировой войной французской армии потребовалась новая винтовка. В армии много Лебеля, но Бертье 07 лучше в окопах. Th Berthier 07 модифицирован с некоторыми элементами Lebel и стал моделью 1907/15." #NT!
+ FRA_infantry_equipment_rifle_9_desc: "С началом Первой мировой войны французской армии понадобилась новая винтовка. У армии много винтовок Lebel, но Berthier 07 лучше в окопах. Berthier 07 модифицирована некоторыми элементами Lebel и стала моделью 1907/15." #NT!
  PRS_infantry_equipment_rifle_9: "Карабин 98AZ" #NT!
- PRS_infantry_equipment_rifle_9_short: "Кар 98AZ" #NT!
- USA_infantry_equipment_rifle_9: "1903 Спрингфилдское устройство Педерсена" #NT!
+ PRS_infantry_equipment_rifle_9_short: "Кар 98АЗ" #NT!
+ USA_infantry_equipment_rifle_9: "1903 Спрингфилд Педерсен Устройство" #NT!
  USA_infantry_equipment_rifle_9_short: "М1903 Мк1" #NT!
- infantry_equipment_rifle_10: "Винтовка №1 Мк.III" #NT!
- infantry_equipment_rifle_10_desc: "Конструкция старой винтовки Энфилд была улучшена за счет значительных усовершенствований прицелов и рабочего механизма." #NT!
- AUS_infantry_equipment_rifle_10: "Многозарядная винтовка Маузера образца 1898 года." #NT!
+ infantry_equipment_rifle_10: "SMLE Mk.III" #NT!
+ infantry_equipment_rifle_10_desc: "Конструкция старой винтовки Enfield была дополнительно улучшена за счет значительных усовершенствований прицела и рабочего механизма." #NT!
+ AUS_infantry_equipment_rifle_10: "Магазинная винтовка Маузера образца 1898 года" #NT!
  AUS_infantry_equipment_rifle_10_short: "Гевер 98" #NT!
  FRA_infantry_equipment_rifle_10: "Бертье 16" #NT!
  FRA_infantry_equipment_rifle_10_short: "Бертье 16" #NT!
- FRA_infantry_equipment_rifle_10_desc: "Винтовка Бертье модели 1916 года была представлена ​​с пятизарядным блочным магазином. Отверстие для сброса обойм в нижней части выступающего магазина было заменено подпружиненным люком, защищающим от попадания грязи и мусора." #NT!
- PRS_infantry_equipment_rifle_10: "Карабинер 98б" #NT!
+ FRA_infantry_equipment_rifle_10_desc: "Винтовка Бертье модели 1916 года была представлена ​​с пятизарядной обоймой en-bloc. Отверстие для выброса обоймы в нижней части выступающего магазина было заменено подпружиненным люком для защиты от грязи и мусора." #NT!
+ PRS_infantry_equipment_rifle_10: "Карабин 98б" #NT!
  PRS_infantry_equipment_rifle_10_short: "Кар 98б" #NT!
- USA_infantry_equipment_rifle_10: "Американская винтовка калибра .30 образца 1917 года." #NT!
- USA_infantry_equipment_rifle_10_short: "M1917 Энфилд" #NT!
+ USA_infantry_equipment_rifle_10: "Винтовка США, калибр .30, модель 1917 г." #NT!
+ USA_infantry_equipment_rifle_10_short: "Энфилд М1917" #NT!
  infantry_equipment_rifle_11: "М1 Гаранд" #NT!
  infantry_equipment_rifle_11_desc: ""
  PRS_infantry_equipment_rifle_11: "Карабин 98 Курц" #NT!
  PRS_infantry_equipment_rifle_11_short: "Кар 98к" #NT!
+ CAN_infantry_equipment_rifle_11: "Ли Энфилд № 4 Mk1" #NT!
+ CAN_infantry_equipment_rifle_11_short: "Ли Энфилд № 4 Mk1" #NT!
+ ENG_infantry_equipment_rifle_11: "Ли Энфилд № 4 Mk1" #NT!
+ ENG_infantry_equipment_rifle_11_short: "Ли Энфилд № 4 Mk1" #NT!
+ NSW_infantry_equipment_rifle_11: "Ли Энфилд № 4 Mk1" #NT!
+ NSW_infantry_equipment_rifle_11_short: "Ли Энфилд № 4 Mk1" #NT!
+ RAJ_infantry_equipment_rifle_11: "Ли Энфилд № 4 Mk1" #NT!
+ RAJ_infantry_equipment_rifle_11_short: "Ли Энфилд № 4 Mk1" #NT!
+ SAF_infantry_equipment_rifle_11: "Ли Энфилд № 4 Mk1" #NT!
+ SAF_infantry_equipment_rifle_11_short: "Ли Энфилд № 4 Mk1" #NT!
+ NZL_infantry_equipment_rifle_11: "Ли Энфилд № 4 Mk1" #NT!
+ NZL_infantry_equipment_rifle_11_short: "Ли Энфилд № 4 Mk1" #NT!
  infantry_equipment_rifle_12: "Карабин М1" #NT!
  infantry_equipment_rifle_12_desc: ""
  PRS_infantry_equipment_rifle_12: "Гевер 43" #NT!
  PRS_infantry_equipment_rifle_12_short: "Г-43" #NT!
+ CAN_infantry_equipment_rifle_12: "Ли Энфилд № 4 Мк1*" #NT!
+ CAN_infantry_equipment_rifle_12_short: "Ли Энфилд № 4 Мк1*" #NT!
+ ENG_infantry_equipment_rifle_12: "Ли Энфилд № 4 Мк1*" #NT!
+ ENG_infantry_equipment_rifle_12_short: "Ли Энфилд № 4 Мк1*" #NT!
+ NSW_infantry_equipment_rifle_12: "Ли Энфилд № 4 Мк1*" #NT!
+ NSW_infantry_equipment_rifle_12_short: "Ли Энфилд № 4 Мк1*" #NT!
+ RAJ_infantry_equipment_rifle_12: "Ли Энфилд № 4 Мк1*" #NT!
+ RAJ_infantry_equipment_rifle_12_short: "Ли Энфилд № 4 Мк1*" #NT!
+ SAF_infantry_equipment_rifle_12: "Ли Энфилд № 4 Мк1*" #NT!
+ SAF_infantry_equipment_rifle_12_short: "Ли Энфилд № 4 Мк1*" #NT!
+ NZL_infantry_equipment_rifle_12: "Ли Энфилд № 4 Мк1*" #NT!
+ NZL_infantry_equipment_rifle_12_short: "Ли Энфилд № 4 Мк1*" #NT!
  infantry_equipment_rifle_13: "Карабин М2" #NT!
  infantry_equipment_rifle_13_desc: ""
  PRS_infantry_equipment_rifle_13: "Штурмгевер 44" #NT!
  PRS_infantry_equipment_rifle_13_short: "СтГ-44" #NT!
- infantry_equipment_rifle_14: "АК 47" #NT!
+ CAN_infantry_equipment_rifle_13: "Ли Энфилд № 4 Mk2" #NT!
+ CAN_infantry_equipment_rifle_13_short: "Ли Энфилд № 4 Mk2" #NT!
+ ENG_infantry_equipment_rifle_13: "Ли Энфилд № 4 Mk2" #NT!
+ ENG_infantry_equipment_rifle_13_short: "Ли Энфилд № 4 Mk2" #NT!
+ NSW_infantry_equipment_rifle_13: "Ли Энфилд № 4 Mk2" #NT!
+ NSW_infantry_equipment_rifle_13_short: "Ли Энфилд № 4 Mk2" #NT!
+ RAJ_infantry_equipment_rifle_13: "Ли Энфилд № 4 Mk2" #NT!
+ RAJ_infantry_equipment_rifle_13_short: "Ли Энфилд № 4 Mk2" #NT!
+ SAF_infantry_equipment_rifle_13: "Ли Энфилд № 4 Mk2" #NT!
+ SAF_infantry_equipment_rifle_13_short: "Ли Энфилд № 4 Mk2" #NT!
+ NZL_infantry_equipment_rifle_13: "Ли Энфилд № 4 Mk2" #NT!
+ NZL_infantry_equipment_rifle_13_short: "Ли Энфилд № 4 Mk2" #NT!
+ infantry_equipment_rifle_14: "АК-47" #NT!
  infantry_equipment_rifle_14_desc: ""
  USA_infantry_equipment_rifle_14: "М14" #NT!
  infantry_equipment_rifle_15: "АКм" #NT!
@@ -347,7 +423,7 @@
  infantry_equipment_rifle_17: "ФН П90" #NT!
  infantry_equipment_rifle_17_desc: ""
  USA_infantry_equipment_rifle_17: "М16А4" #NT!
- infantry_equipment_rifle_18: "G36" #NT!
+ infantry_equipment_rifle_18: "Г36" #NT!
  infantry_equipment_rifle_18_desc: ""
  USA_infantry_equipment_rifle_18: "Карабин М4А1" #NT!
  infantry_equipment_rifle_19: "ФН СКАР" #NT!
@@ -355,10 +431,10 @@
  USA_infantry_equipment_rifle_19: "Морская винтовка М27" #NT!
  infantry_equipment_rifle_20: "Продвинутая винтовка" #NT!
  infantry_equipment_rifle_20_desc: ""
- USA_infantry_equipment_rifle_20: "Зиг-копье XM7" #NT!
+ USA_infantry_equipment_rifle_20: "SIG Копье XM7" #NT!
  infantry_equipment_rifle_21: "Винтовка ближайшего будущего" #NT!
  infantry_equipment_rifle_21_desc: ""
- infantry_equipment_rifle_22: "Будущие винтовки" #NT!
+ infantry_equipment_rifle_22: "Винтовки будущего" #NT!
  infantry_equipment_rifle_22_desc: ""
  infantry_equipment_plasma_rifle_1: "Прототип плазменной винтовки" #NT!
  infantry_equipment_plasma_rifle_1_desc: ""
@@ -370,23 +446,23 @@
  infantry_equipment_plasma_rifle_4_desc: ""
  infantry_equipment_plasma_rifle_5: "Плазменная винтовка 60-х годов" #NT!
  infantry_equipment_plasma_rifle_5_desc: ""
- infantry_equipment_railgun_rifle_1: "Прототип рельсотронной винтовки" #NT!
+ infantry_equipment_railgun_rifle_1: "Прототип рельсовой винтовки" #NT!
  infantry_equipment_railgun_rifle_1_desc: ""
- infantry_equipment_railgun_rifle_2: "Ранняя рельсотронная винтовка" #NT!
+ infantry_equipment_railgun_rifle_2: "Ранняя рельсовая винтовка" #NT!
  infantry_equipment_railgun_rifle_2_desc: ""
- infantry_equipment_railgun_rifle_3: "Рейлгановая винтовка" #NT!
+ infantry_equipment_railgun_rifle_3: "Рельсовая винтовка" #NT!
  infantry_equipment_railgun_rifle_3_desc: ""
- infantry_equipment_railgun_rifle_4: "Улучшенная рельсотронная винтовка" #NT!
+ infantry_equipment_railgun_rifle_4: "Улучшенная рельсовая винтовка" #NT!
  infantry_equipment_railgun_rifle_4_desc: ""
- infantry_equipment_railgun_rifle_5: "Усовершенствованная рельсотронная винтовка" #NT!
+ infantry_equipment_railgun_rifle_5: "Усовершенствованная винтовка-рельсотрон" #NT!
  infantry_equipment_railgun_rifle_5_desc: ""
- infantry_equipment_railgun_rifle_6: "Рейлгановая винтовка 60-х годов" #NT!
+ infantry_equipment_railgun_rifle_6: "Рельсовая винтовка 60-х годов" #NT!
  infantry_equipment_railgun_rifle_6_desc: ""
- infantry_equipment_smg: "Пистолеты-пулеметы" #NT!
- infantry_equipment_smg_desc: "Пистолеты-пулеметы очень эффективны против вражеской пехоты." #NT!
+ infantry_equipment_smg: "Оборудование для пистолетов-пулеметов" #NT!
+ infantry_equipment_smg_desc: "Пистолеты-пулеметы, высокоэффективные против вражеской пехоты." #NT!
  infantry_equipment_smg_0: "МП18" #NT!
- infantry_equipment_smg_0_desc: "Ранний пистолет-пулемет, высокоэффективный против незащищенной пехоты, но дорогой в производстве и немного более слабый против бронированных целей." #NT!
- infantry_equipment_smg_1: "1924 МГ" #NT!
+ infantry_equipment_smg_0_desc: "Ранний пистолет-пулемет, весьма эффективный против незащищенной пехоты, но дорогой в производстве и немного слабее против бронированных целей." #NT!
+ infantry_equipment_smg_1: "Томпсон М1928" #NT!
  infantry_equipment_smg_1_desc: "Усовершенствованная конструкция тяжелого пехотного пулемета." #NT!
  infantry_equipment_smg_2: "МП38" #NT!
  infantry_equipment_smg_2_desc: ""
@@ -396,7 +472,7 @@
  infantry_equipment_smg_4_desc: ""
  infantry_equipment_smg_5: "Пистолет-пулемет 45" #NT!
  infantry_equipment_smg_5_desc: ""
- infantry_equipment_smg_6: "Узи" #NT!
+ infantry_equipment_smg_6: "узи" #NT!
  infantry_equipment_smg_6_desc: ""
  infantry_equipment_smg_7: "МП5" #NT!
  infantry_equipment_smg_7_desc: ""
@@ -405,103 +481,123 @@
  infantry_equipment_smg_9: "Компактные штурмовые винтовки" #NT!
  infantry_equipment_smg_9_desc: ""
  flamethrower_equipment: "Огнеметы" #NT!
- flamethrower_equipment_desc: "Огнеметы очень эффективны против вражеской пехоты, но считаются негуманными и могут легко привести к несчастным случаям." #NT!
+ flamethrower_equipment_desc: "Огнеметы очень эффективны против вражеской пехоты, но считаются негуманным средством и могут легко привести к несчастным случаям." #NT!
  flamethrower_equipment_0: "Ранний огнемет" #NT!
  flamethrower_equipment_0_desc: "Ранний огнемет." #NT!
  PRS_flamethrower_equipment_0: "Wechselapparat (Wex)" #NT!
- PRS_flamethrower_equipment_1: "Фламменверфер 35" #NT!
+ PRS_flamethrower_equipment_1: "Пламенный огонь 35" #NT!
  flamethrower_equipment_1: "Огнемет" #NT!
- flamethrower_equipment_1_desc: "Улучшенный огнемет." #NT!
+ flamethrower_equipment_1_desc: "Усовершенствованный огнемет." #NT!
  infantry_equipment_shotgun_0: "Винчестер М1897" #NT!
- infantry_equipment_shotgun_0_desc: "Первые дробовики Pump-Action Slide были сконструированы в конце 19-го века и, хотя и доказали свою чрезвычайную эффективность в ближнем бою, очень медленно внедрялись во всем мире." #NT!
+ infantry_equipment_shotgun_0_desc: "Первые помповые ружья с продольно-скользящим затвором были созданы в конце XIX века и, хотя они доказали свою исключительную эффективность в ближнем бою, очень медленно применялись во всем мире." #NT!
  infantry_equipment_shotgun_1: "Ремингтон Модель 10" #NT!
- infantry_equipment_shotgun_1_desc: "Усовершенствованная версия, основанная на старой модели дробовика, обеспечивающая большую останавливающую способность и еще больше повышающую точность." #NT!
- infantry_equipment_early_mg: "Роторные пистолеты" #NT!
- infantry_equipment_early_mg_desc: "Роторные пушки — это орудия с быстрой перезарядкой, очень эффективные для подавления и борьбы с пехотой." #NT!
+ infantry_equipment_shotgun_1_desc: "Улучшенная версия, созданная на основе старой модели ружья, обеспечивающая большую останавливающую силу и еще большую точность." #NT!
+ infantry_equipment_early_mg: "Вращающиеся пушки" #NT!
+ infantry_equipment_early_mg_desc: "Роторные пушки — это быстроперезаряжающиеся орудия, очень эффективные для подавления и борьбы с пехотой." #NT!
   
- DEN_early_machine_gun_equipment_0: "Эспинголы" #NT!
- CSA_early_machine_gun_equipment_0: "Горгас Пушка" #NT!
+ DEN_early_machine_gun_equipment_0: "Эспинголес" #NT!
+ CSA_early_machine_gun_equipment_0: "Горгас Пистолет" #NT!
  SWE_early_machine_gun_equipment_1: "Кьельман" #NT!
- USA_early_machine_gun_equipment_1: "Агаровый пистолет" #NT!
+ USA_early_machine_gun_equipment_0: "Агаровый пистолет" #NT!
+ USA_early_machine_gun_equipment_1: "Пулемет Гатлинга" #NT!
  infantry_equipment_mg: "Пулеметы" #NT!
- infantry_equipment_mg_desc: "Пехотные пулеметы, очень эффективны для подавления и борьбы с пехотой." #NT!
- early_machine_gun_equipment_2: "Максим Гун" #NT!
- early_machine_gun_equipment_2_desc: "Maxim Gun — пулемет, управляемый отдачей. При скорострельности 600 выстр/мин он может косить пехоту противника с близкого расстояния. Однако на больших расстояниях он все еще не очень эффективен." #NT!
+ infantry_equipment_mg_desc: "Пехотные пулеметы, очень эффективные для подавления и борьбы с пехотой." #NT!
+ early_machine_gun_equipment_2: "Максим Ган" #NT!
+ early_machine_gun_equipment_2_desc: "Пулемет «Максим» — это пулемет с отдачей. При скорострельности 600 выстрелов в минуту он может выкашивать пехоту противника на близком расстоянии. Однако на больших дистанциях он все еще не очень эффективен." #NT!
  early_machine_gun_equipment_3: "Викерс МГ" #NT!
- early_machine_gun_equipment_3_desc: "Первый подход к созданию современного пулемета." #NT!
+ early_machine_gun_equipment_3_desc: "Первый подход к современному пулемету." #NT!
  infantry_equipment_mg_0: "Льюис Ган" #NT!
  infantry_equipment_mg_0_desc: "Ранний крупнокалиберный пулемет для пехоты." #NT!
- infantry_equipment_mg_1: "М1918 Браунинг" #NT!
- infantry_equipment_mg_1_desc: "М1918 — многоцелевой крупнокалиберный пулемет, его можно устанавливать на транспортные средства или устанавливать вручную во время наземных боевых действий." #NT!
+ infantry_equipment_mg_1: "Браунинг М1918" #NT!
+ infantry_equipment_mg_1_desc: "M1918 — многоцелевой крупнокалиберный пулемет, его можно устанавливать на транспортные средства или настраивать вручную во время наземных боевых действий." #NT!
+ CAN_infantry_equipment_mg_1: "Пушка Льюиса Mk2" #NT!
+ CAN_infantry_equipment_mg_1_short: "Льюис Мк2" #NT!
  infantry_equipment_mg_2: "Брен" #NT!
  infantry_equipment_mg_2_desc: ""
  infantry_equipment_mg_3: "МГ42" #NT!
+ CAN_infantry_equipment_mg_3: "Bren Gun Mk2" #NT!
+ CAN_infantry_equipment_mg_3_short: "Брен Мк2" #NT!
  infantry_equipment_mg_3_desc: ""
- infantry_equipment_mg_4: "М1919А6 Браунинг" #NT!
+ infantry_equipment_mg_4: "Браунинг M1919A6" #NT!
  infantry_equipment_mg_4_desc: ""
+ CAN_infantry_equipment_mg_4: "Брен Ган Мк3" #NT!
+ CAN_infantry_equipment_mg_4_short: "Брен Мк3" #NT!
  infantry_equipment_mg_5: "ПИЛА М60" #NT!
  infantry_equipment_mg_5_desc: ""
+ CAN_infantry_equipment_mg_5: "Ручной пулемет L2A1" #NT!
+ CAN_infantry_equipment_mg_5_short: "C2 LMG" #NT!
  infantry_equipment_mg_6: "М240" #NT!
  infantry_equipment_mg_6_desc: ""
+ CAN_infantry_equipment_mg_6: "Универсальный пулемет C6" #NT!
+ CAN_infantry_equipment_mg_6_short: "C6 ГПМГ" #NT!
  infantry_equipment_mg_7: "М249" #NT!
  infantry_equipment_mg_7_desc: ""
+ CAN_infantry_equipment_mg_7: "Легкий пулемет C9" #NT!
+ CAN_infantry_equipment_mg_7_short: "C9 ручного пулемета" #NT!
  infantry_equipment_mg_8: "М27 ИАР" #NT!
  infantry_equipment_mg_8_desc: ""
+ CAN_infantry_equipment_mg_3: "Ручной пулемет C9A1" #NT!
+ CAN_infantry_equipment_mg_3_short: "С9А1" #NT!
  infantry_equipment_mg_9: "ХМ-250" #NT!
  infantry_equipment_mg_9_desc: ""
  #Infantry Equipment 
   #Clothes 
    #Uniforms 
- uniform_equipment_0: "Средневековая броня" #NT!
- uniform_equipment_0_desc: "Гениальное сочетание металлических пластин, кольчуги и кожи, тщательно созданное для защиты рыцарей и воинов в средние века, обеспечивающее как защиту, так и статус на средневековом поле боя." #NT!
- uniform_equipment_1: "Униформа Снаряжение 1" #NT!
- uniform_equipment_1_desc: "Стандартизированное снаряжение и снаряжение, предоставляемое солдатам в XIX веке, отражает достижения в военной логистике и эволюцию военной одежды в ту эпоху." #NT!
- uniform_equipment_2: "Униформа Снаряжение 2" #NT!
- uniform_equipment_2_desc: "Изысканный и стандартизированный ансамбль военной экипировки, одежды и аксессуаров, созданный с учетом потребностей солдат XIX века и воплощающий военные традиции и достижения того времени." #NT!
- uniform_equipment_3: "Униформа Снаряжение 3" #NT!
- uniform_equipment_3_desc: "Развитый и модернизированный набор военной одежды, вооружения и снаряжения, созданный с учетом требований солдат середины XIX века и демонстрирующий постоянное развитие военных технологий и логистики." #NT!
- uniform_equipment_4: "Униформа Снаряжение 4" #NT!
- uniform_equipment_4_desc: "Современное военное снаряжение и снаряжение, тщательно разработанное и выданное солдатам в середине 1860-х годов, отражает достижения в вооружении, тактике и логистике в эту решающую эпоху войн." #NT!
- uniform_equipment_5: "Униформа Снаряжение 5" #NT!
- uniform_equipment_5_desc: "Передовой ансамбль военной одежды, снаряжения и вооружения, стандартизированный и принятый на вооружение в 1872 году, что представляет собой период технологических и тактических достижений в вооруженных силах различных стран." #NT!
- uniform_equipment_6: "Униформа Снаряжение 6" #NT!
- uniform_equipment_6_desc: "Модернизированная и изысканная военная одежда, вооружение и снаряжение, представленные в конце 1870-х годов, олицетворяют прогресс в военной логистике и технологиях в эту эпоху глобальных конфликтов и инноваций." #NT!
- uniform_equipment_7: "Униформа Снаряжение 7" #NT!
- uniform_equipment_7_desc: "Современная военная экипировка, униформа и вооружение, выданные солдатам в 1890-х годах, воплощающие последние достижения в области технологий, материалов и тактических решений в этот период быстрой военной эволюции." #NT!
- uniform_equipment_8: "Униформа Снаряжение 8" #NT!
- uniform_equipment_8_desc: "Новейшая военная одежда, снаряжение и оружие, тщательно разработанные и принятые на вооружение в 1895 году, представляют собой значительный шаг вперед в военных технологиях и стандартизации во времена геополитической напряженности и модернизации." #NT!
- uniform_equipment_9: "Униформа Снаряжение 9" #NT!
- uniform_equipment_9_desc: "Передовая и стандартизированная военная одежда, снаряжение и вооружение, представленные в начале 20 века, отражают влияние индустриализации, современных войн и меняющегося характера вооруженных конфликтов в этот поворотный период." #NT!
- uniform_equipment_10: "Униформа Снаряжение 10" #NT!
- uniform_equipment_10_desc: "Обновленная и специализированная военная одежда, снаряжение и оружие, представленные в 1915 году и демонстрирующие адаптации и инновации, созданные для решения задач позиционной войны и требований Первой мировой войны." #NT!
- uniform_equipment_11: "Униформа Снаряжение 11" #NT!
+ uniform_equipment_0: "Средневековые доспехи" #NT!
+ uniform_equipment_0_desc: "Гениальное сочетание металлических пластин, кольчуги и кожи, тщательно изготовленное для защиты рыцарей и воинов в Средние века, обеспечивающее как защиту, так и статус на средневековом поле боя." #NT!
+ uniform_equipment_1: "1700 Униформа" #NT!
+ uniform_equipment_1_desc: "Стандартизированное снаряжение и амуниция, выдававшиеся солдатам в XIX веке, отражали достижения военной логистики и эволюцию военной формы в эту эпоху." #NT!
+ uniform_equipment_2: "Униформа 1840 года" #NT!
+ uniform_equipment_2_desc: "Изысканный и стандартизированный комплект военного снаряжения, одежды и аксессуаров, созданный с учетом потребностей солдат XIX века и воплощающий военные традиции и достижения того времени." #NT!
+ uniform_equipment_3: "Униформа 1850 года" #NT!
+ uniform_equipment_3_desc: "Усовершенствованный и модернизированный комплект военной формы, оружия и снаряжения, разработанный с учетом потребностей солдат середины XIX века и демонстрирующий непрерывное развитие военных технологий и логистики." #NT!
+ uniform_equipment_4: "Униформа 1864 года" #NT!
+ uniform_equipment_4_desc: "Современное военное снаряжение и амуниция, тщательно разработанные и выданные солдатам в середине 1860-х годов, отражают достижения в области вооружения, тактики и логистики в эту решающую эпоху войны." #NT!
+ uniform_equipment_5: "Униформа 1872 года" #NT!
+ uniform_equipment_5_desc: "Современный комплект военной одежды, снаряжения и оружия, стандартизированный и принятый в 1872 году, олицетворяющий период технологических и тактических достижений в вооруженных силах разных стран." #NT!
+ uniform_equipment_6: "Униформа 1878 года" #NT!
+ uniform_equipment_6_desc: "Модернизированная и усовершенствованная военная форма, оружие и снаряжение, представленные в конце 1870-х годов, олицетворяют прогресс в военной логистике и технологиях в эту эпоху глобальных конфликтов и инноваций." #NT!
+ uniform_equipment_7: "Униформа 1890 года" #NT!
+ uniform_equipment_7_desc: "Современное военное снаряжение, униформа и оружие, выдававшиеся солдатам в 1890-х годах, воплощали в себе последние достижения в области технологий, материалов и тактических соображений в этот период стремительной военной эволюции." #NT!
+ uniform_equipment_8: "Униформа 1897 года" #NT!
+ uniform_equipment_8_desc: "Современная военная форма, снаряжение и оружие были тщательно разработаны и приняты на вооружение в 1897 году, что стало значительным шагом вперед в военных технологиях и стандартизации в эпоху геополитической напряженности и модернизации." #NT!
+ uniform_equipment_9: "Униформа 1905 года" #NT!
+ uniform_equipment_9_desc: "Современная и стандартизированная военная одежда, снаряжение и вооружение, появившиеся в начале XX века и отражающие влияние индустриализации, современных методов ведения войны и меняющегося характера вооруженных конфликтов в этот переломный период." #NT!
+ uniform_equipment_10: "Униформа 1915 года" #NT!
+ uniform_equipment_10_desc: "Обновленная и специализированная военная форма, снаряжение и оружие, представленные в 1915 году, демонстрируют адаптации и инновации, внесенные для решения задач позиционной войны и требований Первой мировой войны." #NT!
+ uniform_equipment_11: "Униформа 1919 года" #NT!
  uniform_equipment_11_desc: ""
- uniform_equipment_12: "Униформа Снаряжение 12" #NT!
+ uniform_durable_cloth_2: "Прочная ткань 2" #NT!
+ uniform_durable_cloth_2_desc: ""
+ uniform_equipment_12: "Униформа 1936 года" #NT!
  uniform_equipment_12_desc: ""
- uniform_equipment_13: "Униформа Снаряжение 13" #NT!
+ uniform_equipment_13: "Униформа 1939 года" #NT!
  uniform_equipment_13_desc: ""
- uniform_equipment_14: "Униформа Снаряжение 14" #NT!
+ uniform_equipment_14: "Униформа 1942 года" #NT!
  uniform_equipment_14_desc: ""
- uniform_equipment_15: "Униформа Снаряжение 15" #NT!
+ uniform_equipment_15: "Униформа 1945 года" #NT!
  uniform_equipment_15_desc: ""
- uniform_equipment_16: "Униформа Снаряжение 16" #NT!
+ uniform_equipment_16: "Униформа 1950 года" #NT!
  uniform_equipment_16_desc: ""
- uniform_equipment_17: "Униформа Снаряжение 17" #NT!
+ uniform_ceramic_plating: "Керамическое покрытие" #NT!
+ uniform_ceramic_plating_desc: ""
+ uniform_equipment_17: "Униформа 1972 года" #NT!
  uniform_equipment_17_desc: ""
- uniform_equipment_18: "Униформа Снаряжение 18" #NT!
+ uniform_equipment_18: "Униформа 1987 года" #NT!
  uniform_equipment_18_desc: ""
- uniform_equipment_19: "Униформа Снаряжение 19" #NT!
+ uniform_equipment_19: "Униформа 1990 года" #NT!
  uniform_equipment_19_desc: ""
- uniform_equipment_20: "Униформа Снаряжение 20" #NT!
+ uniform_equipment_20: "2000 Униформа" #NT!
  uniform_equipment_20_desc: ""
- uniform_equipment_21: "Униформа Снаряжение 21" #NT!
+ uniform_equipment_21: "Униформа 2010 года" #NT!
  uniform_equipment_21_desc: ""
- uniform_equipment_22: "Униформа Снаряжение 22" #NT!
- uniform_equipment_22_desc: ""мент 23" #NT!
+ uniform_equipment_22: "Униформа 2020 года" #NT!
+ uniform_equipment_22_desc: ""
+ uniform_equipment_23: "Униформа 2025 года" #NT!
  uniform_equipment_23_desc: ""
- uniform_equipment_24: "Униформа Снаряжение 24" #NT!
+ uniform_equipment_24: "2038 Униформа" #NT!
  uniform_equipment_24_desc: ""
- uniform_equipment_25: "Униформа Снаряжение 25" #NT!
+ uniform_equipment_25: "2050 Униформа" #NT!
  uniform_equipment_25_desc: ""
    # 
    #Camouflage 
@@ -512,45 +608,521 @@
   
    # 
    #Camels 
- camel_equipment_0: "Верблюжье оборудование" #NT!
+ camel_equipment_0: "Верблюжье снаряжение" #NT!
  camel_equipment_0_desc: ""
   # 
  # 
  #Infantry Specialist 
   #Cavalry 
- cavalry_equipment_0: "Лошадь и снаряжение" #NT!
+ cavalry_equipment_0: "Лошадь и сбруя" #NT!
  cavalry_equipment_0_desc: "Основное кавалерийское снаряжение." #NT!
  camel_equipment: "Верблюды" #NT!
  camel_equipment_desc: "Верблюды являются эффективными ездовыми животными в засушливых регионах." #NT!
  camel_equipment_0: "Верблюды" #NT!
  camel_equipment_0_short: "Верблюды" #NT!
- camel_equipment_0_desc: "Верблюды и различное снаряжение для использования их в качестве кавалерийской части." #NT!
- horse_artillery_equipment: "Передок лошади" #NT!
- horse_artillery_equipment_0: "Передок лошади" #NT!
- horse_artillery_equipment_0_desc: "Лошади, приспособленные для перетаскивания артиллерии." #NT!
+ camel_equipment_0_desc: "Верблюды и различное снаряжение для использования их в качестве кавалерийского отряда." #NT!
+ horse_artillery_equipment: "Лошадь передок" #NT!
+ horse_artillery_equipment_0: "Лошадь передок" #NT!
+ horse_artillery_equipment_0_desc: "Лошади, приспособленные для перевозки артиллерии." #NT!
   # 
  # 
- #Unarmored Vehicles 
- cannon_equipment_0: "Пушки" #NT!
- cannon_equipment_0_desc: ""
- cannon_equipment_1: "Пистолет" #NT!
- cannon_equipment_1_desc: "Улучшенная конструкция ранних моделей пушек." #NT!
+ #Heavy Weapons 
+  
+ field_artillery_equipment: "Оборудование для полевых орудий" #NT!
+ field_artillery_equipment_desc: ""
+ field_artillery_equipment_0: "1500 Пушка" #NT!
+ field_artillery_equipment_0_desc: "Самые ранние пушки, как правило, изготавливались из железа (если только они не были деревянными), из железа низкого качества и были сложны в использовании." #NT!
+ field_artillery_equipment_1: "1700 Пушка" #NT!
+ field_artillery_equipment_1_desc: "По мере развития артиллерийских технологий материалом для изготовления орудий в основном становилась бронза, а для облегчения прицеливания добавлялись цапфы." #NT!
+ tech_field_barrel_standardization: "Стандартизация ствола" #NT!
+ tech_field_barrel_standardization_desc: ""
+ field_artillery_equipment_2: "Полевая пушка 1800 г." #NT!
+ field_artillery_equipment_2_desc: "К этому времени технологии производства пушек достигли уровня, позволяющего производить более легкие конструкции, которые можно было размещать на высокомобильных лафетах и ​​использовать фиксированные или заранее подготовленные боеприпасы для более быстрой перезарядки." #NT!
+ field_artillery_equipment_3: "Полевая пушка 1840 г." #NT!
+ field_artillery_equipment_3_desc: "Последнее универсальное поколение бронзовых гладкоствольных ружей отличалось усовершенствованными прицельными приспособлениями, дальнейшей экономией веса, улучшенными замочными устройствами для повышения надежности в непогоду и усовершенствованными боеприпасами для большей разрушительной силы." #NT!
+ tech_bronze_artillery_equipment_0: "Бронзовое гладкоствольное полевое ружье 1855 г." #NT!
+ tech_bronze_artillery_equipment_0_desc: ""
+ tech_RBL_iron_artillery_equipment_0: "1855 Железный RBL полевой пушки" #NT!
+ tech_RBL_iron_artillery_0_desc: ""
+ tech_field_artillery_equipment_5: "1865 Железный полевой ствол RML" #NT!
+ tech_field_artillery_equipment_5_desc: ""
+ tech_steel_RBL_artillery_equipment_1: "Стальная полевая пушка RBL 1865 г." #NT!
+ tech_steel_RBL_artillery_equipment_1_desc: ""
+ tech_field_armstrong_screw: "Винт Армстронг" #NT!
+ tech_field_armstrong_screw_desc: "Винтовой затвор Armstrong — это революционное дополнение к артиллерии, которое наконец-то позволит нам создать артиллерийское орудие с казнозарядным устройством." #NT!
+ tech_field_interrupted_screw: "Прерывистый винт" #NT!
+ tech_field_interrupted_screw_desc: "Прерывистый винтовой затвор обеспечивает более надежное запирание, которое также происходит быстрее." #NT!
+ tech_1860s_artillery_hidden_complete: "Для исследования этой технологии требуется либо §G1870 Бронзовая полевая пушка RBL§!, либо §G1865 Железная полевая пушка RML§!." #NT!
+ tech_1870s_artillery_hidden_complete: "Для этой технологии требуется исследование либо §G1870 Полужелезного полевого ружья RBL§!, либо §G1870 Стального полевого ружья RBL§!." #NT!
+ field_artillery_equipment_4: "1855 Железный полевой ствол RML" #NT!
+ field_artillery_equipment_4_desc: ""
+ field_artillery_equipment_bronze_SB: "Бронзовое гладкоствольное полевое ружье 1855 г." #NT!
+ field_artillery_equipment_bronze_SB_desc: ""
+ field_artillery_equipment_bronze_RML: "Бронзовая полевая пушка RML 1860 г." #NT!
+ field_artillery_equipment_bronze_RML_desc: ""
+ field_artillery_equipment_bronze_RBL: "Бронзовая полевая пушка RBL 1870 г." #NT!
+ field_artillery_equipment_bronze_RBL_desc: ""
+ field_artillery_equipment_iron_RBL: "1860 Железный RBL полевой пистолет" #NT!
+ field_artillery_equipment_iron_RBL_desc: ""
+ field_artillery_equipment_steel_RBL_1: "Стальная полевая пушка RBL 1865 г." #NT!
+ field_artillery_equipment_steel_RBL_1_desc: ""
+ field_artillery_equipment_steel_RBL_2: "Стальная полевая пушка RBL 1870 г." #NT!
+ field_artillery_equipment_steel_RBL_2_desc: ""
+ field_artillery_equipment_5: "1865 Железный полевой ствол RML" #NT!
+ field_artillery_equipment_5_desc: "описание" #NT!
+ field_artillery_equipment_6: "Полужелезное полевое орудие RBL 1870 г." #NT!
+ field_artillery_equipment_6_desc: "описание" #NT!
+ field_artillery_equipment_7: "Полевая пушка 1880 г." #NT!
+ field_artillery_equipment_7_desc: "описание" #NT!
+ field_artillery_equipment_8: "Полевая пушка 1890 г." #NT!
+ field_artillery_equipment_8_desc: "описание" #NT!
+ field_artillery_equipment_9: "Полевая пушка 1900 г." #NT!
+ field_artillery_equipment_9_desc: "описание" #NT!
+ field_artillery_equipment_10: "Полевая пушка 1905 г." #NT!
+ field_artillery_equipment_10_desc: "описание" #NT!
+ field_artillery_equipment_11: "Полевая пушка 1915 г." #NT!
+ field_artillery_equipment_11_desc: "описание" #NT!
+ field_artillery_equipment_12: "Полевая пушка 1925 г." #NT!
+ field_artillery_equipment_12_desc: "описание" #NT!
+ field_artillery_equipment_13: "Полевая пушка 1935 г." #NT!
+ field_artillery_equipment_13_desc: "описание" #NT!
+ field_artillery_equipment_14: "Полевая пушка 1935 г." #NT!
+ field_artillery_equipment_14_desc: "описание" #NT!
+ field_artillery_equipment_15: "Полевая пушка 1940 г." #NT!
+ field_artillery_equipment_15_desc: "описание" #NT!
+ field_artillery_equipment_16: "Полевая пушка 1950 г." #NT!
+ field_artillery_equipment_16_desc: "описание" #NT!
+ tech_field_breech_blocks: "Клиновые затворы" #NT!
+ tech_field_breech_blocks_desc: "описание" #NT!
+ tech_field_hydraulic_recoil_mechanisms: "Гидравлические противооткатные механизмы" #NT!
+ tech_field_hydraulic_recoil_mechanisms_desc: "описание" #NT!
+ tech_howitzer_explosive_shells: "Разрывные снаряды" #NT!
+ tech_howitzer_explosive_shells_desc: "описание" #NT!
+ howitzer_artillery_equipment: "Гаубичная артиллерия" #NT!
+ howitzer_artillery_equipment_desc: ""
+ howitzer_artillery_equipment_0: "1800 Гаубица" #NT!
+ howitzer_artillery_equipment_0_desc: "описание" #NT!
+ howitzer_artillery_equipment_1: "1840 Гаубица" #NT!
+ howitzer_artillery_equipment_1_desc: "описание" #NT!
+ tech_howitzer_heavier_designs: "Более тяжелые конструкции" #NT!
+ tech_howitzer_heavier_designs_desc: "описание" #NT!
+ howitzer_artillery_equipment_2: "1860 Гаубица" #NT!
+ howitzer_artillery_equipment_2_desc: "описание" #NT!
+ howitzer_artillery_equipment_3: "1865 Гаубица" #NT!
+ howitzer_artillery_equipment_3_desc: "описание" #NT!
+ tech_howitzer_demolition_shells: "Подрывные снаряды" #NT!
+ tech_howitzer_demolition_shells_desc: "описание" #NT!
+ howitzer_artillery_equipment_4: "1875 Гаубица" #NT!
+ howitzer_artillery_equipment_4_desc: "описание" #NT!
+ howitzer_artillery_equipment_5: "1880 Гаубица" #NT!
+ howitzer_artillery_equipment_5_desc: "описание" #NT!
+ howitzer_artillery_equipment_6: "1890 Гаубица" #NT!
+ howitzer_artillery_equipment_6_desc: "описание" #NT!
+ howitzer_artillery_equipment_7: "1900 Гаубица" #NT!
+ howitzer_artillery_equipment_7_desc: "описание" #NT!
+ tech_howitzer_lining_plane_sights: "Прицелы Lineing-Plane" #NT!
+ tech_howitzer_lining_plane_sights_desc: "описание" #NT!
+ tech_howitzer_combined_fire_regiments: "Сводные пожарные полки" #NT!
+ tech_howitzer_combined_fire_regiments_desc: "описание" #NT!
+ tech_howitzer_artillery_equipment_7: "1900 Гаубица" #NT!
+ tech_howitzer_artillery_equipment_7_desc: "описание" #NT!
+ railway_gun_equipment: "Железнодорожные пушки" #NT!
+ railway_gun_equipment_desc: ""
+ railway_gun_equipment_0: "Железнодорожная пушка 1885 г." #NT!
+ railway_gun_equipment_0_desc: "описание" #NT!
+ railway_gun_equipment_1: "Железнодорожная пушка 1900 г." #NT!
+ railway_gun_equipment_1_desc: "описание" #NT!
+ railway_gun_equipment_2: "Железнодорожная пушка 1910 г." #NT!
+ railway_gun_equipment_2_desc: "описание" #NT!
+ railway_gun_equipment_3: "Железнодорожная пушка 1920 г." #NT!
+ railway_gun_equipment_3_desc: "описание" #NT!
+ railway_gun_equipment_4: "Железнодорожная пушка 1935 г." #NT!
+ railway_gun_equipment_4_desc: "описание" #NT!
+ rocket_artillery_equipment_0: "Ракета Конгрива" #NT!
+ rocket_artillery_equipment_0_desc: "Ракету «Конгрив» можно запускать по врагам на расстоянии до 900 метров." #NT!
+ rocket_artillery_equipment_1: "Ракета Хейла" #NT!
+ rocket_artillery_equipment_1_desc: "Ракета Хейла — это улучшенная и более точная версия ракеты Конгрива." #NT!
+ tech_rocket_artillery_spin_stablization: "Стабилизация вращения" #NT!
+ tech_rocket_artillery_spin_stablization_desc: "описание" #NT!
+ tech_rocket_artillery_staged_rockets: "Ступенчатые ракеты" #NT!
+ tech_rocket_artillery_staged_rockets_desc: "описание" #NT!
+ rocket_artillery_equipment_2: "1910 Реактивная артиллерия" #NT!
+ rocket_artillery_equipment_2_desc: "описание" #NT!
+ siege_artillery_equipment_0: "1750 Мортира" #NT!
+ siege_artillery_equipment_0_desc: "описание" #NT!
+ siege_artillery_equipment_1: "Осадное орудие 1820 г." #NT!
+ siege_artillery_equipment_1_desc: "описание" #NT!
+ siege_artillery_equipment_2: "Осадное орудие 1850 г." #NT!
+ siege_artillery_equipment_2_desc: "описание" #NT!
+ siege_artillery_equipment_3: "Осадное орудие 1860 г." #NT!
+ siege_artillery_equipment_3_desc: "описание" #NT!
+ tech_siege_grounded_shells: "Заземленные оболочки" #NT!
+ tech_siege_grounded_shells_desc: "описание" #NT!
+ siege_artillery_equipment_4: "Осадное орудие 1870 г." #NT!
+ siege_artillery_equipment_4_desc: "описание" #NT!
+ siege_artillery_equipment_5: "Осадное орудие 1880 г." #NT!
+ siege_artillery_equipment_5_desc: "описание" #NT!
+ siege_artillery_equipment_6: "Осадное орудие 1890 г." #NT!
+ siege_artillery_equipment_6_desc: "описание" #NT!
+ tech_siege_artillery_equipment_6_1: "Улучшения осадных орудий 1900 г." #NT!
+ tech_siege_artillery_equipment_6_1_desc: "описание" #NT!
+ siege_artillery_equipment_7: "Осадное орудие 1910 г." #NT!
+ siege_artillery_equipment_7_desc: "описание" #NT!
+ tech_siege_artillery_equipment_7_1: "Усовершенствования осадных орудий 1920 г." #NT!
+ tech_siege_artillery_equipment_7_1_desc: "описание" #NT!
+ siege_artillery_equipment_8: "Осадное орудие 1925 г." #NT!
+ siege_artillery_equipment_8_desc: "описание" #NT!
  # 
  #Armored Vehicles 
  # 
  #Civilian Vehicles 
- train_equipment_0: "Ранние поезда" #NT!
+ train_equipment: "Локомотивы" #NT!
+ train_equipment_desc: "Транспортные средства, предназначенные для перевозки больших объемов грузов или пассажиров на большие расстояния по железной дороге." #NT!
+ train_equipment_0: "Ранний паровоз" #NT!
  train_equipment_0_desc: ""
- train_equipment_1: "Поезд I" #NT!
+ train_equipment_1: "Паровоз" #NT!
  train_equipment_1_desc: ""
- train_equipment_2: "Поезд II" #NT!
+ train_equipment_2: "Поздний паровоз" #NT!
  train_equipment_2_desc: ""
- train_equipment_3: "Поезд III" #NT!
+ train_equipment_3: "Сочлененный паровоз" #NT!
  train_equipment_3_desc: ""
- train_equipment_4: "Поезд IV" #NT!
+ train_equipment_4: "Ранний тепловоз" #NT!
  train_equipment_4_desc: ""
- train_equipment_5: "Поезд V" #NT!
+ train_equipment_5: "Поздний тепловоз" #NT!
  train_equipment_5_desc: ""
- train_equipment_6: "Поезд VI" #NT!
+ train_equipment_6: "Электровоз" #NT!
  train_equipment_6_desc: ""
+ train_equipment_7: "Скоростной локомотив" #NT!
+ train_equipment_7_desc: ""
+ armored_train_equipment_0: "Ранние бронепоезда" #NT!
+ armored_train_equipment_0_desc: ""
+ armored_train_equipment_1: "Бронепоезд I" #NT!
+ armored_train_equipment_1_desc: ""
+ armored_train_equipment_2: "Бронепоезд II" #NT!
+ armored_train_equipment_2_desc: ""
+ armored_train_equipment_3: "Бронепоезд III" #NT!
+ armored_train_equipment_3_desc: ""
+ armored_train_equipment_4: "Бронепоезд IV" #NT!
+ armored_train_equipment_4_desc: ""
+ armored_train_equipment_5: "Бронепоезд V" #NT!
+ armored_train_equipment_5_desc: ""
+ armored_train_equipment_6: "Бронепоезд VI" #NT!
+ armored_train_equipment_6_desc: ""
+  
+ bicycle_equipment: "Велосипеды" #NT!
+ bicycle_equipment_0: "Велосипед 1890 года" #NT!
+ bicycle_equipment_0_desc: ""
+ bicycle_equipment_1: "Велосипед 1920 года" #NT!
+ bicycle_equipment_1_desc: ""
+ motorcycle_equipment: "Мотоциклы" #NT!
+ motorcycle_equipment_0: "Мотоцикл 1900 года" #NT!
+ motorcycle_equipment_0_desc: ""
+ motorcycle_equipment_1: "Мотоцикл 1905 года" #NT!
+ motorcycle_equipment_1_desc: ""
+ motorcycle_equipment_2: "Мотоцикл 1915 года" #NT!
+ motorcycle_equipment_2_desc: ""
  # 
+  
+  
+ infantry_equipment_rifle_0: "Перкуссионный мушкет" #NT!
+ infantry_equipment_rifle_0_desc: "Мушкеты с ударным механизмом более точны и имеют большую дальность стрельбы, чем предыдущие модели мушкетов." #NT!
+ machine_gun_equipment: "Пулеметы" #NT!
+ #  field_artillery_equipment: "Пушки" #NT!
+ #  field_artillery_equipment_desc: "Пушки." #NT!
+ #  field_artillery_equipment_0: "Пистолет для ствола" #NT!
+ #  field_artillery_equipment_0_desc: "Bore Gun — это усовершенствованная конструкция стандартной пушки." #NT!
+ #  field_artillery_equipment_1: "Гладкоствольное ружье" #NT!
+ #  field_artillery_equipment_1_desc: "Гладкоствольное ружье создает меньшее трение в стволе при стрельбе, что обеспечивает большую дальность стрельбы." #NT!
+ rifled_field_artillery_equipment_0: "Полевая пушка RML" #NT!
+ rifled_field_artillery_equipment_0_desc: "Полевое ружье, заряжаемое с дула." #NT!
+ rifled_field_artillery_equipment_0_improved: "Полевая пушка RML" #NT!
+ rifled_field_artillery_equipment_0_improved_desc: "Усовершенствованное полевое орудие, заряжаемое с дула." #NT!
+ rifled_field_artillery_equipment_1: "Полевая пушка RBL" #NT!
+ rifled_field_artillery_equipment_1_desc: "Это полевое ружье заряжается с казенной части, а не с дула, что обеспечивает более высокую скорострельность." #NT!
+ rifled_field_artillery_equipment_2: "Полевая пушка 1870 г." #NT!
+ rifled_field_artillery_equipment_2_desc: "Благодаря скользящему затвору и прерываемому затвору это полевое орудие стало еще более эффективным, чем его предшественники." #NT!
+ #  siege_gun_0: "Осадное орудие" #NT!
+ #  siege_gun_0_desc: "Тяжёлая пушка, используемая при осадах." #NT!
+ #  siege_gun_1: "Осадное орудие II" #NT!
+ #  siege_gun_1_desc: "Тяжёлая пушка, используемая при осадах." #NT!
+ #  siege_gun_2: "Осадное орудие III" #NT!
+ #  siege_gun_2_desc: "Тяжёлая пушка, используемая при осадах." #NT!
+ #  siege_gun_3: "Осадное орудие IV" #NT!
+ #  siege_gun_3_desc: "Тяжёлая пушка, используемая при осадах." #NT!
+ #  siege_gun_4: "Осадное орудие V" #NT!
+ #  siege_gun_4_desc: "Тяжёлая пушка, используемая при осадах." #NT!
+ #  siege_gun_5: "Осадное орудие VI" #NT!
+ #  siege_gun_5_desc: "Тяжёлая пушка, используемая при осадах." #NT!
+ howitzer_artillery_equipment_0: "Гаубица" #NT!
+ howitzer_artillery_equipment_0_desc: "Эта пушка может стрелять снарядами на сравнительно большие расстояния." #NT!
+ howitzer_artillery_equipment_1: "Нарезная гаубица" #NT!
+ howitzer_artillery_equipment_1_desc: "Этот усовершенствованный вариант пушки-гаубицы имеет нарезное орудие, что делает его более точным и мощным." #NT!
+ transport_equipment_0: "Крытый фургон" #NT!
+ transport_equipment_0_desc: "Крытая повозка, защищающая перевозимые грузы или людей от дождя и мусора." #NT!
+  #ASA 
+ ASA_infantry_equipment_rifle_0: "Мушкет ударный, модель 1842 г." #NT!
+ ASA_infantry_equipment_rifle_0_desc: "Мушкет Springfield Percussion M1842" #NT!
+  
+  #AUS 
+ AUS_infantry_equipment_rifle_0: "Пехотная стрела M/1798" #NT!
+ AUS_infantry_equipment_rifle_0_short: "Гевер М/1798" #NT!
+  #BAD 
+ BAD_infantry_equipment_rifle_0: "Badisches Infanteriegewehr M/1813" #NT!
+ BAD_infantry_equipment_rifle_0_short: "Гевер М/1813" #NT!
+ BAV_infantry_equipment_rifle_0: "Гевер 1801" #NT!
+ BAV_infantry_equipment_rifle_0_short: "Гевер 1801" #NT!
+  #BRE 
+ BRE_infantry_equipment_rifle_0: "Infanteriegewehr M/1809" #NT!
+ BRE_infantry_equipment_rifle_0_short: "М/1809" #NT!
+  #CSA 
+ CSA_field_artillery_equipment_0: "6-фунтовая пушка образца 1841 г." #NT!
+ CSA_field_artillery_equipment_0_short: "6-фунтовая пушка" #NT!
+ CSA_field_artillery_equipment_1: "12-фунтовая пушка Наполеон, модель 1857 г." #NT!
+ CSA_field_artillery_equipment_1_short: "12-фунтовый Наполеон" #NT!
+ CSA_rifled_field_artillery_equipment_0: "10-фунтовая винтовка Parrot Rifled Muzzle-Loader" #NT!
+ CSA_rifled_field_artillery_equipment_0_short: "10-фунтовая винтовка Parrot" #NT!
+ CSA_rifled_field_artillery_equipment_1: "12-фунтовая казнозарядная пушка Уитворта" #NT!
+ CSA_rifled_field_artillery_equipment_1_short: "12-фунтовая пушка Уитворта" #NT!
+ CSA_siege_gun_0: "200-фунтовая винтовка Parrot Rifled Muzzle-Loader" #NT!
+ CSA_siege_gun_0_short: "200-фунтовая винтовка Parrot" #NT!
+ CSA_howitzer_artillery_equipment_0: "12-фунтовая гаубица образца 1841 г." #NT!
+ CSA_howitzer_artillery_equipment_0_short: "12-фунтовая гаубица" #NT!
+ CSA_howitzer_artillery_equipment_1: "12-фунтовая лодочная гаубица Дальгрена" #NT!
+ CSA_howitzer_artillery_equipment_1_short: "12-фунтовая пушка Дальгрена" #NT!
+  #DEN 
+ DEN_infantry_equipment_rifle_0: "Кремневые ружья M/1807" #NT!
+ DEN_infantry_equipment_rifle_0_short: "Гевер М/1807" #NT!
+  #ENG 
+ ENG_cv_jet_fighter_equipment_1: "Hawker Си-Фьюри" #NT!
+ ENG_cv_jet_fighter_equipment_1_short: "Морская Ярость" #NT!
+ ENG_cv_jet_fighter_equipment_1_desc: ""
+ ENG_cv_jet_fighter_equipment_2: "de Havilland Sea-Vampire" #NT!
+ ENG_cv_jet_fighter_equipment_2_short: "Морской Вампир" #NT!
+ ENG_cv_jet_fighter_equipment_2_desc: ""
+ ENG_cv_jet_fighter_equipment_3: "de Havilland Си-Виксен" #NT!
+ ENG_cv_jet_fighter_equipment_3_short: "Морская Лисица" #NT!
+ ENG_cv_jet_fighter_equipment_3_desc: ""
+ ENG_cv_jet_fighter_equipment_4: "Хоукер Сиддели Харриер" #NT!
+ ENG_cv_jet_fighter_equipment_4_short: "Лунь" #NT!
+ ENG_cv_jet_fighter_equipment_4_desc: ""
+ ENG_cv_jet_fighter_equipment_5: "де Хэвилленд Джавелин" #NT!
+ ENG_cv_jet_fighter_equipment_5_short: "Копье" #NT!
+ ENG_cv_jet_fighter_equipment_5_desc: ""
+ ENG_jet_fighter_equipment_3: "Глостер Джавелин" #NT!
+ ENG_jet_fighter_equipment_3_short: "Копье" #NT!
+ ENG_jet_fighter_equipment_3_desc: ""
+ ENG_jet_fighter_equipment_4: "Хоукер Хантер" #NT!
+ ENG_jet_fighter_equipment_4_short: "Охотник" #NT!
+ ENG_jet_fighter_equipment_4_desc: ""
+ ENG_jet_fighter_equipment_5: "Электрическая молния на английском языке" #NT!
+ ENG_jet_fighter_equipment_5_short: "Молния" #NT!
+ ENG_jet_fighter_equipment_5_desc: ""
+ ENG_jet_fighter_equipment_6: "Panavia Tornado ECR" #NT!
+ ENG_jet_fighter_equipment_6_short: "Торнадо ЭЦР" #NT!
+ ENG_jet_fighter_equipment_6_desc: ""
+ ENG_jet_fighter_equipment_9: "Еврофайтер Тайфун" #NT!
+ ENG_jet_fighter_equipment_9_short: "Тайфун" #NT!
+ ENG_jet_fighter_equipment_9_desc: ""
+ ENG_jet_cas_equipment_4: "Хоукер Сиддели Харриер" #NT!
+ ENG_jet_cas_equipment_4_short: "Лунь" #NT!
+ ENG_jet_cas_equipment_4_desc: ""
+ ENG_modern_tank_equipment_2: "Центурион Мк3" #NT!
+ ENG_modern_tank_equipment_2_short: "Центурион Мк3" #NT!
+ ENG_mtb_1: "FV4201 Чифтен" #NT!
+ ENG_mtb_1_short: "Вождь" #NT!
+ ENG_mtb_1_desc: ""
+ ENG_mtb_2: "FV4201 Чифтен Мк.5" #NT!
+ ENG_mtb_2_short: "Чифтен Мк.5" #NT!
+ ENG_mtb_2_desc: ""
+ ENG_mtb_3: "FV4030/4 Челленджер 1" #NT!
+ ENG_mtb_3_short: "Претендент 1" #NT!
+ ENG_mtb_3_desc: ""
+ ENG_mtb_4: "FV4034 Челленджер 2" #NT!
+ ENG_mtb_4_short: "Претендент 2" #NT!
+ ENG_mtb_4_desc: ""
+ ENG_mtb_5: "FV4034 Челленджер 2E" #NT!
+ ENG_mtb_5_short: "Челленджер 2E" #NT!
+ ENG_mtb_5_desc: ""
+ ENG_mtb_6: "FV4034 Challenger 2 StreetFighter" #NT!
+ ENG_mtb_6_short: "Челленджер 2S" #NT!
+ ENG_mtb_6_desc: ""
+ ENG_future_tank_1: "FV4034 Challenger 2 Черная ночь" #NT!
+ ENG_future_tank_1_short: "C2 Черная ночь" #NT!
+ ENG_future_tank_1_desc: ""
+ ENG_infantry_equipment_smg_3: "Ланчестер" #NT!
+ ENG_infantry_equipment_smg_3_desc: ""
+  #FRA 
+ FRA_infantry_equipment_mg_0: "Шочат М1915" #NT!
+ FRA_infantry_equipment_mg_0_short: "CSRG 1915" #NT!
+ FRA_infantry_equipment_mg_0_desc: "Полковник Луи Шоша создал прототип пулеметчика в 1911 году с контроллером оружия Чарльзом Суттером. В 1915 году Франция обратилась к Полю Рибейроллю, который руководил фабрикой Cycles Gladiator, с просьбой производить этот пулемет (FM по-французски) серийно. Этот пулемет также известен как CSRG от Chauchat, Sutter, Ribeyrolles и Gladiator" #NT!
+ FRA_infantry_equipment_mg_1: "FM Chauchat M1918" #NT!
+ FRA_infantry_equipment_mg_1_short: "FM Chauchat M1918" #NT!
+ FRA_infantry_equipment_mg_1_desc: "Chauchat M1915 был адаптирован в 1918 году для армии США. Это был провал, который был заменен Browning BAR (Browning Automatic Rifle) M1918" #NT!
+ FRA_infantry_equipment_smg_0: "Пистолет-пулемет Шоша-Рибейроль 1918 г." #NT!
+ FRA_infantry_equipment_smg_0_short: "Рибейроль 1918" #NT!
+ FRA_infantry_equipment_smg_0_desc: "Шоша, Рибейроль и Суттер, которые проектировали пулеметчики, представили в 1918 году автоматчик. Это оружие должно было использоваться для защиты на ближней дистанции французских танкистов." #NT!
+ FRA_howitzer_artillery_equipment_0: "Кампанский обузье номиналом 12 ливров, модель 1853 года." #NT!
+ FRA_howitzer_artillery_equipment_0_short: "12-фунтовый Наполеон" #NT!
+ FRA_howitzer_artillery_equipment_0_desc: "12-фунтовая пушка Napoleon — тип canon-obusier (дословно «пушка-снаряд», «пушка-гаубица»), разработанный Францией в 1853 году. Ее эффективность и универсальность (она могла стрелять ядрами, снарядами, картечью или картечью) позволили ей заменить все предыдущие полевые орудия, особенно Canon de 8 и Canon de 12, а также две гаубицы системы Валле." #NT!
+ FRA_howitzer_artillery_equipment_1: "Канон 12 La Hitte, модель 1859 г." #NT!
+ FRA_howitzer_artillery_equipment_1_short: "12-фунтовый La Hitte" #NT!
+ FRA_howitzer_artillery_equipment_1_desc: "Система La Hitte, названная в честь французского генерала Дюко, графа де Ла Hitte, была артиллерийской системой, разработанной в марте 1858 года для внедрения нарезных дульнозарядных орудий во французской армии. La Hitte реализовала принцип, разработанный подполковником Трейлем де Болье." #NT!
+ FRA_rifled_field_artillery_equipment_2: "Canon de 24 La Hitte, модель 1867 г." #NT!
+ FRA_rifled_field_artillery_equipment_2_short: "Обепин" #NT!
+ FRA_rifled_field_artillery_equipment_2_desc: "Система La Hitte, названная в честь французского генерала Дюко, графа де Ла Hitte, была артиллерийской системой, разработанной в марте 1858 года для внедрения нарезных дульнозарядных орудий во французской армии. La Hitte реализовала принцип, разработанный подполковником Трейлем де Болье." #NT!
+ FRA_helmet_equipment_0: "Шлем М15 Адриан" #NT!
+ FRA_helmet_equipment_0_short: "Шлем М15 Адриан" #NT!
+ FRA_helmet_equipment_0_desc: "В позиционной войне основными причинами смерти являются потери в голове. Интендант-генерал Огюст-Луи Адриан разработал шлем для защиты солдат от осколков разрывающихся артиллерийских снарядов. Шлем не был разработан для защиты от прямого попадания винтовочных или пулеметных пуль. Его толщина составляет 0,7 мм, а вес — 0,7 кг. Эти характеристики слабее, чем у Stahlhelm M 1916 (немецкий шлем) и Brodie (британский шлем)." #NT!
+ FRA_armor_equipment_bicycle_0: "Велосипед Мишо" #NT!
+ FRA_armor_equipment_bicycle_0_short: "Велосипед Мишо" #NT!
+ FRA_armor_equipment_bicycle_0_desc: "В 1818 году Карл Дрез изобрел лошадку-денди, дрезину, транспортное средство, приводимое в движение человеком. Пьер Мишо, кузнец, адаптировал дрезину, добавив кривошипы и педали на переднее колесо. Он основал Michaux & Cie, первую компанию, которая производила велосипеды, называемые velocipede или Michaudine." #NT!
+ FRA_armor_equipment_steam_car_0: "Ла Мансель" #NT!
+ FRA_armor_equipment_steam_car_0_short: "Ла Мансель" #NT!
+ FRA_armor_equipment_steam_car_0_desc: "Колокольный литейщик Амедей-Эрнест Болле изобрел несколько паровых автомобилей. В 1873 году он создал L'Obéissante («Послушный»), способный перевозить 12 пассажиров со скоростью 30 км/ч. В 1878 году Амедей-Эрнест Болле изобрел La Mancelle, который обладал некоторыми передовыми характеристиками (для того периода) с задним приводом (через вал к дифференциалу, а затем через цепь к задним колесам) и независимой подвеской на всех четырех колесах. La Mancelle стал первым автомобилем, выпущенным серийно (50 экземпляров). Амедей-Эрнест Болле также изобрел Marie-Anne (автопоезд), La Nouvelle и La Rapide (рекорд скорости 62 км/ч)." #NT!
+ FRA_twelve_frigate: "Класс Паллада" #NT!
+ FRA_foureight_frigate: "Класс Гомер" #NT!
+ FRA_fivesix_frigate: "Класс Глоир" #NT!
+ FRA_sixone_frigate: "Класс пурпурный" #NT!
+ FRA_monoplane_equipment_1: "Моран-Солнье Л." #NT!
+ FRA_monoplane_equipment_1_short: "МоС-3" #NT!
+ FRA_monoplane_equipment_1_desc: ""
+ FRA_biplane_fighter_equipment: "Ньюпор 11" #NT!
+ FRA_biplane_fighter_equipment_short: "Ньюпор 11" #NT!
+ FRA_biplane_fighter_equipment_desc: "Dassault MD.452 Mystere" #NT!
+ FRA_jet_fighter_equipment_2: "Dassault MD.452 Mystere" #NT!
+ FRA_jet_fighter_equipment_2_short: "Mystere" #NT!
+ FRA_jet_fighter_equipment_2_desc: ""
+ FRA_jet_fighter_equipment_3: "Dassault Super Mystere B2" #NT!
+ FRA_jet_fighter_equipment_3_short: "СМ Б2" #NT!
+ FRA_jet_fighter_equipment_3_desc: ""
+ FRA_jet_fighter_equipment_4: "Дассо Мираж III" #NT!
+ FRA_jet_fighter_equipment_4_short: "Мираж III" #NT!
+ FRA_jet_fighter_equipment_4_desc: ""
+ FRA_jet_fighter_equipment_5: "Дассо Мираж G" #NT!
+ FRA_jet_fighter_equipment_5_short: "Мираж G" #NT!
+ FRA_jet_fighter_equipment_5_desc: ""
+ FRA_jet_fighter_equipment_6: "Дассо Мираж 2000" #NT!
+ FRA_jet_fighter_equipment_6_short: "Мираж 2000" #NT!
+ FRA_jet_fighter_equipment_6_desc: ""
+ FRA_jet_fighter_equipment_7: "Дассо Мираж IIING" #NT!
+ FRA_jet_fighter_equipment_7_short: "Мираж IIING" #NT!
+ FRA_jet_fighter_equipment_7_desc: ""
+ FRA_jet_fighter_equipment_9: "Дассо Рафаль" #NT!
+ FRA_jet_fighter_equipment_9_short: "Рафале" #NT!
+ FRA_jet_fighter_equipment_9_desc: ""
+ FRA_jet_tactical_bomber_equipment_1_short: "СО-4000" #NT!
+ FRA_jet_tactical_bomber_equipment_1: "SNCASO SO-4000" #NT!
+ FRA_jet_tactical_bomber_equipment_2_short: "Вотур IIB" #NT!
+ FRA_jet_tactical_bomber_equipment_2: "SNCASO SO-4050 Вотур IIB" #NT!
+ FRA_jet_tactical_bomber_equipment_3_short: "Вотур IIN" #NT!
+ FRA_jet_tactical_bomber_equipment_3: "SNCASO SO-4050 Вотур IIN" #NT!
+ FRA_light_tank_equipment_4: "AMX-13 75 Модель 51" #NT!
+ FRA_light_tank_equipment_4_short: "АМХ-13" #NT!
+ FRA_light_tank_equipment_4_desc: ""
+ FRA_light_tank_equipment_5: "Шар де 25 тонн Батиньоль-Шатийон" #NT!
+ FRA_light_tank_equipment_5_short: "Чар 25 тонн" #NT!
+ FRA_gw_tank_equipment: "Шнайдер CA1" #NT!
+ FRA_gw_tank_equipment_short: "Шнайдер CA1" #NT!
+ FRA_iw_tank_equipment: "Рено ФТ Кэнон" #NT!
+ FRA_iw_tank_equipment_short: "Рено ФТ" #NT!
+ FRA_modern_tank_equipment_2: "АМХ 50 тонн" #NT!
+ FRA_modern_tank_equipment_2_short: "АМХ 50" #NT!
+ FRA_mtb_1: "АМХ-30" #NT!
+ FRA_mtb_1_short: "АМХ-30" #NT!
+ FRA_mtb_2: "АМХ-30 Б" #NT!
+ FRA_mtb_2_short: "АМХ-30 Б" #NT!
+ FRA_mtb_3: "АМХ-40" #NT!
+ FRA_mtb_3_short: "АМХ-40" #NT!
+ FRA_mtb_4: "Леклер Серия 1" #NT!
+ FRA_mtb_4_short: "Леклерк 1" #NT!
+ FRA_mtb_5: "Леклер Серия 2" #NT!
+ FRA_mtb_5_short: "Леклерк 2" #NT!
+ FRA_mtb_6: "Leclerc Серия Серия XXI" #NT!
+ FRA_mtb_6_short: "Леклерк XXI" #NT!
+ FRA_future_tank_1: "Леклерк XLR" #NT!
+ FRA_future_tank_1_short: "Леклерк XLR" #NT!
+ FRA_future_tank_2: "Европейский основной боевой танк" #NT!
+ FRA_future_tank_2_short: "ЕМБТ" #NT!
+  #HAM 
+ HAM_infantry_equipment_rifle_0: "Infanteriegewehr M/1809" #NT!
+ HAM_infantry_equipment_rifle_0_short: "М/1809" #NT!
+  #HAN 
+ HAN_infantry_equipment_rifle_0: "Егербюкс М/1815" #NT!
+ HAN_infantry_equipment_rifle_0_short: "М/1815" #NT!
+  #HES 
+ HES_infantry_equipment_rifle_0: "Модель 1777 года, исправленная в стиле IX." #NT!
+ HES_infantry_equipment_rifle_0_short: "Модель 1777 исправленная" #NT!
+  #HSD 
+ HSD_infantry_equipment_rifle_0: "Модель 1777 года, исправленная в стиле IX." #NT!
+ HSD_infantry_equipment_rifle_0_short: "Модель 1777 исправленная" #NT!
+  #JAP 
+  #LCK 
+ LCK_infantry_equipment_rifle_0: "Infanteriegewehr M/1809" #NT!
+ LCK_infantry_equipment_rifle_0_short: "М/1809" #NT!
+  #LUX 
+ LUX_infantry_equipment_rifle_0: "Infanteriegewehr M/1809" #NT!
+ LUX_infantry_equipment_rifle_0_short: "М/1809" #NT!
+  #LVN 
+ LVN_infantry_equipment_rifle_0: "Пехотная стрела M/1798" #NT!
+ LVN_infantry_equipment_rifle_0_short: "Гевер М/1798" #NT!
+  #MCK 
+ MCK_infantry_equipment_rifle_0: "Lütticher Gewehr M/1813" #NT!
+ MCK_infantry_equipment_rifle_0_short: "Гевер М/1813" #NT!
+  #NAS 
+ NAS_infantry_equipment_rifle_0: "Модель 1777 года, исправленная в стиле IX." #NT!
+ NAS_infantry_equipment_rifle_0_short: "Модель 1777 исправленная" #NT!
+  #OLD 
+ OLD_infantry_equipment_rifle_0: "Infanteriegewehr M/1809" #NT!
+ OLD_infantry_equipment_rifle_0_short: "М/1809" #NT!
+  #PRS 
+ PRS_monoplane_equipment_1: "Фоккер М.5" #NT!
+ PRS_monoplane_equipment_1_short: "М.5" #NT!
+ PRS_monoplane_equipment_1_desc: ""
+ PRS_biplane_fighter_equipment: "Фоккер E.III" #NT!
+ PRS_biplane_fighter_equipment_short: "Э.III" #NT!
+ PRS_biplane_fighter_equipment_desc: ""
+ PRS_infantry_equipment_rifle_0: "Infanteriegewehr M/1809" #NT!
+ PRS_infantry_equipment_rifle_0_short: "М/1809" #NT!
+ PRS_infantry_equipment_shotgun_0: "Беккер 1899" #NT!
+ PRS_infantry_equipment_shotgun_1: "Вальтер 1918" #NT!
+ PRS_infantry_equipment_smg_0: "Машинный пистолет 18" #NT!
+ PRS_infantry_equipment_smg_0_short: "МП-18" #NT!
+ PRS_infantry_equipment_smg_1: "Машинный пистолет 28" #NT!
+ PRS_infantry_equipment_smg_1_short: "МП-28" #NT!
+ PRS_infantry_equipment_smg_2: "Машинный пистолет 38" #NT!
+ PRS_infantry_equipment_smg_2_short: "МП-38" #NT!
+ PRS_infantry_equipment_smg_3: "Машинный пистолет 40" #NT!
+ PRS_infantry_equipment_smg_3_short: "МП-40" #NT!
+ PRS_infantry_equipment_smg_4: "Машинный пистолет 41" #NT!
+ PRS_infantry_equipment_smg_4_short: "МП-41" #NT!
+ PRS_infantry_equipment_smg_5: "Volkssturmgewehr" #NT!
+ PRS_early_machine_gun_equipment_3: "Машиностроительный завод 08" #NT!
+ PRS_early_machine_gun_equipment_3_short: "МГ-08" #NT!
+ PRS_infantry_equipment_mg_0: "Машиностроительный завод 08/15" #NT!
+ PRS_infantry_equipment_mg_0_short: "МГ-08/15" #NT!
+ PRS_infantry_equipment_mg_1: "Bergmann Maschinengewehr 15nA" #NT!
+ PRS_infantry_equipment_mg_1_short: "МГ-15нА" #NT!
+ PRS_infantry_equipment_mg_2: "Машиностроительный завод 34" #NT!
+ PRS_infantry_equipment_mg_2_short: "МГ-34" #NT!
+ PRS_infantry_equipment_mg_3: "Машиненгевер 42" #NT!
+ PRS_infantry_equipment_mg_3_short: "МГ-42" #NT!
+ PRS_siege_gun_0: "9 см Каноне C/79" #NT!
+ PRS_siege_gun_1: "15 см Кольцо Каноне C/72" #NT!
+ PRS_siege_gun_2: "15 см Кольцо Каноне C/92" #NT!
+ PRS_siege_gun_3: "28 см гаубица L/12" #NT!
+ PRS_siege_gun_4: "28 см Haubitze L/14 i.R." #NT!
+  #CAN 
+ CAN_infantry_equipment_rifle_14: "Винтовка С1" #NT!
+ CAN_infantry_equipment_rifle_14_short: "Винтовка С1" #NT!
+ CAN_infantry_equipment_rifle_15: "Винтовка C1A1" #NT!
+ CAN_infantry_equipment_rifle_15_short: "Винтовка C1A1" #NT!
+ CAN_infantry_equipment_rifle_16: "Винтовка C1A1 с прицелом" #NT!
+ CAN_infantry_equipment_rifle_16_short: "Винтовка C1A1 (с оптическим прицелом)" #NT!
+ CAN_infantry_equipment_rifle_17: "Винтовка С7" #NT!
+ CAN_infantry_equipment_rifle_17_short: "Винтовка С7" #NT!
+ CAN_infantry_equipment_rifle_18: "Винтовка C7A1" #NT!
+ CAN_infantry_equipment_rifle_18_short: "Винтовка C7A1" #NT!
+ CAN_infantry_equipment_rifle_19: "Винтовка C7A2" #NT!
+ CAN_infantry_equipment_rifle_19_short: "Винтовка C7A2" #NT!
+ CAN_infantry_equipment_rifle_20: "Винтовка C7A2 6,5 мм" #NT!
+ CAN_infantry_equipment_rifle_20_short: "Винтовка C7A2 6,5 мм" #NT!

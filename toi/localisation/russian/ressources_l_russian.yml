@@ -1,72 +1,657 @@
 ﻿l_russian:
- PRODUCTION_MATERIALS_GRAIN: "Зерно" #NT!
- PRODUCTION_MATERIALS_COAL: "Уголь" #NT!
- PRODUCTION_MATERIALS_WOOD: "Древесина" #NT!
- PRODUCTION_MATERIALS_FABRIC: "Ткань" #NT!
- PRODUCTION_MATERIALS_MACHINE_PARTS: "Детали машин" #NT!
- PRODUCTION_MATERIALS_COTTON: "Хлопок" #NT!
- PRODUCTION_MATERIALS_IRON: "Железо" #NT!
- PRODUCTION_MATERIALS_PLASTICS: "Пластмассы" #NT!
- PRODUCTION_MATERIALS_TITANIUM: "Титан" #NT!
- PRODUCTION_MATERIALS_SILICATES: "Силикаты" #NT!
- PRODUCTION_MATERIALS_CERAMICS: "Керамика" #NT!
- PRODUCTION_MATERIALS_RARE_EARTH_METALS: "Редкоземельные металлы" #NT!
- PRODUCTION_MATERIALS_ELECTRONICS: "Электроника" #NT!
- PRODUCTION_MATERIALS_PORTABLE_POWER: "Портативный источник питания" #NT!
- oil: "Масло" #NT!
+  # 
+ resource_type_basic: "Базовый" #NT!
+ resource_type_basic_desc: ""
+ resource_type_advanced: "Передовой" #NT!
+ resource_type_advanced_desc: ""
+ resource_type_industrial: "Промышленный" #NT!
+ resource_type_industrial_desc: ""
+ resource_type_consumer: "Потребитель" #NT!
+ resource_type_consumer_desc: ""
+  # 
+  # 
+ food: "Еда" #NT!
+ food_desc: ""
+ food_texticon: "£food_texticon" #NT!
+ food_produced: "[?produced@food]" #NT!
+ food_consumed: "[?consumed@food]" #NT!
+ food_exported: "[?exported@food]" #NT!
+ food_imported: "[?imported@food]" #NT!
+ food_unused: "[?@food]" #NT!
+ food_base_price: "[?global.base_price@food]" #NT!
+ food_price: "[?price@food]" #NT!
+ PRODUCTION_MATERIALS_FOOD: "Еда" #NT!
+  
+ luxuries: "Роскошь" #NT!
+ luxuries_desc: ""
+ luxuries_texticon: "£luxuries_texticon" #NT!
+ luxuries_produced: "[?produced@luxuries]" #NT!
+ luxuries_consumed: "[?consumed@luxuries]" #NT!
+ luxuries_exported: "[?exported@luxuries]" #NT!
+ luxuries_imported: "[?imported@luxuries]" #NT!
+ luxuries_unused: "[?@luxuries]" #NT!
+ luxuries_base_price: "[?global.base_price@luxuries]" #NT!
+ luxuries_price: "[?price@luxuries]" #NT!
+ PRODUCTION_MATERIALS_LUXURIES: "Роскошь" #NT!
+  
  wood: "Древесина" #NT!
- cotton: "Хлопок" #NT!
+ wood_desc: ""
+ wood_texticon: "£wood_texticon" #NT!
+ wood_produced: "[?produced@wood]" #NT!
+ wood_consumed: "[?consumed@wood]" #NT!
+ wood_exported: "[?exported@wood]" #NT!
+ wood_imported: "[?imported@wood]" #NT!
+ wood_unused: "[?@wood]" #NT!
+ wood_base_price: "[?global.base_price@wood]" #NT!
+ wood_price: "[?price@wood]" #NT!
+ PRODUCTION_MATERIALS_WOOD: "Древесина" #NT!
+  
+ fiber: "Волокно" #NT!
+ fiber_desc: ""
+ fiber_texticon: "£fiber_texticon" #NT!
+ fiber_produced: "[?produced@fiber]" #NT!
+ fiber_consumed: "[?consumed@fiber]" #NT!
+ fiber_exported: "[?exported@fiber]" #NT!
+ fiber_imported: "[?imported@fiber]" #NT!
+ fiber_unused: "[?@fiber]" #NT!
+ fiber_base_price: "[?global.base_price@fiber]" #NT!
+ fiber_price: "[?price@fiber]" #NT!
+ PRODUCTION_MATERIALS_FIBER: "Волокно" #NT!
+  
  iron: "Железо" #NT!
- rubber: "Резина" #NT!
- aluminium: "Алюминий" #NT!
+ iron_desc: ""
+ iron_texticon: "£iron_texticon" #NT!
+ iron_produced: "[?produced@iron]" #NT!
+ iron_consumed: "[?consumed@iron]" #NT!
+ iron_exported: "[?exported@iron]" #NT!
+ iron_imported: "[?imported@iron]" #NT!
+ iron_unused: "[?@iron]" #NT!
+ iron_base_price: "[?global.base_price@iron]" #NT!
+ iron_price: "[?price@iron]" #NT!
+ PRODUCTION_MATERIALS_IRON: "Железо" #NT!
+  
  coal: "Уголь" #NT!
- fabric: "Ткань" #NT!
- steel: "Сталь" #NT!
- machine_parts: "Детали машин" #NT!
- tungsten: "вольфрам" #NT!
+ coal_desc: ""
+ coal_texticon: "£coal_texticon" #NT!
+ coal_produced: "[?produced@coal]" #NT!
+ coal_consumed: "[?consumed@coal]" #NT!
+ coal_exported: "[?exported@coal]" #NT!
+ coal_imported: "[?imported@coal]" #NT!
+ coal_unused: "[?@coal]" #NT!
+ coal_base_price: "[?global.base_price@coal]" #NT!
+ coal_price: "[?price@coal]" #NT!
+ PRODUCTION_MATERIALS_COAL: "Уголь" #NT!
+  
+ copper: "Медь" #NT!
+ copper_desc: ""
+ copper_texticon: "£copper_texticon" #NT!
+ copper_produced: "[?produced@copper]" #NT!
+ copper_consumed: "[?consumed@copper]" #NT!
+ copper_exported: "[?exported@copper]" #NT!
+ copper_imported: "[?imported@copper]" #NT!
+ copper_unused: "[?@copper]" #NT!
+ copper_base_price: "[?global.base_price@copper]" #NT!
+ copper_price: "[?price@copper]" #NT!
+ PRODUCTION_MATERIALS_COPPER: "Медь" #NT!
+  
+ valuables: "Ценности" #NT!
+ valuables_desc: ""
+ valuables_texticon: "£valuables_texticon" #NT!
+ valuables_produced: "[?produced@valuables]" #NT!
+ valuables_consumed: "[?consumed@valuables]" #NT!
+ valuables_exported: "[?exported@valuables]" #NT!
+ valuables_imported: "[?imported@valuables]" #NT!
+ valuables_unused: "[?@valuables]" #NT!
+ valuables_base_price: "[?global.base_price@valuables]" #NT!
+ valuables_price: "[?price@valuables]" #NT!
+ PRODUCTION_MATERIALS_VALUABLES: "Ценности" #NT!
+  
+ oil: "Масло" #NT!
+ oil_desc: ""
+ oil_texticon: "£oil_texticon" #NT!
+ oil_produced: "[?produced@oil]" #NT!
+ oil_consumed: "[?consumed@oil]" #NT!
+ oil_exported: "[?exported@oil]" #NT!
+ oil_imported: "[?imported@oil]" #NT!
+ oil_unused: "[?@oil]" #NT!
+ oil_base_price: "[?global.base_price@oil]" #NT!
+ oil_price: "[?price@oil]" #NT!
+ PRODUCTION_MATERIALS_OIL: "Нефть"
+  
+ rubber: "Резина" #NT!
+ rubber_desc: ""
+ rubber_texticon: "£rubber_texticon" #NT!
+ rubber_produced: "[?produced@rubber]" #NT!
+ rubber_consumed: "[?consumed@rubber]" #NT!
+ rubber_exported: "[?exported@rubber]" #NT!
+ rubber_imported: "[?imported@rubber]" #NT!
+ rubber_unused: "[?@rubber]" #NT!
+ rubber_base_price: "[?global.base_price@rubber]" #NT!
+ rubber_price: "[?price@rubber]" #NT!
+ PRODUCTION_MATERIALS_RUBBER: "Резина"
+  
+ aluminum: "Алюминий" #NT!
+ aluminum_desc: ""
+ aluminum_texticon: "£aluminum_texticon" #NT!
+ aluminum_produced: "[?produced@aluminum]" #NT!
+ aluminum_consumed: "[?consumed@aluminum]" #NT!
+ aluminum_exported: "[?exported@aluminum]" #NT!
+ aluminum_imported: "[?imported@aluminum]" #NT!
+ aluminum_unused: "[?@aluminum]" #NT!
+ aluminum_base_price: "[?global.base_price@aluminum]" #NT!
+ aluminum_price: "[?price@aluminum]" #NT!
+ PRODUCTION_MATERIALS_ALUMINUM: "Алюминий" #NT!
+  
  chromium: "Хром" #NT!
- portable_power: "Портативный источник питания" #NT!
- electronics: "Электроника"
+ chromium_desc: ""
+ chromium_texticon: "£chromium_texticon" #NT!
+ chromium_produced: "[?produced@chromium]" #NT!
+ chromium_consumed: "[?consumed@chromium]" #NT!
+ chromium_exported: "[?exported@chromium]" #NT!
+ chromium_imported: "[?imported@chromium]" #NT!
+ chromium_unused: "[?@chromium]" #NT!
+ chromium_base_price: "[?global.base_price@chromium]" #NT!
+ chromium_price: "[?price@chromium]" #NT!
+ PRODUCTION_MATERIALS_CHROMIUM: "Хром"
+  
+ tungsten: "Вольфрам" #NT!
+ tungsten_desc: ""
+ tungsten_texticon: "£tungsten_texticon" #NT!
+ tungsten_produced: "[?produced@tungsten]" #NT!
+ tungsten_consumed: "[?consumed@tungsten]" #NT!
+ tungsten_exported: "[?exported@tungsten]" #NT!
+ tungsten_imported: "[?imported@tungsten]" #NT!
+ tungsten_unused: "[?@tungsten]" #NT!
+ tungsten_base_price: "[?global.base_price@tungsten]" #NT!
+ tungsten_price: "[?price@tungsten]" #NT!
+ PRODUCTION_MATERIALS_TUNGSTEN: "Вольфрам"
+  
  titanium: "Титан" #NT!
- silicates: "Силикаты" #NT!
- rare_earth_metals: "Редкоземельные металлы" #NT!
- plastics: "Пластмассы" #NT!
- ceramics: "Керамика" #NT!
- coal_desc: "Уголь используется для заправки современной техники, такой как поезда и корабли, а также является ключевым ингредиентом при создании §YSteel§! и §YДетали машин§!." #NT!
- wood_desc: "Дерево — очень универсальный материал, используемый при строительстве винтовок, кораблей и вообще большинства других вещей, которые вы только можете себе представить." #NT!
- fabric_desc: "Ткань в первую очередь нужна для униформы, но может использоваться и на других производственных площадках." #NT!
- machine_parts_desc: "Детали машин – это продвинутый вид ресурса, используемый в технологически сложном оборудовании." #NT!
+ titanium_desc: ""
+ titanium_texticon: "£titanium_texticon" #NT!
+ titanium_produced: "[?produced@titanium]" #NT!
+ titanium_consumed: "[?consumed@titanium]" #NT!
+ titanium_exported: "[?exported@titanium]" #NT!
+ titanium_imported: "[?imported@titanium]" #NT!
+ titanium_unused: "[?@titanium]" #NT!
+ titanium_base_price: "[?global.base_price@titanium]" #NT!
+ titanium_price: "[?price@titanium]" #NT!
+ PRODUCTION_MATERIALS_TITANIUM: "Титан" #NT!
+  
+ silicon: "Кремний" #NT!
+ silicon_desc: ""
+ silicon_texticon: "£silicon_texticon" #NT!
+ silicon_produced: "[?produced@silicon]" #NT!
+ silicon_consumed: "[?consumed@silicon]" #NT!
+ silicon_exported: "[?exported@silicon]" #NT!
+ silicon_imported: "[?imported@silicon]" #NT!
+ silicon_unused: "[?@silicon]" #NT!
+ silicon_base_price: "[?global.base_price@silicon]" #NT!
+ silicon_price: "[?price@silicon]" #NT!
+ PRODUCTION_MATERIALS_SILICON: "Кремний" #NT!
+  
+ rare_earths: "Редкоземельные металлы" #NT!
+ rare_earths_desc: ""
+ rare_earths_texticon: "£rare_earths_texticon" #NT!
+ rare_earths_produced: "[?produced@rare_earths]" #NT!
+ rare_earths_consumed: "[?consumed@rare_earths]" #NT!
+ rare_earths_exported: "[?exported@rare_earths]" #NT!
+ rare_earths_imported: "[?imported@rare_earths]" #NT!
+ rare_earths_unused: "[?@rare_earths]" #NT!
+ rare_earths_base_price: "[?global.base_price@rare_earths]" #NT!
+ rare_earths_price: "[?price@rare_earths]" #NT!
+ PRODUCTION_MATERIALS_RARE_EARTHS: "Редкоземельные металлы" #NT!
+  
+ steel: "Сталь" #NT!
+ steel_desc: ""
+ steel_texticon: "£steel_texticon" #NT!
+ steel_produced: "[?produced@steel]" #NT!
+ steel_consumed: "[?consumed@steel]" #NT!
+ steel_exported: "[?exported@steel]" #NT!
+ steel_imported: "[?imported@steel]" #NT!
+ steel_unused: "[?@steel]" #NT!
+ steel_base_price: "[?global.base_price@steel]" #NT!
+ steel_price: "[?price@steel]" #NT!
+ PRODUCTION_MATERIALS_STEEL: "Сталь"
+  
+ machinery: "Машины" #NT!
+ machinery_desc: ""
+ machinery_texticon: "£machinery_texticon" #NT!
+ machinery_produced: "[?produced@machinery]" #NT!
+ machinery_consumed: "[?consumed@machinery]" #NT!
+ machinery_exported: "[?exported@machinery]" #NT!
+ machinery_imported: "[?imported@machinery]" #NT!
+ machinery_unused: "[?@machinery]" #NT!
+ machinery_base_price: "[?global.base_price@machinery]" #NT!
+ machinery_price: "[?price@machinery]" #NT!
+ PRODUCTION_MATERIALS_MACHINERY: "Машины" #NT!
+  
+ chemicals: "Химикаты" #NT!
+ chemicals_desc: ""
+ chemicals_texticon: "£chemicals_texticon" #NT!
+ chemicals_produced: "[?produced@chemicals]" #NT!
+ chemicals_consumed: "[?consumed@chemicals]" #NT!
+ chemicals_exported: "[?exported@chemicals]" #NT!
+ chemicals_imported: "[?imported@chemicals]" #NT!
+ chemicals_unused: "[?@chemicals]" #NT!
+ chemicals_base_price: "[?global.base_price@chemicals]" #NT!
+ chemicals_price: "[?price@chemicals]" #NT!
+ PRODUCTION_MATERIALS_CHEMICALS: "Химикаты" #NT!
+  
+ plastics: "Пластик" #NT!
+ plastics_desc: ""
+ plastics_texticon: "£plastics_texticon" #NT!
+ plastics_produced: "[?produced@plastics]" #NT!
+ plastics_consumed: "[?consumed@plastics]" #NT!
+ plastics_exported: "[?exported@plastics]" #NT!
+ plastics_imported: "[?imported@plastics]" #NT!
+ plastics_unused: "[?@plastics]" #NT!
+ plastics_base_price: "[?global.base_price@plastics]" #NT!
+ plastics_price: "[?price@plastics]" #NT!
+ PRODUCTION_MATERIALS_PLASTICS: "Пластик" #NT!
+  
+ composites: "Композиты" #NT!
+ composites_desc: ""
+ composites_texticon: "£composites_texticon" #NT!
+ composites_produced: "[?produced@composites]" #NT!
+ composites_consumed: "[?consumed@composites]" #NT!
+ composites_exported: "[?exported@composites]" #NT!
+ composites_imported: "[?imported@composites]" #NT!
+ composites_unused: "[?@composites]" #NT!
+ composites_base_price: "[?global.base_price@composites]" #NT!
+ composites_price: "[?price@composites]" #NT!
+ PRODUCTION_MATERIALS_COMPOSITES: "Композиты" #NT!
+  
+ electronics: "Электроника"
+ electronics_desc: ""
+ electronics_texticon: "£electronics_texticon" #NT!
+ electronics_produced: "[?produced@electronics]" #NT!
+ electronics_consumed: "[?consumed@electronics]" #NT!
+ electronics_exported: "[?exported@electronics]" #NT!
+ electronics_imported: "[?imported@electronics]" #NT!
+ electronics_unused: "[?@electronics]" #NT!
+ electronics_base_price: "[?global.base_price@electronics]" #NT!
+ electronics_price: "[?price@electronics]" #NT!
+ PRODUCTION_MATERIALS_ELECTRONICS: "Электроника" #NT!
+  
+ portable_power: "Портативные источники питания" #NT!
+ portable_power_desc: ""
+ portable_power_texticon: "£portable_power_texticon" #NT!
+ portable_power_produced: "[?produced@portable_power]" #NT!
+ portable_power_consumed: "[?consumed@portable_power]" #NT!
+ portable_power_exported: "[?exported@portable_power]" #NT!
+ portable_power_imported: "[?imported@portable_power]" #NT!
+ portable_power_unused: "[?@portable_power]" #NT!
+ portable_power_base_price: "[?global.base_price@portable_power]" #NT!
+ portable_power_price: "[?price@portable_power]" #NT!
+ PRODUCTION_MATERIALS_PORTABLE_POWER: "Портативные источники питания" #NT!
+  
+ tools: "Инструменты" #NT!
+ tools_desc: ""
+ tools_texticon: "£tools_texticon" #NT!
+ tools_produced: "[?produced@tools]" #NT!
+ tools_consumed: "[?consumed@tools]" #NT!
+ tools_exported: "[?exported@tools]" #NT!
+ tools_imported: "[?imported@tools]" #NT!
+ tools_unused: "[?@tools]" #NT!
+ tools_base_price: "[?global.base_price@tools]" #NT!
+ tools_price: "[?price@tools]" #NT!
+ PRODUCTION_MATERIALS_TOOLS: "Инструменты" #NT!
+  
+ consumer_goods: "Потребительские товары" #NT!
+ consumer_goods_desc: ""
+ consumer_goods_texticon: "£consumer_goods_texticon" #NT!
+ consumer_goods_produced: "[?produced@consumer_goods]" #NT!
+ consumer_goods_consumed: "[?consumed@consumer_goods]" #NT!
+ consumer_goods_exported: "[?exported@consumer_goods]" #NT!
+ consumer_goods_imported: "[?imported@consumer_goods]" #NT!
+ consumer_goods_unused: "[?@consumer_goods]" #NT!
+ consumer_goods_base_price: "[?global.base_price@consumer_goods]" #NT!
+ consumer_goods_price: "[?price@consumer_goods]" #NT!
+ PRODUCTION_MATERIALS_CONSUMER_GOODS: "Потребительские товары" #NT!
+  
+ textiles: "Текстиль" #NT!
+ textiles_desc: ""
+ textiles_texticon: "£textiles_texticon" #NT!
+ textiles_produced: "[?produced@textiles]" #NT!
+ textiles_consumed: "[?consumed@textiles]" #NT!
+ textiles_exported: "[?exported@textiles]" #NT!
+ textiles_imported: "[?imported@textiles]" #NT!
+ textiles_unused: "[?@textiles]" #NT!
+ textiles_base_price: "[?global.base_price@textiles]" #NT!
+ textiles_price: "[?price@textiles]" #NT!
+ PRODUCTION_MATERIALS_TEXTILES: "Текстиль" #NT!
+  
+ vehicles: "Транспортные средства" #NT!
+ vehicles_desc: ""
+ vehicles_texticon: "£vehicles_texticon" #NT!
+ vehicles_produced: "[?produced@vehicles]" #NT!
+ vehicles_consumed: "[?consumed@vehicles]" #NT!
+ vehicles_exported: "[?exported@vehicles]" #NT!
+ vehicles_imported: "[?imported@vehicles]" #NT!
+ vehicles_unused: "[?@vehicles]" #NT!
+ vehicles_base_price: "[?global.base_price@vehicles]" #NT!
+ vehicles_price: "[?price@vehicles]" #NT!
+ PRODUCTION_MATERIALS_VEHICLES: "Транспортные средства" #NT!
+  
+ appliances: "Бытовая техника" #NT!
+ appliances_desc: ""
+ appliances_texticon: "£appliances_texticon" #NT!
+ appliances_produced: "[?produced@appliances]" #NT!
+ appliances_consumed: "[?consumed@appliances]" #NT!
+ appliances_exported: "[?exported@appliances]" #NT!
+ appliances_imported: "[?imported@appliances]" #NT!
+ appliances_unused: "[?@appliances]" #NT!
+ appliances_base_price: "[?global.base_price@appliances]" #NT!
+ appliances_price: "[?price@appliances]" #NT!
+ PRODUCTION_MATERIALS_APPLIANCES: "Бытовая техника" #NT!
+  
+ computers: "Компьютеры" #NT!
+ computers_desc: ""
+ computers_texticon: "£computers_texticon" #NT!
+ computers_produced: "[?produced@computers]" #NT!
+ computers_consumed: "[?consumed@computers]" #NT!
+ computers_exported: "[?exported@computers]" #NT!
+ computers_imported: "[?imported@computers]" #NT!
+ computers_unused: "[?@computers]" #NT!
+ computers_base_price: "[?global.base_price@computers]" #NT!
+ computers_price: "[?price@computers]" #NT!
+ PRODUCTION_MATERIALS_COMPUTERS: "Компьютеры" #NT!
+  
+ electricity: "Электричество" #NT!
+ electricity_desc: ""
+ electricity_texticon: "£electricity_texticon" #NT!
+ electricity_produced: "[?produced@electricity]" #NT!
+ electricity_consumed: "[?consumed@electricity]" #NT!
+ electricity_exported: "[?exported@electricity]" #NT!
+ electricity_imported: "[?imported@electricity]" #NT!
+ electricity_unused: "[?@electricity]" #NT!
+ electricity_base_price: "[?global.base_price@electricity]" #NT!
+ electricity_price: "[?price@electricity]" #NT!
+ PRODUCTION_MATERIALS_ELECTRICITY: "Электричество" #NT!
+  
+ services: "Услуги" #NT!
+ services_desc: ""
+ services_texticon: "£services_texticon" #NT!
+ services_produced: "[?produced@services]" #NT!
+ services_consumed: "[?consumed@services]" #NT!
+ services_exported: "[?exported@services]" #NT!
+ services_imported: "[?imported@services]" #NT!
+ services_unused: "[?@services]" #NT!
+ services_base_price: "[?global.base_price@services]" #NT!
+ services_price: "[?price@services]" #NT!
+ PRODUCTION_MATERIALS_SERVICES: "Услуги" #NT!
+  
+ entertainment: "Развлечение" #NT!
+ entertainment_desc: ""
+ entertainment_texticon: "£entertainment_texticon" #NT!
+ entertainment_produced: "[?produced@entertainment]" #NT!
+ entertainment_consumed: "[?consumed@entertainment]" #NT!
+ entertainment_exported: "[?exported@entertainment]" #NT!
+ entertainment_imported: "[?imported@entertainment]" #NT!
+ entertainment_unused: "[?@entertainment]" #NT!
+ entertainment_base_price: "[?global.base_price@entertainment]" #NT!
+ entertainment_price: "[?price@entertainment]" #NT!
+ PRODUCTION_MATERIALS_ENTERTAINMENT: "Развлечение" #NT!
+  # 
+  # Modifiers 
+ state_resource_food: "Местная £food_texticon Еда" #NT!
+ state_resource_deposit_food: "Местный £food_texticon Депозит на продукты питания" #NT!
+ state_resource_cost_food: "Местное £food_texticon потребление продуктов питания" #NT!
+ temporary_state_resource_food: "Местная £food_texticon Еда" #NT!
+ country_resource_food: "£food_texticon Еда" #NT!
+ country_resource_cost_food: "£food_texticon Потребление пищи" #NT!
+  
+ state_resource_luxuries: "Местный £luxuries_texticon Роскошь" #NT!
+ state_resource_deposit_luxuries: "Местный £luxuries_texticon Депозит класса люкс" #NT!
+ state_resource_cost_luxuries: "Местный £luxuries_texticon Потребление предметов роскоши" #NT!
+ temporary_state_resource_luxuries: "Местный £luxuries_texticon Роскошь" #NT!
+ country_resource_luxuries: "£luxuries_texticon Роскошь" #NT!
+ country_resource_cost_luxuries: "£luxuries_texticon Потребление предметов роскоши" #NT!
+  
+ state_resource_wood: "Местный £wood_texticon Дерево" #NT!
+ state_resource_deposit_wood: "Местный £wood_texticon Депозит древесины" #NT!
+ state_resource_cost_wood: "Местный £wood_texticon Потребление древесины" #NT!
+ temporary_state_resource_wood: "Местный £wood_texticon Дерево" #NT!
+ country_resource_wood: "£wood_texticon Дерево" #NT!
+ country_resource_cost_wood: "£wood_texticon Расход древесины" #NT!
+  
+ state_resource_fiber: "Локальные £fiber_texticon волокна" #NT!
+ state_resource_deposit_fiber: "Местный £fiber_texticon Депозит волокон" #NT!
+ state_resource_cost_fiber: "Местное потребление £fiber_texticon волокон" #NT!
+ temporary_state_resource_fiber: "Локальные £fiber_texticon волокна" #NT!
+ country_resource_fiber: "£fiber_texticon Волокна" #NT!
+ country_resource_cost_fiber: "£fiber_texticon Потребление волокон" #NT!
+  
+ state_resource_iron: "Местный £iron_texticon Железо" #NT!
+ state_resource_deposit_iron: "Местное £iron_texticon месторождение железа" #NT!
+ state_resource_cost_iron: "Местное £iron_texticon Потребление железа" #NT!
+ temporary_state_resource_iron: "Местный £iron_texticon Железо" #NT!
+ country_resource_iron: "£iron_texticon Железо" #NT!
+ country_resource_cost_iron: "£iron_texticon Потребление железа" #NT!
+  
+ state_resource_coal: "Местный £coal_texticon Уголь" #NT!
+ state_resource_deposit_coal: "Местное £coal_texticon Угольное месторождение" #NT!
+ state_resource_cost_coal: "Местное £coal_texticon потребление угля" #NT!
+ temporary_state_resource_coal: "Местный £coal_texticon Уголь" #NT!
+ country_resource_coal: "£coal_texticon Уголь" #NT!
+ country_resource_cost_coal: "£coal_texticon Потребление угля" #NT!
+  
+ state_resource_copper: "Местный £copper_texticon Медь" #NT!
+ state_resource_deposit_copper: "Местный £copper_texticon Месторождение меди" #NT!
+ state_resource_cost_copper: "Местное £copper_texticon потребление меди" #NT!
+ temporary_state_resource_copper: "Местный £copper_texticon Медь" #NT!
+ country_resource_copper: "£copper_texticon Медь" #NT!
+ country_resource_cost_copper: "£copper_texticon Потребление меди" #NT!
+  
+ state_resource_valuables: "Местные £valuables_texticon Ценности" #NT!
+ state_resource_deposit_valuables: "Местный £valuables_texticon Депозит ценностей" #NT!
+ state_resource_cost_valuables: "Местное £valuables_texticon Ценности Потребление" #NT!
+ temporary_state_resource_valuables: "Местные £valuables_texticon Ценности" #NT!
+ country_resource_valuables: "£valuables_texticon Ценности" #NT!
+ country_resource_cost_valuables: "£valuables_texticon Потребление ценностей" #NT!
+  
+ state_resource_oil: "Местный £oil_texticon Oil" #NT!
+ state_resource_deposit_oil: "Местное £oil_texticon Нефтяное месторождение" #NT!
+ state_resource_cost_oil: "Местный £oil_texticon Расход масла" #NT!
+ temporary_state_resource_oil: "Местный £oil_texticon Oil" #NT!
+ country_resource_oil: "£oil_texticon Масло" #NT!
+ country_resource_cost_oil: "£oil_texticon Расход масла" #NT!
+  
+ state_resource_rubber: "Местный £rubber_texticon Резина" #NT!
+ state_resource_deposit_rubber: "Местный £rubber_texticon Резиновый депозит" #NT!
+ state_resource_cost_rubber: "Местное £rubber_texticon потребление резины" #NT!
+ temporary_state_resource_rubber: "Местный £rubber_texticon Резина" #NT!
+ country_resource_rubber: "£rubber_texticon Резина" #NT!
+ country_resource_cost_rubber: "£rubber_texticon Расход резины" #NT!
+  
+ state_resource_aluminum: "Местный £aluminum_texticon Алюминий" #NT!
+ state_resource_deposit_aluminum: "Местный £aluminum_texticon Алюминиевый депозит" #NT!
+ state_resource_cost_aluminum: "Местное £aluminum_texticon Потребление алюминия" #NT!
+ temporary_state_resource_aluminum: "Местный £aluminum_texticon Алюминий" #NT!
+ country_resource_aluminum: "£aluminum_texticon Алюминий" #NT!
+ country_resource_cost_aluminum: "£aluminum_texticon Потребление алюминия" #NT!
+  
+ state_resource_tungsten: "Местный £tungsten_texticon Вольфрам" #NT!
+ state_resource_deposit_tungsten: "Местное £tungsten_texticon месторождение вольфрама" #NT!
+ state_resource_cost_tungsten: "Местное £tungsten_texticon потребление вольфрама" #NT!
+ temporary_state_resource_tungsten: "Местный £tungsten_texticon Вольфрам" #NT!
+ country_resource_tungsten: "£tungsten_texticon Вольфрам" #NT!
+ country_resource_cost_tungsten: "£tungsten_texticon Потребление вольфрама" #NT!
+  
+ state_resource_chromium: "Локальный £chromium_texticon Chromium" #NT!
+ state_resource_deposit_chromium: "Местное £chromium_texticon месторождение хрома" #NT!
+ state_resource_cost_chromium: "Местное £chromium_texticon Потребление хрома" #NT!
+ temporary_state_resource_chromium: "Локальный £chromium_texticon Chromium" #NT!
+ country_resource_chromium: "£chromium_texticon Хром" #NT!
+ country_resource_cost_chromium: "£chromium_texticon Потребление хрома" #NT!
+  
+ state_resource_titanium: "Местный £titanium_texticon Титан" #NT!
+ state_resource_deposit_titanium: "Местное £titanium_texticon месторождение титана" #NT!
+ state_resource_cost_titanium: "Местное £titanium_texticon потребление титана" #NT!
+ temporary_state_resource_titanium: "Местный £titanium_texticon Титан" #NT!
+ country_resource_titanium: "£titanium_texticon Титан" #NT!
+ country_resource_cost_titanium: "£titanium_texticon Потребление титана" #NT!
+  
+ state_resource_silicon: "Местный £silicon_texticon Силикон" #NT!
+ state_resource_deposit_silicon: "Местное £silicon_texticon месторождение кремния" #NT!
+ state_resource_cost_silicon: "Местное £silicon_texticon потребление кремния" #NT!
+ temporary_state_resource_silicon: "Местный £silicon_texticon Силикон" #NT!
+ country_resource_silicon: "£silicon_texticon Кремний" #NT!
+ country_resource_cost_silicon: "£silicon_texticon Потребление кремния" #NT!
+  
+ state_resource_rare_earths: "Местные £rare_earths_texticon Редкие Земли" #NT!
+ state_resource_deposit_rare_earths: "Местное £rare_earths_texticon месторождение редкоземельных металлов" #NT!
+ state_resource_cost_rare_earths: "Местное £rare_earths_texticon потребление редкоземельных элементов" #NT!
+ temporary_state_resource_rare_earths: "Местные £rare_earths_texticon Редкие Земли" #NT!
+ country_resource_rare_earths: "£rare_earths_texticon Редкоземельные элементы" #NT!
+ country_resource_cost_rare_earths: "£rare_earths_texticon Потребление редкоземельных элементов" #NT!
+  
+ state_resource_steel: "Местный £steel_texticon Сталь" #NT!
+ state_resource_deposit_steel: "Местное £steel_texticon Месторождение стали" #NT!
+ state_resource_cost_steel: "Местное £steel_texticon потребление стали" #NT!
+ temporary_state_resource_steel: "Местный £steel_texticon Сталь" #NT!
+ country_resource_steel: "£steel_texticon Сталь" #NT!
+ country_resource_cost_steel: "£steel_texticon Потребление стали" #NT!
+  
+ state_resource_machinery: "Местная £machinery_texticon Машины" #NT!
+ state_resource_deposit_machinery: "Местный £machinery_texticon Депозит для оборудования" #NT!
+ state_resource_cost_machinery: "Местное £machinery_texticon Потребление машин" #NT!
+ temporary_state_resource_machinery: "Местная £machinery_texticon Машины" #NT!
+ country_resource_machinery: "£machinery_texticon Машины" #NT!
+ country_resource_cost_machinery: "£machinery_texticon Потребление машин" #NT!
+  
+ state_resource_chemicals: "Местные £chemicals_texticon Химические вещества" #NT!
+ state_resource_deposit_chemicals: "Местный £chemicals_texticon Химический депозит" #NT!
+ state_resource_cost_chemicals: "Местное £chemicals_texticon потребление химикатов" #NT!
+ temporary_state_resource_chemicals: "Местные £chemicals_texticon Химические вещества" #NT!
+ country_resource_chemicals: "£chemicals_texticon Химические вещества" #NT!
+ country_resource_cost_chemicals: "£chemicals_texticon Потребление химикатов" #NT!
+  
+ state_resource_plastics: "Местный £plastics_texticon Пластик" #NT!
+ state_resource_deposit_plastics: "Местный £plastics_texticon Депозит пластика" #NT!
+ state_resource_cost_plastics: "Местное £plastics_texticon потребление пластика" #NT!
+ temporary_state_resource_plastics: "Местный £plastics_texticon Пластик" #NT!
+ country_resource_plastics: "£plastics_texticon Пластики" #NT!
+ country_resource_cost_plastics: "£plastics_texticon Потребление пластика" #NT!
+  
+ state_resource_composites: "Местные £composites_texticon Композиты" #NT!
+ state_resource_deposit_composites: "Локальный £composites_texticon Композитный депозит" #NT!
+ state_resource_cost_composites: "Местное £composites_texticon потребление композитов" #NT!
+ temporary_state_resource_composites: "Местные £composites_texticon Композиты" #NT!
+ country_resource_composites: "£composites_texticon Композиты" #NT!
+ country_resource_cost_composites: "£composites_texticon Потребление композитов" #NT!
+  
+ state_resource_electronics: "Местный £electronics_texticon Электроника" #NT!
+ state_resource_deposit_electronics: "Местный £electronics_texticon Депозит электроники" #NT!
+ state_resource_cost_electronics: "Местное £electronics_texticon Потребление электроники" #NT!
+ temporary_state_resource_electronics: "Местный £electronics_texticon Электроника" #NT!
+ country_resource_electronics: "£electronics_texticon Электроника" #NT!
+ country_resource_cost_electronics: "£electronics_texticon Потребление электроники" #NT!
+  
+ state_resource_portable_power_sources: "Локальный £portable_power_sources_texticon Портативный источник питания" #NT!
+ state_resource_deposit_portable_power_sources: "Местный £portable_power_sources_texticon Депозит портативного источника питания" #NT!
+ state_resource_cost_portable_power_sources: "Локальное £portable_power_sources_texticon Портативное Потребление Энергии" #NT!
+ temporary_state_resource_portable_power_sources: "Локальный £portable_power_sources_texticon Портативный источник питания" #NT!
+ country_resource_portable_power_sources: "£portable_power_sources_texticon Портативная мощность" #NT!
+ country_resource_cost_portable_power_sources: "£portable_power_sources_texticon Портативное энергопотребление" #NT!
+  
+ state_resource_tools: "Локальные £tools_texticon инструменты" #NT!
+ state_resource_deposit_tools: "Локальный £tools_texticon tools Депозит" #NT!
+ state_resource_cost_tools: "Местное потребление £tools_texticon tools" #NT!
+ temporary_state_resource_tools: "Локальные £tools_texticon инструменты" #NT!
+ country_resource_tools: "£tools_texticon инструменты" #NT!
+ country_resource_cost_tools: "£tools_texticon tools Потребление" #NT!
+  
+ state_resource_consumer_goods: "Местные £consumer_goods_texticon Товары народного потребления" #NT!
+ state_resource_deposit_consumer_goods: "Местный £consumer_goods_texticon Депозит потребительских товаров" #NT!
+ state_resource_cost_consumer_goods: "Местное £consumer_goods_texticon Потребление потребительских товаров" #NT!
+ temporary_state_resource_consumer_goods: "Местные £consumer_goods_texticon Товары народного потребления" #NT!
+ country_resource_consumer_goods: "£consumer_goods_texticon Товары народного потребления" #NT!
+ country_resource_cost_consumer_goods: "£consumer_goods_texticon Потребление потребительских товаров" #NT!
+  
+ state_resource_textiles: "Местный £textiles_texticon Текстиль" #NT!
+ state_resource_deposit_textiles: "Местный £textiles_texticon Текстиль Депозит" #NT!
+ state_resource_cost_textiles: "Местное £textiles_texticon потребление текстиля" #NT!
+ temporary_state_resource_textiles: "Местный £textiles_texticon Текстиль" #NT!
+ country_resource_textiles: "£textiles_texticon Текстиль" #NT!
+ country_resource_cost_textiles: "£textiles_texticon Потребление текстиля" #NT!
+  
+ state_resource_vehicles: "Местные £vehicles_texticon Транспортные средства" #NT!
+ state_resource_deposit_vehicles: "Местный £vehicles_texticon Депозит за транспортные средства" #NT!
+ state_resource_cost_vehicles: "Местный £vehicles_texticon Потребление транспортных средств" #NT!
+ temporary_state_resource_vehicles: "Местные £vehicles_texticon Транспортные средства" #NT!
+ country_resource_vehicles: "£vehicles_texticon Транспортные средства" #NT!
+ country_resource_cost_vehicles: "£vehicles_texticon Расход топлива транспортными средствами" #NT!
+  
+ state_resource_appliances: "Местные £appliances_texticon приборы" #NT!
+ state_resource_deposit_appliances: "Местный £appliances_texticon Депозит за бытовую технику" #NT!
+ state_resource_cost_appliances: "Местное £appliances_texticon Потребление бытовой техники" #NT!
+ temporary_state_resource_appliances: "Местные £appliances_texticon приборы" #NT!
+ country_resource_appliances: "£appliances_texticon Бытовая техника" #NT!
+ country_resource_cost_appliances: "£appliances_texticon Потребление бытовой техники" #NT!
+  
+ state_resource_computers: "Локальные £computers_texticon Компьютеры" #NT!
+ state_resource_deposit_computers: "Локальный £computers_texticon Компьютеры Депозит" #NT!
+ state_resource_cost_computers: "Локальное £computers_texticon Потребление компьютеров" #NT!
+ temporary_state_resource_computers: "Локальные £computers_texticon Компьютеры" #NT!
+ country_resource_computers: "£computers_texticon Компьютеры" #NT!
+ country_resource_cost_computers: "£computers_texticon Потребление компьютеров" #NT!
+  
+ state_resource_electricity: "Местный £electricity_texticon Электричество" #NT!
+ state_resource_deposit_electricity: "Местный £electricity_texticon Депозит за электричество" #NT!
+ state_resource_cost_electricity: "Местный £electricity_texticon Потребление электроэнергии" #NT!
+ temporary_state_resource_electricity: "Местный £electricity_texticon Электричество" #NT!
+ country_resource_electricity: "£electricity_texticon Электричество" #NT!
+ country_resource_cost_electricity: "£electricity_texticon Потребление электроэнергии" #NT!
+  
+ state_resource_services: "Местные £services_texticon Услуги" #NT!
+ state_resource_deposit_services: "Местный £services_texticon Услуги Депозит" #NT!
+ state_resource_cost_services: "Потребление локальных £services_texticon услуг" #NT!
+ temporary_state_resource_services: "Местные £services_texticon Услуги" #NT!
+ country_resource_services: "£services_texticon Услуги" #NT!
+ country_resource_cost_services: "£services_texticon Потребление услуг" #NT!
+  
+ state_resource_entertainment: "Местный £entertainment_texticon Развлечения" #NT!
+ state_resource_deposit_entertainment: "Местный £entertainment_texticon Развлечения Депозит" #NT!
+ state_resource_cost_entertainment: "Местное £entertainment_texticon Потребление развлечений" #NT!
+ temporary_state_resource_entertainment: "Местный £entertainment_texticon Развлечения" #NT!
+ country_resource_entertainment: "£entertainment_texticon Развлечения" #NT!
+ country_resource_cost_entertainment: "£entertainment_texticon Потребление развлечений" #NT!
+  # 
+  
+ coal_desc: "Уголь используется в качестве топлива для сложной техники, такой как поезда и корабли, а также является ключевым ингредиентом при создании §YSteel§! и §Yдеталей машин§!." #NT!
+ wood_desc: "Древесина — весьма универсальный материал, используемый при строительстве винтовок, кораблей и большинства других вещей, которые вы только можете себе представить." #NT!
+ fabric_desc: "Ткань в первую очередь нужна для пошива униформы, но может использоваться и в других производственных помещениях." #NT!
+ machine_parts_desc: "Детали машин представляют собой современный вид ресурсов, используемых в технологически сложном оборудовании." #NT!
  grain_desc: "Зерно используется людьми в пищу." #NT!
- iron_desc: "Железо, или чугун, представляет собой неочищенное железо. это требует доработки, чтобы создать §YSteel§!." #NT!
- cotton_desc: "Хлопок и другие волокна являются обязательным компонентом тканей, которые преимущественно используются для изготовления одежды." #NT!
- plastics_desc: "Пластмассы используются в качестве легкого водонепроницаемого материала, но только во второй половине 20-го века пластик стал использоваться во многих областях, включая применение в электронике и военной технике." #NT!
- titanium_desc: "Титан — очень толстый и легкий металл, который преимущественно использовался для брони самолетов §YАтомной эры§! и позже." #NT!
- silicates_desc: "Силикаты — это общий термин для многих минералов, содержащих кремний, которые используются в производстве §YCeramics§! и §YElectronics§!." #NT!
- rare_earth_metals_desc: "Редкоземельные металлы — это всеобъемлющий термин для многих редких материалов, необходимых, среди прочего, для производства современной электроники, машиностроения и производства электроэнергии." #NT!
+ iron_desc: "Железо, или чугун, — это нерафинированное железо. Для получения §YSteel§! его необходимо рафинировать." #NT!
+ cotton_desc: "Хлопок и другие волокна являются необходимым компонентом тканей, используемых преимущественно для пошива одежды." #NT!
+ plastics_desc: "Пластик используется как легкий водонепроницаемый материал, но лишь во второй половине XX века пластик начал широко использоваться в различных областях, включая электронику и военную промышленность." #NT!
+ titanium_desc: "Титан — очень толстый и легкий металл, который в основном использовался для брони самолетов в §Yатомную эру§! и позже." #NT!
+ silicates_desc: "Силикаты — это общее название для многих минералов, содержащих кремний, которые используются в производстве §YCeramics§! и §YElectronics§!." #NT!
+ rare_earths_desc: "Редкоземельные металлы — это общее название множества редких материалов, необходимых для производства современной электроники, машин и выработки электроэнергии, а также для других целей." #NT!
  electronics_desc: "Электроника — это схемы, провода и другие материалы, необходимые для изготовления электронного оборудования, такого как компьютеры, телефоны и бытовая техника." #NT!
- portable_power_desc: "Портативные источники энергии — это то, что заставляет работать электричество, это генераторы и батареи, которые питают ваши усовершенствованные боевые машины." #NT!
- ceramics_desc: "Керамика в основном используется в усовершенствованной броне и обеспечивает высокий уровень защиты в сочетании с другими усовершенствованными типами брони." #NT!
- RESOURCE_TYPE_RAW: "Сырьевые ресурсы" #NT!
- RESOURCE_TYPE_REFINED: "Переработанные ресурсы" #NT!
- RESOURCE_TYPE_MANUFACTURED: "Произведенные ресурсы" #NT!
- resource_production.1.t: "Недостаточно угля или железа для производства стали." #NT!
- resource_production.1.d: "Ранее сегодня на одном из наших сталелитейных заводов закончилось сырье, необходимое для производства стали, и из-за этого он закрылся." #NT!
- resource_production.1.a: "Мы должны получить больше угля и железа." #NT!
- resource_production.2.t: "Недостаточно стали или угля для производства деталей машин." #NT!
- resource_production.2.d: "Ранее сегодня на одной из наших фабрик по производству деталей машин закончилось различное сырье, необходимое для производства деталей машин, и из-за этого она закрылась." #NT!
- resource_production.2.a: "Мы должны получить больше стали и угля." #NT!
+ portable_power_desc: "Портативные источники питания — это то, что заставляет электричество работать, это генераторы и батареи, которые питают ваши передовые боевые машины." #NT!
+ ceramics_desc: "Керамика в основном используется в современных доспехах и обеспечивает большую степень защиты в сочетании с другими типами современных доспехов." #NT!
+ resource_production.1.t: "Недостаточно угля и железа для производства стали" #NT!
+ resource_production.1.d: "Ранее сегодня на одном из наших сталелитейных заводов закончились различные виды сырья, необходимые для производства стали, и из-за этого он был закрыт." #NT!
+ resource_production.1.a: "Мы должны получить больше угля и железа" #NT!
+ resource_production.2.t: "Недостаточно стали и угля для производства деталей машин" #NT!
+ resource_production.2.d: "Ранее сегодня на одном из наших заводов по производству деталей машин закончились различные виды сырья, необходимые для производства деталей машин, и из-за этого предприятие закрылось." #NT!
+ resource_production.2.a: "Мы должны получить больше стали и угля" #NT!
  resource_production.3.t: "Недостаточно хлопка для производства тканей" #NT!
- resource_production.3.d: "Ранее сегодня на одной из наших фабрик по производству тканей закончились различные виды сырья, необходимые для производства тканей, и из-за этого она закрылась." #NT!
+ resource_production.3.d: "Ранее сегодня на одном из наших предприятий по производству тканей закончились различные виды сырья, необходимые для производства тканей, и из-за этого оно закрылось." #NT!
  resource_production.3.a: "Мы должны получить больше хлопка" #NT!
- resource_production.4.t: "Недостаточно пластиков, силикатов или редкоземельных металлов для производства электроники" #NT!
- resource_production.4.d: "Ранее сегодня на одном из наших заводов по производству электроники закончилось различное сырье, необходимое для производства электроники, и из-за этого он закрылся." #NT!
- resource_production.4.a: "Мы должны получать больше пластмасс, силикатов и редкоземельных металлов." #NT!
+ resource_production.4.t: "Недостаточно пластмасс, силикатов и редкоземельных металлов для производства электроники" #NT!
+ resource_production.4.d: "Ранее сегодня на одном из наших заводов по производству электроники закончились различные виды сырья, необходимые для производства электроники, и из-за этого он был закрыт." #NT!
+ resource_production.4.a: "Мы должны получить больше пластика, силикатов и редкоземельных металлов" #NT!
  resource_production.5.t: "Недостаточно силикатов для производства керамики" #NT!
- resource_production.5.d: "Ранее сегодня у одной из наших керамических горелок закончилось сырье, необходимое для производства керамики, и из-за этого она закрылась." #NT!
- resource_production.5.a: "Мы должны получить больше силикатов" #NT!
+ resource_production.5.d: "Ранее сегодня на одном из наших предприятий по производству керамических изделий закончились различные виды сырья, необходимые для производства керамики, и из-за этого предприятие было закрыто." #NT!
+ resource_production.5.a: "Нам нужно получить больше силикатов." #NT!
  #resource_production.6.t: "Недостаточно нефти для производства пластмасс" #NT!
- #resource_production.6.d: "Ранее сегодня на одном из наших заводов по переработке пластмасс закончилось различное сырье, необходимое для производства пластмасс, и поэтому он закрылся." #NT!
+ #resource_production.6.d: "Ранее сегодня на одном из наших заводов по переработке пластмасс закончились различные виды сырья, необходимые для производства пластмасс, и поэтому мы закрылись." #NT!
  #resource_production.6.a: "Мы должны получить больше нефти" #NT!
  resource_production.6.t: "Недостаточно редкоземельных металлов для производства генераторов" #NT!
- resource_production.6.d: "Ранее сегодня на одном из наших заводов по производству генераторов закончилось различное сырье, необходимое для производства генераторов, и поэтому он закрылся." #NT!
+ resource_production.6.d: "Ранее сегодня на одном из наших заводов по производству генераторов закончились различные виды сырья, необходимые для производства генераторов, и поэтому он был закрыт." #NT!
  resource_production.6.a: "Мы должны получить больше редкоземельных металлов" #NT!

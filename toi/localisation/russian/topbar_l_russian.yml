@@ -1,5 +1,5 @@
 ﻿l_russian:
- TOPBAR_DEPLOYMENT: "Подбор и внедрение" #NT!
+ TOPBAR_DEPLOYMENT: "Набор и распределение персонала" #NT!
  TOPBAR_DEPLOYMENT_DESC: "Позволяет создавать дивизии и их шаблоны, а также размещать войска на карте."
  TOPBAR_POLITICS: "Политика"
  TOPBAR_POLITICS_DESC: "Управление внутренней политикой государства."
@@ -21,20 +21,20 @@
  TOPBAR_CONSTRUCTION_DESC: "Строительство новых сооружений и информация о текущих стройках."
  TOPBAR_ARMY: "Обзор армии" #NT!
  TOPBAR_ARMY_DESC: "Сводка о состоянии ваших дивизий."
- TOPBAR_NAVY: "Обзор ВМФ" #NT!
+ TOPBAR_NAVY: "Обзор ВМС" #NT!
  TOPBAR_NAVY_DESC: "Сводка о состоянии ваших флотов."
  TOPBAR_AIR: "Обзор воздуха" #NT!
  TOPBAR_AIR_DESC: "Сводка о состоянии вашей авиации."
  TOPBAR_CONVOY_STRING: "$FREE|^0$"
  MILITARY_FACTORIES_STATUS: "Используемые военные заводы: §Y$USED$§!/§Y$TOTAL$§!"
- DAMAGED_MILITARY_FACTORIES: "Поврежденные военные заводы: $COUNT|H$"
+ DAMAGED_MILITARY_FACTORIES: "Поврежденные военные заводы: $COUNT|H$" #NT!
  NAVAL_FACTORIES_STATUS: "Используемые верфи: §Y$USED$§!/§Y$TOTAL$§!"
- DAMAGED_NAVAL_FACTORIES: "Поврежденные верфи: $COUNT|H$"
+ DAMAGED_NAVAL_FACTORIES: "Поврежденные военно-морские верфи: $COUNT|H$" #NT!
  CIVILIAN_FACTORIES_STATUS: "Используемые фабрики: §Y$USED$§!/§Y$TOTAL$§!"
- DAMAGED_CIVILIAN_FACTORIES: "Поврежденные фабрики: $COUNT|H$"
- MILITARY_FACTORIES_OCCUPATION_STATUS: "Военные заводы от событий и оккупации: §Y$COUNT$§!"
- NAVAL_FACTORIES_OCCUPATION_STATUS: "Верфи от событий и оккупации: §Y$COUNT$§!"
- CIVILIAN_FACTORIES_OCCUPATION_STATUS: "Фабрики от событий и оккупации: §Y$COUNT$§!"
+ DAMAGED_CIVILIAN_FACTORIES: "Поврежденные гражданские заводы: $COUNT|H$" #NT!
+ MILITARY_FACTORIES_OCCUPATION_STATUS: "Военные заводы от событий и оккупации: §Y$COUNT$§!" #NT!
+ NAVAL_FACTORIES_OCCUPATION_STATUS: "Военно-морские верфи от событий и занятий: §Y$COUNT$§!" #NT!
+ CIVILIAN_FACTORIES_OCCUPATION_STATUS: "Гражданские фабрики от событий и оккупации: §Y$COUNT$§!" #NT!
  NUKES_COUNT_NO_PROGRESS: "$NUM$"
  NUKES_COUNT_PROGRESS: "$NUM$ ($PROG|%0$)"
  THREAT_TOOLTIP: "§HМировая напряженность\n§! Текущее значение: $VAL|1%H$"

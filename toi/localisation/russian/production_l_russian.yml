@@ -44,12 +44,6 @@
  PRODUCTION_RESOURCE_PENALTY: "§TНехватка ресурсов: $AMOUNT|R2%$§!"
  PRODUCTION_RESOURCE_PENALTY_WITH_MIO: "§TНехватка ресурсов: $AMOUNT|R2%$§! ($FROM_MIO$)"
  PRODUCTION_ASSIGN_EQUIPMENT: "§TВыберите оборудование, чтобы начать производство.§!"
- PRODUCTION_MATERIALS_OIL: "Нефть"
- PRODUCTION_MATERIALS_ALUMINIUM: "Алюминий"
- PRODUCTION_MATERIALS_RUBBER: "Резина"
- PRODUCTION_MATERIALS_CHROMIUM: "Хром"
- PRODUCTION_MATERIALS_STEEL: "Сталь"
- PRODUCTION_MATERIALS_TUNGSTEN: "Вольфрам"
  PRODUCTION_MATERIAL_VAL: "$VALUE|0H$"
  PRODUCTION_VEHICLES_BUTTON: "Производство бронетехники"
  PRODUCTION_VEHICLES_BUTTON_DISABLED: "Бронетехника §Rне изобретена§!!"
@@ -134,7 +128,7 @@
  INDUSTRIAL_CAPACITY_FACTOR: "Производительность фабрики: $VALUE|Y$"
  INDUSTRIAL_CAPACITY_FACTOR_MODIFIERS: "Факторы, влияющие на производительность фабрики:"
  INDUSTRIAL_PROGRESS: "$BUILDING|H$: выполнено $PROGRESS|0H$/$COST|0H$ ($VALUE|0%H$)."
- INDUSTRIAL_PROGRESS_REPAIR: "$BUILDING|H$ ход ремонта: $PROGRESS|%0H$" #NT!
+ INDUSTRIAL_PROGRESS_REPAIR: "$BUILDING|H$ прогресс ремонта: $PROGRESS|%0H$" #NT!
  INDUSTRIAL_PROGRESS_REPAIR: "$BUILDING|H$: отремонтировано $PROGRESS|%1H$"
  INDUSTRIAL_BASE_FACTORY_OUTPUT: "Базовая производительность фабрики: $VALUE|H$"
  INDUSTRIAL_BASE_SPEED: "Выпуск продукции $FACTORIES|0H$ фабриками: $VALUE|H$"
@@ -200,8 +194,8 @@
  CARRIER_AIR_WING_LIMIT_DESC: "Самолеты/вместимость авианосца"
  CARRIER_AIR_WING_LIMIT_DESC_UNDER: "§YЭтот авианосец заполнен не целиком§!"
  CARRIER_AIR_WING_LIMIT_DESC_OVER: "§RЭтот авианосец будет переполнен, а размещенные на нем авиакрылья получат штраф§!"
- CARRIER_AIR_WING_INCREASE: "Увеличьте сумму\n§GCtrl+клик, чтобы увеличить на§! §H5§_1\n§GShift+клик, чтобы увеличить на§! §H10§_1" #NT!
- CARRIER_AIR_WING_DECREASE: "Уменьшить сумму\n§GCtrl+клик, чтобы уменьшить на§! §H5§_1\n§GShift+клик, чтобы уменьшить на§! §H10§_1" #NT!
+ CARRIER_AIR_WING_INCREASE: "Увеличить сумму\n§GCtrl+щелчок, чтобы увеличить на§! §H5§!\n§GShift+щелчок, чтобы увеличить на§! §H10§!" #NT!
+ CARRIER_AIR_WING_DECREASE: "Уменьшить количество\n§GCtrl+щелчок, чтобы уменьшить на§! §H5§!\n§GShift+щелчок, чтобы уменьшить на§! §H10§!" #NT!
  PRODUCTION_ENTRY_NEW: "(новое)"
  PRODUCTION_ENTRY_OUTDATED: "(устаревшее)"
  PRODUCTION_LINE_CHANGE: "§GЩелкните, чтобы §Hизменить§! тип выпускаемой техники.\nВы сохраните часть эффективности, если переключитесь на новую версию той же техники.\n§!§RВесь прогресс этой линии будет утерян.§!"
@@ -314,3 +308,16 @@
  BONUS_PRODUCTION_RESOURCE_PENALTY_FACTOR: "Штраф к производственному ресурсу"
  BONUS_PRODUCTION_CONVERSION_SPEED_FACTOR: "Скорость модификации производства"
   
+  # Military Budget 
+ production_budget_title: "Бюджет" #NT!
+ production_budget_loc: "[GetMilitaryIndustrySpending]§![GetCurrencyTextIcon]" #NT!
+ production_budget_tt: "[GetProductionBudgetTitleTooltip]" #NT!
+ production_budget_tt_tt: "Это сумма денег, которая тратится на военное производство." #NT!
+ military_equipment_modifier_loc: "£factory_item £naval_factory_icon Модификатор стоимости:" #NT!
+ prod_budget_button_tt: "[GetProductionBudgetButtonTooltip]" #NT!
+ prod_budget_button_tt_tt: "§YОбновить военные расходы§!\n§GНажмите§!, чтобы обновить суммы расходов" #NT!
+ military_equipment_modifier_value: "[?modifier@military_production_cost_factor|%-=1]" #NT!
+ military_industry_payroll_loc: "£factory_item £naval_factory_icon  Заработная плата:" #NT!
+ military_industry_payroll_value: "[GetMilitaryProductionPayrollSpending]§![GetCurrencyTextIcon]" #NT!
+ military_industry_resource_loc: "£factory_item £naval_factory_icon  Производство:" #NT!
+ military_industry_resource_value: "[GetMilitaryProductionResourcesSpending]§![GetCurrencyTextIcon]" #NT!
