@@ -9,13 +9,13 @@
 				value = mhc_afc_value
 			}
 		}
-		localization_key = "[GetMHCAirforceAfcImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAfcImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 11 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_13"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Airforce Afc Replacement Marker###
 	
@@ -23,7 +23,7 @@
 		trigger = {
 			check_variable = { mhc_afc_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -38,13 +38,13 @@ defined_text = {
 				value = mhc_ach_value
 			}
 		}
-		localization_key = "[GetMHCAirforceAchImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAchImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 11 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_13"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Airforce Ach Replacement Marker###
 	
@@ -52,7 +52,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -67,13 +67,13 @@ defined_text = {
 				value = mhc_opg_value
 			}
 		}
-		localization_key = "[GetMHCAirforceOpgImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCAirforceOpgImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 11 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_13"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Airforce Opg Replacement Marker###
 	
@@ -81,7 +81,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -96,13 +96,13 @@ defined_text = {
 				value = mhc_wic_value
 			}
 		}
-		localization_key = "[GetMHCAirforceWicImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCAirforceWicImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 11 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_13"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Airforce Wic Replacement Marker###
 	
@@ -110,7 +110,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -125,13 +125,13 @@ defined_text = {
 				value = mhc_supc_value
 			}
 		}
-		localization_key = "[GetMHCAirforceSupcImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCAirforceSupcImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 11 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_13"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Airforce Supc Replacement Marker###
 	
@@ -139,6 +139,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }

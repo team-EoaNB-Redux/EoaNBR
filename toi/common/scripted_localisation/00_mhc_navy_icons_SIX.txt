@@ -9,31 +9,31 @@
 				value = mhc_nas_value
 			}
 		}
-		localization_key = "[GetMHCNavyNasImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 7 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_7"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 8 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_8"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 9 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_9"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 10 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_10"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Navy Nas Replacement Marker###
 	
@@ -41,7 +41,7 @@
 		trigger = {
 			check_variable = { mhc_nas_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -56,31 +56,31 @@ defined_text = {
 				value = mhc_ncs_value
 			}
 		}
-		localization_key = "[GetMHCNavyNcsImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 7 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_7"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 8 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_8"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 9 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_9"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 10 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_10"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Navy Ncs Replacement Marker###
 	
@@ -88,7 +88,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -103,31 +103,31 @@ defined_text = {
 				value = mhc_nog_value
 			}
 		}
-		localization_key = "[GetMHCNavyNogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 7 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_7"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 8 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_8"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 9 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_9"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 10 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_10"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Navy Nog Replacement Marker###
 	
@@ -135,7 +135,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -150,31 +150,31 @@ defined_text = {
 				value = mhc_cog_value
 			}
 		}
-		localization_key = "[GetMHCNavyCogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 7 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_7"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 8 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_8"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 9 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_9"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 10 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_10"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Navy Cog Replacement Marker###
 	
@@ -182,7 +182,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -197,31 +197,31 @@ defined_text = {
 				value = mhc_nlg_value
 			}
 		}
-		localization_key = "[GetMHCNavyNlgImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 7 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_7"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 8 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_8"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 9 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_9"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 10 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_10"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Navy Nlg Replacement Marker###
 	
@@ -229,7 +229,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -244,31 +244,31 @@ defined_text = {
 				value = mhc_mog_value
 			}
 		}
-		localization_key = "[GetMHCNavyMogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 7 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_7"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 8 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_8"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 9 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_9"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 10 }
 		}
-		localization_key = "GFX_idea_NAN_native_advisor_10"
+		localization_key = scripted_loc_GFX_idea_NAN_native_advisor
 	}
 	###Navy Mog Replacement Marker###
 	
@@ -276,6 +276,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }

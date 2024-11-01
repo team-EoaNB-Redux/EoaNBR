@@ -5,103 +5,103 @@ defined_text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 1 }
 		}
-		localization_key = "MHC_ARMY_SEC_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_SEC
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 2 }
 		}
-		localization_key = "MHC_ARMY_CHIEF_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_CHIEF
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 3 }
 		}
-		localization_key = "MHC_ARMY_VCHIEF_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_VCHIEF
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 4 }
 		}
-		localization_key = "MHC_ARMY_QUART_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_QUART
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 5 }
 		}
-		localization_key = "MHC_ARMY_PCHIEF_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_PCHIEF
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 6 }
 		}
-		localization_key = "MHC_ARMY_INS_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_INS
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 7 }
 		}
-		localization_key = "MHC_AIRFORCE_AFC_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_AFC
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 8 }
 		}
-		localization_key = "MHC_AIRFORCE_ACH_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_ACH
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 9 }
 		}
-		localization_key = "MHC_AIRFORCE_OPG_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_OPG
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 10 }
 		}
-		localization_key = "MHC_AIRFORCE_WIC_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_WIC
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 11 }
 		}
-		localization_key = "MHC_AIRFORCE_SUPC_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_SUPC
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 12 }
 		}
-		localization_key = "MHC_NAVY_NAS_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_NAS
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 13 }
 		}
-		localization_key = "MHC_NAVY_NCS_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_NCS
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 14 }
 		}
-		localization_key = "MHC_NAVY_NOG_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_NOG
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 15 }
 		}
-		localization_key = "MHC_NAVY_COG_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_COG
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 16 }
 		}
-		localization_key = "MHC_NAVY_NLG_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_NLG
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_type = 17 }
 		}
-		localization_key = "MHC_NAVY_MOG_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_MOG
 	}
 }
 
@@ -112,19 +112,19 @@ defined_text = {
 		trigger = {
 			check_variable = { show_local_mhc_tab = 0 }
 		}
-		localization_key = "MHC_ARMY_LABEL"
+		localization_key = scripted_loc_MHC_ARMY
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_tab = 1 }
 		}
-		localization_key = "MHC_NAVY_LABEL"
+		localization_key = scripted_loc_MHC_NAVY
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_tab = 2 }
 		}
-		localization_key = "MHC_AIR_LABEL"
+		localization_key = scripted_loc_MHC_AIR
 	}
 }
 
@@ -138,7 +138,7 @@ defined_text = {
 				value = 1
 			}
 		}
-		localization_key = "MHC_ARMY_SEC_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_ARMY_SEC_LABEL
 	}
 	text = {
 		trigger = {
@@ -149,7 +149,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ARMY_SEC_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_SEC
 	}
 }
 
@@ -163,7 +163,7 @@ defined_text = {
 				value = 2
 			}
 		}
-		localization_key = "MHC_ARMY_CHIEF_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_ARMY_CHIEF_LABEL
 	}
 	text = {
 		trigger = {
@@ -174,7 +174,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ARMY_CHIEF_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_CHIEF
 	}
 }
 
@@ -188,7 +188,7 @@ defined_text = {
 				value = 3
 			}
 		}
-		localization_key = "MHC_ARMY_VCHIEF_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_ARMY_VCHIEF_LABEL
 	}
 	text = {
 		trigger = {
@@ -199,7 +199,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ARMY_VCHIEF_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_VCHIEF
 	}
 }
 
@@ -213,7 +213,7 @@ defined_text = {
 				value = 4
 			}
 		}
-		localization_key = "MHC_ARMY_QUART_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_ARMY_QUART_LABEL
 	}
 	text = {
 		trigger = {
@@ -224,7 +224,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ARMY_QUART_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_QUART
 	}
 }
 
@@ -238,7 +238,7 @@ defined_text = {
 				value = 5
 			}
 		}
-		localization_key = "MHC_ARMY_PCHIEF_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_ARMY_PCHIEF_LABEL
 	}
 	text = {
 		trigger = {
@@ -249,7 +249,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ARMY_PCHIEF_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_PCHIEF
 	}
 }
 
@@ -263,7 +263,7 @@ defined_text = {
 				value = 6
 			}
 		}
-		localization_key = "MHC_ARMY_INS_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_ARMY_INS_LABEL
 	}
 	text = {
 		trigger = {
@@ -274,7 +274,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ARMY_INS_LABEL"
+		localization_key = scripted_loc_MHC_ARMY_INS
 	}
 }
 
@@ -288,7 +288,7 @@ defined_text = {
 				value = 7
 			}
 		}
-		localization_key = "MHC_AIRFORCE_AFC_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_AIRFORCE_AFC_LABEL
 	}
 	text = {
 		trigger = {
@@ -299,7 +299,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_AIRFORCE_AFC_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_AFC
 	}
 }
 
@@ -313,7 +313,7 @@ defined_text = {
 				value = 8
 			}
 		}
-		localization_key = "MHC_AIRFORCE_ACH_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_AIRFORCE_ACH_LABEL
 	}
 	text = {
 		trigger = {
@@ -324,7 +324,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_AIRFORCE_ACH_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_ACH
 	}
 }
 
@@ -338,7 +338,7 @@ defined_text = {
 				value = 9
 			}
 		}
-		localization_key = "MHC_AIRFORCE_OPG_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_AIRFORCE_OPG_LABEL
 	}
 	text = {
 		trigger = {
@@ -349,7 +349,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_AIRFORCE_OPG_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_OPG
 	}
 }
 
@@ -363,7 +363,7 @@ defined_text = {
 				value = 10
 			}
 		}
-		localization_key = "MHC_AIRFORCE_WIC_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_AIRFORCE_WIC_LABEL
 	}
 	text = {
 		trigger = {
@@ -374,7 +374,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_AIRFORCE_WIC_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_WIC
 	}
 }
 
@@ -388,7 +388,7 @@ defined_text = {
 				value = 11
 			}
 		}
-		localization_key = "MHC_AIRFORCE_SUPC_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_AIRFORCE_SUPC_LABEL
 	}
 	text = {
 		trigger = {
@@ -399,7 +399,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_AIRFORCE_SUPC_LABEL"
+		localization_key = scripted_loc_MHC_AIRFORCE_SUPC
 	}
 }
 
@@ -413,7 +413,7 @@ defined_text = {
 				value = 12
 			}
 		}
-		localization_key = "MHC_NAVY_NAS_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_NAVY_NAS_LABEL
 	}
 	text = {
 		trigger = {
@@ -424,7 +424,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_NAVY_NAS_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_NAS
 	}
 }
 
@@ -438,7 +438,7 @@ defined_text = {
 				value = 13
 			}
 		}
-		localization_key = "MHC_NAVY_NCS_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_NAVY_NCS_LABEL
 	}
 	text = {
 		trigger = {
@@ -449,7 +449,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_NAVY_NCS_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_NCS
 	}
 }
 
@@ -463,7 +463,7 @@ defined_text = {
 				value = 14
 			}
 		}
-		localization_key = "MHC_NAVY_NOG_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_NAVY_NOG_LABEL
 	}
 	text = {
 		trigger = {
@@ -474,7 +474,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_NAVY_NOG_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_NOG
 	}
 }
 
@@ -488,7 +488,7 @@ defined_text = {
 				value = 15
 			}
 		}
-		localization_key = "MHC_NAVY_COG_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_NAVY_COG_LABEL
 	}
 	text = {
 		trigger = {
@@ -499,7 +499,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_NAVY_COG_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_COG
 	}
 }
 
@@ -513,7 +513,7 @@ defined_text = {
 				value = 16
 			}
 		}
-		localization_key = "MHC_NAVY_NLG_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_NAVY_NLG_LABEL
 	}
 	text = {
 		trigger = {
@@ -524,7 +524,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_NAVY_NLG_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_NLG
 	}
 }
 
@@ -538,7 +538,7 @@ defined_text = {
 				value = 17
 			}
 		}
-		localization_key = "MHC_NAVY_MOG_LABEL_ACTIVE"
+		localization_key = scripted_loc_MHC_NAVY_MOG_LABEL
 	}
 	text = {
 		trigger = {
@@ -549,7 +549,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_NAVY_MOG_LABEL"
+		localization_key = scripted_loc_MHC_NAVY_MOG
 	}
 }
 
@@ -662,7 +662,7 @@ defined_text = {
 			}
 			has_political_power > 50
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_COST_YELLOW"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_COST
 	}
 	text = {
 		trigger = {
@@ -770,7 +770,7 @@ defined_text = {
 			}
 			has_political_power < 50
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_COST_RED"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_COST
 	}
 	text = {
 		trigger = {
@@ -879,7 +879,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_COST_FREE"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_COST
 	}
 }
 
@@ -992,7 +992,7 @@ defined_text = {
 			}
 			has_political_power > 50
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_COST_UNDER_YELLOW"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_COST_UNDER
 	}
 	text = {
 		trigger = {
@@ -1100,7 +1100,7 @@ defined_text = {
 			}
 			has_political_power < 50
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_COST_UNDER_RED"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_COST_UNDER
 	}
 	text = {
 		trigger = {
@@ -1209,7 +1209,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_COST_UNDER_FREE"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_COST_UNDER
 	}
 }
 
@@ -1230,7 +1230,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_HIGH_NOT_FIT"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_HIGH_NOT
 	}
 }
 
@@ -1248,7 +1248,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_HIGH_NOT_FIT"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_HIGH_NOT
 	}
 }
 
@@ -1269,7 +1269,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_HIGH_NOT_FIT"
+		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_HIGH_NOT
 	}
 }
 
@@ -1280,13 +1280,13 @@ defined_text = {
 		trigger = {
 			check_variable = { show_local_mhc_remove = 1 }
 		}
-		localization_key = "MHC_RETIRE_ON"
+		localization_key = scripted_loc_MHC_RETIRE
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_remove = 0 }
 		}
-		localization_key = "MHC_RETIRE_OFF"
+		localization_key = scripted_loc_MHC_RETIRE
 	}
 }
 
@@ -1297,7 +1297,7 @@ defined_text = {
 		trigger = {
 			mhc_system_active_trigger = no
 		}
-		localization_key = "MHC_IS_TRIBAL"
+		localization_key = scripted_loc_MHC_IS
 	}
 }
 
@@ -1308,19 +1308,19 @@ defined_text = {
 		trigger = {
 			has_country_flag = MHC_military_junta_army
 		}
-		localization_key = "MHC_LEADER_JUNTA_ARMY_TOOLTIP"
+		localization_key = scripted_loc_MHC_LEADER_JUNTA_ARMY
 	}
 	text = {
 		trigger = {
 			has_country_flag = MHC_military_junta_airforce
 		}
-		localization_key = "MHC_LEADER_JUNTA_AIRFORCE_TOOLTIP"
+		localization_key = scripted_loc_MHC_LEADER_JUNTA_AIRFORCE
 	}
 	text = {
 		trigger = {
 			has_country_flag = MHC_military_junta_navy
 		}
-		localization_key = "MHC_LEADER_JUNTA_NAVY_TOOLTIP"
+		localization_key = scripted_loc_MHC_LEADER_JUNTA_NAVY
 	}
 }
 
@@ -1331,19 +1331,19 @@ defined_text = {
 		trigger = {
 			has_political_power > 100
 		}
-		localization_key = "MHC_REMOVE_COST"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 	text = {
 		trigger = {
 			has_political_power < 100
 		}
-		localization_key = "MHC_REMOVE_COST_RED"
+		localization_key = scripted_loc_MHC_REMOVE_COST
 	}
 	text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "MHC_REMOVE_COST"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1509,7 +1509,7 @@ defined_text = {
 				always = no
 			}
 		}
-		localization_key = "MHC_REPLACE_POWERFUL"
+		localization_key = scripted_loc_MHC_REPLACE
 	}
 }
 
@@ -1523,7 +1523,7 @@ defined_text = {
 				value = mhc_sec_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1537,7 +1537,7 @@ defined_text = {
 				value = mhc_chief_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1551,7 +1551,7 @@ defined_text = {
 				value = mhc_vchief_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1565,7 +1565,7 @@ defined_text = {
 				value = mhc_pchief_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1579,7 +1579,7 @@ defined_text = {
 				value = mhc_quart_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1593,7 +1593,7 @@ defined_text = {
 				value = mhc_ins_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1607,7 +1607,7 @@ defined_text = {
 				value = mhc_afc_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1621,7 +1621,7 @@ defined_text = {
 				value = mhc_ach_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1635,7 +1635,7 @@ defined_text = {
 				value = mhc_opg_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1649,7 +1649,7 @@ defined_text = {
 				value = mhc_wic_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1663,7 +1663,7 @@ defined_text = {
 				value = mhc_supc_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1677,7 +1677,7 @@ defined_text = {
 				value = mhc_nas_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1691,7 +1691,7 @@ defined_text = {
 				value = mhc_ncs_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1705,7 +1705,7 @@ defined_text = {
 				value = mhc_nog_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1719,7 +1719,7 @@ defined_text = {
 				value = mhc_cog_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1733,7 +1733,7 @@ defined_text = {
 				value = mhc_nlg_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1747,7 +1747,7 @@ defined_text = {
 				value = mhc_mog_value
 			}
 		}
-		localization_key = "MHC_REMOVE_POWERFUL"
+		localization_key = scripted_loc_MHC_REMOVE
 	}
 }
 
@@ -1758,13 +1758,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_sec_power > 0 }
 		}
-		localization_key = "MHC_SEC_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_SEC_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1775,13 +1775,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_chief_power > 0 }
 		}
-		localization_key = "MHC_CHIEF_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_CHIEF_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1792,13 +1792,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_vchief_power > 0 }
 		}
-		localization_key = "MHC_VCHIEF_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_VCHIEF_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1809,13 +1809,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_quart_power > 0 }
 		}
-		localization_key = "MHC_QUART_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_QUART_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1826,13 +1826,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_pchief_power > 0 }
 		}
-		localization_key = "MHC_PCHIEF_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_PCHIEF_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1843,13 +1843,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ins_power > 0 }
 		}
-		localization_key = "MHC_INS_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_INS_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1860,13 +1860,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_afc_power > 0 }
 		}
-		localization_key = "MHC_AFC_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_AFC_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1877,13 +1877,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ach_power > 0 }
 		}
-		localization_key = "MHC_ACH_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_ACH_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1894,13 +1894,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_opg_power > 0 }
 		}
-		localization_key = "MHC_OPG_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_OPG_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1911,13 +1911,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_wic_power > 0 }
 		}
-		localization_key = "MHC_WIC_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_WIC_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1928,13 +1928,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_supc_power > 0 }
 		}
-		localization_key = "MHC_SUPC_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_SUPC_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1945,13 +1945,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nas_power > 0 }
 		}
-		localization_key = "MHC_NAS_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_NAS_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1962,13 +1962,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_power > 0 }
 		}
-		localization_key = "MHC_NCS_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_NCS_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1979,13 +1979,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_power > 0 }
 		}
-		localization_key = "MHC_NOG_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_NOG_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -1996,13 +1996,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_power > 0 }
 		}
-		localization_key = "MHC_COG_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_COG_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -2013,13 +2013,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_power > 0 }
 		}
-		localization_key = "MHC_NLG_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_NLG_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -2030,13 +2030,13 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_power > 0 }
 		}
-		localization_key = "MHC_MOG_TOOLTIP_SHOW"
+		localization_key = scripted_loc_MHC_MOG_TOOLTIP
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_power < 1 }
 		}
-		localization_key = "MHC_TOOLTIP_NA"
+		localization_key = scripted_loc_MHC_TOOLTIP
 	}
 }
 
@@ -2051,7 +2051,7 @@ defined_text = {
 				has_country_flag = MHC_military_junta_navy
 			}
 		}
-		localization_key = "MHC_JUNTA_NON_MODIFIABLE"
+		localization_key = scripted_loc_MHC_JUNTA_NON
 	}
 }
 
@@ -2063,7 +2063,7 @@ defined_text = {
 			has_country_flag = MHC_military_junta_army
 			tag = FROM
 		}
-		localization_key = "mhc.10.d.1a"
+		localization_key = scripted_loc_mhcPeriodMark_10PeriodMark_dPeriodMark
 	}
 	text = {
 		trigger = {
@@ -2074,14 +2074,14 @@ defined_text = {
 				tag = FROM
 			}
 		}
-		localization_key = "mhc.10.d.2a"
+		localization_key = scripted_loc_mhcPeriodMark_10PeriodMark_dPeriodMark
 	}
 	text = {
 		trigger = {
 			has_country_flag = MHC_military_junta_airforce
 			tag = FROM
 		}
-		localization_key = "mhc.10.d.1b"
+		localization_key = scripted_loc_mhcPeriodMark_10PeriodMark_dPeriodMark
 	}
 	text = {
 		trigger = {
@@ -2092,14 +2092,14 @@ defined_text = {
 				tag = FROM
 			}
 		}
-		localization_key = "mhc.10.d.2b"
+		localization_key = scripted_loc_mhcPeriodMark_10PeriodMark_dPeriodMark
 	}
 	text = {
 		trigger = {
 			has_country_flag = MHC_military_junta_navy
 			tag = FROM
 		}
-		localization_key = "mhc.10.d.1c"
+		localization_key = scripted_loc_mhcPeriodMark_10PeriodMark_dPeriodMark
 	}
 	text = {
 		trigger = {
@@ -2110,7 +2110,7 @@ defined_text = {
 				tag = FROM
 			}
 		}
-		localization_key = "mhc.10.d.2c"
+		localization_key = scripted_loc_mhcPeriodMark_10PeriodMark_dPeriodMark
 	}
 }
 
@@ -2124,7 +2124,7 @@ defined_text = {
 				#NOT = { has_idea = no_voting }
 			}
 		}
-		localization_key = "mhc.10.d.1.v"
+		localization_key = scripted_loc_mhcPeriodMark_10PeriodMark_dPeriodMark_1PeriodMark
 	}
 }
 
@@ -2147,13 +2147,13 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ARMY_LABEL_RED"
+		localization_key = scripted_loc_MHC_ARMY_LABEL
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_army_power < 80 }
 		}
-		localization_key = "MHC_ARMY_LABEL"
+		localization_key = scripted_loc_MHC_ARMY
 	}
 }
 
@@ -2175,13 +2175,13 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_AIR_LABEL_RED"
+		localization_key = scripted_loc_MHC_AIR_LABEL
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_airforce_power < 80 }
 		}
-		localization_key = "MHC_AIR_LABEL"
+		localization_key = scripted_loc_MHC_AIR
 	}
 }
 
@@ -2204,13 +2204,13 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_NAVY_LABEL_RED"
+		localization_key = scripted_loc_MHC_NAVY_LABEL
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_navy_power < 80 }
 		}
-		localization_key = "MHC_NAVY_LABEL"
+		localization_key = scripted_loc_MHC_NAVY
 	}
 }
 
@@ -2224,7 +2224,7 @@ defined_text = {
 				has_country_flag = mhc_chief_unfit
 			}
 		}
-		localization_key = "MHC_ORG_UNFIT_LEADERSHIP"
+		localization_key = scripted_loc_MHC_ORG_UNFIT
 	}
 }
 
@@ -2235,7 +2235,7 @@ defined_text = {
 		trigger = {
 			has_country_flag = mhc_afc_unfit
 		}
-		localization_key = "MHC_ORG_UNFIT_LEADERSHIP"
+		localization_key = scripted_loc_MHC_ORG_UNFIT
 	}
 }
 
@@ -2249,7 +2249,7 @@ defined_text = {
 				has_country_flag = mhc_ncs_unfit
 			}
 		}
-		localization_key = "MHC_ORG_UNFIT_LEADERSHIP"
+		localization_key = scripted_loc_MHC_ORG_UNFIT
 	}
 }
 
@@ -2260,7 +2260,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_army_power > 79 }
 		}
-		localization_key = "MHC_ORG_POWERFUL"
+		localization_key = scripted_loc_MHC_ORG
 	}
 }
 
@@ -2271,7 +2271,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_airforce_power > 79 }
 		}
-		localization_key = "MHC_ORG_POWERFUL"
+		localization_key = scripted_loc_MHC_ORG
 	}
 }
 
@@ -2282,7 +2282,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_navy_power > 79 }
 		}
-		localization_key = "MHC_ORG_POWERFUL"
+		localization_key = scripted_loc_MHC_ORG
 	}
 }
 
@@ -2300,7 +2300,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ORG_POWERFUL_MEMBERS"
+		localization_key = scripted_loc_MHC_ORG_POWERFUL
 	}
 }
 
@@ -2318,7 +2318,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ORG_POWERFUL_MEMBERS"
+		localization_key = scripted_loc_MHC_ORG_POWERFUL
 	}
 }
 
@@ -2336,7 +2336,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "MHC_ORG_POWERFUL_MEMBERS"
+		localization_key = scripted_loc_MHC_ORG_POWERFUL
 	}
 }
 
@@ -2347,19 +2347,19 @@ defined_text = {
 		trigger = {
 			has_country_flag = mhc_pre_junta_army
 		}
-		localization_key = "MHC_ARMY_LABEL"
+		localization_key = scripted_loc_MHC_ARMY
 	}
 	text = {
 		trigger = {
 			has_country_flag = mhc_pre_junta_airforce
 		}
-		localization_key = "MHC_AIR_LABEL"
+		localization_key = scripted_loc_MHC_AIR
 	}
 	text = {
 		trigger = {
 			has_country_flag = mhc_pre_junta_navy
 		}
-		localization_key = "MHC_NAVY_LABEL"
+		localization_key = scripted_loc_MHC_NAVY
 	}
 }
 
@@ -2370,7 +2370,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "MHC_ORG_AIRFORCE_TOOLTIP_DELAYED_PROXY"
+		localization_key = scripted_loc_MHC_ORG_AIRFORCE_TOOLTIP_DELAYED
 	}
 }
 
@@ -2381,7 +2381,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "MHC_ORG_NAVY_TOOLTIP_DELAYED_PROXY"
+		localization_key = scripted_loc_MHC_ORG_NAVY_TOOLTIP_DELAYED
 	}
 }
 
@@ -2392,6 +2392,6 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "MHC_ORG_ARMY_TOOLTIP_DELAYED_PROXY"
+		localization_key = scripted_loc_MHC_ORG_ARMY_TOOLTIP_DELAYED
 	}
 }

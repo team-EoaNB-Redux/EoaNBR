@@ -5,121 +5,121 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 1 }
 		}
-		localization_key = "GFX_idea_europe_generic_1"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 2 }
 		}
-		localization_key = "GFX_idea_europe_generic_2"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 3 }
 		}
-		localization_key = "GFX_idea_europe_generic_3"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 4 }
 		}
-		localization_key = "GFX_idea_europe_generic_4"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 5 }
 		}
-		localization_key = "GFX_idea_europe_generic_5"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 6 }
 		}
-		localization_key = "GFX_idea_europe_generic_6"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 7 }
 		}
-		localization_key = "GFX_idea_europe_generic_7"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 8 }
 		}
-		localization_key = "GFX_idea_europe_generic_8"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 9 }
 		}
-		localization_key = "GFX_idea_europe_generic_9"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 10 }
 		}
-		localization_key = "GFX_idea_europe_generic_10"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 11 }
 		}
-		localization_key = "GFX_idea_europe_generic_11"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 12 }
 		}
-		localization_key = "GFX_idea_europe_generic_12"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 13 }
 		}
-		localization_key = "GFX_idea_europe_generic_13"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 14 }
 		}
-		localization_key = "GFX_idea_europe_generic_14"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 15 }
 		}
-		localization_key = "GFX_idea_europe_generic_15"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 16 }
 		}
-		localization_key = "GFX_idea_europe_generic_16"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 17 }
 		}
-		localization_key = "GFX_idea_europe_generic_17"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 18 }
 		}
-		localization_key = "GFX_idea_europe_generic_18"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 19 }
 		}
-		localization_key = "GFX_idea_europe_generic_19"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 20 }
 		}
-		localization_key = "GFX_idea_europe_generic_20"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	
 	
@@ -127,7 +127,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -138,121 +138,121 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 1 }
 		}
-		localization_key = "GFX_idea_europe_generic_1"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 2 }
 		}
-		localization_key = "GFX_idea_europe_generic_2"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 3 }
 		}
-		localization_key = "GFX_idea_europe_generic_3"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 4 }
 		}
-		localization_key = "GFX_idea_europe_generic_4"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 5 }
 		}
-		localization_key = "GFX_idea_europe_generic_5"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 6 }
 		}
-		localization_key = "GFX_idea_europe_generic_6"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 7 }
 		}
-		localization_key = "GFX_idea_europe_generic_7"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 8 }
 		}
-		localization_key = "GFX_idea_europe_generic_8"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 9 }
 		}
-		localization_key = "GFX_idea_europe_generic_9"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 10 }
 		}
-		localization_key = "GFX_idea_europe_generic_10"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 11 }
 		}
-		localization_key = "GFX_idea_europe_generic_11"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 12 }
 		}
-		localization_key = "GFX_idea_europe_generic_12"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 13 }
 		}
-		localization_key = "GFX_idea_europe_generic_13"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 14 }
 		}
-		localization_key = "GFX_idea_europe_generic_14"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 15 }
 		}
-		localization_key = "GFX_idea_europe_generic_15"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 16 }
 		}
-		localization_key = "GFX_idea_europe_generic_16"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 17 }
 		}
-		localization_key = "GFX_idea_europe_generic_17"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 18 }
 		}
-		localization_key = "GFX_idea_europe_generic_18"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 19 }
 		}
-		localization_key = "GFX_idea_europe_generic_19"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 20 }
 		}
-		localization_key = "GFX_idea_europe_generic_20"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	
 	
@@ -260,7 +260,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -271,121 +271,121 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 1 }
 		}
-		localization_key = "GFX_idea_europe_generic_1"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 2 }
 		}
-		localization_key = "GFX_idea_europe_generic_2"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 3 }
 		}
-		localization_key = "GFX_idea_europe_generic_3"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 4 }
 		}
-		localization_key = "GFX_idea_europe_generic_4"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 5 }
 		}
-		localization_key = "GFX_idea_europe_generic_5"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 6 }
 		}
-		localization_key = "GFX_idea_europe_generic_6"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 7 }
 		}
-		localization_key = "GFX_idea_europe_generic_7"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 8 }
 		}
-		localization_key = "GFX_idea_europe_generic_8"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 9 }
 		}
-		localization_key = "GFX_idea_europe_generic_9"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 10 }
 		}
-		localization_key = "GFX_idea_europe_generic_10"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 11 }
 		}
-		localization_key = "GFX_idea_europe_generic_11"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 12 }
 		}
-		localization_key = "GFX_idea_europe_generic_12"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 13 }
 		}
-		localization_key = "GFX_idea_europe_generic_13"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 14 }
 		}
-		localization_key = "GFX_idea_europe_generic_14"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 15 }
 		}
-		localization_key = "GFX_idea_europe_generic_15"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 16 }
 		}
-		localization_key = "GFX_idea_europe_generic_16"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 17 }
 		}
-		localization_key = "GFX_idea_europe_generic_17"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 18 }
 		}
-		localization_key = "GFX_idea_europe_generic_18"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 19 }
 		}
-		localization_key = "GFX_idea_europe_generic_19"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 20 }
 		}
-		localization_key = "GFX_idea_europe_generic_20"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	
 	
@@ -393,7 +393,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -404,128 +404,128 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 1 }
 		}
-		localization_key = "GFX_idea_europe_generic_1"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 2 }
 		}
-		localization_key = "GFX_idea_europe_generic_2"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 3 }
 		}
-		localization_key = "GFX_idea_europe_generic_3"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 4 }
 		}
-		localization_key = "GFX_idea_europe_generic_4"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 5 }
 		}
-		localization_key = "GFX_idea_europe_generic_5"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 6 }
 		}
-		localization_key = "GFX_idea_europe_generic_6"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 7 }
 		}
-		localization_key = "GFX_idea_europe_generic_7"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 8 }
 		}
-		localization_key = "GFX_idea_europe_generic_8"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 9 }
 		}
-		localization_key = "GFX_idea_europe_generic_9"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 10 }
 		}
-		localization_key = "GFX_idea_europe_generic_10"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 11 }
 		}
-		localization_key = "GFX_idea_europe_generic_11"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 12 }
 		}
-		localization_key = "GFX_idea_europe_generic_12"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 13 }
 		}
-		localization_key = "GFX_idea_europe_generic_13"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 14 }
 		}
-		localization_key = "GFX_idea_europe_generic_14"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 15 }
 		}
-		localization_key = "GFX_idea_europe_generic_15"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 16 }
 		}
-		localization_key = "GFX_idea_europe_generic_16"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 17 }
 		}
-		localization_key = "GFX_idea_europe_generic_17"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 18 }
 		}
-		localization_key = "GFX_idea_europe_generic_18"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 19 }
 		}
-		localization_key = "GFX_idea_europe_generic_19"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 20 }
 		}
-		localization_key = "GFX_idea_europe_generic_20"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -536,121 +536,121 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 1 }
 		}
-		localization_key = "GFX_idea_europe_generic_1"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 2 }
 		}
-		localization_key = "GFX_idea_europe_generic_2"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 3 }
 		}
-		localization_key = "GFX_idea_europe_generic_3"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 4 }
 		}
-		localization_key = "GFX_idea_europe_generic_4"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 5 }
 		}
-		localization_key = "GFX_idea_europe_generic_5"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 6 }
 		}
-		localization_key = "GFX_idea_europe_generic_6"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 7 }
 		}
-		localization_key = "GFX_idea_europe_generic_7"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 8 }
 		}
-		localization_key = "GFX_idea_europe_generic_8"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 9 }
 		}
-		localization_key = "GFX_idea_europe_generic_9"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 10 }
 		}
-		localization_key = "GFX_idea_europe_generic_10"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 11 }
 		}
-		localization_key = "GFX_idea_europe_generic_11"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 12 }
 		}
-		localization_key = "GFX_idea_europe_generic_12"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 13 }
 		}
-		localization_key = "GFX_idea_europe_generic_13"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 14 }
 		}
-		localization_key = "GFX_idea_europe_generic_14"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 15 }
 		}
-		localization_key = "GFX_idea_europe_generic_15"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 16 }
 		}
-		localization_key = "GFX_idea_europe_generic_16"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 17 }
 		}
-		localization_key = "GFX_idea_europe_generic_17"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 18 }
 		}
-		localization_key = "GFX_idea_europe_generic_18"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 19 }
 		}
-		localization_key = "GFX_idea_europe_generic_19"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 20 }
 		}
-		localization_key = "GFX_idea_europe_generic_20"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	
 	
@@ -658,7 +658,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -669,121 +669,121 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 1 }
 		}
-		localization_key = "GFX_idea_europe_generic_1"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 2 }
 		}
-		localization_key = "GFX_idea_europe_generic_2"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 3 }
 		}
-		localization_key = "GFX_idea_europe_generic_3"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 4 }
 		}
-		localization_key = "GFX_idea_europe_generic_4"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 5 }
 		}
-		localization_key = "GFX_idea_europe_generic_5"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 6 }
 		}
-		localization_key = "GFX_idea_europe_generic_6"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 7 }
 		}
-		localization_key = "GFX_idea_europe_generic_7"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 8 }
 		}
-		localization_key = "GFX_idea_europe_generic_8"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 9 }
 		}
-		localization_key = "GFX_idea_europe_generic_9"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 10 }
 		}
-		localization_key = "GFX_idea_europe_generic_10"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 11 }
 		}
-		localization_key = "GFX_idea_europe_generic_11"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 12 }
 		}
-		localization_key = "GFX_idea_europe_generic_12"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 13 }
 		}
-		localization_key = "GFX_idea_europe_generic_13"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 14 }
 		}
-		localization_key = "GFX_idea_europe_generic_14"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 15 }
 		}
-		localization_key = "GFX_idea_europe_generic_15"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 16 }
 		}
-		localization_key = "GFX_idea_europe_generic_16"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 17 }
 		}
-		localization_key = "GFX_idea_europe_generic_17"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 18 }
 		}
-		localization_key = "GFX_idea_europe_generic_18"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 19 }
 		}
-		localization_key = "GFX_idea_europe_generic_19"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 20 }
 		}
-		localization_key = "GFX_idea_europe_generic_20"
+		localization_key = scripted_loc_GFX_idea_europe_generic
 	}
 	
 	
@@ -791,6 +791,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }

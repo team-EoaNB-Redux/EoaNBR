@@ -13,16 +13,16 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "GFX_[?v.GetTokenKey]_founded"
+		localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_vPeriodMark_GetTokenKeyRBracketSym_
 	}
 	text = {
-		localization_key = "GFX_[?v.GetTokenKey]"
+		localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_vPeriodMark_GetTokenKeyRBracketSym
 	}
 }
 defined_text = {
 	name = GetInstitutionNameInList
 	text = {
-		localization_key = "[?v.GetTokenLocalizedKey]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetTokenLocalizedKeyRBracketSym
 	}
 }
 defined_text = {
@@ -33,7 +33,7 @@ defined_text = {
 				gidil = global.desc@var:v
 			}
 		}
-		localization_key = "[?gidil.GetTokenLocalizedKey]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_gidilPeriodMark_GetTokenLocalizedKeyRBracketSym
 	}
 }
 defined_text = {
@@ -56,7 +56,7 @@ defined_text = {
 				gipil = progress@var:v
 			}
 		}
-		localization_key = "[?progress@var:v|2]%"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_progressAtSym_varColonSym_vORSym_2RBracketSym_PercentSym
 	}
 }
 defined_text = {
@@ -67,7 +67,7 @@ defined_text = {
 				set_temp_variable = { goic = THIS.num_of_institutions }
 			}
 		}
-		localization_key = "[?goic]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_goicRBracketSym
 	}
 }
 defined_text = {
@@ -78,10 +78,10 @@ defined_text = {
 				institution_progress_temp < 0
 			}
 		}
-		localization_key = "red_loc"
+		localization_key = scripted_loc_red
 	}
 	text = {
-		localization_key = "green_loc"
+		localization_key = scripted_loc_green
 	}
 }
 defined_text = {
@@ -98,16 +98,16 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "[?owner_temp.GetFlag] [?owner_temp.GetAdjective]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_owner_tempPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_owner_tempPeriodMark_GetAdjectiveRBracketSym
 	}
 	text = {
 		trigger = {
 			FROM.OWNER = { is_subject = yes }
 		}
-		localization_key = "[?FROM.OWNER:OVERLORD.GetFlag] [?FROM.OWNER:OVERLORD.GetAdjective]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_FROMPeriodMark_OWNERColonSym_OVERLORDPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_FROMPeriodMark_OWNERColonSym_OVERLORDPeriodMark_GetAdjectiveRBracketSym
 	}
 	text = {
-		localization_key = "[?FROM.OWNER.GetFlag] [?FROM.OWNER.GetAdjective]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_FROMPeriodMark_OWNERPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_FROMPeriodMark_OWNERPeriodMark_GetAdjectiveRBracketSym
 	} 
 }
 defined_text = {
@@ -124,16 +124,16 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "[?owner_temp.GetFlag] [?owner_temp.GetAdjective]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_owner_tempPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_owner_tempPeriodMark_GetAdjectiveRBracketSym
 	}
 	text = {
 		trigger = {
 			FROM.OWNER = { is_subject = yes }
 		}
-		localization_key = "[?FROM.OWNER:OVERLORD.GetFlag] [?FROM.OWNER:OVERLORD.GetAdjective]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_FROMPeriodMark_OWNERColonSym_OVERLORDPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_FROMPeriodMark_OWNERColonSym_OVERLORDPeriodMark_GetAdjectiveRBracketSym
 	}
 	text = {
-		localization_key = "[?FROM.OWNER.GetFlag] [?FROM.OWNER.GetAdjective]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_FROMPeriodMark_OWNERPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_FROMPeriodMark_OWNERPeriodMark_GetAdjectiveRBracketSym
 	}
 }
 defined_text = {
@@ -145,42 +145,42 @@ defined_text = {
 				modifier = frontier_state
 			}
 		}
-		localization_key = "Frontier"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 			is_core_of = ROOT
 		}
-		localization_key = "None (Homeland)"
+		localization_key = scripted_loc_None_LParenthesi_HomelandRParenthesi
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 			is_claimed_by = ROOT
 		}
-		localization_key = "Integration"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 		}
-		localization_key = "Consolidation"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			is_core_of = ROOT
 		}
-		localization_key = "Core"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			is_claimed_by = ROOT
 		}
-		localization_key = "Claim"
+		localization_key = scripted_loc
 	}
 	text = {
-		localization_key = "None"
+		localization_key = scripted_loc
 	}
 }
 defined_text = {
@@ -193,49 +193,49 @@ defined_text = {
 				modifier = frontier_state
 			}
 		}
-		localization_key = "Settle"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			ROOT = { has_tech = tech_projects_overseas_interests }
 			FROM.OWNER = { check_variable = { num_of_institutions < 3 } }
 		}
-		localization_key = "Settle"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 			is_core_of = ROOT
 		}
-		localization_key = "None (Homeland)"
+		localization_key = scripted_loc_None_LParenthesi_HomelandRParenthesi
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 			is_claimed_by = ROOT
 		}
-		localization_key = "Integrate Territory"
+		localization_key = scripted_loc_Integrate
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 		}
-		localization_key = "Consolidate Territory"
+		localization_key = scripted_loc_Consolidate
 	}
 	text = {
 		trigger = {
 			is_core_of = ROOT
 		}
-		localization_key = "Liberate Core"
+		localization_key = scripted_loc_Liberate
 	}
 	text = {
 		trigger = {
 			is_claimed_by = ROOT
 		}
-		localization_key = "Acquire Claim"
+		localization_key = scripted_loc_Acquire
 	}
 	text = {
-		localization_key = "None"
+		localization_key = scripted_loc
 	}
 }
 defined_text = {
@@ -262,9 +262,9 @@ defined_text = {
 		trigger = {
 			has_tech = tech_projects_overseas_interests
 		}
-		localization_key = "GFX_colonization_icon"
+		localization_key = scripted_loc_GFX_colonization
 	}
 	text = {
-		localization_key = "GFX_frontiers_icon"
+		localization_key = scripted_loc_GFX_frontiers
 	}
 }

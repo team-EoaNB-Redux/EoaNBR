@@ -5,37 +5,37 @@
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "NOR_Hans_Glad_Bloch"
+		localization_key = scripted_loc_NOR_Hans_Glad
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "NOR_Balthazar_Nicolai_Garben"
+		localization_key = scripted_loc_NOR_Balthazar_Nicolai
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "NOR_Nils_Christian_Irgens"
+		localization_key = scripted_loc_NOR_Nils_Christian
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = "NOR_Christian_Frederik_Michelet"
+		localization_key = scripted_loc_NOR_Christian_Frederik
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = "NOR_Harald_Nicolai_Storm_Wergeland"
+		localization_key = scripted_loc_NOR_Harald_Nicolai_Storm
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = "NOR_Joseph_Frantz_Oscar_Wergeland"
+		localization_key = scripted_loc_NOR_Joseph_Frantz_Oscar
 	}
 	###Army Replacement Marker###
 }
@@ -47,13 +47,13 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "NOR_Henrik_Steffens_Hagerup"
+		localization_key = scripted_loc_NOR_Henrik_Steffens
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "NOR_Thomas_Konow"
+		localization_key = scripted_loc_NOR_Thomas
 	}
 	###Navy Replacement Marker###
 }

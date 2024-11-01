@@ -9,19 +9,19 @@ defined_text = {
 				value = mhc_nas_value
 			}
 		}
-		localization_key = "[GetMHCNavyNasImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Christian_Anders_Sundin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Christian_Anders_Sundin
 	}
 	###Navy Nas Replacement Marker###
 	
@@ -29,7 +29,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -44,19 +44,19 @@ defined_text = {
 				value = mhc_ncs_value
 			}
 		}
-		localization_key = "[GetMHCNavyNcsImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Christian_Anders_Sundin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Christian_Anders_Sundin
 	}
 	###Navy Ncs Replacement Marker###
 	
@@ -64,7 +64,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -79,19 +79,19 @@ defined_text = {
 				value = mhc_nog_value
 			}
 		}
-		localization_key = "[GetMHCNavyNogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Christian_Anders_Sundin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Christian_Anders_Sundin
 	}
 	###Navy Nog Replacement Marker###
 	
@@ -99,7 +99,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -114,19 +114,19 @@ defined_text = {
 				value = mhc_cog_value
 			}
 		}
-		localization_key = "[GetMHCNavyCogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Christian_Anders_Sundin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Christian_Anders_Sundin
 	}
 	###Navy Cog Replacement Marker###
 	
@@ -134,7 +134,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -149,19 +149,19 @@ defined_text = {
 				value = mhc_nlg_value
 			}
 		}
-		localization_key = "[GetMHCNavyNlgImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Christian_Anders_Sundin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Christian_Anders_Sundin
 	}
 	###Navy Nlg Replacement Marker###
 	
@@ -169,7 +169,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -184,19 +184,19 @@ defined_text = {
 				value = mhc_mog_value
 			}
 		}
-		localization_key = "[GetMHCNavyMogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Salomon_Mauritz_von_Krusenstierna
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Christian_Anders_Sundin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Christian_Anders_Sundin
 	}
 	###Navy Mog Replacement Marker###
 	
@@ -204,6 +204,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }

@@ -89,7 +89,7 @@ defined_text = {
 defined_text = {
 	name = DCI_GetNationalReligionName
 	text = {
-		localization_key = "Catholic"
+		localization_key = scripted_loc
 	}
 }
 
@@ -100,317 +100,317 @@ defined_text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 1 }
 		}
-		localization_key = "Orthodoxy"
+		localization_key = scripted_loc
 	}
 	text = { 
 		trigger = {
 			check_variable = { state_religion_array^i = 2 }		
 		}
-		localization_key = "Catholicism"
+		localization_key = scripted_loc
 	}  
 	text = { 
 		trigger = {
 			check_variable = { state_religion_array^i = 3 }			
 		}
-		localization_key = "Protestantism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 4 }			
 		}
-		localization_key = "Coptic"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 5 }			
 		}
-		localization_key = "Mormon"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 6 }			
 		}
-		localization_key = "Taiping Christianity"
+		localization_key = scripted_loc_Taiping
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 7 }		
 		}
-		localization_key = "Judaism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {  
 			check_variable = { state_religion_array^i = 8 }		
 		}
-		localization_key = "Sunni Islam"
+		localization_key = scripted_loc_Sunni
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 9 }		
 		}
-		localization_key = "Shia Islam"
+		localization_key = scripted_loc_Shia
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 10 }	
 		}
-		localization_key = "Ibadi Islam"
+		localization_key = scripted_loc_Ibadi
 	} 
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 11 }
 		}
-		localization_key = "Mahayana Buddhism"
+		localization_key = scripted_loc_Mahayana
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 12 }
 
 		}
-		localization_key = "Gelugpa Buddhism"
+		localization_key = scripted_loc_Gelugpa
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 13 }
 		}
-		localization_key = "Theravada Buddhism"
+		localization_key = scripted_loc_Theravada
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 14 }
 		}
-		localization_key = "Confucianism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 15 }
 		}
-		localization_key = "Shintoism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 16 }
 		}
-		localization_key = "Taoism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 17 }
 		}
-		localization_key = "Yazidism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 18 }
 		}
-		localization_key = "Hinduism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 19 }
 		}
-		localization_key = "Sikhism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 20 }
 		}
-		localization_key = "Animism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 21 }
 		}
-		localization_key = "Paganism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 22 }
 		}
-		localization_key = "Shamanism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 23 }
 		}
-		localization_key = "Secularism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 24 }
 		}
-		localization_key = "Atheism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 25 }
 		}
-		localization_key = "Anglican"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 26 }
 		}
-		localization_key = "Catholic Sect"
+		localization_key = scripted_loc_Catholic
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 27 }
 		}
-		localization_key = "Pai Maire"
+		localization_key = scripted_loc_Pai
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 28 }
 		}
-		localization_key = "Cruzoob"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 29 }
 		}
-		localization_key = "Candomble"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 30 }
 		}
-		localization_key = "Rastafari"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 31 }
 		}
-		localization_key = "Pentecostal"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 32 }
 		}
-		localization_key = "Reformed"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 33 }
 		}
-		localization_key = "Jevoahs Witness"
+		localization_key = scripted_loc_Jevoahs
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 34 }
 		}
-		localization_key = "Ayyavazhi"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 35 }
 		}
-		localization_key = "Caodaism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 36 }
 		}
-		localization_key = "Cheondoism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 37 }
 		}
-		localization_key = "Hoa Hao"
+		localization_key = scripted_loc_Hoa
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 38 }
 		}
-		localization_key = "Tenrikyo"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 39 }
 		}
-		localization_key = "Bhakti"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 40 }
 		}
-		localization_key = "jain"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 41 }
 		}
-		localization_key = "Druze"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 42 }
 		}
-		localization_key = "Zoroastrianism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 43 }
 		}
-		localization_key = "Voodoo"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 44 }
 		}
-		localization_key = "Persona Cult"
+		localization_key = scripted_loc_Persona
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 45 }
 		}
-		localization_key = "Vajrayana"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 46 }
 		}
-		localization_key = "Navayana"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 47 }
 		}
-		localization_key = "Bahai"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 48 }
 		}
-		localization_key = "Ahmadiyya"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 49 }
 		}
-		localization_key = "Idolists"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 50 }
 		}
-		localization_key = "Shenism"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 51 }
 		}
-		localization_key = "Evangelical"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			check_variable = { state_religion_array^i = 52 }
 		}
-		localization_key = "Spiritism"
+		localization_key = scripted_loc
 	}
 	text = {
-		localization_key = "Unknown"
+		localization_key = scripted_loc
 	}
 }
 
@@ -424,6 +424,6 @@ defined_text = {
 			multiply_temp_variable = { amount_temp = 0.12 }
 			multiply_temp_variable = { amount_temp = gdp_amount }
 		}
-		localization_key = "[?amount_temp]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempRBracketSym
 	}
 }
