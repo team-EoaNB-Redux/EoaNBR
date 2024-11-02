@@ -1457,6 +1457,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_PIE_focus_Government_in_Crisis
 		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
 		mutually_exclusive = {
 			focus = ITA_PIE_focus_Replace_La_Marmora
 		}
