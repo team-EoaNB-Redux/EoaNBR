@@ -5,79 +5,79 @@
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "PRS_Eduard_von_Bonin"
+		localization_key = scripted_loc_PRS_Eduard_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "PRS_Edwin_von_Manteuffel"
+		localization_key = scripted_loc_PRS_Edwin_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "PRS_Friedrich_von_Wrangel"
+		localization_key = scripted_loc_PRS_Friedrich_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "PRS_Georg_von_Kameke"
+		localization_key = scripted_loc_PRS_Georg_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "PRS_Hermann_von_Tresckow"
+		localization_key = scripted_loc_PRS_Hermann_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = "PRS_Leopold_von_Brese_Winiary"
+		localization_key = scripted_loc_PRS_Leopold_von_Brese
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = "PRS_Ernst_von_Pfuel"
+		localization_key = scripted_loc_PRS_Ernst_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = "PRS_Eberhard_Herwarth_von_Bittenfeld"
+		localization_key = scripted_loc_PRS_Eberhard_Herwarth_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 9 }
 		}
-		localization_key = "PRS_Karl_Friedrich_von_Steinmetz"
+		localization_key = scripted_loc_PRS_Karl_Friedrich_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 10 }
 		}
-		localization_key = "PRS_Leonhard_von_Blumenthal"
+		localization_key = scripted_loc_PRS_Leonhard_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 11 }
 		}
-		localization_key = "PRS_Adolf_von_Bonin"
+		localization_key = scripted_loc_PRS_Adolf_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 12 }
 		}
-		localization_key = "PRS_Albrecht_von_Roon"
+		localization_key = scripted_loc_PRS_Albrecht_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 13 }
 		}
-		localization_key = "PRS_Helmuth_von_Moltke"
+		localization_key = scripted_loc_PRS_Helmuth_von
 	}
 	###Army Replacement Marker###
 }
@@ -89,61 +89,61 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "PRS_Heinrich_Wilhelm_Adalbert"
+		localization_key = scripted_loc_PRS_Heinrich_Wilhelm
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "PRS_Eduard_von_Jachmann"
+		localization_key = scripted_loc_PRS_Eduard_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "PRS_Eduard_Heldt"
+		localization_key = scripted_loc_PRS_Eduard
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "PRS_Wilhelm_von_Barchfeld"
+		localization_key = scripted_loc_PRS_Wilhelm_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "PRS_Christian_Amynt_Liebe"
+		localization_key = scripted_loc_PRS_Christian_Amynt
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = "PRS_Jan_Schroeder"
+		localization_key = scripted_loc_PRS_Jan
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = "PRS_Gustaf_Erik_Cavallius"
+		localization_key = scripted_loc_PRS_Gustaf_Erik
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = "PRS_Albrecht_von_Stosch"
+		localization_key = scripted_loc_PRS_Albrecht_von
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 9 }
 		}
-		localization_key = "PRS_Karl_Ferdinand_Batsch"
+		localization_key = scripted_loc_PRS_Karl_Ferdinand
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 10 }
 		}
-		localization_key = "PRS_Albrecht_von_Roon"
+		localization_key = scripted_loc_PRS_Albrecht_von
 	}
 	###Navy Replacement Marker###
 }

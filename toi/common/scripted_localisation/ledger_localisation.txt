@@ -12,7 +12,7 @@ defined_text = {
 		# 	tag = THIS
 		# 	has_government = communist
 		# }
-		localization_key = "[?current_party_ideology_group.GetTokenLocalizedKey]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_current_party_ideology_groupPeriodMark_GetTokenLocalizedKeyRBracketSym
 	}
 	# text = {
 	# 	trigger = {
@@ -91,30 +91,30 @@ defined_text = {
 	name = GetLedgerTitle
 	text = {
 		trigger = { check_variable = { ledger_open = 2 } }
-		localization_key = "LEDGER_TITLE_LAND"
+		localization_key = scripted_loc_LEDGER_TITLE
 	}
 	text = {
 		trigger = { check_variable = { ledger_open = 3 } }
-		localization_key = "LEDGER_TITLE_NAVY_AIR"
+		localization_key = scripted_loc_LEDGER_TITLE_NAVY
 	}
 	text = {
 		trigger = { check_variable = { ledger_open = 4 } }
-		localization_key = "LEDGER_TITLE_INDUSTRY"
+		localization_key = scripted_loc_LEDGER_TITLE
 	}
 	text = {
 		trigger = { check_variable = { ledger_open = 5 } }
-		localization_key = "LEDGER_TITLE_TERRITORY"
+		localization_key = scripted_loc_LEDGER_TITLE
 	}
 	text = {
 		trigger = { check_variable = { ledger_open = 6 } }
-		localization_key = "LEDGER_TITLE_FACTIONS"
+		localization_key = scripted_loc_LEDGER_TITLE
 	}
 	text = {
 		trigger = { check_variable = { ledger_open = 7 } }
-		localization_key = "LEDGER_TITLE_ECONOMY"
+		localization_key = scripted_loc_LEDGER_TITLE
 	}
 	text = {
-		localization_key = "LEDGER_TITLE"
+		localization_key = scripted_loc_LEDGER
 	}
 
 }
@@ -123,11 +123,11 @@ defined_text = {
 	name = LedgerGetVariableToSort
 	text = {
 		trigger = { check_variable = { sort_var = 1 } }
-		localization_key = "overall_score"
+		localization_key = scripted_loc_overall
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 2 } }
-		localization_key = "gdp_amount"
+		localization_key = scripted_loc_gdp
 	}
 	# text = {
 	# 	trigger = { check_variable = { sort_var = 2 } }
@@ -135,7 +135,7 @@ defined_text = {
 	# }
 	text = {
 		trigger = { check_variable = { sort_var = 3 } }
-		localization_key = "pops_sol"
+		localization_key = scripted_loc_pops
 	}
 	# text = {
 	# 	trigger = { check_variable = { sort_var = 3 } }
@@ -143,171 +143,171 @@ defined_text = {
 	# }
 	text = {
 		trigger = { check_variable = { sort_var = 4 } }
-		localization_key = "max_manpower_k"
+		localization_key = scripted_loc_max_manpower
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 5 } }
-		localization_key = "max_manpower_k"
+		localization_key = scripted_loc_max_manpower
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 6 } }
-		localization_key = "amount_research_slots"
+		localization_key = scripted_loc_amount_research
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 7 } }
-		localization_key = "opinion"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 8 } }
-		localization_key = "num_divisions"
+		localization_key = scripted_loc_num
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 9 } }
-		localization_key = "manpower_k"
+		localization_key = scripted_loc_manpower
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 10 } }
-		localization_key = "army_experience"
+		localization_key = scripted_loc_army
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 11 } }
-		localization_key = "command_power"
+		localization_key = scripted_loc_command
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 12 } }
-		localization_key = "casualties_k"
+		localization_key = scripted_loc_casualties
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 13 } }
-		localization_key = "land_doctrine_level"
+		localization_key = scripted_loc_land_doctrine
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 14 } }
-		localization_key = "num_ships"
+		localization_key = scripted_loc_num
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 15 } }
-		localization_key = "deployed_air_force_size"
+		localization_key = scripted_loc_deployed_air_force
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 16 } }
-		localization_key = "navy_experience"
+		localization_key = scripted_loc_navy
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 17 } }
-		localization_key = "air_experience"
+		localization_key = scripted_loc_air
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 18 } }
-		localization_key = "nuclear_stockpile"
+		localization_key = scripted_loc_nuclear
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 19 } }
-		localization_key = "nuclear_reactors"
+		localization_key = scripted_loc_nuclear
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 20 } }
-		localization_key = "rocket_sites"
+		localization_key = scripted_loc_rocket
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 21 } }
-		localization_key = "market_gdp"
+		localization_key = scripted_loc_market
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 22 } }
-		localization_key = "num_of_civilian_factories"
+		localization_key = scripted_loc_num_of_civilian
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 23 } }
-		localization_key = "consumer_goods_monthly_use"
+		localization_key = scripted_loc_consumer_goods_monthly
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 24 } }
-		localization_key = "num_of_military_factories"
+		localization_key = scripted_loc_num_of_military
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 25 } }
-		localization_key = "num_of_naval_factories"
+		localization_key = scripted_loc_num_of_naval
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 26 } }
-		localization_key = "fuel_k"
+		localization_key = scripted_loc_fuel
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 27 } }
-		localization_key = "num_owned_states"
+		localization_key = scripted_loc_num_owned
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 28 } }
-		localization_key = "num_of_controlled_states"
+		localization_key = scripted_loc_num_of_controlled
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 29 } }
-		localization_key = "num_owned_controlled_states"
+		localization_key = scripted_loc_num_owned_controlled
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 30 } }
-		localization_key = "num_occupied_states"
+		localization_key = scripted_loc_num_occupied
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 31 } }
-		localization_key = "num_core_states"
+		localization_key = scripted_loc_num_core
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 32 } }
-		localization_key = "num_controlled_states_including_subjects"
+		localization_key = scripted_loc_num_controlled_states_including
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 33 } }
-		localization_key = "faction_members^num"
+		localization_key = scripted_loc_faction_membersCaratSym
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 34 } }
-		localization_key = "faction_battalions"
+		localization_key = scripted_loc_faction
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 35 } }
-		localization_key = "faction_ships"
+		localization_key = scripted_loc_faction
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 36 } }
-		localization_key = "faction_air"
+		localization_key = scripted_loc_faction
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 37 } }
-		localization_key = "faction_industry"
+		localization_key = scripted_loc_faction
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 38 } }
-		localization_key = "faction_controlled_states"
+		localization_key = scripted_loc_faction_controlled
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 39 } }
-		localization_key = "gdp"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 40 } }
-		localization_key = "GDP_growth_real"
+		localization_key = scripted_loc_GDP_growth
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 41 } }
-		localization_key = "national_debt"
+		localization_key = scripted_loc_national
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 42 } }
-		localization_key = "civilian_expenditures"
+		localization_key = scripted_loc_civilian
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 43 } }
-		localization_key = "military_expenditures"
+		localization_key = scripted_loc_military
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 44 } }
-		localization_key = "misc_income"
+		localization_key = scripted_loc_misc
 	}
 	text = {
 		trigger = { check_variable = { sort_var = 45 } }
-		localization_key = "misc_costs"
+		localization_key = scripted_loc_misc
 	}
 }
 
@@ -315,10 +315,10 @@ defined_text = {
 	name = LedgerGetQSCompare
 	text = {
 		trigger = { check_variable = { ledger_qs_compare = 1 } }
-		localization_key = "less_than_or_equals"
+		localization_key = scripted_loc_less_than_or
 	}
 	text = {
-		localization_key = "greater_than_or_equals"
+		localization_key = scripted_loc_greater_than_or
 	}
 
 }
@@ -330,22 +330,22 @@ defined_text = {
 		trigger = {
 			is_great_power = yes
 		}
-		localization_key = "GFX_topbar_ledger_04"
+		localization_key = scripted_loc_GFX_topbar_ledger
 	}
 	text = {
 		trigger = {
 			is_secondary_power = yes
 		}
-		localization_key = "GFX_topbar_ledger_03"
+		localization_key = scripted_loc_GFX_topbar_ledger
 	}
 	text = {
 		trigger = {
 			is_minor_power = yes
 		}
-		localization_key = "GFX_topbar_ledger_02"
+		localization_key = scripted_loc_GFX_topbar_ledger
 	}
 	text = {
-		localization_key = "GFX_topbar_ledger_01"
+		localization_key = scripted_loc_GFX_topbar_ledger
 	}
 }
 
@@ -483,6 +483,6 @@ defined_text = {
 				value = 0
 			}
 		}
-		localization_key = "0"
+		localization_key = scripted_loc
 	}
 }

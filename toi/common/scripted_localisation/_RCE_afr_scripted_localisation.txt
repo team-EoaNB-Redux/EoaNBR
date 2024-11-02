@@ -2695,18 +2695,18 @@ defined_text = { #chosen rssource for the trade company for industrialisation
 		trigger = {
 			check_variable = { afr_company_trade_good = 1 }
 		}
-		localization_key = "cotton_farm"
+		localization_key = scripted_loc_cotton
 	}
 	text = {
 		trigger = {
 			check_variable = { afr_company_trade_good = 2 }
 		}
-		localization_key = "logging_camp"
+		localization_key = scripted_loc_logging
 	}
 	text = {
 		trigger = {
 			check_variable = { afr_company_trade_good = 3 }
 		}
-		localization_key = "synthetic_refinery_rubber"
+		localization_key = scripted_loc_synthetic_refinery
 	}
 }

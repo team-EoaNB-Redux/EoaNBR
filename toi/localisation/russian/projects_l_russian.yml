@@ -5,10 +5,10 @@
  	#Please order this correctly 
   
  work_programs: "Рабочие программы" #NT!
- work_programs_desc: "Рабочие программы — это временные программы, создаваемые правительством часто во времена экономических трудностей, чтобы заставить безработных работать над различными проектами." #NT!
- work_programs_effect: "Получает «§YРабочие программы§!», которые дают (§STransport§_1 Коэффициент производительности: §G+10.00%§_1, §SInfrastructure§_1 Фактор промышленной мощности: §G+10.00%§_1, §SRailway§_1 Коэффициент промышленной мощности: §G+10.00%§_1) на §Y1825§! дней." #NT!
+ work_programs_desc: "Программы трудоустройства — это временные программы, которые правительство часто создает во времена экономических трудностей, чтобы трудоустроить безработных людей на различных проектах." #NT!
+ work_programs_effect: "Получает «§YРабочие программы§!», которые предоставляют (§SТранспорт§! Коэффициент пропускной способности: §G+10,00%§!, §SИнфраструктура§! Коэффициент промышленной мощности: §G+10,00%§!, §SЖелезная дорога§! Коэффициент промышленной мощности: §G+10,00%§!) на §Y1825§! дней." #NT!
   
- colony_project: "Колония" #NT!
+ colony_project: "колония" #NT!
  colony_project_desc: ""
  colony_project_effect: ""
   
@@ -16,21 +16,21 @@
  frontier_project_desc: ""
  frontier_project_effect: ""
   
- NSWGR_program: "Программа НСВГР" #NT!
- NSWGR_program_desc: "заполните это позже, когда я буду чертовски догадываться, что писать" #NT!
- NSWGR_program_effect: "Получает '§Yпрограмму NSWGR§!', начало железной дороги за пределами разделительного диапазона." #NT!
+ NSWGR_program: "Программа NSWGR" #NT!
+ NSWGR_program_desc: "заполню это позже, когда у меня появится чертова идея, что написать" #NT!
+ NSWGR_program_effect: "Получает '§Yпрограмму NSWGR§!' начало железной дороги за пределами разделительного хребта" #NT!
   
    # 
   
    # Project Event Localization 
  projects.1.t: "Рабочие программы завершены" #NT!
- projects.1.d: "Разработанные нами рабочие программы себя исчерпали. По всей стране построено множество дорог, каналов, мостов и других объектов инфраструктуры. Таким образом, мы получаем выгоду от завершения этих проектов общественных работ." #NT!
+ projects.1.d: "Рабочие программы, которые мы создали, исчерпали себя. По всей стране построено множество дорог, каналов, мостов и других объектов инфраструктуры. Таким образом, мы выигрываем от завершения этих проектов общественных работ." #NT!
  projects.1.a: "Отличная работа" #NT!
    # 
   
    # Project Idea Localization 
  work_programs_idea: "Рабочие программы" #NT!
- work_programs_idea_desc: "Разработанные нами рабочие программы себя исчерпали. По всей стране построено множество дорог, каналов, мостов и других объектов инфраструктуры. Таким образом, мы получаем выгоду от завершения этих проектов общественных работ." #NT!
+ work_programs_idea_desc: "Рабочие программы, которые мы создали, исчерпали себя. По всей стране построено множество дорог, каналов, мостов и других объектов инфраструктуры. Таким образом, мы выигрываем от завершения этих проектов общественных работ." #NT!
    # 
   
    # System Localization 
@@ -39,5 +39,5 @@
  proj_cost: "Оставшаяся стоимость: [GetProjCostLeft][GetCurrencyTextIcon]" #NT!
  proj_time: "Время: [GetProjTimeLeft] месяцев" #NT!
   
- proj_tt: "§Y[GetProjName]:§!\nМестоположение: §Y[?proj_scope^i.GetName]§!\n\nОставшаяся ориентировочная стоимость: §Y[GetProjCostLeft]§![GetCurrencyTextIcon] \nОценочная ежемесячная стоимость: §Y[GetProjMonthlyCost]§![GetCurrencyTextIcon] \n\nПрошедшее время: §C[GetProjTimeElapsed] месяцев§!\nРасчетное время до завершения: §C§Y[?proj_scope^i.GetName]§0 месяцев§!\n\n§C1Необходимые товары:§!\nПродукты питания: §Y[?proj_scope^i.GetName]§3_8 §Y[?proj_scope^i.GetName]§4_8 §Y[?proj_scope^i.GetName]§5_8 §Y[?proj_scope^i.GetName]§6_8§Y[?proj_scope^i.GetName]§7_8§Y[?proj_scope^i.GetName]§8_8\nПотребительские товары: §Y[?proj_scope^i.GetName]§9_8 §Y[?proj_scope^i.GetName]§4_8 §Y[GetProjCostLeft]§1_8 §Y[?proj_scope^i.GetName]§6_8§Y[GetProjCostLeft]§3_8§Y[?proj_scope^i.GetName]§8_8\nРоскошь Товары: §Y[GetProjCostLeft]§5_8 §Y[?proj_scope^i.GetName]§4_8 §Y[GetProjCostLeft]§7_8 §Y[?proj_scope^i.GetName]§6_8§Y[GetProjCostLeft]§9_8§Y[?proj_scope^i.GetName]§8_8\nУслуги: [GetCurrencyTextIcon]1_8 §Y[?proj_scope^i.GetName]§4_8 [GetCurrencyTextIcon]3_8 §Y[?proj_scope^i.GetName]§6_8[GetCurrencyTextIcon]5_8§Y[?proj_scope^i.GetName]§8_8\nСырье: [GetCurrencyTextIcon]7_8 §Y[?proj_scope^i.GetName]§4_8 [GetCurrencyTextIcon]9_8 §Y[?proj_scope^i.GetName]§6_8§Y[GetProjMonthlyCost]§1_8§Y[?proj_scope^i.GetName]§8_ 8\nЭнергетические материалы: § _43_8 §Y[?proj_scope^i.GetName]§4_8 §Y[GetProjMonthlyCost]§5_8 §Y[?proj_scope^i.GetName]§6_8§Y[GetProjMonthlyCost]§7_8§Y[?proj_scope^i.GetName]§8_8\nПромышленные товары: §Y[GetProjMonthlyCost]§9_8 §Y[?proj_scope^i.GetName]§4_8 [GetCurrencyTextIcon]1_8 §Y[?proj_scope^i.GetName]§6_8[GetCurrencyTextIcon]3_8§Y[?proj_scope^i.GetName]§8_8\nЭлектричество: [GetCurrencyTextIcon]5_8 §Y[?proj_scope^i.GetName]§4_8 [GetCurrencyTextIcon]7_8 §Y[?proj_scope^i.GetName]§6_8[GetCurrencyTextIcon]9_8§Y[?proj_scope^i.GetName]§8 _8\n\n§C1Эффект после завершения :§!\n§C3" #NT!
+ proj_tt: "§Y[GetProjName]:§!\nРасположение: §Y[?proj_scope^i.GetName]§!\n\nОставшаяся стоимость: §Y[GetProjCostLeft]§![GetCurrencyTextIcon] \nОжидаемая стоимость в месяц: §Y[GetProjMonthlyCost]§![GetCurrencyTextIcon] \n\nПрошедшее время: §C[GetProjTimeElapsed] месяцев§!\nОжидаемое время до завершения: §C§Y[?proj_scope^i.GetName]§0 месяцев§!\n\n§C1Требуется товар:§!\nЕда: §C1[GetProjFoodFulfilled]§! §g/§! §C1[GetProjFoodNeed]§! §g(§!§G+[GetProjFoodDemand]§!§g)§!\nТовары народного потребления: §C1[GetProjConsumerGoodsFulfilled]§! §g/§! §C1[GetProjConsumerGoodsNeed]§! §g(§!§G+[GetProjConsumerGoodsDemand]§!§g)§!\nТовары класса люкс: §C1[GetProjLuxuryGoodsFulfilled]§! §g/§! §C1[GetProjLuxuryGoodsNeed]§! §g(§!§G+[ПолучитьПроджектСпросНаРоскошныеТовары]§!§g)§!\nУслуги: §C1[ПолучитьПроджектУслугиВыполнены]§! §g/§! §C1[ПолучитьПроджектУслугиНеобходимы]§! §g(§!§G+[ПолучитьПроджектУслугиНеобходимы]§!§g)§!\nСырьевые Материалы: §C1[ПолучитьПроджектСырьевыеМатериалыВыполнены]§! §g/§! §C1[ПолучитьПроджектСырьевыеМатериалыНеобходимы]§! §g(§!§G+[GetProjRawMaterialsDemand]§!§g)§!\nЭнергетические материалы: §C1[GetProjEnergyMaterialsFulfilled]§! §g/§! §C1[GetProjEnergyMaterialsNeed]§! §g(§!§G+[GetProjEnergyMaterialsDemand]§!§g)§!\nПромышленные товары: §C1[GetProjIndustrialGoodsFulfilled]§! §g/§! §C1[GetProjIndustrialGoodsNeed]§! §g(§!§G+[GetProjIndustrialGoodsDemand]§!§g)§!\nЭлектричество: §C1[GetProjElectricityFulfilled]§! §g/§! §C1[GetProjElectricityNeed]§! §g(§!§G+[GetProjElectricityDemand]§!§g)§!\n\n§C1Эффект после завершения:§!\n§C3" #NT!
    # 

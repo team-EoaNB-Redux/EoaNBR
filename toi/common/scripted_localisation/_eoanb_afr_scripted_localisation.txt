@@ -272,7 +272,7 @@ defined_text = { # suez construction
 				compare = greater_than_or_equals
 			}
 		}
-		localization_key = "GetSuezConstructionAvailibleComplete"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
@@ -285,13 +285,13 @@ defined_text = { # suez construction
 				}
 			}
 		}
-		localization_key = "GetSuezConstructionAvailibleYes"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			NOT={EGY={has_country_flag = suez_constructor}}
 		}
-		localization_key = "GetSuezConstructionAvailibleNO"
+		localization_key = scripted_loc
 	}
 
 }
@@ -304,165 +304,165 @@ defined_text = { # suez status
 				has_global_flag = SUEZ_CANAL_BLOCKED
 			}
 		}
-		localization_key = "GetSuezCurrentStatusOpen"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
 		}
-		localization_key = "GetSuezCurrentStatusBlocked"
+		localization_key = scripted_loc
 	}
 
 }
 defined_text = { # current region being voted on by the berlin conferance
 	name = GetCurrentberVotingRegion
 	text = {
-		localization_key = "Mauritania"
+		localization_key = scripted_loc
 		trigger = {
 			check_variable = {UCT.current_region_conferance_vote = 1}
 		}
 	}
 	text = {
-		localization_key = "Senegal"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 2} }
 		}
 	}
 	text = {
-		localization_key = "Guinea"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 3} }
 		}
 	}
 	text = {
-		localization_key = "Sierra Leone"
+		localization_key = scripted_loc_Sierra
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 4} }
 		}
 	}
 	text = {
-		localization_key = "Ivory Coast"
+		localization_key = scripted_loc_Ivory
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 5} }
 		}
 	}
 	text = {
-		localization_key = "Ghana"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 6} }
 		}
 	}
 	text = {
-		localization_key = "Togo"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 7} }
 		}
 	}
 	text = {
-		localization_key = "Benin"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 8} }
 		}
 	}
 	text = {
-		localization_key = "Nigeria"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 9} }
 		}
 	}
 	text = {
-		localization_key = "Equatorial Africa"
+		localization_key = scripted_loc_Equatorial
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 10} }
 		}
 	}
 	text = {
-		localization_key = "Gabon"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 11} }
 		}
 	}
 	text = {
-		localization_key = "Congo"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 12} }
 		}
 	}
 	text = {
-		localization_key = "Angola"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 13} }
 		}
 	}
 	text = {
-		localization_key = "Nambia"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 14} }
 		}
 	}
 	text = {
-		localization_key = "Tanganyika"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 15} }
 		}
 	}
 	text = {
-		localization_key = "Kenya"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 16} }
 		}
 	}
 	text = {
-		localization_key = "African Horn"
+		localization_key = scripted_loc_African
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 17} }
 		}
 	}
 
 	text = {
-		localization_key = "Uganda"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 18} }
 		}
 	}
 	text = {
-		localization_key = "Rhodesia"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 19} }
 		}
 	}
 	text = {
-		localization_key = "Central Africa"
+		localization_key = scripted_loc_Central
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 20} }
 		}
 	}
 	text = {
-		localization_key = "Mali"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 21} }
 		}
 	}
 	text = {
-		localization_key = "Niger"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 22} }
 		}
 	}
 	text = {
-		localization_key = "Burkina Faso"
+		localization_key = scripted_loc_Burkina
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 23} }
 		}
 	}
 	text = {
-		localization_key = "Chad"
+		localization_key = scripted_loc
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 24} }
 		}
 	}
 	text = {
-		localization_key = "ERROR: cannot get region"
+		localization_key = scripted_loc_ERRORColonSym__cannot_get
 	}
 
 }
@@ -475,22 +475,22 @@ defined_text = { # population tooltip
 			check_variable = { global.population_array^score_array_position_var_real > 1000 }
 		}
 		#set_temp_variable = {doesthiswork = 1}
-		localization_key = "[?global.population_array_b^score_array_position_var_real|2]B"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_population_array_bCaratSym_score_array_position_var_realORSym_2RBracketSym
 	}
 	text = {
 		trigger={
 			check_variable = { global.population_array^score_array_position_var_real > 1 }
 		}
-		localization_key = "[?global.population_array^score_array_position_var_real|2]M"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_population_arrayCaratSym_score_array_position_var_realORSym_2RBracketSym
 	}
 	text = {
 		trigger={
 			check_variable = { max_manpower_k > 1 }
 		}
-		localization_key = "[?max_manpower_k|2]K"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_max_manpower_kORSym_2RBracketSym
 	}
 	text = {
-		localization_key = "[?max_manpower|2]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_max_manpowerORSym_2RBracketSym
 	}
 }
 
@@ -501,16 +501,16 @@ defined_text = { # army funding
 			check_variable = { QNG_army_funding_level_lp > 0 }
 		}
 		#set_temp_variable = {doesthiswork = 1}
-		localization_key = "Overfunding"
+		localization_key = scripted_loc
 	}
 	text = {
 		trigger={
 			check_variable = { QNG_army_funding_level_lp < 0 }
 		}
-		localization_key = "Underfunded"
+		localization_key = scripted_loc
 	}
 	text = {
-		localization_key = "Funded"
+		localization_key = scripted_loc
 	}
 }
 
@@ -520,10 +520,10 @@ defined_text = { # whether oman has reformed or not
 		trigger={
 			has_country_flag = OMA_western
 		}
-		localization_key = "Continue the Reforms"
+		localization_key = scripted_loc_Continue_the
 	}
 	text = {
-		localization_key = "Begin Reforms"
+		localization_key = scripted_loc_Begin
 	}
 }
 defined_text = { # whether oman has reformed or not
@@ -532,9 +532,9 @@ defined_text = { # whether oman has reformed or not
 		trigger={
 			has_country_flag=OMA_isolation
 		}
-		localization_key = "Remaining Isolated"
+		localization_key = scripted_loc_Remaining
 	}
 	text = {
-		localization_key = "Retreat into Obscurity"
+		localization_key = scripted_loc_Retreat_into
 	}
 }

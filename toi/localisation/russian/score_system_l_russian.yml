@@ -1,22 +1,55 @@
 ﻿l_russian:
   
- eoanb_lockey_power_status_great_power: "Большая сила" #NT!
+ eoanb_lockey_power_status_great_power: "Великая держава" #NT!
  eoanb_lockey_power_status_secondary_power: "Вторичная мощность" #NT!
  eoanb_lockey_power_status_minor_power: "Малая сила" #NT!
- eoanb_lockey_power_status_unsignificant_power: "Незначительная сила" #NT!
- SCORE_TOOLTIP: "§Y[From.GetNameDef]§! имеет общий прогноз силы §Y[?overall_score|0]§!.\n- §YПромышленный прогноз:§! [?industrial_score|0]\n- §YВоенный прогноз:§! [?military_score|0]\n- §YПрестиж:§! [?prestige_score|0]\n- §YТехнологический прогноз:§ _3 §Y[?overall_score|0]§2" #NT!
- DELAYED_SCORE_TOOLTIP: "§YПромышленный прогноз§! получается с помощью следующих средств\n- Количество заводов\n- Ресурсы\n- Марионеточные государства и колонии\n- Промышленное развитие\n§YВоенный прогноз§! получается с помощью следующих средств\n- Число дивизий\n- Количество кораблей\n- Качество вооруженных сил\n- Победа в конфликтах\n§YПрестиж§! достигается следующими способами\n- Уникальные события и решения\n- Древа фокусов\n- Влияние\n §YТехнологический прогноз§! достигается с помощью следующих средств\n- Технологические открытия." #NT!
- POWER_STATUS_TOOLTIP: "§Y[From.GetNameDef]§! это §Y[From.GetPowerStatusName]§! занял §G[?this.score_array_position_var]§!." #NT!
- DELAYED_POWER_STATUS_TOOLTIP: "Следующие нации являются §YВеликими державами§!:\n[?global.score_array_position^0]. §Y[?global.score_tag_array^0.GetNameWithFlag]§!\n[?global.score_array_position^1]. §Y[?global.score_tag_array^1.GetNameWithFlag]§!\n[?global.score_array_position^2]. §Y[?global.score_tag_array^2.GetNameWithFlag]§!\n[?global.score_array_position^3]. §Y[?global.score_tag_array^3.GetNameWithFlag]§!\n§!0. §Y[?global.score_tag_array^4.GetNameWithFlag]§!\n§!2. §Y[?global.score_tag_array^5.GetNameWithFlag]§!\n§!4. §Y[?global.score_tag_array^6.GetNameWithFlag]§!\n§!6. §Y[?global.score_tag_array^7.GetNameWithFlag]§!\n\n\nРазмещение способностей пересчитывается каждые две недели и впервые рассчитывается через две недели после начала игры. Это может привести к отображению неточной информации в первые недели игры.\n" #NT!
- # eoanb_lockey_power_status_great_power_list: "Следующие нации являются §YВеликими державами§!:\n[?global.score_array_position^0]. §Y[?global.score_tag_array^0.GetNameWithFlag]§!\n[?global.score_array_position^1]. §Y[?global.score_tag_array^1.GetNameWithFlag]§!\n[?global.score_array_position^2]. §Y[?global.score_tag_array^2.GetNameWithFlag]§!\n[?global.score_array_position^3]. §Y[?global.score_tag_array^3.GetNameWithFlag]§!\n§!0. §Y[?global.score_tag_array^4.GetNameWithFlag]§!\n§!2. §Y[?global.score_tag_array^5.GetNameWithFlag]§!\n§!4. §Y[?global.score_tag_array^6.GetNameWithFlag]§!\n§!6. §Y[?global.score_tag_array^7.GetNameWithFlag]§!\n" #NT!
- # eoanb_lockey_power_status_secondary_power_list: "Следующие нации являются §YВеликими державами§!:\n[?global.score_array_position^8]. §Y[?global.score_tag_array^8.GetNameWithFlag]§!\n[?global.score_array_position^9]. §Y[?global.score_tag_array^9.GetNameWithFlag]§!\n[?global.score_array_position^10]. §Y[?global.score_tag_array^10.GetNameWithFlag]§!\n[?global.score_array_position^11]. §Y[?global.score_tag_array^11.GetNameWithFlag]§!\n§!0. §Y[?global.score_tag_array^12.GetNameWithFlag]§!\n§!2. §Y[?global.score_tag_array^13.GetNameWithFlag]§!\n§!4. §Y[?global.score_tag_array^14.GetNameWithFlag]§!\n§!6. §Y[?global.score_tag_array^15.GetNameWithFlag]§!\n" #NT!
- # eoanb_lockey_power_status_minor_power_list: "Нации с рангом от 16 до 40 относятся к §YМладшим державам§!." #NT!
- # eoanb_lockey_power_status_unsignificant_power_list: "Нации с рангом менее 40 относятся к §YНезначительным державам§!." #NT!
- LEDGER_OPEN_TOOLTIP: "Леджер" #NT!
- eoanb_change_prestige_score_tt: "£prestige_texticon  Изменение показателя престижа: [?eoanb_prestige_change|0=+]\n" #NT!
- eoanb_change_tech_score_tt: "Изменение технических показателей: [?eoanb_tech_score_change|0=+]\n" #NT!
+ eoanb_lockey_power_status_unsignificant_power: "Незначительная мощность" #NT!
   
- eoanb_is_great_power_tt: "[GetName] — это §YВеликая держава§!" #NT!
- eoanb_is_secondary_power_tt: "[GetName] является §YВторостепенной властью§!" #NT!
- eoanb_is_minor_power_tt: "[GetName] — это §YМладшая Сила§!" #NT!
- eoanb_is_insignificant_power_tt: "[GetName] — это §YНезначительная Сила§!" #NT!
+ SCORE_TOOLTIP_1: "[FROM.GetFlag] §8[From.GetNameDef]§! §gв настоящее время имеет Ранг§! §g2[FROM.GetPowerStatusName]§! §gс общей позицией по очкам§! §W#[?global.score_array_position^i]§! §gв мире.\n\nТекущий§! §g2Престиж§!§g:§! §W[?prestige_score|0]§!\n\n§gЕсли Престиж§! [FROM.GetFlag] §8[From.GetNameDef]§! §gопускается ниже§! §W#§! §gна длительное время, их ранг снизится до§! §g2Крупная держава§!§!" #NT!
+ SCORE_TOOLTIP_2: "[THIS.GetFlag] §8[THIS.GetNameDef]§! §gв настоящее время имеет Ранг§! §g2[THIS.GetPowerStatusName]§! §gс общей позицией по очкам§! §W#[?global.score_array_position^i]§! §gв мире.\n\nТекущий§! §g2Престиж§!§g:§! §W[?prestige_score|0]§!\n\n§gЕсли Престиж§! [THIS.GetFlag] §8[THIS.GetNameDef]§! §gопускается ниже§! §W#§! §gна длительное время, их ранг снизится до§! §g2Крупная держава§!§!" #NT!
+  
+ POWER_STATUS_TOOLTIP: "§Y[From.GetNameDef]§! имеет рейтинг §Y[From.GetPowerStatusName]§! §G[?this.score_array_position_var]§!." #NT!
+  
+ DELAYED_POWER_STATUS_TOOLTIP: "Следующие страны являются §YВеликими державами§!:\n[?global.score_array_position^0]. §Y[?global.score_tag_array^0.GetNameWithFlag]§!\n[?global.score_array_position^1]. §Y[?global.score_tag_array^1.GetNameWithFlag]§!\n[?global.score_array_position^2]. §Y[?global.score_tag_array^2.GetNameWithFlag]§!\n[?global.score_array_position^3]. §Y[?global.score_tag_array^3.GetNameWithFlag]§!\n§!0. §Y[?global.score_tag_array^4.GetNameWithFlag]§!\n§!2. §Y[?global.score_tag_array^5.GetNameWithFlag]§!\n§!4. §Y[?global.score_tag_array^6.GetNameWithFlag]§!\n§!6. §Y[?global.score_tag_array^7.GetNameWithFlag]§!\n\n\nРасположение Сил пересчитывается каждые две недели и впервые рассчитывается через две недели после начала игры. Это может привести к отображению неточной информации в течение первых недель игрового процесса.\n" #NT!
+ # eoanb_lockey_power_status_great_power_list: "Следующие страны являются §YВеликими державами§!:\n[?global.score_array_position^0]. §Y[?global.score_tag_array^0.GetNameWithFlag]§!\n[?global.score_array_position^1]. §Y[?global.score_tag_array^1.GetNameWithFlag]§!\n[?global.score_array_position^2]. §Y[?global.score_tag_array^2.GetNameWithFlag]§!\n[?global.score_array_position^3]. §Y[?global.score_tag_array^3.GetNameWithFlag]§!\n§!0. §Y[?global.score_tag_array^4.GetNameWithFlag]§!\n§!2. §Y[?global.score_tag_array^5.GetNameWithFlag]§!\n§!4. §Y[?global.score_tag_array^6.GetNameWithFlag]§!\n§!6. §Y[?global.score_tag_array^7.GetNameWithFlag]§!\n" #NT!
+ # eoanb_lockey_power_status_secondary_power_list: "Следующие страны являются §YВеликими державами§!:\n[?global.score_array_position^8]. §Y[?global.score_tag_array^8.GetNameWithFlag]§!\n[?global.score_array_position^9]. §Y[?global.score_tag_array^9.GetNameWithFlag]§!\n[?global.score_array_position^10]. §Y[?global.score_tag_array^10.GetNameWithFlag]§!\n[?global.score_array_position^11]. §Y[?global.score_tag_array^11.GetNameWithFlag]§!\n§!0. §Y[?global.score_tag_array^12.GetNameWithFlag]§!\n§!2. §Y[?global.score_tag_array^13.GetNameWithFlag]§!\n§!4. §Y[?global.score_tag_array^14.GetNameWithFlag]§!\n§!6. §Y[?global.score_tag_array^15.GetNameWithFlag]§!\n" #NT!
+ # eoanb_lockey_power_status_minor_power_list: "Страны с рангом от 16 до 40 ранжируются как §YВторостепенные державы§!." #NT!
+ # eoanb_lockey_power_status_unsignificant_power_list: "Страны с рангом менее 40 ранжируются как §YНезначительные державы§!." #NT!
+ LEDGER_OPEN_TOOLTIP: "Леджер" #NT!
+ eoanb_change_prestige_score_tt: "£prestige_texticon  Изменение рейтинга престижа: [?eoanb_prestige_change|0=+]\n" #NT!
+ eoanb_change_tech_score_tt: "Изменение технической оценки: £research_texticon  [?eoanb_tech_score_change|0=+]\n" #NT!
+  
+ eoanb_is_great_power_tt: "[GetName] — это £prestige_texticon  §YВеликая держава§!" #NT!
+ eoanb_is_secondary_power_tt: "[GetName] — это £prestige_texticon  §YКрупная держава§!" #NT!
+ eoanb_is_minor_power_tt: "[GetName] — это £prestige_texticon  §YМалая сила§!" #NT!
+ eoanb_is_insignificant_power_tt: "[GetName] — это £prestige_texticon  §YНезначительная сила§!" #NT!
+  
+ ledger_reduce_rank: "\n\n§gЕсли престиж§! [FROM.GetFlag]§8[From.GetName]§! §gснижается ниже§! §W1§! §gв течение длительного времени, его ранг снизится до§! §9[GetNextRankDown]§!" #NT!
+  
+ ledger_increase_rank: "\n\n§gЕсли Престиж§! [FROM.GetFlag]§8[From.GetName]§! §gстанет по крайней мере §! §W1§! §g, их Ранг увеличится до §! §9[GetNextRankUp]§!" #NT!
+  
+ ledger_select_name: "[?global.ledger_token_array^i.GetTokenLocalizedKey]" #NT!
+  
+ ledger_select_score: "Страны - В Мире" #NT!
+ ledger_select_country_relations: "Отношения со странами" #NT!
+ ledger_select_global_gdp: "Мировой ВВП - §RWIP§!" #NT!
+ ledger_select_markets: "Рынки" #NT!
+ ledger_select_military: "Военные - §RWIP§!" #NT!
+ ledger_select_national_gdp: "ВВП страны" #NT!
+ ledger_select_population: "Население - §RWIP§!" #NT!
+ ledger_select_sol: "Уровень жизни - §RWIP§!" #NT!
+ ledger_select_states: "Штаты - §RWIP§!" #NT!
+ ledger_select_industry: "Промышленность - §RWIP§!" #NT!
+ ledger_select_territory: "Территории - §RWIP§!" #NT!
+ ledger_select_factions: "Фракции - §RWIP§!" #NT!
+  
+ relation_category_hostile: "§RHostile§! ([GetOpinionAmount])" #NT!
+ relation_category_cold: "§RCold§! ([GetOpinionAmount])" #NT!
+ relation_category_poor: "§RPoor§! ([GetOpinionAmount])" #NT!
+ relation_category_neutral: "Нейтральный ([GetOpinionAmount])" #NT!
+ relation_category_cordial: "§GCordial§! ([GetOpinionAmount])" #NT!
+ relation_category_amicable: "§GAmicable§! ([GetOpinionAmount])" #NT!
+ relation_category_friendly: "§GFriendly§! ([GetOpinionAmount])" #NT!
+  
+ relation_color_red: "§R[?THIS.opinion@ROOT]§!" #NT!
+ relation_color_green: "§G+[?THIS.opinion@ROOT]§!" #NT!

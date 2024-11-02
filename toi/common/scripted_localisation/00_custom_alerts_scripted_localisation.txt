@@ -5,31 +5,31 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "CUSTOM_ALERTS_MHC_POWERFUL_ADVISOR"
+		localization_key = scripted_loc_CUSTOM_ALERTS_MHC_POWERFUL
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "CUSTOM_ALERTS_MHC_POWERFUL_ORG"
+		localization_key = scripted_loc_CUSTOM_ALERTS_MHC_POWERFUL
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "CUSTOM_ALERTS_MHC_UNFIT"
+		localization_key = scripted_loc_CUSTOM_ALERTS_MHC
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "CUSTOM_ALERTS_MHC_ACTIVE_NO_WAR"
+		localization_key = scripted_loc_CUSTOM_ALERTS_MHC_ACTIVE_NO
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "CUSTOM_ALERTS_MHC_INACTIVE_WAR"
+		localization_key = scripted_loc_CUSTOM_ALERTS_MHC_INACTIVE
 	}
 }
 
@@ -40,30 +40,30 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_POWERFUL_ADVISOR"
+		localization_key = scripted_loc_CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_POWERFUL
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_POWERFUL_ORG"
+		localization_key = scripted_loc_CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_POWERFUL
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_UNFIT"
+		localization_key = scripted_loc_CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_ACTIVE_NO_WAR"
+		localization_key = scripted_loc_CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_ACTIVE_NO
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_INACTIVE_WAR"
+		localization_key = scripted_loc_CUSTOM_ALERTS_TOOLTIP_DELAYED_MHC_INACTIVE
 	}
 }

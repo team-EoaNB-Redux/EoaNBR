@@ -27,7 +27,7 @@
  MODIFIER_CARRIER_TRAFFIC: "Перемещение авианосцев"
  MODIFIER_POLITICAL_POWER_GAIN: "Ежедневный прирост законодательной власти" #NT!
  MODIFIER_POLITICAL_POWER_COST: "Ежедневная стоимость законодательной власти" #NT!
- MODIFIER_POLITICAL_POWER_FACTOR: "Прирост законодательной власти" #NT!
+ MODIFIER_POLITICAL_POWER_FACTOR: "Усиление законодательной власти" #NT!
  MODIFIER_CARRIER_NIGHT_TRAFFIC: "Ночное перемещение авианосцев"
  MODIFIER_NAVAL_HIT_CHANCE: "Вероятность успеха морской атаки"
  MODIFIER_NAVAL_SPEED: "Скорость флота"
@@ -164,8 +164,8 @@
  naval_air_research: "Темпы исследований морской авиации"
  naval_mines_research: "Темпы исследований морских мин"
  radar_tech_research: "Темпы исследований радаров"
- cat_small_arms_techs_research: "Скорость исследования оружия и техники" #NT!
- rifle_equipment_techs_research: "Скорость исследования стрелкового снаряжения" #NT!
+ cat_small_arms_techs_research: "Скорость исследования оружия и оборудования" #NT!
+ rifle_equipment_techs_research: "Скорость исследования стрелкового оборудования" #NT!
  motorized_equipment_research: "Темпы исследований моторизированной техники"
  naval_equipment_research: "Темпы исследований кораблей"
  ship_modules_tech_research: "Темпы исследований корабельных модулей"
@@ -205,6 +205,7 @@
  experience_gain_army_factor_tt: " $MODIFIER_XP_GAIN_ARMY_FACTOR$: $RIGHT|+=%1$"
  MODIFIER_XP_GAIN_NAVY: "Получаемый опыт флота"
  MODIFIER_XP_GAIN_NAVY_FACTOR: "Получаемый опыт флота"
+ experience_gain_navy_factor_tt: "$MODIFIER_XP_GAIN_NAVY_FACTOR$: $RIGHT|+=%1$" #NT!
  MODIFIER_XP_GAIN_AIR: "Получаемый опыт авиации"
  MODIFIER_XP_GAIN_AIR_FACTOR: "Получаемый опыт авиации"
  MODIFIER_XP_GAIN_ARMY_UNIT: "Получаемый опыт сухопутной дивизии"
@@ -242,7 +243,7 @@
  naval_morale_factor_tt: " $MODIFIER_NAVAL_MORALE_FACTOR$: $RIGHT|+=%1$"
  #modifier_production_speed_fuel_silo_factor: "§YТопливный бункер§! скорость строительства" #NT!
  #modifier_production_speed_fuel_silo_factor_desc: "Изменяет скорость строительства топливного бункера." #NT!
- #MODIFIER_CARRIER_FIGHTER_SORTIE_EFFICIENCY_FACTOR: "Эффективность вылета истребителей" #NT!
+ #MODIFIER_CARRIER_FIGHTER_SORTIE_EFFICIENCY_FACTOR: "Эффективность боевых вылетов истребителей" #NT!
  #MODIFIER_CARRIER_FIGHTER_SORTIE_EFFICIENCY_FACTOR_DESC: "Дополнительные проценты к скорости при дозаправке и перевооружении истребителей на авианосце во время боя." #NT!
  MODIFIER_STRATEGIC_BOMBER_ATTACK: "Бомбардировщики: атака"
  MODIFIER_INTERCEPTION_ATTACK: "Перехватчики: атака"
@@ -355,9 +356,9 @@
  MODIFIER_NAVY_ANTI_AIR_ATTACK_DESC: "Эффективность флота против вражеской авиации."
  MODIFIER_NAVY_ANTI_AIR_ATTACK_FACTOR_DESC: "Эффективность флота против вражеской авиации."
  MODIFIER_NAVY_MAX_RANGE: "Радиус действия флота"
- MODIFIER_NAVY_MAX_RANGE_DESC: "Увеличивает максимальную дальность действия наших флотов из любого ближайшего военно-морского порта, к которому у нас есть доступ." #NT!
+ MODIFIER_NAVY_MAX_RANGE_DESC: "Увеличивает максимальную дальность плавания наших флотов из любого ближайшего военно-морского порта, к которому у нас есть доступ." #NT!
  MODIFIER_NAVY_MAX_RANGE_FACTOR: "Коэффициент радиуса действия флота"
- MODIFIER_NAVY_MAX_RANGE_FACTOR_DESC: "Увеличивает максимальную дальность действия наших флотов из любого ближайшего военно-морского порта, к которому у нас есть доступ." #NT!
+ MODIFIER_NAVY_MAX_RANGE_FACTOR_DESC: "Увеличивает максимальную дальность плавания наших флотов из любого ближайшего военно-морского порта, к которому у нас есть доступ." #NT!
  navy_max_range_factor_tt: " $MODIFIER_NAVY_MAX_RANGE_FACTOR$: $RIGHT|+=%1$"
  MODIFIER_OPINION_GAIN_MONTHLY: "Улучшает мнение"
  MODIFIER_OPINION_GAIN_MONTHLY_FACTOR: "Улучшает мнение"
@@ -388,7 +389,7 @@
  modifier_production_speed_air_base_factor: "§YАвиабаза§! Скорость строительства" #NT!
  modifier_production_speed_air_base_factor_desc: "Изменяет скорость строительства авиабаз."
  modifier_production_speed_naval_base_factor: "§YВоенно-морской порт§! Скорость строительства" #NT!
- modifier_production_speed_naval_base_factor_desc: "Изменяет скорость строительства военно-морского порта." #NT!
+ modifier_production_speed_naval_base_factor_desc: "Изменяет скорость строительства Военного порта." #NT!
  production_speed_naval_base_factor_tt: " $modifier_production_speed_naval_base_factor$: $RIGHT|+=%1$"
  modifier_production_speed_bunker_factor: "§YНаземный форт§! Скорость строительства" #NT!
  modifier_production_speed_bunker_factor_desc: "Изменяет скорость строительства бункеров."
@@ -404,7 +405,7 @@
  modifier_production_speed_anti_air_building_factor_desc: "Меняет скорость строительства батарей ПВО."
  modifier_production_speed_synthetic_refinery_factor: "§YRefinery§! Скорость строительства" #NT!
  modifier_production_speed_synthetic_refinery_factor_desc: "Изменяет скорость строительства нефтеперерабатывающих заводов."
- modifier_production_speed_radar_station_factor: "§YРадарная станция§! Скорость строительства" #NT!
+ modifier_production_speed_radar_station_factor: "§YРадиолокационная станция§! Скорость строительства" #NT!
  modifier_production_speed_radar_station_factor_desc: "Изменяет скорость строительства радарных станций."
  modifier_production_speed_rocket_site_factor: "§YРакетная площадка§! Скорость строительства" #NT!
  modifier_production_speed_rocket_site_factor_desc: "Изменяет скорость строительства ракетных площадок."
@@ -415,7 +416,7 @@
  production_speed_fuel_silo_factor_tt: " $modifier_production_speed_fuel_silo_factor$: $RIGHT|+=%1$"
  modifier_production_speed_rail_way_factor: "§YRailway§! Скорость строительства" #NT!
  modifier_production_speed_rail_way_factor_desc: "Изменяет скорость строительства железных дорог."
- modifier_production_speed_supply_node_factor: "§YЦентр снабжения§! Скорость строительства" #NT!
+ modifier_production_speed_supply_node_factor: "§YЦентр поставок§! Скорость строительства" #NT!
  modifier_production_speed_supply_node_factor_desc: "Изменяет скорость строительства узлов снабжения."
  production_speed_supply_node_factor_tt: " $modifier_production_speed_supply_node_factor$: $RIGHT|+=%1$"
  MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY: "£prod_eff_cap  Макс. эффективность производства"
@@ -850,8 +851,8 @@
  MODIFIER_STABILITY_FACTOR: "Стабильность"
  stability_factor_neutral_tt: " $MODIFIER_STABILITY_FACTOR$ $RIGHT|Y=%1$"
  stability_factor_negative_tt: " $MODIFIER_STABILITY_FACTOR$ $RIGHT|R=%1$"
- stability_factor_tt: "$MODIFIER_STABILITY_FACTOR$ $RIGHT|+=%1$"
- stability_factor_whitespace_tt: "  $stability_factor_tt$"
+ stability_factor_tt: "$MODIFIER_STABILITY_FACTOR$ $RIGHT|+=%1$" #NT!
+ stability_factor_whitespace_tt: "$stability_factor_tt$" #NT!
  MODIFIER_STABILITY_WEEKLY: "Стабильность в неделю"
  MODIFIER_STABILITY_WEEKLY_FACTOR: "Еженедельный прирост стабильности"
  MODIFIER_STABILITY_POPULARITY_FACTOR: "Модификатор стабильности от популярности партии"
@@ -865,9 +866,9 @@
  MODIFIER_FORCED_SURRENDER_LIMIT: "Лимит капитуляции"
  MODIFIER_MAX_SURRENDER_LIMIT_OFFSET: "Минимальный лимит капитуляции"
  MODIFIER_WAR_SUPPORT_FACTOR: "Поддержка войны"
- war_support_factor_neutral_tt: " $MODIFIER_WAR_SUPPORT_FACTOR$ $RIGHT|Y=%1$"
+ war_support_factor_neutral_tt: "$MODIFIER_WAR_SUPPORT_FACTOR$ $RIGHT|Y=%1$" #NT!
  war_support_factor_tt: " $MODIFIER_WAR_SUPPORT_FACTOR$ $RIGHT|+=%1$"
- war_support_factor_whitespace_tt: " $war_support_factor_tt$"
+ war_support_factor_whitespace_tt: "$war_support_factor_tt$" #NT!
  MODIFIER_WAR_SUPPORT_WEEKLY: "Поддержка войны в неделю"
  MODIFIER_WAR_SUPPORT_WEEKLY_FACTOR: "Еженедельный прирост поддержки войны"
  MODIFIER_EQUIPMENT_CAPTURE: "Прирост соотношения захвата техники"
@@ -1115,102 +1116,6 @@
  MODIFIER_RECRUITABLE_POPULATION: "Дополнительное военнообязанное население"
  MODIFIER_RECRUITABLE_POPULATION_FACTOR: "Военнообязанное население"
  MODIFIER_RESISTANCE_ACTIVITY_FACTOR: "Шанс активности сопротивления"
- state_resource_oil: "масло"
- state_resource_aluminium: "алюминий"
- state_resource_rubber: "Резинка"
- state_resource_tungsten: "Вольфрам"
- state_resource_steel: "Сталь"
- state_resource_chromium: "Хром"
- state_resource_coal: "Уголь" #NT!
- state_resource_wood: "Древесина" #NT!
- state_resource_fabric: "Ткань" #NT!
- state_resource_machine_parts: "Детали машин" #NT!
- state_resource_electronics: "Электроника" #NT!
- state_resource_plastics: "Пластмассы" #NT!
- state_resource_ceramics: "Керамика" #NT!
- state_resource_portable_power: "Портативная мощность" #NT!
- state_resource_titanium: "Титан" #NT!
- state_resource_iron: "Железо" #NT!
- state_resource_cotton: "Хлопок" #NT!
- state_resource_silicates: "Силикаты" #NT!
- state_resource_rare_earth_metals: "Редкоземельные металлы" #NT!
- temporary_state_resource_oil: "масло"
- temporary_state_resource_aluminium: "алюминий"
- temporary_state_resource_rubber: "Резинка"
- temporary_state_resource_tungsten: "Вольфрам"
- temporary_state_resource_steel: "Сталь"
- temporary_state_resource_chromium: "Хром"
- temporary_state_resource_coal: "Уголь" #NT!
- temporary_state_resource_wood: "Древесина" #NT!
- temporary_state_resource_fabric: "Ткань" #NT!
- temporary_state_resource_machine_parts: "Детали машин" #NT!
- temporary_state_resource_electronics: "Электроника" #NT!
- temporary_state_resource_plastics: "Пластмассы" #NT!
- temporary_state_resource_ceramics: "Керамика" #NT!
- temporary_state_resource_portable_power: "Портативная мощность" #NT!
- temporary_state_resource_titanium: "Титан" #NT!
- temporary_state_resource_iron: "Железо" #NT!
- temporary_state_resource_cotton: "Хлопок" #NT!
- temporary_state_resource_silicates: "Силикаты" #NT!
- temporary_state_resource_rare_earth_metals: "Редкоземельные металлы" #NT!
- country_resource_oil: "Нефть"
- country_resource_aluminium: "Алюминий"
- country_resource_rubber: "Резина"
- country_resource_tungsten: "Вольфрам"
- country_resource_steel: "Сталь"
- country_resource_chromium: "Хром"
- state_resource_cost_oil: "Расход нефти"
- country_resource_coal: "Уголь" #NT!
- country_resource_wood: "Древесина" #NT!
- country_resource_fabric: "Ткань" #NT!
- country_resource_machine_parts: "Детали машин" #NT!
- country_resource_electronics: "Электроника" #NT!
- country_resource_plastics: "Пластмассы" #NT!
- country_resource_ceramics: "Керамика" #NT!
- country_resource_portable_power: "Портативная мощность" #NT!
- country_resource_titanium: "Титан" #NT!
- country_resource_iron: "Железо" #NT!
- country_resource_cotton: "Хлопок" #NT!
- country_resource_silicates: "Силикаты" #NT!
- country_resource_rare_earth_metals: "Редкоземельные металлы" #NT!
- state_resource_cost_aluminium: "Потребление алюминия"
- state_resource_cost_rubber: "Расход резины"
- state_resource_cost_tungsten: "Потребление вольфрама"
- state_resource_cost_steel: "Расход стали"
- state_resource_cost_chromium: "Потребление хрома"
- state_resource_cost_coal: "Уголь" #NT!
- state_resource_cost_wood: "Потребление древесины" #NT!
- state_resource_cost_fabric: "Расход ткани" #NT!
- state_resource_cost_machine_parts: "Расход деталей машин" #NT!
- state_resource_cost_electronics: "Потребление электроники" #NT!
- state_resource_cost_plastics: "Потребление пластмасс" #NT!
- state_resource_cost_ceramics: "Потребление керамики" #NT!
- state_resource_cost_portable_power: "Портативная потребляемая мощность" #NT!
- state_resource_cost_titanium: "Потребление титана" #NT!
- state_resource_cost_iron: "Потребление железа" #NT!
- state_resource_cost_cotton: "Потребление хлопка" #NT!
- state_resource_cost_silicates: "Потребление силикатов" #NT!
- state_resource_cost_rare_earth_metals: "Потребление редкоземельных металлов" #NT!
- country_resource_cost_oil: "Расход нефти"
- country_resource_cost_aluminium: "Потребление алюминия"
- country_resource_cost_rubber: "Расход резины"
- country_resource_cost_tungsten: "Потребление вольфрама"
- country_resource_cost_steel: "Расход стали"
- country_resource_cost_chromium: "Потребление хрома"
- country_resource_cost_coal: "Потребление угля" #NT!
- country_resource_cost_wood: "Потребление древесины" #NT!
- country_resource_cost_fabric: "Расход ткани" #NT!
- country_resource_cost_machine_parts: "Расход деталей машин" #NT!
- country_resource_cost_electronics: "Потребление электроники" #NT!
- country_resource_cost_plastics: "Потребление пластмасс" #NT!
- country_resource_cost_ceramics: "Потребление керамики" #NT!
- country_resource_cost_portable_power: "Портативная потребляемая мощность" #NT!
- country_resource_cost_titanium: "Потребление титана" #NT!
- country_resource_cost_iron: "Потребление железа" #NT!
- country_resource_cost_cotton: "Потребление хлопка" #NT!
- country_resource_cost_silicates: "Потребление силикатов" #NT!
- country_resource_cost_rare_earth_metals: "Потребление редкоземельных металлов" #NT!
-  
  FACTORED_BY: "Умножается на $VALUE|+%$"
  DECRYPTION_TOTAL_BASE: "Общее базовое значение: $VALUE|+.0$"
  MODIFIER_LEGITIMACY_FACTOR: "Прирост легитимности"
@@ -1294,18 +1199,18 @@
  modifier_state_production_speed_rail_way_factor: "§Y$rail_way$§! — скорость строительства"
  modifier_state_production_speed_rail_way_factor_desc: "Изменяет скорость возведения следующей постройки в этом регионе: §Y$rail_way$§!."
  modifier_state_production_speed_arms_factory_factor: "§Y$arms_factory$§! — скорость строительства"
- modifier_state_production_speed_arms_factory_factor_desc: "Modifies the speed of §Y$arms_factory$§! construction in this state."modifier_state_production_speed_coal_mine_factor: "Изменяет скорость §Y$arms_factory$§! строительство в этом штате."modifier_state_production_speed_coal_mine_factor: "§Y$coal_mine$§! Скорость строительства" #NT!
- modifier_state_production_speed_coal_mine_factor_desc: "Изменяет скорость §Y$coal_mine$§! строительство в этом состоянии." #NT!
+ modifier_state_production_speed_arms_factory_factor_desc: "Modifies the speed of §Y$arms_factory$§! construction in this state."modifier_state_production_speed_coal_mine_factor: "Изменяет скорость строительства §Y$arms_factory$§! в этом состоянии."modifier_state_production_speed_coal_mine_factor: "§Y$coal_mine$§! Скорость строительства" #NT!
+ modifier_state_production_speed_coal_mine_factor_desc: "Изменяет скорость строительства §Y$coal_mine$§! в этом состоянии." #NT!
  modifier_state_production_speed_cotton_farm_factor: "§Y$cotton_farm$§! Скорость строительства" #NT!
- modifier_state_production_speed_cotton_farm_factor_desc: "Изменяет скорость §Y$cotton_farm$§! строительство в этом состоянии." #NT!
+ modifier_state_production_speed_cotton_farm_factor_desc: "Изменяет скорость строительства §Y$cotton_farm$§! в этом состоянии." #NT!
  modifier_state_production_speed_fabric_weavery_factor: "§Y$fabric_weavery$§! Скорость строительства" #NT!
- modifier_state_production_speed_fabric_weavery_factor_desc: "Изменяет скорость §Y$fabric_weavery$§! строительство в этом состоянии." #NT!
+ modifier_state_production_speed_fabric_weavery_factor_desc: "Изменяет скорость строительства §Y$fabric_weavery$§! в этом состоянии." #NT!
  modifier_state_production_speed_steel_mill_factor: "§Y$steel_mill$§! Скорость строительства" #NT!
- modifier_state_production_speed_steel_mill_factor_desc: "Изменяет скорость §Y$steel_mill$§! строительство в этом состоянии." #NT!
+ modifier_state_production_speed_steel_mill_factor_desc: "Изменяет скорость строительства §Y$steel_mill$§! в этом состоянии." #NT!
  modifier_state_production_speed_logging_camp_factor: "§Y$logging_camp$§! Скорость строительства" #NT!
- modifier_state_production_speed_logging_camp_factor_desc: "Изменяет скорость §Y$logging_camp$§! строительство в этом состоянии." #NT!
+ modifier_state_production_speed_logging_camp_factor_desc: "Изменяет скорость строительства §Y$logging_camp$§! в этом состоянии." #NT!
  modifier_state_production_speed_machine_parts_factory_factor: "§Y$machine_parts_factory$§! Скорость строительства" #NT!
- modifier_state_production_speed_machine_parts_factory_factor_desc: "Изменяет скорость §Y$machine_parts_factory$§! строительство в этом состоянии." #NT!
+ modifier_state_production_speed_machine_parts_factory_factor_desc: "Изменяет скорость строительства §Y$machine_parts_factory$§! в этом состоянии." #NT!
  modifier_state_production_speed_air_base_factor: "§Y$air_base$§! — скорость строительства"
  modifier_state_production_speed_air_base_factor_desc: "Изменяет скорость возведения следующей постройки в этом регионе: §Y$air_base$§!."
  modifier_state_production_speed_naval_base_factor: "§Y$naval_base$§! — скорость строительства"
@@ -1844,7 +1749,7 @@
  modifier_army_sub_unit_cavalry_attack_factor: "Атака кавалерии"
  modifier_army_sub_unit_cavalry_defence_factor: "Кавалерийская оборона" #NT!
  modifier_army_sub_unit_light_cavalry_attack_factor: "Атака легкой кавалерии" #NT!
- modifier_army_sub_unit_light_cavalry_defence_factor: "Легкая кавалерия обороны" #NT!
+ modifier_army_sub_unit_light_cavalry_defence_factor: "Защита легкой кавалерии" #NT!
  modifier_army_sub_unit_cavalry_speed_factor: "Скорость кавалерии"
  modifier_army_sub_unit_camelry_attack_factor: "Атака верблюжьей кавалерии"
  modifier_army_sub_unit_camelry_defence_factor: "Защита верблюжьей кавалерии"
@@ -1967,7 +1872,7 @@
  MODIFIER_MIO_POLICY_COST_FACTOR: "Стоимость политики"
  MODIFIER_MIO_POLICY_COOLDOWN_FACTOR: "Время восстановления политики"
  MODIFIER_CIC_CONSTRUCTION_BOOST: "Базовое ускорение линии строительства"
- MODIFIER_CIC_CONSTRUCTION_BOOST_FACTOR: "Множитель ускорения линии строительства"
+ MODIFIER_CIC_CONSTRUCTION_BOOST_FACTOR: "Множитель скорости строительной линии" #NT!
  MODIFIER_LAND_BUNKER_EFFECTIVENESS_FACTOR: "$bunker$ — эффективность"
  MODIFIER_COASTAL_BUNKER_EFFECTIVENESS_FACTOR: "$coastal_bunker$ — эффективность"
   
@@ -1981,7 +1886,39 @@
  MODIFIER_SPECIAL_FORCES_CAP_FLAT: "Лимит войск спецназа"
  special_forces_cap_flat_tt: "$MODIFIER_SPECIAL_FORCES_CAP_FLAT$: $RIGHT|+=%0$"
  MODIFIER_ARMY_SUB_UNIT_CATEGORY_SPECIAL_FORCES_MAX_ORG_FACTOR: "Организация войск спец. назначения"
- special_forces_organization_tt: "$MODIFIER_ARMY_SUB_UNIT_CATEGORY_SPECIAL_FORCES_MAX_ORG_FACTOR$: $RIGHT|+=0%$" #NT!
+ special_forces_organization_tt: " $MODIFIER_ARMY_SUB_UNIT_CATEGORY_SPECIAL_FORCES_MAX_ORG_FACTOR$: $RIGHT|+=0%$"
   
- yearly_dci_reduction_modifier: "Ежегодное сокращение DCI" #NT!
- local_yearly_dci_reduction_modifier: "Местное ежегодное сокращение DCI" #NT!
+ cavalry_attack_factor_tt: "$modifier_army_sub_unit_cavalry_attack_factor$: $RIGHT|+=1%$" #NT!
+ cavalry_defence_factor_tt: "$modifier_army_sub_unit_cavalry_defence_factor$: $RIGHT|+=1%$" #NT!
+  
+ country_resource_food_tt: "$country_resource_food$: $RIGHT|+=0$" #NT!
+ country_resource_luxuries_tt: "$country_resource_luxuries$: $RIGHT|+=0$" #NT!
+ country_resource_wood_tt: "$country_resource_wood$: $RIGHT|+=0$" #NT!
+ country_resource_fiber_tt: "$country_resource_fiber$: $RIGHT|+=0$" #NT!
+ country_resource_iron_tt: "$country_resource_iron$: $RIGHT|+=0$" #NT!
+ country_resource_coal_tt: "$country_resource_coal$: $RIGHT|+=0$" #NT!
+ country_resource_copper_tt: "$country_resource_copper$: $RIGHT|+=0$" #NT!
+ country_resource_valuables_tt: "$country_resource_valuables$: $RIGHT|+=0$" #NT!
+ country_resource_oil_tt: "$country_resource_oil$: $RIGHT|+=0$" #NT!
+ country_resource_rubber_tt: "$country_resource_rubber$: $RIGHT|+=0$" #NT!
+ country_resource_aluminum_tt: "$country_resource_aluminum$: $RIGHT|+=0$" #NT!
+ country_resource_tungsten_tt: "$country_resource_tungsten$: $RIGHT|+=0$" #NT!
+ country_resource_titanium_tt: "$country_resource_titanium$: $RIGHT|+=0$" #NT!
+ country_resource_silicon_tt: "$country_resource_silicon$: $RIGHT|+=0$" #NT!
+ country_resource_rare_earths_tt: "$country_resource_rare_earths$: $RIGHT|+=0$" #NT!
+ country_resource_steel_tt: "$country_resource_steel$: $RIGHT|+=0$" #NT!
+ country_resource_tools_tt: "$country_resource_tools$: $RIGHT|+=0$" #NT!
+ country_resource_machinery_tt: "$country_resource_machinery$: $RIGHT|+=0$" #NT!
+ country_resource_chemicals_tt: "$country_resource_chemicals$: $RIGHT|+=0$" #NT!
+ country_resource_plastics_tt: "$country_resource_plastics$: $RIGHT|+=0$" #NT!
+ country_resource_composites_tt: "$country_resource_composites$: $RIGHT|+=0$" #NT!
+ country_resource_electronics_tt: "$country_resource_electronics$: $RIGHT|+=0$" #NT!
+ country_resource_portable_power_sources_tt: "$country_resource_portable_power_sources$: $RIGHT|+=0$" #NT!
+ country_resource_consumer_goods_tt: "$country_resource_consumer_goods$: $RIGHT|+=0$" #NT!
+ country_resource_textiles_tt: "$country_resource_textiles$: $RIGHT|+=0$" #NT!
+ country_resource_vehicles_tt: "$country_resource_vehicles$: $RIGHT|+=0$" #NT!
+ country_resource_appliances_tt: "$country_resource_appliances$: $RIGHT|+=0$" #NT!
+ country_resource_computers_tt: "$country_resource_computers$: $RIGHT|+=0$" #NT!
+ country_resource_electricity_tt: "$country_resource_electricity$: $RIGHT|+=0$" #NT!
+ country_resource_services_tt: "$country_resource_services$: $RIGHT|+=0$" #NT!
+ country_resource_entertainment_tt: "$country_resource_entertainment$: $RIGHT|+=0$" #NT!

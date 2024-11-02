@@ -4,10 +4,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 0 }
 		}
-		localization_key = "GFX_war_escalation_level_green"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 	text = {
-		localization_key = "GFX_war_escalation_level_white"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 }
 defined_text = {
@@ -16,10 +16,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 0 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 }
 defined_text = {
@@ -28,10 +28,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 1 }
 		}
-		localization_key = "GFX_war_escalation_level_green"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 	text = {
-		localization_key = "GFX_war_escalation_level_white"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 }
 defined_text = {
@@ -40,10 +40,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 1 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 }
 defined_text = {
@@ -52,10 +52,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 2 }
 		}
-		localization_key = "GFX_war_escalation_level_green"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 	text = {
-		localization_key = "GFX_war_escalation_level_white"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 }
 defined_text = {
@@ -64,10 +64,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 2 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 }
 defined_text = {
@@ -76,10 +76,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 3 }
 		}
-		localization_key = "GFX_war_escalation_level_red"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 	text = {
-		localization_key = "GFX_war_escalation_level_white"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 }
 defined_text = {
@@ -88,10 +88,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 3 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 }
 defined_text = {
@@ -100,10 +100,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 4 }
 		}
-		localization_key = "GFX_war_escalation_level_red"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 	text = {
-		localization_key = "GFX_war_escalation_level_white"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 }
 defined_text = {
@@ -112,10 +112,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 4 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 }
 defined_text = {
@@ -124,10 +124,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 5 }
 		}
-		localization_key = "GFX_war_escalation_level_red"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 	text = {
-		localization_key = "GFX_war_escalation_level_white"
+		localization_key = scripted_loc_GFX_war_escalation_level
 	}
 }
 defined_text = {
@@ -136,10 +136,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 5 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_ACCLIMATIZATION_GAIN_ENTRY
 	}
 }
 defined_text = {

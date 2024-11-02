@@ -9,13 +9,13 @@
 				value = mhc_sec_value
 			}
 		}
-		localization_key = "[GetMHCArmySecImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 1 }
 		}
-		localization_key = "GFX_MHC_no_advisor_gfx"
+		localization_key = scripted_loc_GFX_MHC_no_advisor
 	}
 	###Army Sec Replacement Marker###
 	
@@ -23,7 +23,7 @@
 		trigger = {
 			check_variable = { mhc_sec_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -38,13 +38,13 @@ defined_text = {
 				value = mhc_chief_value
 			}
 		}
-		localization_key = "[GetMHCArmyChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 1 }
 		}
-		localization_key = "GFX_MHC_no_advisor_gfx"
+		localization_key = scripted_loc_GFX_MHC_no_advisor
 	}
 	###Army Chief Replacement Marker###
 	
@@ -52,7 +52,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -67,13 +67,13 @@ defined_text = {
 				value = mhc_vchief_value
 			}
 		}
-		localization_key = "[GetMHCArmyVChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 1 }
 		}
-		localization_key = "GFX_MHC_no_advisor_gfx"
+		localization_key = scripted_loc_GFX_MHC_no_advisor
 	}
 	###Army VChief Replacement Marker###
 	
@@ -81,7 +81,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -96,13 +96,13 @@ defined_text = {
 				value = mhc_quart_value
 			}
 		}
-		localization_key = "[GetMHCArmyQuartImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 1 }
 		}
-		localization_key = "GFX_MHC_no_advisor_gfx"
+		localization_key = scripted_loc_GFX_MHC_no_advisor
 	}
 	###Army Quart Replacement Marker###
 	
@@ -110,7 +110,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -125,13 +125,13 @@ defined_text = {
 				value = mhc_pchief_value
 			}
 		}
-		localization_key = "[GetMHCArmyPChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 1 }
 		}
-		localization_key = "GFX_MHC_no_advisor_gfx"
+		localization_key = scripted_loc_GFX_MHC_no_advisor
 	}
 	###Army PChief Replacement Marker###
 	
@@ -139,7 +139,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -154,13 +154,13 @@ defined_text = {
 				value = mhc_ins_value
 			}
 		}
-		localization_key = "[GetMHCArmyInsImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 1 }
 		}
-		localization_key = "GFX_MHC_no_advisor_gfx"
+		localization_key = scripted_loc_GFX_MHC_no_advisor
 	}
 	###Army Ins Replacement Marker###
 	
@@ -168,6 +168,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }

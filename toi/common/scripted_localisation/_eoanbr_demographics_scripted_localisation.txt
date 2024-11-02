@@ -17,7 +17,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = "[?gnp|2]B"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -34,7 +34,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gnp|0]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -51,7 +51,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gnp|1]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -68,7 +68,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gnp|2]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -81,7 +81,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gnp|0]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -94,7 +94,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gnp|1]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -107,7 +107,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gnp|2]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -119,7 +119,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gnp|0]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_0RBracketSym
 			}
 		}
 		defined_text = {
@@ -136,7 +136,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gnpp|3]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnppORSym_3RBracketSym
 			}
 			text = {
 				trigger = {
@@ -145,7 +145,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gnpp|0]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnppORSym_0RBracketSym
 			}
 		}
 		defined_text = {
@@ -165,7 +165,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = "[?gncp|2]B"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -182,7 +182,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gncp|0]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -199,7 +199,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gncp|1]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -216,7 +216,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gncp|2]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -229,7 +229,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gncp|0]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -242,7 +242,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gncp|1]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -255,7 +255,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gncp|2]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -267,7 +267,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gncp|0]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_0RBracketSym
 			}
 		}
 		defined_text = {
@@ -283,7 +283,7 @@
 						value = 100000
 					}
 				}
-				localization_key = "[?gncpcp|3]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpcpORSym_3RBracketSym
 			}
 			text = {
 				trigger = {
@@ -292,7 +292,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gncpcp|0]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpcpORSym_0RBracketSym
 			}
 		}
 	#
@@ -314,7 +314,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = "[?gsp|2]B"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -331,7 +331,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gsp|0]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -348,7 +348,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gsp|1]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -365,7 +365,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gsp|2]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -378,7 +378,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gsp|0]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -391,7 +391,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gsp|1]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -404,7 +404,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gsp|2]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -416,7 +416,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gsp|0]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_0RBracketSym
 			}
 		}
 		defined_text = {
@@ -433,7 +433,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gspp|3]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gsppORSym_3RBracketSym
 			}
 			text = {
 				trigger = {
@@ -442,7 +442,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gspp|0]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gsppORSym_0RBracketSym
 			}
 		}
 		#Culture
@@ -486,7 +486,7 @@
 							}
 						#
 					}
-					localization_key = "[RenderStateCultureListInner]"
+					localization_key = scripted_loc_LBracketSym_RenderStateCultureListInnerRBracketSym
 				}
 			}
 			defined_text = {
@@ -557,7 +557,7 @@
 							}
 						#
 					}
-					localization_key = "[RenderStateReligionListInner]"
+					localization_key = scripted_loc_LBracketSym_RenderStateReligionListInnerRBracketSym
 				}
 			}
 			defined_text = {
@@ -594,7 +594,7 @@
 		defined_text = {
 			name = GetCultureName
 			text = {
-				localization_key = "[?v.GetTokenLocalizedKey]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetTokenLocalizedKeyRBracketSym
 			}
 		}
 		defined_text = {
@@ -608,7 +608,7 @@
 					}
 				}
 				# localization_key = "[FROM.GetName]"
-				localization_key = "[?gocn.GetTokenLocalizedKey]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gocnPeriodMark_GetTokenLocalizedKeyRBracketSym
 			}
 		}
 	#
@@ -621,7 +621,7 @@
 						gcgn = global.group@var:v
 					}
 				}
-				localization_key = "[?gcgn.GetTokenLocalizedKey]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcgnPeriodMark_GetTokenLocalizedKeyRBracketSym
 			}
 		}
 		defined_text = {
@@ -634,7 +634,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicNordicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicNordicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -644,7 +644,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicHighCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicHighCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -654,7 +654,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicLowCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicLowCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -664,7 +664,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicDutchCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicDutchCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -674,7 +674,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicBrittanicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicBrittanicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -684,7 +684,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicOuterCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicOuterCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -694,7 +694,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicBrittanicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicBrittanicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -704,7 +704,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicOtherColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicOtherColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -714,7 +714,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBalticEasternCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBalticEasternCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -724,7 +724,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBalticColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBalticColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -734,7 +734,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCelticBrittanicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetCelticBrittanicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -744,7 +744,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCelticColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetCelticColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -754,7 +754,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBasqueBasqueCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBasqueBasqueCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -764,7 +764,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBasqueColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBasqueColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -774,7 +774,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomancePortugueseCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomancePortugueseCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -784,7 +784,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomanceSpanishCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomanceSpanishCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -794,7 +794,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomanceFrenchCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomanceFrenchCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -804,7 +804,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomanceItalianCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomanceItalianCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -814,7 +814,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomanceEasternCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomanceEasternCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -824,7 +824,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomancePortugueseColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomancePortugueseColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -834,7 +834,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomanceSpanishColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomanceSpanishColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -844,7 +844,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomanceFrenchColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomanceFrenchColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -854,7 +854,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomanceOtherColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetRomanceOtherColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -864,7 +864,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetHellenicIonicAtticCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetHellenicIonicAtticCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -874,7 +874,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetHellenicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetHellenicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -884,7 +884,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIllyrianAlbanianCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetIllyrianAlbanianCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -894,7 +894,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIllyrianColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetIllyrianColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -904,7 +904,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSlavicSouthernCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSlavicSouthernCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -914,7 +914,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSlavicWesternCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSlavicWesternCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -924,7 +924,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSlavicEasternCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSlavicEasternCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -934,7 +934,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSlavicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSlavicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -944,7 +944,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetUralicFinnicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetUralicFinnicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -954,7 +954,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetUralicUgricCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetUralicUgricCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -964,7 +964,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetUralicPermicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetUralicPermicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -974,7 +974,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetUralicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetUralicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -984,7 +984,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCaucasianNorthernCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetCaucasianNorthernCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -994,7 +994,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCaucasianSouthernCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetCaucasianSouthernCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1004,7 +1004,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCaucasianEasternCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetCaucasianEasternCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1014,7 +1014,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCaucasianColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetCaucasianColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1024,7 +1024,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetArmenicArmenicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetArmenicArmenicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1034,7 +1034,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetArmenicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetArmenicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1044,7 +1044,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIranianWesternCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetIranianWesternCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1054,7 +1054,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIranianCentralCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetIranianCentralCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1064,7 +1064,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIranianEasternCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetIranianEasternCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1074,7 +1074,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIranianColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetIranianColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1084,7 +1084,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTurkicOghuzCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTurkicOghuzCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1094,7 +1094,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTurkicKipchakCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTurkicKipchakCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1104,7 +1104,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTurkicKarlakCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTurkicKarlakCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1114,7 +1114,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTurkicAltaicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTurkicAltaicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1124,7 +1124,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTurkicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTurkicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1134,7 +1134,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSemeticJewishCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSemeticJewishCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1144,7 +1144,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSemeticMaghrebCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSemeticMaghrebCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1154,7 +1154,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSemeticMashriqCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSemeticMashriqCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1164,7 +1164,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSemeticAzraqCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSemeticAzraqCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1174,7 +1174,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSemeticEthiopicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSemeticEthiopicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1184,7 +1184,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSemeticColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSemeticColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1194,7 +1194,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAryanIndicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAryanIndicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1204,7 +1204,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAryanHindiCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAryanHindiCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1214,7 +1214,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAryanSahyadriCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAryanSahyadriCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1224,7 +1224,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAryanMagadhanPrakitCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAryanMagadhanPrakitCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1234,7 +1234,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAryanColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAryanColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1244,7 +1244,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDravidianSouthernCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDravidianSouthernCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1254,7 +1254,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDravidianColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDravidianColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1264,7 +1264,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanBodicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanBodicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1274,7 +1274,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanBrahmaputranicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanBrahmaputranicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1284,7 +1284,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanBurmeicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanBurmeicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1294,7 +1294,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanSouthSiniticCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanSouthSiniticCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1304,7 +1304,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanNorthSiniticCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanNorthSiniticCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1314,7 +1314,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1324,7 +1324,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetMongolicMongolCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetMongolicMongolCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1334,7 +1334,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetMongolicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetMongolicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1344,7 +1344,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTungusicTungusicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTungusicTungusicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1354,7 +1354,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTungusicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTungusicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1364,7 +1364,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKamchukoticKamchukeeCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKamchukoticKamchukeeCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1374,7 +1374,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKamchukoticColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKamchukoticColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1384,7 +1384,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAinuicAinuCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAinuicAinuCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1394,7 +1394,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAinuicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAinuicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1404,7 +1404,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKoreanicKoreanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKoreanicKoreanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1414,7 +1414,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKoreanicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKoreanicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1424,7 +1424,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetJaponicJapaneseCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetJaponicJapaneseCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1434,7 +1434,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetJaponicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetJaponicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1444,7 +1444,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicTaiCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicTaiCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1454,7 +1454,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicKadicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicKadicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1464,7 +1464,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicHmongCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicHmongCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1474,7 +1474,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1484,7 +1484,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustroAsiasticKhasiCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustroAsiasticKhasiCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1494,7 +1494,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustroAsiasticMonKhmerCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustroAsiasticMonKhmerCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1504,7 +1504,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustroAsiasticColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustroAsiasticColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1514,7 +1514,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianFormosanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianFormosanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1524,7 +1524,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianDhivehianCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianDhivehianCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1534,7 +1534,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianMalayoChampaicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianMalayoChampaicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1544,7 +1544,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianFilipinoCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianFilipinoCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1554,7 +1554,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianMoulaccanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianMoulaccanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1564,7 +1564,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianOceanicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianOceanicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1574,7 +1574,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1584,7 +1584,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPapuanPapuanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPapuanPapuanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1594,7 +1594,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPapuanColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPapuanColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1604,7 +1604,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPamaNyunganPamaCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPamaNyunganPamaCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1614,7 +1614,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPamaNyunganNyunganCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPamaNyunganNyunganCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1624,7 +1624,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPamaNyunganColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPamaNyunganColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1634,7 +1634,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanNorthernCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanNorthernCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1644,7 +1644,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanCentralCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanCentralCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1654,7 +1654,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanSouthernCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanSouthernCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1664,7 +1664,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1674,7 +1674,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNiloSaharanNileCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNiloSaharanNileCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1684,7 +1684,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNiloSaharanSaharanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNiloSaharanSaharanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1694,7 +1694,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNiloSaharanColonialGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNiloSaharanColonialGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1704,7 +1704,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoAtlanticCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoAtlanticCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1714,7 +1714,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoMandeCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoMandeCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1724,7 +1724,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoNorthVoltaCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoNorthVoltaCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1734,7 +1734,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoSouthVoltaCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoSouthVoltaCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1744,7 +1744,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1754,7 +1754,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuNorthwestCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuNorthwestCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1764,7 +1764,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuCentralCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuCentralCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1774,7 +1774,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuSouthwestCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuSouthwestCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1784,7 +1784,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuSavannicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuSavannicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1794,7 +1794,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuNortheastCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuNortheastCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1804,7 +1804,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuSoutheastCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuSoutheastCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1814,7 +1814,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1824,7 +1824,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKhosianKhosianCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKhosianKhosianCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1834,7 +1834,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKhosianColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKhosianColonialCultureGroupListRBracketSym
 			}
 		}
 	#
@@ -1847,7 +1847,7 @@
 						gcfn = global.family@var:v
 					}
 				}
-				localization_key = "[?gcfn.GetTokenLocalizedKey]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcfnPeriodMark_GetTokenLocalizedKeyRBracketSym
 			}
 		}
 		defined_text = {
@@ -1860,7 +1860,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetGermanicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetGermanicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1870,7 +1870,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBalticCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetBalticCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1880,7 +1880,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCelticCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetCelticCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1890,7 +1890,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBasqueCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetBasqueCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1900,7 +1900,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetRomanceCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetRomanceCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1910,7 +1910,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GeHellenicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GeHellenicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1920,7 +1920,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIllyrianCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetIllyrianCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1930,7 +1930,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSlavicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetSlavicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1940,7 +1940,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetUralicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetUralicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1950,7 +1950,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCaucasianCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetCaucasianCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1960,7 +1960,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetArmenicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetArmenicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1970,7 +1970,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIranianCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetIranianCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1980,7 +1980,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTurkicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetTurkicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -1990,7 +1990,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSemeticCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetSemeticCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2000,7 +2000,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAryanCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetAryanCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2010,7 +2010,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDravidianCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetDravidianCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2020,7 +2020,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2030,7 +2030,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetMongolicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetMongolicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2040,7 +2040,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTungusicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetTungusicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2050,7 +2050,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKamchukoticCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetKamchukoticCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2060,7 +2060,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAinuicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetAinuicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2070,7 +2070,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKoreanicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetKoreanicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2080,7 +2080,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetJaponicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetJaponicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2090,7 +2090,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2100,7 +2100,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustroAsiasticCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetAustroAsiasticCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2110,7 +2110,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2120,7 +2120,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPapuancCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetPapuancCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2130,7 +2130,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPamaNyunganCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetPamaNyunganCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2140,7 +2140,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2150,7 +2150,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNiloSaharanCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetNiloSaharanCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2160,7 +2160,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2170,7 +2170,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuCultureFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -2180,7 +2180,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKhosianCultureFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetKhosianCultureFamilyListRBracketSym
 			}
 		}
 	#
@@ -2202,7 +2202,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = "[?gcp|2]B"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -2219,7 +2219,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gcp|0]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -2236,7 +2236,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gcp|1]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -2253,7 +2253,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gcp|2]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -2266,7 +2266,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gcp|0]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -2279,7 +2279,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gcp|1]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -2292,7 +2292,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?gcp|2]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -2304,7 +2304,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?gcp|0]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_0RBracketSym
 			}
 		}
 		defined_text = {
@@ -2320,7 +2320,7 @@
 					# 	value = 100000
 					# }
 				}
-				localization_key = "[?population_k@var:v]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_population_kAtSym_varColonSym_vRBracketSym
 			}
 		}
 		defined_text = {
@@ -2331,7 +2331,7 @@
 						gcpe = percentage@var:v
 					}
 				}
-				localization_key = "[?gcpe|1%]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpeORSym_1PercentSym_RBracketSym
 			}
 		}
 	#
@@ -2346,7 +2346,7 @@
 					}
 					has_promoted_culture = yes
 				}
-				localization_key = "culture_type_promoted"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
 				trigger = {
@@ -2356,7 +2356,7 @@
 					}
 					is_marginalized_culture = yes
 				}
-				localization_key = "culture_type_marginalized"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
 				trigger = {
@@ -2366,10 +2366,10 @@
 					}
 					is_primary_culture = yes
 				}
-				localization_key = "culture_type_primary"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
-				localization_key = "culture_type_normal"
+				localization_key = scripted_loc_culture_type
 			}
 		}
 		defined_text = {
@@ -2382,7 +2382,7 @@
 					}
 					is_owner_promoted_culture = yes
 				}
-				localization_key = "culture_type_promoted"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
 				trigger = {
@@ -2392,7 +2392,7 @@
 					}
 					is_owner_marginalized_culture = yes
 				}
-				localization_key = "culture_type_marginalized"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
 				trigger = {
@@ -2402,10 +2402,10 @@
 					}
 					is_owner_primary_culture = yes
 				}
-				localization_key = "culture_type_primary"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
-				localization_key = "culture_type_normal"
+				localization_key = scripted_loc_culture_type
 			}
 		}
 		defined_text = {
@@ -2418,7 +2418,7 @@
 					}
 					is_controller_promoted_culture = yes
 				}
-				localization_key = "culture_type_promoted"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
 				trigger = {
@@ -2428,7 +2428,7 @@
 					}
 					is_controller_marginalized_culture = yes
 				}
-				localization_key = "culture_type_marginalized"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
 				trigger = {
@@ -2438,10 +2438,10 @@
 					}
 					is_controller_primary_culture = yes
 				}
-				localization_key = "culture_type_primary"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
-				localization_key = "culture_type_normal"
+				localization_key = scripted_loc_culture_type
 			}
 		}
 		defined_text = {
@@ -2454,7 +2454,7 @@
 					}
 					has_promoted_culture = yes
 				}
-				localization_key = "culture_type_promoted_desc"
+				localization_key = scripted_loc_culture_type_promoted
 			}
 			text = {
 				trigger = {
@@ -2464,7 +2464,7 @@
 					}
 					is_marginalized_culture = yes
 				}
-				localization_key = "culture_type_marginalized_desc"
+				localization_key = scripted_loc_culture_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -2474,10 +2474,10 @@
 					}
 					is_primary_culture = yes
 				}
-				localization_key = "culture_type_primary_desc"
+				localization_key = scripted_loc_culture_type_primary
 			}
 			text = {
-				localization_key = "culture_type_normal_desc"
+				localization_key = scripted_loc_culture_type_normal
 			}
 		}
 		defined_text = {
@@ -2490,7 +2490,7 @@
 					}
 					is_owner_promoted_culture = yes
 				}
-				localization_key = "culture_type_promoted_desc"
+				localization_key = scripted_loc_culture_type_promoted
 			}
 			text = {
 				trigger = {
@@ -2500,7 +2500,7 @@
 					}
 					is_owner_marginalized_culture = yes
 				}
-				localization_key = "culture_type_marginalized_desc"
+				localization_key = scripted_loc_culture_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -2510,10 +2510,10 @@
 					}
 					is_owner_primary_culture = yes
 				}
-				localization_key = "culture_type_primary_desc"
+				localization_key = scripted_loc_culture_type_primary
 			}
 			text = {
-				localization_key = "culture_type_normal_desc"
+				localization_key = scripted_loc_culture_type_normal
 			}
 		}
 		defined_text = {
@@ -2526,7 +2526,7 @@
 					}
 					is_controller_promoted_culture = yes
 				}
-				localization_key = "culture_type_promoted"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
 				trigger = {
@@ -2536,7 +2536,7 @@
 					}
 					is_controller_marginalized_culture = yes
 				}
-				localization_key = "culture_type_marginalized"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
 				trigger = {
@@ -2546,10 +2546,10 @@
 					}
 					is_controller_primary_culture = yes
 				}
-				localization_key = "culture_type_primary"
+				localization_key = scripted_loc_culture_type
 			}
 			text = {
-				localization_key = "culture_type_normal"
+				localization_key = scripted_loc_culture_type
 			}
 		}
 	#
@@ -2574,7 +2574,7 @@
 						}
 					#
 				}
-				localization_key = "[RenderCultureFamilyListInner]"
+				localization_key = scripted_loc_LBracketSym_RenderCultureFamilyListInnerRBracketSym
 			}
 		}
 		defined_text = {
@@ -2623,7 +2623,7 @@
 						}
 					#
 				}
-				localization_key = "[RenderCultureGroupListInner]"
+				localization_key = scripted_loc_LBracketSym_RenderCultureGroupListInnerRBracketSym
 			}
 		}
 		defined_text = {
@@ -5945,7 +5945,7 @@
 		defined_text = {
 			name = GetReligionName
 			text = {
-				localization_key = "[?v.GetTokenLocalizedKey]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetTokenLocalizedKeyRBracketSym
 			}
 		}
 		defined_text = {
@@ -5958,7 +5958,7 @@
 						}
 					}
 				}
-				localization_key = "[?gown.GetTokenLocalizedKey]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gownPeriodMark_GetTokenLocalizedKeyRBracketSym
 			}
 		}
 	#
@@ -5971,7 +5971,7 @@
 						grgn = global.family@var:v
 					}
 				}
-				localization_key = "[?grgn.GetTokenLocalizedKey]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grgnPeriodMark_GetTokenLocalizedKeyRBracketSym
 			}
 		}
 		defined_text = {
@@ -5984,7 +5984,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetChristianReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetChristianReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -5994,7 +5994,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetMuslimReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetMuslimReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6004,7 +6004,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetOtherAbrahamicReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetOtherAbrahamicReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6014,7 +6014,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIranianReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetIranianReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6024,7 +6024,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIndianReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetIndianReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6034,7 +6034,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBuddhistReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetBuddhistReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6044,7 +6044,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetEasternFolkReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetEasternFolkReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6054,7 +6054,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetEasternPatheistReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetEasternPatheistReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6064,7 +6064,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPaganReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetPaganReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6074,7 +6074,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetOtherReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetOtherReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -6084,7 +6084,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIrreligiousReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetIrreligiousReligionFamilyListRBracketSym
 			}
 		}
 	#
@@ -6106,7 +6106,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = "[?grp|2]B"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -6123,7 +6123,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?grp|0]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -6140,7 +6140,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?grp|1]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -6157,7 +6157,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?grp|2]M"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -6170,7 +6170,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?grp|0]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_0RBracketSym
 			}
 			text = {
 				trigger = {
@@ -6183,7 +6183,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?grp|1]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_1RBracketSym
 			}
 			text = {
 				trigger = {
@@ -6196,7 +6196,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = "[?grp|2]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym
 			}
 			text = {
 				trigger = {
@@ -6208,7 +6208,7 @@
 						value = 1000
 					}
 				}
-				localization_key = "[?grp|0]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_0RBracketSym
 			}
 		}
 		defined_text = {
@@ -6220,7 +6220,7 @@
 						value = population_k@var:v
 					}
 				}
-				localization_key = "[?population_k@var:v]k"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_population_kAtSym_varColonSym_vRBracketSym
 			}
 		}
 		defined_text = {
@@ -6231,7 +6231,7 @@
 						grpe = percentage@var:v
 					}
 				}
-				localization_key = "[?grpe|1%]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpeORSym_1PercentSym_RBracketSym
 			}
 		}
 	#
@@ -6246,7 +6246,7 @@
 					}
 					is_promoted_religion = yes
 				}
-				localization_key = "religion_type_promoted"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
 				trigger = {
@@ -6256,7 +6256,7 @@
 					}
 					is_marginalized_religion = yes
 				}
-				localization_key = "religion_type_marginalized"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
 				trigger = {
@@ -6266,10 +6266,10 @@
 					}
 					is_primary_religion = yes
 				}
-				localization_key = "religion_type_primary"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
-				localization_key = "religion_type_normal"
+				localization_key = scripted_loc_religion_type
 			}
 		}
 		defined_text = {
@@ -6282,7 +6282,7 @@
 					}
 					is_owner_promoted_religion = yes
 				}
-				localization_key = "religion_type_promoted"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
 				trigger = {
@@ -6292,7 +6292,7 @@
 					}
 					is_owner_marginalized_religion = yes
 				}
-				localization_key = "religion_type_marginalized"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
 				trigger = {
@@ -6302,10 +6302,10 @@
 					}
 					is_owner_primary_religion = yes
 				}
-				localization_key = "religion_type_primary"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
-				localization_key = "religion_type_normal"
+				localization_key = scripted_loc_religion_type
 			}
 		}
 		defined_text = {
@@ -6318,7 +6318,7 @@
 					}
 					is_controller_promoted_religion = yes
 				}
-				localization_key = "religion_type_promoted"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
 				trigger = {
@@ -6328,7 +6328,7 @@
 					}
 					is_controller_marginalized_religion = yes
 				}
-				localization_key = "religion_type_marginalized"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
 				trigger = {
@@ -6338,10 +6338,10 @@
 					}
 					is_controller_primary_religion = yes
 				}
-				localization_key = "religion_type_primary"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
-				localization_key = "religion_type_normal"
+				localization_key = scripted_loc_religion_type
 			}
 		}
 		defined_text = {
@@ -6354,7 +6354,7 @@
 					}
 					is_promoted_religion = yes
 				}
-				localization_key = "religion_type_promoted_desc"
+				localization_key = scripted_loc_religion_type_promoted
 			}
 			text = {
 				trigger = {
@@ -6364,7 +6364,7 @@
 					}
 					is_marginalized_religion = yes
 				}
-				localization_key = "religion_type_marginalized_desc"
+				localization_key = scripted_loc_religion_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -6374,10 +6374,10 @@
 					}
 					is_primary_religion = yes
 				}
-				localization_key = "religion_type_primary_desc"
+				localization_key = scripted_loc_religion_type_primary
 			}
 			text = {
-				localization_key = "religion_type_normal_desc"
+				localization_key = scripted_loc_religion_type_normal
 			}
 		}
 		defined_text = {
@@ -6390,7 +6390,7 @@
 					}
 					is_owner_promoted_religion = yes
 				}
-				localization_key = "religion_type_promoted_desc"
+				localization_key = scripted_loc_religion_type_promoted
 			}
 			text = {
 				trigger = {
@@ -6400,7 +6400,7 @@
 					}
 					is_owner_marginalized_religion = yes
 				}
-				localization_key = "religion_type_marginalized_desc"
+				localization_key = scripted_loc_religion_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -6410,10 +6410,10 @@
 					}
 					is_owner_primary_religion = yes
 				}
-				localization_key = "religion_type_primary_desc"
+				localization_key = scripted_loc_religion_type_primary
 			}
 			text = {
-				localization_key = "religion_type_normal_desc"
+				localization_key = scripted_loc_religion_type_normal
 			}
 		}
 		defined_text = {
@@ -6426,7 +6426,7 @@
 					}
 					is_controller_promoted_religion = yes
 				}
-				localization_key = "religion_type_promoted"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
 				trigger = {
@@ -6436,7 +6436,7 @@
 					}
 					is_controller_marginalized_religion = yes
 				}
-				localization_key = "religion_type_marginalized"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
 				trigger = {
@@ -6446,10 +6446,10 @@
 					}
 					is_controller_primary_religion = yes
 				}
-				localization_key = "religion_type_primary"
+				localization_key = scripted_loc_religion_type
 			}
 			text = {
-				localization_key = "religion_type_normal"
+				localization_key = scripted_loc_religion_type
 			}
 		}
 	#
@@ -6556,7 +6556,7 @@
 						}
 					#
 				}
-				localization_key = "[RenderReligionFamilyListInner]"
+				localization_key = scripted_loc_LBracketSym_RenderReligionFamilyListInnerRBracketSym
 			}
 		}
 		defined_text = {
@@ -6863,12 +6863,12 @@
 					always = no
 				}
 			}
-			localization_key = "[RenderMarketListInner]"
+			localization_key = scripted_loc_LBracketSym_RenderMarketListInnerRBracketSym
 		}
 		text = {
 			trigger = {
 			}
-			localization_key = ""
+			localization_key = scripted_loc
 		}
 	}
 		defined_text = {
@@ -6940,7 +6940,7 @@
 						}
 					#
 				}
-				localization_key = "[RenderCultureGroupListInner]"
+				localization_key = scripted_loc_LBracketSym_RenderCultureGroupListInnerRBracketSym
 			}
 		}
 		defined_text = {
@@ -6996,7 +6996,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7006,7 +7006,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetBalticCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetBalticCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7016,7 +7016,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetCelticCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetCelticCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7026,7 +7026,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetBasqueCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetBasqueCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7036,7 +7036,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomanceCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetRomanceCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7046,7 +7046,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GeHellenicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GeHellenicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7056,7 +7056,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetIllyrianCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetIllyrianCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7066,7 +7066,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSlavicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetSlavicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7076,7 +7076,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetUralicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetUralicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7086,7 +7086,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetCaucasianCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetCaucasianCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7096,7 +7096,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetArmenicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetArmenicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7106,7 +7106,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetIranianCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetIranianCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7116,7 +7116,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetTurkicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetTurkicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7126,7 +7126,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSemeticCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetSemeticCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7136,7 +7136,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAryanCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetAryanCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7146,7 +7146,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetDravidianCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetDravidianCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7156,7 +7156,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSinoHimilayanCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetSinoHimilayanCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7166,7 +7166,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetMongolicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetMongolicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7176,7 +7176,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetTungusicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetTungusicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7186,7 +7186,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetKamchukoticCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetKamchukoticCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7196,7 +7196,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAinuicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetAinuicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7206,7 +7206,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetKoreanicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetKoreanicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7216,7 +7216,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetJaponicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetJaponicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7226,7 +7226,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetDaicCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetDaicCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7236,7 +7236,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAustroAsiasticCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetAustroAsiasticCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7246,7 +7246,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAustronesianCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetAustronesianCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7256,7 +7256,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetPapuanCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetPapuanCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7266,7 +7266,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetPamaNyunganCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetPamaNyunganCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7276,7 +7276,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetNativeAmericanCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetNativeAmericanCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7286,7 +7286,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetNiloSaharanCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetNiloSaharanCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7296,7 +7296,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetNigerCongoCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetNigerCongoCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7306,7 +7306,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetBantuCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetBantuCultureFamilyListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7316,7 +7316,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetKhosianCultureFamilyList]"
+			localization_key = scripted_loc_LBracketSym_GetKhosianCultureFamilyListRBracketSym
 		}
 	}
 	defined_text = {
@@ -7329,7 +7329,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicNordicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicNordicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7339,7 +7339,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicHighCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicHighCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7349,7 +7349,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicLowCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicLowCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7359,7 +7359,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicDutchCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicDutchCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7369,7 +7369,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicBrittanicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicBrittanicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7379,7 +7379,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicOuterCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicOuterCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7389,7 +7389,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicBrittanicColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicBrittanicColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7399,7 +7399,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetGermanicOtherColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetGermanicOtherColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7409,7 +7409,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetBalticEasternCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetBalticEasternCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7419,7 +7419,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetBalticColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetBalticColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7429,7 +7429,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetCelticBrittanicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetCelticBrittanicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7439,7 +7439,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetCelticColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetCelticColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7449,7 +7449,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetBasqueBasqueCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetBasqueBasqueCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7459,7 +7459,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetBasqueColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetBasqueColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7469,7 +7469,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomancePortugueseCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomancePortugueseCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7479,7 +7479,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomanceSpanishCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomanceSpanishCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7489,7 +7489,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomanceFrenchCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomanceFrenchCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7499,7 +7499,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomanceItalianCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomanceItalianCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7509,7 +7509,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomanceEasternCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomanceEasternCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7519,7 +7519,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomancePortugueseColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomancePortugueseColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7529,7 +7529,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomanceSpanishColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomanceSpanishColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7539,7 +7539,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomanceFrenchColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomanceFrenchColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7549,7 +7549,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetRomanceOtherColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetRomanceOtherColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7559,7 +7559,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetHellenicIonicAtticCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetHellenicIonicAtticCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7569,7 +7569,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetHellenicColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetHellenicColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7579,7 +7579,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetIllyrianAlbanianCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetIllyrianAlbanianCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7589,7 +7589,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetIllyrianColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetIllyrianColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7599,7 +7599,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSlavicSouthernCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSlavicSouthernCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7609,7 +7609,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSlavicWesternCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSlavicWesternCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7619,7 +7619,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSlavicEasternCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSlavicEasternCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7629,7 +7629,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSlavicColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSlavicColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7639,7 +7639,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetUralicFinnicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetUralicFinnicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7649,7 +7649,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetUralicUgricCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetUralicUgricCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7659,7 +7659,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetUralicPermicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetUralicPermicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7669,7 +7669,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetUralicColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetUralicColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7679,7 +7679,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetCaucasianNorthernCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetCaucasianNorthernCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7689,7 +7689,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetCaucasianSouthernCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetCaucasianSouthernCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7699,7 +7699,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetCaucasianEasternCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetCaucasianEasternCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7709,7 +7709,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetCaucasianColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetCaucasianColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7719,7 +7719,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetArmenicArmenicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetArmenicArmenicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7729,7 +7729,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetArmenicColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetArmenicColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7739,7 +7739,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetIranianWesternCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetIranianWesternCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7749,7 +7749,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetIranianCentralCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetIranianCentralCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7759,7 +7759,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetIranianEasternCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetIranianEasternCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7769,7 +7769,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetIranianColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetIranianColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7779,7 +7779,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetTurkicOghuzCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetTurkicOghuzCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7789,7 +7789,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetTurkicKipchakCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetTurkicKipchakCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7799,7 +7799,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetTurkicKarlakCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetTurkicKarlakCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7809,7 +7809,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetTurkicAltaicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetTurkicAltaicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7819,7 +7819,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetTurkicColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetTurkicColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7829,7 +7829,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSemeticJewishCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSemeticJewishCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7839,7 +7839,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSemeticMaghrebCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSemeticMaghrebCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7849,7 +7849,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSemeticMashriqCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSemeticMashriqCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7859,7 +7859,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSemeticAzraqCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSemeticAzraqCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7869,7 +7869,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSemeticEthiopicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSemeticEthiopicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7879,7 +7879,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetSemeticColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetSemeticColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7889,7 +7889,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAryanIndicCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetAryanIndicCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7899,7 +7899,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAryanHindiCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetAryanHindiCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7909,7 +7909,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAryanSahyadriCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetAryanSahyadriCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7919,7 +7919,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAryanMagadhanPrakitCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetAryanMagadhanPrakitCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7929,7 +7929,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetAryanColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetAryanColonialCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7939,7 +7939,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetDravidianSouthernCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetDravidianSouthernCultureGroupListRBracketSym
 		}
 		text = {
 			trigger = {
@@ -7949,7 +7949,7 @@
 					compare = equals
 				}
 			}
-			localization_key = "[GetDravidianColonialCultureGroupList]"
+			localization_key = scripted_loc_LBracketSym_GetDravidianColonialCultureGroupListRBracketSym
 		}
 		text = {
 				trigger = {
@@ -7959,7 +7959,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanBodicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanBodicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -7969,7 +7969,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanBrahmaputranicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanBrahmaputranicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -7979,7 +7979,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanBurmeicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanBurmeicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -7989,7 +7989,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanSouthSiniticCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanSouthSiniticCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -7999,7 +7999,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanNorthSiniticCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanNorthSiniticCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8009,7 +8009,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetSinoHimilayanColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetSinoHimilayanColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8019,7 +8019,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetMongolicMongolCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetMongolicMongolCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8029,7 +8029,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetMongolicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetMongolicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8039,7 +8039,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTungusicTungusicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTungusicTungusicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8049,7 +8049,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetTungusicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetTungusicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8059,7 +8059,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKamchukoticKamchukcheeCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKamchukoticKamchukcheeCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8069,7 +8069,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKamchukoticColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKamchukoticColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8079,7 +8079,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAinuicAinuCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAinuicAinuCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8089,7 +8089,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAinuicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAinuicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8099,7 +8099,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKoreanicKoreanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKoreanicKoreanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8109,7 +8109,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKoreanicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKoreanicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8119,7 +8119,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetJaponicJapaneseCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetJaponicJapaneseCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8129,7 +8129,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetJaponicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetJaponicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8139,7 +8139,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicTaiCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicTaiCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8149,7 +8149,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicKadicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicKadicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8159,7 +8159,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicHmongCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicHmongCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8169,7 +8169,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetDaicColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetDaicColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8179,7 +8179,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustroAsiasticKhasiCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustroAsiasticKhasiCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8189,7 +8189,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustroAsiasticMonKhmerCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustroAsiasticMonKhmerCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8199,7 +8199,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustroAsiasticColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustroAsiasticColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8209,7 +8209,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianFormosanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianFormosanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8219,7 +8219,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianDhivehianCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianDhivehianCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8229,7 +8229,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianMalayoChampaicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianMalayoChampaicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8239,7 +8239,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianFilipinoCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianFilipinoCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8249,7 +8249,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianMoulaccanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianMoulaccanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8259,7 +8259,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianOceanicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianOceanicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8269,7 +8269,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetAustronesianColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetAustronesianColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8279,7 +8279,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPapuanPapuanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPapuanPapuanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8289,7 +8289,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPapuanColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPapuanColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8299,7 +8299,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPamaNyunganPamaCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPamaNyunganPamaCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8309,7 +8309,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPamaNyunganNyunganCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPamaNyunganNyunganCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8319,7 +8319,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPamaNyunganColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetPamaNyunganColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8329,7 +8329,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanNorthernCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanNorthernCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8339,7 +8339,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanCentralCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanCentralCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8349,7 +8349,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanSouthernCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanSouthernCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8359,7 +8359,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNativeAmericanColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNativeAmericanColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8369,7 +8369,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNiloSaharanNileCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNiloSaharanNileCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8379,7 +8379,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNiloSaharanSaharanCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNiloSaharanSaharanCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8389,7 +8389,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNiloSaharanColonialGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNiloSaharanColonialGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8399,7 +8399,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoAtlanticCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoAtlanticCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8409,7 +8409,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoMandeCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoMandeCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8419,7 +8419,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoNorthVoltaCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoNorthVoltaCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8429,7 +8429,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoSouthVoltaCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoSouthVoltaCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8439,7 +8439,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetNigerCongoColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetNigerCongoColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8449,7 +8449,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuNorthwestCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuNorthwestCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8459,7 +8459,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuCentralCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuCentralCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8469,7 +8469,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuSouthwestCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuSouthwestCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8479,7 +8479,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuSavannicCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuSavannicCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8489,7 +8489,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuNortheastCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuNortheastCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8499,7 +8499,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuSoutheastCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuSoutheastCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8509,7 +8509,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBantuColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetBantuColonialCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8519,7 +8519,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKhosianKhosianCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKhosianKhosianCultureGroupListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8529,7 +8529,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetKhosianColonialCultureGroupList]"
+				localization_key = scripted_loc_LBracketSym_GetKhosianColonialCultureGroupListRBracketSym
 			}
 		}
 		defined_text = {
@@ -8542,7 +8542,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetChristianReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetChristianReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8552,7 +8552,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetMuslimReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetMuslimReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8562,7 +8562,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetOtherAbrahamicReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetOtherAbrahamicReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8572,7 +8572,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIranianReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetIranianReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8582,7 +8582,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIndianReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetIndianReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8592,7 +8592,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetBuddhistReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetBuddhistReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8602,7 +8602,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetEasternFolkReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetEasternFolkReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8612,7 +8612,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetEasternPantheistReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetEasternPantheistReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8622,7 +8622,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetPaganReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetPaganReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8632,7 +8632,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetCOtherReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetCOtherReligionFamilyListRBracketSym
 			}
 			text = {
 				trigger = {
@@ -8642,7 +8642,7 @@
 						compare = equals
 					}
 				}
-				localization_key = "[GetIrreligiousReligionFamilyList]"
+				localization_key = scripted_loc_LBracketSym_GetIrreligiousReligionFamilyListRBracketSym
 			}
 		}
 		defined_text = {
@@ -8651,7 +8651,7 @@
 				trigger = {
 					is_debug = yes
 				}
-				localization_key = "([?THIS.GetID]) "
+				localization_key = scripted_loc_LParenthesi_LBracketSym_QuestionMark_THISPeriodMark_GetIDRBracketSym_RParenthesi_
 			}
 		}
 		defined_text = {
@@ -8660,7 +8660,7 @@
 				trigger = {
 					is_debug = yes
 				}
-				localization_key = "([?OWNER.GetTag]) "
+				localization_key = scripted_loc_LParenthesi_LBracketSym_QuestionMark_OWNERPeriodMark_GetTagRBracketSym_RParenthesi_
 			}
 		}
 		#

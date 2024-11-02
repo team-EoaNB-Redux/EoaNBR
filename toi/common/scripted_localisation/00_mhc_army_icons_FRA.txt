@@ -9,55 +9,55 @@
 				value = mhc_sec_value
 			}
 		}
-		localization_key = "[GetMHCArmySecImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 1 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_patrice_de_mac_mahon"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_patrice_de_mac
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 2 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_francois_achille_bazaine"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_francois_achille
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 3 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_edmond_leboeuf"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_edmond
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 4 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d_angely"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 5 }
 		}
-		localization_key = "GFX_idea_FRA_theorist_jean_baptiste_philibert_vaillant"
+		localization_key = scripted_loc_GFX_idea_FRA_theorist_jean_baptiste_philibert
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 6 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_charles_cousin_montauban"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_charles_cousin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 7 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_louis_joseph_lebrun"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_louis_joseph
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 8 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_adolphe_niel"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_adolphe
 	}
 	###Army Sec Replacement Marker###
 	
@@ -65,7 +65,7 @@
 		trigger = {
 			check_variable = { mhc_sec_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -80,55 +80,55 @@ defined_text = {
 				value = mhc_chief_value
 			}
 		}
-		localization_key = "[GetMHCArmyChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 1 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_patrice_de_mac_mahon"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_patrice_de_mac
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 2 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_francois_achille_bazaine"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_francois_achille
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 3 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_edmond_leboeuf"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_edmond
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 4 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d_angely"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 5 }
 		}
-		localization_key = "GFX_idea_FRA_theorist_jean_baptiste_philibert_vaillant"
+		localization_key = scripted_loc_GFX_idea_FRA_theorist_jean_baptiste_philibert
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 6 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_charles_cousin_montauban"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_charles_cousin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 7 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_louis_joseph_lebrun"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_louis_joseph
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 8 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_adolphe_niel"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_adolphe
 	}
 	###Army Chief Replacement Marker###
 	
@@ -136,7 +136,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -151,55 +151,55 @@ defined_text = {
 				value = mhc_vchief_value
 			}
 		}
-		localization_key = "[GetMHCArmyVChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 1 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_patrice_de_mac_mahon"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_patrice_de_mac
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 2 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_francois_achille_bazaine"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_francois_achille
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 3 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_edmond_leboeuf"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_edmond
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 4 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d_angely"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 5 }
 		}
-		localization_key = "GFX_idea_FRA_theorist_jean_baptiste_philibert_vaillant"
+		localization_key = scripted_loc_GFX_idea_FRA_theorist_jean_baptiste_philibert
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 6 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_charles_cousin_montauban"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_charles_cousin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 7 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_louis_joseph_lebrun"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_louis_joseph
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 8 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_adolphe_niel"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_adolphe
 	}
 	###Army VChief Replacement Marker###
 	
@@ -207,7 +207,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -222,55 +222,55 @@ defined_text = {
 				value = mhc_quart_value
 			}
 		}
-		localization_key = "[GetMHCArmyQuartImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 1 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_patrice_de_mac_mahon"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_patrice_de_mac
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 2 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_francois_achille_bazaine"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_francois_achille
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 3 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_edmond_leboeuf"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_edmond
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 4 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d_angely"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 5 }
 		}
-		localization_key = "GFX_idea_FRA_theorist_jean_baptiste_philibert_vaillant"
+		localization_key = scripted_loc_GFX_idea_FRA_theorist_jean_baptiste_philibert
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 6 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_charles_cousin_montauban"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_charles_cousin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 7 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_louis_joseph_lebrun"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_louis_joseph
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 8 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_adolphe_niel"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_adolphe
 	}
 	###Army Quart Replacement Marker###
 	
@@ -278,7 +278,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -293,55 +293,55 @@ defined_text = {
 				value = mhc_pchief_value
 			}
 		}
-		localization_key = "[GetMHCArmyPChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 1 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_patrice_de_mac_mahon"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_patrice_de_mac
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 2 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_francois_achille_bazaine"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_francois_achille
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 3 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_edmond_leboeuf"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_edmond
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 4 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d_angely"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 5 }
 		}
-		localization_key = "GFX_idea_FRA_theorist_jean_baptiste_philibert_vaillant"
+		localization_key = scripted_loc_GFX_idea_FRA_theorist_jean_baptiste_philibert
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 6 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_charles_cousin_montauban"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_charles_cousin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 7 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_louis_joseph_lebrun"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_louis_joseph
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 8 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_adolphe_niel"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_adolphe
 	}
 	###Army PChief Replacement Marker###
 	
@@ -349,7 +349,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -364,55 +364,55 @@ defined_text = {
 				value = mhc_ins_value
 			}
 		}
-		localization_key = "[GetMHCArmyInsImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 1 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_patrice_de_mac_mahon"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_patrice_de_mac
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 2 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_francois_achille_bazaine"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_francois_achille
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 3 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_edmond_leboeuf"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_edmond
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 4 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d_angely"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_auguste_regnaud_de_saint_jean_d
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 5 }
 		}
-		localization_key = "GFX_idea_FRA_theorist_jean_baptiste_philibert_vaillant"
+		localization_key = scripted_loc_GFX_idea_FRA_theorist_jean_baptiste_philibert
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 6 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_charles_cousin_montauban"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_charles_cousin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 7 }
 		}
-		localization_key = "GFX_idea_FRA_high_command_louis_joseph_lebrun"
+		localization_key = scripted_loc_GFX_idea_FRA_high_command_louis_joseph
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 8 }
 		}
-		localization_key = "GFX_idea_FRA_army_chief_adolphe_niel"
+		localization_key = scripted_loc_GFX_idea_FRA_army_chief_adolphe
 	}
 	###Army Ins Replacement Marker###
 	
@@ -420,6 +420,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }

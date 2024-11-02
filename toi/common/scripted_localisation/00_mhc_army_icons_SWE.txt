@@ -9,61 +9,61 @@ defined_text = {
 				value = mhc_sec_value
 			}
 		}
-		localization_key = "[GetMHCArmySecImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Johan_Lewenhaupt"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Johan
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Johan_Henrik_Rosensvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Johan_Henrik
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 3 }
 		}
-		localization_key = "GFX_idea_SWE_Jakob_Essen_Hamilton"
+		localization_key = scripted_loc_GFX_idea_SWE_Jakob_Essen
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 4 }
 		}
-		localization_key = "GFX_idea_SWE_Gustaf_Rudolf_Abelin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Gustaf_Rudolf_Abelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 5 }
 		}
-		localization_key = "GFX_idea_SWE_Claes_Gabriel_Bergenstrahle"
+		localization_key = scripted_loc_GFX_idea_SWE_Claes_Gabriel
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 6 }
 		}
-		localization_key = "GFX_idea_SWE_Didrik_Gillis_Bildt"
+		localization_key = scripted_loc_GFX_idea_SWE_Didrik_Gillis
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 7 }
 		}
-		localization_key = "GFX_idea_SWE_Michael_Gustaf_Anckarsvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Michael_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 8 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Gustaf_Lowenhielm"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 9 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Fredrik_Meijer"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Fredrik
 	}
 	###Army Sec Replacement Marker###
 	
@@ -71,7 +71,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -86,61 +86,61 @@ defined_text = {
 				value = mhc_chief_value
 			}
 		}
-		localization_key = "[GetMHCArmyChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Johan_Lewenhaupt"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Johan
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Johan_Henrik_Rosensvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Johan_Henrik
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 3 }
 		}
-		localization_key = "GFX_idea_SWE_Jakob_Essen_Hamilton"
+		localization_key = scripted_loc_GFX_idea_SWE_Jakob_Essen
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 4 }
 		}
-		localization_key = "GFX_idea_SWE_Gustaf_Rudolf_Abelin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Gustaf_Rudolf_Abelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 5 }
 		}
-		localization_key = "GFX_idea_SWE_Claes_Gabriel_Bergenstrahle"
+		localization_key = scripted_loc_GFX_idea_SWE_Claes_Gabriel
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 6 }
 		}
-		localization_key = "GFX_idea_SWE_Didrik_Gillis_Bildt"
+		localization_key = scripted_loc_GFX_idea_SWE_Didrik_Gillis
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 7 }
 		}
-		localization_key = "GFX_idea_SWE_Michael_Gustaf_Anckarsvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Michael_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 8 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Gustaf_Lowenhielm"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 9 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Fredrik_Meijer"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Fredrik
 	}
 	###Army Chief Replacement Marker###
 	
@@ -148,7 +148,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -163,61 +163,61 @@ defined_text = {
 				value = mhc_vchief_value
 			}
 		}
-		localization_key = "[GetMHCArmyVChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Johan_Lewenhaupt"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Johan
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Johan_Henrik_Rosensvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Johan_Henrik
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 3 }
 		}
-		localization_key = "GFX_idea_SWE_Jakob_Essen_Hamilton"
+		localization_key = scripted_loc_GFX_idea_SWE_Jakob_Essen
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 4 }
 		}
-		localization_key = "GFX_idea_SWE_Gustaf_Rudolf_Abelin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Gustaf_Rudolf_Abelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 5 }
 		}
-		localization_key = "GFX_idea_SWE_Claes_Gabriel_Bergenstrahle"
+		localization_key = scripted_loc_GFX_idea_SWE_Claes_Gabriel
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 6 }
 		}
-		localization_key = "GFX_idea_SWE_Didrik_Gillis_Bildt"
+		localization_key = scripted_loc_GFX_idea_SWE_Didrik_Gillis
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 7 }
 		}
-		localization_key = "GFX_idea_SWE_Michael_Gustaf_Anckarsvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Michael_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 8 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Gustaf_Lowenhielm"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 9 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Fredrik_Meijer"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Fredrik
 	}
 	###Army VChief Replacement Marker###
 	
@@ -225,7 +225,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -240,61 +240,61 @@ defined_text = {
 				value = mhc_quart_value
 			}
 		}
-		localization_key = "[GetMHCArmyQuartImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Johan_Lewenhaupt"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Johan
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Johan_Henrik_Rosensvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Johan_Henrik
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 3 }
 		}
-		localization_key = "GFX_idea_SWE_Jakob_Essen_Hamilton"
+		localization_key = scripted_loc_GFX_idea_SWE_Jakob_Essen
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 4 }
 		}
-		localization_key = "GFX_idea_SWE_Gustaf_Rudolf_Abelin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Gustaf_Rudolf_Abelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 5 }
 		}
-		localization_key = "GFX_idea_SWE_Claes_Gabriel_Bergenstrahle"
+		localization_key = scripted_loc_GFX_idea_SWE_Claes_Gabriel
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 6 }
 		}
-		localization_key = "GFX_idea_SWE_Didrik_Gillis_Bildt"
+		localization_key = scripted_loc_GFX_idea_SWE_Didrik_Gillis
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 7 }
 		}
-		localization_key = "GFX_idea_SWE_Michael_Gustaf_Anckarsvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Michael_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 8 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Gustaf_Lowenhielm"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 9 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Fredrik_Meijer"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Fredrik
 	}
 	###Army Quart Replacement Marker###
 	
@@ -302,7 +302,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -317,61 +317,61 @@ defined_text = {
 				value = mhc_pchief_value
 			}
 		}
-		localization_key = "[GetMHCArmyPChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Johan_Lewenhaupt"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Johan
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Johan_Henrik_Rosensvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Johan_Henrik
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 3 }
 		}
-		localization_key = "GFX_idea_SWE_Jakob_Essen_Hamilton"
+		localization_key = scripted_loc_GFX_idea_SWE_Jakob_Essen
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 4 }
 		}
-		localization_key = "GFX_idea_SWE_Gustaf_Rudolf_Abelin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Gustaf_Rudolf_Abelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 5 }
 		}
-		localization_key = "GFX_idea_SWE_Claes_Gabriel_Bergenstrahle"
+		localization_key = scripted_loc_GFX_idea_SWE_Claes_Gabriel
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 6 }
 		}
-		localization_key = "GFX_idea_SWE_Didrik_Gillis_Bildt"
+		localization_key = scripted_loc_GFX_idea_SWE_Didrik_Gillis
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 7 }
 		}
-		localization_key = "GFX_idea_SWE_Michael_Gustaf_Anckarsvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Michael_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 8 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Gustaf_Lowenhielm"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 9 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Fredrik_Meijer"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Fredrik
 	}
 	###Army PChief Replacement Marker###
 	
@@ -379,7 +379,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
 
@@ -394,61 +394,61 @@ defined_text = {
 				value = mhc_ins_value
 			}
 		}
-		localization_key = "[GetMHCArmyInsImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageGenericRBracketSym
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 1 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Johan_Lewenhaupt"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Johan
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 2 }
 		}
-		localization_key = "GFX_idea_SWE_Johan_Henrik_Rosensvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Johan_Henrik
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 3 }
 		}
-		localization_key = "GFX_idea_SWE_Jakob_Essen_Hamilton"
+		localization_key = scripted_loc_GFX_idea_SWE_Jakob_Essen
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 4 }
 		}
-		localization_key = "GFX_idea_SWE_Gustaf_Rudolf_Abelin_HC"
+		localization_key = scripted_loc_GFX_idea_SWE_Gustaf_Rudolf_Abelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 5 }
 		}
-		localization_key = "GFX_idea_SWE_Claes_Gabriel_Bergenstrahle"
+		localization_key = scripted_loc_GFX_idea_SWE_Claes_Gabriel
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 6 }
 		}
-		localization_key = "GFX_idea_SWE_Didrik_Gillis_Bildt"
+		localization_key = scripted_loc_GFX_idea_SWE_Didrik_Gillis
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 7 }
 		}
-		localization_key = "GFX_idea_SWE_Michael_Gustaf_Anckarsvard"
+		localization_key = scripted_loc_GFX_idea_SWE_Michael_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 8 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Gustaf_Lowenhielm"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Gustaf
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 9 }
 		}
-		localization_key = "GFX_idea_SWE_Carl_Fredrik_Meijer"
+		localization_key = scripted_loc_GFX_idea_SWE_Carl_Fredrik
 	}
 	###Army Ins Replacement Marker###
 	
@@ -456,6 +456,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 0 }
 		}
-		localization_key = "GFX_MHC_null"
+		localization_key = scripted_loc_GFX_MHC
 	}
 }
