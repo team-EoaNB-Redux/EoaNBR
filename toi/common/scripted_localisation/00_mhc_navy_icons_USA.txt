@@ -9,19 +9,19 @@ defined_text = {
 				value = mhc_nas_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageGenericRBracketSym
+		localization_key = "[GetMHCNavyNasImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_john_'johan'
+		localization_key = "GFX_idea_USA_john_'johan'_ericsson"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_stephen
+		localization_key = "GFX_idea_USA_stephen_mallory"
 	}
 	###Navy Nas Replacement Marker###
 	
@@ -29,7 +29,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -44,19 +44,19 @@ defined_text = {
 				value = mhc_ncs_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageGenericRBracketSym
+		localization_key = "[GetMHCNavyNcsImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_john_'johan'
+		localization_key = "GFX_idea_USA_john_'johan'_ericsson"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_stephen
+		localization_key = "GFX_idea_USA_stephen_mallory"
 	}
 	###Navy Ncs Replacement Marker###
 	
@@ -64,7 +64,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -79,19 +79,19 @@ defined_text = {
 				value = mhc_nog_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageGenericRBracketSym
+		localization_key = "[GetMHCNavyNogImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_john_'johan'
+		localization_key = "GFX_idea_USA_john_'johan'_ericsson"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_stephen
+		localization_key = "GFX_idea_USA_stephen_mallory"
 	}
 	###Navy Nog Replacement Marker###
 	
@@ -99,7 +99,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -114,19 +114,19 @@ defined_text = {
 				value = mhc_cog_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageGenericRBracketSym
+		localization_key = "[GetMHCNavyCogImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_john_'johan'
+		localization_key = "GFX_idea_USA_john_'johan'_ericsson"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_stephen
+		localization_key = "GFX_idea_USA_stephen_mallory"
 	}
 	###Navy Cog Replacement Marker###
 	
@@ -134,7 +134,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -149,19 +149,19 @@ defined_text = {
 				value = mhc_nlg_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageGenericRBracketSym
+		localization_key = "[GetMHCNavyNlgImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_john_'johan'
+		localization_key = "GFX_idea_USA_john_'johan'_ericsson"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_stephen
+		localization_key = "GFX_idea_USA_stephen_mallory"
 	}
 	###Navy Nlg Replacement Marker###
 	
@@ -169,7 +169,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -184,19 +184,19 @@ defined_text = {
 				value = mhc_mog_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageGenericRBracketSym
+		localization_key = "[GetMHCNavyMogImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_john_'johan'
+		localization_key = "GFX_idea_USA_john_'johan'_ericsson"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_USA_stephen
+		localization_key = "GFX_idea_USA_stephen_mallory"
 	}
 	###Navy Mog Replacement Marker###
 	
@@ -204,6 +204,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }

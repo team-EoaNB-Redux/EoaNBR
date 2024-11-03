@@ -5,49 +5,49 @@
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_FRA_Patrice_de_Mac
+		localization_key = "FRA_Patrice_de_Mac_Mahon"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_FRA_Francois_Achille
+		localization_key = "FRA_Francois_Achille_Bazaine"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_FRA_Edmond_Le
+		localization_key = "FRA_Edmond_Le_Boeuf"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_FRA_Auguste_Regnaud_de_Saint-Jean_d
+		localization_key = "FRA_Auguste_Regnaud_de_Saint-Jean_d_Angely"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_FRA_Jean-Baptiste_Philibert
+		localization_key = "FRA_Jean-Baptiste_Philibert_Vaillant"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_FRA_Charles
+		localization_key = "FRA_Charles_Cousin-Montauban"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_FRA_Barthelemy_Louis_Joseph
+		localization_key = "FRA_Barthelemy_Louis_Joseph_Lebrun"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = scripted_loc_FRA_Adolphe
+		localization_key = "FRA_Adolphe_Niel"
 	}
 	###Army Replacement Marker###
 }
@@ -59,43 +59,43 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_FRA_Francois_Thomas
+		localization_key = "FRA_Francois_Thomas_Trehouart"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_FRA_Prosper_de
+		localization_key = "FRA_Prosper_de_Chasseloup-Laubat"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_FRA_Charles_Rigault_de
+		localization_key = "FRA_Charles_Rigault_de_Genouilly"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_FRA_Ferdinand
+		localization_key = "FRA_Ferdinand_Hamelin"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_FRA_Leonard_Victor
+		localization_key = "FRA_Leonard_Victor_Charner"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_FRA_Joseph-Romain
+		localization_key = "FRA_Joseph-Romain_Desfosses"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_FRA_Alexandre_Ferdinand
+		localization_key = "FRA_Alexandre_Ferdinand_Parseval-Deschenes"
 	}
 	###Navy Replacement Marker###
 }

@@ -5,49 +5,49 @@
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_ENG_John_Fox
+		localization_key = "ENG_John_Fox_Burgoyne"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_ENG_William
+		localization_key = "ENG_William_Codrington"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_ENG_James
+		localization_key = "ENG_James_Simpson"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_ENG_Thomas_Graham
+		localization_key = "ENG_Thomas_Graham_Balfour"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_ENG_George
+		localization_key = "ENG_George_Bingham"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_ENG_Prince
+		localization_key = "ENG_Prince_George"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_ENG_Garnet
+		localization_key = "ENG_Garnet_Wolseley"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = scripted_loc_ENG_Thomas
+		localization_key = "ENG_Thomas_Jones"
 	}
 	###Army Replacement Marker###
 }
@@ -59,49 +59,49 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_ENG_Charles
+		localization_key = "ENG_Charles_Napier"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_ENG_Sydney
+		localization_key = "ENG_Sydney_Colpoy"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_ENG_Alexander
+		localization_key = "ENG_Alexander_Milne"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_ENG_Richard
+		localization_key = "ENG_Richard_Saunders"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_ENG_Henry
+		localization_key = "ENG_Henry_Coles"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_ENG_John_Johan
+		localization_key = "ENG_John_Johan_Ericsson"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_ENG_George_Frederic
+		localization_key = "ENG_George_Frederic_Watts"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = scripted_loc_ENG_Mark_Heaton
+		localization_key = "ENG_Mark_Heaton_Robinson"
 	}
 	###Navy Replacement Marker###
 }

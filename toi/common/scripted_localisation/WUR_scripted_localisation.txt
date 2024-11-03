@@ -7,7 +7,7 @@ defined_text = {
 				has_completed_focus = WUR_zweikaisertreffen
 			}
 		}
-		localization_key = scripted_loc_WUR_customeffect_zweikaisertreffen
+		localization_key = "WUR_customeffect_zweikaisertreffen_done"
 	}
 	text = {
 		trigger = {
@@ -22,7 +22,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_WUR_customeffect_zweikaisertreffen
+		localization_key = "WUR_customeffect_zweikaisertreffen_neutral"
 	}
 	text = {
 		trigger = {
@@ -39,7 +39,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_WUR_customeffect_zweikaisertreffen_neutral
+		localization_key = "WUR_customeffect_zweikaisertreffen_neutral_one"
 	}
 	text = {
 		trigger = {
@@ -56,7 +56,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_WUR_customeffect_zweikaisertreffen_neutral
+		localization_key = "WUR_customeffect_zweikaisertreffen_neutral_one"
 	}
 	text = {
 		trigger = {
@@ -65,7 +65,7 @@ defined_text = {
 				has_country_flag = WUR_RUS_accepted_invite
 			}
 		}
-		localization_key = scripted_loc_WUR_customeffect_zweikaisertreffen
+		localization_key = "WUR_customeffect_zweikaisertreffen_positive"
 	}
 	text = {
 		trigger = {
@@ -74,7 +74,7 @@ defined_text = {
 				has_country_flag = WUR_RUS_denied_invite
 			}
 		}
-		localization_key = scripted_loc_WUR_customeffect_zweikaisertreffen
+		localization_key = "WUR_customeffect_zweikaisertreffen_negative"
 	}
 	text = {
 		trigger = {
@@ -83,7 +83,7 @@ defined_text = {
 				has_country_flag = WUR_RUS_denied_invite
 			}
 		}
-		localization_key = scripted_loc_WUR_customeffect_zweikaisertreffen_FRA
+		localization_key = "WUR_customeffect_zweikaisertreffen_FRA_positive"
 	}
 	text = {
 		trigger = {
@@ -92,7 +92,7 @@ defined_text = {
 				has_country_flag = WUR_RUS_accepted_invite
 			}
 		}
-		localization_key = scripted_loc_WUR_customeffect_zweikaisertreffen_RUS
+		localization_key = "WUR_customeffect_zweikaisertreffen_RUS_positive"
 	}
 }
 
@@ -103,12 +103,12 @@ defined_text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = scripted_loc_WUR_zweikaisertreffen
+		localization_key = "WUR_zweikaisertreffen_RUS"
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = scripted_loc_WUR_zweikaisertreffen
+		localization_key = "WUR_zweikaisertreffen_FRA"
 	}
 }

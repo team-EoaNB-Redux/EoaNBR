@@ -46,7 +46,7 @@ defined_text = {
     localization_key = render_change_dyn_mod_inner
   }
   text = {
-    localization_key = scripted_loc_PeriodMark
+    localization_key = "."
   }
 }
 
@@ -64,7 +64,7 @@ defined_text = {
     localization_key = render_transpose_dyn_mod_inner
   }
   text = {
-    localization_key = scripted_loc_PeriodMark
+    localization_key = "."
   }
 }
 
@@ -82,7 +82,7 @@ defined_text = {
     localization_key = render_transmute_dyn_mod_inner
   }
   text = {
-    localization_key = scripted_loc_PeriodMark
+    localization_key = "."
   }
 }
 
@@ -105,10 +105,10 @@ defined_text = {
   name = dyn_mod_or_a
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = scripted_loc_Or
+    localization_key = "Or a" 
   } 
   text = { 
-    localization_key = scripted_loc
+    localization_key = "A" 
   }
 }
 
@@ -116,10 +116,10 @@ defined_text = {
   name = dyn_mod_or_r
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = scripted_loc_Or
+    localization_key = "Or r" 
   } 
   text = { 
-    localization_key = scripted_loc
+    localization_key = "R" 
   }
 }
 
@@ -127,10 +127,10 @@ defined_text = {
   name = dyn_mod_or_m
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = scripted_loc_Or
+    localization_key = "Or m" 
   } 
   text = { 
-    localization_key = scripted_loc
+    localization_key = "M" 
   }
 }
 
@@ -1027,8 +1027,7 @@ defined_text = {
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_throughput_factor } } localization_key = entertainment_throughput_factor }
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_attractiveness_modifier } } localization_key = entertainment_attractiveness_modifier }
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_attractiveness_factor } } localization_key = entertainment_attractiveness_factor }
-  text = { localization_key = scripted_loc_LBracketSym_QuestionMark_temp_modifierPeriodMark_GetTokenKeyRBracketSym
-  }
+  text = { localization_key = "[?temp_modifier.GetTokenKey]" }
 }
 
 defined_text = {
@@ -1048,18 +1047,18 @@ defined_text = {
       }
       check_variable = { temp_difference = 0 }
     }
-    localization_key = scripted_loc
+    localization_key = ""
   }
   text = { # Flat
     trigger = { modifier_is_flat = yes }
-    localization_key = scripted_loc_LBracketSym_modifier_get_locRBracketSym_ColonSym__LBracketSym_modifier_render_flatRBracketSym
+    localization_key = "[modifier_get_loc]: [modifier_render_flat]"
   }
   text = { # Boolean
     trigger = { modifier_is_boolean = yes }
-    localization_key = scripted_loc_LBracketSym_modifier_get_locRBracketSym_ColonSym__LBracketSym_modifier_render_booleanRBracketSym
+    localization_key = "[modifier_get_loc]: [modifier_render_boolean]"
   }
   text = { # Percentual
-    localization_key = scripted_loc_LBracketSym_modifier_get_locRBracketSym_ColonSym__LBracketSym_modifier_render_percentRBracketSym
+    localization_key = "[modifier_get_loc]: [modifier_render_percent]"
   }
 }
 
@@ -1096,23 +1095,23 @@ defined_text = {
   name = modifier_render_percent
   text = {
     trigger = { OR = { check_variable = { temp_difference = 0 } check_variable = { temp_valence = 0 } } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_PercentSym_Y2RBracketSym
+    localization_key = "[?temp_difference|=%Y2]"
   }
   text = {
     trigger = { check_variable = { temp_valence = 1 } check_variable = { temp_difference > 0 } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_PercentSym_G2RBracketSym
+    localization_key = "[?temp_difference|=%G2]"
   }
   text = {
     trigger = { check_variable = { temp_valence = 1 } check_variable = { temp_difference < 0 } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_PercentSym_R2RBracketSym
+    localization_key = "[?temp_difference|=%R2]"
   }
   text = {
     trigger = { check_variable = { temp_valence = -1 } check_variable = { temp_difference > 0 } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_PercentSym_R2RBracketSym
+    localization_key = "[?temp_difference|=%R2]"
   }
   text = {
     trigger = { check_variable = { temp_valence = -1 } check_variable = { temp_difference < 0 } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_PercentSym_G2RBracketSym
+    localization_key = "[?temp_difference|=%G2]"
   }
 }
 
@@ -1120,22 +1119,22 @@ defined_text = {
   name = modifier_render_flat
   text = {
     trigger = { OR = { check_variable = { temp_difference = 0 } check_variable = { temp_valence = 0 } } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_Y2RBracketSym
+    localization_key = "[?temp_difference|=Y2]"
   }
   text = {
     trigger = { check_variable = { temp_valence = 1 } check_variable = { temp_difference > 0 } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_G2RBracketSym
+    localization_key = "[?temp_difference|=G2]"
   }
   text = {
     trigger = { check_variable = { temp_valence = 1 } check_variable = { temp_difference < 0 } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_R2RBracketSym
+    localization_key = "[?temp_difference|=R2]"
   }
   text = {
     trigger = { check_variable = { temp_valence = -1 } check_variable = { temp_difference > 0 } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_R2RBracketSym
+    localization_key = "[?temp_difference|=R2]"
   }
   text = {
     trigger = { check_variable = { temp_valence = -1 } check_variable = { temp_difference < 0 } }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_temp_differenceORSym_EqualsSign_G2RBracketSym
+    localization_key = "[?temp_difference|=G2]"
   }  
 }

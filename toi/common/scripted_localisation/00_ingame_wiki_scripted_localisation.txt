@@ -10,7 +10,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_0"
 	}
 	text = {
 		trigger = {
@@ -20,7 +20,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_1"
 	}
 	text = {
 		trigger = {
@@ -30,7 +30,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_2"
 	}
 	text = {
 		trigger = {
@@ -40,7 +40,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_3"
 	}
 	text = {
 		trigger = {
@@ -50,7 +50,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_4"
 	}
 	text = {
 		trigger = {
@@ -60,7 +60,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_5"
 	}
 	text = {
 		trigger = {
@@ -70,7 +70,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_6"
 	}
 	text = {
 		trigger = {
@@ -80,7 +80,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_7"
 	}
 	text = {
 		trigger = {
@@ -90,7 +90,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_8"
 	}
 	text = {
 		trigger = {
@@ -100,7 +100,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TITLE_INDEX
+		localization_key = "INGAME_WIKI_TITLE_INDEX_9"
 	}
 }
 
@@ -116,7 +116,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_0"
 	}
 	text = {
 		trigger = {
@@ -126,7 +126,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_1"
 	}
 	text = {
 		trigger = {
@@ -136,7 +136,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_2"
 	}
 	text = {
 		trigger = {
@@ -146,7 +146,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_3"
 	}
 	text = {
 		trigger = {
@@ -156,7 +156,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_4"
 	}
 	text = {
 		trigger = {
@@ -166,7 +166,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_5"
 	}
 	text = {
 		trigger = {
@@ -176,7 +176,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_6"
 	}
 	text = {
 		trigger = {
@@ -186,7 +186,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_7"
 	}
 	text = {
 		trigger = {
@@ -196,7 +196,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_8"
 	}
 	text = {
 		trigger = {
@@ -206,7 +206,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_INGAME_WIKI_TEXT_INDEX
+		localization_key = "INGAME_WIKI_TEXT_INDEX_9"
 	}
 }
 
@@ -217,16 +217,16 @@ defined_text = {
 		trigger = {
 			date < 1858.1.1
 		}
-		localization_key = scripted_loc_LBracketSym_STARTUP_EVENT_SCENARIO_1857RBracketSym
+		localization_key = "[STARTUP_EVENT_SCENARIO_1857]"
 	}
 	text = {
 		trigger = {
 			date < 1871.1.1
 		}
-		localization_key = scripted_loc_LBracketSym_STARTUP_EVENT_SCENARIO_1870RBracketSym
+		localization_key = "[STARTUP_EVENT_SCENARIO_1870]"
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = ""
 	}
 }
 defined_text = {

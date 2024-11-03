@@ -5,49 +5,49 @@
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_DEN_Carl
+		localization_key = "DEN_Carl_Lundbye"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_DEN_Hans_Nicolai
+		localization_key = "DEN_Hans_Nicolai_Thestrup"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_DEN_Anton_Frederik
+		localization_key = "DEN_Anton_Frederik_Tscherning"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_DEN_Mathias_von
+		localization_key = "DEN_Mathias_von_Luttichau"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_DEN_Christian_Julius_de
+		localization_key = "DEN_Christian_Julius_de_Meza"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_DEN_Christian_Emilius
+		localization_key = "DEN_Christian_Emilius_Reich"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_DEN_Stephan
+		localization_key = "DEN_Stephan_Ankjaer"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = scripted_loc_DEN_Cai_Hegermann
+		localization_key = "DEN_Cai_Hegermann_Lindencrone"
 	}
 	###Army Replacement Marker###
 }
@@ -59,43 +59,43 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_DEN_Steen_Andersen
+		localization_key = "DEN_Steen_Andersen_Bille"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_DEN_Ove_Wilhelm
+		localization_key = "DEN_Ove_Wilhelm_Michelsen"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_DEN_Otto_Hans
+		localization_key = "DEN_Otto_Hans_Lutken"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_DEN_Hans_Herman
+		localization_key = "DEN_Hans_Herman_Grove"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_DEN_Otto_Christian
+		localization_key = "DEN_Otto_Christian_Hammer"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_DEN_Carl
+		localization_key = "DEN_Carl_Irminger"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_DEN_Carl_van
+		localization_key = "DEN_Carl_van_Dockum"
 	}
 	###Navy Replacement Marker###
 }

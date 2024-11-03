@@ -5,37 +5,37 @@
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_na_n_ar_thomas
+		localization_key = "na_n_ar_thomas_clearwater"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_na_n_ar_running
+		localization_key = "na_n_ar_running_hare"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_na_n_ar_logan
+		localization_key = "na_n_ar_logan_doe"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_na_n_ar_charging
+		localization_key = "na_n_ar_charging_bull"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_na_n_ar_lawrence
+		localization_key = "na_n_ar_lawrence_sintemaza"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_na_n_ar_peter
+		localization_key = "na_n_ar_peter_kohana"
 	}
 	###Army Replacement Marker###
 }
@@ -47,25 +47,25 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_na_n_na_peter
+		localization_key = "na_n_na_peter_kohana"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = scripted_loc_na_n_na_joseph
+		localization_key = "na_n_na_joseph_sike"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 9 }
 		}
-		localization_key = scripted_loc_na_n_na_connor
+		localization_key = "na_n_na_connor_wahkan"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 10 }
 		}
-		localization_key = scripted_loc_na_n_na_alfred
+		localization_key = "na_n_na_alfred_segenam"
 	}
 	###Navy Replacement Marker###
 }
@@ -77,7 +77,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 11 }
 		}
-		localization_key = scripted_loc_na_n_af_little
+		localization_key = "na_n_af_little_doe"
 	}
 	###Airforce Replacement Marker###
 }

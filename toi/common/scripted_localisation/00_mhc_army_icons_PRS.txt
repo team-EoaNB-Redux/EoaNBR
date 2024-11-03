@@ -9,85 +9,85 @@
 				value = mhc_sec_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageGenericRBracketSym
+		localization_key = "[GetMHCArmySecImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eduard_von
+		localization_key = "GFX_idea_PRS_Eduard_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Edwin_von
+		localization_key = "GFX_idea_PRS_Edwin_von_Manteuffel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Friedrich_von
+		localization_key = "GFX_idea_PRS_Friedrich_von_Wrangel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Georg_von
+		localization_key = "GFX_idea_PRS_Georg_von_Kameke"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Hermann_von
+		localization_key = "GFX_idea_PRS_Hermann_von_Tresckow"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leopold_von_Brese
+		localization_key = "GFX_idea_PRS_Leopold_von_Brese_Winiary"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Ernst_von
+		localization_key = "GFX_idea_PRS_Ernst_von_Pfuel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eberhard_Herwarth_von
+		localization_key = "GFX_idea_PRS_Eberhard_Herwarth_von_Bittenfeld"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 9 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Karl_Friedrich_von
+		localization_key = "GFX_idea_PRS_Karl_Friedrich_von_Steinmetz"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 10 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leonhard_von
+		localization_key = "GFX_idea_PRS_Leonhard_von_Blumenthal"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 11 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Adolf_von
+		localization_key = "GFX_idea_PRS_Adolf_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 12 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Albrecht_von
+		localization_key = "GFX_idea_PRS_Albrecht_von_Roon"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 13 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Helmuth_von
+		localization_key = "GFX_idea_PRS_Helmuth_von_Moltke"
 	}
 	###Army Sec Replacement Marker###
 	
@@ -95,7 +95,7 @@
 		trigger = {
 			check_variable = { mhc_sec_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -110,85 +110,85 @@ defined_text = {
 				value = mhc_chief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eduard_von
+		localization_key = "GFX_idea_PRS_Eduard_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Edwin_von
+		localization_key = "GFX_idea_PRS_Edwin_von_Manteuffel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Friedrich_von
+		localization_key = "GFX_idea_PRS_Friedrich_von_Wrangel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Georg_von
+		localization_key = "GFX_idea_PRS_Georg_von_Kameke"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Hermann_von
+		localization_key = "GFX_idea_PRS_Hermann_von_Tresckow"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leopold_von_Brese
+		localization_key = "GFX_idea_PRS_Leopold_von_Brese_Winiary"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Ernst_von
+		localization_key = "GFX_idea_PRS_Ernst_von_Pfuel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eberhard_Herwarth_von
+		localization_key = "GFX_idea_PRS_Eberhard_Herwarth_von_Bittenfeld"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 9 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Karl_Friedrich_von
+		localization_key = "GFX_idea_PRS_Karl_Friedrich_von_Steinmetz"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 10 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leonhard_von
+		localization_key = "GFX_idea_PRS_Leonhard_von_Blumenthal"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 11 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Adolf_von
+		localization_key = "GFX_idea_PRS_Adolf_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 12 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Albrecht_von
+		localization_key = "GFX_idea_PRS_Albrecht_von_Roon"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 13 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Helmuth_von
+		localization_key = "GFX_idea_PRS_Helmuth_von_Moltke"
 	}
 	###Army Chief Replacement Marker###
 	
@@ -196,7 +196,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -211,85 +211,85 @@ defined_text = {
 				value = mhc_vchief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyVChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eduard_von
+		localization_key = "GFX_idea_PRS_Eduard_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Edwin_von
+		localization_key = "GFX_idea_PRS_Edwin_von_Manteuffel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Friedrich_von
+		localization_key = "GFX_idea_PRS_Friedrich_von_Wrangel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Georg_von
+		localization_key = "GFX_idea_PRS_Georg_von_Kameke"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Hermann_von
+		localization_key = "GFX_idea_PRS_Hermann_von_Tresckow"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leopold_von_Brese
+		localization_key = "GFX_idea_PRS_Leopold_von_Brese_Winiary"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Ernst_von
+		localization_key = "GFX_idea_PRS_Ernst_von_Pfuel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eberhard_Herwarth_von
+		localization_key = "GFX_idea_PRS_Eberhard_Herwarth_von_Bittenfeld"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 9 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Karl_Friedrich_von
+		localization_key = "GFX_idea_PRS_Karl_Friedrich_von_Steinmetz"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 10 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leonhard_von
+		localization_key = "GFX_idea_PRS_Leonhard_von_Blumenthal"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 11 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Adolf_von
+		localization_key = "GFX_idea_PRS_Adolf_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 12 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Albrecht_von
+		localization_key = "GFX_idea_PRS_Albrecht_von_Roon"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 13 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Helmuth_von
+		localization_key = "GFX_idea_PRS_Helmuth_von_Moltke"
 	}
 	###Army VChief Replacement Marker###
 	
@@ -297,7 +297,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -312,85 +312,85 @@ defined_text = {
 				value = mhc_quart_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageGenericRBracketSym
+		localization_key = "[GetMHCArmyQuartImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eduard_von
+		localization_key = "GFX_idea_PRS_Eduard_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Edwin_von
+		localization_key = "GFX_idea_PRS_Edwin_von_Manteuffel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Friedrich_von
+		localization_key = "GFX_idea_PRS_Friedrich_von_Wrangel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Georg_von
+		localization_key = "GFX_idea_PRS_Georg_von_Kameke"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Hermann_von
+		localization_key = "GFX_idea_PRS_Hermann_von_Tresckow"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leopold_von_Brese
+		localization_key = "GFX_idea_PRS_Leopold_von_Brese_Winiary"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Ernst_von
+		localization_key = "GFX_idea_PRS_Ernst_von_Pfuel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eberhard_Herwarth_von
+		localization_key = "GFX_idea_PRS_Eberhard_Herwarth_von_Bittenfeld"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 9 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Karl_Friedrich_von
+		localization_key = "GFX_idea_PRS_Karl_Friedrich_von_Steinmetz"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 10 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leonhard_von
+		localization_key = "GFX_idea_PRS_Leonhard_von_Blumenthal"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 11 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Adolf_von
+		localization_key = "GFX_idea_PRS_Adolf_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 12 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Albrecht_von
+		localization_key = "GFX_idea_PRS_Albrecht_von_Roon"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 13 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Helmuth_von
+		localization_key = "GFX_idea_PRS_Helmuth_von_Moltke"
 	}
 	###Army Quart Replacement Marker###
 	
@@ -398,7 +398,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -413,85 +413,85 @@ defined_text = {
 				value = mhc_pchief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyPChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eduard_von
+		localization_key = "GFX_idea_PRS_Eduard_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Edwin_von
+		localization_key = "GFX_idea_PRS_Edwin_von_Manteuffel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Friedrich_von
+		localization_key = "GFX_idea_PRS_Friedrich_von_Wrangel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Georg_von
+		localization_key = "GFX_idea_PRS_Georg_von_Kameke"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Hermann_von
+		localization_key = "GFX_idea_PRS_Hermann_von_Tresckow"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leopold_von_Brese
+		localization_key = "GFX_idea_PRS_Leopold_von_Brese_Winiary"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Ernst_von
+		localization_key = "GFX_idea_PRS_Ernst_von_Pfuel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eberhard_Herwarth_von
+		localization_key = "GFX_idea_PRS_Eberhard_Herwarth_von_Bittenfeld"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 9 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Karl_Friedrich_von
+		localization_key = "GFX_idea_PRS_Karl_Friedrich_von_Steinmetz"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 10 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leonhard_von
+		localization_key = "GFX_idea_PRS_Leonhard_von_Blumenthal"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 11 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Adolf_von
+		localization_key = "GFX_idea_PRS_Adolf_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 12 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Albrecht_von
+		localization_key = "GFX_idea_PRS_Albrecht_von_Roon"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 13 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Helmuth_von
+		localization_key = "GFX_idea_PRS_Helmuth_von_Moltke"
 	}
 	###Army PChief Replacement Marker###
 	
@@ -499,7 +499,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -514,85 +514,85 @@ defined_text = {
 				value = mhc_ins_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageGenericRBracketSym
+		localization_key = "[GetMHCArmyInsImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eduard_von
+		localization_key = "GFX_idea_PRS_Eduard_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Edwin_von
+		localization_key = "GFX_idea_PRS_Edwin_von_Manteuffel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Friedrich_von
+		localization_key = "GFX_idea_PRS_Friedrich_von_Wrangel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Georg_von
+		localization_key = "GFX_idea_PRS_Georg_von_Kameke"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Hermann_von
+		localization_key = "GFX_idea_PRS_Hermann_von_Tresckow"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leopold_von_Brese
+		localization_key = "GFX_idea_PRS_Leopold_von_Brese_Winiary"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Ernst_von
+		localization_key = "GFX_idea_PRS_Ernst_von_Pfuel"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Eberhard_Herwarth_von
+		localization_key = "GFX_idea_PRS_Eberhard_Herwarth_von_Bittenfeld"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 9 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Karl_Friedrich_von
+		localization_key = "GFX_idea_PRS_Karl_Friedrich_von_Steinmetz"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 10 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Leonhard_von
+		localization_key = "GFX_idea_PRS_Leonhard_von_Blumenthal"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 11 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Adolf_von
+		localization_key = "GFX_idea_PRS_Adolf_von_Bonin"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 12 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Albrecht_von
+		localization_key = "GFX_idea_PRS_Albrecht_von_Roon"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 13 }
 		}
-		localization_key = scripted_loc_GFX_idea_PRS_Helmuth_von
+		localization_key = "GFX_idea_PRS_Helmuth_von_Moltke"
 	}
 	###Army Ins Replacement Marker###
 	
@@ -600,6 +600,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = "GFX_MHC_null"
 	}
 }
