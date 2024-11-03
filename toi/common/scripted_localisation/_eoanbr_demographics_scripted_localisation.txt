@@ -17,7 +17,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym_B
 			}
 			text = {
 				trigger = {
@@ -34,7 +34,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_0RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -51,7 +51,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_1RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -68,7 +68,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -81,7 +81,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_0RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -94,7 +94,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_1RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -107,7 +107,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnpORSym_2RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -136,7 +136,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gnppORSym_3RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gnppORSym_3RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -165,7 +165,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym_B
 			}
 			text = {
 				trigger = {
@@ -182,7 +182,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_0RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -199,7 +199,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_1RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -216,7 +216,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -229,7 +229,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_0RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -242,7 +242,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_1RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -255,7 +255,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpORSym_2RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -283,7 +283,7 @@
 						value = 100000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpcpORSym_3RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gncpcpORSym_3RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -314,7 +314,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym_B
 			}
 			text = {
 				trigger = {
@@ -331,7 +331,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_0RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -348,7 +348,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_1RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -365,7 +365,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -378,7 +378,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_0RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -391,7 +391,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_1RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -404,7 +404,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gspORSym_2RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -433,7 +433,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gsppORSym_3RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gsppORSym_3RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -2202,7 +2202,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym_B
 			}
 			text = {
 				trigger = {
@@ -2219,7 +2219,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_0RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -2236,7 +2236,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_1RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -2253,7 +2253,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -2266,7 +2266,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_0RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -2279,7 +2279,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_1RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -2292,7 +2292,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_gcpORSym_2RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -2320,7 +2320,7 @@
 					# 	value = 100000
 					# }
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_population_kAtSym_varColonSym_vRBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_population_kAtSym_varColonSym_vRBracketSym_k
 			}
 		}
 		defined_text = {
@@ -2346,7 +2346,7 @@
 					}
 					has_promoted_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_promoted
 			}
 			text = {
 				trigger = {
@@ -2356,7 +2356,7 @@
 					}
 					is_marginalized_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -2366,10 +2366,10 @@
 					}
 					is_primary_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_primary
 			}
 			text = {
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_normal
 			}
 		}
 		defined_text = {
@@ -2382,7 +2382,7 @@
 					}
 					is_owner_promoted_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_promoted
 			}
 			text = {
 				trigger = {
@@ -2392,7 +2392,7 @@
 					}
 					is_owner_marginalized_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -2402,10 +2402,10 @@
 					}
 					is_owner_primary_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_primary
 			}
 			text = {
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_normal
 			}
 		}
 		defined_text = {
@@ -2418,7 +2418,7 @@
 					}
 					is_controller_promoted_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_promoted
 			}
 			text = {
 				trigger = {
@@ -2428,7 +2428,7 @@
 					}
 					is_controller_marginalized_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -2438,10 +2438,10 @@
 					}
 					is_controller_primary_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_primary
 			}
 			text = {
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_normal
 			}
 		}
 		defined_text = {
@@ -2454,7 +2454,7 @@
 					}
 					has_promoted_culture = yes
 				}
-				localization_key = scripted_loc_culture_type_promoted
+				localization_key = scripted_loc_culture_type_promoted_desc
 			}
 			text = {
 				trigger = {
@@ -2464,7 +2464,7 @@
 					}
 					is_marginalized_culture = yes
 				}
-				localization_key = scripted_loc_culture_type_marginalized
+				localization_key = scripted_loc_culture_type_marginalized_desc
 			}
 			text = {
 				trigger = {
@@ -2474,10 +2474,10 @@
 					}
 					is_primary_culture = yes
 				}
-				localization_key = scripted_loc_culture_type_primary
+				localization_key = scripted_loc_culture_type_primary_desc
 			}
 			text = {
-				localization_key = scripted_loc_culture_type_normal
+				localization_key = scripted_loc_culture_type_normal_desc
 			}
 		}
 		defined_text = {
@@ -2490,7 +2490,7 @@
 					}
 					is_owner_promoted_culture = yes
 				}
-				localization_key = scripted_loc_culture_type_promoted
+				localization_key = scripted_loc_culture_type_promoted_desc
 			}
 			text = {
 				trigger = {
@@ -2500,7 +2500,7 @@
 					}
 					is_owner_marginalized_culture = yes
 				}
-				localization_key = scripted_loc_culture_type_marginalized
+				localization_key = scripted_loc_culture_type_marginalized_desc
 			}
 			text = {
 				trigger = {
@@ -2510,10 +2510,10 @@
 					}
 					is_owner_primary_culture = yes
 				}
-				localization_key = scripted_loc_culture_type_primary
+				localization_key = scripted_loc_culture_type_primary_desc
 			}
 			text = {
-				localization_key = scripted_loc_culture_type_normal
+				localization_key = scripted_loc_culture_type_normal_desc
 			}
 		}
 		defined_text = {
@@ -2526,7 +2526,7 @@
 					}
 					is_controller_promoted_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_promoted
 			}
 			text = {
 				trigger = {
@@ -2536,7 +2536,7 @@
 					}
 					is_controller_marginalized_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -2546,10 +2546,10 @@
 					}
 					is_controller_primary_culture = yes
 				}
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_primary
 			}
 			text = {
-				localization_key = scripted_loc_culture_type
+				localization_key = scripted_loc_culture_type_normal
 			}
 		}
 	#
@@ -6106,7 +6106,7 @@
 						value = 1000000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym_B
 			}
 			text = {
 				trigger = {
@@ -6123,7 +6123,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_0RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -6140,7 +6140,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_1RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -6157,7 +6157,7 @@
 						value = 1000
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym_M
 			}
 			text = {
 				trigger = {
@@ -6170,7 +6170,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_0RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_0RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -6183,7 +6183,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_1RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_1RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -6196,7 +6196,7 @@
 						compare = greater_than_or_equals
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_grpORSym_2RBracketSym_k
 			}
 			text = {
 				trigger = {
@@ -6220,7 +6220,7 @@
 						value = population_k@var:v
 					}
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_population_kAtSym_varColonSym_vRBracketSym
+				localization_key = scripted_loc_LBracketSym_QuestionMark_population_kAtSym_varColonSym_vRBracketSym_k
 			}
 		}
 		defined_text = {
@@ -6246,7 +6246,7 @@
 					}
 					is_promoted_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_promoted
 			}
 			text = {
 				trigger = {
@@ -6256,7 +6256,7 @@
 					}
 					is_marginalized_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -6266,10 +6266,10 @@
 					}
 					is_primary_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_primary
 			}
 			text = {
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_normal
 			}
 		}
 		defined_text = {
@@ -6282,7 +6282,7 @@
 					}
 					is_owner_promoted_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_promoted
 			}
 			text = {
 				trigger = {
@@ -6292,7 +6292,7 @@
 					}
 					is_owner_marginalized_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -6302,10 +6302,10 @@
 					}
 					is_owner_primary_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_primary
 			}
 			text = {
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_normal
 			}
 		}
 		defined_text = {
@@ -6318,7 +6318,7 @@
 					}
 					is_controller_promoted_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_promoted
 			}
 			text = {
 				trigger = {
@@ -6328,7 +6328,7 @@
 					}
 					is_controller_marginalized_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -6338,10 +6338,10 @@
 					}
 					is_controller_primary_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_primary
 			}
 			text = {
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_normal
 			}
 		}
 		defined_text = {
@@ -6354,7 +6354,7 @@
 					}
 					is_promoted_religion = yes
 				}
-				localization_key = scripted_loc_religion_type_promoted
+				localization_key = scripted_loc_religion_type_promoted_desc
 			}
 			text = {
 				trigger = {
@@ -6364,7 +6364,7 @@
 					}
 					is_marginalized_religion = yes
 				}
-				localization_key = scripted_loc_religion_type_marginalized
+				localization_key = scripted_loc_religion_type_marginalized_desc
 			}
 			text = {
 				trigger = {
@@ -6374,10 +6374,10 @@
 					}
 					is_primary_religion = yes
 				}
-				localization_key = scripted_loc_religion_type_primary
+				localization_key = scripted_loc_religion_type_primary_desc
 			}
 			text = {
-				localization_key = scripted_loc_religion_type_normal
+				localization_key = scripted_loc_religion_type_normal_desc
 			}
 		}
 		defined_text = {
@@ -6390,7 +6390,7 @@
 					}
 					is_owner_promoted_religion = yes
 				}
-				localization_key = scripted_loc_religion_type_promoted
+				localization_key = scripted_loc_religion_type_promoted_desc
 			}
 			text = {
 				trigger = {
@@ -6400,7 +6400,7 @@
 					}
 					is_owner_marginalized_religion = yes
 				}
-				localization_key = scripted_loc_religion_type_marginalized
+				localization_key = scripted_loc_religion_type_marginalized_desc
 			}
 			text = {
 				trigger = {
@@ -6410,10 +6410,10 @@
 					}
 					is_owner_primary_religion = yes
 				}
-				localization_key = scripted_loc_religion_type_primary
+				localization_key = scripted_loc_religion_type_primary_desc
 			}
 			text = {
-				localization_key = scripted_loc_religion_type_normal
+				localization_key = scripted_loc_religion_type_normal_desc
 			}
 		}
 		defined_text = {
@@ -6426,7 +6426,7 @@
 					}
 					is_controller_promoted_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_promoted
 			}
 			text = {
 				trigger = {
@@ -6436,7 +6436,7 @@
 					}
 					is_controller_marginalized_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_marginalized
 			}
 			text = {
 				trigger = {
@@ -6446,10 +6446,10 @@
 					}
 					is_controller_primary_religion = yes
 				}
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_primary
 			}
 			text = {
-				localization_key = scripted_loc_religion_type
+				localization_key = scripted_loc_religion_type_normal
 			}
 		}
 	#

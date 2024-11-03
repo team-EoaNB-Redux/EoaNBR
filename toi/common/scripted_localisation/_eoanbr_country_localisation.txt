@@ -13,7 +13,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_vPeriodMark_GetTokenKeyRBracketSym_
+		localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_vPeriodMark_GetTokenKeyRBracketSym__founded
 	}
 	text = {
 		localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_vPeriodMark_GetTokenKeyRBracketSym
@@ -78,10 +78,10 @@ defined_text = {
 				institution_progress_temp < 0
 			}
 		}
-		localization_key = scripted_loc_red
+		localization_key = scripted_loc_red_loc
 	}
 	text = {
-		localization_key = scripted_loc_green
+		localization_key = scripted_loc_green_loc
 	}
 }
 defined_text = {
@@ -145,7 +145,7 @@ defined_text = {
 				modifier = frontier_state
 			}
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Frontier
 	}
 	text = {
 		trigger = {
@@ -159,28 +159,28 @@ defined_text = {
 			is_owned_by = ROOT
 			is_claimed_by = ROOT
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Integration
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Consolidation
 	}
 	text = {
 		trigger = {
 			is_core_of = ROOT
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Core
 	}
 	text = {
 		trigger = {
 			is_claimed_by = ROOT
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Claim
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_None
 	}
 }
 defined_text = {
@@ -193,14 +193,14 @@ defined_text = {
 				modifier = frontier_state
 			}
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Settle
 	}
 	text = {
 		trigger = {
 			ROOT = { has_tech = tech_projects_overseas_interests }
 			FROM.OWNER = { check_variable = { num_of_institutions < 3 } }
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Settle
 	}
 	text = {
 		trigger = {
@@ -214,28 +214,28 @@ defined_text = {
 			is_owned_by = ROOT
 			is_claimed_by = ROOT
 		}
-		localization_key = scripted_loc_Integrate
+		localization_key = scripted_loc_Integrate_Territory
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 		}
-		localization_key = scripted_loc_Consolidate
+		localization_key = scripted_loc_Consolidate_Territory
 	}
 	text = {
 		trigger = {
 			is_core_of = ROOT
 		}
-		localization_key = scripted_loc_Liberate
+		localization_key = scripted_loc_Liberate_Core
 	}
 	text = {
 		trigger = {
 			is_claimed_by = ROOT
 		}
-		localization_key = scripted_loc_Acquire
+		localization_key = scripted_loc_Acquire_Claim
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_None
 	}
 }
 defined_text = {
@@ -262,9 +262,9 @@ defined_text = {
 		trigger = {
 			has_tech = tech_projects_overseas_interests
 		}
-		localization_key = scripted_loc_GFX_colonization
+		localization_key = scripted_loc_GFX_colonization_icon
 	}
 	text = {
-		localization_key = scripted_loc_GFX_frontiers
+		localization_key = scripted_loc_GFX_frontiers_icon
 	}
 }

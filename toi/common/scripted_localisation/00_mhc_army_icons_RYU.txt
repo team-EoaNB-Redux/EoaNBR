@@ -15,7 +15,7 @@
 		trigger = {
 			check_variable = { mhc_sec_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Army Sec Replacement Marker###
 	
@@ -23,7 +23,7 @@
 		trigger = {
 			check_variable = { mhc_sec_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -44,7 +44,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Army Chief Replacement Marker###
 	
@@ -52,7 +52,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -73,7 +73,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Army VChief Replacement Marker###
 	
@@ -81,7 +81,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -102,7 +102,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Army Quart Replacement Marker###
 	
@@ -110,7 +110,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -131,7 +131,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Army PChief Replacement Marker###
 	
@@ -139,7 +139,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -160,7 +160,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Army Ins Replacement Marker###
 	
@@ -168,6 +168,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }

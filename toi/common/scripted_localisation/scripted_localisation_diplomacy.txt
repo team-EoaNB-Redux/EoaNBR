@@ -4,9 +4,9 @@ defined_text = {
 		trigger = {
 			check_variable = { wargoal_take_state > 0}
 		}
-		localization_key = scripted_loc_Take
+		localization_key = scripted_loc_Take_State
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Wargoal
 	}
 }

@@ -105,10 +105,10 @@ defined_text = {
   name = dyn_mod_or_a
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = scripted_loc_Or
+    localization_key = scripted_loc_Or_a
   } 
   text = { 
-    localization_key = scripted_loc
+    localization_key = scripted_loc_A
   }
 }
 
@@ -116,10 +116,10 @@ defined_text = {
   name = dyn_mod_or_r
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = scripted_loc_Or
+    localization_key = scripted_loc_Or_r
   } 
   text = { 
-    localization_key = scripted_loc
+    localization_key = scripted_loc_R
   }
 }
 
@@ -127,10 +127,10 @@ defined_text = {
   name = dyn_mod_or_m
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = scripted_loc_Or
+    localization_key = scripted_loc_Or_m
   } 
   text = { 
-    localization_key = scripted_loc
+    localization_key = scripted_loc_M
   }
 }
 
@@ -1028,7 +1028,6 @@ defined_text = {
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_attractiveness_modifier } } localization_key = entertainment_attractiveness_modifier }
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_attractiveness_factor } } localization_key = entertainment_attractiveness_factor }
   text = { localization_key = scripted_loc_LBracketSym_QuestionMark_temp_modifierPeriodMark_GetTokenKeyRBracketSym
-  }
 }
 
 defined_text = {

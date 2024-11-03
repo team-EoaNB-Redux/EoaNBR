@@ -15,43 +15,43 @@
 		trigger = {
 			check_variable = { mhc_nas_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas_trehouart
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand_hamelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor_charner
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Nas Replacement Marker###
 	
@@ -59,7 +59,7 @@
 		trigger = {
 			check_variable = { mhc_nas_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -80,43 +80,43 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas_trehouart
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand_hamelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor_charner
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Ncs Replacement Marker###
 	
@@ -124,7 +124,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -145,43 +145,43 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas_trehouart
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand_hamelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor_charner
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Nog Replacement Marker###
 	
@@ -189,7 +189,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -210,43 +210,43 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas_trehouart
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand_hamelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor_charner
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Cog Replacement Marker###
 	
@@ -254,7 +254,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -275,43 +275,43 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas_trehouart
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand_hamelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor_charner
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Nlg Replacement Marker###
 	
@@ -319,7 +319,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -340,43 +340,43 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_francois_thomas_trehouart
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_ferdinand_hamelin
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor
+		localization_key = scripted_loc_GFX_idea_FRA_navy_chief_leonard_victor_charner
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Mog Replacement Marker###
 	
@@ -384,6 +384,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }

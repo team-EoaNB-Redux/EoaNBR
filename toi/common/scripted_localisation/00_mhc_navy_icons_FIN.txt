@@ -15,7 +15,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Nas Replacement Marker###
 	
@@ -23,7 +23,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nas_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -44,7 +44,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Ncs Replacement Marker###
 	
@@ -52,7 +52,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ncs_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -73,7 +73,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Nog Replacement Marker###
 	
@@ -81,7 +81,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -102,7 +102,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Cog Replacement Marker###
 	
@@ -110,7 +110,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_cog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -131,7 +131,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Nlg Replacement Marker###
 	
@@ -139,7 +139,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_nlg_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -160,7 +160,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Navy Mog Replacement Marker###
 	
@@ -168,6 +168,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_mog_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }

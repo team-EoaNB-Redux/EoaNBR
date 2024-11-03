@@ -272,7 +272,7 @@ defined_text = { # suez construction
 				compare = greater_than_or_equals
 			}
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_GetSuezConstructionAvailibleComplete
 	}
 	text = {
 		trigger = {
@@ -285,13 +285,13 @@ defined_text = { # suez construction
 				}
 			}
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_GetSuezConstructionAvailibleYes
 	}
 	text = {
 		trigger = {
 			NOT={EGY={has_country_flag = suez_constructor}}
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_GetSuezConstructionAvailibleNO
 	}
 
 }
@@ -304,165 +304,165 @@ defined_text = { # suez status
 				has_global_flag = SUEZ_CANAL_BLOCKED
 			}
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_GetSuezCurrentStatusOpen
 	}
 	text = {
 		trigger = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_GetSuezCurrentStatusBlocked
 	}
 
 }
 defined_text = { # current region being voted on by the berlin conferance
 	name = GetCurrentberVotingRegion
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Mauritania
 		trigger = {
 			check_variable = {UCT.current_region_conferance_vote = 1}
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Senegal
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 2} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Guinea
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 3} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc_Sierra
+		localization_key = scripted_loc_Sierra_Leone
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 4} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc_Ivory
+		localization_key = scripted_loc_Ivory_Coast
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 5} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Ghana
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 6} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Togo
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 7} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Benin
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 8} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Nigeria
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 9} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc_Equatorial
+		localization_key = scripted_loc_Equatorial_Africa
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 10} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Gabon
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 11} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Congo
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 12} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Angola
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 13} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Nambia
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 14} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Tanganyika
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 15} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Kenya
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 16} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc_African
+		localization_key = scripted_loc_African_Horn
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 17} }
 		}
 	}
 
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Uganda
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 18} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Rhodesia
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 19} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc_Central
+		localization_key = scripted_loc_Central_Africa
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 20} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Mali
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 21} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Niger
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 22} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc_Burkina
+		localization_key = scripted_loc_Burkina_Faso
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 23} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Chad
 		trigger = {
 			UCT = { check_variable = {current_region_conferance_vote = 24} }
 		}
 	}
 	text = {
-		localization_key = scripted_loc_ERRORColonSym__cannot_get
+		localization_key = scripted_loc_ERRORColonSym__cannot_get_region
 	}
 
 }
@@ -475,19 +475,19 @@ defined_text = { # population tooltip
 			check_variable = { global.population_array^score_array_position_var_real > 1000 }
 		}
 		#set_temp_variable = {doesthiswork = 1}
-		localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_population_array_bCaratSym_score_array_position_var_realORSym_2RBracketSym
+		localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_population_array_bCaratSym_score_array_position_var_realORSym_2RBracketSym_B
 	}
 	text = {
 		trigger={
 			check_variable = { global.population_array^score_array_position_var_real > 1 }
 		}
-		localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_population_arrayCaratSym_score_array_position_var_realORSym_2RBracketSym
+		localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_population_arrayCaratSym_score_array_position_var_realORSym_2RBracketSym_M
 	}
 	text = {
 		trigger={
 			check_variable = { max_manpower_k > 1 }
 		}
-		localization_key = scripted_loc_LBracketSym_QuestionMark_max_manpower_kORSym_2RBracketSym
+		localization_key = scripted_loc_LBracketSym_QuestionMark_max_manpower_kORSym_2RBracketSym_K
 	}
 	text = {
 		localization_key = scripted_loc_LBracketSym_QuestionMark_max_manpowerORSym_2RBracketSym
@@ -501,16 +501,16 @@ defined_text = { # army funding
 			check_variable = { QNG_army_funding_level_lp > 0 }
 		}
 		#set_temp_variable = {doesthiswork = 1}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Overfunding
 	}
 	text = {
 		trigger={
 			check_variable = { QNG_army_funding_level_lp < 0 }
 		}
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Underfunded
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = scripted_loc_Funded
 	}
 }
 
@@ -520,10 +520,10 @@ defined_text = { # whether oman has reformed or not
 		trigger={
 			has_country_flag = OMA_western
 		}
-		localization_key = scripted_loc_Continue_the
+		localization_key = scripted_loc_Continue_the_Reforms
 	}
 	text = {
-		localization_key = scripted_loc_Begin
+		localization_key = scripted_loc_Begin_Reforms
 	}
 }
 defined_text = { # whether oman has reformed or not
@@ -532,9 +532,9 @@ defined_text = { # whether oman has reformed or not
 		trigger={
 			has_country_flag=OMA_isolation
 		}
-		localization_key = scripted_loc_Remaining
+		localization_key = scripted_loc_Remaining_Isolated
 	}
 	text = {
-		localization_key = scripted_loc_Retreat_into
+		localization_key = scripted_loc_Retreat_into_Obscurity
 	}
 }

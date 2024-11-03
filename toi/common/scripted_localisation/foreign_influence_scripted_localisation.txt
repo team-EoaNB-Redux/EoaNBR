@@ -34,7 +34,7 @@ defined_text = {
 				check_variable = { FROM.influenced_by2 = FROM.id }
 			}
 		}
-        localization_key = scripted_loc_no_foreign_influence
+        localization_key = scripted_loc_no_foreign_influence_country
     }
 }
 
@@ -74,7 +74,7 @@ defined_text = {
 				check_variable = { FROM.influenced_by2 = FROM.id }
 			}
 		}
-        localization_key = scripted_loc_no_foreign_influence
+        localization_key = scripted_loc_no_foreign_influence_country
     }
 }
 

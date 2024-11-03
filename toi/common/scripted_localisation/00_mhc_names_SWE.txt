@@ -5,55 +5,55 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_SWE_Carl_Johan
+		localization_key = scripted_loc_SWE_Carl_Johan_Lewenhaupt
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_SWE_Johan_Henrik
+		localization_key = scripted_loc_SWE_Johan_Henrik_Rosensvard
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_SWE_Jakob_Essen
+		localization_key = scripted_loc_SWE_Jakob_Essen_Hamilton
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_SWE_Gustaf_Rudolf
+		localization_key = scripted_loc_SWE_Gustaf_Rudolf_Abelin
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_SWE_Claes_Gabriel
+		localization_key = scripted_loc_SWE_Claes_Gabriel_Bergenstrahle
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_SWE_Didrik_Gillis
+		localization_key = scripted_loc_SWE_Didrik_Gillis_Bildt
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_SWE_Michael_Gustaf
+		localization_key = scripted_loc_SWE_Michael_Gustaf_Anckarsvard
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = scripted_loc_SWE_Carl_Gustaf
+		localization_key = scripted_loc_SWE_Carl_Gustaf_Lowenhielm
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 9 }
 		}
-		localization_key = scripted_loc_SWE_Carl_Fredrik
+		localization_key = scripted_loc_SWE_Carl_Fredrik_Meijer
 	}
 	###Army Replacement Marker###
 }
@@ -65,13 +65,13 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_SWE_Salomon_Mauritz_von
+		localization_key = scripted_loc_SWE_Salomon_Mauritz_von_Krusenstierna
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_SWE_Christian_Anders
+		localization_key = scripted_loc_SWE_Christian_Anders_Sundin
 	}
 	###Navy Replacement Marker###
 }

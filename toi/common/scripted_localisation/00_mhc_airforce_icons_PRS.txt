@@ -15,49 +15,49 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Airforce Afc Replacement Marker###
 	
@@ -65,7 +65,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_afc_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -86,49 +86,49 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Airforce Ach Replacement Marker###
 	
@@ -136,7 +136,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ach_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -157,49 +157,49 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Airforce Opg Replacement Marker###
 	
@@ -207,7 +207,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_opg_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -228,49 +228,49 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Airforce Wic Replacement Marker###
 	
@@ -278,7 +278,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_wic_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }
 
@@ -299,49 +299,49 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 5 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 6 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 7 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 8 }
 		}
-		localization_key = scripted_loc_GFX_MHC_no_advisor
+		localization_key = scripted_loc_GFX_MHC_no_advisor_gfx
 	}
 	###Airforce Supc Replacement Marker###
 	
@@ -349,6 +349,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_supc_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC
+		localization_key = scripted_loc_GFX_MHC_null
 	}
 }

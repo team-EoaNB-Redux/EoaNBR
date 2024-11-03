@@ -14,10 +14,10 @@ defined_text = {
         trigger = {
           has_global_flag = autobuild_flag
         }
-        localization_key = scripted_loc_autobuild_enabled
+        localization_key = scripted_loc_autobuild_enabled_loc
     }
 	text = {
-		localization_key = scripted_loc_autobuild_disabled
+		localization_key = scripted_loc_autobuild_disabled_loc
 	}
 }
 defined_text = {
@@ -47,7 +47,7 @@ defined_text = {
             divide_temp_variable = { gdp_amount_temp = 1000000 }
 			multiply_temp_variable = { gdp_amount_temp = 12 }
         }
-        localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_amount_tempRBracketSym
+        localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_amount_tempRBracketSym_M
     }
 	text = {
         trigger = {
@@ -56,7 +56,7 @@ defined_text = {
             divide_temp_variable = { gdp_amount_temp = 1000 }
 			multiply_temp_variable = { gdp_amount_temp = 12 }
 		}
-        localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_amount_tempRBracketSym
+        localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_amount_tempRBracketSym_K
     }
 	text = {
         trigger = {
@@ -84,7 +84,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -95,7 +95,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -106,7 +106,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -156,7 +156,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -167,7 +167,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -178,7 +178,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -228,7 +228,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_0RBracketSym_M
 		}
 		text = {
 			trigger = {
@@ -239,7 +239,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_1RBracketSym_M
 		}
 		text = {
 			trigger = {
@@ -250,7 +250,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_2RBracketSym_M
 		}
 		text = {
 			trigger = {
@@ -259,7 +259,7 @@ defined_text = {
 					check_variable = { amount_temp < -99.999 }
 				}
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -268,7 +268,7 @@ defined_text = {
 					check_variable = { amount_temp < -9.999 }
 				}
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -277,7 +277,7 @@ defined_text = {
 					check_variable = { amount_temp < -0.999 }
 				}
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -344,7 +344,7 @@ defined_text = {
 	defined_text = { # GetTextIconFromV - v
 		name = GetTextIconFromV
 		text = {
-			localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_vPeriodMark_GetTokenKeyRBracketSym_
+			localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_vPeriodMark_GetTokenKeyRBracketSym__texticon
 		}
 	}
 	defined_text = { # GetEmploymentIconFromPercent - percent_temp, 0-100
@@ -353,25 +353,25 @@ defined_text = {
 			trigger = {
 				check_variable = { percent_temp < 0.001 }
 			}
-			localization_key = scripted_loc_GFX_employment_icon
+			localization_key = scripted_loc_GFX_employment_icon_0
 		}
 		text = {
 			trigger = {
 				check_variable = { percent_temp < 10 }
 			}
-			localization_key = scripted_loc_GFX_employment_icon
+			localization_key = scripted_loc_GFX_employment_icon_1
 		}
 		text = {
 			trigger = {
 				check_variable = { percent_temp > 99.999 }
 			}
-			localization_key = scripted_loc_GFX_employment_icon
+			localization_key = scripted_loc_GFX_employment_icon_10
 		}
 		text = {
 			trigger = {
 				check_variable = { percent_temp > 90 }
 			}
-			localization_key = scripted_loc_GFX_employment_icon
+			localization_key = scripted_loc_GFX_employment_icon_9
 		}
 		text = {
 			trigger = {
@@ -390,145 +390,145 @@ defined_text = {
             trigger = {
                 currency_uses_dollar = yes
             }
-            localization_key = scripted_loc_GFX_currency_dollar
+            localization_key = scripted_loc_GFX_currency_dollar_button
         }
         text = {
             trigger = {
                 currency_uses_pound = yes
             }
-            localization_key = scripted_loc_GFX_currency_pound
+            localization_key = scripted_loc_GFX_currency_pound_button
         }
         text = {
             trigger = {
                 currency_uses_euro = yes
             }
-            localization_key = scripted_loc_GFX_currency_euro
+            localization_key = scripted_loc_GFX_currency_euro_button
         }
         text = {
             trigger = {
                 currency_uses_franc = yes
             }
-            localization_key = scripted_loc_GFX_currency_franc
+            localization_key = scripted_loc_GFX_currency_franc_button
         }
         text = {
             trigger = {
                 currency_uses_ruble = yes
             }
-            localization_key = scripted_loc_GFX_currency_ruble
+            localization_key = scripted_loc_GFX_currency_ruble_button
         }
         text = {
             trigger = {
                 currency_uses_rupee = yes
             }
-            localization_key = scripted_loc_GFX_currency_rupee
+            localization_key = scripted_loc_GFX_currency_rupee_button
         }
         text = {
             trigger = {
                 currency_uses_yen = yes
             }
-            localization_key = scripted_loc_GFX_currency_yen
+            localization_key = scripted_loc_GFX_currency_yen_button
         }
         text = {
             trigger = {
                 currency_uses_lira = yes
             }
-            localization_key = scripted_loc_GFX_currency_lira
+            localization_key = scripted_loc_GFX_currency_lira_button
         }
         text = {
             trigger = {
                 currency_uses_mark = yes
             }
-            localization_key = scripted_loc_GFX_currency_mark
+            localization_key = scripted_loc_GFX_currency_mark_button
         }
         text = {
             trigger = {
                 currency_uses_real = yes
             }
-            localization_key = scripted_loc_GFX_currency_real
+            localization_key = scripted_loc_GFX_currency_real_button
         }
         text = {
             trigger = {
                 currency_uses_bitcoin = yes
             }
-            localization_key = scripted_loc_GFX_currency_bitcoin
+            localization_key = scripted_loc_GFX_currency_bitcoin_button
         }
         text = {
             trigger = {
                 currency_uses_shekel = yes
             }
-            localization_key = scripted_loc_GFX_currency_shekel
+            localization_key = scripted_loc_GFX_currency_shekel_button
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = scripted_loc_GFX_currency_pound
+            localization_key = scripted_loc_GFX_currency_pound_button
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = scripted_loc_GFX_currency_dollar
+            localization_key = scripted_loc_GFX_currency_dollar_button
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = scripted_loc_GFX_currency_euro
+            localization_key = scripted_loc_GFX_currency_euro_button
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = scripted_loc_GFX_currency_franc
+            localization_key = scripted_loc_GFX_currency_franc_button
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = scripted_loc_GFX_currency_ruble
+            localization_key = scripted_loc_GFX_currency_ruble_button
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = scripted_loc_GFX_currency_rupee
+            localization_key = scripted_loc_GFX_currency_rupee_button
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = scripted_loc_GFX_currency_yen
+            localization_key = scripted_loc_GFX_currency_yen_button
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = scripted_loc_GFX_currency_lira
+            localization_key = scripted_loc_GFX_currency_lira_button
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = scripted_loc_GFX_currency_mark
+            localization_key = scripted_loc_GFX_currency_mark_button
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = scripted_loc_GFX_currency_real
+            localization_key = scripted_loc_GFX_currency_real_button
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = scripted_loc_GFX_currency_bitcoin
+            localization_key = scripted_loc_GFX_currency_bitcoin_button
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = scripted_loc_GFX_currency_shekel
+            localization_key = scripted_loc_GFX_currency_shekel_button
         }
     }
     defined_text = {
@@ -537,145 +537,145 @@ defined_text = {
             trigger = {
                 currency_uses_dollar = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_dollar
         }
         text = {
             trigger = {
                 currency_uses_pound = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_pound
         }
         text = {
             trigger = {
                 currency_uses_euro = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_euro
         }
         text = {
             trigger = {
                 currency_uses_franc = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_franc
         }
         text = {
             trigger = {
                 currency_uses_ruble = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_ruble
         }
         text = {
             trigger = {
                 currency_uses_rupee = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_rupee
         }
         text = {
             trigger = {
                 currency_uses_yen = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_yen
         }
         text = {
             trigger = {
                 currency_uses_lira = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_lira
         }
         text = {
             trigger = {
                 currency_uses_mark = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_mark
         }
         text = {
             trigger = {
                 currency_uses_real = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_real
         }
         text = {
             trigger = {
                 currency_uses_bitcoin = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_bitcoin
         }
         text = {
             trigger = {
                 currency_uses_shekel = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_shekel
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_pound
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_dollar
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_euro
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_franc
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_ruble
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_rupee
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_yen
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_lira
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_mark
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_real
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_bitcoin
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_shekel
         }
     }
     defined_text = {
@@ -686,7 +686,7 @@ defined_text = {
                 	currency_uses_dollar = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_dollar
         }
         text = {
             trigger = {
@@ -694,7 +694,7 @@ defined_text = {
                 	currency_uses_pound = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_pound
         }
         text = {
             trigger = {
@@ -702,7 +702,7 @@ defined_text = {
                 	currency_uses_euro = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_euro
         }
         text = {
             trigger = {
@@ -710,7 +710,7 @@ defined_text = {
                 	currency_uses_franc = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_franc
         }
         text = {
             trigger = {
@@ -718,7 +718,7 @@ defined_text = {
                 	currency_uses_ruble = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_ruble
         }
         text = {
             trigger = {
@@ -726,7 +726,7 @@ defined_text = {
                 	currency_uses_rupee = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_rupee
         }
         text = {
             trigger = {
@@ -734,7 +734,7 @@ defined_text = {
                 	currency_uses_yen = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_yen
         }
         text = {
             trigger = {
@@ -742,7 +742,7 @@ defined_text = {
                 	currency_uses_lira = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_lira
         }
         text = {
             trigger = {
@@ -750,7 +750,7 @@ defined_text = {
                 	currency_uses_mark = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_mark
         }
         text = {
             trigger = {
@@ -758,7 +758,7 @@ defined_text = {
                 	currency_uses_real = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_real
         }
         text = {
             trigger = {
@@ -766,7 +766,7 @@ defined_text = {
                 	currency_uses_bitcoin = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_bitcoin
         }
         text = {
             trigger = {
@@ -774,7 +774,7 @@ defined_text = {
                 	currency_uses_shekel = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_shekel
         }
         text = {
             trigger = {
@@ -782,7 +782,7 @@ defined_text = {
                 	currency_hegemon_pound = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_pound
         }
         text = {
             trigger = {
@@ -790,7 +790,7 @@ defined_text = {
                 	currency_hegemon_dollar = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_dollar
         }
         text = {
             trigger = {
@@ -798,7 +798,7 @@ defined_text = {
                 	currency_hegemon_euro = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_euro
         }
         text = {
             trigger = {
@@ -806,7 +806,7 @@ defined_text = {
                 	currency_hegemon_franc = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_franc
         }
         text = {
             trigger = {
@@ -814,7 +814,7 @@ defined_text = {
                 	currency_hegemon_ruble = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_ruble
         }
         text = {
             trigger = {
@@ -822,7 +822,7 @@ defined_text = {
                 	currency_hegemon_rupee = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_rupee
         }
         text = {
             trigger = {
@@ -830,7 +830,7 @@ defined_text = {
                 	currency_hegemon_yen = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_yen
         }
         text = {
             trigger = {
@@ -838,7 +838,7 @@ defined_text = {
                 	currency_hegemon_lira = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_lira
         }
         text = {
             trigger = {
@@ -846,7 +846,7 @@ defined_text = {
                 	currency_hegemon_mark = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_mark
         }
         text = {
             trigger = {
@@ -854,7 +854,7 @@ defined_text = {
                 	currency_hegemon_real = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_real
         }
         text = {
             trigger = {
@@ -862,7 +862,7 @@ defined_text = {
                 	currency_hegemon_bitcoin = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_bitcoin
         }
         text = {
             trigger = {
@@ -870,7 +870,7 @@ defined_text = {
                 	currency_hegemon_shekel = yes
 				}
             }
-            localization_key = scripted_loc_GFX_currency
+            localization_key = scripted_loc_GFX_currency_shekel
         }
     }
     defined_text = {
@@ -882,7 +882,7 @@ defined_text = {
                     currency_uses_dollar = yes
                 }
             }
-            localization_key = scripted_loc_currency_dollar
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
@@ -890,7 +890,7 @@ defined_text = {
                     currency_uses_pound = yes
                 }
             }
-            localization_key = scripted_loc_currency_pound
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
@@ -898,7 +898,7 @@ defined_text = {
                     currency_uses_euro = yes
                 }
             }
-            localization_key = scripted_loc_currency_euro
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
@@ -906,7 +906,7 @@ defined_text = {
                     currency_uses_franc = yes
                 }
             }
-            localization_key = scripted_loc_currency_franc
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
@@ -914,7 +914,7 @@ defined_text = {
                     currency_uses_ruble = yes
                 }
             }
-            localization_key = scripted_loc_currency_ruble
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
@@ -922,7 +922,7 @@ defined_text = {
                     currency_uses_rupee = yes
                 }
             }
-            localization_key = scripted_loc_currency_rupee
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
@@ -930,7 +930,7 @@ defined_text = {
                     currency_uses_yen = yes
                 }
             }
-            localization_key = scripted_loc_currency_yen
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
@@ -938,7 +938,7 @@ defined_text = {
                     currency_uses_lira = yes
                 }
             }
-            localization_key = scripted_loc_currency_lira
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
@@ -946,7 +946,7 @@ defined_text = {
                     currency_uses_mark = yes
                 }
             }
-            localization_key = scripted_loc_currency_mark
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
@@ -954,7 +954,7 @@ defined_text = {
                     currency_uses_real = yes
                 }
             }
-            localization_key = scripted_loc_currency_real
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
@@ -962,7 +962,7 @@ defined_text = {
                     currency_uses_bitcoin = yes
                 }
             }
-            localization_key = scripted_loc_currency_bitcoin
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
@@ -970,79 +970,79 @@ defined_text = {
                     currency_uses_shekel = yes
                 }
             }
-            localization_key = scripted_loc_currency_shekel
+            localization_key = scripted_loc_currency_shekel_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = scripted_loc_currency_pound
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = scripted_loc_currency_dollar
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = scripted_loc_currency_euro
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = scripted_loc_currency_franc
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = scripted_loc_currency_ruble
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = scripted_loc_currency_rupee
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = scripted_loc_currency_yen
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = scripted_loc_currency_lira
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = scripted_loc_currency_mark
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = scripted_loc_currency_real
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = scripted_loc_currency_bitcoin
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = scripted_loc_currency_shekel
+            localization_key = scripted_loc_currency_shekel_texticon
         }
     }
     defined_text = {
@@ -1051,151 +1051,151 @@ defined_text = {
             trigger = {
                has_variable = afr_prosperity_mechanic_value
             }
-            localization_key = scripted_loc_currency_prosperity
+            localization_key = scripted_loc_currency_prosperity_texticon
         }
         text = {
             trigger = {
                 currency_uses_dollar = yes
             }
-            localization_key = scripted_loc_currency_dollar
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
                 currency_uses_pound = yes
             }
-            localization_key = scripted_loc_currency_pound
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
                 currency_uses_euro = yes
             }
-            localization_key = scripted_loc_currency_euro
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
                 currency_uses_franc = yes
             }
-            localization_key = scripted_loc_currency_franc
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
                 currency_uses_ruble = yes
             }
-            localization_key = scripted_loc_currency_ruble
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
                 currency_uses_rupee = yes
             }
-            localization_key = scripted_loc_currency_rupee
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
                 currency_uses_yen = yes
             }
-            localization_key = scripted_loc_currency_yen
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
                 currency_uses_lira = yes
             }
-            localization_key = scripted_loc_currency_lira
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
                 currency_uses_mark = yes
             }
-            localization_key = scripted_loc_currency_mark
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
                 currency_uses_real = yes
             }
-            localization_key = scripted_loc_currency_real
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
                 currency_uses_bitcoin = yes
             }
-            localization_key = scripted_loc_currency_bitcoin
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
                 currency_uses_shekel = yes
             }
-            localization_key = scripted_loc_currency_shekel
+            localization_key = scripted_loc_currency_shekel_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = scripted_loc_currency_pound
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = scripted_loc_currency_dollar
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = scripted_loc_currency_euro
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = scripted_loc_currency_franc
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = scripted_loc_currency_ruble
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = scripted_loc_currency_rupee
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = scripted_loc_currency_yen
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = scripted_loc_currency_lira
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = scripted_loc_currency_mark
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = scripted_loc_currency_real
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = scripted_loc_currency_bitcoin
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = scripted_loc_currency_shekel
+            localization_key = scripted_loc_currency_shekel_texticon
         }
     }
     defined_text = {
@@ -1207,7 +1207,7 @@ defined_text = {
                     currency_uses_dollar = yes
                 }
             }
-            localization_key = scripted_loc_currency_dollar
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
@@ -1215,7 +1215,7 @@ defined_text = {
                     currency_uses_pound = yes
                 }
             }
-            localization_key = scripted_loc_currency_pound
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
@@ -1223,7 +1223,7 @@ defined_text = {
                     currency_uses_euro = yes
                 }
             }
-            localization_key = scripted_loc_currency_euro
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
@@ -1231,7 +1231,7 @@ defined_text = {
                     currency_uses_franc = yes
                 }
             }
-            localization_key = scripted_loc_currency_franc
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
@@ -1239,7 +1239,7 @@ defined_text = {
                     currency_uses_ruble = yes
                 }
             }
-            localization_key = scripted_loc_currency_ruble
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
@@ -1247,7 +1247,7 @@ defined_text = {
                     currency_uses_rupee = yes
                 }
             }
-            localization_key = scripted_loc_currency_rupee
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
@@ -1255,7 +1255,7 @@ defined_text = {
                     currency_uses_yen = yes
                 }
             }
-            localization_key = scripted_loc_currency_yen
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
@@ -1263,7 +1263,7 @@ defined_text = {
                     currency_uses_lira = yes
                 }
             }
-            localization_key = scripted_loc_currency_lira
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
@@ -1271,7 +1271,7 @@ defined_text = {
                     currency_uses_mark = yes
                 }
             }
-            localization_key = scripted_loc_currency_mark
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
@@ -1279,7 +1279,7 @@ defined_text = {
                     currency_uses_real = yes
                 }
             }
-            localization_key = scripted_loc_currency_real
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
@@ -1287,7 +1287,7 @@ defined_text = {
                     currency_uses_bitcoin = yes
                 }
             }
-            localization_key = scripted_loc_currency_bitcoin
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
@@ -1295,79 +1295,79 @@ defined_text = {
                     currency_uses_shekel = yes
                 }
             }
-            localization_key = scripted_loc_currency_shekel
+            localization_key = scripted_loc_currency_shekel_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = scripted_loc_currency_pound
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = scripted_loc_currency_dollar
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = scripted_loc_currency_euro
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = scripted_loc_currency_franc
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = scripted_loc_currency_ruble
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = scripted_loc_currency_rupee
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = scripted_loc_currency_yen
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = scripted_loc_currency_lira
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = scripted_loc_currency_mark
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = scripted_loc_currency_real
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = scripted_loc_currency_bitcoin
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = scripted_loc_currency_shekel
+            localization_key = scripted_loc_currency_shekel_texticon
         }
     }
 #
@@ -1379,61 +1379,61 @@ defined_text = {
             trigger = {
                 state = 1
             }
-            localization_key = scripted_loc_GFX_slaves_pie_chart
+            localization_key = scripted_loc_GFX_slaves_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 2
             }
-            localization_key = scripted_loc_GFX_peasants_pie_chart
+            localization_key = scripted_loc_GFX_peasants_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 3
             }
-            localization_key = scripted_loc_GFX_laborers_pie_chart
+            localization_key = scripted_loc_GFX_laborers_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 4
             }
-            localization_key = scripted_loc_GFX_workers_pie_chart
+            localization_key = scripted_loc_GFX_workers_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 5
             }
-            localization_key = scripted_loc_GFX_professionals_pie_chart
+            localization_key = scripted_loc_GFX_professionals_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 6
             }
-            localization_key = scripted_loc_GFX_specialists_pie_chart
+            localization_key = scripted_loc_GFX_specialists_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 7
             }
-            localization_key = scripted_loc_GFX_aristocrats_pie_chart
+            localization_key = scripted_loc_GFX_aristocrats_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 8
             }
-            localization_key = scripted_loc_GFX_capitalists_pie_chart
+            localization_key = scripted_loc_GFX_capitalists_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 9
             }
-            localization_key = scripted_loc_GFX_bureaucrats_pie_chart
+            localization_key = scripted_loc_GFX_bureaucrats_pie_chart_segment
         }
         text = {
             trigger = {
                 state = 10
             }
-            localization_key = scripted_loc_GFX_soldiers_pie_chart
+            localization_key = scripted_loc_GFX_soldiers_pie_chart_segment
         }
     }
 #
@@ -1512,10 +1512,10 @@ defined_text = {
             trigger = {
                 check_variable = { industrial_capacity_use > industrial_capacity }
             }
-            localization_key = scripted_loc_industrial_capacity_over
+            localization_key = scripted_loc_industrial_capacity_over_loc
         }
         text = {
-            localization_key = scripted_loc_industrial_capacity_under
+            localization_key = scripted_loc_industrial_capacity_under_loc
         }
     }
 
@@ -1526,7 +1526,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@var:v }
 				multiply_temp_variable = { bwr_temp = size@var:v }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym_K
 		}
 	}
 
@@ -1597,7 +1597,7 @@ defined_text = {
 		defined_text = { # GetIndustryOutputTextIcon - pm_output_temp
 			name = GetIndustryOutputTextIcon
 			text = {
-				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_pm_output_tempPeriodMark_GetTokenKeyRBracketSym_
+				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_pm_output_tempPeriodMark_GetTokenKeyRBracketSym__texticon
 			}
 		}
 		defined_text = { # GetIndustryOutputRevenue - industry_token, pm_output_i
@@ -1661,7 +1661,7 @@ defined_text = {
 					set_temp_variable = { amount_temp = industrial_capacity@var:industry_token }
 					NOT = { check_variable = { amount_temp = 0 } }
 				}
-				localization_key = scripted_loc_industry_pm_industrial_capacity
+				localization_key = scripted_loc_industry_pm_industrial_capacity_loc
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityRevenue - industry_token
@@ -1680,7 +1680,7 @@ defined_text = {
 					set_temp_variable = { amount_temp = shipping_capacity@var:industry_token }
 					NOT = { check_variable = { amount_temp = 0 } }
 				}
-				localization_key = scripted_loc_industry_pm_shipping_capacity
+				localization_key = scripted_loc_industry_pm_shipping_capacity_loc
 			}
 		}
 		defined_text = { # GetIndustryShippingCapacityRevenue - industry_token
@@ -2731,7 +2731,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:infrastructure }
 				multiply_temp_variable = { bwr_temp = size@token:infrastructure }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym_K
 		}
 	}
 	defined_text = { # GetInfrastructurePMTotalLoc
@@ -2832,7 +2832,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:railway }
 				multiply_temp_variable = { bwr_temp = size@token:railway }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym_K
 		}
 	}
 	defined_text = { # GetRailwayPMTotalLoc
@@ -2956,7 +2956,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:port }
 				multiply_temp_variable = { bwr_temp = size@token:port }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym_K
 		}
 	}
 	defined_text = { # GetPortPMTotalLoc
@@ -3307,7 +3307,7 @@ defined_text = {
 				trigger = {
 					check_variable = { global.building_base_production@var:industry_token^num > 0 }
 				}
-				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_0PeriodMark_GetTokenKeyRBracketSym_
+				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_0PeriodMark_GetTokenKeyRBracketSym__texticon
 			}
 		}
 		defined_text = { # GetOutputTextIcon1 - industry_token
@@ -3316,7 +3316,7 @@ defined_text = {
 				trigger = {
 					check_variable = { global.building_base_production@var:industry_token^num > 1 }
 				}
-				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_1PeriodMark_GetTokenKeyRBracketSym_
+				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_1PeriodMark_GetTokenKeyRBracketSym__texticon
 			}
 		}
 		defined_text = { # GetOutputTextIcon2 - industry_token
@@ -3325,7 +3325,7 @@ defined_text = {
 				trigger = {
 					check_variable = { global.building_base_production@var:industry_token^num > 2 }
 				}
-				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_2PeriodMark_GetTokenKeyRBracketSym_
+				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_2PeriodMark_GetTokenKeyRBracketSym__texticon
 			}
 		}
 		defined_text = { # GetOutputTextIcon3 - industry_token
@@ -3334,7 +3334,7 @@ defined_text = {
 				trigger = {
 					check_variable = { global.building_base_production@var:industry_token^num > 3 }
 				}
-				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_3PeriodMark_GetTokenKeyRBracketSym_
+				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_3PeriodMark_GetTokenKeyRBracketSym__texticon
 			}
 		}
 		defined_text = { # GetOutputTextIcon4 - industry_token
@@ -3343,7 +3343,7 @@ defined_text = {
 				trigger = {
 					check_variable = { global.building_base_production@var:industry_token^num > 4 }
 				}
-				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_4PeriodMark_GetTokenKeyRBracketSym_
+				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_globalPeriodMark_building_base_productionAtSym_varColonSym_industry_tokenCaratSym_4PeriodMark_GetTokenKeyRBracketSym__texticon
 			}
 		}
 		defined_text = { # GetPMTitle - am_check
@@ -3425,7 +3425,7 @@ defined_text = {
 		defined_text = { # GetPMInputTextIcon - pm_input_temp
 			name = GetPMInputTextIcon
 			text = {
-				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_pm_input_tempPeriodMark_GetTokenKeyRBracketSym_
+				localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_pm_input_tempPeriodMark_GetTokenKeyRBracketSym__texticon
 			}
 		}
 		defined_text = { # GetPMInput0Loc - industry_token
@@ -3693,7 +3693,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3701,7 +3701,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3709,7 +3709,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3781,7 +3781,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3789,7 +3789,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3797,7 +3797,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3829,7 +3829,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3837,7 +3837,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3845,7 +3845,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3887,7 +3887,7 @@ defined_text = {
 			trigger = {
 				NOT = { check_variable = { investment_opportunity_cost@var:v > investment_opportunity_investment@var:v } }
 			}
-			localization_key = scripted_loc_0PeriodMark
+			localization_key = scripted_loc_0PeriodMark_000
 		}
 		text = {
 			trigger = {
@@ -3899,7 +3899,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3907,7 +3907,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3915,7 +3915,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -4232,19 +4232,19 @@ defined_text = {
                 trigger = {
                     check_variable = { corporation_type = 2 }
                 }
-                localization_key = scripted_loc_GFX_consumer_goods
+                localization_key = scripted_loc_GFX_consumer_goods_factory
             }
             text = {
                 trigger = {
                     check_variable = { corporation_type = 3 }
                 }
-                localization_key = scripted_loc_GFX
+                localization_key = scripted_loc_GFX_luxuries
             }
             text = {
                 trigger = {
                     check_variable = { corporation_type = 6 }
                 }
-                localization_key = scripted_loc_GFX
+                localization_key = scripted_loc_GFX_appliances
             }
         }
     #
@@ -4271,73 +4271,73 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 10 }
                 }
-               _localization_key = scripted_loc_US
+                localization_key = scripted_loc_US_Steel
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 11 }
                 }
-                localization_key = scripted_loc_Standard
+                localization_key = scripted_loc_Standard_Oil
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 12 }
                 }
-                localization_key = scripted_loc_General
+                localization_key = scripted_loc_General_Electric
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 13 }
                 }
-                localization_key = scripted_loc_General
+                localization_key = scripted_loc_General_Motors
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 14 }
                 }
-                localization_key = scripted_loc_American_Tobacco
+                localization_key = scripted_loc_American_Tobacco_Company
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 15 }
                 }
-                localization_key = scripted_loc_Vanderbilt
+                localization_key = scripted_loc_Vanderbilt_Railroads
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 16 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_PepsiCo
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 17 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Coca-Cola
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 18 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Nestle
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 19 }
                 }
-                localization_key = scripted_loc_Westinghouse
+                localization_key = scripted_loc_Westinghouse_Electric
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 20 }
                 }
-                localization_key = scripted_loc_Ford
+                localization_key = scripted_loc_Ford_Motors
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 21 }
                 }
-                localization_key = scripted_loc_Union
+                localization_key = scripted_loc_Union_Pacific
             }
 
             #Japanese
@@ -4345,25 +4345,25 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 51 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Mitsubishi
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 52 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Yasuda
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 53 }
                 }
-                localization_key = scripted_loc_Mitsui
+                localization_key = scripted_loc_Mitsui_Group
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 54 }
                 }
-                localization_key = scripted_loc_Sumitomo
+                localization_key = scripted_loc_Sumitomo_Group
             }
 
             #German
@@ -4371,37 +4371,37 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 101 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Lufthansa
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 102 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Daimler
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 103 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Siemens
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 104 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_RWKS
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 105 }
                 }
-               _localization_key = scripted_loc_IG
+                localization_key = scripted_loc_IG_Farben
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 106 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Krupp
             }
 
             #Austria/Czechoslovakia/Hungary/Balkans
@@ -4409,19 +4409,19 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 151 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Steyr-Daimler-Puch
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 152 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Skoda
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 153 }
                 }
-                localization_key = scripted_loc_Ganz
+                localization_key = scripted_loc_Ganz_Works
             }
 
             #British
@@ -4429,31 +4429,31 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 201 }
                 }
-                localization_key = scripted_loc_British
+                localization_key = scripted_loc_British_Petroleum
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 202 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Rolls-Royce
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 203 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Twinings
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 204 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Wedgwood
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 205 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Cadbury
             }
 
             #French
@@ -4461,7 +4461,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 251 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Renault
             }
 
             #Arabian
@@ -4469,7 +4469,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 301 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Aramco
             }
 
             #Scandinavian
@@ -4477,25 +4477,25 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 351 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Aker
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 352 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Smedvig
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 353 }
                 }
-                localization_key = scripted_loc_Norske
+                localization_key = scripted_loc_Norske_Skog
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 353 }
                 }
-                localization_key = scripted_loc_Christiana
+                localization_key = scripted_loc_Christiana_Spigerverk
             }
 
         }
@@ -4506,145 +4506,145 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_first_name = 0 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Santander
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 1 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Woolsworths
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 2 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Eaton
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 3 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Stryker
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 4 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Vivendi
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 5 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_BCE
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 6 }
                 }
-                localization_key = scripted_loc_Applied
+                localization_key = scripted_loc_Applied_Materials
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 7 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Inditex
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 8 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Ericsson
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 9 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Kering
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 10 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Diageo
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 11 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Tesla
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 12 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Edison
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 13 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Falcor
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 14 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Dow
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 15 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Amgen
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 16 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_3M
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 17 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Exelon
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 18 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_CNOOC
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 19 }
                 }
-               _localization_key = scripted_loc_CK
+                localization_key = scripted_loc_CK_Hutchinson
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 20 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Travelers
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 21 }
                 }
-                localization_key = scripted_loc_Rio
+                localization_key = scripted_loc_Rio_Tinto
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 22 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_UBS
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 23 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Amazon
             }
         }
 
@@ -4660,163 +4660,163 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_first_name = 1 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Oracle
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 2 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Summit
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 3 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Dynamic
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 4 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Eclipse
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 5 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Green
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 6 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Eclipse
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 7 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Reliance
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 8 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Anthem
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 9 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Charter
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 10 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Abbot
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 11 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Johnson
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 12 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Caterpillar
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 13 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_General
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 14 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Charles
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 15 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Arkham
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 16 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Stark
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 17 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Orange
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 18 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Wayne
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 19 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Oliver
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 20 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Luther
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 21 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Union
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 22 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Duke
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 23 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Hammer
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 24 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Staine
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 25 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_National
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 26 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Total
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 27 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc_Imperial
             }
         }
 
@@ -4826,7 +4826,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_last_name = 0 }
                 }
-            ____localization_key = scripted_loc
+                localization_key = scripted_loc
             }
             text = {
                 trigger = {
@@ -4996,7 +4996,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5004,7 +5004,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5012,7 +5012,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5053,7 +5053,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_0RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5064,7 +5064,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_1RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5075,7 +5075,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_2RBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5320,7 +5320,7 @@ defined_text = {
 	defined_text = { # GetTaxEffectsLoc
 		name = GetTaxEffectsLoc
 		text = {
-			localization_key = scripted_loc_tax_effects
+			localization_key = scripted_loc_tax_effects_loc
 		}
 	}
 
@@ -5667,7 +5667,7 @@ defined_text = {
 				multiply_temp_variable = { debt_amount_temp = gdp_amount }
 				divide_temp_variable = { debt_amount_temp = 2 }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_debt_amount_tempRBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_debt_amount_tempRBracketSym_K
 		}
 	}
 	defined_text = {
@@ -5688,10 +5688,10 @@ defined_text = {
 				divide_temp_variable = { treasury_temp = 1000 }
 				check_variable = { treasury_temp < national_debt_k }
 			}
-			localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempRBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempRBracketSym_K
 		}
 		text = {
-			localization_key = scripted_loc_LBracketSym_QuestionMark_national_debt_kRBracketSym
+			localization_key = scripted_loc_LBracketSym_QuestionMark_national_debt_kRBracketSym_K
 		}
 	}
     #Borrowing Money
@@ -5789,10 +5789,10 @@ defined_text = {
 					trigger = {
 						has_country_flag = new_trade_route_view_open
 					}
-					localization_key = scripted_loc_selected_resource_choose
+					localization_key = scripted_loc_selected_resource_choose_loc
 				}
 				text = {
-					localization_key = scripted_loc_selected_resource_all
+					localization_key = scripted_loc_selected_resource_all_loc
 				}
 			}
 		#
@@ -5806,7 +5806,7 @@ defined_text = {
 					localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_selected_resourcePeriodMark_GetTokenKeyRBracketSym
 				}
 				text = {
-					localization_key = scripted_loc_GFX_gdp
+					localization_key = scripted_loc_GFX_gdp_icon
 				}
 			}
 		#
@@ -5819,7 +5819,7 @@ defined_text = {
 							is_in_array = { global.resource_token_array = selected_resource }
 						}
 					}
-					localization_key = scripted_loc_selected_resource_choose
+					localization_key = scripted_loc_selected_resource_choose_loc
 				}
 				text = {
 					trigger = {
@@ -5827,25 +5827,25 @@ defined_text = {
 						check_variable = { offers@var:selected_resource = trade@var:selected_resource }
 						set_temp_variable = { tmp = offers@var:selected_resource }
 						multiply_temp_variable = { tmp = -1 }
-					}
-					localization_key = scripted_loc_net
-				}
-				text = {
-					trigger = {
-						check_variable = { offers@var:selected_resource < 0 }
-						set_temp_variable = { tmp = offers@var:selected_resource }
-						multiply_temp_variable = { tmp = -1 }
-						set_temp_variable = { percent_temp = trade@var:selected_resource }
-						divide_temp_variable = { percent_temp = offers@var:selected_resource }
 					}
 					localization_key = scripted_loc_net_exporting
 				}
 				text = {
 					trigger = {
+						check_variable = { offers@var:selected_resource < 0 }
+						set_temp_variable = { tmp = offers@var:selected_resource }
+						multiply_temp_variable = { tmp = -1 }
+						set_temp_variable = { percent_temp = trade@var:selected_resource }
+						divide_temp_variable = { percent_temp = offers@var:selected_resource }
+					}
+					localization_key = scripted_loc_net_exporting_capped
+				}
+				text = {
+					trigger = {
 						check_variable = { offers@var:selected_resource > 0 }
 						check_variable = { offers@var:selected_resource = trade@var:selected_resource }
 					}
-					localization_key = scripted_loc_net
+					localization_key = scripted_loc_net_importing
 				}
 				text = {
 					trigger = {
@@ -5853,10 +5853,10 @@ defined_text = {
 						set_temp_variable = { percent_temp = trade@var:selected_resource }
 						divide_temp_variable = { percent_temp = offers@var:selected_resource }
 					}
-					localization_key = scripted_loc_net_importing
+					localization_key = scripted_loc_net_importing_capped
 				}
 				text = {
-					localization_key = scripted_loc_net_no
+					localization_key = scripted_loc_net_no_trade
 				}
 			}
 			defined_text = {
@@ -5876,7 +5876,7 @@ defined_text = {
 					localization_key = scripted_loc_LBracketSym_QuestionMark_tradeAtSym_varColonSym_selected_resourceRBracketSym
 				}
 				text = {
-					localization_key = scripted_loc_net_no
+					localization_key = scripted_loc_net_no_trade
 				}
 			}
 		#
@@ -5888,10 +5888,10 @@ defined_text = {
 						NOT = { has_country_flag = new_route_export }
 						has_country_flag = new_trade_route_view_open
 					}
-					localization_key = scripted_loc_GFX_new_import_route_button
+					localization_key = scripted_loc_GFX_new_import_route_button_pressed
 				}
 				text = {
-					localization_key = scripted_loc_GFX_new_import_route
+					localization_key = scripted_loc_GFX_new_import_route_button
 				}
 			}
 		#
@@ -5903,10 +5903,10 @@ defined_text = {
 						has_country_flag = new_route_export
 						has_country_flag = new_trade_route_view_open
 					}
-					localization_key = scripted_loc_GFX_new_export_route_button
+					localization_key = scripted_loc_GFX_new_export_route_button_pressed
 				}
 				text = {
-					localization_key = scripted_loc_GFX_new_export_route
+					localization_key = scripted_loc_GFX_new_export_route_button
 				}
 			}
 		#
@@ -5917,10 +5917,10 @@ defined_text = {
 					trigger= {
 						has_variable = trade_ai@var:selected_resource
 					}
-					localization_key = scripted_loc_GFX_generic_checkbox
+					localization_key = scripted_loc_GFX_generic_checkbox_unticked
 				}
 				text = {
-					localization_key = scripted_loc_GFX_generic_checkbox
+					localization_key = scripted_loc_GFX_generic_checkbox_ticked
 				}
 			}
 		#
@@ -5947,7 +5947,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -5961,7 +5961,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -5994,7 +5994,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6008,7 +6008,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6041,7 +6041,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6055,7 +6055,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6088,7 +6088,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6102,7 +6102,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6135,7 +6135,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6149,7 +6149,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6183,7 +6183,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6197,7 +6197,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6230,7 +6230,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6244,7 +6244,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6277,7 +6277,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6291,7 +6291,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6324,7 +6324,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6338,7 +6338,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6371,7 +6371,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6385,7 +6385,7 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6441,7 +6441,7 @@ defined_text = {
 						trigger = {
 							check_variable = { selected_market = 0 }
 						}
-						localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_gdpRBracketSym
+						localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_gdpRBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6449,7 +6449,7 @@ defined_text = {
 							set_temp_variable = { gdp_temp = selected_market:market_gdp }
 							divide_temp_variable = { gdp_temp = 1000 }
 						}
-						localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_tempRBracketSym
+						localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_tempRBracketSym_K
 					}
 					text = {
 						localization_key = scripted_loc_LBracketSym_QuestionMark_selected_marketColonSym_market_gdpRBracketSym
@@ -6477,10 +6477,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = resource_list_natural_resources_filter
 						}
-						localization_key = scripted_loc_GFX_market_natural_resources_filter
+						localization_key = scripted_loc_GFX_market_natural_resources_filter_active
 					}
 					text = {
-						localization_key = scripted_loc_GFX_market_natural_resources
+						localization_key = scripted_loc_GFX_market_natural_resources_filter
 					}
 				}
 				defined_text = {
@@ -6489,10 +6489,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = resource_list_produced_resources_filter
 						}
-						localization_key = scripted_loc_GFX_market_produced_resources_filter
+						localization_key = scripted_loc_GFX_market_produced_resources_filter_active
 					}
 					text = {
-						localization_key = scripted_loc_GFX_market_produced_resources
+						localization_key = scripted_loc_GFX_market_produced_resources_filter
 					}
 				}
 				defined_text = {
@@ -6501,10 +6501,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = resource_list_service_resources_filter
 						}
-						localization_key = scripted_loc_GFX_market_service_resources_filter
+						localization_key = scripted_loc_GFX_market_service_resources_filter_active
 					}
 					text = {
-						localization_key = scripted_loc_GFX_market_service_resources
+						localization_key = scripted_loc_GFX_market_service_resources_filter
 					}
 				}
 				defined_text = {
@@ -6513,10 +6513,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = resource_list_military_resources_filter
 						}
-						localization_key = scripted_loc_GFX_market_military_resources_filter
+						localization_key = scripted_loc_GFX_market_military_resources_filter_active
 					}
 					text = {
-						localization_key = scripted_loc_GFX_market_military_resources
+						localization_key = scripted_loc_GFX_market_military_resources_filter
 					}
 				}
 			#
@@ -6542,7 +6542,7 @@ defined_text = {
 						trigger = {
 							is_in_array = { global.non_tradeable_resources = resource_temp }
 						}
-						localization_key = scripted_loc_GFX_trade_resource
+						localization_key = scripted_loc_GFX_trade_resource_background
 					}
 					text = {
 						trigger = {
@@ -6556,10 +6556,10 @@ defined_text = {
 								check_variable = { balance@var:resource_temp > 0 }
 							}
 						}
-						localization_key = scripted_loc_GFX_trade_resource_background
+						localization_key = scripted_loc_GFX_trade_resource_background_green
 					}
 					text = {
-						localization_key = scripted_loc_GFX_trade_resource_background
+						localization_key = scripted_loc_GFX_trade_resource_background_red
 					}
 				}
 			#
@@ -6575,7 +6575,7 @@ defined_text = {
 				defined_text = {
 					name = GetResourceListTextIcon
 					text = {
-						localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_resource_tempPeriodMark_GetTokenKeyRBracketSym_
+						localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_resource_tempPeriodMark_GetTokenKeyRBracketSym__texticon
 					}
 				}
 			#
@@ -6848,7 +6848,7 @@ defined_text = {
 						localization_key = scripted_loc_LBracketSym_QuestionMark_selected_resourcePeriodMark_GetTokenLocalizedKeyRBracketSym
 					}
 					text = {
-						localization_key = scripted_loc_new_route_resource_choose
+						localization_key = scripted_loc_new_route_resource_choose_loc
 					}
 				}
 			#
@@ -6951,7 +6951,7 @@ defined_text = {
 						trigger = {
 							set_temp_variable = { tr_temp = v }
 						}
-						localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_tr_tempPeriodMark_GetTokenKeyRBracketSym_
+						localization_key = scripted_loc_GFX_LBracketSym_QuestionMark_tr_tempPeriodMark_GetTokenKeyRBracketSym__texticon
 					}
 				}
 			#
@@ -6996,10 +6996,10 @@ defined_text = {
 					trigger = {
 						check_variable = { offers@var:v = trade@var:v }
 					}
-					localization_key = scripted_loc_trade_route_amount
+					localization_key = scripted_loc_trade_route_amount_trade
 				}
 				text = {
-					localization_key = scripted_loc_trade_route_amount_trade
+					localization_key = scripted_loc_trade_route_amount_trade_capped
 				}
 			}
 			defined_text = { # GetTradeRoutePortion
@@ -7174,40 +7174,40 @@ defined_text = {
 							set_temp_variable = { tr_cost_temp = trade_productivity@var:v }
 							check_variable = { tr_cost_temp < 0.1 }
 						}
-						localization_key = scripted_loc_GFX_price_very_cheap
+						localization_key = scripted_loc_GFX_price_very_cheap_texticon
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_cost_temp < 0.3 }
 						}
-						localization_key = scripted_loc_GFX_price_cheap
+						localization_key = scripted_loc_GFX_price_cheap_texticon
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_cost_temp < 0.6 }
 						}
-						localization_key = scripted_loc_GFX_price_slightly_cheap
+						localization_key = scripted_loc_GFX_price_slightly_cheap_texticon
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_cost_temp < 1 }
 						}
-						localization_key = scripted_loc_GFX_price_average
+						localization_key = scripted_loc_GFX_price_average_texticon
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_temp < 2 }
 						}
-						localization_key = scripted_loc_GFX_price_slightly_expensive
+						localization_key = scripted_loc_GFX_price_slightly_expensive_texticon
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_cost_temp < 5 }
 						}
-						localization_key = scripted_loc_GFX_price_expensive
+						localization_key = scripted_loc_GFX_price_expensive_texticon
 					}
 					text = {
-						localization_key = scripted_loc_GFX_price_very_expensive
+						localization_key = scripted_loc_GFX_price_very_expensive_texticon
 					}
 				}
 			#
@@ -7219,7 +7219,7 @@ defined_text = {
 							set_temp_variable = { tr_temp = 1000 }
 							divide_temp_variable = { tr_temp = global.shipping_amount@var:v }
 						}
-						localization_key = scripted_loc_LBracketSym_QuestionMark_tr_tempORSym_2RBracketSym
+						localization_key = scripted_loc_LBracketSym_QuestionMark_tr_tempORSym_2RBracketSym_K
 					}
 				}
 			#
@@ -7229,10 +7229,10 @@ defined_text = {
 					trigger = {
 						check_variable = { trade_ai@var:v = 0 }
 					}
-					localization_key = scripted_loc_GFX_automated_trade
+					localization_key = scripted_loc_GFX_automated_trade_button
 				}
 				text = {
-					localization_key = scripted_loc_GFX_manual_trade
+					localization_key = scripted_loc_GFX_manual_trade_button
 				}
 			}
 			defined_text = { # GetTradeRouteAutomationTooltip
@@ -7241,10 +7241,10 @@ defined_text = {
 					trigger = {
 						check_variable = { trade_ai@var:v = 0 }
 					}
-					localization_key = scripted_loc_trade_route_automation_enabled
+					localization_key = scripted_loc_trade_route_automation_enabled_tooltip
 				}
 				text = {
-					localization_key = scripted_loc_trade_route_automation_disabled
+					localization_key = scripted_loc_trade_route_automation_disabled_tooltip
 				}
 			}
 			defined_text = { # GetTradeRouteProductivityUpperBound
@@ -7276,10 +7276,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = market_list_can_trade_filter
 						}
-						localization_key = scripted_loc_GFX_generic_checkbox
+						localization_key = scripted_loc_GFX_generic_checkbox_ticked
 					}
 					text = {
-						localization_key = scripted_loc_GFX_generic_checkbox
+						localization_key = scripted_loc_GFX_generic_checkbox_unticked
 					}
 				}
 				defined_text = {
@@ -7288,10 +7288,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = market_list_allied_filter
 						}
-						localization_key = scripted_loc_GFX_generic_checkbox
+						localization_key = scripted_loc_GFX_generic_checkbox_ticked
 					}
 					text = {
-						localization_key = scripted_loc_GFX_generic_checkbox
+						localization_key = scripted_loc_GFX_generic_checkbox_unticked
 					}
 				}
 				defined_text = {
@@ -7300,10 +7300,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = market_list_enemy_filter
 						}
-						localization_key = scripted_loc_GFX_generic_checkbox
+						localization_key = scripted_loc_GFX_generic_checkbox_ticked
 					}
 					text = {
-						localization_key = scripted_loc_GFX_generic_checkbox
+						localization_key = scripted_loc_GFX_generic_checkbox_unticked
 					}
 				}
 			#
@@ -7314,7 +7314,7 @@ defined_text = {
 					trigger = {
 						check_variable = { country_temp = market_capital:controller }
 					}
-					localization_key = scripted_loc_GFX_market_entry_background
+					localization_key = scripted_loc_GFX_market_entry_background_green
 				}
 				text = {
 					trigger = {
@@ -7322,10 +7322,10 @@ defined_text = {
 							can_trade_with = yes
 						}
 					}
-					localization_key = scripted_loc_GFX_market_entry_background
+					localization_key = scripted_loc_GFX_market_entry_background_red
 				}
 				text = {
-					localization_key = scripted_loc_GFX_market_entry
+					localization_key = scripted_loc_GFX_market_entry_background
 				}
 			}
 			defined_text = { #GetMarketListSize
@@ -7390,10 +7390,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_market_leaderPeriodMark_GetAdjectiveRBracketSym_
+				localization_key = scripted_loc_LBracketSym_QuestionMark_market_leaderPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 			text = {
-				localization_key = scripted_loc_LBracketSym_THISPeriodMark_GetAdjectiveRBracketSym_
+				localization_key = scripted_loc_LBracketSym_THISPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 		}
 		defined_text = {
@@ -7402,10 +7402,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetAdjectiveRBracketSym_
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 			text = {
-				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerPeriodMark_GetAdjectiveRBracketSym_
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 		}
 		defined_text = {
@@ -7414,10 +7414,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_market_leaderRBracketSym_
+				localization_key = scripted_loc_LBracketSym_QuestionMark_market_leaderRBracketSym__Market
 			}
 			text = {
-				localization_key = scripted_loc_LBracketSym_FROMPeriodMark_CONTROLLERPeriodMark_GetFlagRBracketSym__LBracketSym_GetAdjectiveRBracketSym_
+				localization_key = scripted_loc_LBracketSym_FROMPeriodMark_CONTROLLERPeriodMark_GetFlagRBracketSym__LBracketSym_GetAdjectiveRBracketSym__Market
 			}
 		}
 		defined_text = {
@@ -7426,10 +7426,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetAdjectiveRBracketSym_
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 			text = {
-				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_controllerPeriodMark_GetAdjectiveRBracketSym_
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_controllerPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 		}
 		defined_text = {
@@ -7513,14 +7513,14 @@ defined_text = {
 						check_variable = { market_leader = ROOT }
 					}
 				}
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Leader
 			}
 			text = {
 				trigger = { is_subject = yes }
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Satellite
 			}
 			text = {
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Member
 			}
 		}
 		defined_text = {
@@ -7534,14 +7534,14 @@ defined_text = {
 						}
 					}
 				}
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Leader
 			}
 			text = {
 				trigger = { controller = { is_subject = yes } }
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Satellite
 			}
 			text = {
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Member
 			}
 		}
 		defined_text = {
@@ -7559,23 +7559,23 @@ defined_text = {
 						has_war_together_with = ROOT
 					}
 				}
-				localization_key = scripted_loc
+				localization_key = scripted_loc_In-Block
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { country_temp = THIS }
 					ROOT = { can_trade_with = yes }
 				}
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Accessible
 			}
 			text = {
 				trigger = {
 					has_war_with = ROOT
 				}
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Enemy
 			}
 			text = {
-				localization_key = scripted_loc_Not
+				localization_key = scripted_loc_Not_Accessible
 			}
 		}
 		defined_text = {
@@ -7593,14 +7593,14 @@ defined_text = {
 						CONTROLLER = { has_war_together_with = ROOT }
 					}
 				}
-				localization_key = scripted_loc
+				localization_key = scripted_loc_In-Block
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { country_temp = controller }
 					ROOT = { can_trade_with = yes }
 				}
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Accessible
 			}
 			text = {
 				trigger = {
@@ -7608,10 +7608,10 @@ defined_text = {
 						has_war_with = ROOT
 					}
 				}
-				localization_key = scripted_loc
+				localization_key = scripted_loc_Enemy
 			}
 			text = {
-				localization_key = scripted_loc_Not
+				localization_key = scripted_loc_Not_Accessible
 			}
 		}
 		defined_text = {
@@ -7621,22 +7621,22 @@ defined_text = {
 				trigger = {
 					is_great_power = yes
 				}
-				localization_key = scripted_loc_GFX_flag_power_tiny
+				localization_key = scripted_loc_GFX_flag_power_tiny_04
 			}
 			text = {
 				trigger = {
 					is_secondary_power = yes
 				}
-				localization_key = scripted_loc_GFX_flag_power_tiny
+				localization_key = scripted_loc_GFX_flag_power_tiny_03
 			}
 			text = {
 				trigger = {
 					is_minor_power = yes
 				}
-				localization_key = scripted_loc_GFX_flag_power_tiny
+				localization_key = scripted_loc_GFX_flag_power_tiny_02
 			}
 			text = {
-				localization_key = scripted_loc_GFX_flag_power_tiny
+				localization_key = scripted_loc_GFX_flag_power_tiny_01
 			}
 		}
 	#
@@ -7651,7 +7651,7 @@ defined_text = {
 				divide_temp_variable = {treasury_temp = 1000000}
 				check_variable = {treasury > 999999.99}
             }
-            localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempORSym_2RBracketSym
+            localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempORSym_2RBracketSym_M
         }
         text = {
             trigger = {
@@ -7659,7 +7659,7 @@ defined_text = {
 				divide_temp_variable = {treasury_temp = 1000}
 				check_variable = {treasury > 999.99}
             }
-            localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempORSym_2RBracketSym
+            localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempORSym_2RBracketSym_K
         }
         text = {
             localization_key = scripted_loc_LBracketSym_QuestionMark_treasuryORSym_2RBracketSym
