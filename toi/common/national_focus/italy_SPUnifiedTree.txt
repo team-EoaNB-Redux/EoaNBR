@@ -722,6 +722,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			country_event = {
+				id = ita.57
+			}
 		}
 	}
 	focus = {
@@ -1303,7 +1306,7 @@ focus_tree = {
 	focus = {
 		id = ITA_PIE_focus_Rise_of_Farini
 		icon = GFX_Focus_Law_Vote_1
-		cost = 70
+		cost = 35
 		available = {
 			has_completed_focus = ITA_PIE_focus_Arrests_in_Trentino
 			has_completed_focus = ITA_PIE_focus_Strengthen_the_Government
@@ -1315,15 +1318,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-			PIE_luigi_farini = {
-				add_country_leader_role = {
-					promote_leader = yes
-					country_leader = {
-						ideology = conserv
-						expire = "1900.1.1"
-					}
-				}
-			}
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -1337,7 +1332,15 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			#put conservatives in power
+			PIE_luigi_farini = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = conserv_liberal
+						expire = "1900.1.1"
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1417,7 +1420,7 @@ focus_tree = {
 		icon = GFX_Focus_Law_Vote_1
 		cost = 70
 		available = {
-			has_completed_focus = ITA_PIE_focus_Propose_Conference_on_Rome
+			has_completed_focus = ITA_PIE_focus_The_September_Convention
 		}
 		prerequisite = {
 			focus = ITA_PIE_focus_Letters_to_King
