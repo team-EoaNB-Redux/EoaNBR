@@ -5,79 +5,79 @@
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyNasImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyNasImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyNasImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyNasImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyNasImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyNasImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyNasImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyNasImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyNasImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyNasImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyNasImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNasImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNasImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageDENRBracketSym
 	}
 	###Navy Nas Replacement Marker###
 	
@@ -85,7 +85,7 @@
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyNasImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageGenericRBracketSym
 	}
 }
 
@@ -96,79 +96,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyNcsImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyNcsImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyNcsImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyNcsImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyNcsImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyNcsImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyNcsImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyNcsImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyNcsImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyNcsImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyNcsImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNcsImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNcsImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageDENRBracketSym
 	}
 	###Navy Ncs Replacement Marker###
 	
@@ -176,7 +176,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyNcsImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageGenericRBracketSym
 	}
 }
 
@@ -187,79 +187,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyNogImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyNogImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyNogImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyNogImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyNogImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyNogImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyNogImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyNogImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyNogImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyNogImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyNogImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNogImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNogImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageDENRBracketSym
 	}
 	###Navy Nog Replacement Marker###
 	
@@ -267,7 +267,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyNogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageGenericRBracketSym
 	}
 }
 
@@ -278,79 +278,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyCogImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyCogImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyCogImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyCogImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyCogImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyCogImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyCogImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyCogImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyCogImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyCogImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyCogImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyCogImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyCogImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageDENRBracketSym
 	}
 	###Navy Cog Replacement Marker###
 	
@@ -358,7 +358,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyCogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageGenericRBracketSym
 	}
 }
 
@@ -369,79 +369,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyNlgImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyNlgImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyNlgImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyNlgImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyNlgImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyNlgImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyNlgImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyNlgImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyNlgImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyNlgImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyNlgImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNlgImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNlgImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageDENRBracketSym
 	}
 	###Navy Nlg Replacement Marker###
 	
@@ -449,7 +449,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyNlgImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageGenericRBracketSym
 	}
 }
 
@@ -460,79 +460,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyMogImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyMogImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyMogImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyMogImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyMogImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyMogImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyMogImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyMogImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyMogImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyMogImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyMogImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyMogImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyMogImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageDENRBracketSym
 	}
 	###Navy Mog Replacement Marker###
 	
@@ -540,6 +540,6 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyMogImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageGenericRBracketSym
 	}
 }
