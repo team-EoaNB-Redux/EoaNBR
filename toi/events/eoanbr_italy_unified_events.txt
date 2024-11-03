@@ -1816,15 +1816,18 @@ country_event = {
 	picture = GFX_event_ITA_Aspromonte_Clash
 
 	is_triggered_only = yes
+
 	option = {
 		name = ita.60.a
-		add_country_leader_role = {
-			character = PIE_luigi_farini
-			promote_leader = yes
-			country_leader = {
-				ideology = conserv_liberal
-				expire = "1900.1.1"
+			add_country_leader_role = {
+				character = PIE_luigi_farini
+				country_leader = {
+					ideology = conserv_liberal
+					expire = "1900.1.1"
+				}
 			}
+		PIE_luigi_farini = {
+			promote_character = yes
 		}
 	}
 }

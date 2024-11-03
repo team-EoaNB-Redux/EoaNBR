@@ -893,6 +893,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_PIE_focus_Reaction_to_Gastein_Conference
 		}
+		available = {
+			has_completed_focus = ITA_PIE_focus_Aftermath_of_the_Turin_Massacre
+		}
 		relative_position_id = ITA_PIE_focus_Reaction_to_Gastein_Conference
 		x = 0
 		y = 1
@@ -1445,6 +1448,9 @@ focus_tree = {
 		cost = 70
 		prerequisite = {
 			focus = ITA_PIE_focus_Lanza_Law
+		}
+		available = {
+			has_completed_focus = ITA_PIE_focus_Open_Negotiations_for_the_Sale
 		}
 		relative_position_id = ITA_PIE_focus_Lanza_Law
 		x = 0
