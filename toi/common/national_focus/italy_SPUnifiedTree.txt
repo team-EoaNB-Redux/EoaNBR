@@ -1332,14 +1332,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			PIE_luigi_farini = {
-				add_country_leader_role = {
-					promote_leader = yes
-					country_leader = {
-						ideology = conserv_liberal
-						expire = "1900.1.1"
-					}
-				}
+			country_event = {
+				id = ita.60
 			}
 		}
 	}

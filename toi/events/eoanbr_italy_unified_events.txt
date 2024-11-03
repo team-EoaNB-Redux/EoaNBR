@@ -1808,6 +1808,27 @@ country_event = {
 	}
 }
 
+#day of aspromonte
+country_event = {
+	id = ita.60
+	title = ita.60.t
+	desc = ita.60.d
+	picture = GFX_event_ITA_Aspromonte_Clash
+
+	is_triggered_only = yes
+	option = {
+		name = ita.60.a
+		add_country_leader_role = {
+			character = PIE_luigi_farini
+			promote_leader = yes
+			country_leader = {
+				ideology = conserv_liberal
+				expire = "1900.1.1"
+			}
+		}
+	}
+}
+
 news_event = {
 	id = ita_news.1
 	title = ita_news.1.t

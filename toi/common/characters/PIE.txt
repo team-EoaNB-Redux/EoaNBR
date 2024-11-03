@@ -115,7 +115,7 @@ characters = {
 		name = "Luigi Carlo Farini"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/leader_unknown"
+				large = "gfx/leaders/leader_unknown.dds"
 			}
 		}
 	}
