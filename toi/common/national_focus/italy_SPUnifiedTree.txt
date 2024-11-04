@@ -1363,6 +1363,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			country_event = {
+				 id = ita.61
+			}
 		}
 	}
 	focus = {
@@ -1379,7 +1382,9 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
-			#retire farini, make menghetti leader of conservatives
+			country_event = {
+				id = ita.62
+			}
 		}
 	}
 	focus = {

@@ -1821,12 +1821,52 @@ country_event = {
 		name = ita.60.a
 		add_country_leader_role = {
 			character = PIE_luigi_farini
+			promote_leader = yes
 			country_leader = {
 				ideology = conserv_liberal
 				expire = "1900.1.1"
 			}
 		}
 		PIE_luigi_farini = {
+			promote_character = yes
+		}
+	}
+}
+
+#demand the king declare war on russia
+country_event = {
+	id = ita.61
+	title = ita.61.t
+	desc = ita.61.d
+	picture = GFX_event_ITA_king_victor_emmanuel
+
+	is_triggered_only = yes
+
+	option = {
+		name = ita.61.a
+		add_stability = -0.15
+	}
+}
+
+country_event = {
+	id = ita.62
+	title = ita.62.t
+	desc = ita.61.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ita.62.a
+		add_country_leader_role = {
+			character = PIE_marco_minghetti
+			promote_leader = yes
+			country_leader = {
+				ideology = conserv_liberal
+				expire = "1900.1.1"
+			}
+		}
+		PIE_marco_minghetti = {
 			promote_character = yes
 		}
 	}
