@@ -111,7 +111,14 @@ characters = {
 			}
 		}
 	}
-
+	PIE_luigi_farini = {
+		name = "Luigi Carlo Farini"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
+			}
+		}
+	}
 	### Generals ###
 
 

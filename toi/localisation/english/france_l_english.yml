@@ -904,6 +904,10 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france_flavor.35.t: "Napoleon and his urinary problems..."
  nap_france_flavor.35.d: "Napoleon III is at his worst. But no one wants to take the risk of operating on him. Senate President Troplong and Field Marshal Niel, both also suffering from a bladder stone, died as a result of the operation. The seriousness of the disease is underestimated for "the greater good".\nHorseback riding is very painful for Napoleon III, people worried. Especially when our relations with Prussia and it's allies are getting worse. Let's hope it won't negatively influence our military during the coming war."
  nap_france_flavor.35.a: "We hope that it won't influence him while commanding our forces"
+ nap_france_flavor.36.t: "Italy Proposes September Convention"
+ nap_france_flavor.36.d: "Italy has proposed an agreement that would require us to remove our garrisons from the Papal States, in exchange for their promised protection and peace with the nation. While Italy's end of the agreement does give some confidence, many within the country have campaigned for the integration of the Papal States into Italy. This raises concerns about if Italy will honor the agreement. Should we accept it, or reject it?"
+ nap_france_flavor.36.a: "Accept"
+ nap_france_flavor.36.b: "Reject"
 
   # Event Text
 
