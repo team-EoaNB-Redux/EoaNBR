@@ -2083,6 +2083,7 @@ technologies = {
 				industrial_complex_productivity_modifier = 0.1
 				factory_output_factor = 0.02
 				production_factory_efficiency_gain_factor = 0.025
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_shift_work = {
@@ -2833,9 +2834,9 @@ technologies = {
 				}
 			#
 			#Effect
-				on_research_complete = {
+				#on_research_complete = {
 					global_building_slots_factor = 0.025
-				}
+				#}
 			#
 			#Modifier
 				# Temporary Modifier
@@ -2952,6 +2953,7 @@ technologies = {
 				industry_repair_factor = 0.2
 				# Temporary Modifier
 				urban_center_throughput_factor = 0.1
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_reinforced_concrete = {
@@ -2984,6 +2986,7 @@ technologies = {
 				production_speed_buildings_factor = 0.05
 				industry_repair_factor = 0.2
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.05
 			#
 		}
 		tech_steel_bridge = {
@@ -3019,6 +3022,7 @@ technologies = {
 			#Modifier
 				production_speed_buildings_factor = 0.10
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.025
 				custom_modifier_tooltip = pm_steel_frame_buildings_unlock_tt
 			#
 		}
@@ -3054,6 +3058,7 @@ technologies = {
 				industrial_capacity_dockyard = 0.05
 				industry_repair_factor = 0.05
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_steel_girder_construction = {
@@ -3085,6 +3090,7 @@ technologies = {
 			#
 			#Modifier
 				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.025
 				custom_modifier_tooltip = pm_high_rise_buildings_unlock_tt
 			#
 		}
