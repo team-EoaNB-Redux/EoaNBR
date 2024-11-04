@@ -9,7 +9,7 @@
 				value = mhc_nas_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyNasImageGenericRBracketSym
+		localization_key = "[GetMHCNavyNasImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -68,7 +68,7 @@ defined_text = {
 				value = mhc_ncs_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyNcsImageGenericRBracketSym
+		localization_key = "[GetMHCNavyNcsImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -127,7 +127,7 @@ defined_text = {
 				value = mhc_nog_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyNogImageGenericRBracketSym
+		localization_key = "[GetMHCNavyNogImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -186,7 +186,7 @@ defined_text = {
 				value = mhc_cog_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyCogImageGenericRBracketSym
+		localization_key = "[GetMHCNavyCogImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -245,7 +245,7 @@ defined_text = {
 				value = mhc_nlg_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyNlgImageGenericRBracketSym
+		localization_key = "[GetMHCNavyNlgImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -304,7 +304,7 @@ defined_text = {
 				value = mhc_mog_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCNavyMogImageGenericRBracketSym
+		localization_key = "[GetMHCNavyMogImageGeneric]"
 	}
 	text = {
 		trigger = {

@@ -9,7 +9,7 @@
 				value = mhc_afc_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAfcImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceAfcImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -38,7 +38,7 @@ defined_text = {
 				value = mhc_ach_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAchImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceAchImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -67,7 +67,7 @@ defined_text = {
 				value = mhc_opg_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceOpgImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceOpgImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -96,7 +96,7 @@ defined_text = {
 				value = mhc_wic_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceWicImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceWicImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -125,7 +125,7 @@ defined_text = {
 				value = mhc_supc_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceSupcImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceSupcImageGeneric]"
 	}
 	text = {
 		trigger = {

@@ -7,7 +7,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BAV
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BAV"
 	}
 	text = {
 		trigger = {
@@ -15,7 +15,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BAV
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BAV"
 	}
 	text = {
 		trigger = {
@@ -23,7 +23,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BAV
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BAV"
 	}
 	
 	text = {
@@ -32,7 +32,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_FRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_FRA"
 	}
 	text = {
 		trigger = {
@@ -40,7 +40,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_FRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_FRA"
 	}
 	text = {
 		trigger = {
@@ -48,7 +48,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_FRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_FRA"
 	}
 	
 	text = {
@@ -57,7 +57,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_ENG
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_ENG"
 	}
 	text = {
 		trigger = {
@@ -65,7 +65,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_ENG
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_ENG"
 	}
 	text = {
 		trigger = {
@@ -73,7 +73,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_ENG
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_ENG"
 	}
 	
 	text = {
@@ -82,7 +82,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_SWE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_SWE"
 	}
 	text = {
 		trigger = {
@@ -90,7 +90,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_SWE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_SWE"
 	}
 	text = {
 		trigger = {
@@ -98,7 +98,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_SWE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_SWE"
 	}
 	
 	text = {
@@ -107,7 +107,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_USA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_USA"
 	}
 	text = {
 		trigger = {
@@ -115,7 +115,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_USA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_USA"
 	}
 	text = {
 		trigger = {
@@ -123,7 +123,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_USA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_USA"
 	}
 	
 	text = {
@@ -132,7 +132,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_AUS"
 	}
 	text = {
 		trigger = {
@@ -140,7 +140,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_AUS"
 	}
 	text = {
 		trigger = {
@@ -148,7 +148,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS"
 	}
 	
 	text = {
@@ -157,7 +157,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_FIN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_FIN"
 	}
 	text = {
 		trigger = {
@@ -165,7 +165,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_FIN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_FIN"
 	}
 	text = {
 		trigger = {
@@ -173,7 +173,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_FIN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_FIN"
 	}	
 	text = {
 		trigger = {
@@ -181,7 +181,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_RYU
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_RYU"
 	}
 	text = {
 		trigger = {
@@ -189,7 +189,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_RYU
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_RYU"
 	}
 	text = {
 		trigger = {
@@ -197,7 +197,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_RYU
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_RYU"
 	}
 	
 	text = {
@@ -206,7 +206,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_RUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_RUS"
 	}
 	text = {
 		trigger = {
@@ -214,7 +214,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_RUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_RUS"
 	}
 	text = {
 		trigger = {
@@ -222,7 +222,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_RUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_RUS"
 	}
 	
 	text = {
@@ -231,7 +231,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_MXE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_MXE"
 	}
 	text = {
 		trigger = {
@@ -239,7 +239,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_MXE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_MXE"
 	}
 	text = {
 		trigger = {
@@ -247,7 +247,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_MXE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_MXE"
 	}
 	
 	text = {
@@ -256,7 +256,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_GRE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GRE"
 	}
 	text = {
 		trigger = {
@@ -264,7 +264,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_GRE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GRE"
 	}
 	text = {
 		trigger = {
@@ -272,7 +272,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GRE
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GRE"
 	}
 	
 	
@@ -282,7 +282,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_NOR
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_NOR"
 	}
 	text = {
 		trigger = {
@@ -290,7 +290,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_NOR
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_NOR"
 	}
 	text = {
 		trigger = {
@@ -298,7 +298,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_NOR
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_NOR"
 	}
 	
 	text = {
@@ -307,7 +307,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_PRS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_PRS"
 	}
 	text = {
 		trigger = {
@@ -315,7 +315,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_PRS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_PRS"
 	}
 	text = {
 		trigger = {
@@ -323,7 +323,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_PRS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_PRS"
 	}
 	
 	text = {
@@ -332,7 +332,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_SIX
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_SIX"
 	}
 	text = {
 		trigger = {
@@ -340,7 +340,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_SIX
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_SIX"
 	}
 	text = {
 		trigger = {
@@ -348,7 +348,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_SIX
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_SIX"
 	}
 	text = {
 		trigger = {
@@ -356,7 +356,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BAD
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BAD"
 	}
 	text = {
 		trigger = {
@@ -364,7 +364,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BAD
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BAD"
 	}
 	text = {
 		trigger = {
@@ -372,7 +372,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BAD
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BAD"
 	}
 	
 	text = {
@@ -381,7 +381,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_SAX
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_SAX"
 	}
 	text = {
 		trigger = {
@@ -389,7 +389,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_SAX
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_SAX"
 	}
 	text = {
 		trigger = {
@@ -397,7 +397,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_SAX
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_SAX"
 	}
 	
 	text = {
@@ -406,7 +406,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -414,7 +414,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -422,7 +422,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -431,7 +431,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -439,7 +439,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -447,7 +447,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -456,7 +456,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -464,7 +464,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -472,7 +472,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -481,7 +481,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -489,7 +489,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -497,7 +497,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -506,7 +506,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -514,7 +514,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -522,7 +522,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -531,7 +531,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -539,7 +539,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -547,7 +547,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -556,7 +556,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -564,7 +564,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -572,7 +572,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -581,7 +581,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -589,7 +589,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -597,7 +597,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -606,7 +606,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -614,7 +614,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -622,7 +622,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -631,7 +631,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -639,7 +639,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -647,7 +647,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -656,7 +656,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -664,7 +664,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -672,7 +672,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -681,7 +681,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -689,7 +689,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -697,7 +697,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -706,7 +706,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -714,7 +714,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -722,7 +722,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -731,7 +731,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -739,7 +739,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -747,7 +747,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -756,7 +756,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_DEN"
 	}
 	text = {
 		trigger = {
@@ -764,7 +764,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_DEN
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_DEN"
 	}
 	text = {
 		trigger = {
@@ -772,32 +772,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN
-	}
-	
-	text = {
-		trigger = {
-			tag = AUS
-			check_variable = { show_local_mhc_tab = 0 }
-			mhc_is_generic_army_advisor_selector_trigger = no
-		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_AUS
-	}
-	text = {
-		trigger = {
-			tag = AUS
-			check_variable = { show_local_mhc_tab = 1 }
-			mhc_is_generic_navy_advisor_selector_trigger = no
-		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_AUS
-	}
-	text = {
-		trigger = {
-			tag = AUS
-			check_variable = { show_local_mhc_tab = 2 }
-			mhc_is_generic_airforce_advisor_selector_trigger = no
-		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_DEN"
 	}
 	
 	text = {
@@ -806,7 +781,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_AUS"
 	}
 	text = {
 		trigger = {
@@ -814,7 +789,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_AUS"
 	}
 	text = {
 		trigger = {
@@ -822,32 +797,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS
-	}
-	
-	text = {
-		trigger = {
-			tag = AUS
-			check_variable = { show_local_mhc_tab = 0 }
-			mhc_is_generic_army_advisor_selector_trigger = no
-		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_AUS
-	}
-	text = {
-		trigger = {
-			tag = AUS
-			check_variable = { show_local_mhc_tab = 1 }
-			mhc_is_generic_navy_advisor_selector_trigger = no
-		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_AUS
-	}
-	text = {
-		trigger = {
-			tag = AUS
-			check_variable = { show_local_mhc_tab = 2 }
-			mhc_is_generic_airforce_advisor_selector_trigger = no
-		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS"
 	}
 	
 	text = {
@@ -856,7 +806,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_AUS"
 	}
 	text = {
 		trigger = {
@@ -864,7 +814,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_AUS"
 	}
 	text = {
 		trigger = {
@@ -872,7 +822,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS"
 	}
 	
 	text = {
@@ -881,7 +831,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_AUS"
 	}
 	text = {
 		trigger = {
@@ -889,7 +839,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_AUS"
 	}
 	text = {
 		trigger = {
@@ -897,7 +847,57 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS"
+	}
+	
+	text = {
+		trigger = {
+			tag = AUS
+			check_variable = { show_local_mhc_tab = 0 }
+			mhc_is_generic_army_advisor_selector_trigger = no
+		}
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_AUS"
+	}
+	text = {
+		trigger = {
+			tag = AUS
+			check_variable = { show_local_mhc_tab = 1 }
+			mhc_is_generic_navy_advisor_selector_trigger = no
+		}
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_AUS"
+	}
+	text = {
+		trigger = {
+			tag = AUS
+			check_variable = { show_local_mhc_tab = 2 }
+			mhc_is_generic_airforce_advisor_selector_trigger = no
+		}
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS"
+	}
+	
+	text = {
+		trigger = {
+			tag = AUS
+			check_variable = { show_local_mhc_tab = 0 }
+			mhc_is_generic_army_advisor_selector_trigger = no
+		}
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_AUS"
+	}
+	text = {
+		trigger = {
+			tag = AUS
+			check_variable = { show_local_mhc_tab = 1 }
+			mhc_is_generic_navy_advisor_selector_trigger = no
+		}
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_AUS"
+	}
+	text = {
+		trigger = {
+			tag = AUS
+			check_variable = { show_local_mhc_tab = 2 }
+			mhc_is_generic_airforce_advisor_selector_trigger = no
+		}
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_AUS"
 	}
 	
 	text = {
@@ -906,7 +906,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -914,7 +914,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -922,7 +922,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -931,7 +931,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -939,7 +939,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -947,7 +947,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -956,7 +956,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -964,7 +964,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -972,7 +972,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -981,7 +981,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -989,7 +989,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -997,7 +997,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1006,7 +1006,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1014,7 +1014,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1022,7 +1022,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1031,7 +1031,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1039,7 +1039,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1047,7 +1047,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1056,7 +1056,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1064,7 +1064,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1072,7 +1072,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1081,7 +1081,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1089,7 +1089,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1097,7 +1097,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1106,7 +1106,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1114,7 +1114,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1122,7 +1122,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1131,7 +1131,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1139,7 +1139,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1147,7 +1147,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1156,7 +1156,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1164,7 +1164,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1172,7 +1172,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1181,7 +1181,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1189,7 +1189,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1197,7 +1197,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1206,7 +1206,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1214,7 +1214,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1222,7 +1222,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1231,7 +1231,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1239,7 +1239,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1247,7 +1247,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	text = {
@@ -1256,7 +1256,7 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1264,7 +1264,7 @@
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_BRA"
 	}
 	text = {
 		trigger = {
@@ -1272,7 +1272,7 @@
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = no
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_BRA"
 	}
 	
 	###Names Setup Replacement Marker###
@@ -1282,20 +1282,20 @@
 			check_variable = { show_local_mhc_tab = 0 }
 			mhc_is_generic_army_advisor_selector_trigger = yes
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC"
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_tab = 1 }
 			mhc_is_generic_navy_advisor_selector_trigger = yes
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC"
 	}
 	text = {
 		trigger = {
 			check_variable = { show_local_mhc_tab = 2 }
 			mhc_is_generic_airforce_advisor_selector_trigger = yes
 		}
-		localization_key = scripted_loc_MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC
+		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC"
 	}
 }
