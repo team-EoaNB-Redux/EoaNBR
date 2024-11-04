@@ -5,31 +5,31 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "FIN_Anders_Edvard_Ramsay"
+		localization_key = scripted_loc_FIN_Anders_Edvard_Ramsay
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "FIN_August_Alexander_Jarnefelt"
+		localization_key = scripted_loc_FIN_August_Alexander_Jarnefelt
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "FIN_Johan_Casimir_Ehrnrooth"
+		localization_key = scripted_loc_FIN_Johan_Casimir_Ehrnrooth
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "FIN_Carl_Johan_Korsman"
+		localization_key = scripted_loc_FIN_Carl_Johan_Korsman
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "FIN_Alexander_Jacob_von_Wendt"
+		localization_key = scripted_loc_FIN_Alexander_Jacob_von_Wendt
 	}
 	###Army Replacement Marker###
 }
@@ -41,7 +41,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "FIN_Johan_Eberhard_von_Schantz"
+		localization_key = scripted_loc_FIN_Johan_Eberhard_von_Schantz
 	}
 	###Navy Replacement Marker###
 }

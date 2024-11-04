@@ -14,10 +14,10 @@ defined_text = {
         trigger = {
           has_global_flag = autobuild_flag
         }
-        localization_key = "autobuild_enabled_loc"
+        localization_key = scripted_loc_autobuild_enabled_loc
     }
 	text = {
-		localization_key = "autobuild_disabled_loc"
+		localization_key = scripted_loc_autobuild_disabled_loc
 	}
 }
 defined_text = {
@@ -26,7 +26,7 @@ defined_text = {
         trigger = {
             set_temp_variable = { amount_temp = gdp_amount }
         }
-        localization_key = "[GetAdjustedAmountNoSign]"
+        localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
     }
 }
 defined_text = {
@@ -35,7 +35,7 @@ defined_text = {
         trigger = {
             set_temp_variable = { amount_temp = gdp_per_capita }
         }
-        localization_key = "[GetAdjustedAmountNoSign]"
+        localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
     }
 }
 defined_text = {
@@ -47,7 +47,7 @@ defined_text = {
             divide_temp_variable = { gdp_amount_temp = 1000000 }
 			multiply_temp_variable = { gdp_amount_temp = 12 }
         }
-        localization_key = "[?gdp_amount_temp]M"
+        localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_amount_tempRBracketSym_M
     }
 	text = {
         trigger = {
@@ -56,14 +56,14 @@ defined_text = {
             divide_temp_variable = { gdp_amount_temp = 1000 }
 			multiply_temp_variable = { gdp_amount_temp = 12 }
 		}
-        localization_key = "[?gdp_amount_temp]K"
+        localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_amount_tempRBracketSym_K
     }
 	text = {
         trigger = {
             set_temp_variable = { gdp_amount_temp = gdp_amount }
 			multiply_temp_variable = { gdp_amount_temp = 12 }
 		}
-        localization_key = "[?gdp_amount_temp]"
+        localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_amount_tempRBracketSym
     }
 }
 # General
@@ -73,7 +73,7 @@ defined_text = {
 			trigger = {
 				check_variable = { amount_temp = 0 }
 			}
-			localization_key = "[?amount_temp|=1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_EqualsSign_1RBracketSym
 		}
 		text = {
 			trigger = {
@@ -84,7 +84,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|=0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -95,7 +95,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|=1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -106,7 +106,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|=2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_EqualsSign_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -115,7 +115,7 @@ defined_text = {
 					check_variable = { amount_temp < -99.999 }
 				}
 			}
-			localization_key = "[?amount_temp|=0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_EqualsSign_0RBracketSym
 		}
 		text = {
 			trigger = {
@@ -124,7 +124,7 @@ defined_text = {
 					check_variable = { amount_temp < -9.999 }
 				}
 			}
-			localization_key = "[?amount_temp|=1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_EqualsSign_1RBracketSym
 		}
 		text = {
 			trigger = {
@@ -133,10 +133,10 @@ defined_text = {
 					check_variable = { amount_temp < -0.999 }
 				}
 			}
-			localization_key = "[?amount_temp|=2]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_EqualsSign_2RBracketSym
 		}
 		text = {
-			localization_key = "[?amount_temp|=3]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_EqualsSign_3RBracketSym
 		}
 	}
 	defined_text = { # GetAdjustedAmountNoSign - amount_temp
@@ -145,7 +145,7 @@ defined_text = {
 			trigger = {
 				check_variable = { amount_temp = 0 }
 			}
-			localization_key = "[?amount_temp|1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_1RBracketSym
 		}
 		text = {
 			trigger = {
@@ -156,7 +156,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -167,7 +167,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -178,7 +178,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -187,7 +187,7 @@ defined_text = {
 					check_variable = { amount_temp < -99.999 }
 				}
 			}
-			localization_key = "[?amount_temp|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_0RBracketSym
 		}
 		text = {
 			trigger = {
@@ -196,7 +196,7 @@ defined_text = {
 					check_variable = { amount_temp < -9.999 }
 				}
 			}
-			localization_key = "[?amount_temp|1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_1RBracketSym
 		}
 		text = {
 			trigger = {
@@ -205,10 +205,10 @@ defined_text = {
 					check_variable = { amount_temp < -0.999 }
 				}
 			}
-			localization_key = "[?amount_temp|2]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_2RBracketSym
 		}
 		text = {
-			localization_key = "[?amount_temp|3]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_3RBracketSym
 		}
 	}
 	defined_text = { # GetAdjustedAmountThousandsNoSign - amount_temp
@@ -217,7 +217,7 @@ defined_text = {
 			trigger = {
 				check_variable = { amount_temp = 0 }
 			}
-			localization_key = "[?amount_temp|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_0RBracketSym
 		}
 		text = {
 			trigger = {
@@ -228,7 +228,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|0]M"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_0RBracketSym_M
 		}
 		text = {
 			trigger = {
@@ -239,7 +239,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|1]M"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_1RBracketSym_M
 		}
 		text = {
 			trigger = {
@@ -250,7 +250,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|2]M"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_2RBracketSym_M
 		}
 		text = {
 			trigger = {
@@ -259,7 +259,7 @@ defined_text = {
 					check_variable = { amount_temp < -99.999 }
 				}
 			}
-			localization_key = "[?amount_temp|0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -268,7 +268,7 @@ defined_text = {
 					check_variable = { amount_temp < -9.999 }
 				}
 			}
-			localization_key = "[?amount_temp|1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -277,14 +277,14 @@ defined_text = {
 					check_variable = { amount_temp < -0.999 }
 				}
 			}
-			localization_key = "[?amount_temp|2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
 				set_temp_variable = { number_temp = amount_temp }
 				multiply_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_number_tempORSym_0RBracketSym
 		}
 	}
 	defined_text = { # GetPositiveColor - amount_temp
@@ -326,13 +326,13 @@ defined_text = {
 	defined_text = { # GetPositiveAdjustedAmount - amount_temp
 		name = GetPositiveAdjustedAmount
 		text = {
-			localization_key = "[GetPositiveColor][GetAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveColorRBracketSym_LBracketSym_GetAdjustedAmountRBracketSym
 		}
 	}
 	defined_text = { # GetNegativeAdjustedAmount - amount_temp
 		name = GetNegativeAdjustedAmount
 		text = {
-			localization_key = "[GetNegativeColor][GetAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetNegativeColorRBracketSym_LBracketSym_GetAdjustedAmountRBracketSym
 		}
 	}
 	defined_text = { # GetIconFromV - v
@@ -882,7 +882,7 @@ defined_text = {
                     currency_uses_dollar = yes
                 }
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
@@ -890,7 +890,7 @@ defined_text = {
                     currency_uses_pound = yes
                 }
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
@@ -898,7 +898,7 @@ defined_text = {
                     currency_uses_euro = yes
                 }
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
@@ -906,7 +906,7 @@ defined_text = {
                     currency_uses_franc = yes
                 }
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
@@ -914,7 +914,7 @@ defined_text = {
                     currency_uses_ruble = yes
                 }
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
@@ -922,7 +922,7 @@ defined_text = {
                     currency_uses_rupee = yes
                 }
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
@@ -930,7 +930,7 @@ defined_text = {
                     currency_uses_yen = yes
                 }
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
@@ -938,7 +938,7 @@ defined_text = {
                     currency_uses_lira = yes
                 }
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
@@ -946,7 +946,7 @@ defined_text = {
                     currency_uses_mark = yes
                 }
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
@@ -954,7 +954,7 @@ defined_text = {
                     currency_uses_real = yes
                 }
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
@@ -962,7 +962,7 @@ defined_text = {
                     currency_uses_bitcoin = yes
                 }
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
@@ -970,79 +970,79 @@ defined_text = {
                     currency_uses_shekel = yes
                 }
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_currency_shekel_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_currency_shekel_texticon
         }
     }
     defined_text = {
@@ -1051,151 +1051,151 @@ defined_text = {
             trigger = {
                has_variable = afr_prosperity_mechanic_value
             }
-            localization_key = "currency_prosperity_texticon"
+            localization_key = scripted_loc_currency_prosperity_texticon
         }
         text = {
             trigger = {
                 currency_uses_dollar = yes
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
                 currency_uses_pound = yes
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
                 currency_uses_euro = yes
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
                 currency_uses_franc = yes
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
                 currency_uses_ruble = yes
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
                 currency_uses_rupee = yes
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
                 currency_uses_yen = yes
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
                 currency_uses_lira = yes
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
                 currency_uses_mark = yes
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
                 currency_uses_real = yes
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
                 currency_uses_bitcoin = yes
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
                 currency_uses_shekel = yes
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_currency_shekel_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_currency_shekel_texticon
         }
     }
     defined_text = {
@@ -1207,7 +1207,7 @@ defined_text = {
                     currency_uses_dollar = yes
                 }
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
@@ -1215,7 +1215,7 @@ defined_text = {
                     currency_uses_pound = yes
                 }
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
@@ -1223,7 +1223,7 @@ defined_text = {
                     currency_uses_euro = yes
                 }
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
@@ -1231,7 +1231,7 @@ defined_text = {
                     currency_uses_franc = yes
                 }
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
@@ -1239,7 +1239,7 @@ defined_text = {
                     currency_uses_ruble = yes
                 }
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
@@ -1247,7 +1247,7 @@ defined_text = {
                     currency_uses_rupee = yes
                 }
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
@@ -1255,7 +1255,7 @@ defined_text = {
                     currency_uses_yen = yes
                 }
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
@@ -1263,7 +1263,7 @@ defined_text = {
                     currency_uses_lira = yes
                 }
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
@@ -1271,7 +1271,7 @@ defined_text = {
                     currency_uses_mark = yes
                 }
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
@@ -1279,7 +1279,7 @@ defined_text = {
                     currency_uses_real = yes
                 }
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
@@ -1287,7 +1287,7 @@ defined_text = {
                     currency_uses_bitcoin = yes
                 }
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
@@ -1295,79 +1295,79 @@ defined_text = {
                     currency_uses_shekel = yes
                 }
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_currency_shekel_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_currency_pound_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_currency_dollar_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_currency_euro_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_currency_franc_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_currency_ruble_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_currency_rupee_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_currency_yen_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_currency_lira_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_currency_mark_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_currency_real_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_currency_bitcoin_texticon
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_currency_shekel_texticon
         }
     }
 #
@@ -1445,7 +1445,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = base_wage }
 			}
-			localization_key = "[GetAdjustedAmountNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 		}
 	}
 	defined_text = { # GetEmployed
@@ -1454,7 +1454,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = employed }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 		}
 	}
 	defined_text = { # GetJobs
@@ -1463,7 +1463,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = jobs }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 		}
 	}
 	defined_text = { # GetAvailableWorkforce
@@ -1472,7 +1472,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = available_workforce }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 		}
 	}
 	defined_text = { # GetPopDividends
@@ -1482,7 +1482,7 @@ defined_text = {
 				set_temp_variable = { amount_temp = aristocrats_dividends }
 				add_to_temp_variable = { amount_temp = capitalists_dividends }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 		}
 	}
 	defined_text = { # GetAristocratsDividends
@@ -1491,7 +1491,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = aristocrats_dividends }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 		}
 	}
 	defined_text = { # GetCapitalistsDividends
@@ -1500,7 +1500,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = capitalists_dividends }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 		}
 	}
 #
@@ -1512,10 +1512,10 @@ defined_text = {
             trigger = {
                 check_variable = { industrial_capacity_use > industrial_capacity }
             }
-            localization_key = "industrial_capacity_over_loc"
+            localization_key = scripted_loc_industrial_capacity_over_loc
         }
         text = {
-            localization_key = "industrial_capacity_under_loc"
+            localization_key = scripted_loc_industrial_capacity_under_loc
         }
     }
 
@@ -1526,7 +1526,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@var:v }
 				multiply_temp_variable = { bwr_temp = size@var:v }
 			}
-			localization_key = "[?bwr_temp]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym_K
 		}
 	}
 
@@ -1554,7 +1554,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@var:v }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_LBracketSym_GetEmploymentIconFromPercentRBracketSym
 		}
 	}
 	defined_text = { # GetIndustrySize
@@ -1563,7 +1563,7 @@ defined_text = {
 			trigger = {
 				check_variable = { construction@var:v = 0 }
 			}
-			localization_key = "[?size@var:v]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_sizeAtSym_varColonSym_vRBracketSym
 		}
 		text = {
 			localization_key = industry_size_construction_loc
@@ -1606,7 +1606,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_goods@var:industry_token^pm_output_i }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryOutput0Loc - industry_token
@@ -1615,7 +1615,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 0 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryOutputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryOutput1Loc - industry_token
@@ -1624,7 +1624,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 1 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryOutputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryOutput2Loc - industry_token
@@ -1633,7 +1633,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 2 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryOutputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryOutput3Loc - industry_token
@@ -1642,7 +1642,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 3 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryOutputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryOutput4Loc - industry_token
@@ -1651,7 +1651,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 4 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryOutputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityLoc - industry_token
@@ -1661,7 +1661,7 @@ defined_text = {
 					set_temp_variable = { amount_temp = industrial_capacity@var:industry_token }
 					NOT = { check_variable = { amount_temp = 0 } }
 				}
-				localization_key = "industry_pm_industrial_capacity_loc"
+				localization_key = scripted_loc_industry_pm_industrial_capacity_loc
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityRevenue - industry_token
@@ -1670,7 +1670,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_industrial_capacity@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryShippingCapacityLoc - industry_token
@@ -1680,7 +1680,7 @@ defined_text = {
 					set_temp_variable = { amount_temp = shipping_capacity@var:industry_token }
 					NOT = { check_variable = { amount_temp = 0 } }
 				}
-				localization_key = "industry_pm_shipping_capacity_loc"
+				localization_key = scripted_loc_industry_pm_shipping_capacity_loc
 			}
 		}
 		defined_text = { # GetIndustryShippingCapacityRevenue - industry_token
@@ -1689,7 +1689,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_shipping_capacity@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInputLoc - industry_token, pm_input_i
@@ -1712,7 +1712,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = input_cost@var:industry_token^pm_input_i }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput0Loc - industry_token
@@ -1721,7 +1721,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 0 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput1Loc - industry_token
@@ -1730,7 +1730,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 1 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput2Loc - industry_token
@@ -1739,7 +1739,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 2 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput3Loc - industry_token
@@ -1748,7 +1748,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 3 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput4Loc - industry_token
@@ -1757,7 +1757,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 4 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput5Loc - industry_token
@@ -1766,7 +1766,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 5 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput6Loc - industry_token
@@ -1775,7 +1775,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 6 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput7Loc - industry_token
@@ -1784,7 +1784,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 7 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput8Loc - industry_token
@@ -1793,7 +1793,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 8 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput9Loc - industry_token
@@ -1802,7 +1802,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 9 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryInput10Loc - industry_token
@@ -1811,7 +1811,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 10 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityUseLoc - industry_token
@@ -1831,7 +1831,7 @@ defined_text = {
 					set_temp_variable = { amount_temp = expenses_industrial_capacity@var:industry_token }
 					NOT = { check_variable = { amount_temp = 0 } }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 
@@ -1843,7 +1843,7 @@ defined_text = {
 					set_temp_variable = { pm_temp = production_method@var:v }
 					set_temp_variable = { industry_token = v }
 				}
-				localization_key = "[GetPMLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryAMLoc - v
@@ -1854,7 +1854,7 @@ defined_text = {
 					set_temp_variable = { pm_temp = automation_method@var:v }
 					set_temp_variable = { industry_token = v }
 				}
-				localization_key = "[GetPMLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMLocRBracketSym
 			}
 		}
 	#
@@ -1883,13 +1883,13 @@ defined_text = {
 
 					divide_temp_variable = { construction_time_temp = modifier_temp }
 				}
-				localization_key = "[?construction_time_temp|1]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_construction_time_tempORSym_1RBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionTimeLeft - industry_token
 			name = GetIndustryConstructionTimeLeft
 			text = {
-				localization_key = "[?construction_time_left@var:industry_token|1]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_construction_time_leftAtSym_varColonSym_industry_tokenORSym_1RBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionCost - industry_token
@@ -1898,7 +1898,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = construction_cost@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInputLoc - industry_token, pm_input_i
@@ -1921,7 +1921,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = construction_cost@var:industry_token^pm_input_i }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput0Loc - industry_token
@@ -1930,7 +1930,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 0 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput1Loc - industry_token
@@ -1939,7 +1939,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 1 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput2Loc - industry_token
@@ -1948,7 +1948,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 2 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput3Loc - industry_token
@@ -1957,7 +1957,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 3 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput4Loc - industry_token
@@ -1966,7 +1966,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 4 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput5Loc - industry_token
@@ -1975,7 +1975,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 5 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput6Loc - industry_token
@@ -1984,7 +1984,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 6 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput7Loc - industry_token
@@ -1993,7 +1993,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 7 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput8Loc - industry_token
@@ -2002,7 +2002,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 8 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput9Loc - industry_token
@@ -2011,7 +2011,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 9 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput10Loc - industry_token
@@ -2020,7 +2020,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 10 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInputLocRBracketSym
 			}
 		}
 
@@ -2039,7 +2039,7 @@ defined_text = {
 					divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
 					set_temp_variable = { amount_temp = total_construction_cost_temp }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionTotalCost - v
@@ -2056,7 +2056,7 @@ defined_text = {
 					divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
 					set_temp_variable = { amount_temp = total_construction_cost_temp }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryConstructionProductivity - v
@@ -2068,7 +2068,7 @@ defined_text = {
 					else = { set_temp_variable = { pm_temp = controller:latest_production_method@var:v } }
 					get_pm_values = yes
 				}
-				localization_key = "[?productivity_temp|2+]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_productivity_tempORSym_2PlusSign_RBracketSym
 			}
 		}
 		
@@ -2080,7 +2080,7 @@ defined_text = {
 					set_temp_variable = { pm_temp = token:pm_industrial_complex }
 					set_temp_variable = { am_temp = token:pm_no_automation }
 				}
-				localization_key = "[GetIndustryConstructionTime]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionTimeRBracketSym
 			}
 		}
 		defined_text = { # GetIndustrialComplexConstructionInvestmentCost
@@ -2089,7 +2089,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { v = token:industrial_complex }
 				}
-				localization_key = "[GetIndustryConstructionInvestmentCost]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInvestmentCostRBracketSym
 			}
 		}
 		defined_text = { # GetIndustrialComplexConstructionTotalCost
@@ -2098,7 +2098,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { v = token:industrial_complex }
 				}
-				localization_key = "[GetIndustryConstructionTotalCost]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionTotalCostRBracketSym
 			}
 		}
 		defined_text = { # GetArmsFactoryConstructionTime
@@ -2109,7 +2109,7 @@ defined_text = {
 					set_temp_variable = { pm_temp = token:pm_arms_factory }
 					set_temp_variable = { am_temp = token:pm_no_automation }
 				}
-				localization_key = "[GetIndustryConstructionTime]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionTimeRBracketSym
 			}
 		}
 		defined_text = { # GetArmsFactoryConstructionInvestmentCost
@@ -2118,7 +2118,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { v = token:arms_factory }
 				}
-				localization_key = "[GetIndustryConstructionInvestmentCost]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInvestmentCostRBracketSym
 			}
 		}
 		defined_text = { # GetArmsFactoryConstructionTotalCost
@@ -2127,7 +2127,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { v = token:arms_factory }
 				}
-				localization_key = "[GetIndustryConstructionTotalCost]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionTotalCostRBracketSym
 			}
 		}
 		defined_text = { # GetDockyardConstructionTime
@@ -2138,7 +2138,7 @@ defined_text = {
 					set_temp_variable = { pm_temp = token:pm_dockyard }
 					set_temp_variable = { am_temp = token:pm_no_automation }
 				}
-				localization_key = "[GetIndustryConstructionTime]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionTimeRBracketSym
 			}
 		}
 		defined_text = { # GetDockyardConstructionInvestmentCost
@@ -2147,7 +2147,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { v = token:dockyard }
 				}
-				localization_key = "[GetIndustryConstructionInvestmentCost]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionInvestmentCostRBracketSym
 			}
 		}
 		defined_text = { # GetDockyardConstructionTotalCost
@@ -2156,7 +2156,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { v = token:dockyard }
 				}
-				localization_key = "[GetIndustryConstructionTotalCost]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryConstructionTotalCostRBracketSym
 			}
 		}
 	#
@@ -2219,13 +2219,13 @@ defined_text = {
 
 					divide_temp_variable = { retooling_time_temp = modifier_temp }
 				}
-				localization_key = "[?retooling_time_temp|1]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_retooling_time_tempORSym_1RBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingTimeLeft - industry_token
 			name = GetIndustryRetoolingTimeLeft
 			text = {
-				localization_key = "[?retooling_time_left@var:industry_token|1]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_retooling_time_leftAtSym_varColonSym_industry_tokenORSym_1RBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingCost - industry_token
@@ -2234,7 +2234,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = retooling_cost@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInputLoc - industry_token, pm_input_i
@@ -2257,7 +2257,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = retooling_cost@var:industry_token^pm_input_i }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput0Loc - industry_token
@@ -2266,7 +2266,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 0 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput1Loc - industry_token
@@ -2275,7 +2275,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 1 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput2Loc - industry_token
@@ -2284,7 +2284,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 2 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput3Loc - industry_token
@@ -2293,7 +2293,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 3 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput4Loc - industry_token
@@ -2302,7 +2302,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 4 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput5Loc - industry_token
@@ -2311,7 +2311,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 5 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput6Loc - industry_token
@@ -2320,7 +2320,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 6 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput7Loc - industry_token
@@ -2329,7 +2329,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 7 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput8Loc - industry_token
@@ -2338,7 +2338,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 8 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput9Loc - industry_token
@@ -2347,7 +2347,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 9 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput10Loc - industry_token
@@ -2356,7 +2356,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 10 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetIndustryRetoolingInputLocRBracketSym
 			}
 		}
 	#
@@ -2385,7 +2385,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRevenueGoods - industry_token
@@ -2394,7 +2394,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_goods@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityRevenue - industry_token
@@ -2403,7 +2403,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_industrial_capacity@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryRevenueSubsidies - industry_token
@@ -2412,7 +2412,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_subsidies@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryExpenses - industry_token
@@ -2421,7 +2421,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = expenses@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryExpensesInput - industry_token
@@ -2430,7 +2430,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = expenses_input@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryExpensesPayroll - industry_token
@@ -2439,7 +2439,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = expenses_payroll@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityUsageExpenses - industry_token
@@ -2448,7 +2448,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = expenses_industrial_capacity@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryProfit - industry_token
@@ -2457,7 +2457,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = profit@var:industry_token }
 				}
-				localization_key = "[GetPositiveAdjustedAmount]"
+				localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryProfitability - industry_token
@@ -2466,7 +2466,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = profitability@var:industry_token }
 				}
-				localization_key = "[?amount_temp|+=2%]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_amount_tempORSym_PlusSign_EqualsSign_2PercentSym_RBracketSym
 			}
 		}
 		defined_text = { # GetIndustryDividends - industry_token
@@ -2475,7 +2475,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = dividends@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryMoney - industry_token
@@ -2484,7 +2484,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = money@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmount]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryMoneyLimit - industry_token
@@ -2493,7 +2493,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = money_limit@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryMoneyAccumulation - industry_token
@@ -2502,7 +2502,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = money_accumulation@var:industry_token }
 				}
-				localization_key = "[GetPositiveAdjustedAmount]"
+				localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryProductivityV - v
@@ -2512,21 +2512,21 @@ defined_text = {
 					set_temp_variable = { amount_temp = productivity@var:v }
 					check_variable = { amount_temp < 0 }
 				}
-				localization_key = "[GetRed][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { amount_temp = productivity@var:v }
 					check_variable = { amount_temp > base_wage }
 				}
-				localization_key = "[GetGreen][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { amount_temp = productivity@var:v }
 					check_variable = { amount_temp > 0 }
 				}
-				localization_key = "[GetYellow][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryProductivity - industry_token
@@ -2536,21 +2536,21 @@ defined_text = {
 					set_temp_variable = { amount_temp = productivity@var:industry_token }
 					NOT = { check_variable = { amount_temp > 0 } }
 				}
-				localization_key = "[GetRed][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { amount_temp = productivity@var:industry_token }
 					check_variable = { amount_temp > base_wage }
 				}
-				localization_key = "[GetGreen][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { amount_temp = productivity@var:industry_token }
 					check_variable = { amount_temp > 0 }
 				}
-				localization_key = "[GetYellow][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 			}
 		}
 	#
@@ -2570,7 +2570,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryJobs - industry_token
@@ -2579,7 +2579,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryLaborersLoc - industry_token
@@ -2597,7 +2597,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = laborers_employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryLaborersJobs - industry_token
@@ -2606,7 +2606,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = laborers_jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryWorkersLoc - industry_token
@@ -2624,7 +2624,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = workers_employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryWorkersJobs - industry_token
@@ -2633,7 +2633,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = workers_jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryProfessionalsLoc - industry_token
@@ -2651,7 +2651,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = professionals_employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryProfessionalsJobs - industry_token
@@ -2660,7 +2660,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = professionals_jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustrySpecialistsLoc - industry_token
@@ -2678,7 +2678,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = specialists_employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustrySpecialistsJobs - industry_token
@@ -2687,20 +2687,20 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = specialists_jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 		defined_text = { # GetIndustryEmploymentPercentage - industry_token
 			name = GetIndustryEmploymentPercentage
 			text = {
-				localization_key = "[?employment_percentage@var:industry_token|2]%"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_employment_percentageAtSym_varColonSym_industry_tokenORSym_2RBracketSym_PercentSym
 			}
 		}
 
 		defined_text = { # GetIndustryEmploymentTarget - industry_token
 			name = GetIndustryEmploymentTarget
 			text = {
-				localization_key = "[?employment_target@var:industry_token|2]%"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_employment_targetAtSym_varColonSym_industry_tokenORSym_2RBracketSym_PercentSym
 			}
 		}
 		defined_text = { # GetIndustryEmploymentAmount - industry_token
@@ -2717,7 +2717,7 @@ defined_text = {
 						divide_temp_variable = { amount_temp = 100 }
 					}
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 			}
 		}
 	#
@@ -2731,7 +2731,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:infrastructure }
 				multiply_temp_variable = { bwr_temp = size@token:infrastructure }
 			}
-			localization_key = "[?bwr_temp]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym_K
 		}
 	}
 	defined_text = { # GetInfrastructurePMTotalLoc
@@ -2750,7 +2750,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:infrastructure }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_LBracketSym_GetEmploymentIconFromPercentRBracketSym
 		}
 	}
 	defined_text = { # GetInfrastructureEmployment
@@ -2798,7 +2798,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:infrastructure }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_LBracketSym_GetIndustryProductivityRBracketSym
 		}
 	}
 	defined_text = { # GetInfrastructurePMLoc
@@ -2809,7 +2809,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = production_method@token:infrastructure }
 				set_temp_variable = { industry_token = token:infrastructure }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_LBracketSym_GetPMLocRBracketSym
 		}
 	}
 	defined_text = { # GetInfrastructurePMRetooling
@@ -2832,7 +2832,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:railway }
 				multiply_temp_variable = { bwr_temp = size@token:railway }
 			}
-			localization_key = "[?bwr_temp]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym_K
 		}
 	}
 	defined_text = { # GetRailwayPMTotalLoc
@@ -2851,7 +2851,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:railway }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_LBracketSym_GetEmploymentIconFromPercentRBracketSym
 		}
 	}
 	defined_text = { # GetRailwayEmployment
@@ -2899,7 +2899,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:railway }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_LBracketSym_GetIndustryProductivityRBracketSym
 		}
 	}
 	defined_text = { # GetRailwayPMLoc
@@ -2910,7 +2910,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = production_method@token:railway }
 				set_temp_variable = { industry_token = token:railway }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_LBracketSym_GetPMLocRBracketSym
 		}
 	}
 	defined_text = { # GetRailwayAMLoc
@@ -2921,7 +2921,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = automation_method@token:railway }
 				set_temp_variable = { industry_token = token:railway }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_LBracketSym_GetPMLocRBracketSym
 		}
 	}
 	defined_text = { # GetRailwayPMRetooling
@@ -2956,7 +2956,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:port }
 				multiply_temp_variable = { bwr_temp = size@token:port }
 			}
-			localization_key = "[?bwr_temp]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_bwr_tempRBracketSym_K
 		}
 	}
 	defined_text = { # GetPortPMTotalLoc
@@ -2975,7 +2975,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:port }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_LBracketSym_GetEmploymentIconFromPercentRBracketSym
 		}
 	}
 	defined_text = { # GetPortEmployment
@@ -3023,7 +3023,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:port }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_LBracketSym_GetIndustryProductivityRBracketSym
 		}
 	}
 	defined_text = { # GetPortPMLoc
@@ -3034,7 +3034,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = production_method@token:port }
 				set_temp_variable = { industry_token = token:port }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_LBracketSym_GetPMLocRBracketSym
 		}
 	}
 	defined_text = { # GetPortAMLoc
@@ -3045,7 +3045,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = automation_method@token:port }
 				set_temp_variable = { industry_token = token:port }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_LBracketSym_GetPMLocRBracketSym
 		}
 	}
 	defined_text = { # GetPortPMRetooling
@@ -3079,7 +3079,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:industrial_complex }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_LBracketSym_GetEmploymentIconFromPercentRBracketSym
 		}
 	}
 	defined_text = { # GetIndustrialComplexEmployment
@@ -3106,7 +3106,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:industrial_complex }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_LBracketSym_GetIndustryProductivityRBracketSym
 		}
 	}
 
@@ -3116,7 +3116,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:arms_factory }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_LBracketSym_GetEmploymentIconFromPercentRBracketSym
 		}
 	}
 	defined_text = { # GetArmsFactoryEmployment
@@ -3143,7 +3143,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:arms_factory }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_LBracketSym_GetIndustryProductivityRBracketSym
 		}
 	}
 
@@ -3153,7 +3153,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:dockyard }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_LBracketSym_GetEmploymentIconFromPercentRBracketSym
 		}
 	}
 	defined_text = { # GetDockyardEmployment
@@ -3180,7 +3180,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:dockyard }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_LBracketSym_GetIndustryProductivityRBracketSym
 		}
 	}
 #
@@ -3193,7 +3193,7 @@ defined_text = {
 				set_temp_variable = { v = token:subsistence_farm }
 				set_temp_variable = { industry_token = token:subsistence_farm }
 			}
-			localization_key = ""
+			localization_key = scripted_loc
 		}
 	}
 	defined_text = { # GetSubsFarmEmployed
@@ -3202,7 +3202,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:subsistence_farm }
 			}
-			localization_key = "[GetIndustryEmployed]"
+			localization_key = scripted_loc_LBracketSym_GetIndustryEmployedRBracketSym
 		}
 	}
 	defined_text = { # GetSubsFarmJobs
@@ -3211,7 +3211,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:subsistence_farm }
 			}
-			localization_key = "[GetIndustryJobs]"
+			localization_key = scripted_loc_LBracketSym_GetIndustryJobsRBracketSym
 		}
 	}
 	defined_text = { # GetSubsFarmOwners
@@ -3222,7 +3222,7 @@ defined_text = {
 				multiply_temp_variable = { amount_temp = employment_target@token:subsistence_farm }
 				divide_temp_variable = { amount_temp = 100 }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 		}
 	}
 	defined_text = { # GetSubsFarmMarginalLandUsage
@@ -3231,7 +3231,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = peasants_marginal_land }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 		}
 	}
 	defined_text = { # GetSubsFarmRevenue
@@ -3240,7 +3240,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = revenue@token:subsistence_farm }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSubsFarmPayroll
@@ -3249,7 +3249,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = expenses_payroll@token:subsistence_farm }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSubsFarmDividends
@@ -3258,7 +3258,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = dividends@token:subsistence_farm }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSubsFarmProductivity
@@ -3268,21 +3268,21 @@ defined_text = {
 				set_temp_variable = { amount_temp = productivity@token:subsistence_farm }
 				NOT = { check_variable = { amount_temp > 0 } }
 			}
-			localization_key = "[GetRed][GetAdjustedAmountNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 		}
 		text = {
 			trigger = {
 				set_temp_variable = { amount_temp = productivity@token:subsistence_farm }
 				check_variable = { amount_temp > 1 }
 			}
-			localization_key = "[GetGreen][GetAdjustedAmountNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 		}
 		text = {
 			trigger = {
 				set_temp_variable = { amount_temp = productivity@token:subsistence_farm }
 				check_variable = { amount_temp > 0 }
 			}
-			localization_key = "[GetYellow][GetAdjustedAmountNoSign]"
+			localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 		}
 	}
 #
@@ -3434,7 +3434,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 0 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput1Loc - industry_token
@@ -3443,7 +3443,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 1 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput2Loc - industry_token
@@ -3452,7 +3452,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 2 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput3Loc - industry_token
@@ -3461,7 +3461,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 3 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput4Loc - industry_token
@@ -3470,7 +3470,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 4 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput5Loc - industry_token
@@ -3479,7 +3479,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 5 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput6Loc - industry_token
@@ -3488,7 +3488,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 6 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput7Loc - industry_token
@@ -3497,7 +3497,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 7 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput8Loc - industry_token
@@ -3506,7 +3506,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 8 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput9Loc - industry_token
@@ -3515,7 +3515,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 9 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMInput10Loc - industry_token
@@ -3524,7 +3524,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 10 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_LBracketSym_GetPMInputLocRBracketSym
 			}
 		}
 		defined_text = { # GetPMLaborersLoc - pm_temp
@@ -3586,7 +3586,7 @@ defined_text = {
 					set_temp_variable = { eco_of_scale_modifier_temp = 1 }
 					get_pm_values = yes
 				}
-				localization_key = "[?productivity_temp|2]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_productivity_tempORSym_2RBracketSym
 			}
 		}
 		defined_text = { # GetAMWageProfitability
@@ -3596,7 +3596,7 @@ defined_text = {
 					set_temp_variable = { eco_of_scale_modifier_temp = 1 }
 					get_pm_values = yes
 				}
-				localization_key = "[?productivity_temp|2]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_productivity_tempORSym_2RBracketSym
 			}
 		}
 	#
@@ -3654,7 +3654,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = v }
 				set_temp_variable = { am_check = ROOT.selected_pm_type }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_LBracketSym_GetPMLocRBracketSym
 		}
 	}
 	defined_text = { # GetPMListRetoolingLoc - v
@@ -3665,7 +3665,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = v }
 				set_temp_variable = { am_check = ROOT.selected_pm_type }
 			}
-			localization_key = "[GetPMRetoolingLoc]"
+			localization_key = scripted_loc_LBracketSym_GetPMRetoolingLocRBracketSym
 		}
 	}
 	defined_text = { # GetPMListRetoolingTime - v
@@ -3679,7 +3679,7 @@ defined_text = {
 
 				divide_temp_variable = { retooling_time_temp = modifier_temp }
 			}
-			localization_key = "[?retooling_time_temp|1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_retooling_time_tempORSym_1RBracketSym
 		}
 	}
 #
@@ -3693,7 +3693,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3701,7 +3701,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3709,28 +3709,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_fund_all_cost > 99.999 }
 			}
-			localization_key = "[?investment_opportunity_fund_all_cost|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_fund_all_costORSym_0RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_fund_all_cost > 9.999 }
 			}
-			localization_key = "[?investment_opportunity_fund_all_cost|1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_fund_all_costORSym_1RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_fund_all_cost > 0.999 }
 			}
-			localization_key = "[?investment_opportunity_fund_all_cost|2]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_fund_all_costORSym_2RBracketSym
 		}
 		text = {
-			localization_key = "[?investment_opportunity_fund_all_cost|3]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_fund_all_costORSym_3RBracketSym
 		}
 	}
 
@@ -3761,7 +3761,7 @@ defined_text = {
 			localization_key = investment_opportunity_upgrade_am
 		}
 		text = {
-			localization_key = "[?investment_opportunity_building@var:v.GetTokenLocalizedKey]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_buildingAtSym_varColonSym_vPeriodMark_GetTokenLocalizedKeyRBracketSym
 		}
 	}
 	defined_text = {
@@ -3781,7 +3781,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3789,7 +3789,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3797,28 +3797,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_investment@var:v > 99.999 }
 			}
-			localization_key = "[?investment_opportunity_investment@var:v|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_investmentAtSym_varColonSym_vORSym_0RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_investment@var:v > 9.999 }
 			}
-			localization_key = "[?investment_opportunity_investment@var:v|1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_investmentAtSym_varColonSym_vORSym_1RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_investment@var:v > 0.999 }
 			}
-			localization_key = "[?investment_opportunity_investment@var:v|2]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_investmentAtSym_varColonSym_vORSym_2RBracketSym
 		}
 		text = {
-			localization_key = "[?investment_opportunity_investment@var:v|3]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_investmentAtSym_varColonSym_vORSym_3RBracketSym
 		}
 	}
 	defined_text = {
@@ -3829,7 +3829,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3837,7 +3837,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3845,28 +3845,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_cost@var:v > 99.999 }
 			}
-			localization_key = "[?investment_opportunity_cost@var:v|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_costAtSym_varColonSym_vORSym_0RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_cost@var:v > 9.999 }
 			}
-			localization_key = "[?investment_opportunity_cost@var:v|1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_costAtSym_varColonSym_vORSym_1RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_cost@var:v > 0.999 }
 			}
-			localization_key = "[?investment_opportunity_cost@var:v|2]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_costAtSym_varColonSym_vORSym_2RBracketSym
 		}
 		text = {
-			localization_key = "[?investment_opportunity_cost@var:v|3]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_investment_opportunity_costAtSym_varColonSym_vORSym_3RBracketSym
 		}
 	}
 	defined_text = {
@@ -3887,7 +3887,7 @@ defined_text = {
 			trigger = {
 				NOT = { check_variable = { investment_opportunity_cost@var:v > investment_opportunity_investment@var:v } }
 			}
-			localization_key = "0.000"
+			localization_key = scripted_loc_0PeriodMark_000
 		}
 		text = {
 			trigger = {
@@ -3899,7 +3899,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3907,7 +3907,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -3915,28 +3915,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
 				check_variable = { cost_temp > 99.999 }
 			}
-			localization_key = "[?cost_temp|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_cost_tempORSym_0RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { cost_temp > 9.999 }
 			}
-			localization_key = "[?cost_temp|1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_cost_tempORSym_1RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { cost_temp > 0.999 }
 			}
-			localization_key = "[?cost_temp|2]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_cost_tempORSym_2RBracketSym
 		}
 		text = {
-			localization_key = "[?cost_temp|3]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_cost_tempORSym_3RBracketSym
 		}
 	}
 	defined_text = {
@@ -3986,7 +3986,7 @@ defined_text = {
 				divide_temp_variable = { rel_pr = global.base_price@token:food }
 				subtract_from_temp_variable = { rel_pr = 1 }
             }
-            localization_key = "[?rel_pr|1-=%]"
+            localization_key = scripted_loc_LBracketSym_QuestionMark_rel_prORSym_1-EqualsSign_PercentSym_RBracketSym
         }
     }
     # defined_text = {
@@ -4256,13 +4256,13 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 0 }
                 }
-                localization_key = "[GetCorpBeginning][GetCorpEnding]"
+                localization_key = scripted_loc_LBracketSym_GetCorpBeginningRBracketSym_LBracketSym_GetCorpEndingRBracketSym
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 1 }
                 }
-                localization_key = "[GetCorpWhole]"
+                localization_key = scripted_loc_LBracketSym_GetCorpWholeRBracketSym
             }
             #Unique Names
 
@@ -4271,73 +4271,73 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 10 }
                 }
-                localization_key = "US Steel" #Pops up in 1883 via 'Carnegie Acquires Homestead Steel Works'
+                localization_key = scripted_loc_US_Steel
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 11 }
                 }
-                localization_key = "Standard Oil" #Pops up in 1870
+                localization_key = scripted_loc_Standard_Oil
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 12 }
                 }
-                localization_key = "General Electric" #Pops up after 'War of the Currents.' Either this or WE will exist
+                localization_key = scripted_loc_General_Electric
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 13 }
                 }
-                localization_key = "General Motors" #1900
+                localization_key = scripted_loc_General_Motors
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 14 }
                 }
-                localization_key = "American Tobacco Company" #1890
+                localization_key = scripted_loc_American_Tobacco_Company
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 15 }
                 }
-                localization_key = "Vanderbilt Railroads" #1863 (Acquisition of New York & Harlem RR)
+                localization_key = scripted_loc_Vanderbilt_Railroads
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 16 }
                 }
-                localization_key = "PepsiCo" #1965, if Coca-Cola no longer exists
+                localization_key = scripted_loc_PepsiCo
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 17 }
                 }
-                localization_key = "Coca-Cola" #1885
+                localization_key = scripted_loc_Coca-Cola
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 18 }
                 }
-                localization_key = "Nestle" #1866
+                localization_key = scripted_loc_Nestle
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 19 }
                 }
-                localization_key = "Westinghouse Electric" #Pops up after 'War of the Currents.' Either this or GE will exist
+                localization_key = scripted_loc_Westinghouse_Electric
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 20 }
                 }
-                localization_key = "Ford Motors" #1901
+                localization_key = scripted_loc_Ford_Motors
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 21 }
                 }
-                localization_key = "Union Pacific" #Transcontinental RR construction
+                localization_key = scripted_loc_Union_Pacific
             }
 
             #Japanese
@@ -4345,25 +4345,25 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 51 }
                 }
-                localization_key = "Mitsubishi"
+                localization_key = scripted_loc_Mitsubishi
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 52 }
                 }
-                localization_key = "Yasuda"
+                localization_key = scripted_loc_Yasuda
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 53 }
                 }
-                localization_key = "Mitsui Group"
+                localization_key = scripted_loc_Mitsui_Group
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 54 }
                 }
-                localization_key = "Sumitomo Group"
+                localization_key = scripted_loc_Sumitomo_Group
             }
 
             #German
@@ -4371,37 +4371,37 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 101 }
                 }
-                localization_key = "Lufthansa"
+                localization_key = scripted_loc_Lufthansa
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 102 }
                 }
-                localization_key = "Daimler"
+                localization_key = scripted_loc_Daimler
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 103 }
                 }
-                localization_key = "Siemens"
+                localization_key = scripted_loc_Siemens
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 104 }
                 }
-                localization_key = "RWKS" #Rheinish-Westphalian Coal Syndicate. 54% of coal in Germany, 93% coal of Ruhr
+                localization_key = scripted_loc_RWKS
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 105 }
                 }
-                localization_key = "IG Farben"
+                localization_key = scripted_loc_IG_Farben
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 106 }
                 }
-                localization_key = "Krupp"
+                localization_key = scripted_loc_Krupp
             }
 
             #Austria/Czechoslovakia/Hungary/Balkans
@@ -4409,19 +4409,19 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 151 }
                 }
-                localization_key = "Steyr-Daimler-Puch"
+                localization_key = scripted_loc_Steyr-Daimler-Puch
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 152 }
                 }
-                localization_key = "Skoda"
+                localization_key = scripted_loc_Skoda
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 153 }
                 }
-                localization_key = "Ganz Works"
+                localization_key = scripted_loc_Ganz_Works
             }
 
             #British
@@ -4429,31 +4429,31 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 201 }
                 }
-                localization_key = "British Petroleum"
+                localization_key = scripted_loc_British_Petroleum
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 202 }
                 }
-                localization_key = "Rolls-Royce"
+                localization_key = scripted_loc_Rolls-Royce
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 203 }
                 }
-                localization_key = "Twinings"
+                localization_key = scripted_loc_Twinings
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 204 }
                 }
-                localization_key = "Wedgwood"
+                localization_key = scripted_loc_Wedgwood
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 205 }
                 }
-                localization_key = "Cadbury"
+                localization_key = scripted_loc_Cadbury
             }
 
             #French
@@ -4461,7 +4461,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 251 }
                 }
-                localization_key = "Renault"
+                localization_key = scripted_loc_Renault
             }
 
             #Arabian
@@ -4469,7 +4469,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 301 }
                 }
-                localization_key = "Aramco"
+                localization_key = scripted_loc_Aramco
             }
 
             #Scandinavian
@@ -4477,25 +4477,25 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 351 }
                 }
-                localization_key = "Aker" #Conglomerate (Shipping mostly)
+                localization_key = scripted_loc_Aker
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 352 }
                 }
-                localization_key = "Smedvig" #Oil
+                localization_key = scripted_loc_Smedvig
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 353 }
                 }
-                localization_key = "Norske Skog" #Lumber
+                localization_key = scripted_loc_Norske_Skog
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 353 }
                 }
-                localization_key = "Christiana Spigerverk" #Steel
+                localization_key = scripted_loc_Christiana_Spigerverk
             }
 
         }
@@ -4506,145 +4506,145 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_first_name = 0 }
                 }
-                localization_key = "Santander"
+                localization_key = scripted_loc_Santander
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 1 }
                 }
-                localization_key = "Woolsworths"
+                localization_key = scripted_loc_Woolsworths
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 2 }
                 }
-                localization_key = "Eaton"
+                localization_key = scripted_loc_Eaton
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 3 }
                 }
-                localization_key = "Stryker"
+                localization_key = scripted_loc_Stryker
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 4 }
                 }
-                localization_key = "Vivendi"
+                localization_key = scripted_loc_Vivendi
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 5 }
                 }
-                localization_key = "BCE"
+                localization_key = scripted_loc_BCE
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 6 }
                 }
-                localization_key = "Applied Materials"
+                localization_key = scripted_loc_Applied_Materials
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 7 }
                 }
-                localization_key = "Inditex"
+                localization_key = scripted_loc_Inditex
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 8 }
                 }
-                localization_key = "Ericsson"
+                localization_key = scripted_loc_Ericsson
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 9 }
                 }
-                localization_key = "Kering"
+                localization_key = scripted_loc_Kering
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 10 }
                 }
-                localization_key = "Diageo"
+                localization_key = scripted_loc_Diageo
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 11 }
                 }
-                localization_key = "Tesla"
+                localization_key = scripted_loc_Tesla
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 12 }
                 }
-                localization_key = "Edison"
+                localization_key = scripted_loc_Edison
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 13 }
                 }
-                localization_key = "Falcor"
+                localization_key = scripted_loc_Falcor
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 14 }
                 }
-                localization_key = "Dow"
+                localization_key = scripted_loc_Dow
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 15 }
                 }
-                localization_key = "Amgen"
+                localization_key = scripted_loc_Amgen
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 16 }
                 }
-                localization_key = "3M"
+                localization_key = scripted_loc_3M
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 17 }
                 }
-                localization_key = "Exelon"
+                localization_key = scripted_loc_Exelon
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 18 }
                 }
-                localization_key = "CNOOC"
+                localization_key = scripted_loc_CNOOC
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 19 }
                 }
-                localization_key = "CK Hutchinson"
+                localization_key = scripted_loc_CK_Hutchinson
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 20 }
                 }
-                localization_key = "Travelers"
+                localization_key = scripted_loc_Travelers
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 21 }
                 }
-                localization_key = "Rio Tinto"
+                localization_key = scripted_loc_Rio_Tinto
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 22 }
                 }
-                localization_key = "UBS"
+                localization_key = scripted_loc_UBS
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 23 }
                 }
-                localization_key = "Amazon"
+                localization_key = scripted_loc_Amazon
             }
         }
 
@@ -4654,169 +4654,169 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_first_name = 0 }
                 }
-                localization_key = "[This.GetName]"
+                localization_key = scripted_loc_LBracketSym_ThisPeriodMark_GetNameRBracketSym
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 1 }
                 }
-                localization_key = "Oracle"
+                localization_key = scripted_loc_Oracle
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 2 }
                 }
-                localization_key = "Summit"
+                localization_key = scripted_loc_Summit
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 3 }
                 }
-                localization_key = "Dynamic"
+                localization_key = scripted_loc_Dynamic
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 4 }
                 }
-                localization_key = "Eclipse"
+                localization_key = scripted_loc_Eclipse
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 5 }
                 }
-                localization_key = "Green"
+                localization_key = scripted_loc_Green
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 6 }
                 }
-                localization_key = "Eclipse"
+                localization_key = scripted_loc_Eclipse
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 7 }
                 }
-                localization_key = "Reliance"
+                localization_key = scripted_loc_Reliance
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 8 }
                 }
-                localization_key = "Anthem"
+                localization_key = scripted_loc_Anthem
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 9 }
                 }
-                localization_key = "Charter"
+                localization_key = scripted_loc_Charter
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 10 }
                 }
-                localization_key = "Abbot"
+                localization_key = scripted_loc_Abbot
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 11 }
                 }
-                localization_key = "Johnson"
+                localization_key = scripted_loc_Johnson
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 12 }
                 }
-                localization_key = "Caterpillar"
+                localization_key = scripted_loc_Caterpillar
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 13 }
                 }
-                localization_key = "General"
+                localization_key = scripted_loc_General
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 14 }
                 }
-                localization_key = "Charles"
+                localization_key = scripted_loc_Charles
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 15 }
                 }
-                localization_key = "Arkham"
+                localization_key = scripted_loc_Arkham
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 16 }
                 }
-                localization_key = "Stark"
+                localization_key = scripted_loc_Stark
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 17 }
                 }
-                localization_key = "Orange"
+                localization_key = scripted_loc_Orange
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 18 }
                 }
-                localization_key = "Wayne"
+                localization_key = scripted_loc_Wayne
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 19 }
                 }
-                localization_key = "Oliver"
+                localization_key = scripted_loc_Oliver
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 20 }
                 }
-                localization_key = "Luther"
+                localization_key = scripted_loc_Luther
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 21 }
                 }
-                localization_key = "Union"
+                localization_key = scripted_loc_Union
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 22 }
                 }
-                localization_key = "Duke"
+                localization_key = scripted_loc_Duke
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 23 }
                 }
-                localization_key = "Hammer"
+                localization_key = scripted_loc_Hammer
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 24 }
                 }
-                localization_key = "Staine"
+                localization_key = scripted_loc_Staine
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 25 }
                 }
-                localization_key = "National"
+                localization_key = scripted_loc_National
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 26 }
                 }
-                localization_key = "Total"
+                localization_key = scripted_loc_Total
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 27 }
                 }
-                localization_key = "Imperial"
+                localization_key = scripted_loc_Imperial
             }
         }
 
@@ -4826,7 +4826,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_last_name = 0 }
                 }
-                localization_key = ""
+                localization_key = scripted_loc
             }
             text = {
                 trigger = {
@@ -4969,7 +4969,7 @@ defined_text = {
 	defined_text = { # GetRevenueAmount
 		name = GetRevenueAmount
 		text = {
-			localization_key = "[GetRevenueColor][GetAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueColorRBracketSym_LBracketSym_GetAdjustedAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSpendingAmount
@@ -4978,7 +4978,7 @@ defined_text = {
 			trigger = {
 				multiply_temp_variable = { amount_temp = -1 }
 			}
-			localization_key = "[GetSpendingColor][GetAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingColorRBracketSym_LBracketSym_GetAdjustedAmountRBracketSym
 		}
 	}
 
@@ -4988,7 +4988,7 @@ defined_text = {
 			trigger = {
 				has_variable = afr_prosperity_mechanic_value
 			}
-			localization_key = "[?afr_prosperity_mechanic_value|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_afr_prosperity_mechanic_valueORSym_0RBracketSym
 		}
 		text = {
 			trigger = {
@@ -4996,7 +4996,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5004,7 +5004,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5012,28 +5012,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_2RBracketSym_K
 		}
 		text = {
 			trigger = {
 				check_variable = { treasury > 99.999 }
 			}
-			localization_key = "[?treasury|0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_treasuryORSym_0RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { treasury > 9.999 }
 			}
-			localization_key = "[?treasury|1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_treasuryORSym_1RBracketSym
 		}
 		text = {
 			trigger = {
 				check_variable = { treasury > 0.999 }
 			}
-			localization_key = "[?treasury|2]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_treasuryORSym_2RBracketSym
 		}
 		text = {
-			localization_key = "[?treasury|3]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_treasuryORSym_3RBracketSym
 		}
 	}
 	defined_text = { # GetNetBudgetAmount
@@ -5042,7 +5042,7 @@ defined_text = {
 			trigger = {
 				has_variable = afr_prosperity_mechanic_value
 			}
-			localization_key = ""
+			localization_key = scripted_loc
 		}
 		text = {
 			trigger = {
@@ -5053,7 +5053,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|=0]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_0RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5064,7 +5064,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|=1]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_1RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5075,7 +5075,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|=2]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_invest_tempORSym_EqualsSign_2RBracketSym_K
 		}
 		text = {
 			trigger = {
@@ -5084,7 +5084,7 @@ defined_text = {
 					check_variable = { net_budget < -99.999 }
 				}
 			}
-			localization_key = "[?net_budget|=0]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_net_budgetORSym_EqualsSign_0RBracketSym
 		}
 		text = {
 			trigger = {
@@ -5093,7 +5093,7 @@ defined_text = {
 					check_variable = { net_budget < -9.999 }
 				}
 			}
-			localization_key = "[?net_budget|=1]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_net_budgetORSym_EqualsSign_1RBracketSym
 		}
 		text = {
 			trigger = {
@@ -5102,10 +5102,10 @@ defined_text = {
 					check_variable = { net_budget < -0.999 }
 				}
 			}
-			localization_key = "[?net_budget|=2]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_net_budgetORSym_EqualsSign_2RBracketSym
 		}
 		text = {
-			localization_key = "[?net_budget|=3]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_net_budgetORSym_EqualsSign_3RBracketSym
 		}
 	}
 	defined_text = { # GetNetBudgetColor
@@ -5133,7 +5133,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_upper_strata_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetMiddleStrataIncomeTaxRevenue
@@ -5142,7 +5142,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_middle_strata_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetLowerStrataIncomeTaxRevenue
@@ -5151,7 +5151,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_lower_strata_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetIncomeTaxRevenue
@@ -5160,7 +5160,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSalesTaxRevenue
@@ -5169,7 +5169,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = sales_tax_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetCorporateTaxRevenue
@@ -5178,7 +5178,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = corporate_tax_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetOtherRevenue
@@ -5187,7 +5187,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = other_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetPublicEnterpriseRevenue
@@ -5196,7 +5196,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = public_enterprise_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetModifierRevenue
@@ -5205,7 +5205,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = modifier_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 	defined_text = { # GetRevenue
@@ -5214,7 +5214,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_LBracketSym_GetRevenueAmountRBracketSym
 		}
 	}
 
@@ -5224,7 +5224,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_upper_strata_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetMiddleStrataIncomeTaxCorruption
@@ -5233,7 +5233,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_middle_strata_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetLowerStrataIncomeTaxCorruption
@@ -5242,7 +5242,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_lower_strata_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetIncomeTaxCorruption
@@ -5251,7 +5251,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetIncomeTaxCorruption
@@ -5260,7 +5260,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSalesTaxCorruption
@@ -5269,7 +5269,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = sales_tax_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetCorporateTaxCorruption
@@ -5278,7 +5278,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = corporate_tax_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetOtherCorruption
@@ -5287,7 +5287,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = other_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetPublicEnterpriseCorruption
@@ -5296,7 +5296,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = public_enterprise_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetModifierCorruption
@@ -5305,7 +5305,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = modifier_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetCorruption
@@ -5314,13 +5314,13 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetTaxEffectsLoc
 		name = GetTaxEffectsLoc
 		text = {
-			localization_key = "tax_effects_loc"
+			localization_key = scripted_loc_tax_effects_loc
 		}
 	}
 
@@ -5330,7 +5330,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = import_tariffs }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 		}
 	}
 	defined_text = { # GetExportTariffs
@@ -5339,7 +5339,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = export_tariffs }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 		}
 	}
 	defined_text = { # GetNetTariffs
@@ -5348,7 +5348,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = net_tariffs }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 		}
 	}
 
@@ -5358,7 +5358,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = import_tariffs_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetExportTariffsCorruption
@@ -5367,7 +5367,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = export_tariffs_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetTariffsCorruption
@@ -5376,7 +5376,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = tariff_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 
@@ -5386,7 +5386,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetArmyMilitarySpending
@@ -5395,7 +5395,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_army_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetNavyMilitarySpending
@@ -5404,7 +5404,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_navy_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetAirforceMilitarySpending
@@ -5413,7 +5413,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_airforce_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetResearchSpending
@@ -5422,7 +5422,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = research_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetConstructionSpending
@@ -5431,7 +5431,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = construction_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetProjectsSpending
@@ -5440,7 +5440,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = projects_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSubsidiesSpending
@@ -5449,7 +5449,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = subsidies_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetDiscretionarySpending
@@ -5458,7 +5458,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = discretionary_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 
@@ -5468,7 +5468,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = administration_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetMilitaryMandatorySpending
@@ -5477,7 +5477,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_mandatory_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetMilitaryPayrollSpending
@@ -5486,7 +5486,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_payroll_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetMilitaryIndustrySpending
@@ -5496,7 +5496,7 @@ defined_text = {
 				set_temp_variable = { amount_temp = military_production_payroll_spending }
 				add_to_temp_variable = { amount_temp = military_production_resources_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetMilitaryProductionPayrollSpending
@@ -5505,7 +5505,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_production_payroll_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetMilitaryProductionResourcesSpending
@@ -5514,7 +5514,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_production_resources_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetOrderAndIntelSpending
@@ -5523,7 +5523,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = order_and_intel_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSocialSpending
@@ -5532,7 +5532,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = social_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetEducationSpending
@@ -5541,7 +5541,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = education_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetHealthcareSpending
@@ -5550,7 +5550,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = healthcare_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetOtherSpending
@@ -5559,7 +5559,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = other_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetPublicEnterprisePayrollSpending
@@ -5568,7 +5568,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = public_enterprise_payroll_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetModifierSpending
@@ -5577,7 +5577,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = modifier_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetNationalDebtInterest
@@ -5586,7 +5586,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = national_debt_interest }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetMandatorySpending
@@ -5595,7 +5595,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = mandatory_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 	defined_text = { # GetSpending
@@ -5604,7 +5604,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_LBracketSym_GetSpendingAmountRBracketSym
 		}
 	}
 
@@ -5615,7 +5615,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = budget_graph_max }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 		}
 	}
 	defined_text = { # GetBudgetGraphMin
@@ -5624,7 +5624,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = budget_graph_min }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 		}
 	}
 #
@@ -5658,7 +5658,7 @@ defined_text = {
 				check_variable = { debt_amount_temp < 1000 }
 				check_variable = { gdp_amount < 10000 }
 			}
-			localization_key = "[?debt_amount_temp]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_debt_amount_tempRBracketSym
 		}
 		text = {
 			trigger = {
@@ -5667,7 +5667,7 @@ defined_text = {
 				multiply_temp_variable = { debt_amount_temp = gdp_amount }
 				divide_temp_variable = { debt_amount_temp = 2 }
 			}
-			localization_key = "[?debt_amount_temp]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_debt_amount_tempRBracketSym_K
 		}
 	}
 	defined_text = {
@@ -5677,7 +5677,7 @@ defined_text = {
 				set_temp_variable = { debt_amount_temp = debt_level }
 				divide_temp_variable = { debt_amount_temp = 24 }
 			}
-			localization_key = "[?debt_amount_temp|%]"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_debt_amount_tempORSym_PercentSym_RBracketSym
 		}
 	}
 	defined_text = {
@@ -5688,10 +5688,10 @@ defined_text = {
 				divide_temp_variable = { treasury_temp = 1000 }
 				check_variable = { treasury_temp < national_debt_k }
 			}
-			localization_key = "[?treasury_temp]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempRBracketSym_K
 		}
 		text = {
-			localization_key = "[?national_debt_k]K"
+			localization_key = scripted_loc_LBracketSym_QuestionMark_national_debt_kRBracketSym_K
 		}
 	}
     #Borrowing Money
@@ -5783,16 +5783,16 @@ defined_text = {
 					trigger = {
 						is_in_array = { global.resource_token_array = selected_resource }
 					}
-					localization_key = "[?selected_resource.GetTokenLocalizedKey]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_selected_resourcePeriodMark_GetTokenLocalizedKeyRBracketSym
 				}
 				text = {
 					trigger = {
 						has_country_flag = new_trade_route_view_open
 					}
-					localization_key = "selected_resource_choose_loc"
+					localization_key = scripted_loc_selected_resource_choose_loc
 				}
 				text = {
-					localization_key = "selected_resource_all_loc"
+					localization_key = scripted_loc_selected_resource_all_loc
 				}
 			}
 		#
@@ -5819,7 +5819,7 @@ defined_text = {
 							is_in_array = { global.resource_token_array = selected_resource }
 						}
 					}
-					localization_key = "selected_resource_choose_loc"
+					localization_key = scripted_loc_selected_resource_choose_loc
 				}
 				text = {
 					trigger = {
@@ -5828,7 +5828,7 @@ defined_text = {
 						set_temp_variable = { tmp = offers@var:selected_resource }
 						multiply_temp_variable = { tmp = -1 }
 					}
-					localization_key = "net_exporting"
+					localization_key = scripted_loc_net_exporting
 				}
 				text = {
 					trigger = {
@@ -5838,14 +5838,14 @@ defined_text = {
 						set_temp_variable = { percent_temp = trade@var:selected_resource }
 						divide_temp_variable = { percent_temp = offers@var:selected_resource }
 					}
-					localization_key = "net_exporting_capped"
+					localization_key = scripted_loc_net_exporting_capped
 				}
 				text = {
 					trigger = {
 						check_variable = { offers@var:selected_resource > 0 }
 						check_variable = { offers@var:selected_resource = trade@var:selected_resource }
 					}
-					localization_key = "net_importing"
+					localization_key = scripted_loc_net_importing
 				}
 				text = {
 					trigger = {
@@ -5853,10 +5853,10 @@ defined_text = {
 						set_temp_variable = { percent_temp = trade@var:selected_resource }
 						divide_temp_variable = { percent_temp = offers@var:selected_resource }
 					}
-					localization_key = "net_importing_capped"
+					localization_key = scripted_loc_net_importing_capped
 				}
 				text = {
-					localization_key = "net_no_trade"
+					localization_key = scripted_loc_net_no_trade
 				}
 			}
 			defined_text = {
@@ -5867,16 +5867,16 @@ defined_text = {
 						set_temp_variable = { tmp = trade@var:selected_resource }
 						multiply_temp_variable = { tmp = -1 }
 					}
-					localization_key = "[?tmp]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_tmpRBracketSym
 				}
 				text = {
 					trigger = {
 						check_variable = { offers@var:selected_resource > 0 }
 					}
-					localization_key = "[?trade@var:selected_resource]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_tradeAtSym_varColonSym_selected_resourceRBracketSym
 				}
 				text = {
-					localization_key = "net_no_trade"
+					localization_key = scripted_loc_net_no_trade
 				}
 			}
 		#
@@ -5947,13 +5947,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^0 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^0|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_0ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -5961,16 +5961,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^0 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^0|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_0ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^0|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_0ORSym_3RBracketSym
 					}
 				}
 			#
@@ -5994,13 +5994,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^1 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^1|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_1ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6008,16 +6008,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^1 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^1|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_1ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^1|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_1ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6041,13 +6041,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^2 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^2|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_2ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6055,16 +6055,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^2 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^2|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_2ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^2|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_2ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6088,13 +6088,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^3 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^3|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_3ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6102,16 +6102,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^3 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^3|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_3ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^3|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_3ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6135,13 +6135,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^4 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^4|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_4ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6149,16 +6149,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^4 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^4|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_4ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^4|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_high_balance_amount_arrayCaratSym_4ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6183,13 +6183,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^0 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^0|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_0ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6197,16 +6197,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^0 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^0|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_0ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^0|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_0ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6230,13 +6230,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^1 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^1|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_1ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6244,16 +6244,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^1 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^1|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_1ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^1|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_1ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6277,13 +6277,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^2 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^2|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_2ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6291,16 +6291,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^2 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^2|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_2ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^2|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_2ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6324,13 +6324,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^3 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^3|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_3ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6338,16 +6338,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^3 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^3|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_3ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^3|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_3ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6371,13 +6371,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^4 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^4|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_4ORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
@@ -6385,16 +6385,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_hb_tempORSym_3RBracketSym_K
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^4 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^4|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_4ORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^4|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_LBracketSym_QuestionMark_low_balance_amount_arrayCaratSym_4ORSym_3RBracketSym
 					}
 				}
 			#
@@ -6441,7 +6441,7 @@ defined_text = {
 						trigger = {
 							check_variable = { selected_market = 0 }
 						}
-						localization_key = "[?global.gdp]K"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_globalPeriodMark_gdpRBracketSym_K
 					}
 					text = {
 						trigger = {
@@ -6449,10 +6449,10 @@ defined_text = {
 							set_temp_variable = { gdp_temp = selected_market:market_gdp }
 							divide_temp_variable = { gdp_temp = 1000 }
 						}
-						localization_key = "[?gdp_temp]K"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_gdp_tempRBracketSym_K
 					}
 					text = {
-						localization_key = "[?selected_market:market_gdp]"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_selected_marketColonSym_market_gdpRBracketSym
 					}
 				}
 			#
@@ -6528,10 +6528,10 @@ defined_text = {
 						trigger = {
 							check_variable = { selected_market > 0 }
 						}
-						localization_key = "[?selected_market.GetFlag]"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_selected_marketPeriodMark_GetFlagRBracketSym
 					}
 					text = {
-						localization_key = "[THIS.GetFlag]"
+						localization_key = scripted_loc_LBracketSym_THISPeriodMark_GetFlagRBracketSym
 					}
 				}
 			#
@@ -6593,7 +6593,7 @@ defined_text = {
 							set_temp_variable = { amount_temp = selected_market:supply@var:resource_temp }
 						}
 					}
-					localization_key = "[GetAdjustedAmountNoSign]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 				}
 			}
 			defined_text = { #GetResourceListSupplyProduction
@@ -6616,7 +6616,7 @@ defined_text = {
 							}
 						}
 					}
-					localization_key = "[GetAdjustedAmountNoSign]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 				}
 			}
 			defined_text = { #GetResourceListSupplyTradeLoc
@@ -6635,7 +6635,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = selected_market:trade@var:resource_temp }
 					}
-					localization_key = "[GetAdjustedAmountNoSign]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 				}
 			}
 			defined_text = { #GetResourceListSupplyStateList
@@ -6675,7 +6675,7 @@ defined_text = {
 						set_temp_variable = { color_temp = 1 }
 						# set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
 					}
-					localization_key = "[RenderArray]"
+					localization_key = scripted_loc_LBracketSym_RenderArrayRBracketSym
 				}
 			}
 			
@@ -6693,7 +6693,7 @@ defined_text = {
 							set_temp_variable = { amount_temp = selected_market:demand@var:resource_temp }
 						}
 					}
-					localization_key = "[GetAdjustedAmountNoSign]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 				}
 			}
 			defined_text = { #GetResourceListDemandConsumption
@@ -6716,7 +6716,7 @@ defined_text = {
 							}
 						}
 					}
-					localization_key = "[GetAdjustedAmountNoSign]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 				}
 			}
 			defined_text = { #GetResourceListDemandTradeLoc
@@ -6736,7 +6736,7 @@ defined_text = {
 						set_temp_variable = { amount_temp = selected_market:trade@var:resource_temp }
 						multiply_temp_variable = { amount_temp = -1 }
 					}
-					localization_key = "[GetAdjustedAmountNoSign]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 				}
 			}
 			defined_text = { #GetResourceListDemandStateList
@@ -6776,7 +6776,7 @@ defined_text = {
 						set_temp_variable = { color_temp = -1 }
 						# set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
 					}
-					localization_key = "[RenderArray]"
+					localization_key = scripted_loc_LBracketSym_RenderArrayRBracketSym
 				}
 			}
 			#GetResourceListBalance
@@ -6794,7 +6794,7 @@ defined_text = {
 								set_temp_variable = { amount_temp = selected_market:balance@var:resource_temp }
 							}
 						}
-						localization_key = "[GetPositiveAdjustedAmount]"
+						localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 					}
 				}
 			#
@@ -6813,7 +6813,7 @@ defined_text = {
 								set_temp_variable = { a_temp = selected_market:price@var:resource_temp }
 							}
 						}
-						localization_key = "[?a_temp|3]"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_a_tempORSym_3RBracketSym
 					}
 				}
 			#
@@ -6832,7 +6832,7 @@ defined_text = {
 								set_temp_variable = { a_temp = selected_market:price_compared_to_base@var:resource_temp }
 							}
 						}
-						localization_key = "[?a_temp|-=%2]"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_a_tempORSym_-EqualsSign_PercentSym_2RBracketSym
 					}
 				}
 			#
@@ -6845,10 +6845,10 @@ defined_text = {
 						trigger = {
 							is_in_array = { global.resources_token_array = selected_resource }
 						}
-						localization_key = "[?selected_resource.GetTokenLocalizedKey]"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_selected_resourcePeriodMark_GetTokenLocalizedKeyRBracketSym
 					}
 					text = {
-						localization_key = "new_route_resource_choose_loc"
+						localization_key = scripted_loc_new_route_resource_choose_loc
 					}
 				}
 			#
@@ -6867,13 +6867,13 @@ defined_text = {
 						trigger = {
 							NOT = { has_country_flag = new_route_export } #Import
 						}
-						localization_key = "[THIS.GetFlag]"
+						localization_key = scripted_loc_LBracketSym_THISPeriodMark_GetFlagRBracketSym
 					}
 					text = {
 						trigger = {
 							set_temp_variable = { tr_c_temp = new_route_list_country_array^i }
 						}
-						localization_key = "[?tr_c_temp.GetFlag]" #Export
+						localization_key = scripted_loc_LBracketSym_QuestionMark_tr_c_tempPeriodMark_GetFlagRBracketSym
 					}
 				}
 			#
@@ -6885,10 +6885,10 @@ defined_text = {
 							NOT = { has_country_flag = new_route_export } #Import
 							set_temp_variable = { tr_c_temp = new_route_list_country_array^i }
 						}
-						localization_key = "[?tr_c_temp.GetFlag]"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_tr_c_tempPeriodMark_GetFlagRBracketSym
 					}
 					text = {
-						localization_key = "[THIS.GetFlag]" #Export
+						localization_key = scripted_loc_LBracketSym_THISPeriodMark_GetFlagRBracketSym
 					}
 				}
 			#
@@ -6900,20 +6900,20 @@ defined_text = {
 							set_temp_variable = { tr_temp = new_route_list_productivity_array^i }
 							check_variable = { tr_temp > 0 }
 						}
-						localization_key = "[GetGreen]+$[?tr_temp|3]"
+						localization_key = scripted_loc_LBracketSym_GetGreenRBracketSym_PlusSign_DollarSign_LBracketSym_QuestionMark_tr_tempORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_temp < 0 }
 							multiply_temp_variable = { tr_temp = -1 }
 						}
-						localization_key = "[GetRed]-$[?tr_temp|3]"
+						localization_key = scripted_loc_LBracketSym_GetRedRBracketSym_-DollarSign_LBracketSym_QuestionMark_tr_tempORSym_3RBracketSym
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_temp = 0 }
 						}
-						localization_key = "[GetYellow]$[?tr_temp|3]"
+						localization_key = scripted_loc_LBracketSym_GetYellowRBracketSym_DollarSign_LBracketSym_QuestionMark_tr_tempORSym_3RBracketSym
 					}
 				}
 			#
@@ -6924,10 +6924,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = new_route_export
 						}
-						localization_key = "-[?global.shipping_amount@var:selected_resource|3]"
+						localization_key = scripted_loc_-LBracketSym_QuestionMark_globalPeriodMark_shipping_amountAtSym_varColonSym_selected_resourceORSym_3RBracketSym
 					}
 					text = {
-						localization_key = "+[?global.shipping_amount@var:selected_resource|3]"
+						localization_key = scripted_loc_PlusSign_LBracketSym_QuestionMark_globalPeriodMark_shipping_amountAtSym_varColonSym_selected_resourceORSym_3RBracketSym
 					}
 				}
 			#
@@ -6940,7 +6940,7 @@ defined_text = {
 						trigger = {
 							set_temp_variable = { tr_temp = v }
 						}
-						localization_key = "[?tr_temp.GetTokenLocalizedKey]"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_tr_tempPeriodMark_GetTokenLocalizedKeyRBracketSym
 					}
 				}
 			#
@@ -6978,7 +6978,7 @@ defined_text = {
 							multiply_temp_variable = { amount_temp = -1 }
 						}
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteAmount
@@ -6987,7 +6987,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade@var:v }
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteAmountCapped
@@ -6996,10 +6996,10 @@ defined_text = {
 					trigger = {
 						check_variable = { offers@var:v = trade@var:v }
 					}
-					localization_key = "trade_route_amount_trade"
+					localization_key = scripted_loc_trade_route_amount_trade
 				}
 				text = {
-					localization_key = "trade_route_amount_trade_capped"
+					localization_key = scripted_loc_trade_route_amount_trade_capped
 				}
 			}
 			defined_text = { # GetTradeRoutePortion
@@ -7010,16 +7010,16 @@ defined_text = {
 						divide_temp_variable = { percent_temp = offers@var:v }
 						check_variable = { percent_temp < 0.75 }
 					}
-					localization_key = "[?percent_temp|%R0]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_percent_tempORSym_PercentSym_R0RBracketSym
 				}
 				text = {
 					trigger = {
 						check_variable = { percent_temp < 1 }
 					}
-					localization_key = "[?percent_temp|%g0]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_percent_tempORSym_PercentSym_g0RBracketSym
 				}
 				text = {
-					localization_key = "[?percent_temp|%G0]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_percent_tempORSym_PercentSym_G0RBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteOffers
@@ -7028,7 +7028,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = offers@var:v }
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteSupply
@@ -7037,7 +7037,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_supply@var:v }
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteDemand
@@ -7046,7 +7046,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_demand@var:v }
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteProductivity
@@ -7055,7 +7055,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_productivity@var:v }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteGoodsRevenue
@@ -7074,7 +7074,7 @@ defined_text = {
 							multiply_temp_variable = { amount_temp = global_market_price@var:v }
 						}
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteGoodsExpense
@@ -7093,7 +7093,7 @@ defined_text = {
 							multiply_temp_variable = { amount_temp = price@var:v }
 						}
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteBuyPrice
@@ -7110,7 +7110,7 @@ defined_text = {
 							set_temp_variable = { tr_temp = price@var:v }
 						}
 					}
-					localization_key = "[?tr_temp|2]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_tr_tempORSym_2RBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteSellPrice
@@ -7127,7 +7127,7 @@ defined_text = {
 							set_temp_variable = { tr_temp = global_market_price@var:v }
 						}
 					}
-					localization_key = "[?tr_temp|2]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_tr_tempORSym_2RBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteValue
@@ -7136,7 +7136,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_value@var:v }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteTariffs
@@ -7146,14 +7146,14 @@ defined_text = {
 						set_temp_variable = { amount_temp = trade_tariffs@var:v }
 						check_variable = { offers@var:v < 0 }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 				text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_tariffs@var:v }
 						multiply_temp_variable = { amount_temp = -1 }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteProfit
@@ -7162,7 +7162,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_profit@var:v }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 			}
 			#GetTradeRoutePrice
@@ -7219,7 +7219,7 @@ defined_text = {
 							set_temp_variable = { tr_temp = 1000 }
 							divide_temp_variable = { tr_temp = global.shipping_amount@var:v }
 						}
-						localization_key = "[?tr_temp|2]K"
+						localization_key = scripted_loc_LBracketSym_QuestionMark_tr_tempORSym_2RBracketSym_K
 					}
 				}
 			#
@@ -7241,10 +7241,10 @@ defined_text = {
 					trigger = {
 						check_variable = { trade_ai@var:v = 0 }
 					}
-					localization_key = "trade_route_automation_enabled_tooltip"
+					localization_key = scripted_loc_trade_route_automation_enabled_tooltip
 				}
 				text = {
-					localization_key = "trade_route_automation_disabled_tooltip"
+					localization_key = scripted_loc_trade_route_automation_disabled_tooltip
 				}
 			}
 			defined_text = { # GetTradeRouteProductivityUpperBound
@@ -7254,7 +7254,7 @@ defined_text = {
 						set_temp_variable = { amount_temp = workforce_earnings_avg }
 						multiply_temp_variable = { amount_temp = 1.5 }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 			}
 			defined_text = { # GetTradeRouteProductivityLowerBound
@@ -7264,7 +7264,7 @@ defined_text = {
 						set_temp_variable = { amount_temp = workforce_earnings_avg }
 						divide_temp_variable = { amount_temp = 2 }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_LBracketSym_GetPositiveAdjustedAmountRBracketSym
 				}
 			}
 		#
@@ -7346,7 +7346,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = country_temp:market_gdp }
 					}
-					localization_key = "[GetAdjustedAmountNoSign]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountNoSignRBracketSym
 				}
 			}
 			defined_text = { # GetMarketListPops
@@ -7355,13 +7355,13 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = country_temp:market_pops }
 					}
-					localization_key = "[GetAdjustedAmountThousandsNoSign]"
+					localization_key = scripted_loc_LBracketSym_GetAdjustedAmountThousandsNoSignRBracketSym
 				}
 			}
 			defined_text = { # GetMarketListGDPPerCapita
 				name = GetMarketListGDPPerCapita
 				text = {
-					localization_key = "[?country_temp:market_gdp_per_capita]"
+					localization_key = scripted_loc_LBracketSym_QuestionMark_country_tempColonSym_market_gdp_per_capitaRBracketSym
 				}
 			}
 
@@ -7378,7 +7378,7 @@ defined_text = {
 						set_temp_variable = { param_cutoff = 40 }
 						# set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
 					}
-					localization_key = "[RenderArray]"
+					localization_key = scripted_loc_LBracketSym_RenderArrayRBracketSym
 				}
 			}
 		#
@@ -7390,10 +7390,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = "[?market_leader.GetAdjective] Market"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_market_leaderPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 			text = {
-				localization_key = "[THIS.GetAdjective] Market"
+				localization_key = scripted_loc_LBracketSym_THISPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 		}
 		defined_text = {
@@ -7402,10 +7402,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = "[?controller:market_leader.GetAdjective] Market"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 			text = {
-				localization_key = "[?controller.GetAdjective] Market"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 		}
 		defined_text = {
@@ -7414,10 +7414,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = "[?market_leader] Market"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_market_leaderRBracketSym__Market
 			}
 			text = {
-				localization_key = "[FROM.CONTROLLER.GetFlag] [GetAdjective] Market"
+				localization_key = scripted_loc_LBracketSym_FROMPeriodMark_CONTROLLERPeriodMark_GetFlagRBracketSym__LBracketSym_GetAdjectiveRBracketSym__Market
 			}
 		}
 		defined_text = {
@@ -7426,10 +7426,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = "[?controller:market_leader.GetFlag] [?controller:market_leader.GetAdjective] Market"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 			text = {
-				localization_key = "[?controller.GetFlag] [?controller.GetAdjective] Market"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerPeriodMark_GetFlagRBracketSym__LBracketSym_QuestionMark_controllerPeriodMark_GetAdjectiveRBracketSym__Market
 			}
 		}
 		defined_text = {
@@ -7438,10 +7438,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = "[?market_leader.GetName]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_market_leaderPeriodMark_GetNameRBracketSym
 			}
 			text = {
-				localization_key = "[GetName]"
+				localization_key = scripted_loc_LBracketSym_GetNameRBracketSym
 			}
 		}
 		defined_text = {
@@ -7450,10 +7450,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = "[?controller:market_leader.GetName]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetNameRBracketSym
 			}
 			text = {
-				localization_key = "[?controller.GetName]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerPeriodMark_GetNameRBracketSym
 			}
 		}
 		defined_text = {
@@ -7462,10 +7462,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = "[?market_leader.GetAdjective]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_market_leaderPeriodMark_GetAdjectiveRBracketSym
 			}
 			text = {
-				localization_key = "[THIS.GetAdjective]"
+				localization_key = scripted_loc_LBracketSym_THISPeriodMark_GetAdjectiveRBracketSym
 			}
 		}
 		defined_text = {
@@ -7474,10 +7474,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = "[?controller:market_leader.GetAdjective]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_leaderPeriodMark_GetAdjectiveRBracketSym
 			}
 			text = {
-				localization_key = "[?controller.GetAdjective]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerPeriodMark_GetAdjectiveRBracketSym
 			}
 		}
 		defined_text = {
@@ -7486,10 +7486,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_capital
 				}
-				localization_key = "[?market_capital.GetCapitalVictoryPointName]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_market_capitalPeriodMark_GetCapitalVictoryPointNameRBracketSym
 			}
 			text = {
-				localization_key = "[?capital.GetCapitalVictoryPointName]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_capitalPeriodMark_GetCapitalVictoryPointNameRBracketSym
 			}
 		}
 		defined_text = {
@@ -7498,10 +7498,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_capital }
 				}
-				localization_key = "[?controller:market_capital.GetCapitalVictoryPointName]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_controllerColonSym_market_capitalPeriodMark_GetCapitalVictoryPointNameRBracketSym
 			}
 			text = {
-				localization_key = "[?owner:capital.GetCapitalVictoryPointName]"
+				localization_key = scripted_loc_LBracketSym_QuestionMark_ownerColonSym_capitalPeriodMark_GetCapitalVictoryPointNameRBracketSym
 			}
 		}
 		defined_text = {
@@ -7513,14 +7513,14 @@ defined_text = {
 						check_variable = { market_leader = ROOT }
 					}
 				}
-				localization_key = "Leader"
+				localization_key = scripted_loc_Leader
 			}
 			text = {
 				trigger = { is_subject = yes }
-				localization_key = "Satellite"
+				localization_key = scripted_loc_Satellite
 			}
 			text = {
-				localization_key = "Member"
+				localization_key = scripted_loc_Member
 			}
 		}
 		defined_text = {
@@ -7534,14 +7534,14 @@ defined_text = {
 						}
 					}
 				}
-				localization_key = "Leader"
+				localization_key = scripted_loc_Leader
 			}
 			text = {
 				trigger = { controller = { is_subject = yes } }
-				localization_key = "Satellite"
+				localization_key = scripted_loc_Satellite
 			}
 			text = {
-				localization_key = "Member"
+				localization_key = scripted_loc_Member
 			}
 		}
 		defined_text = {
@@ -7559,23 +7559,23 @@ defined_text = {
 						has_war_together_with = ROOT
 					}
 				}
-				localization_key = "In-Block"
+				localization_key = scripted_loc_In-Block
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { country_temp = THIS }
 					ROOT = { can_trade_with = yes }
 				}
-				localization_key = "Accessible"
+				localization_key = scripted_loc_Accessible
 			}
 			text = {
 				trigger = {
 					has_war_with = ROOT
 				}
-				localization_key = "Enemy"
+				localization_key = scripted_loc_Enemy
 			}
 			text = {
-				localization_key = "Not Accessible"
+				localization_key = scripted_loc_Not_Accessible
 			}
 		}
 		defined_text = {
@@ -7593,14 +7593,14 @@ defined_text = {
 						CONTROLLER = { has_war_together_with = ROOT }
 					}
 				}
-				localization_key = "In-Block"
+				localization_key = scripted_loc_In-Block
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { country_temp = controller }
 					ROOT = { can_trade_with = yes }
 				}
-				localization_key = "Accessible"
+				localization_key = scripted_loc_Accessible
 			}
 			text = {
 				trigger = {
@@ -7608,10 +7608,10 @@ defined_text = {
 						has_war_with = ROOT
 					}
 				}
-				localization_key = "Enemy"
+				localization_key = scripted_loc_Enemy
 			}
 			text = {
-				localization_key = "Not Accessible"
+				localization_key = scripted_loc_Not_Accessible
 			}
 		}
 		defined_text = {
@@ -7651,7 +7651,7 @@ defined_text = {
 				divide_temp_variable = {treasury_temp = 1000000}
 				check_variable = {treasury > 999999.99}
             }
-            localization_key = "[?treasury_temp|2]M"
+            localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempORSym_2RBracketSym_M
         }
         text = {
             trigger = {
@@ -7659,10 +7659,10 @@ defined_text = {
 				divide_temp_variable = {treasury_temp = 1000}
 				check_variable = {treasury > 999.99}
             }
-            localization_key = "[?treasury_temp|2]K"
+            localization_key = scripted_loc_LBracketSym_QuestionMark_treasury_tempORSym_2RBracketSym_K
         }
         text = {
-            localization_key = "[?treasury|2]"
+            localization_key = scripted_loc_LBracketSym_QuestionMark_treasuryORSym_2RBracketSym
         }
     }
 #

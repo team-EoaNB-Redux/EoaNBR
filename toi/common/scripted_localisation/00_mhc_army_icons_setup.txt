@@ -5,235 +5,235 @@
 		trigger = {
 			tag = BAV
 		}
-		localization_key = "[GetMHCArmySecImageBAV]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBAVRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCArmySecImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCArmySecImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCArmySecImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCArmySecImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmySecImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCArmySecImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RYU
 		}
-		localization_key = "[GetMHCArmySecImageRYU]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageRYURBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCArmySecImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = MXE
 		}
-		localization_key = "[GetMHCArmySecImageMXE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageMXERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCArmySecImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCArmySecImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCArmySecImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCArmySecImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BAD
 		}
-		localization_key = "[GetMHCArmySecImageBAD]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBADRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SAX
 		}
-		localization_key = "[GetMHCArmySecImageSAX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageSAXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmySecImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmySecImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmySecImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmySecImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmySecImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmySecImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmySecImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmySecImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmySecImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageBRARBracketSym
 	}
 	###Army Sec Replacement Marker###
 	
@@ -241,7 +241,7 @@
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCArmySecImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageGenericRBracketSym
 	}
 }
 
@@ -252,235 +252,235 @@ defined_text = {
 		trigger = {
 			tag = BAV
 		}
-		localization_key = "[GetMHCArmyChiefImageBAV]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBAVRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCArmyChiefImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCArmyChiefImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCArmyChiefImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCArmyChiefImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCArmyChiefImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RYU
 		}
-		localization_key = "[GetMHCArmyChiefImageRYU]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageRYURBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCArmyChiefImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = MXE
 		}
-		localization_key = "[GetMHCArmyChiefImageMXE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageMXERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCArmyChiefImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCArmyChiefImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCArmyChiefImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCArmyChiefImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BAD
 		}
-		localization_key = "[GetMHCArmyChiefImageBAD]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBADRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SAX
 		}
-		localization_key = "[GetMHCArmyChiefImageSAX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageSAXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageBRARBracketSym
 	}
 	###Army Chief Replacement Marker###
 	
@@ -488,7 +488,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCArmyChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageGenericRBracketSym
 	}
 }
 
@@ -499,235 +499,235 @@ defined_text = {
 		trigger = {
 			tag = BAV
 		}
-		localization_key = "[GetMHCArmyVChiefImageBAV]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBAVRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCArmyVChiefImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCArmyVChiefImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCArmyVChiefImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCArmyVChiefImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RYU
 		}
-		localization_key = "[GetMHCArmyVChiefImageRYU]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageRYURBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = MXE
 		}
-		localization_key = "[GetMHCArmyVChiefImageMXE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageMXERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCArmyVChiefImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCArmyVChiefImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCArmyVChiefImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCArmyVChiefImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BAD
 		}
-		localization_key = "[GetMHCArmyVChiefImageBAD]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBADRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SAX
 		}
-		localization_key = "[GetMHCArmyVChiefImageSAX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageSAXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyVChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyVChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyVChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	###Army VChief Replacement Marker###
 	
@@ -735,7 +735,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCArmyVChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGenericRBracketSym
 	}
 }
 
@@ -746,235 +746,235 @@ defined_text = {
 		trigger = {
 			tag = BAV
 		}
-		localization_key = "[GetMHCArmyVChiefImageBAV]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBAVRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCArmyVChiefImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCArmyVChiefImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCArmyVChiefImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCArmyVChiefImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RYU
 		}
-		localization_key = "[GetMHCArmyVChiefImageRYU]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageRYURBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = MXE
 		}
-		localization_key = "[GetMHCArmyVChiefImageMXE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageMXERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCArmyVChiefImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCArmyVChiefImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCArmyVChiefImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BAD
 		}
-		localization_key = "[GetMHCArmyVChiefImageBAD]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBADRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCArmyVChiefImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SAX
 		}
-		localization_key = "[GetMHCArmyVChiefImageSAX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageSAXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyVChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyVChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyVChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyVChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyVChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageBRARBracketSym
 	}
 	###Army VChief Replacement Marker###
 	
@@ -982,7 +982,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCArmyVChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGenericRBracketSym
 	}
 }
 
@@ -993,235 +993,235 @@ defined_text = {
 		trigger = {
 			tag = BAV
 		}
-		localization_key = "[GetMHCArmyQuartImageBAV]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBAVRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCArmyQuartImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCArmyQuartImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCArmyQuartImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCArmyQuartImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyQuartImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCArmyQuartImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCArmyQuartImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RYU
 		}
-		localization_key = "[GetMHCArmyQuartImageRYU]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageRYURBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCArmyQuartImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = MXE
 		}
-		localization_key = "[GetMHCArmyQuartImageMXE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageMXERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCArmyQuartImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCArmyQuartImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCArmyQuartImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BAD
 		}
-		localization_key = "[GetMHCArmyQuartImageBAD]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBADRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SAX
 		}
-		localization_key = "[GetMHCArmyQuartImageSAX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageSAXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyQuartImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyQuartImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyQuartImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyQuartImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyQuartImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyQuartImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyQuartImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyQuartImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyQuartImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageBRARBracketSym
 	}
 	###Army Quart Replacement Marker###
 	
@@ -1229,7 +1229,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCArmyQuartImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageGenericRBracketSym
 	}
 }
 
@@ -1240,235 +1240,235 @@ defined_text = {
 		trigger = {
 			tag = BAV
 		}
-		localization_key = "[GetMHCArmyPChiefImageBAV]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBAVRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCArmyPChiefImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCArmyPChiefImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCArmyPChiefImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyPChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCArmyPChiefImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RYU
 		}
-		localization_key = "[GetMHCArmyPChiefImageRYU]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageRYURBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCArmyPChiefImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = MXE
 		}
-		localization_key = "[GetMHCArmyPChiefImageMXE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageMXERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCArmyPChiefImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCArmyPChiefImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCArmyPChiefImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BAD
 		}
-		localization_key = "[GetMHCArmyPChiefImageBAD]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBADRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCArmyPChiefImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SAX
 		}
-		localization_key = "[GetMHCArmyPChiefImageSAX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageSAXRBracketSym
 	}	
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyPChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyPChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyPChiefImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyPChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyPChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyPChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyPChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyPChiefImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyPChiefImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageBRARBracketSym
 	}
 	###Army PChief Replacement Marker###
 	
@@ -1476,7 +1476,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCArmyPChiefImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageGenericRBracketSym
 	}
 }
 
@@ -1487,235 +1487,235 @@ defined_text = {
 		trigger = {
 			tag = BAV
 		}
-		localization_key = "[GetMHCArmyInsImageBAV]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBAVRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCArmyInsImageFRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageFRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCArmyInsImageENG]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageENGRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCArmyInsImageSWE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageSWERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCArmyInsImageUSA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageUSARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyInsImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCArmyInsImageFIN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageFINRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCArmyInsImageSIX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageSIXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RYU
 		}
-		localization_key = "[GetMHCArmyInsImageRYU]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageRYURBracketSym
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCArmyInsImageRUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageRUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = MXE
 		}
-		localization_key = "[GetMHCArmyInsImageMXE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageMXERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCArmyInsImageGRE]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageGRERBracketSym
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCArmyInsImageNOR]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageNORRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCArmyInsImagePRS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImagePRSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BAD
 		}
-		localization_key = "[GetMHCArmyInsImageBAD]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBADRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = SAX
 		}
-		localization_key = "[GetMHCArmyInsImageSAX]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageSAXRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyInsImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyInsImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCArmyInsImageDEN]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageDENRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyInsImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyInsImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyInsImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyInsImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCArmyInsImageAUS]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageAUSRBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	text = {
 		trigger = {
 			tag = BRA
 		}
-		localization_key = "[GetMHCArmyInsImageBRA]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageBRARBracketSym
 	}
 	###Army Ins Replacement Marker###
 	
@@ -1723,6 +1723,6 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCArmyInsImageGeneric]"
+		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageGenericRBracketSym
 	}
 }
