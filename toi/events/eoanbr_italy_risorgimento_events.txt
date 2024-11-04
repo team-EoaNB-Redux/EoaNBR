@@ -4,305 +4,31 @@ add_namespace = tuscany
 add_namespace = two_sicilies
 add_namespace = monaco
 add_namespace = sardinia2iw
-#### CRIMEAN WAR DIPLOMATIC EVENTS ####
+
+#Start Event
+
+country_event = {
+	id = sardinia.265
+	title = sardinia.265.t
+	desc = sardinia.265.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sardinia.265.a
+	}
+}
 country_event = {
 	id = sardinia.1
 	title = sardinia.1.t
-	desc = sardinia.2.d
-	picture = GFX_event_ITA_Crimean_War
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.1"
-	}
-	#fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.1.a
-		# log = "option:		name = sardinia.1.a"
-		OTO = {
-			country_event = {
-				id = sardinia.2
-			}
-		}
-		FRA = {
-			country_event = {
-				id = sardinia.2
-			}
-		}
-		ENG = {
-			country_event = {
-				id = sardinia.2
-			}
-		}
-	}
-}
-
-country_event = {
-	id = sardinia.2
-	title = sardinia.2.t
-	desc = sardinia.2.d
-	picture = GFX_event_ITA_Crimean_War
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.2"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.2.a
-		# log = "option:		name = sardinia.2.a"
-		add_opinion_modifier = {
-			target = PIE
-			modifier = ITA_Crimean_War
-		}
-	}
-}
-
-####################################
-##### Cagliari case 1858  ##########
-#############  British Diplomacy ###
-####################################
-country_event = {
-	id = sardinia.3
-	title = sardinia.3.t
-	desc = sardinia.3.d
-	picture = GFX_event_PIE_British_Diplomacy
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.3"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.3.a
-		# log = "option:		name = sardinia.3.a"
-		ENG = {
-			country_event = {
-				id = sardinia.4
-			}
-		}
-	}
-}
-
-country_event = {
-	id = sardinia.4
-	title = sardinia.4.t
-	desc = sardinia.4.d
-	picture = GFX_event_PIE_British_Diplomacy
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.4"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.4.a
-		# log = "option:		name = sardinia.4.a"
-		ai_chance = {
-			base = 3
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
-		}
-		PIE = {
-			country_event = {
-				id = sardinia.5
-			}
-		}
-	}
-	option = {
-		name = sardinia.4.b
-		# log = "option:		name = sardinia.4.b"
-		ai_chance = {
-			base = 2
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		PIE = {
-			## Remove with two sicilies content
-			set_country_flag = PIE_British_Diplomacy_yes
-			country_event = {
-				id = sardinia.24
-			}
-		}
-		NSC = {
-			country_event = {
-				id = two_sicilies.11
-			}
-		}
-	}
-}
-
-country_event = {
-	id = sardinia.5
-	title = sardinia.5.t
-	desc = sardinia.5.d
-	picture = GFX_event_PIE_British_Diplomacy
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.5"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.5.a
-		# log = "option:		name = sardinia.5.a"
-		add_political_power = -50
-		##opinion modifier
-		hidden_effect = {
-			unlock_national_focus = PIE_Accept_Confederation
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = PIE_Political_Structure_Planning_FT
-					}
-				}
-				unlock_national_focus = PIE_Political_Structure_Planning_FT
-			}
-		}
-		custom_effect_tooltip = PIE_bypass_focus_british_alliance
-	}
-}
-
-country_event = {
-	id = sardinia.24
-	title = sardinia.24.t
-	desc = sardinia.24.d
-	picture = GFX_event_PIE_British_Diplomacy
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.24"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.24.a
-		# log = "option:		name = sardinia.24.a"
-		add_political_power = 50
-		if = {
-			limit = {
-				NOT = {
-					has_completed_focus = PIE_Political_Structure_Planning_FT
-				}
-			}
-			unlock_national_focus = PIE_Political_Structure_Planning_FT
-		}
-		##opinion modifier
-	}
-}
-
-country_event = {
-	id = sardinia.6
-	title = sardinia.6.t
-	desc = sardinia.6.d
-	picture = GFX_event_PIE_British_Diplomacy
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.6"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.6.a
-		# log = "option:		name = sardinia.6.a"
-		ENG = {
-			country_event = {
-				id = sardinia.7
-			}
-		}
-	}
-}
-
-country_event = {
-	id = sardinia.7
-	title = sardinia.7.t
-	desc = sardinia.7.d
-	picture = GFX_event_PIE_British_Diplomacy
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.7"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.7.a
-		# log = "option:		name = sardinia.7.a"
-		PIE = {
-			country_event = {
-				id = sardinia.8
-			}
-		}
-	}
-}
-
-country_event = {
-	id = sardinia.8
-	title = sardinia.8.t
-	desc = sardinia.8.d
-	picture = GFX_event_PIE_British_Diplomacy
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.8"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.8.a
-		# log = "option:		name = sardinia.8.a"
-	}
-}
-
-#Start Event
-country_event = {
-	id = sardinia.9
-	title = sardinia.9.t
-	desc = sardinia.9.d
-	picture = GFX_event_ITA_SP_map
-
-	immediate = {
-		# log = "[THIS.GetTag]: firing = sardinia.9"
-	}
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = sardinia.9.a
-		# log = "option:		name = sardinia.9.a"
-		hidden_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_pre_rifle_3
-				amount = 6000
-				producer = PIE
-			}
-			add_equipment_to_stockpile = {
-				type = uniform_equipment_0
-				amount = 3000
-				producer = PIE
-			}
-			set_global_flag = second_italo_austrian_war_flag
-
-			country_event = {
-				id = sardinia.250
-				days = 3
-			}
-		}
-	}
-}
-
-country_event = {
-	id = sardinia.11
-	title = sardinia.11.t
-	desc = sardinia.11.d
+	desc = sardinia.1.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 		is_ai = no
 	}
 	option = {
-		name = sardinia.11.a
-		# log = "option:		name = sardinia.11.a"
+		name = sardinia.1.a
+		# log = "option:		name = sardinia.1.a"
 		ai_chance = {
 			base = 0
 		}
@@ -469,8 +195,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = sardinia.11.b
-		# log = "option:		name = sardinia.11.b"
+		name = sardinia.1.b
+		# log = "option:		name = sardinia.1.b"
 		ai_chance = {
 			base = 0
 		}
@@ -781,13 +507,438 @@ country_event = {
 		}
 	}
 	option = {
-		name = sardinia.11.c
-		# log = "option:		name = sardinia.11.c"
+		name = sardinia.1.c
+		# log = "option:		name = sardinia.1.c"
 		ai_chance = {
 			base = 100
 		}
 	}
 }
+
+country_event = {
+	id = sardinia.2
+	title = sardinia.2.t
+	desc = sardinia.2.d
+	picture = GFX_event_ITA_SP_map
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.2"
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sardinia.2.a
+		# log = "option:		name = sardinia.2.a"
+		hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_pre_rifle_3
+				amount = 6000
+				producer = PIE
+			}
+			add_equipment_to_stockpile = {
+				type = uniform_equipment_0
+				amount = 3000
+				producer = PIE
+			}
+			set_global_flag = second_italo_austrian_war_flag
+
+			country_event = {
+				id = sardinia.3
+				days = 3
+			}
+		}
+		#name = sardinia.2.b
+	}
+	option = {
+		name = sardinia.2.b
+			hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_pre_rifle_3
+				amount = 6000
+				producer = PIE
+			}
+			add_equipment_to_stockpile = {
+				type = uniform_equipment_0
+				amount = 3000
+				producer = PIE
+			}
+			set_global_flag = second_italo_austrian_war_flag
+		}
+	}
+}
+
+# Revolutions of 1848 Background Info
+country_event = {
+	id = sardinia.3
+	title = sardinia.3.t
+	desc = sardinia.3.d
+	picture = GFX_event_ITA_revolutions_1848
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.3"
+	}
+	is_triggered_only = yes
+	option = {
+		name = sardinia.3.a
+		# log = "option:		name = sardinia.3.a"
+		country_event = {
+			id = sardinia.4
+		}
+	}
+}
+
+# Revolutions of 1848 Background Info 2
+country_event = {
+	id = sardinia.4
+	title = sardinia.4.t
+	desc = sardinia.4.d
+	picture = GFX_event_ITA_revolutions_1848
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.4"
+	}
+	is_triggered_only = yes
+	option = {
+		name = sardinia.4.a
+		# log = "option:		name = sardinia.4.a"
+		country_event = {
+			id = sardinia.5
+		}
+	}
+}
+
+# Revolutions of 1848 Background Info 3
+country_event = {
+	id = sardinia.5
+	title = sardinia.5.t
+	desc = sardinia.5.d
+	picture = GFX_event_ITA_national_society
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.5"
+	}
+	is_triggered_only = yes
+	option = {
+		name = sardinia.5.a
+		# log = "option:		name = sardinia.5.a"
+		hidden_effect = {
+			country_event = {
+				id = sardinia.6
+				days = 15
+			}
+		}
+	}
+}
+
+# Monaco Protectorate
+country_event = {
+	id = sardinia.6
+	title = sardinia.6.t
+	desc = sardinia.6.d
+	picture = GFX_event_ITA_monaco_19th_century
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.6"
+	}
+	is_triggered_only = yes
+	option = {
+		name = sardinia.6.a
+		# log = "option:		name = sardinia.6.a"
+	}
+}
+
+###########################################
+###										###
+###	Economic events	,	Single Events	###
+###										###
+###########################################
+
+# Reinforcement of Alessandria against floods of Tanaro
+country_event = {
+	id = sardinia.7
+	title = sardinia.7.t
+	desc = sardinia.7.d
+	picture = GFX_event_ITA_tanaro_river
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.7"
+	}
+	is_triggered_only = yes
+	option = {
+		name = sardinia.7.a
+		# log = "option:		name = sardinia.7.a"
+		981 = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+}
+
+###################################
+###								###
+###	Political one time events	###
+###								###
+###################################
+
+# 25th of October 1857 Closing of the V Legislature
+country_event = {
+	id = sardinia.8
+	title = sardinia.8.t
+	desc = sardinia.8.d
+	picture = GFX_event_ITA_Closing_Legislature
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.8"
+	}
+	is_triggered_only = yes
+	option = {
+		name = sardinia.8.a
+		# log = "option:		name = sardinia.8.a"
+		add_political_power = 100
+		### Activate decision certifying elections
+	}
+}
+
+#######################################
+###									###
+###	research based one time events	###
+###									###
+#######################################
+# Turin Exhibition 1858
+country_event = {
+	id = sardinia.9
+	title = sardinia.9.t
+	desc = sardinia.9.d
+	picture = GFX_event_ITA_Turin_Generic
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.9"
+	}
+	is_triggered_only = yes
+	option = {
+		name = sardinia.9.a
+		# log = "option:		name = sardinia.9.a"
+		add_tech_bonus = {
+			bonus = 0.6
+			uses = 1
+			category = cat_science_techs
+		}
+		add_tech_bonus = {
+			bonus = 0.6
+			uses = 1
+			category = cat_industry_techs
+		}
+		add_tech_bonus = {
+			bonus = 0.6
+			uses = 1
+			category = cat_refinement_techs
+		}
+	}
+}
+###################################
+###								###
+###	British starter Diplomacy	###
+###								###
+###################################
+
+country_event = {
+	id = sardinia.10
+	title = sardinia.10.t
+	desc = sardinia.10.d
+	picture = GFX_event_PIE_British_Diplomacy
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.10"
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sardinia.10.a
+		# log = "option:		name = sardinia.10.a"
+		ENG = {
+			country_event = {
+				id = sardinia.11
+			}
+		}
+	}
+}
+country_event = {
+	id = sardinia.11
+	title = sardinia.11.t
+	desc = sardinia.11.d
+	picture = GFX_event_PIE_British_Diplomacy
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.11"
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sardinia.11.a
+		# log = "option:		name = sardinia.11.a"
+		PIE = {
+			country_event = {
+				id = sardinia.12
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sardinia.12
+	title = sardinia.12.t
+	desc = sardinia.12.d
+	picture = GFX_event_PIE_British_Diplomacy
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.12"
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sardinia.12.a
+		# log = "option:		name = sardinia.12.a"
+	}
+}
+
+####################################
+##### Cagliari case 1858  ##########
+#############  British Diplomacy ###
+####################################
+country_event = {
+	id = sardinia.13
+	title = sardinia.13.t
+	desc = sardinia.13.d
+	picture = GFX_event_PIE_British_Diplomacy
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.13"
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sardinia.13.a
+		# log = "option:		name = sardinia.13.a"
+		ENG = {
+			country_event = {
+				id = sardinia.14
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sardinia.14
+	title = sardinia.14.t
+	desc = sardinia.14.d
+	picture = GFX_event_PIE_British_Diplomacy
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.14"
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sardinia.14.a
+		# log = "option:		name = sardinia.14.a"
+		ai_chance = {
+			base = 3
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+		PIE = {
+			country_event = {
+				id = sardinia.15
+			}
+		}
+	}
+	option = {
+		name = sardinia.14.b
+		# log = "option:		name = sardinia.14.b"
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		PIE = {
+			## Remove with two sicilies content
+			set_country_flag = PIE_British_Diplomacy_yes
+			country_event = {
+				id = sardinia.24
+			}
+		}
+		NSC = {
+			country_event = {
+				id = two_sicilies.11
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sardinia.15
+	title = sardinia.15.t
+	desc = sardinia.15.d
+	picture = GFX_event_PIE_British_Diplomacy
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.15"
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sardinia.15.a
+		# log = "option:		name = sardinia.15.a"
+		add_political_power = -50
+		##opinion modifier
+		hidden_effect = {
+			unlock_national_focus = PIE_Accept_Confederation
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = PIE_Political_Structure_Planning_FT
+					}
+				}
+				unlock_national_focus = PIE_Political_Structure_Planning_FT
+			}
+		}
+		custom_effect_tooltip = PIE_bypass_focus_british_alliance
+	}
+}
+
+country_event = {
+	id = sardinia.24
+	title = sardinia.24.t
+	desc = sardinia.24.d
+	picture = GFX_event_PIE_British_Diplomacy
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = sardinia.24"
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sardinia.24.a
+		# log = "option:		name = sardinia.24.a"
+		add_political_power = 50
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = PIE_Political_Structure_Planning_FT
+				}
+			}
+			unlock_national_focus = PIE_Political_Structure_Planning_FT
+		}
+		##opinion modifier
+	}
+}
+
+
+
+
 
 ###########################################
 ###		SECOND WAR FOR INDEPENDENCE		###
@@ -825,7 +976,7 @@ country_event = {
 					}
 				}
 			}
-		if = {
+					if = {
 			limit = {
 				has_country_flag = PIE_Plombieres_complete
 			}
@@ -851,7 +1002,7 @@ country_event = {
 				add_ideas = {
 					ITA_2IP_Idea
 				}
-				#load_oob = "FRA_1859" #
+				load_oob = "FRA_1859"
 			}
 		}
 		PIE = {
@@ -941,6 +1092,8 @@ country_event = {
 		name = sardinia2iw.5.a
 	}
 }
+
+
 ###########
 # BELOW MAY NEED DELETED
 #########
