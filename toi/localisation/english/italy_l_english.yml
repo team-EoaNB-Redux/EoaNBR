@@ -170,7 +170,7 @@ sardinia2iw.1.t: "Austria demands demobilization"
 sardinia2iw.1.d: "The Austrian's have demanded the complete demobilization of our army, claiming that our army is a 'destabilising force'. They have given us some time to complete their demand...This demand however, shall be given no ear to speak too."
 sardinia2iw.1.a: "The clock ticks"
 sardinia2iw.2.t: "Moment of truth"
-sardinia2iw.2.d: "The time for the Austrian demand to demobilize has ended, now is the moment of truth, can we and our ally push Austria out of austria and for us to be sole heir on northern italy."
+sardinia2iw.2.d: "The time for the Austrian demand to demobilize has ended, now is the moment of truth, can we and our ally push Austria out of austria and for us to be sole heir on northern Italy."
 sardinia2iw.2.a: "So it begins"
 sardinia2iw.3.t: "Milan surrenders"
 sardinia2iw.3.d: "Our forces have forced the garrison of Milan to either surrender or withdraw. We now hold a fortified location over the Tricino River, our next goal is to hit the fortress city of Mantua."
@@ -963,6 +963,12 @@ ITA_MOD_Diplomacy_Begin: "Open Diplomatic Channels with Modena"
 ITA_MOD_Postal_Agreement: "Postal Agreement with Modena"
 ITA_FRA_Seek_French_Recognition: "Seek French Recognition"
 ITA_FRA_PAP_Roman_Question_French_Garrison_Leave: "French Garrison Leaves the Papal States"
+ITA_decisions_category_build_recognition_in_europe: "Build Recognition in Europe"
+ITA_seek_recognition_from_britain: "Seek Recognition From Britain"
+ITA_seek_recognition_from_france: "Seek Recognition From France"
+ITA_seek_recognition_from_prussia: "Seek Recognition From Prussia"
+ITA_seek_recognition_from_austria: "Seek Recognition From Austria"
+ITA_seek_recognition_from_san_marino: "Seek Recognition From San Marino"
 
 
 #####################
@@ -2528,6 +2534,7 @@ TUS_another_banner_TT: "§CWe will search for another cause in the peninsula to 
 ITA_PIE_focus_unlocks_political_branch_TT: "§CUnlocks More of the Political Branch (Will require reopening the FT)§!"
 ITA_Rattazzi_Victory_TT: "§GWe will entrust Rattazzi with organizing the new Italian Nation!§!"
 ITA_Cavour_Victory_TT: "§GWe will entrust Cavour with organizing the new Italian Nation!§!"
+ITA_PIE_focus_unlocks_recognition_decisions_TT: "§GUnlocks decisions to seek recognition from other European nations.§"
 
 
 #################
@@ -2537,6 +2544,7 @@ ITA_Cavour_Victory_TT: "§GWe will entrust Cavour with organizing the new Italia
 PIE_Victor_Emmanuel_Army_HC: "Victor Emmanuel II"
 POLITICS_Camillo_Benso_di_Cavour_DESC: "Genevan by birth, his mother brought into the Cavour family the influence of Geneva, a city open to all the political, religious, and social movements of the period. The French Revolution imperiled the possessions of the Cavours because of their close ties with the Ancien Régime, but Camillo's father reestablished the family in an eminent position in Napoleonic society. As the younger son who could not hope for the economic and social position that would fall to his elder brother, Camillo saw a brilliant career open up before him under the protection of the court of Charles Albert, Prince of Savoy. \n\n His lack of enthusiasm for the court position and his open ridicule of the page-boy's uniform he was obliged to wear created controversy and confirmed the growing suspicions of rebellious intent within the young Camillo. He was influenced by the liberal ideas of the French writers Benjamin Constant and François Guizot, and his adversaries remained those of his childhood: paternalistic absolutism; legitimist reactionaries representing the landed interests, the aristocracy, and the clergy; and the union of throne and altar. His father got him appointed mayor of a village south of Turin. Social interests began to absorb him; the problems of poverty and prisoner education became the subjects of his research. In 1834, he wrote a memoir on poverty in Piedmont, which was published the following year in London in the 'Report from His Majesty's Commissioners for Inquiring into the Administration and Practical Operation of the Poor Laws.' A second pamphlet on the history of the Poor Laws in England was edited and published by Cavour in 1835 in Turin.\n\n His transition to politics was completed when King Charles Albert decided to embark on measures of reform and to concede a certain amount of freedom to the press. This prompted Cavour to offer his services as a volunteer until, on being elected a deputy in the Third Legislature, he began to fight for the approval of a peace treaty with Austria, although the extremists of the left wanted to continue a war that was, in effect, already lost. In October 1850, he was offered the post of Minister of Agriculture and soon became the most active and influential member of the Cabinet. The European drama into which Cavour was drawn against his will began in 1854 with the Crimean War, with the combined efforts of France, Great Britain, and Piedmont to secure the prosperity of the Ottoman Empire against the encroaching Russian Empire.\n\n Cavour advocates a complete anti-Austrian movement across the Piedmontese lands to fulfill the Risorgimento and unite the Italian lands, a promise he is willing to keep."
 PRM_italian_revolutionaries: "Italian Revolutionaries"
+PIE_luigi_farini_name: "Luigi Carlo Farini"
 
 ### Factions
 FRA_PIE_alliance_faction: "Franco-Sardinian Alliance"
@@ -2561,6 +2569,9 @@ PIE_trait_Father_of_the_Fatherland: "Father of the Fatherland"
 
 PIE_revoke_naval_access: "Repealed Naval Docking Rights"
 PIE_renew_naval_access: "Renewed Naval Access"
+ITA_Reformed_the_Siccardi_Laws: "Reformed the Siccardi Laws"
+ITA_The_Subversive_Laws: "The Subversive Laws"
+ITA_Altered_the_Deal: "Altered the Deal"
 
 
 
@@ -3007,7 +3018,7 @@ ITA_PIE_focus_Northern_Rail_Lines_desc: "Rail lines in the north of Italy will a
 ITA_PIE_focus_Southern_Rail_Lines: "Sourthern Rail Lines"
 ITA_PIE_focus_Southern_Rail_Lines_desc: "While not as integral as the northern rail lines, southern rail can still be used for transporting people and agricultural goods."
 ITA_PIE_focus_1865_Railways_Act: "1865 Railways Act"
-ITA_PIE_focus_1865_Railways_Act_desc: "The 1865 Railways Act will help connect the formerly separated rail lines into one grand railway network connecting all of italy."
+ITA_PIE_focus_1865_Railways_Act_desc: "The 1865 Railways Act will help connect the formerly separated rail lines into one grand railway network connecting all of Italy."
 ITA_PIE_focus_Agriculture_of_Italy: "Agriculture of Italy"
 ITA_PIE_focus_Agriculture_of_Italy_desc: "Italy has a long history of agriculture. While industrialization is also important, development and modernization of our agriculture will be of great benefit."
 ITA_PIE_focus_Approve_the_Sale_of_Church_Estates: "Approve the Sale of Church Estates"

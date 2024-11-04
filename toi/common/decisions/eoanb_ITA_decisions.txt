@@ -5090,3 +5090,129 @@ ITA_Economic_category_decisions = {
 
 ITA_decisions_category_influence_minor_states = {
 }
+
+#Build recognition in Europe decisions
+ITA_decisions_category_build_recognition_in_europe = {
+	icon = GFX_decision_unknown
+	allowed = {
+		original_tag = PIE
+	}
+	visible = {
+		has_completed_focus = ITA_PIE_focus_Build_Recognition_in_Europe
+	}
+	ITA_seek_recognition_from_britain = {
+		ai_will_do = {
+			base = 1
+		}
+		icon = GFX_decision_unknown
+		cost = 25
+		fire_only_once = yes
+		available = {
+			has_completed_focus = ITA_PIE_focus_Build_Recognition_in_Europe
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_variable = {
+				var = PIE.recognized_by_britain
+				value = yes
+			}
+		}
+		days_remove = 7
+	}
+
+	ITA_seek_recognition_from_france = {
+		ai_will_do = {
+			base = 1
+		}
+		icon = GFX_decision_unknown
+		cost = 25
+		fire_only_once = yes
+		available = {
+			has_completed_focus = ITA_PIE_focus_Build_Recognition_in_Europe
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_variable = {
+				var = PIE.recognized_by_france
+				value = yes
+			}
+		}
+		days_remove = 7
+	}
+
+	ITA_seek_recognition_from_prussia = {
+		ai_will_do = {
+			base = 1
+		}
+		icon = GFX_decision_unknown
+		cost = 25
+		fire_only_once = yes
+		available = {
+			has_completed_focus = ITA_PIE_focus_Build_Recognition_in_Europe
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_variable = {
+				var = PIE.recognized_by_prussia
+				value = yes
+			}
+		}
+		days_remove = 7
+	}
+
+	ITA_seek_recognition_from_austria = {
+		ai_will_do = {
+			base = 1
+		}
+		icon = GFX_decision_unknown
+		cost = 25
+		fire_only_once = yes
+		available = {
+			has_completed_focus = ITA_PIE_focus_Build_Recognition_in_Europe
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_variable = {
+				var = PIE.recognized_by_austria
+				value = yes
+			}
+		}
+		days_remove = 7
+	}
+
+	ITA_seek_recognition_from_san_marino = {
+		ai_will_do = {
+			base = 1
+		}
+		icon = GFX_decision_unknown
+		cost = 25
+		fire_only_once = yes
+		available = {
+			has_completed_focus = ITA_PIE_focus_Build_Recognition_in_Europe
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_variable = {
+				var = PIE.recognized_by_san_marino
+				value = yes
+			}
+		}
+		days_remove = 7
+	}
+}
+

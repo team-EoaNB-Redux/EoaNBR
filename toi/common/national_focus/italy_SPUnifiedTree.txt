@@ -744,6 +744,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			PAP = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_Reformed_the_Siccardi_Laws
+				}
+			}
 		}
 	}
 	focus = {
@@ -760,6 +766,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			PAP = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = ITA_The_Subversive_Laws
+				}
+			}
 		}
 	}
 	focus = {
@@ -773,7 +785,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			# Unlock decisions for building recognition in Europe
+			custom_effect_tooltip = ITA_PIE_focus_unlocks_recognition_decisions_TT
 		}
 	}
 	focus = {

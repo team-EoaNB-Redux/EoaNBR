@@ -112,7 +112,7 @@ characters = {
 		}
 	}
 	PIE_luigi_farini = {
-		name = "Luigi Carlo Farini"
+		name = PIE_luigi_farini_name
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/leader_unknown.dds"
