@@ -5,25 +5,25 @@
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "GRE_Panagiotis_Koronaios"
+		localization_key = scripted_loc_GRE_Panagiotis_Koronaios
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "GRE_Antonios_Mavromichalis"
+		localization_key = scripted_loc_GRE_Antonios_Mavromichalis
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "GRE_Amadeus_Emmanuel_Han"
+		localization_key = scripted_loc_GRE_Amadeus_Emmanuel_Han
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "GRE_Efstratios_Pissas"
+		localization_key = scripted_loc_GRE_Efstratios_Pissas
 	}
 	###Army Replacement Marker###
 }
@@ -35,13 +35,13 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "GRE_Leonidas_Palaskas"
+		localization_key = scripted_loc_GRE_Leonidas_Palaskas
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "GRE_Antonios_Kriezis"
+		localization_key = scripted_loc_GRE_Antonios_Kriezis
 	}
 	###Navy Replacement Marker###
 }

@@ -12,7 +12,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "[?FROM.influenced_by.GetFlag][?FROM.influenced_by.GetName] and [?FROM.influenced_by2.GetFlag][?FROM.influenced_by2.GetName]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_FROMPeriodMark_influenced_byPeriodMark_GetFlagRBracketSym_LBracketSym_QuestionMark_FROMPeriodMark_influenced_byPeriodMark_GetNameRBracketSym__and_LBracketSym_QuestionMark_FROMPeriodMark_influenced_by2PeriodMark_GetFlagRBracketSym_LBracketSym_QuestionMark_FROMPeriodMark_influenced_by2PeriodMark_GetNameRBracketSym
 	}
 	
 	text = {
@@ -24,7 +24,7 @@ defined_text = {
 				check_variable = { FROM.influenced_by2 = FROM.id }
 			}
 		}
-        localization_key = "[?FROM.influenced_by.GetFlag][?FROM.influenced_by.GetName]"
+        localization_key = scripted_loc_LBracketSym_QuestionMark_FROMPeriodMark_influenced_byPeriodMark_GetFlagRBracketSym_LBracketSym_QuestionMark_FROMPeriodMark_influenced_byPeriodMark_GetNameRBracketSym
     }
 	
 	text = {
@@ -34,7 +34,7 @@ defined_text = {
 				check_variable = { FROM.influenced_by2 = FROM.id }
 			}
 		}
-        localization_key = "no_foreign_influence_country"
+        localization_key = scripted_loc_no_foreign_influence_country
     }
 }
 
@@ -52,7 +52,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "[?FROM.influenced_by.GetFlag][?FROM.influenced_by2.GetFlag]"
+		localization_key = scripted_loc_LBracketSym_QuestionMark_FROMPeriodMark_influenced_byPeriodMark_GetFlagRBracketSym_LBracketSym_QuestionMark_FROMPeriodMark_influenced_by2PeriodMark_GetFlagRBracketSym
 	}
 	
 	text = {
@@ -64,7 +64,7 @@ defined_text = {
 				check_variable = { FROM.influenced_by2 = FROM.id }
 			}
 		}
-        localization_key = "[?FROM.influenced_by.GetFlag]"
+        localization_key = scripted_loc_LBracketSym_QuestionMark_FROMPeriodMark_influenced_byPeriodMark_GetFlagRBracketSym
     }
 	
 	text = {
@@ -74,7 +74,7 @@ defined_text = {
 				check_variable = { FROM.influenced_by2 = FROM.id }
 			}
 		}
-        localization_key = "no_foreign_influence_country"
+        localization_key = scripted_loc_no_foreign_influence_country
     }
 }
 
