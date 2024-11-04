@@ -5,49 +5,49 @@
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_AUS_Archduke_Albrecht_of_Austria
+		localization_key = "AUS_Archduke_Albrecht_of_Austria"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_AUS_Ludwig_von_Gablenz
+		localization_key = "AUS_Ludwig_von_Gablenz"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_AUS_Ludwig_von_Benedek
+		localization_key = "AUS_Ludwig_von_Benedek"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_AUS_August_von_Degenfeld
+		localization_key = "AUS_August_von_Degenfeld"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_AUS_Heinrich_von_Hess
+		localization_key = "AUS_Heinrich_von_Hess"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_AUS_Franz_von_Wimpffen
+		localization_key = "AUS_Franz_von_Wimpffen"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = scripted_loc_AUS_Franz_von_Schlik
+		localization_key = "AUS_Franz_von_Schlik"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = scripted_loc_AUS_Franz_von_Hauslab
+		localization_key = "AUS_Franz_von_Hauslab"
 	}
 	###Army Replacement Marker###
 }
@@ -59,37 +59,37 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_AUS_Archduke_Maximillian_of_Austria
+		localization_key = "AUS_Archduke_Maximillian_of_Austria"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_AUS_Ludwig_von_Fautz
+		localization_key = "AUS_Ludwig_von_Fautz"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_AUS_Heinrich_von_Littrow
+		localization_key = "AUS_Heinrich_von_Littrow"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_AUS_Maximilian_Daublebsky_von_Sterneck
+		localization_key = "AUS_Maximilian_Daublebsky_von_Sterneck"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_AUS_Josef_von_Romako
+		localization_key = "AUS_Josef_von_Romako"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_AUS_August_von_Jilek
+		localization_key = "AUS_August_von_Jilek"
 	}
 	###Navy Replacement Marker###
 }

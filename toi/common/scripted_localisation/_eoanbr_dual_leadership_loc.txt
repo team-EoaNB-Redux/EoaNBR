@@ -44,6 +44,6 @@ defined_text = {
 		localization_key = GFX_Portrait_CSA_john_breckinridge
 	}
 	text = {
-		localization_key = scripted_loc_GFX_portrait_bg_blank
+		localization_key = "GFX_portrait_bg_blank"
 	}
 }

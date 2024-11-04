@@ -544,7 +544,7 @@ defined_text = {
 				RUS_var_caucasus_unrest > 0.7
 			}
 		}
-		localization_key = scripted_loc_RUS_CAUCASIAN_UNREST_HIGH_LOC
+		localization_key = "RUS_CAUCASIAN_UNREST_HIGH_LOC"
 	}
 	text = {
 		trigger = {
@@ -552,7 +552,7 @@ defined_text = {
 				RUS_var_caucasus_unrest < 0.35
 			}
 		}
-		localization_key = scripted_loc_RUS_CAUCASIAN_UNREST_LOW_LOC
+		localization_key = "RUS_CAUCASIAN_UNREST_LOW_LOC"
 	}
 	text = {
 		trigger = {
@@ -560,10 +560,10 @@ defined_text = {
 				RUS_var_caucasus_unrest < 0
 			}
 		}
-		localization_key = scripted_loc_RUS_CAUCASIAN_UNREST_NONE_LOC
+		localization_key = "RUS_CAUCASIAN_UNREST_NONE_LOC"
 	}
 	text = {
-		localization_key = scripted_loc_RUS_CAUCASIAN_UNREST_MEDIUM_LOC
+		localization_key = "RUS_CAUCASIAN_UNREST_MEDIUM_LOC"
 	}
 }
 
@@ -575,7 +575,7 @@ defined_text = {
 				RUS_var_caucasus_strength > 0.7
 			}
 		}
-		localization_key = scripted_loc_RUS_CAUCASIAN_STRENGTH_HIGH_LOC
+		localization_key = "RUS_CAUCASIAN_STRENGTH_HIGH_LOC"
 	}
 	text = {
 		trigger = {
@@ -583,7 +583,7 @@ defined_text = {
 				RUS_var_caucasus_strength < 0.35
 			}
 		}
-		localization_key = scripted_loc_RUS_CAUCASIAN_STRENGTH_LOW_LOC
+		localization_key = "RUS_CAUCASIAN_STRENGTH_LOW_LOC"
 	}
 	text = {
 		trigger = {
@@ -591,10 +591,10 @@ defined_text = {
 				RUS_var_caucasus_strength < 0
 			}
 		}
-		localization_key = scripted_loc_RUS_CAUCASIAN_STRENGTH_NONE_LOC
+		localization_key = "RUS_CAUCASIAN_STRENGTH_NONE_LOC"
 	}
 	text = {
-		localization_key = scripted_loc_RUS_CAUCASIAN_STRENGTH_MEDIUM_LOC
+		localization_key = "RUS_CAUCASIAN_STRENGTH_MEDIUM_LOC"
 	}
 }
 
@@ -606,7 +606,7 @@ defined_text = {
 				has_country_flag = GRE_flag_luitpold_heir
 			}
 		}
-		localization_key = scripted_loc_eoanb_greek_heir_otto_luitpold
+		localization_key = "eoanb_greek_heir_otto_luitpold"
 	}
 	text = {
 		trigger = {
@@ -614,10 +614,10 @@ defined_text = {
 				has_country_flag = GRE_flag_ludwig_heir
 			}
 		}
-		localization_key = scripted_loc_eoanb_greek_heir_otto_ludwig
+		localization_key = "eoanb_greek_heir_otto_ludwig"
 	}
 	text = {
-		localization_key = scripted_loc_eoanb_greek_heir_otto_none
+		localization_key = "eoanb_greek_heir_otto_none"
 	}
 }
 
@@ -631,7 +631,7 @@ defined_text = {
 				compare = equals
 			}
 		}
-		localization_key = scripted_loc_Unlisted
+		localization_key = "Unlisted"
 	}
 	text = {
 		trigger = {
@@ -642,7 +642,7 @@ defined_text = {
 			}
 			has_country_flag = eoanb_is_super_power
 		}
-		localization_key = scripted_loc_Super_Power
+		localization_key = "Super Power"
 	}
 	text = {
 		trigger = {
@@ -652,7 +652,7 @@ defined_text = {
 				compare = less_than_or_equals
 			}
 		}
-		localization_key = scripted_loc_Great_Power
+		localization_key = "Great Power"
 	}
 	text = {
 		trigger = {
@@ -665,7 +665,7 @@ defined_text = {
 				compare = less_than_or_equals
 			}
 		}
-		localization_key = scripted_loc_Major_Power
+		localization_key = "Major Power"
 	}
 	text = {
 		trigger = {
@@ -678,10 +678,10 @@ defined_text = {
 				compare = less_than_or_equals
 			}
 		}
-		localization_key = scripted_loc_Minor_Power
+		localization_key = "Minor Power"
 	}
 	text = {
-		localization_key = scripted_loc_Insignificant_Power
+		localization_key = "Insignificant Power"
 	}
 }
 
@@ -691,76 +691,76 @@ defined_text = {
 		trigger = {
 			has_idea = absolute_monarchy
 		}
-		localization_key = scripted_loc_Absolute_Monarchy
+		localization_key = "Absolute Monarchy"
 	}
 	text = {
 		trigger = {
 			has_idea = constitutional_monarchy
 		}
-		localization_key = scripted_loc_Constitutional_Monarchy
+		localization_key = "Constitutional Monarchy"
 	}
 	text = {
 		trigger = {
 			has_idea = parliamentary_monarchy
 		}
-		localization_key = scripted_loc_Parliamentary_Monarchy
+		localization_key = "Parliamentary Monarchy"
 	}
 	text = {
 		trigger = {
 			has_idea = parliamentary_republic
 		}
-		localization_key = scripted_loc_Parliamentary_Republic
+		localization_key = "Parliamentary Republic"
 	}
 	text = {
 		trigger = {
 			has_idea = semi_presidential_republic
 		}
-		localization_key = scripted_loc_Semi-Presidential_Republic
+		localization_key = "Semi-Presidential Republic"
 	}
 	text = {
 		trigger = {
 			has_idea = presidential_republic
 		}
-		localization_key = scripted_loc_Presidential_Republic
+		localization_key = "Presidential Republic"
 	}
 	text = {
 		trigger = {
 			has_idea = socialist_republic
 		}
-		localization_key = scripted_loc_Socialist_Republic
+		localization_key = "Socialist Republic"
 	}
 	text = {
 		trigger = {
 			has_idea = socialist_state
 		}
-		localization_key = scripted_loc_Socialist_State
+		localization_key = "Socialist State"
 	}
 	text = {
 		trigger = {
 			has_idea = revolutionary_government
 		}
-		localization_key = scripted_loc_Revolutionary_Government
+		localization_key = "Revolutionary Government"
 	}
 	text = {
 		trigger = {
 			has_idea = totalitarian_dictatorship
 		}
-		localization_key = scripted_loc_Totalitarian_Dictatorship
+		localization_key = "Totalitarian Dictatorship"
 	}
 	text = {
 		trigger = {
 			has_idea = free_city
 		}
-		localization_key = scripted_loc_Free_City
+		localization_key = "Free City"
 	}
 	text = {
 		trigger = {
 			has_idea = military_junta
 		}
-		localization_key = scripted_loc_Military_Junta
+		localization_key = "Military Junta"
 	}
 	text = {
-		localization_key = scripted_loc_Anarchy
+		localization_key = "Anarchy"
 	}
 }
 
@@ -772,10 +772,10 @@ defined_text = {
 				show_enemies_button_1 > 0
 			}
 		}
-		localization_key = scripted_loc_GFX_sort_button_202x29_3_framesColonSym_2
+		localization_key = "GFX_sort_button_202x29_3_frames:2"
 	}
 	text = {
-		localization_key = scripted_loc_GFX_sort_button_202x29_3_framesColonSym_1
+		localization_key = "GFX_sort_button_202x29_3_frames:1"
 	}
 }
 
@@ -785,7 +785,7 @@ defined_text = {
 		trigger = {
 			has_country_flag = AUS_flag_karl_auesperg_aus_mp
 		}
-		localization_key = scripted_loc_Karl_of_Auersperg
+		localization_key = "Karl of Auersperg"
 	}
 }
 
@@ -795,13 +795,13 @@ defined_text = {
 		trigger = {
 			has_country_flag = AUS_flag_andrassy_hun_pm
 		}
-		localization_key = scripted_loc_Gyula_Andrássy
+		localization_key = "Gyula Andrássy"
 	}
 	text = {
 		trigger = {
 			has_country_flag = AUS_flag_deak_hun_pm
 		}
-		localization_key = scripted_loc_Ferenc_Deák
+		localization_key = "Ferenc Deák"
 	}
 }
 
@@ -813,7 +813,7 @@ defined_text = {
 				has_country_flag = AUS_flag_andrassy_hun_pm
 			}
 		}
-		localization_key = scripted_loc_GFX_AUH_portrait_Gyula_Andrassy
+		localization_key = "GFX_AUH_portrait_Gyula_Andrassy"
 	}
 	text = {
 		trigger = {
@@ -821,7 +821,7 @@ defined_text = {
 				has_country_flag = AUS_flag_deak_hun_pm
 			}
 		}
-		localization_key = scripted_loc_GFX_AUH_portrait_Ferenc_Deak
+		localization_key = "GFX_AUH_portrait_Ferenc_Deak"
 	}
 }
 
@@ -831,7 +831,7 @@ defined_text = {
 		trigger = {
 			has_country_flag = AUS_flag_karl_auesperg_aus_mp
 		}
-		localization_key = scripted_loc_GFX_AUH_portrait_Karl_von_Auesperg
+		localization_key = "GFX_AUH_portrait_Karl_von_Auesperg"
 	}
 }
 
@@ -841,10 +841,10 @@ defined_text = {
 		trigger = {
 			has_political_power < var:ppcostaddrival1
 		}
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_NO
+		localization_key = "TOOLTIP_ADD_RIVAL_NO"
 	}
 	text = {
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_YES
+		localization_key = "TOOLTIP_ADD_RIVAL_YES"
 	}
 }
 
@@ -854,10 +854,10 @@ defined_text = {
 		trigger = {
 			has_political_power < var:ppcostaddmostfavoured1
 		}
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_NO
+		localization_key = "TOOLTIP_ADD_RIVAL_NO"
 	}
 	text = {
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_YES
+		localization_key = "TOOLTIP_ADD_RIVAL_YES"
 	}
 }
 
@@ -869,7 +869,7 @@ defined_text = {
 				has_country_flag = AUS_flag_andrassy_hun_pm
 			}
 		}
-		localization_key = scripted_loc_GFX_AUH_portrait_Gyula_Andrassy
+		localization_key = "GFX_AUH_portrait_Gyula_Andrassy"
 	}
 	text = {
 		trigger = {
@@ -877,7 +877,7 @@ defined_text = {
 				has_country_flag = AUS_flag_deak_hun_pm
 			}
 		}
-		localization_key = scripted_loc_GFX_AUH_portrait_Ferenc_Deak
+		localization_key = "GFX_AUH_portrait_Ferenc_Deak"
 	}
 }
 
@@ -887,7 +887,7 @@ defined_text = {
 		trigger = {
 			has_country_flag = AUS_flag_karl_auesperg_aus_mp
 		}
-		localization_key = scripted_loc_GFX_AUH_portrait_Karl_von_Auesperg
+		localization_key = "GFX_AUH_portrait_Karl_von_Auesperg"
 	}
 }
 
@@ -909,10 +909,10 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_NO
+		localization_key = "TOOLTIP_ADD_RIVAL_NO"
 	}
 	text = {
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_YES
+		localization_key = "TOOLTIP_ADD_RIVAL_YES"
 	}
 }
 
@@ -936,10 +936,10 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_NO
+		localization_key = "TOOLTIP_ADD_RIVAL_NO"
 	}
 	text = {
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_YES
+		localization_key = "TOOLTIP_ADD_RIVAL_YES"
 	}
 }
 
@@ -949,10 +949,10 @@ defined_text = {
 		trigger = {
 			has_country_flag = eoanbdiplomacy_rival_cooldown
 		}
-		localization_key = scripted_loc_TOOLTIP_ADD_RIVAL_COOLDOWN
+		localization_key = "TOOLTIP_ADD_RIVAL_COOLDOWN"
 	}
 	text = {
-		localization_key = scripted_loc
+		localization_key = ""
 	}
 }
 
@@ -965,25 +965,25 @@ defined_text = {
 				has_idea = AUS_Franz_Joseph_I_old
 			}
 		}
-		localization_key = scripted_loc_Franz_Joseph_I
+		localization_key = "Franz Joseph I"
 	}
 	text = {
 		trigger = {
 			has_idea = BEL_Leopold_I
 		}
-		localization_key = scripted_loc_Leopold_I
+		localization_key = "Leopold I"
 	}
 	text = {
 		trigger = {
 			has_idea = DEN_Frederick_VII
 		}
-		localization_key = scripted_loc_Frederick_VIII
+		localization_key = "Frederick VIII"
 	}
 	text = {
 		trigger = {
 			has_idea = DEN_Christian_IX
 		}
-		localization_key = scripted_loc_Pope_Benedict_XV
+		localization_key = "Pope Benedict XV"
 	}
 	text = {
 		trigger = {
@@ -992,130 +992,130 @@ defined_text = {
 				has_idea = ENG_colonial_Victoria
 			}
 		}
-		localization_key = scripted_loc_Victoria_I
+		localization_key = "Victoria I"
 	}
 	text = {
 		trigger = {
 			has_idea = GRE_Otto_I
 		}
-		localization_key = scripted_loc_Otto_I
+		localization_key = "Otto I"
 	}
 	text = {
 		trigger = {
 			has_idea = GRE_George_I
 		}
-		localization_key = scripted_loc_George_I
+		localization_key = "George I"
 	}
 	text = {
 		trigger = {
 			has_idea = GRE_Alfred_I
 		}
-		localization_key = scripted_loc_Alfred_I
+		localization_key = "Alfred I"
 	}
 	text = {
 		trigger = {
 			has_idea = GRE_Luitpold_I
 		}
-		localization_key = scripted_loc_Leopold_I
+		localization_key = "Leopold I"
 	}
 	text = {
 		trigger = {
 			has_idea = HOL_William_III
 		}
-		localization_key = scripted_loc_William_III
+		localization_key = "William III"
 	}
 	text = {
 		trigger = {
 			has_idea = ITA_hos_Victor_Emmanuel_II
 		}
-		localization_key = scripted_loc_Victor_Emmanuel_II
+		localization_key = "Victor Emmanuel II"
 	}
 	text = {
 		trigger = {
 			has_idea = TUS_hos_Leopold_II
 		}
-		localization_key = scripted_loc_Leopold_II
+		localization_key = "Leopold II"
 	}
 	text = {
 		trigger = {
 			has_idea = OLD_Peter_II
 		}
-		localization_key = scripted_loc_Peter_II
+		localization_key = "Peter II"
 	}
 	text = {
 		trigger = {
 			has_idea = OTO_Abdulmecid
 		}
-		localization_key = scripted_loc_Abdulmecid_I
+		localization_key = "Abdulmecid I"
 	}
 	text = {
 		trigger = {
 			has_idea = POR_Pedro_V
 		}
-		localization_key = scripted_loc_Pedro_V
+		localization_key = "Pedro V"
 	}
 	text = {
 		trigger = {
 			has_idea = POR_Luis
 		}
-		localization_key = scripted_loc_Luis_I
+		localization_key = "Luis I"
 	}
 	text = {
 		trigger = {
 			has_idea = PRS_Friedrich_Wilhelm_IV
 		}
-		localization_key = scripted_loc_Friedrich_Wilhelm_IV
+		localization_key = "Friedrich Wilhelm IV"
 	}
 	text = {
 		trigger = {
 			has_idea = PRS_Wilhelm_I
 		}
-		localization_key = scripted_loc_Wilhelm_I
+		localization_key = "Wilhelm I"
 	}
 	text = {
 		trigger = {
 			has_idea = PRS_Friedrich_III
 		}
-		localization_key = scripted_loc_Friedrich_III
+		localization_key = "Friedrich III"
 	}
 	text = {
 		trigger = {
 			has_idea = PRS_Wilhelm_II
 		}
-		localization_key = scripted_loc_Wilhelm_II
+		localization_key = "Wilhelm II"
 	}
 	text = {
 		trigger = {
 			has_idea = RUS_Alexander_II
 		}
-		localization_key = scripted_loc_Alexander_II
+		localization_key = "Alexander II"
 	}
 	text = {
 		trigger = {
 			has_idea = SWE_Oscar_I
 		}
-		localization_key = scripted_loc_Oscar_I
+		localization_key = "Oscar I"
 	}
 	text = {
 		trigger = {
 			has_idea = SWE_Charles_XV
 		}
-		localization_key = scripted_loc_Charles_XV
+		localization_key = "Charles XV"
 	}
 	text = {
 		trigger = {
 			has_idea = SPR_Isabella_II
 		}
-		localization_key = scripted_loc_Isabella_II
+		localization_key = "Isabella II"
 	}
 	text = {
 		trigger = {
 			has_idea = BRA_Pedro_II
 		}
-		localization_key = scripted_loc_Pedro_II
+		localization_key = "Pedro II"
 	}
 	text = {
-		localization_key = scripted_loc_LBracketSym_PREVPeriodMark_GetLeaderRBracketSym
+		localization_key = "[PREV.GetLeader]"
 	}
 }
 
@@ -1125,7 +1125,7 @@ defined_text = {
 		trigger = {
 			has_idea = absolute_monarchy
 		}
-		localization_key = scripted_loc_Interior_Minister
+		localization_key = "Interior Minister"
 	}
 	text = {
 		trigger = {
@@ -1134,7 +1134,7 @@ defined_text = {
 				has_idea = parliamentary_monarchy
 			}
 		}
-		localization_key = scripted_loc_Prime_Minister
+		localization_key = "Prime Minister"
 	}
 	text = {
 		trigger = {
@@ -1143,7 +1143,7 @@ defined_text = {
 				has_idea = presidential_republic
 			}
 		}
-		localization_key = scripted_loc_President
+		localization_key = "President"
 	}
 	text = {
 		trigger = {
@@ -1153,34 +1153,34 @@ defined_text = {
 				has_idea = revolutionary_government
 			}
 		}
-		localization_key = scripted_loc_Chairman
+		localization_key = "Chairman"
 	}
 	text = {
 		trigger = {
 			has_idea = totalitarian_dictatorship
 		}
-		localization_key = scripted_loc_Leader
+		localization_key = "Leader"
 	}
 	text = {
 		trigger = {
 			has_idea = military_junta
 		}
-		localization_key = scripted_loc_General
+		localization_key = "General"
 	}
 	text = {
 		trigger = {
 			has_idea = anarchy
 		}
-		localization_key = scripted_loc_Citizen
+		localization_key = "Citizen"
 	}
 	text = {
 		trigger = {
 			has_idea = free_city
 		}
-		localization_key = scripted_loc_Lord_Mayor
+		localization_key = "Lord Mayor"
 	}
 	text = {
-		localization_key = scripted_loc_Leader
+		localization_key = "Leader"
 	}
 }
 
@@ -1219,7 +1219,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_Emperor
+		localization_key = "Emperor"
 	}
 	text = {
 		trigger = {
@@ -1233,7 +1233,7 @@ defined_text = {
 				has_idea = ENG_colonial_Victoria
 			}
 		}
-		localization_key = scripted_loc_Queen
+		localization_key = "Queen"
 	}
 	text = {
 		trigger = {
@@ -1247,7 +1247,7 @@ defined_text = {
 				tag = MOD
 			}
 		}
-		localization_key = scripted_loc_Duke
+		localization_key = "Duke"
 	}
 	text = {
 		trigger = {
@@ -1261,7 +1261,7 @@ defined_text = {
 				tag = MOD
 			}
 		}
-		localization_key = scripted_loc_Duke
+		localization_key = "Duke"
 	}
 	text = {
 		trigger = {
@@ -1271,7 +1271,7 @@ defined_text = {
 				has_idea = parliamentary_monarchy
 			}
 		}
-		localization_key = scripted_loc_King
+		localization_key = "King"
 	}
 	text = {
 		trigger = {
@@ -1280,7 +1280,7 @@ defined_text = {
 				has_idea = presidential_republic
 			}
 		}
-		localization_key = scripted_loc_President
+		localization_key = "President"
 	}
 	text = {
 		trigger = {
@@ -1290,34 +1290,34 @@ defined_text = {
 				has_idea = revolutionary_government
 			}
 		}
-		localization_key = scripted_loc_Chairman
+		localization_key = "Chairman"
 	}
 	text = {
 		trigger = {
 			has_idea = totalitarian_dictatorship
 		}
-		localization_key = scripted_loc_Leader
+		localization_key = "Leader"
 	}
 	text = {
 		trigger = {
 			has_idea = military_junta
 		}
-		localization_key = scripted_loc_General
+		localization_key = "General"
 	}
 	text = {
 		trigger = {
 			has_idea = anarchy
 		}
-		localization_key = scripted_loc_Citizen
+		localization_key = "Citizen"
 	}
 	text = {
 		trigger = {
 			has_idea = free_city
 		}
-		localization_key = scripted_loc_Lord_Mayor
+		localization_key = "Lord Mayor"
 	}
 	text = {
-		localization_key = scripted_loc_Leader
+		localization_key = "Leader"
 	}
 }
 
@@ -1330,10 +1330,10 @@ defined_text = {
 				has_idea = hos_regency
 			}
 		}
-		localization_key = scripted_loc_in_attendance_of_high_level_state_officials
+		localization_key = "in attendance of high level state officials"
 	}
 	text = {
-		localization_key = scripted_loc_in_attendance_of_LBracketSym_GetHoGTitleRBracketSym__LBracketSym_FromPeriodMark_GetLeaderRBracketSym__and_the_rest_of_the_royal_family_and_high_level_state_officials
+		localization_key = "in attendance of [GetHoGTitle] [From.GetLeader] and the rest of the royal family and high level state officials"
 	}
 }
 
@@ -1345,7 +1345,7 @@ defined_text = {
 				From.world_fair_preparation_var < 35
 			}
 		}
-		localization_key = scripted_loc_which_can_be_hailed_as_a_total_failure_as_only_a_few_thousand_visitor_have_already_flocked_to
+		localization_key = "which can be hailed as a total failure as only a few thousand visitor have already flocked to"
 	}
 	text = {
 		trigger = {
@@ -1356,7 +1356,7 @@ defined_text = {
 				From.world_fair_preparation_var < 55
 			}
 		}
-		localization_key = scripted_loc_which_can_be_hailed_as_mediocre_success_as_a_hundred_thousand_visitors_have_already_flocked_to
+		localization_key = "which can be hailed as mediocre success as a hundred thousand visitors have already flocked to"
 	}
 	text = {
 		trigger = {
@@ -1367,7 +1367,7 @@ defined_text = {
 				From.world_fair_preparation_var < 85
 			}
 		}
-		localization_key = scripted_loc_which_can_be_hailed_as_great_success_as_over_a_million_visitors_have_already_flocked_to
+		localization_key = "which can be hailed as great success as over a million visitors have already flocked to"
 	}
 	text = {
 		trigger = {
@@ -1375,7 +1375,7 @@ defined_text = {
 				From.world_fair_preparation_var > 84
 			}
 		}
-		localization_key = scripted_loc_which_can_be_hailed_as_great_success_as_million_of_visitors_from_all_over_the_world_have_already_flocked_to
+		localization_key = "which can be hailed as great success as million of visitors from all over the world have already flocked to"
 	}
 }
 
@@ -1387,7 +1387,7 @@ defined_text = {
 				From.world_fair_preparation_var < 35
 			}
 		}
-		localization_key = scripted_loc_The_LBracketSym_FromPeriodMark_GetNameRBracketSym__invested_very_little_money_and_resources_into_putting_up_this_World_Fair_and_it_is_without_doubt_that_once_complete_it_will_rest_in_history_as_a_disgrace
+		localization_key = "The [From.GetName] invested very little money and resources into putting up this World Fair and it is without doubt that once complete it will rest in history as a disgrace"
 	}
 	text = {
 		trigger = {
@@ -1398,7 +1398,7 @@ defined_text = {
 				From.world_fair_preparation_var < 55
 			}
 		}
-		localization_key = scripted_loc_The_LBracketSym_FromPeriodMark_GetNameRBracketSym__invested_a_mediocre_amount_of_money_and_resources_into_putting_up_this_World_Fair_and_while_it_is_not_one_to_be_remembered_in_time_it_is_merely_a_reflection_of_the_current_state_of_the_country
+		localization_key = "The [From.GetName] invested a mediocre amount of money and resources into putting up this World Fair and while it is not one to be remembered in time it is merely a reflection of the current state of the country"
 	}
 	text = {
 		trigger = {
@@ -1409,7 +1409,7 @@ defined_text = {
 				From.world_fair_preparation_var < 85
 			}
 		}
-		localization_key = scripted_loc_The_LBracketSym_FromPeriodMark_GetNameRBracketSym__invested_a_significant_amount_of_money_and_resources_into_putting_up_this_World_Fair_and_it_will_surely_be_remembered_as_one_of_the_better_World_Fairs_to_date
+		localization_key = "The [From.GetName] invested a significant amount of money and resources into putting up this World Fair and it will surely be remembered as one of the better World Fairs to date"
 	}
 	text = {
 		trigger = {
@@ -1417,7 +1417,7 @@ defined_text = {
 				From.world_fair_preparation_var > 84
 			}
 		}
-		localization_key = scripted_loc_The_LBracketSym_FromPeriodMark_GetNameRBracketSym__is_praised_for_putting_up_such_a_wonderful_World_Fair_and_it_is_without_doubt_that_once_it_is_complete_the_fair_will_rest_in_history_as_one_of_the_best_ones_to_date
+		localization_key = "The [From.GetName] is praised for putting up such a wonderful World Fair and it is without doubt that once it is complete the fair will rest in history as one of the best ones to date"
 	}
 }
 
@@ -1442,7 +1442,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_Indian_exhibition_put_up_by_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetNameRBracketSym
+		localization_key = "Of particular interest will be the Indian exhibition put up by [?from.world_fair_array^0.GetName]"
 	}
 	text = {
 		trigger = {
@@ -1483,7 +1483,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_North_African_exhibition_put_up_by_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetNameRBracketSym
+		localization_key = "Of particular interest will be the North African exhibition put up by the [?from.world_fair_array^0.GetName]"
 	}
 	text = {
 		trigger = {
@@ -1567,7 +1567,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_East_Asian_exhibition_put_up_by_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetNameRBracketSym
+		localization_key = "Of particular interest will be the East Asian exhibition put up by the [?from.world_fair_array^0.GetName]"
 	}
 	text = {
 		trigger = {
@@ -1644,7 +1644,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_African_exhibition_put_up_by_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetNameRBracketSym
+		localization_key = "Of particular interest will be the African exhibition put up by the [?from.world_fair_array^0.GetName]"
 	}
 	text = {
 		trigger = {
@@ -1652,7 +1652,7 @@ defined_text = {
 				tag = AUS
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__exhibition_featuring_an_interesting_display_of_ethnographic_material_from_various_nationalities_throughout_the_country
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] exhibition featuring an interesting display of ethnographic material from various nationalities throughout the country"
 	}
 	text = {
 		trigger = {
@@ -1671,7 +1671,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__exhibition_featuring_an_interesting_display_of_Finnish_saunasCommaMark__used_by_the_Finns_to_clean_themselves_in_the_harsh_winters
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] exhibition featuring an interesting display of Finnish saunas, used by the Finns to clean themselves in the harsh winters"
 	}
 	text = {
 		trigger = {
@@ -1679,7 +1679,7 @@ defined_text = {
 				tag = KOR
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__display_featuring_the_construction_of_a_traditional_Hanok_houseCommaMark__reputed_for_their_sturdiness_and_excellent_positioning
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] display featuring the construction of a traditional Hanok house, reputed for their sturdiness and excellent positioning"
 	}
 	text = {
 		trigger = {
@@ -1687,7 +1687,7 @@ defined_text = {
 				tag = BEL
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__pavillion_featuring_a_whole_traditional_waffle_shop_where_visitors_can_indulge_in_the_sweet_tastes_of_this_typical_dish
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] pavillion featuring a whole traditional waffle shop where visitors can indulge in the sweet tastes of this typical dish"
 	}
 	text = {
 		trigger = {
@@ -1696,7 +1696,7 @@ defined_text = {
 				date < 1887.01.01
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__pavillion_showing_off_its_industrial_achievements_and_in_particular_the_achievements_of_Alfred_Krupp's_companyCommaMark__who_has_outformed_any_other_competitor_with_his_metal_products
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] pavillion showing off its industrial achievements and in particular the achievements of Alfred Krupp's company, who has outformed any other competitor with his metal products"
 	}
 	text = {
 		trigger = {
@@ -1710,7 +1710,7 @@ defined_text = {
 				date < 1875.01.01
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__pavillion_with_its_display_of_foklore_from_throughout_the_countryCommaMark__a_triumphant_sign_of_the_recent_unification
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] pavillion with its display of foklore from throughout the country, a triumphant sign of the recent unification"
 	}
 	text = {
 		trigger = {
@@ -1720,7 +1720,7 @@ defined_text = {
 				date < 1870.01.01
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__pavillion_with_its_display_of_foklore_from_throughout_the_countryCommaMark__a_triumphant_sign_of_the_recent_unification
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] pavillion with its display of foklore from throughout the country, a triumphant sign of the recent unification"
 	}
 	text = {
 		trigger = {
@@ -1730,10 +1730,10 @@ defined_text = {
 				date < 1910.01.01
 			}
 		}
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__pavillion_featuring_impressive_structures_built_with_the_aid_of_renowned_engineer_Gustave_Eiffel
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] pavillion featuring impressive structures built with the aid of renowned engineer Gustave Eiffel"
 	}
 	text = {
-		localization_key = scripted_loc_Of_particular_interest_will_be_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_0PeriodMark_GetAdjectiveRBracketSym__pavillion_featuring_the_latest_achievements_in_the_fields_of_industryCommaMark__technology_and_the_artsPeriodMark
+		localization_key = "Of particular interest will be the [?from.world_fair_array^0.GetAdjective] pavillion featuring the latest achievements in the fields of industry, technology and the arts."
 	}
 }
 
@@ -1758,7 +1758,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_and_the_Indian_exhibition_put_up_by_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetNameRBracketSym
+		localization_key = "and the Indian exhibition put up by [?from.world_fair_array^2.GetName]"
 	}
 	text = {
 		trigger = {
@@ -1799,7 +1799,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_and_the_North_African_exhibition_put_up_by_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetNameRBracketSym
+		localization_key = "and the North African exhibition put up by the [?from.world_fair_array^2.GetName]"
 	}
 	text = {
 		trigger = {
@@ -1883,7 +1883,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_and_the_East_Asian_exhibition_put_up_by_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetNameRBracketSym
+		localization_key = "and the East Asian exhibition put up by the [?from.world_fair_array^2.GetName]"
 	}
 	text = {
 		trigger = {
@@ -1958,7 +1958,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_and_the_African_exhibition_put_up_by_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetNameRBracketSym
+		localization_key = "and the African exhibition put up by the [?from.world_fair_array^2.GetName]"
 	}
 	text = {
 		trigger = {
@@ -1966,7 +1966,7 @@ defined_text = {
 				tag = AUS
 			}
 		}
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__exhibition_featuring_an_interesting_display_of_ethnographic_material_from_various_nationalities_throughout_the_country
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] exhibition featuring an interesting display of ethnographic material from various nationalities throughout the country"
 	}
 	text = {
 		trigger = {
@@ -1985,7 +1985,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__exhibition_featuring_an_interesting_display_of_Finnish_saunasCommaMark__used_by_the_Finns_to_clean_themselves_in_the_harsh_winters
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] exhibition featuring an interesting display of Finnish saunas, used by the Finns to clean themselves in the harsh winters"
 	}
 	text = {
 		trigger = {
@@ -1993,7 +1993,7 @@ defined_text = {
 				tag = KOR
 			}
 		}
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__display_featuring_the_construction_of_a_traditional_Hanok_houseCommaMark__reputed_for_their_sturdiness_and_excellent_positioning
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] display featuring the construction of a traditional Hanok house, reputed for their sturdiness and excellent positioning"
 	}
 	text = {
 		trigger = {
@@ -2001,7 +2001,7 @@ defined_text = {
 				tag = BEL
 			}
 		}
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__pavillion_featuring_a_whole_traditional_waffle_shop_where_visitors_can_indulge_in_the_sweet_tastes_of_this_typical_dish
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] pavillion featuring a whole traditional waffle shop where visitors can indulge in the sweet tastes of this typical dish"
 	}
 	text = {
 		trigger = {
@@ -2010,7 +2010,7 @@ defined_text = {
 				date < 1887.01.01
 			}
 		}
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__pavillion_showing_off_its_industrial_achievements_and_in_particular_the_achievements_of_Alfred_Krupp's_companyCommaMark__who_has_outformed_any_other_competitor_with_his_metal_products
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] pavillion showing off its industrial achievements and in particular the achievements of Alfred Krupp's company, who has outformed any other competitor with his metal products"
 	}
 	text = {
 		trigger = {
@@ -2024,7 +2024,7 @@ defined_text = {
 				date < 1875.01.01
 			}
 		}
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__pavillion_with_its_display_of_foklore_from_throughout_the_countryCommaMark__a_triumphant_sign_of_the_recent_unification
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] pavillion with its display of foklore from throughout the country, a triumphant sign of the recent unification"
 	}
 	text = {
 		trigger = {
@@ -2034,7 +2034,7 @@ defined_text = {
 				date < 1870.01.01
 			}
 		}
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__pavillion_with_its_display_of_foklore_from_throughout_the_countryCommaMark__a_triumphant_sign_of_the_recent_unification
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] pavillion with its display of foklore from throughout the country, a triumphant sign of the recent unification"
 	}
 	text = {
 		trigger = {
@@ -2044,10 +2044,10 @@ defined_text = {
 				date < 1910.01.01
 			}
 		}
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__pavillion_featuring_impressive_structures_built_with_the_aid_of_renowned_engineer_Gustave_Eiffel
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] pavillion featuring impressive structures built with the aid of renowned engineer Gustave Eiffel"
 	}
 	text = {
-		localization_key = scripted_loc_and_the_LBracketSym_QuestionMark_fromPeriodMark_world_fair_arrayCaratSym_2PeriodMark_GetAdjectiveRBracketSym__pavillion_featuring_the_latest_achievements_in_the_fields_of_industryCommaMark__technology_and_the_artsPeriodMark
+		localization_key = "and the [?from.world_fair_array^2.GetAdjective] pavillion featuring the latest achievements in the fields of industry, technology and the arts."
 	}
 }
 
@@ -2058,10 +2058,10 @@ defined_text = {
 		trigger = {
 			#country_flag for alliance with France
 		}
-		localization_key = scripted_loc_PIE_Russian_Diplomacy_France_TT
+		localization_key = "PIE_Russian_Diplomacy_France_TT"
 	}
 	text = {
-		localization_key = scripted_loc_PIE_Russian_Diplomacy_NotFrance_TT
+		localization_key = "PIE_Russian_Diplomacy_NotFrance_TT"
 	}
 }
 
@@ -2071,10 +2071,10 @@ defined_text = {
 		trigger = {
 			has_country_flag = PIE_RUS_Alliance_2IP
 		}
-		localization_key = scripted_loc_PIE_Russian_Alliance_TT
+		localization_key = "PIE_Russian_Alliance_TT"
 	}
 	text = {
-		localization_key = scripted_loc_PIE_Russian_Assistance_TT
+		localization_key = "PIE_Russian_Assistance_TT"
 	}
 }
 
@@ -2084,10 +2084,10 @@ defined_text = {
 		trigger = {
 			has_country_flag = PIE_RUS_Alliance_2IP
 		}
-		localization_key = scripted_loc_PIE_Russian_Alliance_Title
+		localization_key = "PIE_Russian_Alliance_Title"
 	}
 	text = {
-		localization_key = scripted_loc_PIE_Russian_Assistance_Title
+		localization_key = "PIE_Russian_Assistance_Title"
 	}
 }
 
@@ -2099,10 +2099,10 @@ defined_text = {
 				has_country_flag = PIE_RUS_taking_Lombardy
 			}
 		}
-		localization_key = scripted_loc_PIE_Russian_War_Begins_TT
+		localization_key = "PIE_Russian_War_Begins_TT"
 	}
 	text = {
-		localization_key = scripted_loc_PIE_Russian_War_Begins_LVN_TT
+		localization_key = "PIE_Russian_War_Begins_LVN_TT"
 	}
 }
 
@@ -2114,7 +2114,7 @@ defined_text = {
 				has_country_flag = PIE_RUS_Alliance_2IP
 			}
 		}
-		localization_key = scripted_loc_PIE_Russian_2IP_Description_TT
+		localization_key = "PIE_Russian_2IP_Description_TT"
 	}
 	text = {
 		trigger = {
@@ -2122,10 +2122,10 @@ defined_text = {
 				#has_country_flag = whatever French one happens here
 			}
 		}
-		localization_key = scripted_loc_PIE_French_2IP_Description_TT
+		localization_key = "PIE_French_2IP_Description_TT"
 	}
 	text = {
-		localization_key = scripted_loc_PIE_Generic_2IP_Description_TT
+		localization_key = "PIE_Generic_2IP_Description_TT"
 	}
 }
 
@@ -2137,10 +2137,10 @@ defined_text = {
 				has_country_flag = PIE_RUS_Alliance_2IP
 			}
 		}
-		localization_key = scripted_loc_PIE_Russian_French_Deny_TT
+		localization_key = "PIE_Russian_French_Deny_TT"
 	}
 	text = {
-		localization_key = scripted_loc_PIE_French_Ally_Regular_TT
+		localization_key = "PIE_French_Ally_Regular_TT"
 	}
 }
 
@@ -2152,10 +2152,10 @@ defined_text = {
 				has_country_flag = PIE_Plombieres_Marriage_Accept
 			}
 		}
-		localization_key = scripted_loc_PIE_FRA_Plombieres_Marriage_Historical
+		localization_key = "PIE_FRA_Plombieres_Marriage_Historical"
 	}
 	text = {
-		localization_key = scripted_loc_PIE_FRA_Plombieres_Marriage_Denied
+		localization_key = "PIE_FRA_Plombieres_Marriage_Denied"
 	}
 }
 
@@ -2167,10 +2167,10 @@ defined_text = {
 				has_country_flag = PIE_Plombieres_War_Leader
 			}
 		}
-		localization_key = scripted_loc_PIE_FRA_Plombieres_Piedmont_War
+		localization_key = "PIE_FRA_Plombieres_Piedmont_War"
 	}
 	text = {
-		localization_key = scripted_loc_PIE_FRA_Plombieres_France_War
+		localization_key = "PIE_FRA_Plombieres_France_War"
 	}
 }
 
@@ -2183,13 +2183,13 @@ defined_text = {
 				has_country_flag = is_literally_italy
 			}
 		}
-		localization_key = scripted_loc_PIE_ITA_Diplomatic_Endeavors
+		localization_key = "PIE_ITA_Diplomatic_Endeavors"
 	}
 	text = {
 		trigger = {
 			has_country_flag = is_literally_italy
 		}
-		localization_key = scripted_loc_ITA_generic_Diplomatic_Endeavors
+		localization_key = "ITA_generic_Diplomatic_Endeavors"
 	}
 	text = {
 		trigger = {
@@ -2200,7 +2200,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = scripted_loc_ITA_generic_Diplomatic_Endeavors_not_PIE
+		localization_key = "ITA_generic_Diplomatic_Endeavors_not_PIE"
 	}
 }
 
@@ -2212,9 +2212,9 @@ defined_text = {
 				is_owned_by = ITA
 			}
 		}
-		localization_key = scripted_loc_ITA_Trentino_Protest_Event_Rome_Controlled
+		localization_key = "ITA_Trentino_Protest_Event_Rome_Controlled"
 	}
 	text = {
-		localization_key = scripted_loc_ITA_Trentino_Protest_Event
+		localization_key = "ITA_Trentino_Protest_Event"
 	}
 }

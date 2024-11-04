@@ -5,13 +5,13 @@
 		trigger = {
 			tag = PRS
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAfcImagePRSRBracketSym
+		localization_key = "[GetMHCAirforceAfcImagePRS]"
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAfcImageSIXRBracketSym
+		localization_key = "[GetMHCAirforceAfcImageSIX]"
 	}
 	###Airforce Afc Replacement Marker###
 	
@@ -19,7 +19,7 @@
 		trigger = {
 			always = yes
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAfcImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceAfcImageGeneric]"
 	}
 }
 
@@ -30,13 +30,13 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAchImagePRSRBracketSym
+		localization_key = "[GetMHCAirforceAchImagePRS]"
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAchImageSIXRBracketSym
+		localization_key = "[GetMHCAirforceAchImageSIX]"
 	}
 	###Airforce Ach Replacement Marker###
 	
@@ -44,7 +44,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceAchImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceAchImageGeneric]"
 	}
 }
 
@@ -55,13 +55,13 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceOpgImagePRSRBracketSym
+		localization_key = "[GetMHCAirforceOpgImagePRS]"
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceOpgImageSIXRBracketSym
+		localization_key = "[GetMHCAirforceOpgImageSIX]"
 	}
 	###Airforce Opg Replacement Marker###
 	
@@ -69,7 +69,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceOpgImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceOpgImageGeneric]"
 	}
 }
 
@@ -80,13 +80,13 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceWicImagePRSRBracketSym
+		localization_key = "[GetMHCAirforceWicImagePRS]"
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceWicImageSIXRBracketSym
+		localization_key = "[GetMHCAirforceWicImageSIX]"
 	}
 	###Airforce Wic Replacement Marker###
 	
@@ -94,7 +94,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceWicImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceWicImageGeneric]"
 	}
 }
 
@@ -105,13 +105,13 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceSupcImagePRSRBracketSym
+		localization_key = "[GetMHCAirforceSupcImagePRS]"
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceSupcImageSIXRBracketSym
+		localization_key = "[GetMHCAirforceSupcImageSIX]"
 	}
 	###Airforce Supc Replacement Marker###
 	
@@ -119,6 +119,6 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCAirforceSupcImageGenericRBracketSym
+		localization_key = "[GetMHCAirforceSupcImageGeneric]"
 	}
 }

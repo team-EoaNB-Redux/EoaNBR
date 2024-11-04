@@ -9,31 +9,31 @@
 				value = mhc_sec_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageGenericRBracketSym
+		localization_key = "[GetMHCArmySecImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_theorist_Panos_Koronaios
+		localization_key = "GFX_idea_GRE_theorist_Panos_Koronaios"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Antonios_Mavromichalis
+		localization_key = "GFX_idea_GRE_Antonios_Mavromichalis"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Amadeus_Emmanuel_Han
+		localization_key = "GFX_idea_GRE_Amadeus_Emmanuel_Han"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_sec_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Efstratios_Pissas
+		localization_key = "GFX_idea_GRE_Efstratios_Pissas"
 	}
 	###Army Sec Replacement Marker###
 	
@@ -41,7 +41,7 @@
 		trigger = {
 			check_variable = { mhc_sec_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC_null
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -56,31 +56,31 @@ defined_text = {
 				value = mhc_chief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_theorist_Panos_Koronaios
+		localization_key = "GFX_idea_GRE_theorist_Panos_Koronaios"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Antonios_Mavromichalis
+		localization_key = "GFX_idea_GRE_Antonios_Mavromichalis"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Amadeus_Emmanuel_Han
+		localization_key = "GFX_idea_GRE_Amadeus_Emmanuel_Han"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Efstratios_Pissas
+		localization_key = "GFX_idea_GRE_Efstratios_Pissas"
 	}
 	###Army Chief Replacement Marker###
 	
@@ -88,7 +88,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_chief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC_null
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -103,31 +103,31 @@ defined_text = {
 				value = mhc_vchief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyVChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_theorist_Panos_Koronaios
+		localization_key = "GFX_idea_GRE_theorist_Panos_Koronaios"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Antonios_Mavromichalis
+		localization_key = "GFX_idea_GRE_Antonios_Mavromichalis"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Amadeus_Emmanuel_Han
+		localization_key = "GFX_idea_GRE_Amadeus_Emmanuel_Han"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Efstratios_Pissas
+		localization_key = "GFX_idea_GRE_Efstratios_Pissas"
 	}
 	###Army VChief Replacement Marker###
 	
@@ -135,7 +135,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_vchief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC_null
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -150,31 +150,31 @@ defined_text = {
 				value = mhc_quart_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageGenericRBracketSym
+		localization_key = "[GetMHCArmyQuartImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_theorist_Panos_Koronaios
+		localization_key = "GFX_idea_GRE_theorist_Panos_Koronaios"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Antonios_Mavromichalis
+		localization_key = "GFX_idea_GRE_Antonios_Mavromichalis"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Amadeus_Emmanuel_Han
+		localization_key = "GFX_idea_GRE_Amadeus_Emmanuel_Han"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Efstratios_Pissas
+		localization_key = "GFX_idea_GRE_Efstratios_Pissas"
 	}
 	###Army Quart Replacement Marker###
 	
@@ -182,7 +182,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_quart_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC_null
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -197,31 +197,31 @@ defined_text = {
 				value = mhc_pchief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyPChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_theorist_Panos_Koronaios
+		localization_key = "GFX_idea_GRE_theorist_Panos_Koronaios"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Antonios_Mavromichalis
+		localization_key = "GFX_idea_GRE_Antonios_Mavromichalis"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Amadeus_Emmanuel_Han
+		localization_key = "GFX_idea_GRE_Amadeus_Emmanuel_Han"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Efstratios_Pissas
+		localization_key = "GFX_idea_GRE_Efstratios_Pissas"
 	}
 	###Army PChief Replacement Marker###
 	
@@ -229,7 +229,7 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_pchief_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC_null
+		localization_key = "GFX_MHC_null"
 	}
 }
 
@@ -244,31 +244,31 @@ defined_text = {
 				value = mhc_ins_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageGenericRBracketSym
+		localization_key = "[GetMHCArmyInsImageGeneric]"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 1 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_theorist_Panos_Koronaios
+		localization_key = "GFX_idea_GRE_theorist_Panos_Koronaios"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 2 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Antonios_Mavromichalis
+		localization_key = "GFX_idea_GRE_Antonios_Mavromichalis"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 3 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Amadeus_Emmanuel_Han
+		localization_key = "GFX_idea_GRE_Amadeus_Emmanuel_Han"
 	}
 	text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 4 }
 		}
-		localization_key = scripted_loc_GFX_idea_GRE_Efstratios_Pissas
+		localization_key = "GFX_idea_GRE_Efstratios_Pissas"
 	}
 	###Army Ins Replacement Marker###
 	
@@ -276,6 +276,6 @@ defined_text = {
 		trigger = {
 			check_variable = { mhc_ins_value = 0 }
 		}
-		localization_key = scripted_loc_GFX_MHC_null
+		localization_key = "GFX_MHC_null"
 	}
 }
