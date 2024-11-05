@@ -2722,7 +2722,8 @@ TUS_another_banner_TT: "§CWe will search for another cause in the peninsula to 
 ITA_PIE_focus_unlocks_political_branch_TT: "§CUnlocks More of the Political Branch (Will require reopening the FT)§!"
 ITA_Rattazzi_Victory_TT: "§GWe will entrust Rattazzi with organizing the new Italian Nation!§!"
 ITA_Cavour_Victory_TT: "§GWe will entrust Cavour with organizing the new Italian Nation!§!"
-ITA_PIE_focus_unlocks_recognition_decisions_TT: "§GUnlocks decisions to seek recognition from other European nations.§"
+ITA_PIE_focus_unlocks_recognition_decisions_TT: "§GUnlock decisions to seek recognition from other European nations.§"
+ITA_PIE_focus_reduce_southern_revolt_risk_3_TT: "§GDecrease the southern revolt risk by 3.§"
 
 
 #################

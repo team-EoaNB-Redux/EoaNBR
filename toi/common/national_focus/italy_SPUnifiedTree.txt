@@ -1398,6 +1398,11 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = ITA_PIE_focus_reduce_southern_revolt_risk_3_TT
+			add_to_variable = {
+				var = var:southern_revolt_risk
+				value = -3
+			}
 		}
 	}
 	focus = {
@@ -1411,6 +1416,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = ITA_PIE_focus_reduce_southern_revolt_risk_3_TT
+			add_to_variable = {
+				var = var:southern_revolt_risk
+				value = -3
+			}
 		}
 	}
 	focus = {
@@ -1427,6 +1437,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {

@@ -1816,6 +1816,7 @@ country_event = {
 	picture = GFX_event_ITA_Aspromonte_Clash
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = ita.60.a
@@ -1848,6 +1849,7 @@ country_event = {
 	}
 }
 
+#resignation of farini
 country_event = {
 	id = ita.62
 	title = ita.62.t
@@ -1855,6 +1857,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = ita.62.a
