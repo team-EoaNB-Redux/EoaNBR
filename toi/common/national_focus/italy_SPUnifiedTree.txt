@@ -1343,6 +1343,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_PIE_focus_Rise_of_Farini
 		}
+
+		available = {
+			date > 1862.9.28
+		}
+
 		relative_position_id = ITA_PIE_focus_Rise_of_Farini
 		x = 0
 		y = 1
@@ -1374,6 +1379,7 @@ focus_tree = {
 		cost = 70
 		available = {
 			has_completed_focus = ITA_PIE_focus_Demand_the_King_Declare_on_Russia
+			date > 1863.1.12
 		}
 		prerequisite = {
 			focus = ITA_PIE_focus_Letters_to_King
@@ -1412,6 +1418,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_PIE_focus_Reorganize_the_Cabinet
 		}
+
+		available = {
+			has_completed_focus = ITA_PIE_focus_Gather_Political_Leaders
+		}
+
 		relative_position_id = ITA_PIE_focus_Reorganize_the_Cabinet
 		x = 1
 		y = 1
@@ -1446,6 +1457,7 @@ focus_tree = {
 		cost = 70
 		available = {
 			has_completed_focus = ITA_PIE_focus_The_September_Convention
+			date > 1864.7.19
 		}
 		prerequisite = {
 			focus = ITA_PIE_focus_Letters_to_King
@@ -1479,6 +1491,7 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = ITA_PIE_focus_Open_Negotiations_for_the_Sale
+			date > 1864.11.24
 		}
 		relative_position_id = ITA_PIE_focus_Lanza_Law
 		x = 0

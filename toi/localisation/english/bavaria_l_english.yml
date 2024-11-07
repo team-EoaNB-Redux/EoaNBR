@@ -524,6 +524,13 @@
  bavariaevent.29.t: "Ostbahn - Segment Schwandorf-Cham-Bohemian Border in Service"
  bavariaevent.29.d: "As part of the railway concessions agreed upon by the state and the investors, the Ostbahn segment from Schwandorf to the Bohemian border via Cham has been completed. The line will eventually connect the Bavarian railway network to Prague."
  bavariaevent.29.a: "Gute Reise!"
+bavariaevent.31.t: "Russia Warns Against Italy"
+bavariaevent.31.d: "§G[RUS.GetNameWithFlag]§! warns both us and §2[PRS.GetNameWithFlag]§! that participation in the Second Italian War of Independence could lead to hostile relations from §G[RUS.GetNameWithFlag]§! towards us. Even without this threat, participation would be costly. Either way, this decision will not come down right now, although it may present itself later."
+bavariaevent.31.a: "We will see how this develops."
+bavariaevent.32.t: "Austria Calls for Aid"
+bavariaevent.32.d: "§O[AUS.GetNameWithFlag]§! has requested our participation in the war against §b[PIE.GetNameWithFlag]§!. This goes against the warning we received from §G[RUS.GetNameWithFlag]§!, but we have little choice in the matter. We shall join the war on the side of §O[AUS.GetNameWithFlag]§!."
+bavariaevent.32.a: "Not like we have a choice."
+
 
  ###Ideas###
  BAV_defenders_of_god_and_king: "Defenders of God and King"
