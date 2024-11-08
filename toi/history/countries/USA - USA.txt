@@ -122,6 +122,7 @@
 		#Culture
 		open_schools
 		secular_state
+		free_press
 
 		### National Spirits
 		#institution_rationalism
