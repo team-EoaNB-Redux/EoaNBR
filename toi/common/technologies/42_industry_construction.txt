@@ -1888,6 +1888,18 @@ technologies = {
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 9
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 9
+				}
+				enable_building = {
+					building = dockyard
+					level = 6
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
@@ -1923,6 +1935,19 @@ technologies = {
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 11
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 11
+				}
+				enable_building = {
+					building = dockyard
+					level = 7
+				}
+			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
 				arms_factory_productivity_modifier = 0.1
@@ -1960,6 +1985,18 @@ technologies = {
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 13
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 13
+				}
+				enable_building = {
+					building = dockyard
+					level = 8
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
@@ -2001,6 +2038,18 @@ technologies = {
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 15
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 15
+				}
+				enable_building = {
+					building = dockyard
+					level = 9
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.3

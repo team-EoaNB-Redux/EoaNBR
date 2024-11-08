@@ -3907,6 +3907,10 @@ technologies = {
 			start_year = 1850
 			
 			industrial_capacity_dockyard = 0.15
+			enable_building = {
+				building = dockyard
+				level = 5
+			}
 			folder = {
 				name = transportation_folder
 				position = { x = @dockyards y = @1850 }
