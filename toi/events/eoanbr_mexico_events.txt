@@ -2228,22 +2228,31 @@ country_event = { #Debt system initial announcement
 		}
 	}
 	
-	country_event = {#vera cruz abandons tacubaya
-		id = mexico_civil_war.41
-		title = mexico_civil_war.41.t
-		desc = mexico_civil_war.41.d
+	# country_event = {#vera cruz abandons tacubaya
+	# 	id = mexico_civil_war.41
+	# 	title = mexico_civil_war.41.t
+	# 	desc = mexico_civil_war.41.d
 
-		fire_only_once = yes
-		is_triggered_only = yes
+	# 	fire_only_once = yes
+	# 	is_triggered_only = yes
 
-		immediate = {
-			# set_cosmetic_tag = MEX_cosmetic_tacubaya
-			country_event = {
-				event = mexico_civil_war.42
-				days = 8
-			}
-		}
-	}
+	# 	immediate = {
+	# 		# set_cosmetic_tag = MEX_cosmetic_tacubaya
+	# 		country_event = {
+	# 			custom_effect_tooltip = MEX_1857_Civilwar
+	# 			every_controlled_state = {
+	# 				limit = { NOT = { state = 477 } }
+	# 				transfer_state_to = MEC
+	# 			}
+	# 			event = mexico_civil_war.42
+	# 			days = 8
+	# 		}
+	# 	}
+
+	# 	option = {
+	# 		name = mexico_civil_war.41.a
+	# 	}
+	# }
 	##########################
 
 

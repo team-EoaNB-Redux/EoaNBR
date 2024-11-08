@@ -1422,6 +1422,7 @@ focus_tree = {
 		completion_reward = {
 			#decrease compliance growth
 			country_event = mexico_politics.24
+			decrease_ps_by_one = yes
 		}
 		bypass = { always = yes }
 	}
