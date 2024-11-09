@@ -46,7 +46,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_REVOLUTIONARY_REICHSTAG_DESC"
-			ideology = social_egalitarianism
+			ideology = social_democracy
 			expire = "1900.1.1.1"
 			#id = -1
 		}

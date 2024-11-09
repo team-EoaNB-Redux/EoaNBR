@@ -98,8 +98,8 @@ focus_tree = {
 				limit = {
 					any_core_state = {
 						is_owned_and_controlled_by = RAJ
-						set_temp_variable = { religion_temp = religion_sunni }
-						is_majority_religion_in_state = yes
+						set_temp_variable = { religion_temp = token:religion_sunni }
+						is_majority_religion = yes
 					}
 				}
 				RAJ = { 
@@ -135,8 +135,8 @@ focus_tree = {
 				limit = {
 					any_core_state = {
 						is_owned_and_controlled_by = RAJ
-						set_temp_variable = { religion_temp = religion_sikh }
-						is_majority_religion_in_state = yes
+						set_temp_variable = { religion_temp = token:religion_sikh }
+						is_majority_religion = yes
 					}
 				}
 				RAJ = { 
