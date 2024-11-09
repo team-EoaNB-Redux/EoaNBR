@@ -5,7 +5,7 @@ defined_text = {
 		trigger = {
 			check_variable = { debt_level > 0 }
 		}
-		localization_key = "[GetDebtLevelImage]"
+		localization_key = scripted_loc_inline_11
 	}
 }
 

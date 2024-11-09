@@ -16,10 +16,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 0 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_inline_2516
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_inline_2517
 	}
 }
 defined_text = {
@@ -40,10 +40,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 1 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_inline_2518
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_inline_2519
 	}
 }
 defined_text = {
@@ -64,10 +64,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 2 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_inline_2520
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_inline_2521
 	}
 }
 defined_text = {
@@ -88,10 +88,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 3 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_inline_2522
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_inline_2523
 	}
 }
 defined_text = {
@@ -112,10 +112,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 4 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_inline_2524
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_inline_2525
 	}
 }
 defined_text = {
@@ -136,10 +136,10 @@ defined_text = {
 		trigger = {
 			check_variable = { PIE.ita_swfi_war_escalation_level_var > 5 }
 		}
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_YES"
+		localization_key = scripted_loc_inline_2526
 	}
 	text = {
-		localization_key = "ACCLIMATIZATION_GAIN_ENTRY_NO"
+		localization_key = scripted_loc_inline_2527
 	}
 }
 defined_text = {

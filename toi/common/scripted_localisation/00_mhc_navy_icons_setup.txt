@@ -5,79 +5,79 @@
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyNasImagePRS]"
+		localization_key = scripted_loc_inline_904
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyNasImageFRA]"
+		localization_key = scripted_loc_inline_905
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyNasImageENG]"
+		localization_key = scripted_loc_inline_906
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyNasImageSWE]"
+		localization_key = scripted_loc_inline_907
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyNasImageAUS]"
+		localization_key = scripted_loc_inline_908
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyNasImageFIN]"
+		localization_key = scripted_loc_inline_909
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyNasImageUSA]"
+		localization_key = scripted_loc_inline_910
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyNasImageRUS]"
+		localization_key = scripted_loc_inline_911
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyNasImageGRE]"
+		localization_key = scripted_loc_inline_912
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyNasImageNOR]"
+		localization_key = scripted_loc_inline_913
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyNasImageSIX]"
+		localization_key = scripted_loc_inline_914
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNasImageDEN]"
+		localization_key = scripted_loc_inline_915
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNasImageDEN]"
+		localization_key = scripted_loc_inline_916
 	}
 	###Navy Nas Replacement Marker###
 	
@@ -85,7 +85,7 @@
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyNasImageGeneric]"
+		localization_key = scripted_loc_inline_917
 	}
 }
 
@@ -96,79 +96,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyNcsImagePRS]"
+		localization_key = scripted_loc_inline_918
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyNcsImageFRA]"
+		localization_key = scripted_loc_inline_919
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyNcsImageENG]"
+		localization_key = scripted_loc_inline_920
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyNcsImageSWE]"
+		localization_key = scripted_loc_inline_921
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyNcsImageAUS]"
+		localization_key = scripted_loc_inline_922
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyNcsImageFIN]"
+		localization_key = scripted_loc_inline_923
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyNcsImageUSA]"
+		localization_key = scripted_loc_inline_924
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyNcsImageRUS]"
+		localization_key = scripted_loc_inline_925
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyNcsImageGRE]"
+		localization_key = scripted_loc_inline_926
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyNcsImageNOR]"
+		localization_key = scripted_loc_inline_927
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyNcsImageSIX]"
+		localization_key = scripted_loc_inline_928
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNcsImageDEN]"
+		localization_key = scripted_loc_inline_929
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNcsImageDEN]"
+		localization_key = scripted_loc_inline_930
 	}
 	###Navy Ncs Replacement Marker###
 	
@@ -176,7 +176,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyNcsImageGeneric]"
+		localization_key = scripted_loc_inline_931
 	}
 }
 
@@ -187,79 +187,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyNogImagePRS]"
+		localization_key = scripted_loc_inline_932
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyNogImageFRA]"
+		localization_key = scripted_loc_inline_933
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyNogImageENG]"
+		localization_key = scripted_loc_inline_934
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyNogImageSWE]"
+		localization_key = scripted_loc_inline_935
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyNogImageAUS]"
+		localization_key = scripted_loc_inline_936
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyNogImageFIN]"
+		localization_key = scripted_loc_inline_937
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyNogImageUSA]"
+		localization_key = scripted_loc_inline_938
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyNogImageRUS]"
+		localization_key = scripted_loc_inline_939
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyNogImageGRE]"
+		localization_key = scripted_loc_inline_940
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyNogImageNOR]"
+		localization_key = scripted_loc_inline_941
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyNogImageSIX]"
+		localization_key = scripted_loc_inline_942
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNogImageDEN]"
+		localization_key = scripted_loc_inline_943
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNogImageDEN]"
+		localization_key = scripted_loc_inline_944
 	}
 	###Navy Nog Replacement Marker###
 	
@@ -267,7 +267,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyNogImageGeneric]"
+		localization_key = scripted_loc_inline_945
 	}
 }
 
@@ -278,79 +278,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyCogImagePRS]"
+		localization_key = scripted_loc_inline_946
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyCogImageFRA]"
+		localization_key = scripted_loc_inline_947
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyCogImageENG]"
+		localization_key = scripted_loc_inline_948
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyCogImageSWE]"
+		localization_key = scripted_loc_inline_949
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyCogImageAUS]"
+		localization_key = scripted_loc_inline_950
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyCogImageFIN]"
+		localization_key = scripted_loc_inline_951
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyCogImageUSA]"
+		localization_key = scripted_loc_inline_952
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyCogImageRUS]"
+		localization_key = scripted_loc_inline_953
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyCogImageGRE]"
+		localization_key = scripted_loc_inline_954
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyCogImageNOR]"
+		localization_key = scripted_loc_inline_955
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyCogImageSIX]"
+		localization_key = scripted_loc_inline_956
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyCogImageDEN]"
+		localization_key = scripted_loc_inline_957
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyCogImageDEN]"
+		localization_key = scripted_loc_inline_958
 	}
 	###Navy Cog Replacement Marker###
 	
@@ -358,7 +358,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyCogImageGeneric]"
+		localization_key = scripted_loc_inline_959
 	}
 }
 
@@ -369,79 +369,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyNlgImagePRS]"
+		localization_key = scripted_loc_inline_960
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyNlgImageFRA]"
+		localization_key = scripted_loc_inline_961
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyNlgImageENG]"
+		localization_key = scripted_loc_inline_962
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyNlgImageSWE]"
+		localization_key = scripted_loc_inline_963
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyNlgImageAUS]"
+		localization_key = scripted_loc_inline_964
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyNlgImageFIN]"
+		localization_key = scripted_loc_inline_965
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyNlgImageUSA]"
+		localization_key = scripted_loc_inline_966
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyNlgImageRUS]"
+		localization_key = scripted_loc_inline_967
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyNlgImageGRE]"
+		localization_key = scripted_loc_inline_968
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyNlgImageNOR]"
+		localization_key = scripted_loc_inline_969
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyNlgImageSIX]"
+		localization_key = scripted_loc_inline_970
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNlgImageDEN]"
+		localization_key = scripted_loc_inline_971
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyNlgImageDEN]"
+		localization_key = scripted_loc_inline_972
 	}
 	###Navy Nlg Replacement Marker###
 	
@@ -449,7 +449,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyNlgImageGeneric]"
+		localization_key = scripted_loc_inline_973
 	}
 }
 
@@ -460,79 +460,79 @@ defined_text = {
 		trigger = {
 			tag = PRS
 		}
-		localization_key = "[GetMHCNavyMogImagePRS]"
+		localization_key = scripted_loc_inline_974
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "[GetMHCNavyMogImageFRA]"
+		localization_key = scripted_loc_inline_975
 	}
 	text = {
 		trigger = {
 			tag = ENG
 		}
-		localization_key = "[GetMHCNavyMogImageENG]"
+		localization_key = scripted_loc_inline_976
 	}
 	text = {
 		trigger = {
 			tag = SWE
 		}
-		localization_key = "[GetMHCNavyMogImageSWE]"
+		localization_key = scripted_loc_inline_977
 	}
 	text = {
 		trigger = {
 			tag = AUS
 		}
-		localization_key = "[GetMHCNavyMogImageAUS]"
+		localization_key = scripted_loc_inline_978
 	}
 	text = {
 		trigger = {
 			tag = FIN
 		}
-		localization_key = "[GetMHCNavyMogImageFIN]"
+		localization_key = scripted_loc_inline_979
 	}
 	text = {
 		trigger = {
 			tag = USA
 		}
-		localization_key = "[GetMHCNavyMogImageUSA]"
+		localization_key = scripted_loc_inline_980
 	}
 	text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "[GetMHCNavyMogImageRUS]"
+		localization_key = scripted_loc_inline_981
 	}
 	text = {
 		trigger = {
 			tag = GRE
 		}
-		localization_key = "[GetMHCNavyMogImageGRE]"
+		localization_key = scripted_loc_inline_982
 	}
 	text = {
 		trigger = {
 			tag = NOR
 		}
-		localization_key = "[GetMHCNavyMogImageNOR]"
+		localization_key = scripted_loc_inline_983
 	}
 	text = {
 		trigger = {
 			tag = SIX
 		}
-		localization_key = "[GetMHCNavyMogImageSIX]"
+		localization_key = scripted_loc_inline_984
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyMogImageDEN]"
+		localization_key = scripted_loc_inline_985
 	}
 	text = {
 		trigger = {
 			tag = DEN
 		}
-		localization_key = "[GetMHCNavyMogImageDEN]"
+		localization_key = scripted_loc_inline_986
 	}
 	###Navy Mog Replacement Marker###
 	
@@ -540,6 +540,6 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[GetMHCNavyMogImageGeneric]"
+		localization_key = scripted_loc_inline_987
 	}
 }

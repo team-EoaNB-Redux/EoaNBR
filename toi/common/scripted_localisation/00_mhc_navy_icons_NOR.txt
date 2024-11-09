@@ -9,7 +9,7 @@
 				value = mhc_nas_value
 			}
 		}
-		localization_key = "[GetMHCNavyNasImageGeneric]"
+		localization_key = scripted_loc_inline_886
 	}
 	text = {
 		trigger = {
@@ -44,7 +44,7 @@ defined_text = {
 				value = mhc_ncs_value
 			}
 		}
-		localization_key = "[GetMHCNavyNcsImageGeneric]"
+		localization_key = scripted_loc_inline_887
 	}
 	text = {
 		trigger = {
@@ -79,7 +79,7 @@ defined_text = {
 				value = mhc_nog_value
 			}
 		}
-		localization_key = "[GetMHCNavyNogImageGeneric]"
+		localization_key = scripted_loc_inline_888
 	}
 	text = {
 		trigger = {
@@ -114,7 +114,7 @@ defined_text = {
 				value = mhc_cog_value
 			}
 		}
-		localization_key = "[GetMHCNavyCogImageGeneric]"
+		localization_key = scripted_loc_inline_889
 	}
 	text = {
 		trigger = {
@@ -149,7 +149,7 @@ defined_text = {
 				value = mhc_nlg_value
 			}
 		}
-		localization_key = "[GetMHCNavyNlgImageGeneric]"
+		localization_key = scripted_loc_inline_890
 	}
 	text = {
 		trigger = {
@@ -184,7 +184,7 @@ defined_text = {
 				value = mhc_mog_value
 			}
 		}
-		localization_key = "[GetMHCNavyMogImageGeneric]"
+		localization_key = scripted_loc_inline_891
 	}
 	text = {
 		trigger = {

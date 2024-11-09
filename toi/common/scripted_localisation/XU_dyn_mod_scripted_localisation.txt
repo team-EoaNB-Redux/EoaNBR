@@ -46,7 +46,7 @@ defined_text = {
     localization_key = render_change_dyn_mod_inner
   }
   text = {
-    localization_key = "."
+    localization_key = scripted_loc_inline_2768
   }
 }
 
@@ -64,7 +64,7 @@ defined_text = {
     localization_key = render_transpose_dyn_mod_inner
   }
   text = {
-    localization_key = "."
+    localization_key = scripted_loc_inline_2769
   }
 }
 
@@ -82,7 +82,7 @@ defined_text = {
     localization_key = render_transmute_dyn_mod_inner
   }
   text = {
-    localization_key = "."
+    localization_key = scripted_loc_inline_2770
   }
 }
 
@@ -105,10 +105,10 @@ defined_text = {
   name = dyn_mod_or_a
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = "Or a" 
+    localization_key = scripted_loc_inline_2771
   } 
   text = { 
-    localization_key = "A" 
+    localization_key = scripted_loc_inline_2772
   }
 }
 
@@ -116,10 +116,10 @@ defined_text = {
   name = dyn_mod_or_r
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = "Or r" 
+    localization_key = scripted_loc_inline_2773
   } 
   text = { 
-    localization_key = "R" 
+    localization_key = scripted_loc_inline_2774
   }
 }
 
@@ -127,10 +127,10 @@ defined_text = {
   name = dyn_mod_or_m
   text = { 
     trigger = { has_variable = param_or } 
-    localization_key = "Or m" 
+    localization_key = scripted_loc_inline_2775
   } 
   text = { 
-    localization_key = "M" 
+    localization_key = scripted_loc_inline_2776
   }
 }
 
@@ -1027,7 +1027,7 @@ defined_text = {
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_throughput_factor } } localization_key = entertainment_throughput_factor }
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_attractiveness_modifier } } localization_key = entertainment_attractiveness_modifier }
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_attractiveness_factor } } localization_key = entertainment_attractiveness_factor }
-  text = { localization_key = "[?temp_modifier.GetTokenKey]" }
+  text = { localization_key = scripted_loc_inline_2777
 }
 
 defined_text = {
@@ -1047,18 +1047,18 @@ defined_text = {
       }
       check_variable = { temp_difference = 0 }
     }
-    localization_key = ""
+    localization_key = scripted_loc_inline_2778
   }
   text = { # Flat
     trigger = { modifier_is_flat = yes }
-    localization_key = "[modifier_get_loc]: [modifier_render_flat]"
+    localization_key = scripted_loc_inline_2779
   }
   text = { # Boolean
     trigger = { modifier_is_boolean = yes }
-    localization_key = "[modifier_get_loc]: [modifier_render_boolean]"
+    localization_key = scripted_loc_inline_2780
   }
   text = { # Percentual
-    localization_key = "[modifier_get_loc]: [modifier_render_percent]"
+    localization_key = scripted_loc_inline_2781
   }
 }
 
@@ -1095,23 +1095,23 @@ defined_text = {
   name = modifier_render_percent
   text = {
     trigger = { OR = { check_variable = { temp_difference = 0 } check_variable = { temp_valence = 0 } } }
-    localization_key = "[?temp_difference|=%Y2]"
+    localization_key = scripted_loc_inline_2782
   }
   text = {
     trigger = { check_variable = { temp_valence = 1 } check_variable = { temp_difference > 0 } }
-    localization_key = "[?temp_difference|=%G2]"
+    localization_key = scripted_loc_inline_2783
   }
   text = {
     trigger = { check_variable = { temp_valence = 1 } check_variable = { temp_difference < 0 } }
-    localization_key = "[?temp_difference|=%R2]"
+    localization_key = scripted_loc_inline_2784
   }
   text = {
     trigger = { check_variable = { temp_valence = -1 } check_variable = { temp_difference > 0 } }
-    localization_key = "[?temp_difference|=%R2]"
+    localization_key = scripted_loc_inline_2785
   }
   text = {
     trigger = { check_variable = { temp_valence = -1 } check_variable = { temp_difference < 0 } }
-    localization_key = "[?temp_difference|=%G2]"
+    localization_key = scripted_loc_inline_2786
   }
 }
 
@@ -1119,22 +1119,22 @@ defined_text = {
   name = modifier_render_flat
   text = {
     trigger = { OR = { check_variable = { temp_difference = 0 } check_variable = { temp_valence = 0 } } }
-    localization_key = "[?temp_difference|=Y2]"
+    localization_key = scripted_loc_inline_2787
   }
   text = {
     trigger = { check_variable = { temp_valence = 1 } check_variable = { temp_difference > 0 } }
-    localization_key = "[?temp_difference|=G2]"
+    localization_key = scripted_loc_inline_2788
   }
   text = {
     trigger = { check_variable = { temp_valence = 1 } check_variable = { temp_difference < 0 } }
-    localization_key = "[?temp_difference|=R2]"
+    localization_key = scripted_loc_inline_2789
   }
   text = {
     trigger = { check_variable = { temp_valence = -1 } check_variable = { temp_difference > 0 } }
-    localization_key = "[?temp_difference|=R2]"
+    localization_key = scripted_loc_inline_2790
   }
   text = {
     trigger = { check_variable = { temp_valence = -1 } check_variable = { temp_difference < 0 } }
-    localization_key = "[?temp_difference|=G2]"
+    localization_key = scripted_loc_inline_2791
   }  
 }
