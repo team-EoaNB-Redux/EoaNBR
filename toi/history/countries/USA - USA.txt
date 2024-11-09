@@ -117,7 +117,7 @@
 		low_taxes
 		cl_legal
 		unlimited_work_day
-		lp_land_purhcase
+		lp_land_purchase
 		civilian_economy
 
 		#Population
