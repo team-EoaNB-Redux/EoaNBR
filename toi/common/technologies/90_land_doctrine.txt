@@ -140,7 +140,7 @@ technologies = {
 
 		# army_artillery_attack_factor = 0.05
 		field_artillery = {
-			manpower = 400
+			# manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -149,7 +149,7 @@ technologies = {
 			}
 		}
 		field_artillery_towed = {
-			manpower = 400
+			# manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -159,7 +159,7 @@ technologies = {
 			}
 		}
 		field_artillery_support = {
-			manpower = 100
+			# manpower = 100
 			combat_width = 0.5
 			need = {
 				uniform_equipment = 15
@@ -168,7 +168,7 @@ technologies = {
 			}
 		}
 		field_artillery_towed_support = {
-			manpower = 100
+			# manpower = 100
 			combat_width = 0.5
 			need = {
 				uniform_equipment = 15
@@ -178,7 +178,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery = {
-			manpower = 400
+			# manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -187,7 +187,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery_towed = {
-			manpower = 400
+			# manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -197,7 +197,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery_support = {
-			manpower = 100
+			# manpower = 100
 			combat_width = 0.5
 			need = {
 				uniform_equipment = 15
@@ -206,7 +206,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery_towed_support = {
-			manpower = 100
+			# manpower = 100
 			combat_width = 0.5
 			need = {
 				uniform_equipment = 15
@@ -353,7 +353,7 @@ technologies = {
 
 		# supply_consumption_factor = -0.02
 		field_artillery = {
-			manpower = 400
+			# manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -362,7 +362,7 @@ technologies = {
 			}
 		}
 		field_artillery_towed = {
-			manpower = 400
+			# manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -372,7 +372,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery = {
-			manpower = 400
+			# manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -381,7 +381,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery_towed = {
-			manpower = 400
+			# manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -570,7 +570,7 @@ technologies = {
 		# supply_consumption_factor = -0.02
 
 		line_infantry = {
-			manpower = 100
+			# manpower = 100
 			weight = 0.1
 			need = {
 				uniform_equipment = 15
@@ -2655,14 +2655,14 @@ technologies = {
 
 		# army_artillery_attack_factor = 0.05
 		light_cavalry = {
-			manpower = 100
+			# manpower = 100
 			need = {
 				cavalry_equipment = 20
 				uniform_equipment = 20
 			}
 		}
 		dragoon = {
-			manpower = 100
+			# manpower = 100
 			need = {
 				infantry_equipment = 9
 				cavalry_equipment = 20
@@ -2670,14 +2670,14 @@ technologies = {
 			}
 		}
 		heavy_cavalry = {
-			manpower = 100
+			# manpower = 100
 			need = {
 				cavalry_equipment = 28
 				uniform_equipment = 28
 			}
 		}
 		uhlans = {
-			manpower = 100
+			# manpower = 100
 			need = {
 				cavalry_equipment = 35
 				uniform_equipment = 23

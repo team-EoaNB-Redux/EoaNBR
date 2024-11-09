@@ -1027,7 +1027,7 @@ defined_text = {
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_throughput_factor } } localization_key = entertainment_throughput_factor }
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_attractiveness_modifier } } localization_key = entertainment_attractiveness_modifier }
   text = { trigger = { check_variable = { temp_modifier = token:entertainment_attractiveness_factor } } localization_key = entertainment_attractiveness_factor }
-  text = { localization_key = scripted_loc_inline_2777
+  text = { localization_key = scripted_loc_inline_2777 }
 }
 
 defined_text = {
