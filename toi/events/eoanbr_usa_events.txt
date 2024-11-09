@@ -24749,24 +24749,28 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 			dismantle_faction = yes
 			clr_country_flag = clayton_conspiracy_participant
 		}
+
+		option = {
+			name = "Ok"
+		}
 	}
 
 	#add options
 }
 
-country_event = {#revenge of the british, continue the conflict or not
-	id = USA_clayton_conspiracy.53
-	title = USA_clayton_conspiracy.53.t
-	desc = USA_clayton_conspiracy.53.d
-	#picture = 
+# country_event = {#revenge of the british, continue the conflict or not
+# 	id = USA_clayton_conspiracy.53
+# 	title = USA_clayton_conspiracy.53.t
+# 	desc = USA_clayton_conspiracy.53.d
+# 	#picture = 
 
-	is_triggered_only = yes
-	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	fire_only_once = yes
 
-	immediate = {
+# 	immediate = {
 
-	}
-}
+# 	}
+# }
 
 # country_event = { #cleanup of clayton conspiracy stuff
 # 	id = USA_clayton_conspiracy.54
