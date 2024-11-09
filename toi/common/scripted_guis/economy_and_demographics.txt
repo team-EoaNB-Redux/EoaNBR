@@ -857,9 +857,9 @@ scripted_gui = {
 				add_to_variable = { update_state_econ_window = 1 }
 			}
 			extra_button_click = {
-				set_temp_variable = { industry_token = token:urban_center }
-				set_temp_variable = { financer_temp = ROOT }
-				construct_x_industries = yes
+				# ROOT = {
+				# 	sound_effect = "new_building_construction_sound"
+				# }
 			}
 			autobuild_button_click = {
 				ROOT = {
