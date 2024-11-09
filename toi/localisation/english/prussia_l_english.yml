@@ -540,6 +540,9 @@ prussiaforeign.49.a: "Good"
 prussiaforeign.50.t: "[ENG.GetNameDef] Rejects the Investment Offer"
 prussiaforeign.50.d: "The [ENG.GetAdjective] Parliament seems to have rejected the deal outright, citing vague concerns about geopolitical policy. The engines of growth for our economy will have to come from other sources."
 prussiaforeign.50.a: "Unfortunate"
+prussiaforeign.51.t: "France on War Footing Again"
+prussiaforeign.51.d: "§3[FRA.GetNameWithFlag]§! has been making preparations for a potential war in Europe. This is a direct threat to us given our border with them and our alliance with §O[AUS.GetNameWithFlag]§!. We will watch this situation as it develops."
+prussiaforeign.51.a: "Good to know."
 
 #Prussian Elections
 prussiaelection.1.t: "Parliamentary Elections of 1858"

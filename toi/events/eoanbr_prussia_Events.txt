@@ -5610,6 +5610,25 @@ country_event = {
 	}
 }
 
+#France on war footing
+country_event = {
+	id = prussiaforeign.51
+	title = prussiaforeign.51.t
+	desc = prussiaforeign.51.d
+	picture = GFX_france_kepi_general
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prussiaforeign.51.a
+		ai_chance = {
+			base = 100
+		}
+		add_war_support = 0.02
+	}
+}
+
 ### PRUSSIAN ELECTIONS ###
 
 #1858 Election
