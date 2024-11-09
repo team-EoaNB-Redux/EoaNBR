@@ -156,12 +156,11 @@ buildings = {
 		only_costal = yes
 		is_port = yes
 		icon_frame = 6
-		max_level = 25
 		value = 1
 		allied_build = yes
 		infrastructure_construction_effect = yes
 		level_cap = {
-			province_max = 10
+			province_max = 25
 		}
 	}
 	bunker = {
@@ -258,8 +257,13 @@ buildings = {
 		show_modifier = yes
 
 		state_modifiers = {
-			fuel_gain_from_states = 1.0
-			local_resources_oil = 1
+			country_resource_oil = 1
+		}
+		country_modifiers = {
+			modifiers = {
+				fuel_gain_from_states = 1.0
+				country_resource_coal = 1
+			}
 		}
 		level_cap = {
 			state_max = 10
@@ -274,8 +278,10 @@ buildings = {
 		value = 4
 		infrastructure_construction_effect = yes
 
-		state_modifiers = {
-			local_resources_rubber = 1
+		country_modifiers = {
+			modifiers = {
+				country_resource_rubber = 1
+			}
 		}
 		level_cap = {
 			state_max = 10
@@ -400,14 +406,12 @@ buildings = {
 		show_on_map = 0
 		base_cost = 1500
 		per_level_extra_cost = 250
-		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 20
 		land_fort = 1
-		max_level = 5
 		value = 1
 		level_cap = {
-			state_max = 10
+			province_max = 10
 		}
 	}
 	nuclear_reactor_heavy_water = {
@@ -653,39 +657,38 @@ buildings = {
 			
 		}
 	}
-	spawn_points = {
-		nuclear_reactor_spawn = {
-			type = state
-			max = 1
-		}
-	
-		special_project_facility_spawn = {
-			type = province
-			max = 1
-		}
-	
-		rocket_site_spawn = {
-			type = state
-			max = 1
-		}
-	
-		naval_base_spawn = {
-			type = province
-			max = 1
-			only_costal = yes
-		}
-	
-		dam_spawn = {
-			type = province
-			max = 1
-			disable_auto_nudging = yes
-		}
-	
-		locks_spawn = {
-			type = province
-			max = 1
-			disable_auto_nudging = yes
-		}
+}
+spawn_points = {
+	nuclear_reactor_spawn = {
+		type = state
+		max = 1
 	}
-	
+
+	special_project_facility_spawn = {
+		type = province
+		max = 1
+	}
+
+	rocket_site_spawn = {
+		type = state
+		max = 1
+	}
+
+	naval_base_spawn = {
+		type = province
+		max = 1
+		only_costal = yes
+	}
+
+	dam_spawn = {
+		type = province
+		max = 1
+		disable_auto_nudging = yes
+	}
+
+	locks_spawn = {
+		type = province
+		max = 1
+		disable_auto_nudging = yes
+	}
 }

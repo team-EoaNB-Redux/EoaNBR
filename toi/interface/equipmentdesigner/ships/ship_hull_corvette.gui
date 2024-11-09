@@ -2,9 +2,9 @@
 
 guiTypes = {
 
-	################# Equipment Archetype: ship_hull_light_new_format_example #################
+	################# Equipment Archetype: ship_hull_corvette_new_format_example #################
 	containerWindowType = {
-		name = "equipment_designer_ship_hull_primitive_sailing_boat"
+		name = "equipment_designer_ship_hull_corvette"
 		# NOTE: to keep aligned with the window "equipment_modules" in equipmentdesignerview.gui
 		position = { x = 0 y = 0 }
 		size = { width = 512 height = 260 }
@@ -25,6 +25,37 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			size = { width = 100% height = 100% }
 
+			################# MODULE SLOT: Fire Control System #################
+			containerWindowType = {
+				name = "fixed_ship_fire_control_system_slot"
+				position = { x = 0 y = 0 }
+				size = { width = 100% height = 100% }
+
+				containerWindowType = {
+					name = "ship_fire_control_system"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_light_hull_fire_control"
+						position = { x = 0 y = 0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "@highlight"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_light_hull_fire_control@highlight"
+						position = { x = 0 y = 0 }
+					}
+				}
+			}
+
 			################# MODULE SLOT: Engine #################
 			containerWindowType = {
 				name = "fixed_ship_engine_slot"
@@ -32,7 +63,7 @@ guiTypes = {
 				size = { width = 100% height = 100% }
 
 				containerWindowType = {
-					name = "ship_engine_primitive_sails"
+					name = "ship_engine_sail"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
@@ -44,7 +75,7 @@ guiTypes = {
 				}
 
 				containerWindowType = {
-					name = "ship_engine_primitive_sails@highlight"
+					name = "ship_engine_sail@highlight"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
@@ -55,6 +86,38 @@ guiTypes = {
 					}
 				}
 			}
+
+			################# MODULE SLOT: Armor #################
+			containerWindowType = {
+				name = "fixed_ship_armor_slot"
+				position = { x = 0 y = 0 }
+				size = { width = 100% height = 100% }
+
+				containerWindowType = {
+					name = "ship_screen_armor"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_armor"
+						position = { x = 0 y = 0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_screen_armor@highlight"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_armor@highlight"
+						position = { x = 0 y = 0 }
+					}
+				}
+
+			}
 			
 			################# MODULE SLOT: Battery #################
 			containerWindowType = {
@@ -63,7 +126,7 @@ guiTypes = {
 				size = { width = 100% height = 100% }
 				
 				containerWindowType = {
-					name = "ship_primitive_armament_archers"
+					name = "ship_medium_battery"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
@@ -75,7 +138,7 @@ guiTypes = {
 				}
 
 				containerWindowType = {
-					name = "ship_primitive_armament_archers@highlight"
+					name = "ship_medium_battery@highlight"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
@@ -87,7 +150,7 @@ guiTypes = {
 				}
 				
 				containerWindowType = {
-					name = "ship_primitive_armament_armed_crew"
+					name = "ship_light_battery"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
@@ -99,7 +162,7 @@ guiTypes = {
 				}
 
 				containerWindowType = {
-					name = "ship_primitive_armament_armed_crew@highlight"
+					name = "ship_light_battery@highlight"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
@@ -107,6 +170,62 @@ guiTypes = {
 						name = "highlight"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
 						position = { x = 332 y = 0 }
+					}
+				}
+
+			}
+
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_1_custom_slot"
+				position = { x = 0 y = 0 }
+				size = { width = 100% height = 100% }
+				
+				#### MODULE: Medium Battery ####
+				containerWindowType = {
+					name = "ship_medium_battery"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
+						position = { x = 365 y = 0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_medium_battery@highlight"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
+						position = { x = 365 y = 0 }
+					}
+				}
+				
+				#### MODULE: Light Battery ####
+				containerWindowType = {
+					name = "ship_light_battery"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
+						position = { x = 365 y = 0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_battery@highlight"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
+						position = { x = 365 y = 0 }
 					}
 				}
 
@@ -117,164 +236,52 @@ guiTypes = {
 				name = "mid_1_custom_slot"
 				position = { x = 0 y = 0 }
 				size = { width = 100% height = 100% }
-
+				
+				#### MODULE: Medium Battery ####
 				containerWindowType = {
-					name = "ship_primitive_armament_archers"
+					name = "ship_medium_battery"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x = 332 y = 0 }
+						position = { x = 365 y = 0 }
 					}
 				}
-
 				containerWindowType = {
-					name = "ship_primitive_armament_archers@highlight"
+					name = "ship_medium_battery@highlight"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x = 332 y = 0 }
+						position = { x = 365 y = 0 }
 					}
 				}
 				
+				#### MODULE: Light Battery ####
 				containerWindowType = {
-					name = "ship_primitive_armament_armed_crew"
+					name = "ship_light_battery"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x = 332 y = 0 }
+						position = { x = 365 y = 0 }
 					}
 				}
-
 				containerWindowType = {
-					name = "ship_primitive_armament_armed_crew@highlight"
+					name = "ship_light_battery@highlight"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x = 332 y = 0 }
-					}
-				}
-				
-			}
-			
-			################# MODULE SLOT: Custom, Middle #2 #################
-			containerWindowType = {
-				name = "mid_2_custom_slot"
-				position = { x = 0 y = 0 }
-				size = { width = 100% height = 100% }
-
-				containerWindowType = {
-					name = "ship_primitive_armament_archers"
-					position = { x = 0 y = 0 }
-					size = { width = 100% height = 100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x = 332 y = 0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_primitive_armament_archers@highlight"
-					position = { x = 0 y = 0 }
-					size = { width = 100% height = 100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x = 332 y = 0 }
-					}
-				}
-				
-				containerWindowType = {
-					name = "ship_primitive_armament_armed_crew"
-					position = { x = 0 y = 0 }
-					size = { width = 100% height = 100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x = 332 y = 0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_primitive_armament_armed_crew@highlight"
-					position = { x = 0 y = 0 }
-					size = { width = 100% height = 100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x = 332 y = 0 }
-					}
-				}
-				
-			}
-			
-			################# MODULE SLOT: Custom, Middle #3 #################
-			containerWindowType = {
-				name = "mid_3_custom_slot"
-				position = { x = 0 y = 0 }
-				size = { width = 100% height = 100% }
-
-				containerWindowType = {
-					name = "ship_primitive_armament_archers"
-					position = { x = 0 y = 0 }
-					size = { width = 100% height = 100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x = 332 y = 0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_primitive_armament_archers@highlight"
-					position = { x = 0 y = 0 }
-					size = { width = 100% height = 100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x = 332 y = 0 }
-					}
-				}
-				
-				containerWindowType = {
-					name = "ship_primitive_armament_armed_crew"
-					position = { x = 0 y = 0 }
-					size = { width = 100% height = 100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x = 332 y = 0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_primitive_armament_armed_crew@highlight"
-					position = { x = 0 y = 0 }
-					size = { width = 100% height = 100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x = 332 y = 0 }
+						position = { x = 365 y = 0 }
 					}
 				}
 				
@@ -283,21 +290,21 @@ guiTypes = {
 		}
 	}
 
-	################# Equipment Archetype, Germany: ship_hull_light_new_format_example #################
+	################# Equipment Archetype, Germany: ship_hull_corvette_new_format_example #################
 	containerWindowType = {
-		name = "equipment_designer_ship_hull_light_new_format_example_GER"
+		name = "equipment_designer_ship_hull_corvette_new_format_example_GER"
 		# the rest of the content...
 	}
 	
-	################# Equipment Type: ship_hull_light_new_format_example_1 #################
+	################# Equipment Type: ship_hull_corvette_new_format_example_1 #################
 	containerWindowType = {
-		name = "ship_hull_light_new_format_example_1"
+		name = "ship_hull_corvette_new_format_example_1"
 		# the rest of the content...
 	}
 	
-	################# Equipment Type, U.K.: ship_hull_light_new_format_example_1 #################
+	################# Equipment Type, U.K.: ship_hull_corvette_new_format_example_1 #################
 	containerWindowType = {
-		name = "ship_hull_light_new_format_example_1_ENG"
+		name = "ship_hull_corvette_new_format_example_1_ENG"
 		# the rest of the content...
 	}
 }
