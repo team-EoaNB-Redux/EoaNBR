@@ -26,7 +26,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countrymhcview"
-		position = { x = 0 y = 154 }
+		position = { x = 0 y = 144 }
 		size = { width = 550 height = 100%% }
 
 		hide_sound = menu_close_window
@@ -1302,7 +1302,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "countryofficercorpview_tabs"
-		position = { x = 0 y = 122 }
+		position = { x = 0 y = 112 }
 		size = { width = 300 height = 100 }
 
 		iconType = {
