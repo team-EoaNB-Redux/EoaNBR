@@ -1,5 +1,18 @@
 ﻿l_english:
  generic: "Generic Focus Tree"
+ # Decisions
+  generic_vic_invite_foreign_dignitaries: "Invite Foreign Dignitaries"
+  generic_vic_open_door_policy: "Open Door Policy"
+  generic_vic_adopt_capitalist_theories: "Adopt Capitalist Theories"
+  generic_vic_import_western_curriculum: "Import Western Curriculum"
+  generic_vic_encourage_egalitarianism: "Encourage Egalitarianism"
+  generic_vic_western_curriculum: "Adopted Western Curriculum"
+  generic_vic_invite_foreign_investor: "Invite Foreign Investor"
+
+  eoanb_category_generic_industrialization: "[GetGenericIndustralizationTitle]"
+  generic_vic_realm_development_title: "Development of the Realm"
+  generic_vic_industrialization_title: "Industrialization"
+
  # Ideas
   generic_vic_idea_central_management: "Central Management"
   generic_vic_idea_regional_autonomy: "Regional Autonomy"
@@ -93,6 +106,7 @@
  # Pre-Industrial
   generic_focus_vic_diplomacy_with_the_great_powers: "Diplomacy with the Great Powers"
   generic_focus_vic_diplomacy_with_the_great_powers_desc: ""
+  generic_focus_vic_allow_industry_tt: "This path will allow you to §YEmbrace Industry§! which will provide §Gbreakneck economic growth§! and §Gurbanization§! whilst inviting a potentially §Rdangerous rate of change§!."
   generic_focus_vic_invite_foreigners: "Invite Foreigners"
   generic_focus_vic_invite_foreigners_desc: ""
   generic_focus_vic_embrace_western_ideas: "Embrace Western Ideas"
@@ -109,6 +123,7 @@
   generic_focus_vic_liberalization_desc: ""
   generic_focus_vic_retreat_into_isolationism: "Retreat Into Isolationism"
   generic_focus_vic_retreat_into_isolationism_desc: ""
+  generic_focus_vic_allow_agriculture_tt: "This path will allow §YAgriculture Focus§! which will enable §Ggreater agricultural yields§! and §Gguarantee stability§! at the §Rexpense of industrial output§!."
   generic_focus_vic_self_reliance_initiative: "Self-Reliance Initiative"
   generic_focus_vic_self_reliance_initiative_desc: ""
   generic_focus_vic_prevent_foreign_influence: "Prevent Foreign Influence"

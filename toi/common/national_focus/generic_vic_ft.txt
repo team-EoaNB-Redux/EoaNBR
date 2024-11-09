@@ -164,7 +164,7 @@ focus_tree = {
 			PS_pol_positive = yes
 		}
 		bypass = {
-			has_idea = industrializing
+			has_idea = institution_industrialization
 		}
 
 		completion_reward = {
@@ -195,7 +195,7 @@ focus_tree = {
 			focus = generic_focus_vic_literacy_program
 		}
 		bypass = {
-			has_idea = industrializing
+			has_idea = institution_industrialization
 		}
 
 
@@ -935,6 +935,7 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { institution_progress_temp = 5 }
 			eoanbr_institutions_rationalism_change = yes
+			custom_effect_tooltip = generic_focus_vic_allow_industry_tt
 		}
 
 		ai_will_do = {
@@ -963,6 +964,7 @@ focus_tree = {
 			set_temp_variable = { institution_progress_temp = 5 }
 			eoanbr_institutions_rationalism_change = yes
 			add_stability = -0.05
+			unlock_decision_tooltip = generic_vic_invite_foreign_dignitaries
 		}
 
 		ai_will_do = {
@@ -999,6 +1001,9 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_stability = -0.05
+			unlock_decision_tooltip = generic_vic_import_western_curriculum
+			unlock_decision_tooltip = generic_vic_adopt_capitalist_theories
+			unlock_decision_tooltip = generic_vic_encourage_egalitarianism
 		}
 
 		ai_will_do = {
@@ -1033,6 +1038,8 @@ focus_tree = {
 				idea = generic_vic_idea_locals_outcompeted
 				years = 10
 			}
+
+			unlock_decision_tooltip = generic_vic_open_door_policy
 		}
 
 		ai_will_do = {
@@ -1057,7 +1064,7 @@ focus_tree = {
 			focus = generic_focus_vic_establish_trade_ties
 		}
 		bypass = {
-			has_idea = industrializing
+			has_idea = institution_industrialization
 		}
 
 		completion_reward = {
@@ -1082,6 +1089,8 @@ focus_tree = {
 					years = 5
 				}
 			}
+
+			unlock_decision_tooltip = generic_vic_invite_foreign_investor
 		}
 
 		ai_will_do = {
@@ -1282,6 +1291,7 @@ focus_tree = {
 			}
 			set_temp_variable = { political_legitimacy_change = 0.1 }
 			eoanb_political_legitimacy_change = yes
+			custom_effect_tooltip = generic_focus_vic_allow_agriculture_tt
 		}
 
 		ai_will_do = {
@@ -1411,11 +1421,11 @@ focus_tree = {
 			has_completed_focus = generic_focus_vic_strengthen_government
 		}
 		bypass = {
-			has_idea = industrializing
+			has_idea = institution_industrialization
 		}
 
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = eoanb_category_generic_industrialization
 		}
 
 		ai_will_do = {
@@ -1438,7 +1448,7 @@ focus_tree = {
 			focus = generic_focus_vic_infrastructure_projects
 		}
 		bypass = {
-			has_idea = industrializing
+			has_idea = institution_industrialization
 		}
 
 		completion_reward = {
@@ -1461,6 +1471,7 @@ focus_tree = {
 		
 		available = {
 			has_idea = institution_rationalism
+			PS_pol_positive = yes
 		}
 		prerequisite = {
 			focus = generic_focus_vic_fund_industrial_development
@@ -1478,6 +1489,11 @@ focus_tree = {
 				remove_idea = agrarian
 				add_idea = industrializing
 			}
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_industrialization_change = yes
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_industry_techs }
+			add_stability = -0.05
+			decrease_ps_by_one = yes
 		}
 
 		ai_will_do = {

@@ -129,6 +129,15 @@
 		priority = 50
 	}
 
+	eoanb_category_generic_industrialization = {
+		icon = generic_industry
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_infrastructure_projects
+		}
+		priority = 10
+	}
+
 
 # Unused Vanilla
 	governments_in_exile = {

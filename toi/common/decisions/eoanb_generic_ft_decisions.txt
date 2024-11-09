@@ -1,0 +1,263 @@
+# Decisions for the generic focus trees
+eoanb_category_economic = {
+	generic_vic_invite_foreign_investor = {
+		icon = gre_investment_decisions
+		available = {
+			has_stability > 0.5
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_allow_foreign_investment
+			NOT = { has_idea = institution_industrialization }
+		}
+		cost = 50
+		days_re_enable = 120
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = 1000 }
+			add_investment_fund = yes
+
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_locals_outcompeted
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					months = 6
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					months = 6
+				}
+			}
+		}
+	}
+}
+
+eoanb_category_politics_foreign = {
+	generic_vic_invite_foreign_dignitaries = {
+		icon = generic_break_treaty
+		available = {
+			has_stability > 0.3
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_invite_foreigners
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 25
+        days_remove = 100
+		complete_effect = {
+			add_stability = -0.01
+			add_popularity = {
+				ideology = centrism
+				popularity = 0.02
+			}
+		}
+        modifier = {
+            research_speed_factor = 0.05
+        }
+		remove_effect  = {
+			set_temp_variable = { institution_progress_temp = 1.0 }
+			eoanbr_institutions_rationalism_change = yes
+		}
+		
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	generic_vic_open_door_policy = {
+		icon = money
+		available = {
+			has_stability > 0.4
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_establish_trade_ties
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			add_stability = -0.03
+			
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_locals_outcompeted
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					years = 1
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					years = 1
+				}
+			}
+		}
+        modifier = {
+            research_speed_factor = 0.05
+			industry_throughput_factor = 0.02
+        }
+		remove_effect  = {
+			set_temp_variable = { institution_progress_temp = 1.0 }
+			eoanbr_institutions_rationalism_change = yes
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_science_techs }
+		}
+	}
+
+}
+eoanb_category_politics_internal = {
+	generic_vic_import_western_curriculum = {
+		icon = generic_research
+		available = {
+			has_stability > 0.4
+			NOT = { has_idea = oral_tradition }
+			NOT = { has_idea = traditional_uluma }
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_embrace_western_ideas
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			add_stability = -0.03
+			set_temp_variable = { x_temp = -1 }
+			add_treasury_gdp = yes
+		}
+		modifier = {
+			centrism_drift = 0.05
+		}
+		remove_effect  = {
+			set_country_flag = generic_vic_western_curriculum
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_rationalism_change = yes
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = humanities_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_science_techs }
+		}
+	}
+	generic_vic_adopt_capitalist_theories = {
+		icon = gre_investment_decisions
+		available = {
+			has_stability > 0.4
+			has_country_flag = generic_vic_western_curriculum
+			NOT = { has_idea = oral_tradition }
+			NOT = { has_idea = traditional_uluma }
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_embrace_western_ideas
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 180
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			add_stability = -0.02
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_locals_outcompeted
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					months = -6
+				}
+			}
+		}
+        modifier = {
+			investment_confidence_modifier = 5
+        }
+		remove_effect  = {
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_industrialization_change = yes
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = economics_tech }
+		}
+	}
+	generic_vic_encourage_egalitarianism = {
+		icon = generic_form_nation
+		available = {
+			has_stability > 0.5
+			has_country_flag = generic_vic_western_curriculum
+			NOT = { has_idea = oral_tradition }
+			NOT = { has_idea = traditional_uluma }
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_embrace_western_ideas
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			add_stability = -0.05
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_rationalism_change = yes
+			add_popularity = {
+				ideology = social_egalitarianism
+				popularity = 0.1
+			}
+		}
+	}
+}
+
+eoanb_category_generic_industrialization = {
+	generic_vic_connect_region_to_the_capital = {
+		icon = generic_army_support
+		available = {
+			set_temp_variable = { x_temp = 100 }
+			has_treasury = yes
+		}
+		visible = {
+			
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			
+		}
+	}
+	generic_vic_connect_to_foreign_country = {
+		icon = generic_army_support
+		available = {
+			set_temp_variable = { x_temp = 200 }
+			has_treasury = yes
+		}
+		visible = {
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			
+		}
+	}
+}
