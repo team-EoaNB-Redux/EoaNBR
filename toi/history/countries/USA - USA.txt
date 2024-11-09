@@ -91,31 +91,16 @@
 	}
 	# Laws
 	add_ideas = {
-		#POLITICS
+		#State of the Country
 		hos_is_leader
+		non_monarchical_system
+		industrializing
 		victorian_era
 		law_victorian_army
-		industrializing
-		non_monarchical_system
-		presidential_republic
-		#balanced_powers
-		#federalist
-
-		#Economic
-		civilian_economy
-		export_focus
-		two_percent
-		low_taxes
-		cl_legal
-		unlimited_work_day
-
-		#Population
 		fast_growth
-		border_control
-		volunteer_only
-		usa_slavery_law
-		universal_male_suffrage
 
+		#Government
+		presidential_republic
 		constitution_adopted
 		free_elections
 
@@ -123,14 +108,37 @@
 		open_schools
 		secular_state
 		free_press
+		foa_free_assembly
+		tu_free_unions
+		jury_court
+
+		#Economic Policies
+		export_focus
+		low_taxes
+		cl_legal
+		unlimited_work_day
+		lp_land_purhcase
+		civilian_economy
+
+		#Population
+		stagnation_growth
+		border_control
+		usa_slavery_law
+		volunteer_only
+		universal_male_suffrage
+		pp_open_politics
+
+		#Internal Budget
+		hc_no_healthcare
+		law_police_force
+		inframain_no_subsidies_infrastructure
+		navinfra_no_naval_infrastructure
+		two_percent
+		sfund_private_ventures_only
 
 		### National Spirits
-		#institution_rationalism
-		#institution_settlement
-		#institution_centralization
-		#institution_industrialization
 
-		# Politics
+		# Politicial Ideas
 		USA_executive_branch_idea
 		USA_congressional_branch_idea
 		USA_judicial_branch_idea
