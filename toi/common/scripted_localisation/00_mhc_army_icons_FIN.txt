@@ -9,7 +9,7 @@ defined_text = {
 				value = mhc_sec_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmySecImageGenericRBracketSym
+		localization_key = "[GetMHCArmySecImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -62,7 +62,7 @@ defined_text = {
 				value = mhc_chief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -115,7 +115,7 @@ defined_text = {
 				value = mhc_vchief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyVChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyVChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -168,7 +168,7 @@ defined_text = {
 				value = mhc_quart_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyQuartImageGenericRBracketSym
+		localization_key = "[GetMHCArmyQuartImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -221,7 +221,7 @@ defined_text = {
 				value = mhc_pchief_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyPChiefImageGenericRBracketSym
+		localization_key = "[GetMHCArmyPChiefImageGeneric]"
 	}
 	text = {
 		trigger = {
@@ -274,7 +274,7 @@ defined_text = {
 				value = mhc_ins_value
 			}
 		}
-		localization_key = scripted_loc_LBracketSym_GetMHCArmyInsImageGenericRBracketSym
+		localization_key = "[GetMHCArmyInsImageGeneric]"
 	}
 	text = {
 		trigger = {

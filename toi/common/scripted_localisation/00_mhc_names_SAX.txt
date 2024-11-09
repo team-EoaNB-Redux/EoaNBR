@@ -5,37 +5,37 @@
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_SAX_Bernhard_von_Rabenhorst
+		localization_key = "SAX_Bernhard_von_Rabenhorst"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_SAX_Alfred_von_Fabrice
+		localization_key = "SAX_Alfred_von_Fabrice"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_SAX_Karl_von_Heygendorff
+		localization_key = "SAX_Karl_von_Heygendorff"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_SAX_Thuisko_von_Stieglitz
+		localization_key = "SAX_Thuisko_von_Stieglitz"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_SAX_Gustav_von_Hake
+		localization_key = "SAX_Gustav_von_Hake"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = scripted_loc_SAX_Eduard_Heinrich_von_Treitschke
+		localization_key = "SAX_Eduard_Heinrich_von_Treitschke"
 	}
 	###Army Replacement Marker###
 }

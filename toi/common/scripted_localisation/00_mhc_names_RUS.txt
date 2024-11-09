@@ -5,31 +5,31 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_RUS_Nikolai_Sukhozanet
+		localization_key = "RUS_Nikolai_Sukhozanet"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_RUS_Alexander_Arkadyevich_Suvorov
+		localization_key = "RUS_Alexander_Arkadyevich_Suvorov"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_RUS_Konstantin_Borisovich_Gern
+		localization_key = "RUS_Konstantin_Borisovich_Gern"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_RUS_Dmitry_Milyutin
+		localization_key = "RUS_Dmitry_Milyutin"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = scripted_loc_RUS_Fyodor_Logginovich_van_Heiden
+		localization_key = "RUS_Fyodor_Logginovich_van_Heiden"
 	}
 	###Army Replacement Marker###
 }
@@ -41,25 +41,25 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = scripted_loc_RUS_Nikolay_Karlovich_Krabbe
+		localization_key = "RUS_Nikolay_Karlovich_Krabbe"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = scripted_loc_RUS_Pavel_Alexandrovich_Pereleshin
+		localization_key = "RUS_Pavel_Alexandrovich_Pereleshin"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = scripted_loc_RUS_Gennady_Ivanovich_Nevelskoy
+		localization_key = "RUS_Gennady_Ivanovich_Nevelskoy"
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = scripted_loc_RUS_Nikolay_Yakovlevich_Shkot
+		localization_key = "RUS_Nikolay_Yakovlevich_Shkot"
 	}
 	###Navy Replacement Marker###
 }

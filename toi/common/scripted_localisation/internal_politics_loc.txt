@@ -4,10 +4,10 @@ defined_text = { #party localisation for the 1st color
 		trigger = {
 			check_variable = { internal_politics_party_1^0 = 1 }
 		}
-		localization_key = scripted_loc_Red_Party
+		localization_key = "Red Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Red_Party
+		localization_key = "Unnamed Red Party"
 	}
 }
 defined_text = { #party localisation for the 2nd color
@@ -16,10 +16,10 @@ defined_text = { #party localisation for the 2nd color
 		trigger = {
 			check_variable = { internal_politics_party_2^0 = 1 }
 		}
-		localization_key = scripted_loc_Blue_Party
+		localization_key = "Blue Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Blue_Party
+		localization_key = "Unnamed Blue Party"
 	}
 }
 defined_text = { #party localisation for the 3rd color
@@ -28,10 +28,10 @@ defined_text = { #party localisation for the 3rd color
 		trigger = {
 			check_variable = { internal_politics_party_3^0 = 1 }
 		}
-		localization_key = scripted_loc_Green_Party
+		localization_key = "Green Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Green_Party
+		localization_key = "Unnamed Green Party"
 	}
 }
 defined_text = { #party localisation for the 4th color
@@ -40,10 +40,10 @@ defined_text = { #party localisation for the 4th color
 		trigger = {
 			check_variable = { internal_politics_party_4^0 = 1 }
 		}
-		localization_key = scripted_loc_Yellow_Party
+		localization_key = "Yellow Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Yellow_Party
+		localization_key = "Unnamed Yellow Party"
 	}
 }
 defined_text = { #party localisation for the 5th color
@@ -52,10 +52,10 @@ defined_text = { #party localisation for the 5th color
 		trigger = {
 			check_variable = { internal_politics_party_5^0 = 1 }
 		}
-		localization_key = scripted_loc_Purple_Party
+		localization_key = "Purple Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Purple_Party
+		localization_key = "Unnamed Purple Party"
 	}
 }
 defined_text = { #party localisation for the 6th color
@@ -64,10 +64,10 @@ defined_text = { #party localisation for the 6th color
 		trigger = {
 			check_variable = { internal_politics_party_6^0 = 1 }
 		}
-		localization_key = scripted_loc_Pink_Party
+		localization_key = "Pink Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Pink_Party
+		localization_key = "Unnamed Pink Party"
 	}
 }
 defined_text = { #party localisation for the 7th color
@@ -76,10 +76,10 @@ defined_text = { #party localisation for the 7th color
 		trigger = {
 			check_variable = { internal_politics_party_7^0 = 1 }
 		}
-		localization_key = scripted_loc_Cyan_Party
+		localization_key = "Cyan Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Cyan_Party
+		localization_key = "Unnamed Cyan Party"
 	}
 }
 defined_text = { #party localisation for the 8th color
@@ -88,10 +88,10 @@ defined_text = { #party localisation for the 8th color
 		trigger = {
 			check_variable = { internal_politics_party_8^0 = 1 }
 		}
-		localization_key = scripted_loc_Lime_Party
+		localization_key = "Lime Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Lime_Party
+		localization_key = "Unnamed Lime Party"
 	}
 }
 defined_text = { #party localisation for the 9th color
@@ -100,10 +100,10 @@ defined_text = { #party localisation for the 9th color
 		trigger = {
 			check_variable = { internal_politics_party_9^0 = 1 }
 		}
-		localization_key = scripted_loc_Orange_Party
+		localization_key = "Orange Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Orange_Party
+		localization_key = "Unnamed Orange Party"
 	}
 }
 defined_text = { #party localisation for the 10th color
@@ -112,10 +112,10 @@ defined_text = { #party localisation for the 10th color
 		trigger = {
 			check_variable = { internal_politics_party_10^0 = 1 }
 		}
-		localization_key = scripted_loc_Dark_Grey
+		localization_key = "Dark Grey"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Dark_Grey_Party
+		localization_key = "Unnamed Dark Grey Party"
 	}
 }
 defined_text = { #party localisation for the 11th color
@@ -124,10 +124,10 @@ defined_text = { #party localisation for the 11th color
 		trigger = {
 			check_variable = { internal_politics_party_11^0 = 1 }
 		}
-		localization_key = scripted_loc_Light_Grey
+		localization_key = "Light Grey"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Light_Grey_Party
+		localization_key = "Unnamed Light Grey Party"
 	}
 }
 defined_text = { #party localisation for the 12th color
@@ -136,10 +136,10 @@ defined_text = { #party localisation for the 12th color
 		trigger = {
 			check_variable = { internal_politics_party_12^0 = 1 }
 		}
-		localization_key = scripted_loc_Burgundy_Party
+		localization_key = "Burgundy Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Burgundy_Party
+		localization_key = "Unnamed Burgundy Party"
 	}
 }
 defined_text = { #party localisation for the 13th color
@@ -148,10 +148,10 @@ defined_text = { #party localisation for the 13th color
 		trigger = {
 			check_variable = { internal_politics_party_13^0 = 1 }
 		}
-		localization_key = scripted_loc_Brown_Party
+		localization_key = "Brown Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Brown_Party
+		localization_key = "Unnamed Brown Party"
 	}
 }
 defined_text = { #party localisation for the 14th color
@@ -160,10 +160,10 @@ defined_text = { #party localisation for the 14th color
 		trigger = {
 			check_variable = { internal_politics_party_14^0 = 1 }
 		}
-		localization_key = scripted_loc_Colbalt_Party
+		localization_key = "Colbalt Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Colbalt_Party
+		localization_key = "Unnamed Colbalt Party"
 	}
 }
 defined_text = { #party localisation for the 15th color
@@ -172,10 +172,10 @@ defined_text = { #party localisation for the 15th color
 		trigger = {
 			check_variable = { internal_politics_party_15^0 = 1 }
 		}
-		localization_key = scripted_loc_Jade_Party
+		localization_key = "Jade Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Jade_Party
+		localization_key = "Unnamed Jade Party"
 	}
 }
 defined_text = { #party localisation for the 16th color
@@ -184,10 +184,10 @@ defined_text = { #party localisation for the 16th color
 		trigger = {
 			check_variable = { internal_politics_party_16^0 = 1 }
 		}
-		localization_key = scripted_loc_Peach_Party
+		localization_key = "Peach Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Peach_Party
+		localization_key = "Unnamed Peach Party"
 	}
 }
 defined_text = { #party localisation for the 17th color
@@ -196,10 +196,10 @@ defined_text = { #party localisation for the 17th color
 		trigger = {
 			check_variable = { internal_politics_party_17^0 = 1 }
 		}
-		localization_key = scripted_loc_Lavander_Party
+		localization_key = "Lavander Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Lavander_Party
+		localization_key = "Unnamed Lavander Party"
 	}
 }
 defined_text = { #party localisation for the 18th color
@@ -208,10 +208,10 @@ defined_text = { #party localisation for the 18th color
 		trigger = {
 			check_variable = { internal_politics_party_18^0 = 1 }
 		}
-		localization_key = scripted_loc_Indigo_Party
+		localization_key = "Indigo Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Indigo_Party
+		localization_key = "Unnamed Indigo Party"
 	}
 }
 defined_text = { #party localisation for the 19th color
@@ -220,10 +220,10 @@ defined_text = { #party localisation for the 19th color
 		trigger = {
 			check_variable = { internal_politics_party_19^0 = 1 }
 		}
-		localization_key = scripted_loc_Teal_Party
+		localization_key = "Teal Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Teal_Party
+		localization_key = "Unnamed Teal Party"
 	}
 }defined_text = { #party localisation for the 20th color
 	name = get_party_name_scripted_loc_20
@@ -231,10 +231,10 @@ defined_text = { #party localisation for the 19th color
 		trigger = {
 			check_variable = { internal_politics_party_20^0 = 1 }
 		}
-		localization_key = scripted_loc_Olive_Party
+		localization_key = "Olive Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Olive_Party
+		localization_key = "Unnamed Olive Party"
 	}
 }
 defined_text = { #party localisation for the 21st color
@@ -243,10 +243,10 @@ defined_text = { #party localisation for the 21st color
 		trigger = {
 			check_variable = { internal_politics_party_21^0 = 1 }
 		}
-		localization_key = scripted_loc_Apricot_Party
+		localization_key = "Apricot Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Apricot_Party
+		localization_key = "Unnamed Apricot Party"
 	}
 }
 defined_text = { #party localisation for the 22nd color
@@ -255,10 +255,10 @@ defined_text = { #party localisation for the 22nd color
 		trigger = {
 			check_variable = { internal_politics_party_22^0 = 1 }
 		}
-		localization_key = scripted_loc_Black_Party
+		localization_key = "Black Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Black_Party
+		localization_key = "Unnamed Black Party"
 	}
 }
 defined_text = { #party localisation for the 23rd color
@@ -267,10 +267,10 @@ defined_text = { #party localisation for the 23rd color
 		trigger = {
 			check_variable = { internal_politics_party_23^0 = 1 }
 		}
-		localization_key = scripted_loc_White_Party
+		localization_key = "White Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_White_Party
+		localization_key = "Unnamed White Party"
 	}
 }
 defined_text = { #party localisation for the 24th color
@@ -279,10 +279,10 @@ defined_text = { #party localisation for the 24th color
 		trigger = {
 			check_variable = { internal_politics_party_24^0 = 1 }
 		}
-		localization_key = scripted_loc_Navy_Blue_Party
+		localization_key = "Navy Blue Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Navy_Blue_Party
+		localization_key = "Unnamed Navy Blue Party"
 	}
 }
 defined_text = { #party localisation for the 25th color
@@ -291,10 +291,10 @@ defined_text = { #party localisation for the 25th color
 		trigger = {
 			check_variable = { internal_politics_party_25^0 = 1 }
 		}
-		localization_key = scripted_loc_Salmon_Party
+		localization_key = "Salmon Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Salmon_Party
+		localization_key = "Unnamed Salmon Party"
 	}
 }
 defined_text = { #party localisation for the 26th color
@@ -303,10 +303,10 @@ defined_text = { #party localisation for the 26th color
 		trigger = {
 			check_variable = { internal_politics_party_26^0 = 1 }
 		}
-		localization_key = scripted_loc_Maroon_Party
+		localization_key = "Maroon Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Maroon_Party
+		localization_key = "Unnamed Maroon Party"
 	}
 }
 defined_text = { #party localisation for the 27th color
@@ -315,10 +315,10 @@ defined_text = { #party localisation for the 27th color
 		trigger = {
 			check_variable = { internal_politics_party_27^0 = 1 }
 		}
-		localization_key = scripted_loc_Scarlet_Party
+		localization_key = "Scarlet Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Scarlet_Party
+		localization_key = "Unnamed Scarlet Party"
 	}
 }
 defined_text = { #party localisation for the 28th color
@@ -327,10 +327,10 @@ defined_text = { #party localisation for the 28th color
 		trigger = {
 			check_variable = { internal_politics_party_28^0 = 1 }
 		}
-		localization_key = scripted_loc_Viridian_Party
+		localization_key = "Viridian Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Viridian_Party
+		localization_key = "Unnamed Viridian Party"
 	}
 }
 defined_text = { #party localisation for the 29th color
@@ -339,10 +339,10 @@ defined_text = { #party localisation for the 29th color
 		trigger = {
 			check_variable = { internal_politics_party_29^0 = 1 }
 		}
-		localization_key = scripted_loc_Silver_Party
+		localization_key = "Silver Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Silver_Party
+		localization_key = "Unnamed Silver Party"
 	}
 }
 defined_text = { #party localisation for the 30th color
@@ -351,10 +351,10 @@ defined_text = { #party localisation for the 30th color
 		trigger = {
 			check_variable = { internal_politics_party_30^0 = 1 }
 		}
-		localization_key = scripted_loc_Carmine_Party
+		localization_key = "Carmine Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Carmine_Party
+		localization_key = "Unnamed Carmine Party"
 	}
 }
 defined_text = { #party localisation for the 31st color
@@ -363,10 +363,10 @@ defined_text = { #party localisation for the 31st color
 		trigger = {
 			check_variable = { internal_politics_party_31^0 = 1 }
 		}
-		localization_key = scripted_loc_Aquamarine_Party
+		localization_key = "Aquamarine Party"
 	}
 	text = {
-		localization_key = scripted_loc_Unnamed_Aquamarine_Party
+		localization_key = "Unnamed Aquamarine Party"
 	}
 }
 
@@ -559,7 +559,7 @@ defined_text = { #party localisation
 		localization_key = party_internal_politics_party_31
 	}
 	text = {
-		localization_key = scripted_loc_ERROR
+		localization_key = "ERROR"
 	}
 }
 
@@ -569,63 +569,63 @@ defined_text = { #party ideaology
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 1 }
 		}
-		localization_key = scripted_loc_Centrism
+		localization_key = "Centrism"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 2 }
 		}
-		localization_key = scripted_loc_Traditional_Conservatism
+		localization_key = "Traditional Conservatism"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 3 }
 		}
-		localization_key = scripted_loc_Social_Egalitarian
+		localization_key = "Social Egalitarian"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 4 }
 		}
-		localization_key = scripted_loc_Collectivist_Socialist
+		localization_key = "Collectivist Socialist"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 5 }
 		}
-		localization_key = scripted_loc_Vanguard_Communist
+		localization_key = "Vanguard Communist"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 6 }
 		}
-		localization_key = scripted_loc_Autocracy
+		localization_key = "Autocracy"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 7 }
 		}
-		localization_key = scripted_loc_Fundamentalist
+		localization_key = "Fundamentalist"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 8 }
 		}
-		localization_key = scripted_loc_Radical_Democracy
+		localization_key = "Radical Democracy"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 9 }
 		}
-		localization_key = scripted_loc_Chauvinist_Populist
+		localization_key = "Chauvinist Populist"
 	}
 	text = {
 		trigger = {
 			check_variable = { internal_politics_parties_ideology^party_posistion_idx = 10 }
 		}
-		localization_key = scripted_loc_Anarchist
+		localization_key = "Anarchist"
 	}
 	text = {
-		localization_key = scripted_loc_Unknown
+		localization_key = "Unknown"
 	}
 }

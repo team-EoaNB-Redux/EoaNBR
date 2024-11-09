@@ -25,7 +25,7 @@ defined_text = {
       set_temp_variable = { param_cutoff = 4 }
       # set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
 		}
-		localization_key = scripted_loc_LBracketSym_RenderArrayRBracketSym
+		localization_key = "[RenderArray]"
 	}
 }
 
@@ -53,7 +53,7 @@ defined_text = {
       # If we haven't got a valid param_cutoff_suffix, use the default, which is array_cutoff_suffix_ellipsis ("...").
       if = { limit = { check_variable = { param_cutoff_suffix?0 = 0 } } set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_ellipsis } }
 		}
-		localization_key = scripted_loc_LBracketSym_render_array_innerRBracketSym
+		localization_key = "[render_array_inner]"
 	}
 }
 
@@ -73,15 +73,15 @@ defined_text = {
       }
       set_temp_variable = { v = param_array^i }
 		}
-		localization_key = scripted_loc_LBracketSym_render_array_infixRBracketSym_LBracketSym_render_array_elementRBracketSym_LBracketSym_render_array_innerRBracketSym
+		localization_key = "[render_array_infix][render_array_element][render_array_inner]" # Recurse!
 	}
   text = { # Cutoff case: when we have exceeded param_cutoff without reaching the end of the array, render the cutoff suffix and stop recursing.
     trigger = { check_variable = { i = param_cutoff } check_variable = { i < param_array^num }       log = "[?param_cutoff_suffix.GetTokenKey]"
 }
-    localization_key = scripted_loc_LBracketSym_QuestionMark_param_cutoff_suffixPeriodMark_GetTokenLocalizedKeyRBracketSym
+    localization_key = "[?param_cutoff_suffix.GetTokenLocalizedKey]"
   }
   text = { # Base case: when we have reached the end of the array, stop recursing.
-    localization_key = scripted_loc
+    localization_key = ""
   }
 }
 
@@ -91,18 +91,18 @@ defined_text = {
 	name = render_array_infix
 	text = { # No infix precedes the first element
 		trigger = { check_variable = { i = 0 } }
-		localization_key = scripted_loc
+		localization_key = ""
 	}
 	text = { # If we have a custom last-infix defined, for things like ", and", use it if this is the last index (num - 1)
 		trigger = {
 			has_variable = param_last_infix
 			check_variable = { i = last_index?-1 }
 		}
-		localization_key = scripted_loc_LBracketSym_QuestionMark_param_last_infixPeriodMark_GetTokenLocalizedKeyRBracketSym
+		localization_key = "[?param_last_infix.GetTokenLocalizedKey]"
 	}
 	text = { # If we have a custom infix defined, use it
 		trigger = { has_variable = param_infix }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_param_infixPeriodMark_GetTokenLocalizedKeyRBracketSym
+		localization_key = "[?param_infix.GetTokenLocalizedKey]"
 	}
 	text = { # Otherwise, fall back to a newline-separated list
 		localization_key = array_infix_newline
@@ -117,59 +117,59 @@ defined_text = {
 	name = render_array_element
   text = {
     trigger = { check_variable = { param_renderer?0 = 0 } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vRBracketSym
+		localization_key = "[?v]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_token } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetTokenLocalizedKeyRBracketSym
+		localization_key = "[?v.GetTokenLocalizedKey]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_token_raw } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetTokenKeyRBracketSym
+		localization_key = "[?v.GetTokenKey]"
 	}
 	text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetNameRBracketSym
+		localization_key = "[?v.GetName]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_def } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetNameDefRBracketSym
+		localization_key = "[?v.GetNameDef]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_def_cap } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetNameDefCapRBracketSym
+		localization_key = "[?v.GetNameDefCap]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_adjective } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetAdjectiveRBracketSym
+		localization_key = "[?v.GetAdjective]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_adjective_cap } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetAdjectiveCapRBracketSym
+		localization_key = "[?v.GetAdjectiveCap]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_with_flag } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetNameWithFlagRBracketSym
+		localization_key = "[?v.GetNameWithFlag]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_flag } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetFlagRBracketSym
+		localization_key = "[?v.GetFlag]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_tag } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetTagRBracketSym
+		localization_key = "[?v.GetTag]"
   }
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_id } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vPeriodMark_GetIDRBracketSym
+		localization_key = "[?v.GetID]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_int } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vORSym_0RBracketSym
+		localization_key = "[?v|0]"
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_numeric } }
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vRBracketSym
+		localization_key = "[?v]"
 	}
   ############################################
   ### DEFINE CUSTOM ELEMENT RENDERERS HERE ###
@@ -188,7 +188,7 @@ defined_text = {
 			set_temp_variable = { temp_previous = final_prev_vals^i }
 			set_temp_variable = { temp_current = final_new_vals^i }
 		}
-		localization_key = scripted_loc_LBracketSym_modifier_mutation_renderRBracketSym
+		localization_key = "[modifier_mutation_render]"
 	}
 	text = {
 		trigger = {
@@ -262,6 +262,6 @@ defined_text = {
   ####### END CUSTOM ELEMENT RENDERERS #######
   ############################################
 	text = {
-		localization_key = scripted_loc_LBracketSym_QuestionMark_vRBracketSym
+		localization_key = "[?v]"
 	}
 }
