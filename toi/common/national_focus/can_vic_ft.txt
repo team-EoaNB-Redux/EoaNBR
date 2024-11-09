@@ -2978,13 +2978,13 @@ focus_tree = {
 			}
 		If = {
 			limit = {
-		TCS = {
-		is_puppet_of = ENG }
+				TCS = {
+					is_puppet_of = ENG }
 				}
-		reverse_add_opinion_modifier = { target = TCS modifier = eoanb_om_ENG_empire_trade }
-		add_opinion_modifier = { target = TCS modifier = eoanb_om_ENG_empire_trade }
+				reverse_add_opinion_modifier = { target = TCS modifier = eoanb_om_ENG_empire_trade }
+				add_opinion_modifier = { target = TCS modifier = eoanb_om_ENG_empire_trade }
 			}
-		add_war_support = +0.01
+		add_war_support = 0.01
 		}
 	}
 
@@ -3745,7 +3745,7 @@ focus_tree = {
 			}
 			modify_timed_idea = {
 			idea = CAN_idea_Thoughts_of_Independence
-			days = +150
+			days = 150
 			}
 			hidden_effect = {
 				set_party_name = {
@@ -3776,7 +3776,7 @@ focus_tree = {
 		completion_reward = {
 		modify_timed_idea = {
 		idea = CAN_idea_Thoughts_of_Independence
-		days = +150
+		days = 150
 			}
 		}
 	}
@@ -3828,7 +3828,7 @@ focus_tree = {
 		}
 		modify_timed_idea = {
 		idea = CAN_idea_Thoughts_of_Independence
-		days = +150
+		days = 150
 			}
 		}
 	}
