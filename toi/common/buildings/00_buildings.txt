@@ -257,12 +257,11 @@ buildings = {
 		show_modifier = yes
 
 		state_modifiers = {
-			country_resource_oil = 1
 		}
 		country_modifiers = {
 			modifiers = {
 				fuel_gain_from_states = 1.0
-				country_resource_coal = 1
+				country_resource_oil = 1
 			}
 		}
 		level_cap = {
