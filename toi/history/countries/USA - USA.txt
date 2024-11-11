@@ -811,7 +811,7 @@
 
 		#Population
 		stagnation_growth
-		border_control
+		open_borders
 		volunteer_only
 		usa_slavery_law
 		universal_male_suffrage
