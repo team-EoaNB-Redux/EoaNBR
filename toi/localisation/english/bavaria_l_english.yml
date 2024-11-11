@@ -524,7 +524,7 @@
  bavariaevent.29.t: "Ostbahn - Segment Schwandorf-Cham-Bohemian Border in Service"
  bavariaevent.29.d: "As part of the railway concessions agreed upon by the state and the investors, the Ostbahn segment from Schwandorf to the Bohemian border via Cham has been completed. The line will eventually connect the Bavarian railway network to Prague."
  bavariaevent.29.a: "Gute Reise!"
-bavariaevent.31.t: "Russia Warns Against War With France"
+bavariaevent.31.t: "Warning from Russia"
 bavariaevent.31.d: "§G[RUS.GetNameWithFlag]§! has warned us that war with §3[FRA.GetNameWithFlag]§! may mean hostile relations or war with §G[RUS.GetNameWithFlag]§!. While we may want to heed this warning, we have little choice if §O[AUS.GetNameWithFlag]§! calls us into a war against §3[FRA.GetNameWithFlag]§! and §b[PIE.GetNameWithFlag]§!."
 bavariaevent.31.a: "We will see how this develops."
 bavariaevent.32.t: "Austria Calls for Aid"

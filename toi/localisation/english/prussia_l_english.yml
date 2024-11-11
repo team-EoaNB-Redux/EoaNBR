@@ -541,8 +541,11 @@ prussiaforeign.50.t: "[ENG.GetNameDef] Rejects the Investment Offer"
 prussiaforeign.50.d: "The [ENG.GetAdjective] Parliament seems to have rejected the deal outright, citing vague concerns about geopolitical policy. The engines of growth for our economy will have to come from other sources."
 prussiaforeign.50.a: "Unfortunate"
 prussiaforeign.51.t: "France on War Footing Again"
-prussiaforeign.51.d: "§3[FRA.GetNameWithFlag]§! has been making preparations for a potential war in Europe. This is a direct threat to us given our border with them and our alliance with §O[AUS.GetNameWithFlag]§!. We will watch this situation as it develops."
+prussiaforeign.51.d: "§3[FRA.GetNameWithFlag]§! has been making preparations for a potential war in Europe. This is a direct threat to us given our border with them and our membership in the German Confederation. We will watch this situation as it develops."
 prussiaforeign.51.a: "Good to know."
+prussiaforeign.52.t: "Warning from Russia"
+prussiaforeign.52.d: "§G[RUS.GetNameWithFlag]§! has warned us that a war with §3[FRA.GetNameWithFlag]§! would lead to hostility from §G[RUS.GetNameWithFlag]§!. While we don't yet have much reason to enter into a war with §3[FRA.GetNameWithFlag]§! as of right now, we could be called into it by §O[AUS.GetNameWithFlag]§!. Should this happen, it won't be our choice to accept or reject their request."
+prussiaforeign.52.a: "We'll watch the situation as it develops."
 
 #Prussian Elections
 prussiaelection.1.t: "Parliamentary Elections of 1858"

@@ -887,8 +887,13 @@ focus_tree = {
 			}
 			AUS = {
 				country_event = {
-					id = sardinia.88
+					id = austria.205
 				}
+			PRS = {
+				country_event = {
+					id = prussiaforeign.51
+				}
+			}
 			}
 			activate_mission = ITA_2IP_Mobilization_War_Imiment
 		}

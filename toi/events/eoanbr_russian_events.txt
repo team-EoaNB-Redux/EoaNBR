@@ -3041,6 +3041,11 @@ country_event = {
 
 	option = {
 		name = russiaforeign.21.a
+		PRS = {
+			country_event = {
+				id = prussiaforeign.52
+			}
+		}
 		BAV = {
 			country_event = {
 				id = bavariaevent.31
