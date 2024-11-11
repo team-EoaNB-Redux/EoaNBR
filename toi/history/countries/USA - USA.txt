@@ -121,7 +121,7 @@
 		civilian_economy
 
 		#Population
-		stagnation_growth
+		fast_growth
 		border_control
 		usa_slavery_law
 		volunteer_only
@@ -131,10 +131,10 @@
 		#Internal Budget
 		hc_no_healthcare
 		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_no_naval_infrastructure
-		two_percent
-		sfund_private_ventures_only
+		inframain_basic_maintenance_infrastructure
+		navinfra_low_naval_infrastructure
+		one_percent
+		open_schools
 
 		### National Spirits
 
