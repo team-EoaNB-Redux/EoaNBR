@@ -76,8 +76,8 @@ no_garrison = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -140,8 +140,8 @@ autonomous_occupation = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -175,8 +175,8 @@ foreign_civilian_oversight = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}	
@@ -207,8 +207,8 @@ local_police_force_garrison = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -253,8 +253,8 @@ secret_police_oversight = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -287,8 +287,8 @@ liberate_workers_occupation = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -314,8 +314,8 @@ military_governor_occupation = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -369,8 +369,8 @@ martial_law_occupation = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -412,8 +412,8 @@ forced_labor_occupation = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -508,8 +508,8 @@ harsh_quotas_occupation = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -564,8 +564,8 @@ brutally_oppressive_occupation = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -618,8 +618,8 @@ reconciliation = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -651,8 +651,8 @@ colonial_police = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -702,8 +702,8 @@ colonial_police_improved = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
@@ -755,8 +755,8 @@ colonial_police_final = {
 	available = {
 		NOT = {
 			OR = {
-				# has_country_flag = generic_country_flag_garrison_laws_locked
-				has_state_flag = generic_state_flag_garrison_laws_locked
+				has_country_flag = generic_country_flag_garrison_laws_locked
+				# has_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
 	}
