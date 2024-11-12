@@ -2989,11 +2989,11 @@ ITA_decisions_category_wars_and_conflicts = {
 		timeout_effect = {
 			remove_mission = ITA_2IP_Mobilization_War_Imiment
 			hidden_effect = {
-				RUS = {
-					country_event = {
-						id = russiaforeign.21
-					}
-				}
+				#RUS = {
+				#	country_event = {
+				#		id = russiaforeign.21
+				#	}
+				#}
 				add_political_power = 100
 				if = {
 					limit = {
