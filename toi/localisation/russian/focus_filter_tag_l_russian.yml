@@ -8,7 +8,7 @@
  FOCUS_FILTER_CENTRISM: "Центризм" #NT!
  FOCUS_FILTER_CHAUVINIST: "Шовинизм" #NT!
  FOCUS_FILTER_FUNDAMENTALISM: "Фундаментализм" #NT!
- FOCUS_FILTER_PERIPHERAL: "Периферийное устройство" #NT!
+ FOCUS_FILTER_PERIPHERAL: "Периферийный" #NT!
  FOCUS_FILTER_SOCIAL_EGAL: "Социальный эгалитаризм" #NT!
  FOCUS_FILTER_TRAD_CONSERV: "Традиционный консерватизм" #NT!
  FOCUS_FILTER_COMMUNISM: "Авангардный коммунизм" #NT!
@@ -37,4 +37,4 @@
  FOCUS_FILTER_TUR_KURDISTAN: "Курдистан"
  FOCUS_FILTER_TUR_KEMALISM: "Кемализм"
  FOCUS_FILTER_TUR_TRADITIONALISM: "Традиционализм"
- FOCUS_FILTER_VEN_CAUDILLOS: "Каудильос" #NT!
+ FOCUS_FILTER_VEN_CAUDILLOS: "Каудильо" #NT!

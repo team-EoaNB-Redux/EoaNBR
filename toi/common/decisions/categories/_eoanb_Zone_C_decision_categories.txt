@@ -134,6 +134,7 @@ PRS_decision_category_NGC_politics = {
 	visible = {
 		OR = {
 			has_cosmetic_tag = GER_north_confederation
+			has_country_flag = eoanb_flag_PRS_decentralized_ngc
 			has_completed_focus = PRS_focus_king_abdicates
 		}
 	}
@@ -1682,6 +1683,14 @@ SPR_stress_level = {
 	}
 	scripted_gui = SPR_stress_level_category_ui
 	visible_when_empty = yes
+}
+
+SPR_CUB_ten_years_war_category = {
+	icon = generic_political_actions
+
+	allowed = {
+		tag = SPR
+	}
 }
 
 #### Sweden Decision Categories ####

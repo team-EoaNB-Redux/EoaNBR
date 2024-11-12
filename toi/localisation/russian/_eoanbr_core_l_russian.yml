@@ -1,7 +1,7 @@
 ﻿l_russian:
  ##Renderer 
   #Infixes 
- array_infix_newline: "" #NT!
+ array_infix_newline: "\н" #NT!
  array_infix_comma: "None" #NT!
   # 
   #Last Infixes 
@@ -12,4 +12,15 @@
  array_cutoff_suffix_ellipsis: "None" #NT!
  array_cutoff_suffix_none: ""
   # 
+ # 
+ ##State Categories 
+ pastoral: "Пастораль" #NT!
+ sparse_rural: "Редкая сельская местность" #NT!
+ rural: "Деревенский" #NT!
+ dense_rural: "Плотная сельская местность" #NT!
+ sparse_urban: "Редкая городская застройка" #NT!
+ urban: "Город"
+ dense_urban: "Плотная городская застройка" #NT!
+ metropolis: "Метрополис" #NT!
+ megalopolis: "Мегаполис" #NT!
  # 

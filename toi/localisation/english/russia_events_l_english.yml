@@ -901,6 +901,9 @@
     russiaforeign.20.d_a: "The Americans Declined, Sighting the current instability in their government as a bigger issue for the moment. Perhaps they will be open to purchase later?"
     russiaforeign.20.a: "Damn"
     russiaforeign.20.b: "Great"
+    russiaforeign.21.t: "Warn the German Confederation"
+    russiaforeign.21.d: "Increasing hostilities towards §3[FRA.GetNameWithFlag]§! from the German Confederation due to their alliance with §b[PIE.GetNameWithFlag]§! gives us cause for concern. We should make it clear that war with §3[FRA.GetNameWithFlag]§! is war with §G[RUS.GetNameWithFlag]§!."
+    russiaforeign.21.a: "Give them a stern warning."
 
   russia_colonization.1.t: "Hi, let's fire an event!"
   russia_colonization.3.t: "[THIS.GetName] [FROM.GetName]"

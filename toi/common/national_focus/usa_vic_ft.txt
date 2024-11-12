@@ -2450,6 +2450,7 @@ focus_tree = {
 			add_to_variable = { var = USA.FNT_raid_likelihood_var@APA value = -4 }
 			add_to_variable = { var = USA.FNT_raid_likelihood_var@NAV value = -4 }
 			add_to_variable = { var = USA.FNT_raid_likelihood_var@SEM value = -4 }
+			set_country_flag = completed_USA_FN_appeasing1
 		}
 		ai_will_do = {
 			base = 10
@@ -4262,7 +4263,13 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		ai_will_do = { base = 4 }
+		ai_will_do = { 
+			base = 4
+			modifier = {
+				add = 1000
+				has_manpower < 10000
+			}
+		}
 
 		prerequisite = { focus = USA_Focus_ACW_Down_With_the_Traitor }
 		bypass = {

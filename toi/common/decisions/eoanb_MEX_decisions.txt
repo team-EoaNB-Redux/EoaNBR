@@ -26,17 +26,17 @@ war_planning = {
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_rifle_1
-				amount = 1500
+				amount = 250
 				producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = uniform_equipment_2
-				amount = 1500
+				amount = 250
 				producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = cavalry_equipment_0
-				amount = 500
+				amount = 84
 				producer = USA
 			}
 			add_war_support = 0.01
@@ -78,146 +78,146 @@ war_planning = {
 
 political_actions = {
 	
-	MEX_mexican_reform_war_resistance_476 = {
-		icon = power_struggle
-		available = { 476 = { resistance < 10 } }
-		visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
-		allowed = { tag = MEX }
-		fire_only_once = yes
-		days_remove = 7
-		remove_effect = {
-			476 = { 
-				hidden_effect = { remove_claim_by = MEC }
-				force_disable_resistance = {
-					clear = yes
-					occupier = MEX
-					occupied = MEC
-				}
-				custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
-			}
-		}
-		ai_will_do = { base = 100 }
-	}
-	MEX_mexican_reform_war_resistance_475 = {
-		icon = power_struggle
-		available = { 475 = { resistance < 10 } }
-		visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
-		allowed = { tag = MEX }
-		fire_only_once = yes
-		days_remove = 7
-		remove_effect = {
-			475 = { 
-				hidden_effect = { remove_claim_by = MEC }
-				force_disable_resistance = {
-					clear = yes
-					occupier = MEX
-					occupied = MEC
-				}
-				custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
-			}
-		}
-		ai_will_do = { base = 100 }
-	}
-	MEX_mexican_reform_war_resistance_474 = {
-		icon = power_struggle
-		available = { 474 = { resistance < 10 } }
-		visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
-		allowed = { tag = MEX }
-		fire_only_once = yes
-		days_remove = 7
-		remove_effect = {
-			474 = { 
-				hidden_effect = { remove_claim_by = MEC }
-				force_disable_resistance = {
-					clear = yes
-					occupier = MEX
-					occupied = MEC
-				}
-				custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
-			}
-		}
-		ai_will_do = { base = 100 }
-	}
-	MEX_mexican_reform_war_resistance_481 = {
-		icon = power_struggle
-		available = { 481 = { resistance < 10 } }
-		visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
-		allowed = { tag = MEX }
-		fire_only_once = yes
-		days_remove = 7
-		remove_effect = {
-			481 = { 
-				hidden_effect = { remove_claim_by = MEC }
-				force_disable_resistance = {
-					clear = yes
-					occupier = MEX
-					occupied = MEC
-				}
-				custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
-			}
-		}
-		ai_will_do = { base = 100 }
-	}
-	MEX_mexican_reform_war_resistance_482 = {
-		icon = power_struggle
-		available = { 482 = { resistance < 10 } }
-		visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
-		allowed = { tag = MEX }
-		fire_only_once = yes
-		days_remove = 7
-		remove_effect = {
-			482 = { 
-				hidden_effect = { remove_claim_by = MEC }
-				force_disable_resistance = {
-					clear = yes
-					occupier = MEX
-					occupied = MEC
-				}
-				custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
-			}
-		}
-		ai_will_do = { base = 100 }
-	}
-	MEX_mexican_reform_war_resistance_483 = {
-		icon = power_struggle
-		available = { 483 = { resistance < 10 } }
-		visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
-		allowed = { tag = MEX }
-		fire_only_once = yes
-		days_remove = 7
-		remove_effect = {
-			483 = { 
-				hidden_effect = { remove_claim_by = MEC }
-				force_disable_resistance = {
-					clear = yes
-					occupier = MEX
-					occupied = MEC
-				}
-				custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
-			}
-		}
-		ai_will_do = { base = 100 }
-	}
-	MEX_mexican_reform_war_resistance_1125 = {
-		icon = power_struggle
-		available = { 1125 = { resistance < 10 } }
-		visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
-		allowed = { tag = MEX }
-		fire_only_once = yes
-		days_remove = 7
-		remove_effect = {
-			1125 = { 
-				hidden_effect = { remove_claim_by = MEC }
-				force_disable_resistance = {
-					clear = yes
-					occupier = MEX
-					occupied = MEC
-				}
-				custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
-			}
-		}
-		ai_will_do = { base = 100 }
-	}
+	# MEX_mexican_reform_war_resistance_476 = {
+	# 	icon = power_struggle
+	# 	available = { 476 = { resistance < 10 } }
+	# 	visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
+	# 	allowed = { tag = MEX }
+	# 	fire_only_once = yes
+	# 	days_remove = 7
+	# 	remove_effect = {
+	# 		476 = { 
+	# 			hidden_effect = { remove_claim_by = MEC }
+	# 			force_disable_resistance = {
+	# 				clear = yes
+	# 				occupier = MEX
+	# 				occupied = MEC
+	# 			}
+	# 			custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
+	# 		}
+	# 	}
+	# 	ai_will_do = { base = 100 }
+	# }
+	# MEX_mexican_reform_war_resistance_475 = {
+	# 	icon = power_struggle
+	# 	available = { 475 = { resistance < 10 } }
+	# 	visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
+	# 	allowed = { tag = MEX }
+	# 	fire_only_once = yes
+	# 	days_remove = 7
+	# 	remove_effect = {
+	# 		475 = { 
+	# 			hidden_effect = { remove_claim_by = MEC }
+	# 			force_disable_resistance = {
+	# 				clear = yes
+	# 				occupier = MEX
+	# 				occupied = MEC
+	# 			}
+	# 			custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
+	# 		}
+	# 	}
+	# 	ai_will_do = { base = 100 }
+	# }
+	# MEX_mexican_reform_war_resistance_474 = {
+	# 	icon = power_struggle
+	# 	available = { 474 = { resistance < 10 } }
+	# 	visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
+	# 	allowed = { tag = MEX }
+	# 	fire_only_once = yes
+	# 	days_remove = 7
+	# 	remove_effect = {
+	# 		474 = { 
+	# 			hidden_effect = { remove_claim_by = MEC }
+	# 			force_disable_resistance = {
+	# 				clear = yes
+	# 				occupier = MEX
+	# 				occupied = MEC
+	# 			}
+	# 			custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
+	# 		}
+	# 	}
+	# 	ai_will_do = { base = 100 }
+	# }
+	# MEX_mexican_reform_war_resistance_481 = {
+	# 	icon = power_struggle
+	# 	available = { 481 = { resistance < 10 } }
+	# 	visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
+	# 	allowed = { tag = MEX }
+	# 	fire_only_once = yes
+	# 	days_remove = 7
+	# 	remove_effect = {
+	# 		481 = { 
+	# 			hidden_effect = { remove_claim_by = MEC }
+	# 			force_disable_resistance = {
+	# 				clear = yes
+	# 				occupier = MEX
+	# 				occupied = MEC
+	# 			}
+	# 			custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
+	# 		}
+	# 	}
+	# 	ai_will_do = { base = 100 }
+	# }
+	# MEX_mexican_reform_war_resistance_482 = {
+	# 	icon = power_struggle
+	# 	available = { 482 = { resistance < 10 } }
+	# 	visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
+	# 	allowed = { tag = MEX }
+	# 	fire_only_once = yes
+	# 	days_remove = 7
+	# 	remove_effect = {
+	# 		482 = { 
+	# 			hidden_effect = { remove_claim_by = MEC }
+	# 			force_disable_resistance = {
+	# 				clear = yes
+	# 				occupier = MEX
+	# 				occupied = MEC
+	# 			}
+	# 			custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
+	# 		}
+	# 	}
+	# 	ai_will_do = { base = 100 }
+	# }
+	# MEX_mexican_reform_war_resistance_483 = {
+	# 	icon = power_struggle
+	# 	available = { 483 = { resistance < 10 } }
+	# 	visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
+	# 	allowed = { tag = MEX }
+	# 	fire_only_once = yes
+	# 	days_remove = 7
+	# 	remove_effect = {
+	# 		483 = { 
+	# 			hidden_effect = { remove_claim_by = MEC }
+	# 			force_disable_resistance = {
+	# 				clear = yes
+	# 				occupier = MEX
+	# 				occupied = MEC
+	# 			}
+	# 			custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
+	# 		}
+	# 	}
+	# 	ai_will_do = { base = 100 }
+	# }
+	# MEX_mexican_reform_war_resistance_1125 = {
+	# 	icon = power_struggle
+	# 	available = { 1125 = { resistance < 10 } }
+	# 	visible = { has_country_flag = MEX_mexican_reform_war_resistance_flag }
+	# 	allowed = { tag = MEX }
+	# 	fire_only_once = yes
+	# 	days_remove = 7
+	# 	remove_effect = {
+	# 		1125 = { 
+	# 			hidden_effect = { remove_claim_by = MEC }
+	# 			force_disable_resistance = {
+	# 				clear = yes
+	# 				occupier = MEX
+	# 				occupied = MEC
+	# 			}
+	# 			custom_effect_tooltip = MEX_mexican_reform_war_resistance_removal_tooltip
+	# 		}
+	# 	}
+	# 	ai_will_do = { base = 100 }
+	# }
 	
 	MEX_decision_claim_mexican_crown = {
 		allowed = { original_tag = MEX }
@@ -730,6 +730,7 @@ MEX_decision_category_republican_forces = {
 		}
 	}
 }
+
 MEX_foreign_policy = {
 	# Mexican Debt Intervention (End Maxmillian Installation)
 	eoanb_decision_MEX_Intervention = {
@@ -877,6 +878,144 @@ MEX_foreign_policy = {
 			}
 			else_if = {
 				custom_effect_tooltip = eoanb_decision_MEX_Intervention_desc
+			}
+		}
+	}
+}
+
+EOANBSYS_national_crisis_decision_category = {
+	MEX_decision_comonfort_interim_resistance_quell = {
+		icon = power_struggle
+		state_target = yes
+		
+		allowed = {
+			tag = MEX
+		}
+
+		visible = {
+			always = no
+		}
+		target_root_trigger = {
+			has_completed_focus = MEX_focus_comonforts_interim_powers
+		}
+		target_array = MEX.core_states
+		target_trigger = {
+			resistance > 0
+		}
+    	on_map_mode = map_and_decisions_view
+		# available = {
+
+		# }
+		fixed_random_seed = no
+		cost = 20
+		days_re_enable = 7
+		complete_effect = {
+			random_core_state = {
+				decrease_resistance_la_reforma = yes
+			}
+		}
+	}
+	MEX_decision_sell_clergy_property = {
+		allowed = {
+			tag = MEX
+		}
+		
+		target_root_trigger = {
+			has_completed_focus = MEX_focus_issue_of_funding
+		}
+
+		targets = {
+			MEX
+		}
+
+		fixed_random_seed = no
+		cost = 5
+		days_re_enable = 7
+
+		complete_effect = {
+			set_temp_variable = { x_temp = 0.1 }
+			add_months_of_income = yes
+			random_core_state = {
+				random_list = {
+					3 = {
+						modifier = {
+							add = 1
+							has_dynamic_modifier = dynmod_MEX_resistance_modifier_1
+						}
+						modifier = {
+							add = 1
+							has_dynamic_modifier = dynmod_MEX_resistance_modifier_2
+						}
+						increase_resistance_la_reforma = yes
+						EOANBSYS_national_crisis_progress_add_one = yes
+						
+					}
+					3 = {
+						modifier = {
+							add = 1
+							has_dynamic_modifier = dynmod_MEX_resistance_modifier_4
+						}
+						modifier = {
+							add = 1
+							has_dynamic_modifier = dynmod_MEX_resistance_modifier_5
+						}
+					}
+				}
+			}
+			add_popularity = {
+				ideology = fundamentalism
+				popularity = -0.0025
+			}
+		}
+	}
+	MEX_decision_liberal_media = {
+		allowed = {
+			tag = MEX
+		}
+		target_root_trigger = {
+			has_completed_focus = MEX_focus_addressing_media_campaign
+		}
+
+		targets = {
+			MEX
+		}
+
+		fixed_random_seed = no
+		cost = 5
+		days_re_enable = 7
+
+		complete_effect = {
+			add_stability = 0.025
+			add_popularity = {
+				ideology = social_egalitarianism
+				popularity = 0.002
+			}
+			random_core_state = {
+				random_list = {
+					4 = {
+						modifier = {
+							add = 1
+							has_dynamic_modifier = dynmod_MEX_resistance_modifier_5
+						}
+						modifier = {
+							add = 1
+							has_dynamic_modifier = dynmod_MEX_resistance_modifier_4
+						}
+					}
+					4 = {
+						modifier = {
+							add = 1
+							has_dynamic_modifier = dynmod_MEX_resistance_modifier_1
+						}
+						modifier = {
+							add = 1
+							has_dynamic_modifier = dynmod_MEX_resistance_modifier_2
+						}
+						decrease_resistance_la_reforma = yes
+						EOANBSYS_national_crisis_progress_minus_one = yes
+
+					}
+				}
 			}
 		}
 	}

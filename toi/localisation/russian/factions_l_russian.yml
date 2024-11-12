@@ -18,10 +18,10 @@
  FACTION_NAME_FASCIST_4: "Конфедерация континента $CONTINENT$"
  FACTION_NAME_FASCIST_5: "$CONTINENT_ADJ$ конфедерация"
  FACTION_NAME_NONALIGNED_1: "$CONTINENT_ADJ$ лига обороны"
- FACTION_NAME_NONALIGNED_2: "$LEADER_COUNTRY_ADJ$ конгресс"
- FACTION_NAME_NONALIGNED_3: "$CONTINENT_ADJ$ альянс"
+ FACTION_NAME_NONALIGNED_2: "$LEADER_COUNTRY_ADJ$ий конгресс"
+ FACTION_NAME_NONALIGNED_3: "$CONTINENT_ADJ$ий альянс"
  FACTION_NAME_NONALIGNED_4: "Конфедерация $CONTINENT_ADJ$ народов"
- FACTION_NAME_NONALIGNED_5: "$LEADER_COUNTRY_ADJ$ коалиция"
+ FACTION_NAME_NONALIGNED_5: "$LEADER_COUNTRY_ADJ$ая коалиция"
  FACTION_NAME_IDEOLOGY_DEFAULT: "Приверженцы идеологии $IDEOLOGY$"
  FACTION_NAME_ECOLIB_1: "Ассоциация $CONTINENT_ADJ$" #NT!
  FACTION_NAME_ECOLIB_2: "$CONTINENT_ADJ$ Антанта" #NT!
@@ -73,15 +73,15 @@
  FACTION_NAME_THEO_3: "$CONTINENT_ADJ$ Коалиция" #NT!
  FACTION_NAME_THEO_4: "Пакт $CONTINENT_ADJ$" #NT!
  FACTION_NAME_THEO_5: "Альянс $CONTINENT$" #NT!
- faction_prussian_allies_ssw: "Немецкий Бунд" #NT!
- faction_prussian_allies: "Прейсский союз" #NT!
- faction_austrian_allies: "Великая Германия Бунд" #NT!
- faction_ngc: "Северо-Германская Конфедерация" #NT!
- faction_sgc: "Южно-Германская Конфедерация" #NT!
- faction_german_front: "Немецкий Бунд" #NT!
- faction_south_german_defence: "Зюддойчер Пакт" #NT!
+ faction_prussian_allies_ssw: "Deutscher Bund" #NT!
+ faction_prussian_allies: "Прусский союз" #NT!
+ faction_austrian_allies: "Großdeutscher Bund" #NT!
+ faction_ngc: "Северогерманский союз" #NT!
+ faction_sgc: "Южногерманский союз" #NT!
+ faction_german_front: "Deutscher Bund" #NT!
+ faction_south_german_defence: "Южногерманский пакт" #NT!
  faction_anti_french_union_luxembourg_crisis: "Антифранцузский союз" #NT!
- faction_dual_alliance: "Двойной альянс" #NT!
+ faction_dual_alliance: "Двойной Альянс" #NT!
  faction_triple_alliance: "Тройственный союз" #NT!
- faction_paraguayan_legion: "Парагвайский легион" #NT!
+ faction_paraguayan_legion: "Парагвайский Легион" #NT!
  faction_quadraple_alliance: "Четверной Альянс" #NT!

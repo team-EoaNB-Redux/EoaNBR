@@ -4,20 +4,20 @@
  tribal_infantry: "Племенная пехота" #NT!
  feudal_infantry: "Феодальная пехота" #NT!
  line_infantry: "Линейная пехота" #NT!
- line_infantry_desc: "Войска вооружены новейшей винтовочной и штыковой техникой." #NT!
+ line_infantry_desc: "Войска вооружены передовым стрелковым оружием и штыковым оружием." #NT!
  light_infantry: "Легкая пехота" #NT!
  light_infantry_desc: "Легковооруженная и бронированная пехота." #NT!
- irregular_infantry: "Нерегулярные" #NT!
- irregular_infantry_desc: "Эти нерегулярные пехотные подразделения не очень сильны и эффективны, но их можно собрать очень быстро." #NT!
+ irregular_infantry: "Нерегулярные войска" #NT!
+ irregular_infantry_desc: "Эти нерегулярные пехотные подразделения не очень сильны и эффективны, но их можно сформировать чрезвычайно быстро." #NT!
  great_war_infantry: "Окопная пехота" #NT!
- great_war_infantry_desc: "Эта пехота была модернизирована и оснащена новым базовым снаряжением." #NT!
+ great_war_infantry_desc: "Эта пехота была модернизирована и оснащена новым базовым оборудованием." #NT!
  shock_troops: "Ударные войска" #NT!
- shock_troops_desc: "Ударные войска превосходны в бою в городах или на другой густонаселенной местности." #NT!
- cold_war_infantry: "Пехота Холодной войны" #NT!
+ shock_troops_desc: "Ударные войска отлично себя проявляют в боях в городах и других труднодоступных местностях." #NT!
+ cold_war_infantry: "Пехота холодной войны" #NT!
  cold_war_infantry_desc: ""
  digital_infantry: "Современная пехота" #NT!
  digital_infantry_desc: ""
- future_infantry: "Будущая пехота" #NT!
+ future_infantry: "Будущее пехоты" #NT!
  future_infantry_desc: ""
   
  # Cav 

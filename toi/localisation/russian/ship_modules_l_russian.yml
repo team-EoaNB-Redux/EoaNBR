@@ -48,6 +48,6 @@
  EQ_MOD_SLOT_mid_3_custom_slot_TITLE: "Центр. 3 модиф."
  EQ_MOD_SLOT_rear_1_custom_slot_TITLE: "Корм. 1 модиф."
  EQ_MOD_SLOT_rear_2_custom_slot_TITLE: "Корм. 2 модиф."
- SHIP_DESIGNER_MODULE_SELECTION: "Выберите модуль" #NT!
+ SHIP_DESIGNER_MODULE_SELECTION: "Выбрать модуль" #NT!
   ### EQUIPMENT MODULES ### 
  YUG_ship_armor_cruiser_1: "50-мм пояс/25-мм палуба"

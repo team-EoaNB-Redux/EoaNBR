@@ -516,7 +516,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = sardinia.1
+				id = sardinia.92
 			}
 			add_political_power = 150
 		}
@@ -612,7 +612,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PIE_Military_Plan_FT
-		icon = GFX_goal_focus_fra_plombiere_meeting
+		icon = GFX_Focus_Diplomacy_FRA
 		cost = 70
 		prerequisite = {
 			focus = PIE_Plombieres_Meeting
@@ -887,8 +887,13 @@ focus_tree = {
 			}
 			AUS = {
 				country_event = {
-					id = sardinia.88
+					id = austria.205
 				}
+			PRS = {
+				country_event = {
+					id = prussiaforeign.51
+				}
+			}
 			}
 			activate_mission = ITA_2IP_Mobilization_War_Imiment
 		}

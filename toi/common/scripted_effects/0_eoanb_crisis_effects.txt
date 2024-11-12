@@ -3,11 +3,18 @@
 		ROOT = {
 			add_ideas = EOANBSYS_spirit_national_crisis
 			set_variable = { EOANBSYS_national_crisis_progress_var = 50 }
-			# Crisises that update once 2 week
+			# Crises that update weekly
 			if = {
 				limit = {
-					has_national_crisis_14 = yes
+					has_national_crisis_7 = yes
 				}
+				activate_mission = EOANBSYS_national_crisis_progress_counter_7
+			}
+			# Crisises that update once 2 week
+			else_if = {
+				limit = {
+					has_national_crisis_14 = yes
+				} 
 				activate_mission = EOANBSYS_national_crisis_progress_counter_14
 			}
 			# Crisises that update once a month
@@ -53,6 +60,7 @@
 				clr_country_flag = EOANBSYS_national_crisis_bakumatsu_crisis_flag
 				clr_country_flag = EOANBSYS_national_crisis_aspirations_for_liberty_crisis_flag
 				clr_country_flag = EOANBSYS_national_crisis_worker_revolt_crisis_flag
+				clr_country_flag = EOANBSYS_national_crisis_name_mexican_reform_war
 			}
 		}
 	}
@@ -183,6 +191,7 @@
 	}
 	EOANBSYS_national_crisis_bakumatsu_crisis_succeed = {
 		complete_national_focus = JAP_vic_kobu_gattai
+		EOANBSYS_national_crisis_clear = yes
 		clr_country_flag = PS_pol_disable_coups
 	}
 	EOANBSYS_national_crisis_bakumatsu_crisis_fail = {
@@ -190,6 +199,15 @@
 		country_event = JAP_tokugawa_shogunate.200
 		clr_country_flag = PS_pol_disable_coups
 	}
+	EOANBSYS_national_crisis_mexican_reform_war_suceed = {
+		EOANBSYS_national_crisis_clear = yes
+		#mexico prevents reform war
+	}
+	EOANBSYS_national_crisis_mexican_reform_war_fail = {
+		EOANBSYS_national_crisis_clear = yes
+		#mexico starts reform war
+	}
+
 
 d_national_crisis_set_fragmentation = {
 	ROOT = {

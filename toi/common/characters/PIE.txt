@@ -111,7 +111,22 @@ characters = {
 			}
 		}
 	}
-
+	PIE_luigi_farini = {
+		name = PIE_luigi_farini_name
+		portraits = {
+			civilian = {
+				large = "gfx\leaders\ITA\ITA\Portrait_ITA_Luigi_Carlo_Farini.dds"
+			}
+		}
+	}
+	PIE_marco_minghetti = {
+		name = PIE_marco_minghetti_name
+		portraits = {
+			civilian = {
+				large = "gfx\leaders\ITA\ITA\Portrait_ITA_Marco_Minghetti.dds"
+			}
+		}
+	}
 	### Generals ###
 
 

@@ -98,3 +98,8 @@ NA_N_city_development_category = {
 		}
 	}
 }
+USA_kkk_uprising = {
+	icon = generic_crisis
+	
+	allowed = { tag = USA }
+}

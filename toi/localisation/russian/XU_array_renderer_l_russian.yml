@@ -1,0 +1,18 @@
+﻿l_russian:
+  
+ ### Infixes 
+  
+ array_infix_newline: "\н" #NT!
+ array_infix_newline_indent: "\н" #NT!
+ array_infix_newline_list: "\н -" #NT!
+ array_infix_comma: "None" #NT!
+  
+ ### Last Infixes 
+  
+ array_last_infix_and_oxford: ", и" #NT!
+ array_last_infix_and_no_oxford: "и" #NT!
+  
+ ### Cutoff Suffixes 
+  
+ array_cutoff_suffix_ellipsis: "None" #NT!
+ array_cutoff_suffix_none: ""

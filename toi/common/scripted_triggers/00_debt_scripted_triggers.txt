@@ -1,10 +1,6 @@
 debt_not_bankrupt_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = SPR_not_declared_bankruptcy_tooltip
-		if = {
-			limit = { TAG = SPR }
-			date < 1868.9.19
-		}
 		check_variable = { debt_level < 50 }
 		NOT = { 
 			has_country_flag = debt_declared_bankruptcy_flag
@@ -32,6 +28,43 @@ debt_level_less_than_25 = {
 			var = debt_level
 			value = 25
 			compare = less_than
+		}
+	}
+}
+
+has_no_debt = {
+	custom_trigger_tooltip = {
+		tooltip = no_debt_level_trigger_tt
+		OR={
+			check_variable = {
+				var = debt_level
+				value = 1
+				compare = less_than
+			}
+			not={has_variable = debt_level}
+		}
+	}
+}
+
+can_spend_without_default = {
+	custom_trigger_tooltip = {
+		tooltip = can_spend_without_default_trigger_tt
+		set_temp_variable = {
+			x_temp_total_available_cash = treasury
+		}
+		divide_temp_variable = {
+			x_temp_total_available_cash = 1000
+		}
+		add_to_temp_variable = {
+			x_temp_total_available_cash = national_bank_amount_left_k
+		}
+		divide_temp_variable = {
+			x_temp = 1000
+		}
+		check_variable={
+			var = x_temp_total_available_cash 
+			value = x_temp
+			compare = greater_than_or_equals
 		}
 	}
 }

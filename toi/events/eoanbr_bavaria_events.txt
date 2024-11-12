@@ -1756,3 +1756,52 @@ country_event = {
 		remove_ideas = BAV_idea_railway_concessions
 	}
 }
+
+#Russian warning to the German Confederation
+country_event = {
+	id = bavariaevent.31
+	title = bavariaevent.31.t
+	desc = bavariaevent.31.d
+	picture = GFX_report_versammlung
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+
+	option = {
+		name = bavariaevent.31.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+#Austria calls for aid
+country_event = {
+	id = bavariaevent.32
+	title = bavariaevent.32.t
+	desc = bavariaevent.32.d
+	picture = GFX_report_event_vienna_1
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+
+	option = {
+		name = bavariaevent.32.a
+		ai_chance = {
+			base = 100
+		}
+		add_to_war = {
+			targeted_alliance = AUS
+			enemy = PIE
+			hostility_reason = asked_to_join
+		}
+	}
+}

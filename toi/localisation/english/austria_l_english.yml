@@ -528,6 +528,9 @@
  austria.204.t: "Our Subjects in Italy Demand Liberalization Promises Kept"
  austria.204.d: "Due to the liberal ideals of Archduke Maximilian, who had been appointed as Viceroy of the Kingdom of Lombardy-Venetia in February 1857 when Emperor Franz Joseph had decided the immediate replacement of the elderly soldier Joseph Radetzky von Radetz, who had been stirring discontent amongst the Italian population. Maximilian promised liberal reforms to better the situation for the Italian peoples under Austrian control, and now this has come front to us: The Italians demand their promise fulfilled."
  austria.204.a: "We should act according to our promises."
+ austria.205.t: "Sardinian Troop Movements"
+ austria.205.d: "There have been reports of troop movements by §b[PIE.GetNameWithFlag]§! on the border of §O[LVN.GetNameWithFlag]§!. This threatens peace with §b[PIE.GetNameWithFlag]§!, as they appear to be preparing for a campaign for our holdings on the Italian peninsula. We shall demand that they demobilize, or face serious hostilities from us, and possibly the wider German Confederation."
+ austria.205.a: "Send them a declaration."
  
  ###NATIONALIST THREAT EVENTS
  #NATIONALIST AGITATION EVENTS

@@ -13,10 +13,6 @@
  mountain_desc: ""
  plains: "Равнины"
  plains_desc: ""
- urban: "Город"
- urban_desc: ""
- metropolis: "§gMetropolis§!" #NT!
- metropolis_desc: ""
  jungle: "Джунгли"
  jungle_desc: ""
  marsh: "Болото"

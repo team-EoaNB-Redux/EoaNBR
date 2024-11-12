@@ -4302,6 +4302,7 @@ news_event = {
 		set_temp_variable = { acw_draft_count_change = 18 }
 		ACW_Draft_Count_Get = yes
 		add_ideas = USA_Spirit_American_Civil_War_Army_Incompetency1
+		add_ideas = USA_Spirit_American_Civil_War_Strategic_Focus
 	}
 	option = {
 		name = acw_generic.2.b
@@ -13835,38 +13836,50 @@ news_event = {
 			}
 		}
 
-		ENG = {
+		# ENG = {
+		# 	if = {
+		# 		limit ={ has_war_with = USA has_war_together_with = CSA }
+		# 		custom_effect_tooltip = 01_ACW_PEACEDEAL_VAL_tt
+		# 		for_each_scope_loop = {
+		# 			array = subjects
+		# 			white_peace = USA
+		# 		}
+		# 		white_peace = USA
+		# 		hidden_effect = {
+		# 			transfer_state = 426
+		# 			transfer_state = 740
+		# 		}
+		# 	}
+		# }
+		# FRA = {
+		# 	if = {
+		# 		limit ={ has_war_with = USA has_war_together_with = CSA }
+		# 		custom_effect_tooltip = 01_ACW_PEACEDEAL_VAL_tt
+		# 		for_each_scope_loop = {
+		# 			array = subjects
+		# 			white_peace = USA
+		# 		}
+		# 		white_peace = USA
+		# 		hidden_effect = {
+		# 			transfer_state = 730
+		# 		}
+		# 	}
+		# }
+		# every_country = {
+		# 	limit = { has_war_together_with = CSA has_war_with = USA }
+		# 	white_peace = USA
+		# }
+
+		USA = {
+			generic_effect_give_me_peace = yes
 			if = {
-				limit ={ has_war_with = USA has_war_together_with = CSA }
-				custom_effect_tooltip = 01_ACW_PEACEDEAL_VAL_tt
-				for_each_scope_loop = {
-					array = subjects
-					white_peace = USA
+				limit = {
+					country_exists = WVG
 				}
-				white_peace = USA
-				hidden_effect = {
-					transfer_state = 426
-					transfer_state = 740
+				annex_country = {
+					target = WVG
 				}
 			}
-		}
-		FRA = {
-			if = {
-				limit ={ has_war_with = USA has_war_together_with = CSA }
-				custom_effect_tooltip = 01_ACW_PEACEDEAL_VAL_tt
-				for_each_scope_loop = {
-					array = subjects
-					white_peace = USA
-				}
-				white_peace = USA
-				hidden_effect = {
-					transfer_state = 730
-				}
-			}
-		}
-		every_country = {
-			limit = { has_war_together_with = CSA has_war_with = USA }
-			white_peace = USA
 		}
 		swap_ideas = {
 			remove_idea = USA_Spirit_American_Civil_War
@@ -13975,10 +13988,10 @@ news_event = {
 				clr_global_flag = ACW_American_Civil_War
 				set_global_flag = ACW_American_Civil_War_Happened
 				PRS = {
-							clr_country_flag = PRS_USA_sell_guns_flag
-							clr_country_flag = PRS_CSA_sell_guns_flag
-							clr_country_flag = PRS_USA_sell_guns_rejected_flag
-							clr_country_flag = PRS_CSA_sell_guns_rejected_flag
+					clr_country_flag = PRS_USA_sell_guns_flag
+					clr_country_flag = PRS_CSA_sell_guns_flag
+					clr_country_flag = PRS_USA_sell_guns_rejected_flag
+					clr_country_flag = PRS_CSA_sell_guns_rejected_flag
 				}
 			}
 			set_global_flag = ACW_CSA_Independence
@@ -14199,6 +14212,7 @@ news_event = {
 		# log = "option:		name = acw_peace_deal.2.b"
 		trigger = { tag = CSA }
 		hidden_effect = {
+			set_country_flag = CSAIndependence_Won
 			if = {
 				limit = { has_global_flag = ACW_American_Civil_War_Happened }
 				USA = {
@@ -15629,6 +15643,7 @@ country_event = {
 		}
 		add_political_power = -15
 		FROM = { USAROD_reconstruction_progress_plus_5 = yes }
+		USARECON_increase_freedmens_wellbeing_1 = yes
 	}
 	option = {
 		name = acw_reconstruction.2.c
@@ -17041,63 +17056,51 @@ country_event = {
 				}
 				364 = {
 					create_unit = {
-						division = "name = \"Hampton's Legion\" division_template = \"Confederate Veteran Cavalry\" start_experience_factor = 5"
+						division = "name = \"Hampton's Legion\" division_template = \"Confederate Veteran Cavalry\" start_experience_factor = 1"
 						owner = CSA
 					}
 				}
 				365 = {
 					create_unit = {
-						division = "name = \"Hardee's Corps\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 5"
+						division = "name = \"Hardee's Corps\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 1"
 						owner = CSA
 					}
 				}
 				366 = {
 					create_unit = {
-						division = "name = \"3rd Corps\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 5"
+						division = "name = \"3rd Corps\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 1"
 						owner = CSA
 					}
 				}
 				367 = {
 					create_unit = {
-						division = "name = \"15th Alabama Infantry\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 5"
+						division = "name = \"15th Alabama Infantry\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 1"
 						owner = CSA
 					}
 				}
 				370 = {
 					create_unit = {
-						division = "name = \"Barksdale's Mississippi Brigade\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 5"
+						division = "name = \"Barksdale's Mississippi Brigade\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 1"
 						owner = CSA
 					}
 				}
 				371 = {
 					create_unit = {
-						division = "name = \"Orleans Guards\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 5"
+						division = "name = \"Orleans Guards\" division_template = \"Confederate Veteran Infantry\" start_experience_factor = 1"
 						owner = CSA
 					}
 				}
 				every_owned_state = {
 					create_unit = {
-						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0.5"
+						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0"
 						owner = CSA
 					}
 					create_unit = {
-						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0.5"
+						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0"
 						owner = CSA
 					}
 					create_unit = {
-						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0.5"
-						owner = CSA
-					}
-					create_unit = {
-						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0.5"
-						owner = CSA
-					}
-					create_unit = {
-						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0.5"
-						owner = CSA
-					}
-					create_unit = {
-						division = "name = \"Klansmen Knights\" division_template = \"Klansmen Knights\" start_experience_factor = 0.5"
+						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0"
 						owner = CSA
 					}
 				}
@@ -17125,28 +17128,28 @@ country_event = { # KKK wins
 		hidden_effect = {
 			clr_country_flag = usa_first_kkk_flag
 			368 = {
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 			363 = {
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 			364 = {
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 			365 = {
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 			367 = {
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 			370 = {
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 			371 = {
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 			366 = {
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 			368 = {
 				if = {
@@ -17157,18 +17160,18 @@ country_event = { # KKK wins
 						}
 					}
 				}
-				transfer_state = CSA
+				transfer_state_to = CSA
 			}
 		}
 	}
 
 	option = { # How did we lose...?
 		name = acw_reconstruction.26.a
-		party_leader = {
+		random_character = {
 			limit = {
-				has_ideology = current_party_ideology_group
+				is_country_leader = yes
 			}
-			add_trait = eoanb_disgraced_leader
+			add_country_leader_trait  = eoanb_disgraced_leader
 		}
 	}
 }
@@ -17187,11 +17190,11 @@ country_event = { # KKK loses
 
 	option = { # And stay down!
 		name = acw_reconstruction.27.a
-		party_leader = {
+		random_character = {
 			limit = {
-				has_ideology = current_party_ideology_group
+				is_country_leader = yes
 			}
-			add_trait = trait_destroyer_of_the_klan
+			add_country_leader_trait  = trait_destroyer_of_the_klan
 		}
 	}
 }

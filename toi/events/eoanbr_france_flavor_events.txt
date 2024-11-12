@@ -845,6 +845,47 @@ country_event = { #Napoleon III - discovery of the illness 4
 	}
 }
 
+country_event = { #September convention
+	id = nap_france_flavor.36
+	title = nap_france_flavor.36.t
+	desc = nap_france_flavor.36.d
+
+	picture = GFX_report_event_generic_read_write
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = nap_france_flavor.36"
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #accept
+		name = nap_france_flavor.36.a
+		# log = "option:		name = nap_france_flavor.36.a"
+		ai_chance = { factor = 100 }
+		diplomatic_relation = {
+			country = PAP
+			relation = guarantee
+			active = no
+		}
+		PIE = {
+			country_event = {
+				id = ita.58
+			}
+		}
+	}
+	option = { #reject
+		name = nap_france_flavor.36.b
+		# log = "option:		name = nap_france_flavor.36.b"
+		PIE = {
+			country_event = {
+				id = ita.59
+			}
+		}
+	}
+}
+
+
 add_namespace = france_general_strike
 
 country_event = { #General Strike

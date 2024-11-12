@@ -1,0 +1,80 @@
+﻿l_russian:
+  
+ IdeologyLoc: "[?This.GetIdeologyLoc]" #NT!
+ LEDGER_TITLE_SL: "[Root.GetLedgerTitle]" #NT!
+ LEDGER_TITLE: "Леджер" #NT!
+ LEDGER_TITLE_LAND: "Армия" #NT!
+ LEDGER_TITLE_NAVY_AIR: "Военно-морские силы и ВВС" #NT!
+ LEDGER_TITLE_INDUSTRY: "Промышленность" #NT!
+ LEDGER_TITLE_TERRITORY: "Территория" #NT!
+ LEDGER_TITLE_FACTIONS: "Фракции" #NT!
+ LEDGER_TITLE_ECONOMY: "Экономика" #NT!
+  
+ LEDGER_OPEN: "Откройте бухгалтерскую книгу" #NT!
+  
+ LEDGER_SCORE: "Счет" #NT!
+ LEDGER_ARMY: "Армия" #NT!
+ LEDGER_NAVY: "Военно-морской" #NT!
+ LEDGER_AIR: "Военно-воздушные силы" #NT!
+ LEDGER_INDUSTRY: "Промышленность" #NT!
+ LEDGER_PROVINCES: "Государства, находящиеся в собственности" #NT!
+ LEDGER_COUNTRY_TT: ""
+ LEDGER_SORT_TT: "Нажмите для сортировки" #NT!
+ LEDGER_GROUP_TT: "Нажмите, чтобы сгруппировать" #NT!
+ LEDGER_REFRESH_TT: "Нажмите, чтобы обновить список" #NT!
+  
+ LEDGER_IDEOLOGY: "Идеология" #NT!
+ LEDGER_STABILITY: "Стабильность" #NT!
+ LEDGER_WAR_SUPPORT: "Поддержка войны" #NT!
+ LEDGER_POLITICAL_POWER: "Политическая власть" #NT!
+ LEDGER_POPULATION: "Население" #NT!
+ LEDGER_RESEARCH_SLOTS: "Слоты для исследований" #NT!
+ LEDGER_RESEARCH_SLOTS_TT: "Бонус скорости исследования: [?this.modifier@research_speed_factor|+=%]\nГруппы обмена технологиями: [?this.num_tech_sharing_groups|Y0]\nОригинальные слоты исследований: [?this.original_research_slots|Y0]" #NT!
+ LEDGER_POLITICAL_POWER_TT: "Политическая власть ежедневно: [?this.political_power_daily|+=]" #NT!
+ LEDGER_INDUSTRY_TT: "Всего гражданских заводов: [?this.num_of_civilian_factories|Y0]\nВсего военных заводов: [?this.num_of_military_factories|Y0]\nВсего военно-морских верфей: [?this.num_of_naval_factories|Y0]" #NT!
+  
+ LEDGER_BATTALIONS: "Отношения" #NT!
+ LEDGER_DIVISIONS: "Подразделения" #NT!
+ LEDGER_MANPOWER: "Рабочая сила" #NT!
+ LEDGER_ARMY_XP: "Опыт армии" #NT!
+ LEDGER_COMMAND_POWER: "Сила командования" #NT!
+ LEDGER_COMMAND_POWER_TT: "Ежедневная сила командования: [?this.command_power_daily|+=]" #NT!
+ LEDGER_CASUALTIES: "Потери" #NT!
+ LEDGER_LAND_DOCTRINE_LEVEL: "Доктрина о земле" #NT!
+  
+ LEDGER_NAVY_XP: "Опыт ВМС" #NT!
+ LEDGER_AIR_XP: "Эйр XP" #NT!
+ LEDGER_NUKES: "Ядерное оружие" #NT!
+ LEDGER_NUCLEAR_REACTORS: "Ядерные Реакторы" #NT!
+ LEDGER_ROCKET_SITES: "Ракетные площадки" #NT!
+  
+ LEDGER_CIV_FACTORIES: "Гражданские заводы" #NT!
+ LEDGER_CIV_FACTORIES_TT: "Бонус скорости строительства: [?this.modifier@production_speed_buildings_factor|+=%]\nЭффективные гражданские фабрики: [?this.effective_civilian_factories|Y0]" #NT!
+ LEDGER_CONSUMER_GOODS: "Потребительские товары" #NT!
+ LEDGER_CONSUMER_GOODS_TT: "Фабрики, используемые для производства потребительских товаров: [?this.consumer_goods_factories|0Y]" #NT!
+ LEDGER_MILITARY_FACTORIES: "Военные заводы" #NT!
+ LEDGER_MILITARY_FACTORIES_TT: "Бонус к выходу фабрики: [?this.modifier@industrial_capacity_factory|+=%]\nЭффективные военные фабрики: [?this.effective_military_factories|Y0]" #NT!
+ LEDGER_DOCKYARDS: "Верфи" #NT!
+ LEDGER_DOCKYARDS_TT: "Бонус за выход верфи: [?this.modifier@industrial_capacity_dockyard|+=%]\nЭффективные верфи: [?this.effective_naval_factories|Y0]" #NT!
+ LEDGER_FUEL: "Топливо" #NT!
+  
+ LEDGER_OWNED_STATES: "Принадлежащие\nштаты" #NT!
+ LEDGER_CONTROLLED_STATES: "Контролируемые государства" #NT!
+ LEDGER_OWNED_CONTROLLED_STATES: "Принадлежащий контролируемый" #NT!
+ LEDGER_OCCUPIED_STATES: "Оккупированные\nштаты" #NT!
+ LEDGER_CORE_STATES: "Core\nСостояния" #NT!
+ LEDGER_CONTROLELD_STATES_INCLUDING_SUBJECTS: "Контролируемые (включая субъектов)" #NT!
+  
+ LEDGER_FACTION_LEADER: "Лидер" #NT!
+ LEDGER_FACTION_MEMBERS: "Участники" #NT!
+  
+ LEDGER_GDP_STATES: "ВВП" #NT!
+ LEDGER_REAL_GDP_GROWTH_STATES: "Реальный рост ВВП" #NT!
+ LEDGER_NATIONAL_DEBT_STATES: "Государственный долг" #NT!
+ LEDGER_CIVIL_EXPEND_STATES: "Гражданский. Расходовать." #NT!
+ LEDGER_MIL_EXPEND_STATES: "Мил. Расходы." #NT!
+ LEDGER_MISC_INCOME_STATES: "Разные доходы" #NT!
+ LEDGER_MISC_COSTS_STATES: "Разные расходы" #NT!
+  
+ LEDGER_BUTTON_NEXT_TT: "Следующий" #NT!
+ LEDGER_BUTTON_PREVIOUS_TT: "Предыдущий" #NT!

@@ -84,7 +84,8 @@
 
 	#The UK's pending National Debt amounted to £769.78m Pound Sterling in 1857/58 (total debt of £834m - £63.82m loans given to foreign countries); income per year £65.17m per year = 11.81 GDP of debt (but lots of securities; complex finanical system meant the government was able to reduce debts after 1850s)
 	# Debt to GDP was approx 108.4% in 1857
-	set_variable = { starting_debt_gdp = 108.4 } # Interest payment was 3.85% GDP https://www.ukpublicspending.co.uk/year_spending_1857UKpn_17pc1n#ukgs302
+	# set_variable = { starting_debt_gdp = 108.4 } # Interest payment was 3.85% GDP https://www.ukpublicspending.co.uk/year_spending_1857UKpn_17pc1n#ukgs302
+	set_variable = { starting_debt = 1500 }
 
 	set_variable = {
 		var = ENG_worker_unrest
@@ -155,19 +156,31 @@
 		tech_docks = 1
 		tech_argand_lamp = 1
 		tech_cargo_port = 1
+		
+		electrical_engineering = 1
+		geissler_tube = 1
+		daguerreotype = 1
+		collodion_process = 1
+		ambrotype = 1
+		electrical_telegraph = 1
+
+		voltas_battery = 1
+		early_alternators = 1
+		woolrich_electrical_generator = 1
+		early_dynamo_generator = 1
 	}
 
 	if = {
 		limit = {
-			has_dlc = "Man The Guns"
+			has_dlc = "Man the Guns"
 		}
 		set_technology = {	
 			tech_naval_mtg_1857_lineship = 1
 		}
 	}
 
-	add_equipment_to_stockpile = { type = infantry_equipment_pre_rifle_3 amount = 1000 producer = ENG }
-	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1000 producer = ENG }
+	add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = ENG }
+	add_equipment_to_stockpile = { type = uniform_equipment amount = 1000 producer = ENG }
 	set_fuel_ratio = 0.05
 
 	set_autonomy = {#hudson bay company
@@ -992,8 +1005,8 @@
 
 	set_tech_early_mechanization = yes
 
-	add_equipment_to_stockpile = { type = infantry_equipment_pre_rifle_3 amount = 1000 producer = ENG }
-	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1000 producer = ENG }
+	add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = ENG }
+	add_equipment_to_stockpile = { type = uniform_equipment amount = 1000 producer = ENG }
 	set_fuel_ratio = 0.05
 
 	set_autonomy = {

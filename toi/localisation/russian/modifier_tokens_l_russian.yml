@@ -7,4 +7,4 @@
  # Legitimacy 
  political_legitimacy: "Легитимность" #NT!
  political_legitimacy_factor: "Фактор легитимности" #NT!
- political_legitimacy_change_tt: "Легитимность: $RIGHT|+=%$" #NT!
+ political_legitimacy_change_tt: "Легитимность: $RIGHT|+=%0$" #NT!

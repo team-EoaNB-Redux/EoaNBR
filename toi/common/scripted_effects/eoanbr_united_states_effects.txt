@@ -1,3 +1,159 @@
+USA_navy_modifier_setup = {
+	set_variable={USA_navy_modifier_navy_fuel_consumption_factor=0} 
+	set_variable={USA_navy_modifier_experience_gain_navy=0} 
+	set_variable={USA_navy_modifier_experience_gain_navy_factor=0} 
+	set_variable={USA_navy_modifier_assign_navy_leader_cp_cost=0} 
+	set_variable={USA_navy_modifier_navy_leader_cost_factor=0} 
+	set_variable={USA_navy_modifier_navy_leader_start_level=0} 
+	set_variable={USA_navy_modifier_navy_leader_start_attack_level=0} 
+	set_variable={USA_navy_modifier_navy_leader_start_coordination_level=0} 
+	set_variable={USA_navy_modifier_navy_leader_start_defense_level=0} 
+	set_variable={USA_navy_modifier_navy_leader_start_maneuvering_level=0} 
+	set_variable={USA_navy_modifier_shore_bombardment_bonus=0} 
+	set_variable={USA_navy_modifier_convoy_escort_efficiency=0} 
+	set_variable={USA_navy_modifier_convoy_raiding_efficiency_factor=0} 
+	set_variable={USA_navy_modifier_convoy_retreat_speed=0} 
+	set_variable={USA_navy_modifier_critical_receive_chance=0} 
+	set_variable={USA_navy_modifier_experience_gain_navy_unit=0} 
+	set_variable={USA_navy_modifier_experience_gain_navy_unit_factor=0} 
+	set_variable={USA_navy_modifier_mines_planting_by_fleets_factor=0} 
+	set_variable={USA_navy_modifier_mines_sweeping_by_fleets_factor=0} 
+	set_variable={USA_navy_modifier_naval_accidents_chance=0} 
+	set_variable={USA_navy_modifier_naval_coordination=0} 
+	set_variable={USA_navy_modifier_naval_critical_effect_factor=0} 
+	set_variable={USA_navy_modifier_naval_critical_score_chance_factor=0} 
+	set_variable={USA_navy_modifier_naval_damage_factor=0} 
+	set_variable={USA_navy_modifier_naval_defense_factor=0} 
+	set_variable={USA_navy_modifier_naval_defense_factor=0} 
+	set_variable={USA_navy_modifier_naval_enemy_fleet_size_ratio_penalty_factor=0} 
+	set_variable={USA_navy_modifier_naval_enemy_positioning_in_initial_attack=0} 
+	set_variable={USA_navy_modifier_naval_enemy_retreat_chance=0} 
+	set_variable={USA_navy_modifier_naval_has_potf_in_combat_attack=0} 
+	set_variable={USA_navy_modifier_naval_has_potf_in_combat_defense=0} 
+	set_variable={USA_navy_modifier_naval_heavy_gun_hit_chance_factor=0} 
+	set_variable={USA_navy_modifier_naval_hit_chance=0} 
+	set_variable={USA_navy_modifier_naval_light_gun_hit_chance_factor=0} 
+	set_variable={USA_navy_modifier_naval_mine_hit_chance=0} 
+	set_variable={USA_navy_modifier_naval_mines_damage_factor=0} 
+	set_variable={USA_navy_modifier_naval_mines_effect_reduction=0} 
+	set_variable={USA_navy_modifier_naval_morale=0} 
+	set_variable={USA_navy_modifier_naval_morale_factor=0} 
+	set_variable={USA_navy_modifier_naval_night_attack=0} 
+	set_variable={USA_navy_modifier_naval_retreat_chance=0} 
+	set_variable={USA_navy_modifier_naval_retreat_chance_after_initial_combat=0} 
+	set_variable={USA_navy_modifier_naval_retreat_speed=0} 
+	set_variable={USA_navy_modifier_naval_retreat_speed_after_initial_combat=0} 
+	set_variable={USA_navy_modifier_naval_speed_factor=0} 
+	set_variable={USA_navy_modifier_naval_torpedo_cooldown_factor=0} 
+	set_variable={USA_navy_modifier_naval_torpedo_damage_reduction_factor=0} 
+	set_variable={USA_navy_modifier_naval_torpedo_enemy_critical_chance_factor=0} 
+	set_variable={USA_navy_modifier_naval_torpedo_hit_chance_factor=0} 
+	set_variable={USA_navy_modifier_naval_torpedo_reveal_chance_factor=0} 
+	set_variable={USA_navy_modifier_naval_torpedo_screen_penetration_factor=0} 
+	set_variable={USA_navy_modifier_navy_anti_air_attack=0} 
+	set_variable={USA_navy_modifier_navy_anti_air_attack_factor=0} 
+	set_variable={USA_navy_modifier_navy_capital_ship_attack_factor=0} 
+	set_variable={USA_navy_modifier_navy_capital_ship_defence_factor=0} 
+	set_variable={USA_navy_modifier_navy_max_range=0} 
+	set_variable={USA_navy_modifier_navy_max_range_factor=0} 
+	set_variable={USA_navy_modifier_navy_org=0} 
+	set_variable={USA_navy_modifier_navy_org_factor=0} 
+	set_variable={USA_navy_modifier_navy_screen_attack_factor=0} 
+	set_variable={USA_navy_modifier_navy_screen_defence_factor=0} 
+	set_variable={USA_navy_modifier_navy_submarine_attack_factor=0} 
+	set_variable={USA_navy_modifier_navy_submarine_defence_factor=0} 
+	set_variable={USA_navy_modifier_navy_submarine_detection_factor=0} 
+	set_variable={USA_navy_modifier_navy_visibility=0} 
+	set_variable={USA_navy_modifier_navy_weather_penalty=0} 
+	set_variable={USA_navy_modifier_night_spotting_chance=0} 
+	set_variable={USA_navy_modifier_positioning=0} 
+	set_variable={USA_navy_modifier_repair_speed_factor=0} 
+	set_variable={USA_navy_modifier_screening_efficiency=0} 
+	set_variable={USA_navy_modifier_screening_without_screens=0} 
+	set_variable={USA_navy_modifier_ships_at_battle_start=0} 
+	set_variable={USA_navy_modifier_spotting_chance=0} 
+	set_variable={USA_navy_modifier_strike_force_movement_org_loss=0} 
+	set_variable={USA_navy_modifier_sub_retreat_speed=0} 
+	set_variable={USA_navy_modifier_submarine_attack=0} 
+	set_variable={USA_navy_modifier_navy_carrier_air_agility_factor=0} 
+	set_variable={USA_navy_modifier_navy_carrier_air_attack_factor=0} 
+	set_variable={USA_navy_modifier_navy_carrier_air_targetting_factor=0} 
+	set_variable={USA_navy_modifier_air_carrier_night_penalty_reduction_factor=0} 
+	set_variable={USA_navy_modifier_carrier_capacity_penalty_reduction=0} 
+	set_variable={USA_navy_modifier_carrier_traffic=0} 
+	set_variable={USA_navy_modifier_sortie_efficiency=0} 
+	set_variable={USA_navy_modifier_carrier_sortie_hours_delay=0} 
+	set_variable={USA_navy_modifier_carrier_night_traffic=0} 
+	set_variable={USA_navy_modifier_fighter_sortie_efficiency=0} 
+}
+USA_army_modifier_setup = {
+	set_variable={USA_army_modifier_acclimatization_cold_climate_gain_factor=0}
+	set_variable={USA_army_modifier_acclimatization_hot_climate_gain_factor=0}
+	set_variable={USA_army_modifier_air_superiority_bonus_in_combat=0}
+	set_variable={USA_army_modifier_army_attack_factor=0}
+	set_variable={USA_army_modifier_army_core_attack_factor=0}
+	set_variable={USA_army_modifier_army_attack_against_major_factor=0}
+	set_variable={USA_army_modifier_army_attack_against_minor_factor=0}
+	set_variable={USA_army_modifier_army_attack_speed_factor=0}
+	set_variable={USA_army_modifier_army_breakthrough_against_major_factor=0}
+	set_variable={USA_army_modifier_army_breakthrough_against_minor_factor=0}
+	set_variable={USA_army_modifier_army_defence_factor=0}
+	set_variable={USA_army_modifier_army_defence_against_major_factor=0}
+	set_variable={USA_army_modifier_army_defence_against_minor_factor=0}
+	set_variable={USA_army_modifier_army_core_defence_factor=0}
+	set_variable={USA_army_modifier_army_speed_factor=0}
+	set_variable={USA_army_modifier_army_strength_factor=0}
+	set_variable={USA_army_modifier_army_armor_attack_factor=0}
+	set_variable={USA_army_modifier_army_artillery_attack_factor=0}
+	set_variable={USA_army_modifier_army_infantry_attack_factor=0}
+	set_variable={USA_army_modifier_cavalry_attack_factor=0}
+	set_variable={USA_army_modifier_mechanized_attack_factor=0}
+	set_variable={USA_army_modifier_motorized_attack_factor=0}
+	set_variable={USA_army_modifier_special_forces_attack_factor=0}
+	set_variable={USA_army_modifier_army_armor_defence_factor=0}
+	set_variable={USA_army_modifier_army_artillery_defence_factor=0}
+	set_variable={USA_army_modifier_army_infantry_defence_factor=0}
+	set_variable={USA_army_modifier_cavalry_defence_factor=0}
+	set_variable={USA_army_modifier_mechanized_defence_factor=0}
+	set_variable={USA_army_modifier_motorized_defence_factor=0}
+	set_variable={USA_army_modifier_special_forces_defence_factor=0}
+	set_variable={USA_army_modifier_army_armor_speed_factor=0}
+	set_variable={USA_army_modifier_army_artillery_speed_factor=0}
+	set_variable={USA_army_modifier_army_infantry_speed_factor=0}
+	set_variable={USA_army_modifier_cavalry_speed_factor=0}
+	set_variable={USA_army_modifier_mechanized_speed_factor=0}
+	set_variable={USA_army_modifier_motorized_speed_factor=0}
+	set_variable={USA_army_modifier_special_forces_speed_factor=0}
+	set_variable={USA_army_modifier_army_morale=0}
+	set_variable={USA_army_modifier_army_morale_factor=0}
+	set_variable={USA_army_modifier_army_org=0}
+	set_variable={USA_army_modifier_army_org_factor=0}
+	set_variable={USA_army_modifier_army_org_regain=0}
+	set_variable={USA_army_modifier_breakthrough_factor=0}
+	set_variable={USA_army_modifier_cas_damage_reduction=0}
+	set_variable={USA_army_modifier_combat_width_factor=0}
+	set_variable={USA_army_modifier_coordination_bonus=0}
+	set_variable={USA_army_modifier_dig_in_speed=0}
+	set_variable={USA_army_modifier_dig_in_speed_factor=0}
+	set_variable={USA_army_modifier_experience_gain_army_unit=0}
+	set_variable={USA_army_modifier_experience_gain_army_unit_factor=0}
+	set_variable={USA_army_modifier_experience_loss_factor=0}
+	set_variable={USA_army_modifier_initiative_factor=0}
+	set_variable={USA_army_modifier_land_night_attack=0}
+	set_variable={USA_army_modifier_max_dig_in=0}
+	set_variable={USA_army_modifier_max_dig_in_factor=0}
+	set_variable={USA_army_modifier_max_planning=0}
+	set_variable={USA_army_modifier_max_planning_factor=0}
+	set_variable={USA_army_modifier_pocket_penalty=0}
+	set_variable={USA_army_modifier_recon_factor=0}
+	set_variable={USA_army_modifier_recon_factor_while_entrenched=0}
+	set_variable={USA_army_modifier_special_forces_cap=0}
+	set_variable={USA_army_modifier_special_forces_min=0}
+	set_variable={USA_army_modifier_terrain_penalty_reduction=0}
+	set_variable={USA_army_modifier_org_loss_at_low_org_factor=0}
+	set_variable={USA_army_modifier_org_loss_when_moving=0}
+	set_variable={USA_army_modifier_planning_speed=0}
+}
 NA_B_set_pop_points_effect = {
 	every_state = {
 		limit = {
@@ -1600,21 +1756,21 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 			limit = {
 				has_completed_focus = USA_covode_committee
 			}
-			log = "Buchanan Cabinet Block 1"
+			# log = "Buchanan Cabinet Block 1"
 			if = {
 				limit = {
 					has_political_power > 225
 				}
-				log = "if block"
+				# log = "if block"
 				if = {
 					limit = {
 						has_idea = USA_doughface_2_lvl1
 					}
-					swap_ideas = {
-						remove_idea = USA_doughface_2_lvl1
-						add_idea = USA_doughface_2_lvl1
-					}
-					log = "if block"
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_2_lvl1
+					# 	add_idea = USA_doughface_2_lvl1
+					# }
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -1624,7 +1780,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl2
 						add_idea = USA_doughface_2_lvl1
 					}
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -1634,7 +1790,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl3
 						add_idea = USA_doughface_2_lvl1
 					}
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -1644,7 +1800,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl4
 						add_idea = USA_doughface_2_lvl1
 					}
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
 					swap_ideas = {
@@ -1652,14 +1808,14 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						add_idea = USA_doughface_2_lvl1
 					}
 					
-					log = "else block"
+					# log = "else block"
 				}
 			}
 			else_if = {
 				limit = {
 					has_political_power > 150
 				}
-					log = "elseif block1"
+					# log = "elseif block1"
 				if = {
 					limit = {
 						has_idea = USA_doughface_2_lvl1
@@ -1668,17 +1824,17 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl1
 						add_idea = USA_doughface_2_lvl2
 					}
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
 						has_idea = USA_doughface_2_lvl2
 					}
-					swap_ideas = {
-						remove_idea = USA_doughface_2_lvl2
-						add_idea = USA_doughface_2_lvl2
-					}
-					log = "elseif block1"
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_2_lvl2
+					# 	add_idea = USA_doughface_2_lvl2
+					# }
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -1688,7 +1844,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl3
 						add_idea = USA_doughface_2_lvl2
 					}
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -1698,21 +1854,21 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl4
 						add_idea = USA_doughface_2_lvl2
 					}
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
 					swap_ideas = {
 						remove_idea = USA_doughface_2_lvl5
 						add_idea = USA_doughface_2_lvl2
 					}
-					log = "else block"
+					# log = "else block"
 				}
 			}
 			else_if = {
 				limit = {
 					has_political_power > 75
 				}
-					log = "elseif block2"
+					# log = "elseif block2"
 				if = {
 					limit = {
 						has_idea = USA_doughface_2_lvl1
@@ -1721,7 +1877,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl1
 						add_idea = USA_doughface_2_lvl3
 					}
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -1731,17 +1887,17 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl2
 						add_idea = USA_doughface_2_lvl3
 					}
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
 						has_idea = USA_doughface_2_lvl3
 					}
-					swap_ideas = {
-						remove_idea = USA_doughface_2_lvl3
-						add_idea = USA_doughface_2_lvl3
-					}
-					log = "elseif block2"
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_2_lvl3
+					# 	add_idea = USA_doughface_2_lvl3
+					# }
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -1751,21 +1907,21 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl4
 						add_idea = USA_doughface_2_lvl3
 					}
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
 					swap_ideas = {
 						remove_idea = USA_doughface_2_lvl5
 						add_idea = USA_doughface_2_lvl3
 					}
-					log = "else block"
+					# log = "else block"
 				}
 			}
 			else_if = {
 				limit = {
 					has_political_power > 0
 				}
-					log = "elseif block3"
+					# log = "elseif block3"
 				if = {
 					limit = {
 						has_idea = USA_doughface_2_lvl1
@@ -1774,7 +1930,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl1
 						add_idea = USA_doughface_2_lvl4
 					}
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -1784,7 +1940,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl2
 						add_idea = USA_doughface_2_lvl4
 					}
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -1794,28 +1950,28 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl3
 						add_idea = USA_doughface_2_lvl4
 					}
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
 						has_idea = USA_doughface_2_lvl4
 					}
-					swap_ideas = {
-						remove_idea = USA_doughface_2_lvl4
-						add_idea = USA_doughface_2_lvl4
-					}
-					log = "elseif block3"
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_2_lvl4
+					# 	add_idea = USA_doughface_2_lvl4
+					# }
+					# log = "elseif block3"
 				}
 				else = {
 					swap_ideas = {
 						remove_idea = USA_doughface_2_lvl5
 						add_idea = USA_doughface_2_lvl4
 					}
-					log = "else block"
+					# log = "else block"
 				}
 			}
 			else = {
-				log = "else block"
+				# log = "else block"
 				if = {
 					limit = {
 						has_idea = USA_doughface_2_lvl1
@@ -1824,7 +1980,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl1
 						add_idea = USA_doughface_2_lvl5
 					}
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -1834,7 +1990,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl2
 						add_idea = USA_doughface_2_lvl5
 					}
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -1844,7 +2000,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl3
 						add_idea = USA_doughface_2_lvl5
 					}
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -1854,14 +2010,14 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_doughface_2_lvl4
 						add_idea = USA_doughface_2_lvl5
 					}
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
-					swap_ideas = {
-						remove_idea = USA_doughface_2_lvl5
-						add_idea = USA_doughface_2_lvl5
-					}
-					log = "else block"
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_2_lvl5
+					# 	add_idea = USA_doughface_2_lvl5
+					# }
+					# log = "else block"
 				}
 			}
 		}
@@ -1869,7 +2025,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 			limit = {
 				has_completed_focus = USA_doughface_cabinet
 			}
-			log = "Buchanan Cabinet Block 2"
+			# log = "Buchanan Cabinet Block 2"
 			if = {
 				limit = {
 					has_political_power > 225
@@ -1878,10 +2034,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					limit = {
 						has_idea = USA_doughface_1_lvl1
 					}
-					swap_ideas = {
-						remove_idea = USA_doughface_1_lvl1
-						add_idea = USA_doughface_1_lvl1
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_1_lvl1
+					# 	add_idea = USA_doughface_1_lvl1
+					# }
 				}
 				else_if = {
 					limit = {
@@ -1934,10 +2090,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					limit = {
 						has_idea = USA_doughface_1_lvl2
 					}
-					swap_ideas = {
-						remove_idea = USA_doughface_1_lvl2
-						add_idea = USA_doughface_1_lvl2
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_1_lvl2
+					# 	add_idea = USA_doughface_1_lvl2
+					# }
 				}
 				else_if = {
 					limit = {
@@ -1990,10 +2146,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					limit = {
 						has_idea = USA_doughface_1_lvl3
 					}
-					swap_ideas = {
-						remove_idea = USA_doughface_1_lvl3
-						add_idea = USA_doughface_1_lvl3
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_1_lvl3
+					# 	add_idea = USA_doughface_1_lvl3
+					# }
 				}
 				else_if = {
 					limit = {
@@ -2046,10 +2202,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					limit = {
 						has_idea = USA_doughface_1_lvl4
 					}
-					swap_ideas = {
-						remove_idea = USA_doughface_1_lvl4
-						add_idea = USA_doughface_1_lvl4
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_1_lvl4
+					# 	add_idea = USA_doughface_1_lvl4
+					# }
 				}
 				else = {
 					swap_ideas = {
@@ -2096,10 +2252,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					}
 				}
 				else = {
-					swap_ideas = {
-						remove_idea = USA_doughface_1_lvl5
-						add_idea = USA_doughface_1_lvl5
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_doughface_1_lvl5
+					# 	add_idea = USA_doughface_1_lvl5
+					# }
 				}
 			}
 		}
@@ -2107,7 +2263,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 			limit = {
 				has_completed_focus = USA_close_ranks
 			}
-			log = "Buchanan Cabinet Block 3"
+			# log = "Buchanan Cabinet Block 3"
 			if = {
 				limit = {
 					has_political_power > 225
@@ -2116,10 +2272,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					limit = {
 						has_idea = USA_inclusive_2_lvl1
 					}
-					swap_ideas = {
-						remove_idea = USA_inclusive_2_lvl1
-						add_idea = USA_inclusive_2_lvl1
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_inclusive_2_lvl1
+					# 	add_idea = USA_inclusive_2_lvl1
+					# }
 				}
 				else_if = {
 					limit = {
@@ -2172,10 +2328,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					limit = {
 						has_idea = USA_inclusive_2_lvl2
 					}
-					swap_ideas = {
-						remove_idea = USA_inclusive_2_lvl2
-						add_idea = USA_inclusive_2_lvl2
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_inclusive_2_lvl2
+					# 	add_idea = USA_inclusive_2_lvl2
+					# }
 				}
 				else_if = {
 					limit = {
@@ -2228,10 +2384,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					limit = {
 						has_idea = USA_inclusive_2_lvl3
 					}
-					swap_ideas = {
-						remove_idea = USA_inclusive_2_lvl3
-						add_idea = USA_inclusive_2_lvl3
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_inclusive_2_lvl3
+					# 	add_idea = USA_inclusive_2_lvl3
+					# }
 				}
 				else_if = {
 					limit = {
@@ -2284,10 +2440,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					limit = {
 						has_idea = USA_inclusive_2_lvl4
 					}
-					swap_ideas = {
-						remove_idea = USA_inclusive_2_lvl4
-						add_idea = USA_inclusive_2_lvl4
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_inclusive_2_lvl4
+					# 	add_idea = USA_inclusive_2_lvl4
+					# }
 				}
 				else = {
 					swap_ideas = {
@@ -2334,10 +2490,10 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					}
 				}
 				else = {
-					swap_ideas = {
-						remove_idea = USA_inclusive_2_lvl5
-						add_idea = USA_inclusive_2_lvl5
-					}
+					# swap_ideas = {
+					# 	remove_idea = USA_inclusive_2_lvl5
+					# 	add_idea = USA_inclusive_2_lvl5
+					# }
 				}
 			}
 		}
@@ -2345,12 +2501,12 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 			limit = {
 				has_completed_focus = USA_inclusive_cabinet
 			}
-			log = "Buchanan Cabinet Block 4"
+			# log = "Buchanan Cabinet Block 4"
 			if = {
 				limit = {
 					has_political_power > 225
 				}
-					log = "if block"
+					# log = "if block"
 				if = {
 					limit = {
 						has_idea = USA_inclusive_1_lvl1
@@ -2359,7 +2515,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					# 	remove_idea = USA_inclusive_1_lvl1
 					# 	add_idea = USA_inclusive_1_lvl1
 					# }
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -2369,7 +2525,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl2
 						add_idea = USA_inclusive_1_lvl1
 					}
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -2379,7 +2535,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl3
 						add_idea = USA_inclusive_1_lvl1
 					}
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -2389,21 +2545,21 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl4
 						add_idea = USA_inclusive_1_lvl1
 					}
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
 					swap_ideas = {
 						remove_idea = USA_inclusive_1_lvl5
 						add_idea = USA_inclusive_1_lvl1
 					}
-					log = "else block"
+					# log = "else block"
 				}
 			}
 			else_if = {
 				limit = {
 					has_political_power > 150
 				}
-					log = "elseif block1"
+					# log = "elseif block1"
 				if = {
 					limit = {
 						has_idea = USA_inclusive_1_lvl1
@@ -2412,7 +2568,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl1
 						add_idea = USA_inclusive_1_lvl2
 					}
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -2422,7 +2578,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					# 	remove_idea = USA_inclusive_1_lvl2
 					# 	add_idea = USA_inclusive_1_lvl2
 					# }
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -2432,7 +2588,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl3
 						add_idea = USA_inclusive_1_lvl2
 					}
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -2442,21 +2598,21 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl4
 						add_idea = USA_inclusive_1_lvl2
 					}
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
 					swap_ideas = {
 						remove_idea = USA_inclusive_1_lvl5
 						add_idea = USA_inclusive_1_lvl2
 					}
-					log = "else block"
+					# log = "else block"
 				}
 			}
 			else_if = {
 				limit = {
 					has_political_power > 75
 				}
-					log = "elseif block2"
+					# log = "elseif block2"
 				if = {
 					limit = {
 						has_idea = USA_inclusive_1_lvl1
@@ -2465,7 +2621,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl1
 						add_idea = USA_inclusive_1_lvl3
 					}
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -2475,7 +2631,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl2
 						add_idea = USA_inclusive_1_lvl3
 					}
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -2485,7 +2641,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					# 	remove_idea = USA_inclusive_1_lvl3
 					# 	add_idea = USA_inclusive_1_lvl3
 					# }
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -2495,21 +2651,21 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl4
 						add_idea = USA_inclusive_1_lvl3
 					}
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
 					swap_ideas = {
 						remove_idea = USA_inclusive_1_lvl5
 						add_idea = USA_inclusive_1_lvl3
 					}
-					log = "else block"
+					# log = "else block"
 				}
 			}
 			else_if = {
 				limit = {
 					has_political_power > 0
 				}
-					log = "elseif block3"
+					# log = "elseif block3"
 				if = {
 					limit = {
 						has_idea = USA_inclusive_1_lvl1
@@ -2518,7 +2674,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl1
 						add_idea = USA_inclusive_1_lvl4
 					}
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -2528,7 +2684,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl2
 						add_idea = USA_inclusive_1_lvl4
 					}
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -2538,7 +2694,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl3
 						add_idea = USA_inclusive_1_lvl4
 					}
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -2548,18 +2704,18 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 					# 	remove_idea = USA_inclusive_1_lvl4
 					# 	add_idea = USA_inclusive_1_lvl4
 					# }
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
 					swap_ideas = {
 						remove_idea = USA_inclusive_1_lvl5
 						add_idea = USA_inclusive_1_lvl4
 					}
-					log = "else block"
+					# log = "else block"
 				}
 			}
 			else = {
-					log = "else block"
+					# log = "else block"
 				if = {
 					limit = {
 						has_idea = USA_inclusive_1_lvl1
@@ -2568,7 +2724,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl1
 						add_idea = USA_inclusive_1_lvl5
 					}
-					log = "if block"
+					# log = "if block"
 				}
 				else_if = {
 					limit = {
@@ -2578,7 +2734,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl2
 						add_idea = USA_inclusive_1_lvl5
 					}
-					log = "elseif block1"
+					# log = "elseif block1"
 				}
 				else_if = {
 					limit = {
@@ -2588,7 +2744,7 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl3
 						add_idea = USA_inclusive_1_lvl5
 					}
-					log = "elseif block2"
+					# log = "elseif block2"
 				}
 				else_if = {
 					limit = {
@@ -2598,14 +2754,14 @@ USA_Buchanan_Cabinet_Modify = { #new iteration, should be less lag
 						remove_idea = USA_inclusive_1_lvl4
 						add_idea = USA_inclusive_1_lvl5
 					}
-					log = "elseif block3"
+					# log = "elseif block3"
 				}
 				else = {
 					# swap_ideas = {
 					# 	remove_idea = USA_inclusive_1_lvl5
 					# 	add_idea = USA_inclusive_1_lvl5
 					# }
-					log = "else block"
+					# log = "else block"
 				}
 			}
 		}

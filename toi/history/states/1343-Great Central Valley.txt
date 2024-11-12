@@ -31,7 +31,7 @@ state = {
 		victory_points = { #Colombia
 			6694 2
 		}
-		victory_points = { #Millerton
+		victory_points = { #Millerton: Founded 1856, Fresno: Founded May 1872
 		 	4518 1
 		}
 		victory_points = { #Sacramento
