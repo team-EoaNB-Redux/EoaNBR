@@ -57,6 +57,12 @@
  mexico_civil_war.1.d: "Today Félix María Zuloaga and other conservative generals have made a statement at the Archbishop's Palace in Tacubaya.\n\nConsidering that the majority of the people were not satisfied with the Constitution; that the country must be governed by laws in accordance with its uses and customs; as of this date the Constitution ceases to govern; President Comonfort retains that character, but with all-encompassing powers After three months, the President himself will call a constituent Congress to draw up a new code that will be submitted to the approval of all the inhabitants of the Republic.'\n\nThe Church has not been slow to announce throughout the country that those who remain faithful to the Constitution will be excommunicated and that those who in the past swore to the Constitution but now supported the Plan of Tacubaya would be forgiven."
  mexico_civil_war.1.a: "Support Tacubaya's Plan!"
  mexico_civil_war.1.b: "Defend the constitution!"
+
+ mexico_civil_war.2.t: "[FROM.GetName] Abandons the Tacubaya Plan!"
+ mexico_civil_war.2.d: "The governor of [FROM.GetName] has declared their state will not endorse the actions of the Tacubaya government, and will support our Constitutionalist government!"
+ mexico_civil_war.2.e: "The governor of [FROM.GetName] has declared their state is abandoning our plan to save the state!"
+ mexico_civil_war.2.a: "They join our cause against the rebels!"
+ mexico_civil_war.2.b: "Damn those traitors!"
  
  mexico_civil_war.4.t: "[FROM.GetName] Joins the Tacubaya Plan!"
  mexico_civil_war.4.d: "The governor of [FROM.GetName] has declared their state will support the Tacubaya plan!"
