@@ -84,8 +84,8 @@ set_popularities = {
 		vanguard_communism = 0
 		collectivist_socialism = 0
 		social_egalitarianism = 0
-		centrism = 0
-		traditional_conservatism = 100
+		centrism = 50
+		traditional_conservatism = 50
 		radical_democracy = 0
 		chauvinist_populism = 0
 		autocracy = 0
@@ -132,5 +132,6 @@ set_popularities = {
 	# POLITICAL LEADERS
 
 recruit_character = NSW_henry_parker
+recruit_character = NSW_Charles_Cowper
 
 }

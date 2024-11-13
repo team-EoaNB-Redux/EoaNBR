@@ -13,6 +13,20 @@ characters  =  {
 			id = -1
 		}
 	}
+	NSW_Charles_Cowper = {
+		name = "Charles Cowper"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NSW/Portrait_NSW_Charles_Cowper.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_CHARLES_COWPER_DESC"
+			ideology = moderatism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
 	NSW_lucas_brown  =  {
 		name = "Lucas Brown"
 		portraits  =  {
