@@ -44,7 +44,7 @@ types = {
 		}
 		# Raid Type is visible
 		visible = {
-			has_tech = nukes
+			has_tech = tech_projects_atomic_bomb
 		}
 		# Specific Target is visible
 		show_target = {
@@ -681,11 +681,17 @@ types = {
 		command_power = 5 # command power allocation cost
 
 		allowed = {
-			has_dlc = "Gotterdammerung"
+			
 		}
 		# Raid Type is visible
 		visible = {
-			is_special_project_completed = sp:sp_nuclear_warheads
+			OR={
+				AND={
+					is_special_project_completed = sp:sp_nuclear_warheads
+					has_dlc = "Gotterdammerung"
+				}
+				has_tech = tech_projects_hydrogen_bomb
+			}
 		}
 		# Specific Target is visible
 		show_target = {

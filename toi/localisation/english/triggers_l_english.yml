@@ -907,6 +907,13 @@
  FRA_SNCAC_formed: "Has reorganized the Aviation Industry"
  DEN_danish_trading_partner_flag: "Is trading with [DEN.GetNameDef]"
 
+ TRIGGER_IS_SPECIAL_PROJECT_COMPLETED: "Has completed special project $PROJECT|H$"
+ TRIGGER_IS_NOT_SPECIAL_PROJECT_COMPLETED: "Has not completed special project $PROJECT|H$"
+ TRIGGER_IS_SPECIAL_PROJECT_BEING_RESEARCHED: "Is researching special project $PROJECT|H$"
+ TRIGGER_IS_NOT_SPECIAL_PROJECT_BEING_RESEARCHED: "Is not researching special project $PROJECT|H$"
+
+ TRIGGER_HAS_MARKET_ACCESS_WITH: "Has market access with @$TAG$$COUNTRY|H$"
+ TRIGGER_HAS_NOT_MARKET_ACCESS_WITH: "Does not have market access with @$TAG$$COUNTRY|H$"
 
  GENERIC_Focus_Hidden_Branches_tt: "\n\n---------------------------------------\n§RThe focuses unlocked by completing this focus are hidden until the completion of this one.§!"
  GENERIC_Unfinished_Content_tt: "§RThe Content unlocked/featured by this event is unfinished in this version of the mod§!."
