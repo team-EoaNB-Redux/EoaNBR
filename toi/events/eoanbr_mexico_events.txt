@@ -348,7 +348,7 @@ add_namespace = mexico_civil_war
 			name = mexico_politics.23.a
 			every_core_state = {
 				# decrease_resistance_la_reforma = yes
-				set_occupation_law = { local_police_force_garrison }
+				set_occupation_law = local_police_force_garrison
 				set_state_flag = generic_state_flag_garrison_laws_locked
 			}
 		}
@@ -368,15 +368,15 @@ add_namespace = mexico_civil_war
 			every_core_state = {
 				limit = {
 					OR = {
-						has_dynamic_modifier = dynmod_MEX_resistance_modifier_1
-						has_dynamic_modifier = dynmod_MEX_resistance_modifier_2
+						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_1 }
+						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_2 }
 					}
 					increase_resistance_la_reforma = yes
 				}
 			}
 			every_core_state = {
 				limit = {
-					has_dynamic_modifier = dynmod_MEX_resistance_modifier_3
+					has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_3 }
 				}
 				random_list = {
 					5 = {
@@ -470,11 +470,11 @@ add_namespace = mexico_civil_war
 			every_core_state = {
 				limit = {
 					OR = {
-						has_dynamic_modifier = dynmod_MEX_resistance_modifier_4
-						has_dynamic_modifier = dynmod_MEX_resistance_modifier_5
+						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_4 }
+						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_5 }
 					}
-					decrease_resistance_la_reforma = yes
 				}
+				decrease_resistance_la_reforma = yes
 			}
 		}
 	}

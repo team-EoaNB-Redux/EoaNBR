@@ -1422,7 +1422,7 @@ focus = {
 
 	available = {
 		has_war = no
-		has_stability = 0.5
+		has_stability > 0.5
 	}
 	ai_will_do = { base = 100 }
 
@@ -2235,7 +2235,7 @@ focus = {
 
 		available = {
 			OR={
-				has_stability = 0.5
+				has_stability > 0.5
 				date > 1877.1.1
 			}
 		}

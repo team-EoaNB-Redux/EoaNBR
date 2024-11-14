@@ -84,24 +84,24 @@ defined_text = {
 		trigger={
 			check_variable={num_prepared_nuclear_missiles<10}
 		}
-		localization_key = "000[?num_prepared_nuclear_missiles]"
+		localization_key = scripted_loc_inline_2414
 	}
 	text = {
 		trigger={
 			check_variable={num_prepared_nuclear_missiles>9}
 			check_variable={num_prepared_nuclear_missiles<100}
 		}
-		localization_key = "00[?num_prepared_nuclear_missiles]"
+		localization_key = scripted_loc_inline_2415
 	}
 	text = {
 		trigger={
 			check_variable={num_prepared_nuclear_missiles>99}
 			check_variable={num_prepared_nuclear_missiles<1000}
 		}
-		localization_key = "0[?num_prepared_nuclear_missiles]"
+		localization_key = scripted_loc_inline_2416
 	}
 	text = {	
-		localization_key = "[?num_prepared_nuclear_missiles]"
+		localization_key = scripted_loc_inline_2417
 	}
 }
 defined_text = {
@@ -110,24 +110,24 @@ defined_text = {
 		trigger={
 			check_variable={num_of_nukes<10}
 		}
-		localization_key = "000[?num_of_nukes]"
+		localization_key = scripted_loc_inline_2418
 	}
 	text = {
 		trigger={
 			check_variable={num_of_nukes>9}
 			check_variable={num_of_nukes<100}
 		}
-		localization_key = "00[?num_of_nukes]"
+		localization_key = scripted_loc_inline_2419
 	}
 	text = {
 		trigger={
 			check_variable={num_of_nukes>99}
 			check_variable={num_of_nukes<1000}
 		}
-		localization_key = "0[?num_of_nukes]"
+		localization_key = scripted_loc_inline_2420
 	}
 	text = {	
-		localization_key = "[?num_of_nukes]"
+		localization_key = scripted_loc_inline_2421
 	}
 }
 defined_text = {
@@ -137,45 +137,45 @@ defined_text = {
 			#always = yes
 			check_variable={ SIA_british_interest > 5 }
 		}
-		localization_key = "Colonial"
+		localization_key = scripted_loc_inline_2422
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_british_interest > 4 }
 		}
-		localization_key = "Domineering"
+		localization_key = scripted_loc_inline_2423
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_british_interest > 3 }
 		}
-		localization_key = "Protective"
+		localization_key = scripted_loc_inline_2424
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_british_interest > 2 }
 		}
-		localization_key = "Influencing"
+		localization_key = scripted_loc_inline_2425
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_british_interest > 1 }
 		}
-		localization_key = "Interested"
+		localization_key = scripted_loc_inline_2426
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_british_interest > 0 }
 		}
-		localization_key = "Noticing"
+		localization_key = scripted_loc_inline_2427
 	}
 	text = {	
-		localization_key = "Uninterested"
+		localization_key = scripted_loc_inline_2428
 	}
 }
 defined_text = {
@@ -185,45 +185,45 @@ defined_text = {
 			#always = yes
 			check_variable={ SIA_french_interest > 5 }
 		}
-		localization_key = "Colonial"
+		localization_key = scripted_loc_inline_2429
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_french_interest > 4 }
 		}
-		localization_key = "Domineering"
+		localization_key = scripted_loc_inline_2430
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_french_interest > 3 }
 		}
-		localization_key = "Protective"
+		localization_key = scripted_loc_inline_2431
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_french_interest > 2 }
 		}
-		localization_key = "Influencing"
+		localization_key = scripted_loc_inline_2432
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_french_interest > 1 }
 		}
-		localization_key = "Taking Interest"
+		localization_key = scripted_loc_inline_2433
 	}
 	text = {
 		trigger={
 			#always = yes
 			check_variable={ SIA_french_interest > 0 }
 		}
-		localization_key = "Noticing"
+		localization_key = scripted_loc_inline_2434
 	}
 	text = {	
-		localization_key = "Uninterested"
+		localization_key = scripted_loc_inline_2435
 	}
 }
 defined_text = {
@@ -232,31 +232,31 @@ defined_text = {
 		trigger={
 			check_variable = {super_event_displayed = 1}
 		}
-		localization_key = "Berlin Conference"
+		localization_key = scripted_loc_inline_2436
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 2}
 		}
-		localization_key = "The Scramble for Africa"
+		localization_key = scripted_loc_inline_2437
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 3}
 		}
-		localization_key = "The Crash of 1857"
+		localization_key = scripted_loc_inline_2438
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 4}
 		}
-		localization_key = "Suez Canal Completion"
+		localization_key = scripted_loc_inline_2439
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 5}
 		}
-		localization_key = "Revolutions Across Italy"
+		localization_key = scripted_loc_inline_2440
 	}
 	text = {
 		trigger={
@@ -271,170 +271,170 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "Risorgimento"
+		localization_key = scripted_loc_inline_2441
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 9}
 		}
-		localization_key = "The American Civil War"
+		localization_key = scripted_loc_inline_2442
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 10}
 		}
-		localization_key = "The American Collapse"
+		localization_key = scripted_loc_inline_2443
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 11}
 		}
-		localization_key = "Restoration of Poland"
+		localization_key = scripted_loc_inline_2444
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 12}
 		}
-		localization_key = "The Meji Restoration"
+		localization_key = scripted_loc_inline_2445
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 13}
 		}
-		localization_key = "The Shogunate Victorious"
+		localization_key = scripted_loc_inline_2446
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed > 13}
 			check_variable = {super_event_displayed < 20}
 		}
-		localization_key = "German Unification"
+		localization_key = scripted_loc_inline_2447
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 20}
 		}
-		localization_key = "War of the Triple Alliance"
+		localization_key = scripted_loc_inline_2448
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 21}
 		}
-		localization_key = "Irish Independance"
+		localization_key = scripted_loc_inline_2449
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 25}
 		}
-		localization_key = "Franco-Prussian War"
+		localization_key = scripted_loc_inline_2450
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 26}
 		}
-		localization_key = "Advance, Austrailia Fair"
+		localization_key = scripted_loc_inline_2451
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 27}
 		}
-		localization_key = "Russo-Turkish War"
+		localization_key = scripted_loc_inline_2452
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 28}
 		}
-		localization_key = "Chinese Collapse"
+		localization_key = scripted_loc_inline_2453
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 29}
 		}
-		localization_key = "First Fixed Winged Flight"
+		localization_key = scripted_loc_inline_2454
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 30}
 		}
-		localization_key = "Panama Canal Completed"
+		localization_key = scripted_loc_inline_2455
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 31}
 		}
-		localization_key = "Panic of 1873"
+		localization_key = scripted_loc_inline_2456
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 32}
 		}
-		localization_key = "South African Federation"
+		localization_key = scripted_loc_inline_2457
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 33}
 		}
-		localization_key = "Canadian Unifaction"
+		localization_key = scripted_loc_inline_2458
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 34}
 		}
-		localization_key = "100 Days Reform"
+		localization_key = scripted_loc_inline_2459
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 35}
 		}
-		localization_key = "Xinghai Revolution"
+		localization_key = scripted_loc_inline_2460
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 36}
 		}
-		localization_key = "Great War"
+		localization_key = scripted_loc_inline_2461
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 37}
 		}
-		localization_key = "Second World War"
+		localization_key = scripted_loc_inline_2462
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 38}
 		}
-		localization_key = "Krakatoa Erupts"
+		localization_key = scripted_loc_inline_2463
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 39}
 		}
-		localization_key = "Great Depression"
+		localization_key = scripted_loc_inline_2464
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 40}
 		}
-		localization_key = "Great Asian Famine"
+		localization_key = scripted_loc_inline_2465
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 41}
 		}
-		localization_key = "Seige of the Legations"
+		localization_key = scripted_loc_inline_2466
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 42}
 		}
-		localization_key = "Terrorist Attack!"
+		localization_key = scripted_loc_inline_2467
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 100}
 		}
-		localization_key = "Only some Burning Code"
+		localization_key = scripted_loc_inline_2468
 	}
 
 
@@ -443,10 +443,10 @@ defined_text = {
 		trigger={
 			check_variable = {super_event_displayed = 9901}
 		}
-		localization_key = "German Confederation"
+		localization_key = scripted_loc_inline_2469
 	}
 	text = {
-		localization_key = "Super Events!"
+		localization_key = scripted_loc_inline_2470
 	}
 }
 defined_text = {
@@ -934,7 +934,7 @@ defined_text = {
 		trigger={
 			check_variable = {super_event_displayed = 100}
 		}
-		localization_key = "Everywhere at the end of a new beginning - Lancer"
+		localization_key = scripted_loc_inline_2471
 	}
 	text = {
 		localization_key = DEBUG_SUPER
@@ -946,253 +946,253 @@ defined_text = {
 		trigger={
 			check_variable = {super_event_displayed = 1}
 		}
-		localization_key = "Africa Trembles"
+		localization_key = scripted_loc_inline_2472
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 2}
 		}
-		localization_key = "A Continent Darkens"
+		localization_key = scripted_loc_inline_2473
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 3}
 		}
-		localization_key = "The Rails Give Way"
+		localization_key = scripted_loc_inline_2474
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 4}
 		}
-		localization_key = "A True Marvel"
+		localization_key = scripted_loc_inline_2475
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 5}
 		}
-		localization_key = "The Masses Rise"
+		localization_key = scripted_loc_inline_2476
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 6}
 		}
-		localization_key = "Democracy Flourishes"
+		localization_key = scripted_loc_inline_2477
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 7}
 		}
-		localization_key = "Italy Rises"
+		localization_key = scripted_loc_inline_2478
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 8}
 		}
-		localization_key = "The Italian People Unite"
+		localization_key = scripted_loc_inline_2479
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 9}
 		}
-		localization_key = "Ex unus, plures"
+		localization_key = scripted_loc_inline_2480
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 10}
 		}
-		localization_key = "A House Divided"
+		localization_key = scripted_loc_inline_2481
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 11}
 		}
-		localization_key = "Poland Is Not Yet Lost"
+		localization_key = scripted_loc_inline_2482
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 12}
 		}
-		localization_key = "Glory to the Emperor"
+		localization_key = scripted_loc_inline_2483
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 13}
 		}
-		localization_key = "The Status Quo"
+		localization_key = scripted_loc_inline_2484
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 14}
 		}
-		localization_key = "Let the Concert Play"
+		localization_key = scripted_loc_inline_2485
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 15}
 		}
-		localization_key = "Break The Chains!"
+		localization_key = scripted_loc_inline_2486
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 16}
 		}
-		localization_key = "Echoes of 1848"
+		localization_key = scripted_loc_inline_2487
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 17}
 		}
-		localization_key = "Einig Erde, Vaterland!"
+		localization_key = scripted_loc_inline_2488
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 18}
 		}
-		localization_key = "An Unlikely Outcome"
+		localization_key = scripted_loc_inline_2489
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 19}
 		}
-		localization_key = "Wurttem-What?"
+		localization_key = scripted_loc_inline_2490
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 20}
 		}
-		localization_key = "South America Burns"
+		localization_key = scripted_loc_inline_2491
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 21}
 		}
-		localization_key = "Tá ár lá Tagtha!"
+		localization_key = scripted_loc_inline_2492
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 22}
 		}
-		localization_key = "When In Rome"
+		localization_key = scripted_loc_inline_2493
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 23}
 		}
-		localization_key = "The Forgotten"
+		localization_key = scripted_loc_inline_2494
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 24}
 		}
-		localization_key = "Ave Maria"
+		localization_key = scripted_loc_inline_2495
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 25}
 		}
-		localization_key = "Terror Belli"
+		localization_key = scripted_loc_inline_2496
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 26}
 		}
-		localization_key = "A New Era"
+		localization_key = scripted_loc_inline_2497
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 27}
 		}
-		localization_key = "The Balkans Burn"
+		localization_key = scripted_loc_inline_2498
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 28}
 		}
-		localization_key = "End of a Mandate"
+		localization_key = scripted_loc_inline_2499
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 29}
 		}
-		localization_key = "Sogno di Volare"
+		localization_key = scripted_loc_inline_2500
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 30}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2501
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 31}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2502
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 32}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2503
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 33}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2504
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 34}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2505
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 35}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2506
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 36}
 		}
-		localization_key = "A Semial Tragedy"
+		localization_key = scripted_loc_inline_2507
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 37}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2508
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 38}
 		}
-		localization_key = "The Earth Trembles"
+		localization_key = scripted_loc_inline_2509
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 39}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2510
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 40}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2511
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 41}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2512
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 42}
 		}
-		localization_key = "Catastrophe!"
+		localization_key = scripted_loc_inline_2513
 	}	
 
 
@@ -1201,13 +1201,13 @@ defined_text = {
 		trigger={
 			check_variable = {super_event_displayed = 9901}
 		}
-		localization_key = "For Dixie!"
+		localization_key = scripted_loc_inline_2514
 	}
 	text = {
 		trigger={
 			check_variable = {super_event_displayed = 100}
 		}
-		localization_key = "To Forget Forgetting"
+		localization_key = scripted_loc_inline_2515
 	}
 	text = {
 		localization_key = DEBUG_BUTTON_SUPER

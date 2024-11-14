@@ -9,7 +9,7 @@
 				value = mhc_sec_value
 			}
 		}
-		localization_key = "[GetMHCArmySecImageGeneric]"
+		localization_key = scripted_loc_inline_66
 	}
 	text = {
 		trigger = {
@@ -80,7 +80,7 @@ defined_text = {
 				value = mhc_chief_value
 			}
 		}
-		localization_key = "[GetMHCArmyChiefImageGeneric]"
+		localization_key = scripted_loc_inline_67
 	}
 	text = {
 		trigger = {
@@ -151,7 +151,7 @@ defined_text = {
 				value = mhc_vchief_value
 			}
 		}
-		localization_key = "[GetMHCArmyVChiefImageGeneric]"
+		localization_key = scripted_loc_inline_68
 	}
 	text = {
 		trigger = {
@@ -222,7 +222,7 @@ defined_text = {
 				value = mhc_quart_value
 			}
 		}
-		localization_key = "[GetMHCArmyQuartImageGeneric]"
+		localization_key = scripted_loc_inline_69
 	}
 	text = {
 		trigger = {
@@ -293,7 +293,7 @@ defined_text = {
 				value = mhc_pchief_value
 			}
 		}
-		localization_key = "[GetMHCArmyPChiefImageGeneric]"
+		localization_key = scripted_loc_inline_70
 	}
 	text = {
 		trigger = {
@@ -364,7 +364,7 @@ defined_text = {
 				value = mhc_ins_value
 			}
 		}
-		localization_key = "[GetMHCArmyInsImageGeneric]"
+		localization_key = scripted_loc_inline_71
 	}
 	text = {
 		trigger = {

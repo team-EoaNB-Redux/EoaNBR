@@ -22,7 +22,7 @@ defined_text = {
 defined_text = {
 	name = GetInstitutionNameInList
 	text = {
-		localization_key = GetInstitutionNameInListKey
+		localization_key = scripted_loc_inline_2792
 	}
 }
 defined_text = {
@@ -33,7 +33,7 @@ defined_text = {
 				gidil = global.desc@var:v
 			}
 		}
-		localization_key = GetInstitutionDescInListKey
+		localization_key = scripted_loc_inline_2793
 	}
 }
 defined_text = {
@@ -56,7 +56,7 @@ defined_text = {
 				gipil = progress@var:v
 			}
 		}
-		localization_key = GetInstitutionProgressInListKey
+		localization_key = scripted_loc_inline_2794
 	}
 }
 defined_text = {
@@ -67,7 +67,7 @@ defined_text = {
 				set_temp_variable = { goic = THIS.num_of_institutions }
 			}
 		}
-		localization_key = GetOwnerInstitutionCountKey
+		localization_key = scripted_loc_inline_2795
 	}
 }
 defined_text = {
@@ -78,10 +78,10 @@ defined_text = {
 				institution_progress_temp < 0
 			}
 		}
-		localization_key = "red_loc"
+		localization_key = scripted_loc_inline_2796
 	}
 	text = {
-		localization_key = "green_loc"
+		localization_key = scripted_loc_inline_2797
 	}
 }
 defined_text = {
@@ -98,16 +98,16 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "[?owner_temp.GetFlag] [?owner_temp.GetAdjective]"
+		localization_key = scripted_loc_inline_2798
 	}
 	text = {
 		trigger = {
 			FROM.OWNER = { is_subject = yes }
 		}
-		localization_key = "[?FROM.OWNER:OVERLORD.GetFlag] [?FROM.OWNER:OVERLORD.GetAdjective]"
+		localization_key = scripted_loc_inline_2799
 	}
 	text = {
-		localization_key = "[?FROM.OWNER.GetFlag] [?FROM.OWNER.GetAdjective]"
+		localization_key = scripted_loc_inline_2800
 	} 
 }
 defined_text = {
@@ -124,16 +124,16 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "[?owner_temp.GetFlag] [?owner_temp.GetAdjective]"
+		localization_key = scripted_loc_inline_2801
 	}
 	text = {
 		trigger = {
 			FROM.OWNER = { is_subject = yes }
 		}
-		localization_key = "[?FROM.OWNER:OVERLORD.GetFlag] [?FROM.OWNER:OVERLORD.GetAdjective]"
+		localization_key = scripted_loc_inline_2802
 	}
 	text = {
-		localization_key = "[?FROM.OWNER.GetFlag] [?FROM.OWNER.GetAdjective]"
+		localization_key = scripted_loc_inline_2803
 	}
 }
 defined_text = {
@@ -145,42 +145,42 @@ defined_text = {
 				modifier = frontier_state
 			}
 		}
-		localization_key = "Frontier"
+		localization_key = scripted_loc_inline_2804
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 			is_core_of = ROOT
 		}
-		localization_key = "None (Homeland)"
+		localization_key = scripted_loc_inline_2805
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 			is_claimed_by = ROOT
 		}
-		localization_key = "Integration"
+		localization_key = scripted_loc_inline_2806
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 		}
-		localization_key = "Consolidation"
+		localization_key = scripted_loc_inline_2807
 	}
 	text = {
 		trigger = {
 			is_core_of = ROOT
 		}
-		localization_key = "Core"
+		localization_key = scripted_loc_inline_2808
 	}
 	text = {
 		trigger = {
 			is_claimed_by = ROOT
 		}
-		localization_key = "Claim"
+		localization_key = scripted_loc_inline_2809
 	}
 	text = {
-		localization_key = "None"
+		localization_key = scripted_loc_inline_2810
 	}
 }
 defined_text = {
@@ -193,49 +193,49 @@ defined_text = {
 				modifier = frontier_state
 			}
 		}
-		localization_key = "Settle"
+		localization_key = scripted_loc_inline_2811
 	}
 	text = {
 		trigger = {
 			ROOT = { has_tech = tech_projects_overseas_interests }
 			FROM.OWNER = { check_variable = { num_of_institutions < 3 } }
 		}
-		localization_key = "Settle"
+		localization_key = scripted_loc_inline_2812
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 			is_core_of = ROOT
 		}
-		localization_key = "None (Homeland)"
+		localization_key = scripted_loc_inline_2813
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 			is_claimed_by = ROOT
 		}
-		localization_key = "Integrate Territory"
+		localization_key = scripted_loc_inline_2814
 	}
 	text = {
 		trigger = {
 			is_owned_by = ROOT
 		}
-		localization_key = "Consolidate Territory"
+		localization_key = scripted_loc_inline_2815
 	}
 	text = {
 		trigger = {
 			is_core_of = ROOT
 		}
-		localization_key = "Liberate Core"
+		localization_key = scripted_loc_inline_2816
 	}
 	text = {
 		trigger = {
 			is_claimed_by = ROOT
 		}
-		localization_key = "Acquire Claim"
+		localization_key = scripted_loc_inline_2817
 	}
 	text = {
-		localization_key = "None"
+		localization_key = scripted_loc_inline_2818
 	}
 }
 defined_text = {

@@ -82,25 +82,25 @@ defined_text = {
         trigger = {
             has_country_flag = JAP_current_expedition_mudan
         }
-    	localization_key = "Mudan Expedition"
+    	localization_key = scripted_loc_inline_2608
     }
     text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_kwaling
     	}
-		localization_key = "Kwaling Expedition"
+		localization_key = scripted_loc_inline_2609
 	}
 	text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_kaolut
     	}
-		localization_key = "Koalut Expedition"
+		localization_key = scripted_loc_inline_2610
 	}
 	text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_lingulan
     	}
-		localization_key = "Lingulan Expedition"
+		localization_key = scripted_loc_inline_2611
 	}
 }
 
@@ -110,25 +110,25 @@ defined_text = {
         trigger = {
             has_country_flag = JAP_current_expedition_mudan
         }
-    	localization_key = "450"
+    	localization_key = scripted_loc_inline_2612
     }
     text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_kwaling
     	}
-		localization_key = "300"
+		localization_key = scripted_loc_inline_2613
 	}
 	text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_kaolut
     	}
-		localization_key = "350"
+		localization_key = scripted_loc_inline_2614
 	}
 	text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_lingulan
     	}
-		localization_key = "400"
+		localization_key = scripted_loc_inline_2615
 	}
 }
 defined_text = {
@@ -137,25 +137,25 @@ defined_text = {
         trigger = {
             has_country_flag = JAP_current_expedition_mudan
         }
-    	localization_key = "500"
+    	localization_key = scripted_loc_inline_2616
     }
     text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_kwaling
     	}
-		localization_key = "300"
+		localization_key = scripted_loc_inline_2617
 	}
 	text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_kaolut
     	}
-		localization_key = "450"
+		localization_key = scripted_loc_inline_2618
 	}
 	text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_lingulan
     	}
-		localization_key = "200"
+		localization_key = scripted_loc_inline_2619
 	}
 }
 defined_text = {
@@ -164,24 +164,24 @@ defined_text = {
         trigger = {
             has_country_flag = JAP_current_expedition_mudan
         }
-    	localization_key = "150"
+    	localization_key = scripted_loc_inline_2620
     }
     text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_kwaling
     	}
-		localization_key = "400"
+		localization_key = scripted_loc_inline_2621
 	}
 	text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_kaolut
     	}
-		localization_key = "200"
+		localization_key = scripted_loc_inline_2622
 	}
 	text = {
 		trigger = {
 			has_country_flag = JAP_current_expedition_lingulan
     	}
-		localization_key = "400"
+		localization_key = scripted_loc_inline_2623
 	}
 }

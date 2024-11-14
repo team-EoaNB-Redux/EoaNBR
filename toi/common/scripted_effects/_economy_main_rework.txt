@@ -4384,7 +4384,7 @@
 		}
 		add_debt = yes
 	}
-	add_debt_to_gdp = {
+	add_debt_to_gdp = { 
 		# x_temp
 		# Adds debt to gdp % at x_temp (0-100)
 

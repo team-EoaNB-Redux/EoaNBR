@@ -454,12 +454,11 @@
 
 		completion_reward = {
 			add_tech_bonus = {
-                bonus = 0.25
-                uses = 2
-                category = cat_industry_techs
+				bonus = 0.25
+				uses = 2
 				category = cat_industry_techs
 				category = cat_refinement_techs
-            }
+			}
 		}
 	}
 

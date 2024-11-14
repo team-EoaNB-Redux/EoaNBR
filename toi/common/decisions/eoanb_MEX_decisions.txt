@@ -940,11 +940,11 @@ EOANBSYS_national_crisis_decision_category = {
 					3 = {
 						modifier = {
 							add = 1
-							has_dynamic_modifier = dynmod_MEX_resistance_modifier_1
+							has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_1 }
 						}
 						modifier = {
 							add = 1
-							has_dynamic_modifier = dynmod_MEX_resistance_modifier_2
+							has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_2 }
 						}
 						increase_resistance_la_reforma = yes
 						EOANBSYS_national_crisis_progress_add_one = yes
@@ -953,11 +953,11 @@ EOANBSYS_national_crisis_decision_category = {
 					3 = {
 						modifier = {
 							add = 1
-							has_dynamic_modifier = dynmod_MEX_resistance_modifier_4
+							has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_4 }
 						}
 						modifier = {
 							add = 1
-							has_dynamic_modifier = dynmod_MEX_resistance_modifier_5
+							has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_5 }
 						}
 					}
 				}
@@ -995,21 +995,21 @@ EOANBSYS_national_crisis_decision_category = {
 					4 = {
 						modifier = {
 							add = 1
-							has_dynamic_modifier = dynmod_MEX_resistance_modifier_5
+							has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_5 }
 						}
 						modifier = {
 							add = 1
-							has_dynamic_modifier = dynmod_MEX_resistance_modifier_4
+							has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_4 }
 						}
 					}
 					4 = {
 						modifier = {
 							add = 1
-							has_dynamic_modifier = dynmod_MEX_resistance_modifier_1
+							has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_1 }
 						}
 						modifier = {
 							add = 1
-							has_dynamic_modifier = dynmod_MEX_resistance_modifier_2
+							has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_2 }
 						}
 						decrease_resistance_la_reforma = yes
 						EOANBSYS_national_crisis_progress_minus_one = yes

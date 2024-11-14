@@ -127,6 +127,26 @@
 			}
 		}
 	}
+	
+	is_majority_culture = {
+		custom_trigger_tooltip = {
+			tooltip = is_majority_culture_tt
+			check_variable = {
+				var = percentage@var:culture_temp
+				value = 0.5
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	is_plurality_culture = {
+		custom_trigger_tooltip = {
+			tooltip = is_plurality_culture_tt
+			check_variable = {
+				var = pops_primary_culture_array^0
+				value = culture_temp
+			}
+		}
+	}
 #
 
 #Religion
@@ -214,6 +234,25 @@
 			tooltip = is_controller_marginalized_religion_tt
 			is_in_array = {
 				array = CONTROLLER.pops_primary_marginalized_array
+				value = religion_temp
+			}
+		}
+	}
+	is_majority_religion = {
+		custom_trigger_tooltip = {
+			tooltip = is_majority_religion_tt
+			check_variable = {
+				var = percentage@var:religion_temp
+				value = 0.5
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	is_plurality_religion = {
+		custom_trigger_tooltip = {
+			tooltip = is_plurality_religion_tt
+			check_variable = {
+				var = pops_primary_religion_array^0
 				value = religion_temp
 			}
 		}

@@ -22,7 +22,7 @@ state = {
 				naval_base = 2
 			}
 			10410 = {
-				land_fort = 1
+				bunker = 1
 				supply_node = yes
 			}
 		}

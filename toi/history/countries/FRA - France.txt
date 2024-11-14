@@ -997,7 +997,7 @@
 		# set_naval_oob = "ADR_NAVAL_1857"
 
 		# set_convoys = 2
-		add_equipment_to_stockpile = { type = tech_infantry_rifle_equipment_20 amount = 1000 producer = FRA }
+		add_equipment_to_stockpile = { type = infantry_rifle_equipment_20 amount = 1000 producer = FRA }
 		add_equipment_to_stockpile = { type = uniform_equipment_21 amount = 800 producer = FRA }
 	#
 	# Situation

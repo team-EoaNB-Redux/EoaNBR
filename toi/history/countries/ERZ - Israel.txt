@@ -140,8 +140,8 @@
 		}
 	#
 	#Politics
-		set_variable = { party@token:ideology_traditional_conservatism = token:party_ISR_yesh_atid }
-		set_variable = { popularity@token:ideology_traditional_conservatism = 100.0 }
+		# set_variable = { party@token:ideology_traditional_conservatism = token:party_ISR_yesh_atid }
+		# set_variable = { popularity@token:ideology_traditional_conservatism = 100.0 }
 	#
 	#Demographics
 		add_to_array = { pops_primary_culture_array = token:culture_israeli }
@@ -152,7 +152,7 @@
 	# set_naval_oob = "ADR_NAVAL_1857"
 
 	# set_convoys = 2
-		add_equipment_to_stockpile = { type = tech_infantry_rifle_equipment_20 amount = 1000 producer = ERZ }
+		add_equipment_to_stockpile = { type = infantry_rifle_equipment_20 amount = 1000 producer = ERZ }
 		add_equipment_to_stockpile = { type = uniform_equipment_21 amount = 800 producer = ERZ }
 	#
 	# Situation

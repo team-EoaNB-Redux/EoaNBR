@@ -3739,7 +3739,7 @@ technologies = {
 				}
 				dependencies = {
 					tech_vulcanization = 1
-					transformer = 1
+					tech_transformers = 1
 				}
 			#
 			#Meta

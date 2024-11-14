@@ -14,11 +14,6 @@ technologies = {
 			always = no
 		}
 	}
-	tech_vulcanizaion_transformers = {
-		allow = {
-			always = no
-		}
-	}
 	tech_standardized_measurement = {
 		allow = {
 			always = no

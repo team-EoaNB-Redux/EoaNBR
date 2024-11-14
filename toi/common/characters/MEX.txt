@@ -84,7 +84,7 @@ characters  =  {
 	MEX_Char_Lerdo_de_Tejada = {
 		name = "Miguel Lerdo de Tejada y Corral"
 		portraits = {
-			civiian = {
+			civilian = {
 				
 			}
 		}
@@ -99,7 +99,7 @@ characters  =  {
 	MEX_Char_Ponciano_Arriaga = {
 		name = "José Francisco Ponciano Arriaga Leija"
 		portraits = {
-			civiian = {
+			civilian = {
 				
 			}
 		}
@@ -114,7 +114,7 @@ characters  =  {
 	MEX_Char_Gutierrez_de_Estrada = {
 		name = "José María Gutiérrez de Estrada"
 		portraits = {
-			civiian = {
+			civilian = {
 				
 			}
 		}
@@ -129,7 +129,7 @@ characters  =  {
 	MEX_Char_Garza_y_Ballesteros = {
 		name = "José Lázaro de la Garza y Ballesteros"
 		portraits = {
-			civiian = {
+			civilian = {
 				
 			}
 		}
@@ -144,7 +144,7 @@ characters  =  {
 	MEX_Char_Marquez_Araujo = {
 		name = "Leonardo Márquez Araujo"
 		portraits = {
-			civiian = {
+			civilian = {
 				
 			}
 		}
