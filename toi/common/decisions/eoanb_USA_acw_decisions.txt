@@ -1699,7 +1699,7 @@ ACW_American_Civil_War_Decisions = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = eoanb_decision_acw_usa_surrender_to_csa_wa_tt
-					385 = { #Washington
+					386 = { #Washington
 						AND = {
 							is_owned_by = USA
 							NOT = { is_controlled_by = USA }
@@ -1734,14 +1734,6 @@ ACW_American_Civil_War_Decisions = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = eoanb_decision_acw_usa_surrender_to_csa_il_tt
-					395 = { #Illinois
-						AND = {
-							is_owned_by = USA
-							NOT = { is_controlled_by = USA }
-						}
-					}
-				}
-				hidden_trigger = {
 					395 = { #Illinois
 						AND = {
 							is_owned_by = USA
@@ -1843,6 +1835,23 @@ ACW_American_Civil_War_Decisions = {
 				}
 				hidden_trigger = {
 					360 = { #Pennsylvania
+						AND = {
+							is_owned_by = USA
+							NOT = { is_controlled_by = USA }
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = eoanb_decision_acw_usa_surrender_to_csa_ph_tt
+					1385 = { #Philadelphia
+						AND = {
+							is_owned_by = USA
+							NOT = { is_controlled_by = USA }
+						}
+					}
+				}
+				hidden_trigger = {
+					1385 = { #Philadelphia
 						AND = {
 							is_owned_by = USA
 							NOT = { is_controlled_by = USA }

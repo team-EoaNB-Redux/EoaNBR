@@ -375,6 +375,7 @@ ideas = {
 				justify_war_goal_time = 0.75
 				political_power_factor = -0.1
 				generate_wargoal_tension = 0.2
+				stability_factor = 0.05
 			}
 		}
 		CSA_federal_government = {
@@ -394,6 +395,7 @@ ideas = {
 				justify_war_goal_time = 0.5
 				political_power_factor = -0.05
 				generate_wargoal_tension = 0.1
+				stability_factor = 0.025
 			}
 		}
 		CSA_aristocrats_discouraged = {
@@ -698,7 +700,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			#cancel = { NOT = { has_global_flag = ACW_American_Civil_War } }
+			cancel = { has_country_flag = CSAIndependence_Won }
 
 			allowed_civil_war = {
 				always = yes

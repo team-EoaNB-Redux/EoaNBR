@@ -1183,6 +1183,70 @@ focus = {
 	}
 }
 focus = {
+	id = SPR_6dy_working_with_unionists
+	icon = GFX_Focus_Electorate_cater_to_land_owners
+	relative_position_id = SPR_6dy_right_honorable_opposition
+	x = -1
+	y = 1
+	cost = 30
+
+	mutually_exclusive = {
+		focus = SPR_6dy_working_with_progressives
+	}
+
+	available = {
+		OR={
+			has_country_leader = {
+				character = SPR_jose_malcampo
+				ruling_only = yes
+			}
+			has_country_leader = {
+				character = SPR_Praxedes_Mateo_Sagasta
+				ruling_only = yes
+			}
+		}
+	}
+	ai_will_do = { base = 100 }
+
+	prerequisite = { 
+		focus = SPR_6dy_right_honorable_opposition 
+	}
+
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = SPR_6dy_working_with_progressives
+	icon = GFX_Focus_Ideology_Socialism_ally
+	relative_position_id = SPR_6dy_right_honorable_opposition
+	x = 1
+	y = 1
+	cost = 30
+
+	available = {
+		has_country_leader = {
+			character = SPR_Ruiz_Zorrilla
+			ruling_only = yes
+		}
+	}
+	ai_will_do = { base = 100 }
+
+	prerequisite = { 
+		focus = SPR_6dy_right_honorable_opposition 
+	}
+	prerequisite = { 
+		focus = SPR_6dy_founding_popular_libaries
+	}
+	mutually_exclusive = {
+		focus = SPR_6dy_working_with_unionists
+	}
+
+	completion_reward = {
+		
+	}
+}
+focus = {
 	id = SPR_6dy_banning_the_IWA
 	icon = GFX_Focus_Ideology_Socialism_disawow
 	relative_position_id = SPR_6dy_conciliation_government
@@ -1716,7 +1780,10 @@ focus = {
 		
 	}
 	allow_branch={
-		has_country_flag = SPR_6dy_bourbon_restoration_71
+		OR={
+			has_country_flag = SPR_6dy_bourbon_restoration_71
+			has_country_flag = SPR_6dy_bourbon_restoration
+		}
 	}
 	ai_will_do = { base = 100 }
 

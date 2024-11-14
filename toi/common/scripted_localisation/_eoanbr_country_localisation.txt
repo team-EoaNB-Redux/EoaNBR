@@ -13,16 +13,16 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "GFX_[?v.GetTokenKey]_founded"
+		localization_key = GetInstitutionIconInListFounded
 	}
 	text = {
-		localization_key = "GFX_[?v.GetTokenKey]"
+		localization_key = GetInstitutionIconInListUnfounded
 	}
 }
 defined_text = {
 	name = GetInstitutionNameInList
 	text = {
-		localization_key = "[?v.GetTokenLocalizedKey]"
+		localization_key = GetInstitutionNameInListKey
 	}
 }
 defined_text = {
@@ -33,7 +33,7 @@ defined_text = {
 				gidil = global.desc@var:v
 			}
 		}
-		localization_key = "[?gidil.GetTokenLocalizedKey]"
+		localization_key = GetInstitutionDescInListKey
 	}
 }
 defined_text = {
@@ -56,7 +56,7 @@ defined_text = {
 				gipil = progress@var:v
 			}
 		}
-		localization_key = "[?progress@var:v|2]%"
+		localization_key = GetInstitutionProgressInListKey
 	}
 }
 defined_text = {
@@ -67,7 +67,7 @@ defined_text = {
 				set_temp_variable = { goic = THIS.num_of_institutions }
 			}
 		}
-		localization_key = "[?goic]"
+		localization_key = GetOwnerInstitutionCountKey
 	}
 }
 defined_text = {
