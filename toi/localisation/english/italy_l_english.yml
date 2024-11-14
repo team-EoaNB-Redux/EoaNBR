@@ -2996,8 +2996,10 @@ ita.61.d: "In response to the violent suppression of the Polish revolution in Ru
 ita.61.a: "That was an Overreaction"
 ita.62.t: "Farini Resigns"
 ita.62.d: "Farini's time as prime minister of Italy has come to an end. His attempt to coerce the king into declaring war on Russia ended miserably, and overexertion has led to the softening of his brain. With this resignation, Marco Minghetti now leads the Right coalition."
-ita.62.a: "Menghetti Becomes Prime Minister"
-
+ita.62.a: "Minghetti Becomes Prime Minister"
+ita.63.t: "Aftermath of the Turin Massacre"
+ita.63.d: "After the signing of the September Conventions, an agreement that requires we move our capital from Turin to Florence, demonstrators in Turin protested this decision outside the headquarters of the Ministry of the Interior. This protest ended in violence with carabinieri defending the building. A similar event happpened the next day at the Piazza San Carlo. Over these two days, many demonstrators were beaten, shot, injured, and murdered by Italian authorities. This incident persuaded the king to commission a new government to be formed by La Marmora, under the Royal Italian Army."
+ita.63.a: "That's awful..."
 
 
 
@@ -3009,6 +3011,9 @@ is_literally_italy: "Formed Italy"
 ita_news.4.t: "The Death of Camillo Benso, Count of Cavour"
 ita_news.4.d: "Prime Minister Camillo Benso, count di Cavour, and the coined father of the unified Italian nation and its people has passed away at the Palazzo Benso di Cavour Turin. The Count of Cavour was an acclaimed figure throughout Europe and the wider world for pushing the Kingdom of Sardinia-Piedmont towards a more offensive standpoint in European politics for the last decade. Benso's notorious efforts to include the kingdom into European politics came to fruition with the subsequent arrival of the Crimean War between the Russians and a unified force of Britain, France, and Piedmont-Sardinia. While their participation came to be seen as morally just, the true purpose was to allow the suggestion of a unified Italian peninsula at the peace discussions. More recently, Cavour has navigated European diplomacy to secure alliances for the Kingdom of Sardinia-Piedmont, allowing for the conquest of the rest of the Italian Peninsula; the defeat of the Austrian Empire; and the political unification and alliances made to further Italian unification. \n\n The whole of Europe now joins the Italian Peninsula in its deep anguish as it stops its celebrations to lament the passing of a great leader—the father of unified Italy."
 ita_news.4.a: "Europe has lost one of its greatest leaders"
+ita_news.6.t: "Turin Massacre; Military Takes Power in Italy"
+ita_news.6.d: "After two days of demonstrations that led to many injured and dead at the hands of the Italian carabinieri, the current government of Italy has been forced to resign and let the military, led by Alfonso Ferrero La Marmora, take power. These protests, taking place in Turin, were in response to the proposed move of the Italian capital from the forementioned city to Florence. This was due to a clause in the September Convention, an agreement between Italy and France. It is not yet known how this will affect Italy moving forward."
+ita_news.6.a: "Interesting"
 
 ##########################
 ### UNIFIED ITALY TREE ###
@@ -3142,6 +3147,7 @@ ITA_PIE_focus_The_Third_War_of_Independence_desc: "The time has now come for Ita
 ITA_PIE_focus_An_Exchange_of_Territory: "An Exchange of Territory"
 ITA_PIE_focus_An_Exchange_of_Territory_desc: "With our reapproachment with Austria, they may be willing to exchange Venetia for Sardinia. While we value Sardinia being a part of Italy, we feel that Venetia is more important to us, but not worth going through a war with a great power for."
 ITA_PIE_focus_Armistice_of_Cormons: "Armistice of Cormons"
+ITA_PIE_focus_Armistice_of_Cormons_desc: "Finally, after much bloodshed, the Kingdom of Lombardy-Venetia will be dissolved, and Venetia will be united with the Kingdom of Italy."
 ITA_PIE_focus_Elections_of_1861: "Elections of 1861"
 ITA_PIE_focus_Elections_of_1861_desc: "The first round of elections were held recently followed by a second round of voting. The elections were held according to the 1848 electoral law of the Kingdom of Sardinia, meaning that only men aged 25 or older and paying a certain level of taxation were allowed to vote. The Voters had to choose between the Conservative Right, the Liberal Left and the Radical Far Left."
 ITA_PIE_focus_The_Left_Coalition: "The Left Coalition"
@@ -3181,13 +3187,13 @@ ITA_PIE_focus_Demand_the_King_Declare_on_Russia_desc: "Poland has taken their sh
 ITA_PIE_focus_Reorganize_the_Cabinet: "The Resignation of Farini"
 ITA_PIE_focus_Reorganize_the_Cabinet_desc: "After the embarassing attempt to make the king declare war on Russia, and overexertion that has softened his brain, Farini has made the decision to resign. The new prime minister of Italy is now Marco Minghetti."
 ITA_PIE_focus_Propose_Decentralization_Laws: "Propose Decentralisation Laws"
-ITA_PIE_focus_Propose_Decentralization_Laws_desc: "Menghetti wants to allow more regional autonomy within the Kingdom of Italy. He will propose these laws, but it is not clear if they will ever be passed."
+ITA_PIE_focus_Propose_Decentralization_Laws_desc: "Minghetti wants to allow more regional autonomy within the Kingdom of Italy. He will propose these laws, but it is not clear if they will ever be passed."
 ITA_PIE_focus_Pica_Law: "Pica Law"
 ITA_PIE_focus_Pica_Law_desc: "The Pica Act is a law that has the goal of suppressing brigandage and crime in southern Italy. This, combined with our more concentrated efforts towards the destruction of brigandage will assist in ensuring the safety of those in Sicily."
 ITA_PIE_focus_Propose_Conference_on_Rome: "Propose Conference on Rome"
 ITA_PIE_focus_Propose_Conference_on_Rome_desc: "A conference on Rome may lead to progress towards their inevitable annexation. A key factor we want to change is France's protection of the pope. Perhaps we could convince them to "let go of" the Papal States..."
 ITA_PIE_focus_Aftermath_of_the_Turin_Massacre: "Aftermath of the Turin Massacre"
-ITA_PIE_focus_Aftermath_of_the_Turin_Massacre_desc: "In response to the proposed move of the Italian capital from Turin to Florence, many demonstrators protested it between over 3 days. Demonstrations on the final 2 days resulted in many dead, beaten, and injured. This may severely affect Menghetti's ability to hold office."
+ITA_PIE_focus_Aftermath_of_the_Turin_Massacre_desc: "In response to the proposed move of the Italian capital from Turin to Florence, many demonstrators protested it outside of the headquarters of the Ministry of the Interior and in the Piazza San Carlo over 2 days. A number of protestors were shot, beaten, injured and murdered by carabinieri during these demonstrations. This may severely affect Minghetti's ability to hold office."
 ITA_PIE_focus_Lanza_Law: "Alter the Deal"
 ITA_PIE_focus_Lanza_Law_desc: "Marmora feels it is time to make clear our intentions on Rome. While we agreed to respect the pope's independence, we can no longer hold this promise as we now declare we have full reign to take Rome in whatever manner we see fit."
 ITA_PIE_focus_Move_Chamber_to_Florence: "Move the Chamber to Florence"

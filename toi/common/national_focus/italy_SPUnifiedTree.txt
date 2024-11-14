@@ -1014,19 +1014,19 @@ focus_tree = {
 			#event to ask Austria to exchange venetia for smth, maybe sardinia???
 		}
 	}
-	#focus = {  									#Will be made into an event
-		#id = ITA_PIE_focus_Armistice_of_Cormons
-		#icon = GFX_Focus_Law_Vote_1
-		#cost = 70
-		#prerequisite = {
-		#	focus = ITA_PIE_focus_The_Third_War_of_Independence
-		#}
-		#relative_position_id = ITA_PIE_focus_The_Third_War_of_Independence
-		#x = 0
-		#y = 1
-		#completion_reward = {
-		#}
-	#}
+	focus = {  									#Will be made into an event
+		id = ITA_PIE_focus_Armistice_of_Cormons
+		icon = GFX_Focus_Law_Vote_1
+		cost = 70
+		prerequisite = {
+			focus = ITA_PIE_focus_The_Third_War_of_Independence
+		}
+		relative_position_id = ITA_PIE_focus_The_Third_War_of_Independence
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+	}
 	focus = {
 		id = ITA_PIE_focus_Elections_of_1861
 		icon = GFX_focus_ita_encourage_voting
@@ -1466,7 +1466,12 @@ focus_tree = {
 		x = 6
 		y = 1
 		completion_reward = {
-			#put marmora as leader of peripheral, put peripheral in power; events too
+			country_event = {
+				id = ita.63
+			}
+			news_event = {
+				id = ita_news.6
+			}
 		}
 	}
 	focus = {
