@@ -89,8 +89,14 @@
 	set_variable = { starting_debt@ENG = 6.0 }
 
 	complete_national_focus = MEX_focus_shadow_of_ayutla
+	complete_national_focus = MEX_focus_juarez_law
+	complete_national_focus = MEX_focus_suppression_of_jesuits
 	complete_national_focus = MEX_focus_lerdo_law
 	complete_national_focus = MEX_focus_iglesias_law
+	complete_national_focus = MEX_focus_press_freedom_law
+	complete_national_focus = MEX_focus_registration_law
+	complete_national_focus = MEX_focus_constitution_of_1857
+	complete_national_focus = MEX_focus_constitutional_oath
 
 	# POLITICAL LEADERS
 

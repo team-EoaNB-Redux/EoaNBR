@@ -3236,11 +3236,14 @@ ACW_American_Civil_War_Decisions = {
 							modifier = {
 								add = -5
 								ROOT = {
-									has_resources_amount = {
-										resource = iron
-										amount < 5
-										delivered = yes
+									check_variable = {
+										supply@iron > 5
 									}
+									# has_resources_amount = {
+									# 	resource = iron
+									# 	amount < 5
+									# 	delivered = yes
+									# }
 								}
 							}
 							modifier = {
@@ -3270,11 +3273,14 @@ ACW_American_Civil_War_Decisions = {
 							modifier = {
 								add = -5
 								ROOT = {
-									has_resources_amount = {
-										resource = iron
-										amount < 5
-										delivered = yes
+									check_variable = {
+										supply@iron > 5
 									}
+									# has_resources_amount = {
+									# 	resource = iron
+									# 	amount < 5
+									# 	delivered = yes
+									# }
 								}
 							}
 							modifier = {
@@ -3364,6 +3370,9 @@ ACW_American_Civil_War_Decisions = {
 						}
 					}
 
+					log = "[?var:primaryBattVar]\nPrimaryBatt"
+					log = "[?var:primaryArmorVar]\nPrimaryArmor"
+					log = "[?var:primaryEngineVar]\nPrimaryEngine"
 					create_equipment_variant = {
 						name = "Confederate Ironclad"
 						type = ship_hull_ironclad_0

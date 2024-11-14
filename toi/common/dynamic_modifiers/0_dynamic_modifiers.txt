@@ -793,9 +793,9 @@ RAJ_agrarianism = {
 		resistance_target = 0.5
 		resistance_growth = 0.25
 		resistance_decay = -0.2
-		required_garrison_factor = -0.5
+		required_garrison_factor = -0.75
 		hidden_modifier = {
-			resistance_activity = -0.9
+			resistance_activity = -1.1
 		}
 	}
 

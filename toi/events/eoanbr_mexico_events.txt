@@ -1258,67 +1258,67 @@ country_event = { #Debt system initial announcement
 		}
 	}
 
-	state_event = {
-		id = mexico_civil_war.3
-		hidden = yes
-		is_triggered_only = yes
+	# state_event = {
+	# 	id = mexico_civil_war.3
+	# 	hidden = yes
+	# 	is_triggered_only = yes
 
-		immediate = {
-		# log = "[THIS.GetTag]: firing  = mexico_civil_war.3"
-			hidden_effect = {
-				MEC = { country_event = { id = mexico_civil_war.4 } }
-				MEX = { country_event = { id = mexico_civil_war.4 } }
-				MEC = { transfer_state = ROOT }
-				ROOT = { add_core_of = MEC }
-				if = {
-					limit = { ROOT = { STATE = 484 } }
-					MEC = { transfer_state = 1359 }
-					1359 = { add_core_of = MEC }
-				}
-			}
-		}
-	}
-	country_event = {
-		id = mexico_civil_war.4
-		title = mexico_civil_war.4.t
-		desc = {
-			text = mexico_civil_war.4.d
-			trigger = { TAG = MEX }
-		}
-		desc = {
-			text =mexico_civil_war.4.e
-			trigger = { TAG = MEC }
-		}
-		picture = GFX_report_event_treaty_of_coche
+	# 	immediate = {
+	# 	# log = "[THIS.GetTag]: firing  = mexico_civil_war.3"
+	# 		hidden_effect = {
+	# 			MEC = { country_event = { id = mexico_civil_war.4 } }
+	# 			MEX = { country_event = { id = mexico_civil_war.4 } }
+	# 			MEC = { transfer_state = ROOT }
+	# 			ROOT = { add_core_of = MEC }
+	# 			if = {
+	# 				limit = { ROOT = { STATE = 484 } }
+	# 				MEC = { transfer_state = 1359 }
+	# 				1359 = { add_core_of = MEC }
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# country_event = {
+	# 	id = mexico_civil_war.4
+	# 	title = mexico_civil_war.4.t
+	# 	desc = {
+	# 		text = mexico_civil_war.4.d
+	# 		trigger = { TAG = MEX }
+	# 	}
+	# 	desc = {
+	# 		text =mexico_civil_war.4.e
+	# 		trigger = { TAG = MEC }
+	# 	}
+	# 	picture = GFX_report_event_treaty_of_coche
 
-		immediate = {
-			# log = "[THIS.GetTag]: firing  = mexico_civil_war.4"
-		}
-		is_triggered_only = yes
+	# 	immediate = {
+	# 		# log = "[THIS.GetTag]: firing  = mexico_civil_war.4"
+	# 	}
+	# 	is_triggered_only = yes
 
-		option = {
-			name = mexico_civil_war.4.a
-		# log = "option:			name = mexico_civil_war.4.a"
-			trigger = { TAG = MEX }
-			add_stability = -0.01
-		}
-		option = {
-			name = mexico_civil_war.4.b
-		# log = "option:			name = mexico_civil_war.4.b"
-			trigger = { TAG = MEC }
-			add_war_support = 0.015
-			FROM = {
-				create_unit = {
-					division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.70"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.70"
-					owner = ROOT
-				}
-			}
-		}
-	}
+	# 	option = {
+	# 		name = mexico_civil_war.4.a
+	# 	# log = "option:			name = mexico_civil_war.4.a"
+	# 		trigger = { TAG = MEX }
+	# 		add_stability = -0.01
+	# 	}
+	# 	option = {
+	# 		name = mexico_civil_war.4.b
+	# 	# log = "option:			name = mexico_civil_war.4.b"
+	# 		trigger = { TAG = MEC }
+	# 		add_war_support = 0.015
+	# 		FROM = {
+	# 			create_unit = {
+	# 				division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.70"
+	# 				owner = ROOT
+	# 			}
+	# 			create_unit = {
+	# 				division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.70"
+	# 				owner = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	#Enact Five Laws
 	country_event = {
