@@ -20,20 +20,8 @@ state = {
 		}
 		add_claim_by = KAB
 
-		1885.11.1 = {
+		1865.1.1 = {
 			remove_claim_by = KAB
-		#	add_core_of = GNB
-		}
-
-		1973.9.24 = {
-		# 	owner = GNB
-		# 	add_core_of = GNB
-		 	add_claim_by = POR
-		}
-
-
-		1974.9.10 = {
-			remove_claim_by = POR
 		}
 	}
 

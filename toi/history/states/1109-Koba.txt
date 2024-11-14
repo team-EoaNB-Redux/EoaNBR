@@ -20,22 +20,17 @@ state = {
 			13667 1
 		}
 
-		1885.11.1 = {
-			owner = POR
-		# 	add_core_of = GNB
+		1865.1.1 = {
+			owner = FTJ
+			add_core_of = FTJ
 			remove_core_of = KAB
 		}
 
-		1973.9.24 = {
-		# 	owner = GNB
-		# 	add_core_of = GNB
-			add_claim_by = POR
+		1885.11.1 = {
+			owner = POR
+			remove_core_of = FTJ
 		}
-
-		1974.9.10 = {
-			remove_claim_by = POR
-		}
-
+		
 		afr_state_setup_scripted_effect = yes
 	}
 

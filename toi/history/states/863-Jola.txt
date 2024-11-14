@@ -20,10 +20,15 @@ state = {
 		add_core_of = KAB
 		afr_state_setup_scripted_effect = yes
 
+		1865.1.1 = {
+			owner = FTJ
+			add_core_of = FTJ
+			remove_core_of = KAB
+		}
+
 		1885.11.1 = {
 			owner = FRA
-			add_core_of = SNG
-			remove_core_of = KAB
+			remove_core_of = FTJ
 		}
 	}
 }

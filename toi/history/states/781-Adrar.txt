@@ -27,6 +27,11 @@ state = {
 			13371 1
 		}
 		afr_state_setup_scripted_effect = yes
+
+		1909.1.9 = {
+			owner = FRA
+			remove_core_of = ARR
+		}
 	}
 	provinces = {
 		8035 8088 10779 13371 13449 13450 13451 13452 13455 13906

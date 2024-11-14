@@ -35,10 +35,6 @@ state = {
 		1885.11.1 = {
 			owner = FRA
 		}
-
-		1962.1.1 = {
-			owner = SNG
-		}
 	}
 
 	provinces = {

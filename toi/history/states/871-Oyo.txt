@@ -34,7 +34,7 @@ state = {
 
 		1870.1.1 = {
 			owner = ENG
-			add_core_of = OYO
+			remove_core_of = OYO
 		}
 	}
 }

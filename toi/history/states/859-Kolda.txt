@@ -23,7 +23,6 @@ state = {
 
 		1885.11.1 = {
 			owner = FRA
-			add_core_of = SNG
 			remove_core_of = FTJ
 		}
 	}

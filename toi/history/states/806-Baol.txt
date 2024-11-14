@@ -32,7 +32,6 @@ state = {
 
 		1885.11.1 = {
 			owner = FRA
-			add_core_of = SNG
 		}
 	}
 }

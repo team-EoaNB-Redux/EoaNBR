@@ -28,9 +28,8 @@ state = {
 			remove_core_of = SIN
 		}
 
-		1882.1.1 = {
+		1885.11.1 = {
 			owner = FRA
-			add_core_of = SNG
 		}
 	}
 }
