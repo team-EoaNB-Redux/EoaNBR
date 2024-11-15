@@ -3382,21 +3382,31 @@ ACW_American_Civil_War_Decisions = {
 					log = "[?var:primaryBattVar]\nPrimaryBatt"
 					log = "[?var:primaryArmorVar]\nPrimaryArmor"
 					log = "[?var:primaryEngineVar]\nPrimaryEngine"
-					create_equipment_variant = {
-						name = "Confederate Ironclad"
-						type = ship_hull_ironclad_0
-						name_group = CSA_Ironclads
-						role_icon_index = 1
-						modules = {
-							fixed_ship_battery_slot = var:primaryBattVar
-							fixed_ship_fire_control_system_slot = fire_control_system_0
-							fixed_ship_engine_slot = var:primaryEngineVar
-							fixed_ship_armor_slot = var:primaryArmorVar
-							front_1_custom_slot = var:secondaryBattVar
-							mid_1_custom_slot = var:secondaryArmorVar
-							mid_2_custom_slot = empty
-							rear_1_custom_slot = empty
+
+					meta_effect = {
+						text = {
+						  	create_equipment_variant = {
+								name = "Confederate Ironclad"
+								type = ship_hull_ironclad_0
+								name_group = CSA_Ironclads
+								role_icon_index = 1
+								modules = {
+									fixed_ship_battery_slot = [PRIMARY_BAT]
+									fixed_ship_fire_control_system_slot = fire_control_system_0
+									fixed_ship_engine_slot = [ENGINE]
+									fixed_ship_armor_slot = [PRIMARY_ARM]
+									front_1_custom_slot = [SECOND_BAT]
+									mid_1_custom_slot = [SECOND_ARM]
+									mid_2_custom_slot = empty
+									rear_1_custom_slot = empty
+								}
+							}
 						}
+						PRIMARY_BAT = "[?primaryBattVar.GetTokenKey]"
+						SECOND_BAT = "[?secondaryBattVar.GetTokenKey]"
+						ENGINE = "[?primaryEngineVar.GetTokenKey]"
+						PRIMARY_ARM = "[?primaryArmorVar.GetTokenKey]"
+						SECOND_ARM = "[?secondaryArmorVar.GetTokenKey]"
 					}
 					create_ship = {
 						type = ship_hull_ironclad_0
