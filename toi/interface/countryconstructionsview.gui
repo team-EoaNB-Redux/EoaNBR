@@ -246,13 +246,13 @@ guiTypes = {
 			# Backgrounds
 			iconType = {
 				name = "constructions_bg1"
-				position = { x = 0 y = 85 }
+				position = { x = 0 y = 75 }
 				quadTextureSprite = "GFX_eoanbr_construction_category_bar"
 			}
 
 			iconType = {
 				name = "constructions_bg2"
-				position = { x = 0 y = 230 }
+				position = { x = 0 y = 200 }
 				quadTextureSprite = "GFX_eoanbr_construction_category_bar"
 			}
 
@@ -262,16 +262,17 @@ guiTypes = {
 				quadTextureSprite = "GFX_eoanbr_construction_category_bar"
 			}
 
+
 			# Header Icons
 			iconType = {
 				name = "state_constructions"
-				position = { x = 56 y = 79 }
+				position = { x = 56 y = 69 }
 				quadTextureSprite = "GFX_state_constructions"
 			}
 
 			iconType = {
 				name = "shared_constructions"
-				position = { x = 56 y = 224 }
+				position = { x = 56 y = 194 }
 				quadTextureSprite = "GFX_shared_constructions"
 			}
 
@@ -284,7 +285,7 @@ guiTypes = {
 			# Building Icons
 			gridBoxType = {
 				name = "non_shared_item_grid"
-				position = { x = 7 y = 120 }
+				position = { x = 7 y = 105 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 46 height = 44 }
 				#max_slots_horizontal = 2
@@ -294,7 +295,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "shared_item_grid"
-				position = { x = 7 y = 265 }
+				position = { x = 7 y = 230 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 46 height = 44 }
 				#max_slots_horizontal = 4
@@ -302,20 +303,50 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 
+				
 			gridBoxType = {
 				name = "province_item_grid"
-				position = { x = 7 y = 454 }
+				position = { x = 7 y = 444 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 46 height = 48 }
 				# max_slots_horizontal = 2
 				max_slots = { x = 3 y = 2 }
 				format = "UPPER_LEFT"
 			}
-		}
 
+			containerWindowType = {
+				name = "possible_facility_constructions"
+				position = { x = 0 y = 125 }
+				size = { width = 267 height = 100% }
+			
+				iconType = {
+					name = "constructions_bg4"
+					position = { x = 0 y = 15 }
+					quadTextureSprite = "GFX_eoanbr_construction_category_bar"
+				}
+
+
+				iconType = {
+					name = "facility_constructions"
+					position = { x = 56 y = 9 }
+					quadTextureSprite = "GFX_facility_constructions"
+					pdx_tooltip = facility_constructions_text
+				}
+				
+				
+				gridBoxType = {
+					name = "facility_item_grid"
+					position = { x = 5 y = 45 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 3
+					format = "UPPER_LEFT"
+				}
+			}
+		}
 		containerWindowType = {
 			name = "construction_buttom_container"
-			position = { x = 440 y = 610 }
+			position = { x = 440 y = 715 }
 			size = { width = 150 height = -4 }
 
 			background = {
@@ -326,7 +357,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "convert_ic_button"
-			position = { x = -130 y = 625 }
+			position = { x = -130 y = 725 }
 			quadTextureSprite = "GFX_convert_ic_button_large"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
@@ -336,7 +367,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "minimize"
-			position = { x = -70 y = 635 }
+			position = { x = -70 y = 725 }
 			quadTextureSprite = "GFX_production_line_arrow_left"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
@@ -345,7 +376,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "expand"
-			position = { x = -70 y = 775 }
+			position = { x = -70 y = 725 }
 			quadTextureSprite = "GFX_production_line_arrow_right"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
