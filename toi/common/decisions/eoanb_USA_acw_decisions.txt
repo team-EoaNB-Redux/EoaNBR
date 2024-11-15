@@ -3379,9 +3379,9 @@ ACW_American_Civil_War_Decisions = {
 						}
 					}
 
-					log = "[?var:primaryBattVar]\nPrimaryBatt"
-					log = "[?var:primaryArmorVar]\nPrimaryArmor"
-					log = "[?var:primaryEngineVar]\nPrimaryEngine"
+					# log = "[?var:primaryBattVar]\nPrimaryBatt"
+					# log = "[?var:primaryArmorVar]\nPrimaryArmor"
+					# log = "[?var:primaryEngineVar]\nPrimaryEngine"
 
 					meta_effect = {
 						text = {

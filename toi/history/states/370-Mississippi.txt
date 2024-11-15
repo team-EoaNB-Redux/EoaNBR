@@ -23,7 +23,7 @@ state = {
 			}
 			10410 = {
 				bunker = 1
-				supply_node = yes
+				supply_node = 1
 			}
 		}
 		set_variable = { arable_land = 50 }

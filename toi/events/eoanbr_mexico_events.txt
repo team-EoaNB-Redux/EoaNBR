@@ -371,8 +371,8 @@ add_namespace = mexico_civil_war
 						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_1 }
 						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_2 }
 					}
-					increase_resistance_la_reforma = yes
 				}
+				increase_resistance_la_reforma = yes
 			}
 			every_core_state = {
 				limit = {
@@ -1218,6 +1218,45 @@ country_event = { #Debt system initial announcement
 	# }
 
 	state_event = { #state abandons Tacubaya
+		id = mexico_civil_war.3
+		hidden = yes
+		is_triggered_only = yes
+
+		immediate = {
+			transfer_state_to = MEX
+			MEC = {
+				set_state_controller = THIS
+				country_event = mexico_civil_war.2
+			}
+			MEX = {
+				country_event = mexico_civil_war.2
+			}
+			# log = "[THIS.GetTag]: firing  = mexico_civil_war.2"
+			
+		}
+
+		# option = {
+		# 	name = mexico_civil_war.2.a
+		# 	# log = "option:			name = mexico_civil_war.2.a"
+		# 	trigger = { TAG = MEX }
+		# 	add_war_support = 0.015
+		# 	OWNER = {
+		# 		create_unit = {
+		# 			division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.50"
+		# 			owner = MEX
+
+		# 		}
+		# 	}
+		# }
+		# option = {
+		# 	name = mexico_civil_war.2.b
+		# 	# log = "option:			name = mexico_civil_war.2.b"
+		# 	trigger = { TAG = MEC }
+		# 	add_stability = -0.01
+		# }
+	}
+
+	country_event = {
 		id = mexico_civil_war.2
 		title = mexico_civil_war.2.t
 		desc = {
@@ -1228,21 +1267,31 @@ country_event = { #Debt system initial announcement
 			text = mexico_civil_war.2.e
 			trigger = { TAG = MEC }
 		}
-		hidden = no
 		is_triggered_only = yes
 
-		immediate = {
-			transfer_state_to = MEX
-		# log = "[THIS.GetTag]: firing  = mexico_civil_war.2"
-			
-		}
+		# immediate = {
+		# # log = "[THIS.GetTag]: firing  = mexico_civil_war.3"
+		# 	hidden_effect = {
+		# 		MEC = { country_event = { id = mexico_civil_war.4 } }
+		# 		MEX = { country_event = { id = mexico_civil_war.4 } }
+		# 		MEC = { transfer_state = ROOT }
+		# 		ROOT = { add_core_of = MEC }
+		# 		if = {
+		# 			limit = { ROOT = { STATE = 484 } }
+		# 			MEC = { transfer_state = 1359 }
+		# 			1359 = { add_core_of = MEC }
+		# 		}
+		# 	}
+		# }
+
+		
 
 		option = {
 			name = mexico_civil_war.2.a
 			# log = "option:			name = mexico_civil_war.2.a"
 			trigger = { TAG = MEX }
 			add_war_support = 0.015
-			FROM = {
+			MEX = {
 				create_unit = {
 					division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.50"
 					owner = MEX
@@ -1257,27 +1306,6 @@ country_event = { #Debt system initial announcement
 			add_stability = -0.01
 		}
 	}
-
-	# state_event = {
-	# 	id = mexico_civil_war.3
-	# 	hidden = yes
-	# 	is_triggered_only = yes
-
-	# 	immediate = {
-	# 	# log = "[THIS.GetTag]: firing  = mexico_civil_war.3"
-	# 		hidden_effect = {
-	# 			MEC = { country_event = { id = mexico_civil_war.4 } }
-	# 			MEX = { country_event = { id = mexico_civil_war.4 } }
-	# 			MEC = { transfer_state = ROOT }
-	# 			ROOT = { add_core_of = MEC }
-	# 			if = {
-	# 				limit = { ROOT = { STATE = 484 } }
-	# 				MEC = { transfer_state = 1359 }
-	# 				1359 = { add_core_of = MEC }
-	# 			}
-	# 		}
-	# 	}
-	# }
 	# country_event = {
 	# 	id = mexico_civil_war.4
 	# 	title = mexico_civil_war.4.t
@@ -2264,6 +2292,14 @@ country_event = { #Debt system initial announcement
 		immediate = {
 			# log = "[THIS.GetTag]: firing = mexico_civil_war.39"
 			set_cosmetic_tag = MEX_cosmetic_tacubaya
+			country_event = {
+				id = mexico_civil_war.40
+				days = 8
+			}
+		}
+
+		option = {
+			name = mexico_civil_war.39.a
 		}
 	}
 
@@ -2279,9 +2315,13 @@ country_event = { #Debt system initial announcement
 			set_cosmetic_tag = MEX_cosmetic_tacubaya
 			# log = "[THIS.GetTag]: firing = mexico_civil_war.40"
 			country_event = {
-				event = mexico_civil_war.41
+				id = mexico_civil_war.41
 				days = 8
 			}
+		}
+
+		option = {
+			name = mexico_civil_war.39.b
 		}
 	}
 	
@@ -2296,7 +2336,7 @@ country_event = { #Debt system initial announcement
 		immediate = {
 			# log = "[THIS.GetTag]: firing = mexico_civil_war.41"
 			drop_cosmetic_tag = yes
-			country_event = {
+			# country_event = {
 				custom_effect_tooltip = MEX_1857_Civilwar
 				every_controlled_state = {
 					limit = { NOT = { state = 477 } }
@@ -2385,12 +2425,12 @@ country_event = { #Debt system initial announcement
 								}
 								
 							}
-							state_event = { id = mexico_civil_war.2 days = 2 random_days = 5 }
+							state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
 						}
 					}
 				}
-			}
 		}
+	}
 
 		option = { #stay with liberals
 			name = mexico_civil_war.41.a

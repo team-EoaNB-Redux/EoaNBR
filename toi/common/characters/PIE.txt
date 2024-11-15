@@ -115,7 +115,7 @@ characters = {
 		name = PIE_luigi_farini_name
 		portraits = {
 			civilian = {
-				large = "gfx\leaders\ITA\ITA\Portrait_ITA_Luigi_Carlo_Farini.dds"
+				large = "gfx/leaders/ITA/ITA/Portrait_ITA_Luigi_Carlo_Farini.dds"
 			}
 		}
 	}
@@ -123,7 +123,7 @@ characters = {
 		name = PIE_marco_minghetti_name
 		portraits = {
 			civilian = {
-				large = "gfx\leaders\ITA\ITA\Portrait_ITA_Marco_Minghetti.dds"
+				large = "gfx/leaders/ITA/ITA/Portrait_ITA_Marco_Minghetti.dds"
 			}
 		}
 	}

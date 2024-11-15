@@ -259,6 +259,7 @@
 	}
 	MEX_cosmetic_tacubaya = {
 		color = rgb { 124 142 56 }
+		color_ui = rgb { 135 198 108 }
 	}
 #
 # Africa

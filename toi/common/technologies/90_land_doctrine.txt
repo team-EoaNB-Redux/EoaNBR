@@ -216,7 +216,7 @@ technologies = {
 			}
 		}
 
-		hidden_modifier = {
+		hidden_effect = {
 			field_artillery = {
 				defence = 0.5
 				breakthrough = 0.5
@@ -391,7 +391,7 @@ technologies = {
 			}
 		}
 
-		hidden_modifier = {
+		hidden_effect = {
 			field_artillery = {
 				defence = 0.5
 				breakthrough = 0.5

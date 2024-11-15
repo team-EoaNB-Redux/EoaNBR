@@ -907,7 +907,7 @@ EOANBSYS_national_crisis_decision_category = {
 
 		# }
 		fixed_random_seed = no
-		cost = 20
+		cost = 5
 		days_re_enable = 7
 		complete_effect = {
 			random_core_state = {

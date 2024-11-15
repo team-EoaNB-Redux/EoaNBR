@@ -5093,8 +5093,8 @@ ITA_Economic_category_decisions = {
 	}
 }
 
-ITA_decisions_category_influence_minor_states = {
-}
+# ITA_decisions_category_influence_minor_states = {
+# }
 
 #Build recognition in Europe decisions
 ITA_decisions_category_build_recognition_in_europe = {
