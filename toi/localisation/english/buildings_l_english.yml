@@ -273,3 +273,8 @@
  modifier_production_speed_trench_factor_desc: "Modifies the speed of Trench construction."
  synthetic_refinery_amount: ""
  synthetic_refinery_resource: ""
+ BUILDING_NEED_SUPPLIES: "$Building|Y$ has supplies."
+ CANNOT_BUILD_FACILITY_WITHOUT_AVAILABLE_PROJECT: "Requires at least 1 available special project to be able to be built."
+ GUN_EMPLACEMENT_BUILDING: "§YMulti-Charge Large Caliber Gun Emplacement§!"
+ BUILDING_STATE_MODIFIER_FORMATTER_HEADING: "$BUILDING|H$ state modifiers:"
+ SPECIAL_FACILITY_BUILDING: "$NAME|Y$"

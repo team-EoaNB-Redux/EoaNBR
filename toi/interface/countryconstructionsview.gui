@@ -316,7 +316,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "possible_facility_constructions"
-				position = { x = 0 y = 125 }
+				position = { x = 0 y = 170 }
 				size = { width = 267 height = 100% }
 			
 				iconType = {

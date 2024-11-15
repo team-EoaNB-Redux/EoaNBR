@@ -278,7 +278,7 @@ sp_commercial_nuclear_reactor = {
 	}
 	available = { 
 		FROM = {
-			has_tech = construction4
+			has_tech = tech_projects_atomic_refineries
 		}
 	}
 	

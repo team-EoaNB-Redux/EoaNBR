@@ -1518,8 +1518,13 @@ political_actions = {
 				has_stability > 0.5
 				has_war_support > 0.25
 				ROOT = {
-					OVERLORD = {
-						has_stability < 0.35
+					if = {
+						limit = {
+							is_subject = yes
+						}
+						overlord = {
+							has_stability < 0.35
+						}
 					}
 				}
 			}
