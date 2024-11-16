@@ -4,7 +4,7 @@ add_namespace = australian_deposit
 
 #governments
 
-country_event = { 4th premier election result
+country_event = { #4th premier election result
 	id = nsw_colonial_government.1
 	title = nsw_colonial_government.1.t
 	desc = nsw_colonial_government.1.d

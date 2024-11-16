@@ -24741,7 +24741,8 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 			}
 		}
 		add_to_variable = {
-			SPR.SPR_USA_american_tension = 10
+			var = SPR.SPR_USA_american_tension 
+			value = 10
 			tooltip = SPR_tension_increase_total_tooltip
 		}
 		USA = {
@@ -24749,10 +24750,10 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 			dismantle_faction = yes
 			clr_country_flag = clayton_conspiracy_participant
 		}
+	}
 
-		option = {
-			name = "Ok"
-		}
+	option = {
+		name = "Ok"
 	}
 
 	#add options
