@@ -1890,7 +1890,7 @@
  infrastructure_efficiency_modifier: "§YInfrastructure§! Эффективность" #NT!
   
  transport_cost_modifier: "Стоимость транспортировки" #NT!
- shipping_cost_modifier: "Стоимость доставки" #NT!
+ shipping_cost_factor: "Стоимость доставки" #NT!
    # 
   
    #State Economy Screen 

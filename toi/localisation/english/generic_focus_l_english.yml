@@ -1,6 +1,8 @@
 ﻿l_english:
  generic: "Generic Focus Tree"
  # Decisions
+  generic_vic_strengthen_the_state: "Strengthen the State"
+  
   generic_vic_invite_foreign_dignitaries: "Invite Foreign Dignitaries"
   generic_vic_open_door_policy: "Open Door Policy"
   generic_vic_adopt_capitalist_theories: "Adopt Capitalist Theories"
@@ -9,10 +11,27 @@
   generic_vic_western_curriculum: "Adopted Western Curriculum"
   generic_vic_invite_foreign_investor: "Invite Foreign Investor"
 
+  generic_vic_promote_local_philosophies: "Promote Local Philosophies"
+  generic_vic_source_local_designs: "Source Local Designs"
+  generic_vic_encourage_competitiveness: "Encourage Competitiveness"
+  generic_vic_anti_foreign_propaganda: "Anti-Foreign Propaganda"
+  generic_vic_pull_on_obligations: "Pull on Obligations"
+  generic_vic_grant_concessions: "Grant Concessions"
+  generic_vic_reign_in_the_capitalists: "Reign in the Capitalists"
+
   eoanb_category_generic_industrialization: "[GetGenericIndustralizationTitle]"
   generic_vic_realm_development_title: "Development of the Realm"
   generic_vic_industrialization_title: "Industrialization"
+  
+  generic_vic_connect_region_to_the_capital: "Connect [?FROM.GetName] to the Capital"
+  generic_vic_connect_region_available_tt: "Any state has not been connected yet"
+  generic_vic_connect_to_foreign_country: "Connect to Foreign Countries"
 
+  generic_vic_encourage_workshops: "Encourage Workshops"
+  generic_vic_support_urban_guilds: "Support Urban Guilds"
+  generic_vic_subsidize_artisanship: "Subsidize Artisanship"
+  generic_vic_the_cottage_industry: "The Cottage Industry"
+  generic_vic_fund_cultural_projects: "Fund Cultural Projects"
  # Ideas
   generic_vic_idea_central_management: "Central Management"
   generic_vic_idea_regional_autonomy: "Regional Autonomy"
@@ -44,6 +63,13 @@
   generic_vic_idea_isolationism_2_1: "Isolationism"
   generic_vic_idea_isolationism_2_2: "Isolationism"
   generic_vic_idea_isolationism_3: "Isolationism"
+
+  generic_vic_foreign_connections: "Foreign Connections"
+  generic_vic_early_stages_of_industrialization: "Early Stages of Industrialization"
+  generic_vic_early_stages_of_industrialization_desc: "We have not yet decided how we wish to industrialize"
+  generic_vic_embrace_industry_0: "Industrial Revolution: Embrace Industry"
+  generic_vic_balanced_approach_0: "Industrial Revolution: Balanced Approach"
+  generic_vic_agricultural_focus_0: "Industrial Revolution: Agricultural Focus"
  
  # Government / Research
   generic_focus_vic_strengthen_government: "Strengthen Government"

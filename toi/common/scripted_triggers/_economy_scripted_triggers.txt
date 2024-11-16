@@ -136,6 +136,19 @@ has_treasury = {
 		}
 	}
 }
+has_treasury_gdp = {
+	# x_temp - money
+	multiply_temp_variable = { x_temp = 0.12 }
+	multiply_temp_variable = { x_temp = gdp_amount }
+	custom_trigger_tooltip = {
+		tooltip = has_treasury_tt
+		check_variable = {
+			var = treasury
+			value = x_temp
+			compare = greater_than_or_equals
+		}
+	}
+}
 return_earliest_production_method = {
 	# building_token
 	# State Scope

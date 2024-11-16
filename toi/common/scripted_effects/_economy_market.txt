@@ -1039,7 +1039,7 @@
 					multiply_variable = { shipping_use@var:r_type = -1 }
 				}
 				multiply_variable = { shipping_use@var:r_type = global.shipping_cost@var:r_type }
-				set_temp_variable = { modifier_temp = modifier@shipping_cost_modifier }
+				set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
 				add_to_temp_variable = { modifier_temp = 1 }
 				multiply_variable = { shipping_use@var:r_type = modifier_temp }
 
@@ -2237,7 +2237,7 @@
 					multiply_variable = { shipping_use@var:resource_temp = -1 }
 				}
 				multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-				set_temp_variable = { modifier_temp = modifier@shipping_cost_modifier }
+				set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
 				add_to_temp_variable = { modifier_temp = 1 }
 				multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
 				add_to_variable = { shipping_use = shipping_use@var:resource_temp }
@@ -2344,7 +2344,7 @@
 				multiply_variable = { shipping_use@var:resource_temp = -1 }
 			}
 			multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-			set_temp_variable = { modifier_temp = modifier@shipping_cost_modifier }
+			set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
 			add_to_temp_variable = { modifier_temp = 1 }
 			multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
 			add_to_variable = { shipping_use = shipping_use@var:resource_temp }
@@ -2416,7 +2416,7 @@
 				multiply_variable = { shipping_use@var:resource_temp = -1 }
 			}
 			multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-			set_temp_variable = { modifier_temp = modifier@shipping_cost_modifier }
+			set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
 			add_to_temp_variable = { modifier_temp = 1 }
 			multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
 			add_to_variable = { shipping_use = shipping_use@var:resource_temp }

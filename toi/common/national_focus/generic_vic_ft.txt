@@ -40,6 +40,7 @@ focus_tree = {
 			set_temp_variable = { institution_progress_temp = 10 }
 			eoanbr_institutions_centralization_change = yes
 			add_political_power = 100
+			unlock_decision_tooltip = generic_vic_strengthen_the_state
 		}
 
 		ai_will_do = {
@@ -1319,6 +1320,9 @@ focus_tree = {
 			else = {
 				swap_ideas = { add_idea = generic_vic_idea_isolationism_2 remove_idea = generic_vic_idea_isolationism_1_2 }
 			}
+			unlock_decision_tooltip = generic_vic_promote_local_philosophies
+			unlock_decision_tooltip = generic_vic_source_local_designs
+			unlock_decision_tooltip = generic_vic_encourage_competitiveness
 		}
 
 		ai_will_do = {
@@ -1346,6 +1350,7 @@ focus_tree = {
 			else = {
 				swap_ideas = { add_idea = generic_vic_idea_isolationism_2 remove_idea = generic_vic_idea_isolationism_1_1 }
 			}
+			unlock_decision_tooltip = generic_vic_anti_foreign_propaganda
 		}
 
 		ai_will_do = {
@@ -1374,6 +1379,8 @@ focus_tree = {
 			else = {
 				swap_ideas = { add_idea = generic_vic_idea_isolationism_3 remove_idea = generic_vic_idea_isolationism_2_2 }
 			}
+			unlock_decision_tooltip = generic_vic_pull_on_obligations
+			unlock_decision_tooltip = generic_vic_grant_concessions
 		}
 
 		ai_will_do = {
@@ -1402,6 +1409,7 @@ focus_tree = {
 			else = {
 				swap_ideas = { add_idea = generic_vic_idea_isolationism_3 remove_idea = generic_vic_idea_isolationism_2_1 }
 			}
+			unlock_decision_tooltip = generic_vic_reign_in_the_capitalists
 		}
 
 		ai_will_do = {
@@ -1452,7 +1460,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = generic_vic_encourage_workshops
+			unlock_decision_tooltip = generic_vic_support_urban_guilds
+			unlock_decision_tooltip = generic_vic_subsidize_artisanship
+			unlock_decision_tooltip = generic_vic_the_cottage_industry
+			unlock_decision_tooltip = generic_vic_fund_cultural_projects
 		}
 
 		ai_will_do = {
@@ -1472,6 +1484,7 @@ focus_tree = {
 		available = {
 			has_idea = institution_rationalism
 			PS_pol_positive = yes
+			has_stability > 0.5
 		}
 		prerequisite = {
 			focus = generic_focus_vic_fund_industrial_development
@@ -1489,11 +1502,12 @@ focus_tree = {
 				remove_idea = agrarian
 				add_idea = industrializing
 			}
+			add_ideas = generic_vic_early_stages_of_industrialization
 			set_temp_variable = { institution_progress_temp = 5 }
 			eoanbr_institutions_industrialization_change = yes
 			add_tech_bonus = { bonus = 1 uses = 2 category = cat_industry_techs }
 			add_stability = -0.05
-			decrease_ps_by_one = yes
+			decrease_ps_by_two = yes
 		}
 
 		ai_will_do = {
@@ -1508,6 +1522,10 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 70
+
+		available = {
+			PS_pol_positive = yes
+		}
 		
 		mutually_exclusive = {
 			focus = generic_focus_vic_balanced_approach
@@ -1521,7 +1539,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = generic_vic_early_stages_of_industrialization
+				add_idea = generic_vic_embrace_industry_0
+			}
+			decrease_ps_by_two = yes
 		}
 
 		ai_will_do = {
@@ -1535,6 +1557,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 70
+
+		available = {
+			PS_pol_positive = yes
+		}
 		
 		mutually_exclusive = {
 			focus = generic_focus_vic_embrace_industry
@@ -1545,7 +1571,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = generic_vic_early_stages_of_industrialization
+				add_idea = generic_vic_balanced_approach_0
+			}
+			decrease_ps_by_one = yes
 		}
 
 		ai_will_do = {
@@ -1559,6 +1589,10 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 70
+
+		available = {
+			PS_pol_positive = yes
+		}
 		
 		mutually_exclusive = {
 			focus = generic_focus_vic_embrace_industry
@@ -1572,7 +1606,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = generic_vic_early_stages_of_industrialization
+				add_idea = generic_vic_agricultural_focus_0
+			}
 		}
 
 		ai_will_do = {

@@ -1890,7 +1890,7 @@
     infrastructure_efficiency_modifier: "§YInfrastructure§! Efficiency"
 
     transport_cost_modifier: "Transport Cost"
-    shipping_cost_modifier: "Shipping Cost"
+    shipping_cost_factor: "Shipping Cost"
   #
 
   #State Economy Screen

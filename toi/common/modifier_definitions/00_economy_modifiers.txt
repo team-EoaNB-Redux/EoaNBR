@@ -3223,7 +3223,13 @@
 			category = country
 		}
 	#
-	#Resources
+	#Trade
+		shipping_cost_modifier = {
+			color_type = bad
+			value_type = percentage
+			precision = 2
+			category = country
+		}
 	#
 #
 
@@ -4462,11 +4468,5 @@
 		#
 	#
 	#
-		shipping_cost_modifier = {
-			color_type = good
-			value_type = number
-			precision = 2
-			category = country
-		}
 	#
 #

@@ -361,5 +361,93 @@ ideas = {
 				subsistence_farm_output_factor = 0.1
 			}
 		}
+
+		generic_vic_foreign_connections = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = road_investments
+
+			modifier = {
+				shipping_cost_factor = -0.1
+				opinion_gain_monthly_factor = 0.25
+				improve_relations_maintain_cost_factor = -0.25
+			}
+		}
+		
+		generic_vic_early_stages_of_industrialization = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+			}
+		}
+
+		generic_vic_embrace_industry_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				stability_factor = -0.05
+			}
+		}
+
+		
+		generic_vic_balanced_approach_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+			}
+		}
+		
+		generic_vic_agricultural_focus_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				stability_factor = 0.05
+			}
+		}
 	}
 }
