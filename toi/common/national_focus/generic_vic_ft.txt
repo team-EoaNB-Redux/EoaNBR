@@ -1630,7 +1630,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { institution_progress_temp = 1 }
+			eoanbr_institutions_industrialization_change = yes
+
+			set_temp_variable = { x_temp = 20000 }
+			add_investment_fund = yes
 		}
 
 		ai_will_do = {
@@ -1644,6 +1648,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 70
+
+		available = {
+			set_temp_variable = { industry_token = token:urban_center }
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
 		
 		prerequisite = {
 			focus = generic_focus_vic_embrace_industry
@@ -1651,7 +1663,31 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:urban_center }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 8 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 16 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1665,6 +1701,15 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 70
+
+		available = {
+			set_temp_variable = { industry_token = token:consumer_goods_factory }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
 		
 		prerequisite = {
 			focus = generic_focus_vic_embrace_industry
@@ -1673,7 +1718,31 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:consumer_goods_factory }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 10 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 20 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1687,6 +1756,14 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 70
+
+		available = {
+			set_temp_variable = { industry_token = token:crop_farm }
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
 		
 		prerequisite = {
 			focus = generic_focus_vic_agricultural_focus
@@ -1694,7 +1771,31 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:crop_farm }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 6 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 12 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1714,7 +1815,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0_1
+					add_idea = generic_vic_agricultural_focus_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_0_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0_2
+					add_idea = generic_vic_agricultural_focus_1_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0
+					add_idea = generic_vic_agricultural_focus_1_0
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1730,13 +1854,47 @@ focus_tree = {
 		y = 1
 		cost = 70
 		
+		available = {
+			set_temp_variable = { industry_token = token:chemical_plant }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+
 		prerequisite = {
 			focus = generic_focus_vic_captains_of_industry
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:chemical_plant }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 8 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 16 }
+			}
+			add_debt = yes
 		}
+
 
 		ai_will_do = {
 			factor = 1
@@ -1755,7 +1913,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0_1
+					add_idea = generic_vic_embrace_industry_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_0_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0_2
+					add_idea = generic_vic_embrace_industry_1_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0
+					add_idea = generic_vic_embrace_industry_1_0
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1775,7 +1956,66 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0
+					add_idea = generic_vic_embrace_industry_0_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_1_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_0
+					add_idea = generic_vic_embrace_industry_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_2_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_0
+					add_idea = generic_vic_embrace_industry_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_3_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_3_0
+					add_idea = generic_vic_embrace_industry_3_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0_1
+					add_idea = generic_vic_balanced_approach_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_0_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0_2
+					add_idea = generic_vic_balanced_approach_1_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0
+					add_idea = generic_vic_balanced_approach_1_0
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1795,7 +2035,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@wood > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@wood > 0 } }
+					add_resource = {
+						type = wood
+						amount = 20
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = wood
+						amount = 10
+					}
+				}
+			}
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1815,7 +2078,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@iron > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@iron > 0 } }
+					add_resource = {
+						type = iron
+						amount = 10
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = iron
+						amount = 5
+					}
+				}
+			}
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1830,12 +2116,67 @@ focus_tree = {
 		y = 1
 		cost = 70
 		
+		available = {
+			set_temp_variable = { industry_token = token:livestock_ranch }
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
 		prerequisite = {
 			focus = generic_focus_vic_farm_enclosures
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:livestock_ranch }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@fiber > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@fiber > 0 } }
+					add_resource = {
+						type = fiber
+						amount = 5
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = fiber
+						amount = 3
+					}
+				}
+			}
+
+			set_temp_variable = { x_temp = 3 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 6 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1858,7 +2199,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@luxuries > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@lxuuries > 0 } }
+					add_resource = {
+						type = luxuries
+						amount = 2
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = luxuries
+						amount = 1
+					}
+				}
+			}
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1882,7 +2246,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_1
+					add_idea = generic_vic_embrace_industry_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_1_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_2
+					add_idea = generic_vic_embrace_industry_2_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_0
+					add_idea = generic_vic_embrace_industry_2_0
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1897,13 +2284,46 @@ focus_tree = {
 		y = 1
 		cost = 70
 		
+		available = {
+			set_temp_variable = { industry_token = token:steel_foundry }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
 		prerequisite = {
 			focus = generic_focus_vic_captains_of_industry
 			focus = generic_focus_vic_rapid_growth
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:steel_foundry }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 8 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 16 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1918,8 +2338,45 @@ focus_tree = {
 		y = 2
 		cost = 70
 		
+		available = {
+			set_temp_variable = { industry_token = token:tooling_workshop }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
 		prerequisite = {
 			focus = generic_focus_vic_expand_the_consumer_goods_sector
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:tooling_workshop }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 8 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 16 }
+			}
+			add_debt = yes
 		}
 
 		completion_reward = {
@@ -1938,13 +2395,46 @@ focus_tree = {
 		y = 2
 		cost = 70
 		
+		available = {
+			set_temp_variable = { industry_token = token:textile_mill }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
 		prerequisite = {
 			focus = generic_focus_vic_expand_the_consumer_goods_sector
 			focus = generic_focus_vic_expand_sheep_farming
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:textile_mill }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 6 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 12 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -1965,7 +2455,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_farm_implements_agriculture_techs }
 		}
 
 		ai_will_do = {
@@ -1985,7 +2475,66 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0
+					add_idea = generic_vic_agricultural_focus_0_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_1_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_0
+					add_idea = generic_vic_agricultural_focus_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_2_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_0
+					add_idea = generic_vic_agricultural_focus_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_3_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_3_0
+					add_idea = generic_vic_agricultural_focus_3_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_1_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_0
+					add_idea = generic_vic_balanced_approach_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_2_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_2_0
+					add_idea = generic_vic_balanced_approach_2_1
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0
+					add_idea = generic_vic_balanced_approach_0_1
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -2005,7 +2554,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_1
+					add_idea = generic_vic_agricultural_focus_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_1_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_2
+					add_idea = generic_vic_agricultural_focus_2_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_0
+					add_idea = generic_vic_agricultural_focus_2_0
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -2021,6 +2593,15 @@ focus_tree = {
 		y = 1
 		cost = 70
 		
+		available = {
+			set_temp_variable = { industry_token = token:mechanical_works }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
 		prerequisite = {
 			focus = generic_focus_vic_encourage_the_domestic_steel_industry
 		}
@@ -2029,7 +2610,31 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 2000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:mechanical_works }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 20 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 2000 }
+				}
+				set_temp_variable = { x_temp = 40 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -2043,6 +2648,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 70
+
+		available = {
+			set_temp_variable = { industry_token = token:railway }
+			is_valid_industry = yes
+		}
 		
 		prerequisite = {
 			focus = generic_focus_vic_build_logging_camps
@@ -2058,7 +2668,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:railway }
+			capital_scope = {
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 6 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 12 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -2081,7 +2711,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@coal > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@coal > 0 } }
+					add_resource = {
+						type = coal
+						amount = 10
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = coal
+						amount = 5
+					}
+				}
+			}
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -2104,7 +2757,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 
 		ai_will_do = {
@@ -2119,12 +2774,68 @@ focus_tree = {
 		y = 1
 		cost = 70
 		
+		available = {
+			set_temp_variable = { industry_token = token:cotton_plantation }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
 		prerequisite = {
 			focus = generic_focus_vic_maintain_traditional_values
 		}
 
 		completion_reward = {
-			
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:cotton_plantation }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@fiber > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@fiber > 0 } }
+					add_resource = {
+						type = fiber
+						amount = 8
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = fiber
+						amount = 4
+					}
+				}
+			}
+
+			set_temp_variable = { x_temp = 5 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 10 }
+			}
+			add_debt = yes
 		}
 
 		ai_will_do = {
@@ -2145,7 +2856,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_1
+					add_idea = generic_vic_embrace_industry_3_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_2_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_2
+					add_idea = generic_vic_embrace_industry_3_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_0
+					add_idea = generic_vic_embrace_industry_3_0
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -2168,7 +2902,80 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					OR = {
+						has_idea = generic_vic_embrace_industry_0
+						has_idea = generic_vic_embrace_industry_1_0
+						has_idea = generic_vic_embrace_industry_2_0
+						has_idea = generic_vic_embrace_industry_3_0
+					}
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0_1
+					add_idea = generic_vic_embrace_industry_0_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0_1
+					add_idea = generic_vic_embrace_industry_0_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_1
+					add_idea = generic_vic_embrace_industry_1_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_1
+					add_idea = generic_vic_embrace_industry_2_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_3_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_3_1
+					add_idea = generic_vic_embrace_industry_3_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_1
+					add_idea = generic_vic_balanced_approach_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_1_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_2
+					add_idea = generic_vic_balanced_approach_2_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_0
+					add_idea = generic_vic_balanced_approach_2_0
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -2188,7 +2995,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NOT = { has_tech = electrical_telegraph }
+				}
+				add_tech_bonus = { bonus = 3 uses = 1 technology = electrical_telegraph }
+				custom_effect_tooltip = generic_focus_vic_telegraph_cables_tt
+			}
+			else = {
+				add_political_power = 100
+				add_tech_bonus = { bonus = 1 uses = 1 category = comms_tech }
+			}
 		}
 
 		ai_will_do = {
@@ -2211,7 +3028,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_tech_bonus = { bonus = 1 uses = 1 technology = tech_synthetic_fertilizers technology = tech_traction_engine technology = tech_slaughterhouses technology = tech_barbed_wire }
+			add_tech_bonus = { bonus = 1 uses = 1 technology = tech_hot_blast_furnace technology = tech_bessemer_process technology = tech_steam_powered_oil_derrick technology = tech_diamond_core_drill technology = tech_steam_powered_sawmill }
+			add_tech_bonus = { bonus = 1 uses = 1 technology = tech_sewing_machine technology = tech_electric_sewing_machine technology = tech_machinery_specialization technology = tech_mechanical_production technology = tech_precision_made_furniture technology = tech_steel_tools technology = tech_heavy_power_tools technology = tech_steel_bridge technology = tech_steel_girder_construction technology = tech_steel_tools }
 		}
 
 		ai_will_do = {
@@ -2231,7 +3050,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_tech_bonus = { bonus = 3 ahead_reduction = 5 uses = 1 category = cat_farm_implements_agriculture_techs }
 		}
 
 		ai_will_do = {
@@ -2254,7 +3073,80 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					OR = {
+						has_idea = generic_vic_agricultural_focus_0
+						has_idea = generic_vic_agricultural_focus_1_0
+						has_idea = generic_vic_agricultural_focus_2_0
+						has_idea = generic_vic_agricultural_focus_3_0
+					}
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0_1
+					add_idea = generic_vic_agricultural_focus_0_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0_1
+					add_idea = generic_vic_agricultural_focus_0_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_1
+					add_idea = generic_vic_agricultural_focus_1_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_1
+					add_idea = generic_vic_agricultural_focus_2_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_3_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_3_1
+					add_idea = generic_vic_agricultural_focus_3_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_1
+					add_idea = generic_vic_balanced_approach_1_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_2_1
+					add_idea = generic_vic_balanced_approach_2_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0_1
+					add_idea = generic_vic_balanced_approach_0_2
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -2277,7 +3169,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_1
+					add_idea = generic_vic_agricultural_focus_3_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_2_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_2
+					add_idea = generic_vic_agricultural_focus_3_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_0
+					add_idea = generic_vic_agricultural_focus_3_0
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -2316,7 +3231,50 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_3_2
+				}
+				remove_idea = generic_vic_embrace_industry_3_2
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_3_2
+				}
+				remove_idea = generic_vic_agricultural_focus_3_2
+			}
+			else = {
+				remove_idea = generic_vic_balanced_approach_2_2
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = generic_vic_embrace_industry_3_2
+					}
+					add_timed_idea = {
+						idea = generic_vic_embrace_industry_4
+						years = 10
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = generic_vic_agricultural_focus_3_2
+					}
+					add_timed_idea = {
+						idea = generic_vic_agricultural_focus_4
+						years = 10
+					}
+				}
+				else = {
+					add_timed_idea = {
+						idea = generic_vic_balanced_approach_3
+						years = 10
+					}
+				}
+			}
+			custom_effect_tooltip = generic_vic_gain_lasting_effects_of_ir_tt
 			
+			custom_effect_tooltip = generic_vic_transitions_to_next_tree_tt
 		}
 
 		ai_will_do = {
