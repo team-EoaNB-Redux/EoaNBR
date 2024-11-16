@@ -470,8 +470,11 @@
 		id = SPR_CUB_ten_years_war
 		left_side = SPR_dominion
 		right_side = CUB_independance
-		value = -0.08
 	}
+	add_power_balance_value = {
+    id = SPR_CUB_ten_years_war
+    value = -0.08
+}
 	unlock_national_focus = SPR_6dy_serrano_regency
 	unlock_national_focus = SPR_6dy_search_for_a_king
 	unlock_national_focus = SPR_6dy_colonial_management

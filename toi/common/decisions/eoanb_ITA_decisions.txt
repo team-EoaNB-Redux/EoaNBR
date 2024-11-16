@@ -5098,13 +5098,6 @@ ITA_Economic_category_decisions = {
 
 #Build recognition in Europe decisions
 ITA_decisions_category_build_recognition_in_europe = {
-	icon = GFX_decision_unknown
-	allowed = {
-		original_tag = PIE
-	}
-	visible = {
-		has_completed_focus = ITA_PIE_focus_Build_Recognition_in_Europe
-	}
 	ITA_seek_recognition_from_britain = {
 		ai_will_do = {
 			base = 1

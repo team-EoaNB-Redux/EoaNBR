@@ -69,7 +69,7 @@ war_planning = {
 			# 	add_dynamic_modifier = dynmod_MEX_last_effort_supplies
 			# }
 			482 = {
-				add_dynamic_modifier = dynmod_MEX_last_effort_supplies
+				add_dynamic_modifier = { modifier = dynmod_MEX_last_effort_supplies }
 			}
 		}
 
