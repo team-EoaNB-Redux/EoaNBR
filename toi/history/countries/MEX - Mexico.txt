@@ -98,6 +98,11 @@
 	complete_national_focus = MEX_focus_constitution_of_1857
 	complete_national_focus = MEX_focus_constitutional_oath
 
+	set_variable = {
+		var = EOANBSYS_national_crisis_progress_var
+		value = 50
+	}
+
 	# POLITICAL LEADERS
 
 	create_country_leader = {

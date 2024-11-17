@@ -320,7 +320,7 @@ add_namespace = mexico_civil_war
 			custom_effect_tooltip = MEX_negotiate_with_viadurri_tt
 			swap_ideas = {
 				remove_idea = MEX_idea_provisional_funding_efforts
-				add_idea = MEX_idea_MEX_idea_dealt_with_viadurri
+				add_idea = MEX_idea_dealt_with_viadurri
 			}
 		}
 
@@ -330,7 +330,7 @@ add_namespace = mexico_civil_war
 			custom_effect_tooltip = MEX_confront_viadurri_tt
 			swap_ideas = {
 				remove_idea = MEX_idea_provisional_funding_efforts
-				add_idea = MEX_idea_MEX_idea_dealt_with_viadurri
+				add_idea = MEX_idea_dealt_with_viadurri
 			}
 		}
 	}
@@ -2337,100 +2337,99 @@ country_event = { #Debt system initial announcement
 			# log = "[THIS.GetTag]: firing = mexico_civil_war.41"
 			drop_cosmetic_tag = yes
 			# country_event = {
-				custom_effect_tooltip = MEX_1857_Civilwar
-				every_controlled_state = {
-					limit = { NOT = { state = 477 } }
-					add_core_of = MEC
-					transfer_state_to = MEC
+			custom_effect_tooltip = MEX_1857_Civilwar
+			every_controlled_state = {
+				limit = { NOT = { state = 477 } }
+				add_core_of = MEC
+				transfer_state_to = MEC
+			}
+			add_popularity = { ideology = radical_democracy popularity = -0.2 }
+			add_popularity = { ideology = centrism popularity = -0.05 }
+			add_popularity = { ideology = autocracy popularity = -0.075 }
+			add_popularity = { ideology = fundamentalism popularity = -0.08 }
+			decrease_ps_by_two = yes
+			MEC = {
+				inherit_technology = MEX
+				set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
+				set_variable = { global.mex_civil_war_debt@FRA = MEX.debt_to_bank_k@FRA }
+				set_variable = { global.mex_civil_war_debt@SPR = MEX.debt_to_bank_k@SPR }
+				set_variable = { global.mex_civil_war_debt@USA = MEX.debt_to_bank_k@USA }
+				set_temp_variable = { x_temp = MEX.debt_to_bank_k@ENG }
+				set_temp_variable = { country_temp = ENG }
+				add_debt = yes
+				set_temp_variable = { x_temp = MEX.debt_to_bank_k@FRA }
+				set_temp_variable = { country_temp = FRA }
+				add_debt = yes
+				set_temp_variable = { x_temp = MEX.debt_to_bank_k@SPR }
+				set_temp_variable = { country_temp = SPR }
+				add_debt = yes
+				set_temp_variable = { x_temp = MEX.debt_to_bank_k@USA }
+				set_temp_variable = { country_temp = USA }
+				add_debt = yes
+				set_country_flag = SPR_paying_debt_interest_flag
+				decrease_ps_by_one = yes
+				load_oob = "MEX_civil_war_conservatives"
+			}
+			transfer_units_fraction= {
+				target = MEC
+				size = 0.5
+				stockpile_ratio = 0
+				army_ratio = 0.9
+				navy_ratio = 0.5
+				air_ratio = 0
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_id = 18625
+						has_id = 186210
+					}
 				}
-				add_popularity = { ideology = radical_democracy popularity = -0.2 }
-				add_popularity = { ideology = centrism popularity = -0.05 }
-				add_popularity = { ideology = autocracy popularity = -0.075 }
-				add_popularity = { ideology = fundamentalism popularity = -0.08 }
-				decrease_ps_by_two = yes
+			}
+			every_unit_leader = {
+				limit = {
+					OR = {
+						has_id = 18626
+						has_id = 186211
+					}
+				}
+				set_nationality = MEC
+			}
+			load_oob = "MEX_civil_war_liberals"
+			event = mexico_civil_war.42
+			days = 15
+			hidden_effect = {
 				MEC = {
-					inherit_technology = MEX
-					set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
-					set_variable = { global.mex_civil_war_debt@FRA = MEX.debt_to_bank_k@FRA }
-					set_variable = { global.mex_civil_war_debt@SPR = MEX.debt_to_bank_k@SPR }
-					set_variable = { global.mex_civil_war_debt@USA = MEX.debt_to_bank_k@USA }
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@ENG }
-					set_temp_variable = { country_temp = ENG }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@FRA }
-					set_temp_variable = { country_temp = FRA }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@SPR }
-					set_temp_variable = { country_temp = SPR }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@USA }
-					set_temp_variable = { country_temp = USA }
-					add_debt = yes
-					set_country_flag = SPR_paying_debt_interest_flag
-					decrease_ps_by_one = yes
-					load_oob = "MEX_civil_war_conservatives"
-				}
-				transfer_units_fraction= {
-					target = MEC
-					size = 0.5
-					stockpile_ratio = 0
-					army_ratio = 0.9
-					navy_ratio = 0.5
-					air_ratio = 0
-					keep_unit_leaders_trigger = {
-						OR = {
-							has_id = 18625
-							has_id = 186210
-						}
-					}
-				}
-				every_unit_leader = {
-					limit = {
-						OR = {
-							has_id = 18626
-							has_id = 186211
-						}
-					}
-					set_nationality = MEC
-				}
-				load_oob = "MEX_civil_war_liberals"
-				event = mexico_civil_war.42
-				days = 15
-				hidden_effect = {
-					MEC = {
-						every_controlled_state = {
-							limit = {
-								OR = {
-									NOT = {
-										OR = { #states Cons should keep
-											state = 475
-											state = 474
-											state = 481
-											state = 484
-											state = 1359
-											state = 277
-											state = 1124
-											state = 1113
-											state = 1114
-										}
+					every_controlled_state = {
+						limit = {
+							OR = {
+								NOT = {
+									OR = { #states Cons should keep
+										state = 475
+										state = 474
+										state = 481
+										state = 484
+										state = 1359
+										state = 277
+										state = 1124
+										state = 1113
+										state = 1114
 									}
-									AND = {
-										state = 480
-										MEX = {
-											NOT = {
-												has_country_flag = MEX_flag_viadurri_confronted
-											}
+								}
+								AND = {
+									state = 480
+									MEX = {
+										NOT = {
+											has_country_flag = MEX_flag_viadurri_confronted
 										}
 									}
 								}
-								
 							}
-							state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
+							
 						}
+						state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
 					}
 				}
+			}
 		}
-	}
 
 		option = { #stay with liberals
 			name = mexico_civil_war.41.a

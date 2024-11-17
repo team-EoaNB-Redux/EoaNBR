@@ -1123,6 +1123,9 @@ focus_tree = {
 			set_variable = { EOANBSYS_national_crisis_progress_var = 0 }
 
 			every_core_state = {
+				limit = {
+					owner = MEX
+				}
 				force_enable_resistance = MEX
 				add_dynamic_modifier = {
 					modifier = dynmod_MEX_la_reforma_resistance
@@ -1155,6 +1158,9 @@ focus_tree = {
 					remove_core_of = MEX
 				}
 				every_core_state = {
+					limit = {
+						owner = MEX
+					}
 					start_resistance = yes
 					set_compliance = 10
 					random_list = {
@@ -1544,14 +1550,14 @@ focus_tree = {
 		y = 1
 		cost = 14
 
-		#prerequisite = {
-		#	focus = MEX_focus_national_insurrection
-		#}
-		#prerequisite = {
-		#	focus = MEX_focus_confirm_comonfort
-		#}
+		prerequisite = {
+			focus = MEX_focus_national_insurrection
+		}
+		prerequisite = {
+			focus = MEX_focus_confirm_comonfort
+		}
 		available = {
-			#crisis progress > 95
+			EOANBSYS_national_crisis_progress_var > 95
 		}
 		ai_will_do = {
 			factor = 1
