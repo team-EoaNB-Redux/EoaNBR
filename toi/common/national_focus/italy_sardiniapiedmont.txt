@@ -515,10 +515,11 @@ focus_tree = {
 			base = 7
 		}
 		completion_reward = {
-			country_event = {
-				id = sardinia.92
-			}
+			#country_event = {
+			#	id = sardinia.92
+			#}
 			add_political_power = 150
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -787,9 +788,9 @@ focus_tree = {
 		id = PIE_War_Preperations_Second_War
 		icon = GFX_focus_ITA_Military_Academies
 		cost = 35
-		prerequisite = {
-			focus = PIE_Accept_Confederation
-		}
+		#prerequisite = {
+		#	focus = PIE_Accept_Confederation
+		#}
 		prerequisite = {
 			focus = PIE_Start_Border_Operations
 		}
@@ -895,7 +896,7 @@ focus_tree = {
 				}
 			}
 			}
-			activate_mission = ITA_2IP_Mobilization_War_Imiment
+			#activate_mission = ITA_2IP_Mobilization_War_Imiment
 		}
 	}
 	#focus = {
