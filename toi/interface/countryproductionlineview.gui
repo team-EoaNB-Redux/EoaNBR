@@ -2955,11 +2955,35 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "production_line_selected"
-			spriteType = "GFX_production_line_selected_collapsed"
-			position = { x = 0 y = 0 }
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes
 		}
 
+		iconType = {
+			name ="production_line_selected"
+			spriteType = "GFX_production_line_selected_collapsed"
+			position = { x= 0 y = 0 }
+		}
+
+		iconType = {
+			name ="priority_frame"
+			spriteType = "GFX_conveyor_group_btn_frame"
+			position = { x= 2 y = 1 }
+		}
+
+		buttonType = {
+			name ="attach_manufacturer"
+			spriteType = "GFX_attach_manufacturer"
+			position = { x= 325 y = 6 }
+		}
+
+		buttonType = {
+			name ="change_manufacturer"
+			position = { x= 325 y = 6 }
+			spriteType = "GFX_attach_manufacturer"
+			scale = 0.45
+		}		
 		instantTextboxType = {
 			name = "priority"
 			position = { x = 6 y = 11 }

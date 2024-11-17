@@ -932,7 +932,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "special_forces_header"
-				position = { x = 0 y = 1027 }
+				position = { x = 0 y = 727 }
 				size = { width = 98% height = 127 }
 				margin = { top = 0 left = 0 bottom = 0 right = 0 }
 
