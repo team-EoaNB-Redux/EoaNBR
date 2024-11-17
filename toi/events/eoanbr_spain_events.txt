@@ -4413,3 +4413,68 @@ country_event = { #Spain sends envoys to cameroon tribes
 		
 	}
 }
+country_event = { #rebellion of the Mantillas
+	id = spain.81
+	title = spain.81.t
+	desc = spain.81.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	trigger={
+		NOT={
+			has_idea = SPR_Antonio_I
+			has_idea = SPR_Baldomero_I
+		}
+		has_country_flag = SPR_6dy_conciliation
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.81.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = SPR_stress_level
+			value = 2
+			tooltip = SPR_stress_level_increase
+		}
+	}
+}
+country_event = { #Amorebieta Convention
+	id = spain.82
+	title = spain.82.t
+	desc = spain.82.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.81.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = SPR_stress_level
+			value = 2
+			tooltip = SPR_stress_level_increase
+		}
+	}
+	option = {#
+		name = spain.81.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_stability = -0.05
+		add_to_variable = {
+			var = SPR_stress_level
+			value = 5
+			tooltip = SPR_stress_level_increase
+		}
+	}
+}

@@ -749,6 +749,27 @@ focus = {
 	}
 }
 focus = {
+	id = SPR_6dy_organising_a_royal_tour
+	icon = GFX_Focus_Monarchy
+	relative_position_id = SPR_6dy_building_loyal_nobility
+	x = -1
+	y = 1
+	cost = 30
+
+	available = {
+		
+	}
+	ai_will_do = { base = 100 }
+
+	prerequisite = { 
+		focus = SPR_6dy_building_loyal_nobility 
+	}
+
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+focus = {
 	id = SPR_6dy_keeping_stress_low
 	icon = GFX_Focus_Government_Reform_Administration
 	relative_position_id = SPR_6dy_problems_of_a_foreign_king
@@ -1913,7 +1934,6 @@ focus = {
 	completion_reward = {
 		BAS={
 			add_manpower = -5000
-			
 		}
 	}
 }
@@ -1943,6 +1963,26 @@ focus = {
 				province = 740
 			}	
 		}
+	}
+}
+focus = {
+	id = SPR_6dy_abolition_of_basque_charters
+	icon = GFX_Focus_Defence_Fort_Gate
+	relative_position_id = SPR_6dy_fortify_bilbao
+	x = 0
+	y = 1
+	cost = 30
+
+	available = {
+		
+	}
+	prerequisite = { 
+		focus = SPR_6dy_fortify_bilbao 
+	}
+	ai_will_do = { base = 100 }
+
+	completion_reward = {
+		
 	}
 }
 focus = {
@@ -2319,6 +2359,9 @@ focus = {
 			}
 		}
 		allow_branch = {
+			has_power_balance = {
+				id = SPR_CUB_ten_years_war
+			}
 			OR = {
 				owns_state = 1350
 				1350 = { OWNER = { is_subject_of = ROOT } }
@@ -2618,6 +2661,82 @@ focus = {
 		}
 	}
 	focus = {
+		id = SPR_6dy_reintgrating_cuba
+		icon = GFX_Focus_Government_Centralized
+		relative_position_id = SPR_6dy_colonial_management
+		x = 0
+		y = 1
+		cost = 30
+
+		allow_branch = {
+			NOT={
+				has_power_balance = {
+					id = SPR_CUB_ten_years_war
+				}
+			}
+			OR = {
+				owns_state = 1350
+				1350 = { OWNER = { is_subject_of = ROOT } }
+			}
+		}
+		ai_will_do = { base = 50 }
+
+		prerequisite = { focus = SPR_6dy_colonial_management }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPR_6dy_invite_great_antillies_deputies_to_cortez
+		icon = GFX_Focus_Electorate_unity
+		relative_position_id = SPR_6dy_reintgrating_cuba
+		x = 1
+		y = 1
+		cost = 30
+
+		ai_will_do = { base = 50 }
+
+		prerequisite = { focus = SPR_6dy_reintgrating_cuba }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPR_6dy_calming_planters
+		icon = GFX_Focus_Electorate_cater_to_aristocracy
+		relative_position_id = SPR_6dy_reintgrating_cuba
+		x = -1
+		y = 1
+		cost = 30
+
+		ai_will_do = { base = 50 }
+
+		prerequisite = { focus = SPR_6dy_reintgrating_cuba }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPR_6dy_abolishment_cuban_slavery
+		icon = GFX_Focus_Slavery_freedom
+		relative_position_id = SPR_6dy_reintgrating_cuba
+		x = 0
+		y = 2
+		cost = 30
+
+		ai_will_do = { base = 50 }
+
+		prerequisite = { focus = SPR_6dy_invite_great_antillies_deputies_to_cortez }
+		prerequisite = { focus = SPR_6dy_calming_planters }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = SPR_6dy_aftermath_lares
 		icon = GFX_focus_SPR_crush_laires
 		relative_position_id = SPR_6dy_colonial_management
@@ -2674,6 +2793,30 @@ focus = {
 		}
 
 		prerequisite = { focus = SPR_6dy_aftermath_lares }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPR_6dy_founding_spanish_colonial_bank
+		icon = GFX_Focus_national_bank
+		relative_position_id = SPR_6dy_colonial_management
+		x = -6
+		y = 1
+		cost = 30
+
+		available = {
+			date > 1879.1.1
+		}
+		allow_branch = {
+			277={
+				owns_or_subject_of = yes
+			}
+		}
+		ai_will_do = { base = 75 }
+
+		prerequisite = { focus = SPR_6dy_colonial_management }
 
 		completion_reward = {
 			

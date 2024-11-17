@@ -1119,6 +1119,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/_general/economy/focus_banks2.dds"
 	}
 	SpriteType = {
+		name = "GFX_Focus_national_bank"
+		texturefile = "gfx/interface/goals/_general/economy/focus_national_bank.dds"
+	}
+	SpriteType = {
 		name = "GFX_Focus_basic_working_regulation"
 		texturefile = "gfx/interface/goals/_general/economy/focus_basic_working_regulation.dds"
 	}

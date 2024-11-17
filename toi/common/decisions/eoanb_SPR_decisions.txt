@@ -3780,5 +3780,36 @@ SPR_stress_level = {#
 			}
         }
     }
+	SPR_calming_the_king = {
+	    icon = generic_decision
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SPR_has_stress_tt
+				check_variable={
+					SPR_stress_level > 0
+				}
+			}
+	    }
+
+		allowed = { 
+			tag = SPR 
+		}
+		visible={
+			has_variable = SPR_stress_level
+		}
+
+	    cost = 100
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = SPR_stress_level
+				value = 1
+				tooltip = SPR_stress_level_decrease
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
 
 }

@@ -308,6 +308,9 @@ spain.70.b: "Accept his Offer"
 spain.71.t: "Resignation of the King"
 
 spain.80.t: "[FROM.GetName] sends Envoys"
+spain.81.t: "Rebellion of the Mantillas"
+spain.81.d: "A series of protests marches have been held along the Paseo del Prado in Madrid. These marches have been carried out by the Ladies of our aristocracy wearing white mantillas fastened with Fleur-de-lis pins in support for the bourbon monarchy. While our supporters have managed to blunt this message, it has still had an effect on our Kings Legitimacy."
+spain.81.a: "Yet another problem for the King"
 
 ##### DECISIONS #####
 SPR_FLAVOUR: "Spain in XIXth century"
@@ -332,6 +335,7 @@ SPR_mission_madrid_cadiz_railway_concession: "Madrid-Cadiz Railway Concession"
 SPR_mission_madrid_cartagena_railway_concession: "Madrid-Cartagena Railway Concession"
 SPR_pact_of_zanjon: "The Pact of Zanjón"
 SPR_metric_adaption: "Adopting the Metric System"
+SPR_calming_the_king: "Calming the King"
 
 
 ##### FOCUSES #####
@@ -910,6 +914,7 @@ SPC_exists: "[SPC.getFlag]§YViceroyalty of the Carribean§!: does not exist"
 
 SPR_stress_level: "Monarch Stress"
 SPR_stress_txt_tooltip: "The Level of £spr_stress_texticon §YStress§! of the Spanish Monarch is §Y[?SPR_stress_level]§!."
+SPR_has_stress_tt: "£spr_stress_texticon §YStress§! level is above Zero."
 SPR_stress_level_increase: "§R+$RIGHT|0$§! £spr_stress_texticon §YStress§!"
 SPR_stress_level_decrease: "§G-$RIGHT|0$§! £spr_stress_texticon §YStress§!"
 SPR_stress_above_20: "£spr_stress_texticon §YStress§! is §R20§! or higher."
