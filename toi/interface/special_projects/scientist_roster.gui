@@ -2,8 +2,8 @@ guiTypes = {
 	containerWindowType = {
 		name = "scientist_roster_window"
 		animation_time = 300
-		size = { width=550 height=656 }
-		position = { x = 540 y = 80 }
+		size = { width=550 height=650 }
+		position = { x = 555 y = 142 }
 		show_sound = open_sub_window
 		moveable = yes
 		click_to_front = yes
@@ -11,6 +11,30 @@ guiTypes = {
 		background = {
 			name = "Background"
 			spriteType = "GFX_tiled_plain_bg"
+		}
+
+		# Header
+			containerWindowType = {
+				name = "tab_header"
+
+				size = { width = 544 height = 44 }
+				position = { x = 5 y = 3 }
+
+				background = {
+					name = "production_header_bg"
+					quadTextureSprite = "GFX_tiled_header_1"
+				}
+			}
+		#
+
+		containerWindowType = {
+			name = "historyrosterfilters"
+			position = { x = 6 y= 46 }
+			size = { width = 540 height = 40 }
+			background = {
+				name = "bg"
+				quadTextureSprite = "GFX_eoanbr_tiled_plain_bg2"
+			}
 		}
 		
 		containerWindowType = {
@@ -20,15 +44,15 @@ guiTypes = {
 			
 			background = {
 				name = "Background"
-				spriteType = "GFX_tiled_progress_bar"
+				spriteType = "GFX_eoanbr_tiled_plain_bg2"
 			}
 		}
 
 		instantTextboxType = {
 			name = "title_text"
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 12 }
 			font = "hoi_20b"
-			maxWidth = 510
+			maxWidth = 540
 			maxHeight = 20
 			format = center
 		}
@@ -93,7 +117,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "close_button"
-			position = { x = -38 y = 4 }
+			position = { x = -40 y = 8 }
 			quadTextureSprite = "GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -114,12 +138,12 @@ guiTypes = {
 		containerWindowType = {
 			name = "scientists"
 			position = { x = 0 y = 85 }
-			size = { width=550 height=-52 }
+			size = { width=550 height=-44 }
 			margin = { top = 4 bottom = 12}
 
 			background = {
 				name = "Background"
-				spriteType = "GFX_tiled_window2_1b_border"
+				spriteType = "GFX_eoanbr_tiled_window_2b_border"
 			}
 
 			background = {

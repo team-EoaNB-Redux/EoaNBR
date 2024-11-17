@@ -8,7 +8,7 @@ guiTypes = {
 		show_sound = menu_open_window
 
 		buttonType = {
-			name = "close_button" 
+			name = "close_button"  
 			quadTextureSprite = "GFX_eoanbr_header_tab_button_128x45"
 			position = { x = 25 y = -15 }
 			buttonText = "MHC_DEFAULT_LABEL"
@@ -26,7 +26,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countrymhcview"
-		position = { x = 0 y = 144 }
+		position = { x = 0 y = 154 }
 		size = { width = 550 height = 100%% }
 
 		hide_sound = menu_close_window
@@ -1302,7 +1302,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "countryofficercorpview_tabs"
-		position = { x = 0 y = 112 }
+		position = { x = 0 y = 122 }
 		size = { width = 300 height = 100 }
 
 		iconType = {

@@ -17,25 +17,28 @@ guiTypes = {
 			quadTextureSprite = "GFX_tiled_window"
 		}
 
-		iconType = {
-			name = "production_header_bg"
-			spriteType = "GFX_medium_header_bg"
-			position = { x = 5 y = 07 }
-			Orientation = "UPPER_LEFT"
-		}
+		containerWindowType = {
+			name = "tab_header"
 
-		instantTextboxType = {
-			name = "deployment_title"
-			position = { x = 45 y = 8 }
-			textureFile = ""
-			font = "hoi_36header"
-			borderSize = { x = 0 y = 0 }
-			text = "DEPLOYMENT_DEPLOYMENT_LABEL"
-			maxWidth = 440
-			maxHeight = 20
-			format = left
-		}
+			size = { width = 544 height = 44 }
+			position = { x = 5 y = 3 }
 
+			background = {
+				name = "production_header_bg"
+				quadTextureSprite = "GFX_tiled_header_1"
+			}
+			instantTextboxType = {
+				name = "deployment_title"
+				position = { x = 42 y = 5 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = { x = 0 y = 0 }
+				text = "DEPLOYMENT_DEPLOYMENT_LABEL"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
 		iconType = {
 			name = "deployment_binding"
 			spriteType = "GFX_deployment_binding"
@@ -57,7 +60,7 @@ guiTypes = {
 
 				background = {
 					name = "Background"
-					quadTextureSprite = "GFX_tiled_window2_1b_border"
+					quadTextureSprite = "GFX_eoanbr_tiled_window_2b_border"
 				}
 
 				background = {
@@ -96,30 +99,56 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
-		size = { width = 375 height = 100%% }
+		size = { width = 380 height = 100%% }
 		clipping = no
 
 		background = {
 			name = "Background"
-			quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			quadTextureSprite = "GFX_tiled_plain_bg"
 		}
 
-		iconType = {
-			name = "template_header_bg"
-			spriteType = "GFX_subview_header_bg_375x101"
-			position = { x = 1 y = 0 }
-		}
+		# Header
+			containerWindowType = {
+				name = "tab_header"
 
-		instantTextboxType = {
-			name = "template_title"
-			position = { x = 20 y = 8 }
-			textureFile = ""
-			font = "hoi_36header"
-			borderSize = { x = 0 y = 0 }
-			text = "DEPLOYMENT_TEMPLATE_LABEL"
-			maxWidth = 336
-			maxHeight = 20
-			format = centre
+				size = { width = 374 height = 44 }
+				position = { x = 5 y = 3 }
+
+				background = {
+					name = "production_header_bg"
+					quadTextureSprite = "GFX_tiled_header_1"
+				}
+				instantTextboxType = {
+					name = "template_title"
+					position = { x = 20 y = 6 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "DEPLOYMENT_TEMPLATE_LABEL"
+					maxWidth = 336
+					maxHeight = 20
+					format = centre
+				}
+			}
+			buttonType = {
+				name = "close_button"
+				position = { x = -42 y = 9 }
+				quadTextureSprite = "GFX_closebutton"
+				buttonFont = "Main_14_black"
+				shortcut = "ESCAPE"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+			}
+		#
+		containerWindowType = {
+			name = "templatedeploymentfilters"
+			position = { x = 0 y= 44 }
+			size = { width = 376 height = 90 }
+			background = {
+				name = "bg"
+				quadTextureSprite = "GFX_eoanbr_tiled_plain_bg2"
+			}
 		}
 
 		iconType = {
@@ -142,21 +171,21 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "templates"
-			position = { x = 2 y = 138 }
+			position = { x = 2 y = 134 }
 			size = { width = 375 height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
 			smooth_scrolling = yes
-			margin = { bottom = 8 }
+			margin = { top = 12 bottom = 12 }
 
 			background = {
 				name = "Background"
-				quadTextureSprite = "GFX_tiled_window_transparent"
+				quadTextureSprite = "GFX_eoanbr_tiled_window_2b_border"
 			}
 
 			gridboxtype = {
 				name = "templates_grid"
-				position = { x = 10 y = 0 }
+				position = { x = 11 y = 0 }
 				size = { width = 355 height = 100%% }
 				slotsize = { width = 355 height = 1 }
 				max_slots_horizontal = 1
@@ -166,13 +195,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "show_decommissioned_templates_window"
-			position = { x=1 y=96 }
+			position = { x=1 y=92 }
 			size = { width=373 height=44 }
-
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_plain_bg_small"
-			}
 
 			buttonType = {
 				name = "checkbox"

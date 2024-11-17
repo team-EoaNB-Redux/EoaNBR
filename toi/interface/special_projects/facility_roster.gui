@@ -1,19 +1,19 @@
 guiTypes = {
 	containerWindowType = {
 		name = "facilities_view"
-		position = { x=0 y=0 }
-		size = { width=550 height=-5 }
+			position = { x = 1 y = -3 }
+		size = { width = 562 height = -229 }
 
 
 		background = {
 			name = "Background"
-			quadTextureSprite = "GFX_tiled_window2_1b_border"
+			quadTextureSprite = "GFX_eoanbr_tiled_window_2b_border"
 		}
 	
 		background = {
 			name = "Background"
 			spriteType = "GFX_sp_top_bg"
-			position = { x=8 y=-1 }
+			position = { x=12 y=11 }
 		}
 		
 		#background = {
@@ -23,7 +23,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "facilities_overview_window"
-			position = { x = 1 y = 10 }
+			position = { x = 5 y = 22 }
 			size = { width = 100% height = -1 }
 
 			background = {
@@ -83,7 +83,7 @@ guiTypes = {
 		#################################################################
 		containerWindowType = {
 			name = "facilities_overview_bottom_window"
-			position = { x = 1 y = 8 }
+			position = { x = 5 y = 20 }
 			size = { width = 100% height = 100% }
 			
 			background = {
@@ -94,7 +94,7 @@ guiTypes = {
 			buttonType = {
 				name = "open_scientist_roster"
 				position = { x = 380 y = 13 }
-				quadTextureSprite = "GFX_diplo_filter_entry"
+				quadTextureSprite = "GFX_eoanbr_ellipse_button_123x34"
 				frame = 2
 				buttonFont = "hoi_18mbs"
 				buttonText = "OPEN_SCIENTIST_ROSTER_BUTTON"
@@ -104,7 +104,7 @@ guiTypes = {
 			buttonType = {
 				name = "open_history_roster"
 				position = { x = 240 y = 13 }
-				quadTextureSprite = "GFX_diplo_filter_entry"
+				quadTextureSprite = "GFX_eoanbr_ellipse_button_123x34"
 				frame = 2
 				buttonFont = "hoi_18mbs"
 				buttonText = "OPEN_HISTORY_ROSTER_BUTTON"
@@ -137,7 +137,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "program_list_window"
-			position = { x = 0 y=235 }
+			position = { x = 0 y=260 }
 			size = { width=550 height=-225 }
 
 			background = {

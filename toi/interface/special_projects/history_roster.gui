@@ -8,7 +8,7 @@ guiTypes = {
 		name = "project_history_roster"
 		animation_time = 300
 		size = { width=441 height=578 }
-		position = { x = 540 y = 80 }
+		position = { x = 554 y = 142 }
 		show_sound = open_sub_window
 		moveable = yes
 		click_to_front = yes
@@ -18,9 +18,33 @@ guiTypes = {
 			spriteType = "GFX_tiled_plain_bg"
 		}
 
+		# Header
+			containerWindowType = {
+				name = "tab_header"
+
+				size = { width = 433 height = 44 }
+				position = { x = 5 y = 3 }
+
+				background = {
+					name = "production_header_bg"
+					quadTextureSprite = "GFX_tiled_header_1"
+				}
+				buttonType = {
+					name = "close_button"
+					position = { x = -40 y = 6 }
+					quadTextureSprite = "GFX_closebutton"
+					buttonFont = "Main_14_black"
+					shortcut = "ESCAPE"
+					Orientation = "UPPER_RIGHT"
+					clicksound = click_close
+					pdx_tooltip = "CLOSE"
+				}
+			}
+		#
+
 		instantTextboxType = {
 			name = "header_text"
-			position = { x = -25 y = 8 }
+			position = { x = -25 y = 12 }
 			font = "hoi_20b"
 			text = "HISTORY_ROSTER_WINDOW_TITLE"
 			maxWidth = 510
@@ -28,32 +52,42 @@ guiTypes = {
 			format = center
 		}
 
+		containerWindowType = {
+			name = "historyrosterfilters"
+			position = { x = 6 y= 46 }
+			size = { width = 430 height = 56 }
+			background = {
+				name = "bg"
+				quadTextureSprite = "GFX_eoanbr_tiled_plain_bg2"
+			}
+		}
+
 		gridBoxType = {
 			# contains "project_list_filter_entry"
 			name = "history_list_filter"
-			position = { x = 30 y = 40 }
+			position = { x = 10 y = 50 }
 			size = { width = 400 height = 40 }
 			slotsize = { width = 75 height = 40 }
 			format = "UPPER_LEFT"
 		}
-		
+
 		containerWindowType = {
 			name = "history"
-			position = { x = -10 y = 80 }
-			size = { width=550 height=0 }
+			position = { x = -0 y = 102 }
+			size = { width=438 height=480 }
 
 			background = {
 				name = "Background"
-				quadTextureSprite = "GFX_project_history_background_cabinet"
+				quadTextureSprite = "GFX_eoanbr_tiled_window_2b_border"
 				position = { x = 0 y = 0 }
 			}
-			
+
 			positionType = {
 				name = "cabinet_top_border_size"
 				#The size of the top border for cabinet
 				position = { x = 0 y = @cabinet_top_border_size }
 			}
-			
+
 			positionType = {
 				name = "history_list_item_size"
 				#The size of history item
@@ -69,19 +103,8 @@ guiTypes = {
 			}
 		}
 
-		buttonType = {
-			name = "close_button"
-			position = { x = -38 y = 4 }
-			quadTextureSprite = "GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-
 	}
-	
+
 	containerWindowType = {
 		name = "history_list_item"
 		size = { width=@history_entry_width height=@history_entry_height }
