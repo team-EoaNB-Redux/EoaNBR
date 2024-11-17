@@ -530,7 +530,7 @@ eoanb_category_generic_industrialization = {
 					level = 1
 					instant_build = yes
 				}
-				add_state_flag = generic_vic_connected_to_capital
+				set_state_flag = generic_vic_connected_to_capital
 				set_temp_variable = { ratio_temp = pops }
 			}
 			ROOT = {
