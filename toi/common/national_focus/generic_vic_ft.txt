@@ -4754,7 +4754,15 @@ focus_tree = {
 			army_experience = 100
 			navy_experience = 100
 			air_experience = 100
-			add_ideas = law_victorian_army
+			if = {
+				limit = {
+					has_idea = law_pre_industrial_army
+				}
+				swap_ideas = {
+					remove_idea = law_pre_industrial_army
+					add_idea = law_victorian_army
+				}
+			}
 		}
 
 		ai_will_do = {
