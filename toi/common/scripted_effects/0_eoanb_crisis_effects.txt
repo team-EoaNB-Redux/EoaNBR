@@ -205,6 +205,9 @@
 	}
 	EOANBSYS_national_crisis_mexican_reform_war_fail = {
 		EOANBSYS_national_crisis_clear = yes
+		MEX = {
+			complete_national_focus = MEX_focus_plan_of_tacubaya
+		}
 		#mexico starts reform war
 	}
 

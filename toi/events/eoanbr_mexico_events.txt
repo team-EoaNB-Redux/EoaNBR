@@ -2321,7 +2321,7 @@ country_event = { #Debt system initial announcement
 		}
 
 		option = {
-			name = mexico_civil_war.39.b
+			name = mexico_civil_war.40.a
 		}
 	}
 	

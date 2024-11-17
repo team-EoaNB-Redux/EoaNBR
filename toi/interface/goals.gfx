@@ -5430,6 +5430,10 @@ spriteTypes = {
 		name = "GFX_FRA_orsini_letter"
 		texturefile = "gfx/interface/goals/france/FRA_orsini_letter.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_focus_french_empire"
+		texturefile = "gfx/interface/goals/_country_shields/focus_french_empire.dds"
+	}
 	### Luxembourg
 	SpriteType = {
 		name = "GFX_Focus_LUX_luxembourg_crisis"

@@ -244,6 +244,17 @@
  mexico_civil_war.37.c: "A disappointing outcome."
  mexico_civil_war.37.e: "Damn them! The Catholic Union is dissolved!"
  mexico_civil_war.37.f: "Interesting!"
+
+ mexico_civil_war.39.t: "The Plan of Tacubaya!"
+ mexico_civil_war.39.d: "The utmost treason! Reactionary politicians, conspiring with prominent members of the military, have convinced President Comonfort that to prevent civil war Congress must be dissolved and the controversial constitution of 1857, which he has taken an oath to defend and uphold, be rewritten from scratch so that it is less 'objectionable'. Already liberal politicians are being arrested, including the Chief Justice of the Supreme Court, Benito Juarez, who would succeed him as President if Comonfort were to die or be deposed."
+ mexico_civil_war.39.a: "Treason!"
+ mexico_civil_war.40.d: "Shocked by the Reactionary Coup, Liberal members of congress fled the Capital and reconvened in Querétaro. In a speedy session they have agreed that President Comonfort, who has clearly violated his Oath of Office, has abrogated his responsibilites and vacated his office, and therefore the new President is Benito Juarez. This crisis in government is escalating and only extraordinary circumstances now can prevent violence from breaking out!"
+ mexico_civil_war.40.t: "Congress Reconvenes!"
+ mexico_civil_war.40.a: "Hail to President Juarez!"
+ mexico_civil_war.41.d: "This morning the Governor of the State of Vera Cruz, Manuel Gutiérrez Zamora, announced that he had rejected the Plan of Tacubaya and agreed with the Federal Congress that President Comonfort had vacated his office. In this proclamation he called for the release and installment of President Juarez and the arrest of the conspirators. It seems certain now that the nation will plunge into Civil War."
+ mexico_civil_war.41.t: "Vera Cruz Abandons Tacubaya"
+ mexico_civil_war.41.a: "In the Name of the Constitution!"
+ mexico_civil_war.41.b: "Religion y Fueros!"
  
  #Focus Tree#
  MEX_pursue_new_constitution: "Pursue a new Constitution"
@@ -379,6 +390,20 @@
  MEC_idea_cristero_army_desc: "The volunteers loyal to christ shall fight in the army!"
  MEX_american_support: "American Support"
  MEX_reform_war_itinerant_government: "Itinerant Government"
+ MEX_idea_dealt_with_viadurri: "Dealt With Viadurri"
+ MEX_idea_dealt_with_viadurri_desc: "With a settlement reached with the northern governor Viadurri, a comprehensive and standard tariff was enforceable, though it remains to be seen how strictly applied those tariffs will be."
+ MEX_idea_provisional_funding_efforts: "Provisional Spending Efforts"
+ MEX_idea_provisional_funding_efforts_desc: "Without taxation to fund the government, all that was left to fund the government was tariffs and excise (sales) taxes, which President Comonfort made aggressive use of to stave off insolvency for the nation which was already deeply in debt."
+ MEX_idea_starting_tariff_limiter: "No More Taxes"
+ MEX_idea_starting_tariff_limiter_desc: "In the wake of the Santanista government's high taxes and subsequent overthrow, the new Revolutionary Government sought to undue the ills that befell the nation under his rule, and repealed those high taxes."
+
+ #Decisions
+ MEX_decision_comonfort_interim_resistance_quell: "Attempt to Quell Resistance"
+ MEX_decision_comonfort_interim_resistance_quell_desc: "TODO"
+ MEX_decision_liberal_media: "Liberal Media Blitz"
+ MEX_decision_liberal_media_desc: "To counter the Reactionists inflammatory rhetoric in the media, we must undertake our own campaign to undercut them at every turn."
+ MEX_decision_sell_clergy_property: "Sell Clergy Property"
+ MEX_decision_sell_clergy_property_desc: "Persuant to the Lerdo Law, we must undertake the dissolution of the monastaries and convents, not just for the sake funding the government but also promoting the growth of the middle class and the secularization of the nation."
  #Other stuff#
  MEX_civ_ended_conservatives: "The Conservatives have won the civil war!"
  MEX_civ_ended_liberals: "The Liberals have won the civil war!"
