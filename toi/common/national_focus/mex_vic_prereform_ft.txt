@@ -1355,6 +1355,12 @@ focus_tree = {
 		y = 2
 		cost = 35
 
+		available = {
+			NOT = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+			}
+		}
+
 		prerequisite = {
 			focus = MEX_focus_iglesias_law
 		}
@@ -1377,6 +1383,12 @@ focus_tree = {
 		y = 1
 		cost = 25
 
+		available = {
+			NOT = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+			}
+		}
+
 		prerequisite = {
 			focus = MEX_focus_comonforts_interim_powers
 		}
@@ -1398,6 +1410,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 25
+
+		available = {
+			NOT = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+			}
+		}
 
 		prerequisite = {
 			focus = MEX_focus_comonforts_interim_powers
@@ -1427,6 +1445,9 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = MEX_focus_request_emergency_powers
+			NOT = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+			}
 		}
 		completion_reward = {
 			#decrease compliance growth
@@ -1441,6 +1462,12 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 35
+
+		available = {
+			NOT = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+			}
+		}
 
 		prerequisite = {
 			focus = MEX_focus_constitutional_oath
@@ -1477,6 +1504,9 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = MEX_focus_1857_congressional_elections
+			NOT = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+			}
 		}
 		completion_reward = {
 			country_event = mexico_politics.22
@@ -1512,6 +1542,12 @@ focus_tree = {
 		y = 1
 		cost = 25
 
+		available = {
+			NOT = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+			}
+		}
+
 		prerequisite = {
 			focus = MEX_focus_1857_congressional_elections
 		}
@@ -1531,6 +1567,12 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 18
+
+		available = {
+			NOT = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+			}
+		}
 
 		prerequisite = {
 			focus = MEX_focus_request_emergency_powers
