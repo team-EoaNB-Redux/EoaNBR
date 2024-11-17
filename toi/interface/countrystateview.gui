@@ -1347,7 +1347,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "state_modifiers"
 				text = "STATE_MODIFIERS"
-				position = { x = 28 y= -83 }
+				position = { x = 28 y= -10000 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 30
