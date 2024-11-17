@@ -104,6 +104,22 @@
   generic_vic_embrace_industry_4: "Lasting effects of the Industrial Revolution"
   generic_vic_balanced_approach_3: "Lasting effects of the Industrial Revolution"
   generic_vic_agricultural_focus_4: "Lasting effects of the Industrial Revolution"
+
+  generic_vic_army_command_structure: "Army Command Structure"
+  generic_vic_study_foreign_tactics: "Study Foreign Tactics"
+  generic_vic_local_initiative: "Local Initiative"
+  generic_vic_defensive_stratagems: "Defensive Stratagems"
+  generic_vic_marksmanship: "Marksmanship"
+  generic_vic_foraging_expertise: "Foraging Expertise"
+  generic_vic_hit_and_run_warfare: "Hit and Run Warfare"
+
+  generic_vic_small_arms_manufacturing: "Small Arms Manufacturing"
+  generic_vic_mass_production: "Mass Production"
+  generic_vic_arms_industry: "Arms Industry"
+  
+  generic_vic_naval_college: "Naval College"
+  generic_vic_naval_design_bureau: "Naval Design Bureau"
+
  
  # Government / Research
   generic_focus_vic_strengthen_government: "Strengthen Government"
@@ -305,8 +321,10 @@
   generic_focus_vic_marksmanship_desc: ""
   generic_focus_vic_import_breech_loading_rifles: "Import Breech Loading Rifles"
   generic_focus_vic_import_breech_loading_rifles_desc: ""
+  generic_vic_import_blrs_tt: "You will import §Y500§! units of §YBreech Loading Rifles§! from the country whose doctrine you chose to follow."
   generic_focus_vic_import_muzzle_loading_rifles: "Import Muzzle Loading Rifles"
   generic_focus_vic_import_muzzle_loading_rifles_desc: ""
+  generic_vic_import_mlrs_tt: "You will import §Y500§! units of §YMuzzle Loading Rifles§! from the country whose doctrine you chose to follow."
   generic_focus_vic_rely_on_local_tactics: "Rely On Local Tactics"
   generic_focus_vic_rely_on_local_tactics_desc: ""
   generic_focus_vic_foraging_expertise: "Foraging Expertise"
