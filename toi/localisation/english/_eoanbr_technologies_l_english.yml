@@ -46,6 +46,7 @@
     cat_space_colonization_techs: "Space Colonization"
     cat_space_colonization_techs_research: "£research_speed_texticon Space Colonization Research Modifier"
   #
+  #
   #Infantry
     cat_rationalism_infantry_techs: "Rationalism Infantry"
     cat_rationalism_infantry_techs_research: "£research_speed_texticon Rationalism Infantry Research Modifier"
@@ -69,6 +70,64 @@
     cat_internet_infantry_techs_research: "£research_speed_texticon Internet Infantry Research Modifier"
     cat_automation_infantry_techs: "Automation Infantry"
     cat_automation_infantry_techs_research: "£research_speed_texticon Automation Infantry Research Modifier"
+
+    cat_small_arms_techs: "£infantry_equipment_text_icon Small Arms"
+    cat_small_arms_techs_research: "£research_speed_texticon Small Arms Research Modifier"
+    cat_traditional_arms_techs: "£infantry_equipment_text_icon Traditional Arms"
+    cat_traditional_arms_techs_research: "£research_speed_texticon Traditional Arms Research Modifier"
+    cat_rifle_arms_techs: "£infantry_equipment_text_icon Rifles"
+    cat_rifle_arms_techs_research: "£research_speed_texticon Rifles Research Modifier"
+    cat_shotgun_arms_techs: "£infantry_equipment_text_icon Shotguns"
+    cat_shotgun_arms_techs_research: "£research_speed_texticon Shotguns Research Modifier"
+    cat_submachinegun_arms_techs: "£infantry_equipment_text_icon Submarine Guns"
+    cat_submachinegun_arms_techs_research: "£research_speed_texticon Submarine Guns Research Modifier"
+    cat_plasma_arms_techs: "£infantry_equipment_text_icon Plasma Arms"
+    cat_plasma_arms_techs_research: "£research_speed_texticon Plasma Arms Research Modifier"
+    cat_railgun_arms_techs: "£infantry_equipment_text_icon Railguns"
+    cat_railgun_arms_techs_research: "£research_speed_texticon Railguns Research Modifier"
+    cat_rocket_propelled_arms: "£infantry_equipment_text_icon Rocket Propelled Arms"
+    cat_rocket_propelled_arms_research: "£research_speed_texticon Rocket Propelled Research Modifier"
+    cat_medium_arms_techs: "£infantry_equipment_text_icon Medium Arms"
+    cat_medium_arms_techs_research: "£research_speed_texticon Medium Arms Research Modifier"
+    cat_machine_gun_arms_techs: "£infantry_equipment_text_icon Machine Guns"
+    cat_machine_gun_arms_techs_research: "£research_speed_texticon Machine Guns Research Modifier"
+
+    cat_secondary_arms_techs: "£artillery_texticon Secondary Arms"
+    cat_secondary_arms_techs_research: "£research_speed_texticon Secondary Arms Research Modifier"
+    cat_melee_arms_techs: "£infantry_equipment_text_icon Melee Arms"
+    cat_melee_arms_techs_research: "£research_speed_texticon Melee Arms Research Modifier"
+    cat_handgun_arms_techs: "£artillery_texticon Handgun Arms"
+    cat_handgun_arms_techs_research: "£research_speed_texticon Handgun Arms Research Modifier"
+    cat_equipment_techs: "£infantry_equipment_text_icon Equipment"
+    cat_equipment_techs_research: "£research_speed_texticon Equipment Research Modifier"
+    cat_uniform_techs: "£artillery_texticon Uniform"
+    cat_uniform_techs_research: "£research_speed_texticon Uniform Research Modifier"
+    cat_helmet_techs: "£infantry_equipment_text_icon Helmet"
+    cat_helmet_techs_research: "£research_speed_texticon Helmet Research Modifier"
+    cat_night_vision_techs: "£infantry_equipment_text_icon Nightvision"
+    cat_night_vision_techs_research: "£research_speed_texticon Nightvision Research Modifier"
+    cat_augmentation_techs: "£artillery_texticon Augmentation"
+    cat_augmentation_techs_research: "£research_speed_texticon Augmentation Research Modifier"
+  #
+  # Artillery
+    cat_artillery_techs: "£artillery_texticon Artillery"
+    cat_artillery_techs_research: "£research_speed_texticon Artillery Research Modifier"
+    cat_motorized_artillery_techs: "£artillery_texticon Artillery"
+    cat_motorized_artillery_techs_research: "£research_speed_texticon Motorized Artillery Research Modifier"
+    cat_field_artillery_techs: "£artillery_texticon Field Artillery"
+    cat_field_artillery_techs_research: "£research_speed_texticon Field Artillery Research Modifier"
+    cat_howitzer_artillery_techs: "£artillery_texticon Howitzer Artillery"
+    cat_howitzer_artillery_techs_research: "£research_speed_texticon Howitzer Artillery Research Modifier"
+    cat_siege_artillery_techs: "£artillery_texticon Siege Artillery"
+    cat_siege_artillery_techs_research: "£research_speed_texticon Siege Artillery Research Modifier"
+    cat_rocket_artillery_techs: "£artillery_texticon Rocket Artillery"
+    cat_rocket_artillery_techs_research: "£research_speed_texticon Rocket Artillery Research Modifier"
+    cat_motorized_rocket_artillery_techs: "£artillery_texticon Motorized Rocket Artillery"
+    cat_motorized_rocket_artillery_techs_research: "£research_speed_texticon Motorized Rocket Artillery Research Modifier"
+    cat_anti_tank_techs: "£artillery_texticon Anti-Tank"
+    cat_anti_tank_techs_research: "£research_speed_texticon Anti-Tank Research Modifier"
+    cat_anti_air_techs: "£artillery_texticon Anti-Air"
+    cat_anti_air_techs_research: "£research_speed_texticon Anti-Air Research Modifier"
   #
   #Support
     cat_rationalism_support_techs: "Rationalism Support"
@@ -93,6 +152,9 @@
     cat_internet_support_techs_research: "£research_speed_texticon Internet Support Research Modifier"
     cat_automation_support_techs: "Automation Support"
     cat_automation_support_techs_research: "£research_speed_texticon Automation Support Research Modifier"
+
+    cat_support_arms_techs: "£infantry_equipment_texticon Support"
+    cat_support_arms_techs_research: "£research_speed_texticon Support Research Modifier"
   #
   #Specialist
     cat_rationalism_specialist_techs: "Rationalism Specialist"
@@ -117,6 +179,15 @@
     cat_internet_specialist_techs_research: "£research_speed_texticon Internet Specialist Research Modifier"
     cat_automation_specialist_techs: "Automation Specialist"
     cat_automation_specialist_techs_research: "£research_speed_texticon Automation Specialist Research Modifier"
+
+    cat_specialist_techs: "Specialist"
+    cat_specialist_techs_research: "£research_speed_texticon Specialist Research Modifier"
+    cat_motorized_specialist_techs: "Motorized Specialist"
+    cat_motorized_specialist_techs_research: "£research_speed_texticon Motorized Specialist Research Modifier"
+    cat_calvary_techs: "£infantry_equipment_text_icon Cavalry"
+    cat_calvary_techs_research: "£research_speed_texticon Cavalry Research Modifier"
+    cat_camelry_techs: "£infantry_equipment_text_icon Camelry"
+    cat_camelry_techs_research: "£research_speed_texticon Camelry Research Modifier"
   #
   #Artillery
     cat_artillery_techs: "Artillery"
@@ -167,6 +238,9 @@
     cat_internet_armor_techs_research: "£research_speed_texticon Internet Armor Research Modifier"
     cat_automation_armor_techs: "Automation Armor"
     cat_automation_armor_techs_research: "£research_speed_texticon Automation Armor Research Modifier"
+
+    cat_power_armor_techs: "£super_heavy_tank_chassis_texticonPower Armor"
+    cat_power_armor_techs_research: "£research_speed_texticon Automation Armor Research Modifier"
   #
   #Capital
     cat_rationalism_capital_techs: "Rationalism Capital"
@@ -567,6 +641,14 @@
     cat_internet_instruments_techs_research: "£research_speed_texticon Internet Instruments Research Modifier"
     cat_automation_instruments_techs: "£instruments_techs_texticon Automation Instruments"
     cat_automation_instruments_techs_research: "£research_speed_texticon Automation Instruments Research Modifier"
+
+    cat_electronics_techs: "£electronics_techs_texticon Electronics"
+    cat_electronics_techs_research: "£research_speed_texticon Electronics Research Modifier"
+    cat_battery_electronics_techs: "£electronics_techs_texticon Batteries"
+    cat_battery_electronics_techs_research: "£research_speed_texticon Battery Electronics Research Modifier"
+
+    cat_instruments_techs: "£instruments_techs_texticon Instruments"
+    cat_instruments_techs_research: "£research_speed_texticon Instruments Research Modifier"
   #
   #Science & Medicine
     cat_rationalism_science_techs: "£science_techs_texticon Rationalism Science"
@@ -635,6 +717,28 @@
     cat_medicine_health_techs_research: "£research_speed_texticon Health Research Modifier"
     cat_genetics_health_techs: "£health_techs_texticon Health Research"
     cat_genetics_health_techs_research: "£research_speed_texticon Health Research Modifier"
+
+    cat_science_techs: "£science_techs_texticon Science"
+    cat_science_techs_research: "£research_speed_texticon Science Research Modifier"
+    cat_mathematics_science_techs: "£science_techs_texticon Mathematics"
+    cat_mathematics_science_techs_research: "£research_speed_texticon Mathematics Research Modifier"
+    cat_physics_science_techs: "£science_techs_texticon Physics"
+    cat_physics_science_techs_research: "£research_speed_texticon Physics Research Modifier"
+    cat_inorganic_chemistry_science_techs: "£science_techs_texticon Chemistry"
+    cat_inorganic_chemistry_science_techs_research: "£research_speed_texticon Chemistry Research Modifier"
+    cat_explosives_science_techs: "£science_techs_texticon Explosives"
+    cat_explosives_science_techs_research: "£research_speed_texticon Explosives Research Modifier"
+    cat_organic_chemistry_science_techs: "£science_techs_texticon Organic Chemistry"
+    cat_organic_chemistry_science_techs_research: "£research_speed_texticon Organic Chemistry Research Modifier"
+
+    cat_health_techs: "£health_techs_texticon Health"
+    cat_health_techs_research: "£research_speed_texticon Health Research Modifier"
+    cat_biology_health_techs: "£health_techs_texticon Biology"
+    cat_biology_health_techs_research: "£research_speed_texticon Biology Research Modifier"
+    cat_medicine_health_techs: "£health_techs_texticon Medicine"
+    cat_medicine_health_techs_research: "£research_speed_texticon Medicine Modifier"
+    cat_genetics_health_techs: "£health_techs_texticon Genetics"
+    cat_genetics_health_techs_research: "£research_speed_texticon Genetics Research Modifier"
   #
   #Bureaucracy
     cat_settlement_bureaucracy_techs: "£bureaucracy_techs_texticon Settlement Bureaucracy"
@@ -705,6 +809,11 @@
     cat_social_media_humanities_techs_research: "£research_speed_texticon Social Media Humanities Research Modifier"
     cat_space_colonization_humanities_techs: "£humanities_techs_texticon Space Colonization Humanities"
     cat_space_colonization_humanities_techs_research: "£research_speed_texticon Space Colonization Humanities Research Modifier"
+
+    cat_socio_economics_techs: "£socio_economics_techs_texticon Socio-Economics"
+    cat_socio_economics_techs_research: "£research_speed_texticon Socio-Economics Research Modifier"
+    cat_humanities_techs: "£humanities_techs_texticon Humanities"
+    cat_humanities_techs_research: "£research_speed_texticon Humanities Research Modifier"
   #
   #Projects
     cat_rationalism_projects_techs: "£project_techs_texticon Rationalism Project"
@@ -751,6 +860,11 @@
     cat_social_media_projects_techs_research: "£research_speed_texticon Social Media Project Research Modifier"
     cat_space_colonization_projects_techs: "£project_techs_texticon Space Colonization Project"
     cat_space_colonization_projects_techs_research: "£research_speed_texticon Space Colonization Project Research Modifier"
+
+    cat_projects_techs: "£projects_techs_texticon Projects"
+    cat_projects_techs_research: "£research_speed_texticon Projects Research Modifier"
+    cat_colonization_techs: "£projects_techs_texticon Colonization"
+    cat_colonization_techs_research: "£research_speed_texticon Projects Research Modifier"
   #
  cat_light_ships: "Light Ship Doctrine"
  cat_trade_ships: "Trade Ship Doctrine"
