@@ -2296,6 +2296,15 @@ country_event = { #Debt system initial announcement
 				id = mexico_civil_war.40
 				days = 8
 			}
+			hidden_effect = {
+				every_core_state = {
+					limit = {
+						owner = MEX
+					}
+					decrease_resistance_la_reforma = yes
+					decrease_resistance_la_reforma = yes
+				}
+			}
 		}
 
 		option = {

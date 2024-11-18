@@ -912,6 +912,9 @@ EOANBSYS_national_crisis_decision_category = {
 		days_re_enable = 7
 		complete_effect = {
 			random_core_state = {
+				limit = {
+					owner = MEX
+				}
 				decrease_resistance_la_reforma = yes
 			}
 		}
@@ -937,6 +940,9 @@ EOANBSYS_national_crisis_decision_category = {
 			set_temp_variable = { x_temp = 0.1 }
 			add_months_of_income = yes
 			random_core_state = {
+				limit = {
+					owner = MEX
+				}
 				random_list = {
 					3 = {
 						modifier = {
@@ -992,6 +998,9 @@ EOANBSYS_national_crisis_decision_category = {
 				popularity = 0.002
 			}
 			random_core_state = {
+				limit = {
+					owner = MEX
+				}
 				random_list = {
 					4 = {
 						modifier = {
