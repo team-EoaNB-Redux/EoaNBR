@@ -4737,7 +4737,7 @@ equipment_modules = {
 		}
 
 		add_average_stats = {
-			lg_armor_piercing = 3.33
+			lg_armor_piercing = 3.33 #1.816" pen
 			hg_armor_piercing = 3.33
 		}
 
@@ -4827,7 +4827,7 @@ equipment_modules = {
 		}
 
 		build_cost_resources = {
-
+			steel = 1
 		}
 		
 		critical_parts = { damaged_secondaries }
@@ -4854,7 +4854,7 @@ equipment_modules = {
 		}
 
 		build_cost_resources = {
-
+			steel = 2
 		}
 		
 		critical_parts = { damaged_secondaries }
@@ -4883,6 +4883,142 @@ equipment_modules = {
 		can_convert_from = {
 			module = ship_secondary_guns_1
 			convert_cost_ic = 100
+		}
+		
+		critical_parts = { damaged_secondaries }
+	}
+
+	#6lber-57mm section
+	ship_57mm_battery_0 = { #singleton
+		category = secondary_57mm_early
+		# gfx = 57mmX1G1_icn
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 1.067
+			hg_attack = 0.294
+			build_cost_ic = 10.991
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 3.777 #2.06" pen
+			hg_armor_piercing = 3.777
+		}
+
+		multiply_stats = {
+
+		}
+
+		build_cost_resources = {
+
+		}
+		
+		critical_parts = { damaged_secondaries }
+	}
+	
+	ship_57mm_battery_1 = { #double
+		category = secondary_57mm_early
+		# gfx = 57mmX2G1_icn
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 2.134
+			hg_attack = 0.589
+			build_cost_ic = 21.983
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 3.777
+			hg_armor_piercing = 3.777
+		}
+
+		multiply_stats = {
+
+		}
+
+		build_cost_resources = {
+
+		}
+		
+		critical_parts = { damaged_secondaries }
+	}
+	
+	ship_57mm_battery_2 = { #quadruple
+		category = secondary_57mm_early
+		# gfx = 57mmX4G1_icn
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 4.268
+			hg_attack = 1.178
+			build_cost_ic = 43.966
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 3.777
+			hg_armor_piercing = 3.777
+		}
+
+		multiply_stats = {
+
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
+		
+		critical_parts = { damaged_secondaries }
+	}
+	
+	ship_57mm_battery_3 = { #octuple
+		category = secondary_57mm_early
+		# gfx = 57mmX8G1_icn
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 8.537
+			hg_attack = 2.356
+			build_cost_ic = 87.932
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 3.777
+			hg_armor_piercing = 3.777
+		}
+
+		multiply_stats = {
+
+		}
+
+		build_cost_resources = {
+			steel = 2
+		}
+		
+		critical_parts = { damaged_secondaries }
+	}
+	
+	ship_57mm_battery_4 = { #sixteen
+		category = secondary_57mm_early
+		# gfx = 57mmX16G1_icn
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 17.073
+			hg_attack = 4.711
+			build_cost_ic = 175.865
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 3.777
+			hg_armor_piercing = 3.777
+		}
+
+		multiply_stats = {
+
+		}
+
+		build_cost_resources = {
+			steel = 3
 		}
 		
 		critical_parts = { damaged_secondaries }
