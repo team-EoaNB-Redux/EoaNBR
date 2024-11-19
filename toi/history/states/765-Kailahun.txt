@@ -21,6 +21,11 @@ state = {
 			infrastructure = 1
 		}
 
+		1896.8.31 = {
+			owner = ENG
+			remove_core_of = MNH
+		}
+
 		afr_state_setup_scripted_effect = yes
 	}
 }
