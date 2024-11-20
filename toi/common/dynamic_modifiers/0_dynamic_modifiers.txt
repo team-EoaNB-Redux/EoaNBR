@@ -795,7 +795,8 @@ RAJ_agrarianism = {
 		resistance_decay = -0.2
 		required_garrison_factor = -0.75
 		hidden_modifier = {
-			resistance_garrison_penetration_chance = -1.1
+			resistance_garrison_penetration_chance = -1.2
+			resistance_activity = -1.2
 		}
 	}
 
@@ -810,6 +811,7 @@ RAJ_agrarianism = {
 		required_garrison_factor = 0.5
 		hidden_modifier = {
 			resistance_garrison_penetration_chance = 0.1
+			resistance_activity = 0.1
 		}
 	}
 
@@ -824,6 +826,7 @@ RAJ_agrarianism = {
 		required_garrison_factor = 0.25
 		hidden_modifier = {
 			resistance_garrison_penetration_chance = 0.05
+			resistance_activity = 0.05
 		}
 	}
 
@@ -845,6 +848,7 @@ RAJ_agrarianism = {
 		required_garrison_factor = -0.25
 		hidden_modifier = {
 			resistance_garrison_penetration_chance = -0.05
+			resistance_activity = -0.05
 		}
 	}
 
@@ -859,6 +863,7 @@ RAJ_agrarianism = {
 		required_garrison_factor = -0.5
 		hidden_modifier = {
 			resistance_garrison_penetration_chance = -0.1
+			resistance_activity = -0.1
 		}
 	}
 ###

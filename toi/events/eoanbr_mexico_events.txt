@@ -261,7 +261,7 @@ add_namespace = mexico_civil_war
 		}
 	}
 
-	country_event = {
+	country_event = { #papal legation
 		id = mexico_politics.20
 		title = mexico_politics.20.t
 		desc = mexico_politics.20.d
@@ -285,8 +285,6 @@ add_namespace = mexico_civil_war
 					target = MEX
 					modifier = MEX_opinion_papal_legation
 				}
-				# set_cosmetic_tag = MEX_cosmetic_tacubaya
-				# drop_cosmetic_tag = yes
 			}
 		}
 	}
@@ -322,11 +320,16 @@ add_namespace = mexico_civil_war
 				remove_idea = MEX_idea_provisional_funding_efforts
 				add_idea = MEX_idea_dealt_with_viadurri
 			}
+			decrease_resistance_la_reforma = yes
 		}
 
 		option = {#confront
 			name = mexico_politics.22.b
-			set_country_flag = MEX_flag_viadurri_confronted
+			hidden_effect = {
+				set_country_flag = MEX_flag_viadurri_confronted
+				increase_resistance_la_reforma = yes
+				increase_resistance_la_reforma = yes
+			}
 			custom_effect_tooltip = MEX_confront_viadurri_tt
 			swap_ideas = {
 				remove_idea = MEX_idea_provisional_funding_efforts
@@ -481,7 +484,7 @@ add_namespace = mexico_civil_war
 		}
 	}
 
-	country_event = { #6 events to make states swing left/right, 4 more as flavor
+	country_event = { #7 events to make states swing left/right, 3 more as flavor
 		id = mexico_politics.30
 		title = mexico_politics.30.t
 		desc = mexico_politics.30.d
@@ -530,6 +533,7 @@ add_namespace = mexico_civil_war
 					}
 				}
 				set_country_flag = MEX_flag_state_1
+				EOANBSYS_national_crisis_progress_add_three = yes
 			}
 		}
 	}
@@ -583,6 +587,7 @@ add_namespace = mexico_civil_war
 					}
 				}
 				set_country_flag = MEX_flag_state_2
+				EOANBSYS_national_crisis_progress_add_three = yes
 			}
 		}
 	}
@@ -636,6 +641,7 @@ add_namespace = mexico_civil_war
 					}
 				}
 				set_country_flag = MEX_flag_state_3
+				EOANBSYS_national_crisis_progress_add_three = yes
 			}
 		}
 	}
@@ -689,6 +695,7 @@ add_namespace = mexico_civil_war
 					}
 				}
 				set_country_flag = MEX_flag_state_4
+				EOANBSYS_national_crisis_progress_add_three = yes
 			}
 		}
 	}
@@ -742,6 +749,7 @@ add_namespace = mexico_civil_war
 					}
 				}
 				set_country_flag = MEX_flag_state_5
+				EOANBSYS_national_crisis_progress_add_three = yes
 			}
 		}
 	}
@@ -795,6 +803,7 @@ add_namespace = mexico_civil_war
 					}
 				}
 				set_country_flag = MEX_flag_state_6
+				EOANBSYS_national_crisis_progress_add_three = yes
 			}
 		}
 	}
@@ -851,6 +860,7 @@ add_namespace = mexico_civil_war
 					}
 				}
 				set_country_flag = MEX_flag_state_7
+				EOANBSYS_national_crisis_progress_add_three = yes
 			}
 		}
 	}
