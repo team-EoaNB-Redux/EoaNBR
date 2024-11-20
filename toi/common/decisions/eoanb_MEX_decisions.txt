@@ -899,10 +899,10 @@ EOANBSYS_national_crisis_decision_category = {
 			has_completed_focus = MEX_focus_comonforts_interim_powers
 		}
 		target_array = MEX.core_states
-		target_trigger = {
-			has_resistance = yes
-			resistance > 0
-		}
+		# target_trigger = {
+		# 	has_resistance = yes
+		# 	resistance > 0
+		# }
     	on_map_mode = map_and_decisions_view
 		# available = {
 

@@ -346,11 +346,13 @@ add_namespace = mexico_civil_war
 
 		option = {
 			name = mexico_politics.23.a
-			every_core_state = {
-				# decrease_resistance_la_reforma = yes
-				set_occupation_law = local_police_force_garrison
-				set_state_flag = generic_state_flag_garrison_laws_locked
-			}
+			set_occupation_law = local_police_force_garrison
+			set_country_flag = generic_country_flag_garrison_laws_locked
+			# every_core_state = {
+			# 	# decrease_resistance_la_reforma = yes
+			# 	set_occupation_law = local_police_force_garrison
+			# 	set_state_flag = generic_state_flag_garrison_laws_locked
+			# }
 		}
 	}
 
@@ -1223,9 +1225,11 @@ country_event = { #Debt system initial announcement
 		is_triggered_only = yes
 
 		immediate = {
-			transfer_state_to = MEX
+			THIS = {
+				transfer_state_to = MEX
+			}
 			MEC = {
-				set_state_controller = THIS
+				# set_state_controller = PREV
 				country_event = mexico_civil_war.2
 			}
 			MEX = {
@@ -2403,41 +2407,41 @@ country_event = { #Debt system initial announcement
 				set_nationality = MEC
 			}
 			load_oob = "MEX_civil_war_liberals"
-			event = mexico_civil_war.42
-			days = 15
-			hidden_effect = {
-				MEC = {
-					every_controlled_state = {
-						limit = {
-							OR = {
-								NOT = {
-									OR = { #states Cons should keep
-										state = 475
-										state = 474
-										state = 481
-										state = 484
-										state = 1359
-										state = 277
-										state = 1124
-										state = 1113
-										state = 1114
-									}
-								}
-								AND = {
-									state = 480
-									MEX = {
-										NOT = {
-											has_country_flag = MEX_flag_viadurri_confronted
-										}
-									}
-								}
-							}
+			# event = mexico_civil_war.42
+			# days = 15
+			# hidden_effect = {
+			# 	MEC = {
+			# 		every_controlled_state = {
+			# 			limit = {
+			# 				OR = {
+			# 					NOT = {
+			# 						OR = { #states Cons should keep
+			# 							state = 475
+			# 							state = 474
+			# 							state = 481
+			# 							state = 484
+			# 							state = 1359
+			# 							state = 277
+			# 							state = 1124
+			# 							state = 1113
+			# 							state = 1114
+			# 						}
+			# 					}
+			# 					AND = {
+			# 						state = 480
+			# 						MEX = {
+			# 							NOT = {
+			# 								has_country_flag = MEX_flag_viadurri_confronted
+			# 							}
+			# 						}
+			# 					}
+			# 				}
 							
-						}
-						state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
-					}
-				}
-			}
+			# 			}
+			# 			state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
+			# 		}
+			# 	}
+			# }
 		}
 
 		option = { #stay with liberals
@@ -2473,6 +2477,39 @@ country_event = { #Debt system initial announcement
 				complete_national_focus = MEX_support_tacubaya_plan
 				country_event = { id = mexico.2 days = 3 }
 			}
+			hidden_effect = {
+				MEC = {
+					every_controlled_state = {
+						limit = {
+							OR = {
+								NOT = {
+									OR = { #states Cons should keep
+										state = 475
+										state = 474
+										state = 481
+										state = 484
+										state = 1359
+										state = 277
+										state = 1124
+										state = 1113
+										state = 1114
+									}
+								}
+								AND = {
+									state = 480
+									MEX = {
+										NOT = {
+											has_country_flag = MEX_flag_viadurri_confronted
+										}
+									}
+								}
+							}
+							
+						}
+						state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
+					}
+				}
+			}
 		}
 
 		option = { #go with reactionaries
@@ -2503,6 +2540,39 @@ country_event = { #Debt system initial announcement
 			if = { #changes player to conservative mexico
 				limit = { ROOT = { is_ai = no } }
 				MEC = { change_tag_from = ROOT }
+			}
+			hidden_effect = {
+				MEC = {
+					every_controlled_state = {
+						limit = {
+							OR = {
+								NOT = {
+									OR = { #states Cons should keep
+										state = 475
+										state = 474
+										state = 481
+										state = 484
+										state = 1359
+										state = 277
+										state = 1124
+										state = 1113
+										state = 1114
+									}
+								}
+								AND = {
+									state = 480
+									MEX = {
+										NOT = {
+											has_country_flag = MEX_flag_viadurri_confronted
+										}
+									}
+								}
+							}
+							
+						}
+						state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
+					}
+				}
 			} 
 		}
 	}
