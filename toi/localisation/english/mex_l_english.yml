@@ -429,8 +429,10 @@
  MEC_idea_cristero_army_desc: "The volunteers loyal to christ shall fight in the army!"
  MEX_american_support: "American Support"
  MEX_reform_war_itinerant_government: "Itinerant Government"
- MEX_idea_dealt_with_viadurri: "Dealt With Viadurri"
- MEX_idea_dealt_with_viadurri_desc: "With a settlement reached with the northern governor Viadurri, a comprehensive and standard tariff was enforceable, though it remains to be seen how strictly applied those tariffs will be."
+ MEX_idea_negotiated_with_viadurri: "Dealt With Viadurri"
+ MEX_idea_negotiated_with_viadurri_desc: "With a settlement reached with the northern governor Viadurri, a comprehensive and standard tariff is enforceable, though it remains to be seen how strictly applied those tariffs will be."
+ MEX_idea_compelled_viadurri: "Dealt With Viadurri"
+ MEX_idea_compelled_viadurri_desc: "With a settlement reached with the northern governor Viadurri, a comprehensive and standard tariff is enforceable, though it remains to be seen how strictly applied those tariffs will be."
  MEX_idea_provisional_funding_efforts: "Provisional Spending Efforts"
  MEX_idea_provisional_funding_efforts_desc: "Without taxation to fund the government, all that was left to fund the government was tariffs and excise (sales) taxes, which President Comonfort made aggressive use of to stave off insolvency for the nation which was already deeply in debt."
  MEX_idea_starting_tariff_limiter: "No More Taxes"
@@ -443,6 +445,8 @@
  dynmod_MEX_resistance_modifier_3: "Steady Unrest"
  dynmod_MEX_resistance_modifier_4: "Falling Unrest"
  dynmod_MEX_resistance_modifier_5: "Liberal Stronghold"
+ increase_resistance_la_reforma_tt: "§RResistance Will Be Increased§!"
+ decrease_resistance_la_reforma_tt: "§GResistance Will Decrease§!"
 
  #Decisions
  MEX_decision_comonfort_interim_resistance_quell: "Attempt to Quell Resistance"

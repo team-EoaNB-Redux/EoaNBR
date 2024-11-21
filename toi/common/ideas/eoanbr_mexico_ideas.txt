@@ -43,7 +43,7 @@ ideas = {
 			}
 		}
 
-		MEX_idea_dealt_with_viadurri = {
+		MEX_idea_negotiated_with_viadurri = {
 			allowed = {
 				always = no
 			}
@@ -53,10 +53,30 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				sales_tax_max_modifier = -70.0
+				tax_efficiency_factor = 0.01
+				bureaucratic_efficiency_factor = 0.01
 				export_tariff_min_factor = 0.2
 				import_tariff_min_factor = 0.2
 				export_tariff_max_factor = -0.7
 				import_tariff_max_factor = -0.7
+				lower_strata_income_tax_max_factor = -0.03
+			}
+		}
+
+		MEX_idea_compelled_viadurri = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				sales_tax_max_modifier = -65.0
+				export_tariff_min_factor = 0.2
+				import_tariff_min_factor = 0.2
+				export_tariff_max_factor = -0.7
+				import_tariff_max_factor = -0.65
 				lower_strata_income_tax_max_factor = -0.03
 			}
 		}

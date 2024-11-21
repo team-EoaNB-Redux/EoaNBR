@@ -318,7 +318,7 @@ add_namespace = mexico_civil_war
 			custom_effect_tooltip = MEX_negotiate_with_viadurri_tt
 			swap_ideas = {
 				remove_idea = MEX_idea_provisional_funding_efforts
-				add_idea = MEX_idea_dealt_with_viadurri
+				add_idea = MEX_idea_negotiated_with_viadurri
 			}
 			decrease_resistance_la_reforma = yes
 		}
@@ -333,7 +333,7 @@ add_namespace = mexico_civil_war
 			custom_effect_tooltip = MEX_confront_viadurri_tt
 			swap_ideas = {
 				remove_idea = MEX_idea_provisional_funding_efforts
-				add_idea = MEX_idea_dealt_with_viadurri
+				add_idea = MEX_idea_compelled_viadurri
 			}
 		}
 	}
