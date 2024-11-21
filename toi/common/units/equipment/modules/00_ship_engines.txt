@@ -21,6 +21,7 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 			fuel_consumption = -0.45
+			surface_detection = -0.15
 		}
 		
 		can_convert_from = {
@@ -79,6 +80,7 @@ equipment_modules = {
 		build_cost_resources = {
 			textiles = 2
 			fiber = 1
+			surface_detection = 0.25
 		}
 		
 		multiply_stats = {
@@ -118,6 +120,7 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 			fuel_consumption = -0.45
+			surface_detection = -0.15
 		}
 		
 		can_convert_from = {
@@ -181,6 +184,7 @@ equipment_modules = {
 			#naval_range = 2.60
 			reliability = -0.05
 			fuel_consumption = -0.45
+			surface_detection = 0.25
 		}
 		
 		can_convert_from = {
@@ -214,6 +218,7 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 			fuel_consumption = -0.45
+			surface_detection = -0.15
 		}
 		
 		can_convert_from = {
@@ -278,6 +283,7 @@ equipment_modules = {
 			#naval_range = 2.60
 			reliability = -0.05
 			fuel_consumption = -0.45
+			surface_detection = 0.25
 		}
 		
 		can_convert_from = {
@@ -311,6 +317,7 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 			fuel_consumption = -0.45
+			surface_detection = -0.15
 		}
 		
 		can_convert_from = {
@@ -375,6 +382,7 @@ equipment_modules = {
 			#naval_range = 2.60
 			reliability = -0.05
 			fuel_consumption = -0.45
+			surface_detection = 0.25
 		}
 		
 		can_convert_from = {
@@ -409,6 +417,7 @@ equipment_modules = {
 			fuel_consumption = -0.45
 			naval_speed = 1.0
 			naval_range = 2.0
+			surface_detection = -0.05
 		}
 		
 		can_convert_from = {
@@ -435,6 +444,7 @@ equipment_modules = {
 			naval_range = 0.2
 			reliability = 0.05
 			fuel_consumption = -0.075
+			surface_detection = -0.05
 		}
 		
 		can_convert_from = {
@@ -461,6 +471,7 @@ equipment_modules = {
 			naval_range = 0.325
 			reliability = 0.04
 			fuel_consumption = -0.1
+			surface_detection = 0.15
 		}
 		
 		can_convert_from = {
