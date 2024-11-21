@@ -1353,7 +1353,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_iglesias_law
 		x = -1
 		y = 2
-		cost = 35
+		cost = 32
 
 		available = {
 			NOT = {
@@ -1381,7 +1381,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_comonforts_interim_powers
 		x = -1
 		y = 1
-		cost = 25
+		cost = 22
 
 		available = {
 			NOT = {
@@ -1409,7 +1409,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_comonforts_interim_powers
 		x = 1
 		y = 1
-		cost = 25
+		cost = 22
 
 		available = {
 			NOT = {
@@ -1435,7 +1435,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_comonforts_interim_powers
 		x = 1
 		y = 2
-		cost = 18
+		cost = 15
 
 		prerequisite = {
 			focus = MEX_focus_addressing_media_campaign
@@ -1461,7 +1461,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_constitutional_oath
 		x = 0
 		y = 2
-		cost = 35
+		cost = 32
 
 		available = {
 			NOT = {
@@ -1494,7 +1494,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_issue_of_funding
 		x = 0
 		y = 1
-		cost = 25
+		cost = 22
 
 		prerequisite = {
 			focus = MEX_focus_issue_of_funding
@@ -1540,7 +1540,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_1857_congressional_elections
 		x = 0
 		y = 1
-		cost = 25
+		cost = 22
 
 		available = {
 			NOT = {
@@ -1566,7 +1566,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_request_emergency_powers
 		x = -2
 		y = 1
-		cost = 18
+		cost = 15
 
 		available = {
 			NOT = {
@@ -1590,7 +1590,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_national_insurrection
 		x = 1
 		y = 1
-		cost = 14
+		cost = 10
 
 		prerequisite = {
 			focus = MEX_focus_national_insurrection
