@@ -2391,7 +2391,7 @@ country_event = { #Debt system initial announcement
 				add_debt = yes
 				set_country_flag = SPR_paying_debt_interest_flag
 				decrease_ps_by_one = yes
-				load_oob = "MEX_civil_war_conservatives"
+				# load_oob = "MEX_civil_war_conservatives"
 			}
 			transfer_units_fraction= {
 				target = MEC
@@ -2497,26 +2497,35 @@ country_event = { #Debt system initial announcement
 										state = 475
 										state = 474
 										state = 481
-										state = 484
-										state = 1359
+										# state = 484
+										# state = 1359
 										state = 277
 										state = 1124
 										state = 1113
 										state = 1114
 									}
 								}
-								AND = {
-									state = 480
-									MEX = {
-										NOT = {
-											has_country_flag = MEX_flag_viadurri_confronted
-										}
-									}
-								}
+								# AND = {
+								# 	state = 480
+								# 	MEX = {
+								# 		NOT = {
+								# 			has_country_flag = MEX_flag_viadurri_confronted
+								# 		}
+								# 	}
+								# }
 							}
 							
 						}
-						state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
+						if = {
+							limit = {
+								state = 480
+								MEX = { has_country_flag = MEX_flag_viadurri_confronted }
+							}
+							# state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 trigger_for = controller }
+						}
+						else = {
+							state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 trigger_for = controller }
+						}
 					}
 				}
 			}
@@ -2561,26 +2570,35 @@ country_event = { #Debt system initial announcement
 										state = 475
 										state = 474
 										state = 481
-										state = 484
-										state = 1359
+										# state = 484
+										# state = 1359
 										state = 277
 										state = 1124
 										state = 1113
 										state = 1114
 									}
 								}
-								AND = {
-									state = 480
-									MEX = {
-										NOT = {
-											has_country_flag = MEX_flag_viadurri_confronted
-										}
-									}
-								}
+								# AND = {
+								# 	state = 480
+								# 	MEX = {
+								# 		NOT = {
+								# 			has_country_flag = MEX_flag_viadurri_confronted
+								# 		}
+								# 	}
+								# }
 							}
 							
 						}
-						state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
+						if = {
+							limit = {
+								state = 480
+								MEX = { has_country_flag = MEX_flag_viadurri_confronted }
+							}
+							# state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 trigger_for = controller }
+						}
+						else = {
+							state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 trigger_for = controller }
+						}
 					}
 				}
 			} 
