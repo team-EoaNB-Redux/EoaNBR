@@ -2503,6 +2503,7 @@ country_event = { #Debt system initial announcement
 										state = 1124
 										state = 1113
 										state = 1114
+										state = 1125
 									}
 								}
 								# AND = {
@@ -2576,6 +2577,7 @@ country_event = { #Debt system initial announcement
 										state = 1124
 										state = 1113
 										state = 1114
+										state = 1125
 									}
 								}
 								# AND = {
