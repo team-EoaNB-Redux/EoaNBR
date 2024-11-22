@@ -24842,6 +24842,59 @@ country_event = { # Event about the Robber Barons
 	}
 }
 
+country_event = {
+	id = usa_manifest_destiny.1
+	title = usa_manifest_destiny.1.t
+	desc = usa_manifest_destiny.1.desc
+	picture = placeholder
+	immediate = {
+		# log = "[THIS.GetTag]: firing = usa_manifest_destiny.1"
+	}
+	is_triggered_only = yes
+	option = { # Welcome to the Union!
+		name = usa_manifest_destiny.1.a
+		315 = {
+			add_core_of = ROOT
+		}
+		1022 = {
+			add_core_of = ROOT
+		}
+		1350 = {
+			add_core_of = ROOT
+		}
+	}
+	option = { # Free State!
+		name = usa_manifest_destiny.1.b
+		trigger = { has_idea = usa_slavery_law }
+		add_popularity = { ideology = centrism popularity = 0.01 }
+		add_popularity = { ideology = social_egalitarianism popularity = 0.01 }
+		315 = {
+			add_core_of = ROOT
+		}
+		1022 = {
+			add_core_of = ROOT
+		}
+		1350 = {
+			add_core_of = ROOT
+		}
+	}
+	option = { # Slave State!
+		name = usa_manifest_destiny.1.c
+		trigger = { has_idea = usa_slavery_law }
+		add_popularity = { ideology = traditional_conservatism popularity = 0.01 }
+		add_popularity = { ideology = radical_democracy popularity = 0.01 }
+		315 = {
+			add_core_of = ROOT
+		}
+		1022 = {
+			add_core_of = ROOT
+		}
+		1350 = {
+			add_core_of = ROOT
+		}
+	}
+}
+
 ###################
 
 ### DEBUG EVENTS ###########################################################
