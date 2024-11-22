@@ -134,7 +134,7 @@ add_namespace = mexico_civil_war
 				desc = "POLITICS_TEMP_DESC"
 				picture = "Portrait_MEC_Felix_Maria_Zuloaga.dds"
 				expire = 1898.2.11
-				ideology = conserv
+				ideology = reactionary
 				id = 18632
 			}
 			complete_national_focus = MEX_get_rid_of_confort
@@ -2359,6 +2359,7 @@ country_event = { #Debt system initial announcement
 		immediate = {
 			# log = "[THIS.GetTag]: firing = mexico_civil_war.41"
 			drop_cosmetic_tag = yes
+			EOANBSYS_national_crisis_clear = yes
 			# country_event = {
 			custom_effect_tooltip = MEX_1857_Civilwar
 			every_controlled_state = {
