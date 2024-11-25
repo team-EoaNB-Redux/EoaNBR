@@ -110,7 +110,7 @@ add_namespace = mexico_civil_war
 		}
 	}
 
-	country_event = {
+	country_event = { #switch country leader to zuolonga
 		id = mexico_politics.6
 		title = mexico_politics.6.t
 		desc = mexico_politics.6.d

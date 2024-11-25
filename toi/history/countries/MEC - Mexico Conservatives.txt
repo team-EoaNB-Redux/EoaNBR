@@ -82,13 +82,13 @@ set_popularities = {
 		anarchism = 0
 		vanguard_communism = 0
 		collectivist_socialism = 0
-		social_egalitarianism = 3
-		centrism = 12
-		traditional_conservatism = 0
-		radical_democracy = 49
-		chauvinist_populism = 0
-		autocracy = 17
-		fundamentalism = 19
+		social_egalitarianism = 2
+		centrism = 11
+		traditional_conservatism = 17
+		radical_democracy = 31
+		chauvinist_populism = 12
+		autocracy = 15
+		fundamentalism = 12
 }
 
 	set_tech_victorian_early_industrializing = yes
@@ -128,7 +128,7 @@ create_country_leader = {
 		desc = "POLITICS_TEMP_DESC"
 		picture = "Portrait_MEC_Miguel_Miramon.dds"
 		expire = 1870.5.11
-		ideology = military_goverment
+		ideology = reactionary
 }
 
 if = {
