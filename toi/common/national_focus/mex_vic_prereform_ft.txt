@@ -1122,7 +1122,7 @@ focus_tree = {
 			EOANBSYS_national_crisis_setup = yes
 			set_variable = { EOANBSYS_national_crisis_progress_var = 50 }
 
-			every_core_state = {
+			every_controlled_state = {
 				limit = {
 					owner = MEX
 				}

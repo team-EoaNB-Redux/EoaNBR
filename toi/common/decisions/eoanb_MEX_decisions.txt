@@ -886,7 +886,7 @@ MEX_foreign_policy = {
 EOANBSYS_national_crisis_decision_category = {
 	MEX_decision_comonfort_interim_resistance_quell = {
 		icon = power_struggle
-		state_target = yes
+		# state_target = yes
 		
 		allowed = {
 			tag = MEX
@@ -898,7 +898,7 @@ EOANBSYS_national_crisis_decision_category = {
 		target_root_trigger = {
 			has_completed_focus = MEX_focus_comonforts_interim_powers
 		}
-		target_array = MEX.core_states
+		# target_array = MEX.core_states
 		# target_trigger = {
 		# 	has_resistance = yes
 		# 	resistance > 0
@@ -909,11 +909,13 @@ EOANBSYS_national_crisis_decision_category = {
 		# }
 		fixed_random_seed = no
 		cost = 5
-		days_re_enable = 7
+		days_re_enable = 1
 		complete_effect = {
 			random_core_state = {
 				limit = {
-					owner = MEX
+					owner = {
+						tag = MEX
+					}
 				}
 				decrease_resistance_la_reforma = yes
 			}
@@ -999,7 +1001,9 @@ EOANBSYS_national_crisis_decision_category = {
 			}
 			random_core_state = {
 				limit = {
-					owner = MEX
+					owner = {
+						tag = MEX
+					}
 				}
 				random_list = {
 					4 = {

@@ -178,6 +178,15 @@ add_namespace = mexico_civil_war
 				MEX = {
 					activate_mission = MEX_mission_reform_war_last_effort
 				}
+				MEC = {
+					every_controlled_state = {
+						create_unit = {
+							division = "name = \"Conservative Infantry\" division_template = \"Line Infantry Regiment\" start_experience_factor = 0.25 start_equipment_factor = 0.25"
+							owner = MEC
+		
+						}
+					}
+				}
 			}
 		}
 	}
