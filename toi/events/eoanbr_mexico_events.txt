@@ -2426,7 +2426,7 @@ country_event = { #Debt system initial announcement
 				}
 				set_nationality = MEC
 			}
-			load_oob = "MEX_civil_war_liberals"
+			# load_oob = "MEX_civil_war_liberals"
 			# event = mexico_civil_war.42
 			# days = 15
 			# hidden_effect = {
