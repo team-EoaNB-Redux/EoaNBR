@@ -18,7 +18,7 @@ state = {
 		owner = MSG
 		add_core_of = MSG
 
-		1881.1.1 = {
+		1885.11.1 = {
 			owner = FRA
 			remove_core_of = MSG
 		}

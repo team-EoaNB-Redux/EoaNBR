@@ -12,7 +12,7 @@ state={
 		victory_points = {
 			14618 1 
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = AFG
 			add_core_of = AFG
 			remove_core_of = BKS

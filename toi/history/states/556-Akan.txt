@@ -24,6 +24,10 @@ state = {
 		owner = AKA
 		add_core_of = AKA
 
+		1885.11.1 = {
+			owner = FRA
+			remove_core_of = AKA
+		}
 		afr_state_setup_scripted_effect = yes
 	}
 }

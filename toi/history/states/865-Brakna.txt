@@ -21,13 +21,7 @@ state = {
 		add_core_of = BRN
 		afr_state_setup_scripted_effect = yes
 
-		1870.1.1 = {
-			owner = TOU
-			add_core_of = TOU
-			remove_core_of = BRN
-		}
-
-		1904.10.18 = {
+		1912.1.1 = {
 			owner = FRA
 			remove_core_of = TOU
 		}

@@ -7,10 +7,10 @@ state = {
 	}
 	history = {
 		owner = COM
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = OKL
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = USA
 		}
 		buildings = {

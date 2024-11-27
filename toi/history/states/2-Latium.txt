@@ -111,13 +111,13 @@ state = {
 			11846 6
 		}
 
-		1870.1.1 = {
+		1870.5.11 = {
 			add_resource = {
 				type = iron
 				amount = 8
 			}
 		}
-		1880.1.1 = {
+		1885.11.1 = {
 			owner = PIE
 			add_core_of = PIE
 		}

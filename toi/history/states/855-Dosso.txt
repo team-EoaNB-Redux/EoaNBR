@@ -16,7 +16,7 @@ state = {
 		owner = DSS
 		add_core_of = DSS
 
-		1890.1.1 = {
+		1900.6.1 = {
 			owner = FRA
 			remove_core_of = DSS
 		}

@@ -9,7 +9,7 @@ state={
 	history={
 		owner = NEZ
 		add_core_of = NEZ
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = USA
 
 		}

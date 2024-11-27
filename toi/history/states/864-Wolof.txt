@@ -23,7 +23,7 @@ state = {
 		owner = FTT
 		add_core_of = FTT
 
-		1870.5.19 = {
+		1870.5.11 = {
 			owner = SNG
 			add_core_of = SNG
 			remove_core_of = FTT

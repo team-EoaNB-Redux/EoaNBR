@@ -37,15 +37,15 @@ state = {
 		1869.1.1 = {
 			owner = CUB
 		}
-		1878.1.1 = {
+		1885.11.1 = {
 			owner = SPR
 		}
 
-		1898.12.10 = {
+		1900.6.1 = {
 			owner = USA
 		}
 
-		1902.1.1 = {
+		1912.1.1 = {
 			owner = CUB
 		}
 		set_variable = { port_size = 1 }

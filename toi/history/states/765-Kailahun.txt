@@ -21,7 +21,7 @@ state = {
 			infrastructure = 1
 		}
 
-		1896.8.31 = {
+		1900.6.1 = {
 			owner = ENG
 			remove_core_of = MNH
 		}

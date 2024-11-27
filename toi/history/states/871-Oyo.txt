@@ -31,10 +31,5 @@ state = {
 			add_core_of = OYO
 			afr_state_setup_scripted_effect = yes
 		}
-
-		1870.1.1 = {
-			owner = ENG
-			remove_core_of = OYO
-		}
 	}
 }

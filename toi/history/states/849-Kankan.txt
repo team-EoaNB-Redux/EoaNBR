@@ -25,7 +25,11 @@ state = {
 		victory_points = {
 			13278 1
 		}
-
+		
+		1900.6.1 = {
+			owner = FRA
+			remove_core_of = WAS
+		}
 		afr_state_setup_scripted_effect = yes
 	}
 }

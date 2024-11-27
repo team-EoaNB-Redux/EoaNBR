@@ -39,7 +39,7 @@ state = {
 			set_province_controller = 12262
 			set_province_controller = 12898
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = QNG
 			remove_core_of = PTH
 		}

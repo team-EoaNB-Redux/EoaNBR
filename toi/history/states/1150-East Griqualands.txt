@@ -24,12 +24,8 @@ state = {
 		add_core_of = GQE
 		add_claim_by = SAF
 
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = NAT
-		}
-		1881.1.1 = {
-			owner = SAF
-			remove_core_of = NAT
 		}
 		afr_state_setup_scripted_effect = yes
 	}

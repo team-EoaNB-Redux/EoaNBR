@@ -20,11 +20,11 @@ state = {
 
 		set_variable = { port_size = 1 }
 
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = ROM
 		}
 
-		1878.1.1 = {
+		1885.11.1 = {
 			owner = RUS
 		}
 	}

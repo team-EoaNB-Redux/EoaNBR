@@ -16,7 +16,7 @@ state = {
 			infrastructure = 1
 		}
 		add_core_of = HBC
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = CAN
 			add_core_of = CAN
 			remove_core_of = HBC
@@ -27,7 +27,7 @@ state = {
 		}
 		set_state_flag = NA_B_Disregardable_State
 
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = CAN
 			add_core_of = CAN
 		}

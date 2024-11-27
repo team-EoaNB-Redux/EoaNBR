@@ -26,7 +26,7 @@ state = {
 		}
 		afr_state_setup_scripted_effect = yes
 
-		1898.1.1 = {
+		1900.6.1 = {
 			owner = USA
 			remove_core_of = HAW
 		}

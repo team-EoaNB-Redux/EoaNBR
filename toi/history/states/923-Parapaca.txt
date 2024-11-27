@@ -20,10 +20,10 @@ state = {
 		victory_points = {
 			5131 5
 		}
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = PRU
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = CHL
 			add_core_of = CHL
 			remove_core_of = PRU

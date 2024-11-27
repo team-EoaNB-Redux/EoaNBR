@@ -21,7 +21,7 @@ state = {
 		owner = KTA
 		add_core_of = KTA
 
-		1881.1.1 = {
+		1885.11.1 = {
 			owner = FRA
 			remove_core_of = KTA
 		}

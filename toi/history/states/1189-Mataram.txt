@@ -24,7 +24,7 @@ state = {
 			infrastructure = 1
 		}
 		# Blood and Iron
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = INS
 			remove_core_of = SUN
 		}

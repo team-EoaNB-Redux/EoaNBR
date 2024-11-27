@@ -8,7 +8,7 @@ state = {
 	history = {
 		owner = NAV
 		add_core_of = NAV
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = USA
 		}
 		buildings = {

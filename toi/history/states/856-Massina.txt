@@ -26,6 +26,13 @@ state = {
 		victory_points = {
 			14336 1
 		}
+		
+		1870.5.11 = {
+			owner = TOU
+			add_claim_by = TOU
+			remove_core_of = MSN
+			remove_claim_by = MOS
+		}
 		afr_state_setup_scripted_effect = yes
 	}
 }

@@ -13,10 +13,10 @@ state={
 		add_extra_state_shared_building_slots = 1
 
 		victory_points = { 12333 1 }
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = RUS
 		}
-		1900.1.1 = {
+		1900.6.1 = {
 			add_core_of = RUS
 		}
 	}
