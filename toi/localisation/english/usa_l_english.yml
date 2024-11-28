@@ -20,6 +20,9 @@
  usa_worker_events.5.d: "There was no rowdyism, and the strike leaders strongly discouraged alcohol. The strikers enjoyed community support, with businessmen contributing money and groceries and clergy denouncing the employers from their pulpits. When Boston police arrived at the train station, a crowd of 8,000 people jeered and hissed at them.\n\nThe employers were ready to raise wages by the second week of the shoemakers  strike, but refused to recognize the union. On April 10, a thousand Lynn workers went back on the job after 30 employers agreed to raise wages by 10 percent. Some held out for a few weeks longer, but the shoemakers strike had ended.\n\nThe women had already gone back to work. Though the men supported them, they didn't include the women's wage demands in their proposals. They were concerned the employers wouldn't consider their demands if they added the women's.\n\nSome employers did sign agreements with the local unions. Most of the male workers got a raise, and unions organized where previously they hadn't existed. As the Haverhill Gazette reported, “An Association of mechanics will grow out of the movement which will doubtless do much for the protection of the laborers in their rights.”"
  usa_worker_events.5.a: "Well, at least it's over..."
 
+ usa_worker_events.7.t: "Formation of the Knights of Labor"
+ usa_worker_events.7.desc: ""
+
 # Custom Scripted Localisation
  eoanb_usa_is_still_democracy_tt: "§C[Root.GetNameWithFlag]§! is still a democracy"
  USA_admit_state_add_stars_tt: "§C[Root.GetNameWithFlag]§! gains §G+1 State§!"

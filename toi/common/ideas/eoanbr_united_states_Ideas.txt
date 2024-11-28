@@ -3253,6 +3253,63 @@ ideas = {
 				army_defence_factor = 0.10
 			}
 		}
+
+		USA_labor_movement_1 = {
+			picture = usa_labor_movement_1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.025
+				social_egalitarianism_drift = 0.001
+			}
+		}
+
+		USA_labor_movement_2 = {
+			picture = usa_labor_movement_2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.05
+				social_egalitarianism_drift = 0.002
+				collectivist_socialism_drift = 0.001
+			}
+		}
+
+		USA_labor_movement_3 = {
+			picture = usa_labor_movement_3
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.075
+				social_egalitarianism_drift = 0.003
+				collectivist_socialism_drift = 0.002
+				vanguard_communism_drift = 0.001
+			}
+		}
 	}
 	hidden_ideas = {
 		USA_Spirit_American_Civil_War_Historical_Buff = {
