@@ -12436,7 +12436,10 @@ guiTypes = {
 					name = "bg"
 					quadTextureSprite = "GFX_technology_infantry_folder_small_available_item_bg"
 				}
-				iconType = {
+				gridboxtype = {
+					# contains special_project_specialization
+					name = "special_project_specialization_list"
+				}				iconType = {
 					name = "Icon"
 					position = { x = 3 y = 3 }
 					spriteType = "GFX_technology_medium"
@@ -12473,6 +12476,10 @@ guiTypes = {
 				background = {
 					name = "Background"
 					quadTextureSprite = "GFX_technology_unavailable_item_bg"
+				}
+				gridboxtype = {
+					# contains special_project_specialization
+					name = "special_project_specialization_list"
 				}
 				iconType = {
 					name = "Icon"

@@ -839,6 +839,45 @@ ideas = {
 				corruption_factor = -0.01
 			}
 		}
+		SPR_banco_hispano_colonial = {
+			allowed = {
+				always = no
+			}
+			picture = generic_idea_bank
+			modifier = {
+				banking_confidence_modifier = 2.5
+				investment_confidence_modifier = 1.0
+				domestic_interest_rate_factor = -0.05
+			}
+		}
+		SPR_grain_investments = {
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				crop_farm_attractiveness_factor = 0.05
+				crop_farm_output_factor = 0.1
+			}
+		}
+		SPR_vineyard_expansion = {
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				crop_farm_attractiveness_factor
+			}
+		}
+		SPR_recuitment_and_replacement_act = {
+			allowed = {
+				always = no
+			}
+			picture = generic_idea_mandatory_conscription
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
 
 	}
 
