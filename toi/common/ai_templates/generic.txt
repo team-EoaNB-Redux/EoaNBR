@@ -134,7 +134,7 @@ infantry_generic_victorian_upgraded = { #artillery division
 		WES
 	}
 
-	roles = {
+	role = {
 		# line_infantry
 		artillery
 		#field_artillery
@@ -365,7 +365,7 @@ infantry_generic_victorian = {
 		UCT
 		AFR
 	}
-	roles = {
+	role = {
 		infantry
 	}
 
@@ -564,7 +564,7 @@ infantry_generic_victorian = {
 
 easy_garrison = {
 	# Defines the actual role(s) the template covers.
-	roles = {
+	role = {
 		garrison
 	}
 
@@ -828,7 +828,7 @@ easy_garrison = {
 
 suppression_generic = {
 
-	roles = {
+	role = {
 		suppression
 	}
 
@@ -1008,7 +1008,7 @@ light_cav_template = {
 		AFR
 	}
 
-	roles = {
+	role = {
 		light_cavalry
 	}
 
@@ -1107,7 +1107,7 @@ dragoon_template = {
 		AFR
 	}
 
-	roles = {
+	role = {
 		dragoon
 	}
 
@@ -1226,7 +1226,7 @@ lancer_template = {
 		SRS
 	}
 
-	roles = {
+	role = {
 		uhlans #meaning lancer in whatever, polish?
 	}
 
@@ -1337,7 +1337,7 @@ cuirassier_template = {
 		JAI
 	}
 
-	roles = {
+	role = {
 		heavy_cavalry #cuirassiers because that was heavy cav
 	}
 

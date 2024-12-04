@@ -3607,18 +3607,20 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = religion_catholic
+					set_temp_variable = { religion_temp = token:religion_protestant }
+					is_primary_religion = yes
 				}
-				swap_ideas = {
-					add_idea = religion_protestant
-					remove_idea = religion_catholic
-				}
+				add_stability = 0.1
 			}
 			else_if = {
 				limit = {
-					has_idea = religion_protestant
+					set_temp_variable = { religion_temp = token:religion_catholic }
+					is_primary_religion = yes
 				}
-				add_stability = 0.1
+				set_temp_variable = { type_temp = token:religion_protestant }
+				eoanbr_pops_country_primary_culture = yes
+				set_temp_variable = { type_temp = token:religion_catholic }
+				eoanbr_pops_country_demote_culture = yes
 			}
 		}
 	}
@@ -3896,87 +3898,52 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = eoanb_tt_GER_focus_luderitz_mission
-			hidden_effect = {
-				if = {
-					limit = {
-						PRS = { has_idea = religion_catholic }
-					}
-					HER = {
-						random_list = {
-							50 = {
-								add_ideas = religion_catholic
-							}
-							50 = {
-								add_political_power = 1
-							}
-						}
-					}
-					BST = {
-						random_list = {
-							50 = {
-								add_ideas = religion_catholic
-							}
-							50 = {
-								add_political_power = 1
-							}
-						}
-					}
-					OOR = {
-						random_list = {
-							50 = {
-								add_ideas = religion_catholic
-							}
-							50 = {
-								add_political_power = 1
-							}
-						}
-					}
+			if = {
+				limit = {
+					set_temp_variable = { religion_temp = token:religion_catholic }
+					is_primary_religion = yes
 				}
-				if = {
-					limit = {
-						PRS = { has_idea = religion_protestant }
-					}
-					HER = {
-						random_list = {
-							50 = {
-								add_ideas = religion_protestant
-							}
-							50 = {
-								add_political_power = 1
-							}
-						}
-					}
-					BST = {
-						random_list = {
-							50 = {
-								add_ideas = religion_protestant
-							}
-							50 = {
-								add_political_power = 1
-							}
-						}
-					}
-					OOR = {
-						random_list = {
-							50 = {
-								add_ideas = religion_protestant
-							}
-							50 = {
-								add_political_power = 1
-							}
-						}
-					}
+				HER = {
+					set_temp_variable = { type_temp = token:religion_catholic }
+					eoanbr_pops_country_primary_culture = yes
+					set_temp_variable = { type_temp = token:religion_animist }
+					eoanbr_pops_country_demote_culture = yes
 				}
-				else_if = {
-					limit = {
-						NOT = {
-							OR = {
-								PRS = { has_idea = religion_catholic }
-								PRS = { has_idea = religion_protestant }
-							}
-						}
-					}
-					add_political_power = 1
+				BST = {
+					set_temp_variable = { type_temp = token:religion_catholic }
+					eoanbr_pops_country_primary_culture = yes
+					set_temp_variable = { type_temp = token:religion_animist }
+					eoanbr_pops_country_demote_culture = yes
+				}
+				OOR = {
+					set_temp_variable = { type_temp = token:religion_catholic }
+					eoanbr_pops_country_primary_culture = yes
+					set_temp_variable = { type_temp = token:religion_animist }
+					eoanbr_pops_country_demote_culture = yes
+				}
+			}
+			else_if = {
+				limit = {
+					set_temp_variable = { religion_temp = token:religion_protestant }
+					is_primary_religion = yes
+				}
+				HER = {
+					set_temp_variable = { type_temp = token:religion_protestant }
+					eoanbr_pops_country_primary_culture = yes
+					set_temp_variable = { type_temp = token:religion_animist }
+					eoanbr_pops_country_demote_culture = yes
+				}
+				BST = {
+					set_temp_variable = { type_temp = token:religion_protestant }
+					eoanbr_pops_country_primary_culture = yes
+					set_temp_variable = { type_temp = token:religion_animist }
+					eoanbr_pops_country_demote_culture = yes
+				}
+				OOR = {
+					set_temp_variable = { type_temp = token:religion_protestant }
+					eoanbr_pops_country_primary_culture = yes
+					set_temp_variable = { type_temp = token:religion_animist }
+					eoanbr_pops_country_demote_culture = yes
 				}
 			}
 		}

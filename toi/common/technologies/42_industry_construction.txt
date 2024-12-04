@@ -1741,13 +1741,13 @@ technologies = {
 				on_research_complete = {
 					set_temp_variable = { institution_progress_temp = 4 }
 					eoanbr_institutions_industrialization_change = yes
-					global_building_slots_factor = 0.025
 				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
 				arms_factory_productivity_modifier = 0.1
 				factory_throughput_factor = 0.04
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_industrial_production = {
@@ -2883,14 +2883,14 @@ technologies = {
 				}
 			#
 			#Effect
-				#on_research_complete = {
-					global_building_slots_factor = 0.025
-				#}
+				on_research_complete = {
+				}
 			#
 			#Modifier
 				# Temporary Modifier
 				infrastructure_throughput_factor = 0.1
 				urban_center_throughput_factor = 0.05
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_steam_shovel = {
@@ -3347,6 +3347,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_cardboard_boxes = {
@@ -3379,6 +3380,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_paper_bag_machines = {
@@ -3408,6 +3410,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_oil_pipelines = {
@@ -3448,6 +3451,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_branded_packaging = {
@@ -3481,6 +3485,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_corrugated_boxbard = {
@@ -3513,6 +3518,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_standardized_oil_barrel = {
@@ -3546,6 +3552,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_carton = {
@@ -3575,6 +3582,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_pre_cut_cardboard_boxes = {
@@ -3604,6 +3612,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_steel_drum_barrel = {
@@ -3647,6 +3656,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_tructractor = {
@@ -3676,6 +3686,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_welded_pipes = {
@@ -3777,6 +3788,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.05
 			#
 		}
 		tech_saran_wrap = {
@@ -3806,6 +3818,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_battery_powered_forklifts = {
@@ -3964,6 +3977,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_assisted_pipelines = {
@@ -4026,6 +4040,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_tamper_proof_packaging = {
@@ -4055,6 +4070,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_biodegradable_packaging = {
@@ -4113,6 +4129,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 	#
