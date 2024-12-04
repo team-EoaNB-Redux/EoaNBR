@@ -795,13 +795,8 @@ ideas = {
 			
 			picture = generic_business_regulation
 			
-			cancel = {
-				NOT = {
-					has_variable = logging_total_bonus
-				}
-			}
 			modifier = {
-                wood_output_factor = 0.50
+				wood_output_factor = 0.50
 			}
 		}
 		BAD_boost_farm = {

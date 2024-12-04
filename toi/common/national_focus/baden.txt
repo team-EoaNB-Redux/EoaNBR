@@ -94,12 +94,6 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				set_variable = { logging_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.logging_total = building_level@logging_camp }
-				}
-				set_variable = { logging_total_bonus = logging_total }
-				add_to_variable = { logging_total_bonus = 1 }
 				add_ideas = BAD_boost_logging
 			}
 		}
