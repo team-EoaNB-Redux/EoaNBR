@@ -1124,7 +1124,9 @@ focus_tree = {
 
 			every_controlled_state = {
 				limit = {
-					owner = MEX
+					owner = {
+						tag = MEX
+					}
 				}
 				force_enable_resistance = MEX
 				add_dynamic_modifier = {
@@ -1159,7 +1161,9 @@ focus_tree = {
 				}
 				every_core_state = {
 					limit = {
-						owner = MEX
+						owner = {
+							tag = MEX
+						}
 					}
 					start_resistance = yes
 					set_compliance = 10
@@ -1608,7 +1612,9 @@ focus_tree = {
 			focus = MEX_focus_confirm_comonfort
 		}
 		available = {
-			EOANBSYS_national_crisis_progress_var > 95
+			check_variable = {
+				EOANBSYS_national_crisis_progress_var > 95
+			}
 		}
 		ai_will_do = {
 			factor = 1
