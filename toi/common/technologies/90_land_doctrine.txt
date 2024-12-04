@@ -6675,8 +6675,6 @@ technologies = {
 		xp_unlock_cost = 100
 		xp_research_bonus = 1.00
 
-		#production_speed_trench_factor = 0.3
-
 		path = {
 			leads_to_tech = trench_clearing
 			research_cost_coeff = 1
@@ -6713,8 +6711,6 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		xp_research_bonus = 1.00
-
-		#production_speed_trench_factor = 0.3
 
 		path = {
 			leads_to_tech = over_the_top
