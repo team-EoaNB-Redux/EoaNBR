@@ -2456,16 +2456,8 @@ focus_tree = {
 					}
 				}
 			}
-			hidden_effect = {
-				set_variable = { infra_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.infra_total = infrastructure_level }
-				}
-				set_variable = { infra_total_bonus = infra_total }
-				add_to_variable = { infra_total_bonus = 1 }
-				activate_mission = SAX_mission_railway_expansion
-				add_ideas = SAX_idea_boost_infra
-			}
+			activate_mission = SAX_mission_railway_expansion
+			add_ideas = SAX_idea_boost_infra
 		}
 	}
 
@@ -2636,21 +2628,12 @@ focus_tree = {
 				amount = 2
 				state = 65
 			}
-			custom_effect_tooltip = SAX_customeffect_coal_mine_bonus_one
-            hidden_effect = {
-                set_variable = { coal_total = 0 }
-                every_owned_state = {
-                    add_to_variable = { ROOT.coal_total = resource@coal }
-                }
-                set_variable = { coal_total_bonus = coal_total }
-                add_to_variable = { coal_total_bonus = 1 }
-				random_owned_state = {
-					add_resource = {
-						type = coal
-						amount = coal_total_bonus
-					}
+			random_owned_state = {
+				add_resource = {
+					type = coal
+					amount = 6
 				}
-            }
+			}
 		}
 	}
 

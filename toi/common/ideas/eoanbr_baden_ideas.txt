@@ -7,9 +7,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = campaign_of_1812
-		
+
 			modifier = {
 				army_morale_factor = -0.25
 				army_speed_factor = -0.1
@@ -24,9 +24,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = campaign_of_1812
-		
+
 			modifier = {
 				army_morale_factor = -0.2
 				army_speed_factor = -0.05
@@ -41,9 +41,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = ara_der_reaktion
-		
+
 			modifier = {
 				traditional_conservatism_drift = 0.05
 				centrism_drift = 0.1
@@ -57,16 +57,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = BAD_rise_of_industry
-		
+
 			modifier = {
 			    industrial_capacity_factory = 0.05
                 conversion_cost_civ_to_mil_factor = -0.05
                 conversion_cost_mil_to_civ_factor = -0.05
 			}
 		}
-		
+
 		BAD_development1 = {
 			allowed = {
 				always = no
@@ -74,16 +74,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = BAD_rise_of_industry
-		
+
 			modifier = {
 			    industrial_capacity_factory = 0.1
                 conversion_cost_civ_to_mil_factor = -0.1
                 conversion_cost_mil_to_civ_factor = -0.1
 			}
 		}
-		
+
 		BAD_badische_tuftler = {
 			allowed = {
 				always = no
@@ -91,14 +91,14 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = BAD_badische_tuftler
-		
+
 			modifier = {
 			    research_speed_factor = 0.025
 			}
 		}
-		
+
 		BAD_badische_tuftler1 = {
 			allowed = {
 				always = no
@@ -106,44 +106,44 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = BAD_badische_tuftler
-		
+
 			modifier = {
 			    research_speed_factor = 0.05
 			}
-			
+
 			research_bonus = {
                 cat_industry_techs = 0.05
             }
 		}
-		
-		BAD_easter_proclamation = { 
+
+		BAD_easter_proclamation = {
 			allowed = {
 				always = no
 			}
 		    allowed_civil_war = {
 				always = yes
 			}
-			
+
 			#picture = weiner_munzvertrag
-		
+
 			modifier = {
 				centrism_drift = 0.05
 				war_support_weekly = -0.002
 			}
 		}
-		
-		BAD_currency_reform = { 
+
+		BAD_currency_reform = {
 			allowed = {
 				always = no
 			}
 		    allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = wiener_munzvertrag
-		
+
 			modifier = {
 				political_power_factor = -0.05
 				trade_opinion_factor = 0.1
@@ -152,27 +152,27 @@ ideas = {
 				treasury_gain_monthly_per_gdp = 0.005
 			}
 		}
-		
-		BAD_trade_act = { 
+
+		BAD_trade_act = {
 			allowed = {
 				always = no
 			}#trade focus
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = BAD_rise_of_industry
-		
+
 			modifier = {
 				treasury_gain_monthly_per_gdp = 0.002
 			}
-			
+
 			research_bonus = {
 				humanities_tech = 0.02
 				economics_tech = 0.02
 			}
 		}
-		
+
 		BAD_combat_liberalism = {
 			allowed = {
 				always = no
@@ -180,15 +180,15 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = ara_der_reaktion
-		
+
 			modifier = {
 				centrism_drift = -0.05
 				stability_weekly = -0.001
 			}
 		}
-		
+
 		BAD_liberal_grand_duchy1 = {
 			allowed = {
 				always = no
@@ -196,16 +196,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = ara_der_reaktion
-		
+
 			modifier = {
 				traditional_conservatism_drift = 0.025
 				centrism_drift = 0.05
 				stability_factor = -0.025
 			}
 		}
-		
+
 		BAD_liberal_grand_duchy2 = {
 			allowed = {
 				always = no
@@ -213,14 +213,14 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = ara_der_reaktion
-		
+
 			modifier = {
 				stability_factor = 0.1
 			}
 		}
-		
+
 		BAD_reactionary_grand_duchy = {
 			allowed = {
 				always = no
@@ -228,15 +228,15 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = ara_der_reaktion
-		
+
 			modifier = {
 				stability_factor = -0.02
 				war_support_factor = 0.1
 			}
 		}
-		
+
 		BAD_new_Zollverein = {
 			allowed = {
 				always = no
@@ -253,20 +253,20 @@ ideas = {
 				# min_export = 0.05
 			}
 		}
-		
+
 		BAD_idea_state_railways_1 = {
 			allowed = {
 				always = no
 			}
 			picture = PRS_eisenbahn
-			
+
 			modifier = {
 			    treasury_cost_monthly_per_gdp = 0.002
 				political_power_factor = 0.02
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
-		
+
 		BAD_idea_state_railways_2 = {
 			allowed = {
 				always = no
@@ -279,7 +279,7 @@ ideas = {
 				production_speed_infrastructure_factor = 0.15
 			}
 		}
-		
+
 		BAD_idea_state_railways_3 = {
 			allowed = {
 				always = no
@@ -292,20 +292,20 @@ ideas = {
 				production_speed_infrastructure_factor = 0.2
 			}
 		}
-		
+
 		BAD_idea_state_railways_4 = {
 			allowed = {
 				always = no
 			}
 			picture = PRS_eisenbahn
-			
+
 			modifier = {
 			    treasury_cost_monthly_per_gdp = 0.005
 				political_power_factor = 0.05
 				production_speed_infrastructure_factor = 0.25
 			}
 		}
-		
+
 		BAD_idea_tobacco_industry = {
 			allowed = {
 				always = no
@@ -317,7 +317,7 @@ ideas = {
 				faction_trade_opinion_factor = 0.1
 			}
 		}
-		
+
 		BAD_idea_freiburg_wine = {
 			allowed = {
 				always = no
@@ -329,7 +329,7 @@ ideas = {
 				faction_trade_opinion_factor = 0.1
 			}
 		}
-		
+
 		BAD_idea_haslach_mine = {
 			allowed = {
 				always = no
@@ -340,18 +340,18 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
-		
+
 		BAD_idea_der_schwarzwald = {
 			allowed = {
 				always = no
 			}
 			modifier = {
-				
+
 				mining_output_factor = 0.03
 				wood_output_factor = 0.2
 			}
 		}
-		
+
 		BAD_idea_der_schwarzwald1 = {
 			allowed = {
 				always = no
@@ -361,18 +361,18 @@ ideas = {
 				wood_output_factor = 0.3
 			}
 		}
-		
+
 		BAD_idea_der_schwarzwald2 = {
 			allowed = {
 				always = no
 			}
-			
+
 			modifier = {
 				mining_output_factor = 0.05
 				wood_output_factor = 0.2
 			}
 		}
-		
+
 		BAD_wood_industry = {
 			allowed = {
 				always = no
@@ -387,7 +387,7 @@ ideas = {
 				industrial_capacity_factory = 0.03
 			}
 		}
-		
+
 		BAD_prussian_style_army = {
 			allowed = {
 				always = no
@@ -405,7 +405,7 @@ ideas = {
 				experience_gain_army_factor = -0.05
 			}
 		}
-		
+
 		BAD_prussian_style_army1 = {
 			allowed = {
 				always = no
@@ -423,7 +423,7 @@ ideas = {
 				experience_gain_army_factor = -0.05
 			}
 		}
-		
+
 		BAD_prussian_style_army2 = {
 			allowed = {
 				always = no
@@ -431,7 +431,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			research_bonus = {
 				cat_small_arms_techs = 0.05
 			}
@@ -445,7 +445,7 @@ ideas = {
 				experience_gain_army_factor = -0.05
 			}
 		}
-		
+
 		BAD_federal_army = {
 			allowed = {
 				always = no
@@ -455,17 +455,17 @@ ideas = {
 			}
 
 			modifier = {
-			
+
 				dig_in_speed_factor = 0.05
 				attrition = -0.05
 				army_core_attack_factor = -0.05
 				army_core_defence_factor = 0.05
 				max_planning_factor = -0.05
 				army_speed_factor = -0.1
-				
+
 			}
 		}
-		
+
 		BAD_federal_army1 = {
 			allowed = {
 				always = no
@@ -475,17 +475,17 @@ ideas = {
 			}
 
 			modifier = {
-			
+
 				dig_in_speed_factor = 0.05
 				attrition = -0.05
 				army_core_attack_factor = -0.05
 				army_core_defence_factor = 0.1
 				max_planning_factor = -0.05
 				army_speed_factor = -0.1
-				
+
 			}
 		}
-		
+
 		BAD_federal_army2 = {
 			allowed = {
 				always = no
@@ -495,17 +495,17 @@ ideas = {
 			}
 
 			modifier = {
-			
+
 				dig_in_speed_factor = 0.05
 				attrition = -0.05
 				army_core_attack_factor = -0.05
 				army_core_defence_factor = 0.1
 				max_planning_factor = -0.05
 				army_speed_factor = -0.05
-				
+
 			}
 		}
-		
+
 		BAD_federal_army3 = {
 			allowed = {
 				always = no
@@ -513,23 +513,23 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			research_bonus = {
 				cat_small_arms_techs = 0.05
 			}
 
 			modifier = {
-			
+
 				dig_in_speed_factor = 0.05
 				attrition = -0.05
 				army_core_attack_factor = -0.05
 				army_core_defence_factor = 0.1
 				max_planning_factor = -0.05
 				army_speed_factor = -0.05
-				
+
 			}
 		}
-		
+
 		BAD_austrian_style_army = {
 			allowed = {
 				always = no
@@ -547,7 +547,7 @@ ideas = {
 				recon_factor = 0.05
 			}
 		}
-		
+
 		BAD_austrian_style_army1 = {
 			allowed = {
 				always = no
@@ -565,7 +565,7 @@ ideas = {
 				recon_factor = 0.1
 			}
 		}
-		
+
 		BAD_austrian_style_army2 = {
 			allowed = {
 				always = no
@@ -583,7 +583,7 @@ ideas = {
 				recon_factor = 0.1
 			}
 		}
-		
+
 		BAD_austrian_style_army3 = {
 			allowed = {
 				always = no
@@ -591,11 +591,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			research_bonus = {
 				cat_small_arms_techs = 0.05
 			}
-			
+
 			modifier = {
 				cavalry_attack_factor = 0.05
 				experience_gain_army_factor = -0.05
@@ -605,7 +605,7 @@ ideas = {
 				recon_factor = 0.1
 			}
 		}
-		
+
 		BAD_school_reform = {
 			allowed = {
 				always = no
@@ -613,14 +613,14 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				stability_weekly = -0.002
 				research_speed_factor = -0.05
 				political_power_gain = -0.25
 			}
 		}
-		
+
 		BAD_court_reform = {
 			allowed = {
 				always = no
@@ -628,7 +628,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				stability_weekly = 0.03
 				war_support_weekly = -0.03
@@ -636,7 +636,7 @@ ideas = {
 				drift_defence_factor = 0.05
 			}
 		}
-		
+
 		BAD_court_reform1 = {
 			allowed = {
 				always = no
@@ -644,7 +644,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				stability_weekly = 0.05
 				war_support_weekly = -0.05
@@ -652,7 +652,7 @@ ideas = {
 				drift_defence_factor = 0.05
 			}
 		}
-		
+
 		BAD_failed_economy_reform = {
 			allowed = {
 				always = no
@@ -660,7 +660,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				stability_weekly = -0.005
 				political_power_gain = -0.1
@@ -668,7 +668,7 @@ ideas = {
 				treasury_cost_monthly_per_gdp = 0.001
 			}
 		}
-		
+
 		BAD_success_economy_reform = {
 			allowed = {
 				always = no
@@ -676,7 +676,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				stability_weekly = 0.005
 				political_power_gain = 0.1
@@ -684,7 +684,7 @@ ideas = {
 				treasury_gain_monthly_per_gdp = 0.001
 			}
 		}
-		
+
 		BAD_boost_infra = {
 			allowed = {
 				always = no
@@ -696,19 +696,13 @@ ideas = {
 					has_government = traditional_conservatism
 				}
 			}
-			
+
 			picture = generic_build_infrastructure
 
-			cancel = {
-				NOT = {
-					has_variable = infra_total_bonus
-				}
-			}
-			
 			modifier = {
-                production_speed_infrastructure_factor = 0.50
+				production_speed_infrastructure_factor = 0.50
 			}
-		}	
+		}
 		BAD_boost_civs = {
 			allowed = {
 				always = no
@@ -720,17 +714,12 @@ ideas = {
 					has_government = traditional_conservatism
 				}
 			}
-			
+
 			picture = generic_business_regulation
-			
-			cancel = {
-				NOT = {
-					has_variable = civ_total_bonus
-				}
-			}
-			
+
+
 			modifier = {
-                production_speed_industrial_complex_factor = 0.70
+				production_speed_industrial_complex_factor = 0.70
 			}
 		}
 		BAD_boost_mils = {
@@ -744,17 +733,11 @@ ideas = {
 					has_government = traditional_conservatism
 				}
 			}
-			
+
 			picture = generic_business_regulation
-			
-			cancel = {
-				NOT = {
-					has_variable = mil_total_bonus
-				}
-			}
-			
+
 			modifier = {
-                production_speed_arms_factory_factor = 0.70
+				production_speed_arms_factory_factor = 0.70
 			}
 		}
 		BAD_boost_steel = {
@@ -768,17 +751,11 @@ ideas = {
 					has_government = traditional_conservatism
 				}
 			}
-			
+
 			picture = generic_business_regulation
-			
-			cancel = {
-				NOT = {
-					has_variable = steel_total_bonus
-				}
-			}
-			
+
 			modifier = {
-                # production_speed_steel_mill_factor = 0.50
+				# production_speed_steel_mill_factor = 0.50
 			}
 		}
 		BAD_boost_logging = {
@@ -792,9 +769,9 @@ ideas = {
 					has_government = traditional_conservatism
 				}
 			}
-			
+
 			picture = generic_business_regulation
-			
+
 			modifier = {
 				wood_output_factor = 0.50
 			}
@@ -810,38 +787,33 @@ ideas = {
 					has_government = traditional_conservatism
 				}
 			}
-			
+
 			picture = generic_business_regulation
-			
-			cancel = {
-				NOT = {
-					has_variable = farm_total_bonus
-				}
-			}
+
 			modifier = {
                 # production_speed_farm_factor = 0.50
 			}
 		}
 	}
-	
+
 	materiel_manufacturer = {
-			
+
 		designer = yes
-		
-		badische_gewehrfabrik = {			
+
+		badische_gewehrfabrik = {
 			allowed = {
 				original_tag = BAD
 			}
-			
+
 			cost = 150
 			removal_cost = 10
 
 			research_bonus = {
 				cat_small_arms_techs = 0.1
 			}
-			
+
 			traits = { infantry_equipment_manufacturer }
-           
+
 		    equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.05
@@ -849,16 +821,16 @@ ideas = {
 	        }
 	    }
 	}
-	
+
 	industrial_concern = {
-		
-		basf = {		
+
+		basf = {
 	    	picture = idea_basf
 
 			allowed = {
 				original_tag = BAD
 			}
-			
+
 			cost = 150
 			removal_cost = 10
 
@@ -869,17 +841,17 @@ ideas = {
 
 			traits = { BAD_trait_concern_basf }
 		}
-		
+
 		BAD_maschinenbau_gesellschaft_karlsruhe = {
 		    picture = idea_BAD_maschinenbau_gesellschaft_karlsruhe
 
 			allowed = {
 				original_tag = BAD
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			modifier = {
 			    # production_speed_machine_parts_factory_factor = 0.1
 		    }
@@ -890,14 +862,14 @@ ideas = {
 
 			traits = { industrial_concern_1 }
 		}
-		
-		BAD_badische_maschinenfabrik_durlach = {		
+
+		BAD_badische_maschinenfabrik_durlach = {
 		    picture = idea_BAD_badische_maschinenfabrik_durlach
 
 			allowed = {
 				original_tag = BAD
 			}
-			
+
 			cost = 150
 			removal_cost = 10
 
@@ -911,17 +883,17 @@ ideas = {
 
 			traits = { industrial_concern_1 }
 		}
-		
+
 		BAD_bergwerk_schauinsland  = {
 			picture = idea_BAD_bergwerk_schauinsland
-			
+
 			allowed = {
 				original_tag = BAD
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			modifier = {
 			    # production_speed_coal_mine_factor = 0.15
 		    }

@@ -457,14 +457,6 @@ ideas = {
 
 			picture = generic_production_bonus
 
-			cancel = {
-				SPR = {
-					NOT = {
-						has_variable = steel_total_bonus
-					}
-				}
-			}
-
 			allowed_civil_war = {
 				OR = {
 					has_government = autocracy
@@ -485,19 +477,6 @@ ideas = {
 				original_tag = SPR
 			}
 
-			cancel = {
-				SPR = {
-					OR = {
-						NOT = {
-							has_decision = SPR_decision_madrid_zaragoza_railway_concession
-						}
-						NOT = {
-							has_variable = infra_total_bonus
-						}
-					}
-				}
-			}
-
 			allowed_civil_war = {
 				OR = {
 					has_government = autocracy
@@ -516,19 +495,6 @@ ideas = {
 		SPR_idea_boost_infra_2 = {
 			allowed = {
 				original_tag = SPR
-			}
-
-			cancel = {
-				SPR = {
-					OR = {
-						NOT = {
-							has_decision = SPR_decision_valladolid_burgos_railway_concession
-						}
-						NOT = {
-							has_variable = infra_total_bonus
-						}
-					}
-				}
 			}
 
 			allowed_civil_war = {

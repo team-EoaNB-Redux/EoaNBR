@@ -112,18 +112,9 @@ focus_tree = {
 		prerequisite = { focus = SPR_insure_the_goverment }
 
 		completion_reward = {
-			custom_effect_tooltip = SPR_customeffect_infra_bonus_three
 			unlock_decision_tooltip = SPR_decision_madrid_zaragoza_railway_concession
 			unlock_decision_tooltip = SPR_decision_valladolid_burgos_railway_concession
-			hidden_effect = {
-				set_variable = { infra_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.infra_total = infrastructure_level }
-				}
-				set_variable = { infra_total_bonus = infra_total }
-				add_to_variable = { infra_total_bonus = 3 }
-				add_ideas = SPR_idea_boost_infra_1
-			}
+			add_ideas = SPR_idea_boost_infra_1
 		}
 	}
 
@@ -886,14 +877,12 @@ focus = {
 				every_owned_state = {
 					add_to_variable = { ROOT.steel_total = size@token:steel_foundry }
 				}
-				set_variable = { steel_total_bonus = steel_total }
-				add_to_variable = { steel_total_bonus = 1 }
 				random_owned_controlled_state = {
 					limit = {
 						check_variable = { pops_workforce > 1000000 }
 					}
 					set_temp_variable = { industry_token = token:steel_foundry }
-					set_temp_variable = { x_temp = steel_total_bonus }
+					set_temp_variable = { x_temp = 1 }
 					add_x_industries = yes
 				}
 				# add_ideas = SPR_idea_boost_steel
@@ -1058,15 +1047,7 @@ focus = {
 			unlock_decision_tooltip = SPR_mission_zaragoza_barcelona_railway_concession
 			unlock_decision_tooltip = SPR_mission_zaragoza_barcelona_railway_concession
 			unlock_decision_tooltip = SPR_mission_zaragoza_barcelona_railway_concession
-			hidden_effect = {
-				set_variable = { infra_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.infra_total = infrastructure_level }
-				}
-				set_variable = { infra_total_bonus = infra_total }
-				add_to_variable = { infra_total_bonus = 2 }
-				add_ideas = SPR_idea_boost_infra_2
-			}
+			add_ideas = SPR_idea_boost_infra_2
 		}
 	}
 

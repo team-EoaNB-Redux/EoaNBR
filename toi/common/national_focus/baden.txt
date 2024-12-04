@@ -86,7 +86,6 @@ focus_tree = {
 		prerequisite = { focus = BAD_focus_land_of_inventors }
 		completion_reward = {
 			add_ideas = BAD_idea_der_schwarzwald
-			custom_effect_tooltip = BAD_customeffect_logging_bonus_one
 			random_owned_controlled_state = {
 				add_resource = {
 					type = wood
@@ -274,16 +273,7 @@ focus_tree = {
 		prerequisite = { focus = BAD_focus_badenian_railways }
 		completion_reward = {
 			swap_ideas = { remove_idea = BAD_idea_state_railways_1 add_idea = BAD_idea_state_railways_2 }
-			custom_effect_tooltip = BAD_customeffect_infra_bonus_three
-			hidden_effect = {
-				set_variable = { infra_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.infra_total = infrastructure_level }
-				}
-				set_variable = { infra_total_bonus = infra_total }
-				add_to_variable = { infra_total_bonus = 3 }
-				add_ideas = BAD_boost_infra
-			}
+			add_ideas = BAD_boost_infra
 		}
 	}
 	focus = {
@@ -354,18 +344,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAD_focus_land_of_inventors }
 		completion_reward = {
-			custom_effect_tooltip = BAD_customeffect_farm_bonus_one
 			random_owned_controlled_state = {
-                limit = {
-                    set_temp_variable = { industry_token_temp = token:crop_farm }
-                    has_free_industry_slots = yes
-                    is_in_home_area = yes
-                }
-                add_extra_state_shared_building_slots = 1
-                set_temp_variable = { industry_token = token:crop_farm }
-                set_temp_variable = { x_temp = 1 }
-                add_x_industries = yes
-            }
+				limit = {
+					set_temp_variable = { industry_token_temp = token:crop_farm }
+					has_free_industry_slots = yes
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { industry_token = token:crop_farm }
+				set_temp_variable = { x_temp = 1 }
+				add_x_industries = yes
+			}
 		}
 	}
 	focus = {
@@ -510,16 +499,7 @@ focus_tree = {
 		prerequisite = { focus = BAD_focus_tabacco_industry focus = BAD_focus_support_peasantry }
 		prerequisite = { focus = BAD_focus_expanded_iron_mining focus = BAD_focus_black_forest_woodcutters }
 		completion_reward = {
-			custom_effect_tooltip = BAV_customeffect_civ_bonus
-			hidden_effect = {
-				set_variable = { civ_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.civ_total = building_level@industrial_complex }
-				}
-				set_variable = { civ_total_bonus = civ_total }
-				add_to_variable = { civ_total_bonus = 1 }
-				add_ideas = BAD_boost_civs
-			}
+			add_ideas = BAD_boost_civs
 			swap_ideas = {
 				remove_idea = BAD_development
 				add_idea = BAD_development1
@@ -542,16 +522,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAD_focus_construction_industry }
 		completion_reward = {
-			custom_effect_tooltip = BAV_customeffect_mil_bonus
-			hidden_effect = {
-				set_variable = { mil_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.mil_total = building_level@arms_factory }
-				}
-				set_variable = { mil_total_bonus = mil_total }
-				add_to_variable = { mil_total_bonus = 1 }
-				add_ideas = BAD_boost_mils
-			}
+			add_ideas = BAD_boost_mils
 		}
 	}
 	focus = {
