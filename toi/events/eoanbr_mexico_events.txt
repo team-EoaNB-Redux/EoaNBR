@@ -2322,7 +2322,9 @@ country_event = { #Debt system initial announcement
 			hidden_effect = {
 				every_core_state = {
 					limit = {
-						owner = MEX
+						owner = {
+							tag = MEX
+						}
 					}
 					decrease_resistance_la_reforma = yes
 					decrease_resistance_la_reforma = yes
