@@ -200,10 +200,10 @@ types = {
 				actor_effects = {
 
 					var:actor_country = {
-						add_timed_idea = {
-							idea = GER_eben_emael_partial_success_ns
-							days = 180
-						}
+						# add_timed_idea = {
+						# 	idea = GER_eben_emael_partial_success_ns
+						# 	days = 180
+						# }
 					}
 
 
@@ -249,10 +249,10 @@ types = {
 				actor_effects = {
 
 					var:actor_country = {
-						add_timed_idea = {
-							idea = GER_eben_emael_success_ns
-							days = 180
-						}
+						# add_timed_idea = {
+						# 	idea = GER_eben_emael_success_ns
+						# 	days = 180
+						# }
 					}
 
 					# Damage to unit
@@ -297,10 +297,10 @@ types = {
 				actor_effects = {
 
 					var:actor_country = {
-						add_timed_idea = {
-							idea = GER_eben_emael_success_ns
-							days = 180
-						}
+						# add_timed_idea = {
+						# 	idea = GER_eben_emael_success_ns
+						# 	days = 180
+						# }
 					}
 
 					# Damage to unit

@@ -866,7 +866,7 @@ ideas = {
 			}
 			picture = idea_generic_agrarian_reform
 			modifier = {
-				crop_farm_attractiveness_factor
+				crop_farm_attractiveness_factor = 0.1
 			}
 		}
 		SPR_recuitment_and_replacement_act = {

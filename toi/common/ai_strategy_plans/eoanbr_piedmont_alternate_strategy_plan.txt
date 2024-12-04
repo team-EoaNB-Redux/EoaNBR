@@ -1,4 +1,6 @@
 PIE_historical_strategy_plan = {
+	name = PIE_historical_strategy_name
+	desc = PIE_historical_strategy_desc
 	allowed = {
 		original_tag = PIE
 	}
