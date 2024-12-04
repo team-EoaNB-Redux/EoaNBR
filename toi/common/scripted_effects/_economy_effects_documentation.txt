@@ -310,6 +310,23 @@
 
 
 	## Pops ## bb_20
+	
+	# Removes X money from the investment fund and gives it to the state
+	take_x_from_investment_fund = {
+
+		set_temp_variable = { x_temp_stored = x_temp }
+		add_treasury = yes
+
+		set_temp_variable = { x_temp = x_temp_stored }
+		add_investment_fund = yes
+	
+		set_temp_variable = { x_temp_stored = 0 }
+		set_temp_variable = { x_temp = 0 }
+	}
+
+	# take_x_from_pops = {
+
+	# }
 		
 	## Resources ## bb_30
 	## Corporations ## bb_40
