@@ -710,6 +710,8 @@ SPR_debt_management_category = {
 				# not = { has_country_leader = { name = "Ignacio Comonfort" ruling_only = yes } }
 			}
 			else = { has_government = centrism }
+			
+			always = no
 		}
 		visible = {
 			has_country_flag = MEX_foreign_debt_repayments_flag
