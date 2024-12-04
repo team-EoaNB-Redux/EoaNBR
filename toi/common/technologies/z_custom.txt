@@ -227,8 +227,6 @@ technologies = {
 	# }
 	# hydropower_3 = {
 
-	# 	# production_speed_farm_factor = 0.05
-	# 	# production_speed_logging_camp_factor = 0.05
 
 
 	# 	research_cost = 0.1

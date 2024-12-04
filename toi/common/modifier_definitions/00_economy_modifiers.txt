@@ -789,7 +789,7 @@
 			entertainment_hub_output_factor = { color_type = good value_type = percentage precision = 1 category = country }
 			entertainment_hub_throughput_factor = { color_type = good value_type = percentage precision = 1 category = country }
 			entertainment_hub_attractiveness_modifier = { color_type = good value_type = number precision = 1 category = country }
-			entertainment_hub_attractiveness_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			entertainment_hub_attractiveness_factor = { color_type = good value_type = percentage precision = 1 category = country } 
 		#
 		# RGOs
 			food_input_factor = { color_type = bad value_type = percentage precision = 1 category = country }

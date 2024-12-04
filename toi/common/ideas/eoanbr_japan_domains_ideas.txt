@@ -155,8 +155,9 @@ ideas= {
 
 			modifier = {
 				mining_output_factor = 0.1
+				wood_output_factor = 0.1
+				logging_prospecting_ability_factor = 0.1
 				political_power_factor = 0.15
-				# production_speed_logging_camp_factor = 0.05
 			}
 		}
 
@@ -171,10 +172,10 @@ ideas= {
 
 			modifier = {
 				mining_output_factor = 0.1
+				wood_output_factor = 0.1
+				logging_prospecting_ability_factor = 0.1
 				political_power_factor = 0.15
 				monthly_population = 0.05
-				# production_speed_logging_camp_factor = 0.05
-				# production_speed_farm_factor = 0.05
 			}
 		}
 

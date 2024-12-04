@@ -22,7 +22,6 @@ state = {
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
-			# logging_camp = 1
 		}
 
 		set_variable = { tooling_workshop_size = 5 }
