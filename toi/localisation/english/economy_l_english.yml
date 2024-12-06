@@ -704,8 +704,8 @@
     pm_power_tools_unlock_tt: "§bEnable§! §OTools§! §YProduction Method:§!\n §o$pm_power_tools$§!"
     pm_cordless_tools_unlock_tt: "§bEnable§! §OTools§! §YProduction Method:§!\n §o$pm_cordless_tools$§!"
     pm_smart_tools_unlock_tt: "§bEnable§! §OTools§! §YProduction Method:§!\n §o$pm_smart_tools$§!"
-    pm_industrial_tools_iron_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_iron_tools$§!\n  Tools Output: £tools_texticon  §G+150.0%§!\n  Iron Input: £iron_texticon  §R+50.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+20.0%§!"
-    pm_mechanical_tools_iron_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_iron_tools$§!\n  Tools Output: £tools_texticon  §G+150.0%§!\n  Wood Input: £wood_texticon  §G-10.0%§!\n  Iron Input: £iron_texticon  §R+50.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+20.0%§!"
+    pm_industrial_tools_iron_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_iron_tools$§!\n  Tools Output: £tools_texticon  §G+120.0%§!\n  Iron Input: £iron_texticon  §R+30.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+10.0%§!"
+    pm_mechanical_tools_iron_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_iron_tools$§!\n  Tools Output: £tools_texticon  §G+120.0%§!\n  Wood Input: £wood_texticon  §G-10.0%§!\n  Iron Input: £iron_texticon  §R+30.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+10.0%§!"
     pm_pneumatic_tools_steel_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_steel_tools$§!\n  Tools Output: £tools_texticon  §G+150.0%§!\n  Wood Input: £wood_texticon  §G-10.0%§!\n  Steel Input: £steel_texticon  §R+60.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+20.0%§!"
    #
    #Consumer Goods Factories

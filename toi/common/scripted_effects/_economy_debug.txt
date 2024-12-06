@@ -22,3 +22,13 @@ debug_trade = {
     if = { limit = { has_global_flag = debug_trade } clr_global_flag = debug_trade }
     else = { set_global_flag = debug_trade }
 }
+
+debug_pass_time = {
+    for_loop_effect = {
+        end = 12
+
+        _advance_time = yes
+        r_weekly_trade = yes
+        r_weekly_trade = yes
+    }
+}

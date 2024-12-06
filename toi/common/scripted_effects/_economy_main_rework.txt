@@ -4079,22 +4079,26 @@
 			# Chemicals
 			add_to_variable = { pm_output_multiplier@token:pm_lead_chamber_process = modifier@pm_lead_chamber_process_output_modifier }
 			add_to_variable = { pm_industrial_capacity_use@token:pm_lead_chamber_process = modifier@pm_lead_chamber_process_industrial_capacity_use_modifier }
-			add_to_variable = { pm_input_amount@token:pm_lead_chamber_process^0 = modifier@pm_lead_chamber_process_iron_input_modifier }
+			add_to_variable = { pm_input_amount@token:pm_lead_chamber_process^0 = modifier@pm_lead_chamber_process_wood_input_modifier }
+			add_to_variable = { pm_input_amount@token:pm_lead_chamber_process^1 = modifier@pm_lead_chamber_process_iron_input_modifier }
 
 			add_to_variable = { pm_output_multiplier@token:pm_leblanc_process = modifier@pm_leblanc_process_output_modifier }
 			add_to_variable = { pm_industrial_capacity_use@token:pm_leblanc_process = modifier@pm_leblanc_process_industrial_capacity_use_modifier }
-			add_to_variable = { pm_input_amount@token:pm_leblanc_process^0 = modifier@pm_leblanc_process_iron_input_modifier }
-			add_to_variable = { pm_input_amount@token:pm_leblanc_process^1 = modifier@pm_leblanc_process_tools_input_modifier }
+			add_to_variable = { pm_input_amount@token:pm_leblanc_process^0 = modifier@pm_leblanc_process_food_input_modifier }
+			add_to_variable = { pm_input_amount@token:pm_leblanc_process^1 = modifier@pm_leblanc_process_iron_input_modifier }
+			add_to_variable = { pm_input_amount@token:pm_leblanc_process^2 = modifier@pm_leblanc_process_tools_input_modifier }
+			add_to_variable = { pm_input_amount@token:pm_leblanc_process^3 = modifier@pm_leblanc_process_coal_input_modifier }
 
 			add_to_variable = { pm_output_multiplier@token:pm_ammonia_soda_process = modifier@pm_ammonia_soda_process_output_modifier }
 			add_to_variable = { pm_industrial_capacity_use@token:pm_ammonia_soda_process = modifier@pm_ammonia_soda_process_industrial_capacity_use_modifier }
 			add_to_variable = { pm_input_amount@token:pm_ammonia_soda_process^0 = modifier@pm_ammonia_soda_process_iron_input_modifier }
 			add_to_variable = { pm_input_amount@token:pm_ammonia_soda_process^1 = modifier@pm_ammonia_soda_process_tools_input_modifier }
 			add_to_variable = { pm_input_amount@token:pm_ammonia_soda_process^2 = modifier@pm_ammonia_soda_process_machinery_input_modifier }
+			add_to_variable = { pm_input_amount@token:pm_ammonia_soda_process^3 = modifier@pm_ammonia_soda_process_coal_input_modifier }
 
 			add_to_variable = { pm_output_multiplier@token:pm_brine_electrolysis = modifier@pm_brine_electrolysis_output_modifier }
 			add_to_variable = { pm_industrial_capacity_use@token:pm_brine_electrolysis = modifier@pm_brine_electrolysis_industrial_capacity_use_modifier }
-			add_to_variable = { pm_input_amount@token:pm_brine_electrolysis^0 = modifier@pm_brine_electrolysis_iron_input_modifier }
+			add_to_variable = { pm_input_amount@token:pm_brine_electrolysis^0 = modifier@pm_brine_electrolysis_food_input_modifier }
 			add_to_variable = { pm_input_amount@token:pm_brine_electrolysis^1 = modifier@pm_brine_electrolysis_tools_input_modifier }
 			add_to_variable = { pm_input_amount@token:pm_brine_electrolysis^2 = modifier@pm_brine_electrolysis_electricity_input_modifier }
 			add_to_variable = { pm_input_amount@token:pm_brine_electrolysis^3 = modifier@pm_brine_electrolysis_machinery_input_modifier }
