@@ -83544,7 +83544,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_mex_national_insurrection_shine"
-		texturefile = "gfx/interface/goals/mex/mexican_congressional_elections_1857.png"
+		texturefile = "gfx/interface/goals/mex/national_insurrection.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/mex/national_insurrection.png"

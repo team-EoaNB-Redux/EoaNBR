@@ -53,8 +53,65 @@ decrease_resistance_la_reforma = {
 		}
 	}
 	else = {
-		add_resistance = -10
-		add_compliance = 10
+		if = {
+			limit = {
+				has_war = yes
+				NOT = { state = 277 }
+			}
+			random_list = {
+				1 = {
+					modifier = {
+						add = 1
+						compliance > 15
+					}
+					modifier = {
+						add = 1
+						compliance > 30
+					}
+					modifier = {
+						add = 1
+						compliance > 45
+					}
+					modifier = {
+						add = 1
+						compliance > 60
+					}
+					remove_dynamic_modifier = {
+						modifier = dynmod_MEX_resistance_modifier_5
+					}
+					remove_dynamic_modifier = {
+						modifier = dynmod_MEX_la_reforma_resistance
+					}
+					cancel_resistance = yes
+					force_disable_resistance = MEC
+				}
+				1 = {
+					modifier = {
+						add = 1
+						resistance > 15
+					}
+					modifier = {
+						add = 1
+						resistance > 30
+					}
+					modifier = {
+						add = 1
+						resistance > 45
+					}
+					modifier = {
+						add = 1
+						resistance > 60
+					}
+					add_resistance = -5
+					add_compliance = 5
+				}
+			}
+		}
+		else = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		
 	}
 }
 
