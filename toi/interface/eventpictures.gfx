@@ -2902,6 +2902,14 @@ spriteTypes = {
 				name = "GFX_report_event_usa_secession"
 				texturefile = "gfx/event_pictures/usa/report_event_usa_secession.dds"
 			}
+			spriteType = {
+				name = "GFX_report_event_usa_national_labor_union"
+				texturefile = "gfx/event_pictures/usa/report_event_usa_national_labor_union.dds"
+			}
+			spriteType = {
+				name = "GFX_report_event_usa_knights_of_labor"
+				texturefile = "gfx/event_pictures/usa/report_event_usa_knights_of_labor.dds"
+			}
 		# 1870s
 			spriteType = {
 				name = "GFX_news_event_usa_alaska"

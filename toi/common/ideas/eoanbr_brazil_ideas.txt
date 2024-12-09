@@ -1122,13 +1122,10 @@ ideas = {
 			picture = generic_agrarian_reform
 			modifier = {
 				stability_factor = 0.03
-				# treasury_cost_monthly_per_gdp = 0.002
 				treasury_cost_monthly_per_gdp = 0.001
 				production_speed_infrastructure_factor = 0.05
 				production_speed_industrial_complex_factor = 0.025
-				# production_speed_farm_factor = 0.3
-				# production_speed_logging_camp_factor = 0.3
-				# production_speed_cotton_farm_factor = 0.3
+				industry_construction_speed_factor = 0.2
 				monthly_population = 0.05
 			}
 			on_remove =  {
@@ -1448,9 +1445,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			# picture = RUS_agrarian
+			picture = RUS_agrarian
 			modifier = {
-				#production_speed_buildings_factor = -0.09
+				industry_construction_speed_factor = -0.09
 			}
 		}
 

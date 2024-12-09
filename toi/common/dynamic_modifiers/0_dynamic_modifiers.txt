@@ -849,6 +849,8 @@ RAJ_agrarianism = {
 		hidden_modifier = {
 			resistance_garrison_penetration_chance = -0.05
 			resistance_activity = -0.05
+			compliance_growth = 0.1
+			compliance_gain = 0.0004
 		}
 	}
 
@@ -864,6 +866,8 @@ RAJ_agrarianism = {
 		hidden_modifier = {
 			resistance_garrison_penetration_chance = -0.1
 			resistance_activity = -0.1
+			compliance_growth = 0.2
+			compliance_gain = 0.0008
 		}
 	}
 ###

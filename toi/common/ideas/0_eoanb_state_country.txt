@@ -1972,7 +1972,6 @@ ideas = {
 				investment_confidence_modifier = 5
 				research_speed_factor = 0.02
 				#ruling_coalition_support_modifier = -0.05
-				#production_speed_buildings_factor = -0.1
 				#political_power_cost = 0.1
 			}
 

@@ -2322,7 +2322,9 @@ country_event = { #Debt system initial announcement
 			hidden_effect = {
 				every_core_state = {
 					limit = {
-						owner = MEX
+						owner = {
+							tag = MEX
+						}
 					}
 					decrease_resistance_la_reforma = yes
 					decrease_resistance_la_reforma = yes
@@ -2426,7 +2428,7 @@ country_event = { #Debt system initial announcement
 				}
 				set_nationality = MEC
 			}
-			load_oob = "MEX_civil_war_liberals"
+			# load_oob = "MEX_civil_war_liberals"
 			# event = mexico_civil_war.42
 			# days = 15
 			# hidden_effect = {

@@ -520,7 +520,7 @@ shared_focus = {
 shared_focus = {
 	id = USA_gilded_the_labor_movement
 	icon = placeholder
-	cost = 70
+	cost = 0
 	relative_position_id = USA_gilded_the_gilded_tycoons
 	prerequisite = { focus = USA_gilded_the_gilded_tycoons }
 	available = {

@@ -3235,16 +3235,16 @@ focus_tree = {
 				limit = {
 					has_idea = generic_vic_embrace_industry_3_2
 				}
-				remove_idea = generic_vic_embrace_industry_3_2
+				remove_ideas = generic_vic_embrace_industry_3_2
 			}
 			else_if = {
 				limit = {
 					has_idea = generic_vic_agricultural_focus_3_2
 				}
-				remove_idea = generic_vic_agricultural_focus_3_2
+				remove_ideas = generic_vic_agricultural_focus_3_2
 			}
 			else = {
-				remove_idea = generic_vic_balanced_approach_2_2
+				remove_ideas = generic_vic_balanced_approach_2_2
 			}
 			hidden_effect = {
 				if = {

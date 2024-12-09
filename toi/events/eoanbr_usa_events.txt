@@ -239,6 +239,16 @@ news_event = { #Shoemaker Strike Begins
 	fire_only_once = yes
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = usa_worker_events.6
+				days = 2350
+				random_days = 50
+			}
+		}
+	}
+
 	option = {
 		name = usa_worker_events.4.a
 		# log = "option:		name = usa_worker_events.4.a"
@@ -282,6 +292,40 @@ news_event = { #Shoemaker Strike Ends
 	option = {
 		name = usa_worker_events.5.a
 		# log = "option:		name = usa_worker_events.5.a"
+	}
+}
+country_event = { # Formation of the National Labor Union
+	id = usa_worker_events.6
+	title = usa_worker_events.6.t
+	desc = usa_worker_events.6.desc
+	picture = GFX_report_event_usa_national_labor_union
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = usa_worker_events.7
+				days = 1200
+				random_days = 50
+			}
+		}
+	}
+
+	option = { # An eight hour workday?
+		name = usa_worker_events.6.a
+		add_popularity = { ideology = social_egalitarianism popularity = 0.01 }
+	}
+}
+country_event = { # Formation of the Knights of Labor
+	id = usa_worker_events.7
+	title = usa_worker_events.7.t
+	desc = usa_worker_events.7.desc
+	picture = GFX_report_event_usa_knights_of_labor
+	is_triggered_only = yes
+
+	option = { # "Noble and Holy Order," eh?
+		name = usa_worker_events.7.a
+		add_popularity = { ideology = social_egalitarianism popularity = 0.01 }
 	}
 }
 

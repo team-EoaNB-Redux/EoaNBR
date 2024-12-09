@@ -1382,6 +1382,15 @@ guiTypes = {
 			}
 
 			gridBoxType = {
+				name = "province_custom_icon_building_entries"
+				position = { x = 10 y = 5}
+				size = { width = 480 height = 40 }
+				format = "UPPER_LEFT"
+				slotsize = { width = 61 height = 84}
+				max_slots_vertical = 1
+			}
+
+			gridBoxType = {
 				name = "province_building_entries"
 				position = { x = 11 y = 158 }
 				size = { width = 480 height = 90%% }

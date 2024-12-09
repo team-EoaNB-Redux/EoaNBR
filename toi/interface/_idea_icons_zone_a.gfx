@@ -393,6 +393,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/USA/idea_usa_to_hell_with_spain.png"
 	}
 	spriteType = {
+		name = "GFX_idea_usa_labor_movement_1"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_labor_movement_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_usa_labor_movement_2"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_labor_movement_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_usa_labor_movement_3"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_labor_movement_3.png"
+	}
+	spriteType = {
 		name = "GFX_USA_army_modifier"
 		texturefile = "gfx/interface/ideas/USA/USA_army_modifier.png"
 	}

@@ -1124,7 +1124,9 @@ focus_tree = {
 
 			every_controlled_state = {
 				limit = {
-					owner = MEX
+					owner = {
+						tag = MEX
+					}
 				}
 				force_enable_resistance = MEX
 				add_dynamic_modifier = {
@@ -1159,7 +1161,9 @@ focus_tree = {
 				}
 				every_core_state = {
 					limit = {
-						owner = MEX
+						owner = {
+							tag = MEX
+						}
 					}
 					start_resistance = yes
 					set_compliance = 10
@@ -1374,6 +1378,7 @@ focus_tree = {
 				decision = MEX_decision_comonfort_interim_resistance_quell
 			}
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_addressing_media_campaign
@@ -1402,6 +1407,7 @@ focus_tree = {
 				decision = MEX_decision_liberal_media
 			}
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_mission_to_rome
@@ -1428,6 +1434,7 @@ focus_tree = {
 			country_event = mexico_politics.20
 			EOANBSYS_national_crisis_progress_minus_five = yes
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_national_insurrection
@@ -1454,6 +1461,7 @@ focus_tree = {
 			country_event = mexico_politics.24
 			decrease_ps_by_one = yes
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_issue_of_funding
@@ -1487,6 +1495,7 @@ focus_tree = {
 				decision = MEX_decision_sell_clergy_property
 			}
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_northern_rebellion
@@ -1511,6 +1520,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = mexico_politics.22
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_1857_congressional_elections
@@ -1533,6 +1543,7 @@ focus_tree = {
 			remove_ideas = limited_constitution
 			add_ideas = constitution_adopted
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_request_emergency_powers
@@ -1559,6 +1570,7 @@ focus_tree = {
 			## change occupation law, prevent new change?
 			country_event = mexico_politics.23
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_confirm_comonfort
@@ -1583,6 +1595,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.15
 		}
+		bypass = { tag = MEC }
 	}
 	focus = {
 		id = MEX_focus_plan_of_tacubaya
@@ -1599,7 +1612,9 @@ focus_tree = {
 			focus = MEX_focus_confirm_comonfort
 		}
 		available = {
-			EOANBSYS_national_crisis_progress_var > 95
+			check_variable = {
+				EOANBSYS_national_crisis_progress_var > 95
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1608,6 +1623,7 @@ focus_tree = {
 			#fires tacubaya event
 			MEX = { country_event = { id = mexico_civil_war.39 } }
 		}
+		bypass = { tag = MEC }
 	}
 
 	focus = {

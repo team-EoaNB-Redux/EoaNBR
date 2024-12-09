@@ -216,7 +216,7 @@ technologies = {
 			}
 		}
 
-		hidden_effect = {
+		hidden_modifier = {
 			field_artillery = {
 				defence = 0.5
 				breakthrough = 0.5
@@ -391,7 +391,7 @@ technologies = {
 			}
 		}
 
-		hidden_effect = {
+		hidden_modifier = {
 			field_artillery = {
 				defence = 0.5
 				breakthrough = 0.5
@@ -681,7 +681,7 @@ technologies = {
 	doctrine_victorian_artillery_precision = {
 
 		line_infantry = {
-			training_time = -0.1
+			training_time_factor = -0.1
 			soft_attack = 0.1
 			supply_consumption = -0.1
 		}
@@ -2684,7 +2684,7 @@ technologies = {
 			}
 		}
 
-		hidden_effect = {
+		hidden_modifier = {
 			light_cavalry = {
 				defence = 0.075
 				soft_attack = 0.2
@@ -6675,8 +6675,6 @@ technologies = {
 		xp_unlock_cost = 100
 		xp_research_bonus = 1.00
 
-		#production_speed_trench_factor = 0.3
-
 		path = {
 			leads_to_tech = trench_clearing
 			research_cost_coeff = 1
@@ -6713,8 +6711,6 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		xp_research_bonus = 1.00
-
-		#production_speed_trench_factor = 0.3
 
 		path = {
 			leads_to_tech = over_the_top

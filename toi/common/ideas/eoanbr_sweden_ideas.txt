@@ -140,7 +140,8 @@ ideas = {
 				stability_factor = -0.05
 				political_power_factor = -0.1
 				treasury_gain_monthly_per_gdp = 0.005
-				# production_speed_logging_camp_factor = 0.1
+				wood_output_factor = 0.1
+				logging_prospecting_ability_factor = 0.1
 				industrial_capacity_factory = 0.05
 				monthly_population = -0.05
 			}
@@ -160,7 +161,8 @@ ideas = {
 				stability_factor = -0.07
 				political_power_factor = -0.12
 				treasury_gain_monthly_per_gdp = 0.007
-				# production_speed_logging_camp_factor = 0.15
+				wood_output_factor = 0.15
+				logging_prospecting_ability_factor = 0.15
 				industrial_capacity_factory = 0.08
 				monthly_population = -0.07
 			}
@@ -180,7 +182,8 @@ ideas = {
 				stability_factor = 0.02
 				political_power_factor = -0.02
 				treasury_cost_monthly_per_gdp = 0.002
-				# production_speed_logging_camp_factor = 0.08
+				wood_output_factor = 0.08
+				logging_prospecting_ability_factor = 0.08
 				industrial_capacity_factory = 0.03
 				monthly_population = -0.02
 			}
@@ -2423,14 +2426,6 @@ ideas = {
 				original_tag = SWE
 			}
 
-			cancel = {
-				SWE = {
-					NOT = {
-						has_variable = civ_total_bonus
-					}
-				}
-			}
-
 			modifier = {
 				production_speed_industrial_complex_factor = 0.25
 			}
@@ -2439,14 +2434,6 @@ ideas = {
 		SWE_fifty_civ_bonus = {
 			allowed = {
 				original_tag = SWE
-			}
-
-			cancel = {
-				SWE = {
-					NOT = {
-						has_variable = civ_total_bonus
-					}
-				}
 			}
 
 			modifier = {
@@ -2459,14 +2446,6 @@ ideas = {
 				original_tag = SWE
 			}
 
-			cancel = {
-				SWE = {
-					NOT = {
-						has_variable = mil_total_bonus
-					}
-				}
-			}
-
 			modifier = {
 				production_speed_arms_factory_factor = 0.5
 			}
@@ -2475,14 +2454,6 @@ ideas = {
 		SWE_seventyfive_dock_bonus = {
 			allowed = {
 				original_tag = SWE
-			}
-
-			cancel = {
-				SWE = {
-					NOT = {
-						has_variable = dock_total_bonus
-					}
-				}
 			}
 
 			modifier = {
@@ -2495,14 +2466,6 @@ ideas = {
 				original_tag = SWE
 			}
 
-			cancel = {
-				SWE = {
-					NOT = {
-						has_variable = dock_total_bonus
-					}
-				}
-			}
-
 			modifier = {
 				production_speed_dockyard_factor = 0.25
 			}
@@ -2512,14 +2475,6 @@ ideas = {
 
 			allowed = {
 				original_tag = SWE
-			}
-
-			cancel = {
-				SWE = {
-					NOT = {
-						has_variable = infra_total_bonus
-					}
-				}
 			}
 
 			allowed_civil_war = {

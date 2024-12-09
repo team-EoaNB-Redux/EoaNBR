@@ -490,11 +490,13 @@ i_am_a_staunch_national_sewardist = {
 	happened = {
 		owns_state = 101
 		all_state = {
-			limit={
-				is_on_continent = north_america
-				is_on_continent = south_america
+			if = {
+				limit={
+					is_on_continent = north_america
+					is_on_continent = south_america
+				}
+				is_owned_and_controlled_by = ROOT
 			}
-			is_owned_and_controlled_by = ROOT
 		}
 	}
 }

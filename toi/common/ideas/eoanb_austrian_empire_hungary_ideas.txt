@@ -1173,12 +1173,6 @@ ideas = {
 				always = yes
 			}
 
-			cancel = {
-				NOT = {
-					has_variable = civ_total_bonus
-				}
-			}
-
 			removal_cost = -1
 
 			picture = AUS_hungarian_revolution
@@ -1197,13 +1191,6 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
-			cancel = {
-				NOT = {
-					has_variable = civ_total_bonus
-				}
-			}
-
 			removal_cost = -1
 
 			picture = ENG_poor_worker_conditions

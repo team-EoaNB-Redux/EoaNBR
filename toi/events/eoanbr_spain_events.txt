@@ -4457,7 +4457,7 @@ country_event = { #Amorebieta Convention
 	is_triggered_only = yes
 
 	option = {#
-		name = spain.81.a
+		name = spain.82.a
 		# log = "option:		name = spain.40.a"
 		ai_chance = { factor = 100 }
 		add_to_variable = {
@@ -4467,7 +4467,7 @@ country_event = { #Amorebieta Convention
 		}
 	}
 	option = {#
-		name = spain.81.a
+		name = spain.82.a
 		# log = "option:		name = spain.40.a"
 		ai_chance = { factor = 100 }
 		add_stability = -0.05
@@ -4476,5 +4476,24 @@ country_event = { #Amorebieta Convention
 			value = 5
 			tooltip = SPR_stress_level_increase
 		}
+	}
+}
+country_event = { #Reintegration of cuba
+	id = spain.83
+	title = spain.83.t
+	desc = spain.83.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.83.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_stability = 0.05
 	}
 }

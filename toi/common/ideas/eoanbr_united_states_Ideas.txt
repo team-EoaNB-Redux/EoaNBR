@@ -33,7 +33,6 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.075
 				fundamentalism_drift = -0.05
-				#political_power_gain = -0.15
 			}
 		}
 		USA_1857Panic0 = {
@@ -48,15 +47,10 @@ ideas = {
 			picture = the_market_crash
 
 			modifier = {
-				# treasury_cost_monthly_per_gdp = 0.005
-				#industrial_capacity_factory = -0.1
-				#production_speed_buildings_factor = -0.1
-				# min_export = -0.1
+				industry_construction_cost_factor = -0.15
 				factory_throughput_factor = -0.04
 				industry_free_repair_factor = -1.0
 				industry_repair_factor = -1.0
-				#repair_speed_infrastructure_factor = -0.9
-				#repair_speed_industrial_complex_factor = -0.9
 			}
 		}
 		USA_1857Panic1 = {
@@ -71,7 +65,6 @@ ideas = {
 			picture = the_market_crash
 
 			modifier = {
-				# treasury_cost_monthly_per_gdp = 0.005
 				factory_throughput_factor = -0.045
 				industry_free_repair_factor = -0.9
 				industry_repair_factor = -0.9
@@ -91,7 +84,6 @@ ideas = {
 			picture = the_market_crash
 
 			modifier = {
-				# treasury_cost_monthly_per_gdp = 0.005
 				factory_throughput_factor = -0.04
 				industry_free_repair_factor = -0.9
 				industry_repair_factor = -0.9
@@ -3251,6 +3243,63 @@ ideas = {
 				tag = SPR
 				army_attack_factor = 0.10
 				army_defence_factor = 0.10
+			}
+		}
+
+		USA_labor_movement_1 = {
+			picture = usa_labor_movement_1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.025
+				social_egalitarianism_drift = 0.001
+			}
+		}
+
+		USA_labor_movement_2 = {
+			picture = usa_labor_movement_2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.05
+				social_egalitarianism_drift = 0.002
+				collectivist_socialism_drift = 0.001
+			}
+		}
+
+		USA_labor_movement_3 = {
+			picture = usa_labor_movement_3
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.075
+				social_egalitarianism_drift = 0.003
+				collectivist_socialism_drift = 0.002
+				vanguard_communism_drift = 0.001
 			}
 		}
 	}

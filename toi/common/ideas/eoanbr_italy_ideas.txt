@@ -613,11 +613,6 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.3
 			}
-			cancel = {
-				NOT = {
-					has_variable = civ_total_bonus
-				}
-			}
 		}
 		ITA_Construction_Bonus_Temp_infastructure = {
 			allowed = {
@@ -627,11 +622,6 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.25
 			}
-			cancel = {
-				NOT = {
-					has_variable = infra_total_bonus
-				}
-			}
 		}
 		ITA_Construction_Bonus_Temp_Dock = {
 			allowed = {
@@ -640,11 +630,6 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {
 				production_speed_dockyard_factor = 0.3
-			}
-			cancel = {
-				NOT = {
-					has_variable = dock_total_bonus
-				}
 			}
 		}
 		ITA_Temp_Research_Bonus = {

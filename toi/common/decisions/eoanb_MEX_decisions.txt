@@ -895,9 +895,9 @@ EOANBSYS_national_crisis_decision_category = {
 		# visible = {
 		# 	always = no
 		# }
-		target_root_trigger = {
-			has_completed_focus = MEX_focus_comonforts_interim_powers
-		}
+		# target_root_trigger = {
+		# 	has_completed_focus = MEX_focus_comonforts_interim_powers
+		# }
 		# target_array = MEX.core_states
 		# target_trigger = {
 		# 	has_resistance = yes
@@ -943,7 +943,9 @@ EOANBSYS_national_crisis_decision_category = {
 			add_months_of_income = yes
 			random_core_state = {
 				limit = {
-					owner = MEX
+					owner = {
+						tag = MEX
+					}
 				}
 				random_list = {
 					3 = {

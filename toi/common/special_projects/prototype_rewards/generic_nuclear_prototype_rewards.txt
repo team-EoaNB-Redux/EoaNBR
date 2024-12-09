@@ -161,12 +161,6 @@ sp_nuclear_major_political_interference_generic_reward = {
 
 	weight = {
 		base = 1
-		modifier = {
-			factor = 0.25
-			FROM = {
-				NOT = { has_government = fascism }
-			}
-		}
 	}
 	
 	option = {
