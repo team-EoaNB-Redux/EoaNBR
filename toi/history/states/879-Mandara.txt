@@ -15,6 +15,11 @@ state = {
 		}
 		owner = KTK
 		add_core_of = KTK
+
+		1885.11.1 = {
+			owner = PRS
+			remove_core_of = KTK
+		}
 		afr_state_setup_scripted_effect = yes
 	}
 }

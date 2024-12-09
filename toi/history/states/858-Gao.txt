@@ -17,6 +17,13 @@ state = {
 		owner = GAO
 		add_core_of = GAO
 		add_claim_by = KAD
+
+		1870.5.11 = {
+			owner = TOU
+			add_core_of = TOU
+			remove_core_of = GAO
+		}
+		
 		afr_state_setup_scripted_effect = yes
 	}
 }

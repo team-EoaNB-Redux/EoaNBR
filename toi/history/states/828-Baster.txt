@@ -25,6 +25,7 @@ state = {
 		owner = OOR
 		1885.11.1 = {
 			owner = PRS
+			remove_core_of = OOR
 		}
 		afr_state_setup_scripted_effect = yes
 	}
