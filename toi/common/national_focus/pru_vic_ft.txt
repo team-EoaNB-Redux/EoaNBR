@@ -1230,8 +1230,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = 1_TT_PRU
-		
+			#custom_effect_tooltip = 1_TT_PRU
 			custom_effect_tooltip = 2_TT_PRU
 		}
 	}
@@ -1263,6 +1262,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 				}
 			}
 		}
+		ai_will_do = { base = 50 }
 	}
 	focus = {
 		id = PRU_prepare_the_navy
@@ -1283,6 +1283,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 		completion_reward = {
 			navy_experience = 25
 		}
+		ai_will_do = { base = 50 }
 	}
 	focus = {
 		id = PRU_dealing_with_internal_issues
@@ -1295,6 +1296,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 		prerequisite = {
 			focus = PRU_the_talambo_incident
 		}	
+		ai_will_do = { base = 50 }
 		
 		completion_reward = {
 			add_stability = 0.05
@@ -1311,6 +1313,8 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 		available = {
 			376={ is_owned_by = SPR}
 		}
+
+		ai_will_do = { base = 50 }
 		
 		prerequisite = {
 			focus = PRU_dealing_with_internal_issues
@@ -1356,6 +1360,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 				country_event = {id = peru.9}
 			}
 		}
+		ai_will_do = { base = 50 }
 	}
 	focus = {
 		id = PRU_increase_the_army
@@ -1372,6 +1377,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 		completion_reward = {
 			add_manpower = 10000
 		}
+		ai_will_do = { base = 50 }
 	}
 	focus = {
 		id = PRU_loans_from_london
@@ -1391,6 +1397,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 			set_temp_variable = {country_temp = ENG}
 			borrow_money = yes
 		}
+		ai_will_do = { base = 50 }
 	}
 	focus = {
 		id = PRU_send_officers_to_buy_warships
@@ -1410,6 +1417,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 		completion_reward = {
 			country_event = peru.11
 		}
+		ai_will_do = { base = 50 }
 	}
 	focus = {
 		id = PRU_repair_the_apurimac
@@ -1429,6 +1437,7 @@ custom_effect_tooltip = PRU_custom_effect_americanist_tt
 		completion_reward = {
 			#adds frigate Apurimac to the build queue at 90%ish
 		}
+		ai_will_do = { base = 50 }
 	}
 	focus = {
 		id = PRU_prepare_for_SPR

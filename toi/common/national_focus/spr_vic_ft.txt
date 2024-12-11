@@ -1836,6 +1836,11 @@ focus = {
 		prerequisite = { focus = SPR_stay_in_the_war }
 
 		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = MXE
+			}
 		}
 	}
 
@@ -1852,6 +1857,13 @@ focus = {
 		prerequisite = { focus = SPR_send_guns_to_mexico }
 
 		completion_reward = {
+			army_experience = 25
+			damage_units = {
+				region = 123
+				limit = { tag = SPR }
+				org_damage = -0.2
+				army = yes
+			}
 		}
 	}
 

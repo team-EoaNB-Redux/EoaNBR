@@ -291,6 +291,11 @@ SPC_put_units_in_cuba_during_ten_years = {
 		value = 200
 	}
 	ai_strategy = {
+		type = consider_weak
+		id = HAI
+		value = 1000
+	}
+	ai_strategy = {
 		type = put_unit_buffers
 
 		order_id = 2
@@ -300,7 +305,7 @@ SPC_put_units_in_cuba_during_ten_years = {
 			1350
 		}
 
-		ratio = 0.30
+		ratio = 0.50
 
 		subtract_invasions_from_need = no
 	}

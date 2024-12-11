@@ -61,11 +61,27 @@ spain.15.t: "Cochinchina French-Spanish Campaign"
 spain.15.d: "In 1858, the French Empire invades Indochine trying to expand its colonies around the world. With the pretext of the assassination of two Spanish missionaries, France invites Spain to join to the campaign. Spain accepts and contributes to the war effort providing up to 4000 soldiers and several war ships as the steamboats “Elcano” and “Jorge Juan”. Finally, Spain was not awarded with any territory but, at least, some valorous experience was obtained."
 spain.15.a: "Some compensation assuring the spreading of Catholicism"
 
+spain.16.t: "Mission to South America"
+spain.17.t: "Spanish Mission Arrives in Valparaiso"
+spain.18.t: "Mission departs Valparaiso for Callao"
+spain.19.t: "Spanish Mission Arrives in Callao"
+spain.20.t: "Mission departs Callao for San Francisco"
+spain.22.t: "Pinzon Returns to Peru"
+spain.22.d: "Following the Talambo incident, Pinzon the leader of our South American Mission has returned to Peru in order to represent our interests in this situtation."
+spain.22.a: "Send a Representive"
+
+spain.32.t: "Arrival of the Royal Commissary"
+
 spain_hispaniola.1.t: "The administration of La Hispaniola"
 spain_hispaniola.1.d: "Following the recent annexation of the Dominican Republic to Spain, we have encountered a political dilemma. Although the administrations of La Hispaniola continue to bear a striking resemblance to our Caribbean administrations, they are not completely identical and have undergone slight changes during their years of independence. Furthermore, these administrations are strongly dominated by the local Creole aristocracy, which hinders our influence in the territory. We could respect these institutions and the local upper class without disturbing the status quo too much or we could take advantage of the similarity between administrations to easily remodel the entire structure and ensure the dominance of the Spanish state."
 spain_hispaniola.1.a: "They need the Caribbean administration."
 spain_hispaniola.1.b: "Reach a middle ground."
 spain_hispaniola.1.c: "We do not need to get involved in the administration of La Hispaniola."
+
+SPR_hispaniola.7.t: "General Captaincy of the Carribean?"
+SPR_hispaniola.7.d: "[FROM.GetName] Requests the Reformation of the General Captaincy of the Carribean"
+SPR_hispaniola.7.a: "Confirm the Recreation"
+SPR_hispaniola.7.b: "Deny the Request"
 
 spain_caribbean.21.t: "Sale of Cuba pays Dividends"
 spain_caribbean.21.d: "Today an installment on the sale of Hispaniola arrived from the United States of America. We should invest this money to combat our ongoing economic crisis."
@@ -709,6 +725,7 @@ SPR_carlistwar_3: "Third Carlist War"
 SPR_banco_hispano_colonial: "Banco Hispano Colonial"
 SPR_recuitment_and_replacement_act: "Recuitment and Replacment Act"
 SPR_grain_investments: "Grain Investments"
+SPR_rigged_quinta: "Rigged Quinta"
 
 ### MISCELANEA ###
 #Construction Bonuses
