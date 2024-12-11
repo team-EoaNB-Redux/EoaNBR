@@ -16,6 +16,14 @@ spriteTypes = {
 			name = "GFX_Portrait_MEX_Luis_Osollo"
 			texturefile = "gfx/leaders/MEX/Portrait_MEX_Luis_Osollo.dds"
 		}
+		spriteType = {
+			name = "GFX_Portrait_MEX_Benito_Juarez"
+			texturefile = "gfx/leaders/MEX/Portrait_MEX_Benito_Juarez.dds"
+		}
+		spriteType = {
+			name = "GFX_Portrait_MEX_Felix_Maria_Zuloaga"
+			texturefile = "gfx/leaders/MEX/Portrait_MEX_Felix_Maria_Zuloaga.dds"
+		}
 	# Chile
 		spriteType = {
 			name = "GFX_Portrait_CHI_Manuel_Montt"

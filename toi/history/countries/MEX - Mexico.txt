@@ -105,26 +105,27 @@
 
 	# POLITICAL LEADERS
 
-	create_country_leader = {
-		name = "Ignacio Comonfort"
-		desc = "MEX_1857_Leader_desc"
-		picture = GFX_Portrait_MEX_Ignacio_Comonfort
-		expire = 1865.11.13
-		ideology = conserv_liberal
-		id = 18621
-	}
+	recruit_character = MEX_Char_Ignacio_Comonfort
+	# create_country_leader = {
+	# 	name = "Ignacio Comonfort"
+	# 	desc = "MEX_1857_Leader_desc"
+	# 	picture = GFX_Portrait_MEX_Ignacio_Comonfort
+	# 	expire = 1865.11.13
+	# 	ideology = conserv_liberal
+	# 	id = 18621
+	# }
 
 	add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = MEX }
 	add_equipment_to_stockpile = { type = uniform_equipment amount = 1000 producer = MEX }
 
-	create_country_leader = {
-		name = "Felix Maria Zuloaga"
-		desc = "POLITICS_TEMP_DESC"
-		picture = "Portrait_MEX_Felix_Maria_Zuloaga.dds"
-		expire = 1898.2.11
-		ideology = reactionary
-		id = 18622
-	}
+	# create_country_leader = {
+	# 	name = "Felix Maria Zuloaga"
+	# 	desc = "POLITICS_TEMP_DESC"
+	# 	picture = "Portrait_MEX_Felix_Maria_Zuloaga.dds"
+	# 	expire = 1898.2.11
+	# 	ideology = reactionary
+	# 	id = 18622
+	# }
 
 	recruit_character = MEX_Jesus_Gonzalez_Ortega
 	#create_corps_commander = {

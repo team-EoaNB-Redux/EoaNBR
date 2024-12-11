@@ -129,14 +129,23 @@ add_namespace = mexico_civil_war
 			# log = "option:			name = mexico_politics.6.a"
 			add_stability = 0.05
 			add_war_support = 0.12
-			create_country_leader = {
-				name = "Felix Maria Zuloaga"
-				desc = "POLITICS_TEMP_DESC"
-				picture = "Portrait_MEC_Felix_Maria_Zuloaga.dds"
-				expire = 1898.2.11
-				ideology = reactionary
-				id = 18632
+			MEX = {
+				party_leader = {
+					limit = {
+						has_ideology = reactionary
+					}
+					set_nationality = MEC
+				}
 			}
+			# create_country_leader = {
+			# 	name = "Felix Maria Zuloaga"
+			# 	desc = "POLITICS_TEMP_DESC"
+			# 	picture = "Portrait_MEC_Felix_Maria_Zuloaga.dds"
+			# 	expire = 1898.2.11
+			# 	ideology = reactionary
+			# 	id = 18632
+			# }
+			promote_character = MEC_Char_Felix_Zuloaga
 			complete_national_focus = MEX_get_rid_of_confort
 			hidden_effect = {
 				set_politics = { ruling_party = radical_democracy elections_allowed = yes }
@@ -153,6 +162,9 @@ add_namespace = mexico_civil_war
 
 		immediate = {
 			# log = "[THIS.GetTag]: firing  = mexico_politics.7"
+			hidden_effect = {
+				promote_character = MEC_Char_Felix_Zuloaga
+			}
 		}
 
 		fire_only_once = yes
@@ -162,13 +174,21 @@ add_namespace = mexico_civil_war
 		option = {
 			name = mexico_politics.7.a
 			# log = "option:			name = mexico_politics.7.a"
-			create_country_leader = {
-				name = "Benito Juárez"
-				desc = "POLITICS_TEMP_DESC"
-				picture = "Portrait_MEX_Benito_Juarez.dds"
-				expire = 1872.7.18
-				ideology = conserv_liberal
-				id = 18623
+			# create_country_leader = {
+			# 	name = "Benito Juárez"
+			# 	desc = "POLITICS_TEMP_DESC"
+			# 	picture = "Portrait_MEX_Benito_Juarez.dds"
+			# 	expire = 1872.7.18
+			# 	ideology = liberal_social
+			# 	id = 18623
+			# }
+			recruit_character = MEX_Char_Benito_Juarez
+			promote_character = MEX_Char_Benito_Juarez
+			set_politics = {
+				ruling_party = social_egalitarianism
+				last_election = "1857.9.15"
+				election_frequency = 48
+				elections_allowed = no
 			}
 			declare_war_on = {
 				target = MEC
@@ -1314,13 +1334,13 @@ country_event = { #Debt system initial announcement
 			# log = "option:			name = mexico_civil_war.2.a"
 			trigger = { TAG = MEX }
 			add_war_support = 0.015
-			MEX = {
+			#MEX = {
 				create_unit = {
 					division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.50"
 					owner = MEX
 
 				}
-			}
+			#}
 		}
 		option = {
 			name = mexico_civil_war.2.b
@@ -3155,7 +3175,7 @@ country_event = {
 		trigger = {
 			TAG = MEX
 			#date > 1857.12.16
-			has_country_leader = { id = 18621 ruling_only = yes name = "Ignacio Comonfort" }
+			# has_country_leader = { id = 18621 ruling_only = yes name = "Ignacio Comonfort" }
 		}
 
 		option = {
@@ -3289,15 +3309,15 @@ country_event = {
 			name = mexico.5.a
 		# log = "option:			name = mexico.5.a"
 			add_stability = -0.05
-			create_country_leader = {
-				name = "Benito Juárez"
-				desc = "POLITICS_TEMP_DESC"
-				picture = "Portrait_MEX_Benito_Juarez.dds"
-				expire = 1872.7.18
-				ideology = conserv_liberal
-				id = 18623
-			}
-			set_politics = { ruling_party = traditional_conservatism elections_allowed = yes }
+			# create_country_leader = {
+			# 	name = "Benito Juárez"
+			# 	desc = "POLITICS_TEMP_DESC"
+			# 	picture = "Portrait_MEX_Benito_Juarez.dds"
+			# 	expire = 1872.7.18
+			# 	ideology = conserv_liberal
+			# 	id = 18623
+			# }
+			set_politics = { ruling_party = social_egalitarianism elections_allowed = no }
 			hidden_effect = {
 				MEX = { country_event = { days = 10 id = mexico_civil_war.1 } }
 			}

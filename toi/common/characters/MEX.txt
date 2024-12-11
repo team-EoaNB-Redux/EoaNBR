@@ -1,4 +1,4 @@
-characters  =  {
+characters  =  { #MEX and MEC
 
 	##### GENERALS #####
 
@@ -81,6 +81,36 @@ characters  =  {
 	}
 
 ###### political leaders
+	MEX_Char_Ignacio_Comonfort = {
+		name = "Ignacio Comonfort"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MEX_Ignacio_Comonfort"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = MEX_1857_Leader_desc
+		}
+		advisor = {
+
+		}
+	}
+	MEC_Char_Felix_Zuloaga = {
+		name = "Felix Maria Zuloaga"
+		portraits = {
+			civilian = {
+				large = "Portrait_MEX_Felix_Maria_Zuloaga.dds"
+			}
+		}
+		country_leader = {
+			ideology = reactionary
+			desc = POLITICS_TEMP_DESC
+		}
+		advisor = {
+
+		}
+	}
 	MEX_Char_Lerdo_de_Tejada = {
 		name = "Miguel Lerdo de Tejada y Corral"
 		portraits = {
@@ -151,6 +181,21 @@ characters  =  {
 		country_leader = {
 			ideology = falangism
 			desc = MEX_Char_Marquez_Araujo_desc
+		}
+		advisor = {
+			
+		}
+	}
+	MEX_Char_Benito_Juarez = {
+		name = "Benito Juárez"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MEX_Benito_Juarez"
+			}
+		}
+		country_leader = {
+			ideology = liberal_social
+			desc = POLITICS_TEMP_DESC
 		}
 		advisor = {
 			

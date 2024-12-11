@@ -55,7 +55,9 @@ decrease_resistance_la_reforma = {
 	else = {
 		if = {
 			limit = {
-				has_war = yes
+				MEX = {
+					has_war = yes
+				}
 				NOT = { state = 277 }
 			}
 			random_list = {
@@ -172,5 +174,9 @@ increase_resistance_la_reforma = {
 	else = {
 		add_resistance = 10
 		add_compliance = -10
+		random_list = {
+			1 = { EOANBSYS_national_crisis_progress_add_one = yes }
+			1 = {}
+		}
 	}
 }

@@ -106,14 +106,15 @@ set_popularities = {
 add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = MEX }
 add_equipment_to_stockpile = { type = uniform_equipment amount = 1000 producer = MEX }
 
-create_country_leader = {
-		name = "Felix Maria Zuloaga"
-		desc = "POLITICS_TEMP_DESC"
-		picture = "Portrait_MEC_Felix_Maria_Zuloaga.dds"
-		expire = 1898.2.11
-		ideology = reactionary
-	id = 18632
-}
+recruit_character = MEC_Char_Felix_Zuloaga
+# create_country_leader = {
+# 		name = "Felix Maria Zuloaga"
+# 		desc = "POLITICS_TEMP_DESC"
+# 		picture = "Portrait_MEC_Felix_Maria_Zuloaga.dds"
+# 		expire = 1898.2.11
+# 		ideology = reactionary
+# 	id = 18632
+# }
 
 create_country_leader = {
 		name = "José Lazaro"

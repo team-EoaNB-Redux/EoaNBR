@@ -913,7 +913,7 @@ EOANBSYS_national_crisis_decision_category = {
 		complete_effect = {
 			random_core_state = {
 				limit = {
-					owner = {
+					OWNER = {
 						tag = MEX
 					}
 				}
