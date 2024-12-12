@@ -2056,6 +2056,7 @@
       industry_retooling_input_loc: "[?pm_input_temp.GetTokenLocalizedKey] Input: £[GetPMInputTextIcon] §b[GetAdjustedAmount]§!    ([GetIndustryRetoolingInputCost]§![GetCurrencyTextIconState] )\n"
 
       industry_employment_loc: "§YEmployment:§!\nEmployees: §S[GetIndustryEmployed]§! / §S[GetIndustryJobs]§! (§Y[GetIndustryEmploymentPercentage]§!)\n[GetIndustryLaborersLoc][GetIndustryWorkersLoc][GetIndustryProfessionalsLoc][GetIndustrySpecialistsLoc]\nTarget: §S[GetIndustryEmploymentAmount]§! (§Y[GetIndustryEmploymentTarget]§!)\n"
+      industry_employment_icon_loc: "GFX_employment_icon_[?percent_temp|0]"
       industry_laborers_loc: "   - Laborers: §S[GetIndustryLaborersEmployed]§! / §S[GetIndustryLaborersJobs]§!\n"
       industry_workers_loc: "   - Workers: §S[GetIndustryWorkersEmployed]§! / §S[GetIndustryWorkersJobs]§!\n"
       industry_professionals_loc: "   - Professionals: §S[GetIndustryProfessionalsEmployed]§! / §S[GetIndustryProfessionalsJobs]§!\n"

@@ -378,7 +378,7 @@ defined_text = {
 				divide_temp_variable = { percent_temp = 10 }
 				round_temp_variable = percent_temp
 			}
-			localization_key = "GFX_employment_icon_[?percent_temp|0]"
+			localization_key = industry_employment_icon_loc
 		}
 	}
 #
