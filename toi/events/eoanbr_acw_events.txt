@@ -17099,10 +17099,6 @@ country_event = {
 						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0"
 						owner = CSA
 					}
-					create_unit = {
-						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0"
-						owner = CSA
-					}
 				}
 				declare_war_on = {
 					target = USA
