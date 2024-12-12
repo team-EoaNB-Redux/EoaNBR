@@ -179,16 +179,16 @@ eoanb_category_institutions = {
 				AND = {
 					date > 1850.1.1
 	 				num_of_factories > 10
-	 				check_variable = { var = progress@token:institution_industrialization value = 71 }
+	 				check_variable = { var = progress@token:institution_industrialization value > 71 }
 	 			}
 	 			AND = {
 	 				date > 1860.1.1
 	 				num_of_factories > 5
-	 				check_variable = { var = progress@token:institution_industrialization value = 85 }
+	 				check_variable = { var = progress@token:institution_industrialization value > 85 }
 	 			}
 				AND = {
 	 				date > 1870.1.1
-					check_variable = { var = progress@token:institution_mechanization value = 0 }
+					check_variable = { var = progress@token:institution_mechanization value > 0 }
 	 			}
 	 			date > 1880.1.1
 	 		}
@@ -226,12 +226,12 @@ eoanb_category_institutions = {
 				AND = {
 					date > 1880.1.1
 					num_of_factories > 25
-					check_variable = { var = progress@token:institution_mechanization value = 50 }
+					check_variable = { var = progress@token:institution_mechanization value > 50 }
 				}
 				AND = {
 					date > 1890.1.1
 					num_of_factories > 10
-					check_variable = { var = progress@token:institution_electrification value = 0 }
+					check_variable = { var = progress@token:institution_electrification value > 0 }
 				}
 				AND = {
 					date > 1900.1.1
@@ -276,12 +276,12 @@ eoanb_category_institutions = {
 				AND = {
 					date > 1900.1.1
 					num_of_factories > 35
-					check_variable = { var = progress@token:institution_electrification value = 45 }
+					check_variable = { var = progress@token:institution_electrification value > 45 }
 				}
 				AND = {
 					date > 1905.1.1
 					num_of_factories > 15
-					check_variable = { var = progress@token:institution_mass_transit value = 0 }
+					check_variable = { var = progress@token:institution_mass_transit value > 0 }
 				}
 				AND = {
 					date > 1925.1.1
