@@ -515,56 +515,39 @@
 			}
 			if = {
 				limit = {
-					check_variable = { s_temp > d_temp }
+					check_variable = { s_temp > 0 }
+					NOT = { check_variable = { d_temp > 0 } }
 				}
-				if = {
-					limit = {
-						check_variable = { d_temp > 0.0 }
-					}
-					set_temp_variable = { grp_multiplier = s_temp }
-					divide_temp_variable = { grp_multiplier = d_temp }
-					multiply_temp_variable = { grp_multiplier = 3 }
-					subtract_from_temp_variable = { grp_multiplier = 2 }
-
-					if = {
-						limit = {
-							check_variable = { grp_multiplier > 4.0 }
-						}
-						set_temp_variable = { grp_multiplier = 4.0 }
-					}
-				}
-				else = {
-					set_temp_variable = { grp_multiplier = 4.0 }
-				}
-
-				divide_temp_variable = { p_return_temp = grp_multiplier } # P = B / (3 * S/D - 2)
+				multiply_temp_variable = { p_return_temp = 0.25 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { s_temp < d_temp }
+					NOT = { check_variable = { s_temp > 0 } }
+					check_variable = { d_temp > 0 }
 				}
+				multiply_temp_variable = { p_return_temp = 4.0 }
+			}
+			else = {
+				set_temp_variable = { grp_multiplier = d_temp }
+				divide_temp_variable = { grp_multiplier = s_temp }
 				if = {
 					limit = {
-						check_variable = { s_temp > 0.0 }
+						check_variable = { grp_multiplier > 2 }
 					}
-					set_temp_variable = { grp_multiplier = d_temp }
-					subtract_from_temp_variable = { grp_multiplier = s_temp }
-					divide_temp_variable = { grp_multiplier = s_temp }
-					multiply_temp_variable = { grp_multiplier = 3 }
-					add_to_temp_variable = { grp_multiplier = 1 }
-
-					if = {
-						limit = {
-							check_variable = { grp_multiplier > 4.0 }
-						}
-						set_temp_variable = { grp_multiplier = 4.0 }
+					multiply_temp_variable = { p_return_temp = 4.0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { grp_multiplier < 0.5 }
 					}
+					multiply_temp_variable = { p_return_temp = 0.25 }
 				}
 				else = {
-					set_temp_variable = { grp_multiplier = 4.0 }
-				}
+					multiply_temp_variable = { grp_multiplier = d_temp }
+					divide_temp_variable = { grp_multiplier = s_temp }
 
-				multiply_temp_variable = { p_return_temp = grp_multiplier } # P = B * ( 3*(D-S) / S + 1 )
+					multiply_temp_variable = { p_return_temp = grp_multiplier } # P = B * D^2 / S^2
+				}
 			}
 		}
 		else_if = {
@@ -1175,12 +1158,17 @@
 				divide_variable = { trade_tariffs@var:r_type = 100 }
 				multiply_variable = { trade_tariffs@var:r_type = trade_value@var:r_type }
 
+				# Shipping Cost
+				set_variable = { shipping_cost@var:r_type = shipping_use@var:r_type }
+				multiply_variable = { shipping_cost@var:r_type = price_shipping_capacity }
+
 				# Adding temp value
 				subtract_from_variable = { trade_value@var:r_type = temp_value }
 
 				# Profit
 				set_variable = { trade_profit@var:r_type = trade_value@var:r_type }
 				subtract_from_variable = { trade_profit@var:r_type = trade_tariffs@var:r_type }
+				subtract_from_variable = { trade_profit@var:r_type = shipping_cost@var:r_type }
 			}
 			else_if = { #Export
 				limit = {
@@ -1198,6 +1186,10 @@
 				set_variable = { trade_tariffs@var:r_type = export_tariff_percentage_actual }
 				divide_variable = { trade_tariffs@var:r_type = -100 }
 				multiply_variable = { trade_tariffs@var:r_type = trade_value@var:r_type }
+
+				# Shipping Cost
+				set_variable = { shipping_cost@var:r_type = shipping_use@var:r_type }
+				multiply_variable = { shipping_cost@var:r_type = price_shipping_capacity }
 				
 				# Adding temp value
 				add_to_variable = { trade_value@var:r_type = temp_value }
@@ -1205,10 +1197,12 @@
 				# Profit
 				set_variable = { trade_profit@var:r_type = trade_value@var:r_type }
 				add_to_variable = { trade_profit@var:r_type = trade_tariffs@var:r_type }
+				subtract_from_variable = { trade_profit@var:r_type = shipping_cost@var:r_type }
 			}
 			else = {
 				set_variable = { trade_value@var:r_type = 0 }
 				set_variable = { trade_tariffs@var:r_type = 0 }
+				set_variable = { shipping_cost@var:r_type = 0 }
 				set_variable = { trade_profit@var:r_type = 0 }
 			}
 
@@ -2072,381 +2066,170 @@
 		# log = "Initial: [?sqrt_temp] | Approximation: [?sqrt_approx_temp] | Result: [?actual_temp]"
 		set_temp_variable = { sqrt_temp = sqrt_approx_temp }
 	}
-	trade_ai_determine_max_trade = {
-		# Takes in a single route, given as resource_temp, and gives the max trade of that route as amount_temp
-		
-		# D = Demand, S = Supply, Sg = Global Supply, Dg = Global Demand, T = Trade
-		# Exporting: T = (S*Dg / Sg) - D
-		# Importing: T = (D*Sg / Dg) - S
+	fast_square_root = {
+		# Given sqrt_temp, approximates the square root of the value using Heron's method. Outputs using the same variable
+		# Works best with inputs under 100
 
-		# Check if this is/will be an export route by checking if offers is negative, if so multiply direction_temp by -1
-		# This will mean productive export routes will export more and unproductive ones will export less
-		# If zero offers, checks if price is less than global price
 		if = {
 			limit = {
-				if = {
-					limit = {
-						check_variable = { offers@var:resource_temp = 0 }
-					}
-					check_variable = { price@var:resource_temp < global_market_price@var:resource_temp }
-				}
-				else = {
-					check_variable = { offers@var:resource_temp < 0 }
-				}
+				check_variable = { sqrt_temp < 0.001 }
 			}
-			# EXPORTING
-			# T = (S*Dg / Sg) - D
-			set_temp_variable = { d_t = need@var:resource_temp }
-			set_temp_variable = { s_t = production@var:resource_temp }
-
-			set_temp_variable = { sg_t = global_market_supply@var:resource_temp }
-			set_temp_variable = { dg_t = global_market_demand@var:resource_temp }
-
-			# Dividing by 100 so it doesn't overflow when multiplying
-			divide_temp_variable = { d_t = 100 }
-			divide_temp_variable = { s_t = 100 }
-			divide_temp_variable = { sg_t = 100 }
-			divide_temp_variable = { dg_t = 100 }
-
-			# Calculation
-			set_temp_variable = { amount_temp = s_t }
-			multiply_temp_variable = { amount_temp = dg_t }
-			divide_temp_variable = { amount_temp = sg_t }
-			subtract_from_temp_variable = { amount_temp = d_t }
-			multiply_temp_variable = { amount_temp = 100 }
-			round_temp_variable = amount_temp
-			multiply_temp_variable = { amount_temp = -1 }
+			set_temp_variable = { sqrt_temp = 0 }
 		}
 		else = {
-			# IMPORTING
-			# T = (D*Sg / Dg) - S
-			
-			set_temp_variable = { d_t = need@var:resource_temp }
-			set_temp_variable = { s_t = production@var:resource_temp }
-
-			set_temp_variable = { sg_t = global_market_supply@var:resource_temp }
-			set_temp_variable = { dg_t = global_market_demand@var:resource_temp }
-
-			# Dividing by 100 so it doesn't overflow when multiplying
-			divide_temp_variable = { d_t = 100 }
-			divide_temp_variable = { s_t = 100 }
-			divide_temp_variable = { sg_t = 100 }
-			divide_temp_variable = { dg_t = 100 }
-
-			# Calculation
-			set_temp_variable = { amount_temp = d_t }
-			multiply_temp_variable = { amount_temp = sg_t }
-			divide_temp_variable = { amount_temp = dg_t }
-			subtract_from_temp_variable = { amount_temp = s_t }
-			multiply_temp_variable = { amount_temp = 100 }
-			round_temp_variable = amount_temp
-		}
-
-		# log = "Result: [?amount_temp]"
-	}
-	trade_ai_evaluate_route = {
-		# Takes in a single route, given as resource_temp, and gives a direction that the trade ought to go in
-		# Creates direction_temp. >0 signals to increase trade. <0 Signals to decrease. 0 signals to not change.
-		# Adjusts trade amount via steps WITHOUT trade_update
-
-		set_temp_variable = { productivity_upper_bound = workforce_earnings_avg } # If productivity is above this, increase trade
-		multiply_temp_variable = { productivity_upper_bound = 1.5 }
-		set_temp_variable = { productivity_lower_bound = workforce_earnings_avg } # If productivity is below this, decrease trade
-		divide_temp_variable = { productivity_lower_bound = 2 }
-		# log = "Resource: [?resource_temp.GetTokenLocalizedKey]: [?offers@var:resource_temp], [?trade_productivity@var:resource_temp]"
-
-		if = {
-			limit = { # Checks that stuff is valid
-				check_variable = { trade_ai@var:resource_temp = 0 }
-				is_in_array = { global.resource_token_array = resource_temp }
-				NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
-
-				check_variable = { shipping_usage < 1 }
-			}
-
-			set_temp_variable = { direction_temp = 0 } # Direction of new trade. >0 is to import more, <0 is to export more
-
-			if = { # Set direction_temp to 1 signaling to increase trade
-				limit = {
-					check_variable = { trade_productivity@var:resource_temp > productivity_upper_bound }
-				}
-				set_temp_variable = { direction_temp = 1 }
-			}
-			else_if = { # Set direction_temp to -1 signaling to decrease trade
-				limit = {
-					check_variable = { trade_productivity@var:resource_temp < productivity_lower_bound }
-				}
-				set_temp_variable = { direction_temp = -1 }
-			}
-
+			# Sets initial estimate
+			set_temp_variable = { sqrt_approx_temp = 1 }
 			if = {
 				limit = {
-					NOT = { check_variable = { direction_temp = 0 } }
+					check_variable = { sqrt_temp < 0.5 }
 				}
-				
-				multiply_temp_variable = { productivity_upper_bound = 2 }
-				if = { # Setting trade if productivity is too high - Disabled for the moment
-					limit = {
-						always = no
-						#check_variable = { trade_productivity@var:resource_temp > productivity_upper_bound }
-					}
-					trade_ai_determine_max_trade = yes
-					multiply_temp_variable = { amount_temp = 0.95 }
-					set_temp_variable = { no_update_temp = 1 }
-					set_trade = yes
-				}
-				else = { # Adjust trade by a small amount
-					# Check if this is/will be an export route by checking if offers is negative, if so multiply direction_temp by -1
-					# This will mean productive export routes will export more and unproductive ones will export less
-					# If zero offers, checks if price is less than global price
-					if = {
-						limit = {
-							if = {
-								limit = {
-									check_variable = { offers@var:resource_temp = 0 }
-								}
-								check_variable = { price@var:resource_temp < global_market_price@var:resource_temp }
-							}
-							else = {
-								check_variable = { offers@var:resource_temp < 0 }
-							}
-						}
-						multiply_temp_variable = { direction_temp = -1 }
-					}
-
-					# Checks if importing/exporting this is even a good idea at all
-					if = {
-						limit = {
-							NOT = { check_variable = { global_market_price@var:resource_temp = price@var:resource_temp } }
-						}
-						# Adjust trade
-						set_temp_variable = { steps_temp = direction_temp }
-						set_temp_variable = { no_update_temp = 1 }
-						adjust_trade_step = yes
-					}
-
-				}
-				
-				# Update Shipping Use of the route
-				subtract_from_variable = { shipping_use = shipping_use@var:resource_temp }
-				set_variable = { shipping_use@var:resource_temp = offers@var:resource_temp }
-				if = {
-					limit = {
-						check_variable = { shipping_use@var:resource_temp < 0 }
-					}
-					multiply_variable = { shipping_use@var:resource_temp = -1 }
-				}
-				multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-				set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
-				add_to_temp_variable = { modifier_temp = 1 }
-				multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
-				add_to_variable = { shipping_use = shipping_use@var:resource_temp }
-
-				#Shipping Efficiency
-				if = {
-					limit = {
-						check_variable = { shipping_capacity_use > shipping_capacity }
-					}
-					set_variable = { shipping_efficiency = shipping_capacity }
-					divide_variable = { shipping_efficiency = shipping_capacity_use }
-				}
-				else = {
-					set_variable = { shipping_efficiency = 1 }
-				}
-				
-				if = {
-					limit = {
-						check_variable = { shipping_capacity = 0 }
-					}
-					set_variable = { shipping_usage = 1 }
-				}
-				else = {
-					set_variable = { shipping_usage = shipping_capacity_use }
-					divide_variable = { shipping_usage = shipping_capacity }
-				}
+				multiply_temp_variable = { sqrt_approx_temp = 0.25 }
 			}
+			else_if = {
+				limit = {
+					check_variable = { sqrt_temp > 2 }
+				}
+				multiply_temp_variable = { sqrt_approx_temp = 4 }
+			}
+
+			# Algorithm - x1 = 1/2 (x0 + S/x0)
+			
+			set_temp_variable = { sqrt_next_temp = sqrt_temp }
+			divide_temp_variable = { sqrt_next_temp = sqrt_approx_temp }
+			add_to_temp_variable = { sqrt_next_temp = sqrt_approx_temp }
+			divide_temp_variable = { sqrt_next_temp = 2 }
+			set_temp_variable = { sqrt_approx_temp = sqrt_next_temp }
+			
+			set_temp_variable = { sqrt_next_temp = sqrt_temp }
+			divide_temp_variable = { sqrt_next_temp = sqrt_approx_temp }
+			add_to_temp_variable = { sqrt_next_temp = sqrt_approx_temp }
+			divide_temp_variable = { sqrt_next_temp = 2 }
+			set_temp_variable = { sqrt_approx_temp = sqrt_next_temp }
+			
+			set_temp_variable = { sqrt_next_temp = sqrt_temp }
+			divide_temp_variable = { sqrt_next_temp = sqrt_approx_temp }
+			add_to_temp_variable = { sqrt_next_temp = sqrt_approx_temp }
+			divide_temp_variable = { sqrt_next_temp = 2 }
+
+			set_temp_variable = { sqrt_temp = sqrt_next_temp }
+
+			# Output
+			# set_temp_variable = { actual_temp = sqrt_approx_temp }
+			# multiply_temp_variable = { actual_temp = actual_temp }
+			# log = "Initial: [?sqrt_temp] | Approximation: [?sqrt_approx_temp] | Result: [?actual_temp]"
+			# set_temp_variable = { sqrt_temp = sqrt_approx_temp }
 		}
 	}
-	trade_ai_remove_unproductive_route = {
-		# Takes in a single route, given as resource_temp, and reduces it if the route is unproductive
-		# Adjusts trade amount via steps WITHOUT trade_update
+	evaluate_best_trade_quantity = {
+		# resource_temp
+		# outputs trade_quantity_temp
+		
+		set_temp_variable = { trade_quantity_temp = 0 }
 
-		set_temp_variable = { productivity_lower_bound = workforce_earnings_avg } # If productivity is below this, decrease trade
-		divide_temp_variable = { productivity_lower_bound = 2 }
+		set_temp_variable = { balance_temp = need@var:resource_temp }
+		if = {
+			limit = {
+				check_variable = { production@var:resource_temp > 0 }
+			}
+			divide_temp_variable = { balance_temp = production@var:resource_temp }
+		}
+		else = {
+			set_temp_variable = { balance_temp = 2000000 }
+		}
+		set_temp_variable = { global_balance_temp = global_market_demand@var:resource_temp }
+		if = {
+			limit = {
+				check_variable = { global_market_supply@var:resource_temp > 0 }
+			}
+			divide_temp_variable = { global_balance_temp = global_market_supply@var:resource_temp }
+		}
+		else = {
+			set_temp_variable = { global_balance_temp = 2000000 }
+		}
 		
 		if = {
-			limit = { # Checks that stuff is valid
-				check_variable = { trade_ai@var:resource_temp = 0 }
-				is_in_array = { global.resource_token_array = resource_temp }
-				NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
-				
-				check_variable = { trade_productivity@var:resource_temp < productivity_lower_bound } # Route is unprofitable!
-				NOT = { check_variable = { offers@var:resource_temp = 0 } } # There is actual trade here
+			limit = {
+				check_variable = { balance_temp = global_balance_temp }
 			}
+			set_temp_variable = { trade_quantity_temp = 0 }
+		}
+		else = {
+			set_temp_variable = { shipping_cost_temp = price_shipping_capacity }
+			multiply_temp_variable = { shipping_cost_temp = global.shipping_cost@var:resource_temp }
+			set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
+			add_to_temp_variable = { modifier_temp = 1 }
+			multiply_temp_variable = { shipping_cost_temp = modifier_temp }
 
-			# Check if this is/will be an export route by checking if offers is negative, if so set steps_temp to 1
-			# Otherwise, set it to -1. This will unproductive ones will export/import less
-			if = {
+			set_temp_variable = { prod_term = workforce_earnings_avg }
+			divide_temp_variable = { prod_term = global.shipping_amount@var:resource_temp }
+
+			if = { # Export
 				limit = {
-					check_variable = { offers@var:resource_temp < 0 }
+					check_variable = { balance_temp < global_balance_temp }
 				}
-				set_temp_variable = { steps_temp = 1 } # Setting to +1 to decrease trade on an export route - since offers is negative
-			}
-			else = {
-				set_temp_variable = { steps_temp = -1 } # Setting to -1 to decrease trade on an import route - since offers is positive
-			}
+				# Export = S_production * sqrt( (global_price * (1 - tariffs) - prod / shipping_amount - shipping_price * shipping_cost ) / base_price ) - D_consumption
 
-			divide_temp_variable = { productivity_lower_bound = 2 }
-			if = {
-				limit = {
-					check_variable = { trade_productivity@var:resource_temp < productivity_lower_bound } # Route is very unprofitable!
-				}
-				multiply_temp_variable = { steps_temp = 2 }
+				set_temp_variable = { tariffs_temp = 100 }
+				subtract_from_temp_variable = { tariffs_temp = export_tariff_percentage_actual }
+				divide_temp_variable = { tariffs_temp = 100 }
 
-				divide_temp_variable = { productivity_lower_bound = 2 }
+				set_temp_variable = { sqrt_temp = global_market_price@var:resource_temp }
+				multiply_temp_variable = { sqrt_temp = tariffs_temp }
+				subtract_from_temp_variable = { sqrt_temp = prod_term }
+				subtract_from_temp_variable = { sqrt_temp = shipping_cost_temp }
+				divide_temp_variable = { sqrt_temp = global.base_price@var:resource_temp }
+				fast_square_root = yes
+
+				set_temp_variable = { trade_quantity_temp = sqrt_temp }
+				multiply_temp_variable = { trade_quantity_temp = production@var:resource_temp }
+				subtract_from_temp_variable = { trade_quantity_temp = need@var:resource_temp }
+
+				subtract_from_temp_variable = { trade_quantity_temp = 0.5 }
 				if = {
 					limit = {
-						check_variable = { trade_productivity@var:resource_temp < productivity_lower_bound } # Route is very unprofitable!
+						check_variable = { trade_quantity_temp < 0 }
 					}
-					multiply_temp_variable = { steps_temp = 2 }
+					set_temp_variable = { trade_quantity_temp = 0 }
 				}
+				# log = "Export: [?trade_quantity_temp]"
+				multiply_temp_variable = { trade_quantity_temp = -1 }
 			}
-			if = {
-				limit = {
-					check_variable = { trade_productivity@var:resource_temp < 0 } # Route is unproductive!
-				}
-				multiply_temp_variable = { steps_temp = 3 }
-			}
+			else = { # Import				
+				# Import = D_consumption * sqrt( base_price * (1 - tariffs) / (global_price + prod / shipping_amount + shipping_price * shipping_cost ) ) - S_production
 
-			if = {
-				limit = {
-					check_variable = { trade_productivity@var:resource_temp = 0 }
-					check_variable = { price@var:resource_temp = global_market_price@var:resource_temp }
-					OR = {
-						check_variable = { global_market_price_compared_to_base@var:resource_temp = -0.75 }
-						check_variable = { global_market_price_compared_to_base@var:resource_temp = 1 }
+				set_temp_variable = { tariffs_temp = 100 }
+				subtract_from_temp_variable = { tariffs_temp = import_tariff_percentage_actual }
+				divide_temp_variable = { tariffs_temp = 100 }
+
+				set_temp_variable = { sqrt_temp = global.base_price@var:resource_temp }
+				multiply_temp_variable = { sqrt_temp = tariffs_temp }
+				set_temp_variable = { divisor_temp = global_market_price@var:resource_temp }
+				add_to_temp_variable = { divisor_temp = prod_term }
+				add_to_temp_variable = { divisor_temp = shipping_cost_temp }
+				divide_temp_variable = { sqrt_temp = divisor_temp }
+				fast_square_root = yes
+
+				set_temp_variable = { trade_quantity_temp = sqrt_temp }
+				multiply_temp_variable = { trade_quantity_temp = need@var:resource_temp }
+				subtract_from_temp_variable = { trade_quantity_temp = production@var:resource_temp }
+
+				subtract_from_temp_variable = { trade_quantity_temp = 0.5 }
+				if = {
+					limit = {
+						check_variable = { trade_quantity_temp < 0 }
 					}
+					set_temp_variable = { trade_quantity_temp = 0 }
 				}
-				multiply_temp_variable = { steps_temp = 20 }
-			}
-
-			# Adjust trade
-			set_temp_variable = { no_update_temp = 1 }
-			adjust_trade_step = yes
-
-			# Shipping Use of the route
-			subtract_from_variable = { shipping_use = shipping_use@var:resource_temp }
-			set_variable = { shipping_use@var:resource_temp = offers@var:resource_temp }
-			if = {
-				limit = {
-					check_variable = { shipping_use@var:resource_temp < 0 }
-				}
-				multiply_variable = { shipping_use@var:resource_temp = -1 }
-			}
-			multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-			set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
-			add_to_temp_variable = { modifier_temp = 1 }
-			multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
-			add_to_variable = { shipping_use = shipping_use@var:resource_temp }
-
-			#Shipping Efficiency
-			if = {
-				limit = {
-					check_variable = { shipping_capacity_use > shipping_capacity }
-				}
-				set_variable = { shipping_efficiency = shipping_capacity }
-				divide_variable = { shipping_efficiency = shipping_capacity_use }
-			}
-			else = {
-				set_variable = { shipping_efficiency = 1 }
-			}
-			
-			if = {
-				limit = {
-					check_variable = { shipping_capacity = 0 }
-				}
-				set_variable = { shipping_usage = 1 }
-			}
-			else = {
-				set_variable = { shipping_usage = shipping_capacity_use }
-				divide_variable = { shipping_usage = shipping_capacity }
-			}
-		}
-	}
-	trade_ai_optimize_route = {
-		# Takes in a single route, given as resource_temp, and reduces it if the route is less profitable than the average
-		# Adjusts trade amount via steps WITHOUT trade_update
-   
-		if = {
-			limit = { # Checks that stuff is valid
-				check_variable = { trade_ai@var:resource_temp = 0 }
-				is_in_array = { global.resource_token_array = resource_temp }
-				NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
-				
-				OR = { 
-					check_variable = { trade_productivity@var:resource_temp < trade_productivity } # Trade productivity < average
-					NOT = { check_variable = { trade_productivity@var:resource_temp > 0 } } # Route is unprofitable!
-				}
-				NOT = { check_variable = { offers@var:resource_temp = 0 } } # There is actual trade here
-			}
-
-			# Check if this is/will be an export route by checking if offers is negative, if so set steps_temp to 1
-			# Otherwise, set it to -1. This will unproductive ones will export/import less
-			if = {
-				limit = {
-					check_variable = { offers@var:resource_temp < 0 }
-				}
-				set_temp_variable = { steps_temp = 1 } # Setting to +1 to decrease trade on an export route - since offers is negative
-			}
-			else = {
-				set_temp_variable = { steps_temp = -1 } # Setting to -1 to decrease trade on an import route - since offers is positive
-			}
-
-			# Adjust trade
-			set_temp_variable = { no_update_temp = 1 }
-			adjust_trade_step = yes
-
-			# Shipping Use of the route
-			subtract_from_variable = { shipping_use = shipping_use@var:resource_temp }
-			set_variable = { shipping_use@var:resource_temp = offers@var:resource_temp }
-			if = {
-				limit = {
-					check_variable = { shipping_use@var:resource_temp < 0 }
-				}
-				multiply_variable = { shipping_use@var:resource_temp = -1 }
-			}
-			multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-			set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
-			add_to_temp_variable = { modifier_temp = 1 }
-			multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
-			add_to_variable = { shipping_use = shipping_use@var:resource_temp }
-
-			#Shipping Efficiency
-			if = {
-				limit = {
-					check_variable = { shipping_capacity_use > shipping_capacity }
-				}
-				set_variable = { shipping_efficiency = shipping_capacity }
-				divide_variable = { shipping_efficiency = shipping_capacity_use }
-			}
-			else = {
-				set_variable = { shipping_efficiency = 1 }
-			}
-			
-			if = {
-				limit = {
-					check_variable = { shipping_capacity = 0 }
-				}
-				set_variable = { shipping_usage = 1 }
-			}
-			else = {
-				set_variable = { shipping_usage = shipping_capacity_use }
-				divide_variable = { shipping_usage = shipping_capacity }
+				# log = "Import: [?trade_quantity_temp]"
 			}
 		}
 	}
 	trade_ai_calculation = {
 		set_temp_variable = { productivity_upper_bound = workforce_earnings_avg } # If productivity is above this, increase trade
+		multiply_temp_variable = { productivity_upper_bound = 1.5 }
+		set_temp_variable = { productivity_lower_bound = workforce_earnings_avg } # If productivity is below this, decrease trade
+		divide_temp_variable = { productivity_lower_bound = 2 }
+		
 		for_each_loop = { # Add Routes
 			array = global.resource_token_array
 			value = resource_temp
@@ -2493,7 +2276,7 @@
 			}
 		}
 
-		for_each_loop = { # Optimize & Evaluate Routes
+		for_each_loop = { # Evaluate Routes
 			array = trade_routes
 			value = resource_temp
 
@@ -2501,26 +2284,18 @@
 				limit = {
 					check_variable = { trade_ai@var:resource_temp = 0 }
 					NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
-				}
-
-				if = {
-					limit = {
-						check_variable = { shipping_usage > 1 }
+					OR = {
+						check_variable = { offers@var:resource_temp = 0 }
+						check_variable = { trade_productivity@var:resource_temp > productivity_upper_bound }
+						check_variable = { trade_productivity@var:resource_temp < productivity_lower_bound }
 					}
-					trade_ai_optimize_route = yes
-				}
-				else = {
-					set_temp_variable = { optimization_break = 1 }
-				}
-			}
-
-			if = {
-				limit = {
-					check_variable = { trade_ai@var:resource_temp = 0 }
-					NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
 				}
 
-				trade_ai_evaluate_route = yes
+				evaluate_best_trade_quantity = yes
+				
+				set_temp_variable = { amount_temp = trade_quantity_temp }
+				set_temp_variable = { no_update_temp = 1 }
+				set_trade = yes
 			}
 
 			if = { # Minimum trade - sets trade to resource consumption (for military production)
@@ -2569,7 +2344,7 @@
 				set_trade = yes
 			}
 		}
-		
+
 		for_each_loop = { # Remove Routes
 			array = trade_routes
 			value = resource_temp
