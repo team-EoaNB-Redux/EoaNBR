@@ -26,6 +26,21 @@ ideas = {
 				agriculture_throughput_factor = -0.1
 			}
 		}
+		SPR_governmental_guarantees = {
+			allowed = { always = no }
+			available = {}
+			cancel = {}
+			picture = SPR_pragmatic_sanction
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_confidence_modifier = 1
+				investment_confidence_modifier = 3
+			}
+		}
 
 		SPR_a_divided_country = {
 			allowed = { always = no }
@@ -820,7 +835,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_generic_agrarian_reform
+			picture = generic_agrarian_reform
 			modifier = {
 				crop_farm_attractiveness_factor = 0.05
 				crop_farm_output_factor = 0.1
@@ -830,7 +845,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_generic_agrarian_reform
+			picture = generic_agrarian_reform
 			modifier = {
 				crop_farm_attractiveness_factor = 0.1
 			}
@@ -839,9 +854,33 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = generic_idea_mandatory_conscription
+			picture = generic_mandatory_conscription
 			modifier = {
 				conscription_factor = 0.05
+			}
+		}
+		SPR_petroleum_revolution={
+			allowed = {
+				always = no
+			}
+			picture = generic_intel_bonus
+			modifier = {
+				surrender_limit = 1.00
+				no_supply_grace = 220
+				training_time_factor = 5.0
+				experience_gain_army_factor = -1.0
+			}
+		}
+		SPR_for_the_true_king={
+			allowed = {
+				always = no
+			}
+			picture = generic_intel_bonus
+			modifier = {
+				surrender_limit = 1.00
+				no_supply_grace = 220
+				training_time_factor = 5.0
+				experience_gain_army_factor = -1.0
 			}
 		}
 

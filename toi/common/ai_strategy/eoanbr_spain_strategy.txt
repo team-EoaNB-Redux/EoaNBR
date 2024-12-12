@@ -282,8 +282,8 @@ SPC_put_units_in_cuba_during_ten_years = {
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = front_unit_request
-		tag = "CUB"
-		value = 20000
+		tag = CUB
+		value = 2000
 	}
 	ai_strategy = {
 		type = antagonize
@@ -291,9 +291,14 @@ SPC_put_units_in_cuba_during_ten_years = {
 		value = 200
 	}
 	ai_strategy = {
-		type = consider_weak
-		id = HAI
-		value = 1000
+		type = front_unit_request
+		tag = HAI
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = DEN
+		value = -1000
 	}
 	ai_strategy = {
 		type = put_unit_buffers

@@ -105,7 +105,12 @@ eoanb_category_economic = {
 		allowed = { tag = SPR }
 
 		available = {
-			has_completed_focus = SPR_mining_revolution
+			OR={
+				has_idea = SPR_idea_mining_revolution_1
+				has_idea = SPR_idea_mining_revolution_2
+				has_idea = SPR_idea_mining_revolution_3
+				has_idea = SPR_idea_mining_revolution_4
+			}
 			has_stability > 0.2
 		}
 
@@ -3555,7 +3560,7 @@ SPR_CUB_ten_years_war_category={
 			1350={
 				owner={
 					army_manpower_in_state = {
-						amount > 7500
+						amount > 6000
 						state = 1350
 					}
 					not={

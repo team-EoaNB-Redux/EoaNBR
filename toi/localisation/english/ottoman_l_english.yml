@@ -239,6 +239,7 @@ OTO_vic_learn_from_the_PRS_army_desc: "The Prussian army, having one of the best
  OTO_russio_turkish_war.7.a: "The Balkans are on fire once again"
  OTO_russio_turkish_war.6.t: "The Russians offer independence for our aid"
  OTO_russio_turkish_war.5.t: "The Russians offer independence for our aid"
+ OTO_russio_turkish_war.5.a: "To War!"
  OTO_russio_turkish_war.4.t: "The Russians Invade!"
  OTO_russio_turkish_war.3.t: "Austria agrees to the offer"
  OTO_russio_turkish_war.2.t: "A Russian Offer"

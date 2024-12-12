@@ -673,8 +673,41 @@ on_actions = {
 					set_country_flag = SPR_won_restoration
 				}
 				DOM = {
-					remove_ideas = DOM_restoration_war2
-					remove_ideas = DOM_restoration_war
+					remove_ideas = {
+						DOM_restoration_war2
+						DOM_restoration_war
+					}
+				}
+			}
+			if = {#spain wins, carlists is annexed
+				limit = {
+					TAG = BAS
+					FROM = { 
+						TAG = SPR 
+						has_country_flag = SPR_third_carlist_war
+					}
+				}
+				SPR = {
+					clr_country_flag = SPR_third_carlist_war
+					remove_ideas = {SPR_carlistwar_2}
+				}
+				BAS = {
+					#remove_ideas = {SPR_for_the_true_king}
+				}
+			}
+			if = {#spain wins, carlists is annexed
+				limit = {
+					TAG = ADU
+					FROM = { 
+						TAG = SPR 
+						has_country_flag = SPR_petrolum_revolution
+					}
+				}
+				SPR = {
+					clr_country_flag = SPR_petrolum_revolution
+				}
+				ADU = {
+					#remove_ideas = {SPR_petroleum_revolution}
 				}
 			}
 			if = {#the USV wins vs venezuela

@@ -193,6 +193,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
+			hidden_effect={
+				add_ideas = {
+					parliamentary_monarchy
+				}
+			}
 		}
 	}
 	focus = {
@@ -724,7 +729,11 @@ focus = {
 	}
 
 	completion_reward = {
-		
+		subtract_from_variable = {
+			var = SPR_stress_level
+			value = 3
+			tooltip = SPR_stress_level_decrease
+		}
 	}
 }
 focus = {
@@ -778,7 +787,9 @@ focus = {
 	cost = 30
 
 	available = {
-		
+		check_variable={
+			SPR_stress_level > 3
+		}
 	}
 	ai_will_do = { base = 100 }
 
@@ -3263,7 +3274,31 @@ focus = {
 				value = -0.075
 				tooltip_side = SPR_dominion
 			}
-			add_manpower = 25000
+			if={
+				limit={
+					DOM={
+						is_subject_of = ROOT
+						controls_state = 1350
+					}
+				}
+				DOM={
+					add_manpower = 25000
+				}
+			}
+			else_if={
+				limit={
+					SPC={
+						is_subject_of = ROOT
+						controls_state = 1350
+					}
+				}
+				SPC={
+					add_manpower = 25000
+				}
+			}
+			else={
+				add_manpower = 25000
+			}
 			add_stability = -0.05
 			custom_effect_tooltip = SPR_anger_federalists_tt
 		}
@@ -3386,6 +3421,7 @@ focus = {
 						regiments = {
 							light_infantry = { x = 0 y = 0 }
 							light_infantry = { x = 0 y = 1 }
+							light_infantry = { x = 0 y = 2 }
 						}
 						is_locked = yes
 					}
@@ -3735,7 +3771,7 @@ focus = {
 		completion_reward = {
 			if={
 				limit={
-					SIA={
+					CAM={
 						is_subject_of = SIA
 					}
 				}

@@ -1399,7 +1399,27 @@ country_event = { #Grito de Yara - Spanish Victory
 		remove_power_balance = {
 			id = SPR_CUB_ten_years_war
 		}
-		transfer_state = 315
+		if={
+			limit={
+				DOM={
+					is_subject_of = ROOT
+					controls_state = 1350
+				}
+			}
+			DOM = {transfer_state = 315}
+		}
+		else_if={
+			limit={
+				SPC={
+					is_subject_of = ROOT
+					controls_state = 1350
+				}
+			}
+			SPC = {transfer_state = 315}
+		}
+		else={
+			transfer_state = 315
+		}
 	}
 }
 country_event = { #Grito de Yara - Cuban Victory
@@ -1773,41 +1793,6 @@ country_event = { #Construction of the National Archeologic Museum
 		ai_chance = { factor = 100 }
 		add_stability = 0.01
 		add_political_power = 25
-	}
-}
-
-country_event = { #Petrol Revolution
-	id = spanishflavour.8
-	title = spanishflavour.8.t
-	desc = spanishflavour.8.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	#trigger = {
-	#	TAG = SPR
-	#	date > 1873.7.1
-	#}
-	
-	option = {
-		name = spanishflavour.8.a
-		# log = "option:		name = spanishflavour.8.a"
-		ai_chance = { factor = 50 }
-		add_political_power = -100
-		add_stability =  -0.02
-		167 = { add_manpower = -300 }
-		167 = { damage_building = { type = infrastructure damage = 1 } }
-		add_popularity = { ideology = anarchism popularity = 0.05 }
-	}
-	option = {
-		name = spanishflavour.8.b
-		# log = "option:		name = spanishflavour.8.b"
-		ai_chance = { factor = 50 }
-		add_political_power = 100
-		add_stability = -0.05
-		167 = { add_manpower = -600 }
-		167 = { damage_building = { type = infrastructure damage = 2 } }
-		add_popularity = { ideology = anarchism popularity = 0.10 }
 	}
 }
 
@@ -3281,7 +3266,7 @@ country_event = { #Search for a king I
 		}
 	}
 	option = {#Ferdinand IV, the portugese candidate
-		name = spain.46.a
+		name = spain.46.b
 		# log = "option:		name = spain.40.a"
 		ai_chance = { factor = 99 }
 		trigger={
@@ -3292,7 +3277,7 @@ country_event = { #Search for a king I
 		}
 	}
 	option = {#Antonio I, the Duke of Montpensier
-		name = spain.46.b
+		name = spain.46.c
 		# log = "option:		name = spain.40.a"
 		ai_chance = { factor = 1 }
 		set_country_flag = SPR_antonio_accepted
@@ -3939,6 +3924,9 @@ country_event = { #Start of the Third Carlist War
 					ruling_party = autocracy
 					elections_allowed = no
 				}
+				add_ideas={
+					SPR_for_the_true_king
+				}
 				
 			}
 			SPR={
@@ -4045,7 +4033,7 @@ country_event = { #Start of the Cantonal Rebellion
 		}
 	}
 }
-country_event = { #Petrolum Revolution, Sevilla
+country_event = { #
 	id = spain.68
 	title = spain.68.t
 	desc = spain.68.d
@@ -4053,22 +4041,62 @@ country_event = { #Petrolum Revolution, Sevilla
 
 	immediate = {
 		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.68.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		
+	}
+
+}
+
+country_event = { #Petrol Revolution, seville and alcoy
+	id = spanishflavour.8
+	title = spanishflavour.8.t
+	desc = spanishflavour.8.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#trigger = {
+	#	TAG = SPR
+	#	date > 1873.7.1
+	#}
+	immediate={
 		hidden_effect={
 			ADU={
 				set_cosmetic_tag = ADU_committee_of_public_health_spain
+				add_ideas = {SPR_petroleum_revolution}
 				transfer_state = 169
 				declare_war_on = {
 					target = SPR
 					type = civil_war
 				}
 				add_civil_war_target = SPR
+				load_oob = ADU_1873
 			}
 			SPR={
+				set_country_flag = SPR_petrolum_revolution
 				every_core_state={
 					add_core_of = ADU
 				}
+				set_state_controller = 169
+			}
+			ADU={
+				set_province_controller = 7183
+				set_province_controller = 962
 			}
 		}
+	}
+	
+	option = {
+		name = spanishflavour.8.a
+		# log = "option:		name = spanishflavour.8.a"
+		ai_chance = { factor = 100 }
 		if={
 			limit={
 				has_variable = SPR_stress_level
@@ -4080,19 +4108,20 @@ country_event = { #Petrolum Revolution, Sevilla
 			}
 		}
 	}
-	
-	is_triggered_only = yes
-
-	option = {#
-		name = spain.68.a
-		# log = "option:		name = spain.40.a"
-		ai_chance = { factor = 100 }
-		
-	}
-	option = {#
-		name = spain.68.b
-		# log = "option:		name = spain.40.a"
+	option = {
+		name = spanishflavour.8.b
+		# log = "option:		name = spanishflavour.8.b"
 		ai_chance = { factor = 0 }
+		if={
+			limit={
+				has_variable = SPR_stress_level
+			}
+			add_to_variable = {
+				var = SPR_stress_level
+				value = 2
+				tooltip = SPR_stress_level_increase
+			}
+		}
 		ADU={
 			change_tag_from = ROOT
 		}

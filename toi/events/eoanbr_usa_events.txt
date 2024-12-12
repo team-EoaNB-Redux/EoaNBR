@@ -16325,7 +16325,13 @@ country_event = {
 
 	trigger = {########### this should be triggered differently
 		tag = SPR
-		date > 1900.1.1
+		OR={
+			war_length_with = {
+				tag = USA
+				months > 12
+			}
+			USA={surrender_progress > 0.25}
+		}
 		surrender_progress < 0.01
 		has_war_with = USA
 		has_global_flag = Spanish_American_War_Occured
