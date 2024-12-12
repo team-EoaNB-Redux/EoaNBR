@@ -178,15 +178,30 @@ eoanb_category_institutions = {
 			OR = {
 				AND = {
 					date > 1850.1.1
-	 				check_variable = { var = progress@token:institution_industrialization value > 71 }
+					set_temp_variable = { institution_temp = token:institution_industrialization }
+					set_temp_variable = { progress_temp = 70 }
+					has_institution_progress = yes
+					custom_trigger_tooltip = {
+						tooltip = has_institution_progress_tt
+					}
 	 			}
 	 			AND = {
 	 				date > 1860.1.1
-	 				check_variable = { var = progress@token:institution_industrialization value > 85 }
+					set_temp_variable = { institution_temp = token:institution_industrialization }
+					set_temp_variable = { progress_temp = 85 }
+					has_institution_progress = yes
+					custom_trigger_tooltip = {
+						tooltip = has_institution_progress_tt
+					}
 	 			}
 				AND = {
 	 				date > 1870.1.1
-					check_variable = { var = progress@token:institution_mechanization value > 0 }
+					set_temp_variable = { institution_temp = token:institution_industrialization }
+					set_temp_variable = { progress_temp = 100 }
+					has_institution_progress = yes
+					custom_trigger_tooltip = {
+						tooltip = has_institution_progress_tt
+					}
 	 			}
 	 			date > 1880.1.1
 	 		}
@@ -223,13 +238,21 @@ eoanb_category_institutions = {
 			OR = {
 				AND = {
 					date > 1880.1.1
-					check_variable = { var = progress@token:institution_mechanization value > 50 }
+					set_temp_variable = { institution_temp = token:institution_mechanization }
+					set_temp_variable = { progress_temp = 50 }
 					has_institution_progress = yes
+					custom_trigger_tooltip = {
+						tooltip = has_institution_progress_tt
+					}
 				}
 				AND = {
 					date > 1890.1.1
-					check_variable = { var = progress@token:institution_electrification value > 0 }
+					set_temp_variable = { institution_temp = token:institution_mechanization }
+					set_temp_variable = { progress_temp = 100 }
 					has_institution_progress = yes
+					custom_trigger_tooltip = {
+						tooltip = has_institution_progress_tt
+					}
 				}
 				AND = {
 					date > 1900.1.1
@@ -273,13 +296,21 @@ eoanb_category_institutions = {
 			OR = {
 				AND = {
 					date > 1900.1.1
-					check_variable = { var = progress@token:institution_electrification value > 45 }
+					set_temp_variable = { institution_temp = token:institution_electrification }
+					set_temp_variable = { progress_temp = 45 }
 					has_institution_progress = yes
+					custom_trigger_tooltip = {
+						tooltip = has_institution_progress_tt
+					}
 				}
 				AND = {
 					date > 1905.1.1
-					check_variable = { var = progress@token:institution_mass_transit value > 0 }
+					set_temp_variable = { institution_temp = token:institution_electrification }
+					set_temp_variable = { progress_temp = 100 }
 					has_institution_progress = yes
+					custom_trigger_tooltip = {
+						tooltip = has_institution_progress_tt
+					}
 				}
 				AND = {
 					date > 1925.1.1
