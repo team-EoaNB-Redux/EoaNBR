@@ -3618,14 +3618,6 @@ continuous_focus_position = { x = 400 y = 1250 }
 				SHI = { JAP = { eoanbr_technologies_inherit = yes } }
 				RYU = { JAP = { eoanbr_technologies_inherit = yes } }
 				MIT = { JAP = { eoanbr_technologies_inherit = yes } }
-				# inherit_technology = TOS
-				# inherit_technology = CHO
-				# inherit_technology = SAG
-				# inherit_technology = SAT
-				# inherit_technology = DIE
-				# inherit_technology = SHI
-				# inherit_technology = RYU
-				# inherit_technology = MIT
 			}
 		}
 	}

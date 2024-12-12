@@ -1721,6 +1721,11 @@ country_event = {
 				add_state_core = 114
 				transfer_state = 114
 				inherit_technology = PIE
+				PIE = {
+					SAR = {
+						inherit_institutions = yes
+					}
+				}
 				PIE_victor_emmanuel_ii = {
 					promote_character = yes
 				}

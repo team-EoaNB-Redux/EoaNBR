@@ -2040,6 +2040,8 @@ country_event = {
 
 						set_variable = { rival_country = USA.id }
 						inherit_technology = USA
+						inherit_institutions = yes
+
 						set_politics = { ruling_party = radical_democracy }
 						add_popularity = { ideology = radical_democracy popularity = 0.35 }
 
@@ -3091,6 +3093,8 @@ country_event = {
 					transfer_state = 372
 					add_state_core = 372
 					inherit_technology = USA
+					USA = { CSA = { inherit_institutions = yes } }
+
 					country_event = { id = NA_B_start.1 days = 2 }
 					if = {
 						limit = { NOT = { has_global_flag = NA_B_test_cuba_free } }
@@ -6128,6 +6132,8 @@ country_event = {
 						transfer_state = 746
 						add_state_core = 746
 						inherit_technology = USA
+						inherit_institutions = yes
+
 						add_manpower = 7000
 						add_equipment_to_stockpile = {
 							type = infantry_equipment
@@ -11431,11 +11437,13 @@ country_event = {
 					save_global_event_target_as = acw_the_free_states_of_america
 					set_variable = { rival_country = USA.id }
 					inherit_technology = USA
+					USA = { PREV = { inherit_institutions = yes } }
 					add_popularity = { ideology = social_egalitarianism popularity = 0.35 }
 					load_focus_tree = fsa_reconstruction
 					set_cosmetic_tag = USA_free_states_of_america
 					load_oob = "FSA_1861"
 					inherit_technology = USA
+					USA = { PREV = { inherit_institutions = yes } }
 					set_stability = 0.5
 					set_war_support = 0.8
 					add_popularity = {
@@ -13307,6 +13315,7 @@ country_event = {
 			}
 			CAL = {
 				inherit_technology = USA
+				USA = { PREV = { inherit_institutions = yes } }
 				transfer_state = 1341
 				add_state_core = 1341
 				add_state_core = 1342

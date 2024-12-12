@@ -526,6 +526,7 @@ country_event = { ##Wuchang uprising - 10 oct 1911
 				ruling_party = radical_democracy
 			}
 			inherit_technology = ROOT
+			inherit_institutions = yes
 			set_research_slots = 2
 			set_popularities = {
 				anarchism = 0
@@ -1063,6 +1064,7 @@ country_event = { ##north-south conference
 					ruling_party = radical_democracy
 				}
 				inherit_technology = ROOT
+				inherit_institutions = yes
 				set_research_slots = 3
 				set_popularities = {
 					anarchism = 0
@@ -1268,6 +1270,7 @@ country_event = { ##uryankhay republic
 				}
 				set_cosmetic_tag = TAN_uryankhay_republic
 				inherit_technology = ROOT
+				inherit_institutions = yes
 				set_popularities = {
 					anarchism = 0
 					vanguard_communism = 0

@@ -822,6 +822,7 @@ country_event = {
 				}
 				change_tag_from = BAV
 				inherit_technology = BAV
+				BAV = { GEC = { inherit_institutions = yes } }
 			}
 			
 			puppet = GEC
@@ -962,6 +963,7 @@ country_event = {
 				}
 				change_tag_from = BAV
 				inherit_technology = BAV
+				BAV = { GEC = { inherit_institutions = yes } }
 			}
 		
 			puppet = GEC

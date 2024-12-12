@@ -9329,6 +9329,7 @@ country_event = {
 				transfer_state = 981
 				transfer_state = 1153
 				inherit_technology = SAR
+				SAR = { PIE = { inherit_institutions = yes } }
 				retire_country_leader = yes
 				PIE_archduke_karl_ludwig = {
 					add_country_leader_role = {

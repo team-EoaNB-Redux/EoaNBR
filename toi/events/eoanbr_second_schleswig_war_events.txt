@@ -989,13 +989,12 @@ country_event = {
 		remove_ideas = DEN_idea_november_constitution
 		custom_effect_tooltip = eoanb_tt_event_secschwar_27
 		hidden_effect = {
-			SCH = { transfer_state = 58 }
-			SCH = { transfer_state = 949 }
-			SCH = { transfer_state = 1032 }
-			DEN = { end_puppet = SCH }
-			SCH = { set_politics = { ruling_party = autocracy } }
-			SCH = { set_party_name = { ideology = autocracy name = SCH_autocracy_party_provisional } }
-			SCH = { 
+			SCH = {
+				transfer_state = 58
+				transfer_state = 949
+				transfer_state = 1032
+				set_politics = { ruling_party = autocracy }
+				set_party_name = { ideology = autocracy name = SCH_autocracy_party_provisional }
 				SCH_provisional_administration = {
 					add_country_leader_role = {
 						promote_leader = yes
@@ -1009,12 +1008,12 @@ country_event = {
 						}
 					}
 				}
-				#retire_character = SCH_frederick_vii
+				give_military_access = PRS
+				give_military_access = AUS
+				inherit_technology = DEN
+				inherit_institutions = yes
 			}
-			SCH = { give_military_access = PRS }
-			SCH = { give_military_access = AUS }
-			SCH = { inherit_technology = DEN }
-			#SCH = { load_oob = "PRS_SCH_garrisons" }
+			DEN = { end_puppet = SCH }
 			PRS = { country_event = { id = secschwar.29 } }
 			if = {
 				limit = {
@@ -1615,6 +1614,7 @@ country_event = {
 			SCH = { give_military_access = PRS }
 			SCH = { give_military_access = AUS }
 			SCH = { inherit_technology = DEN }
+			inherit_institutions = yes
 			SCH = { load_oob = "SCH_free_GC_member" }
 			SCH = { country_event = { id = secschwar.54 } }
 			clr_global_flag = eoanb_flag_second_schleswig_war
@@ -1815,6 +1815,7 @@ country_event = {
 			SCH = { give_military_access = AUS }
 			AUS = { give_guarantee = SCH }
 			SCH = { inherit_technology = DEN }
+			inherit_institutions = yes
 			clr_global_flag = eoanb_flag_second_schleswig_war
 			PRS = { set_country_flag = eoanb_flag_won_2_schleswig_war }
 			PRS = { country_event = { days = 5 id = prussia.16 } }
@@ -1985,6 +1986,7 @@ country_event = {
 			SCH = { give_military_access = PRS }
 			SCH = { give_military_access = AUS }
 			SCH = { inherit_technology = DEN }
+			inherit_institutions = yes
 			SCH = { load_oob = "SCH_free_GC_member" }
 			SCH = { country_event = { days = 14 id = secschwar.54 } }
 			every_country = {
@@ -2242,6 +2244,7 @@ country_event = {
 			SCH = { give_military_access = PRS }
 			SCH = { give_military_access = AUS }
 			SCH = { inherit_technology = DEN }
+			inherit_institutions = yes
 			SCH = { load_oob = "SCH_free_GC_member" }
 			SCH = { country_event = { days = 14 id = secschwar.54 } }
 			clr_global_flag = eoanb_flag_second_schleswig_war_gc
@@ -3055,6 +3058,7 @@ country_event = {
 			HLS = { set_politics = { ruling_party = autocracy } }
 			HLS = { set_party_name = { ideology = autocracy name = HLS_autocracy_party_augustenburg } }
 			HLS = { inherit_technology = DEN }
+			inherit_institutions = yes
 			HLS = { load_oob = "SCH_free_GC_member" }
 			clr_global_flag = eoanb_flag_second_schleswig_war
 			PRS = { remove_ideas = DEN_idea_pomerania_blockade }

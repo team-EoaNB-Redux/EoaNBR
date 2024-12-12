@@ -646,6 +646,7 @@ country_event = {
 			transfer_state = 1094
 			load_oob = "URC_1857"
 			inherit_technology = URG
+			inherit_institutions = yes
 			every_state = {
 				limit = {
 					is_core_of = URG
@@ -668,6 +669,7 @@ country_event = {
 		URC = {
 			transfer_state = 1094
 			inherit_technology = URG
+			inherit_institutions = yes
 			load_oob = "URC_1857-alt"
 			every_state = {
 				limit = {
@@ -680,6 +682,7 @@ country_event = {
 			set_cosmetic_tag = CIS
 			transfer_state = 1097
 			inherit_technology = BRA
+			inherit_institutions = yes
 			set_variable = {pops_primary_culture_array^0 = global.rioplatense}
 			load_oob = "CIS_1857"
 			1097 = {
@@ -699,8 +702,6 @@ country_event = {
 				add_ideas = {
 				#POLITICS
 				  hos_is_leader
-				  pre_industrial_era
-				  agrarian
 				  no_heir
 				  absolute_monarchy
 
@@ -3293,6 +3294,7 @@ country_event = {
 			NOM = {
 				transfer_state = 1097
 				inherit_technology = URG
+				inherit_institutions = yes
 				#load_oob = "CIS_1857"
 				1097 = {
 					add_core_of = NOM

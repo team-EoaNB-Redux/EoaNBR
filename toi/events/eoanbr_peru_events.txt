@@ -533,6 +533,7 @@ country_event = {
 			}
 
 			inherit_technology = PRU
+			inherit_institutions = yes
 
 				# POLITICAL LEADERS
 

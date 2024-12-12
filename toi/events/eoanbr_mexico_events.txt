@@ -992,7 +992,7 @@ country_event = { #Debt system initial announcement
 	# 			# 1114 = { add_core_of = MEC }
 	# 			# MEC = { transfer_state = 1113 }
 	# 			# 1113 = { add_core_of = MEC }
-	# 			# MEC = { inherit_technology = MEX }
+	# 			# MEC = { inherit_technology = MEX inherit_institutions = yes}
 
 	# 			MEC = {
 	# 				# set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
@@ -2405,6 +2405,7 @@ country_event = { #Debt system initial announcement
 			decrease_ps_by_two = yes
 			MEC = {
 				inherit_technology = MEX
+				inherit_institutions = yes
 				set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
 				set_variable = { global.mex_civil_war_debt@FRA = MEX.debt_to_bank_k@FRA }
 				set_variable = { global.mex_civil_war_debt@SPR = MEX.debt_to_bank_k@SPR }
@@ -3353,7 +3354,7 @@ country_event = {
 #				set_global_flag = MEX_MEC_CIVIL_WAR_side_chosen
 #				set_politics = { ruling_party = centrism elections_allowed = yes }
 #				increase_ps_by_one = yes
-#				MEC = { inherit_technology = MEX }
+#				MEC = { inherit_technology = MEX inherit_institutions = yes}
 #				MEC = { transfer_state = 277 }
 #				277 = { add_core_of = MEC }
 #				MEC = { transfer_state = 474 }
@@ -3442,7 +3443,7 @@ country_event = {
 #				set_global_flag = MEX_MEC_CIVIL_WAR_side_chosen
 #				set_politics = { ruling_party = centrism elections_allowed = yes }
 #				increase_ps_by_one = yes
-#				MEC = { inherit_technology = MEX }
+#				MEC = { inherit_technology = MEX inherit_institutions = yes}
 #				MEC = { transfer_state = 277 }
 #				277 = { add_core_of = MEC }
 #				MEC = { transfer_state = 474 }

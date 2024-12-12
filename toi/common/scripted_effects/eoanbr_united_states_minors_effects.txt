@@ -5711,6 +5711,11 @@ TEX_civil_war_acw_setup = {
 		transfer_state = 1306
 		transfer_state = 1304
 		inherit_technology = USA
+		USA = {
+			PREV = {
+				inherit_institutions = yes
+			}
+		}
 		set_party_name = {
 			ideology = centrism
 			long_name = TEX_CIVWAR_party_unionists_long

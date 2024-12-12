@@ -607,6 +607,7 @@ country_event = {
 		add_ideas = NA_B_Spirit_New_World_Democracies
 		hidden_effect = {
 			inherit_technology = USA
+				USA = { PREV = { inherit_institutions = yes } }
 		}
 		if = {
 			limit = {
