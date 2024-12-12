@@ -402,6 +402,9 @@
 			value = eoanbr_institutions_humanitive_array^num
 		}
 	}
+	inherit_institutions = {
+		eoanbr_institutions_inherit = yes
+	}
 	eoanbr_institutions_inherit = {
 	#SCOPE: COUNTRY
 	# Used to inherit institutions from PREV

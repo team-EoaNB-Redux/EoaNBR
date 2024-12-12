@@ -127,6 +127,8 @@
     eoanbr_institutions_social_media_change_tt: "£research_speed_texticon  $institution_social_media$ Progress: $RIGHT|+$[GetInstitutionChangeColor]%§!"
     eoanbr_institutions_space_colonialism_change_tt: "£research_speed_texticon  $institution_space_colonialism$ Progress: $RIGHT|+$[GetInstitutionChangeColor]%§!"
   #
+  # Scripted Triggers
+    has_institution_progress_tt: "Has at least [?progress_temp|%] Progress in [?institution_temp.GetTokenLocalizedKey]"
   # Events
     eoanbr_institutions.1.t: "Advent of $institution_rationalism$!"
     eoanbr_institutions.1.d_original: "Due to our intense efforts towards the field of $institution_rationalism$ we have finally become the first nation in the world to embrace the $institution_rationalism$ Institution! We can only guess at this time what benefits this will bring our great nation, but for now we can bask in the light of our achievement!"
