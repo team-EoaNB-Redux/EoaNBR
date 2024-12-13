@@ -555,6 +555,7 @@ country_event = {
 			SPR = { has_country_flag = SPR_cochinchina_intervention_flag }
 			FRA = { has_country_flag = FRA_cochinchina_intervention_flag }
 		}
+		set_country_flag = INDOC_Colonial_Power_Country_Flag
 		hidden_effect = { SPR = { country_event = { id = cochinchina_expedition.3655 days = 1 } } }
 	}
 	#France is pretty cool (alt history)
@@ -565,7 +566,11 @@ country_event = {
 			SPR = { has_country_flag = SPR_cochinchina_intervention_flag }
 			FRA = { has_country_flag = FRA_cochinchina_intervention_flag }
 		}
-		SPR = { complete_national_focus = SPR_spanish_victory_cochinchina }
+		set_country_flag = INDOC_Colonial_Power_Country_Flag
+		SPR = { 
+			complete_national_focus = SPR_spanish_victory_cochinchina
+			set_country_flag = INDOC_Colonial_Power_Country_Flag			
+		}
 		hidden_effect = { SPR = { country_event = { id = cochinchina_expedition.366 days = 1 } } }
 	}
 	#Home Alone (alt history)
@@ -587,6 +592,7 @@ country_event = {
 		if = {
 			limit = { TAG = SPR }
 			complete_national_focus = SPR_spanish_victory_cochinchina
+			set_country_flag = INDOC_Colonial_Power_Country_Flag
 		}
 		VIN = { country_event = { id = cochinchina_expedition.366 days = 1 } }
 	}
@@ -677,6 +683,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
+		set_country_flag = INDOC_Colonial_Power_Country_Flag
 		complete_national_focus = SPR_spanish_victory_cochinchina
 		hidden_effect = { VIN = { country_event = { id = cochinchina_expedition.366 days = 1 } } }
 	}

@@ -34,12 +34,14 @@ INDOC_Colonial_Aggression_Category = {
 						ROOT = {tag = FRA}
 					}
 					add_ideas = {AFR_french_protectorate}
+					741={set_variable = {INDOC_Influence_Frame_Var = 1} }
 				}
 				if={
 					limit={
 						ROOT = {tag = SPR}
 					}
 					add_ideas = {AFR_spanish_protectorate}
+					741={set_variable = {INDOC_Influence_Frame_Var = 6} }
 				}
 				load_prevous_ideologies = yes
 			}

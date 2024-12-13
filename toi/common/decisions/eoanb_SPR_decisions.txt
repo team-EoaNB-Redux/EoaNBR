@@ -647,6 +647,53 @@ eoanb_category_economic = {
 		}
     }
 
+	SPR_mission_seville_railway_concession = {
+        icon = railway
+        allowed = { TAG = SPR }
+        available = {
+			owns_state = 169
+        }
+		visible = {
+			has_completed_focus = SPR_6dy_extend_seville_line
+		}
+        highlight_states = {
+			state = 169
+		}
+		custom_cost_trigger = { check_variable = { debt_level < 50 } }
+		custom_cost_text = eoanb_decision_cost_1_debt_loc
+        fire_only_once = yes
+        days_remove = 180
+
+		complete_effect = {
+			hidden_effect = { debt_level_increase_by_1 = yes }
+		}
+
+        remove_effect = {
+            build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = yes
+				path = { 7183 7098 9891 }
+				start_province = 1048
+				target_province = 875
+			}
+			#hidden_effect = {
+			#	SPR = { country_event = { days = 730 id = SPR_bankruptcy_events.6 } }
+			#}
+        }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				check_variable = { debt_level > 44 }
+			}
+		}
+    }
+
 	SPR_develop_fernando_poo_decision = {
 		icon = generic_construction
 		available = {

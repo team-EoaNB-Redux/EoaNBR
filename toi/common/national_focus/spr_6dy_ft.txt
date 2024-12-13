@@ -2839,7 +2839,7 @@ focus = {
 		prerequisite = { focus = SPR_6dy_fixing_railway_crisis }
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = SPR_mission_seville_railway_concession
 		}
 	}
 	focus = {

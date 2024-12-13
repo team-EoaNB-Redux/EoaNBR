@@ -16328,7 +16328,7 @@ country_event = {
 		OR={
 			war_length_with = {
 				tag = USA
-				months > 12
+				months > 18
 			}
 			USA={surrender_progress > 0.25}
 		}
@@ -16487,10 +16487,6 @@ country_event = {
 		# log = "option:		name = usa.167.a"
 		ai_chance = {
 			factor = 20
-			modifier = {
-				has_government = social_egalitarianism
-				factor = 80
-			}
 		}
 		add_political_power = -200
 		annex_country = {
@@ -16525,6 +16521,10 @@ country_event = {
 		# log = "option:		name = usa.167.b"
 		ai_chance = {
 			factor = 20
+			modifier = {
+				has_government = social_egalitarianism
+				factor = 40
+			}
 		}
 		add_political_power = -100
 		puppet = DOM
