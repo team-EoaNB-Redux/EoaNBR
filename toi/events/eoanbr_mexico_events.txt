@@ -1240,7 +1240,7 @@ country_event = { #Debt system initial announcement
 	# }
 
 	#State Breaks Off
-	# state_event = {
+	# state_event = { 
 	# 	id = mexico_civil_war.2
 	# 	hidden = yes
 	# 	is_triggered_only = yes
@@ -2558,7 +2558,7 @@ country_event = { #Debt system initial announcement
 							# state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 trigger_for = controller }
 						}
 						else = {
-							state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 trigger_for = controller }
+							state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
 						}
 					}
 				}
