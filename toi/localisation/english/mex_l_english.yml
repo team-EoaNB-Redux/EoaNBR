@@ -98,7 +98,7 @@
  mexico_civil_war.1.b: "Defend the constitution!"
 
  mexico_civil_war.2.t: "[FROM.GetName] Abandons the Tacubaya Plan!"
- mexico_civil_war.2.d: "The governor of [FROM.GetName] has declared their state will not endorse the actions of the Tacubaya government, and will support our Constitutionalist government!"
+ mexico_civil_war.2.d: "The governor of [FROM.GetName] has declared their state will not endorse the actions of the Tacubaya government, and will support our Constitutionalist government! Already what forces the State Governors can cobble together from police, volunteers, and State Guards are being dispatched to support our troops."
  mexico_civil_war.2.e: "The governor of [FROM.GetName] has declared their state is abandoning our plan to save the state!"
  mexico_civil_war.2.a: "They join our cause against the rebels!"
  mexico_civil_war.2.b: "Damn those traitors!"

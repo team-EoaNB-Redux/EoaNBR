@@ -1274,6 +1274,11 @@ country_event = { #Debt system initial announcement
 			MEX = {
 				country_event = mexico_civil_war.2
 			}
+			create_unit = {
+				division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.50"
+				owner = MEX
+				id = 997
+			}
 			# log = "[THIS.GetTag]: firing  = mexico_civil_war.2"
 			
 		}
@@ -1335,11 +1340,11 @@ country_event = { #Debt system initial announcement
 			trigger = { TAG = MEX }
 			add_war_support = 0.015
 			#MEX = {
-				create_unit = {
-					division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.50"
-					owner = MEX
+				# create_unit = {
+				# 	division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.50"
+				# 	owner = MEX
 
-				}
+				# }
 			#}
 		}
 		option = {
