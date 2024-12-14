@@ -22,6 +22,7 @@ state = {
 		owner = FTT
 		1857.1.1 = {
 			add_core_of = FTT
+			add_claim_by = SNG
 			buildings = {
 				infrastructure = 1
 			}
