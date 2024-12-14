@@ -161,7 +161,7 @@ A list of effects that can be used in events, focus tree completion rewards, dec
         <td> Country </td>
     </tr>
     <tr>
-        <td> generate_investment_opportunity - NOT IMPLEMENTED </td>
+        <td> generate_investment_opportunity </td>
         <td> </td>
         <td> <code> generate_investment_opportunity = yes </code> </td>
         <td> Generates a new investment opportunity. Does not generate a new investment opportunity if already at IO cap. </td>
