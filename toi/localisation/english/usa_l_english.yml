@@ -1210,6 +1210,8 @@
  #Gilded Age
  USA_gilded_age_start: "The Gilded Age"
  USA_gilded_age_start_desc: "Derived from the 1873 book 'The Gilded Age: A Tale of Today', written by Mark Twain and Charles Dudley Warner, which satirized the era. Citing criticism of the time's social problems, in which they are hidden under a metaphorical thin gold gilding. Despite the criticisms, we are entering into a new age of progress and advancement, with rapid economic growth and the end of tensions between the North and South. Let us welcome this new age with open arms."
+ 
+ # OLD FOCUSES (KEEPING IN-CASE I WANT TO USE SOME LOCALIZATION)
  USA_gilded_age_south_admin: "Complete Reintegration"
  USA_gilded_age_south_admin_desc: "It has been long since we have had our civil war, and now it is time that we set it into the past. We must welcome the South back into the Union, and end such division from our nation."
  USA_gilded_age_south_pass_slavery: "Defeat Slavery for Good"

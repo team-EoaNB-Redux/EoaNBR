@@ -314,6 +314,7 @@ country_event = { # Formation of the National Labor Union
 	option = { # An eight hour workday?
 		name = usa_worker_events.6.a
 		add_popularity = { ideology = social_egalitarianism popularity = 0.01 }
+		complete_national_focus = USA_gilded_the_labor_movement
 	}
 }
 country_event = { # Formation of the Knights of Labor
@@ -326,6 +327,7 @@ country_event = { # Formation of the Knights of Labor
 	option = { # "Noble and Holy Order," eh?
 		name = usa_worker_events.7.a
 		add_popularity = { ideology = social_egalitarianism popularity = 0.01 }
+		add_popularity = { ideology = collectivist_socialism popularity = 0.01 }
 	}
 }
 

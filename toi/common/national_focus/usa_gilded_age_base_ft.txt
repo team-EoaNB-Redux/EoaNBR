@@ -9,7 +9,72 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = USA_gilded_industrial_revolution
+	id = USA_social_reforms
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_age_start
+	prerequisite = { focus = USA_gilded_age_start }
+	x = -7
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_enact_womens_suffrage
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_social_reforms
+	prerequisite = { focus = USA_social_reforms }
+	available = {
+		always = no
+		# has_leader_trait = feminist
+		# states that have enacted women's suffrage > 50%
+	}
+	x = -2
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_establish_a_public_school_system
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_social_reforms
+	prerequisite = { focus = USA_social_reforms }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_ban_aid_to_religious_schools
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_establish_a_public_school_system
+	prerequisite = { focus = USA_establish_a_public_school_system }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_chinese_immigration_question
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_social_reforms
+	prerequisite = { focus = USA_social_reforms }
+	x = 2
+	y = 1
+	completion_reward = {
+		# Event to decide whether or not to ban chinese immigration
+	}
+}
+shared_focus = {
+	id = USA_bureaucratic_reforms
 	icon = placeholder
 	cost = 40
 	relative_position_id = USA_gilded_age_start
@@ -21,529 +86,197 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = USA_gilded_technological_innovations
+	id = USA_establish_civil_service_commission
 	icon = placeholder
 	cost = 40
-	relative_position_id = USA_gilded_industrial_revolution
-	prerequisite = { focus = USA_gilded_industrial_revolution }
-	x = -4
-	y = 1
-	completion_reward = {
-		
-	}
-}
-shared_focus = {
-	id = USA_gilded_web_offset_printing
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_technological_innovations
-	prerequisite = { focus = USA_gilded_technological_innovations }
-	x = -3
-	y = 1
-	completion_reward = {
-		add_ideas = USA_printing_techology_1
-	}
-}
-shared_focus = {
-	id = USA_gilded_typewriter
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_web_offset_printing
-	prerequisite = { focus = USA_gilded_web_offset_printing }
-	x = 0
-	y = 1
-	completion_reward = {
-		swap_ideas = {
-			remove_idea = USA_printing_techology_1
-			add_idea = USA_printing_techology_2
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_barbed_wire
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_technological_innovations
-	available = { has_tech = tech_animal_feed_formula }
-	prerequisite = { focus = USA_gilded_technological_innovations }
-	x = 0
-	y = 1
-	completion_reward = {
-		if = {
-			limit = {
-				has_tech = tech_barbed_wire
-			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = cat_science_techs
-			}
-		}
-		else = {
-			set_technology = {
-				tech_barbed_wire = 1
-			}
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_medical_innovations
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_barbed_wire
-	prerequisite = { focus = USA_gilded_barbed_wire }
-	x = 0
-	y = 1
-	completion_reward = {
-		add_tech_bonus = {
-			bonus = 0.25
-			uses = 2
-			category = cat_health_techs
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_mimeograph
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_medical_innovations
-	prerequisite = { focus = USA_gilded_typewriter }
-	prerequisite = { focus = USA_gilded_medical_innovations }
-	x = -1
-	y = 1
-	completion_reward = {
-		add_tech_bonus = {
-			bonus = 0.50
-			uses = 1
-			category = comms_tech
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_toward_urbanization
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_industrial_revolution
-	prerequisite = { focus = USA_gilded_industrial_revolution }
-	x = 0
-	y = 1
-	completion_reward = {
-		
-	}
-}
-shared_focus = {
-	id = USA_gilded_pneumatic_subway
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_toward_urbanization
-	prerequisite = { focus = USA_gilded_technological_innovations }
-	prerequisite = { focus = USA_gilded_toward_urbanization }
-	x = -1
-	y = 1
-	completion_reward = {
-		add_political_power = -25
-		if = {
-			limit = {
-				954 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-			954 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_dynamic_modifier = { modifier = usa_fledgeling_subway_system }
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					has_state_category = dense_urban
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_dynamic_modifier = { modifier = usa_fledgeling_subway_system }
-			}
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_structural_steel_bridge
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_pneumatic_subway
-	prerequisite = { focus = USA_gilded_pneumatic_subway }
-	x = 0
-	y = 1
-	completion_reward = {
-		if = {
-			limit = {
-				373 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				395 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				controller_priority = {
-					base = 1
-					modifier = {
-						tag = USA
-						add = 2
-					}
-				}
-				fallback = yes
-				path = { 4569 12305 }
-				start_province = 4569
-				target_province = 12305
-			}
-			373 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_skyscrapers
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_structural_steel_bridge
-	available = { has_tech = tech_reinforced_concrete }
-	prerequisite = { focus = USA_gilded_medical_innovations }
-	prerequisite = { focus = USA_gilded_structural_steel_bridge }
+	relative_position_id = USA_bureaucratic_reforms
+	prerequisite = { focus = USA_bureaucratic_reforms }
 	x = -2
 	y = 1
 	completion_reward = {
-		if = {
-			limit = { has_tech = tech_arc_welding }
-			set_technology = {
-				tech_steel_girder_construction = 1
-			}
-		}
-		else = {
-			set_technology = {
-				tech_arc_welding = 1
-			}
-		}
-		if = {
-			limit = {
-				954 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-			954 = {
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					has_state_category = dense_urban
-				}
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-		random_owned_controlled_state = {
-			limit = {
-				has_state_category = dense_urban
-			}
-			add_extra_state_shared_building_slots = 1
-		}
+		
 	}
 }
 shared_focus = {
-	id = USA_gilded_telephone
+	id = USA_anti_moiety_acts
 	icon = placeholder
 	cost = 40
-	relative_position_id = USA_gilded_skyscrapers
-	available = { has_tech = electrical_telegraph }
-	prerequisite = { focus = USA_gilded_mimeograph }
-	prerequisite = { focus = USA_gilded_skyscrapers }
+	relative_position_id = USA_establish_civil_service_commission
+	prerequisite = { focus = USA_establish_civil_service_commission }
 	x = -1
 	y = 1
 	completion_reward = {
-		if = {
-			limit = {
-				has_tech = telephone
-			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = electronics_devices_tech
-			}
-		}
-		else = {
-			set_technology = {
-				telephone = 1
-			}
-		}
+		
 	}
 }
 shared_focus = {
-	id = USA_gilded_phonograph
+	id = USA_root_out_interior_department_corruption
 	icon = placeholder
 	cost = 40
-	relative_position_id = USA_gilded_telephone
-	available = { has_tech = photographic_film }
-	prerequisite = { focus = USA_gilded_telephone }
-	x = 0
-	y = 1
-	completion_reward = {
-		if = {
-			limit = {
-				has_tech = phonograph
-			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = electronics_devices_tech
-			}
-		}
-		else = {
-			set_technology = {
-				phonograph = 1
-			}
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_open_new_coal_mines
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_toward_urbanization
-	prerequisite = { focus = USA_gilded_toward_urbanization }
-	prerequisite = { focus = USA_gilded_the_gilded_tycoons }
+	relative_position_id = USA_establish_civil_service_commission
+	prerequisite = { focus = USA_establish_civil_service_commission }
 	x = 1
 	y = 1
 	completion_reward = {
-		if = {
-			limit = {
-				360 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-			if = {
-				limit = {
-					has_idea = carnegie_steel
-				}
-				360 = {
-					add_resource = {
-						type = coal
-						amount = 6
-					}
-				}
-			}
-			else = {
-				360 = {
-					add_resource = {
-						type = coal
-						amount = 4
-					}
-				}
-			}
-		}
-		else = {
-			if = {
-				limit = {
-					has_idea = carnegie_steel
-				}
-				random_owned_controlled_state = {
-					limit = {
-						has_state_category = urban
-					}
-					add_resource = {
-						type = coal
-						amount = 6
-					}
-				}
-			}
-			else = {
-				random_owned_controlled_state = {
-					limit = {
-						has_state_category = urban
-					}
-					add_resource = {
-						type = coal
-						amount = 4
-					}
-				}
-			}
-		}
+		
 	}
 }
 shared_focus = {
-	id = USA_gilded_new_blast_furnace
+	id = USA_establish_justice_department
 	icon = placeholder
 	cost = 40
-	relative_position_id = USA_gilded_open_new_coal_mines
-	prerequisite = { focus = USA_gilded_open_new_coal_mines }
-	x = 0
+	relative_position_id = USA_bureaucratic_reforms
+	prerequisite = { focus = USA_bureaucratic_reforms }
+	x = 2
 	y = 1
 	completion_reward = {
-		if = {
-			limit = {
-				360 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-			if = {
-				limit = {
-					has_idea = carnegie_steel
-				}
-				360 = {
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-				}
-			}
-			else = {
-				360 = {
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-				}
-			}
-		}
-		else = {
-			if = {
-				limit = {
-					has_idea = carnegie_steel
-				}
-				random_owned_controlled_state = {
-					limit = {
-						has_state_category = urban
-					}
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-				}
-			}
-			else = {
-				random_owned_controlled_state = {
-					limit = {
-						has_state_category = urban
-					}
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-				}
-			}
-		}
+		
 	}
 }
 shared_focus = {
-	id = USA_gilded_menlo_park_laboratory
+	id = USA_prosecute_mormons
 	icon = placeholder
 	cost = 40
-	relative_position_id = USA_gilded_structural_steel_bridge
-	prerequisite = { focus = USA_gilded_structural_steel_bridge }
-	prerequisite = { focus = USA_gilded_new_blast_furnace }
+	relative_position_id = USA_establish_justice_department
+	prerequisite = { focus = USA_establish_justice_department }
+	x = -1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_address_fraud_in_southern_courts
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_establish_justice_department
+	prerequisite = { focus = USA_establish_justice_department }
 	x = 1
 	y = 1
 	completion_reward = {
-		add_timed_idea = {
-			idea = USA_menlo_park_laboratory_idea
-			days = 3650
-		}
+		
 	}
 }
 shared_focus = {
-	id = USA_gilded_edison_illuminating_company
+	id = USA_prosecute_whiskey_ring
 	icon = placeholder
 	cost = 40
-	relative_position_id = USA_gilded_menlo_park_laboratory
-	prerequisite = { focus = USA_gilded_menlo_park_laboratory }
+	relative_position_id = USA_address_fraud_in_southern_courts
+	prerequisite = { focus = USA_address_fraud_in_southern_courts }
 	x = 0
 	y = 1
 	completion_reward = {
-		set_country_flag = USA_edison_illuminating_company_available
-		custom_effect_tooltip = generic_unlock_company_partnership_tt
-		show_ideas_tooltip = edison_illuminating_company
+		# Remove state modifier in Missouri 'The Whiskey Ring'
 	}
 }
 shared_focus = {
-	id = USA_gilded_the_beginning_of_electrification
+	id = USA_economic_reforms
 	icon = placeholder
 	cost = 40
-	relative_position_id = USA_gilded_edison_illuminating_company
-	prerequisite = { focus = USA_gilded_edison_illuminating_company }
+	relative_position_id = USA_gilded_age_start
+	prerequisite = { focus = USA_gilded_age_start }
+	x = 7
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_federal_eight_hour_workday
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_economic_reforms
+	prerequisite = { focus = USA_economic_reforms }
+	x = -3
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_begin_return_to_gold_standard
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_economic_reforms
+	prerequisite = { focus = USA_economic_reforms }
+	mutually_exclusive = { focus = USA_support_the_greenbacks }
+	x = -1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_support_the_greenbacks
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_economic_reforms
+	prerequisite = { focus = USA_economic_reforms }
+	mutually_exclusive = { focus = USA_begin_return_to_gold_standard }
+	x = 1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_towards_protectionism
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_begin_return_to_gold_standard
+	prerequisite = {
+		focus = USA_support_the_greenbacks
+		focus = USA_begin_return_to_gold_standard
+	}
+	mutually_exclusive = { focus = USA_towards_free_trade }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_increase_tariffs
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_towards_protectionism
+	prerequisite = { focus = USA_towards_protectionism }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_towards_free_trade
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_support_the_greenbacks
+	prerequisite = {
+		focus = USA_support_the_greenbacks
+		focus = USA_begin_return_to_gold_standard
+	}
+	mutually_exclusive = { focus = USA_towards_protectionism }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_enact_business_regulations
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_economic_reforms
+	prerequisite = { focus = USA_economic_reforms }
+	x = 3
+	y = 1
 	available = {
 		NOT = {
-			has_idea = USA_menlo_park_laboratory_idea
+			has_government = centrism
 		}
 	}
-	x = 0
-	y = 1
 	completion_reward = {
-		add_political_power = 150
-		set_temp_variable = { institution_progress_temp = 1.0 }
-        eoanbr_institutions_electrification_change = yes
-	}
-}
-shared_focus = {
-	id = USA_gilded_the_gilded_tycoons
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_industrial_revolution
-	prerequisite = { focus = USA_gilded_industrial_revolution }
-	x = 4
-	y = 1
-	completion_reward = {
-		country_event = usa_gilded_age.1
-	}
-}
-shared_focus = {
-	id = USA_gilded_the_labor_movement
-	icon = placeholder
-	cost = 0
-	relative_position_id = USA_gilded_the_gilded_tycoons
-	prerequisite = { focus = USA_gilded_the_gilded_tycoons }
-	available = {
-		always = no
-	}
-	x = 0
-	y = 1
-	completion_reward = {
-		# Event about organized labor
-	}
-}
-shared_focus = {
-	id = USA_gilded_support_an_eight_hour_workday
-	icon = placeholder
-	cost = 70
-	relative_position_id = USA_gilded_the_labor_movement
-	prerequisite = { focus = USA_gilded_the_labor_movement }
-	available = {
-		always = no
-	}
-	x = 0
-	y = 1
-	completion_reward = {
-		# Add 8-hour Workday Bill to Decisions/Parliament
+		
 	}
 }
