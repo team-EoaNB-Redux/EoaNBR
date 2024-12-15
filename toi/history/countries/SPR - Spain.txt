@@ -210,6 +210,10 @@
 	recruit_character = SPR_Estanislao_Figueras
 	recruit_character = SPR_Emilio_Castellar
 	recruit_character = SPR_Carlos_de_Borbon_y_Austria_Este
+	recruit_character = SPR_Manuel_Garcia_Barzanallana
+	recruit_character = SPR_Rafael_Perez_del_Alamon
+	recruit_character = SPR_Aureliano_Maestre_de_San_Juan
+	recruit_character = SPR_Jose_de_Salamanca
 
 	if = {
 		limit = { has_dlc = "Man the Guns" }

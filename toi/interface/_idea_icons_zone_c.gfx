@@ -3042,6 +3042,18 @@ spriteTypes = {
 			name = "GFX_idea_SPR_peseta"
 			texturefile = "gfx/interface/ideas/SPR/SPR_peseta.dds"
 		}
+		spriteType = {
+			name = "GFX_idea_SPR_cuban_boom"
+			texturefile = "gfx/interface/ideas/SPR/SPR_cuban_boom.png"
+		}
+		spriteType = {
+			name = "GFX_idea_SPR_fair_quinta"
+			texturefile = "gfx/interface/ideas/SPR/SPR_fair_quinta.png"
+		}
+		spriteType = {
+			name = "GFX_idea_SPR_rigged_quinta"
+			texturefile = "gfx/interface/ideas/SPR/SPR_rigged_quinta.png"
+		}
 		
 }
 spriteTypes = {

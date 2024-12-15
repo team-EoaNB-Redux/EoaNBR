@@ -211,6 +211,8 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
+			
+			picture = SPR_rigged_quinta
 
 			modifier = {
 				stability_factor = -0.1
@@ -226,6 +228,8 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
+			
+			picture = SPR_fair_quinta
 
 			modifier = {
 				stability_factor = -0.05
@@ -241,6 +245,8 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
+			
+			picture = SPR_cuban_boom
 
 			modifier = {
 				treasury_gain_monthly_per_gdp = 0.005
@@ -501,6 +507,8 @@ ideas = {
 			}
 
 			removal_cost = -1
+			
+			picture = generic_build_infrastructure
 
 			modifier = {
                 production_speed_infrastructure_factor = 0.75
@@ -521,6 +529,8 @@ ideas = {
 			}
 
 			removal_cost = -1
+			
+			picture = generic_build_infrastructure
 
 			modifier = {
                 production_speed_infrastructure_factor = 0.75

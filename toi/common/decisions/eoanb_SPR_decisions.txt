@@ -3058,6 +3058,37 @@ SPR_colonial_affairs_category = {
 			base = 0
 		}
 	}
+
+	SPR_integrate_CHL_state_peru = {
+		available = {
+			FROM={
+				compliance > 50
+			}
+		}
+		state_target = yes
+		allowed = { TAG = SPR }
+		visible = {
+			#has_completed_focus = SPR_6dy_integrating_captaincy_of_chile
+			PRU={has_cosmetic_tag = PRU_SPR_viceroyalty}
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_owned_by = PRU
+				NOT={is_core_of = PRU}
+			}
+		}
+		cost = 50
+		fire_only_once = no
+		complete_effect = {
+			FROM={
+				add_core_of = PRU
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }
 
 SPR_american_affairs_category={

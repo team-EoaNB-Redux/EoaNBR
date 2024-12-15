@@ -3967,15 +3967,17 @@ focus = {
 	}
 	focus = {
 		id = SPR_6dy_management_of_viceroyalty_peru
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_SPR_viceroyalty_peru
 		relative_position_id = SPR_6dy_colonial_management
 		x = 4
 		y = 1
 		cost = 30
 
 		available = {
-			
+			has_political_power > 50
 		}
+		continue_if_invalid = yes
+		cancel_if_invalid = no
 		allow_branch={
 			PRU={
 				has_cosmetic_tag = PRU_SPR_viceroyalty
@@ -3986,12 +3988,16 @@ focus = {
 		prerequisite = { focus = SPR_6dy_colonial_management }
 
 		completion_reward = {
-			
+			add_political_power = -50
+			PRU={
+				add_political_power = 100
+				add_stability = 0.02
+			}
 		}
 	}
 	focus = {
 		id = SPR_6dy_old_claims_on_acre
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_SPR_acre_claims
 		relative_position_id = SPR_6dy_management_of_viceroyalty_peru
 		x = -1
 		y = 1
@@ -4013,26 +4019,40 @@ focus = {
 	}
 	focus = {
 		id = SPR_6dy_integrating_captaincy_of_chile
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_Government_adminstrative_service
 		relative_position_id = SPR_6dy_management_of_viceroyalty_peru
 		x = 1
 		y = 1
 		cost = 30
 
 		available = {
-			
+			PRU={
+				any_owned_state= {
+					is_core_of = CHL
+					NOT={is_core_of = PRU}
+				}
+			}
 		}
 		ai_will_do = { base = 100 }
 
 		prerequisite = { focus = SPR_6dy_management_of_viceroyalty_peru }
 
 		completion_reward = {
-			
+			PRU={
+				every_owned_state={
+					limit={
+						is_core_of = CHL
+					}
+					add_compliance = 10
+					add_resistance_target = -10
+				}
+			}
+			custom_effect_tooltip = SPR_6dy_integrating_captaincy_of_chile_tt
 		}
 	}
 	focus = {
 		id = SPR_6dy_taking_antofagasta
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_generic_attack_bolivia
 		relative_position_id = SPR_6dy_integrating_captaincy_of_chile
 		x = 0
 		y = 1

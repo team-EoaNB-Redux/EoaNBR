@@ -630,7 +630,6 @@ SPR_6dy_capitation_tax: "Capitation Tax"
 SPR_6dy_calling_a_election: "Calling a Election"
 SPR_6dy_election_of_1869: "Election of 1869"
 SPR_6dy_colonial_management: "Colonial Management"
-SPR-6dy_serrano_regency: "Serrano's Regency"
 SPR_6dy_abolishing_slavery_prt: "Abolishing Slavery in [686.GetName]"
 SPR_6dy_serrano_regency: "Serranos Regency"
 SPR_6dy_dealing_with_financial_strife: "Dealing with Financial Strife"
@@ -681,6 +680,11 @@ SPR_6dy_fortifying_formosa: "Fortifying Formosa"
 SPR_6dy_profits_from_cava: "Profits from Cava"
 SPR_6dy_army_recruitment_and_replacement_law: "Army Recruitment and Replacement Law"
 SPR_6dy_investments_in_cereals: "Investments in Cereals"
+SPR_6dy_management_of_viceroyalty_peru: "Management of the Viceroyalty of Peru"
+SPR_6dy_integrating_captaincy_of_chile: "Integrating Captaincy of Chile"
+SPR_6dy_old_claims_on_acre: "Our Old Claims on Acre"
+SPR_6dy_taking_antofagasta: "Taking Antofagasta"
+SPR_6dy_army_recruitment_and_replacment_law: "Army Recruitment and Replacment Law"
 
 ##### IDEAS #####
 #Country Ideas
@@ -836,6 +840,9 @@ SPR_tyw_promises_of_reforms: "Promises of Reforms"
 SPR_trocha_de_jucaro_a_moron_decision: "Construct the Trocha de Júcaro a Morón"
 
 SPR_mission_bobadilla_granda_railway_concession: "Bobadilla-Granada Railway Concession"
+
+SPR_integrate_CHL_state_peru: "Integrate [From.GetName] into Peru"
+SPR_6dy_integrating_captaincy_of_chile_tt: "Unlocks Decisions: §YIntegrate Chilean State into Peru§!"
 
 #UNORGANIZED STUFF#
 #SPR_send_guns_to_mexico: "Send Arms to Mexico"

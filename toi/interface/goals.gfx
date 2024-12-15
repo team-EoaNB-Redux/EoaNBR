@@ -6534,6 +6534,14 @@ spriteTypes = {
 		name = "GFX_focus_SPR_crush_cantonals"
 		texturefile = "gfx/interface/goals/spain/focus_SPR_crush_cantonals.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_SPR_acre_claims"
+		texturefile = "gfx/interface/goals/spain/acre_claims.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_SPR_viceroyalty_peru"
+		texturefile = "gfx/interface/goals/spain/spr_viceroyalty_peru.png"
+	}
 	# AUSTRIA #
 	SpriteType = {
 		name = "GFX_goal_AUS_franz_kaiser"
@@ -9420,6 +9428,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_generic_attack_turkey"
 		texturefile = "gfx/interface/goals/focus_generic_attack_turkey.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_bolivia"
+		texturefile = "gfx/interface/goals/focus_generic_attack_bolivia.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_generic_befriend_bulgaria"
