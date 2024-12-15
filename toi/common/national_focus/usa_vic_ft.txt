@@ -3735,7 +3735,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		ai_will_do = { base = 4 }
+		ai_will_do = { base = 1000 }
 
 		prerequisite = { focus = USA_Focus_ACW_The_South }
 		prerequisite = { focus = USA_Focus_American_Civil_War }
@@ -3819,6 +3819,9 @@ focus_tree = {
 		prerequisite = { focus = USA_Focus_American_Civil_War }
 		bypass = {
 			has_global_flag = ACW_American_Civil_War_Happened
+			NOT = {
+				controls_state = 1091
+			}
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -3842,7 +3845,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		ai_will_do = { base = 4 }
+		ai_will_do = { base = 1000 }
 
 		prerequisite = { focus = USA_Focus_ACW_Defend_Washington }
 		available = {
@@ -3931,7 +3934,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		ai_will_do = { base = 4 }
+		ai_will_do = { base = 1000 }
 
 		prerequisite = { focus = USA_Focus_ACW_Defend_Washington }
 		available = {
@@ -3956,7 +3959,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		ai_will_do = { base = 40 }
+		ai_will_do = { base = 1000 }
 
 		prerequisite = { focus = USA_Focus_ACW_Martial_Law }
 		prerequisite = { focus = USA_Focus_ACW_Revenue_Act }
