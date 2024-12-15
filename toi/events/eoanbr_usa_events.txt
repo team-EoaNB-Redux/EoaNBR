@@ -25110,6 +25110,7 @@ country_event = { # Load new Reconstruction Tree
 			mark_focus_tree_layout_dirty = yes
 		}
 		set_global_flag = USA_gilded_age_ft
+		set_country_flag = USA_LincolnElected
 	}
 	option = {
 		name = "Breckinridge"
