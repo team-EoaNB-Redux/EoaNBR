@@ -920,6 +920,26 @@ EOANBSYS_national_crisis_decision_category = {
 				decrease_resistance_la_reforma = yes
 			}
 		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				every_controlled_state = {
+					limit = { has_resistance = yes }
+					resistance < 10
+				}
+			}
+			modifier = {
+				factor = 2
+				any_controlled_state = {
+					limit = {
+						has_resistance = yes
+						resistance > 10
+					}
+					resistance > 20
+				}
+			}
+		}
 	}
 	MEX_decision_sell_clergy_property = {
 		allowed = {
@@ -959,7 +979,66 @@ EOANBSYS_national_crisis_decision_category = {
 						}
 						increase_resistance_la_reforma = yes
 						EOANBSYS_national_crisis_progress_add_one = yes
-						
+						hidden_effect = {
+							random_list = {
+								1 = {
+									modifier = {
+										add = 1
+										resistance > 50
+									}
+									modifier = {
+										add = 1
+										resistance > 60
+									}
+									modifier = {
+										add = 1
+										resistance > 70
+									}
+									modifier = {
+										add = 1
+										resistance > 80
+									}
+									modifier = {
+										add = 1
+										resistance > 90
+									}
+									EOANBSYS_national_crisis_progress_add_three = yes
+								}
+								1 = {
+									modifier = {
+										add = 1
+										resistance > 25
+									}
+									modifier = {
+										add = 1
+										resistance > 35
+									}
+									modifier = {
+										add = 1
+										resistance > 45
+									}
+									EOANBSYS_national_crisis_progress_add_one = yes
+								}
+								1 = {
+									modifier = {
+										add = 1
+										resistance < 25
+									}
+									modifier = {
+										add = 1
+										resistance < 20
+									}
+									modifier = {
+										add = 1
+										resistance < 15
+									}
+									modifier = {
+										add = 1
+										resistance < 10
+									}									
+								}
+							}
+						}
 					}
 					3 = {
 						modifier = {
@@ -976,6 +1055,43 @@ EOANBSYS_national_crisis_decision_category = {
 			add_popularity = {
 				ideology = fundamentalism
 				popularity = -0.0025
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				check_variable = {ROOT.debt_level > 10}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {ROOT.debt_level > 20}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {ROOT.debt_level > 30}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_controlled_state = {
+						limit = { has_resistance = yes }
+						has_dynamic_modifier = {
+							modifier = dynmod_MEX_resistance_modifier_5
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					any_controlled_state = {
+						limit = { has_resistance = yes }
+						has_dynamic_modifier = {
+							modifier = dynmod_MEX_resistance_modifier_4
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1030,6 +1146,25 @@ EOANBSYS_national_crisis_decision_category = {
 						decrease_resistance_la_reforma = yes
 						EOANBSYS_national_crisis_progress_minus_one = yes
 
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				any_controlled_state = {
+					has_dynamic_modifier = {
+						modifier = dynmod_MEX_resistance_modifier_2
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				any_controlled_state = {
+					has_dynamic_modifier = {
+						modifier = dynmod_MEX_resistance_modifier_1
 					}
 				}
 			}

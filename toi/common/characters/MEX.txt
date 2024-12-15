@@ -100,7 +100,7 @@ characters  =  { #MEX and MEC
 		name = "Felix Maria Zuloaga"
 		portraits = {
 			civilian = {
-				large = "Portrait_MEX_Felix_Maria_Zuloaga.dds"
+				large = "Portrait_MEX_Felix_Maria_Zuloaga"
 			}
 		}
 		country_leader = {

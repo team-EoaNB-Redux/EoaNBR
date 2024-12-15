@@ -2599,6 +2599,14 @@ country_event = { #Debt system initial announcement
 				limit = { ROOT = { is_ai = no } }
 				MEC = { change_tag_from = ROOT }
 			}
+			MEX = {
+				complete_national_focus = MEX_defend_the_constitution
+				country_event = { id = mexico.2 days = 3 }
+			}
+			MEC = {
+				complete_national_focus = MEX_support_tacubaya_plan
+				country_event = { id = mexico.2 days = 3 }
+			}
 			hidden_effect = {
 				MEC = {
 					every_controlled_state = {

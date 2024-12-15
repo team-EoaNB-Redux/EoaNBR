@@ -100,7 +100,7 @@
 
 	set_variable = {
 		var = EOANBSYS_national_crisis_progress_var
-		value = 50
+		value = 64
 	}
 
 	# POLITICAL LEADERS
