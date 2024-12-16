@@ -2,7 +2,7 @@ shared_focus = {
 	id = USA_gilded_age_start
 	icon = GFX_goal_focus_us_gilded_age
 	cost = 40
-	x = 43
+	x = 47
 	y = 0
 	completion_reward = {
 		add_stability = 0.02
@@ -14,7 +14,7 @@ shared_focus = {
 	cost = 40
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
-	x = -7
+	x = -12
 	y = 1
 	completion_reward = {
 		
@@ -96,7 +96,7 @@ shared_focus = {
 	cost = 40
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
-	x = 0
+	x = -5
 	y = 1
 	completion_reward = {
 		
@@ -204,7 +204,7 @@ shared_focus = {
 	cost = 40
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
-	x = 12
+	x = 8
 	y = 1
 	completion_reward = {
 		
@@ -216,7 +216,7 @@ shared_focus = {
 	cost = 40
 	relative_position_id = USA_gilded_economic_reforms
 	prerequisite = { focus = USA_gilded_economic_reforms }
-	x = -7
+	x = -8
 	y = 1
 	completion_reward = {
 		
@@ -228,7 +228,7 @@ shared_focus = {
 	cost = 40
 	relative_position_id = USA_gilded_economic_reforms
 	prerequisite = { focus = USA_gilded_economic_reforms }
-	x = -5
+	x = -6
 	y = 1
 	completion_reward = {
 		
@@ -254,7 +254,7 @@ shared_focus = {
 	relative_position_id = USA_gilded_the_labor_movement
 	prerequisite = { focus = USA_gilded_the_labor_movement }
 	mutually_exclusive = { focus = USA_gilded_union_busting }
-	x = -2
+	x = -1
 	y = 1
 	completion_reward = {
 		
@@ -267,7 +267,7 @@ shared_focus = {
 	relative_position_id = USA_gilded_the_labor_movement
 	prerequisite = { focus = USA_gilded_the_labor_movement }
 	mutually_exclusive = { focus = USA_gilded_support_unions }
-	x = 0
+	x = 1
 	y = 1
 	completion_reward = {
 		
@@ -692,7 +692,7 @@ shared_focus = {
 			has_global_flag = ACW_American_Civil_War_Happened
 		}
 	}
-	x = 90
+	x = 89
 	y = 0
 	search_filters = { FOCUS_FILTER_HISTORICAL }
 	completion_reward = {
@@ -3110,7 +3110,7 @@ shared_focus = {
 	cost = 40
 	prerequisite = { focus = USA_foreign_diplomacy }
 	relative_position_id = USA_foreign_diplomacy
-	x = 18
+	x = 15
 	y = 1
 	completion_reward = {
 
@@ -3977,8 +3977,8 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = USA_gilded_el_senor_abrasador
-	icon = placeholder
+	id = USA_gilded_la_senora_abrasadora
+	icon = GFX_focus_usa_la_senora_abrasadora
 	cost = 40
 	relative_position_id = USA_gilded_bless_the_globe_and_rule_the_sea
 	prerequisite = { focus = USA_gilded_bless_the_globe_and_rule_the_sea }
@@ -3991,10 +3991,10 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_assert_our_position_in_the_caribbean
-	icon = placeholder
+	icon = GFX_focus_usa_assert_our_position_in_the_caribbean
 	cost = 40
-	relative_position_id = USA_gilded_el_senor_abrasador
-	prerequisite = { focus = USA_gilded_el_senor_abrasador }
+	relative_position_id = USA_gilded_la_senora_abrasadora
+	prerequisite = { focus = USA_gilded_la_senora_abrasadora }
 	x = 0
 	y = 1
 	completion_reward = {
@@ -4003,7 +4003,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_santo_domingo_forward_operating_base
-	icon = placeholder
+	icon = GFX_focus_usa_santo_domingo_forward_operating_base
 	cost = 40
 	available = {
 		owns_state = 1318
@@ -4018,7 +4018,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_yet_another_offer
-	icon = placeholder
+	icon = GFX_focus_usa_gilded_yet_another_offer
 	cost = 40
 	relative_position_id = USA_gilded_assert_our_position_in_the_caribbean
 	mutually_exclusive = { focus = USA_gilded_fund_cuban_rebels }
@@ -4031,8 +4031,9 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_a_peaceful_resolution
-	icon = placeholder
-	cost = 40
+	icon = GFX_focus_usa_gilded_a_peaceful_resolution
+	cost = 0
+	available = { always = no } # triggered by event
 	mutually_exclusive = { focus = USA_gilded_position_the_navy }
 	relative_position_id = USA_gilded_yet_another_offer
 	prerequisite = { focus = USA_gilded_yet_another_offer }
@@ -4072,7 +4073,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_fund_cuban_rebels
-	icon = placeholder
+	icon = GFX_focus_usa_fund_cuban_rebels
 	cost = 40
 	relative_position_id = USA_gilded_assert_our_position_in_the_caribbean
 	mutually_exclusive = { focus = USA_gilded_yet_another_offer }
@@ -4118,10 +4119,14 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_position_the_navy
-	icon = placeholder
+	icon = GFX_focus_usa_gilded_position_the_navy
 	cost = 40
 	mutually_exclusive = { focus = USA_gilded_a_peaceful_resolution }
 	relative_position_id = USA_gilded_fund_cuban_rebels
+	available = {
+		ships_in_area = { area = 170 size > 9 }
+	}
+	cancel_if_invalid = yes
 	prerequisite = {
 		focus = USA_gilded_fund_cuban_rebels
 		focus = USA_gilded_yet_another_offer
@@ -4137,9 +4142,10 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_an_explosion_in_havana
-	icon = placeholder
-	cost = 40
+	icon = GFX_focus_usa_an_explosion_in_havana
+	cost = 0
 	relative_position_id = USA_gilded_position_the_navy
+	available = { always = no }
 	prerequisite = { focus = USA_gilded_position_the_navy }
 	x = 0
 	y = 1
@@ -4149,10 +4155,17 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_blockade_cuba
-	icon = placeholder
-	cost = 40
+	icon = GFX_focus_usa_gilded_blockade_cuba
+	cost = 25
 	relative_position_id = USA_gilded_an_explosion_in_havana
 	prerequisite = { focus = USA_gilded_an_explosion_in_havana }
+	available = {
+		AND = {
+			ships_in_area = { area = 170 size > 9 }
+			ships_in_area = { area = 53 size > 9 }
+		}
+	}
+	cancel_if_invalid = yes
 	x = -1
 	y = 1
 	completion_reward = {
@@ -4165,7 +4178,7 @@ shared_focus = {
 shared_focus = {
 	id = USA_gilded_call_for_volunteers
 	icon = GFX_focus_usa_call_for_volunteers
-	cost = 40
+	cost = 25
 	relative_position_id = USA_gilded_an_explosion_in_havana
 	prerequisite = { focus = USA_gilded_an_explosion_in_havana }
 	x = 1
@@ -4175,11 +4188,30 @@ shared_focus = {
 			SPR_USA_american_tension = 10
 			tooltip = SPR_tension_increase_effect_tooltip
 		}
+		add_manpower = 10000
+		division_template = {
+			name = "Volunteer Cavalry"
+			is_locked = yes
+
+			regiments = {
+				heavy_cavalry = { x = 0 y = 0 }
+				heavy_cavalry = { x = 0 y = 1 }
+				heavy_cavalry = { x = 0 y = 2 }
+				heavy_cavalry = { x = 1 y = 0 }
+				heavy_cavalry = { x = 1 y = 1 }
+				heavy_cavalry = { x = 1 y = 2 }
+			}
+		}
+		1306 = {
+			create_unit = { 
+				division = "name = \"1st U.S. Volunteer Cavalry\" division_template = \"Volunteer Cavalry\" start_experience_factor = 1 start_equipment_factor = 1" owner = OWNER
+			}
+		}
 	}
 }
 shared_focus = {
 	id = USA_gilded_remember_the_maine
-	icon = placeholder
+	icon = GFX_focus_usa_remember_the_maine
 	cost = 7
 	relative_position_id = USA_gilded_an_explosion_in_havana
 	prerequisite = { focus = USA_gilded_blockade_cuba }
@@ -4207,7 +4239,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_into_an_american_century
-	icon = placeholder
+	icon = GFX_focus_usa_into_an_american_century
 	cost = 40
 	relative_position_id = USA_gilded_bless_the_globe_and_rule_the_sea
 	prerequisite = {
