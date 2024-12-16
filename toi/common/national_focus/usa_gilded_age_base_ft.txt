@@ -4194,17 +4194,12 @@ shared_focus = {
 			is_locked = yes
 
 			regiments = {
-				heavy_cavalry = { x = 0 y = 0 }
-				heavy_cavalry = { x = 0 y = 1 }
-				heavy_cavalry = { x = 0 y = 2 }
-				heavy_cavalry = { x = 1 y = 0 }
-				heavy_cavalry = { x = 1 y = 1 }
-				heavy_cavalry = { x = 1 y = 2 }
+				mounted_infantry = { x = 0 y = 0 }
 			}
 		}
 		1306 = {
 			create_unit = { 
-				division = "name = \"1st U.S. Volunteer Cavalry\" division_template = \"Volunteer Cavalry\" start_experience_factor = 1 start_equipment_factor = 1" owner = OWNER
+				division = "name = \"1st U.S. Volunteer Cavalry Regiment\" division_template = \"Volunteer Cavalry\" start_experience_factor = 1 start_equipment_factor = 1" owner = OWNER
 			}
 		}
 	}
