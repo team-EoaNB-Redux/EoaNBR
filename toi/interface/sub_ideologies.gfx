@@ -61,6 +61,10 @@ spriteTypes = {
 		name = "GFX_ideology_natconserv"
 		texturefile = "gfx/interface/ideologies/natconserv.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_dixie_progressivism"
+		texturefile = "gfx/interface/ideologies/dixie_progressivism.dds"
+	}
 	#############################
 	### Social Egalitarianism ###
 	#############################
