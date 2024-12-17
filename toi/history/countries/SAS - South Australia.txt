@@ -69,6 +69,7 @@
 		AST_Murray_darling_basin
 		AST_Squatter_Issue
 		# hollow_cast_guns_idea
+		AST_The_48ers
 	}
 
 

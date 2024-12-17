@@ -60,6 +60,7 @@ ideas = {
 				army_defence_factor = -0.90
 				Mobilization_speed = -0.90
 				command_power_gain_mult = -0.90
+				war_support_factor = -0.90
 			}
 		}
 		AST_Convict_Labour = {
@@ -221,6 +222,29 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 				mining_output_factor = -0.1
 				global_building_slots_factor = -0.1
+			}
+		}
+		AST_inexperienced_parliment = {
+			allowed = { always = no }
+
+			picture = Worker_strikes
+
+			modifer = {
+				political_power_gain = -0.5
+				stability_factor = -0.2
+				war_support_factor = -0.4
+			}
+		}
+
+		AST_The_48ers = {
+			allowed = { always = no }
+
+			picture = The_48ers
+
+			modifier = {
+				monthly_population = 0.2
+				stability_factor = -0.01
+
 			}
 		}
 	}

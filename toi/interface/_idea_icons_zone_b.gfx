@@ -75,6 +75,10 @@ spriteTypes = {
 			name = "GFX_idea_The_Stain"
 			texturefile = "gfx/interface/ideas/AST/The_Stain.png"
 		}
+		spriteType = {
+			name = "GFX_idea_The_48ers"
+			texturefile = "gfx/interface/ideas/AST/The_48ers.png"
+		}
 }
 spriteTypes = {
 	spriteType = {
