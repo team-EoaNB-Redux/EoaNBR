@@ -58,6 +58,7 @@ shared_focus = {
 		add_political_power = 100
 		add_ideas = civilian_economy
 		add_ideas = volunteer_only
+		add_ideas = one_percent
 	}
 }
 shared_focus = {

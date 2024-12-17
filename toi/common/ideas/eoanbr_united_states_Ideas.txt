@@ -846,6 +846,9 @@ ideas = {
 				mobilization_speed = 0.15
 				army_core_defence_factor = 0.05
 				##enemy_partisan_effect = -0.1
+				military_equipment_cost_factor = 0.5
+				military_payroll_cost_factor = 1.0
+				military_spending_min_factor = 0.25
 			}
 		}
 

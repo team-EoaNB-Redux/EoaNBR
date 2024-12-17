@@ -3862,6 +3862,7 @@ focus_tree = {
 				remove_idea = USA_idea_morill_tariff_law
 				add_idea = USA_Revenue_Act_Of_1861
 			}
+			increase_military_spendage_by_one = yes
 			add_1_milfac_random_state = yes
 			add_political_power = -50
 		}
@@ -3999,6 +4000,7 @@ focus_tree = {
 			set_temp_variable = { acw_draft_count_change = 2 }
 			ACW_Draft_Count_Get = yes
 			add_command_power = 100
+			increase_military_spendage_by_one = yes
 		}
 		allow_branch = {
 			if = {
@@ -4288,6 +4290,7 @@ focus_tree = {
 			ACW_Weapons_Count_Get = yes
 			set_temp_variable = { acw_draft_count_change = 5 }
 			ACW_Draft_Count_Get = yes
+			increase_military_spendage_by_one = yes
 		}
 	}
 	focus = {
@@ -4673,6 +4676,7 @@ focus_tree = {
 			ACW_Weapons_Count_Get = yes
 			set_temp_variable = { acw_draft_count_change = 4 }
 			ACW_Draft_Count_Get = yes
+			increase_military_spendage_by_one = yes
 		}
 	}
 	focus = {
