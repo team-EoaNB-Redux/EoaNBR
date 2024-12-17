@@ -418,3 +418,11 @@ can_trade_with = {
 		}
 	}
 }
+is_in_x_market = {
+	# x_temp : check if current country is in x market
+	check_variable = {
+		var = market_leader
+		value = x_temp
+		tooltip = is_in_x_market_tt
+	}
+}

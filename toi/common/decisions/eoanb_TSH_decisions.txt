@@ -92,7 +92,7 @@ eoanb_category_politics_foreign = {
 				is_subject = no
 				has_idea = pre_industrial_era
 				has_navy_size = {
-					size < 25
+					size < 50
 				}
 			}
 		}

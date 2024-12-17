@@ -2809,3 +2809,5 @@
   
   can_spend_without_default_trigger_tt: "Can spend [GetCurrencyTextIcon] §Y[?x_temp|2]§! without defaulting."
   no_debt_level_trigger_tt: "Has no §YDebt§!"
+
+ is_in_x_market_tt: "Is in [?market_leader.GetFlag]§Y[?market_leader.GetAdjective] Market§!"
