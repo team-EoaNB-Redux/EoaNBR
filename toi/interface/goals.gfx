@@ -1685,15 +1685,35 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_Focus_Diplomacy_FRA"
-		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_FRA.dds"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_FRA.png"
 	}
 	SpriteType = {
 		name = "GFX_Focus_Diplomacy_POR"
-		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_POR.dds"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_POR.png"
 	}
 	SpriteType = {
 		name = "GFX_Focus_Diplomacy_UK"
-		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.dds"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_USA"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_USA.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_RUS"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_RUS.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_GER"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_GER.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_SPR"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_SPR.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_ITA"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_ITA.png"
 	}
 	SpriteType = {
 		name = "GFX_focus_diplomatic_advancement"
@@ -9445,6 +9465,11 @@ spriteTypes = {
 		name = "GFX_focus_generic_vichy_france_triumphant_focus"
 		texturefile = "gfx/interface/goals/focus_generic_vichy_france_triumphant_focus.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_brazil"
+		texturefile = "gfx/interface/goals/focus_generic_attack_brazil.dds"
+	}
+	
 	SpriteType = {
 		name = "GFX_focus_generic_adriatic_sea_focus"
 		texturefile = "gfx/interface/goals/focus_generic_adriatic_sea_focus.dds"

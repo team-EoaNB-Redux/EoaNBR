@@ -126,23 +126,6 @@ ideas = {
 			}
 		}
 
-		SPR_the_carlist_threat = {
-			allowed = { always = no }
-			available = {}
-			cancel = {}
-			picture = SPR_Carlist_Menace
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				political_power_gain = -0.2
-				stability_factor = -0.2
-				war_support_factor = -0.2
-			}
-		}
-
 		SPR_the_madozs_confiscation = {
 			allowed = { always = no }
 			available = {}
@@ -624,7 +607,23 @@ ideas = {
 					stability_factor = -0.1
 					production_factory_max_efficiency_factor = -0.02
 				}
+		}
+		SPR_the_carlist_threat = {
+			allowed = { always = no }
+			available = {}
+			cancel = {}
+			picture = SPR_Carlist_Menace
+
+			allowed_civil_war = {
+				always = yes
 			}
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.2
+			}
+		}
 		SPR_carlistmenace = {
 			allowed = {
 				always = no
@@ -635,6 +634,7 @@ ideas = {
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
 				political_power_gain = -0.1
+				war_support_factor = -0.2
 			}
 		}
 		SPR_carlistwar = {

@@ -348,6 +348,7 @@ eoanb_category_politics_foreign={
 		activation = {
 			always = no
 		}
+		allowed = { TAG = CHI }
 
 		selectable_mission = no
 		days_mission_timeout = 210
@@ -399,6 +400,12 @@ eoanb_category_politics_foreign={
 
 		activation = {
 			always = no
+		}
+		allowed = { 
+			OR={
+				tag = CHI 
+				tag = RUS
+			}
 		}
 
 		selectable_mission = no

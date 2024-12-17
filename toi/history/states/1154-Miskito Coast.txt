@@ -18,6 +18,9 @@ state = {
 			controller = ENG
 			buildings = {
 				infrastructure = 2
+				13723 = {
+					naval_base = 1
+				}
 			}
 			set_variable = { building_infrastructure_size = 0 }
 			

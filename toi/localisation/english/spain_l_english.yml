@@ -685,6 +685,7 @@ SPR_6dy_integrating_captaincy_of_chile: "Integrating Captaincy of Chile"
 SPR_6dy_old_claims_on_acre: "Our Old Claims on Acre"
 SPR_6dy_taking_antofagasta: "Taking Antofagasta"
 SPR_6dy_army_recruitment_and_replacment_law: "Army Recruitment and Replacment Law"
+SPR_6dy_vineyard_expansions: "Vineyard Expnasions"
 
 ##### IDEAS #####
 #Country Ideas
@@ -735,6 +736,8 @@ SPR_Baldomero_I: "Baldomero I"
 SPR_Antonio_I: "Antonio I"
 SPR_Alfonso_XII: "Alfonso XII"
 SPR_francisco_serrano_regent: "Regent Francisco Serrano"
+SPR_carlistmenace: "The Carlist Threat?"
+SPR_carlistmenace_desc: ""God, Country and King" That is the motto of those conservatives who belive the true king of Spain is Carlos VIII. While the Carlists where a constant thorn in the side of Isabella's government they are now much more docile in the hope that Carlos can become king democratically. If these hopes are dashed it can only lead to another Carlist War."
 SPR_carlistwar: "Third Carlist War"
 SPR_carlistwar_2: "Third Carlist War"
 SPR_carlistwar_3: "Third Carlist War"
@@ -742,6 +745,7 @@ SPR_banco_hispano_colonial: "Banco Hispano Colonial"
 SPR_recuitment_and_replacement_act: "Recuitment and Replacment Act"
 SPR_grain_investments: "Grain Investments"
 SPR_rigged_quinta: "Rigged Quinta"
+SPR_vineyard_expansion: "Vineyard Expansion"
 
 ### MISCELANEA ###
 #Construction Bonuses

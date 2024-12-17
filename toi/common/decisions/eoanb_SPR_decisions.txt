@@ -7,6 +7,9 @@ eoanb_category_economic = {
         available = {
 			always = no
 		}
+		allowed = {
+			tag = SPR
+		}
 		cancel_trigger = {
 			always = no
 		}
@@ -3068,7 +3071,7 @@ SPR_colonial_affairs_category = {
 		state_target = yes
 		allowed = { TAG = SPR }
 		visible = {
-			#has_completed_focus = SPR_6dy_integrating_captaincy_of_chile
+			has_completed_focus = SPR_6dy_integrating_captaincy_of_chile
 			PRU={has_cosmetic_tag = PRU_SPR_viceroyalty}
 		}
 		
@@ -3080,7 +3083,8 @@ SPR_colonial_affairs_category = {
 		}
 		cost = 50
 		fire_only_once = no
-		complete_effect = {
+		days_remove = 50
+		remove_effect = {
 			FROM={
 				add_core_of = PRU
 			}

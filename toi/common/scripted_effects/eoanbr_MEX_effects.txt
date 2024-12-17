@@ -180,3 +180,104 @@ increase_resistance_la_reforma = {
 		}
 	}
 }
+
+MXE_decrease_colonial_influence={
+	if={
+		limit={
+			check_variable = {
+				var = MXE.market_leader
+				value = SPR
+				tooltip = is_in_x_market_tt
+			}
+		}
+		
+	}
+	else={
+		if = {
+			limit = { has_idea = MXE_idea_small_french_influence }
+			add_stability = 0.03
+		}
+		else_if = {
+			limit = { has_idea = MXE_idea_medium_french_influence }
+			swap_ideas = {
+				remove_idea = MXE_idea_medium_french_influence
+				add_idea = MXE_idea_small_french_influence
+			}
+		}
+		else_if = {
+			limit = { has_idea = MXE_idea_heavy_french_influence }
+			swap_ideas = {
+				remove_idea = MXE_idea_heavy_french_influence
+				add_idea = MXE_idea_medium_french_influence
+			}
+		}
+		else_if = {
+			limit = { has_idea = MXE_idea_huge_french_influence }
+			swap_ideas = {
+				remove_idea = MXE_idea_huge_french_influence
+				add_idea = MXE_idea_heavy_french_influence
+			}
+		}
+		else_if = {
+			limit = { has_idea = MXE_idea_massive_french_influence }
+			swap_ideas = {
+				remove_idea = MXE_idea_massive_french_influence
+				add_idea = MXE_idea_huge_french_influence
+			}
+		}
+	}
+}
+
+MXE_increase_colonial_influence={
+	if={
+		limit={
+			check_variable = {
+				var = MXE.market_leader
+				value = SPR
+				tooltip = is_in_x_market_tt
+			}
+		}
+		add_political_power = 69
+	}
+	else={
+		if = {
+			limit = { has_idea = MXE_idea_massive_french_influence }
+			store_current_ideologies = yes
+			FRA = {
+				set_autonomy = {
+					target = MXE
+					autonomous_state = autonomy_dominion
+				}
+			}
+			load_prevous_ideologies = yes
+		}
+		else_if = {
+			limit = { has_idea = MXE_idea_huge_french_influence }
+			swap_ideas = {
+				remove_idea = MXE_idea_huge_french_influence
+				add_idea = MXE_idea_massive_french_influence
+			}
+		}
+		else_if = {
+			limit = { has_idea = MXE_idea_heavy_french_influence }
+			swap_ideas = {
+				remove_idea = MXE_idea_heavy_french_influence
+				add_idea = MXE_idea_huge_french_influence
+			}
+		}
+		else_if = {
+			limit = { has_idea = MXE_idea_medium_french_influence }
+			swap_ideas = {
+				remove_idea = MXE_idea_medium_french_influence
+				add_idea = MXE_idea_heavy_french_influence
+			}
+		}
+		else_if = {
+			limit = { has_idea = MXE_idea_small_french_influence }
+			swap_ideas = {
+				remove_idea = MXE_idea_small_french_influence
+				add_idea = MXE_idea_medium_french_influence
+			}
+		}
+	}
+}

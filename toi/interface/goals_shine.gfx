@@ -6307,6 +6307,36 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_brazil_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_generic_attack_brazil.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_focus_generic_attack_brazil.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_focus_generic_attack_brazil.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 	
 	SpriteType = {
 		name = "GFX_focus_generic_low_cost_housing_shine"
@@ -79260,10 +79290,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_Focus_Diplomacy_FRA_shine"
-		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_FRA.dds"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_FRA.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_FRA.dds"
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_FRA.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
 			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -79281,7 +79311,91 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_FRA.dds"
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_FRA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_SPR_shine"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_SPR.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_SPR.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_SPR.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_ITA_shine"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_ITA.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_ITA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_ITA.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
 			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -79302,10 +79416,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_Focus_Diplomacy_POR_shine"
-		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_POR.dds"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_POR.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_POR.dds"
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_POR.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
 			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -79323,7 +79437,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_POR.dds"
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_POR.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
 			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -79344,10 +79458,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_Focus_Diplomacy_UK_shine"
-		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.dds"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.dds"
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
 			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -79365,7 +79479,133 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.dds"
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_USA_shine"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_USA.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_USA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_USA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_RUS_shine"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_RUS.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_RUS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_RUS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Focus_Diplomacy_GER_shine"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_GER.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_GER.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_GER.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
 			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

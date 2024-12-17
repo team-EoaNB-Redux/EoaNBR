@@ -2931,10 +2931,11 @@ country_event = { #Revolution victory
 				SPR_freedom_volunteers
 				SPR_the_revolutionary_boards
 				SPR_provisional_government
+				SPR_carlistmenace
 			}
 			remove_ideas ={
 				SPR_pragmatica_sancion
-				
+				SPR_the_carlist_threat
 			}
 			170={
 				set_demilitarized_zone = no
