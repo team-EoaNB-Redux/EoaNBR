@@ -9226,6 +9226,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/usa/focus_usa_demobilization.png"
 	}
 	SpriteType = {
+		name = "GFX_focus_usa_establish_justice_department"
+		texturefile = "gfx/interface/goals/usa/focus_usa_establish_justice_department.png"
+	}
+	SpriteType = {
 		name = "GFX_focus_usa_rise_columbia_columbia_brave_and_free"
 		texturefile = "gfx/interface/goals/usa/focus_usa_rise_columbia_columbia_brave_and_free.png"
 	}

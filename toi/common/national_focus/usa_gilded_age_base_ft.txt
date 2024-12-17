@@ -10,7 +10,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_social_reforms
-	icon = placeholder
+	icon = GFX_Focus_social_reforms
 	cost = 40
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
@@ -22,7 +22,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_enforce_federal_election_security
-	icon = placeholder
+	icon = GFX_Focus_Law_Vote_1
 	cost = 40
 	relative_position_id = USA_gilded_social_reforms
 	prerequisite = { focus = USA_gilded_social_reforms }
@@ -39,7 +39,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_enact_womens_suffrage
-	icon = placeholder
+	icon = GFX_focus_usa_the_suffragette_movement
 	cost = 40
 	relative_position_id = USA_gilded_enforce_federal_election_security
 	prerequisite = { focus = USA_gilded_enforce_federal_election_security }
@@ -56,7 +56,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_establish_a_public_school_system
-	icon = placeholder
+	icon = GFX_Focus_Renovate_School
 	cost = 40
 	relative_position_id = USA_gilded_social_reforms
 	prerequisite = { focus = USA_gilded_social_reforms }
@@ -92,7 +92,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_bureaucratic_reforms
-	icon = placeholder
+	icon = GFX_Focus_Reform_Government
 	cost = 40
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
@@ -152,7 +152,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_establish_justice_department
-	icon = placeholder
+	icon = GFX_focus_usa_establish_justice_department
 	cost = 40
 	relative_position_id = USA_gilded_bureaucratic_reforms
 	prerequisite = { focus = USA_gilded_bureaucratic_reforms }
@@ -200,7 +200,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = USA_gilded_economic_reforms
-	icon = placeholder
+	icon = GFX_Focus_Reform_Economy
 	cost = 40
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
@@ -1795,6 +1795,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = SIX
+			has_opinion = {
+				target = SIX
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_sioux
@@ -1871,6 +1875,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = CHY
+			has_opinion = {
+				target = CHY
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_cheyenne_arapaho
@@ -1945,6 +1953,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = NEZ
+			has_opinion = {
+				target = NEZ
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_nez_perce
@@ -2021,6 +2033,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = COM
+			has_opinion = {
+				target = COM
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_comanche
@@ -2095,6 +2111,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = BFT
+			has_opinion = {
+				target = BFT
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_blackfoot
@@ -2171,6 +2191,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = SHO
+			has_opinion = {
+				target = SHO
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_shoshone
@@ -2245,6 +2269,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = APA
+			has_opinion = {
+				target = APA
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_apache
@@ -2319,6 +2347,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = NAV
+			has_opinion = {
+				target = NAV
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_navajo
@@ -2395,6 +2427,10 @@ shared_focus = {
 	available = {
 		USA = {
 			is_neighbor_of = CRW
+			has_opinion = {
+				target = CRW
+				value > 0
+			}
 		}
 	}
 	relative_position_id = USA_diplomacy_trade_crow
@@ -2438,6 +2474,13 @@ shared_focus = {
 	# 	SEM = { exists = no }
 	# }
 	available = {
+		USA = {
+			is_neighbor_of = SEM
+			has_opinion = {
+				target = SIX
+				value > 0
+			}
+		}
 		OR = {
 			AND = {
 				ROOT = {
