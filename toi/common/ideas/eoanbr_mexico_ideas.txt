@@ -95,6 +95,7 @@ ideas = {
 				surrender_limit = 1
 				war_support_factor = 0.30
 				stability_factor = -0.10
+				interest_rate_factor = 0.25
 			}
 		}
 		

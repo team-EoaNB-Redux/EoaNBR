@@ -1745,7 +1745,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# nationalization no longer generates unrest, increased yield
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1771,7 +1771,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#small stability malus
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1797,7 +1797,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#small stability malus, social egal boost
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1823,7 +1823,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#small stability malus, social egal boost
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1849,7 +1849,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#remove other religions from discrimination
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1878,7 +1878,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#timed idea to gain money
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1904,7 +1904,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#unrest can now be removed
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1930,7 +1930,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#add 2 forts in vera cruz
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1956,7 +1956,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#pre existing events for seeking US loans, also activates decisions for money and equipment
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -1982,7 +1982,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# events covering this
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2009,7 +2009,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# hurts Con access to stuff and reduces interest rates
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2035,7 +2035,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# replace militias
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2061,7 +2061,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# new divs with special buffs
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2087,7 +2087,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# raise some funds but obvs cause issues
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2129,7 +2129,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# something manpower
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
