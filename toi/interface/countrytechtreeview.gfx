@@ -402,7 +402,7 @@ spriteTypes = {
 
 	frameAnimatedSpriteType = {
 		name = "GFX_technology_currently_researching_item_bg"
-		texturefile = "gfx//interface//researching_anim_strip.dds"
+		texturefile = "gfx//interface//techtree//researching_anim_strip.dds"
 		noOfFrames = 9
 		loadType = "INGAME"
 		transparencecheck = yes
