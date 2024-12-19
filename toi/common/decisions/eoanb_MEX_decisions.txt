@@ -892,9 +892,9 @@ EOANBSYS_national_crisis_decision_category = {
 			tag = MEX
 		}
 
-		# visible = {
-		# 	always = no
-		# }
+		visible = {
+			always = no
+		}
 		# target_root_trigger = {
 		# 	has_completed_focus = MEX_focus_comonforts_interim_powers
 		# }
@@ -962,10 +962,17 @@ EOANBSYS_national_crisis_decision_category = {
 			set_temp_variable = { x_temp = 0.1 }
 			if = {
 				limit = {
-					has_war = yes
-					has_completed_focus = MEX_focus_national_insurrection
+					# has_war = yes
+					has_completed_focus = MEX_focus_nationalize_church_property
 				}
 				multiply_temp_variable = { x_temp = 2.5 }
+			}
+			if = {
+				limit = {
+					has_war = no
+					has_completed_focus = MEX_liberate_juarez
+				}
+				multiply_temp_variable = { x_temp = 2 }
 			}
 			add_months_of_income = yes
 			random_core_state = {
