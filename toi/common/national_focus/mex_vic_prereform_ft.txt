@@ -2118,7 +2118,7 @@ focus_tree = {
 				limit = {
 					has_completed_focus = MEX_support_tacubaya_plan
 				}
-				has_completed_focus = MEC_focus_raising_militias
+				# has_completed_focus = MEC_focus_raising_militias
 				has_completed_focus = MEC_focus_appoint_conservative_cabinet
 			}
 			else = {
@@ -2164,7 +2164,7 @@ focus_tree = {
 			focus = MEX_focus_plan_of_tacubaya
 		}
 		completion_reward = {
-
+			#war support
 		}
 	}
 	focus = {
@@ -2188,7 +2188,7 @@ focus_tree = {
 			focus = MEX_support_tacubaya_plan
 		}
 		completion_reward = {
-
+			# switch in zuloaga #fuck this guys name
 		}
 		#allow_branch = { TAG = MEC }
 	}
@@ -2288,7 +2288,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#switch laws
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2314,7 +2314,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#advisors become available, lp?
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2340,7 +2340,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#funding national spirit
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2366,7 +2366,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#weaker version of liberal decision to fund government
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2392,7 +2392,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#big pile of money, huge relation malus, requires miramon, blocks liberal "european acknowledgement", maybe make it a decision that allows ticking off each nation
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2418,7 +2418,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#fires an event, stability malus, war support malus
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2444,7 +2444,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# starts event chain for navidad plan
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2465,12 +2465,15 @@ focus_tree = {
 		relative_position_id = MEC_focus_implement_five_laws
 		cost = 70
 
-		prerequisite = { focus = MEC_focus_implement_five_laws }
+		prerequisite = {
+			focus = MEC_focus_implement_five_laws
+			focus = MEX_focus_reform_war_conscription
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#unblocks division recruiting for solely militia
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2496,7 +2499,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# unlocks decisions for gaining equipment and cash from europe
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2522,7 +2525,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#various help MEC can get from spain, volunteers apparently, maybe enhances help from spain?
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2549,7 +2552,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			# can go historical route, or if US is hostile then MEC deletes ~4k worth of divs and respawns them ON veracruz
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2575,7 +2578,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#spawn 2 corvettes in cuba
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2601,7 +2604,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#event chain around this
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2630,7 +2633,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#Cogg content around this, fails to accomplish much i beleive
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2659,7 +2662,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			#Cogg content around this, leads to spanish PU???
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
