@@ -5332,6 +5332,11 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 		}
+
+		build_cost_resources = {
+			chemicals = 1
+			wood = 2
+		}
 		
 		can_convert_from = {
 			module = ship_torpedo_1
@@ -5354,6 +5359,11 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 		}
+
+		build_cost_resources = {
+			chemicals = 2
+			wood = 4
+		}
 		
 		can_convert_from = {
 			module = ship_torpedo_1
@@ -5371,6 +5381,10 @@ equipment_modules = {
 		add_stats = {
 			torpedo_attack = 3
 			build_cost_ic = 100
+		}
+
+		build_cost_resources = {
+			chemicals = 1
 		}
 		
 		# can_convert_from = {
@@ -5390,6 +5404,10 @@ equipment_modules = {
 			torpedo_attack = 6
 			build_cost_ic = 175
 		}
+
+		build_cost_resources = {
+			chemicals = 2
+		}
 		
 		can_convert_from = {
 			module = ship_torpedo_3
@@ -5407,6 +5425,10 @@ equipment_modules = {
 		add_stats = {
 			torpedo_attack = 9
 			build_cost_ic = 220
+		}
+
+		build_cost_resources = {
+			chemicals = 3
 		}
 		
 		can_convert_from = {
