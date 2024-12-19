@@ -6,7 +6,7 @@
 			set_temp_variable = { m = 0 }
 			always = yes
 		}
-		localization_key = "[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1601
 	}
 }
 
@@ -17,7 +17,7 @@ defined_text = {
 		trigger = {
 			check_variable = { local_string^m = 0 }
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_1602
 	}
 	
 	text = {
@@ -25,7 +25,7 @@ defined_text = {
 			check_variable = { local_string^m = 32 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = " [GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1603
 	}
 
 	text = {
@@ -33,7 +33,7 @@ defined_text = {
 			check_variable = { local_string^m = 33 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "![GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1604
 	}
 
 	text = {
@@ -41,7 +41,7 @@ defined_text = {
 			check_variable = { local_string^m = 34 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "\"[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1605
 	}
 
 	text = {
@@ -49,7 +49,7 @@ defined_text = {
 			check_variable = { local_string^m = 35 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "#[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1606
 	}
 
 	text = {
@@ -57,7 +57,7 @@ defined_text = {
 			check_variable = { local_string^m = 36 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "$[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1607
 	}
 
 	text = {
@@ -65,7 +65,7 @@ defined_text = {
 			check_variable = { local_string^m = 37 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "%[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1608
 	}
 
 	text = {
@@ -73,7 +73,7 @@ defined_text = {
 			check_variable = { local_string^m = 38 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "&[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1609
 	}
 
 	text = {
@@ -81,7 +81,7 @@ defined_text = {
 			check_variable = { local_string^m = 39 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "'[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1610
 	}
 
 	text = {
@@ -89,7 +89,7 @@ defined_text = {
 			check_variable = { local_string^m = 40 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "([GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1611
 	}
 
 	text = {
@@ -97,7 +97,7 @@ defined_text = {
 			check_variable = { local_string^m = 41 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = ")[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1612
 	}
 
 	text = {
@@ -105,7 +105,7 @@ defined_text = {
 			check_variable = { local_string^m = 42 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "*[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1613
 	}
 
 	text = {
@@ -113,7 +113,7 @@ defined_text = {
 			check_variable = { local_string^m = 43 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "+[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1614
 	}
 
 	text = {
@@ -121,7 +121,7 @@ defined_text = {
 			check_variable = { local_string^m = 44 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = ",[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1615
 	}
 
 	text = {
@@ -129,7 +129,7 @@ defined_text = {
 			check_variable = { local_string^m = 45 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "-[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1616
 	}
 
 	text = {
@@ -137,7 +137,7 @@ defined_text = {
 			check_variable = { local_string^m = 46 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = ".[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1617
 	}
 
 	text = {
@@ -145,7 +145,7 @@ defined_text = {
 			check_variable = { local_string^m = 47 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "/[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1618
 	}
 
 	text = {
@@ -153,7 +153,7 @@ defined_text = {
 			check_variable = { local_string^m = 48 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "0[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1619
 	}
 
 	text = {
@@ -161,7 +161,7 @@ defined_text = {
 			check_variable = { local_string^m = 49 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "1[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1620
 	}
 
 	text = {
@@ -169,7 +169,7 @@ defined_text = {
 			check_variable = { local_string^m = 50 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "2[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1621
 	}
 
 	text = {
@@ -177,7 +177,7 @@ defined_text = {
 			check_variable = { local_string^m = 51 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "3[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1622
 	}
 
 	text = {
@@ -185,7 +185,7 @@ defined_text = {
 			check_variable = { local_string^m = 52 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "4[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1623
 	}
 
 	text = {
@@ -193,7 +193,7 @@ defined_text = {
 			check_variable = { local_string^m = 53 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "5[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1624
 	}
 
 	text = {
@@ -201,7 +201,7 @@ defined_text = {
 			check_variable = { local_string^m = 54 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "6[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1625
 	}
 
 	text = {
@@ -209,7 +209,7 @@ defined_text = {
 			check_variable = { local_string^m = 55 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "7[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1626
 	}
 
 	text = {
@@ -217,7 +217,7 @@ defined_text = {
 			check_variable = { local_string^m = 56 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "8[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1627
 	}
 
 	text = {
@@ -225,7 +225,7 @@ defined_text = {
 			check_variable = { local_string^m = 57 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "9[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1628
 	}
 
 	text = {
@@ -233,7 +233,7 @@ defined_text = {
 			check_variable = { local_string^m = 58 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = ":[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1629
 	}
 
 	text = {
@@ -241,7 +241,7 @@ defined_text = {
 			check_variable = { local_string^m = 59 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = ";[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1630
 	}
 
 	text = {
@@ -249,7 +249,7 @@ defined_text = {
 			check_variable = { local_string^m = 60 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "<[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1631
 	}
 
 	text = {
@@ -257,7 +257,7 @@ defined_text = {
 			check_variable = { local_string^m = 61 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "=[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1632
 	}
 
 	text = {
@@ -265,7 +265,7 @@ defined_text = {
 			check_variable = { local_string^m = 62 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = ">[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1633
 	}
 
 	text = {
@@ -273,7 +273,7 @@ defined_text = {
 			check_variable = { local_string^m = 63 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "?[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1634
 	}
 
 	text = {
@@ -281,7 +281,7 @@ defined_text = {
 			check_variable = { local_string^m = 64 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "@[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1635
 	}
 
 	text = {
@@ -289,7 +289,7 @@ defined_text = {
 			check_variable = { local_string^m = 65 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "A[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1636
 	}
 
 	text = {
@@ -297,7 +297,7 @@ defined_text = {
 			check_variable = { local_string^m = 66 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "B[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1637
 	}
 
 	text = {
@@ -305,7 +305,7 @@ defined_text = {
 			check_variable = { local_string^m = 67 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "C[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1638
 	}
 
 	text = {
@@ -313,7 +313,7 @@ defined_text = {
 			check_variable = { local_string^m = 68 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "D[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1639
 	}
 
 	text = {
@@ -321,7 +321,7 @@ defined_text = {
 			check_variable = { local_string^m = 69 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "E[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1640
 	}
 
 	text = {
@@ -329,7 +329,7 @@ defined_text = {
 			check_variable = { local_string^m = 70 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "F[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1641
 	}
 
 	text = {
@@ -337,7 +337,7 @@ defined_text = {
 			check_variable = { local_string^m = 71 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "G[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1642
 	}
 
 	text = {
@@ -345,7 +345,7 @@ defined_text = {
 			check_variable = { local_string^m = 72 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "H[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1643
 	}
 
 	text = {
@@ -353,7 +353,7 @@ defined_text = {
 			check_variable = { local_string^m = 73 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "I[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1644
 	}
 
 	text = {
@@ -361,7 +361,7 @@ defined_text = {
 			check_variable = { local_string^m = 74 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "J[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1645
 	}
 
 	text = {
@@ -369,7 +369,7 @@ defined_text = {
 			check_variable = { local_string^m = 75 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "K[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1646
 	}
 
 	text = {
@@ -377,7 +377,7 @@ defined_text = {
 			check_variable = { local_string^m = 76 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "L[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1647
 	}
 
 	text = {
@@ -385,7 +385,7 @@ defined_text = {
 			check_variable = { local_string^m = 77 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "M[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1648
 	}
 
 	text = {
@@ -393,7 +393,7 @@ defined_text = {
 			check_variable = { local_string^m = 78 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "N[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1649
 	}
 
 	text = {
@@ -401,7 +401,7 @@ defined_text = {
 			check_variable = { local_string^m = 79 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "O[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1650
 	}
 
 	text = {
@@ -409,7 +409,7 @@ defined_text = {
 			check_variable = { local_string^m = 80 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "P[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1651
 	}
 
 	text = {
@@ -417,7 +417,7 @@ defined_text = {
 			check_variable = { local_string^m = 81 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "Q[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1652
 	}
 
 	text = {
@@ -425,7 +425,7 @@ defined_text = {
 			check_variable = { local_string^m = 82 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "R[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1653
 	}
 
 	text = {
@@ -433,7 +433,7 @@ defined_text = {
 			check_variable = { local_string^m = 83 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "S[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1654
 	}
 
 	text = {
@@ -441,7 +441,7 @@ defined_text = {
 			check_variable = { local_string^m = 84 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "T[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1655
 	}
 
 	text = {
@@ -449,7 +449,7 @@ defined_text = {
 			check_variable = { local_string^m = 85 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "U[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1656
 	}
 
 	text = {
@@ -457,7 +457,7 @@ defined_text = {
 			check_variable = { local_string^m = 86 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "V[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1657
 	}
 
 	text = {
@@ -465,7 +465,7 @@ defined_text = {
 			check_variable = { local_string^m = 87 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "W[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1658
 	}
 
 	text = {
@@ -473,7 +473,7 @@ defined_text = {
 			check_variable = { local_string^m = 88 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "X[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1659
 	}
 
 	text = {
@@ -481,7 +481,7 @@ defined_text = {
 			check_variable = { local_string^m = 89 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "Y[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1660
 	}
 
 	text = {
@@ -489,7 +489,7 @@ defined_text = {
 			check_variable = { local_string^m = 90 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "Z[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1661
 	}
 
 	# thank you PDX, very cool
@@ -506,7 +506,7 @@ defined_text = {
 			check_variable = { local_string^m = 92 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "\\[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1662
 	}
 
 	text = {
@@ -514,7 +514,7 @@ defined_text = {
 			check_variable = { local_string^m = 93 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "][GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1663
 	}
 
 	text = {
@@ -522,7 +522,7 @@ defined_text = {
 			check_variable = { local_string^m = 94 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "^[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1664
 	}
 
 	text = {
@@ -530,7 +530,7 @@ defined_text = {
 			check_variable = { local_string^m = 95 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "_[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1665
 	}
 
 	text = {
@@ -538,7 +538,7 @@ defined_text = {
 			check_variable = { local_string^m = 96 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "`[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1666
 	}
 
 	text = {
@@ -546,7 +546,7 @@ defined_text = {
 			check_variable = { local_string^m = 97 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "a[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1667
 	}
 
 	text = {
@@ -554,7 +554,7 @@ defined_text = {
 			check_variable = { local_string^m = 98 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "b[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1668
 	}
 
 	text = {
@@ -562,7 +562,7 @@ defined_text = {
 			check_variable = { local_string^m = 99 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "c[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1669
 	}
 
 	text = {
@@ -570,7 +570,7 @@ defined_text = {
 			check_variable = { local_string^m = 100 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "d[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1670
 	}
 
 	text = {
@@ -578,7 +578,7 @@ defined_text = {
 			check_variable = { local_string^m = 101 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "e[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1671
 	}
 
 	text = {
@@ -586,7 +586,7 @@ defined_text = {
 			check_variable = { local_string^m = 102 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "f[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1672
 	}
 
 	text = {
@@ -594,7 +594,7 @@ defined_text = {
 			check_variable = { local_string^m = 103 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "g[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1673
 	}
 
 	text = {
@@ -602,7 +602,7 @@ defined_text = {
 			check_variable = { local_string^m = 104 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "h[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1674
 	}
 
 	text = {
@@ -610,7 +610,7 @@ defined_text = {
 			check_variable = { local_string^m = 105 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "m[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1675
 	}
 
 	text = {
@@ -618,7 +618,7 @@ defined_text = {
 			check_variable = { local_string^m = 106 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "j[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1676
 	}
 
 	text = {
@@ -626,7 +626,7 @@ defined_text = {
 			check_variable = { local_string^m = 107 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "k[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1677
 	}
 
 	text = {
@@ -634,7 +634,7 @@ defined_text = {
 			check_variable = { local_string^m = 108 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "l[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1678
 	}
 
 	text = {
@@ -642,7 +642,7 @@ defined_text = {
 			check_variable = { local_string^m = 109 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "m[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1679
 	}
 
 	text = {
@@ -650,7 +650,7 @@ defined_text = {
 			check_variable = { local_string^m = 110 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "n[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1680
 	}
 
 	text = {
@@ -658,7 +658,7 @@ defined_text = {
 			check_variable = { local_string^m = 111 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "o[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1681
 	}
 
 	text = {
@@ -666,7 +666,7 @@ defined_text = {
 			check_variable = { local_string^m = 112 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "p[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1682
 	}
 
 	text = {
@@ -674,7 +674,7 @@ defined_text = {
 			check_variable = { local_string^m = 113 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "q[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1683
 	}
 
 	text = {
@@ -682,7 +682,7 @@ defined_text = {
 			check_variable = { local_string^m = 114 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "r[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1684
 	}
 
 	text = {
@@ -690,7 +690,7 @@ defined_text = {
 			check_variable = { local_string^m = 115 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "s[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1685
 	}
 
 	text = {
@@ -698,7 +698,7 @@ defined_text = {
 			check_variable = { local_string^m = 116 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "t[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1686
 	}
 
 	text = {
@@ -706,7 +706,7 @@ defined_text = {
 			check_variable = { local_string^m = 117 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "u[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1687
 	}
 
 	text = {
@@ -714,7 +714,7 @@ defined_text = {
 			check_variable = { local_string^m = 118 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "v[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1688
 	}
 
 	text = {
@@ -722,7 +722,7 @@ defined_text = {
 			check_variable = { local_string^m = 119 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "w[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1689
 	}
 
 	text = {
@@ -730,7 +730,7 @@ defined_text = {
 			check_variable = { local_string^m = 120 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "x[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1690
 	}
 
 	text = {
@@ -738,7 +738,7 @@ defined_text = {
 			check_variable = { local_string^m = 121 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "y[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1691
 	}
 
 	text = {
@@ -746,7 +746,7 @@ defined_text = {
 			check_variable = { local_string^m = 122 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "z[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1692
 	}
 
 	text = {
@@ -754,7 +754,7 @@ defined_text = {
 			check_variable = { local_string^m = 123 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "{[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1693
 	}
 
 	text = {
@@ -762,7 +762,7 @@ defined_text = {
 			check_variable = { local_string^m = 124 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "|[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1694
 	}
 
 	text = {
@@ -770,7 +770,7 @@ defined_text = {
 			check_variable = { local_string^m = 125 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "}[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1695
 	}
 
 	text = {
@@ -778,11 +778,11 @@ defined_text = {
 			check_variable = { local_string^m = 126 }
 			add_to_temp_variable = { m = 1 }
 		}
-		localization_key = "~[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1696
 	}
 	
 	text = {
-		localization_key = "[GetLocalStringInner]"
+		localization_key = scripted_loc_inline_1697
 	}
 }
 
@@ -801,7 +801,7 @@ defined_text = {
 			set_temp_variable = { n = 0 }
 			always = yes
 		}
-		localization_key = "[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1698
 	}
 }
 
@@ -817,7 +817,7 @@ defined_text = {
 				STRING_ARRAY = "[GetLocalString]"
 			}
 		}
-		localization_key = ""
+		localization_key = scripted_loc_inline_1699
 	}
 	
 	text = {
@@ -830,7 +830,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = " [GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1700
 	}
 
 	text = {
@@ -843,7 +843,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "![GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1701
 	}
 
 	text = {
@@ -856,7 +856,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "\"[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1702
 	}
 
 	text = {
@@ -869,7 +869,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "#[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1703
 	}
 
 	text = {
@@ -882,7 +882,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "$[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1704
 	}
 
 	text = {
@@ -895,7 +895,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "%[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1705
 	}
 
 	text = {
@@ -908,7 +908,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "&[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1706
 	}
 
 	text = {
@@ -921,7 +921,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "'[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1707
 	}
 
 	text = {
@@ -934,7 +934,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "([GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1708
 	}
 
 	text = {
@@ -947,7 +947,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = ")[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1709
 	}
 
 	text = {
@@ -960,7 +960,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "*[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1710
 	}
 
 	text = {
@@ -973,7 +973,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "+[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1711
 	}
 
 	text = {
@@ -986,7 +986,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = ",[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1712
 	}
 
 	text = {
@@ -999,7 +999,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "-[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1713
 	}
 
 	text = {
@@ -1012,7 +1012,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = ".[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1714
 	}
 
 	text = {
@@ -1025,7 +1025,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "/[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1715
 	}
 
 	text = {
@@ -1038,7 +1038,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "0[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1716
 	}
 
 	text = {
@@ -1051,7 +1051,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "1[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1717
 	}
 
 	text = {
@@ -1064,7 +1064,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "2[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1718
 	}
 
 	text = {
@@ -1077,7 +1077,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "3[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1719
 	}
 
 	text = {
@@ -1090,7 +1090,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "4[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1720
 	}
 
 	text = {
@@ -1103,7 +1103,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "5[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1721
 	}
 
 	text = {
@@ -1116,7 +1116,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "6[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1722
 	}
 
 	text = {
@@ -1129,7 +1129,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "7[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1723
 	}
 
 	text = {
@@ -1142,7 +1142,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "8[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1724
 	}
 
 	text = {
@@ -1155,7 +1155,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "9[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1725
 	}
 
 	text = {
@@ -1168,7 +1168,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = ":[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1726
 	}
 
 	text = {
@@ -1181,7 +1181,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = ";[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1727
 	}
 
 	text = {
@@ -1194,7 +1194,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "<[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1728
 	}
 
 	text = {
@@ -1207,7 +1207,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "=[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1729
 	}
 
 	text = {
@@ -1220,7 +1220,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = ">[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1730
 	}
 
 	text = {
@@ -1233,7 +1233,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "?[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1731
 	}
 
 	text = {
@@ -1246,7 +1246,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "@[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1732
 	}
 
 	text = {
@@ -1259,7 +1259,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "A[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1733
 	}
 
 	text = {
@@ -1272,7 +1272,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "B[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1734
 	}
 
 	text = {
@@ -1285,7 +1285,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "C[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1735
 	}
 
 	text = {
@@ -1298,7 +1298,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "D[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1736
 	}
 
 	text = {
@@ -1311,7 +1311,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "E[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1737
 	}
 
 	text = {
@@ -1324,7 +1324,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "F[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1738
 	}
 
 	text = {
@@ -1337,7 +1337,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "G[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1739
 	}
 
 	text = {
@@ -1350,7 +1350,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "H[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1740
 	}
 
 	text = {
@@ -1363,7 +1363,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "I[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1741
 	}
 
 	text = {
@@ -1376,7 +1376,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "J[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1742
 	}
 
 	text = {
@@ -1389,7 +1389,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "K[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1743
 	}
 
 	text = {
@@ -1402,7 +1402,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "L[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1744
 	}
 
 	text = {
@@ -1415,7 +1415,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "M[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1745
 	}
 
 	text = {
@@ -1428,7 +1428,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "N[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1746
 	}
 
 	text = {
@@ -1441,7 +1441,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "O[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1747
 	}
 
 	text = {
@@ -1454,7 +1454,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "P[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1748
 	}
 
 	text = {
@@ -1467,7 +1467,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "Q[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1749
 	}
 
 	text = {
@@ -1480,7 +1480,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "R[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1750
 	}
 
 	text = {
@@ -1493,7 +1493,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "S[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1751
 	}
 
 	text = {
@@ -1506,7 +1506,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "T[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1752
 	}
 
 	text = {
@@ -1519,7 +1519,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "U[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1753
 	}
 
 	text = {
@@ -1532,7 +1532,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "V[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1754
 	}
 
 	text = {
@@ -1545,7 +1545,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "W[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1755
 	}
 
 	text = {
@@ -1558,7 +1558,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "X[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1756
 	}
 
 	text = {
@@ -1571,7 +1571,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "Y[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1757
 	}
 
 	text = {
@@ -1584,7 +1584,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "Z[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1758
 	}
 
 	#text = {
@@ -1610,7 +1610,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "\\[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1759
 	}
 
 	text = {
@@ -1623,7 +1623,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "][GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1760
 	}
 
 	text = {
@@ -1636,7 +1636,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "^[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1761
 	}
 
 	text = {
@@ -1649,7 +1649,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "_[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1762
 	}
 
 	text = {
@@ -1662,7 +1662,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "`[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1763
 	}
 
 	text = {
@@ -1675,7 +1675,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "a[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1764
 	}
 
 	text = {
@@ -1688,7 +1688,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "b[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1765
 	}
 
 	text = {
@@ -1701,7 +1701,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "c[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1766
 	}
 
 	text = {
@@ -1714,7 +1714,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "d[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1767
 	}
 
 	text = {
@@ -1727,7 +1727,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "e[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1768
 	}
 
 	text = {
@@ -1740,7 +1740,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "f[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1769
 	}
 
 	text = {
@@ -1753,7 +1753,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "g[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1770
 	}
 
 	text = {
@@ -1766,7 +1766,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "h[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1771
 	}
 
 	text = {
@@ -1779,7 +1779,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "i[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1772
 	}
 
 	text = {
@@ -1792,7 +1792,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "j[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1773
 	}
 
 	text = {
@@ -1805,7 +1805,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "k[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1774
 	}
 
 	text = {
@@ -1818,7 +1818,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "l[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1775
 	}
 
 	text = {
@@ -1831,7 +1831,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "m[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1776
 	}
 
 	text = {
@@ -1844,7 +1844,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "n[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1777
 	}
 
 	text = {
@@ -1857,7 +1857,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "o[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1778
 	}
 
 	text = {
@@ -1870,7 +1870,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "p[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1779
 	}
 
 	text = {
@@ -1883,7 +1883,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "q[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1780
 	}
 
 	text = {
@@ -1896,7 +1896,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "r[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1781
 	}
 
 	text = {
@@ -1909,7 +1909,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "s[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1782
 	}
 
 	text = {
@@ -1922,7 +1922,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "t[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1783
 	}
 
 	text = {
@@ -1935,7 +1935,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "u[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1784
 	}
 
 	text = {
@@ -1948,7 +1948,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "v[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1785
 	}
 
 	text = {
@@ -1961,7 +1961,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "w[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1786
 	}
 
 	text = {
@@ -1974,7 +1974,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "x[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1787
 	}
 
 	text = {
@@ -1987,7 +1987,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "y[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1788
 	}
 
 	text = {
@@ -2000,7 +2000,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "z[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1789
 	}
 
 	text = {
@@ -2013,7 +2013,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "{[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1790
 	}
 
 	text = {
@@ -2026,7 +2026,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "|[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1791
 	}
 
 	text = {
@@ -2039,7 +2039,7 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "}[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1792
 	}
 
 	text = {
@@ -2052,6 +2052,6 @@ defined_text = {
 			}
 			add_to_temp_variable = { n = 1 }
 		}
-		localization_key = "~[GetStringDynamicInner]"
+		localization_key = scripted_loc_inline_1793
 	}
 }

@@ -1,14 +1,14 @@
 ﻿l_russian:
  #Manpower 
  max_manpower_modifier: "Модификатор максимальной рабочей силы" #NT!
- max_manpower_factor: "Макс. коэффициент рабочей силы" #NT!
+ max_manpower_factor: "Максимальный коэффициент рабочей силы" #NT!
  monthly_manpower_modifier: "Ежемесячный модификатор рабочей силы" #NT!
  monthly_manpower_factor: "Ежемесячный коэффициент рабочей силы" #NT!
  # 
  #Bureaucracy 
- bureaucracy_capacity_modifier: "Модификатор бюрократического потенциала" #NT!
+ bureaucracy_capacity_modifier: "Модификатор мощности бюрократии" #NT!
  local_bureaucracy_capacity_modifier: "Местный $bureaucracy_capacity_modifier$" #NT!
- bureaucracy_capacity_factor: "Фактор потенциала бюрократии" #NT!
+ bureaucracy_capacity_factor: "Фактор мощности бюрократии" #NT!
  local_bureaucracy_capacity_factor: "Местный $bureaucracy_capacity_factor$" #NT!
  bureaucracy_cost_modifier: "Модификатор стоимости бюрократии" #NT!
  local_bureaucracy_cost_modifier: "Местный $bureaucracy_cost_modifier$" #NT!
@@ -17,30 +17,31 @@
  # 
  #Demographics 
  promote_culture_limit_modifier: "Предел продвигаемой культуры" #NT!
- promote_culture_cost_modifier: "Модификатор стоимости продвижения Cuture" #NT!
- promote_culture_cost_factor: "Фактор затрат на продвижение культуры" #NT!
- promote_religion_limit_modifier: "Модификатор лимита продвинутой религии" #NT!
+ promote_culture_cost_modifier: "Модификатор стоимости продвижения культуры" #NT!
+ promote_culture_cost_factor: "Фактор стоимости продвижения культуры" #NT!
+ promote_religion_limit_modifier: "Модификатор лимита продвигаемой религии" #NT!
  promote_religion_cost_modifier: "Модификатор стоимости продвижения религии" #NT!
- promote_religion_cost_factor: "Фактор затрат на продвижение религии" #NT!
+ promote_religion_cost_factor: "Фактор стоимости продвижения религии" #NT!
  monthly_assimilation_speed_modifier: "Ежемесячный модификатор скорости ассимиляции" #NT!
- monthly_assimilation_speed_factor: "Ежемесячный коэффициент скорости ассимиляции" #NT!
- monthly_assimilation_cost_modifier: "Модификатор ежемесячной стоимости ассимиляции" #NT!
- monthly_assimilation_cost_factor: "Ежемесячный коэффициент затрат на ассимиляцию" #NT!
+ monthly_assimilation_speed_factor: "Ежемесячный фактор скорости ассимиляции" #NT!
+ monthly_assimilation_cost_modifier: "Ежемесячный модификатор стоимости ассимиляции" #NT!
+ monthly_assimilation_cost_factor: "Ежемесячный фактор стоимости ассимиляции" #NT!
  local_monthly_assimilation_speed_modifier: "Местный $monthly_assimilation_speed_modifier$" #NT!
  local_monthly_assimilation_speed_factor: "Местный $monthly_assimilation_speed_factor$" #NT!
  local_monthly_assimilation_cost_modifier: "Местный $monthly_assimilation_cost_modifier$" #NT!
  local_monthly_assimilation_cost_factor: "Местный $monthly_assimilation_cost_factor$" #NT!
- monthly_conversion_speed_modifier: "Модификатор ежемесячной скорости конверсии" #NT!
- monthly_conversion_speed_factor: "Ежемесячный коэффициент скорости конвертации" #NT!
- monthly_conversion_cost_modifier: "Модификатор ежемесячной стоимости конверсии" #NT!
+ monthly_conversion_speed_modifier: "Ежемесячный модификатор скорости конверсии" #NT!
+ monthly_conversion_speed_factor: "Ежемесячный коэффициент скорости конверсии" #NT!
+ monthly_conversion_cost_modifier: "Ежемесячный модификатор стоимости конверсии" #NT!
  monthly_conversion_cost_factor: "Ежемесячный коэффициент стоимости конверсии" #NT!
  local_monthly_conversion_speed_modifier: "Местный $monthly_conversion_speed_modifier$" #NT!
  local_monthly_conversion_speed_factor: "Местный $monthly_conversion_speed_factor$" #NT!
  local_monthly_conversion_cost_modifier: "Местный $monthly_conversion_cost_modifier$" #NT!
  local_monthly_conversion_cost_factor: "Местный $monthly_conversion_cost_factor$" #NT!
+ monthly_prestige_gain: "£prestige_texticon Ежемесячный прирост престижа" #NT!
  # 
  #Institutions 
- research_slot_modifier: "£research_speed_texticon Модификатор исследовательских слотов" #NT!
+ research_slot_modifier: "£research_speed_texticon §CСлоты исследований§! Модификатор" #NT!
  monthly_institution_progress_modifier: "£research_speed_texticon Ежемесячный прогресс учреждения" #NT!
  monthly_institution_innovative_progress_modifier: "£research_speed_texticon Ежемесячный прогресс инновационного учреждения" #NT!
  monthly_institution_rationalism_progress_modifier: "£research_speed_texticon Ежемесячно $institution_rationalism$ Прогресс учреждения" #NT!
@@ -74,19 +75,36 @@
  opposition_coalition_support_factor: "Фактор поддержки оппозиционной коалиции" #NT!
  # 
  #Productivity 
- productivity_throughput_factor: "Производительность Коэффициент пропускной способности" #NT!
+ productivity_throughput_factor: "Фактор производительности и пропускной способности" #NT!
  local_productivity_throughput_factor: "Местный $productivity_throughput_factor$" #NT!
  # 
+ yearly_dci_reduction_modifier: "Ежегодное снижение DCI" #NT!
+ local_yearly_dci_reduction_modifier: "Ежегодное локальное снижение DCI" #NT!
   
  #Colonization 
- monthly_colonization_power_modifier: "£colonial_power Ежемесячный модификатор колониальной власти" #NT!
- monthly_colonization_power_factor: "£colonial_power Ежемесячный коэффициент колониальной силы" #NT!
- monthly_colonization_speed_modifier: "£colonial_power Ежемесячный модификатор колониального роста" #NT!
+ monthly_colonization_power_modifier: "£colonial_power Ежемесячный модификатор колониальной мощи" #NT!
+ monthly_colonization_power_factor: "£colonial_power Ежемесячный коэффициент колониальной мощности" #NT!
+ monthly_colonization_speed_modifier: "£colonial_power Ежемесячный модификатор роста колонии" #NT!
  monthly_colonization_speed_factor: "£colonial_power Ежемесячный колониальный фактор роста" #NT!
- monthly_colonization_cost_modifier: "£colonial_power Ежемесячный модификатор колониальной стоимости" #NT!
- monthly_colonization_cost_factor: "£colonial_power Ежемесячный коэффициент колониальной стоимости" #NT!
- local_monthly_colonization_speed_modifier: "£colonial_power Местный ежемесячный модификатор колониального роста" #NT!
+ monthly_colonization_cost_modifier: "£colonial_power Ежемесячный модификатор стоимости колонии" #NT!
+ monthly_colonization_cost_factor: "£colonial_power Ежемесячный колониальный фактор стоимости" #NT!
+ local_monthly_colonization_speed_modifier: "£colonial_power Местный ежемесячный колониальный модификатор роста" #NT!
  local_monthly_colonization_speed_factor: "£colonial_power Местный ежемесячный колониальный фактор роста" #NT!
- local_monthly_colonization_cost_modifier: "£colonial_power Модификатор местной ежемесячной колониальной стоимости" #NT!
- local_monthly_colonization_cost_factor: "£colonial_power Местный ежемесячный колониальный коэффициент затрат" #NT!
- colonial_power_capacity_modifier: "£colonial_power Colonial Power Capacity Modifier"
+ local_monthly_colonization_cost_modifier: "£colonial_power Местный ежемесячный колониальный модификатор стоимости" #NT!
+ local_monthly_colonization_cost_factor: "£colonial_power Местный ежемесячный колониальный коэффициент стоимости" #NT!
+ colonial_power_capacity_modifier: "£colonial_power Модификатор мощности колониальной власти" #NT!
+ #Health 
+ infanty_mortality_factor: "£infant_mortality  Фактор детской смертности" #NT!
+ local_infant_mortality_factor: "Локальный £infant_mortality  Фактор детской смертности" #NT!
+ disease_infectivity_factor: "£disease_infectivity  Фактор инфекционности заболевания" #NT!
+ local_disease_infectivity_factor: "Локальный £disease_infectivity  Фактор инфекционности заболевания" #NT!
+ disease_immunity_factor: "£disease_immunity Фактор иммунитета к болезням" #NT!
+ local_disease_immunity_factor: "Местный £disease_immunity Фактор иммунитета к болезням" #NT!
+ bacterial_infectivity_factor: "£bacterial_infectivity  Фактор бактериальной инфекционности" #NT!
+ local_bacterial_infectivity_factor: "Локальный £bacterial_infectivity  Фактор бактериальной инфекционности" #NT!
+ bacterial_immunity_factor: "£bacterial_immunity Фактор бактериального иммунитета" #NT!
+ local_bacterial_immunity_factor: "Локальный £bacterial_immunity Фактор бактериального иммунитета" #NT!
+ viral_infectivity_factor: "£viral_infectivity  Фактор вирусной инфекционности" #NT!
+ local_viral_infectivity_factor: "Локальный £viral_infectivity  фактор вирусной инфекционности" #NT!
+ viral_immunity_factor: "£viral_immunity Фактор вирусного иммунитета" #NT!
+ local_viral_immunity_factor: "Локальный £viral_immunity фактор вирусного иммунитета" #NT!

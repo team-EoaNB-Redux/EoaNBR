@@ -1,0 +1,1340 @@
+ideas = {
+	country = {
+		generic_vic_idea_regional_autonomy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_local_self_management
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.1
+			}
+		}
+		generic_vic_idea_central_management = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				political_power_gain = 0.1
+				bureaucratic_efficiency_factor = -0.01
+			}
+		}
+
+		generic_vic_idea_bureaucracy_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_european_architecture
+
+			modifier = {
+				bureaucratic_efficiency_factor = 0.02
+			}
+		}
+		generic_vic_idea_bureaucracy_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_european_architecture
+
+			modifier = {
+				bureaucratic_efficiency_factor = 0.02
+				tax_efficiency_factor = 0.05
+			}
+		}
+		generic_vic_idea_bureaucracy_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_european_architecture
+
+			modifier = {
+				bureaucratic_efficiency_factor = 0.02
+				tax_efficiency_factor = 0.05
+				treasury_gain_monthly_per_gdp = 0.005
+			}
+		}
+		generic_vic_idea_bureaucracy_4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_european_architecture
+
+			modifier = {
+				bureaucratic_efficiency_factor = 0.02
+				tax_efficiency_factor = 0.05
+				industry_throughput_factor = 0.03
+				treasury_gain_monthly_per_gdp = 0.005
+			}
+		}
+		generic_vic_idea_bureaucracy_5 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_european_architecture
+
+			modifier = {
+				bureaucratic_efficiency_factor = 0.05
+				tax_efficiency_factor = 0.05
+				industry_throughput_factor = 0.03
+				treasury_gain_monthly_per_gdp = 0.005
+			}
+		}
+		
+		generic_vic_idea_laissez_faire_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				industry_output_factor = 0.02
+			}
+		}
+		generic_vic_idea_laissez_faire_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				industry_output_factor = 0.02
+				investment_confidence_modifier = 5
+			}
+		}
+		generic_vic_idea_laissez_faire_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				industry_input_factor = -0.02
+				industry_output_factor = 0.04
+				investment_confidence_modifier = 5
+				import_tariff_max_modifier = -40
+				export_tariff_max_modifier = -40
+			}
+		}
+		generic_vic_idea_economic_interventionism_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				government_investment_efficiency_factor = 0.05
+			}
+		}
+		generic_vic_idea_economic_interventionism_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				government_investment_efficiency_factor = 0.05
+				urban_input_factor = 0.05
+				tax_efficiency_factor = 0.03
+			}
+		}
+		generic_vic_idea_economic_interventionism_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				government_investment_efficiency_factor = 0.05
+				urban_input_factor = 0.05
+				tax_efficiency_factor = 0.03
+				interest_rate_factor = -0.2
+				banking_confidence_modifier = 10
+			}
+		}
+
+		generic_vic_idea_literacy_program = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_technical_school
+
+			modifier = {
+				research_speed_factor = 0.05
+				education_cost_per_gdp = 0.002
+			}
+		}
+		generic_vic_idea_education_program = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_technical_school
+
+			modifier = {
+				research_speed_factor = 0.08
+				education_cost_per_c = 0.01
+				education_cost_per_gdp = 0.002
+			}
+		}
+		generic_vic_idea_research_program = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_technical_school
+
+			modifier = {
+				research_speed_factor = 0.1
+				research_spending_max_factor = 0.25
+				education_cost_per_c = 0.01
+				education_cost_per_gdp = 0.005
+			}
+		}
+		
+		generic_vic_idea_locals_outcompeted = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = TSH_fading_fiscal_crisis
+
+			modifier = {
+				industry_throughput_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.05
+				research_speed_factor = 0.05
+			}
+		}
+		generic_vic_idea_isolationism_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = isolation
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		generic_vic_idea_isolationism_1_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = isolation
+
+			modifier = {
+				stability_factor = 0.05
+				industry_input_factor = -0.05
+			}
+		}
+		generic_vic_idea_isolationism_1_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = isolation
+
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.5
+			}
+		}
+		generic_vic_idea_isolationism_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = isolation
+
+			modifier = {
+				stability_factor = 0.1
+				industry_input_factor = -0.05
+				drift_defence_factor = 0.5
+			}
+		}
+		generic_vic_idea_isolationism_2_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = isolation
+
+			modifier = {
+				stability_factor = 0.1
+				industry_input_factor = -0.05
+				drift_defence_factor = 0.5
+				aristocrats_investment_contribution_factor = 0.05
+			}
+		}
+		generic_vic_idea_isolationism_2_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = isolation
+
+			modifier = {
+				stability_factor = 0.1
+				industry_input_factor = -0.05
+				drift_defence_factor = 0.5
+				subsistence_farm_output_factor = 0.1
+			}
+		}
+		generic_vic_idea_isolationism_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = isolation
+
+			modifier = {
+				stability_factor = 0.1
+				industry_input_factor = -0.05
+				drift_defence_factor = 0.5
+				aristocrats_investment_contribution_factor = 0.05
+				subsistence_farm_output_factor = 0.1
+			}
+		}
+
+		generic_vic_foreign_connections = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = road_investments
+
+			modifier = {
+				shipping_cost_factor = -0.1
+				opinion_gain_monthly_factor = 0.25
+				improve_relations_maintain_cost_factor = -0.25
+			}
+		}
+		
+		generic_vic_early_stages_of_industrialization = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+			}
+		}
+
+		generic_vic_embrace_industry_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				stability_factor = -0.05
+			}
+		}
+		generic_vic_embrace_industry_0_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				stability_factor = -0.05
+			}
+		}
+		generic_vic_embrace_industry_0_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				stability_factor = -0.1
+			}
+		}
+
+		generic_vic_embrace_industry_1_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				research_speed_factor = 0.05
+
+				stability_factor = -0.05
+			}
+		}
+		generic_vic_embrace_industry_1_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+
+				research_speed_factor = 0.05
+
+				stability_factor = -0.05
+			}
+		}
+		generic_vic_embrace_industry_1_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				research_speed_factor = 0.05
+
+				stability_factor = -0.1
+			}
+		}
+
+		generic_vic_embrace_industry_2_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				research_speed_factor = 0.05
+				investment_confidence_modifier = 5
+
+				stability_factor = -0.05
+			}
+		}
+		generic_vic_embrace_industry_2_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+
+				research_speed_factor = 0.05
+				investment_confidence_modifier = 5
+
+				stability_factor = -0.05
+			}
+		}
+		generic_vic_embrace_industry_2_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				research_speed_factor = 0.05
+				investment_confidence_modifier = 5
+
+				stability_factor = -0.1
+			}
+		}
+
+		generic_vic_embrace_industry_3_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				research_speed_factor = 0.05
+				investment_confidence_modifier = 5
+				capitalists_investment_contribution_factor = 0.05
+
+				stability_factor = -0.1
+			}
+		}
+		generic_vic_embrace_industry_3_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+
+				research_speed_factor = 0.05
+				investment_confidence_modifier = 5
+				capitalists_investment_contribution_factor = 0.05
+
+				stability_factor = -0.1
+			}
+		}
+		generic_vic_embrace_industry_3_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				research_speed_factor = 0.05
+				investment_confidence_modifier = 5
+				capitalists_investment_contribution_factor = 0.05
+
+				stability_factor = -0.15
+			}
+		}
+
+		
+		generic_vic_balanced_approach_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+			}
+		}
+		generic_vic_balanced_approach_0_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+			}
+		}
+		generic_vic_balanced_approach_0_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				stability_factor = 0.1
+			}
+		}
+
+		generic_vic_balanced_approach_1_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+			}
+		}
+		generic_vic_balanced_approach_1_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+
+				stability_factor = 0.1
+			}
+		}
+		generic_vic_balanced_approach_1_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+
+				stability_factor = 0.1
+			}
+		}
+
+		generic_vic_balanced_approach_2_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				stability_factor = -0.05
+			}
+		}
+		generic_vic_balanced_approach_2_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				stability_factor = -0.05
+			}
+		}
+		generic_vic_balanced_approach_2_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				stability_factor = 0.05
+			}
+		}
+		
+		generic_vic_agricultural_focus_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				stability_factor = 0.05
+			}
+		}
+		generic_vic_agricultural_focus_0_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				stability_factor = 0.05
+			}
+		}
+		generic_vic_agricultural_focus_0_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				stability_factor = 0.15
+			}
+		}
+
+		generic_vic_agricultural_focus_1_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+
+				stability_factor = 0.05
+			}
+		}
+		generic_vic_agricultural_focus_1_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+
+				stability_factor = 0.05
+			}
+		}
+		generic_vic_agricultural_focus_1_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+
+				stability_factor = 0.15
+			}
+		}
+
+		generic_vic_agricultural_focus_2_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+				monthly_population = 0.3
+
+				stability_factor = 0.1
+			}
+		}
+		generic_vic_agricultural_focus_2_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+				monthly_population = 0.3
+
+				stability_factor = 0.1
+			}
+		}
+		generic_vic_agricultural_focus_2_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+				monthly_population = 0.3
+
+				stability_factor = 0.2
+			}
+		}
+
+		generic_vic_agricultural_focus_3_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+				monthly_population = 0.3
+				political_power_factor = 0.1
+
+				stability_factor = 0.1
+			}
+		}
+		generic_vic_agricultural_focus_3_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+				monthly_population = 0.3
+				political_power_factor = 0.1
+
+				stability_factor = 0.1
+			}
+		}
+		generic_vic_agricultural_focus_3_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+				monthly_population = 0.3
+				political_power_factor = 0.1
+
+				stability_factor = 0.2
+			}
+		}
+		
+		generic_vic_embrace_industry_4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				factory_output_factor = 0.05
+				urban_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				research_speed_factor = 0.05
+				investment_confidence_modifier = 5
+				capitalists_investment_contribution_factor = 0.05
+
+				stability_factor = -0.15
+			}
+		}
+		generic_vic_balanced_approach_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_throughput_factor = 0.05
+				agriculture_output_factor = 0.05
+
+				production_speed_buildings_factor = 0.1
+				industry_construction_speed_factor = 0.2
+				industry_upgrade_cost_factor = -0.1
+				industry_upgrade_speed_factor = 0.2
+
+				stability_factor = 0.05
+			}
+		}
+		generic_vic_agricultural_focus_4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				agriculture_output_factor = 0.1
+
+				production_speed_buildings_factor = 0.05
+				industry_construction_speed_factor = 0.1
+
+				aristocrats_investment_contribution_factor = 0.05
+				monthly_population = 0.3
+				political_power_factor = 0.1
+
+				stability_factor = 0.2
+			}
+		}
+		
+		generic_vic_army_command_structure = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = experienced_generals
+
+			modifier = {
+				command_power_gain_mult = 0.1
+				max_command_power = 20
+				army_org_factor = 0.05
+			}
+		}
+		generic_vic_study_foreign_tactics = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy2
+
+			modifier = {
+				land_doctrine_cost_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		generic_vic_local_initiative = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = german_advisors
+
+			modifier = {
+				army_org_factor = 0.1
+				planning_speed = 0.2
+			}
+		}
+		generic_vic_defensive_stratagems = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				army_defence_factor = 0.1
+				land_bunker_effectiveness_factor = 0.25
+			}
+		}
+		generic_vic_marksmanship = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+
+			modifier = {
+				army_infantry_attack_factor = 0.1
+			}
+		}
+		
+		generic_vic_foraging_expertise = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ETH_national_studs
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.25
+			}
+		}
+		generic_vic_hit_and_run_warfare = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = asa_oblique_attack_tactics
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.25
+				pocket_penalty = -0.25
+				org_loss_at_low_org_factor = -0.2
+			}
+		}
+		
+		generic_vic_small_arms_manufacturing = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_equipment_manufacturer_3
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		generic_vic_mass_production = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_equipment_manufacturer_2
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				uniform_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		generic_vic_arms_industry = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = asa_combined_arms
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				uniform_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				field_artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				howitzer_artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		generic_vic_naval_college = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_naval_manufacturer_1
+
+			modifier = {
+				experience_gain_navy = 0.1
+			}
+		}
+		generic_vic_naval_design_bureau = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				experience_gain_navy = 0.1
+				naval_equipment_upgrade_xp_cost = -0.3
+			}
+		}
+	}
+}

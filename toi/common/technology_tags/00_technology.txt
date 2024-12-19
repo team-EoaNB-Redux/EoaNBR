@@ -380,9 +380,9 @@ technology_categories = {
 		#
 		#Health
 			cat_health_techs
-			cat_biology_health_techs
-			cat_medicine_health_techs
-			cat_genetics_health_techs
+				cat_biology_health_techs
+				cat_medicine_health_techs
+				cat_genetics_health_techs
 		#
 		#Socio-Economics
 			cat_socio_economics_techs
@@ -414,17 +414,6 @@ technology_categories = {
 		cat_medium_arms_techs #gatling_gun_tech
 			cat_machine_gun_arms_techs
 
-			cat_artillery_techs
-			cat_field_artillery_techs
-			cat_howitzer_artillery_techs
-			cat_field_artillery_techs
-			cat_siege_artillery_techs
-			cat_artillery_techs #artillery
-			cat_rocket_artillery_techs #mot_rockets
-			cat_motorized_rocket_artillery_techs
-			cat_anti_tank_techs #cat_anti_tank
-			cat_anti_air_techs
-
 		cat_secondary_arms_techs
 			cat_melee_arms_techs #melee_weapons_tech
 			cat_handgun_arms_techs #cat_small_arms_techs
@@ -451,6 +440,16 @@ technology_categories = {
 		maintenance_company_tech
 		tech_category_naval_infantry
 	#
+	#Artillery
+		cat_artillery_techs
+		cat_motorized_artillery_techs
+		cat_field_artillery_techs
+		cat_howitzer_artillery_techs
+		cat_siege_artillery_techs
+		cat_rocket_artillery_techs #mot_rockets
+		cat_motorized_rocket_artillery_techs
+		cat_anti_tank_techs #cat_anti_tank
+		cat_anti_air_techs
 	#Vehicles
 		cat_calvary_techs
 		motorized_equipment
@@ -555,7 +554,6 @@ technology_categories = {
 	#Tech
 		rocketry
 		nuclear
-		electronic
 		synth_resources
 		computing_tech
 		radar_tech
@@ -607,10 +605,6 @@ technology_categories = {
 	#
 
 	special_forces_doctrine
-	cat_maritime_patrol
-	cat_mountaineers_doctrine
-	cat_marines_doctrine
-	cat_paratroopers_doctrine
 
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank
@@ -687,7 +681,7 @@ technology_folders = {
 		ledger = navy
 
 		available = {
-			always = no
+			#always = no
 			has_dlc = "Man the Guns"
 		}
 	}

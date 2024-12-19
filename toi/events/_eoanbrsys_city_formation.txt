@@ -75,7 +75,7 @@ country_event = { # City Forms: Modesto, California
 		}
 		set_victory_points = {
 			province = 6694
-			value = 0
+			value = 1
 		}
 	}
 }

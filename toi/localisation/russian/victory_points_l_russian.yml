@@ -14,6 +14,8 @@
  VICTORY_POINTS_620: "Лимож"
  VICTORY_POINTS_678: "Мюлуз"
  VICTORY_POINTS_512: "Орлеан"
+ VICTORY_POINTS_743: "Биарриц" #NT!
+ VICTORY_POINTS_3509: "Ле-Ман" #NT!
  VICTORY_POINTS_3552: "Брест"
  VICTORY_POINTS_3594: "Виши"
  VICTORY_POINTS_3652: "Дижон"
@@ -23,23 +25,25 @@
  VICTORY_POINTS_6536: "Лорьян"
  VICTORY_POINTS_6657: "Ла-Рошель"
  VICTORY_POINTS_6766: "Тулуза"
- VICTORY_POINTS_8181: "Куритиба" #NT!
+ VICTORY_POINTS_6960: "Нарбонна" #NT!
+ VICTORY_POINTS_8181: "Куритиба"
  VICTORY_POINTS_9434: "Гавр"
  VICTORY_POINTS_9490: "Труа"
  VICTORY_POINTS_9495: "Ренн"
  VICTORY_POINTS_9503: "Страсбург"
  VICTORY_POINTS_9559: "Мец"
  VICTORY_POINTS_9642: "Безансон"
+ VICTORY_POINTS_9853: "Перпиньян" #NT!
  VICTORY_POINTS_9898: "Монпелье"
  VICTORY_POINTS_9909: "Ницца"
  VICTORY_POINTS_11465: "Нант"
  VICTORY_POINTS_11483: "Лилль"
- VICTORY_POINTS_12581: "Коканд" #NT!
  VICTORY_POINTS_11516: "Нанси"
  VICTORY_POINTS_11548: "Кале"
  VICTORY_POINTS_11563: "Руан"
  VICTORY_POINTS_13011: "Реймс"
  VICTORY_POINTS_11586: "Белград"
+ VICTORY_POINTS_9906: "Ниш" #NT!
  VICTORY_POINTS_3882: "Скупи" #NT!
  VICTORY_POINTS_13876: "Сараево" #NT!
  VICTORY_POINTS_949: "София"
@@ -49,7 +53,8 @@
  VICTORY_POINTS_3663: "Плоешти"
  VICTORY_POINTS_9716: "Яссы"
  VICTORY_POINTS_9914: "Тиранна" #NT!
- VICTORY_POINTS_4109: "Афины"
+ VICTORY_POINTS_4109: "Афина" #NT!
+ VICTORY_POINTS_9837: "Флорина" #NT!
  VICTORY_POINTS_9940: "Кандия" #NT!
  VICTORY_POINTS_11818: "Салоники" #NT!
  VICTORY_POINTS_11747: "Ангора" #NT!
@@ -86,10 +91,10 @@
  VICTORY_POINTS_516: "Брюссель"
  VICTORY_POINTS_3488: "Вервье" #NT!
  VICTORY_POINTS_3516: "Намюр"
- VICTORY_POINTS_6537: "Вассал" #NT!
+ VICTORY_POINTS_6537: "Льеж" #NT!
  VICTORY_POINTS_6560: "Гент" #NT!
  VICTORY_POINTS_6598: "Антверпен" #NT!
- VICTORY_POINTS_9444: "Динан" #NT!
+ VICTORY_POINTS_9444: "Динант" #NT!
  VICTORY_POINTS_9536: "Шарлеруа"
   
   # Luxembourg 
@@ -97,7 +102,7 @@
   
   # Netherlands 
  VICTORY_POINTS_391: "Амстердам"
- VICTORY_POINTS_480: "Тернезен" #NT!
+ VICTORY_POINTS_480: "Тернёзен" #NT!
  VICTORY_POINTS_3211: "Ден Хааг" #NT!
  VICTORY_POINTS_6241: "Утрехт"
  VICTORY_POINTS_6286: "Зволле" #NT!
@@ -161,7 +166,7 @@
   # Wales 
  VICTORY_POINTS_377: "Кардифф"
  VICTORY_POINTS_407: "Суонси"
- VICTORY_POINTS_9364: "Колвин Бэй" #NT!
+ VICTORY_POINTS_9364: "Колвин-Бей" #NT!
   
   ### GERMANY ### 
   # Baden 
@@ -204,7 +209,7 @@
  VICTORY_POINTS_6377: "Ганновер" #NT!
  VICTORY_POINTS_11360: "Эмден"
  VICTORY_POINTS_11388: "Оснабрюк" #NT!
- VICTORY_POINTS_11493: "Геттинген" #NT!
+ VICTORY_POINTS_11493: "Гёттинген" #NT!
   
   # Hesse 
  VICTORY_POINTS_564: "Кассель"
@@ -232,7 +237,7 @@
  VICTORY_POINTS_506: "Каттовиц" #NT!
  VICTORY_POINTS_537: "Ландсберг" #NT!
  VICTORY_POINTS_552: "Глогау" #NT!
- VICTORY_POINTS_587: "Кёльн" #NT!
+ VICTORY_POINTS_587: "Кельн" #NT!
  VICTORY_POINTS_3288: "Мемель"
  VICTORY_POINTS_3295: "Торн" #NT!
  VICTORY_POINTS_3380: "Мариенбург" #NT!
@@ -262,7 +267,7 @@
  VICTORY_POINTS_9496: "Франкфурт" #NT!
  VICTORY_POINTS_9509: "Билефельд" #NT!
  VICTORY_POINTS_9511: "Ополе"
- VICTORY_POINTS_9522: "Ахен" #NT!
+ VICTORY_POINTS_9522: "Аахен" #NT!
  VICTORY_POINTS_9535: "Гёрлиц" #NT!
  VICTORY_POINTS_9560: "Галле" #NT!
  VICTORY_POINTS_9570: "Бреслау"
@@ -298,7 +303,7 @@
  VICTORY_POINTS_538: "Йена" #NT!
  VICTORY_POINTS_3500: "Гота" #NT!
  VICTORY_POINTS_6501: "Гера" #NT!
- VICTORY_POINTS_13665: "Айзенах" #NT!
+ VICTORY_POINTS_13665: "Эйзенах" #NT!
  VICTORY_POINTS_14285: "Альтенбург" #NT!
   
   # Württemberg 
@@ -316,7 +321,7 @@
   
   # Banat 
  VICTORY_POINTS_9606: "Темешвар" #NT!
- VICTORY_POINTS_9621: "Суботица" #NT!
+ VICTORY_POINTS_3623: "Суботица" #NT!
   
   # Bohemia-Moravia 
  VICTORY_POINTS_494: "Градец Кралове" #NT!
@@ -326,7 +331,7 @@
  VICTORY_POINTS_6418: "Пльзень" #NT!
  VICTORY_POINTS_6470: "Хеб" #NT!
  VICTORY_POINTS_6562: "Оломоуц"
- VICTORY_POINTS_9541: "Ческе-Будеевице" #NT!
+ VICTORY_POINTS_9541: "Ческе-Будеёвице" #NT!
  VICTORY_POINTS_11401: "Либерец"
  VICTORY_POINTS_11432: "Теплице" #NT!
  VICTORY_POINTS_11542: "Прага"
@@ -341,6 +346,7 @@
  VICTORY_POINTS_9611: "Копривница" #NT!
  VICTORY_POINTS_9627: "Любляна"
  VICTORY_POINTS_11581: "Загреб"
+ VICTORY_POINTS_11577: "Вуковар" #NT!
  VICTORY_POINTS_11735: "Пола" #NT!
  VICTORY_POINTS_14191: "Гориция" #NT!
  VICTORY_POINTS_14195: "Фиуме" #NT!
@@ -352,7 +358,7 @@
   
   # Galicia-Lodomeria 
  VICTORY_POINTS_442: "Тарнов"
- VICTORY_POINTS_6522: "Пшемысль" #NT!
+ VICTORY_POINTS_6522: "Перемышль" #NT!
  VICTORY_POINTS_9427: "Краков" #NT!
  VICTORY_POINTS_11411: "Станиславов"
  VICTORY_POINTS_11479: "Львов" #NT!
@@ -360,12 +366,12 @@
   # Hungary 
  VICTORY_POINTS_684: "Сольнок" #NT!
  VICTORY_POINTS_686: "Шопрон" #NT!
- VICTORY_POINTS_3617: "Нови Сад" #NT!
+ VICTORY_POINTS_3617: "Нови-Сад" #NT!
  VICTORY_POINTS_6682: "Арад"
  VICTORY_POINTS_6700: "Сегед" #NT!
- VICTORY_POINTS_6720: "Дьер" #NT!
+ VICTORY_POINTS_6720: "Дьёр" #NT!
  VICTORY_POINTS_6751: "Мишкольц" #NT!
- VICTORY_POINTS_9660: "Буда-Пешт" #NT!
+ VICTORY_POINTS_9660: "Будапешт-Пешт" #NT!
  VICTORY_POINTS_11610: "Печ" #NT!
  VICTORY_POINTS_11659: "Дебрецен"
  VICTORY_POINTS_11691: "Унгвар" #NT!
@@ -381,7 +387,7 @@
  VICTORY_POINTS_6711: "Клуж"
   
   # Trentino - South Tyrol 
- VICTORY_POINTS_6675: "Бозен" #NT!
+ VICTORY_POINTS_6675: "Больцано" #NT!
  VICTORY_POINTS_11598: "Тренто" #NT!
   
   ### SWITZERLAND ### 
@@ -396,7 +402,7 @@
  VICTORY_POINTS_294: "Борисов" #NT!
  VICTORY_POINTS_3309: "Барановичи" #NT!
  VICTORY_POINTS_3350: "Бобруйск"
- VICTORY_POINTS_3392: "Бжеск Литевский" #NT!
+ VICTORY_POINTS_3392: "Бжеск Литевски" #NT!
  VICTORY_POINTS_3393: "Гродно"
  VICTORY_POINTS_6232: "Мозырь"
  VICTORY_POINTS_6326: "Полоцк" #NT!
@@ -443,6 +449,7 @@
  VICTORY_POINTS_413: "Воронеж"
  VICTORY_POINTS_1278: "Уфа"
  VICTORY_POINTS_1459: "Ташкент"
+ VICTORY_POINTS_10530: "Коканд" #NT!
  VICTORY_POINTS_1821: "Екатеринбург" #NT!
  VICTORY_POINTS_3134: "Мурманск"
  VICTORY_POINTS_3140: "Тихвин"
@@ -467,7 +474,7 @@
  VICTORY_POINTS_9753: "Астрахань"
  VICTORY_POINTS_10641: "Якутск"
  VICTORY_POINTS_10696: "Омск"
- VICTORY_POINTS_11080: "Gatchina" #NT!
+ VICTORY_POINTS_11080: "Гатчина" #NT!
  VICTORY_POINTS_11159: "Петрозаводск"
  VICTORY_POINTS_11202: "Псков"
  VICTORY_POINTS_11225: "Самара" #NT!
@@ -482,12 +489,12 @@
  VICTORY_POINTS_488: "Черкассы"
  VICTORY_POINTS_513: "Луцк" #NT!
  VICTORY_POINTS_525: "Киев"
- VICTORY_POINTS_572: "Роно" #NT!
+ VICTORY_POINTS_572: "Ровно" #NT!
  VICTORY_POINTS_3412: "Ковель" #NT!
  VICTORY_POINTS_3430: "Каменец-Подольский" #NT!
  VICTORY_POINTS_3686: "Севастополь"
  VICTORY_POINTS_3755: "Херсон" #NT!
- VICTORY_POINTS_6474: "Хьюсовка" #NT!
+ VICTORY_POINTS_6474: "Юзовка" #NT!
  VICTORY_POINTS_9461: "Луганский завод" #NT!
  VICTORY_POINTS_9506: "Чернигов" #NT!
  VICTORY_POINTS_9680: "Керчь"
@@ -525,13 +532,13 @@
  VICTORY_POINTS_11105: "Хельсинки"
   
   # Greenland 
- VICTORY_POINTS_10245: "Годхаб" #NT!
+ VICTORY_POINTS_10245: "Годхоб" #NT!
   
   # Iceland 
  VICTORY_POINTS_12674: "Рейкьявик"
   
   # Norway 
- VICTORY_POINTS_14: "Тонсберг" #NT!
+ VICTORY_POINTS_14: "Тёнсберг" #NT!
  VICTORY_POINTS_53: "Ставангер"
  VICTORY_POINTS_122: "Берген"
  VICTORY_POINTS_179: "Конгсвингер" #NT!
@@ -541,16 +548,16 @@
  VICTORY_POINTS_6115: "Христиания" #NT!
  VICTORY_POINTS_9096: "Гримстад" #NT!
  VICTORY_POINTS_9116: "Киркенес"
- VICTORY_POINTS_9128: "Карасьок" #NT!
- VICTORY_POINTS_9296: "Кристианссанн" #NT!
+ VICTORY_POINTS_9128: "Карашок" #NT!
+ VICTORY_POINTS_9296: "Христиансанд" #NT!
  VICTORY_POINTS_11050: "Тромсе"
- VICTORY_POINTS_11151: "Фредрикшальд" #NT!
+ VICTORY_POINTS_11151: "Фредриксхалд" #NT!
   
   # Sweden 
  VICTORY_POINTS_35: "Вестерос" #NT!
  VICTORY_POINTS_46: "Эстерсунд" #NT!
  VICTORY_POINTS_156: "Фалун"
- VICTORY_POINTS_161: "Седертелье" #NT!
+ VICTORY_POINTS_161: "Сёдертелье" #NT!
  VICTORY_POINTS_205: "Сундсвалль" #NT!
  VICTORY_POINTS_242: "Векшё" #NT!
  VICTORY_POINTS_299: "Кальмар"
@@ -560,15 +567,15 @@
  VICTORY_POINTS_6132: "Умео"
  VICTORY_POINTS_6310: "Уддевалла"
  VICTORY_POINTS_6345: "Хельсингборг"
- VICTORY_POINTS_6397: "Линчепинг" #NT!
- VICTORY_POINTS_6406: "Борос" #NT!
+ VICTORY_POINTS_6397: "Линчёпинг" #NT!
+ VICTORY_POINTS_6406: "Бурос" #NT!
  VICTORY_POINTS_9108: "Лулео"
  VICTORY_POINTS_9149: "Уппсала"
  VICTORY_POINTS_9185: "Арбога" #NT!
  VICTORY_POINTS_9209: "Эребру" #NT!
  VICTORY_POINTS_9279: "Мальмё"
  VICTORY_POINTS_9329: "Йёнчёпинг"
- VICTORY_POINTS_9393: "Норчепинг" #NT!
+ VICTORY_POINTS_9393: "Норрчёпинг" #NT!
  VICTORY_POINTS_11091: "Евле"
  VICTORY_POINTS_11114: "Карлстад"
  VICTORY_POINTS_11160: "Кристианстад" #NT!
@@ -580,6 +587,8 @@
   
  VICTORY_POINTS_957: "Yongmingcheng" #NT!
  VICTORY_POINTS_1591: "Форт Верное" #NT!
+ VICTORY_POINTS_14661: "Бишкек" #NT!
+ VICTORY_POINTS_12333: "Ишхабад" #NT!
  VICTORY_POINTS_1599: "Тифлис" #NT!
  VICTORY_POINTS_3653: "Батуми"
  VICTORY_POINTS_3672: "Грозный"
@@ -637,7 +646,7 @@
  VICTORY_POINTS_7236: "Хат-Яй"
  VICTORY_POINTS_10438: "Накхонратчасима"
  VICTORY_POINTS_4075: "Тханг Лонг" #NT!
- VICTORY_POINTS_4401: "Гиа Динь" #NT!
+ VICTORY_POINTS_4401: "Джиа Динь" #NT!
  VICTORY_POINTS_1182: "Токио"
  VICTORY_POINTS_4000: "Никко" #NT!
  VICTORY_POINTS_1136: "Fuushimi" #NT!
@@ -667,7 +676,7 @@
  VICTORY_POINTS_9950: "Нагасаки"
  VICTORY_POINTS_10032: "Канадзава"
  VICTORY_POINTS_10125: "Нагоя"
- VICTORY_POINTS_1158: "Хизен" #NT!
+ VICTORY_POINTS_1158: "Хидзэн" #NT!
  VICTORY_POINTS_10444: "Саппоро"
  VICTORY_POINTS_12421: "Asahigawa" #NT!
  VICTORY_POINTS_12446: "Тоёхара"
@@ -683,16 +692,16 @@
  VICTORY_POINTS_3981: "Хамхын" #NT!
  VICTORY_POINTS_11775: "Канге" #NT!
  VICTORY_POINTS_9790: "Анджу" #NT!
- VICTORY_POINTS_1003: "Haeju" #NT!
- VICTORY_POINTS_12040: "Kaesong" #NT!
+ VICTORY_POINTS_1003: "Хэджу" #NT!
+ VICTORY_POINTS_12040: "Кэсон" #NT!
  VICTORY_POINTS_848: "Вонсан" #NT!
  VICTORY_POINTS_13870: "Чхунчхон" #NT!
  VICTORY_POINTS_7021: "Каннын" #NT!
- VICTORY_POINTS_7204: "Пхёнтэк" #NT!
+ VICTORY_POINTS_7204: "Пхёнтхэк" #NT!
  VICTORY_POINTS_11992: "Сосан" #NT!
  VICTORY_POINTS_12089: "Тэгу" #NT!
  VICTORY_POINTS_4103: "Андон" #NT!
- VICTORY_POINTS_7186: "Тайбэ" #NT!
+ VICTORY_POINTS_7186: "Тайбэй" #NT!
  VICTORY_POINTS_10433: "Харбин"
  VICTORY_POINTS_11771: "Мукден"
  VICTORY_POINTS_10265: "Манила"
@@ -743,6 +752,9 @@
  VICTORY_POINTS_8117: "Шираз"
  VICTORY_POINTS_10913: "Керман"
  VICTORY_POINTS_10737: "Кабул"
+ VICTORY_POINTS_14618: "Яузун" #NT!
+ VICTORY_POINTS_10737: "Кабул"
+ VICTORY_POINTS_10737: "Кабул"
  VICTORY_POINTS_4893: "Герат"
  VICTORY_POINTS_5003: "Маймана" #NT!
  VICTORY_POINTS_10414: "Мерв" #NT!
@@ -755,11 +767,11 @@
  VICTORY_POINTS_12505: "Сент-Джонс" #NT!
  VICTORY_POINTS_4360: "Остров Принца Эдуарда" #NT!
  VICTORY_POINTS_7361: "Галифакс"
- VICTORY_POINTS_4285: "Сент-Джон" #NT!
+ VICTORY_POINTS_4285: "Сент-Джон"
  VICTORY_POINTS_634: "Фредериктон" #NT!
  VICTORY_POINTS_12149: "Квебек"
  VICTORY_POINTS_7893: "Сагеней" #NT!
- VICTORY_POINTS_10230: "Шербрук" #NT!
+ VICTORY_POINTS_10230: "Шербрук"
  VICTORY_POINTS_4345: "Монреаль"
  VICTORY_POINTS_3778: "Оттава"
  VICTORY_POINTS_3605: "Кингстон" #NT!
@@ -769,17 +781,17 @@
  VICTORY_POINTS_722: "Лондон" #NT!
  VICTORY_POINTS_9480: "Садбери" #NT!
  VICTORY_POINTS_4775: "Тандер-Бей" #NT!
- VICTORY_POINTS_12582: "Су-Сент. Мари" #NT!
+ VICTORY_POINTS_12582: "Су-Сент-Мари" #NT!
  VICTORY_POINTS_4872: "Форт Гарри" #NT!
  VICTORY_POINTS_12663: "Регина" #NT!
- VICTORY_POINTS_4739: "Саскатун" #NT!
+ VICTORY_POINTS_4739: "Саскатун"
  VICTORY_POINTS_3706: "Калгари" #NT!
  VICTORY_POINTS_515: "Эдмонтон" #NT!
  VICTORY_POINTS_10605: "Черчилль" #NT!
  VICTORY_POINTS_4428: "Форт Лэнгли" #NT!
  VICTORY_POINTS_1408: "Ванкувер"
- VICTORY_POINTS_7259: "Виктория" #NT!
- VICTORY_POINTS_1869: "Скидгейт" #NT!
+ VICTORY_POINTS_7259: "Виктория"
+ VICTORY_POINTS_1869: "Skidegate" #NT!
  VICTORY_POINTS_13203: "Джуно" #NT!
  VICTORY_POINTS_13091: "Анкоридж"
   
@@ -791,35 +803,34 @@
  VICTORY_POINTS_853: "Финикс"
  VICTORY_POINTS_3834: "Тусон" #NT!
  VICTORY_POINTS_10783: "Аризона Сити" #NT!
- VICTORY_POINTS_12765: "Флагстафф" #NT!
+ VICTORY_POINTS_12765: "Флагшток" #NT!
   
   ### California ### 
  VICTORY_POINTS_610: "Эврика" #NT!
- VICTORY_POINTS_766: "Ранчо дель Арройо Чико" #NT!
+ VICTORY_POINTS_766: "Чико" #NT!
  VICTORY_POINTS_986: "Сан-Луис-Обиспо" #NT!
  VICTORY_POINTS_1562: "Сан-Диего"
- VICTORY_POINTS_1601: "Тахо" #NT!
- VICTORY_POINTS_3677: "Сан - Хосе" #NT!
- VICTORY_POINTS_3678: "Миссия Сан-Хосе" #NT!
+ VICTORY_POINTS_3677: "Сан-Хосе" #NT!
+ VICTORY_POINTS_3678: "Окленд" #NT!
  VICTORY_POINTS_4518: "Миллертон" #NT!
- VICTORY_POINTS_6665: "Квартиры для бедности" #NT!
+ VICTORY_POINTS_6665: "Квартиры для бедных" #NT!
  VICTORY_POINTS_6694: "Колумбия" #NT!
- VICTORY_POINTS_6757: "Санта Роза" #NT!
- VICTORY_POINTS_6881: "Санта Мария" #NT!
+ VICTORY_POINTS_6757: "Санта-Роза" #NT!
+ VICTORY_POINTS_6881: "Санта-Мария" #NT!
  VICTORY_POINTS_9637: "Монтерей" #NT!
  VICTORY_POINTS_9671: "Сан-Франциско"
  VICTORY_POINTS_9814: "Лос-Анджелес"
  VICTORY_POINTS_11658: "Sonoma" #NT!
  VICTORY_POINTS_11795: "Палм-Спрингс" #NT!
- VICTORY_POINTS_11876: "Санта Барбара" #NT!
+ VICTORY_POINTS_11876: "Санта-Барбара" #NT!
  VICTORY_POINTS_12374: "Калексико" #NT!
- VICTORY_POINTS_14291: "Malibu" #NT!
+ VICTORY_POINTS_14291: "Сан-Буэнавентура" #NT!
  VICTORY_POINTS_14295: "Сакраменто" #NT!
   
   ### Colorado ### 
  VICTORY_POINTS_1827: "Денвер"
  VICTORY_POINTS_1658: "Монтроуз" #NT!
- VICTORY_POINTS_6887: "Гранд Джанкшен" #NT!
+ VICTORY_POINTS_6887: "Гранд-Джанкшен" #NT!
   
   ### Louisiana ### 
  VICTORY_POINTS_1643: "Пон-Бро" #NT!
@@ -829,8 +840,8 @@
  VICTORY_POINTS_14297: "Батон-Руж" #NT!
   
   ### Nevada ### 
- VICTORY_POINTS_4607: "Карсон Сити" #NT!
- VICTORY_POINTS_4799: "Лас Вегас" #NT!
+ VICTORY_POINTS_4607: "Карсон-Сити" #NT!
+ VICTORY_POINTS_4799: "Лас-Вегас" #NT!
  VICTORY_POINTS_7756: "Элко" #NT!
   
   ### New Mexico ### 
@@ -843,7 +854,7 @@
  VICTORY_POINTS_10662: "Филлмор" #NT!
   
   ### Wyoming ### 
- VICTORY_POINTS_12633: "Рок-Весна" #NT!
+ VICTORY_POINTS_12633: "Рок-Спринг" #NT!
   
   ### Maine ### 
  VICTORY_POINTS_12459: "Бангор"
@@ -851,11 +862,11 @@
   
   ### New Hampshire ### 
  VICTORY_POINTS_3712: "Манчестер-Конкорд" #NT!
- VICTORY_POINTS_4445: "Монтпилиер" #NT!
+ VICTORY_POINTS_4445: "Монтепелье" #NT!
   
   ### Massachusetts ### 
  VICTORY_POINTS_6732: "Бостон"
- VICTORY_POINTS_3710: "Вустер" #NT!
+ VICTORY_POINTS_3710: "Вучестер" #NT!
   
   ### Rhode Island ### 
  VICTORY_POINTS_11830: "Провиденс" #NT!
@@ -869,20 +880,20 @@
  VICTORY_POINTS_3747: "Сиракузы" #NT!
  VICTORY_POINTS_9708: "Ютика" #NT!
  VICTORY_POINTS_3806: "Олбани" #NT!
- VICTORY_POINTS_6911: "Покипси" #NT!
+ VICTORY_POINTS_6911: "Поукипси" #NT!
  VICTORY_POINTS_3878: "Нью-Йорк-Бруклин" #NT!
  VICTORY_POINTS_6882: "Ньюарк"
  VICTORY_POINTS_11782: "Трентон" #NT!
  VICTORY_POINTS_11800: "Питтсбург"
  VICTORY_POINTS_11785: "Чтение" #NT!
- VICTORY_POINTS_9804: "Гаррисберг" #NT!
+ VICTORY_POINTS_9804: "Харрисберг" #NT!
  VICTORY_POINTS_3847: "Геттисберг" #NT!
  VICTORY_POINTS_6845: "Филадельфия"
  VICTORY_POINTS_9758: "Уилмингтон" #NT!
  VICTORY_POINTS_13661: "Аннаполис" #NT!
  VICTORY_POINTS_3957: "Вашингтон"
   
- VICTORY_POINTS_11888: "Харперс Ферри" #NT!
+ VICTORY_POINTS_11888: "Харперс-Ферри" #NT!
  VICTORY_POINTS_6850: "Уилинг" #NT!
  VICTORY_POINTS_7588: "Чарльстон"
  VICTORY_POINTS_873: "Александрия" #NT!
@@ -904,8 +915,8 @@
  VICTORY_POINTS_1843: "Майами"
  VICTORY_POINTS_10407: "Таллахасси" #NT!
  VICTORY_POINTS_1572: "Джексонвилл" #NT!
- VICTORY_POINTS_7388: "Чистая вода" #NT!
- VICTORY_POINTS_12752: "Мыс Корал" #NT!
+ VICTORY_POINTS_7388: "Клируотер" #NT!
+ VICTORY_POINTS_12752: "Кейп-Корал" #NT!
  VICTORY_POINTS_10520: "Форт Морган" #NT!
  VICTORY_POINTS_7480: "Мобил"
  VICTORY_POINTS_12735: "Бирмингем"
@@ -919,32 +930,32 @@
  VICTORY_POINTS_10909: "Чаттануга" #NT!
  VICTORY_POINTS_913: "Ноксвилл" #NT!
  VICTORY_POINTS_10586: "Падука" #NT!
- VICTORY_POINTS_6974: "Боулинг Грин" #NT!
+ VICTORY_POINTS_6974: "Боулинг-Грин" #NT!
  VICTORY_POINTS_9727: "Лексингтон" #NT!
  VICTORY_POINTS_6696: "Луисвилл"
- VICTORY_POINTS_4601: "Цинцинатти" #NT!
+ VICTORY_POINTS_4601: "Цинциннати" #NT!
  VICTORY_POINTS_11776: "Дейтон" #NT!
  VICTORY_POINTS_6890: "Кливленд"
  VICTORY_POINTS_6855: "Колумбус"
  VICTORY_POINTS_689: "Толедо" #NT!
   
  VICTORY_POINTS_6710: "Детройт"
- VICTORY_POINTS_11656: "Анн-Арбор" #NT!
+ VICTORY_POINTS_11656: "Энн-Арбор" #NT!
  VICTORY_POINTS_11669: "Флинт" #NT!
  VICTORY_POINTS_6769: "Лансинг" #NT!
- VICTORY_POINTS_11685: "Великие пороги" #NT!
+ VICTORY_POINTS_11685: "Гранд-Рапидс" #NT!
  VICTORY_POINTS_4854: "Маркетт" #NT!
- VICTORY_POINTS_870: "Форт Уэйн" #NT!
+ VICTORY_POINTS_870: "Форт-Уэйн" #NT!
  VICTORY_POINTS_9654: "Саут-Бенд" #NT!
  VICTORY_POINTS_1595: "Индианаполис"
  VICTORY_POINTS_11635: "Эвансвилл" #NT!
  VICTORY_POINTS_12365: "Куинси" #NT!
  VICTORY_POINTS_12697: "Спрингфилд" #NT!
- VICTORY_POINTS_10339: "Peoria" #NT!
+ VICTORY_POINTS_10339: "Пеория" #NT!
  VICTORY_POINTS_9450: "Чикаго"
  VICTORY_POINTS_12357: "Милуоки"
  VICTORY_POINTS_12456: "Мэдисон" #NT!
- VICTORY_POINTS_4166: "Зеленая бухта" #NT!
+ VICTORY_POINTS_4166: "Грин-Бей" #NT!
  VICTORY_POINTS_1760: "О Клэр" #NT!
   
  VICTORY_POINTS_4807: "Рочестер" #NT!
@@ -952,15 +963,15 @@
  VICTORY_POINTS_1719: "Святой Павел" #NT!
  VICTORY_POINTS_1734: "Дулут" #NT!
  VICTORY_POINTS_1770: "Де-Мойн"
- VICTORY_POINTS_9910: "Дубюк" #NT!
- VICTORY_POINTS_10478: "Давенпорт" #NT!
+ VICTORY_POINTS_9910: "Дубьюк" #NT!
+ VICTORY_POINTS_10478: "Дэвенпорт" #NT!
  VICTORY_POINTS_4569: "Сент-Луис"
  VICTORY_POINTS_10370: "Спрингфилд"
  VICTORY_POINTS_7607: "Колумбия" #NT!
  VICTORY_POINTS_10717: "Канзас-Сити"
  VICTORY_POINTS_12489: "Литл-Рок"
   
- VICTORY_POINTS_9920: "Форт-Уэрт" #NT!
+ VICTORY_POINTS_9920: "Форт-Уорт" #NT!
  VICTORY_POINTS_3960: "Даллас"
  VICTORY_POINTS_6968: "Лонгвью" #NT!
  VICTORY_POINTS_10861: "Уэйко" #NT!
@@ -968,7 +979,7 @@
  VICTORY_POINTS_10337: "Хьюстон"
  VICTORY_POINTS_5022: "Остин" #NT!
  VICTORY_POINTS_12782: "Сан-Антонио"
- VICTORY_POINTS_2042: "корпус Кристи" #NT!
+ VICTORY_POINTS_2042: "Корпус-Кристи" #NT!
  VICTORY_POINTS_12369: "Браунсвилл" #NT!
  VICTORY_POINTS_10740: "Эль-Пасо" #NT!
  VICTORY_POINTS_1998: "Мидленд" #NT!
@@ -981,37 +992,37 @@
  VICTORY_POINTS_7892: "Уичито" #NT!
  VICTORY_POINTS_7834: "Лоуренс" #NT!
  VICTORY_POINTS_1352: "Топика" #NT!
- VICTORY_POINTS_12024: "Додж Сити" #NT!
+ VICTORY_POINTS_12024: "Додж-Сити" #NT!
   
  VICTORY_POINTS_10595: "Су-Фолс" #NT!
  VICTORY_POINTS_3708: "Линкольн" #NT!
  VICTORY_POINTS_12586: "Омаха"
   
  VICTORY_POINTS_12624: "Гаймон" #NT!
- VICTORY_POINTS_1851: "Большой рог" #NT!
+ VICTORY_POINTS_1851: "Бигхорн" #NT!
  VICTORY_POINTS_1738: "Кампо" #NT!
  VICTORY_POINTS_10645: "Фармингтон" #NT!
- VICTORY_POINTS_4826: "Бернс" #NT!
- VICTORY_POINTS_6722: "Боуман" #NT!
+ VICTORY_POINTS_4826: "Ожоги" #NT!
+ VICTORY_POINTS_6722: "Боумен" #NT!
  VICTORY_POINTS_7779: "Елена" #NT!
  VICTORY_POINTS_7747: "Сан-Карлос" #NT!
  VICTORY_POINTS_8070: "Розуэлл" #NT!
  VICTORY_POINTS_4331: "Альтурас" #NT!
  VICTORY_POINTS_12627: "Тимпас" #NT!
  VICTORY_POINTS_13834: "Ларами" #NT!
- VICTORY_POINTS_10914: "Хила" #NT!
+ VICTORY_POINTS_10914: "Гила" #NT!
  VICTORY_POINTS_2102: "Нара Виста" #NT!
- VICTORY_POINTS_13828: "Хлодвиг" #NT!
+ VICTORY_POINTS_13828: "Кловис" #NT!
  VICTORY_POINTS_1767: "Биллингс" #NT!
- VICTORY_POINTS_12124: "Кер-д'Ален" #NT!
+ VICTORY_POINTS_12124: "Кер д'Ален" #NT!
  VICTORY_POINTS_9616: "Бойсе"
- VICTORY_POINTS_12535: "Мосон Кани" #NT!
+ VICTORY_POINTS_12535: "Мосон Кахни" #NT!
  VICTORY_POINTS_10271: "Форт Ванкувер" #NT!
  VICTORY_POINTS_1789: "Форт Холл" #NT!
  VICTORY_POINTS_1815: "Форт Каспар" #NT!
- VICTORY_POINTS_11733: "Грантовый пропуск" #NT!
+ VICTORY_POINTS_11733: "Гранты Пасс" #NT!
  VICTORY_POINTS_1690: "Спокан"
- VICTORY_POINTS_1747: "Мни Лузахан Отунвахе" #NT!
+ VICTORY_POINTS_1747: "Мни Лузахан Отхунвахе" #NT!
  VICTORY_POINTS_1836: "Бисмарк"
  VICTORY_POINTS_4860: "Грейт-Фоллс"
  VICTORY_POINTS_7315: "Сиэтл"
@@ -1020,6 +1031,8 @@
  VICTORY_POINTS_13090: "Уналашка"
   
   # Mexico 
+ VICTORY_POINTS_1965: "Сьюдад-де-Мехико" #NT!
+ VICTORY_POINTS_12712: "Сьюдад-де-Оахака" #NT!
  VICTORY_POINTS_12461: "Тихуана"
  VICTORY_POINTS_1892: "Энсенада"
  VICTORY_POINTS_12736: "Ла-Пас"
@@ -1055,18 +1068,18 @@
  VICTORY_POINTS_13686: "Арекипа" #NT!
  VICTORY_POINTS_5230: "Ла-Пас"
  VICTORY_POINTS_13567: "Асунсьон" #NT!
- VICTORY_POINTS_12466: "Рио де Жанейро" #NT!
+ VICTORY_POINTS_12466: "Рио-де-Жанейро" #NT!
  VICTORY_POINTS_5107: "Форталеза"
  VICTORY_POINTS_5168: "Ресифи"
  VICTORY_POINTS_10447: "Порту-Алегри"
  VICTORY_POINTS_10513: "Сан-Паулу"
  VICTORY_POINTS_10946: "Сальвадор"
  VICTORY_POINTS_2227: "Параиба" #NT!
- VICTORY_POINTS_10933: "Натал" #NT!
- VICTORY_POINTS_5153: "Терезина" #NT!
- VICTORY_POINTS_12933: "Сан-Луис" #NT!
+ VICTORY_POINTS_10933: "Натал"
+ VICTORY_POINTS_5153: "Терезина"
+ VICTORY_POINTS_12933: "Сан-Луис"
  VICTORY_POINTS_12853: "Белен"
- VICTORY_POINTS_10934: "Манаус" #NT!
+ VICTORY_POINTS_10934: "Манаус"
  VICTORY_POINTS_8148: "Ору-Прету" #NT!
  VICTORY_POINTS_10362: "Монтевидео"
  VICTORY_POINTS_12364: "Буэнос-Айрес"
@@ -1074,14 +1087,14 @@
  VICTORY_POINTS_7621: "Мар-дель-Плата"
  VICTORY_POINTS_8216: "Тукуман"
  VICTORY_POINTS_12942: "Кордова"
- VICTORY_POINTS_1449: "Парана" #NT!
+ VICTORY_POINTS_1449: "Парана"
  VICTORY_POINTS_650: "Сантьяго"
  VICTORY_POINTS_10400: "Претория"
  VICTORY_POINTS_10405: "Дестерро" #NT!
  VICTORY_POINTS_8143: "Аракажу" #NT!
  VICTORY_POINTS_10998: "Масейо" #NT!
- VICTORY_POINTS_2111: "Куяба" #NT!
- #VICTORY_POINTS_10959: "Кампо-Гранде" #NT!
+ VICTORY_POINTS_2111: "Куяба"
+ #VICTORY_POINTS_10959: "Кампо Гранде" #NT!
  VICTORY_POINTS_12987: "Гояс" #NT!
  VICTORY_POINTS_1468: "Дурбан"
  VICTORY_POINTS_4696: "Порт-Элизабет"
@@ -1099,7 +1112,7 @@
  VICTORY_POINTS_4948: "Дакар"
  VICTORY_POINTS_14313: "Кансала" #NT!
  VICTORY_POINTS_10915: "Бафулабе" #NT!
- VICTORY_POINTS_12766: "Асмэра" #NT!
+ VICTORY_POINTS_12766: "Асмара" #NT!
  VICTORY_POINTS_12806: "Хартум"
  VICTORY_POINTS_1269: "Гуадалканал"
  VICTORY_POINTS_3995: "Сайпан"
@@ -1128,7 +1141,7 @@
  VICTORY_POINTS_1319: "Куньмин"
  VICTORY_POINTS_8049: "Яньань"
  VICTORY_POINTS_1519: "Тайюань"
- VICTORY_POINTS_657: "Чостанца" #NT!
+ VICTORY_POINTS_657: "Хостанца" #NT!
  VICTORY_POINTS_11573: "Шамбери" #NT!
  VICTORY_POINTS_890: "Дюздже" #NT!
  VICTORY_POINTS_911: "Тулон"
@@ -1146,7 +1159,7 @@
  VICTORY_POINTS_4189: "Макао"
  VICTORY_POINTS_4206: "Тель-Авив"
  VICTORY_POINTS_5074: "Аден"
- VICTORY_POINTS_14140: "Ла Специя" #NT!
+ VICTORY_POINTS_14140: "Специя" #NT!
  VICTORY_POINTS_6984: "Балтимор"
  VICTORY_POINTS_7132: "Оран"
  VICTORY_POINTS_7371: "Бандар Бруней" #NT!
@@ -1157,11 +1170,11 @@
  VICTORY_POINTS_7982: "Бендер-Аббас"
  VICTORY_POINTS_8085: "Кувейт"
  VICTORY_POINTS_8252: "Гуаякиль"
- VICTORY_POINTS_10942: "Сарумилла" #NT!
+ VICTORY_POINTS_10942: "Зарумилла" #NT!
  VICTORY_POINTS_9907: "Флоренция" #NT!
  VICTORY_POINTS_9994: "Бизерта"
  VICTORY_POINTS_10007: "Родос"
- VICTORY_POINTS_10367: "Остров Атту"
+ VICTORY_POINTS_10367: "Остров Атту" #NT!
  VICTORY_POINTS_10862: "Аккра"
  VICTORY_POINTS_11746: "Адания" #NT!
  VICTORY_POINTS_11773: "Кальяри"
@@ -1180,17 +1193,17 @@
  VICTORY_POINTS_13241: "Блумфонтейн" #NT!
  VICTORY_POINTS_13255: "Вреде" #NT!
  VICTORY_POINTS_13254: "Гаррисмит" #NT!
- VICTORY_POINTS_13237: "Филипполис" #NT!
+ VICTORY_POINTS_13237: "Филиппополис" #NT!
  VICTORY_POINTS_13240: "Ягерсфонтейн" #NT!
- VICTORY_POINTS_13252: "Хайльброн" #NT!
+ VICTORY_POINTS_13252: "Хейлброн" #NT!
  VICTORY_POINTS_13245: "Фиксбург" #NT!
  VICTORY_POINTS_13248: "Винбург" #NT!
- VICTORY_POINTS_13247: "Камилдорнс" #NT!
- VICTORY_POINTS_5231: "Якобсдал" #NT!
+ VICTORY_POINTS_13247: "Камеелдорнс" #NT!
+ VICTORY_POINTS_5231: "Якобсдаль" #NT!
  VICTORY_POINTS_4556: "Масеру" #NT!
  VICTORY_POINTS_13260: "Таба Босиу" #NT!
  VICTORY_POINTS_13310: "Ле-Ке" #NT!
- VICTORY_POINTS_13302: "Порт-де-Пе" #NT!
+ VICTORY_POINTS_13302: "Порт-де-Пэ" #NT!
  VICTORY_POINTS_13311: "Мбарара" #NT!
  VICTORY_POINTS_13329: "Бонни" #NT!
  VICTORY_POINTS_13331: "Окрика" #NT!
@@ -1199,9 +1212,9 @@
  VICTORY_POINTS_13334: "Аква Акпа" #NT!
  VICTORY_POINTS_13336: "Арочукву" #NT!
  VICTORY_POINTS_13343: "Инкамана" #NT!
- VICTORY_POINTS_13341: "улуНди" #NT!
- VICTORY_POINTS_13338: "уМгунгундлову" #NT!
- VICTORY_POINTS_1951: "Идти" #NT!
+ VICTORY_POINTS_13341: "улунди" #NT!
+ VICTORY_POINTS_13338: "uMgungundlovu" #NT!
+ VICTORY_POINTS_1951: "Того" #NT!
  VICTORY_POINTS_13354: "Массеня" #NT!
  VICTORY_POINTS_13363: "Диурбель" #NT!
  VICTORY_POINTS_13366: "Оливенса" #NT!
@@ -1216,27 +1229,27 @@
  VICTORY_POINTS_1473: "Уара" #NT!
  VICTORY_POINTS_13376: "Ондонга" #NT!
  VICTORY_POINTS_13390: "Оматако" #NT!
- VICTORY_POINTS_2207: "Отджинибинге" #NT!
+ VICTORY_POINTS_2207: "Отжинибинг" #NT!
  VICTORY_POINTS_13389: "Гаваон" #NT!
  VICTORY_POINTS_13385: "Берсаба" #NT!
  VICTORY_POINTS_13384: "Бетан" #NT!
- VICTORY_POINTS_11015: "Антанариву" #NT!
+ VICTORY_POINTS_11015: "Антананариву" #NT!
  VICTORY_POINTS_5222: "Вохемар" #NT!
  VICTORY_POINTS_5128: "Порт-Луи" #NT!
  VICTORY_POINTS_5185: "Солинга" #NT!
- VICTORY_POINTS_8180: "Mauteruke" #NT!
+ VICTORY_POINTS_8180: "Маутерук" #NT!
  VICTORY_POINTS_5065: "Варшейх" #NT!
  VICTORY_POINTS_2020: "Мекана" #NT!
  VICTORY_POINTS_2063: "Бердера" #NT!
  VICTORY_POINTS_10928: "Афгойе" #NT!
  VICTORY_POINTS_9: "Занзибар" #NT!
- VICTORY_POINTS_4913: "Тинтеллуст" #NT!
+ VICTORY_POINTS_4913: "Тинтелласт" #NT!
  VICTORY_POINTS_3962: "Хакодатэ"
  VICTORY_POINTS_2057: "Град" #NT!
  VICTORY_POINTS_11535: "Кан" #NT!
  VICTORY_POINTS_9809: "Подгорица"
  VICTORY_POINTS_7129: "Хэцзэ" #NT!
- VICTORY_POINTS_4628: "Байсе" #NT!
+ VICTORY_POINTS_4628: "Байсэ" #NT!
  VICTORY_POINTS_10070: "Рабат" #NT!
  VICTORY_POINTS_1102: "Мугадур" #NT!
  VICTORY_POINTS_1597: "Лючжоу" #NT!
@@ -1244,7 +1257,7 @@
  VICTORY_POINTS_7100: "Мекнес" #NT!
  VICTORY_POINTS_11987: "Фес" #NT!
  VICTORY_POINTS_10107: "Марракеш" #NT!
- VICTORY_POINTS_1095: "Снейса" #NT!
+ VICTORY_POINTS_1095: "Sneisa" #NT!
  VICTORY_POINTS_1115: "Таудени" #NT!
  VICTORY_POINTS_10868: "Мабрук" #NT!
  VICTORY_POINTS_10725: "Араван" #NT!
@@ -1254,12 +1267,12 @@
  VICTORY_POINTS_13282: "Одиенне" #NT!
  VICTORY_POINTS_13291: "Буна" #NT!
  VICTORY_POINTS_13292: "Конг" #NT!
- VICTORY_POINTS_13348: "Сакассу" #NT!
+ VICTORY_POINTS_13348: "Sakassou" #NT!
  VICTORY_POINTS_1962: "Тишт" #NT!
  VICTORY_POINTS_1897: "Нема" #NT!
  VICTORY_POINTS_13371: "Декна" #NT!
  VICTORY_POINTS_13403: "Касамбара" #NT!
- VICTORY_POINTS_13487: "Гат" #NT!
+ VICTORY_POINTS_13487: "Гхат" #NT!
  VICTORY_POINTS_12022: "Катрун" #NT!
  VICTORY_POINTS_13512: "Мурзук" #NT!
  VICTORY_POINTS_7985: "Вау" #NT!
@@ -1271,20 +1284,20 @@
  VICTORY_POINTS_4051: "Гарьян" #NT!
  VICTORY_POINTS_13482: "Гадамес" #NT!
  VICTORY_POINTS_7154: "Зинтан" #NT!
- VICTORY_POINTS_1043: "Темасанин" #NT!
+ VICTORY_POINTS_1043: "Темассанин" #NT!
  VICTORY_POINTS_12764: "Сива" #NT!
  VICTORY_POINTS_12816: "Дакель" #NT!
- VICTORY_POINTS_12099: "Эль-Харджех" #NT!
- VICTORY_POINTS_7144: "Миние" #NT!
+ VICTORY_POINTS_12099: "эль-Харджех" #NT!
+ VICTORY_POINTS_7144: "Миниех" #NT!
  VICTORY_POINTS_1028: "Ассуан" #NT!
- VICTORY_POINTS_12771: "Вади Халфа" #NT!
+ VICTORY_POINTS_12771: "Вади-Хальфа" #NT!
  VICTORY_POINTS_12711: "Бени Аббас" #NT!
- VICTORY_POINTS_1901: "Эль-Келаа" #NT!
+ VICTORY_POINTS_1901: "эль-Келаа" #NT!
  VICTORY_POINTS_8046: "Уарзазат" #NT!
  VICTORY_POINTS_1151: "Кенех" #NT!
  VICTORY_POINTS_776: "Новара" #NT!
  VICTORY_POINTS_770: "Кунео" #NT!
- VICTORY_POINTS_11568: "Брешия" #NT!
+ VICTORY_POINTS_11568: "Брешиа" #NT!
  VICTORY_POINTS_773: "Кремона" #NT!
  VICTORY_POINTS_6793: "Феррара"
  VICTORY_POINTS_6946: "Ливорно" #NT!
@@ -1301,7 +1314,7 @@
  VICTORY_POINTS_12796: "Кора" #NT!
  VICTORY_POINTS_4963: "Донгола" #NT!
  VICTORY_POINTS_10739: "Фашер" #NT!
- VICTORY_POINTS_2016: "Эль-Обид" #NT!
+ VICTORY_POINTS_2016: "Эль Обид" #NT!
  VICTORY_POINTS_4902: "Ваджанга" #NT!
  VICTORY_POINTS_8128: "Бильма" #NT!
  VICTORY_POINTS_1956: "Куфе" #NT!
@@ -1314,20 +1327,23 @@
  VICTORY_POINTS_590: "Клермон-Ферран" #NT!
  VICTORY_POINTS_11869: "Пуатье" #NT!
  VICTORY_POINTS_485: "Дьепп"
- VICTORY_POINTS_9561: "Компьень" #NT!
+ VICTORY_POINTS_9561: "Компьен" #NT!
  VICTORY_POINTS_11488: "Сен-Дизье" #NT!
+ VICTORY_POINTS_698: "Белфорт" #NT!
  VICTORY_POINTS_5291: "Верден" #NT!
  VICTORY_POINTS_6933: "Бежа"
  VICTORY_POINTS_6880: "Фару"
- VICTORY_POINTS_11672: "Римский" #NT!
+ VICTORY_POINTS_11672: "Роман" #NT!
  VICTORY_POINTS_6706: "Галац"
  VICTORY_POINTS_3639: "Питешти" #NT!
  VICTORY_POINTS_6652: "Крайова"
  VICTORY_POINTS_11583: "Смедерево" #NT!
- VICTORY_POINTS_630: "Пожаревац" #NT!
+ VICTORY_POINTS_6634: "Пожаревац" #NT!
  VICTORY_POINTS_11572: "Зеница" #NT!
  VICTORY_POINTS_9894: "Мостар"
- VICTORY_POINTS_606: "Тузла" #NT!
+ VICTORY_POINTS_6799: "Тузла" #NT!
+ VICTORY_POINTS_606: "Биелина" #NT!
+ VICTORY_POINTS_3984: "Крагуевац" #NT!
  VICTORY_POINTS_6983: "Баня-Лука"
  VICTORY_POINTS_7211: "Патры"
  VICTORY_POINTS_974: "Монастир" #NT!
@@ -1342,7 +1358,7 @@
  VICTORY_POINTS_11979: "Ариш" #NT!
  VICTORY_POINTS_10901: "Сакака" #NT!
  VICTORY_POINTS_10876: "Самава" #NT!
- VICTORY_POINTS_10744: "Аль-Шабака" #NT!
+ VICTORY_POINTS_10744: "Аш-Шабака" #NT!
  VICTORY_POINTS_2027: "Табук" #NT!
  VICTORY_POINTS_4968: "Бурайда" #NT!
  VICTORY_POINTS_1634: "Ар-Ракка" #NT!
@@ -1355,7 +1371,7 @@
  VICTORY_POINTS_11871: "Мардин" #NT!
  VICTORY_POINTS_1463: "Юксекова" #NT!
  VICTORY_POINTS_6935: "Ван"
- VICTORY_POINTS_11880: "Остановка" #NT!
+ VICTORY_POINTS_11880: "Ахалт" #NT!
  VICTORY_POINTS_804: "Кириккале" #NT!
  VICTORY_POINTS_11853: "Эрзурум"
  VICTORY_POINTS_9932: "Ризе" #NT!
@@ -1364,7 +1380,7 @@
  VICTORY_POINTS_6895: "Чорлу" #NT!
  VICTORY_POINTS_11984: "Никосия"
  VICTORY_POINTS_12821: "Мукалла" #NT!
- VICTORY_POINTS_14282: "Аш-Шихр" #NT!
+ VICTORY_POINTS_14282: "Эш-Шихр" #NT!
  VICTORY_POINTS_13079: "Кишн" #NT!
  VICTORY_POINTS_14281: "Seiyun" #NT!
  VICTORY_POINTS_4976: "Тарим" #NT!
@@ -1376,53 +1392,55 @@
  VICTORY_POINTS_7604: "Хой" #NT!
  VICTORY_POINTS_4755: "Маранд" #NT!
  VICTORY_POINTS_12861: "Бонаб" #NT!
- VICTORY_POINTS_10768: "Бабол" #NT!
+ VICTORY_POINTS_10768: "Баболь" #NT!
  VICTORY_POINTS_10385: "Бехшахр" #NT!
  VICTORY_POINTS_7602: "Горгона" #NT!
- VICTORY_POINTS_4580: "Чалюс" #NT!
+ VICTORY_POINTS_4580: "Чалус" #NT!
  VICTORY_POINTS_4609: "Рашт" #NT!
  VICTORY_POINTS_4637: "Лахиджан" #NT!
- VICTORY_POINTS_6259: "Плоцк" #NT!
+ VICTORY_POINTS_6259: "Новогеоргиевск" #NT!
  VICTORY_POINTS_3230: "Влоцлавек" #NT!
- VICTORY_POINTS_402: "Седльце"
+ VICTORY_POINTS_9544: "Седльце" #NT!
+ VICTORY_POINTS_402: "Wegrow" #NT!
+ VICTORY_POINTS_14740: "Люблин" #NT!
  VICTORY_POINTS_9439: "Конин" #NT!
  VICTORY_POINTS_9546: "Калиш" #NT!
- VICTORY_POINTS_3458: "Радом"
+ VICTORY_POINTS_6416: "Радом" #NT!
+ VICTORY_POINTS_562: "Сандомир" #NT!
  VICTORY_POINTS_3497: "Кельце" #NT!
- VICTORY_POINTS_3586: "Ченстохова" #NT!
- VICTORY_POINTS_9544: "Бяла-Подляска"
- VICTORY_POINTS_11399: "Люблин"
+ VICTORY_POINTS_584: "Ченстохова" #NT!
+ VICTORY_POINTS_17409: "Люблин" #NT!
  VICTORY_POINTS_347: "Белосток" #NT!
  VICTORY_POINTS_11301: "Ломжа" #NT!
  VICTORY_POINTS_400: "Августов" #NT!
  VICTORY_POINTS_3254: "Сувалки"
  VICTORY_POINTS_10221: "Супхан Бури" #NT!
  VICTORY_POINTS_1990: "Чианг Рай" #NT!
- VICTORY_POINTS_7516: "Буенг Кан" #NT!
+ VICTORY_POINTS_7516: "Bueng Kan" #NT!
  #VICTORY_POINTS_12417: "Убон Ратачатхани" #NT!
  VICTORY_POINTS_7376: "Пномпень"
  VICTORY_POINTS_7404: "Кронг Преа" #NT!
- VICTORY_POINTS_4302: "Кронг Сием Рип" #NT!
- VICTORY_POINTS_10134: "Кронг Пои Пет" #NT!
+ VICTORY_POINTS_4302: "Кронг Сиемреап" #NT!
+ VICTORY_POINTS_10134: "Кронг Пой Пэт" #NT!
  VICTORY_POINTS_1464: "Вьентьян"
  VICTORY_POINTS_7426: "Секонг" #NT!
  VICTORY_POINTS_1374: "Паксе" #NT!
- VICTORY_POINTS_7218: "Сэм Нуэа" #NT!
- VICTORY_POINTS_12433: "Луанг Прабанг" #NT!
+ VICTORY_POINTS_7218: "Сэм Нуеа" #NT!
+ VICTORY_POINTS_12433: "Луангпрабанг" #NT!
  VICTORY_POINTS_4119: "Ви Хоанг" #NT!
- VICTORY_POINTS_4397: "Фуонг Хоанг Чунг До" #NT!
- VICTORY_POINTS_7280: "Донг Хой" #NT!
+ VICTORY_POINTS_4397: "Фыонг Хоанг Трунг До" #NT!
+ VICTORY_POINTS_7280: "Донхой" #NT!
  VICTORY_POINTS_11936: "Тхань Хоа" #NT!
  VICTORY_POINTS_10309: "Кау Хан" #NT!
- VICTORY_POINTS_12065: "Цао Банг" #NT!
+ VICTORY_POINTS_12065: "Као Банг" #NT!
  VICTORY_POINTS_1073: "Туен Куанг" #NT!
  VICTORY_POINTS_4529: "Дьенбьенфу" #NT!
  VICTORY_POINTS_9988: "Муанг Сиенг Фуан" #NT!
  VICTORY_POINTS_4255: "Куанг Нгай" #NT!
- VICTORY_POINTS_4334: "Куинён" #NT!
+ VICTORY_POINTS_4334: "Куй Нхон" #NT!
  VICTORY_POINTS_1400: "Буон Ме Туот" #NT!
  VICTORY_POINTS_10261: "Тай Нинь" #NT!
- VICTORY_POINTS_7347: "Чан Бьен" #NT!
+ VICTORY_POINTS_7347: "Тран Бьен" #NT!
  VICTORY_POINTS_12204: "Бал Канар" #NT!
  VICTORY_POINTS_10356: "Кенетао" #NT!
  VICTORY_POINTS_4539: "Саваннакхет" #NT!
@@ -1431,7 +1449,7 @@
  VICTORY_POINTS_12230: "Пханг-Нга" #NT!
  VICTORY_POINTS_1279: "Наратхиват" #NT!
  VICTORY_POINTS_4566: "Канчанабури" #NT!
- VICTORY_POINTS_10293: "Са Каео" #NT!
+ VICTORY_POINTS_10293: "Са Кэо" #NT!
  VICTORY_POINTS_12417: "Убон Ратачатхани" #NT!
  VICTORY_POINTS_12345: "Пхитсанулок" #NT!
  VICTORY_POINTS_7559: "Так" #NT!
@@ -1462,37 +1480,37 @@
  VICTORY_POINTS_5171: "Чанарал" #NT!
  VICTORY_POINTS_13645: "Кокимбо" #NT!
  VICTORY_POINTS_13649: "Вальпараисо" #NT!
- VICTORY_POINTS_13650: "Сан Антонио" #NT!
+ VICTORY_POINTS_13650: "Сан-Антонио" #NT!
  VICTORY_POINTS_13651: "Ранкагуа" #NT!
  VICTORY_POINTS_13653: "Сан-Висенте" #NT!
  VICTORY_POINTS_12984: "Талькауано" #NT!
  VICTORY_POINTS_13656: "Темуко" #NT!
- VICTORY_POINTS_12954: "Пуэрто Монтт" #NT!
+ VICTORY_POINTS_12954: "Пуэрто-Монт" #NT!
  VICTORY_POINTS_5201: "Пунта-Аренас" #NT!
  VICTORY_POINTS_13584: "Сальто" #NT!
  VICTORY_POINTS_13594: "Такуарембо" #NT!
  VICTORY_POINTS_13596: "Ривера" #NT!
  VICTORY_POINTS_13602: "Мело" #NT!
  VICTORY_POINTS_12481: "Трейнта и Трес" #NT!
- VICTORY_POINTS_13604: "Роша" #NT!
+ VICTORY_POINTS_13604: "Роча" #NT!
  VICTORY_POINTS_13606: "Минас" #NT!
  VICTORY_POINTS_13611: "Флорида" #NT!
- VICTORY_POINTS_13614: "Сан - Хосе" #NT!
+ VICTORY_POINTS_13614: "Сан-Хосе" #NT!
  VICTORY_POINTS_12496: "Тринидад" #NT!
- VICTORY_POINTS_4457: "Колония дель Сакраменто" #NT!
+ VICTORY_POINTS_4457: "Колония-дель-Сакраменто" #NT!
  VICTORY_POINTS_10502: "Мерседес" #NT!
  VICTORY_POINTS_13616: "Фрай Бентос" #NT!
- VICTORY_POINTS_13621: "Дюразно" #NT!
+ VICTORY_POINTS_13621: "Дурасно" #NT!
  VICTORY_POINTS_13667: "Коба" #NT!
  VICTORY_POINTS_13668: "Санкт-Фридрихсбург" #NT!
  VICTORY_POINTS_13669: "Порто-Ново" #NT!
  VICTORY_POINTS_13683: "Вадуц" #NT!
- VICTORY_POINTS_8199: "Трухило" #NT!
+ VICTORY_POINTS_8199: "Трухильо" #NT!
  VICTORY_POINTS_13701: "Гейдельбург" #NT!
  VICTORY_POINTS_1688: "Питерсбург" #NT!
  VICTORY_POINTS_2171: "Эрмело" #NT!
  VICTORY_POINTS_7900: "Лобамба" #NT!
- VICTORY_POINTS_12901: "Сьюдад-дель-Эсте" #NT!
+ VICTORY_POINTS_12901: "Сьюдад-дель-Эсте"
  VICTORY_POINTS_2152: "Сан-Лоренцо" #NT!
  VICTORY_POINTS_13579: "Педро Хуан Кабальеро" #NT!
  VICTORY_POINTS_13568: "Каагуасу" #NT!
@@ -1507,16 +1525,16 @@
  VICTORY_POINTS_2130: "Милдьюра" #NT!
  VICTORY_POINTS_4791: "Варрнамбул" #NT!
  VICTORY_POINTS_10581: "Олбери" #NT!
- VICTORY_POINTS_5181: "Ланусестон" #NT!
+ VICTORY_POINTS_5181: "Ланукестон" #NT!
  VICTORY_POINTS_2219: "Порт-Линкольн" #NT!
  VICTORY_POINTS_5225: "Порт-Огаста" #NT!
- VICTORY_POINTS_8220: "Смоки Бэй" #NT!
+ VICTORY_POINTS_8220: "Смоки-Бэй" #NT!
  VICTORY_POINTS_12906: "Кубер-Педи" #NT!
- VICTORY_POINTS_1773: "Гора Гамбье" #NT!
+ VICTORY_POINTS_1773: "Маунт-Гамбир" #NT!
  VICTORY_POINTS_5197: "Ялата" #NT!
- VICTORY_POINTS_10445: "Золотое побережье" #NT!
+ VICTORY_POINTS_10445: "Золотой Берег" #NT!
  VICTORY_POINTS_4481: "Бандаберг" #NT!
- VICTORY_POINTS_7651: "Рокгемптон" #NT!
+ VICTORY_POINTS_7651: "Рокхэмптон" #NT!
  VICTORY_POINTS_10460: "Маккей" #NT!
  VICTORY_POINTS_10336: "Лонгрич" #NT!
  VICTORY_POINTS_10955: "Маунт-Айза" #NT!
@@ -1526,18 +1544,18 @@
  VICTORY_POINTS_12992: "Алис-Спрингс" #NT!
  VICTORY_POINTS_2223: "Сандовер" #NT!
  VICTORY_POINTS_7481: "Борролула" #NT!
- VICTORY_POINTS_1410: "Нхулунбай" #NT!
+ VICTORY_POINTS_1410: "Нхулунбуй" #NT!
  VICTORY_POINTS_12104: "Кэтрин" #NT!
- VICTORY_POINTS_12311: "Тимбер Крик" #NT!
+ VICTORY_POINTS_12311: "Тимбер-Крик" #NT!
  VICTORY_POINTS_12990: "Эсперанс" #NT!
  VICTORY_POINTS_8243: "Олбани" #NT!
  VICTORY_POINTS_1540: "Джералдтон" #NT!
  VICTORY_POINTS_12323: "Карнарвон" #NT!
- VICTORY_POINTS_4645: "Корал Бэй" #NT!
+ VICTORY_POINTS_4645: "Коралловый залив" #NT!
  VICTORY_POINTS_8152: "Каррата" #NT!
  VICTORY_POINTS_2201: "Брум" #NT!
- VICTORY_POINTS_10950: "Новичок" #NT!
- VICTORY_POINTS_8134: "Нгааньятжарра-Джайлз" #NT!
+ VICTORY_POINTS_10950: "Ньюман" #NT!
+ VICTORY_POINTS_8134: "Нгаанятьярра-Джайлс" #NT!
  VICTORY_POINTS_8209: "дерби" #NT!
  VICTORY_POINTS_10937: "Холлс-Крик" #NT!
  VICTORY_POINTS_5207: "Кунунурра" #NT!
@@ -1557,7 +1575,7 @@
  VICTORY_POINTS_13737: "Jiao'ao" #NT!
  VICTORY_POINTS_13738: "Weihaiwei" #NT!
  VICTORY_POINTS_13739: "Кенли" #NT!
- VICTORY_POINTS_13740: "Хэкуо" #NT!
+ VICTORY_POINTS_13740: "Хекуо" #NT!
  VICTORY_POINTS_13741: "Caofeidian" #NT!
  VICTORY_POINTS_13742: "Laoting" #NT!
  VICTORY_POINTS_13743: "Qinhuagadao" #NT!
@@ -1565,16 +1583,16 @@
  VICTORY_POINTS_1404: "Танджунг Палас" #NT!
  VICTORY_POINTS_1306: "Астана Путих" #NT!
  VICTORY_POINTS_13758: "Паданг" #NT!
- VICTORY_POINTS_13756: "Самбас" #NT!
+ VICTORY_POINTS_13756: "Самбы" #NT!
  VICTORY_POINTS_13746: "Купанг" #NT!
  VICTORY_POINTS_1316: "Мандор" #NT!
  VICTORY_POINTS_13757: "Соронг" #NT!
  VICTORY_POINTS_13749: "Амлапура" #NT!
  VICTORY_POINTS_13748: "Мангсит" #NT!
- VICTORY_POINTS_12234: "Тапиль" #NT!
- VICTORY_POINTS_6923: "Филиппополис" #NT!
+ VICTORY_POINTS_12234: "Тапил" #NT!
+ VICTORY_POINTS_6923: "Филиппополь" #NT!
  VICTORY_POINTS_11842: "Адрианополь" #NT!
- VICTORY_POINTS_6900: "Кортша" #NT!
+ VICTORY_POINTS_6900: "Корча" #NT!
  VICTORY_POINTS_11767: "Авлона" #NT!
  VICTORY_POINTS_9821: "Цетинье" #NT!
  VICTORY_POINTS_2149: "Неукен" #NT!
@@ -1610,12 +1628,12 @@
   
  # India 
  VICTORY_POINTS_7273: "Лели" #NT!
- VICTORY_POINTS_14138: "Сринигар" #NT!
+ VICTORY_POINTS_14138: "Шринигар" #NT!
  VICTORY_POINTS_7106: "Симла" #NT!
  VICTORY_POINTS_12708: "Амбала" #NT!
- VICTORY_POINTS_14090: "Меерут" #NT!
+ VICTORY_POINTS_14090: "Мирут" #NT!
  VICTORY_POINTS_14108: "Морадабад" #NT!
- VICTORY_POINTS_9951: "Барейли" #NT!
+ VICTORY_POINTS_9951: "Барейлли" #NT!
  VICTORY_POINTS_12822: "Карпуртала" #NT!
  VICTORY_POINTS_10729: "Патиала" #NT!
  VICTORY_POINTS_14124: "Дели" #NT!
@@ -1627,7 +1645,7 @@
  VICTORY_POINTS_1908: "Аджмере" #NT!
  VICTORY_POINTS_14127: "Удайпур" #NT!
  VICTORY_POINTS_11995: "Бхопал" #NT!
- VICTORY_POINTS_2105: "Индаур" #NT!
+ VICTORY_POINTS_2105: "Индор" #NT!
  VICTORY_POINTS_9975: "Ахмадабад"
  VICTORY_POINTS_11952: "Барода" #NT!
  VICTORY_POINTS_14109: "Раджкот" #NT!
@@ -1635,7 +1653,7 @@
  VICTORY_POINTS_10807: "Гвалиор" #NT!
  VICTORY_POINTS_1949: "Джханси" #NT!
  VICTORY_POINTS_1983: "Айодхья" #NT!
- VICTORY_POINTS_9973: "Лакнау" #NT!
+ VICTORY_POINTS_9973: "Лакхнау" #NT!
  VICTORY_POINTS_10751: "Файзабад" #NT!
  VICTORY_POINTS_12777: "Канпур" #NT!
  VICTORY_POINTS_14137: "Аллахабад" #NT!
@@ -1667,8 +1685,8 @@
  VICTORY_POINTS_7260: "Коломбо" #NT!
  VICTORY_POINTS_12180: "Мадрас" #NT!
  VICTORY_POINTS_10149: "Пондичерри" #NT!
- VICTORY_POINTS_12779: "Кудапа" #NT!
- VICTORY_POINTS_1430: "Неллор" #NT!
+ VICTORY_POINTS_12779: "Куддапа" #NT!
+ VICTORY_POINTS_1430: "Неллоре" #NT!
  VICTORY_POINTS_7340: "Масулипатам" #NT!
  VICTORY_POINTS_4237: "Янон" #NT!
  VICTORY_POINTS_10001: "Вишакхапатнам" #NT!
@@ -1680,15 +1698,15 @@
  VICTORY_POINTS_4245: "Калькутта"
  VICTORY_POINTS_7220: "Миндапур" #NT!
  VICTORY_POINTS_4644: "Бардван" #NT!
- VICTORY_POINTS_12035: "Чота Нагпур" #NT!
+ VICTORY_POINTS_12035: "Чхота Нагпур" #NT!
  VICTORY_POINTS_12307: "Гунгпур" #NT!
  VICTORY_POINTS_4516: "Патна"
  VICTORY_POINTS_4459: "Горакхпур" #NT!
- VICTORY_POINTS_7537: "Хагапур" #NT!
+ VICTORY_POINTS_7537: "Кхагапур" #NT!
  VICTORY_POINTS_4435: "Дарджилинг" #NT!
  VICTORY_POINTS_8010: "Пунакха"
  VICTORY_POINTS_7662: "Динапур" #NT!
- VICTORY_POINTS_10443: "Митхапукар" #NT!
+ VICTORY_POINTS_10443: "Митапукар" #NT!
  VICTORY_POINTS_10035: "Хула" #NT!
  VICTORY_POINTS_11929: "Дакка"
  VICTORY_POINTS_8059: "Чамдо" #NT!
@@ -1698,7 +1716,7 @@
  VICTORY_POINTS_1573: "Бухарск."
  VICTORY_POINTS_12465: "Хиванск."
  VICTORY_POINTS_7259: "Форт Виктория" #NT!
- VICTORY_POINTS_4379: "Фу Суан" #NT!
+ VICTORY_POINTS_4379: "Фу Сюань" #NT!
  VICTORY_POINTS_1208: "Кучинг"
  VICTORY_POINTS_12283: "Сибу" #NT!
  VICTORY_POINTS_6124: "Вятка" #NT!
@@ -1706,46 +1724,46 @@
  VICTORY_POINTS_9259: "Чебоксары"
  VICTORY_POINTS_464: "Гурьев" #NT!
  VICTORY_POINTS_11537: "Уральск" #NT!
- VICTORY_POINTS_11686: "Кишинев" #NT!
+ VICTORY_POINTS_11686: "Кишинёв" #NT!
  VICTORY_POINTS_11647: "Сухуми" #NT!
- VICTORY_POINTS_11599: "Zugdidi" #NT!
- VICTORY_POINTS_13840: "Порт Кокура" #NT!
+ VICTORY_POINTS_11599: "Зугдиди" #NT!
+ VICTORY_POINTS_13840: "Kokura Port" #NT!
  VICTORY_POINTS_9400: "Скерневице" #NT!
- VICTORY_POINTS_6580: "Замостье" #NT!
+ VICTORY_POINTS_6580: "Замосць" #NT!
  VICTORY_POINTS_12973: "Тринидад" #NT!
  VICTORY_POINTS_14007: "Оруро" #NT!
  VICTORY_POINTS_8215: "Мендоса" #NT!
- VICTORY_POINTS_10999: "Витория" #NT!
+ VICTORY_POINTS_10999: "Витория"
  VICTORY_POINTS_12996: "Кампус-дус-Гойтаказис" #NT!
  VICTORY_POINTS_10980: "Нитерой" #NT!
- VICTORY_POINTS_12334: "Жуис де Фора" #NT!
+ VICTORY_POINTS_12334: "Жуис-ди-Фора" #NT!
  VICTORY_POINTS_4617: "Джеремоабо" #NT!
  VICTORY_POINTS_10939: "Пенедо" #NT!
  VICTORY_POINTS_7638: "Пелотас" #NT!
  VICTORY_POINTS_14012: "Рио-Гранде" #NT!
  VICTORY_POINTS_14017: "Таубате" #NT!
  VICTORY_POINTS_5112: "Сантус"
- VICTORY_POINTS_8190: "Кабо Фрио" #NT!
+ VICTORY_POINTS_8190: "Кабу-Фриу" #NT!
  VICTORY_POINTS_14024: "Паранагуа" #NT!
  VICTORY_POINTS_2228: "Паранаиба" #NT!
  VICTORY_POINTS_5194: "Минас-ду-Риу-де-Контас" #NT!
  VICTORY_POINTS_14026: "Кашуэйра" #NT!
  VICTORY_POINTS_14026: "Санто Амаро" #NT!
  VICTORY_POINTS_14027: "Санто Амаро" #NT!
- VICTORY_POINTS_14028: "Фейра де Сантана" #NT!
+ VICTORY_POINTS_14028: "Фейра-де-Сантана" #NT!
  VICTORY_POINTS_5182: "Каруару" #NT!
  VICTORY_POINTS_12938: "Серро" #NT!
- VICTORY_POINTS_7589: "Понте-Нова" #NT!
+ VICTORY_POINTS_7589: "Понте Нова" #NT!
  VICTORY_POINTS_14032: "Келуш" #NT!
  VICTORY_POINTS_14033: "Сабара" #NT!
- VICTORY_POINTS_12909: "Минас Новас" #NT!
- VICTORY_POINTS_5223: "Грао Могол" #NT!
+ VICTORY_POINTS_12909: "Минас-Новас" #NT!
+ VICTORY_POINTS_5223: "Гран Могол" #NT!
  VICTORY_POINTS_14034: "Рио Пардо" #NT!
  VICTORY_POINTS_8211: "Риберальта" #NT!
  VICTORY_POINTS_8240: "Кочабамба" #NT!
- VICTORY_POINTS_10924: "Санта Круз" #NT!
+ VICTORY_POINTS_10924: "Санта-Крус" #NT!
  VICTORY_POINTS_12916: "Пуэрто-Агирре" #NT!
- VICTORY_POINTS_12930: "Сукре" #NT!
+ VICTORY_POINTS_12930: "Сукре"
  VICTORY_POINTS_4686: "Шымкент" #NT!
  VICTORY_POINTS_7427: "Малакка" #NT!
  VICTORY_POINTS_4424: "Джохор-Бару" #NT!
@@ -1753,12 +1771,12 @@
  VICTORY_POINTS_13936: "Баттерворт" #NT!
  VICTORY_POINTS_13938: "Диндингс" #NT!
  VICTORY_POINTS_1364: "Куала Кангсар" #NT!
- VICTORY_POINTS_4355: "Куала Теренггану" #NT!
+ VICTORY_POINTS_4355: "Куала-Тренгану" #NT!
  VICTORY_POINTS_12271: "Пекан" #NT!
  VICTORY_POINTS_10764: "Дейм Зубейр" #NT!
  VICTORY_POINTS_7996: "Румбек" #NT!
  VICTORY_POINTS_10859: "Акобо" #NT!
- VICTORY_POINTS_3711: "Арчиб" #NT!
+ VICTORY_POINTS_3711: "Архиб" #NT!
  VICTORY_POINTS_7554: "Бежта" #NT!
  VICTORY_POINTS_9674: "Архыз" #NT!
  VICTORY_POINTS_11664: "Терскол" #NT!
@@ -1803,12 +1821,12 @@
  VICTORY_POINTS_11688: "Сантандер" #NT!
  VICTORY_POINTS_9703: "Торрелавега" #NT!
   
- VICTORY_POINTS_758: "Ла Корунья" #NT!
- VICTORY_POINTS_11710: "Сантьяго-де-Компостела" #NT!
+ VICTORY_POINTS_758: "Ла-Корунья" #NT!
+ VICTORY_POINTS_11710: "Сантьяго де Компостела" #NT!
  VICTORY_POINTS_9689: "Понтеведра" #NT!
  VICTORY_POINTS_6734: "Виго"
- VICTORY_POINTS_9686: "Луго" #NT!
- VICTORY_POINTS_11692: "Оренсе" #NT!
+ VICTORY_POINTS_9686: "Оренсе" #NT!
+ VICTORY_POINTS_11692: "Луго" #NT!
  VICTORY_POINTS_3761: "Виверо" #NT!
  VICTORY_POINTS_11677: "Монфорте де Лемос" #NT!
   
@@ -1847,7 +1865,7 @@
   
  VICTORY_POINTS_9793: "Пальма" #NT!
  VICTORY_POINTS_7114: "Ибица" #NT!
- VICTORY_POINTS_9845: "Мао-Махон" #NT!
+ VICTORY_POINTS_9845: "Мао-Маон" #NT!
   
  VICTORY_POINTS_9778: "Сьюдад-Реаль" #NT!
  VICTORY_POINTS_11812: "Томельосо" #NT!
@@ -1869,23 +1887,23 @@
  VICTORY_POINTS_13721: "Мелилья" #NT!
   
   #Cuba 
- VICTORY_POINTS_7622: "Ла Гавана" #NT!
+ VICTORY_POINTS_7622: "Гавана" #NT!
   
- VICTORY_POINTS_1550: "Сантьяго де Куба" #NT!
+ VICTORY_POINTS_1550: "Сантьяго-де-Куба" #NT!
  VICTORY_POINTS_7590: "Гуантанамо" #NT!
  VICTORY_POINTS_4476: "Камагуэй" #NT!
  VICTORY_POINTS_7451: "Санта-Клара" #NT!
  VICTORY_POINTS_10498: "Сьенфуэгос" #NT!
   
- VICTORY_POINTS_13527: "Гуантанамо Бэй" #NT!
+ VICTORY_POINTS_13527: "залив Гуантанамо" #NT!
   
  VICTORY_POINTS_4223: "Ха Тьен" #NT!
- VICTORY_POINTS_7303: "Кан Тхо" #NT!
+ VICTORY_POINTS_7303: "Кантхо" #NT!
   
  #Africa 
  VICTORY_POINTS_1891: "Сокото" #NT!
  VICTORY_POINTS_14217: "Кано" #NT!
- VICTORY_POINTS_14207: "Заря" #NT!
+ VICTORY_POINTS_14207: "Зария" #NT!
  VICTORY_POINTS_4952: "Эдо" #NT!
  VICTORY_POINTS_13897: "Ида" #NT!
  VICTORY_POINTS_13894: "Акпа" #NT!
@@ -1893,19 +1911,19 @@
  VICTORY_POINTS_13892: "Йенагоа" #NT!
  VICTORY_POINTS_12731: "Ойо-Иле" #NT!
  VICTORY_POINTS_13409: "Илорин" #NT!
- VICTORY_POINTS_7978: "Кварарфа" #NT!
+ VICTORY_POINTS_7978: "Кварарфы" #NT!
  VICTORY_POINTS_6039: "Фумбан" #NT!
  VICTORY_POINTS_12900: "Ондо" #NT!
  VICTORY_POINTS_1992: "Вукари" #NT!
  VICTORY_POINTS_10820: "Баучи" #NT!
- VICTORY_POINTS_13893: "Abeokuta" #NT!
+ VICTORY_POINTS_13893: "Абеокута" #NT!
  VICTORY_POINTS_8021: "Лафия" #NT!
  VICTORY_POINTS_1932: "Контагора" #NT!
  VICTORY_POINTS_12762: "Никки" #NT!
  VICTORY_POINTS_12817: "Бусса" #NT!
  VICTORY_POINTS_12874: "Параку" #NT!
- VICTORY_POINTS_12742: "Эльмина" #NT!
- VICTORY_POINTS_13347: "Техиман" #NT!
+ VICTORY_POINTS_12742: "Элмина" #NT!
+ VICTORY_POINTS_13347: "Техник" #NT!
  VICTORY_POINTS_8039: "Йенди" #NT!
  VICTORY_POINTS_12787: "Аваса" #NT!
  VICTORY_POINTS_13344: "Кумаси" #NT!
@@ -1919,28 +1937,28 @@
  VICTORY_POINTS_5045: "Сикассо" #NT!
  VICTORY_POINTS_12925: "Матади" #NT!
  VICTORY_POINTS_5117: "Сона Конго" #NT!
- VICTORY_POINTS_13323: "Монфол" #NT!
+ VICTORY_POINTS_13323: "Монфоль" #NT!
  VICTORY_POINTS_4889: "Йола" #NT!
- VICTORY_POINTS_1960: "Аль-Фашир" #NT!
+ VICTORY_POINTS_1960: "Аль-Фашер" #NT!
  VICTORY_POINTS_10917: "Агадес" #NT!
  VICTORY_POINTS_10814: "Киффа" #NT!
- VICTORY_POINTS_8058: "Каеди" #NT!
+ VICTORY_POINTS_8058: "Каэди" #NT!
  VICTORY_POINTS_5077: "Боге" #NT!
  VICTORY_POINTS_13046: "Россо" #NT!
  VICTORY_POINTS_5034: "Нуакшот"
  VICTORY_POINTS_8035: "Атар" #NT!
  VICTORY_POINTS_13906: "Зуэрат" #NT!
  VICTORY_POINTS_14185: "Бахир Дар" #NT!
- VICTORY_POINTS_13369: "Мекелле" #NT!
+ VICTORY_POINTS_13369: "Мэкэле" #NT!
  VICTORY_POINTS_4851: "Мхлахландлела" #NT!
- VICTORY_POINTS_10594: "Нгвена" #NT!
+ VICTORY_POINTS_10594: "Н'гвена" #NT!
  VICTORY_POINTS_697: "Монгу" #NT!
  VICTORY_POINTS_10972: "Чикононо" #NT!
  VICTORY_POINTS_13442: "Мантимба" #NT!
  VICTORY_POINTS_5212: "Манджакази" #NT!
  VICTORY_POINTS_13434: "Джинджа" #NT!
  VICTORY_POINTS_13435: "Мумиас" #NT!
- VICTORY_POINTS_5212: "Шай-шай" #NT!
+ VICTORY_POINTS_5212: "Ксай-ксай" #NT!
  VICTORY_POINTS_2120: "Келимане" #NT!
  VICTORY_POINTS_14155: "Бонга" #NT!
  VICTORY_POINTS_14163: "Иргалем" #NT!
@@ -1959,7 +1977,7 @@
  VICTORY_POINTS_4927: "Дженне" #NT!
  VICTORY_POINTS_13278: "Одиенне" #NT!
  VICTORY_POINTS_12751: "Сигири" #NT!
- VICTORY_POINTS_14301: "Лингир" #NT!
+ VICTORY_POINTS_14301: "Лингер" #NT!
  VICTORY_POINTS_14330: "Сананкоро" #NT!
  VICTORY_POINTS_14332: "Сегу" #NT!
  VICTORY_POINTS_12747: "Габу" #NT!
@@ -1984,8 +2002,8 @@
  VICTORY_POINTS_11998: "Бриндизи"
  VICTORY_POINTS_10968: "Мбанза Нгойо" #NT!
  VICTORY_POINTS_13417: "Ламбарене" #NT!
- VICTORY_POINTS_1817: "Бункейя" #NT!
- VICTORY_POINTS_8207: "Муиль" #NT!
+ VICTORY_POINTS_1817: "Bunkeya" #NT!
+ VICTORY_POINTS_8207: "Моуил" #NT!
  VICTORY_POINTS_2192: "Owando" #NT!
  VICTORY_POINTS_13416: "Илебо" #NT!
  VICTORY_POINTS_13412: "Мбанза Лоанго" #NT!
@@ -2004,9 +2022,9 @@
  VICTORY_POINTS_9962: "Ньянза" #NT!
  VICTORY_POINTS_14368: "Доссо" #NT!
  VICTORY_POINTS_7088: "Кабароле" #NT!
- VICTORY_POINTS_13424: "Бвераньяндж" #NT!
+ VICTORY_POINTS_13424: "Бвераньянге" #NT!
  VICTORY_POINTS_10972: "Чикононо" #NT!
- VICTORY_POINTS_14309: "Орефонд" #NT!
+ VICTORY_POINTS_14309: "Орефонде" #NT!
  VICTORY_POINTS_13407: "Мбиссель" #NT!
  VICTORY_POINTS_14304: "Кавон" #NT!
  VICTORY_POINTS_13355: "Ча" #NT!

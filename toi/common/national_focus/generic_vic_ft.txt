@@ -2,7 +2,7 @@
 #Takes around ### years to complete, making most countries complete it in ###
 focus_tree = {
 	id = generic_vic_ft
-	#continuous_focus_position = {x = 600 y = 1000 }
+	continuous_focus_position = { x = 100 y = 1100 }
 	country = {
 		factor = 1
 
@@ -23,1375 +23,1167 @@ focus_tree = {
 	}
 
 	default = yes
-
-	focus = {
-		id = generic_focus_industry
-		icon = GFX_goal_generic_build_tank
+	
+	## Government / Literacy ##
+	focus = { # Strengthen Govt
+		id = generic_focus_vic_strengthen_government
+		icon = GFX_Focus_Government_2
 		x = 4
 		y = 0
-		cost = 75
+		cost = 140
+
+		bypass = {
+			has_idea = institution_centralization
+		}
+
+		completion_reward = {
+			set_temp_variable = { institution_progress_temp = 10 }
+			eoanbr_institutions_centralization_change = yes
+			add_political_power = 100
+			unlock_decision_tooltip = generic_vic_strengthen_the_state
+		}
 
 		ai_will_do = {
 			factor = 1
 		}
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_refinement_techs }
-		}
 	}
-
-	focus = {
-		id = generic_focus_mechanical_engineering
-		icon = GFX_Focus_industrial_revolution
-		x = 2
+	focus = { # Centralization
+		id = generic_focus_vic_centralization
+		icon = GFX_Focus_Government_Centralized
+		relative_position_id = generic_focus_vic_strengthen_government
+		x = -1
 		y = 1
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_industry }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
-		}
-	}
-
-	focus = {
-		id = generic_focus_electronics_devices
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_industry }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics_devices_tech }
-		}
-	}
-
-	focus = {
-		id = generic_focus_expand_research_facilities
-		icon = GFX_focus_research2
-		x = 1
-		y = 2
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_mechanical_engineering focus = generic_focus_electronics_devices }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.75 uses = 1 category = cat_science_techs }
-		}
-	}
-
-	focus = {
-		id = generic_focus_build_civ_factory
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 4
-		y = 1
-		cost = 250
-
-		ai_will_do = {
-			factor = 0.25
-		}
+		cost = 70
 		available = {
+			PS_pol_positive = yes
+		}
+		prerequisite = {
+			focus = generic_focus_vic_strengthen_government
+		}
+		mutually_exclusive = {
+			focus = generic_focus_vic_decentralization
+		}
+		bypass = {
+			has_idea = institution_centralization
+		}
+
+
+		completion_reward = {
+			decrease_ps_by_one = yes
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_centralization_change = yes
+			add_political_power = -100
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Central Mgmt
+		id = generic_focus_vic_central_management
+		icon = GFX_Focus_Government_Reform_2
+		relative_position_id = generic_focus_vic_centralization
+		x = -1
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_centralization
+		}
+
+		completion_reward = {
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_centralization_change = yes
+			add_timed_idea = {
+				idea = generic_vic_idea_central_management
+				years = 15
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Decentralization
+		id = generic_focus_vic_decentralization
+		icon = GFX_Focus_Government_Decentralized
+		relative_position_id = generic_focus_vic_strengthen_government
+		x = 1
+		y = 1
+		cost = 70
+		available = {
+			NOT = { has_idea = institution_centralization }
+		}
+		prerequisite = {
+			focus = generic_focus_vic_strengthen_government
+		}
+		mutually_exclusive = {
+			focus = generic_focus_vic_centralization
+		}
+
+
+		completion_reward = {
+			add_stability = 0.05
+			increase_ps_by_one = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Regional Autonomy
+		id = generic_focus_vic_regional_autonomy
+		icon = GFX_focus_generic_self_management
+		relative_position_id = generic_focus_vic_decentralization
+		x = 1
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_decentralization
+		}
+
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = generic_vic_idea_regional_autonomy
+				years = 15
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Literacy Program
+		id = generic_focus_vic_literacy_program
+		icon = GFX_Focus_Education_Books
+		x = 9
+		y = 0
+		cost = 140
+
+		available = {
+			PS_pol_positive = yes
+		}
+		bypass = {
 			has_idea = institution_industrialization
 		}
-		prerequisite = { focus = generic_focus_industry }
 
 		completion_reward = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = generic_show_effect_if_not_ai
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-							OR = {
-								is_in_home_area = yes
-								NOT = {
-									owner = {
-										any_owned_state = {
-											free_building_slots = {
-												building = industrial_complex
-												size > 0
-												include_locked = yes
-											}
-											is_in_home_area = yes
-										}
-									}
-								}
-							}
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
+			decrease_ps_by_one = yes
+			set_temp_variable = { institution_progress_temp = 2.5 }
+			eoanbr_institutions_rationalism_change = yes
+			add_timed_idea = {
+				idea = generic_vic_idea_literacy_program
+				years = 5
 			}
 		}
-	}
-
-	focus = {
-		id = generic_focus_build_mil_factory
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 4
-		y = 2
-		cost = 250
-
-		ai_will_do = {
-			factor = 0.25
-		}
-		prerequisite = { focus = generic_focus_build_civ_factory }
-
-		completion_reward = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = generic_show_effect_if_not_ai
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 0
-								include_locked = yes
-							}
-							OR = {
-								is_in_home_area = yes
-								NOT = {
-									owner = {
-										any_owned_state = {
-											free_building_slots = {
-												building = arms_factory
-												size > 0
-												include_locked = yes
-											}
-											is_in_home_area = yes
-										}
-									}
-								}
-							}
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_military_research
-		icon = GFX_focus_research
-		x = 3
-		y = 3
-		cost = 75
 
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = generic_focus_build_mil_factory }
-		prerequisite = { focus = generic_focus_expand_research_facilities }
+	}
+	focus = { # Establish Centers of Learning
+		id = generic_focus_vic_establish_centers_of_learning
+		icon = GFX_Focus_open_a_university
+		relative_position_id = generic_focus_vic_literacy_program
+		x = 0
+		y = 2
+		cost = 140
+		available = {
+			PS_pol_positive = yes
+		}
+		prerequisite = {
+			focus = generic_focus_vic_literacy_program
+		}
+		bypass = {
+			has_idea = institution_industrialization
+		}
+
 
 		completion_reward = {
-			add_tech_bonus = { bonus = 0.75 uses = 1 category = cat_small_arms_techs }
+			decrease_ps_by_one = yes
+			set_temp_variable = { institution_progress_temp = 2.5 }
+			eoanbr_institutions_rationalism_change = yes
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_literacy_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_literacy_program
+					years = 5
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_literacy_program
+					years = 5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
-
-	focus = {
-		id = generic_focus_aviation_research
-		icon = GFX_goal_generic_air_fighter2
+	focus = { # Establish the Press
+		id = generic_focus_vic_establish_the_press
+		icon = GFX_Focus_Newspaper_Tax
+		relative_position_id = generic_focus_vic_literacy_program
 		x = 2
-		y = 4
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_military_research }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.75 uses = 1 category = aviation_tech }
-		}
-	}
-
-	focus = {
-		id = generic_focus_naval_research
-		icon = GFX_goal_generic_amphibious_assault
-		x = 4
-		y = 4
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_military_research }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.75 uses = 1 category = naval_equipment }
-		}
-	}
-
-	focus = {
-		id = generic_focus_new_roads
-		icon = GFX_goal_generic_construction2
-		x = 6
-		y = 0
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_new_roads_2
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 6
 		y = 1
-		cost = 75
+		cost = 140
+		available = { has_idea = institution_centralization PS_pol_positive = yes }
+		prerequisite = {
+			focus = generic_focus_vic_literacy_program
+		}
+		bypass = {
+			NOT = { has_idea = no_press }
+		}
+
+
+		completion_reward = {
+			decrease_ps_by_one = yes
+			swap_ideas = { add_idea = state_controlled_press remove_idea = no_press }
+			add_political_power = -100
+		}
 
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = generic_focus_new_roads }
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 	}
-
-	focus = {
-		id = generic_focus_new_roads_3
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 6
-		y = 2
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_new_roads_2 }
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_cotton_farms
-		icon = GFX_goal_anschluss
-		x = 6
-		y = 4
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_new_roads_3 focus = generic_focus_build_mil_factory }
-
-		completion_reward = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						set_temp_variable = { industry_token_temp = token:cotton_plantation }
-						has_free_industry_slots = yes
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										set_temp_variable = { industry_token_temp = token:cotton_plantation }
-										has_free_industry_slots = yes
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					set_temp_variable = { industry_token = token:cotton_plantation }
-					add_x_industries = yes
-				}
-			}
-			else = {
-				custom_effect_tooltip = generic_show_effect_if_not_ai
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							set_temp_variable = { industry_token_temp = token:cotton_plantation }
-							has_free_industry_slots = yes
-							OR = {
-								is_in_home_area = yes
-								NOT = {
-									owner = {
-										any_owned_state = {
-											set_temp_variable = { industry_token_temp = token:cotton_plantation }
-											has_free_industry_slots = yes
-											is_in_home_area = yes
-										}
-									}
-								}
-							}
-						}
-						set_temp_variable = { industry_token = token:cotton_plantation }
-						add_x_industries = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_coal_mine
-		icon = GFX_goal_generic_construction
-		x = 5
-		y = 5
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_cotton_farms }
-		available = {
-			has_tech = tech_diamond_core_drill
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						OR = {
-							is_in_home_area = yes
-							# NOT = {
-							# 	owner = {
-							# 		any_owned_state = {
-							# 			free_building_slots = {
-							# 				building = coal_mine
-							# 				size > 0
-							# 				include_locked = yes
-							# 			}
-							# 			is_in_home_area = yes
-							# 		}
-							# 	}
-							# }
-						}
-					}
-					add_resource = {
-						type = coal
-						amount = 2
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = generic_show_effect_if_not_ai
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							OR = {
-								is_in_home_area = yes
-								# NOT = {
-								# 	owner = {
-								# 		any_owned_state = {
-								# 			free_building_slots = {
-								# 				building = coal_mine
-								# 				size > 0
-								# 				include_locked = yes
-								# 			}
-								# 			is_in_home_area = yes
-								# 		}
-								# 	}
-								# }
-							}
-						}
-						add_resource = {
-							type = coal
-							amount = 2
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_locate_iron_deposits
-		icon = GFX_focus_generic_steel
-		x = 5
-		y = 6
-		cost = 90
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_coal_mine }
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-				}
-				add_resource = {
-					type = iron
-					amount = 2
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_logging_camp
-		icon = GFX_goal_generic_construct_civilian
-		x = 7
-		y = 5
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_cotton_farms }
-
-		completion_reward = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = logging_camp
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = logging_camp
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_resource = {
-						type = wood
-						amount = 2 
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = generic_show_effect_if_not_ai
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = logging_camp
-								size > 0
-								include_locked = yes
-							}
-							OR = {
-								is_in_home_area = yes
-								NOT = {
-									owner = {
-										any_owned_state = {
-											free_building_slots = {
-												building = logging_camp
-												size > 0
-												include_locked = yes
-											}
-											is_in_home_area = yes
-										}
-									}
-								}
-							}
-						}
-						add_resource = {
-							type = wood
-							amount = 2
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_manage_national_forests
-		icon = GFX_focus_generic_treaty
-		x = 7
-		y = 6
-		cost = 90
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_logging_camp }
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-				}
-				add_resource = {
-					type = wood
-					amount = 4
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_nationalize_resources
-		icon = GFX_goal_generic_construction2
-		x = 6
-		y = 7
-		cost = 100
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_manage_national_forests }
-		prerequisite = { focus = generic_focus_locate_iron_deposits }
-
-		completion_reward = {
-			add_timed_idea = { idea = eoanb_idea_generic_focus_resources_nationalized days = 3650 }
-		}
-	}
-
-	focus = {
-		id = generic_focus_improve_army
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 9
-		y = 0
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			army_experience = 10
-		}
-	}
-
-	focus = {
-		id = generic_focus_doctrines_1
-		icon = GFX_goal_generic_army_doctrines
-		x = 8
+	focus = { # Political Reform
+		id = generic_focus_vic_political_reform
+		icon = GFX_Focus_Government_Reform
+		relative_position_id = generic_focus_vic_establish_the_press
+		x = 0
 		y = 1
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
+		cost = 140
+		available = { 
+			has_idea = institution_rationalism
+			has_idea = institution_centralization
+			PS_pol_positive = yes
 		}
-		prerequisite = { focus = generic_focus_improve_army }
-
-		completion_reward = {
-			add_doctrine_cost_reduction = { cost_reduction = 0.75 uses = 1 category = land_doctrine }
-		}
-	}
-
-	focus = {
-		id = generic_focus_doctrines_2
-		icon = GFX_goal_generic_army_doctrines
-		x = 8
-		y = 2
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_doctrines_1 }
-
-		completion_reward = {
-			add_doctrine_cost_reduction = { cost_reduction = 0.75 uses = 1 category = land_doctrine }
-		}
-	}
-
-	focus = {
-		id = generic_focus_new_weapons
-		icon = GFX_goal_generic_army_artillery
-		x = 10
-		y = 1
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_improve_army }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_small_arms_techs }
-		}
-	}
-
-	focus = {
-		id = generic_focus_intel_staff
-		icon = GFX_goal_generic_cavalry
-		x = 10
-		y = 2
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_new_weapons }
-
-		completion_reward = {
-			add_timed_idea = { idea = eoanb_idea_generic_focus_intel days = 3650 }
-		}
-	}
-
-	focus = {
-		id = generic_focus_better_staff
-		icon = GFX_goal_generic_alliance
-		x = 9
-		y = 3
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_intel_staff focus = generic_focus_doctrines_2 }
-
-		completion_reward = {
-			add_timed_idea = { idea = eoanb_idea_generic_focus_staff days = 3650 }
-		}
-	}
-
-	focus = {
-		id = generic_focus_support_corps
-		icon = GFX_goal_generic_national_unity
-		x = 9
-		y = 5
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_better_staff }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.3 uses = 1 category = cat_artillery_techs }
-			add_tech_bonus = { bonus = 0.3 uses = 1 category = support_tech }
-		}
-	}
-
-	focus = {
-		id = generic_focus_cavalry_tech
-		icon = GFX_goal_generic_cavalry
-		x = 9
-		y = 6
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_support_corps }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_calvary_techs }
-		}
-	}
-
-	focus = {
-		id = generic_focus_navy
-		icon = GFX_goal_generic_navy_battleship
-		x = 13
-		y = 0
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			any_owned_state = { is_coastal = yes }
+		prerequisite = {
+			focus = generic_focus_vic_establish_the_press
 		}
 
-		completion_reward = {
-			navy_experience = 25
-		}
-	}
-
-	focus = {
-		id = generic_focus_naval_dockyards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 12
-		y = 1
-		cost = 250
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			any_owned_state = { is_coastal = yes }
-		}
-		prerequisite = { focus = generic_focus_navy }
-
-		completion_reward = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = generic_show_effect_if_not_ai
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							is_coastal = yes
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = dockyard
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_naval_innovation
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 14
-		y = 1
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_navy }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.3 uses = 2 category = naval_equipment }
-		}
-	}
-
-	focus = {
-		id = generic_focus_fleet_infrastructure
-		icon = GFX_goal_generic_navy_cruiser
-		x = 14
-		y = 2
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_naval_innovation }
-
-		completion_reward = {
-			add_timed_idea = { idea = eoanb_idea_generic_focus_fleet_infra days = 3650 }
-		}
-	}
-
-	focus = {
-		id = generic_focus_naval_dockyards_2
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 12
-		y = 2
-		cost = 250
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			any_owned_state = { is_coastal = yes }
-		}
-		prerequisite = { focus = generic_focus_naval_dockyards }
-
-		completion_reward = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = generic_show_effect_if_not_ai
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							is_coastal = yes
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = dockyard
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = generic_focus_victorian_air_corps
-		icon = GFX_goal_generic_build_airforce
-		x = 11
-		y = 4
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_tech = balloon_designs
-		}
-		prerequisite = { focus = generic_focus_naval_dockyards_2 focus = generic_focus_fleet_infrastructure }
-		prerequisite = { focus = generic_focus_better_staff }
-
-		completion_reward = {
-			air_experience = 25
-		}
-	}
-
-	focus = {
-		id = generic_focus_aviation_projects
-		icon = GFX_goal_generic_construction
-		x = 11
-		y = 5
-		cost = 125
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_victorian_air_corps }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = aviation_tech }
-		}
-	}
-
-	focus = {
-		id = generic_focus_victorian_industrial_society
-		icon = GFX_focus_focus_generic_industry_1
-		x = 11
-		y = 9
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_limited_constitution }
-		prerequisite = { focus = generic_focus_nationalize_resources }
-		available = {
-			has_tech = tech_humanities_industrial_society
-		}
-
-		completion_reward = {
-			add_stability = 0.02
-			add_tech_bonus = { bonus = 0.25 uses = 1 category = humanities_tech }
-			load_focus_tree = generic_mac_ft
-		}
-	}
-
-	focus = {
-		id = generic_focus_strengthen_government
-		icon = GFX_Focus_Government_Reform_Administration
-		x = 17
-		y = 0
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = generic_focus_internal_stabilization
-		icon = GFX_Focus_Law_Vote_1
-		x = 16
-		y = 1
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_strengthen_government }
-
-		completion_reward = {
-			add_political_power = -25
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = generic_focus_war_rhetoric
-		icon = GFX_Focus_Partisans_Popularize
-		x = 18
-		y = 1
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_strengthen_government }
-
-		completion_reward = {
-			add_political_power = -25
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = generic_focus_defend_ideology
-		icon = GFX_focus_generic_self_management
-		x = 17
-		y = 2
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_war_rhetoric focus = generic_focus_internal_stabilization }
-
-		completion_reward = {
-			add_timed_idea = { idea = eoanb_idea_generic_focus_ideology days = 1000 }
-		}
-	}
-
-	focus = {
-		id = generic_focus_decide_future_gov
-		icon = GFX_Focus_Vote_Election
-		x = 17
-		y = 3
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_defend_ideology }
-
-		completion_reward = {
-			country_event = { id = generic.12 days = 1 }
-		}
-	}
-
-	focus = {
-		id = generic_focus_gov_centralized
-		icon = GFX_Focus_Elite
-		x = 15
-		y = 4
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_decide_future_gov }
-		available = {
-			always = no
-		}
-		mutually_exclusive = {  focus = generic_focus_gov_decentralized }
-
-		completion_reward = {
-			#
-		}
-	}
-
-	focus = {
-		id = generic_focus_centralized_administration
-		icon = GFX_focus_generic_treaty
-		x = 14
-		y = 5
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_gov_centralized }
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-	focus = {
-		id = generic_focus_centralized_economic_management
-		icon = GFX_Focus_Economy_Increase_Wages
-		x = 14
-		y = 6
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_centralized_administration }
-
-		completion_reward = {
-			add_stability = 0.02
-			add_political_power = 20
-		}
-	}
-
-	focus = {
-		id = generic_focus_centralized_army
-		icon = GFX_Focus_Army_Reforms
-		x = 16
-		y = 5
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_gov_centralized }
-
-		completion_reward = {
-			army_experience = 20
-		}
-	}
-
-	focus = {
-		id = generic_focus_high_command_reform
-		icon = GFX_focus_generic_military_academy
-		x = 16
-		y = 6
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_centralized_army }
-
-		completion_reward = {
-			add_war_support = 0.05
-			army_experience = 5
-		}
-	}
-
-	focus = {
-		id = generic_focus_stabilized_centralization
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 15
-		y = 7
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_high_command_reform focus = generic_focus_centralized_economic_management }
-
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = generic_focus_gov_decentralized
-		icon = GFX_Focus_Government_Decentralized
-		x = 19
-		y = 4
-		cost = 75
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_decide_future_gov }
-		available = {
-			always = no
-		}
-		mutually_exclusive = {  focus = generic_focus_gov_centralized }
-
-		completion_reward = {
-			#
-		}
-	}
-
-	focus = {
-		id = generic_focus_decentralized_autonomy
-		icon = GFX_Focus_Map_Gerrymandering
-		x = 18
-		y = 5
-		cost = 120
-
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = generic_focus_gov_decentralized }
 
 		completion_reward = {
 			add_political_power = 200
-			add_war_support = 0.02
+			add_stability = 0.1
+			decrease_ps_by_two = yes
 		}
-	}
-
-	focus = {
-		id = generic_focus_spread_military
-		icon = GFX_focus_generic_military_mission
-		x = 20
-		y = 5
-		cost = 120
 
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = generic_focus_gov_decentralized }
+	}
+	
+	focus = { # Bureaucratic Structure
+		id = generic_focus_vic_bureaucratic_structure
+		icon = GFX_Focus_Examine_Foreign_Laws
+		relative_position_id = generic_focus_vic_strengthen_government
+		x = 0
+		y = 2
+		cost = 70
+		available = { has_idea = institution_centralization }
+		prerequisite = {
+			focus = generic_focus_vic_centralization
+			focus = generic_focus_vic_decentralization
+		}
+
 
 		completion_reward = {
-			army_experience = 50
+			add_political_power = 100
+			add_stability = 0.05
+			modify_timed_idea = {
+				idea = generic_vic_idea_regional_autonomy
+				years = 5
+			}
+			modify_timed_idea = {
+				idea = generic_vic_idea_central_management
+				years = 5
+			}
+			add_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_1
+				years = 15
+			}
 		}
-	}
-
-	focus = {
-		id = generic_focus_decentralized_government
-		icon = GFX_Focus_Ideology_Support_Liberalism
-		x = 19
-		y = 7
-		cost = 75
 
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = generic_focus_decentralized_autonomy }
-		prerequisite = { focus = generic_focus_spread_military }
+	}
+
+	focus = { # Laissez Faire
+		id = generic_focus_vic_laissez_faire
+		icon = GFX_focus_capitalism_liberalism
+		relative_position_id = generic_focus_vic_bureaucratic_structure
+		x = -4
+		y = 1
+		cost = 70
+		mutually_exclusive = {
+			focus = generic_focus_vic_economic_interventionism
+		}
+		prerequisite = {
+			focus = generic_focus_vic_bureaucratic_structure
+		}
+
 
 		completion_reward = {
-			add_political_power = 20
-			add_stability = 0.02
-			add_war_support = 0.02
+			add_timed_idea = {
+				idea = generic_vic_idea_laissez_faire_1
+				years = 15
+			}
 		}
-	}
-
-	focus = {
-		id = generic_focus_limited_constitution
-		icon = GFX_Focus_Freedom_Press_newspapers
-		x = 17
-		y = 8
-		cost = 75
 
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = generic_focus_decentralized_government focus = generic_focus_stabilized_centralization }
+	}
+	focus = { # Invisible Hand
+		id = generic_focus_vic_invisible_hand
+		icon = GFX_Focus_social_investments
+		relative_position_id = generic_focus_vic_laissez_faire
+		x = 0
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_laissez_faire
+		}
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_idea_laissez_faire_1
+				add_idea = generic_vic_idea_laissez_faire_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Promote Free Trade
+		id = generic_focus_vic_promote_free_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = generic_focus_vic_invisible_hand
+		x = 0
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_invisible_hand
+		}
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_idea_laissez_faire_2
+				add_idea = generic_vic_idea_laissez_faire_3
+			}
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_locals_outcompeted
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					years = 5
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					years = 5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Economic Interventionism
+		id = generic_focus_vic_economic_interventionism
+		icon = GFX_Focus_economic_control
+		relative_position_id = generic_focus_vic_bureaucratic_structure
+		x = -2
+		y = 1
+		cost = 70
+		mutually_exclusive = {
+			focus = generic_focus_vic_laissez_faire
+		}
+		prerequisite = {
+			focus = generic_focus_vic_bureaucratic_structure
+		}
+
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = generic_vic_idea_economic_interventionism_1
+				years = 15
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Regulate Financial Markets
+		id = generic_focus_vic_regulate_financial_markets
+		icon = GFX_Focus_banks2
+		relative_position_id = generic_focus_vic_economic_interventionism
+		x = 0
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_economic_interventionism
+		}
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_idea_economic_interventionism_1
+				add_idea = generic_vic_idea_economic_interventionism_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Central Banking
+		id = generic_focus_vic_central_banking
+		icon = GFX_Focus_Legislate_Money
+		relative_position_id = generic_focus_vic_regulate_financial_markets
+		x = 0
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_regulate_financial_markets
+		}
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_idea_economic_interventionism_2
+				add_idea = generic_vic_idea_economic_interventionism_3
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Education Reform
+		id = generic_focus_vic_education_reform
+		icon = GFX_Focus_Renovate_School
+		relative_position_id = generic_focus_vic_bureaucratic_structure
+		x = 3
+		y = 1
+		cost = 70
+		available = { has_idea = institution_rationalism }
+		available = {
+			PS_pol_positive = yes
+		}
+		prerequisite = {
+			focus = generic_focus_vic_bureaucratic_structure
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_centers_of_learning
+		}
+
+
+		completion_reward = {
+			decrease_ps_by_one = yes
+			effect_increase_education = yes
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_literacy_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_literacy_program
+					years = 3
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_idea_literacy_program
+					add_idea = generic_vic_idea_education_program
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_idea_education_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_education_program
+					years = 3
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_education_program
+					years = 3
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Mechanical Engineering
+		id = generic_focus_vic_mechanical_engineering
+		icon = GFX_Focus_transport_geared_railway
+		relative_position_id = generic_focus_vic_education_reform
+		x = -1
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_education_reform
+		}
+
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_transportation_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Mining Research
+		id = generic_focus_vic_mining_research
+		icon = GFX_Focus_Extraction_Enhancement_Dynamite
+		relative_position_id = generic_focus_vic_mechanical_engineering
+		x = 0
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_mechanical_engineering
+		}
+
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_extraction_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Scientific Studies
+		id = generic_focus_vic_scientific_studies
+		icon = GFX_Focus_Engineering_Science_Technology
+		relative_position_id = generic_focus_vic_education_reform
+		x = 1
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_education_reform
+		}
+
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_science_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Electronic Devices
+		id = generic_focus_vic_electronic_devices
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		relative_position_id = generic_focus_vic_scientific_studies
+		x = 0
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_scientific_studies
+		}
+
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = electronics_devices_tech }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Expand Research Facilities
+		id = generic_focus_vic_expand_research_facilities
+		icon = GFX_focus_research2
+		relative_position_id = generic_focus_vic_education_reform
+		x = 0
+		y = 3
+		cost = 70
+
+		available = {
+			has_completed_focus = generic_focus_vic_industrial_revolution
+		}
+		prerequisite = {
+			focus = generic_focus_vic_mining_research
+		}
+		prerequisite = {
+			focus = generic_focus_vic_electronic_devices
+		}
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_education_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_education_program
+					years = 2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_idea_education_program
+					add_idea = generic_vic_idea_research_program
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_research_program
+					years = 2
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Dream of Flight
+		id = generic_focus_vic_dream_of_flight
+		icon = GFX_Focus_aviation_experimentation
+		relative_position_id = generic_focus_vic_expand_research_facilities
+		x = 0
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_expand_research_facilities
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = aviation_tech }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = { # Tax Reform
+		id = generic_focus_vic_tax_reform
+		icon = GFX_Focus_Economy_Tax
+		relative_position_id = generic_focus_vic_bureaucratic_structure
+		x = 0
+		y = 1
+		cost = 70
+		available = {
+			PS_pol_positive = yes
+		}
+		prerequisite = {
+			focus = generic_focus_vic_bureaucratic_structure
+		}
+		bypass = {
+			NOT = {
+				has_idea = generic_vic_idea_bureaucracy_1
+			}
+		}
+
+
+		completion_reward = {
+			decrease_ps_by_one = yes
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_1
+				years = 1
+			}
+			swap_ideas = {
+				remove_idea = generic_vic_idea_bureaucracy_1
+				add_idea = generic_vic_idea_bureaucracy_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Property Reform
+		id = generic_focus_vic_property_reform
+		icon = GFX_Focus_Assembly_Law
+		relative_position_id = generic_focus_vic_tax_reform
+		x = 0
+		y = 1
+		cost = 70
+		available = {
+			PS_pol_positive = yes
+		}
+		prerequisite = {
+			focus = generic_focus_vic_tax_reform
+		}
+		bypass = {
+			NOT = {
+				has_idea = generic_vic_idea_bureaucracy_2
+			}
+		}
+
+
+		completion_reward = {
+			decrease_ps_by_one = yes
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_1
+				years = 1
+			}
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_2
+				years = 1
+			}
+			if = {
+				limit = {
+					has_idea = lp_serfdom
+				}
+				swap_ideas = {
+					remove_idea = lp_serfdom
+					add_idea = lp_land_estates
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = lp_land_estates
+				}
+				swap_ideas = {
+					remove_idea = lp_land_estates
+					add_idea = lp_land_purchase
+				}
+			}
+			swap_ideas = {
+				remove_idea = generic_vic_idea_bureaucracy_2
+				add_idea = generic_vic_idea_bureaucracy_3
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Labor Reform
+		id = generic_focus_vic_labor_reform
+		icon = GFX_Focus_Working_Hours
+		relative_position_id = generic_focus_vic_property_reform
+		x = 0
+		y = 1
+		cost = 70
+		available = {
+			PS_pol_positive = yes
+		}
+		prerequisite = {
+			focus = generic_focus_vic_property_reform
+		}
+		bypass = {
+			NOT = {
+				has_idea = generic_vic_idea_bureaucracy_3
+			}
+		}
+
+
+		completion_reward = {
+			decrease_ps_by_one = yes
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_1
+				years = 1
+			}
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_2
+				years = 1
+			}
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_3
+				years = 1
+			}
+			effect_decrease_workhours = yes
+			swap_ideas = {
+				remove_idea = generic_vic_idea_bureaucracy_3
+				add_idea = generic_vic_idea_bureaucracy_4
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Extend the Education Program
+		id = generic_focus_vic_extend_the_education_program
+		icon = GFX_Focus_the_new_wisdom
+		relative_position_id = generic_focus_vic_labor_reform
+		x = 1
+		y = 1
+		cost = 70
+		available = {
+			PS_pol_positive = yes
+		}
+		prerequisite = {
+			focus = generic_focus_vic_education_reform
+		}
+		prerequisite = {
+			focus = generic_focus_vic_labor_reform
+		}
+		bypass = {
+			NOT = { has_idea = generic_vic_idea_education_program }
+			NOT = { has_idea = generic_vic_idea_research_program }
+		}
+
+
+		completion_reward = {
+			decrease_ps_by_one = yes
+			add_political_power = -50
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_education_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_education_program
+					years = 10
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_idea_research_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_research_program
+					years = 10
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Modern State
+		id = generic_focus_vic_modern_state
+		icon = GFX_focus_generic_improve_the_administration
+		relative_position_id = generic_focus_vic_extend_the_education_program
+		x = -2
+		y = 1
+		cost = 70
+		prerequisite = {
+			focus = generic_focus_vic_extend_the_education_program
+		}
+		prerequisite = {
+			focus = generic_focus_vic_expand_research_facilities
+		}
+		prerequisite = {
+			focus = generic_focus_vic_promote_free_trade
+			focus = generic_focus_vic_central_banking
+		}
+		bypass = {
+			NOT = {
+				has_idea = generic_vic_idea_bureaucracy_4
+			}
+		}
+
+
+		completion_reward = {
+			add_political_power = 100
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_1
+				years = 2
+			}
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_2
+				years = 2
+			}
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_3
+				years = 2
+			}
+			modify_timed_idea = {
+				idea = generic_vic_idea_bureaucracy_4
+				years = 2
+			}
+			swap_ideas = {
+				remove_idea = generic_vic_idea_bureaucracy_4
+				add_idea = generic_vic_idea_bureaucracy_5
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+ 	# Pre-Industrial
+	focus = { # Diplomacy with the Great Powers
+		id = generic_focus_vic_diplomacy_with_the_great_powers
+		icon = GFX_Focus_Continent_West_Europe
+		x = 15
+		y = 0
+		cost = 140
+
+		mutually_exclusive = {
+			focus = generic_focus_vic_retreat_into_isolationism
+		}
+		bypass = {
+			has_idea = institution_rationalism
+		}
+
+		completion_reward = {
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_rationalism_change = yes
+			custom_effect_tooltip = generic_focus_vic_allow_industry_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Invite Foreigners
+		id = generic_focus_vic_invite_foreigners
+		icon = GFX_Focus_Electorate_crowd
+		relative_position_id = generic_focus_vic_diplomacy_with_the_great_powers
+		x = -1
+		y = 1
+		cost = 70
+
+		available = {
+			has_stability > 0.3
+		}
+		prerequisite = {
+			focus = generic_focus_vic_diplomacy_with_the_great_powers
+		}
+		bypass = {
+			has_idea = institution_rationalism
+		}
+
+		completion_reward = {
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_rationalism_change = yes
+			add_stability = -0.05
+			unlock_decision_tooltip = generic_vic_invite_foreign_dignitaries
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Embrace Western Ideas
+		id = generic_focus_vic_embrace_western_ideas
+		icon = GFX_Focus_Ideology_Support_Democracy
+		relative_position_id = generic_focus_vic_invite_foreigners
+		x = 0
+		y = 1
+		cost = 140
+
+		available = {
+			has_stability > 0.4
+		}
+		prerequisite = {
+			focus = generic_focus_vic_invite_foreigners
+		}
+		bypass = {
+			has_idea = institution_rationalism
+		}
+
+		completion_reward = {
+			set_temp_variable = { institution_progress_temp = 10 }
+			eoanbr_institutions_rationalism_change = yes
+			add_popularity = {
+				ideology = centrism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = social_egalitarianism
+				popularity = 0.05
+			}
+			add_stability = -0.05
+			unlock_decision_tooltip = generic_vic_import_western_curriculum
+			unlock_decision_tooltip = generic_vic_adopt_capitalist_theories
+			unlock_decision_tooltip = generic_vic_encourage_egalitarianism
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Establish Trade Ties
+		id = generic_focus_vic_establish_trade_ties
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = generic_focus_vic_diplomacy_with_the_great_powers
+		x = 1
+		y = 1
+		cost = 70
+
+		available = {
+			has_stability > 0.25
+		}
+		prerequisite = {
+			focus = generic_focus_vic_diplomacy_with_the_great_powers
+		}
+		bypass = {
+			has_idea = institution_rationalism
+		}
+
+		completion_reward = {
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_rationalism_change = yes
+
+			increase_trade_law = yes
+
+			add_timed_idea = {
+				idea = generic_vic_idea_locals_outcompeted
+				years = 10
+			}
+
+			unlock_decision_tooltip = generic_vic_open_door_policy
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Allow Foreign Investment
+		id = generic_focus_vic_allow_foreign_investment
+		icon = GFX_Focus_international_investments
+		relative_position_id = generic_focus_vic_establish_trade_ties
+		x = 0
+		y = 1
+		cost = 140
+
+		available = {
+			has_stability > 0.4
+		}
+		prerequisite = {
+			focus = generic_focus_vic_invite_foreigners
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_trade_ties
+		}
+		bypass = {
+			has_idea = institution_industrialization
+		}
+
+		completion_reward = {
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_industrialization_change = yes
+
+			set_temp_variable = { x_temp = 10000 }
+			add_investment_fund = yes
+
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_locals_outcompeted
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					years = 5
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					years = 5
+				}
+			}
+
+			unlock_decision_tooltip = generic_vic_invite_foreign_investor
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Create Universities
+		id = generic_focus_vic_create_universities
+		icon = GFX_Focus_school_investment
+		relative_position_id = generic_focus_vic_establish_centers_of_learning
+		x = 0
+		y = 1
+		cost = 70
+
+		available = {
+			PS_pol_positive = yes
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_centers_of_learning
+		}
+		prerequisite = {
+			focus = generic_focus_vic_embrace_western_ideas
+		}
+
+		completion_reward = {
+			decrease_ps_by_one = yes
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_rationalism_change = yes
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_literacy_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_literacy_program
+					years = 5
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_idea_literacy_program
+					add_idea = generic_vic_idea_education_program
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_idea_education_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_education_program
+					years = 5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_idea_research_program
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_research_program
+					years = 5
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_education_program
+					years = 5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Adopt a Constitution
+		id = generic_focus_vic_adopt_a_constitution
+		icon = GFX_Focus_Law_plebicite
+		relative_position_id = generic_focus_vic_political_reform
+		x = 0
+		y = 1
+		cost = 70
+
 		available = {
 			has_idea = no_constitution
+			PS_pol_positive = yes
+			OR = {
+				centrism > 0.2
+				social_egalitarianism > 0.2
+			}
+		}
+		prerequisite = {
+			focus = generic_focus_vic_political_reform
+		}
+		prerequisite = {
+			focus = generic_focus_vic_embrace_western_ideas
 		}
 		bypass = {
 			NOT = {
@@ -1400,8 +1192,4949 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			decrease_ps_by_two = yes
 			swap_ideas = { add_idea = limited_constitution remove_idea = no_constitution }
 		}
+
+		ai_will_do = {
+			factor = 1
+		}
 	}
+	focus = { # Liberalization
+		id = generic_focus_vic_liberalization
+		icon = GFX_Focus_Freedom_Press_3
+		relative_position_id = generic_focus_vic_adopt_a_constitution
+		x = -1
+		y = 1
+		cost = 140
+
+		available = {
+			PS_pol_positive = yes
+			OR = {
+				centrism > 0.4
+				social_egalitarianism > 0.4
+			}
+		}
+		prerequisite = {
+			focus = generic_focus_vic_create_universities
+		}
+		prerequisite = {
+			focus = generic_focus_vic_adopt_a_constitution
+		}
+		bypass = {
+			has_idea = free_press
+			has_idea = foa_free_assembly
+		}
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = free_press } }
+				if = {
+					limit = { NOT = { has_idea = foa_free_assembly } }
+					decrease_ps_by_two = yes
+				}
+				else = {
+					decrease_ps_by_one = yes
+				}
+			}
+			else = {
+				decrease_ps_by_one = yes
+			}
+			add_stability = -0.05
+
+			if = { limit = { has_idea = no_press }
+				swap_ideas = { add_idea = free_press remove_idea = no_press }
+			}
+			else_if = { limit = { has_idea = state_controlled_press }
+				swap_ideas = { add_idea = free_press remove_idea = state_controlled_press }
+			}
+			else_if = { limit = { has_idea = censored_press }
+				swap_ideas = { add_idea = free_press remove_idea = censored_press }
+			}
+			
+			if = { limit = { has_idea = foa_banned }
+				swap_ideas = { add_idea = foa_free_assembly remove_idea = foa_banned }
+			}
+			else_if = { limit = { has_idea = foa_state_only }
+				swap_ideas = { add_idea = foa_free_assembly remove_idea = foa_state_only }
+			}
+			else_if = { limit = { has_idea = foa_restricted_attendence }
+				swap_ideas = { add_idea = foa_free_assembly remove_idea = foa_restricted_attendence }
+			}
+			else_if = { limit = { has_idea = foa_non_socialist }
+				swap_ideas = { add_idea = foa_free_assembly remove_idea = foa_non_socialist }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Retreat into Isolationism
+		id = generic_focus_vic_retreat_into_isolationism
+		icon = GFX_Focus_leave_continent_alone
+		x = 21
+		y = 0
+		cost = 140
+
+		available = {
+			NOT = { has_idea = institution_rationalism }
+		}
+		mutually_exclusive = {
+			focus = generic_focus_vic_diplomacy_with_the_great_powers
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = generic_vic_idea_isolationism_1
+				years = 25
+			}
+			set_temp_variable = { political_legitimacy_change = 0.1 }
+			eoanb_political_legitimacy_change = yes
+			custom_effect_tooltip = generic_focus_vic_allow_agriculture_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Self-Reliance Initiative
+		id = generic_focus_vic_self_reliance_initiative
+		icon = GFX_goal_generic_trade
+		relative_position_id = generic_focus_vic_retreat_into_isolationism
+		x = -1
+		y = 1
+		cost = 140
+
+		prerequisite = {
+			focus = generic_focus_vic_retreat_into_isolationism
+		}
+
+		completion_reward = {
+			decrease_trade_law = yes
+
+			if = { limit = { has_idea = generic_vic_idea_isolationism_1 }
+				swap_ideas = { add_idea = generic_vic_idea_isolationism_1_1 remove_idea = generic_vic_idea_isolationism_1 }
+			}
+			else = {
+				swap_ideas = { add_idea = generic_vic_idea_isolationism_2 remove_idea = generic_vic_idea_isolationism_1_2 }
+			}
+			unlock_decision_tooltip = generic_vic_promote_local_philosophies
+			unlock_decision_tooltip = generic_vic_source_local_designs
+			unlock_decision_tooltip = generic_vic_encourage_competitiveness
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Prevent Foreign Influence
+		id = generic_focus_vic_prevent_foreign_influence
+		icon = GFX_Focus_Electorate_Boost_Popularity
+		relative_position_id = generic_focus_vic_retreat_into_isolationism
+		x = 1
+		y = 1
+		cost = 140
+
+		prerequisite = {
+			focus = generic_focus_vic_retreat_into_isolationism
+		}
+
+		completion_reward = {
+			add_political_power = 200
+
+			if = { limit = { has_idea = generic_vic_idea_isolationism_1 }
+				swap_ideas = { add_idea = generic_vic_idea_isolationism_1_2 remove_idea = generic_vic_idea_isolationism_1 }
+			}
+			else = {
+				swap_ideas = { add_idea = generic_vic_idea_isolationism_2 remove_idea = generic_vic_idea_isolationism_1_1 }
+			}
+			unlock_decision_tooltip = generic_vic_anti_foreign_propaganda
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Noblesse Oblige
+		id = generic_focus_vic_noblesse_oblige
+		icon = GFX_Focus_Strong_Absolutist_Rule
+		relative_position_id = generic_focus_vic_self_reliance_initiative
+		x = 0
+		y = 1
+		cost = 140
+
+		prerequisite = {
+			focus = generic_focus_vic_self_reliance_initiative
+		}
+		prerequisite = {
+			focus = generic_focus_vic_prevent_foreign_influence
+		}
+
+		completion_reward = {
+			if = { limit = { has_idea = generic_vic_idea_isolationism_2 }
+				swap_ideas = { add_idea = generic_vic_idea_isolationism_2_1 remove_idea = generic_vic_idea_isolationism_2 }
+			}
+			else = {
+				swap_ideas = { add_idea = generic_vic_idea_isolationism_3 remove_idea = generic_vic_idea_isolationism_2_2 }
+			}
+			unlock_decision_tooltip = generic_vic_pull_on_obligations
+			unlock_decision_tooltip = generic_vic_grant_concessions
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Traditional Economy
+		id = generic_focus_vic_traditional_economy
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
+		relative_position_id = generic_focus_vic_retreat_into_isolationism
+		x = 1
+		y = 2
+		cost = 140
+
+		prerequisite = {
+			focus = generic_focus_vic_prevent_foreign_influence
+		}
+		prerequisite = {
+			focus = generic_focus_vic_self_reliance_initiative
+		}
+
+		completion_reward = {
+			if = { limit = { has_idea = generic_vic_idea_isolationism_2 }
+				swap_ideas = { add_idea = generic_vic_idea_isolationism_2_2 remove_idea = generic_vic_idea_isolationism_2 }
+			}
+			else = {
+				swap_ideas = { add_idea = generic_vic_idea_isolationism_3 remove_idea = generic_vic_idea_isolationism_2_1 }
+			}
+			unlock_decision_tooltip = generic_vic_reign_in_the_capitalists
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	focus = { # Infrastructure Projects
+		id = generic_focus_vic_infrastructure_projects
+		icon = GFX_Focus_Roads_Canals_Investment
+		x = 18
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_strengthen_government
+		}
+		bypass = {
+			has_idea = institution_industrialization
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = eoanb_category_generic_industrialization
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Fund Industrial Development
+		id = generic_focus_vic_fund_industrial_development
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = generic_focus_vic_infrastructure_projects
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			has_idea = institution_centralization
+			has_completed_focus = generic_focus_vic_literacy_program
+		}
+		prerequisite = {
+			focus = generic_focus_vic_infrastructure_projects
+		}
+		bypass = {
+			has_idea = institution_industrialization
+		}
+
+		completion_reward = {
+			unlock_decision_tooltip = generic_vic_encourage_workshops
+			unlock_decision_tooltip = generic_vic_support_urban_guilds
+			unlock_decision_tooltip = generic_vic_subsidize_artisanship
+			unlock_decision_tooltip = generic_vic_the_cottage_industry
+			unlock_decision_tooltip = generic_vic_fund_cultural_projects
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+ 	# Industrial Revolution
+	focus = { # Industrial Revolution
+		id = generic_focus_vic_industrial_revolution
+		icon = GFX_Focus_industrial_revolution
+		relative_position_id = generic_focus_vic_fund_industrial_development
+		x = 0
+		y = 1
+		cost = 210
+		
+		available = {
+			has_idea = institution_rationalism
+			PS_pol_positive = yes
+			has_stability > 0.5
+		}
+		prerequisite = {
+			focus = generic_focus_vic_fund_industrial_development
+		}
+		prerequisite = {
+			focus = generic_focus_vic_noblesse_oblige
+			focus = generic_focus_vic_allow_foreign_investment
+		}
+		bypass = {
+			NOT = { has_idea = agrarian }
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = agrarian
+				add_idea = industrializing
+			}
+			add_ideas = generic_vic_early_stages_of_industrialization
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_industrialization_change = yes
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_industry_techs }
+			add_stability = -0.05
+			decrease_ps_by_two = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = { # Embrace Industry
+		id = generic_focus_vic_embrace_industry
+		icon = GFX_Focus_Rapid_Industrial_Growth
+		relative_position_id = generic_focus_vic_industrial_revolution
+		x = -4
+		y = 1
+		cost = 70
+
+		available = {
+			PS_pol_positive = yes
+		}
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_balanced_approach
+			focus = generic_focus_vic_agricultural_focus
+		}
+		prerequisite = {
+			focus = generic_focus_vic_industrial_revolution
+		}
+		prerequisite = {
+			focus = generic_focus_vic_embrace_western_ideas
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_early_stages_of_industrialization
+				add_idea = generic_vic_embrace_industry_0
+			}
+			decrease_ps_by_two = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Balanced Approach
+		id = generic_focus_vic_balanced_approach
+		icon = GFX_focus_generic_modernize_industry
+		relative_position_id = generic_focus_vic_industrial_revolution
+		x = 0
+		y = 1
+		cost = 70
+
+		available = {
+			PS_pol_positive = yes
+		}
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_embrace_industry
+			focus = generic_focus_vic_agricultural_focus
+		}
+		prerequisite = {
+			focus = generic_focus_vic_industrial_revolution
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_early_stages_of_industrialization
+				add_idea = generic_vic_balanced_approach_0
+			}
+			decrease_ps_by_one = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Agricultural Focus
+		id = generic_focus_vic_agricultural_focus
+		icon = GFX_focus_generic_farmland
+		relative_position_id = generic_focus_vic_industrial_revolution
+		x = 4
+		y = 1
+		cost = 70
+
+		available = {
+			PS_pol_positive = yes
+		}
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_embrace_industry
+			focus = generic_focus_vic_balanced_approach
+		}
+		prerequisite = {
+			focus = generic_focus_vic_industrial_revolution
+		}
+		prerequisite = {
+			focus = generic_focus_vic_traditional_economy
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_early_stages_of_industrialization
+				add_idea = generic_vic_agricultural_focus_0
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = { # Captains of Industry
+		id = generic_focus_vic_captains_of_industry
+		icon = GFX_focus_generic_industrialists
+		relative_position_id = generic_focus_vic_embrace_industry
+		x = -1
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_embrace_industry
+		}
+
+		completion_reward = {
+			set_temp_variable = { institution_progress_temp = 1 }
+			eoanbr_institutions_industrialization_change = yes
+
+			set_temp_variable = { x_temp = 20000 }
+			add_investment_fund = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Urbanization
+		id = generic_focus_vic_urbanization
+		icon = GFX_Focus_Urbanization
+		relative_position_id = generic_focus_vic_embrace_industry
+		x = 1
+		y = 1
+		cost = 70
+
+		available = {
+			set_temp_variable = { industry_token = token:urban_center }
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_embrace_industry
+			focus = generic_focus_vic_balanced_approach
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:urban_center }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 8 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 16 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Expand the Consumer Goods Sector
+		id = generic_focus_vic_expand_the_consumer_goods_sector
+		icon = GFX_goal_generic_consumer_goods
+		relative_position_id = generic_focus_vic_balanced_approach
+		x = 0
+		y = 1
+		cost = 70
+
+		available = {
+			set_temp_variable = { industry_token = token:consumer_goods_factory }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_embrace_industry
+			focus = generic_focus_vic_balanced_approach
+			focus = generic_focus_vic_agricultural_focus
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:consumer_goods_factory }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 10 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 20 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Farm Enclosures
+		id = generic_focus_vic_farm_enclosures
+		icon = GFX_Focus_tomato_farming
+		relative_position_id = generic_focus_vic_agricultural_focus
+		x = -1
+		y = 1
+		cost = 70
+
+		available = {
+			set_temp_variable = { industry_token = token:crop_farm }
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_agricultural_focus
+			focus = generic_focus_vic_balanced_approach
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:crop_farm }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 6 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 12 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Preserve the Landowners
+		id = generic_focus_vic_preserve_the_landowners
+		icon = GFX_Focus_Electorate_cater_to_land_owners
+		relative_position_id = generic_focus_vic_agricultural_focus
+		x = 1
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_agricultural_focus
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0_1
+					add_idea = generic_vic_agricultural_focus_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_0_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0_2
+					add_idea = generic_vic_agricultural_focus_1_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0
+					add_idea = generic_vic_agricultural_focus_1_0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = { # Invest in Chemical Production
+		id = generic_focus_vic_invest_in_chemical_production
+		icon = GFX_Focus_Industry
+		relative_position_id = generic_focus_vic_captains_of_industry
+		x = -2
+		y = 1
+		cost = 70
+		
+		available = {
+			set_temp_variable = { industry_token = token:chemical_plant }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+
+		prerequisite = {
+			focus = generic_focus_vic_captains_of_industry
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:chemical_plant }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 8 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 16 }
+			}
+			add_debt = yes
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Rapid Innovation
+		id = generic_focus_vic_rapid_innovation
+		icon = GFX_focus_research
+		relative_position_id = generic_focus_vic_captains_of_industry
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_captains_of_industry
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0_1
+					add_idea = generic_vic_embrace_industry_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_0_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0_2
+					add_idea = generic_vic_embrace_industry_1_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0
+					add_idea = generic_vic_embrace_industry_1_0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Rapid Growth
+		id = generic_focus_vic_rapid_growth
+		icon = GFX_Focus_Economy_Prosperity
+		relative_position_id = generic_focus_vic_urbanization
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_urbanization
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0
+					add_idea = generic_vic_embrace_industry_0_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_1_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_0
+					add_idea = generic_vic_embrace_industry_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_2_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_0
+					add_idea = generic_vic_embrace_industry_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_3_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_3_0
+					add_idea = generic_vic_embrace_industry_3_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0_1
+					add_idea = generic_vic_balanced_approach_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_0_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0_2
+					add_idea = generic_vic_balanced_approach_1_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0
+					add_idea = generic_vic_balanced_approach_1_0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Build Logging Camps
+		id = generic_focus_vic_build_logging_camps
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
+		relative_position_id = generic_focus_vic_expand_the_consumer_goods_sector
+		x = -1
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_expand_the_consumer_goods_sector
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@wood > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@wood > 0 } }
+					add_resource = {
+						type = wood
+						amount = 20
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = wood
+						amount = 10
+					}
+				}
+			}
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Locate Iron Reserves
+		id = generic_focus_vic_locate_iron_reserves
+		icon = GFX_focus_generic_mining_industry
+		relative_position_id = generic_focus_vic_expand_the_consumer_goods_sector
+		x = 1
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_expand_the_consumer_goods_sector
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@iron > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@iron > 0 } }
+					add_resource = {
+						type = iron
+						amount = 10
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = iron
+						amount = 5
+					}
+				}
+			}
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Expand Sheep Farming
+		id = generic_focus_vic_expand_sheep_farming
+		icon = GFX_Focus_Agriculture_wool
+		relative_position_id = generic_focus_vic_farm_enclosures
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			set_temp_variable = { industry_token = token:livestock_ranch }
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_farm_enclosures
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:livestock_ranch }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@fiber > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@fiber > 0 } }
+					add_resource = {
+						type = fiber
+						amount = 5
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = fiber
+						amount = 3
+					}
+				}
+			}
+
+			set_temp_variable = { x_temp = 3 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 6 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Acquire Luxuries
+		id = generic_focus_vic_acquire_luxuries
+		icon = GFX_Focus_Agriculture_sugar
+		relative_position_id = generic_focus_vic_preserve_the_landowners
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_farm_enclosures
+		}
+		prerequisite = {
+			focus = generic_focus_vic_preserve_the_landowners
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@luxuries > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@lxuuries > 0 } }
+					add_resource = {
+						type = luxuries
+						amount = 2
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = luxuries
+						amount = 1
+					}
+				}
+			}
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Adopt Modern Business Practices
+		id = generic_focus_vic_adopt_modern_business_practices
+		icon = GFX_focus_mex_privatisation
+		relative_position_id = generic_focus_vic_rapid_innovation
+		x = -1
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_rapid_innovation
+		}
+		prerequisite = {
+			focus = generic_focus_vic_invest_in_chemical_production
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_1
+					add_idea = generic_vic_embrace_industry_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_1_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_2
+					add_idea = generic_vic_embrace_industry_2_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_0
+					add_idea = generic_vic_embrace_industry_2_0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Encourage the Domestic Steel Industry
+		id = generic_focus_vic_encourage_the_domestic_steel_industry
+		icon = GFX_Focus_Production_Iron
+		relative_position_id = generic_focus_vic_rapid_growth
+		x = -1
+		y = 1
+		cost = 70
+		
+		available = {
+			set_temp_variable = { industry_token = token:steel_foundry }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_captains_of_industry
+			focus = generic_focus_vic_rapid_growth
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:steel_foundry }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 8 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 16 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Tooling Workshops
+		id = generic_focus_vic_tooling_workshops
+		icon = GFX_goal_generic_construction2
+		relative_position_id = generic_focus_vic_expand_the_consumer_goods_sector
+		x = -2
+		y = 2
+		cost = 70
+		
+		available = {
+			set_temp_variable = { industry_token = token:tooling_workshop }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_expand_the_consumer_goods_sector
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:tooling_workshop }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 8 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 16 }
+			}
+			add_debt = yes
+		}
+
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Textile Production
+		id = generic_focus_vic_textile_production
+		icon = GFX_Focus_Production_Fabric
+		relative_position_id = generic_focus_vic_expand_the_consumer_goods_sector
+		x = 0
+		y = 2
+		cost = 70
+		
+		available = {
+			set_temp_variable = { industry_token = token:textile_mill }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_expand_the_consumer_goods_sector
+			focus = generic_focus_vic_expand_sheep_farming
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:textile_mill }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 6 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 12 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Modern Plows
+		id = generic_focus_vic_modern_plows
+		icon = GFX_Focus_health_famine_relief
+		relative_position_id = generic_focus_vic_expand_the_consumer_goods_sector
+		x = 2
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_expand_the_consumer_goods_sector
+			focus = generic_focus_vic_farm_enclosures
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_farm_implements_agriculture_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Adoption of Artificial Fertilizers
+		id = generic_focus_vic_adoption_of_artificial_fertilizers
+		icon = GFX_Focus_Agriculture_fertilizers
+		relative_position_id = generic_focus_vic_farm_enclosures
+		x = 1
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_farm_enclosures
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0
+					add_idea = generic_vic_agricultural_focus_0_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_1_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_0
+					add_idea = generic_vic_agricultural_focus_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_2_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_0
+					add_idea = generic_vic_agricultural_focus_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_3_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_3_0
+					add_idea = generic_vic_agricultural_focus_3_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_1_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_0
+					add_idea = generic_vic_balanced_approach_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_2_0
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_2_0
+					add_idea = generic_vic_balanced_approach_2_1
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0
+					add_idea = generic_vic_balanced_approach_0_1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Maintain Traditional Values
+		id = generic_focus_vic_maintain_traditional_values
+		icon = GFX_focus_generic_population_growth
+		relative_position_id = generic_focus_vic_preserve_the_landowners
+		x = 1
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_preserve_the_landowners
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_1
+					add_idea = generic_vic_agricultural_focus_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_1_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_2
+					add_idea = generic_vic_agricultural_focus_2_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_0
+					add_idea = generic_vic_agricultural_focus_2_0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Import Machinery
+		id = generic_focus_vic_import_machinery
+		icon = GFX_focus_SOV_merge_plants
+		relative_position_id = generic_focus_vic_encourage_the_domestic_steel_industry
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			set_temp_variable = { industry_token = token:mechanical_works }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_encourage_the_domestic_steel_industry
+		}
+		prerequisite = {
+			focus = generic_focus_vic_tooling_workshops
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 2000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:mechanical_works }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 20 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 2000 }
+				}
+				set_temp_variable = { x_temp = 40 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Railway Investments
+		id = generic_focus_vic_railway_investments
+		icon = GFX_focus_generic_railroad
+		relative_position_id = generic_focus_vic_build_logging_camps
+		x = 0
+		y = 2
+		cost = 70
+
+		available = {
+			set_temp_variable = { industry_token = token:railway }
+			is_valid_industry = yes
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_build_logging_camps
+		}
+		prerequisite = {
+			focus = generic_focus_vic_locate_iron_reserves
+		}
+		prerequisite = {
+			focus = generic_focus_vic_tooling_workshops
+		}
+		prerequisite = {
+			focus = generic_focus_vic_textile_production
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:railway }
+			capital_scope = {
+				add_x_industries = yes
+			}
+
+			set_temp_variable = { x_temp = 6 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 12 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Coal Mining
+		id = generic_focus_vic_coal_mining
+		icon = GFX_Focus_coal_mines
+		relative_position_id = generic_focus_vic_locate_iron_reserves
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_textile_production
+		}
+		prerequisite = {
+			focus = generic_focus_vic_locate_iron_reserves
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@coal > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@coal > 0 } }
+					add_resource = {
+						type = coal
+						amount = 10
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = coal
+						amount = 5
+					}
+				}
+			}
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Land Surveys
+		id = generic_focus_vic_land_surveys
+		icon = GFX_focus_generic_land_reclamation
+		relative_position_id = generic_focus_vic_acquire_luxuries
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_acquire_luxuries
+		}
+		prerequisite = {
+			focus = generic_focus_vic_adoption_of_artificial_fertilizers
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Plant Cotton Plantations
+		id = generic_focus_vic_plant_cotton_plantations
+		icon = GFX_Focus_Agriculture_cotton
+		relative_position_id = generic_focus_vic_maintain_traditional_values
+		x = 1
+		y = 1
+		cost = 70
+		
+		available = {
+			set_temp_variable = { industry_token = token:cotton_plantation }
+			is_valid_industry = yes
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_free_industry_slots = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = generic_focus_vic_maintain_traditional_values
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = 1 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 2 }
+			}
+
+			set_temp_variable = { industry_token = token:cotton_plantation }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+				add_x_industries = yes
+			}
+
+			if = {
+				limit = {
+					any_owned_state = {
+						check_variable = { base_resource@fiber > 0 }
+					}
+				}
+				random_owned_state = {
+					limit = { check_variable = { base_resource@fiber > 0 } }
+					add_resource = {
+						type = fiber
+						amount = 8
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_resource = {
+						type = fiber
+						amount = 4
+					}
+				}
+			}
+
+			set_temp_variable = { x_temp = 5 }
+			if = {
+				limit = {
+					check_variable = { gdp_amount > 1000 }
+				}
+				set_temp_variable = { x_temp = 10 }
+			}
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # The Corporate Architecture
+		id = generic_focus_vic_the_corporate_architecture
+		icon = GFX_Focus_Electorate_cater_to_aristocracy
+		relative_position_id = generic_focus_vic_adopt_modern_business_practices
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_adopt_modern_business_practices
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_1
+					add_idea = generic_vic_embrace_industry_3_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_2_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_2
+					add_idea = generic_vic_embrace_industry_3_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_0
+					add_idea = generic_vic_embrace_industry_3_0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # A New Way of Life
+		id = generic_focus_vic_a_new_way_of_life
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		relative_position_id = generic_focus_vic_import_machinery
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_import_machinery
+		}
+		prerequisite = {
+			focus = generic_focus_vic_railway_investments
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = generic_vic_embrace_industry_0
+						has_idea = generic_vic_embrace_industry_1_0
+						has_idea = generic_vic_embrace_industry_2_0
+						has_idea = generic_vic_embrace_industry_3_0
+					}
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0_1
+					add_idea = generic_vic_embrace_industry_0_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_0_1
+					add_idea = generic_vic_embrace_industry_0_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_1_1
+					add_idea = generic_vic_embrace_industry_1_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_2_1
+					add_idea = generic_vic_embrace_industry_2_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_3_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_embrace_industry_3_1
+					add_idea = generic_vic_embrace_industry_3_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_1
+					add_idea = generic_vic_balanced_approach_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_1_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_2
+					add_idea = generic_vic_balanced_approach_2_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_0
+					add_idea = generic_vic_balanced_approach_2_0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Telegraph Cables
+		id = generic_focus_vic_telegraph_cables
+		icon = GFX_Focus_Telegraph_Lines
+		relative_position_id = generic_focus_vic_railway_investments
+		x = -1
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_railway_investments
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_tech = electrical_telegraph }
+				}
+				add_tech_bonus = { bonus = 3 uses = 1 technology = electrical_telegraph }
+				custom_effect_tooltip = generic_focus_vic_telegraph_cables_tt
+			}
+			else = {
+				add_political_power = 100
+				add_tech_bonus = { bonus = 1 uses = 1 category = comms_tech }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # New Production Methods
+		id = generic_focus_vic_new_production_methods
+		icon = GFX_Focus_Industrial_Complex
+		relative_position_id = generic_focus_vic_railway_investments
+		x = 1
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_railway_investments
+		}
+		prerequisite = {
+			focus = generic_focus_vic_coal_mining
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 1 technology = tech_synthetic_fertilizers technology = tech_traction_engine technology = tech_slaughterhouses technology = tech_barbed_wire }
+			add_tech_bonus = { bonus = 1 uses = 1 technology = tech_hot_blast_furnace technology = tech_bessemer_process technology = tech_steam_powered_oil_derrick technology = tech_diamond_core_drill technology = tech_steam_powered_sawmill }
+			add_tech_bonus = { bonus = 1 uses = 1 technology = tech_sewing_machine technology = tech_electric_sewing_machine technology = tech_machinery_specialization technology = tech_mechanical_production technology = tech_precision_made_furniture technology = tech_steel_tools technology = tech_heavy_power_tools technology = tech_steel_bridge technology = tech_steel_girder_construction technology = tech_steel_tools }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Mechanized Agriculture
+		id = generic_focus_vic_mechanized_agriculture
+		icon = GFX_Focus_Agriculture_mechanization
+		relative_position_id = generic_focus_vic_modern_plows
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_modern_plows
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 3 ahead_reduction = 5 uses = 1 category = cat_farm_implements_agriculture_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # A Smooth Transition
+		id = generic_focus_vic_a_smooth_transition
+		icon = GFX_Focus_Agriculture_look_dawn
+		relative_position_id = generic_focus_vic_adoption_of_artificial_fertilizers
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_modern_plows
+		}
+		prerequisite = {
+			focus = generic_focus_vic_adoption_of_artificial_fertilizers
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = generic_vic_agricultural_focus_0
+						has_idea = generic_vic_agricultural_focus_1_0
+						has_idea = generic_vic_agricultural_focus_2_0
+						has_idea = generic_vic_agricultural_focus_3_0
+					}
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0_1
+					add_idea = generic_vic_agricultural_focus_0_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_0_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_0_1
+					add_idea = generic_vic_agricultural_focus_0_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_1_1
+					add_idea = generic_vic_agricultural_focus_1_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_1
+					add_idea = generic_vic_agricultural_focus_2_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_3_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_3_1
+					add_idea = generic_vic_agricultural_focus_3_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_1_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_1_1
+					add_idea = generic_vic_balanced_approach_1_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_balanced_approach_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_2_1
+					add_idea = generic_vic_balanced_approach_2_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_balanced_approach_0_1
+					add_idea = generic_vic_balanced_approach_0_2
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Aristocratic State
+		id = generic_focus_vic_aristocratic_state
+		icon = GFX_Focus_Electorate_the_elite
+		relative_position_id = generic_focus_vic_maintain_traditional_values
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_land_surveys
+		}
+		prerequisite = {
+			focus = generic_focus_vic_maintain_traditional_values
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_2_1
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_1
+					add_idea = generic_vic_agricultural_focus_3_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_2_2
+				}
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_2
+					add_idea = generic_vic_agricultural_focus_3_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = generic_vic_agricultural_focus_2_0
+					add_idea = generic_vic_agricultural_focus_3_0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # The Industrial Age
+		id = generic_focus_vic_industrial_age
+		icon = GFX_Focus_transport_railroad_development
+		relative_position_id = generic_focus_vic_new_production_methods
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_modern_state
+			has_completed_focus = generic_focus_vic_victorian_warfare
+		}
+		prerequisite = {
+			focus = generic_focus_vic_telegraph_cables
+		}
+		prerequisite = {
+			focus = generic_focus_vic_new_production_methods
+		}
+		prerequisite = {
+			focus = generic_focus_vic_mechanized_agriculture
+		}
+		prerequisite = {
+			focus = generic_focus_vic_the_corporate_architecture
+			focus = generic_focus_vic_aristocratic_state
+		}
+		prerequisite = {
+			focus = generic_focus_vic_a_new_way_of_life
+			focus = generic_focus_vic_a_smooth_transition
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = generic_vic_embrace_industry_3_2
+				}
+				remove_idea = generic_vic_embrace_industry_3_2
+			}
+			else_if = {
+				limit = {
+					has_idea = generic_vic_agricultural_focus_3_2
+				}
+				remove_idea = generic_vic_agricultural_focus_3_2
+			}
+			else = {
+				remove_idea = generic_vic_balanced_approach_2_2
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = generic_vic_embrace_industry_3_2
+					}
+					add_timed_idea = {
+						idea = generic_vic_embrace_industry_4
+						years = 10
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = generic_vic_agricultural_focus_3_2
+					}
+					add_timed_idea = {
+						idea = generic_vic_agricultural_focus_4
+						years = 10
+					}
+				}
+				else = {
+					add_timed_idea = {
+						idea = generic_vic_balanced_approach_3
+						years = 10
+					}
+				}
+			}
+			custom_effect_tooltip = generic_vic_gain_lasting_effects_of_ir_tt
+			
+			custom_effect_tooltip = generic_vic_transitions_to_next_tree_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Army
+	focus = { # Establish a Professional Army
+		id = generic_focus_vic_establish_a_professional_army
+		icon = GFX_Focus_Army_Reformed
+		x = 31
+		y = 0
+		cost = 70
+
+		available = {
+			has_completed_focus = generic_focus_vic_strengthen_government
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = land_doctrine_victorian
+				}
+				army_experience = 50
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.75
+					uses = 1
+					category = land_doctrine
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Cavalry Warfare
+		id = generic_focus_vic_cavalry_warfare
+		icon = GFX_Focus_Army_Cavalry_Sabers
+		relative_position_id = generic_focus_vic_establish_a_professional_army
+		x = -6
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_professional_army
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 1 category = cat_calvary_techs }
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = doctrine_victorian_cavalry_category
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Napoleonic Artillery
+		id = generic_focus_vic_napoleonic_artillery
+		icon = GFX_Focus_Army_Generic_Cannon_Artillery_Experiments
+		relative_position_id = generic_focus_vic_establish_a_professional_army
+		x = -4
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_professional_army
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = doctrine_victorian_artillery
+				}
+				add_tech_bonus = { bonus = 1 uses = 2 category = cat_artillery_techs }
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 1
+					category = doctrine_victorian_artillery_tech
+				}
+				add_tech_bonus = { bonus = 1 uses = 1 category = cat_artillery_techs }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Concentrated Fire
+		id = generic_focus_vic_concentrated_fire
+		icon = GFX_Goal_firepower
+		relative_position_id = generic_focus_vic_napoleonic_artillery
+		x = -2
+		y = 1
+		cost = 70
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_integrated_artillery
+		}
+		prerequisite = {
+			focus = generic_focus_vic_napoleonic_artillery
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = doctrine_victorian_corps_artillery_tech
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Integrated Artillery
+		id = generic_focus_vic_integrated_artillery
+		icon = GFX_Focus_Weapon_Canon_1
+		relative_position_id = generic_focus_vic_napoleonic_artillery
+		x = 0
+		y = 1
+		cost = 70
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_concentrated_fire
+		}
+		prerequisite = {
+			focus = generic_focus_vic_napoleonic_artillery
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = doctrine_victorian_massed_artillery_tech
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Import Artillery
+		id = generic_focus_vic_import_artillery
+		icon = GFX_Goal_military_procurement_focus
+		relative_position_id = generic_focus_vic_napoleonic_artillery
+		x = -1
+		y = 2
+		cost = 35
+		
+		available = {
+			has_completed_focus = generic_focus_vic_diplomacy_with_the_great_powers
+		}
+		prerequisite = {
+			focus = generic_focus_vic_concentrated_fire
+			focus = generic_focus_vic_integrated_artillery
+		}
+
+		completion_reward = {
+			set_temp_variable = { x_temp = -500 }
+			add_treasury = yes
+			add_equipment_to_stockpile = {
+				type = field_artillery_equipment
+				amount = 100
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Army Command Structure
+		id = generic_focus_vic_army_command_structure
+		icon = GFX_Focus_Army_Leadership
+		relative_position_id = generic_focus_vic_establish_a_professional_army
+		x = -2
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_establish_centers_of_learning
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_professional_army
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = generic_vic_army_command_structure
+				years = 25
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Study Foreign Tactics
+		id = generic_focus_vic_study_foreign_tactics
+		icon = GFX_Goal_european_advisers
+		relative_position_id = generic_focus_vic_establish_a_professional_army
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_diplomacy_with_the_great_powers
+		}
+		mutually_exclusive = {
+			focus = generic_focus_vic_rely_on_local_tactics
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_professional_army
+		}
+
+		completion_reward = {
+			add_ideas = generic_vic_study_foreign_tactics
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Follow the Prussian Model
+		id = generic_focus_vic_follow_the_prussian_model
+		icon = GFX_goal_focus_landwehr
+		relative_position_id = generic_focus_vic_study_foreign_tactics
+		x = -2
+		y = 1
+		cost = 70
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_follow_the_french_model
+			focus = generic_focus_vic_follow_the_american_model
+		}
+		prerequisite = {
+			focus = generic_focus_vic_study_foreign_tactics
+		}
+
+		completion_reward = {
+			add_political_power = -100
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = doctrine_victorian_orderly_decentralization
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Follow the French Model
+		id = generic_focus_vic_follow_the_french_model
+		icon = GFX_Focus_Army_Napoleonic
+		relative_position_id = generic_focus_vic_study_foreign_tactics
+		x = 0
+		y = 1
+		cost = 70
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_follow_the_prussian_model
+			focus = generic_focus_vic_follow_the_american_model
+		}
+		prerequisite = {
+			focus = generic_focus_vic_study_foreign_tactics
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = doctrine_victorian_napoleons_legacy
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Follow the American Model
+		id = generic_focus_vic_follow_the_american_model
+		icon = GFX_focus_usa_militarism
+		relative_position_id = generic_focus_vic_study_foreign_tactics
+		x = 2
+		y = 1
+		cost = 70
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_follow_the_prussian_model
+			focus = generic_focus_vic_follow_the_french_model
+		}
+		prerequisite = {
+			focus = generic_focus_vic_study_foreign_tactics
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = doctrine_victorian_adapting_tradition
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Local Initiative
+		id = generic_focus_vic_local_initiative
+		icon = GFX_Focus_Army_Staff_Reorganization_1
+		relative_position_id = generic_focus_vic_follow_the_prussian_model
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_follow_the_prussian_model
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = generic_vic_local_initiative
+				years = 20
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Defensive Stratagems
+		id = generic_focus_vic_defensive_stratagems
+		icon = GFX_Focus_Army_Defence_1
+		relative_position_id = generic_focus_vic_follow_the_french_model
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_follow_the_french_model
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = generic_vic_defensive_stratagems
+				years = 20
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Marksmanship
+		id = generic_focus_vic_marksmanship
+		icon = GFX_Focus_Soldier_Victorian_USA
+		relative_position_id = generic_focus_vic_follow_the_american_model
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_follow_the_american_model
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = generic_vic_marksmanship
+				years = 20
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Import Breech Loading Rifles
+		id = generic_focus_vic_import_breech_loading_rifles
+		icon = GFX_Focus_Trade_Gun
+		relative_position_id = generic_focus_vic_study_foreign_tactics
+		x = -1
+		y = 2
+		cost = 35
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = generic_focus_vic_follow_the_prussian_model
+				}
+				PRS = { has_tech = tech_infantry_rifle_equipment_3 }
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = generic_focus_vic_follow_the_french_model
+				}
+				FRA = { has_tech = tech_infantry_rifle_equipment_3 }
+			}
+			else = {
+				OR = {
+					PRS = { has_tech = tech_infantry_rifle_equipment_3 }
+					FRA = { has_tech = tech_infantry_rifle_equipment_3 }
+				}
+			}
+		}
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_import_muzzle_loading_rifles
+		}
+		prerequisite = {
+			focus = generic_focus_vic_follow_the_prussian_model
+			focus = generic_focus_vic_follow_the_french_model
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = generic_focus_vic_follow_the_prussian_model
+				}
+				set_temp_variable = { x_temp = -2000 }
+				add_treasury = yes
+				add_equipment_to_stockpile = {
+					type = tech_infantry_rifle_equipment_3
+					amount = 500
+					producer = PRS
+				}
+				PRS = {
+					set_temp_variable = { x_temp = 2000 }
+					add_treasury = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = generic_focus_vic_follow_the_french_model
+				}
+				set_temp_variable = { x_temp = -500 }
+				add_treasury = yes
+				add_equipment_to_stockpile = {
+					type = tech_infantry_rifle_equipment_3
+					amount = 500
+					producer = FRA
+				}
+				FRA = {
+					set_temp_variable = { x_temp = 500 }
+					add_treasury = yes
+				}
+			}
+			else = {
+				custom_effect_tooltip = generic_vic_import_blrs_tt
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Import Muzzle Loading Rifles
+		id = generic_focus_vic_import_muzzle_loading_rifles
+		icon = GFX_Focus_Trade_Gun
+		relative_position_id = generic_focus_vic_study_foreign_tactics
+		x = 1
+		y = 2
+		cost = 35
+
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = generic_focus_vic_follow_the_american_model
+				}
+				USA = { has_tech = tech_infantry_rifle_equipment_2 }
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = generic_focus_vic_follow_the_french_model
+				}
+				FRA = { has_tech = tech_infantry_rifle_equipment_2 }
+			}
+			else = {
+				OR = {
+					USA = { has_tech = tech_infantry_rifle_equipment_2 }
+					FRA = { has_tech = tech_infantry_rifle_equipment_2 }
+				}
+			}
+		}
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_import_breech_loading_rifles
+		}
+		prerequisite = {
+			focus = generic_focus_vic_follow_the_american_model
+			focus = generic_focus_vic_follow_the_french_model
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = generic_focus_vic_follow_the_american_model
+				}
+				set_temp_variable = { x_temp = -500 }
+				add_treasury = yes
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_rifle_2
+					amount = 500
+					producer = USA
+				}
+				USA = {
+					set_temp_variable = { x_temp = 500 }
+					add_treasury = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = generic_focus_vic_follow_the_french_model
+				}
+				set_temp_variable = { x_temp = -500 }
+				add_treasury = yes
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_rifle_2
+					amount = 500
+					producer = FRA
+				}
+				FRA = {
+					set_temp_variable = { x_temp = 500 }
+					add_treasury = yes
+				}
+			}
+			else = {
+				custom_effect_tooltip = generic_vic_import_mlrs_tt
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Rely on Local Tactics
+		id = generic_focus_vic_rely_on_local_tactics
+		icon = GFX_Focus_Army_Conservative
+		relative_position_id = generic_focus_vic_establish_a_professional_army
+		x = 4
+		y = 1
+		cost = 70
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_study_foreign_tactics
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_professional_army
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Foraging Expertise
+		id = generic_focus_vic_foraging_expertise
+		icon = GFX_focus_ETH_peacekeeping_forces
+		relative_position_id = generic_focus_vic_rely_on_local_tactics
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_rely_on_local_tactics
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = generic_vic_foraging_expertise
+				years = 25
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Hit and Run Warfare
+		id = generic_focus_vic_hit_and_run_warfare
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = generic_focus_vic_foraging_expertise
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_foraging_expertise
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_foraging_expertise
+				add_idea = generic_vic_hit_and_run_warfare
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # New Weapon Designs
+		id = generic_focus_vic_new_weapon_designs
+		icon = GFX_Focus_Weapon_Revolver_1
+		relative_position_id = generic_focus_vic_establish_a_professional_army
+		x = 6
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_establish_centers_of_learning
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_professional_army
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_small_arms_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # New Uniforms
+		id = generic_focus_vic_new_uniforms
+		icon = GFX_Focus_Army_Victorian_Traditional
+		relative_position_id = generic_focus_vic_new_weapon_designs
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_new_weapon_designs
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_equipment_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Gun Metallurgy Advances
+		id = generic_focus_vic_gun_metallurgy_advances
+		icon = GFX_Focus_Weapon_Canon_7
+		relative_position_id = generic_focus_vic_new_uniforms
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_scientific_studies
+		}
+		prerequisite = {
+			focus = generic_focus_vic_new_uniforms
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_artillery_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Army Support Battalions
+		id = generic_focus_vic_army_support_battalions
+		icon = GFX_goal_generic_special_forces
+		relative_position_id = generic_focus_vic_gun_metallurgy_advances
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_gun_metallurgy_advances
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_support_arms_techs }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # The National Armory
+		id = generic_focus_vic_the_national_armory
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = generic_focus_vic_establish_a_professional_army
+		x = 8
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_fund_industrial_development
+			any_owned_state = {
+				is_controlled_by = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = no
+				}
+			}
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_professional_army
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { x_temp = 10 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Streamlined Small Arms Manufacturing
+		id = generic_focus_vic_streamlined_small_arms_manufacturing
+		icon = GFX_Focus_Rifle_Production
+		relative_position_id = generic_focus_vic_the_national_armory
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_industrial_revolution
+		}
+		prerequisite = {
+			focus = generic_focus_vic_the_national_armory
+		}
+
+		completion_reward = {
+			add_ideas = generic_vic_small_arms_manufacturing
+
+			set_temp_variable = { x_temp = 5 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Mass Production of Uniforms
+		id = generic_focus_vic_mass_production_of_uniforms
+		icon = GFX_Focus_Army_Generic_Coalition_Army
+		relative_position_id = generic_focus_vic_streamlined_small_arms_manufacturing
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_streamlined_small_arms_manufacturing
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_small_arms_manufacturing
+				add_idea = generic_vic_mass_production
+			}
+			
+			set_temp_variable = { x_temp = 10 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Expand the Armory
+		id = generic_focus_vic_expand_the_armory
+		icon = GFX_Focus_invest_in_the_military_industrial_complex
+		relative_position_id = generic_focus_vic_the_national_armory
+		x = 2
+		y = 1
+		cost = 70
+
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = no
+				}
+			}
+		}
+		
+		mutually_exclusive = {
+			focus = generic_focus_vic_extend_the_shipyards
+		}
+		prerequisite = {
+			focus = generic_focus_vic_the_national_armory
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { x_temp = 15 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Artillery Production
+		id = generic_focus_vic_artillery_production
+		icon = GFX_Goal_artillery_for_every_unit
+		relative_position_id = generic_focus_vic_expand_the_armory
+		x = 0
+		y = 2
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_napoleonic_artillery
+		}
+		prerequisite = {
+			focus = generic_focus_vic_expand_the_armory
+		}
+		prerequisite = {
+			focus = generic_focus_vic_mass_production_of_uniforms
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_mass_production
+				add_idea = generic_vic_arms_industry
+			}
+			
+			set_temp_variable = { x_temp = 15 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Navy
+	focus = { # Establish a Modern Navy
+		id = generic_focus_vic_establish_a_modern_navy
+		icon = GFX_Focus_Victorian_Line_Ship
+		x = 47
+		y = 0
+		cost = 70
+
+		available = {
+			has_completed_focus = generic_focus_vic_strengthen_government
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = naval_doctrine_victorian
+				}
+				navy_experience = 50
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.75
+					uses = 1
+					category = naval_doctrine
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # New Shipyards
+		id = generic_focus_vic_new_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		relative_position_id = generic_focus_vic_establish_a_modern_navy
+		x = -4
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_fund_industrial_development
+			any_owned_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = no
+				}
+			}
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_modern_navy
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { x_temp = 10 }
+			add_debt = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = { # Learn from the British
+		id = generic_focus_vic_learn_from_the_british
+		icon = GFX_Focus_Diplomatic_Ally_ENG
+		relative_position_id = generic_focus_vic_establish_a_modern_navy
+		x = -2
+		y = 1
+		cost = 70
+		
+		available = {
+			OR = {
+				has_completed_focus = generic_focus_vic_diplomacy_with_the_great_powers
+				has_completed_focus = generic_focus_vic_industrial_revolution
+			}
+		}
+		mutually_exclusive = {
+			focus = generic_focus_vic_learn_from_the_french
+			focus = generic_focus_vic_learn_from_the_americans
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_modern_navy
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 2
+				category = cat_heavy_ships
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Learn from the French
+		id = generic_focus_vic_learn_from_the_french
+		icon = GFX_Focus_Diplomatic_Ally_FRA
+		relative_position_id = generic_focus_vic_establish_a_modern_navy
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			OR = {
+				has_completed_focus = generic_focus_vic_diplomacy_with_the_great_powers
+				has_completed_focus = generic_focus_vic_industrial_revolution
+			}
+		}
+		mutually_exclusive = {
+			focus = generic_focus_vic_learn_from_the_british
+			focus = generic_focus_vic_learn_from_the_americans
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_modern_navy
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 3
+				category = cat_heavy_ships
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Learn from the Americans
+		id = generic_focus_vic_learn_from_the_americans
+		icon = GFX_Focus_Diplomatic_Ally_USA
+		relative_position_id = generic_focus_vic_establish_a_modern_navy
+		x = 2
+		y = 1
+		cost = 70
+		
+		available = {
+			OR = {
+				has_completed_focus = generic_focus_vic_diplomacy_with_the_great_powers
+				has_completed_focus = generic_focus_vic_industrial_revolution
+			}
+		}
+		mutually_exclusive = {
+			focus = generic_focus_vic_learn_from_the_british
+			focus = generic_focus_vic_learn_from_the_french
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_modern_navy
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 2
+				category = cat_light_ships
+				category = cat_trade_ships
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Naval College
+		id = generic_focus_vic_naval_college
+		icon = GFX_Focus_naval_school
+		relative_position_id = generic_focus_vic_establish_a_modern_navy
+		x = 4
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_establish_centers_of_learning
+		}
+		prerequisite = {
+			focus = generic_focus_vic_establish_a_modern_navy
+		}
+
+		completion_reward = {
+			add_ideas = generic_vic_naval_college
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Extend the Shipyards
+		id = generic_focus_vic_extend_the_shipyards
+		icon = GFX_focus_generic_refit_civilian_ships
+		relative_position_id = generic_focus_vic_new_shipyards
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = no
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = generic_focus_vic_expand_the_armory
+		}
+		prerequisite = {
+			focus = generic_focus_vic_new_shipyards
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { x_temp = 15 }
+			add_debt = yes
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Blue Water Navy
+		id = generic_focus_vic_blue_water_navy
+		icon = GFX_Goal_ship_of_the_line_focus
+		relative_position_id = generic_focus_vic_establish_a_modern_navy
+		x = -1
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_learn_from_the_british
+			focus = generic_focus_vic_learn_from_the_french
+		}
+
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 2 uses = 1 category = naval_mtg_frigate_tech }
+			add_tech_bonus = { bonus = 2 uses = 1 category = naval_mtg_lineship_tech }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Purchasing Ships
+		id = generic_focus_vic_purchasing_ships
+		icon = GFX_Focus_Naval_Industry_Profits
+		relative_position_id = generic_focus_vic_establish_a_modern_navy
+		x = 1
+		y = 2
+		cost = 35
+		
+		available = {
+			has_completed_focus = generic_focus_vic_diplomacy_with_the_great_powers
+			always = no
+		}
+		prerequisite = {
+			focus = generic_focus_vic_learn_from_the_british
+			focus = generic_focus_vic_learn_from_the_french
+			focus = generic_focus_vic_learn_from_the_americans
+		}
+
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Brown Water Navy
+		id = generic_focus_vic_brown_water_navy
+		icon = GFX_Goal_corvette_focus
+		relative_position_id = generic_focus_vic_learn_from_the_americans
+		x = 1
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_learn_from_the_americans
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 2 uses = 2 category = naval_mtg_corvette_tech }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Use Rifle Muzzle Loaders
+		id = generic_focus_vic_use_rifled_muzzle_loaders
+		icon = GFX_Focus_Turret_Early
+		relative_position_id = generic_focus_vic_learn_from_the_british
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_learn_from_the_british
+		}
+		prerequisite = {
+			focus = generic_focus_vic_blue_water_navy
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = { bonus = 1 uses = 2 category = naval_mtg_module_rml }
+			}
+			else = {
+				add_tech_bonus = { bonus = 1 uses = 2 category = naval_equipment }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Use Rifle Breech Loaders
+		id = generic_focus_vic_use_rifled_breech_loaders
+		icon = GFX_Focus_Turret_Early
+		relative_position_id = generic_focus_vic_learn_from_the_french
+		x = 0
+		y = 2
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_learn_from_the_french
+		}
+		prerequisite = {
+			focus = generic_focus_vic_blue_water_navy
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = { bonus = 1 uses = 2 category = naval_mtg_module_rbl }
+			}
+			else = {
+				add_tech_bonus = { bonus = 1 uses = 2 category = naval_equipment }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Monitors
+		id = generic_focus_vic_monitors
+		icon = GFX_Focus_commision_monitors
+		relative_position_id = generic_focus_vic_brown_water_navy
+		x = -1
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_mechanical_engineering
+		}
+		prerequisite = {
+			focus = generic_focus_vic_brown_water_navy
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 2 category = naval_mtg_monitor_tech }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = { # Ironclad Navy
+		id = generic_focus_vic_ironclad_navy
+		icon = GFX_Focus_overseas_service
+		relative_position_id = generic_focus_vic_extend_the_shipyards
+		x = 0
+		y = 2
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_industrial_revolution
+		}
+		prerequisite = {
+			focus = generic_focus_vic_use_rifled_breech_loaders
+			focus = generic_focus_vic_use_rifled_muzzle_loaders
+			focus = generic_focus_vic_monitors
+		}
+		prerequisite = {
+			focus = generic_focus_vic_extend_the_shipyards
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 2 category = naval_mtg_ironclad_tech }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Submarines
+		id = generic_focus_vic_submarines
+		icon = GFX_Goal_early_submarine_focus
+		relative_position_id = generic_focus_vic_monitors
+		x = 0
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_monitors
+		}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 1 uses = 1 category = naval_mtg_submarine_tech }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Naval Design Bureau
+		id = generic_focus_vic_naval_design_bureau
+		icon = GFX_Focus_Generic_Naval_Industry
+		relative_position_id = generic_focus_vic_naval_college
+		x = 0
+		y = 3
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_expand_research_facilities
+		}
+		prerequisite = {
+			focus = generic_focus_vic_naval_college
+		}
+		prerequisite = {
+			focus = generic_focus_vic_blue_water_navy
+			focus = generic_focus_vic_brown_water_navy
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = generic_vic_naval_college
+				add_idea = generic_vic_naval_design_bureau
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	
+	focus = { # Victorian Army
+		id = generic_focus_vic_victorian_army
+		icon = GFX_Focus_Army_Victorian_Traditional
+		relative_position_id = generic_focus_vic_defensive_stratagems
+		x = 0
+		y = 1
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_cavalry_warfare
+			OR = {
+				has_completed_focus = generic_focus_vic_concentrated_fire
+				has_completed_focus = generic_focus_vic_integrated_artillery
+			}
+			has_completed_focus = generic_focus_vic_army_command_structure
+			has_completed_focus = generic_focus_vic_mass_production_of_uniforms
+		}
+		prerequisite = {
+			focus = generic_focus_vic_local_initiative
+			focus = generic_focus_vic_defensive_stratagems
+			focus = generic_focus_vic_marksmanship
+			focus = generic_focus_vic_hit_and_run_warfare
+		}
+		prerequisite = {
+			focus = generic_focus_vic_army_support_battalions
+		}
+
+		completion_reward = {
+			remove_ideas = generic_vic_study_foreign_tactics
+			army_experience = 100
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Victorian Navy
+		id = generic_focus_vic_victorian_navy
+		icon = GFX_Focus_Navy_Tactics
+		relative_position_id = generic_focus_vic_use_rifled_breech_loaders
+		x = 0
+		y = 2
+		cost = 70
+		
+		available = {
+			has_completed_focus = generic_focus_vic_new_shipyards
+		}
+		prerequisite = {
+			focus = generic_focus_vic_use_rifled_breech_loaders
+			focus = generic_focus_vic_use_rifled_muzzle_loaders
+			focus = generic_focus_vic_submarines
+		}
+		prerequisite = {
+			focus = generic_focus_vic_naval_design_bureau
+		}
+
+		completion_reward = {
+			navy_experience = 100
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = { # Victorian Warfare
+		id = generic_focus_vic_victorian_warfare
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = generic_focus_vic_victorian_army
+		x = 8
+		y = 1
+		cost = 70
+		
+		prerequisite = {
+			focus = generic_focus_vic_victorian_army
+			focus = generic_focus_vic_victorian_navy
+		}
+		prerequisite = {
+			focus = generic_focus_vic_artillery_production
+			focus = generic_focus_vic_ironclad_navy
+		}
+
+		completion_reward = {
+			army_experience = 100
+			navy_experience = 100
+			air_experience = 100
+			if = {
+				limit = {
+					has_idea = law_pre_industrial_army
+				}
+				swap_ideas = {
+					remove_idea = law_pre_industrial_army
+					add_idea = law_victorian_army
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# focus = {
+	# 	id = generic_focus_vic_mechanical_engineering
+	# 	icon = GFX_Focus_industrial_revolution
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_industry }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
+	# 	}
+		# completion_reward = {
+		# 	add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_refinement_techs }
+		# }
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_electronics_devices
+	# 	icon = GFX_goal_generic_consumer_goods
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_industry }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics_devices_tech }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_expand_research_facilities
+	# 	icon = GFX_focus_research2
+	# 	x = 1
+	# 	y = 2
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_mechanical_engineering focus = generic_focus_vic_electronics_devices }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.75 uses = 1 category = cat_science_techs }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_build_civ_factory
+	# 	icon = GFX_goal_generic_construct_civ_factory
+	# 	x = 4
+	# 	y = 1
+	# 	cost = 250
+
+	# 	ai_will_do = {
+	# 		factor = 0.25
+	# 	}
+	# 	available = {
+	# 		has_idea = institution_industrialization
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_industry }
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				is_ai = no
+	# 			}
+	# 			random_owned_controlled_state = {
+	# 				limit = {
+	# 					free_building_slots = {
+	# 						building = industrial_complex
+	# 						size > 0
+	# 						include_locked = yes
+	# 					}
+	# 					OR = {
+	# 						is_in_home_area = yes
+	# 						NOT = {
+	# 							owner = {
+	# 								any_owned_state = {
+	# 									free_building_slots = {
+	# 										building = industrial_complex
+	# 										size > 0
+	# 										include_locked = yes
+	# 									}
+	# 									is_in_home_area = yes
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 				add_extra_state_shared_building_slots = 1
+	# 				add_building_construction = {
+	# 					type = industrial_complex
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		else = {
+	# 			custom_effect_tooltip = generic_show_effect_if_not_ai
+	# 			effect_tooltip = {
+	# 				random_owned_controlled_state = {
+	# 					limit = {
+	# 						free_building_slots = {
+	# 							building = industrial_complex
+	# 							size > 0
+	# 							include_locked = yes
+	# 						}
+	# 						OR = {
+	# 							is_in_home_area = yes
+	# 							NOT = {
+	# 								owner = {
+	# 									any_owned_state = {
+	# 										free_building_slots = {
+	# 											building = industrial_complex
+	# 											size > 0
+	# 											include_locked = yes
+	# 										}
+	# 										is_in_home_area = yes
+	# 									}
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					add_extra_state_shared_building_slots = 1
+	# 					add_building_construction = {
+	# 						type = industrial_complex
+	# 						level = 1
+	# 						instant_build = yes
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_build_mil_factory
+	# 	icon = GFX_goal_generic_construct_mil_factory
+	# 	x = 4
+	# 	y = 2
+	# 	cost = 250
+
+	# 	ai_will_do = {
+	# 		factor = 0.25
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_build_civ_factory }
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				is_ai = no
+	# 			}
+	# 			random_owned_controlled_state = {
+	# 				limit = {
+	# 					free_building_slots = {
+	# 						building = arms_factory
+	# 						size > 0
+	# 						include_locked = yes
+	# 					}
+	# 					OR = {
+	# 						is_in_home_area = yes
+	# 						NOT = {
+	# 							owner = {
+	# 								any_owned_state = {
+	# 									free_building_slots = {
+	# 										building = arms_factory
+	# 										size > 0
+	# 										include_locked = yes
+	# 									}
+	# 									is_in_home_area = yes
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 				add_extra_state_shared_building_slots = 1
+	# 				add_building_construction = {
+	# 					type = arms_factory
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		else = {
+	# 			custom_effect_tooltip = generic_show_effect_if_not_ai
+	# 			effect_tooltip = {
+	# 				random_owned_controlled_state = {
+	# 					limit = {
+	# 						free_building_slots = {
+	# 							building = arms_factory
+	# 							size > 0
+	# 							include_locked = yes
+	# 						}
+	# 						OR = {
+	# 							is_in_home_area = yes
+	# 							NOT = {
+	# 								owner = {
+	# 									any_owned_state = {
+	# 										free_building_slots = {
+	# 											building = arms_factory
+	# 											size > 0
+	# 											include_locked = yes
+	# 										}
+	# 										is_in_home_area = yes
+	# 									}
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					add_extra_state_shared_building_slots = 1
+	# 					add_building_construction = {
+	# 						type = arms_factory
+	# 						level = 1
+	# 						instant_build = yes
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_military_research
+	# 	icon = GFX_focus_research
+	# 	x = 3
+	# 	y = 3
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_build_mil_factory }
+	# 	prerequisite = { focus = generic_focus_vic_expand_research_facilities }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.75 uses = 1 category = cat_small_arms_techs }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_aviation_research
+	# 	icon = GFX_goal_generic_air_fighter2
+	# 	x = 2
+	# 	y = 4
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_military_research }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.75 uses = 1 category = aviation_tech }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_naval_research
+	# 	icon = GFX_goal_generic_amphibious_assault
+	# 	x = 4
+	# 	y = 4
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_military_research }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.75 uses = 1 category = naval_equipment }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_new_roads
+	# 	icon = GFX_goal_generic_construction2
+	# 	x = 6
+	# 	y = 0
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = infrastructure
+	# 					size > 0
+	# 				}
+	# 				OR = {
+	# 					is_in_home_area = yes
+	# 					NOT = {
+	# 						owner = {
+	# 							any_owned_state = {
+	# 								free_building_slots = {
+	# 									building = infrastructure
+	# 									size > 0
+	# 								}
+	# 								is_in_home_area = yes
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_new_roads_2
+	# 	icon = GFX_goal_generic_construct_infrastructure
+	# 	x = 6
+	# 	y = 1
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_new_roads }
+
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = infrastructure
+	# 					size > 0
+	# 				}
+	# 				OR = {
+	# 					is_in_home_area = yes
+	# 					NOT = {
+	# 						owner = {
+	# 							any_owned_state = {
+	# 								free_building_slots = {
+	# 									building = infrastructure
+	# 									size > 0
+	# 								}
+	# 								is_in_home_area = yes
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_new_roads_3
+	# 	icon = GFX_goal_generic_construct_infrastructure
+	# 	x = 6
+	# 	y = 2
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_new_roads_2 }
+
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = infrastructure
+	# 					size > 0
+	# 				}
+	# 				OR = {
+	# 					is_in_home_area = yes
+	# 					NOT = {
+	# 						owner = {
+	# 							any_owned_state = {
+	# 								free_building_slots = {
+	# 									building = infrastructure
+	# 									size > 0
+	# 								}
+	# 								is_in_home_area = yes
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_cotton_farms
+	# 	icon = GFX_goal_anschluss
+	# 	x = 6
+	# 	y = 4
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_new_roads_3 focus = generic_focus_vic_build_mil_factory }
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				is_ai = no
+	# 			}
+	# 			random_owned_controlled_state = {
+	# 				limit = {
+	# 					set_temp_variable = { industry_token_temp = token:cotton_plantation }
+	# 					has_free_industry_slots = yes
+	# 					OR = {
+	# 						is_in_home_area = yes
+	# 						NOT = {
+	# 							owner = {
+	# 								any_owned_state = {
+	# 									set_temp_variable = { industry_token_temp = token:cotton_plantation }
+	# 									has_free_industry_slots = yes
+	# 									is_in_home_area = yes
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 				set_temp_variable = { industry_token = token:cotton_plantation }
+	# 				add_x_industries = yes
+	# 			}
+	# 		}
+	# 		else = {
+	# 			custom_effect_tooltip = generic_show_effect_if_not_ai
+	# 			effect_tooltip = {
+	# 				random_owned_controlled_state = {
+	# 					limit = {
+	# 						set_temp_variable = { industry_token_temp = token:cotton_plantation }
+	# 						has_free_industry_slots = yes
+	# 						OR = {
+	# 							is_in_home_area = yes
+	# 							NOT = {
+	# 								owner = {
+	# 									any_owned_state = {
+	# 										set_temp_variable = { industry_token_temp = token:cotton_plantation }
+	# 										has_free_industry_slots = yes
+	# 										is_in_home_area = yes
+	# 									}
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					set_temp_variable = { industry_token = token:cotton_plantation }
+	# 					add_x_industries = yes
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_coal_mine
+	# 	icon = GFX_goal_generic_construction
+	# 	x = 5
+	# 	y = 5
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_cotton_farms }
+	# 	available = {
+	# 		has_tech = tech_diamond_core_drill
+	# 	}
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				is_ai = no
+	# 			}
+	# 			random_owned_controlled_state = {
+	# 				limit = {
+	# 					OR = {
+	# 						is_in_home_area = yes
+	# 						# NOT = {
+	# 						# 	owner = {
+	# 						# 		any_owned_state = {
+	# 						# 			free_building_slots = {
+	# 						# 				building = coal_mine
+	# 						# 				size > 0
+	# 						# 				include_locked = yes
+	# 						# 			}
+	# 						# 			is_in_home_area = yes
+	# 						# 		}
+	# 						# 	}
+	# 						# }
+	# 					}
+	# 				}
+	# 				add_resource = {
+	# 					type = coal
+	# 					amount = 2
+	# 				}
+	# 			}
+	# 		}
+	# 		else = {
+	# 			custom_effect_tooltip = generic_show_effect_if_not_ai
+	# 			effect_tooltip = {
+	# 				random_owned_controlled_state = {
+	# 					limit = {
+	# 						OR = {
+	# 							is_in_home_area = yes
+	# 							# NOT = {
+	# 							# 	owner = {
+	# 							# 		any_owned_state = {
+	# 							# 			free_building_slots = {
+	# 							# 				building = coal_mine
+	# 							# 				size > 0
+	# 							# 				include_locked = yes
+	# 							# 			}
+	# 							# 			is_in_home_area = yes
+	# 							# 		}
+	# 							# 	}
+	# 							# }
+	# 						}
+	# 					}
+	# 					add_resource = {
+	# 						type = coal
+	# 						amount = 2
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_locate_iron_deposits
+	# 	icon = GFX_focus_generic_steel
+	# 	x = 5
+	# 	y = 6
+	# 	cost = 90
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_coal_mine }
+
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				is_in_home_area = yes
+	# 			}
+	# 			add_resource = {
+	# 				type = iron
+	# 				amount = 2
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_logging_camp
+	# 	icon = GFX_goal_generic_construct_civilian
+	# 	x = 7
+	# 	y = 5
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_cotton_farms }
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				is_ai = no
+	# 			}
+	# 			random_owned_controlled_state = {
+	# 				limit = {
+	# 					free_building_slots = {
+	# 						building = logging_camp
+	# 						size > 0
+	# 						include_locked = yes
+	# 					}
+	# 					OR = {
+	# 						is_in_home_area = yes
+	# 						NOT = {
+	# 							owner = {
+	# 								any_owned_state = {
+	# 									free_building_slots = {
+	# 										building = logging_camp
+	# 										size > 0
+	# 										include_locked = yes
+	# 									}
+	# 									is_in_home_area = yes
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 				add_resource = {
+	# 					type = wood
+	# 					amount = 2 
+	# 				}
+	# 			}
+	# 		}
+	# 		else = {
+	# 			custom_effect_tooltip = generic_show_effect_if_not_ai
+	# 			effect_tooltip = {
+	# 				random_owned_controlled_state = {
+	# 					limit = {
+	# 						free_building_slots = {
+	# 							building = logging_camp
+	# 							size > 0
+	# 							include_locked = yes
+	# 						}
+	# 						OR = {
+	# 							is_in_home_area = yes
+	# 							NOT = {
+	# 								owner = {
+	# 									any_owned_state = {
+	# 										free_building_slots = {
+	# 											building = logging_camp
+	# 											size > 0
+	# 											include_locked = yes
+	# 										}
+	# 										is_in_home_area = yes
+	# 									}
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					add_resource = {
+	# 						type = wood
+	# 						amount = 2
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_manage_national_forests
+	# 	icon = GFX_focus_generic_treaty
+	# 	x = 7
+	# 	y = 6
+	# 	cost = 90
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_logging_camp }
+
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				is_in_home_area = yes
+	# 			}
+	# 			add_resource = {
+	# 				type = wood
+	# 				amount = 4
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_nationalize_resources
+	# 	icon = GFX_goal_generic_construction2
+	# 	x = 6
+	# 	y = 7
+	# 	cost = 100
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_manage_national_forests }
+	# 	prerequisite = { focus = generic_focus_vic_locate_iron_deposits }
+
+	# 	completion_reward = {
+	# 		add_timed_idea = { idea = eoanb_idea_generic_focus_vic_resources_nationalized days = 3650 }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_improve_army
+	# 	icon = GFX_goal_generic_allies_build_infantry
+	# 	x = 9
+	# 	y = 0
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+
+	# 	completion_reward = {
+	# 		army_experience = 10
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_doctrines_1
+	# 	icon = GFX_goal_generic_army_doctrines
+	# 	x = 8
+	# 	y = 1
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_improve_army }
+
+	# 	completion_reward = {
+	# 		add_doctrine_cost_reduction = { cost_reduction = 0.75 uses = 1 category = land_doctrine }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_doctrines_2
+	# 	icon = GFX_goal_generic_army_doctrines
+	# 	x = 8
+	# 	y = 2
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_doctrines_1 }
+
+	# 	completion_reward = {
+	# 		add_doctrine_cost_reduction = { cost_reduction = 0.75 uses = 1 category = land_doctrine }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_new_weapons
+	# 	icon = GFX_goal_generic_army_artillery
+	# 	x = 10
+	# 	y = 1
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_improve_army }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_small_arms_techs }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_intel_staff
+	# 	icon = GFX_goal_generic_cavalry
+	# 	x = 10
+	# 	y = 2
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_new_weapons }
+
+	# 	completion_reward = {
+	# 		add_timed_idea = { idea = eoanb_idea_generic_focus_vic_intel days = 3650 }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_better_staff
+	# 	icon = GFX_goal_generic_alliance
+	# 	x = 9
+	# 	y = 3
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_intel_staff focus = generic_focus_vic_doctrines_2 }
+
+	# 	completion_reward = {
+	# 		add_timed_idea = { idea = eoanb_idea_generic_focus_vic_staff days = 3650 }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_support_corps
+	# 	icon = GFX_goal_generic_national_unity
+	# 	x = 9
+	# 	y = 5
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_better_staff }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.3 uses = 1 category = cat_artillery_techs }
+	# 		add_tech_bonus = { bonus = 0.3 uses = 1 category = support_tech }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_cavalry_tech
+	# 	icon = GFX_goal_generic_cavalry
+	# 	x = 9
+	# 	y = 6
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_support_corps }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_calvary_techs }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_navy
+	# 	icon = GFX_goal_generic_navy_battleship
+	# 	x = 13
+	# 	y = 0
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+	# 		any_owned_state = { is_coastal = yes }
+	# 	}
+
+	# 	completion_reward = {
+	# 		navy_experience = 25
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_naval_dockyards
+	# 	icon = GFX_goal_generic_construct_naval_dockyard
+	# 	x = 12
+	# 	y = 1
+	# 	cost = 250
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+	# 		any_owned_state = { is_coastal = yes }
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_navy }
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				is_ai = no
+	# 			}
+	# 			random_owned_controlled_state = {
+	# 				limit = {
+	# 					is_coastal = yes
+	# 					free_building_slots = {
+	# 						building = dockyard
+	# 						size > 0
+	# 						include_locked = yes
+	# 					}
+	# 				}
+	# 				add_extra_state_shared_building_slots = 1
+	# 				add_building_construction = {
+	# 					type = dockyard
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		else = {
+	# 			custom_effect_tooltip = generic_show_effect_if_not_ai
+	# 			effect_tooltip = {
+	# 				random_owned_controlled_state = {
+	# 					limit = {
+	# 						is_coastal = yes
+	# 						free_building_slots = {
+	# 							building = dockyard
+	# 							size > 0
+	# 							include_locked = yes
+	# 						}
+	# 					}
+	# 					add_extra_state_shared_building_slots = 1
+	# 					add_building_construction = {
+	# 						type = dockyard
+	# 						level = 1
+	# 						instant_build = yes
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_naval_innovation
+	# 	icon = GFX_goal_generic_navy_doctrines_tactics
+	# 	x = 14
+	# 	y = 1
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_navy }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.3 uses = 2 category = naval_equipment }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_fleet_infrastructure
+	# 	icon = GFX_goal_generic_navy_cruiser
+	# 	x = 14
+	# 	y = 2
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_naval_innovation }
+
+	# 	completion_reward = {
+	# 		add_timed_idea = { idea = eoanb_idea_generic_focus_vic_fleet_infra days = 3650 }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_naval_dockyards_2
+	# 	icon = GFX_goal_generic_construct_naval_dockyard
+	# 	x = 12
+	# 	y = 2
+	# 	cost = 250
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+	# 		any_owned_state = { is_coastal = yes }
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_naval_dockyards }
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				is_ai = no
+	# 			}
+	# 			random_owned_controlled_state = {
+	# 				limit = {
+	# 					is_coastal = yes
+	# 					free_building_slots = {
+	# 						building = dockyard
+	# 						size > 0
+	# 						include_locked = yes
+	# 					}
+	# 				}
+	# 				add_extra_state_shared_building_slots = 1
+	# 				add_building_construction = {
+	# 					type = dockyard
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		else = {
+	# 			custom_effect_tooltip = generic_show_effect_if_not_ai
+	# 			effect_tooltip = {
+	# 				random_owned_controlled_state = {
+	# 					limit = {
+	# 						is_coastal = yes
+	# 						free_building_slots = {
+	# 							building = dockyard
+	# 							size > 0
+	# 							include_locked = yes
+	# 						}
+	# 					}
+	# 					add_extra_state_shared_building_slots = 1
+	# 					add_building_construction = {
+	# 						type = dockyard
+	# 						level = 1
+	# 						instant_build = yes
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_victorian_air_corps
+	# 	icon = GFX_goal_generic_build_airforce
+	# 	x = 11
+	# 	y = 4
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+	# 		has_tech = balloon_designs
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_naval_dockyards_2 focus = generic_focus_vic_fleet_infrastructure }
+	# 	prerequisite = { focus = generic_focus_vic_better_staff }
+
+	# 	completion_reward = {
+	# 		air_experience = 25
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_aviation_projects
+	# 	icon = GFX_goal_generic_construction
+	# 	x = 11
+	# 	y = 5
+	# 	cost = 125
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_victorian_air_corps }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = { bonus = 0.5 uses = 1 category = aviation_tech }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_victorian_industrial_society
+	# 	icon = GFX_focus_focus_generic_industry_1
+	# 	x = 11
+	# 	y = 9
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_limited_constitution }
+	# 	prerequisite = { focus = generic_focus_vic_nationalize_resources }
+	# 	available = {
+	# 		has_tech = tech_humanities_industrial_society
+	# 	}
+
+	# 	completion_reward = {
+	# 		add_stability = 0.02
+	# 		add_tech_bonus = { bonus = 0.25 uses = 1 category = humanities_tech }
+	# 		load_focus_tree = generic_mac_ft
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_strengthen_government
+	# 	icon = GFX_Focus_Government_Reform_Administration
+	# 	x = 17
+	# 	y = 0
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+
+	# 	completion_reward = {
+	# 		add_political_power = 100
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_internal_stabilization
+	# 	icon = GFX_Focus_Law_Vote_1
+	# 	x = 16
+	# 	y = 1
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_strengthen_government }
+
+	# 	completion_reward = {
+	# 		add_political_power = -25
+	# 		add_stability = 0.05
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_war_rhetoric
+	# 	icon = GFX_Focus_Partisans_Popularize
+	# 	x = 18
+	# 	y = 1
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_strengthen_government }
+
+	# 	completion_reward = {
+	# 		add_political_power = -25
+	# 		add_war_support = 0.05
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_defend_ideology
+	# 	icon = GFX_focus_generic_self_management
+	# 	x = 17
+	# 	y = 2
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_war_rhetoric focus = generic_focus_vic_internal_stabilization }
+
+	# 	completion_reward = {
+	# 		add_timed_idea = { idea = eoanb_idea_generic_focus_vic_ideology days = 1000 }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_decide_future_gov
+	# 	icon = GFX_Focus_Vote_Election
+	# 	x = 17
+	# 	y = 3
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_defend_ideology }
+
+	# 	completion_reward = {
+			
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_gov_centralized
+	# 	icon = GFX_Focus_Elite
+	# 	x = 15
+	# 	y = 4
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_decide_future_gov }
+	# 	available = {
+	# 		always = no
+	# 	}
+	# 	mutually_exclusive = {  focus = generic_focus_vic_gov_decentralized }
+
+	# 	completion_reward = {
+	# 		#
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_centralized_administration
+	# 	icon = GFX_focus_generic_treaty
+	# 	x = 14
+	# 	y = 5
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_gov_centralized }
+
+	# 	completion_reward = {
+	# 		add_political_power = 150
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_centralized_economic_management
+	# 	icon = GFX_Focus_Economy_Increase_Wages
+	# 	x = 14
+	# 	y = 6
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_centralized_administration }
+
+	# 	completion_reward = {
+	# 		add_stability = 0.02
+	# 		add_political_power = 20
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_centralized_army
+	# 	icon = GFX_Focus_Army_Reforms
+	# 	x = 16
+	# 	y = 5
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_gov_centralized }
+
+	# 	completion_reward = {
+	# 		army_experience = 20
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_high_command_reform
+	# 	icon = GFX_focus_generic_military_academy
+	# 	x = 16
+	# 	y = 6
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_centralized_army }
+
+	# 	completion_reward = {
+	# 		add_war_support = 0.05
+	# 		army_experience = 5
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_stabilized_centralization
+	# 	icon = GFX_focus_generic_diplomatic_treaty
+	# 	x = 15
+	# 	y = 7
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_high_command_reform focus = generic_focus_vic_centralized_economic_management }
+
+	# 	completion_reward = {
+	# 		add_stability = 0.05
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_gov_decentralized
+	# 	icon = GFX_Focus_Government_Decentralized
+	# 	x = 19
+	# 	y = 4
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_decide_future_gov }
+	# 	available = {
+	# 		always = no
+	# 	}
+	# 	mutually_exclusive = {  focus = generic_focus_vic_gov_centralized }
+
+	# 	completion_reward = {
+	# 		#
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_decentralized_autonomy
+	# 	icon = GFX_Focus_Map_Gerrymandering
+	# 	x = 18
+	# 	y = 5
+	# 	cost = 120
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_gov_decentralized }
+
+	# 	completion_reward = {
+	# 		add_political_power = 200
+	# 		add_war_support = 0.02
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_spread_military
+	# 	icon = GFX_focus_generic_military_mission
+	# 	x = 20
+	# 	y = 5
+	# 	cost = 120
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_gov_decentralized }
+
+	# 	completion_reward = {
+	# 		army_experience = 50
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_decentralized_government
+	# 	icon = GFX_Focus_Ideology_Support_Liberalism
+	# 	x = 19
+	# 	y = 7
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_decentralized_autonomy }
+	# 	prerequisite = { focus = generic_focus_vic_spread_military }
+
+	# 	completion_reward = {
+	# 		add_political_power = 20
+	# 		add_stability = 0.02
+	# 		add_war_support = 0.02
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = generic_focus_vic_limited_constitution
+	# 	icon = GFX_Focus_Freedom_Press_newspapers
+	# 	x = 17
+	# 	y = 8
+	# 	cost = 75
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	prerequisite = { focus = generic_focus_vic_decentralized_government focus = generic_focus_vic_stabilized_centralization }
+	# 	available = {
+	# 		has_idea = no_constitution
+	# 	}
+	# 	bypass = {
+	# 		NOT = {
+	# 			has_idea = no_constitution
+	# 		}
+	# 	}
+
+	# 	completion_reward = {
+	# 		swap_ideas = { add_idea = limited_constitution remove_idea = no_constitution }
+	# 	}
+	# }
 
 }

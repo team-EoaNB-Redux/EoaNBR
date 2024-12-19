@@ -108,18 +108,23 @@ guiTypes = {
 					format = center
 				}
 
-				buttonType = {
-					name = "owner_flag"
-					quadTextureSprite = "GFX_flag_small2"
-					position = { x = 34 y = 63 }
+				OverlappingElementsBoxType = {
+					name = "state_owners"
+					position = { x = 35 y = 63 }
+					size = { x = 60 y = 40 }
+					format = left
+					spacing = 1.0
 				}
 
-				iconType = {
-					name = "owner_flag_border"
-					quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
-					position = { x = 30 y = 59 }
-					alwaystransparent = yes
+				positionType = {
+					name = "state_owners_size_when_owner_is_controller"
+					position = { x = 110 y = 40 }
 				}
+
+				positionType = {
+					name = "state_owners_size_when_owner_is_not_controller"
+					position = { x = 60 y = 40 }
+			}
 
 				buttonType = {
 					name = "controller_flag"
@@ -1292,6 +1297,16 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 
+			iconType = {
+				name = "building_modifiers_icon"
+				position = { x = 342 y= -76 }
+				spriteType = "GFX_buildings_strip"
+				Orientation = "UPPER_LEFT"
+				frame = 21
+				scale = 0.8
+				hide = yes
+			}
+
 			### Positioning of these are controlled by the positionType "countrystateview_weathericons_position" and "countrystateview_weathericons_offset" above
 			iconType = {
 				name = "modifiers_mud_icon"
@@ -1327,6 +1342,16 @@ guiTypes = {
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_impassable_icon"
 				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextboxType = {
+				name = "state_modifiers"
+				text = "STATE_MODIFIERS"
+				position = { x = 28 y= -10000 }
+				font = "hoi_16mbs"
+				maxWidth = 200
+				maxHeight = 30
+				format = left
 			}
 
 			gridBoxType = {
@@ -1371,19 +1396,6 @@ guiTypes = {
 				position = { x = 428 y = 88 }
 			}
 
-			iconType = {
-				name = "nuclear_strike_bar"
-				spriteType = "GFX_nuke_progress"
-				position = { x = 423 y = 124 }
-				rotation = 1.5708
-			}
-
-			iconType = {
-				name = "nuke_progress_frame"
-				spriteType = "GFX_nuke_progress_frame"
-				position = { x = 415 y = 91 }
-			}
-
 		}
 
 		buttonType = {
@@ -1406,22 +1418,38 @@ guiTypes = {
 	}
 
 	windowType = {
-		name = "state_core_entry"
-		position = { x = 0 y = 0 }
+		name = "state_stakeholder_entry"
+		position = { x = 0 y = 0}	
 		size = { x = 40 y = 26 }
 
 		guibuttonType = {
-			name = "core_country_flag"
-			quadTextureSprite = "GFX_flag_small2"
-			position = { x = 0 y = 0 }
+			name = "stakeholder_country_flag"
+			quadTextureSprite ="GFX_flag_small2"
+			position = { x= 0 y = 1 }
 			#Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name = "flag_border_thin"
+			quadTextureSprite = "GFX_small_flag_frame_thin"
+			position = { x= -3 y = -1 }
+			alwaystransparent = yes
 		}
 
 		iconType = {
-			name = "core_flag_border"
-			quadTextureSprite = "GFX_small_flag_frame_thin"
-			position = { x = -2 y = -1 }
+			name = "flag_border_thick"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x= -5 y = -4 }
 			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "flag_exclamation_mark"
+			spriteType = "GFX_alerts_category"
+			position = {x = 0 y = 0}
+			frame = 2
+			alwaystransparent = yes
+			scale = 0.8
 		}
 	}
 

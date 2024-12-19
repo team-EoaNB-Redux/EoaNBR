@@ -6,39 +6,39 @@ defined_text = {
 		trigger = {
 			PS_pol_stab_zero = yes
 		}
-		localization_key = "PS_tooltip_default"
+		localization_key = scripted_loc_inline_1437
 	}
 	#positive
 	text = {
 		trigger = {
 			PS_pol_stab_plus_one = yes
 		}
-		localization_key = "PS_tooltip_plus_one"
+		localization_key = scripted_loc_inline_1438
 	}
 	text = {
 		trigger = {
 			PS_pol_stab_plus_two = yes
 		}
-		localization_key = "PS_tooltip_plus_two"
+		localization_key = scripted_loc_inline_1439
 	}
 	text = {
 		trigger = {
 			PS_pol_stab_plus_three = yes
 		}
-		localization_key = "PS_tooltip_plus_three"
+		localization_key = scripted_loc_inline_1440
 	}
 	#negative
 	text = {
 		trigger = {
 			PS_pol_stab_minus_one = yes
 		}
-		localization_key = "PS_tooltip_minus_one"
+		localization_key = scripted_loc_inline_1441
 	}
 	text = {
 		trigger = {
 			PS_pol_stab_minus_two = yes
 		}
-		localization_key = "PS_tooltip_minus_two"
+		localization_key = scripted_loc_inline_1442
 	}
 	text = {
 		trigger = {
@@ -48,21 +48,21 @@ defined_text = {
 				has_idea = PS_big_scale_protests_double
 			}
 		}
-		localization_key = "PS_tooltip_minus_three_placeholder"
+		localization_key = scripted_loc_inline_1443
 	}
 	text = {
 		trigger = {
 			PS_pol_stab_minus_three = yes
 			has_idea = PS_big_scale_protests_single
 		}
-		localization_key = "PS_tooltip_minus_three_single"
+		localization_key = scripted_loc_inline_1444
 	}
 	text = {
 		trigger = {
 			PS_pol_stab_minus_three = yes
 			has_idea = PS_big_scale_protests_double
 		}
-		localization_key = "PS_tooltip_minus_three_double"
+		localization_key = scripted_loc_inline_1445
 	}
 	text = {
 		trigger = {
@@ -72,7 +72,7 @@ defined_text = {
 				has_idea = PS_fighting_in_the_streets_double
 			}
 		}
-		localization_key = "PS_tooltip_minus_four_placeholder"
+		localization_key = scripted_loc_inline_1446
 	}
 	text = {
 		trigger = {
@@ -85,7 +85,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "PS_tooltip_minus_four_single"
+		localization_key = scripted_loc_inline_1447
 	}
 	text = {
 		trigger = {
@@ -98,7 +98,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "PS_tooltip_minus_four_double"
+		localization_key = scripted_loc_inline_1448
 	}
 	text = {
 		trigger = {
@@ -106,7 +106,7 @@ defined_text = {
 			has_idea = PS_call_for_civil_war
 			has_idea = PS_fighting_in_the_streets_single
 		}
-		localization_key = "PS_tooltip_minus_five_cw_single"
+		localization_key = scripted_loc_inline_1449
 	}
 	text = {
 		trigger = {
@@ -114,7 +114,7 @@ defined_text = {
 			has_idea = PS_call_for_take_over
 			has_idea = PS_fighting_in_the_streets_single
 		}
-		localization_key = "PS_tooltip_minus_five_to_single"
+		localization_key = scripted_loc_inline_1450
 	}
 	text = {
 		trigger = {
@@ -122,7 +122,7 @@ defined_text = {
 			has_idea = PS_call_for_civil_war
 			has_idea = PS_fighting_in_the_streets_double
 		}
-		localization_key = "PS_tooltip_minus_five_cw_double"
+		localization_key = scripted_loc_inline_1451
 	}
 	text = {
 		trigger = {
@@ -130,6 +130,6 @@ defined_text = {
 			has_idea = PS_call_for_take_over
 			has_idea = PS_fighting_in_the_streets_double
 		}
-		localization_key = "PS_tooltip_minus_five_to_double"
+		localization_key = scripted_loc_inline_1452
 	}
 }

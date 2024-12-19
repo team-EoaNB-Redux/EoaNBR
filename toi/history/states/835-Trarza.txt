@@ -29,7 +29,7 @@ state = {
 		add_core_of = TRZ
 		owner = TRZ
 
-		1900.6.1 = {
+		1902.12.15 = {
 			owner = FRA
 			remove_core_of = TRZ
 		}

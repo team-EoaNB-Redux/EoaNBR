@@ -1,0 +1,33 @@
+﻿l_russian:
+  
+ # Dynamic modifier management system from Extremis Ultimis 
+  
+ ################# 
+ ### Internals ### 
+ ################# 
+  
+ one_of_the_following_tip: "\n§YОдно из следующего:§!" #NT!
+ dyn_mod_or_trailing_newline_inner: "\н" #NT!
+  
+ add_dyn_mod_tip: "[dyn_mod_or_a]dd §Y[?dyn_mod.GetTokenLocalizedKey]§![render_add_dyn_mod].\n[dyn_mod_or_trailing_newline]" #NT!
+ render_add_dyn_mod_inner: ", который предоставляет ([RenderArray])" #NT!
+  
+ change_dyn_mod_tip: "[dyn_mod_or_m]одификацию §Y[?dyn_mod.GetTokenLocalizedKey]§![render_change_dyn_mod]\n[dyn_mod_or_trailing_newline]" #NT!
+ render_change_dyn_mod_inner: "от\n [RenderArray]" #NT!
+ render_change_dyn_mod_inner_with_equiv: "или §Y[?equiv_dyn_mod.GetTokenLocalizedKey]§! от\n [RenderArray]" #NT!
+  
+ transpose_dyn_mod_tip: "[dyn_mod_or_r]замените §Y[?past_dyn_mod.GetTokenLocalizedKey]§! на §Y[?dyn_mod.GetTokenLocalizedKey]§![render_transpose_dyn_mod]\n[dyn_mod_or_trailing_newline]" #NT!
+ render_transpose_dyn_mod_inner: ". Эффективное изменение:\n [RenderArray]" #NT!
+  
+ transmute_dyn_mod_tip: "[dyn_mod_or_m]одификацию §Y[?dyn_mod.GetTokenLocalizedKey]§![render_transmute_dyn_mod]\n[dyn_mod_or_trailing_newline]" #NT!
+ render_transmute_dyn_mod_inner: "от\n [RenderArray]" #NT!
+  
+ remove_dyn_mod_tip: "[dyn_mod_or_r]удалить §Y[?dyn_mod.GetTokenLocalizedKey]§![render_remove_dyn_mod].\n[dyn_mod_or_trailing_newline]" #NT!
+ render_remove_dyn_mod_inner: ", который предоставляет ([RenderArray])" #NT!
+  
+ render_boolean_yes_good: "§GYes§!" #NT!
+ render_boolean_yes_bad: "§RYes§!" #NT!
+ render_boolean_yes_meh: "§YYes§!" #NT!
+ render_boolean_no_good: "§RNo§!" #NT!
+ render_boolean_no_bad: "§GNo§!" #NT!
+ render_boolean_no_meh: "§YNo§!" #NT!

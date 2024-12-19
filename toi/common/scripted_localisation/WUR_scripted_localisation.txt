@@ -7,7 +7,7 @@ defined_text = {
 				has_completed_focus = WUR_zweikaisertreffen
 			}
 		}
-		localization_key = "WUR_customeffect_zweikaisertreffen_done"
+		localization_key = scripted_loc_inline_2758
 	}
 	text = {
 		trigger = {
@@ -22,7 +22,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "WUR_customeffect_zweikaisertreffen_neutral"
+		localization_key = scripted_loc_inline_2759
 	}
 	text = {
 		trigger = {
@@ -39,7 +39,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "WUR_customeffect_zweikaisertreffen_neutral_one"
+		localization_key = scripted_loc_inline_2760
 	}
 	text = {
 		trigger = {
@@ -56,7 +56,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "WUR_customeffect_zweikaisertreffen_neutral_one"
+		localization_key = scripted_loc_inline_2761
 	}
 	text = {
 		trigger = {
@@ -65,7 +65,7 @@ defined_text = {
 				has_country_flag = WUR_RUS_accepted_invite
 			}
 		}
-		localization_key = "WUR_customeffect_zweikaisertreffen_positive"
+		localization_key = scripted_loc_inline_2762
 	}
 	text = {
 		trigger = {
@@ -74,7 +74,7 @@ defined_text = {
 				has_country_flag = WUR_RUS_denied_invite
 			}
 		}
-		localization_key = "WUR_customeffect_zweikaisertreffen_negative"
+		localization_key = scripted_loc_inline_2763
 	}
 	text = {
 		trigger = {
@@ -83,7 +83,7 @@ defined_text = {
 				has_country_flag = WUR_RUS_denied_invite
 			}
 		}
-		localization_key = "WUR_customeffect_zweikaisertreffen_FRA_positive"
+		localization_key = scripted_loc_inline_2764
 	}
 	text = {
 		trigger = {
@@ -92,7 +92,7 @@ defined_text = {
 				has_country_flag = WUR_RUS_accepted_invite
 			}
 		}
-		localization_key = "WUR_customeffect_zweikaisertreffen_RUS_positive"
+		localization_key = scripted_loc_inline_2765
 	}
 }
 
@@ -103,12 +103,12 @@ defined_text = {
 		trigger = {
 			tag = RUS
 		}
-		localization_key = "WUR_zweikaisertreffen_RUS"
+		localization_key = scripted_loc_inline_2766
 	}
 	text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = "WUR_zweikaisertreffen_FRA"
+		localization_key = scripted_loc_inline_2767
 	}
 }

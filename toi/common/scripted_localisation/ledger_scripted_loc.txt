@@ -4,25 +4,25 @@ defined_text = {
         trigger = {
             is_great_power = yes 
         }
-    	localization_key = ""
+    	localization_key = scripted_loc_inline_2680
     }
     text = {
 		trigger = {
 			is_secondary_power = yes
     	}
-		localization_key = "Great Power"
+		localization_key = scripted_loc_inline_2681
 	}
 	text = {
 		trigger = {
 			is_minor_power = yes
     	}
-		localization_key = "Major Power"
+		localization_key = scripted_loc_inline_2682
 	}
 	text = {
 		trigger = {
 			is_insignificant_power = yes
     	}
-		localization_key = "Minor Power"
+		localization_key = scripted_loc_inline_2683
 	}
 }
 
@@ -32,25 +32,25 @@ defined_text = {
         trigger = {
             is_great_power = yes 
         }
-    	localization_key = "Major Power"
+    	localization_key = scripted_loc_inline_2684
     }
     text = {
 		trigger = {
 			is_secondary_power = yes
     	}
-		localization_key = "Minor Power"
+		localization_key = scripted_loc_inline_2685
 	}
 	text = {
 		trigger = {
 			is_minor_power = yes
     	}
-		localization_key = "Insignificant Power"
+		localization_key = scripted_loc_inline_2686
 	}
 	text = {
 		trigger = {
 			is_insignificant_power = yes
     	}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2687
 	}
 }
 
@@ -60,7 +60,7 @@ defined_text = {
         trigger = {
             is_great_power = yes 
         }
-    	localization_key = ""
+    	localization_key = scripted_loc_inline_2688
     }
     text = {
 		trigger = {
@@ -106,7 +106,7 @@ defined_text = {
 		trigger = {
 			is_insignificant_power = yes
     	}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2689
 	}
 }
 
@@ -116,25 +116,25 @@ defined_text = {
         trigger = {
             is_great_power = yes 
         }
-    	localization_key = ""
+    	localization_key = scripted_loc_inline_2690
     }
     text = {
 		trigger = {
 			is_secondary_power = yes
     	}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2691
 	}
 	text = {
 		trigger = {
 			is_minor_power = yes
     	}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2692
 	}
 	text = {
 		trigger = {
 			is_insignificant_power = yes
     	}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2693
 	}
 }
 
@@ -144,25 +144,25 @@ defined_text = {
         trigger = {
             is_great_power = yes 
         }
-    	localization_key = ""
+    	localization_key = scripted_loc_inline_2694
     }
     text = {
 		trigger = {
 			is_secondary_power = yes
     	}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2695
 	}
 	text = {
 		trigger = {
 			is_minor_power = yes
     	}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2696
 	}
 	text = {
 		trigger = {
 			is_insignificant_power = yes
     	}
-		localization_key = ""
+		localization_key = scripted_loc_inline_2697
 	}
 }
 

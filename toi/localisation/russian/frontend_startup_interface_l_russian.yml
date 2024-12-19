@@ -1,88 +1,133 @@
 ﻿l_russian:
- EOANBR_VERSION: "0.3.9" #NT!
+ EOANBR_VERSION: "0.3.10" #NT!
  EOANBR_VERSION_TITLE: "Арс Беллика" #NT!
- eoanbr_version_label: "ЭоаНБР ($EOANBR_VERSION$)" #NT!
- STARTUP_EVENT_VERSION: "§bв. Бета $EOANBR_VERSION$§!" #NT!
- STARTUP_EVENT_DESCRIPTION: "[STARTUP_EVENT_SCRIPTED]" #NT!
- STARTUP_EVENT_DESCRIPTION_DEFAULT: "§bДобро пожаловать в мод «Конец нового начала Redux» — GitHub Edition!§!\n \n§gКонец нового начала Redux§! — это проект полной конверсии, целью которого является имитация 200-летней мировой истории с помощью Hearts of Iron IV. опыт. В отличие от других модов на основе HOI, §gEoaNBR§! не предназначен для игры в качестве боевого картографа, а вместо этого подробно описывает политические, экономические и социальные изменения, которые радикально изменили человеческий опыт до наших дней. §gEoaNBR§! все еще находится в стадии активной разработки. Пользователи устройств низкого уровня могут столкнуться с §Rзаметными задержками и сбоями§!.\n \n§MОбновите патч совместимости Stella Polaris:§! §!0 §!1\nP§!. Включает совместимость с последним обновлением Hearts of Iron 4 и исправления ошибок для Японии, России, Пруссии, США и Великобритании. Исправлены сбои, связанные с деревом технологий и продвижением лидеров подразделений. §!3Для получения подробного списка посетите наши полные примечания к патчу в разделе '!' button!§!\n\n Спасибо за игру в нашу версию для разработчиков и надеемся, что вам понравится эта игра - §!5Команда EoaNBR§!" #NT!
- STARTUP_EVENT_DESCRIPTION_SETTINGS: "§bНастраиваемые внутриигровые настройки:§!\n \n \n §YОпределения и механика§!\n \n \n \n §YВкус и контент§!\n \n \n \n §YОптимизация §!" #NT!
- STARTUP_EVENT_DESCRIPTION_PATH_NOTES: "Текущие примечания к патчу" #NT!
- STARTUP_EVENT_DESCRIPTION_COMMUNITY: "§bСообщество и авторы:§!\n \n§gКонец нового начала Redux§! — это мод и сообщество с открытым исходным кодом. Мы всегда ищем участников и новых членов сообщества. Присоединяйтесь к нашему Discord для получения обновлений, обсуждения модов и многого другого. §S (ссылка в левом нижнем углу этого меню)§!\n\nМы хотели бы поблагодарить наших бесчисленных исследователей, писателей, художников и многих других. EoaNBR никогда бы не продвинулся без вас всех! Мы также хотели бы выразить огромную благодарность нашим сторонникам на сайте §RPatreon§_1:\n§gДжен, Алекс, Дэвид Сиркин, Майкл Вольф, Авиэль Фартук, Гарри Чемберс, BlueFox098, Дарси Клаттон, Лассе Веннер Йенсен, Кримсомон, Джон Ханни, Чжан. Ци, Моллюск Устрица, Лахлан Гретгрикс, Шоумастер LP, Алвиун, Александр Сапич, Джейсон, Луи, Дэвин Адамс, Огузкан Батыр, Джейк Фиш, РонБургунди, Джеймс, Филипек Флачиньск, Принц Иллис, Коди Блэк, Гэвин Вернер, Том Шуэльке и MasterQG. §!\n\n§RРуководители разработки§!: §gEnergywelder, Vanadium, Lancer2201 и Mountain.§! §!2Ушедшие на пенсию руководители§!: §gAtomicFalco, Powerblo, Tomvand, Londinium, Minn, Silver, StrikerVX4, PresidentStorm, Filippos, Hogthra , BlueFox, ClassyAmoeba, Jen, Rolf, HolyDoggo, Garion132, TPS-Geronam, EnzoC9083, ChrisSGD, Coggernaut, Kuba, Imperialism, Funkyman, DEMO0, Makkkkus и Toadsess§!" #NT!
-  #§bCommunity & Credits:§! (wip)\n\n§ODevelopment Team Leads —§! Imperialism, ChrisSGD, TPS-Geronam, Kuba, Garion132, Coggernaut, Vanadium, Energywelder, EnzoC & Lancer2201 (§CFormer Leads —§! AtomicFalco, Powerblo, tomvand)\n (§OFormer Subteam Leads —§! Londinium, AtomicFalco, Minn, Silver, StrikerVX4, PresidentStorm, Filippos, Hogthra, BlueFox, ClassyAmoeba, Jen, Rolf, & Holydoggo)\nCountless other Research Helpers, Coding Assistants, Freelance Arists and more from our Discord server and elsewhere. We couldn't have created this without you guys!\n\nWe would also like to give a huge love to our supporters over at §RPatreon§!:\n Jen, Alex, David Sirkin, Michael Wolf, Aviel Fartuk, Harry Chambers, BlueFox098, Darcy Clutton, Lasse Venner Jensen, Crimsomon, John Hanni, Zhang Qi, Clammed Oyster, Lachlan Gretgrix, Showmaster LP, Alviun, Alexander Sapic, Jason, Lui, Davin Adams, Oğuzkan Batyr, Jake Fish, theRonBurgundy, James, Filipek Flaczyńsk, Prince Illis, Cody Black, Gavin Werner, Tom Schuelke and MasterQG." 
- #STARTUP_EVENT_DESCRIPTION_DEFAULT: "§bДобро пожаловать в мод «Конец нового начала Redux»!§!\n \n§gКонец нового начала Redux§! — это проект полной конверсии, целью которого является имитация 200-летней мировой истории с помощью опыта Hearts of Iron IV. В отличие от других крупных модов, §gEoaNBR§! не предназначен для рисования карт военных действий, а вместо этого фокусируется на политических, экономических и социальных изменениях, которые радикально изменили человечество. §gEoaNBR§! все еще находится в активной разработке. Пользователи устройств более низкого уровня могут столкнуться с §Rзаметными задержками и сбоями§!.\n \n§MСводка обновления:§! Бета 0.2.7 Ver-Tersus\n Патч совместимости для HOI-4 §!01.11 Обновление Барбаросса§! ( без дополнений No Step Back Expansion). Обновление дерева технологий, развития эпох и интерфейса. Переработка поездов и снабжения. Режимы карты. Добавлен контент для США, Японии, Испании, Дании и других стран. Много касаний оптимизации. §!2Полный список можно найти на нашей странице в Steam или в Discord.§!\n\n Спасибо за игру, надеемся, вам понравится — §!4Команда EoaNBR§!" #NT!
-  #§YWelcome to the End of a New Beginning Redux!§!\n§g !!! Please read the ingame wiki (the \"?\" in the upper right corner) before playing !!!§!\n EoaNBR is a total-conversion mod with aims of simulating World History from 1857 onwards. We are still in §REarly Alpha§!, so expect incomplete content and/or a variety of bugs. However, the team is always doing its best to polish and improve the mod!\n \n If you are interested in staying up to date with daily development, join our §GDiscord Server§! and check out our §GDevelopment GitHub§!:\nPlease note that §Ypeople with smaller screens§! may experience an issue with the research interface where not all the folders are displayed. This can be circumvented by going into your options and lowering the UI Scale modifier. To verify that you can see all technology folders, please check whether the rightmost folder is called \"Special Projects\". If that is the case, all the folders are displayed on your screen.\n\nUsers with low-end PCs may also experience §Rsignificant lag or even crashes§! when playing on speed 5 (maximum speed). The lag can be fought by using the §Y\"Unite Africa\"§! option in the options menu, while, if you crash, you can try to reload and play the month on speed 4.\n\nThanks for playing our mod and we hope you will enjoy it!\n — §WThe EoaNBR Team§!" "?\" в правом верхнем углу) перед игрой !!!§!\n EoaNBR — это мод с полным преобразованием, целью которого является имитация всемирной истории, начиная с 1857 года. Мы все еще находимся в §RРанней версии Alpha§!, поэтому ожидайте неполного контента и /или различные ошибки. Тем не менее, команда всегда делает все возможное, чтобы довести и улучшить мод!\n \n Если вы хотите быть в курсе ежедневных разработок, присоединяйтесь к нашему §GDiscord Server§! и проверьте наш §GРазработка GitHub§!:\nОбратите внимание, что §Yлюди с меньшими экранами§! могут столкнуться с проблемой с интерфейсом исследования, где отображаются не все папки. Эту проблему можно обойти, зайдя в настройки и уменьшив модификатор масштаба пользовательского интерфейса. Чтобы убедиться, что вы видите все технологические папки, проверьте, называется ли самая правая папка «Специальные проекты». В этом случае все папки отображаются на вашем экране.\n\nПользователи компьютеров низкого уровня могут также наблюдается §Rзначительная задержка или даже сбой§! при игре на скорости 5 (максимальная скорость). С лагами можно бороться, используя опцию §Y\"Объединить Африку\"§! в меню настроек, а в случае сбоя можно попытаться перезагрузить компьютер и сыграть месяц на скорости 4.\n\nСпасибо за игру в нашу игру. мод, и мы надеемся, что он вам понравится!\n — §R3Команда EoaNBR§!" #NT!
- STARTUP_EVENT_PLAY: "£occupation_costs  Введите EoaNBR" #NT!
- STARTUP_EVENT_SUMMARY: "£research_icon Подробнее" #NT!
- STARTUP_EVENT_SETTINGS: "£repairing  Внутриигровые настройки" #NT!
- STARTUP_EVENT_COMMUNITY: "£pops  Наше сообщество" #NT!
- STARTUP_EVENT_PLAY_tt: "Нажмите, чтобы §YPlay§!" #NT!
- STARTUP_EVENT_SUMMARY_tt: "Посмотреть §YПодробности обновления§!" #NT!
- STARTUP_EVENT_SETTINGS_tt: "Просмотр §YВнутриигровых настроек§!" #NT!
- STARTUP_EVENT_COMMUNITY_tt: "Посмотреть §YСообщество и авторы§!" #NT!
- STARTUP_EVENT_DISCORD: "Присоединяйтесь к Discord сообщества EoaNBR" #NT!
- #  STARTUP_EVENT_PROGRESS_tt: "[!startup_event_button_summary_click]" #NT!
- #  STARTUP_EVENT_CREDITS_tt: "[!startup_event_button_credits_click]" #NT!
+ eoanbr_version_label: "ЕоаНБР ($EOANBR_VERSION$)" #NT!
+ STARTUP_EVENT_VERSION: "§bv. Бета $EOANBR_VERSION$§!" #NT!
+ STARTUP_EVENT_DESCRIPTION_WELCOME: "§bДобро пожаловать в мод End of a New Beginning!§!\n\n§gEnd of a New Beginning Redux§! — это проект полной конверсии, целью которого является симуляция 200 лет истории человечества с помощью опыта Hearts of Iron IV. В отличие от других модов на основе HOI, §!\n\n§4EoaNBR§! не предназначен для игры в качестве чисто боевого художника карт. Вместо этого мы намерены изложить детали политических, экономических и социальных потрясений, которые изменили человеческий опыт от осады Дели сипаями до наших дней.\n\n§MПатч реконструкции экономики от июня 2024 года:§! $EOANBR_VERSION$ $EOANBR_VERSION_TITLE$\nВключает полную реконструкцию того, как страны взаимодействуют и развивают свою экономику. 20 новых ресурсов, 10 новых зданий и 300 новых технологий. Дополнительная работа над артиллерией и военными судами 1860-1880-х годов. Обновления контента для Пруссии, России, Австрии и Испании, а также сотни исправлений ошибок и оптимизаций. Посетите наши полные заметки об патче по кнопке «!»!§!\n\n Спасибо за игру в нашу версию для разработчиков, и мы надеемся, что вам понравится -§! §!\n\n§0 §!\n\n§1Команда EoaNBR§!\n\n\n\n§pСообщество и благодарности:§!\n \n§!\n\n§4End of a New Beginning Redux§! — это мод с открытым исходным кодом и сообщество. Мы всегда ищем участников и новых членов сообщества. Присоединяйтесь к нашему Discord для обновлений, обсуждения модов и многого другого.\n\nМы хотели бы поблагодарить наших бесчисленных исследователей, писателей, художников и многих других. EoaNBR никогда бы не продвинулся без вас всех! Мы также хотели бы выразить огромную любовь нашим сторонникам на Patreon. Огромное, величайшее спасибо вам всем!\n\n\n§!\n\n§6Сторонники Patreon:§! §!\n\n§4Джен, Алекс, Дэвид Сиркин, Майкл Вольф, Авиель Фартук, Гарри Чемберс, BlueFox098, Дарси Клаттон, Лассе Веннер Дженсен, Crimsomon, Джон Ханни, Чжан Ци, Clammed Oyster, Лаклан Гретгрикс, Showmaster LP, Элвиун, Александр Сапик, Джейсон, Луи, Дэвин Адамс, Огузкан Батыр, Джейк Фиш, theRonBurgundy, Джеймс, Филипек Флачиньск, Принц Иллис, Коди Блэк, Гэвин Вернер, Том Шульке и MasterQG.§!\n\n§Руководители разработки§!: §!\n\n§4Energywelder, Vanadium и Lancer2201.§! §!3Выбывшие лидеры§!: §!\n\n§4AtomicFalco, Powerblo, Tomvand, Londinium, Minn, Silver, StrikerVX4, PresidentStorm, Filippos, Hogthra, BlueFox, ClassyAmoeba, Jen, Rolf, HolyDoggo, Garion132, TPS-Geronam, EnzoC9083, ChrisSGD, Coggernaut, Kuba, Imperialism, Funkyman, DEMO0, Makkkkus, Toadsess, Mountain и Snobbig§!" #NT!
+ STARTUP_EVENT_DESCRIPTION_SCENARIO: "[STARTUP_EVENT_SCENARIO]" #NT!
+ STARTUP_EVENT_DESCRIPTION_SETTINGS: "§bНастраиваемые внутриигровые настройки:§!\n \n \n §YОпределения и механика§!\n \n \n \n §YВкус и содержание§!" #NT!
+ STARTUP_EVENT_DESCRIPTION_PATCH_NOTES: "§GНажмите для получения последних £eoanbr_logo_texticon  EoaNBR Patch Notes!!§!" #NT!
   
- GAMERULE_ECONOMY: "Экономика - [GetRuleEconomy]" #NT!
+ STARTUP_EVENT_WELCOME: "£research_icon Добро пожаловать в мод!" #NT!
+ STARTUP_EVENT_SCENARIO: "£urban_center_texticon  Сценарий страны" #NT!
+ STARTUP_EVENT_SETTINGS: "£repairing  Настройки кампании" #NT!
+ STARTUP_EVENT_PLAY: "£eoanbr_logo_texticon  Введите EoaNBR" #NT!
+ STARTUP_EVENT_PLAY_tt: "Нажмите, чтобы §YPlay§!" #NT!
+  
+ STARTUP_EVENT_SOCIALS_TITLE: "НАШИ СОЦИАЛЬНЫЕ СЕТИ" #NT!
+ STARTUP_EVENT_DISCORD: "£eoanbr_logo_texticon  §CEoaNBR§! Сообщество Discord" #NT!
+ STARTUP_EVENT_DISCORD_tt: "Познакомьтесь с командой разработчиков и обсудите мод с другими игроками!" #NT!
+ STARTUP_EVENT_STEAM: "£eoanbr_logo_texticon  §CEoaNBR§! Мастерская Steam" #NT!
+ STARTUP_EVENT_STEAM_tt: "Загрузите последнюю официальную версию нашего мода в Steam!" #NT!
+ STARTUP_EVENT_GITHUB: "£eoanbr_logo_texticon  §CEoaNBR§! Репозиторий GitHub" #NT!
+ STARTUP_EVENT_GITHUB_tt: "Загрузите и протестируйте версию нашего мода для разработчиков на GitHub!" #NT!
+ STARTUP_EVENT_YOUTUBE: "£eoanbr_logo_texticon  §CEoaNBR§! Официальный канал YouTube" #NT!
+ STARTUP_EVENT_YOUTUBE_tt: "Смотрите последние трансляции и ознакомительные видеоролики от нашей команды!" #NT!
+ STARTUP_EVENT_PATREON: "£eoanbr_logo_texticon  §CEoaNBR§! Команда Patreon" #NT!
+ STARTUP_EVENT_PATREON_tt: "Поддержите нашу команду в приобретении музыки, загрузочных экранов и моделей!" #NT!
+ STARTUP_EVENT_REDDIT: "£eoanbr_logo_texticon  §CEoaNBR§! Сообщество Subreddits" #NT!
+ STARTUP_EVENT_REDDIT_tt: "Обсудите с другими игроками на нашем SubReddit!" #NT!
+ STARTUP_EVENT_PARADOX: "£eoanbr_logo_texticon  §CEoaNBR§!" #NT!
+ STARTUP_EVENT_PARADOX_tt: "Загрузите последнюю официальную версию нашего мода на ParadoxMods!" #NT!
+  
+ STARTUP_EVENT_SUBMODS_TITLE: "НАШИ СУБМОДЫ" #NT!
+ STARTUP_EVENT_MUSIC_PACK_1: "£eoanbr_logo_texticon  §CEoaNBR Музыкальный пакет #1: Романтизм§!" #NT!
+ STARTUP_EVENT_MUSIC_PACK_1_tt: "§RСкоро:§! Европейская музыка викторианской эпохи" #NT!
+ STARTUP_EVENT_MUSIC_PACK_2: "£eoanbr_logo_texticon  §CEoaNBR Музыкальный пакет #2: Спящие тигры§!" #NT!
+ STARTUP_EVENT_MUSIC_PACK_2_tt: "§RСкоро:§! Азиатская музыка викторианской эпохи" #NT!
+ STARTUP_EVENT_PLPC: "£eoanbr_logo_texticon  §CEoaNBR - Мирные конференции под руководством игроков§!" #NT!
+ STARTUP_EVENT_PLPC_tt: "Совместимая с EoaNBR версия конференции мира под руководством игрока" #NT!
+  
+ STARTUP_EVENT_PARTNERS_TITLE: "НАШИ ПАРТНЕРЫ" #NT!
+ STARTUP_EVENT_DEBT_AND_TAXES: "§CДолги и налоги§! §R(Приостановлено|Интегрировано)§!" #NT!
+ STARTUP_EVENT_DEBT_AND_TAXES_tt: "Вам нравится HOI4, но не нравится его экономическая система? Думаете, что она слишком простая, с недостаточной глубиной и слишком нереалистичная? Что ж, Debt and Taxes для вас!\n\nВ число вещей, которые принесет Debt and Taxes, входит новая экономическая система, в том числе новые торговые механизмы и расширенная и возросшая важность ресурсов. Попсы с целой системой, посвященной им. Политика для прямых изменений в вашей экономике и населении, не только это, но и то, что устанавливает правила как для вас, так и для вашего населения и бизнеса. И, конечно же, события, которые будут отражать обстоятельства в вашей стране: экономические крахи, протесты, забастовки и т. д.\n\nТак что наденьте цилиндр и закурите сигару, станьте свидетелем индустриализации и модернизации вашей страны в Debt and Taxes." #NT!
+ STARTUP_EVENT_PIERCED_WINGS: "§CПронзенные крылья§!" #NT!
+ STARTUP_EVENT_PIERCED_WINGS_tt: "Pierced Wings, проект для HOI4, — это кошмар, полный грязи, где дух человеческой свободы пал под натиском своих повелителей. Адские машины войны сходят с конвейеров. Производственные предприятия возвышаются до облаков, а аэростаты разбросаны между пирсами. Смог разделяет небо. Вдохновлено такими произведениями, как игры Dishonored и серия романов Leviathan.\n\nПосле решающей победы Великого Альянса в войне за испанское наследство преждевременная Французская революция подавлена ​​в зародыше. Америка остается под британским игом. Демократия гибнет. Мир чахнет. В эти времена пламя изобретательности загорается, когда Чарльз Бэббидж и Ада Лавлейс завершают свой мастерский мазок на страницах истории, и Машина Разности ревёт к жизни.\n\nРаскрашенное в оттенки акварели и чернил, исследование вселенной в переходе от стимпанка к дизельпанку. Согнутое наискось введением силы, бросающей вызов священным Небесам, человечество стоит на краю пропасти судьбы, худшей, чем смерть.\n\nМы смиренно приглашаем вас отправиться с нами в это путешествие в ад, где самые яркие огни погасли. Мы с нетерпением ждем вашего прибытия." #NT!
+ STARTUP_EVENT_RISE_OF_NATIONS: "§CВосстание Наций§!" #NT!
+ STARTUP_EVENT_RISE_OF_NATIONS_tt: "Rise of Nations — это мод, цель которого — создать незабываемое столетие игрового процесса. (1900-2060)\n - Огромное дерево технологий 1900-2060\n - Даты начала Первой мировой войны: 1910\n - Даты начала Второй мировой войны: 1933 и 1936\n - Даты начала Демократической национальной партии: 1900\n - В игре есть и другие даты начала, но в настоящее время их содержание ограничено\n - Победа Германии во Второй мировой войне\n - Победа Германии во Второй мировой войне (с поражением Японии)\n - Режим Римской империи\n - Огромное общее дерево фокусов (1910-2060)\n - Переработанная система законов с гораздо большим погружением." #NT!
+ STARTUP_EVENT_MODDING_COOP: "§CHOI4 Кооператив моддинга§!" #NT!
+ STARTUP_EVENT_MODDING_COOP_tt: "§CEoaNBR§! является гордым членом кооператива моддеров Hearts of Iron IV, сообщества единомышленников, заинтересованных в продвижении и распространении знаний о моддерах HOI4!" #NT!
+  
+ STARTUP_EVENT_SCENARIO_1857_ENG: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_ENG_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_RUS: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_RUS_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_USA: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_USA_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_FRA: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_FRA_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_AUS: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_AUS_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_OTO: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_OTO_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_PRS: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_PRS_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_BRA: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_BRA_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_PIE: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_PIE_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_TSH: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_TSH_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_QNG: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_QNG_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_SPR: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_SPR_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_HOL: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_HOL_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_MEX: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_MEX_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_DEN: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_DEN_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_BAV: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_BAV_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_SWE: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_SWE_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_EGY: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_EGY_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_SKT: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_SKT_situation$" #NT!
+ STARTUP_EVENT_SCENARIO_1857_TAI: "§C[THIS.GetNameWithFlag]§!\n\n$bookmark_1857_TAI_situation$" #NT!
+  
  GAMERULE_AGENCY: "Агентства - [GetRuleAgency]" #NT!
  GAMERULE_TRIBAL: "Племена - [GetRuleTribal]" #NT!
  GAMERULE_REBEL: "Восстания - [GetRuleRebel]" #NT!
  GAMERULE_PANDEMIC: "Пандемии - [GetRulePandemic]" #NT!
- GAMERULE_CONTROVERSIAL: "Спорно - [GetRuleControversial]" #NT!
+ GAMERULE_CONTROVERSIAL: "Спорный - [GetRuleControversial]" #NT!
  GAMERULE_EASTER: "Пасхальные яйца - [GetRuleEaster]" #NT!
  GAMERULE_MUSIC: "Музыка - [GetRuleMusic]" #NT!
- GAMERULE_INTERFACE: "Интерфейс - [GetRuleInterface]" #NT!
- GAMERULE_UNITE_AFRICA: "Объединитесь[GetAfricaUnited] Африка" #NT!
+ GAMERULE_UNITE_AFRICA: "Объединяйтесь[GetAfricaUnited] Африка" #NT!
  GAMERULE_LOCK: "£locked Блокировка[GetRuleLocked] Настройки" #NT!
   
- STARTUP_EVENT_ECONOMY_tt: "Настройки автоматизации экономики" #NT!
- STARTUP_EVENT_AGENCY_tt: "§YРазведывательное агентство§! Настройки игры\n \n§OТребуется расширение:§! La Resistance" #NT!
- STARTUP_EVENT_TRIBAL_tt: "§YМеханика племенной империи§! Настройки игры\n \n§OРекомендуемое расширение:§! Вместе к победе" #NT!
- STARTUP_EVENT_REBEL_tt: "§YСопротивление и восстания§! Настройки игры\n \n§OРекомендуется расширение:§! La Resistance" #NT!
- STARTUP_EVENT_PANDEMIC_tt: "§YМеханика пандемий§! Настройки игры" #NT!
- STARTUP_EVENT_CONTROVERSIAL_tt: "§YСпорная тема§! Настройки игры" #NT!
- STARTUP_EVENT_EASTER_tt: "§YСодержимое пасхального яйца§! Настройки игры" #NT!
- STARTUP_EVENT_MUSIC_tt: "§YПользовательская музыка§! – настройки игры\n \n§OРекомендуемая настройка создателя контента:§! отключено" #NT!
- STARTUP_EVENT_UNITE_AFRICA_tt: "§YUnite Africa§! Настройки игры" #NT!
- STARTUP_EVENT_LOCK_tt: "§RЗаблокировать настройки кампании§!\n \nЭто §Ypermanently§_1 заблокирует внутриигровые настройки этой кампании. (Полезно для махинаторов MP)[GetRuleLockedDebug]" #NT!
- STARTUP_EVENT_LOCK_tt1: "\n \n§YКонсольная команда для разблокировки внутриигровых настроек: §! событие eoanb_gamerules.11" #NT!
+ STARTUP_EVENT_AGENCY_tt: "§YРазведывательное агентство§! - Настройки игры\n \n§OТребуется расширение:§! La Resistance" #NT!
+ STARTUP_EVENT_TRIBAL_tt: "§YМеханика племенной империи§! - Настройки игры" #NT!
+ STARTUP_EVENT_REBEL_tt: "§YСопротивление и восстания§! - Настройки игры\n \n§OРекомендуется расширение:§! La Resistance" #NT!
+ STARTUP_EVENT_PANDEMIC_tt: "§YМеханика пандемии§! - Настройки игры" #NT!
+ STARTUP_EVENT_CONTROVERSIAL_tt: "§YСпорный вкус§! - Настройки игры" #NT!
+ STARTUP_EVENT_EASTER_tt: "§YСодержание пасхального яйца§! - Настройки игры" #NT!
+ STARTUP_EVENT_MUSIC_tt: "§YПользовательская музыка§! - Настройки игры\n \n§OРекомендуемая настройка создателя контента:§! Отключено" #NT!
+ STARTUP_EVENT_UNITE_AFRICA_tt: "§YОбъединим Африку§! - Настройки игры" #NT!
+ STARTUP_EVENT_LOCK_tt: "§RЗаблокировать настройки кампании§!\n \nЭто §Yнавсегда§! заблокирует игровые настройки для этой кампании. (Полезно для махинаций с MP)[GetRuleLockedDebug]" #NT!
+ STARTUP_EVENT_LOCK_tt1: "\n \n§YКонсольная команда для разблокировки внутриигровых настроек:§! event eoanb_gamerules.11" #NT!
   
  STARTUP_EVENT_GAMERULE_DISABLED: "§RDisabled§!" #NT!
  STARTUP_EVENT_GAMERULE_ENABLED: "§GEnabled§!" #NT!
  STARTUP_EVENT_GAMERULE_UNDER_DEVELOPMENT: "§RВ разработке§!" #NT!
   
+ INGAME_WIKI_TITLE: "Внутриигровая Вики" #NT!
+  
  # Gamerule Events 
- eoanb_gamerules.1.t: "Настройки экономичной системы" #NT!
- eoanb_gamerules.1.d: "§RЭта функция запланирована для обновления Ars Bellica и в настоящее время находится в разработке. §!\n \nТекущий статус: [GetRuleEconomy]" #NT!
+ eoanb_gamerules.1.t: "Настройки системы экономии" #NT!
+ eoanb_gamerules.1.d: "§RЭта функция запланирована для обновления Ars Bellica и в настоящее время находится в разработке.§!\n \nТекущий статус: [GetRuleEconomy]" #NT!
  eoanb_gamerules.1.a: "Давать возможность" #NT!
  eoanb_gamerules.1.b: "Запрещать" #NT!
   
  eoanb_gamerules.2.t: "Настройки разведывательного агентства" #NT!
  eoanb_gamerules.2.d: "Текущий статус: [GetRuleAgency]" #NT!
   
- eoanb_gamerules.3.t: "Настройки племенной механики" #NT!
+ eoanb_gamerules.3.t: "Настройки механики племени" #NT!
  eoanb_gamerules.3.d: "Текущий статус: [GetRuleTribal]" #NT!
   
- eoanb_gamerules.4.t: "Настройки восстания и сопротивления" #NT!
- eoanb_gamerules.4.d: "§RЭта функция запланирована для обновления Ars Bellica и в настоящее время находится в разработке. §!\n \nТекущий статус: [GetRuleRebel]" #NT!
+ eoanb_gamerules.4.t: "Настройки Восстания и Сопротивления" #NT!
+ eoanb_gamerules.4.d: "§RЭта функция запланирована для обновления Ars Bellica и в настоящее время находится в разработке.§!\n \nТекущий статус: [GetRuleRebel]" #NT!
   
- eoanb_gamerules.5.t: "Настройки пандемического контента" #NT!
- eoanb_gamerules.5.d: "§RЭта функция запланирована для обновления Ars Bellica и в настоящее время находится в разработке. §!\n \nТекущий статус: [GetRulePandemic]" #NT!
+ eoanb_gamerules.5.t: "Настройки контента о пандемии" #NT!
+ eoanb_gamerules.5.d: "§RЭта функция запланирована для обновления Ars Bellica и в настоящее время находится в разработке.§!\n \nТекущий статус: [GetRulePandemic]" #NT!
   
- eoanb_gamerules.6.t: "Спорные настройки контента" #NT!
- eoanb_gamerules.6.d: "Специальные мероприятия и другой контент, который может оказаться спорным и не рекомендуется для всех аудиторий.\n \nТекущий статус: [GetRuleControversial]" #NT!
+ eoanb_gamerules.6.t: "Настройки спорного контента" #NT!
+ eoanb_gamerules.6.d: "События и другой контент, который может оказаться спорным и не рекомендованным для всех аудиторий.\n \nТекущий статус: [GetRuleControversial]" #NT!
   
  eoanb_gamerules.7.t: "Настройки содержимого пасхального яйца" #NT!
- eoanb_gamerules.7.d: "Специальные события и другой контент, связанный с забавными шутками участников сообщества EoaNBR.\n \nТекущий статус: [GetRuleEaster]" #NT!
+ eoanb_gamerules.7.d: "События Flavor и другой контент, прикрепленный к забавным шуткам, созданным членами сообщества EoaNBR.\n \nТекущий статус: [GetRuleEaster]" #NT!
   
  eoanb_gamerules.8.t: "Пользовательские настройки музыки" #NT!
- eoanb_gamerules.8.d: "Пользовательская музыка, которая добавляется в музыкальный пакет Vanilla HOI4. Некоторая музыка может быть защищена авторским правом, и создатели контента, использующие эту настройку, делают это на свой страх и риск.\n \nТекущий статус: [GetRuleMusic]" #NT!
+ eoanb_gamerules.8.d: "Пользовательская музыка, которая добавляется в Vanilla HOI4 Music Pack. Некоторая музыка может быть защищена авторским правом, и создатели контента, использующие эту настройку, делают это на свой страх и риск.\n \nТекущий статус: [GetRuleMusic]" #NT!
   
  eoanb_gamerules.9.t: "Настройки обновлений интерфейса" #NT!
  eoanb_gamerules.9.d: "Текущий статус: [GetRuleInterface]" #NT!
   
  eoanb_gamerules.10.t: "Настройки Unite Africa" #NT!
- eoanb_gamerules.10.d: "Установка нашей даты начала 1857 года, удаляющая с карты многие посторонние африканские племенные народы." #NT!
- eoanb_gamerules.10.a: "Объедините Африку" #NT!
- eoanb_gamerules.10.a_tt: "§RОбъединяет племенную Африку§!\n \nЭто решение §Yудалит до 150 стран с карты Африки§!. Если вы принадлежите к африканскому тегу, вас могут аннексировать." #NT!
+ eoanb_gamerules.10.d: "Место действия для нашей начальной даты 1857 года, удаляющее с карты многие лишние африканские племена." #NT!
+ eoanb_gamerules.10.a: "Объединим Африку" #NT!
+ eoanb_gamerules.10.a_tt: "§RОбъединяет племенную Африку§!\n \nЭто решение §Yудалит до 150 стран с карты Африки§!. Если вы являетесь африканским тегом, вы можете быть аннексированы." #NT!
  eoanb_gamerules.10.b: "Неважно." #NT!

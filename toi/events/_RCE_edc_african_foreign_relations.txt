@@ -952,7 +952,6 @@ country_event = {###natives reached 10 machine_parts_factory
 			has_country_flag = afr_colony_industrializing
 			has_country_flag = afr_an_african_industrializing
 		}
-		machine_parts_factory > 9
 		NOT= {has_country_flag= af_t_10_machine_parts}
 	}
 	mean_time_to_happen = {
@@ -4859,7 +4858,7 @@ country_event = {##FRA - purchase of Djibouti
 	trigger = {
 		tag = FRA
 		date > 1885.1.1
-		MED={
+		HJZ={
 			owns_state = 268
 		}
 	}
@@ -4873,7 +4872,7 @@ country_event = {##FRA - purchase of Djibouti
 		transfer_state = 268
 		268={
 			add_core_of = FRA
-			remove_core_of = MED
+			remove_core_of = HJZ
 		}
 	}
 }

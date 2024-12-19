@@ -21,6 +21,7 @@ iron_cross = {
 		has_start_date < 1857.5.12
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 3 0 0 }
@@ -53,6 +54,7 @@ pacific_star = {
 		has_start_date < 1900.1.2
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 1 3 3 }
@@ -95,6 +97,7 @@ timeline_191={
 		has_start_date < 1857.5.12
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		tag = CSA
@@ -111,6 +114,7 @@ little_napoleon={
 		tag = USA
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		tag = USA
@@ -126,6 +130,7 @@ romance_of_the_three_napoleons={
 		has_start_date < 1857.5.12
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		OR={
@@ -212,6 +217,7 @@ promise_kept={
 		has_start_date < 1857.5.12
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		date > 2050.1.1
@@ -222,6 +228,7 @@ Is_tHaT_a_tNO_RefERenCe={
 		# has_start_date < 1857.5.12
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		tag = GER
@@ -254,6 +261,7 @@ my_case_in_point ={
 		}
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		owns_state = 954
@@ -265,6 +273,7 @@ sick_man_of_europe ={
 		#has_start_date < 1857.5.12
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		always = no
@@ -275,6 +284,7 @@ the_sultan_of_oman_lives_in_zanzabar_now={
 		tag = OMA
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		capital_scope={
@@ -320,6 +330,7 @@ eirinn_go_brach={
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		tag = IRE
@@ -338,6 +349,7 @@ the_polish_have_risen={
 		has_start_date < 1870.1.1
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		tag = POL
@@ -353,6 +365,7 @@ second_american_revolution={
 		tag = USA
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		tag = USA
@@ -372,6 +385,7 @@ nortons_dream={
 		}
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened={
 		OR={
@@ -395,6 +409,7 @@ order_of_labour_glory = {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 
 	ribbon={
@@ -415,6 +430,7 @@ filling_the_cup_of_solid_gold = {
 		tag = QNG
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		check_variable = {gdp_per_capita > 2.0} 
@@ -449,6 +465,7 @@ medal_of_honor = {
 		has_start_date < 1940.1.1
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 1 1 6 }
@@ -468,6 +485,7 @@ i_am_a_staunch_national_sewardist = {
 		tag = USA
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		owns_state = 101
@@ -484,6 +502,7 @@ green_line_go_up = {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		set_temp_variable = { num_temp = gdp_amount_yearly^num }
@@ -511,6 +530,7 @@ imperial_reconquista = {
 		tag = SPR
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		always = no #
@@ -545,6 +565,7 @@ legion_of_honor = {
 		has_start_date < 1885.1.2
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 1 1 1 }
@@ -565,6 +586,7 @@ empire_gallantry={
 		has_start_date < 1900.1.2
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 1 3 2 }
@@ -816,6 +838,7 @@ star_of_south_africa= {
 		has_start_date < 1900.1.2
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 6 1 1 }
@@ -854,6 +877,7 @@ star_of_italy = {
 		has_start_date < 1857.5.12
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 1 6 0 }
@@ -873,6 +897,7 @@ neo_guelphist_dream={
 		tag = PAP
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		has_country_flag = is_literally_italy
@@ -900,6 +925,7 @@ grand_dutchy_of_alaska={
 		has_start_date < 1857.5.12
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		tag = ALK
@@ -917,6 +943,7 @@ no_u = {
 		has_start_date < 1933.1.2
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		date < 1933.1.1
@@ -946,6 +973,7 @@ order_of_king_abdulaziz = {
 		has_start_date < 1910.1.1
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 3 1 1 }
@@ -970,6 +998,7 @@ silver_cross_of_rhodesia= {
 		has_start_date < 1970.1.1
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	ribbon={
 		frames = { 1 1 7 7 }
@@ -991,6 +1020,7 @@ thawed_out = {
 		has_start_date < 1950.1.2
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		date > 1990.1.1
@@ -1005,6 +1035,7 @@ well_so_long_then= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 	}
 	happened = {
 		has_global_flag = dc_end_of_the_world
@@ -1014,6 +1045,7 @@ new_calph= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		OR={
 			tag = NJD
 			tag = SNS
@@ -1043,6 +1075,7 @@ restutor_orbis= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		OR={
 			tag = GRE
 			tag = PAP
@@ -1057,6 +1090,7 @@ star_of_romania= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		has_start_date < 1900.1.2
 		OR={
 			tag = ROM
@@ -1092,6 +1126,7 @@ order_of_saint_stephen= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		
 	}
 	ribbon={
@@ -1153,6 +1188,7 @@ order_of_lenin= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		OR={
 			tag = RUS
 			tag = SOV
@@ -1180,6 +1216,7 @@ order_of_the_rising_sun= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		is_japanese_country = yes
 		has_start_date < 1900.1.2
 	}
@@ -1278,6 +1315,7 @@ order_of_the_chrysanthemum= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		OR={
 			tag = TSH
 			tag = TSU
@@ -1330,6 +1368,7 @@ china_war_medal= {
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		NOT={
 			custom_trigger_tooltip={
 				tooltip = ACHIEVE_controls_CHI_TREATY_PORT
@@ -1368,6 +1407,7 @@ kingdom_of_heaven={
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		tag = TAI
 	}
 	happened = {
@@ -1385,6 +1425,7 @@ order_of_blue_sky_and_white_sun={
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		tag = CHI
 	}
 	ribbon={
@@ -1413,6 +1454,7 @@ blessed_rains={
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		has_start_date < 1857.5.12
 		custom_trigger_tooltip = {
 			tooltip = ACHIEVE_is_african_tribal
@@ -1428,6 +1470,7 @@ sabre_of_the_awakened_lion={
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		has_start_date < 1912.1.2
 		OR={
 			tag = QNG
@@ -1445,6 +1488,7 @@ victoria_cross={
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		has_start_date < 1914.1.2
 	}
 	ribbon={
@@ -1464,6 +1508,7 @@ order_of_canada={
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		has_start_date < 1900.1.2
 		OR={
 			tag = CAN
@@ -1494,6 +1539,7 @@ order_of_the_phoenix={
 	possible={
 		game_rules_allow_achievements = yes
 		is_ironman = yes
+		is_debug = no
 		has_start_date < 1900.1.2
 		tag = GRE
 	}

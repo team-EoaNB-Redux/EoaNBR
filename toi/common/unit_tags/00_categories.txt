@@ -19,12 +19,14 @@ sub_unit_categories = {
 	category_Tribal_infantry
 	category_light_infantry
 	category_pa_division
+	category_all_infantry_HQ
 
 	####### Cavalry #####
 	category_Tribal_cavalry
 	category_cavalry
 	category_camelry
 	category_ranged_cavalry
+	category_victorian_cavalry
 	category_victorian_ranged_cavalry
 
 	##### Artillery ##########

@@ -270,6 +270,22 @@ scripted_gui = {
 					always = no
 				}
 			}
+			rgo_prospecting_button_click_enabled = {
+				is_fully_controlled_by = ROOT
+				
+				always = no
+			}
+			rgo_prospecting_button_active_click_enabled = {
+				is_fully_controlled_by = ROOT
+
+				always = no
+			}
+			rgo_prospecting_button_visible = {
+				check_variable = { prospecting@var:v = 0 }
+			}
+			rgo_prospecting_button_active_visible = {
+				check_variable = { prospecting@var:v = 1 }
+			}
 
 			building_construction_icon_visible = {
 				NOT = { check_variable = { construction@var:v = 0 } }
@@ -291,117 +307,219 @@ scripted_gui = {
 				}
 			}
 
-			infrastructure_production_method_retooling_icon_visible = {
-				if = { limit = { NOT = { check_variable = { retooling_pm@token:infrastructure = 0 } } }
-					is_in_array = { global.building_production_methods@token:infrastructure = retooling_pm@token:infrastructure }
-				}
-				else = {
-					always = no
-				}
-			}
-
-			railway_increase_size_button_click_enabled = {
-				set_temp_variable = { industry_token = token:railway }
-				can_build_industry = yes
-				is_fully_controlled_by = ROOT
-
-				OR = {
-					check_variable = { construction_financier@var:industry_token = ROOT }
-					check_variable = { construction@var:industry_token = 0 }
+			# Special
+				infrastructure_production_method_retooling_icon_visible = {
+					if = { limit = { NOT = { check_variable = { retooling_pm@token:infrastructure = 0 } } }
+						is_in_array = { global.building_production_methods@token:infrastructure = retooling_pm@token:infrastructure }
+					}
+					else = {
+						always = no
+					}
 				}
 
-				# Has enough starting capital
-					if = { limit = { has_variable = production_method@token:railway } set_temp_variable = { pm_temp = production_method@token:railway } }
-					else = { set_temp_variable = { pm_temp = controller:latest_production_method@var:v } }
-					if = { limit = { has_variable = automation_method@token:railway } set_temp_variable = { am_temp = automation_method@token:railway } }
-					else = { set_temp_variable = { am_temp = controller:latest_automation_method@var:v } }
-					get_construction_cost = yes
+				railway_increase_size_button_click_enabled = {
+					set_temp_variable = { industry_token = token:railway }
+					can_build_industry = yes
+					is_fully_controlled_by = ROOT
 
-					multiply_temp_variable = { total_construction_cost_temp = global.start_construction_cost_multiplier }
-					divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
-					NOT = { check_variable = { total_construction_cost_temp > ROOT.treasury } }
-				#
-			}
-			railway_decrease_size_button_click_enabled = {
-				check_variable = { construction@token:railway > 0  }
-				is_fully_controlled_by = ROOT
-			}
-			railway_construction_icon_visible = {
-				NOT = { check_variable = { construction@token:railway = 0 } }
-			}
-			railway_production_method_retooling_icon_visible = {
-				if = { limit = { NOT = { check_variable = { retooling_pm@token:railway = 0 } } }
-					is_in_array = { global.building_production_methods@token:railway = retooling_pm@token:railway }
-				}
-				else = {
-					always = no
-				}
-			}
-			railway_automation_method_retooling_icon_visible = {
-				if = { limit = { NOT = { check_variable = { retooling_pm@token:railway = 0 } } }
-					is_in_array = { global.building_automation_methods@token:railway = retooling_pm@token:railway }
-				}
-				else = {
-					always = no
-				}
-			}
+					OR = {
+						check_variable = { construction_financier@var:industry_token = ROOT }
+						check_variable = { construction@var:industry_token = 0 }
+					}
 
-			port_increase_size_button_click_enabled = {
-				set_temp_variable = { industry_token = token:port }
-				can_build_industry = yes
-				is_coastal = yes
-				is_fully_controlled_by = ROOT
+					# Has enough starting capital
+						if = { limit = { has_variable = production_method@token:railway } set_temp_variable = { pm_temp = production_method@token:railway } }
+						else = { set_temp_variable = { pm_temp = controller:latest_production_method@var:v } }
+						if = { limit = { has_variable = automation_method@token:railway } set_temp_variable = { am_temp = automation_method@token:railway } }
+						else = { set_temp_variable = { am_temp = controller:latest_automation_method@var:v } }
+						get_construction_cost = yes
 
-				OR = {
-					check_variable = { construction_financier@var:industry_token = ROOT }
-					check_variable = { construction@var:industry_token = 0 }
+						multiply_temp_variable = { total_construction_cost_temp = global.start_construction_cost_multiplier }
+						divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
+						NOT = { check_variable = { total_construction_cost_temp > ROOT.treasury } }
+					#
+				}
+				railway_decrease_size_button_click_enabled = {
+					check_variable = { construction@token:railway > 0  }
+					is_fully_controlled_by = ROOT
+				}
+				railway_construction_icon_visible = {
+					NOT = { check_variable = { construction@token:railway = 0 } }
+				}
+				railway_production_method_retooling_icon_visible = {
+					if = { limit = { NOT = { check_variable = { retooling_pm@token:railway = 0 } } }
+						is_in_array = { global.building_production_methods@token:railway = retooling_pm@token:railway }
+					}
+					else = {
+						always = no
+					}
+				}
+				railway_automation_method_retooling_icon_visible = {
+					if = { limit = { NOT = { check_variable = { retooling_pm@token:railway = 0 } } }
+						is_in_array = { global.building_automation_methods@token:railway = retooling_pm@token:railway }
+					}
+					else = {
+						always = no
+					}
 				}
 
-				# Has enough starting capital
-					if = { limit = { has_variable = production_method@token:port } set_temp_variable = { pm_temp = production_method@token:port } }
-					else = { set_temp_variable = { pm_temp = controller:latest_production_method@var:v } }
-					if = { limit = { has_variable = automation_method@token:port } set_temp_variable = { am_temp = automation_method@token:port } }
-					else = { set_temp_variable = { am_temp = controller:latest_automation_method@var:v } }
-					get_construction_cost = yes
+				port_increase_size_button_click_enabled = {
+					set_temp_variable = { industry_token = token:port }
+					can_build_industry = yes
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
 
-					multiply_temp_variable = { total_construction_cost_temp = global.start_construction_cost_multiplier }
-					divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
-					NOT = { check_variable = { total_construction_cost_temp > ROOT.treasury } }
-				#
-			}
-			port_decrease_size_button_click_enabled = {
-				check_variable = { construction@token:port > 0  }
-				is_fully_controlled_by = ROOT
-			}
-			port_construction_icon_visible = {
-				NOT = { check_variable = { construction@token:port = 0 } }
-			}
-			port_production_method_retooling_icon_visible = {
-				if = { limit = { NOT = { check_variable = { retooling_pm@token:port = 0 } } }
-					is_in_array = { global.building_production_methods@token:port = retooling_pm@token:port }
-				}
-				else = {
-					always = no
-				}
-			}
-			port_automation_method_retooling_icon_visible = {
-				if = { limit = { NOT = { check_variable = { retooling_pm@token:port = 0 } } }
-					is_in_array = { global.building_automation_methods@token:port = retooling_pm@token:port }
-				}
-				else = {
-					always = no
-				}
-			}
+					OR = {
+						check_variable = { construction_financier@var:industry_token = ROOT }
+						check_variable = { construction@var:industry_token = 0 }
+					}
 
-			industrial_complex_construction_icon_visible = {
-				NOT = { check_variable = { construction@token:industrial_complex = 0 } }
-			}
-			arms_factory_construction_icon_visible = {
-				NOT = { check_variable = { construction@token:arms_factory = 0 } }
-			}
-			dockyard_construction_icon_visible = {
-				NOT = { check_variable = { construction@token:dockyard = 0 } }
-			}
+					# Has enough starting capital
+						if = { limit = { has_variable = production_method@token:port } set_temp_variable = { pm_temp = production_method@token:port } }
+						else = { set_temp_variable = { pm_temp = controller:latest_production_method@var:v } }
+						if = { limit = { has_variable = automation_method@token:port } set_temp_variable = { am_temp = automation_method@token:port } }
+						else = { set_temp_variable = { am_temp = controller:latest_automation_method@var:v } }
+						get_construction_cost = yes
+
+						multiply_temp_variable = { total_construction_cost_temp = global.start_construction_cost_multiplier }
+						divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
+						NOT = { check_variable = { total_construction_cost_temp > ROOT.treasury } }
+					#
+				}
+				port_decrease_size_button_click_enabled = {
+					check_variable = { construction@token:port > 0  }
+					is_fully_controlled_by = ROOT
+				}
+				port_construction_icon_visible = {
+					NOT = { check_variable = { construction@token:port = 0 } }
+				}
+				port_production_method_retooling_icon_visible = {
+					if = { limit = { NOT = { check_variable = { retooling_pm@token:port = 0 } } }
+						is_in_array = { global.building_production_methods@token:port = retooling_pm@token:port }
+					}
+					else = {
+						always = no
+					}
+				}
+				port_automation_method_retooling_icon_visible = {
+					if = { limit = { NOT = { check_variable = { retooling_pm@token:port = 0 } } }
+						is_in_array = { global.building_automation_methods@token:port = retooling_pm@token:port }
+					}
+					else = {
+						always = no
+					}
+				}
+
+				industrial_complex_construction_icon_visible = {
+					NOT = { check_variable = { construction@token:industrial_complex = 0 } }
+				}
+				industrial_complex_increase_size_button_click_enabled = {				
+					set_temp_variable = { industry_token = token:industrial_complex }
+					can_build_industry = yes
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = no
+					}
+					check_variable = { construction@token:arms_factory = 0 }
+					check_variable = { construction@token:dockyard = 0 }
+
+					OR = {
+						check_variable = { construction_financier@var:industry_token = ROOT }
+						check_variable = { construction@var:industry_token = 0 }
+					}
+
+					# Has enough starting capital
+						set_temp_variable = { pm_temp = token:pm_industrial_complex }
+						set_temp_variable = { am_temp = token:pm_no_automation }
+						get_construction_cost = yes
+
+						multiply_temp_variable = { total_construction_cost_temp = global.start_construction_cost_multiplier }
+						divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
+						NOT = { check_variable = { total_construction_cost_temp > ROOT.treasury } }
+					#
+				}
+				industrial_complex_increase_size_button_visible = {
+					check_variable = { construction@token:industrial_complex = 0 }
+				}
+				industrial_complex_decrease_size_button_visible = {
+					NOT = { check_variable = { construction@token:industrial_complex = 0 } }
+				}
+				arms_factory_construction_icon_visible = {
+					NOT = { check_variable = { construction@token:arms_factory = 0 } }
+				}
+				arms_factory_increase_size_button_click_enabled = {				
+					set_temp_variable = { industry_token = token:arms_factory }
+					can_build_industry = yes
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = no
+					}
+					check_variable = { construction@token:industrial_complex = 0 }
+					check_variable = { construction@token:dockyard = 0 }
+
+					OR = {
+						check_variable = { construction_financier@var:industry_token = ROOT }
+						check_variable = { construction@var:industry_token = 0 }
+					}
+
+					# Has enough starting capital
+						set_temp_variable = { pm_temp = token:pm_arms_factory }
+						set_temp_variable = { am_temp = token:pm_no_automation }
+						get_construction_cost = yes
+
+						multiply_temp_variable = { total_construction_cost_temp = global.start_construction_cost_multiplier }
+						divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
+						NOT = { check_variable = { total_construction_cost_temp > ROOT.treasury } }
+					#
+				}
+				arms_factory_increase_size_button_visible = {
+					check_variable = { construction@token:arms_factory = 0 }
+				}
+				arms_factory_decrease_size_button_visible = {
+					NOT = { check_variable = { construction@token:arms_factory = 0 } }
+				}
+				dockyard_construction_icon_visible = {
+					NOT = { check_variable = { construction@token:dockyard = 0 } }
+				}
+				dockyard_increase_size_button_click_enabled = {				
+					set_temp_variable = { industry_token = token:dockyard }
+					can_build_industry = yes
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = no
+					}
+					check_variable = { construction@token:arms_factory = 0 }
+					check_variable = { construction@token:industrial_complex = 0 }
+
+					OR = {
+						check_variable = { construction_financier@var:industry_token = ROOT }
+						check_variable = { construction@var:industry_token = 0 }
+					}
+
+					# Has enough starting capital
+						set_temp_variable = { pm_temp = token:pm_dockyard }
+						set_temp_variable = { am_temp = token:pm_no_automation }
+						get_construction_cost = yes
+
+						multiply_temp_variable = { total_construction_cost_temp = global.start_construction_cost_multiplier }
+						divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
+						NOT = { check_variable = { total_construction_cost_temp > ROOT.treasury } }
+					#
+				}
+				dockyard_increase_size_button_visible = {
+					check_variable = { construction@token:dockyard = 0 }
+				}
+				dockyard_decrease_size_button_visible = {
+					NOT = { check_variable = { construction@token:dockyard = 0 } }
+				}
+			#
 		}
 
 		effects = {
@@ -495,6 +613,18 @@ scripted_gui = {
 					}
 				}
 			}
+			rgo_prospecting_button_click = {
+				set_variable = { prospecting@var:v = 1 }
+				set_temp_variable = { r_token = v }
+				update_prospecting = yes
+				add_to_variable = { update_state_econ_window = 1 }
+			}
+			rgo_prospecting_button_active_click = {
+				set_variable = { prospecting@var:v = 0 }
+				set_temp_variable = { r_token = v }
+				update_prospecting = yes
+				add_to_variable = { update_state_econ_window = 1 }
+			}
 			building_production_method_button_click = {
 				set_temp_variable = { industry_token = v }
 				set_temp_variable = { am_select = 0 }
@@ -536,160 +666,187 @@ scripted_gui = {
 				}
 			}
 
-			infrastructure_production_method_button_click = {
-				set_temp_variable = { industry_token = token:infrastructure }
-				set_temp_variable = { am_select = 0 }
-				ROOT = {
-					if = {
-						limit = {
-							has_country_flag = pm_view_open
-							check_variable = { selected_industry = token:infrastructure }
-							check_variable = { selected_pm_type = 0 }
+			# Special
+				infrastructure_production_method_button_click = {
+					set_temp_variable = { industry_token = token:infrastructure }
+					set_temp_variable = { am_select = 0 }
+					ROOT = {
+						if = {
+							limit = {
+								has_country_flag = pm_view_open
+								check_variable = { selected_industry = token:infrastructure }
+								check_variable = { selected_pm_type = 0 }
+							}
+							clr_country_flag = pm_view_open
 						}
-						clr_country_flag = pm_view_open
-					}
-					else = {
-						set_country_flag = pm_view_open
-						set_variable = { selected_industry = token:infrastructure }
-						set_variable = { selected_pm_type = 0 }
-						refresh_pm_list = yes
+						else = {
+							set_country_flag = pm_view_open
+							set_variable = { selected_industry = token:infrastructure }
+							set_variable = { selected_pm_type = 0 }
+							refresh_pm_list = yes
+						}
 					}
 				}
-			}
-			railway_increase_size_button_click = {
-				set_temp_variable = { x_temp = 1 }
-				set_temp_variable = { financer_temp = ROOT }
-				set_temp_variable = { industry_token = token:railway }
-				if = { limit = { has_variable = production_method@token:railway } set_temp_variable = { production_method_temp = production_method@token:railway } }
-				else = { set_temp_variable = { production_method_temp = controller:latest_production_method@var:v } }
-				if = { limit = { has_variable = automation_method@token:railway } set_temp_variable = { automation_method_temp = automation_method@token:railway } }
-				else = { set_temp_variable = { automation_method_temp = controller:latest_automation_method@var:v } }
-				construct_x_industries = yes
+				railway_increase_size_button_click = {
+					set_temp_variable = { x_temp = 1 }
+					set_temp_variable = { financer_temp = ROOT }
+					set_temp_variable = { industry_token = token:railway }
+					if = { limit = { has_variable = production_method@token:railway } set_temp_variable = { production_method_temp = production_method@token:railway } }
+					else = { set_temp_variable = { production_method_temp = controller:latest_production_method@var:v } }
+					if = { limit = { has_variable = automation_method@token:railway } set_temp_variable = { automation_method_temp = automation_method@token:railway } }
+					else = { set_temp_variable = { automation_method_temp = controller:latest_automation_method@var:v } }
+					construct_x_industries = yes
 
-				ROOT = { budget_update = yes }
-			}
-			railway_decrease_size_button_click = {
-				subtract_from_variable = { construction@token:railway = 1 }
-				if = {
-					limit = {
-						check_variable = { construction@token:railway = 0 }
-						check_variable = { size@token:railway = 0 }
-					}
-					remove_from_array = { industries = v }
-					remove_from_array = { buildings = v }
+					ROOT = { budget_update = yes }
 				}
+				railway_decrease_size_button_click = {
+					subtract_from_variable = { construction@token:railway = 1 }
+					if = {
+						limit = {
+							check_variable = { construction@token:railway = 0 }
+							check_variable = { size@token:railway = 0 }
+						}
+						remove_from_array = { industries = v }
+						remove_from_array = { buildings = v }
+					}
 
-				ROOT = { budget_update = yes }
-				refresh_construction_list = yes
-				add_to_variable = { update_state_econ_window = 1 }
-			}
-			railway_production_method_button_click = {
-				set_temp_variable = { industry_token = token:railway }
-				set_temp_variable = { am_select = 0 }
-				ROOT = {
-					if = {
-						limit = {
-							has_country_flag = pm_view_open
-							check_variable = { selected_industry = token:railway }
-							check_variable = { selected_pm_type = 0 }
+					ROOT = { budget_update = yes }
+					refresh_construction_list = yes
+					add_to_variable = { update_state_econ_window = 1 }
+				}
+				railway_production_method_button_click = {
+					set_temp_variable = { industry_token = token:railway }
+					set_temp_variable = { am_select = 0 }
+					ROOT = {
+						if = {
+							limit = {
+								has_country_flag = pm_view_open
+								check_variable = { selected_industry = token:railway }
+								check_variable = { selected_pm_type = 0 }
+							}
+							clr_country_flag = pm_view_open
 						}
-						clr_country_flag = pm_view_open
-					}
-					else = {
-						set_country_flag = pm_view_open
-						set_variable = { selected_industry = token:railway }
-						set_variable = { selected_pm_type = 0 }
-						refresh_pm_list = yes
+						else = {
+							set_country_flag = pm_view_open
+							set_variable = { selected_industry = token:railway }
+							set_variable = { selected_pm_type = 0 }
+							refresh_pm_list = yes
+						}
 					}
 				}
-			}
-			railway_automation_method_button_click = {
-				set_temp_variable = { industry_token = token:railway }
-				set_temp_variable = { am_select = 1 }
-				ROOT = {
-					if = {
-						limit = {
-							has_country_flag = pm_view_open
-							check_variable = { selected_industry = token:railway }
-							check_variable = { selected_pm_type = 1 }
+				railway_automation_method_button_click = {
+					set_temp_variable = { industry_token = token:railway }
+					set_temp_variable = { am_select = 1 }
+					ROOT = {
+						if = {
+							limit = {
+								has_country_flag = pm_view_open
+								check_variable = { selected_industry = token:railway }
+								check_variable = { selected_pm_type = 1 }
+							}
+							clr_country_flag = pm_view_open
 						}
-						clr_country_flag = pm_view_open
-					}
-					else = {
-						set_country_flag = pm_view_open
-						set_variable = { selected_industry = token:railway }
-						set_variable = { selected_pm_type = 1 }
-						refresh_pm_list = yes
+						else = {
+							set_country_flag = pm_view_open
+							set_variable = { selected_industry = token:railway }
+							set_variable = { selected_pm_type = 1 }
+							refresh_pm_list = yes
+						}
 					}
 				}
-			}
-			port_increase_size_button_click = {
-				set_temp_variable = { x_temp = 1 }
-				set_temp_variable = { financer_temp = ROOT }
-				set_temp_variable = { industry_token = token:port }
-				if = { limit = { has_variable = production_method@token:port } set_temp_variable = { production_method_temp = production_method@token:port } }
-				else = { set_temp_variable = { production_method_temp = controller:latest_production_method@var:v } }
-				if = { limit = { has_variable = automation_method@token:port } set_temp_variable = { automation_method_temp = automation_method@token:port } }
-				else = { set_temp_variable = { automation_method_temp = controller:latest_automation_method@var:v } }
-				construct_x_industries = yes
+				port_increase_size_button_click = {
+					set_temp_variable = { x_temp = 1 }
+					set_temp_variable = { financer_temp = ROOT }
+					set_temp_variable = { industry_token = token:port }
+					if = { limit = { has_variable = production_method@token:port } set_temp_variable = { production_method_temp = production_method@token:port } }
+					else = { set_temp_variable = { production_method_temp = controller:latest_production_method@var:v } }
+					if = { limit = { has_variable = automation_method@token:port } set_temp_variable = { automation_method_temp = automation_method@token:port } }
+					else = { set_temp_variable = { automation_method_temp = controller:latest_automation_method@var:v } }
+					construct_x_industries = yes
 
-				ROOT = { budget_update = yes }
-			}
-			port_decrease_size_button_click = {
-				subtract_from_variable = { construction@token:port = 1 }
-				if = {
-					limit = {
-						check_variable = { construction@token:port = 0 }
-						check_variable = { size@token:port = 0 }
-					}
-					remove_from_array = { industries = v }
-					remove_from_array = { buildings = v }
+					ROOT = { budget_update = yes }
 				}
+				port_decrease_size_button_click = {
+					subtract_from_variable = { construction@token:port = 1 }
+					if = {
+						limit = {
+							check_variable = { construction@token:port = 0 }
+							check_variable = { size@token:port = 0 }
+						}
+						remove_from_array = { industries = v }
+						remove_from_array = { buildings = v }
+					}
 
-				ROOT = { budget_update = yes }
-				refresh_construction_list = yes
-				add_to_variable = { update_state_econ_window = 1 }
-			}
-			port_production_method_button_click = {
-				set_temp_variable = { industry_token = token:port }
-				set_temp_variable = { am_select = 0 }
-				ROOT = {
-					if = {
-						limit = {
-							has_country_flag = pm_view_open
-							check_variable = { selected_industry = token:port }
-							check_variable = { selected_pm_type = 0 }
+					ROOT = { budget_update = yes }
+					refresh_construction_list = yes
+					add_to_variable = { update_state_econ_window = 1 }
+				}
+				port_production_method_button_click = {
+					set_temp_variable = { industry_token = token:port }
+					set_temp_variable = { am_select = 0 }
+					ROOT = {
+						if = {
+							limit = {
+								has_country_flag = pm_view_open
+								check_variable = { selected_industry = token:port }
+								check_variable = { selected_pm_type = 0 }
+							}
+							clr_country_flag = pm_view_open
 						}
-						clr_country_flag = pm_view_open
-					}
-					else = {
-						set_country_flag = pm_view_open
-						set_variable = { selected_industry = token:port }
-						set_variable = { selected_pm_type = 0 }
-						refresh_pm_list = yes
+						else = {
+							set_country_flag = pm_view_open
+							set_variable = { selected_industry = token:port }
+							set_variable = { selected_pm_type = 0 }
+							refresh_pm_list = yes
+						}
 					}
 				}
-			}
-			port_automation_method_button_click = {
-				set_temp_variable = { industry_token = token:port }
-				set_temp_variable = { am_select = 1 }
-				ROOT = {
-					if = {
-						limit = {
-							has_country_flag = pm_view_open
-							check_variable = { selected_industry = token:port }
-							check_variable = { selected_pm_type = 1 }
+				port_automation_method_button_click = {
+					set_temp_variable = { industry_token = token:port }
+					set_temp_variable = { am_select = 1 }
+					ROOT = {
+						if = {
+							limit = {
+								has_country_flag = pm_view_open
+								check_variable = { selected_industry = token:port }
+								check_variable = { selected_pm_type = 1 }
+							}
+							clr_country_flag = pm_view_open
 						}
-						clr_country_flag = pm_view_open
-					}
-					else = {
-						set_country_flag = pm_view_open
-						set_variable = { selected_industry = token:port }
-						set_variable = { selected_pm_type = 1 }
-						refresh_pm_list = yes
+						else = {
+							set_country_flag = pm_view_open
+							set_variable = { selected_industry = token:port }
+							set_variable = { selected_pm_type = 1 }
+							refresh_pm_list = yes
+						}
 					}
 				}
-			}
+				
+				industrial_complex_increase_size_button_click = {
+					set_temp_variable = { x_temp = 1 }
+					set_temp_variable = { financer_temp = ROOT }
+					set_temp_variable = { industry_token = token:industrial_complex }
+					set_temp_variable = { production_method_temp = token:pm_industrial_complex }
+					construct_x_industries = yes
+
+					ROOT = { budget_update = yes }
+				}
+				industrial_complex_decrease_size_button_click = {
+					subtract_from_variable = { construction@token:industrial_complex = 1 }
+					if = {
+						limit = {
+							check_variable = { construction@token:industrial_complex = 0 }
+							check_variable = { size@token:industrial_complex = 0 }
+						}
+						remove_from_array = { industries = v }
+						remove_from_array = { buildings = v }
+					}
+
+					ROOT = { budget_update = yes }
+					refresh_construction_list = yes
+					add_to_variable = { update_state_econ_window = 1 }
+				}
+			#
 
 			time_button_click = {
 				ROOT = { _country_advance_time = yes }
@@ -700,9 +857,9 @@ scripted_gui = {
 				add_to_variable = { update_state_econ_window = 1 }
 			}
 			extra_button_click = {
-				set_temp_variable = { industry_token = token:urban_center }
-				set_temp_variable = { financer_temp = ROOT }
-				construct_x_industries = yes
+				# ROOT = {
+				# 	sound_effect = "new_building_construction_sound"
+				# }
 			}
 			autobuild_button_click = {
 				ROOT = {
@@ -1405,9 +1562,6 @@ scripted_gui = {
 			trade_resource_icon = {
 				image = "[GetResourceListIcon]"
 			}
-			trade_resource_price_icon = {
-				image = "[GetResourceListPriceIcon]"
-			}
 			trade_resource_balance_bar_negative = {
 				frame = resource_list_right_balance_bar_array^i
 			}
@@ -1429,6 +1583,7 @@ scripted_gui = {
 			market_resource_list = {
 				array = resource_list_token_array
 				entry_container = trade_resource_entry
+				value = resource_temp
 			}
 		}
 	}
@@ -1487,7 +1642,7 @@ scripted_gui = {
 				country_update_trade_display = yes
 			}
 			market_background_click = {
-				set_variable = { selected_market = v }
+				set_variable = { selected_market = country_temp }
 				country_update_trade_display = yes
 			}
 		}
@@ -1507,7 +1662,7 @@ scripted_gui = {
 				image = "[GetMarketListBackground]"
 			}
 			market_flag ={
-				image = "[?v.GetFlag]"
+				image = "[?country_temp.GetFlag]"
 			}
 		}
 
@@ -1515,6 +1670,7 @@ scripted_gui = {
 			markets_grid = {
 				array = market_list
 				entry_container = market_entry
+				value = country_temp
 			}
 		}
 	}

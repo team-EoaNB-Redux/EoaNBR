@@ -79,6 +79,12 @@ _reset = {
     every_country = {
         _country_fin = yes
     }
+
+    # Updates the list of market leaders & global variables for markets
+    global_economy_update = yes
+    every_country = {
+        country_update_trade_display = yes
+    }
 }
 _init_country = {
     # Country
@@ -99,6 +105,13 @@ _init_country = {
 
     # Initializes subjects as part of your market & sets yourself as market leader & updates your market
     market_setup = yes
+
+    # Budget
+    set_variable = { sales_tax_percentage = 100 }
+    set_variable = { income_tax_lower_strata_percentage = 100 }
+    set_variable = { income_tax_middle_strata_percentage = 100 }
+    set_variable = { income_tax_upper_strata_percentage = 100 }
+    budget_clamp = yes
 
     for_each_loop = {
         array = global.resource_token_array
@@ -290,6 +303,10 @@ _country_fin = {
     
     # Budget
     set_variable = { military_spending_percentage = 100 }
+    set_variable = { sales_tax_percentage = 0 }
+    set_variable = { income_tax_lower_strata_percentage = 0 }
+    set_variable = { income_tax_middle_strata_percentage = 0 }
+    set_variable = { income_tax_upper_strata_percentage = 0 }
     budget_update = yes
     while_loop_effect = {
         limit = {
@@ -503,8 +520,8 @@ country_pops_industry_recalc = {
             set_variable = { global.administration_population_expense = 100 } #Below this population amount (in thousands), administration becomes more expensive. Should not be 0
             set_variable = { global.administration_population_expense_modifier = 2 } #Maximum modifier of admin costs when population is 0
 
-            set_variable = { global.default_interest_rate = 3.0 } #Percent per year - Default national bank interest rate for loans to pops/corporations
-            set_variable = { global.loan_scarcity_rate = 5.0 } #Percent per year - How much interest should be added when you use up all loans you can get
+            set_variable = { global.default_interest_rate = 8.0 } #Percent per year - Default national bank interest rate for loans to pops/corporations
+            set_variable = { global.loan_scarcity_rate = 10.0 } #Percent per year - How much interest should be added when you use up all loans you can get
             set_variable = { global.base_international_interest_rate = 2.0 } #The additional rate that entities pay on getting loans from a foreign national bank
             set_variable = { global.loan_scarcity_increase_willingness = 0.25 } #When doing the autoborrow, how much scarcity increase is willing to be tolerated?
 
@@ -598,25 +615,27 @@ country_pops_industry_recalc = {
             add_to_array = { global.pops_spending_weight_val@token:luxuries = 0.15 }
             add_to_array = { global.pops_spending_weight_sol@token:luxuries = 100 }
             
-            # Wood - For heating & housing | 0.5
+            # Wood - For heating & housing | 0.25
             clear_array = global.pops_spending_weight_val@token:wood
             clear_array = global.pops_spending_weight_sol@token:wood
-            add_to_array = { global.pops_spending_weight_val@token:wood = 0.2 }
+            add_to_array = { global.pops_spending_weight_val@token:wood = 0.1 }
             add_to_array = { global.pops_spending_weight_sol@token:wood = 0 }
-            add_to_array = { global.pops_spending_weight_val@token:wood = 0.05 }
+            add_to_array = { global.pops_spending_weight_val@token:wood = 0.03 }
             add_to_array = { global.pops_spending_weight_sol@token:wood = 10 }
-            add_to_array = { global.pops_spending_weight_val@token:wood = 0.05 }
+            add_to_array = { global.pops_spending_weight_val@token:wood = 0.03 }
             add_to_array = { global.pops_spending_weight_sol@token:wood = 15 }
-            add_to_array = { global.pops_spending_weight_val@token:wood = 0.05 }
+            add_to_array = { global.pops_spending_weight_val@token:wood = 0.04 }
             add_to_array = { global.pops_spending_weight_sol@token:wood = 20 }
             add_to_array = { global.pops_spending_weight_val@token:wood = 0.05 }
             add_to_array = { global.pops_spending_weight_sol@token:wood = 25 }
-            add_to_array = { global.pops_spending_weight_val@token:wood = 0.1 }
+            add_to_array = { global.pops_spending_weight_val@token:wood = 0.05 }
             add_to_array = { global.pops_spending_weight_sol@token:wood = 30 }
-            add_to_array = { global.pops_spending_weight_val@token:wood = 0.1 }
+            add_to_array = { global.pops_spending_weight_val@token:wood = 0.05 }
             add_to_array = { global.pops_spending_weight_sol@token:wood = 35 }
-            add_to_array = { global.pops_spending_weight_val@token:wood = -0.1 }
+            add_to_array = { global.pops_spending_weight_val@token:wood = -0.05 }
             add_to_array = { global.pops_spending_weight_sol@token:wood = 50 }
+            add_to_array = { global.pops_spending_weight_val@token:wood = -0.05 }
+            add_to_array = { global.pops_spending_weight_sol@token:wood = 60 }
             
             # Fiber - For clothing, replaced by textiles | 0
             clear_array = global.pops_spending_weight_val@token:fiber
@@ -686,13 +705,17 @@ country_pops_industry_recalc = {
             add_to_array = { global.pops_spending_weight_val@token:composites = 0.1 }
             add_to_array = { global.pops_spending_weight_sol@token:composites = 90 }
             
-            # Consumer Goods - Furniture, Paper, Ceramics, other household items | 1.0
+            # Consumer Goods - Furniture, Paper, Ceramics, other household items | 1.25
             clear_array = global.pops_spending_weight_val@token:consumer_goods
             clear_array = global.pops_spending_weight_sol@token:consumer_goods
             add_to_array = { global.pops_spending_weight_val@token:consumer_goods = 0.1 }
             add_to_array = { global.pops_spending_weight_sol@token:consumer_goods = 16 }
+            add_to_array = { global.pops_spending_weight_val@token:consumer_goods = 0.05 }
+            add_to_array = { global.pops_spending_weight_sol@token:consumer_goods = 21 }
             add_to_array = { global.pops_spending_weight_val@token:consumer_goods = 0.1 }
             add_to_array = { global.pops_spending_weight_sol@token:consumer_goods = 26 }
+            add_to_array = { global.pops_spending_weight_val@token:consumer_goods = 0.1 }
+            add_to_array = { global.pops_spending_weight_sol@token:consumer_goods = 31 }
             add_to_array = { global.pops_spending_weight_val@token:consumer_goods = 0.2 }
             add_to_array = { global.pops_spending_weight_sol@token:consumer_goods = 36 }
             add_to_array = { global.pops_spending_weight_val@token:consumer_goods = 0.2 }
@@ -703,6 +726,8 @@ country_pops_industry_recalc = {
             add_to_array = { global.pops_spending_weight_sol@token:consumer_goods = 66 }
             add_to_array = { global.pops_spending_weight_val@token:consumer_goods = 0.1 }
             add_to_array = { global.pops_spending_weight_sol@token:consumer_goods = 76 }
+            add_to_array = { global.pops_spending_weight_val@token:consumer_goods = 0.1 }
+            add_to_array = { global.pops_spending_weight_sol@token:consumer_goods = 86 }
             
             # Textiles - Clothing | 1.0
             clear_array = global.pops_spending_weight_val@token:textiles
@@ -1471,6 +1496,9 @@ country_pops_industry_recalc = {
                 add_to_variable = { global.building_base_output_value@var:b_token = base_output_val_temp }
             }
         }
+        set_variable = { global.building_base_output_value@token:industrial_complex = 10 }
+        set_variable = { global.building_base_output_value@token:arms_factory = 10 }
+        set_variable = { global.building_base_output_value@token:dockyard = 10 }
 
         # Initialize rgo_token_array
         clear_array = global.rgo_token_array

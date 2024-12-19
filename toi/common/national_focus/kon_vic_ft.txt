@@ -102,7 +102,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = KON_álvaro's_rule
+		id = KON_álvaros_rule
 		icon = XXX
 		x = 12
 		y = 1

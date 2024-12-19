@@ -1,56 +1,56 @@
 ﻿l_russian:
- great_game.1.t: "Разрушь Россию" #NT!
+ great_game.1.t: "Разбить Россию" #NT!
  great_game.1.d: ""
  great_game.3.t: "Тарбагатайский договор" #NT!
  great_game.3.d: ""
- great_game.3.a: "Подписать его" #NT!
+ great_game.3.a: "Подпишите это" #NT!
  great_game.3.b: "Мусор" #NT!
   
  great_game.6.t: "Предложение Соглашения 1873 года" #NT!
- great_game.6.d: "Прибыл посланник из [From.GetName] с соглашением о Средней Азии. Соглашение расширяет сферу [RUS.GetName] на Хорезм и туркменские племена и сферы [ENG.GetName] на Афганистан." #NT!
+ great_game.6.d: "Посланник [From.GetName] прибыл с соглашением по Средней Азии. Соглашение расширяет сферу [RUS.GetName] над Хорезмом и туркменскими племенами и сферу [ENG.GetName] над Афганистаном" #NT!
  great_game.6.a: "Соглашаться" #NT!
  great_game.6.b: "Не согласен" #NT!
   
  great_game.21.t: "Экспедиция в Коканд" #NT!
- great_game.21.d: "Ваше Величество, наш великий генерал Черняев, герой Крыма и Кавказа, просит разрешения возглавить экспедицию в 1000 человек в варварское Кокандское ханство и отобрать у них этот крупный город?" #NT!
- great_game.21.a: "Пусть он еще раз принесет славу Российской Империи!" #NT!
- great_game.21.b: "Мы не можем рисковать новой коалицией" #NT!
+ great_game.21.d: "Ваше Величество, наш великий генерал Черняев, герой Крыма и Кавказа, просит разрешения возглавить экспедицию в 1000 человек в варварское Кокандское ханство и отнять у них этот главный город?" #NT!
+ great_game.21.a: "Пусть он снова прославит Российскую Империю!" #NT!
+ great_game.21.b: "Мы не можем рисковать еще одной коалицией." #NT!
  great_game.22.t: "Осада Ташкента" #NT!
  great_game.22.d: ""
  great_game.22.a: ""
  great_game.23.t: "Экспедиция в Хиву?" #NT!
- great_game.23.d: "После наших больших успехов в Бухаре и Коханде, возможно, пришло время нанести удар по последнему уцелевшему среднеазиатскому ханству: Хиве. С другой стороны, обеспечение союза с ними, наконец, принесет стабильность в регион, который находился в хаосе последние пятьдесят лет." #NT!
- great_game.23.a: "Двое упали, остался еще один" #NT!
- great_game.23.b: "Русифицированные хивинцы? Отправьте посланника!" #NT!
+ great_game.23.d: "После наших больших успехов в Бухаре и Коханде, возможно, пришло время нанести удар по последнему сохранившемуся среднеазиатскому ханству: Хиве. С другой стороны, обеспечение союза с ними, наконец, принесет стабильность региону, который был в смятении последние пятьдесят лет." #NT!
+ great_game.23.a: "Двое пали, осталось еще одно" #NT!
+ great_game.23.b: "Обрусевшие хивинцы? Отправьте посла!" #NT!
  great_game.24.t: "Хивинская война" #NT!
- great_game.24.d: "Кавалерия, которую мы послали на разведку земель, вернулась с плохими новостями. Хивинцы массово маршируют к нашим аванпостам, и многие из наших крепостных на границе двинулись на помощь своим соседям против их собственных лидеров!" #NT!
- great_game.24.a: "Это просто кучка вооруженных крестьян." #NT!
+ great_game.24.d: "Кавалерия, которую мы послали разведать земли, вернулась с плохими новостями. Хивинцы толпами идут к нашим форпостам, и многие из наших крепостных на границе двинулись на помощь соседям против их собственных лидеров!" #NT!
+ great_game.24.a: "Это всего лишь кучка вооруженных крестьян." #NT!
  great_game.25.t: "Посланник из России" #NT!
- great_game.25.d: "Российская империя, которая совсем недавно разгромила наши братские ханства Кокандское и Бухарское, послала посланника с просьбой подчиниться нам и стать их вассалами, что мы ответим?" #NT!
- great_game.25.a: "Альянс – единственный вариант выживания" #NT!
+ great_game.25.d: "Российская империя, которая только что разгромила наши братские ханства Кокандское и Бухарское, прислала к нам посланника с просьбой подчиниться и стать их вассалами. Что мы ответим?" #NT!
+ great_game.25.a: "Альянс — единственный вариант выживания" #NT!
  great_game.25.b: "Хивинская армия никого не боится!" #NT!
  great_game.26.t: "Русско-хивинский союз" #NT!
- great_game.26.d: "Хивинский хан охотно принял наше предложение, но, похоже, думает, что это будет союз равных, а не то, чтобы мы все аннексировали." #NT!
- great_game.26.a: "Дурак, это всего лишь означает, что ты проживешь немного дольше" #NT!
+ great_game.26.d: "Хивинский хан охотно принял наше предложение, но, похоже, он думает, что это будет союз равных, а не то, чтобы мы не присоединяли все." #NT!
+ great_game.26.a: "Дурак, это всего лишь значит, что ты проживешь немного дольше." #NT!
  great_game.27.t: "В Хиву!" #NT!
- great_game.27.d: "Мой Император! Эти хивинские ублюдки отвергли наше предложение дружбы и выгнали наших послов из своей столицы. Новости утверждают, что они формируют новые подразделения и вооружаются против нас." #NT!
+ great_game.27.d: "Мой император! Эти хивинские ублюдки отвергли наше предложение дружбы и выгнали наших послов из своей столицы. Новости утверждают, что они формируют новые отряды и вооружаются против нас." #NT!
  great_game.27.a: "Они не знают, что натворили..." #NT!
   
- great_game.31.t: "русские входящие" #NT!
- great_game.31.d: "Одна из наших кавалерийских частей заметила множество русских дивизий, продвигающихся к Шымкенту. Это может означать только одно: война. Наши бухарские братья, скорее всего, присоединятся к нашей войне, поэтому нам следует сделать официальное предложение." #NT!
+ great_game.31.t: "русские приезжают" #NT!
+ great_game.31.d: "Один из наших кавалерийских отрядов заметил много русских дивизий, продвигающихся к Шымкенту. Это может означать только одно: война. Наши братья из Бухары, скорее всего, присоединятся к нашей войне, поэтому мы должны сделать официальное предложение." #NT!
  great_game.31.a: "Мы защитим нашу землю!" #NT!
   
  great_game.32.t: "Шымкентская война" #NT!
- great_game.32.d: "Наши братья из Коканда попросили нас присоединиться к их войне против могущественной Российской Империи. С одной стороны, мы должны выполнить наши обязательства против их империализма; с другой стороны, мы можем оказаться под давлением и стать вассалами." #NT!
- great_game.32.a: "Честь важнее поражения!" #NT!
- great_game.32.b: "Трусость превыше жертвы!" #NT!
+ great_game.32.d: "Наши братья из Коканда попросили нас присоединиться к их войне против могущественной Российской империи. С одной стороны, мы должны выполнить свои обязательства против их империализма; с другой стороны, нас могут раздавить и сделать вассалами." #NT!
+ great_game.32.a: "Честь превыше поражения!" #NT!
+ great_game.32.b: "Трусость превыше жертвенности!" #NT!
   
  great_game.33.t: "Ответ из Бухары" #NT!
- great_game.33.d: "Посланник, которого мы отправили в Бухару, приносит нам плохие новости. Трусливый народ Бухары отверг наше требование присоединиться к нашей войне, ссылаясь на внутренние проблемы, что является пустым оправданием." #NT!
+ great_game.33.d: "Посланник, которого мы отправили в Бухару, принес нам плохие новости. Трусливая нация Бухары отвергла наше требование присоединиться к нашей войне, ссылаясь на внутренние проблемы, пустое оправдание." #NT!
  great_game.33.a: "Тогда нам придется сражаться в одиночку!" #NT!
   
  great_game.34.t: "Ответ из Бухары" #NT!
- great_game.34.d: "Посланник, которого мы отправили в Бухару, приносит нам отличные новости! Наши братья присоединятся к войне и в настоящее время мобилизуются против огромных российских сил." #NT!
+ great_game.34.d: "Посланник, которого мы отправили в Бухару, принес нам замечательные новости! Наши братья присоединятся к войне и в настоящее время мобилизуются против огромных русских сил." #NT!
  great_game.34.a: "Вместе мы выгоним русских из наших домов!" #NT!
   
  great_game.38.t: "Победа под Ташкентом" #NT!
@@ -58,66 +58,181 @@
  great_game.41.t: "Россия требует, чтобы мы приняли ее представителя" #NT!
  great_game.41.d: ""
  great_game.41.a: "Отклонить это" #NT!
- great_game.41.b: "Принять это" #NT!
- great_game.42.t: "Россия направляет представителя в [AFG.GetName]" #NT!
+ great_game.41.b: "Прими это" #NT!
+ great_game.42.t: "Россия направляет своего представителя в [AFG.GetName]" #NT!
  great_game.42.d: ""
- great_game.42.a: "Мы также должны отправить один" #NT!
- great_game.42.b: "Не надо конкурировать с Россией" #NT!
- great_game.43.t: "Британцы также посылают представителя" #NT!
+ great_game.42.a: "Мы также должны отправить одного" #NT!
+ great_game.42.b: "Не нужно конкурировать с Россией" #NT!
+ great_game.43.t: "Британия также посылает своего представителя" #NT!
  great_game.43.d: ""
  great_game.43.a: "Отклонить это" #NT!
- great_game.43.b: "Принять это" #NT!
+ great_game.43.b: "Прими это" #NT!
   
- great_game_category: "Большая игра" #NT!
+ great_game_category: "Большая Игра" #NT!
  great_game_points_greater_5: "£greatgamepoints_texticon  §Y5§!" #NT!
- great_game_points_greater_5_tooltip: "Это стоит £greatgamepoints_texticon §R5§! принять решение" #NT!
+ great_game_points_greater_5_tooltip: "Принять решение стоит £greatgamepoints_texticon §R5§!" #NT!
  great_game_points_greater_5_blocked: "£greatgamepoints_texticon  §R5§!" #NT!
  great_game_points_greater_25: "£greatgamepoints_texticon  §Y25§!" #NT!
  great_game_points_greater_25_blocked: "£greatgamepoints_texticon  §R25§!" #NT!
- great_game_points_greater_25_tooltip: "Это стоит £greatgamepoints_texticon §R25§! принять решение" #NT!
- RUS_great_game_points_display: "Влияние русской Большой Игры: £greatgamepoints_texticon [?RUS.great_game_points]" #NT!
- ENG_great_game_points_display: "Влияние Британской Большой Игры: £greatgamepoints_texticon [?ENG.great_game_points]" #NT!
- GetGreatGamePoints: "Великое влияние игры: §G+5§!." #NT!
- PER_constitutional_revolution: "§YКонституционная революция§! в процессе." #NT!
- PER_spend_gg_gain_influence: "Вложите £greatgamepoints_texticon 10, чтобы получить §G1§! влияние в [PER.GetName]" #NT!
- TIB_spend_gg_gain_influence: "Вложите £greatgamepoints_texticon 10, чтобы получить §G1§! влияние в [TIB.GetName]" #NT!
- SIK_spend_gg_gain_influence: "Вложите £greatgamepoints_texticon 10, чтобы получить §G1§! влияние в [SIK.GetName]" #NT!
- AFG_spend_gg_gain_influence: "Вложите £greatgamepoints_texticon 10, чтобы получить §G1§! влияние в [AFG.GetName]" #NT!
+ great_game_points_greater_25_tooltip: "Принять решение стоит £greatgamepoints_texticon §R25§!" #NT!
+ RUS_great_game_points_display: "Влияние Великой Игры России: £greatgamepoints_texticon [?RUS.great_game_points]" #NT!
+ ENG_great_game_points_display: "Влияние британской Большой Игры: £greatgamepoints_texticon [?ENG.great_game_points]" #NT!
+ GetGreatGamePoints: "Влияние на Великую игру: §G+5§!." #NT!
+ PER_constitutional_revolution: "§YКонституционная революция§! продолжается." #NT!
+ PER_spend_gg_gain_influence: "Инвестируйте £greatgamepoints_texticon 10, чтобы получить §G1§! влияние в [PER.GetName]" #NT!
+ TIB_spend_gg_gain_influence: "Инвестируйте £greatgamepoints_texticon 10, чтобы получить §G1§! влияние в [TIB.GetName]" #NT!
+ SIK_spend_gg_gain_influence: "Инвестируйте £greatgamepoints_texticon 10, чтобы получить §G1§! влияние в [SIK.GetName]" #NT!
+ AFG_spend_gg_gain_influence: "Инвестируйте £greatgamepoints_texticon 10, чтобы получить §G1§! влияние в [AFG.GetName]" #NT!
   
  PER_close_inflence_gap_to_4_or_less_ENG: "Увеличьте Влияние как минимум до 4 очков влияния ниже §YRussia§!" #NT!
- PER_close_inflence_gap_to_4_or_less_RUS: "Увеличьте влияние как минимум до 4 очков влияния ниже §YВеликобритании§!." #NT!
- great_game_persian_influence_waining: "Теряю контроль над [PER.GetName]" #NT!
- PER_becomes_sphered: "\nСтановится §RDominate§! Великая держава в §Y[PER.GetName]§!" #NT!
+ PER_close_inflence_gap_to_4_or_less_RUS: "Увеличьте Влияние как минимум на 4 очка влияния ниже §YВеликобритания§!" #NT!
+ great_game_persian_influence_waining: "Теряю хватку [PER.GetName]" #NT!
+ PER_becomes_sphered: "\nСтановится §RDominate§! Великой державой в §Y[PER.GetName]§!" #NT!
   
- great_game_tibet_influence_waining: "Теряю контроль над [TIB.GetName]" #NT!
- TIB_becomes_sphered: "\nСтановится §RDominate§! Великая держава в §Y[TIB.GetName]§!" #NT!
+ great_game_tibet_influence_waining: "Теряю хватку [TIB.GetName]" #NT!
+ TIB_becomes_sphered: "\nСтановится §RDominate§! Великой державой в §Y[TIB.GetName]§!" #NT!
   
- great_game_sikang_influence_waining: "Теряю контроль над [SIK.GetName]" #NT!
- SIK_becomes_sphered: "\nСтановится §RDominate§! Великая держава в §Y[SIK.GetName]§!" #NT!
+ great_game_sikang_influence_waining: "Теряю хватку [SIK.GetName]" #NT!
+ SIK_becomes_sphered: "\nСтановится §RDominate§! Великой державой в §Y[SIK.GetName]§!" #NT!
   
- great_game_afghan_influence_waining: "Теряю контроль над [AFG.GetName]" #NT!
- AFG_becomes_sphered: "\nСтановится §RDominate§! Великая держава в §Y[AFG.GetName]§!" #NT!
+ great_game_afghan_influence_waining: "Теряю хватку [AFG.GetName]" #NT!
+ AFG_becomes_sphered: "\nСтановится §RDominate§! Великой державой в §Y[AFG.GetName]§!" #NT!
   
  great_game_invest_points: "Инвестируйте политическое внимание в Центральную Азию" #NT!
- great_game_kazakh_plains_treaty: "Предложить договор о границе с Казахстаном" #NT!
- great_game_take_taraz: "Взять Тараз" #NT!
- great_game_seige_tashkent: "Начало осады Ташкента" #NT!
+ great_game_kazakh_plains_treaty: "Предложить договор о казахской границе" #NT!
+ great_game_take_taraz: "Возьмем Тараз." #NT!
+ great_game_seige_tashkent: "Начало осады Ташкента." #NT!
  great_game_invasion_kokand: "Начните вторжение [KOK.GetName]" #NT!
  great_game_invasion_bukara: "Начните вторжение [BUK.GetName]" #NT!
  great_game_invasion_khiva: "Начните вторжение [KHI.GetName]" #NT!
- great_game_invasion_geok_tepe: "Начало вторжения в Геок Тепе" #NT!
- great_game_invasion_merv: "Начать вторжение в Мерв" #NT!
+ great_game_invasion_geok_tepe: "Начало вторжения в Геок-Тепе" #NT!
+ great_game_invasion_merv: "Начало вторжения в Мерв" #NT!
  great_game_propose_1873_agreement: "Предложить Соглашение 1873 года" #NT!
  great_game_start_influence_afghanistan: "Отправить представителя в [AFG.GetName]" #NT!
- great_game_take_panjdeh: "Взять Панжде" #NT!
+ great_game_take_panjdeh: "Возьмите Панждех" #NT!
  great_game_sign_the_entente: "Подписать Антанту" #NT!
   
  great_game_seige_tashkent_ongoing: "Осада Ташкента" #NT!
- great_game_seige_tashkent_fails: "Ташкентский склад снабжения" #NT!
+ great_game_seige_tashkent_fails: "Запасы Ташкентского Поставочного Центра" #NT!
  RUS_failed_tashkent: "[great_game_points_greater_5]" #NT!
   
- KOK_defender_central_asia: "Защитник Средней Азии." #NT!
+ KOK_defender_central_asia: "Защитник Средней Азии" #NT!
  KOK_defender_central_asia_desc: ""
   
- KHI_defender_central_asia: "Защитник Средней Азии." #NT!
+ KHI_defender_central_asia: "Защитник Средней Азии" #NT!
  KHI_defender_central_asia_desc: ""
+  
+ # GReat Game 
+ rus_eng_great_game_text: "£greatgame_texticon_30x30  Большая игра" #NT!
+ rus_eng_great_game_text_tt: "§YБольшая игра§!\n\n§г[GetGreatGameDescription]§!" #NT!
+ rus_eng_great_game_eng_desc: "Наша §YВеликая Игра§! против царей России диктует судьбу Азии и непреклонную волю наших двух империй.\n\n[ENG.GetNameWithFlag] необходимо шаг за шагом отражать действия русской угрозы и не давать Медведю захватить восточные владения под одной короной." #NT!
+ rus_eng_great_game_rus_desc: "Наша §YВеликая Игра§! против монархов Великобритании диктует судьбу Азии и непреклонную волю наших двух империй.\n\n[RUS.GetNameWithFlag] должна шаг за шагом отражать действия английской угрозы и не давать Льву захватить восточные владения под одной короной." #NT!
+ rus_eng_great_game_generic_desc: "§YБольшая игра§! — это стратегическая борьба между [ENG.GetNameWithFlag] и [RUS.GetNameWithFlag], двумя из самых главных имперских держав мира. Эта интенсивная борьба в азиатских степях диктует баланс сил между этими двумя странами, но и большими азиатскими владениями в целом." #NT!
+ rus_eng_great_game_topbar_menu_button_tt: "§YБольшая игра§!\n\n§г[GetGreatGameDescription]§!" #NT!
+ rus_eng_great_game_topbar_menu_button_tt_delayed: "Нажмите, чтобы открыть меню £greatgame_texticon  §YОтличная игра§!" #NT!
+ rus_eng_great_game_level_1_icon_tt: "§YФаза 1: Весна народов§! (1840 - 1848)" #NT!
+ rus_eng_great_game_level_1_icon_tt_delayed: "[RUS.GetFlag]\n £trigger_no §YВозобновить [OTO.GetFlag] Hünkâr İskelesi (1841)§!\n £trigger_yes §YПодавить [AUS.GetFlag] Венгерское восстание§!\n\n[ENG.GetFlag]\n £trigger_yes §YПодписать [OTO.GetFlag] Лондонскую конвенцию о проливах (1841)§!\n £trigger_yes §YОбеспечить экспорт в £trigger_no 6§!" #NT!
+ rus_eng_great_game_level_2_icon_tt: "§YЭтап 2: Восточный вопрос§! (1848 - 1857)" #NT!
+ rus_eng_great_game_level_2_icon_tt_delayed: "[RUS.GetFlag]\n £trigger_no §YПродвигайте православие в [OTO.GetNameWithFlag]§!\n §C> Крымская война§!\n £trigger_yes §YОккупируйте [OTO.GetFlag] Дунайские княжества§!\n £trigger_yes §YОсада [OTO.GetFlag] Карса§!\ n £trigger_no §YОбстрел [OTO.GetFlag] Ризе§!\n £trigger_no §YОккупировать [OTO.GetFlag] Адрианополь§!\n £trigger_no §YДоговор [RUS.GetFlag] Санкт-Петербург (1856 г.)§!\n\n§Y7\n £trigger_yes §Y Предотвратить Православие в [OTO.GetNameWithFlag]§!\n §C> Крымская война§!\n £trigger_yes §YКонтроль [OTO.GetFlag] Черное море§!\n £trigger_yes §YБлокада [RUS.GetFlag] Балтийское море§!\n £trigger_no §YБомбардировка ☻ _0 Ревель§!\n £trigger_yes §YОсада [RUS.GetFlag] Севастополя§!\n £trigger_yes Подписание §YДоговора §C2 Париж (1856)§!" #NT!
+ rus_eng_great_game_level_3_icon_tt: "§YФаза 3: Шелковый гамбит§! (1857 - 1873)" #NT!
+ rus_eng_great_game_level_3_icon_tt_delayed: "[RUS.GetFlag]\n £trigger_yes §YПодстрекать сипаевские полки к восстанию§!\n\n" #NT!
+ rus_eng_great_game_level_4_icon_tt: "§YФаза 4: Битва титанов§! (1873 - 1884)" #NT!
+ rus_eng_great_game_level_4_icon_tt_delayed: ""
+ rus_eng_great_game_level_5_icon_tt: "§YФаза 5: Кладбище империй§! (1884 - 1891)" #NT!
+ rus_eng_great_game_level_5_icon_tt_delayed: ""
+ rus_eng_great_game_level_6_icon_tt: "§YФаза 6: Кульминационные пики§! (1891-1895)" #NT!
+ rus_eng_great_game_level_6_icon_tt_delayed: ""
+ rus_eng_great_game_level_7_icon_tt: "§YФаза 7: Эпилог верующих§! (1896-1907)" #NT!
+ rus_eng_great_game_level_7_icon_tt_delayed: ""
+ rus_eng_great_game_map_russia_icon_tt: "§Y[RUS.GetNameWithFlag]§!" #NT!
+ rus_eng_great_game_map_russia_icon_tt_delayed: ""
+ rus_eng_great_game_map_north_iran_icon_tt: "[1434.owner.GetFlag] §YСеверный Иран§!" #NT!
+ rus_eng_great_game_map_north_iran_icon_tt_delayed: ""
+ rus_eng_great_game_map_central_iran_icon_tt: "[411.owner.GetFlag] §Y[411.GetName]§!" #NT!
+ rus_eng_great_game_map_central_iran_icon_tt_delayed: ""
+ rus_eng_great_game_map_mesopotamia_icon_tt: "[291.owner.GetFlag] §YMesopotamia§!" #NT!
+ rus_eng_great_game_map_mesopotamia_icon_tt_delayed: ""
+ rus_eng_great_game_map_kuwait_icon_tt: "[656.owner.GetFlag] §Y[656.GetName]§!" #NT!
+ rus_eng_great_game_map_kuwait_icon_tt_delayed: ""
+ rus_eng_great_game_map_arabia_icon_tt: "[916.owner.GetFlag] §YArabia§!" #NT!
+ rus_eng_great_game_map_arabia_icon_tt_delayed: ""
+ rus_eng_great_game_map_trucial_states_icon_tt: "[658.owner.GetFlag] §YДоговорные государства§!" #NT!
+ rus_eng_great_game_map_trucial_states_icon_tt_delayed: ""
+ rus_eng_great_game_map_oman_icon_tt: "[294.owner.GetFlag] §Y[294.GetName]§!" #NT!
+ rus_eng_great_game_map_oman_icon_tt_delayed: ""
+ rus_eng_great_game_map_south_iran_icon_tt: "[412.owner.GetFlag] §YЮжный Иран§!" #NT!
+ rus_eng_great_game_map_oman_icon_tt_delayed: ""
+ rus_eng_great_game_map_hormuz_icon_tt: "[1432.owner.GetFlag] §Y[1432.GetName]§!" #NT!
+ rus_eng_great_game_map_hormuz_icon_tt_delayed: ""
+ rus_eng_great_game_map_west_baluchistan_icon_tt: "[410.owner.GetFlag] §YЮжный Иран" #NT!
+ rus_eng_great_game_map_west_baluchistan_icon_tt_delayed: ""
+ rus_eng_great_game_map_khorasan_icon_tt: "[1435.owner.GetFlag] §Y[1435.GetName]§!" #NT!
+ rus_eng_great_game_map_khorasan_icon_tt_delayed: ""
+ rus_eng_great_game_map_turkmenistan_icon_tt: "[584.owner.GetFlag] §YTurkmenistan§!" #NT!
+ rus_eng_great_game_map_turkmenistan_icon_tt_delayed: ""
+ rus_eng_great_game_map_dashhowuz_icon_tt: "[1446.owner.GetFlag] §Y[1446.GetName]§!" #NT!
+ rus_eng_great_game_map_dashhowuz_icon_tt_delayed: ""
+ rus_eng_great_game_map_zhaslyk_icon_tt: "[1367.owner.GetFlag] §Y[1367.GetName]§!" #NT!
+ rus_eng_great_game_map_zhaslyk_icon_tt_delayed: ""
+ rus_eng_great_game_map_khwarazm_icon_tt: "[1319.owner.GetFlag] §Y[1319.GetName]§!" #NT!
+ rus_eng_great_game_map_khwarazm_icon_tt_delayed: ""
+ rus_eng_great_game_map_kyzylkum_icon_tt: "[1447.owner.GetFlag] §Y[1447.GetName]§!" #NT!
+ rus_eng_great_game_map_kyzylkum_icon_tt_delayed: ""
+ rus_eng_great_game_map_bukhara_icon_tt: "[305.owner.GetFlag] §Y[UZB.GetName]§!" #NT!
+ rus_eng_great_game_map_bukhara_icon_tt_delayed: ""
+ rus_eng_great_game_map_panjdeh_icon_tt: "[1360.owner.GetFlag] §Y[1360.GetName]§!" #NT!
+ rus_eng_great_game_map_panjdeh_icon_tt_delayed: ""
+ rus_eng_great_game_map_afghanistan_icon_tt: "[267.owner.GetFlag] §YAfghanistan§!" #NT!
+ rus_eng_great_game_map_afghanistan_icon_tt_delayed: ""
+ rus_eng_great_game_map_kokand_icon_tt: "[1360.owner.GetFlag] §Y[1360.GetName]§!" #NT!
+ rus_eng_great_game_map_kokand_icon_tt_delayed: ""
+ rus_eng_great_game_map_alma_ata_icon_tt: "[946.owner.GetFlag] §Y[946.GetName]§!" #NT!
+ rus_eng_great_game_map_alma_ata_icon_tt_delayed: ""
+ rus_eng_great_game_map_krygystan_icon_tt: "[945.owner.GetFlag] §YKrygyzstan§!" #NT!
+ rus_eng_great_game_map_krygystan_icon_tt_delayed: ""
+ rus_eng_great_game_map_urzhar_icon_tt: "[944.owner.GetFlag] §Y[944.GetName]§!" #NT!
+ rus_eng_great_game_map_urzhar_icon_tt_delayed: ""
+ rus_eng_great_game_map_sinkiang_icon_tt: "[617.owner.GetFlag] §YSinkiang§!" #NT!
+ rus_eng_great_game_map_sinkiang_icon_tt_delayed: ""
+ rus_eng_great_game_map_tibet_icon_tt: "[322.owner.GetFlag] §YTibet§!" #NT!
+ rus_eng_great_game_map_tibet_icon_tt_delayed: ""
+ rus_eng_great_game_map_wukhan_icon_tt: "[1362.owner.GetFlag] §Y[1362.GetName]§!" #NT!
+ rus_eng_great_game_map_wukhan_icon_tt_delayed: ""
+ rus_eng_great_game_map_peshawar_icon_tt: "[442.owner.GetFlag] §Y[442.GetName]§!" #NT!
+ rus_eng_great_game_map_peshawar_icon_tt_delayed: ""
+ rus_eng_great_game_map_chagai_icon_tt: "[1431.owner.GetFlag] §Y[1431.GetName]§!" #NT!
+ rus_eng_great_game_map_chagai_icon_tt_delayed: ""
+ rus_eng_great_game_map_east_baluchistan_icon_tt: "[444.owner.GetFlag] §Y[444.GetName]§!" #NT!
+ rus_eng_great_game_map_east_baluchistan_icon_tt_delayed: ""
+ rus_eng_great_game_map_kalat_icon_tt: "[999.owner.GetFlag] §Y[999.GetName]§!" #NT!
+ rus_eng_great_game_map_kalat_icon_tt_delayed: ""
+ rus_eng_great_game_map_sindh_icon_tt: "[1000.owner.GetFlag] §Y[1000.GetName]§!" #NT!
+ rus_eng_great_game_map_sindh_icon_tt_delayed: ""
+ rus_eng_great_game_map_multan_icon_tt: "[1330.owner.GetFlag] §Y[1330.GetName]§!" #NT!
+ rus_eng_great_game_map_multan_icon_tt_delayed: ""
+ rus_eng_great_game_map_badakhshan_icon_tt: "[1451.owner.GetFlag] §YBadakhshan§!" #NT!
+ rus_eng_great_game_map_badakhshan_icon_tt_delayed: ""
+ rus_eng_great_game_map_kashmir_icon_tt: "[1317.owner.GetFlag] §Y[1317.GetName]§!" #NT!
+ rus_eng_great_game_map_kashmir_icon_tt_delayed: ""
+ rus_eng_great_game_map_karputhala_icon_tt: "[1426.owner.GetFlag] §Y[1426.GetName]§!" #NT!
+ rus_eng_great_game_map_karputhala_icon_tt_delayed: ""
+ rus_eng_great_game_map_bikaner_icon_tt: "[1427.owner.GetFlag] §Y[1427.GetName]§!" #NT!
+ rus_eng_great_game_map_bikaner_icon_tt_delayed: ""
+ rus_eng_great_game_map_rajputana_icon_tt: "[433.owner.GetFlag] §Y[433.GetName]§!" #NT!
+ rus_eng_great_game_map_rajputana_icon_tt_delayed: ""
+ rus_eng_great_game_map_jaipur_icon_tt: "[759.owner.GetFlag] §Y[759.GetName]§!" #NT!
+ rus_eng_great_game_map_jaipur_icon_tt_delayed: ""
+ rus_eng_great_game_map_nepal_icon_tt: "[323.owner.GetFlag] §YNepal§!" #NT!
+ rus_eng_great_game_map_nepal_icon_tt_desc: ""
+ rus_eng_great_game_map_oudh_icon_tt: "[756.owner.GetFlag] §Y[756.GetName]§!" #NT!
+ rus_eng_great_game_map_oudh_icon_tt_delayed: ""
+ rus_eng_great_game_map_sepoys_icon_tt: "[439.owner.GetFlag] §YСоединенные провинции§!" #NT!
+ rus_eng_great_game_map_sepoys_icon_tt_delayed: ""
+ rus_eng_great_game_map_rewa_icon_tt: "[1424.owner.GetFlag] §Y[1424.GetName]§!" #NT!
+ rus_eng_great_game_map_rewa_icon_tt_delayed: ""
+ rus_eng_great_game_map_berar_icon_tt: "[436.owner.GetFlag] §YЦентральные провинции§!" #NT!
+ rus_eng_great_game_map_berar_icon_tt_delayed: ""
+ rus_eng_great_game_map_gwalior_icon_tt: "[754.owner.GetFlag] §Y[754.GetName]§!" #NT!
+ rus_eng_great_game_map_gwalior_icon_tt_delayed: ""
+ rus_eng_great_game_map_gujarat_icon_tt: "[1007.owner.GetFlag] §Y[754.GetName]§!" #NT!
+ rus_eng_great_game_map_gujarat_icon_tt_delayed: ""

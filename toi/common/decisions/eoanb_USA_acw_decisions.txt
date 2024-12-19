@@ -757,6 +757,7 @@ ACW_American_Civil_War_Decisions = {
 			}
 		}
 		complete_effect = {
+			complete_national_focus = CSA_civil_war_defeat
 			custom_effect_tooltip = acw_peace_deal.1.t
 		}
 	}
@@ -1698,7 +1699,7 @@ ACW_American_Civil_War_Decisions = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = eoanb_decision_acw_usa_surrender_to_csa_wa_tt
-					385 = { #Washington
+					386 = { #Washington
 						AND = {
 							is_owned_by = USA
 							NOT = { is_controlled_by = USA }
@@ -1733,14 +1734,6 @@ ACW_American_Civil_War_Decisions = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = eoanb_decision_acw_usa_surrender_to_csa_il_tt
-					395 = { #Illinois
-						AND = {
-							is_owned_by = USA
-							NOT = { is_controlled_by = USA }
-						}
-					}
-				}
-				hidden_trigger = {
 					395 = { #Illinois
 						AND = {
 							is_owned_by = USA
@@ -1842,6 +1835,23 @@ ACW_American_Civil_War_Decisions = {
 				}
 				hidden_trigger = {
 					360 = { #Pennsylvania
+						AND = {
+							is_owned_by = USA
+							NOT = { is_controlled_by = USA }
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = eoanb_decision_acw_usa_surrender_to_csa_ph_tt
+					1385 = { #Philadelphia
+						AND = {
+							is_owned_by = USA
+							NOT = { is_controlled_by = USA }
+						}
+					}
+				}
+				hidden_trigger = {
+					1385 = { #Philadelphia
 						AND = {
 							is_owned_by = USA
 							NOT = { is_controlled_by = USA }
@@ -2258,6 +2268,8 @@ ACW_American_Civil_War_Decisions = {
 		}
 
 		complete_effect = {
+			complete_national_focus = CSA_civil_war_victory
+			set_country_flag = CSAIndependence_Won
 			custom_effect_tooltip = acw_peace_deal.2.t
 		}
 	}
@@ -2879,8 +2891,8 @@ ACW_American_Civil_War_Decisions = {
 		}
 
 		#cost = ?
-		custom_cost_trigger = { command_power > 19.9 }
-		custom_cost_text = command_power_more_than_19
+		custom_cost_trigger = { command_power > 9.9 }
+		custom_cost_text = command_power_more_than_9
 
 		fixed_random_seed = no
 		days_re_enable = 35
@@ -3233,11 +3245,14 @@ ACW_American_Civil_War_Decisions = {
 							modifier = {
 								add = -5
 								ROOT = {
-									has_resources_amount = {
-										resource = iron
-										amount < 5
-										delivered = yes
+									check_variable = {
+										supply@iron > 5
 									}
+									# has_resources_amount = {
+									# 	resource = iron
+									# 	amount < 5
+									# 	delivered = yes
+									# }
 								}
 							}
 							modifier = {
@@ -3267,11 +3282,14 @@ ACW_American_Civil_War_Decisions = {
 							modifier = {
 								add = -5
 								ROOT = {
-									has_resources_amount = {
-										resource = iron
-										amount < 5
-										delivered = yes
+									check_variable = {
+										supply@iron > 5
 									}
+									# has_resources_amount = {
+									# 	resource = iron
+									# 	amount < 5
+									# 	delivered = yes
+									# }
 								}
 							}
 							modifier = {
@@ -3361,21 +3379,34 @@ ACW_American_Civil_War_Decisions = {
 						}
 					}
 
-					create_equipment_variant = {
-						name = "Confederate Ironclad"
-						type = ship_hull_ironclad_0
-						name_group = CSA_Ironclads
-						role_icon_index = 1
-						modules = {
-							fixed_ship_battery_slot = var:primaryBattVar
-							fixed_ship_fire_control_system_slot = fire_control_system_0
-							fixed_ship_engine_slot = var:primaryEngineVar
-							fixed_ship_armor_slot = var:primaryArmorVar
-							front_1_custom_slot = var:secondaryBattVar
-							mid_1_custom_slot = var:secondaryArmorVar
-							mid_2_custom_slot = empty
-							rear_1_custom_slot = empty
+					# log = "[?var:primaryBattVar]\nPrimaryBatt"
+					# log = "[?var:primaryArmorVar]\nPrimaryArmor"
+					# log = "[?var:primaryEngineVar]\nPrimaryEngine"
+
+					meta_effect = {
+						text = {
+						  	create_equipment_variant = {
+								name = "Confederate Ironclad"
+								type = ship_hull_ironclad_0
+								name_group = CSA_Ironclads
+								role_icon_index = 1
+								modules = {
+									fixed_ship_battery_slot = [PRIMARY_BAT]
+									fixed_ship_fire_control_system_slot = fire_control_system_0
+									fixed_ship_engine_slot = [ENGINE]
+									fixed_ship_armor_slot = [PRIMARY_ARM]
+									front_1_custom_slot = [SECOND_BAT]
+									mid_1_custom_slot = [SECOND_ARM]
+									mid_2_custom_slot = empty
+									rear_1_custom_slot = empty
+								}
+							}
 						}
+						PRIMARY_BAT = "[?primaryBattVar.GetTokenKey]"
+						SECOND_BAT = "[?secondaryBattVar.GetTokenKey]"
+						ENGINE = "[?primaryEngineVar.GetTokenKey]"
+						PRIMARY_ARM = "[?primaryArmorVar.GetTokenKey]"
+						SECOND_ARM = "[?secondaryArmorVar.GetTokenKey]"
 					}
 					create_ship = {
 						type = ship_hull_ironclad_0
@@ -3483,15 +3514,15 @@ ACW_American_Civil_War_Decisions = {
 		}
 
 		cost = 25
-		custom_cost_trigger = { command_power > 24.9 }
-		custom_cost_text = command_power_more_than_24
+		custom_cost_trigger = { command_power > 9.9 }
+		custom_cost_text = command_power_more_than_9
 
 		days_re_enable = 7
 
 		complete_effect = {
 			ACW_Weapons_Count_Use = yes
 			ACW_Draft_Count_Use = yes
-			hidden_effect = { add_command_power = -25 }
+			hidden_effect = { add_command_power = -10 }
 		}
 		remove_effect = {
 			if = {
@@ -3801,7 +3832,7 @@ ACW_American_Civil_War_Decisions = {
 
 		cost = 10
 		custom_cost_trigger = { command_power > 9.9 }
-		custom_cost_text = command_power_more_than_10
+		custom_cost_text = command_power_more_than_9
 
 		days_re_enable = 7
 

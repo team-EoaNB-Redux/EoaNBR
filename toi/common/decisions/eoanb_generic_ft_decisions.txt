@@ -1,0 +1,839 @@
+# Decisions for the generic focus trees
+eoanb_category_economic = {
+	generic_vic_invite_foreign_investor = {
+		icon = gre_investment_decisions
+		available = {
+			has_stability > 0.5
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_allow_foreign_investment
+			NOT = { has_idea = institution_industrialization }
+		}
+		cost = 50
+		days_re_enable = 120
+		ai_will_do = {
+			base = 50
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = 1000 }
+			add_investment_fund = yes
+
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_locals_outcompeted
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					months = 6
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					months = 6
+				}
+			}
+		}
+	}
+	generic_vic_encourage_competitiveness = {
+		icon = gre_investment_decisions
+		available = {
+
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_self_reliance_initiative
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = -1 }
+			add_treasury_gdp = yes
+		}
+		modifier = {
+			industry_throughput_factor = 0.05
+		}
+		remove_effect = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
+		}
+	}
+}
+
+eoanb_category_politics_foreign = {
+	generic_vic_invite_foreign_dignitaries = {
+		icon = eng_trade_unions_support
+		available = {
+			has_stability > 0.3
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_invite_foreigners
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 25
+        days_remove = 100
+		complete_effect = {
+			add_stability = -0.01
+			add_popularity = {
+				ideology = centrism
+				popularity = 0.02
+			}
+		}
+        modifier = {
+            research_speed_factor = 0.05
+        }
+		remove_effect  = {
+			set_temp_variable = { institution_progress_temp = 1.0 }
+			eoanbr_institutions_rationalism_change = yes
+		}
+		
+		ai_will_do = {
+			base = 125
+		}
+	}
+	generic_vic_open_door_policy = {
+		icon = money
+		available = {
+			has_stability > 0.4
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_establish_trade_ties
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 150
+		}
+		complete_effect = {
+			add_stability = -0.03
+			
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_locals_outcompeted
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					years = 1
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					years = 1
+				}
+			}
+		}
+        modifier = {
+            research_speed_factor = 0.05
+			industry_throughput_factor = 0.02
+        }
+		remove_effect  = {
+			set_temp_variable = { institution_progress_temp = 1.0 }
+			eoanbr_institutions_rationalism_change = yes
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_science_techs }
+		}
+	}
+
+}
+eoanb_category_politics_internal = {
+	generic_vic_strengthen_the_state = {
+		icon = generic_civil_support
+		available = {
+			set_temp_variable = { x_temp = 1 }
+			has_treasury_gdp = yes
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_strengthen_government
+			NOT = { has_idea = institution_centralization }
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 730
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 2
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 2
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 2
+				has_stability < 0.5
+			}
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = -1 }
+			add_treasury_gdp = yes
+		}
+		modifier = {
+			stability_weekly = 0.001
+			treasury_cost_monthly_per_gdp = 0.01
+			increase_ps_by_one = yes
+		}
+		remove_effect  = {
+			set_temp_variable = { institution_progress_temp = 5.0 }
+			eoanbr_institutions_centralization_change = yes
+			increase_ps_by_one = yes
+		}
+	}
+
+	generic_vic_import_western_curriculum = {
+		icon = generic_research
+		available = {
+			PS_pol_positive = yes
+			has_stability > 0.4
+			NOT = { has_idea = oral_tradition }
+			NOT = { has_idea = traditional_uluma }
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_embrace_western_ideas
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 200
+			modifier = {
+				factor = 0.5
+				has_stability < 0.5
+			}
+		}
+		complete_effect = {
+			add_stability = -0.03
+			set_temp_variable = { x_temp = -1 }
+			add_treasury_gdp = yes
+		}
+		modifier = {
+			centrism_drift = 0.05
+		}
+		remove_effect  = {
+			set_country_flag = generic_vic_western_curriculum
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_rationalism_change = yes
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = humanities_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_science_techs }
+			decrease_ps_by_one = yes
+		}
+	}
+	generic_vic_adopt_capitalist_theories = {
+		icon = gre_investment_decisions
+		available = {
+			has_stability > 0.4
+			has_country_flag = generic_vic_western_curriculum
+			NOT = { has_idea = oral_tradition }
+			NOT = { has_idea = traditional_uluma }
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_embrace_western_ideas
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 180
+		ai_will_do = {
+			base = 150
+			modifier = {
+				factor = 0.5
+				has_stability < 0.5
+			}
+		}
+		complete_effect = {
+			add_stability = -0.02
+			if = {
+				limit = {
+					has_idea = generic_vic_idea_locals_outcompeted
+				}
+				modify_timed_idea = {
+					idea = generic_vic_idea_locals_outcompeted
+					months = -6
+				}
+			}
+		}
+        modifier = {
+			investment_confidence_modifier = 5
+        }
+		remove_effect  = {
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_industrialization_change = yes
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = economics_tech }
+		}
+	}
+	generic_vic_encourage_egalitarianism = {
+		icon = generic_form_nation
+		available = {
+			PS_pol_positive = yes
+			has_stability > 0.5
+			has_country_flag = generic_vic_western_curriculum
+			NOT = { has_idea = oral_tradition }
+			NOT = { has_idea = traditional_uluma }
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_embrace_western_ideas
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 0.5
+				has_stability < 0.5
+			}
+			modifier = {
+				factor = 2
+				has_stability > 0.75
+			}
+		}
+		complete_effect = {
+			add_stability = -0.05
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_rationalism_change = yes
+			add_popularity = {
+				ideology = social_egalitarianism
+				popularity = 0.1
+			}
+			decrease_ps_by_two = yes
+		}
+	}
+	
+	generic_vic_promote_local_philosophies = {
+		icon = generic_research
+		available = {
+
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_self_reliance_initiative
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			set_temp_variable = { institution_progress_temp = 3.0 }
+			eoanbr_institutions_rationalism_change = yes
+			add_tech_bonus = { bonus = 0.25 uses = 1 category = humanities_tech }
+		}
+	}
+	generic_vic_source_local_designs = {
+		icon = generic_prepare_civil_war
+		available = {
+
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_self_reliance_initiative
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			set_temp_variable = { institution_progress_temp = 1.0 }
+			eoanbr_institutions_industrialization_change = yes
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_small_arms_techs }
+		}
+	}
+	generic_vic_anti_foreign_propaganda = {
+		icon = GFX_decision_oppression
+		available = {
+
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_prevent_foreign_influence
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 2
+				has_stability < 0.5
+			}
+		}
+		modifier = {
+			political_power_gain = 0.1
+			party_popularity_stability_factor = 0.25
+		}
+		remove_effect = {
+			add_stability = 0.05
+		}
+	}
+	generic_vic_pull_on_obligations = {
+		icon = eng_trade_unions_support
+		available = {
+			has_war_support > 0.5
+			PS_pol_positive = yes
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_noblesse_oblige
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 0.5
+				has_war_support < 0.5
+			}
+			modifier = {
+				factor = 10
+				has_manpower < 5000
+			}
+		}
+		complete_effect = {
+			add_war_support = -0.05
+			add_manpower = 5000
+			decrease_ps_by_one = yes
+		}
+	}
+	generic_vic_grant_concessions = {
+		icon = generic_decision
+		available = {
+
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_noblesse_oblige
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 2
+				has_stability < 0.5
+			}
+		}
+		modifier = {
+			factory_throughput_factor = -0.05
+		}
+		remove_effect = {
+			add_political_power  = 75
+			add_stability = 0.05
+		}
+	}
+	generic_vic_reign_in_the_capitalists = {
+		icon = gre_investment_decisions
+		available = {
+			PS_pol_positive = yes
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_traditional_economy
+			NOT = { has_idea = institution_rationalism }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 2
+				has_stability < 0.5
+			}
+		}
+		modifier = {
+			capitalists_investment_contribution_factor = -0.2
+		}
+		remove_effect = {
+			set_temp_variable = { x_temp = 0.5 }
+			add_treasury_gdp = yes
+			add_stability = 0.05
+			decrease_ps_by_one = yes
+		}
+	}
+}
+
+eoanb_category_generic_industrialization = {
+	generic_vic_connect_region_to_the_capital = {
+		icon = generic_construction
+		available = {
+			ROOT = {
+				set_temp_variable = { x_temp = 200 }
+				has_treasury = yes
+			}
+		}
+		target_root_trigger = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_infrastructure_projects
+			NOT = { has_idea = institution_industrialization }
+		}
+		cost = 25
+		days_remove = 365
+		ai_will_do = {
+			base = 200
+			modifier = {
+				factor = 2
+				has_stability < 0.5
+			}
+			modifier = {
+				factor = 2
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					set_temp_variable = { ratio_temp = pops }
+					divide_temp_variable = { ratio_temp = ROOT.pops }
+					check_variable = { ratio_temp > 0.05 }
+				}
+			}
+		}
+		state_target = any_owned_state
+		target_trigger = {
+			FROM = {
+				is_core_of = ROOT
+				NOT = { has_state_flag = generic_vic_connected_to_capital }
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				set_temp_variable = { x_temp = -200 }
+				add_treasury = yes
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = generic_vic_connected_to_capital
+				set_temp_variable = { ratio_temp = pops }
+			}
+			ROOT = {
+				multiply_temp_variable = { ratio_temp = 100 }
+				divide_temp_variable = { ratio_temp = pops } # You get stability relative to population of state compared to your country
+				divide_temp_variable = { ratio_temp = 100 }
+				multiply_temp_variable = { ratio_temp = 0.3 } # You can get up to 30% stab from improving infra
+				add_stability = var:ratio_temp
+			}
+		}
+	}
+	generic_vic_connect_to_foreign_country = {
+		icon = generic_construction
+		available = {
+			set_temp_variable = { x_temp = 500 }
+			has_treasury = yes
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_infrastructure_projects
+			NOT = { has_idea = institution_industrialization }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 730
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = -500 }
+			add_treasury = yes
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = generic_vic_foreign_connections
+				years = 25
+			}
+		}
+	}
+	
+	generic_vic_encourage_workshops = {
+		icon = generic_industry
+		available = {
+			set_temp_variable = { x_temp = 5000 }
+			has_treasury = yes
+			set_temp_variable = { industry_token = token:tooling_workshop }
+			OR = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+					state_population_k > 200
+				}
+				capital_scope = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+			}
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_fund_industrial_development
+			NOT = { has_idea = institution_industrialization }
+			set_temp_variable = { industry_token = token:tooling_workshop }
+			is_valid_industry = yes
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 365
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = -5000 }
+			add_treasury = yes
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_capital = yes
+						state_population_k > 200
+					}
+					set_temp_variable = { industry_token = token:tooling_workshop }
+					has_free_industry_slots = yes
+				}
+				set_temp_variable = { x_temp = 1 }
+				set_temp_variable = { industry_token = token:tooling_workshop }
+				add_x_industries = yes
+			}
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_industrialization_change = yes
+		}
+	}
+	generic_vic_support_urban_guilds = {
+		icon = GFX_decision_generic_political_discourse
+		available = {
+			set_temp_variable = { x_temp = 3000 }
+			has_treasury = yes
+			set_temp_variable = { industry_token = token:urban_center }
+			OR = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+					state_population_k > 200
+				}
+				capital_scope = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+			}
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_fund_industrial_development
+			NOT = { has_idea = institution_industrialization }
+			set_temp_variable = { industry_token = token:urban_center }
+			is_valid_industry = yes
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 365
+		ai_will_do = {
+			base = 400
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = -3000 }
+			add_treasury = yes
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_capital = yes
+						state_population_k > 500
+					}
+					set_temp_variable = { industry_token = token:urban_center }
+					has_free_industry_slots = yes
+				}
+				set_temp_variable = { x_temp = 1 }
+				set_temp_variable = { industry_token = token:urban_center }
+				add_x_industries = yes
+			}
+			set_temp_variable = { institution_progress_temp = 1.0 }
+			eoanbr_institutions_industrialization_change = yes
+		}
+	}
+	generic_vic_subsidize_artisanship = {
+		icon = money
+		available = {
+			set_temp_variable = { x_temp = 4500 }
+			has_treasury = yes
+			set_temp_variable = { industry_token = token:consumer_goods_factory }
+			OR = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+					state_population_k > 200
+				}
+				capital_scope = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+			}
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_fund_industrial_development
+			NOT = { has_idea = institution_industrialization }
+			set_temp_variable = { industry_token = token:consumer_goods_factory }
+			is_valid_industry = yes
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 365
+		ai_will_do = {
+			base = 650
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = -4500 }
+			add_treasury = yes
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_capital = yes
+						state_population_k > 200
+					}
+					set_temp_variable = { industry_token = token:consumer_goods_factory }
+					has_free_industry_slots = yes
+				}
+				set_temp_variable = { x_temp = 1 }
+				set_temp_variable = { industry_token = token:consumer_goods_factory }
+				add_x_industries = yes
+			}
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_industrialization_change = yes
+		}
+	}
+	generic_vic_the_cottage_industry = {
+		icon = generic_decision
+		available = {
+			set_temp_variable = { x_temp = 3000 }
+			has_treasury = yes
+			set_temp_variable = { industry_token = token:textile_mill }
+			OR = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+					state_population_k > 200
+				}
+				capital_scope = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+			}
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_fund_industrial_development
+			NOT = { has_idea = institution_industrialization }
+			set_temp_variable = { industry_token = token:textile_mill }
+			is_valid_industry = yes
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 365
+		ai_will_do = {
+			base = 600
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = -3000 }
+			add_treasury = yes
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_capital = yes
+						state_population_k > 200
+					}
+					set_temp_variable = { industry_token = token:textile_mill }
+					has_free_industry_slots = yes
+				}
+				set_temp_variable = { x_temp = 1 }
+				set_temp_variable = { industry_token = token:textile_mill }
+				add_x_industries = yes
+			}
+			set_temp_variable = { institution_progress_temp = 2.0 }
+			eoanbr_institutions_industrialization_change = yes
+		}
+	}
+	generic_vic_fund_cultural_projects = {
+		icon = generic_construction
+		available = {
+			set_temp_variable = { x_temp = 2000 }
+			has_treasury = yes
+			set_temp_variable = { industry_token = token:entertainment_hub }
+			OR = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+					state_population_k > 200
+				}
+				capital_scope = {
+					is_controlled_by = ROOT
+					has_free_industry_slots = yes
+				}
+			}
+		}
+		visible = {
+			has_focus_tree = generic_vic_ft
+			has_completed_focus = generic_focus_vic_fund_industrial_development
+			NOT = { has_idea = institution_industrialization }
+			set_temp_variable = { industry_token = token:entertainment_hub }
+			is_valid_industry = yes
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 365
+		ai_will_do = {
+			base = 600
+		}
+		complete_effect = {
+			set_temp_variable = { x_temp = -2000 }
+			add_treasury = yes
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_capital = yes
+						state_population_k > 200
+					}
+					set_temp_variable = { industry_token = token:entertainment_hub }
+					has_free_industry_slots = yes
+				}
+				set_temp_variable = { x_temp = 1 }
+				set_temp_variable = { industry_token = token:entertainment_hub }
+				add_x_industries = yes
+			}
+			set_temp_variable = { institution_progress_temp = 1.0 }
+			eoanbr_institutions_industrialization_change = yes
+		}
+	}
+}

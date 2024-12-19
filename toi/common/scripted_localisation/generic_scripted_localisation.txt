@@ -1,0 +1,14 @@
+# NOTE - This is for the generic focus trees. NOT "general" scripted loc
+
+defined_text = {
+	name = GetGenericIndustralizationTitle
+	text = {
+		trigger = {
+			NOT = { has_completed_focus = generic_focus_vic_industrial_revolution }
+		}
+		localization_key = generic_vic_realm_development_title
+	}
+	text = {
+		localization_key = generic_vic_industrialization_title
+	}
+}

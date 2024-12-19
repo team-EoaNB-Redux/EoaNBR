@@ -257,6 +257,10 @@
 		color = rgb { 242 205 94 }
 		color_ui = rgb { 255 255 122 }
 	}
+	MEX_cosmetic_tacubaya = {
+		color = rgb { 124 142 56 }
+		color_ui = rgb { 135 198 108 }
+	}
 #
 # Africa
 	KRU_maryland = {
@@ -470,6 +474,10 @@
 	}
 	PRU_SPR_viceroyalty = {
 		color = rgb { 242 205 94 }
+		color_ui = rgb { 255 255 122 }
+	}
+	BAS_carlist_spain = {
+		color = rgb { 255 128 0 }
 		color_ui = rgb { 255 255 122 }
 	}
 #

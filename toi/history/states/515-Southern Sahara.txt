@@ -18,6 +18,11 @@ state = {
 		}
 		add_core_of = TUG
 		owner = TUG
+
+		1906.1.1 = {
+			owner = FRA
+			remove_core_of = TUG
+		}
 		afr_state_setup_scripted_effect = yes
 	}
 }

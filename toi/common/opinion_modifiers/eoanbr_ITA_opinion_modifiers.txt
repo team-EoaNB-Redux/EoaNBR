@@ -23,4 +23,18 @@ opinion_modifiers = { #Italian Minor Generic FT
 	ITA_minor_NSC_UK_Sulphur = {
 		value = -35
 	}
+
+	#Unified Italy
+	ITA_Reformed_the_Siccardi_Laws = {
+		value = 50
+		years = 1
+	}
+	ITA_The_Subversive_Laws = {
+		value = -50
+		years = 1
+	}
+	ITA_Altered_the_Deal = {
+		value = -50
+		years = 4
+	}
 }

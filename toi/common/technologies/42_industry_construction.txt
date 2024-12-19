@@ -91,7 +91,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -140,7 +140,7 @@ technologies = {
 					has_idea = institution_rationalism
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -177,7 +177,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect 
@@ -227,7 +227,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -273,7 +273,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -319,7 +319,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -363,7 +363,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -407,7 +407,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -447,7 +447,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -476,7 +476,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -505,7 +505,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -534,7 +534,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -566,7 +566,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -595,7 +595,7 @@ technologies = {
 					cat_engine_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -636,7 +636,7 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -680,7 +680,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -718,7 +718,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -767,7 +767,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -816,7 +816,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -858,7 +858,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -906,7 +906,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -953,7 +953,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -999,7 +999,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1045,7 +1045,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1083,7 +1083,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1115,7 +1115,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1148,7 +1148,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1182,7 +1182,7 @@ technologies = {
 					cat_machinery_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1216,7 +1216,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1253,7 +1253,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1297,7 +1297,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1332,7 +1332,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1376,7 +1376,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1418,7 +1418,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1448,7 +1448,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1480,7 +1480,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1512,7 +1512,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1541,7 +1541,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1571,7 +1571,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1603,7 +1603,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1633,7 +1633,7 @@ technologies = {
 					cat_textiles_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1667,7 +1667,7 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1722,7 +1722,7 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1741,6 +1741,7 @@ technologies = {
 				on_research_complete = {
 					set_temp_variable = { institution_progress_temp = 4 }
 					eoanbr_institutions_industrialization_change = yes
+					global_building_slots_factor = 0.025
 				}
 			#
 			#Modifier
@@ -1773,7 +1774,7 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1828,7 +1829,7 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1883,10 +1884,22 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 9
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 9
+				}
+				enable_building = {
+					building = dockyard
+					level = 6
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
@@ -1904,7 +1917,7 @@ technologies = {
 					leads_to_tech = tech_steel_conveyor_belts
 				}
 				dependencies = {
-					tech_transformers = 1
+					transformer = 1
 				}
 			#
 			#Meta
@@ -1918,10 +1931,23 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 11
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 11
+				}
+				enable_building = {
+					building = dockyard
+					level = 7
+				}
+			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
 				arms_factory_productivity_modifier = 0.1
@@ -1955,10 +1981,22 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 13
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 13
+				}
+				enable_building = {
+					building = dockyard
+					level = 8
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
@@ -1996,10 +2034,22 @@ technologies = {
 					cat_factory_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 15
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 15
+				}
+				enable_building = {
+					building = dockyard
+					level = 9
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.3
@@ -2033,7 +2083,7 @@ technologies = {
 					cat_management_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2068,7 +2118,7 @@ technologies = {
 					cat_management_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2082,6 +2132,7 @@ technologies = {
 				industrial_complex_productivity_modifier = 0.1
 				factory_output_factor = 0.02
 				production_factory_efficiency_gain_factor = 0.025
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_shift_work = {
@@ -2105,7 +2156,7 @@ technologies = {
 					cat_management_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2131,7 +2182,7 @@ technologies = {
 					leads_to_tech = tech_time_clock
 				}
 				dependencies = {
-					tech_incandescent_lightbulb = 1
+					better_incandescent_lightbulb = 1
 				}
 			#
 			#Meta
@@ -2145,7 +2196,7 @@ technologies = {
 					cat_management_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2180,7 +2231,7 @@ technologies = {
 					cat_management_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2219,7 +2270,7 @@ technologies = {
 					cat_consumer_goods_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2253,7 +2304,7 @@ technologies = {
 					cat_consumer_goods_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2286,7 +2337,7 @@ technologies = {
 					cat_consumer_goods_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2327,7 +2378,7 @@ technologies = {
 					cat_consumer_goods_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2368,7 +2419,7 @@ technologies = {
 					cat_consumer_goods_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2411,7 +2462,7 @@ technologies = {
 					cat_consumer_goods_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2450,7 +2501,7 @@ technologies = {
 					cat_consumer_goods_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2496,7 +2547,7 @@ technologies = {
 					cat_consumer_goods_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2543,7 +2594,7 @@ technologies = {
 					cat_tools_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2582,7 +2633,7 @@ technologies = {
 					cat_tools_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2598,7 +2649,7 @@ technologies = {
 						pm_iron_tools_iron_input_modifier = 0.5
 						pm_iron_tools_industrial_capacity_use_modifier = 0.2
 					}
-					custom_modifier_tooltip = pm_mechanical_tools_iron_tools_tt
+					custom_modifier_tooltip = pm_industrial_tools_iron_tools_tt
 				}
 			#
 		}
@@ -2626,7 +2677,7 @@ technologies = {
 					cat_tools_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2642,6 +2693,7 @@ technologies = {
 					
 					hidden_modifier = {
 						pm_iron_tools_output_modifier = 1.5
+						pm_iron_tools_wood_input_modifier = -0.1
 						pm_iron_tools_iron_input_modifier = 0.5
 						pm_iron_tools_industrial_capacity_use_modifier = 0.2
 					}
@@ -2675,7 +2727,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2709,7 +2761,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2718,7 +2770,8 @@ technologies = {
 				modifier = {
 					hidden_modifier = {
 						pm_steel_tools_output_modifier = 1.5
-						pm_steel_tools_steel_input_modifier = 0.5
+						pm_steel_tools_wood_input_modifier = -0.1
+						pm_steel_tools_steel_input_modifier = 0.6
 						pm_steel_tools_industrial_capacity_use_modifier = 0.2
 					}
 					custom_modifier_tooltip = pm_pneumatic_tools_steel_tools_tt
@@ -2736,7 +2789,7 @@ technologies = {
 				# 	leads_to_tech = tech_example
 				# }
 				dependencies = {
-					tech_transformers = 1
+					transformer = 1
 				}
 			#
 			#
@@ -2752,7 +2805,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2788,7 +2841,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2826,10 +2879,13 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
+				#on_research_complete = {
+					global_building_slots_factor = 0.025
+				#}
 			#
 			#Modifier
 				# Temporary Modifier
@@ -2863,7 +2919,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2901,7 +2957,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2936,7 +2992,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2946,6 +3002,7 @@ technologies = {
 				industry_repair_factor = 0.2
 				# Temporary Modifier
 				urban_center_throughput_factor = 0.1
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_reinforced_concrete = {
@@ -2969,7 +3026,7 @@ technologies = {
 					cat_equipment_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2978,6 +3035,7 @@ technologies = {
 				production_speed_buildings_factor = 0.05
 				industry_repair_factor = 0.2
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.05
 			#
 		}
 		tech_steel_bridge = {
@@ -3005,7 +3063,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3013,6 +3071,7 @@ technologies = {
 			#Modifier
 				production_speed_buildings_factor = 0.10
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.025
 				custom_modifier_tooltip = pm_steel_frame_buildings_unlock_tt
 			#
 		}
@@ -3038,7 +3097,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3048,6 +3107,7 @@ technologies = {
 				industrial_capacity_dockyard = 0.05
 				industry_repair_factor = 0.05
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_steel_girder_construction = {
@@ -3072,13 +3132,14 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
 			#
 			#Modifier
 				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.025
 				custom_modifier_tooltip = pm_high_rise_buildings_unlock_tt
 			#
 		}
@@ -3104,7 +3165,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3138,7 +3199,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3172,7 +3233,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3208,7 +3269,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3244,7 +3305,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3276,7 +3337,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3312,7 +3373,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3341,7 +3402,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3373,7 +3434,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3410,7 +3471,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3446,7 +3507,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3475,7 +3536,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3508,7 +3569,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3537,7 +3598,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3572,7 +3633,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3609,7 +3670,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3641,7 +3702,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3677,7 +3738,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3706,7 +3767,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3739,7 +3800,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3771,7 +3832,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3803,7 +3864,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3832,7 +3893,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3861,7 +3922,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3897,7 +3958,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3926,7 +3987,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3959,7 +4020,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3988,7 +4049,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4017,7 +4078,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4046,7 +4107,7 @@ technologies = {
 					cat_packaging_industry_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4077,7 +4138,7 @@ technologies = {
 					cat_oil_storage_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4106,7 +4167,7 @@ technologies = {
 					cat_oil_storage_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4135,7 +4196,7 @@ technologies = {
 					cat_oil_storage_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4164,7 +4225,7 @@ technologies = {
 					cat_oil_storage_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4193,7 +4254,7 @@ technologies = {
 					cat_oil_storage_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4222,7 +4283,7 @@ technologies = {
 					cat_oil_storage_construction_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect

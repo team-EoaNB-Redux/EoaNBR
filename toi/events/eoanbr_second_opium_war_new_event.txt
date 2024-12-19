@@ -1415,7 +1415,7 @@ country_event = {
 			factor = 95
 		}
 		add_stability = -0.05
-		add_war_support -0.05
+		add_war_support = -0.05
 		add_political_power = -200
 	}
 }
@@ -1469,6 +1469,36 @@ country_event = {
 			add_timed_idea = {
 				idea = CHI_idea_bejing_convention_euro
 				days = 365
+			}
+			if = {
+				limit = {
+					NOT = { RUS = { owns_state = 561 } }
+				}
+				transfer_state = 561
+			}
+			if = {
+				limit = {
+					NOT = { RUS = { owns_state = 560 } }
+				}
+				transfer_state = 560
+			}
+			if = {
+				limit = {
+					NOT = { RUS = { owns_state = 1244 } }
+				}
+				transfer_state = 1244
+			}
+			if = {
+				limit = {
+					NOT = { RUS = { owns_state = 657 } }
+				}
+				transfer_state = 657
+			}
+			if = {
+				limit = {
+					NOT = { RUS = { owns_state = 1373 } }
+				}
+				transfer_state = 1373
 			}
 			if = {
 				limit = {

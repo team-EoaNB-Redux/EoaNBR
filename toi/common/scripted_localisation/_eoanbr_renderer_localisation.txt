@@ -25,7 +25,7 @@ defined_text = {
       set_temp_variable = { param_cutoff = 4 }
       # set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
 		}
-		localization_key = "[RenderArray]"
+		localization_key = scripted_loc_inline_3264
 	}
 }
 
@@ -53,7 +53,7 @@ defined_text = {
       # If we haven't got a valid param_cutoff_suffix, use the default, which is array_cutoff_suffix_ellipsis ("...").
       if = { limit = { check_variable = { param_cutoff_suffix?0 = 0 } } set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_ellipsis } }
 		}
-		localization_key = "[render_array_inner]"
+		localization_key = scripted_loc_inline_3265
 	}
 }
 
@@ -73,15 +73,15 @@ defined_text = {
       }
       set_temp_variable = { v = param_array^i }
 		}
-		localization_key = "[render_array_infix][render_array_element][render_array_inner]" # Recurse!
+		localization_key = scripted_loc_inline_3266
 	}
   text = { # Cutoff case: when we have exceeded param_cutoff without reaching the end of the array, render the cutoff suffix and stop recursing.
     trigger = { check_variable = { i = param_cutoff } check_variable = { i < param_array^num }       log = "[?param_cutoff_suffix.GetTokenKey]"
 }
-    localization_key = "[?param_cutoff_suffix.GetTokenLocalizedKey]"
+    localization_key = scripted_loc_inline_3267
   }
   text = { # Base case: when we have reached the end of the array, stop recursing.
-    localization_key = ""
+    localization_key = scripted_loc_inline_3268
   }
 }
 
@@ -91,18 +91,18 @@ defined_text = {
 	name = render_array_infix
 	text = { # No infix precedes the first element
 		trigger = { check_variable = { i = 0 } }
-		localization_key = ""
+		localization_key = scripted_loc_inline_3269
 	}
 	text = { # If we have a custom last-infix defined, for things like ", and", use it if this is the last index (num - 1)
 		trigger = {
 			has_variable = param_last_infix
 			check_variable = { i = last_index?-1 }
 		}
-		localization_key = "[?param_last_infix.GetTokenLocalizedKey]"
+		localization_key = scripted_loc_inline_3270
 	}
 	text = { # If we have a custom infix defined, use it
 		trigger = { has_variable = param_infix }
-		localization_key = "[?param_infix.GetTokenLocalizedKey]"
+		localization_key = scripted_loc_inline_3271
 	}
 	text = { # Otherwise, fall back to a newline-separated list
 		localization_key = array_infix_newline
@@ -117,59 +117,59 @@ defined_text = {
 	name = render_array_element
   text = {
     trigger = { check_variable = { param_renderer?0 = 0 } }
-		localization_key = "[?v]"
+		localization_key = scripted_loc_inline_3272
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_token } }
-		localization_key = "[?v.GetTokenLocalizedKey]"
+		localization_key = scripted_loc_inline_3273
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_token_raw } }
-		localization_key = "[?v.GetTokenKey]"
+		localization_key = scripted_loc_inline_3274
 	}
 	text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name } }
-		localization_key = "[?v.GetName]"
+		localization_key = scripted_loc_inline_3275
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_def } }
-		localization_key = "[?v.GetNameDef]"
+		localization_key = scripted_loc_inline_3276
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_def_cap } }
-		localization_key = "[?v.GetNameDefCap]"
+		localization_key = scripted_loc_inline_3277
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_adjective } }
-		localization_key = "[?v.GetAdjective]"
+		localization_key = scripted_loc_inline_3278
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_adjective_cap } }
-		localization_key = "[?v.GetAdjectiveCap]"
+		localization_key = scripted_loc_inline_3279
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_with_flag } }
-		localization_key = "[?v.GetNameWithFlag]"
+		localization_key = scripted_loc_inline_3280
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_flag } }
-		localization_key = "[?v.GetFlag]"
+		localization_key = scripted_loc_inline_3281
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_tag } }
-		localization_key = "[?v.GetTag]"
+		localization_key = scripted_loc_inline_3282
   }
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_id } }
-		localization_key = "[?v.GetID]"
+		localization_key = scripted_loc_inline_3283
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_int } }
-		localization_key = "[?v|0]"
+		localization_key = scripted_loc_inline_3284
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_numeric } }
-		localization_key = "[?v]"
+		localization_key = scripted_loc_inline_3285
 	}
   ############################################
   ### DEFINE CUSTOM ELEMENT RENDERERS HERE ###
@@ -188,11 +188,80 @@ defined_text = {
 			set_temp_variable = { temp_previous = final_prev_vals^i }
 			set_temp_variable = { temp_current = final_new_vals^i }
 		}
-		localization_key = "[modifier_mutation_render]"
+		localization_key = scripted_loc_inline_3286
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_goods }
+		}
+		localization_key = render_goods
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_goods_w_percent }
+			set_temp_variable = { percent_temp = percent_temp_array^i }
+		}
+		localization_key = render_goods_w_percent
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_goods_w_number }
+			set_temp_variable = { amount_temp = number_temp_array^i }
+		}
+		localization_key = render_goods_w_number
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_goods_w_both }
+			set_temp_variable = { amount_temp = number_temp_array^i }
+			set_temp_variable = { percent_temp = percent_temp_array^i }
+		}
+		localization_key = render_goods_w_both
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_get_name_w_number }
+			set_temp_variable = { amount_temp = number_temp_array^i }
+		}
+		localization_key = render_name_w_number
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_get_name_w_percent }
+			set_temp_variable = { percent_temp = percent_temp_array^i }
+		}
+		localization_key = render_name_w_percent
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_get_name_w_both }
+			set_temp_variable = { percent_temp = percent_temp_array^i }
+			set_temp_variable = { amount_temp = number_temp_array^i }
+			check_variable = { color_temp = 0 }
+		}
+		localization_key = render_name_w_both
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_get_name_w_both }
+			set_temp_variable = { percent_temp = percent_temp_array^i }
+			set_temp_variable = { amount_temp = number_temp_array^i }
+			check_variable = { color_temp = 1 }
+		}
+		localization_key = render_name_w_both_g # Yes, I know this seems unnecessary, but this was the only way it'd work	~ Strat
+	}
+	text = {
+		trigger = {
+			check_variable = { param_renderer = token:array_element_renderer_get_name_w_both }
+			set_temp_variable = { percent_temp = percent_temp_array^i }
+			set_temp_variable = { amount_temp = number_temp_array^i }
+			check_variable = { color_temp = -1 }
+		}
+		localization_key = render_name_w_both_r
 	}
   ####### END CUSTOM ELEMENT RENDERERS #######
   ############################################
 	text = {
-		localization_key = "[?v]"
+		localization_key = scripted_loc_inline_3287
 	}
 }

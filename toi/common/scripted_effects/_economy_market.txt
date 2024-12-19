@@ -202,11 +202,11 @@
 								index = ii value = vv break = bb
 
 								if = { limit = { check_variable = { vv:production@var:r_type < market_state_temp:production@var:r_type } }
-									add_to_array = { array = market_leader_temp:market_production_states@var:r_type value = THIS index = ii }
+									add_to_array = { array = market_leader_temp:market_production_states@var:r_type value = market_state_temp index = ii }
 									set_temp_variable = { bb = 1 }
 								}
 							}
-							if = { limit = { check_variable = { bb = 0 } } add_to_array = { market_leader_temp:market_production_states@var:r_type = THIS } }
+							if = { limit = { check_variable = { bb = 0 } } add_to_array = { market_leader_temp:market_production_states@var:r_type = market_state_temp } }
 							
 							if = { limit = { check_variable = { market_leader_temp:market_production_states@var:r_type^num > 5 } } 
 								remove_from_array = { array = market_leader_temp:market_production_states@var:r_type index = 5 } 
@@ -220,7 +220,7 @@
 				
 				# Check the top 5 consuming states of each country. Put them in a list.
 				set_temp_variable = { highest_state_temp = consumption_states@var:r_type^0 }
-				if = { limit = { check_variable = { highest_state_temp:consumption@var:r_type > market_leader_temp:market_consumption_states@var:r_type^4 } }
+				if = { limit = { check_variable = { highest_state_temp:demand@var:r_type > market_leader_temp:market_consumption_states@var:r_type^4 } }
 					for_loop_effect = {
 						end = 5 value = ii break = bbb
 						set_temp_variable = { market_state_temp = consumption_states@var:r_type^ii }
@@ -231,11 +231,11 @@
 								index = ii value = vv break = bb
 
 								if = { limit = { check_variable = { vv:demand@var:r_type < market_state_temp:demand@var:r_type } }
-									add_to_array = { array = market_leader_temp:market_consumption_states@var:r_type value = THIS index = ii }
+									add_to_array = { array = market_leader_temp:market_consumption_states@var:r_type value = market_state_temp index = ii }
 									set_temp_variable = { bb = 1 }
 								}
 							}
-							if = { limit = { check_variable = { bb = 0 } } add_to_array = { market_leader_temp:market_consumption_states@var:r_type = THIS } }
+							if = { limit = { check_variable = { bb = 0 } } add_to_array = { market_leader_temp:market_consumption_states@var:r_type = market_state_temp } }
 							
 							if = { limit = { check_variable = { market_leader_temp:market_consumption_states@var:r_type^num > 5 } } 
 								remove_from_array = { array = market_leader_temp:market_consumption_states@var:r_type index = 5 } 
@@ -279,37 +279,53 @@
 			value = r_type
 
 			set_temp_variable = { amount_temp = resource_consumed@var:r_type }
+			if = {
+				limit = {
+					check_variable = { resource@var:r_type < 0 }
+				}
+				subtract_from_temp_variable = { amount_temp = resource@var:r_type }
+			}
 			multiply_temp_variable = { amount_temp = modifier_temp }
 			add_to_variable = { local_need@var:r_type = amount_temp }
 			#set_variable = { balance@var:r_type = resource@var:r_type }
 		}
 		
-		clear_array = production_states@var:r_type
-		clear_array = consumption_states@var:r_type
-		every_controlled_state = {
-			# Add production from this state to production states array, sorted
-			for_each_loop = {
-				array = PREV.production_states@var:r_type
-				index = ii value = vv break = bb
+		for_each_loop = {
+			array = global.resource_token_array
+			value = r_type
+			clear_array = production_states@var:r_type
+			clear_array = consumption_states@var:r_type
+			if = { limit = { check_variable = { local_production@var:r_type > 0 } }
+				every_controlled_state = {
+					# Add production from this state to production states array, sorted
+					if = { limit = { check_variable = { production@var:r_type > 0 } }
+						for_each_loop = {
+							array = controller:production_states@var:r_type
+							index = ii value = vv break = bb
+							
+							if = { limit = { check_variable = { vv:production@var:r_type < production@var:r_type } }
+								add_to_array = { array = controller:production_states@var:r_type value = THIS index = ii }
+								set_temp_variable = { bb = 1 }
+							}
+						}
+						if = { limit = { check_variable = { bb = 0 } } add_to_array = { controller:production_states@var:r_type = THIS } }
+					}
+					
+					# Add consumption from this state to consumption states array, sorted
+					if = { limit = { check_variable = { demand@var:r_type > 0 } }
+						for_each_loop = {
+							array = controller:consumption_states@var:r_type
+							index = ii value = vv break = bb
 
-				if = { limit = { check_variable = { vv < local_production@var:r_type } }
-					add_to_array = { array = PREV.production_states@var:r_type value = THIS index = ii }
-					set_temp_variable = { bb = 1 }
+							if = { limit = { check_variable = { vv:demand@var:r_type < demand@var:r_type } }
+								add_to_array = { array = controller:consumption_states@var:r_type value = THIS index = ii }
+								set_temp_variable = { bb = 1 }
+							}
+						}
+						if = { limit = { check_variable = { bb = 0 } } add_to_array = { controller:consumption_states@var:r_type = THIS } }
+					}
 				}
 			}
-			if = { limit = { check_variable = { bb = 0 } } add_to_array = { PREV.production_states@var:r_type = THIS } }
-			
-			# Add consumption from this state to consumption states array, sorted
-			for_each_loop = {
-				array = PREV.consumption_states@var:r_type
-				index = ii value = vv break = bb
-
-				if = { limit = { check_variable = { vv < demand@var:r_type } }
-					add_to_array = { array = PREV.consumption_states@var:r_type value = THIS index = ii }
-					set_temp_variable = { bb = 1 }
-				}
-			}
-			if = { limit = { check_variable = { bb = 0 } } add_to_array = { PREV.consumption_states@var:r_type = THIS } }
 		}
 	}
 	state_market_update = {
@@ -505,25 +521,23 @@
 					limit = {
 						check_variable = { d_temp > 0.0 }
 					}
-					set_temp_variable = { grp_sd = s_temp }
-					divide_temp_variable = { grp_sd = d_temp }
-
-					set_temp_variable = { grp_multiplier = 3 }
-					subtract_from_temp_variable = { grp_multiplier = grp_sd }
-					divide_temp_variable = { grp_multiplier = 2 }
+					set_temp_variable = { grp_multiplier = s_temp }
+					divide_temp_variable = { grp_multiplier = d_temp }
+					multiply_temp_variable = { grp_multiplier = 3 }
+					subtract_from_temp_variable = { grp_multiplier = 2 }
 
 					if = {
 						limit = {
-							check_variable = { grp_multiplier < 0.25 }
+							check_variable = { grp_multiplier > 4.0 }
 						}
-						set_temp_variable = { grp_multiplier = 0.25 }
+						set_temp_variable = { grp_multiplier = 4.0 }
 					}
 				}
 				else = {
-					set_temp_variable = { grp_multiplier = 0.25 }
+					set_temp_variable = { grp_multiplier = 4.0 }
 				}
 
-				multiply_temp_variable = { p_return_temp = grp_multiplier } #P = B * ((3 - S/D) / 2)
+				divide_temp_variable = { p_return_temp = grp_multiplier } # P = B / (3 * S/D - 2)
 			}
 			else_if = {
 				limit = {
@@ -534,22 +548,23 @@
 						check_variable = { s_temp > 0.0 }
 					}
 					set_temp_variable = { grp_multiplier = d_temp }
+					subtract_from_temp_variable = { grp_multiplier = s_temp }
 					divide_temp_variable = { grp_multiplier = s_temp }
+					multiply_temp_variable = { grp_multiplier = 3 }
 					add_to_temp_variable = { grp_multiplier = 1 }
-					divide_temp_variable = { grp_multiplier = 2 }
 
 					if = {
 						limit = {
-							check_variable = { grp_multiplier > 2.0 }
+							check_variable = { grp_multiplier > 4.0 }
 						}
-						set_temp_variable = { grp_multiplier = 2.0 }
+						set_temp_variable = { grp_multiplier = 4.0 }
 					}
 				}
 				else = {
-					set_temp_variable = { grp_multiplier = 2.0 }
+					set_temp_variable = { grp_multiplier = 4.0 }
 				}
 
-				multiply_temp_variable = { p_return_temp = grp_multiplier } #P = B * ( (D/S + 1) / 2)
+				multiply_temp_variable = { p_return_temp = grp_multiplier } # P = B * ( 3*(D-S) / S + 1 )
 			}
 		}
 		else_if = {
@@ -1024,7 +1039,7 @@
 					multiply_variable = { shipping_use@var:r_type = -1 }
 				}
 				multiply_variable = { shipping_use@var:r_type = global.shipping_cost@var:r_type }
-				set_temp_variable = { modifier_temp = modifier@shipping_cost_modifier }
+				set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
 				add_to_temp_variable = { modifier_temp = 1 }
 				multiply_variable = { shipping_use@var:r_type = modifier_temp }
 
@@ -1809,7 +1824,7 @@
 					}
 					set_temp_variable = { right_bar_temp = global_market_price_compared_to_base@var:vv }
 					multiply_temp_variable = { right_bar_temp = 100 }
-					divide_temp_variable = { right_bar_temp = 1 }
+					divide_temp_variable = { right_bar_temp = 3 }
 					
 					set_temp_variable = { left_bar_temp = 100 }
 				}
@@ -1865,7 +1880,7 @@
 					}
 					set_temp_variable = { right_bar_temp = selected_market:price_compared_to_base@var:vv }
 					multiply_temp_variable = { right_bar_temp = 100 }
-					divide_temp_variable = { right_bar_temp = 1 }
+					divide_temp_variable = { right_bar_temp = 3 }
 					
 					set_temp_variable = { left_bar_temp = 100 }
 				}
@@ -2222,7 +2237,7 @@
 					multiply_variable = { shipping_use@var:resource_temp = -1 }
 				}
 				multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-				set_temp_variable = { modifier_temp = modifier@shipping_cost_modifier }
+				set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
 				add_to_temp_variable = { modifier_temp = 1 }
 				multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
 				add_to_variable = { shipping_use = shipping_use@var:resource_temp }
@@ -2329,7 +2344,7 @@
 				multiply_variable = { shipping_use@var:resource_temp = -1 }
 			}
 			multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-			set_temp_variable = { modifier_temp = modifier@shipping_cost_modifier }
+			set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
 			add_to_temp_variable = { modifier_temp = 1 }
 			multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
 			add_to_variable = { shipping_use = shipping_use@var:resource_temp }
@@ -2401,7 +2416,7 @@
 				multiply_variable = { shipping_use@var:resource_temp = -1 }
 			}
 			multiply_variable = { shipping_use@var:resource_temp = global.shipping_cost@var:resource_temp }
-			set_temp_variable = { modifier_temp = modifier@shipping_cost_modifier }
+			set_temp_variable = { modifier_temp = modifier@shipping_cost_factor }
 			add_to_temp_variable = { modifier_temp = 1 }
 			multiply_variable = { shipping_use@var:resource_temp = modifier_temp }
 			add_to_variable = { shipping_use = shipping_use@var:resource_temp }
@@ -2453,6 +2468,29 @@
 				set_temp_variable = { no_update_temp = 1 }
 				add_trade = yes
 			}
+			else_if = {
+				limit = {
+					check_variable = { trade_ai@var:resource_temp = 0 }
+					NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
+					
+					check_variable = { offers@var:resource_temp = 0 }
+					NOT = { is_in_array = { trade_routes = resource_temp } }
+
+					OR = {
+						AND = {
+							check_variable = { supply@var:resource_temp > 0 }
+							check_variable = { demand@var:resource_temp = 0 }
+						}
+						AND = {
+							check_variable = { supply@var:resource_temp = 0 }
+							check_variable = { demand@var:resource_temp > 0 }
+						}
+					}
+				}
+
+				set_temp_variable = { no_update_temp = 1 }
+				add_trade = yes
+			}
 		}
 
 		for_each_loop = { # Optimize & Evaluate Routes
@@ -2483,6 +2521,52 @@
 				}
 
 				trade_ai_evaluate_route = yes
+			}
+
+			if = { # Minimum trade - sets trade to resource consumption (for military production)
+				limit = {
+					check_variable = { trade_ai@var:resource_temp = 0 }
+					NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
+				}
+				set_temp_variable = { amount_temp = resource_consumed@var:resource_temp }
+				if = { limit = { check_variable = { resource@var:resource_temp < 0 } } subtract_from_temp_variable = { amount_temp = resource_consumed@var:resource_temp } }
+				subtract_from_temp_variable = { amount_temp = supply@var:resource_temp }
+
+				if = {
+					limit = {
+						check_variable = { amount_temp > 0 }
+						check_variable = { amount_temp < offers@var:resource_temp }
+					}
+					set_temp_variable = { no_update_temp = 1 }
+					set_trade = yes
+				}
+			}
+			
+			if = { # Minimum trade - sets exports to 1 (for 0 demand but any supply)
+				limit = {
+					check_variable = { trade_ai@var:resource_temp = 0 }
+					NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
+
+					check_variable = { offers@var:resource_temp = 0 }
+					check_variable = { supply@var:resource_temp > 0 }
+					check_variable = { demand@var:resource_temp = 0 }
+				}
+				set_temp_variable = { amount_temp = -1 }
+				set_temp_variable = { no_update_temp = 1 }
+				set_trade = yes
+			}
+			if = { # Minimum trade - sets imports to 1 (for 0 supply but any demand)
+				limit = {
+					check_variable = { trade_ai@var:resource_temp = 0 }
+					NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
+
+					check_variable = { offers@var:resource_temp = 0 }
+					check_variable = { supply@var:resource_temp = 0 }
+					check_variable = { demand@var:resource_temp > 0 }
+				}
+				set_temp_variable = { amount_temp = 1 }
+				set_temp_variable = { no_update_temp = 1 }
+				set_trade = yes
 			}
 		}
 		

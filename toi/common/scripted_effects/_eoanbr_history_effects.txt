@@ -553,6 +553,8 @@
 		add_ideas = institution_settlement
 		set_variable = { progress@token:institution_settlement = 100 }
 		set_variable = { progress@token:institution_centralization = 90 }
+
+		add_equipment_to_stockpile = { type = cavalry_equipment amount = 75 producer = THIS }
 	}
 	set_tech_pre_industrial_late_industrializing = { # 1780
 		set_technology = {
@@ -733,7 +735,9 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 10 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
+
+		add_equipment_to_stockpile = { type = cavalry_equipment amount = 75 producer = THIS }
 	}
 	set_tech_victorian_early_industrializing = { #1830
 		set_technology = {
@@ -924,6 +928,8 @@
 			# Doctrines
 				tribal_tatics = 1
 				land_doctrine_victorian = 1
+				doctrine_victorian_artillery = 1
+				doctrine_victorian_cavalry = 1
 			#
 		}
 		if = {
@@ -971,7 +977,9 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 15 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
+		
+		add_equipment_to_stockpile = { type = cavalry_equipment amount = 75 producer = THIS }
 	}
 	set_tech_victorian_middle_industrializing = { #1850
 		set_technology = {
@@ -1265,7 +1273,9 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 25 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
+		
+		add_equipment_to_stockpile = { type = cavalry_equipment amount = 75 producer = THIS }
 	}
 	set_tech_victorian_late_industrializing = { #1860
 		set_technology = {
@@ -1560,7 +1570,9 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 25 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
+		
+		add_equipment_to_stockpile = { type = cavalry_equipment amount = 75 producer = THIS }
 	}
 	set_tech_early_mechanization = { #1870
 		set_technology = {
@@ -1828,6 +1840,6 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 25 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
 	}
 #

@@ -143,7 +143,7 @@ spriteTypes = {
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
-	textspriteType = {
+	textspriteType = { 
 		name = "GFX_eoanbr_ellipse_button_148x36"
 		texturefile = "gfx/interface/buttons/eoanbr_ellipse_button_148x36.dds"
 		noOfFrames = 1
@@ -158,6 +158,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_eoanbr_header_tab_button_128x45"
 		texturefile = "gfx/interface/buttons/eoanbr_header_tab_button_128x45.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_eoanbr_header_tab_button_258x45"
+		texturefile = "gfx/interface/buttons/eoanbr_header_tab_button_258x45.dds"
 		noOfFrames = 2
 		effectFile = "gfx/FX/buttonstate.lua"
 	}

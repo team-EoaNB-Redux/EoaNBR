@@ -1664,7 +1664,7 @@ country_event = {
 			add_building_construction = { type = rail_way level = 1 instant_build = yes province = 7361 }
 			add_building_construction = { type = rail_way level = 1 instant_build = yes province = 1354 }
 			add_building_construction = { type = rail_way level = 1 instant_build = yes province = 4623 }
-			set_temp_variable = { industry_token = token:railways }
+			set_temp_variable = { industry_token = token:railway }
 			set_temp_variable = { x_temp = 2 }
 			add_x_industries = yes
 		}
@@ -6411,6 +6411,34 @@ country_event = {##SAF - Philip Edmond Wodehouse backup
 				Ideology = despotism
 			}
 			promote_character = yes
+		}
+	}
+}
+country_event = {##SAF - Rhodes race to bulawayo
+	id = britishafrica.16
+	title = britishafrica.16.t
+	desc = britishafrica.16.d
+	#picture = GFX_report_event_chinese_army_training
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = britishafrica.16"
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		tag = SAF
+		#date > 1880.9.27
+		ENG={
+			has_country_flag = BC_Granted_Rhodesia
+		}
+	}
+
+	option = { ##they are dispatched
+		name = britishafrica.16.a
+		# log = "option:		name = britishafrica.16.a"
+		NDE={
+			country_event = { id = britishafrica.17}
 		}
 	}
 }

@@ -179,10 +179,7 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_building_construction_background"
 			texturefile = "gfx/interface/building_construction_background.dds"
-		}
-		spriteType = {
-			name = "GFX_building_construction_background"
-			texturefile = "gfx/interface/building_construction_background.dds"
+			effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		}
 		spriteType = {
 			name = "GFX_investment_opportunity_background"
@@ -1045,6 +1042,15 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_refresh_prod_budget_button"
 			texturefile = "gfx/interface/buttons/refresh_prod_budget_button.dds"
+		}
+		
+		spriteType = {
+			name = "GFX_prospecting_button"
+			texturefile = "gfx/interface/buttons/prospecting_button.dds"
+		}
+		spriteType = {
+			name = "GFX_prospecting_button_active"
+			texturefile = "gfx/interface/buttons/prospecting_button_active.dds"
 		}
 	#
 

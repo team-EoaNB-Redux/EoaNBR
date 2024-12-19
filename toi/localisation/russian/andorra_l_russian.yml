@@ -1,0 +1,11 @@
+﻿l_russian:
+ andorra.1.t: "Переход власти" #NT!
+ andorra.1.d: "Согласно договору, мы сменили владельца нашей земли." #NT!
+ andorra.1.a: "Очаровательный!" #NT!
+ andorra.2.t: "Андорра присоединилась к рыночному союзу" #NT!
+ andorra.2.d: "[ADR.GetNameDef] присоединился как подданный империи!" #NT!
+ andorra.2.a: "Кто они еще?" #NT!
+ andorra.3.t: "Андорра выходит из рыночного союза" #NT!
+ andorra.3.d: "[ADR.GetNameDef] покинул пределы империи!" #NT!
+ andorra.3.a: "Это ничего не меняет." #NT!
+ adr_change_market_tt: "[ADR.GetNameWithFlag] присоединяется к Market Union с [?market_leader.GetNameWithFlag]" #NT!

@@ -14,10 +14,10 @@ defined_text = {
         trigger = {
           has_global_flag = autobuild_flag
         }
-        localization_key = "autobuild_enabled_loc"
+        localization_key = scripted_loc_inline_1794
     }
 	text = {
-		localization_key = "autobuild_disabled_loc"
+		localization_key = scripted_loc_inline_1795
 	}
 }
 defined_text = {
@@ -26,7 +26,7 @@ defined_text = {
         trigger = {
             set_temp_variable = { amount_temp = gdp_amount }
         }
-        localization_key = "[GetAdjustedAmountNoSign]"
+        localization_key = scripted_loc_inline_1796
     }
 }
 defined_text = {
@@ -35,7 +35,7 @@ defined_text = {
         trigger = {
             set_temp_variable = { amount_temp = gdp_per_capita }
         }
-        localization_key = "[GetAdjustedAmountNoSign]"
+        localization_key = scripted_loc_inline_1797
     }
 }
 defined_text = {
@@ -47,7 +47,7 @@ defined_text = {
             divide_temp_variable = { gdp_amount_temp = 1000000 }
 			multiply_temp_variable = { gdp_amount_temp = 12 }
         }
-        localization_key = "[?gdp_amount_temp]M"
+        localization_key = scripted_loc_inline_1798
     }
 	text = {
         trigger = {
@@ -56,14 +56,14 @@ defined_text = {
             divide_temp_variable = { gdp_amount_temp = 1000 }
 			multiply_temp_variable = { gdp_amount_temp = 12 }
 		}
-        localization_key = "[?gdp_amount_temp]K"
+        localization_key = scripted_loc_inline_1799
     }
 	text = {
         trigger = {
             set_temp_variable = { gdp_amount_temp = gdp_amount }
 			multiply_temp_variable = { gdp_amount_temp = 12 }
 		}
-        localization_key = "[?gdp_amount_temp]"
+        localization_key = scripted_loc_inline_1800
     }
 }
 # General
@@ -73,7 +73,7 @@ defined_text = {
 			trigger = {
 				check_variable = { amount_temp = 0 }
 			}
-			localization_key = "[?amount_temp|=1]"
+			localization_key = scripted_loc_inline_1801
 		}
 		text = {
 			trigger = {
@@ -84,7 +84,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|=0]K"
+			localization_key = scripted_loc_inline_1802
 		}
 		text = {
 			trigger = {
@@ -95,7 +95,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|=1]K"
+			localization_key = scripted_loc_inline_1803
 		}
 		text = {
 			trigger = {
@@ -106,7 +106,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|=2]K"
+			localization_key = scripted_loc_inline_1804
 		}
 		text = {
 			trigger = {
@@ -115,7 +115,7 @@ defined_text = {
 					check_variable = { amount_temp < -99.999 }
 				}
 			}
-			localization_key = "[?amount_temp|=0]"
+			localization_key = scripted_loc_inline_1805
 		}
 		text = {
 			trigger = {
@@ -124,7 +124,7 @@ defined_text = {
 					check_variable = { amount_temp < -9.999 }
 				}
 			}
-			localization_key = "[?amount_temp|=1]"
+			localization_key = scripted_loc_inline_1806
 		}
 		text = {
 			trigger = {
@@ -133,10 +133,10 @@ defined_text = {
 					check_variable = { amount_temp < -0.999 }
 				}
 			}
-			localization_key = "[?amount_temp|=2]"
+			localization_key = scripted_loc_inline_1807
 		}
 		text = {
-			localization_key = "[?amount_temp|=3]"
+			localization_key = scripted_loc_inline_1808
 		}
 	}
 	defined_text = { # GetAdjustedAmountNoSign - amount_temp
@@ -145,7 +145,7 @@ defined_text = {
 			trigger = {
 				check_variable = { amount_temp = 0 }
 			}
-			localization_key = "[?amount_temp|1]"
+			localization_key = scripted_loc_inline_1809
 		}
 		text = {
 			trigger = {
@@ -156,7 +156,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|0]K"
+			localization_key = scripted_loc_inline_1810
 		}
 		text = {
 			trigger = {
@@ -167,7 +167,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|1]K"
+			localization_key = scripted_loc_inline_1811
 		}
 		text = {
 			trigger = {
@@ -178,7 +178,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|2]K"
+			localization_key = scripted_loc_inline_1812
 		}
 		text = {
 			trigger = {
@@ -187,7 +187,7 @@ defined_text = {
 					check_variable = { amount_temp < -99.999 }
 				}
 			}
-			localization_key = "[?amount_temp|0]"
+			localization_key = scripted_loc_inline_1813
 		}
 		text = {
 			trigger = {
@@ -196,7 +196,7 @@ defined_text = {
 					check_variable = { amount_temp < -9.999 }
 				}
 			}
-			localization_key = "[?amount_temp|1]"
+			localization_key = scripted_loc_inline_1814
 		}
 		text = {
 			trigger = {
@@ -205,10 +205,10 @@ defined_text = {
 					check_variable = { amount_temp < -0.999 }
 				}
 			}
-			localization_key = "[?amount_temp|2]"
+			localization_key = scripted_loc_inline_1815
 		}
 		text = {
-			localization_key = "[?amount_temp|3]"
+			localization_key = scripted_loc_inline_1816
 		}
 	}
 	defined_text = { # GetAdjustedAmountThousandsNoSign - amount_temp
@@ -217,7 +217,7 @@ defined_text = {
 			trigger = {
 				check_variable = { amount_temp = 0 }
 			}
-			localization_key = "[?amount_temp|0]"
+			localization_key = scripted_loc_inline_1817
 		}
 		text = {
 			trigger = {
@@ -228,7 +228,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|0]M"
+			localization_key = scripted_loc_inline_1818
 		}
 		text = {
 			trigger = {
@@ -239,7 +239,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|1]M"
+			localization_key = scripted_loc_inline_1819
 		}
 		text = {
 			trigger = {
@@ -250,7 +250,7 @@ defined_text = {
 				set_temp_variable = { number_temp = amount_temp }
 				divide_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|2]M"
+			localization_key = scripted_loc_inline_1820
 		}
 		text = {
 			trigger = {
@@ -259,7 +259,7 @@ defined_text = {
 					check_variable = { amount_temp < -99.999 }
 				}
 			}
-			localization_key = "[?amount_temp|0]K"
+			localization_key = scripted_loc_inline_1821
 		}
 		text = {
 			trigger = {
@@ -268,7 +268,7 @@ defined_text = {
 					check_variable = { amount_temp < -9.999 }
 				}
 			}
-			localization_key = "[?amount_temp|1]K"
+			localization_key = scripted_loc_inline_1822
 		}
 		text = {
 			trigger = {
@@ -277,14 +277,14 @@ defined_text = {
 					check_variable = { amount_temp < -0.999 }
 				}
 			}
-			localization_key = "[?amount_temp|2]K"
+			localization_key = scripted_loc_inline_1823
 		}
 		text = {
 			trigger = {
 				set_temp_variable = { number_temp = amount_temp }
 				multiply_temp_variable = { number_temp = 1000 }
 			}
-			localization_key = "[?number_temp|0]"
+			localization_key = scripted_loc_inline_1824
 		}
 	}
 	defined_text = { # GetPositiveColor - amount_temp
@@ -305,16 +305,46 @@ defined_text = {
 			localization_key = yellow_loc
 		}
 	}
+	defined_text = { # GetNegativeColor - amount_temp
+		name = GetNegativeColor
+		text = {
+			trigger = {
+				check_variable = { amount_temp > 0 }
+			}
+			localization_key = red_loc
+		}
+		text = {
+			trigger = {
+				check_variable = { amount_temp < 0 }
+			}
+			localization_key = green_loc
+		}
+		text = {
+			localization_key = yellow_loc
+		}
+	}
 	defined_text = { # GetPositiveAdjustedAmount - amount_temp
 		name = GetPositiveAdjustedAmount
 		text = {
-			localization_key = "[GetPositiveColor][GetAdjustedAmount]"
+			localization_key = scripted_loc_inline_1825
+		}
+	}
+	defined_text = { # GetNegativeAdjustedAmount - amount_temp
+		name = GetNegativeAdjustedAmount
+		text = {
+			localization_key = scripted_loc_inline_1826
 		}
 	}
 	defined_text = { # GetIconFromV - v
 		name = GetIconFromV
 		text = {
 			localization_key = "GFX_[?v.GetTokenKey]"
+		}
+	}
+	defined_text = { # GetTextIconFromV - v
+		name = GetTextIconFromV
+		text = {
+			localization_key = "GFX_[?v.GetTokenKey]_texticon"
 		}
 	}
 	defined_text = { # GetEmploymentIconFromPercent - percent_temp, 0-100
@@ -844,156 +874,328 @@ defined_text = {
         }
     }
     defined_text = {
-        name = GetCurrencyTextIcon
-		text = {
+        name = GetCurrencyTextIconCountryTemp
+        #Note, when using this scripted loc, set country_temp
+        text = {
             trigger = {
-               has_variable = afr_prosperity_mechanic_value
+                var:country_temp = {
+                    currency_uses_dollar = yes
+                }
             }
-            localization_key = "currency_prosperity_texticon"
+            localization_key = scripted_loc_inline_1827
         }
         text = {
             trigger = {
-                currency_uses_dollar = yes
+                var:country_temp = {
+                    currency_uses_pound = yes
+                }
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_inline_1828
         }
         text = {
             trigger = {
-                currency_uses_pound = yes
+                var:country_temp = {
+                    currency_uses_euro = yes
+                }
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_inline_1829
         }
         text = {
             trigger = {
-                currency_uses_euro = yes
+                var:country_temp = {
+                    currency_uses_franc = yes
+                }
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_inline_1830
         }
         text = {
             trigger = {
-                currency_uses_franc = yes
+                var:country_temp = {
+                    currency_uses_ruble = yes
+                }
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_inline_1831
         }
         text = {
             trigger = {
-                currency_uses_ruble = yes
+                var:country_temp = {
+                    currency_uses_rupee = yes
+                }
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_inline_1832
         }
         text = {
             trigger = {
-                currency_uses_rupee = yes
+                var:country_temp = {
+                    currency_uses_yen = yes
+                }
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_inline_1833
         }
         text = {
             trigger = {
-                currency_uses_yen = yes
+                var:country_temp = {
+                    currency_uses_lira = yes
+                }
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_inline_1834
         }
         text = {
             trigger = {
-                currency_uses_lira = yes
+                var:country_temp = {
+                    currency_uses_mark = yes
+                }
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_inline_1835
         }
         text = {
             trigger = {
-                currency_uses_mark = yes
+                var:country_temp = {
+                    currency_uses_real = yes
+                }
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_inline_1836
         }
         text = {
             trigger = {
-                currency_uses_real = yes
+                var:country_temp = {
+                    currency_uses_bitcoin = yes
+                }
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_inline_1837
         }
         text = {
             trigger = {
-                currency_uses_bitcoin = yes
+                var:country_temp = {
+                    currency_uses_shekel = yes
+                }
             }
-            localization_key = "currency_bitcoin_texticon"
-        }
-        text = {
-            trigger = {
-                currency_uses_shekel = yes
-            }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_inline_1838
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_inline_1839
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_inline_1840
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_inline_1841
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_inline_1842
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_inline_1843
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_inline_1844
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_inline_1845
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_inline_1846
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_inline_1847
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_inline_1848
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_inline_1849
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_inline_1850
+        }
+    }
+    defined_text = {
+        name = GetCurrencyTextIcon
+		text = {
+            trigger = {
+               has_variable = afr_prosperity_mechanic_value
+            }
+            localization_key = scripted_loc_inline_1851
+        }
+        text = {
+            trigger = {
+                currency_uses_dollar = yes
+            }
+            localization_key = scripted_loc_inline_1852
+        }
+        text = {
+            trigger = {
+                currency_uses_pound = yes
+            }
+            localization_key = scripted_loc_inline_1853
+        }
+        text = {
+            trigger = {
+                currency_uses_euro = yes
+            }
+            localization_key = scripted_loc_inline_1854
+        }
+        text = {
+            trigger = {
+                currency_uses_franc = yes
+            }
+            localization_key = scripted_loc_inline_1855
+        }
+        text = {
+            trigger = {
+                currency_uses_ruble = yes
+            }
+            localization_key = scripted_loc_inline_1856
+        }
+        text = {
+            trigger = {
+                currency_uses_rupee = yes
+            }
+            localization_key = scripted_loc_inline_1857
+        }
+        text = {
+            trigger = {
+                currency_uses_yen = yes
+            }
+            localization_key = scripted_loc_inline_1858
+        }
+        text = {
+            trigger = {
+                currency_uses_lira = yes
+            }
+            localization_key = scripted_loc_inline_1859
+        }
+        text = {
+            trigger = {
+                currency_uses_mark = yes
+            }
+            localization_key = scripted_loc_inline_1860
+        }
+        text = {
+            trigger = {
+                currency_uses_real = yes
+            }
+            localization_key = scripted_loc_inline_1861
+        }
+        text = {
+            trigger = {
+                currency_uses_bitcoin = yes
+            }
+            localization_key = scripted_loc_inline_1862
+        }
+        text = {
+            trigger = {
+                currency_uses_shekel = yes
+            }
+            localization_key = scripted_loc_inline_1863
+        }
+        text = {
+            trigger = {
+                currency_hegemon_pound = yes
+            }
+            localization_key = scripted_loc_inline_1864
+        }
+        text = {
+            trigger = {
+                currency_hegemon_dollar = yes
+            }
+            localization_key = scripted_loc_inline_1865
+        }
+        text = {
+            trigger = {
+                currency_hegemon_euro = yes
+            }
+            localization_key = scripted_loc_inline_1866
+        }
+        text = {
+            trigger = {
+                currency_hegemon_franc = yes
+            }
+            localization_key = scripted_loc_inline_1867
+        }
+        text = {
+            trigger = {
+                currency_hegemon_ruble = yes
+            }
+            localization_key = scripted_loc_inline_1868
+        }
+        text = {
+            trigger = {
+                currency_hegemon_rupee = yes
+            }
+            localization_key = scripted_loc_inline_1869
+        }
+        text = {
+            trigger = {
+                currency_hegemon_yen = yes
+            }
+            localization_key = scripted_loc_inline_1870
+        }
+        text = {
+            trigger = {
+                currency_hegemon_lira = yes
+            }
+            localization_key = scripted_loc_inline_1871
+        }
+        text = {
+            trigger = {
+                currency_hegemon_mark = yes
+            }
+            localization_key = scripted_loc_inline_1872
+        }
+        text = {
+            trigger = {
+                currency_hegemon_real = yes
+            }
+            localization_key = scripted_loc_inline_1873
+        }
+        text = {
+            trigger = {
+                currency_hegemon_bitcoin = yes
+            }
+            localization_key = scripted_loc_inline_1874
+        }
+        text = {
+            trigger = {
+                currency_hegemon_shekel = yes
+            }
+            localization_key = scripted_loc_inline_1875
         }
     }
     defined_text = {
@@ -1005,7 +1207,7 @@ defined_text = {
                     currency_uses_dollar = yes
                 }
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_inline_1876
         }
         text = {
             trigger = {
@@ -1013,7 +1215,7 @@ defined_text = {
                     currency_uses_pound = yes
                 }
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_inline_1877
         }
         text = {
             trigger = {
@@ -1021,7 +1223,7 @@ defined_text = {
                     currency_uses_euro = yes
                 }
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_inline_1878
         }
         text = {
             trigger = {
@@ -1029,7 +1231,7 @@ defined_text = {
                     currency_uses_franc = yes
                 }
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_inline_1879
         }
         text = {
             trigger = {
@@ -1037,7 +1239,7 @@ defined_text = {
                     currency_uses_ruble = yes
                 }
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_inline_1880
         }
         text = {
             trigger = {
@@ -1045,7 +1247,7 @@ defined_text = {
                     currency_uses_rupee = yes
                 }
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_inline_1881
         }
         text = {
             trigger = {
@@ -1053,7 +1255,7 @@ defined_text = {
                     currency_uses_yen = yes
                 }
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_inline_1882
         }
         text = {
             trigger = {
@@ -1061,7 +1263,7 @@ defined_text = {
                     currency_uses_lira = yes
                 }
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_inline_1883
         }
         text = {
             trigger = {
@@ -1069,7 +1271,7 @@ defined_text = {
                     currency_uses_mark = yes
                 }
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_inline_1884
         }
         text = {
             trigger = {
@@ -1077,7 +1279,7 @@ defined_text = {
                     currency_uses_real = yes
                 }
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_inline_1885
         }
         text = {
             trigger = {
@@ -1085,7 +1287,7 @@ defined_text = {
                     currency_uses_bitcoin = yes
                 }
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_inline_1886
         }
         text = {
             trigger = {
@@ -1093,79 +1295,79 @@ defined_text = {
                     currency_uses_shekel = yes
                 }
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_inline_1887
         }
         text = {
             trigger = {
                 currency_hegemon_pound = yes
             }
-            localization_key = "currency_pound_texticon"
+            localization_key = scripted_loc_inline_1888
         }
         text = {
             trigger = {
                 currency_hegemon_dollar = yes
             }
-            localization_key = "currency_dollar_texticon"
+            localization_key = scripted_loc_inline_1889
         }
         text = {
             trigger = {
                 currency_hegemon_euro = yes
             }
-            localization_key = "currency_euro_texticon"
+            localization_key = scripted_loc_inline_1890
         }
         text = {
             trigger = {
                 currency_hegemon_franc = yes
             }
-            localization_key = "currency_franc_texticon"
+            localization_key = scripted_loc_inline_1891
         }
         text = {
             trigger = {
                 currency_hegemon_ruble = yes
             }
-            localization_key = "currency_ruble_texticon"
+            localization_key = scripted_loc_inline_1892
         }
         text = {
             trigger = {
                 currency_hegemon_rupee = yes
             }
-            localization_key = "currency_rupee_texticon"
+            localization_key = scripted_loc_inline_1893
         }
         text = {
             trigger = {
                 currency_hegemon_yen = yes
             }
-            localization_key = "currency_yen_texticon"
+            localization_key = scripted_loc_inline_1894
         }
         text = {
             trigger = {
                 currency_hegemon_lira = yes
             }
-            localization_key = "currency_lira_texticon"
+            localization_key = scripted_loc_inline_1895
         }
         text = {
             trigger = {
                 currency_hegemon_mark = yes
             }
-            localization_key = "currency_mark_texticon"
+            localization_key = scripted_loc_inline_1896
         }
         text = {
             trigger = {
                 currency_hegemon_real = yes
             }
-            localization_key = "currency_real_texticon"
+            localization_key = scripted_loc_inline_1897
         }
         text = {
             trigger = {
                 currency_hegemon_bitcoin = yes
             }
-            localization_key = "currency_bitcoin_texticon"
+            localization_key = scripted_loc_inline_1898
         }
         text = {
             trigger = {
                 currency_hegemon_shekel = yes
             }
-            localization_key = "currency_shekel_texticon"
+            localization_key = scripted_loc_inline_1899
         }
     }
 #
@@ -1243,7 +1445,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = base_wage }
 			}
-			localization_key = "[GetAdjustedAmountNoSign]"
+			localization_key = scripted_loc_inline_1900
 		}
 	}
 	defined_text = { # GetEmployed
@@ -1252,7 +1454,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = employed }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_inline_1901
 		}
 	}
 	defined_text = { # GetJobs
@@ -1261,7 +1463,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = jobs }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_inline_1902
 		}
 	}
 	defined_text = { # GetAvailableWorkforce
@@ -1270,7 +1472,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = available_workforce }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_inline_1903
 		}
 	}
 	defined_text = { # GetPopDividends
@@ -1280,7 +1482,7 @@ defined_text = {
 				set_temp_variable = { amount_temp = aristocrats_dividends }
 				add_to_temp_variable = { amount_temp = capitalists_dividends }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_inline_1904
 		}
 	}
 	defined_text = { # GetAristocratsDividends
@@ -1289,7 +1491,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = aristocrats_dividends }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_inline_1905
 		}
 	}
 	defined_text = { # GetCapitalistsDividends
@@ -1298,7 +1500,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = capitalists_dividends }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_inline_1906
 		}
 	}
 #
@@ -1310,10 +1512,10 @@ defined_text = {
             trigger = {
                 check_variable = { industrial_capacity_use > industrial_capacity }
             }
-            localization_key = "industrial_capacity_over_loc"
+            localization_key = scripted_loc_inline_1907
         }
         text = {
-            localization_key = "industrial_capacity_under_loc"
+            localization_key = scripted_loc_inline_1908
         }
     }
 
@@ -1324,7 +1526,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@var:v }
 				multiply_temp_variable = { bwr_temp = size@var:v }
 			}
-			localization_key = "[?bwr_temp]K"
+			localization_key = scripted_loc_inline_1909
 		}
 	}
 
@@ -1352,7 +1554,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@var:v }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_inline_1910
 		}
 	}
 	defined_text = { # GetIndustrySize
@@ -1361,7 +1563,7 @@ defined_text = {
 			trigger = {
 				check_variable = { construction@var:v = 0 }
 			}
-			localization_key = "[?size@var:v]"
+			localization_key = scripted_loc_inline_1911
 		}
 		text = {
 			localization_key = industry_size_construction_loc
@@ -1404,7 +1606,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_goods@var:industry_token^pm_output_i }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_inline_1912
 			}
 		}
 		defined_text = { # GetIndustryOutput0Loc - industry_token
@@ -1413,7 +1615,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 0 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_inline_1913
 			}
 		}
 		defined_text = { # GetIndustryOutput1Loc - industry_token
@@ -1422,7 +1624,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 1 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_inline_1914
 			}
 		}
 		defined_text = { # GetIndustryOutput2Loc - industry_token
@@ -1431,7 +1633,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 2 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_inline_1915
 			}
 		}
 		defined_text = { # GetIndustryOutput3Loc - industry_token
@@ -1440,7 +1642,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 3 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_inline_1916
 			}
 		}
 		defined_text = { # GetIndustryOutput4Loc - industry_token
@@ -1449,7 +1651,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_output_i = 4 }
 				}
-				localization_key = "[GetIndustryOutputLoc]"
+				localization_key = scripted_loc_inline_1917
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityLoc - industry_token
@@ -1459,7 +1661,7 @@ defined_text = {
 					set_temp_variable = { amount_temp = industrial_capacity@var:industry_token }
 					NOT = { check_variable = { amount_temp = 0 } }
 				}
-				localization_key = "industry_pm_industrial_capacity_loc"
+				localization_key = scripted_loc_inline_1918
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityRevenue - industry_token
@@ -1468,7 +1670,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_industrial_capacity@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_inline_1919
 			}
 		}
 		defined_text = { # GetIndustryShippingCapacityLoc - industry_token
@@ -1478,7 +1680,7 @@ defined_text = {
 					set_temp_variable = { amount_temp = shipping_capacity@var:industry_token }
 					NOT = { check_variable = { amount_temp = 0 } }
 				}
-				localization_key = "industry_pm_shipping_capacity_loc"
+				localization_key = scripted_loc_inline_1920
 			}
 		}
 		defined_text = { # GetIndustryShippingCapacityRevenue - industry_token
@@ -1487,7 +1689,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_shipping_capacity@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_inline_1921
 			}
 		}
 		defined_text = { # GetIndustryInputLoc - industry_token, pm_input_i
@@ -1510,7 +1712,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = input_cost@var:industry_token^pm_input_i }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1922
 			}
 		}
 		defined_text = { # GetIndustryInput0Loc - industry_token
@@ -1519,7 +1721,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 0 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1923
 			}
 		}
 		defined_text = { # GetIndustryInput1Loc - industry_token
@@ -1528,7 +1730,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 1 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1924
 			}
 		}
 		defined_text = { # GetIndustryInput2Loc - industry_token
@@ -1537,7 +1739,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 2 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1925
 			}
 		}
 		defined_text = { # GetIndustryInput3Loc - industry_token
@@ -1546,7 +1748,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 3 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1926
 			}
 		}
 		defined_text = { # GetIndustryInput4Loc - industry_token
@@ -1555,7 +1757,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 4 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1927
 			}
 		}
 		defined_text = { # GetIndustryInput5Loc - industry_token
@@ -1564,7 +1766,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 5 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1928
 			}
 		}
 		defined_text = { # GetIndustryInput6Loc - industry_token
@@ -1573,7 +1775,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 6 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1929
 			}
 		}
 		defined_text = { # GetIndustryInput7Loc - industry_token
@@ -1582,7 +1784,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 7 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1930
 			}
 		}
 		defined_text = { # GetIndustryInput8Loc - industry_token
@@ -1591,7 +1793,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 8 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1931
 			}
 		}
 		defined_text = { # GetIndustryInput9Loc - industry_token
@@ -1600,7 +1802,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 9 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1932
 			}
 		}
 		defined_text = { # GetIndustryInput10Loc - industry_token
@@ -1609,7 +1811,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 10 }
 				}
-				localization_key = "[GetIndustryInputLoc]"
+				localization_key = scripted_loc_inline_1933
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityUseLoc - industry_token
@@ -1629,7 +1831,7 @@ defined_text = {
 					set_temp_variable = { amount_temp = expenses_industrial_capacity@var:industry_token }
 					NOT = { check_variable = { amount_temp = 0 } }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1934
 			}
 		}
 
@@ -1641,7 +1843,7 @@ defined_text = {
 					set_temp_variable = { pm_temp = production_method@var:v }
 					set_temp_variable = { industry_token = v }
 				}
-				localization_key = "[GetPMLoc]"
+				localization_key = scripted_loc_inline_1935
 			}
 		}
 		defined_text = { # GetIndustryAMLoc - v
@@ -1652,7 +1854,7 @@ defined_text = {
 					set_temp_variable = { pm_temp = automation_method@var:v }
 					set_temp_variable = { industry_token = v }
 				}
-				localization_key = "[GetPMLoc]"
+				localization_key = scripted_loc_inline_1936
 			}
 		}
 	#
@@ -1681,13 +1883,13 @@ defined_text = {
 
 					divide_temp_variable = { construction_time_temp = modifier_temp }
 				}
-				localization_key = "[?construction_time_temp|1]"
+				localization_key = scripted_loc_inline_1937
 			}
 		}
 		defined_text = { # GetIndustryConstructionTimeLeft - industry_token
 			name = GetIndustryConstructionTimeLeft
 			text = {
-				localization_key = "[?construction_time_left@var:industry_token|1]"
+				localization_key = scripted_loc_inline_1938
 			}
 		}
 		defined_text = { # GetIndustryConstructionCost - industry_token
@@ -1696,7 +1898,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = construction_cost@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1939
 			}
 		}
 		defined_text = { # GetIndustryConstructionInputLoc - industry_token, pm_input_i
@@ -1719,7 +1921,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = construction_cost@var:industry_token^pm_input_i }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1940
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput0Loc - industry_token
@@ -1728,7 +1930,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 0 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1941
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput1Loc - industry_token
@@ -1737,7 +1939,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 1 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1942
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput2Loc - industry_token
@@ -1746,7 +1948,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 2 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1943
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput3Loc - industry_token
@@ -1755,7 +1957,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 3 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1944
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput4Loc - industry_token
@@ -1764,7 +1966,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 4 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1945
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput5Loc - industry_token
@@ -1773,7 +1975,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 5 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1946
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput6Loc - industry_token
@@ -1782,7 +1984,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 6 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1947
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput7Loc - industry_token
@@ -1791,7 +1993,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 7 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1948
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput8Loc - industry_token
@@ -1800,7 +2002,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 8 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1949
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput9Loc - industry_token
@@ -1809,7 +2011,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 9 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1950
 			}
 		}
 		defined_text = { # GetIndustryConstructionInput10Loc - industry_token
@@ -1818,7 +2020,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 10 }
 				}
-				localization_key = "[GetIndustryConstructionInputLoc]"
+				localization_key = scripted_loc_inline_1951
 			}
 		}
 
@@ -1837,7 +2039,7 @@ defined_text = {
 					divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
 					set_temp_variable = { amount_temp = total_construction_cost_temp }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1952
 			}
 		}
 		defined_text = { # GetIndustryConstructionTotalCost - v
@@ -1854,7 +2056,7 @@ defined_text = {
 					divide_temp_variable = { total_construction_cost_temp = ROOT.modifier@government_investment_efficiency_factor }
 					set_temp_variable = { amount_temp = total_construction_cost_temp }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1953
 			}
 		}
 		defined_text = { # GetIndustryConstructionProductivity - v
@@ -1866,7 +2068,95 @@ defined_text = {
 					else = { set_temp_variable = { pm_temp = controller:latest_production_method@var:v } }
 					get_pm_values = yes
 				}
-				localization_key = "[?productivity_temp|2+]"
+				localization_key = scripted_loc_inline_1954
+			}
+		}
+		
+		defined_text = { # GetIndustrialComplexConstructionTime
+			name = GetIndustrialComplexConstructionTime
+			text = {
+				trigger = {
+					set_temp_variable = { industry_token = token:industrial_complex }
+					set_temp_variable = { pm_temp = token:pm_industrial_complex }
+					set_temp_variable = { am_temp = token:pm_no_automation }
+				}
+				localization_key = scripted_loc_inline_1955
+			}
+		}
+		defined_text = { # GetIndustrialComplexConstructionInvestmentCost
+			name = GetIndustrialComplexConstructionInvestmentCost
+			text = {
+				trigger = {
+					set_temp_variable = { v = token:industrial_complex }
+				}
+				localization_key = scripted_loc_inline_1956
+			}
+		}
+		defined_text = { # GetIndustrialComplexConstructionTotalCost
+			name = GetIndustrialComplexConstructionTotalCost
+			text = {
+				trigger = {
+					set_temp_variable = { v = token:industrial_complex }
+				}
+				localization_key = scripted_loc_inline_1957
+			}
+		}
+		defined_text = { # GetArmsFactoryConstructionTime
+			name = GetArmsFactoryConstructionTime
+			text = {
+				trigger = {
+					set_temp_variable = { industry_token = token:arms_factory }
+					set_temp_variable = { pm_temp = token:pm_arms_factory }
+					set_temp_variable = { am_temp = token:pm_no_automation }
+				}
+				localization_key = scripted_loc_inline_1958
+			}
+		}
+		defined_text = { # GetArmsFactoryConstructionInvestmentCost
+			name = GetArmsFactoryConstructionInvestmentCost
+			text = {
+				trigger = {
+					set_temp_variable = { v = token:arms_factory }
+				}
+				localization_key = scripted_loc_inline_1959
+			}
+		}
+		defined_text = { # GetArmsFactoryConstructionTotalCost
+			name = GetArmsFactoryConstructionTotalCost
+			text = {
+				trigger = {
+					set_temp_variable = { v = token:arms_factory }
+				}
+				localization_key = scripted_loc_inline_1960
+			}
+		}
+		defined_text = { # GetDockyardConstructionTime
+			name = GetDockyardConstructionTime
+			text = {
+				trigger = {
+					set_temp_variable = { industry_token = token:dockyard }
+					set_temp_variable = { pm_temp = token:pm_dockyard }
+					set_temp_variable = { am_temp = token:pm_no_automation }
+				}
+				localization_key = scripted_loc_inline_1961
+			}
+		}
+		defined_text = { # GetDockyardConstructionInvestmentCost
+			name = GetDockyardConstructionInvestmentCost
+			text = {
+				trigger = {
+					set_temp_variable = { v = token:dockyard }
+				}
+				localization_key = scripted_loc_inline_1962
+			}
+		}
+		defined_text = { # GetDockyardConstructionTotalCost
+			name = GetDockyardConstructionTotalCost
+			text = {
+				trigger = {
+					set_temp_variable = { v = token:dockyard }
+				}
+				localization_key = scripted_loc_inline_1963
 			}
 		}
 	#
@@ -1929,13 +2219,13 @@ defined_text = {
 
 					divide_temp_variable = { retooling_time_temp = modifier_temp }
 				}
-				localization_key = "[?retooling_time_temp|1]"
+				localization_key = scripted_loc_inline_1964
 			}
 		}
 		defined_text = { # GetIndustryRetoolingTimeLeft - industry_token
 			name = GetIndustryRetoolingTimeLeft
 			text = {
-				localization_key = "[?retooling_time_left@var:industry_token|1]"
+				localization_key = scripted_loc_inline_1965
 			}
 		}
 		defined_text = { # GetIndustryRetoolingCost - industry_token
@@ -1944,7 +2234,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = retooling_cost@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1966
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInputLoc - industry_token, pm_input_i
@@ -1967,7 +2257,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = retooling_cost@var:industry_token^pm_input_i }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1967
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput0Loc - industry_token
@@ -1976,7 +2266,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 0 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1968
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput1Loc - industry_token
@@ -1985,7 +2275,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 1 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1969
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput2Loc - industry_token
@@ -1994,7 +2284,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 2 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1970
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput3Loc - industry_token
@@ -2003,7 +2293,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 3 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1971
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput4Loc - industry_token
@@ -2012,7 +2302,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 4 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1972
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput5Loc - industry_token
@@ -2021,7 +2311,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 5 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1973
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput6Loc - industry_token
@@ -2030,7 +2320,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 6 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1974
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput7Loc - industry_token
@@ -2039,7 +2329,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 7 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1975
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput8Loc - industry_token
@@ -2048,7 +2338,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 8 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1976
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput9Loc - industry_token
@@ -2057,7 +2347,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 9 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1977
 			}
 		}
 		defined_text = { # GetIndustryRetoolingInput10Loc - industry_token
@@ -2066,7 +2356,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 10 }
 				}
-				localization_key = "[GetIndustryRetoolingInputLoc]"
+				localization_key = scripted_loc_inline_1978
 			}
 		}
 	#
@@ -2095,7 +2385,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_inline_1979
 			}
 		}
 		defined_text = { # GetIndustryRevenueGoods - industry_token
@@ -2104,7 +2394,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_goods@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_inline_1980
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityRevenue - industry_token
@@ -2113,7 +2403,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_industrial_capacity@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_inline_1981
 			}
 		}
 		defined_text = { # GetIndustryRevenueSubsidies - industry_token
@@ -2122,7 +2412,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = revenue_subsidies@var:industry_token }
 				}
-				localization_key = "[GetRevenueAmount]"
+				localization_key = scripted_loc_inline_1982
 			}
 		}
 		defined_text = { # GetIndustryExpenses - industry_token
@@ -2131,7 +2421,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = expenses@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1983
 			}
 		}
 		defined_text = { # GetIndustryExpensesInput - industry_token
@@ -2140,7 +2430,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = expenses_input@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1984
 			}
 		}
 		defined_text = { # GetIndustryExpensesPayroll - industry_token
@@ -2149,7 +2439,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = expenses_payroll@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1985
 			}
 		}
 		defined_text = { # GetIndustryIndustrialCapacityUsageExpenses - industry_token
@@ -2158,7 +2448,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = expenses_industrial_capacity@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1986
 			}
 		}
 		defined_text = { # GetIndustryProfit - industry_token
@@ -2167,7 +2457,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = profit@var:industry_token }
 				}
-				localization_key = "[GetPositiveAdjustedAmount]"
+				localization_key = scripted_loc_inline_1987
 			}
 		}
 		defined_text = { # GetIndustryProfitability - industry_token
@@ -2176,7 +2466,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = profitability@var:industry_token }
 				}
-				localization_key = "[?amount_temp|+=2%]"
+				localization_key = scripted_loc_inline_1988
 			}
 		}
 		defined_text = { # GetIndustryDividends - industry_token
@@ -2185,7 +2475,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = dividends@var:industry_token }
 				}
-				localization_key = "[GetSpendingAmount]"
+				localization_key = scripted_loc_inline_1989
 			}
 		}
 		defined_text = { # GetIndustryMoney - industry_token
@@ -2194,7 +2484,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = money@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmount]"
+				localization_key = scripted_loc_inline_1990
 			}
 		}
 		defined_text = { # GetIndustryMoneyLimit - industry_token
@@ -2203,7 +2493,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = money_limit@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_inline_1991
 			}
 		}
 		defined_text = { # GetIndustryMoneyAccumulation - industry_token
@@ -2212,7 +2502,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = money_accumulation@var:industry_token }
 				}
-				localization_key = "[GetPositiveAdjustedAmount]"
+				localization_key = scripted_loc_inline_1992
 			}
 		}
 		defined_text = { # GetIndustryProductivityV - v
@@ -2222,21 +2512,21 @@ defined_text = {
 					set_temp_variable = { amount_temp = productivity@var:v }
 					check_variable = { amount_temp < 0 }
 				}
-				localization_key = "[GetRed][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_inline_1993
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { amount_temp = productivity@var:v }
 					check_variable = { amount_temp > base_wage }
 				}
-				localization_key = "[GetGreen][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_inline_1994
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { amount_temp = productivity@var:v }
 					check_variable = { amount_temp > 0 }
 				}
-				localization_key = "[GetYellow][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_inline_1995
 			}
 		}
 		defined_text = { # GetIndustryProductivity - industry_token
@@ -2246,21 +2536,21 @@ defined_text = {
 					set_temp_variable = { amount_temp = productivity@var:industry_token }
 					NOT = { check_variable = { amount_temp > 0 } }
 				}
-				localization_key = "[GetRed][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_inline_1996
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { amount_temp = productivity@var:industry_token }
 					check_variable = { amount_temp > base_wage }
 				}
-				localization_key = "[GetGreen][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_inline_1997
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { amount_temp = productivity@var:industry_token }
 					check_variable = { amount_temp > 0 }
 				}
-				localization_key = "[GetYellow][GetAdjustedAmountNoSign]"
+				localization_key = scripted_loc_inline_1998
 			}
 		}
 	#
@@ -2280,7 +2570,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_1999
 			}
 		}
 		defined_text = { # GetIndustryJobs - industry_token
@@ -2289,7 +2579,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2000
 			}
 		}
 		defined_text = { # GetIndustryLaborersLoc - industry_token
@@ -2307,7 +2597,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = laborers_employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2001
 			}
 		}
 		defined_text = { # GetIndustryLaborersJobs - industry_token
@@ -2316,7 +2606,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = laborers_jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2002
 			}
 		}
 		defined_text = { # GetIndustryWorkersLoc - industry_token
@@ -2334,7 +2624,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = workers_employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2003
 			}
 		}
 		defined_text = { # GetIndustryWorkersJobs - industry_token
@@ -2343,7 +2633,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = workers_jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2004
 			}
 		}
 		defined_text = { # GetIndustryProfessionalsLoc - industry_token
@@ -2361,7 +2651,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = professionals_employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2005
 			}
 		}
 		defined_text = { # GetIndustryProfessionalsJobs - industry_token
@@ -2370,7 +2660,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = professionals_jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2006
 			}
 		}
 		defined_text = { # GetIndustrySpecialistsLoc - industry_token
@@ -2388,7 +2678,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = specialists_employed@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2007
 			}
 		}
 		defined_text = { # GetIndustrySpecialistsJobs - industry_token
@@ -2397,20 +2687,20 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { amount_temp = specialists_jobs@var:industry_token }
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2008
 			}
 		}
 		defined_text = { # GetIndustryEmploymentPercentage - industry_token
 			name = GetIndustryEmploymentPercentage
 			text = {
-				localization_key = "[?employment_percentage@var:industry_token|2]%"
+				localization_key = scripted_loc_inline_2009
 			}
 		}
 
 		defined_text = { # GetIndustryEmploymentTarget - industry_token
 			name = GetIndustryEmploymentTarget
 			text = {
-				localization_key = "[?employment_target@var:industry_token|2]%"
+				localization_key = scripted_loc_inline_2010
 			}
 		}
 		defined_text = { # GetIndustryEmploymentAmount - industry_token
@@ -2427,7 +2717,7 @@ defined_text = {
 						divide_temp_variable = { amount_temp = 100 }
 					}
 				}
-				localization_key = "[GetAdjustedAmountThousandsNoSign]"
+				localization_key = scripted_loc_inline_2011
 			}
 		}
 	#
@@ -2441,7 +2731,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:infrastructure }
 				multiply_temp_variable = { bwr_temp = size@token:infrastructure }
 			}
-			localization_key = "[?bwr_temp]K"
+			localization_key = scripted_loc_inline_2012
 		}
 	}
 	defined_text = { # GetInfrastructurePMTotalLoc
@@ -2460,7 +2750,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:infrastructure }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_inline_2013
 		}
 	}
 	defined_text = { # GetInfrastructureEmployment
@@ -2508,7 +2798,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:infrastructure }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_inline_2014
 		}
 	}
 	defined_text = { # GetInfrastructurePMLoc
@@ -2519,7 +2809,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = production_method@token:infrastructure }
 				set_temp_variable = { industry_token = token:infrastructure }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_inline_2015
 		}
 	}
 	defined_text = { # GetInfrastructurePMRetooling
@@ -2542,7 +2832,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:railway }
 				multiply_temp_variable = { bwr_temp = size@token:railway }
 			}
-			localization_key = "[?bwr_temp]K"
+			localization_key = scripted_loc_inline_2016
 		}
 	}
 	defined_text = { # GetRailwayPMTotalLoc
@@ -2561,7 +2851,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:railway }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_inline_2017
 		}
 	}
 	defined_text = { # GetRailwayEmployment
@@ -2609,7 +2899,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:railway }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_inline_2018
 		}
 	}
 	defined_text = { # GetRailwayPMLoc
@@ -2620,7 +2910,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = production_method@token:railway }
 				set_temp_variable = { industry_token = token:railway }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_inline_2019
 		}
 	}
 	defined_text = { # GetRailwayAMLoc
@@ -2631,7 +2921,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = automation_method@token:railway }
 				set_temp_variable = { industry_token = token:railway }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_inline_2020
 		}
 	}
 	defined_text = { # GetRailwayPMRetooling
@@ -2666,7 +2956,7 @@ defined_text = {
 				set_temp_variable = { bwr_temp = global.building_base_employees@token:port }
 				multiply_temp_variable = { bwr_temp = size@token:port }
 			}
-			localization_key = "[?bwr_temp]K"
+			localization_key = scripted_loc_inline_2021
 		}
 	}
 	defined_text = { # GetPortPMTotalLoc
@@ -2685,7 +2975,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:port }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_inline_2022
 		}
 	}
 	defined_text = { # GetPortEmployment
@@ -2733,7 +3023,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:port }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_inline_2023
 		}
 	}
 	defined_text = { # GetPortPMLoc
@@ -2744,7 +3034,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = production_method@token:port }
 				set_temp_variable = { industry_token = token:port }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_inline_2024
 		}
 	}
 	defined_text = { # GetPortAMLoc
@@ -2755,7 +3045,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = automation_method@token:port }
 				set_temp_variable = { industry_token = token:port }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_inline_2025
 		}
 	}
 	defined_text = { # GetPortPMRetooling
@@ -2789,7 +3079,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:industrial_complex }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_inline_2026
 		}
 	}
 	defined_text = { # GetIndustrialComplexEmployment
@@ -2816,7 +3106,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:industrial_complex }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_inline_2027
 		}
 	}
 
@@ -2826,7 +3116,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:arms_factory }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_inline_2028
 		}
 	}
 	defined_text = { # GetArmsFactoryEmployment
@@ -2853,7 +3143,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:arms_factory }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_inline_2029
 		}
 	}
 
@@ -2863,7 +3153,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { percent_temp = employment_percentage@token:dockyard }
 			}
-			localization_key = "[GetEmploymentIconFromPercent]"
+			localization_key = scripted_loc_inline_2030
 		}
 	}
 	defined_text = { # GetDockyardEmployment
@@ -2890,7 +3180,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:dockyard }
 			}
-			localization_key = "[GetIndustryProductivity]"
+			localization_key = scripted_loc_inline_2031
 		}
 	}
 #
@@ -2903,7 +3193,7 @@ defined_text = {
 				set_temp_variable = { v = token:subsistence_farm }
 				set_temp_variable = { industry_token = token:subsistence_farm }
 			}
-			localization_key = ""
+			localization_key = scripted_loc_inline_2032
 		}
 	}
 	defined_text = { # GetSubsFarmEmployed
@@ -2912,7 +3202,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:subsistence_farm }
 			}
-			localization_key = "[GetIndustryEmployed]"
+			localization_key = scripted_loc_inline_2033
 		}
 	}
 	defined_text = { # GetSubsFarmJobs
@@ -2921,7 +3211,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { industry_token = token:subsistence_farm }
 			}
-			localization_key = "[GetIndustryJobs]"
+			localization_key = scripted_loc_inline_2034
 		}
 	}
 	defined_text = { # GetSubsFarmOwners
@@ -2932,7 +3222,7 @@ defined_text = {
 				multiply_temp_variable = { amount_temp = employment_target@token:subsistence_farm }
 				divide_temp_variable = { amount_temp = 100 }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_inline_2035
 		}
 	}
 	defined_text = { # GetSubsFarmMarginalLandUsage
@@ -2941,7 +3231,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = peasants_marginal_land }
 			}
-			localization_key = "[GetAdjustedAmountThousandsNoSign]"
+			localization_key = scripted_loc_inline_2036
 		}
 	}
 	defined_text = { # GetSubsFarmRevenue
@@ -2950,7 +3240,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = revenue@token:subsistence_farm }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2037
 		}
 	}
 	defined_text = { # GetSubsFarmPayroll
@@ -2959,7 +3249,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = expenses_payroll@token:subsistence_farm }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2038
 		}
 	}
 	defined_text = { # GetSubsFarmDividends
@@ -2968,7 +3258,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = dividends@token:subsistence_farm }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2039
 		}
 	}
 	defined_text = { # GetSubsFarmProductivity
@@ -2978,21 +3268,21 @@ defined_text = {
 				set_temp_variable = { amount_temp = productivity@token:subsistence_farm }
 				NOT = { check_variable = { amount_temp > 0 } }
 			}
-			localization_key = "[GetRed][GetAdjustedAmountNoSign]"
+			localization_key = scripted_loc_inline_2040
 		}
 		text = {
 			trigger = {
 				set_temp_variable = { amount_temp = productivity@token:subsistence_farm }
 				check_variable = { amount_temp > 1 }
 			}
-			localization_key = "[GetGreen][GetAdjustedAmountNoSign]"
+			localization_key = scripted_loc_inline_2041
 		}
 		text = {
 			trigger = {
 				set_temp_variable = { amount_temp = productivity@token:subsistence_farm }
 				check_variable = { amount_temp > 0 }
 			}
-			localization_key = "[GetYellow][GetAdjustedAmountNoSign]"
+			localization_key = scripted_loc_inline_2042
 		}
 	}
 #
@@ -3144,7 +3434,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 0 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2043
 			}
 		}
 		defined_text = { # GetPMInput1Loc - industry_token
@@ -3153,7 +3443,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 1 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2044
 			}
 		}
 		defined_text = { # GetPMInput2Loc - industry_token
@@ -3162,7 +3452,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 2 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2045
 			}
 		}
 		defined_text = { # GetPMInput3Loc - industry_token
@@ -3171,7 +3461,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 3 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2046
 			}
 		}
 		defined_text = { # GetPMInput4Loc - industry_token
@@ -3180,7 +3470,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 4 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2047
 			}
 		}
 		defined_text = { # GetPMInput5Loc - industry_token
@@ -3189,7 +3479,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 5 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2048
 			}
 		}
 		defined_text = { # GetPMInput6Loc - industry_token
@@ -3198,7 +3488,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 6 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2049
 			}
 		}
 		defined_text = { # GetPMInput7Loc - industry_token
@@ -3207,7 +3497,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 7 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2050
 			}
 		}
 		defined_text = { # GetPMInput8Loc - industry_token
@@ -3216,7 +3506,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 8 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2051
 			}
 		}
 		defined_text = { # GetPMInput9Loc - industry_token
@@ -3225,7 +3515,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 9 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2052
 			}
 		}
 		defined_text = { # GetPMInput10Loc - industry_token
@@ -3234,7 +3524,7 @@ defined_text = {
 				trigger = {
 					set_temp_variable = { pm_input_i = 10 }
 				}
-				localization_key = "[GetPMInputLoc]"
+				localization_key = scripted_loc_inline_2053
 			}
 		}
 		defined_text = { # GetPMLaborersLoc - pm_temp
@@ -3296,7 +3586,7 @@ defined_text = {
 					set_temp_variable = { eco_of_scale_modifier_temp = 1 }
 					get_pm_values = yes
 				}
-				localization_key = "[?productivity_temp|2]"
+				localization_key = scripted_loc_inline_2054
 			}
 		}
 		defined_text = { # GetAMWageProfitability
@@ -3306,7 +3596,7 @@ defined_text = {
 					set_temp_variable = { eco_of_scale_modifier_temp = 1 }
 					get_pm_values = yes
 				}
-				localization_key = "[?productivity_temp|2]"
+				localization_key = scripted_loc_inline_2055
 			}
 		}
 	#
@@ -3364,7 +3654,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = v }
 				set_temp_variable = { am_check = ROOT.selected_pm_type }
 			}
-			localization_key = "[GetPMLoc]"
+			localization_key = scripted_loc_inline_2056
 		}
 	}
 	defined_text = { # GetPMListRetoolingLoc - v
@@ -3375,7 +3665,7 @@ defined_text = {
 				set_temp_variable = { pm_temp = v }
 				set_temp_variable = { am_check = ROOT.selected_pm_type }
 			}
-			localization_key = "[GetPMRetoolingLoc]"
+			localization_key = scripted_loc_inline_2057
 		}
 	}
 	defined_text = { # GetPMListRetoolingTime - v
@@ -3389,7 +3679,7 @@ defined_text = {
 
 				divide_temp_variable = { retooling_time_temp = modifier_temp }
 			}
-			localization_key = "[?retooling_time_temp|1]"
+			localization_key = scripted_loc_inline_2058
 		}
 	}
 #
@@ -3403,7 +3693,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_inline_2059
 		}
 		text = {
 			trigger = {
@@ -3411,7 +3701,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_inline_2060
 		}
 		text = {
 			trigger = {
@@ -3419,28 +3709,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_fund_all_cost }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_inline_2061
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_fund_all_cost > 99.999 }
 			}
-			localization_key = "[?investment_opportunity_fund_all_cost|0]"
+			localization_key = scripted_loc_inline_2062
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_fund_all_cost > 9.999 }
 			}
-			localization_key = "[?investment_opportunity_fund_all_cost|1]"
+			localization_key = scripted_loc_inline_2063
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_fund_all_cost > 0.999 }
 			}
-			localization_key = "[?investment_opportunity_fund_all_cost|2]"
+			localization_key = scripted_loc_inline_2064
 		}
 		text = {
-			localization_key = "[?investment_opportunity_fund_all_cost|3]"
+			localization_key = scripted_loc_inline_2065
 		}
 	}
 
@@ -3471,7 +3761,7 @@ defined_text = {
 			localization_key = investment_opportunity_upgrade_am
 		}
 		text = {
-			localization_key = "[?investment_opportunity_building@var:v.GetTokenLocalizedKey]"
+			localization_key = scripted_loc_inline_2066
 		}
 	}
 	defined_text = {
@@ -3491,7 +3781,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_inline_2067
 		}
 		text = {
 			trigger = {
@@ -3499,7 +3789,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_inline_2068
 		}
 		text = {
 			trigger = {
@@ -3507,28 +3797,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_investment@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_inline_2069
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_investment@var:v > 99.999 }
 			}
-			localization_key = "[?investment_opportunity_investment@var:v|0]"
+			localization_key = scripted_loc_inline_2070
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_investment@var:v > 9.999 }
 			}
-			localization_key = "[?investment_opportunity_investment@var:v|1]"
+			localization_key = scripted_loc_inline_2071
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_investment@var:v > 0.999 }
 			}
-			localization_key = "[?investment_opportunity_investment@var:v|2]"
+			localization_key = scripted_loc_inline_2072
 		}
 		text = {
-			localization_key = "[?investment_opportunity_investment@var:v|3]"
+			localization_key = scripted_loc_inline_2073
 		}
 	}
 	defined_text = {
@@ -3539,7 +3829,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_inline_2074
 		}
 		text = {
 			trigger = {
@@ -3547,7 +3837,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_inline_2075
 		}
 		text = {
 			trigger = {
@@ -3555,28 +3845,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = investment_opportunity_cost@var:v }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_inline_2076
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_cost@var:v > 99.999 }
 			}
-			localization_key = "[?investment_opportunity_cost@var:v|0]"
+			localization_key = scripted_loc_inline_2077
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_cost@var:v > 9.999 }
 			}
-			localization_key = "[?investment_opportunity_cost@var:v|1]"
+			localization_key = scripted_loc_inline_2078
 		}
 		text = {
 			trigger = {
 				check_variable = { investment_opportunity_cost@var:v > 0.999 }
 			}
-			localization_key = "[?investment_opportunity_cost@var:v|2]"
+			localization_key = scripted_loc_inline_2079
 		}
 		text = {
-			localization_key = "[?investment_opportunity_cost@var:v|3]"
+			localization_key = scripted_loc_inline_2080
 		}
 	}
 	defined_text = {
@@ -3597,7 +3887,7 @@ defined_text = {
 			trigger = {
 				NOT = { check_variable = { investment_opportunity_cost@var:v > investment_opportunity_investment@var:v } }
 			}
-			localization_key = "0.000"
+			localization_key = scripted_loc_inline_2081
 		}
 		text = {
 			trigger = {
@@ -3609,7 +3899,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_inline_2082
 		}
 		text = {
 			trigger = {
@@ -3617,7 +3907,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_inline_2083
 		}
 		text = {
 			trigger = {
@@ -3625,28 +3915,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = cost_temp }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_inline_2084
 		}
 		text = {
 			trigger = {
 				check_variable = { cost_temp > 99.999 }
 			}
-			localization_key = "[?cost_temp|0]"
+			localization_key = scripted_loc_inline_2085
 		}
 		text = {
 			trigger = {
 				check_variable = { cost_temp > 9.999 }
 			}
-			localization_key = "[?cost_temp|1]"
+			localization_key = scripted_loc_inline_2086
 		}
 		text = {
 			trigger = {
 				check_variable = { cost_temp > 0.999 }
 			}
-			localization_key = "[?cost_temp|2]"
+			localization_key = scripted_loc_inline_2087
 		}
 		text = {
-			localization_key = "[?cost_temp|3]"
+			localization_key = scripted_loc_inline_2088
 		}
 	}
 	defined_text = {
@@ -3674,13 +3964,13 @@ defined_text = {
         name = GetFoodResourceStatus
         text = {
             trigger = {
-                check_variable = { trade_value@token:resource_food > 0 }
+                check_variable = { trade_value@token:food > 0 }
             }
             localization_key = surplus_loc
         }
         text = {
             trigger = {
-                check_variable = { trade_value@token:resource_food < 0 }
+                check_variable = { trade_value@token:food < 0 }
             }
             localization_key = deficit_loc
         }
@@ -3692,216 +3982,216 @@ defined_text = {
         name = GetFoodResourceRelativePrice
         text = {
             trigger = {
-				set_temp_variable = { rel_pr = price@token:resource_food }
-				divide_temp_variable = { rel_pr = global.base_price@token:resource_food }
+				set_temp_variable = { rel_pr = price@token:food }
+				divide_temp_variable = { rel_pr = global.base_price@token:food }
 				subtract_from_temp_variable = { rel_pr = 1 }
             }
-            localization_key = "[?rel_pr|1-=%]"
+            localization_key = scripted_loc_inline_2089
         }
     }
-    defined_text = {
-        name = GetRawMaterialsResourceStatus
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_raw_materials > 0 }
-            }
-            localization_key = surplus_loc
-        }
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_raw_materials < 0 }
-            }
-            localization_key = deficit_loc
-        }
-        text = {
-            localization_key = balanced_loc
-        }
-    }
-    defined_text = {
-        name = GetRawMaterialsResourceRelativePrice
-        text = {
-            trigger = {
-				set_temp_variable = { rel_pr = price@token:resource_raw_materials }
-				divide_temp_variable = { rel_pr = global.base_price@token:resource_raw_materials }
-				subtract_from_temp_variable = { rel_pr = 1 }
-            }
-            localization_key = "[?rel_pr|1-=%]"
-        }
-    }
-    defined_text = {
-        name = GetEnergyMaterialsResourceStatus
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_energy_materials > 0 }
-            }
-            localization_key = surplus_loc
-        }
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_energy_materials < 0 }
-            }
-            localization_key = deficit_loc
-        }
-        text = {
-            localization_key = balanced_loc
-        }
-    }
-    defined_text = {
-        name = GetEnergyMaterialsResourceRelativePrice
-        text = {
-            trigger = {
-				set_temp_variable = { rel_pr = price@token:resource_energy_materials }
-				divide_temp_variable = { rel_pr = global.base_price@token:resource_energy_materials }
-				subtract_from_temp_variable = { rel_pr = 1 }
-            }
-            localization_key = "[?rel_pr|1-=%]"
-        }
-    }
-    defined_text = {
-        name = GetConsumerGoodsResourceStatus
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_consumer_goods > 0 }
-            }
-            localization_key = surplus_loc
-        }
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_consumer_goods < 0 }
-            }
-            localization_key = deficit_loc
-        }
-        text = {
-            localization_key = balanced_loc
-        }
-    }
-    defined_text = {
-        name = GetConsumerGoodsResourceRelativePrice
-        text = {
-            trigger = {
-				set_temp_variable = { rel_pr = price@token:resource_consumer_goods }
-				divide_temp_variable = { rel_pr = global.base_price@token:resource_consumer_goods }
-				subtract_from_temp_variable = { rel_pr = 1 }
-            }
-            localization_key = "[?rel_pr|1-=%]"
-        }
-    }
-    defined_text = {
-        name = GetLuxuryGoodsResourceStatus
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_luxury_goods > 0 }
-            }
-            localization_key = surplus_loc
-        }
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_luxury_goods < 0 }
-            }
-            localization_key = deficit_loc
-        }
-        text = {
-            localization_key = balanced_loc
-        }
-    }
-    defined_text = {
-        name = GetLuxuryGoodsResourceRelativePrice
-        text = {
-            trigger = {
-				set_temp_variable = { rel_pr = price@token:resource_luxury_goods }
-				divide_temp_variable = { rel_pr = global.base_price@token:resource_luxury_goods }
-				subtract_from_temp_variable = { rel_pr = 1 }
-            }
-            localization_key = "[?rel_pr|1-=%]"
-        }
-    }
-    defined_text = {
-        name = GetIndustrialGoodsResourceStatus
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_industrial_goods > 0 }
-            }
-            localization_key = surplus_loc
-        }
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_industrial_goods < 0 }
-            }
-            localization_key = deficit_loc
-        }
-        text = {
-            localization_key = balanced_loc
-        }
-    }
-    defined_text = {
-        name = GetIndustrialGoodsResourceRelativePrice
-        text = {
-            trigger = {
-				set_temp_variable = { rel_pr = price@token:resource_industrial_goods }
-				divide_temp_variable = { rel_pr = global.base_price@token:resource_industrial_goods }
-				subtract_from_temp_variable = { rel_pr = 1 }
-            }
-            localization_key = "[?rel_pr|1-=%]"
-        }
-    }
-    defined_text = {
-        name = GetElectricityResourceStatus
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_electricity > 0 }
-            }
-            localization_key = surplus_loc
-        }
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_electricity < 0 }
-            }
-            localization_key = deficit_loc
-        }
-        text = {
-            localization_key = balanced_loc
-        }
-    }
-    defined_text = {
-        name = GetElectricityResourceRelativePrice
-        text = {
-            trigger = {
-				set_temp_variable = { rel_pr = price@token:resource_electricity }
-				divide_temp_variable = { rel_pr = global.base_price@token:resource_electricity }
-				subtract_from_temp_variable = { rel_pr = 1 }
-            }
-            localization_key = "[?rel_pr|1-=%]"
-        }
-    }
-    defined_text = {
-        name = GetServicesResourceStatus
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_services > 0 }
-            }
-            localization_key = surplus_loc
-        }
-        text = {
-            trigger = {
-                check_variable = { trade_value@token:resource_services < 0 }
-            }
-            localization_key = deficit_loc
-        }
-        text = {
-            localization_key = balanced_loc
-        }
-    }
-    defined_text = {
-        name = GetServicesResourceRelativePrice
-        text = {
-            trigger = {
-				set_temp_variable = { rel_pr = price@token:resource_services }
-				divide_temp_variable = { rel_pr = global.base_price@token:resource_services }
-				subtract_from_temp_variable = { rel_pr = 1 }
-            }
-            localization_key = "[?rel_pr|1-=%]"
-        }
-    }
+    # defined_text = {
+    #     name = GetRawMaterialsResourceStatus
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_raw_materials > 0 }
+    #         }
+    #         localization_key = surplus_loc
+    #     }
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_raw_materials < 0 }
+    #         }
+    #         localization_key = deficit_loc
+    #     }
+    #     text = {
+    #         localization_key = balanced_loc
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetRawMaterialsResourceRelativePrice
+    #     text = {
+    #         trigger = {
+		# 		set_temp_variable = { rel_pr = price@token:resource_raw_materials }
+		# 		divide_temp_variable = { rel_pr = global.base_price@token:resource_raw_materials }
+		# 		subtract_from_temp_variable = { rel_pr = 1 }
+    #         }
+    #         localization_key = "[?rel_pr|1-=%]"
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetEnergyMaterialsResourceStatus
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_energy_materials > 0 }
+    #         }
+    #         localization_key = surplus_loc
+    #     }
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_energy_materials < 0 }
+    #         }
+    #         localization_key = deficit_loc
+    #     }
+    #     text = {
+    #         localization_key = balanced_loc
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetEnergyMaterialsResourceRelativePrice
+    #     text = {
+    #         trigger = {
+		# 		set_temp_variable = { rel_pr = price@token:resource_energy_materials }
+		# 		divide_temp_variable = { rel_pr = global.base_price@token:resource_energy_materials }
+		# 		subtract_from_temp_variable = { rel_pr = 1 }
+    #         }
+    #         localization_key = "[?rel_pr|1-=%]"
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetConsumerGoodsResourceStatus
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_consumer_goods > 0 }
+    #         }
+    #         localization_key = surplus_loc
+    #     }
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_consumer_goods < 0 }
+    #         }
+    #         localization_key = deficit_loc
+    #     }
+    #     text = {
+    #         localization_key = balanced_loc
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetConsumerGoodsResourceRelativePrice
+    #     text = {
+    #         trigger = {
+		# 		set_temp_variable = { rel_pr = price@token:resource_consumer_goods }
+		# 		divide_temp_variable = { rel_pr = global.base_price@token:resource_consumer_goods }
+		# 		subtract_from_temp_variable = { rel_pr = 1 }
+    #         }
+    #         localization_key = "[?rel_pr|1-=%]"
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetLuxuryGoodsResourceStatus
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_luxury_goods > 0 }
+    #         }
+    #         localization_key = surplus_loc
+    #     }
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_luxury_goods < 0 }
+    #         }
+    #         localization_key = deficit_loc
+    #     }
+    #     text = {
+    #         localization_key = balanced_loc
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetLuxuryGoodsResourceRelativePrice
+    #     text = {
+    #         trigger = {
+		# 		set_temp_variable = { rel_pr = price@token:resource_luxury_goods }
+		# 		divide_temp_variable = { rel_pr = global.base_price@token:resource_luxury_goods }
+		# 		subtract_from_temp_variable = { rel_pr = 1 }
+    #         }
+    #         localization_key = "[?rel_pr|1-=%]"
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetIndustrialGoodsResourceStatus
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_industrial_goods > 0 }
+    #         }
+    #         localization_key = surplus_loc
+    #     }
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_industrial_goods < 0 }
+    #         }
+    #         localization_key = deficit_loc
+    #     }
+    #     text = {
+    #         localization_key = balanced_loc
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetIndustrialGoodsResourceRelativePrice
+    #     text = {
+    #         trigger = {
+		# 		set_temp_variable = { rel_pr = price@token:resource_industrial_goods }
+		# 		divide_temp_variable = { rel_pr = global.base_price@token:resource_industrial_goods }
+		# 		subtract_from_temp_variable = { rel_pr = 1 }
+    #         }
+    #         localization_key = "[?rel_pr|1-=%]"
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetElectricityResourceStatus
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_electricity > 0 }
+    #         }
+    #         localization_key = surplus_loc
+    #     }
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_electricity < 0 }
+    #         }
+    #         localization_key = deficit_loc
+    #     }
+    #     text = {
+    #         localization_key = balanced_loc
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetElectricityResourceRelativePrice
+    #     text = {
+    #         trigger = {
+		# 		set_temp_variable = { rel_pr = price@token:resource_electricity }
+		# 		divide_temp_variable = { rel_pr = global.base_price@token:resource_electricity }
+		# 		subtract_from_temp_variable = { rel_pr = 1 }
+    #         }
+    #         localization_key = "[?rel_pr|1-=%]"
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetServicesResourceStatus
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_services > 0 }
+    #         }
+    #         localization_key = surplus_loc
+    #     }
+    #     text = {
+    #         trigger = {
+    #             check_variable = { trade_value@token:resource_services < 0 }
+    #         }
+    #         localization_key = deficit_loc
+    #     }
+    #     text = {
+    #         localization_key = balanced_loc
+    #     }
+    # }
+    # defined_text = {
+    #     name = GetServicesResourceRelativePrice
+    #     text = {
+    #         trigger = {
+		# 		set_temp_variable = { rel_pr = price@token:resource_services }
+		# 		divide_temp_variable = { rel_pr = global.base_price@token:resource_services }
+		# 		subtract_from_temp_variable = { rel_pr = 1 }
+    #         }
+    #         localization_key = "[?rel_pr|1-=%]"
+    #     }
+    # }
 #
 
 #Statistics
@@ -3966,13 +4256,13 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 0 }
                 }
-                localization_key = "[GetCorpBeginning][GetCorpEnding]"
+                localization_key = scripted_loc_inline_2090
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 1 }
                 }
-                localization_key = "[GetCorpWhole]"
+                localization_key = scripted_loc_inline_2091
             }
             #Unique Names
 
@@ -3981,73 +4271,73 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 10 }
                 }
-                localization_key = "US Steel" #Pops up in 1883 via "Carnegie Acquires Homestead Steel Works"
+                localization_key = scripted_loc_inline_2092
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 11 }
                 }
-                localization_key = "Standard Oil" #Pops up in 1870
+                localization_key = scripted_loc_inline_2093
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 12 }
                 }
-                localization_key = "General Electric" #Pops up after 'War of the Currents.' Either this or WE will exist
+                localization_key = scripted_loc_inline_2094
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 13 }
                 }
-                localization_key = "General Motors" #1900
+                localization_key = scripted_loc_inline_2095
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 14 }
                 }
-                localization_key = "American Tobacco Company" #1890
+                localization_key = scripted_loc_inline_2096
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 15 }
                 }
-                localization_key = "Vanderbilt Railroads" #1863 (Acquisition of New York & Harlem RR)
+                localization_key = scripted_loc_inline_2097
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 16 }
                 }
-                localization_key = "PepsiCo" #1965, if Coca-Cola no longer exists
+                localization_key = scripted_loc_inline_2098
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 17 }
                 }
-                localization_key = "Coca-Cola" #1885
+                localization_key = scripted_loc_inline_2099
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 18 }
                 }
-                localization_key = "Nestle" #1866
+                localization_key = scripted_loc_inline_2100
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 19 }
                 }
-                localization_key = "Westinghouse Electric" #Pops up after 'War of the Currents.' Either this or GE will exist
+                localization_key = scripted_loc_inline_2101
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 20 }
                 }
-                localization_key = "Ford Motors" #1901
+                localization_key = scripted_loc_inline_2102
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 21 }
                 }
-                localization_key = "Union Pacific" #Transcontinental RR construction
+                localization_key = scripted_loc_inline_2103
             }
 
             #Japanese
@@ -4055,25 +4345,25 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 51 }
                 }
-                localization_key = "Mitsubishi"
+                localization_key = scripted_loc_inline_2104
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 52 }
                 }
-                localization_key = "Yasuda"
+                localization_key = scripted_loc_inline_2105
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 53 }
                 }
-                localization_key = "Mitsui Group"
+                localization_key = scripted_loc_inline_2106
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 54 }
                 }
-                localization_key = "Sumitomo Group"
+                localization_key = scripted_loc_inline_2107
             }
 
             #German
@@ -4081,37 +4371,37 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 101 }
                 }
-                localization_key = "Lufthansa"
+                localization_key = scripted_loc_inline_2108
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 102 }
                 }
-                localization_key = "Daimler"
+                localization_key = scripted_loc_inline_2109
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 103 }
                 }
-                localization_key = "Siemens"
+                localization_key = scripted_loc_inline_2110
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 104 }
                 }
-                localization_key = "RWKS" #Rheinish-Westphalian Coal Syndicate. 54% of coal in Germany, 93% coal of Ruhr
+                localization_key = scripted_loc_inline_2111
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 105 }
                 }
-                localization_key = "IG Farben"
+                localization_key = scripted_loc_inline_2112
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 106 }
                 }
-                localization_key = "Krupp"
+                localization_key = scripted_loc_inline_2113
             }
 
             #Austria/Czechoslovakia/Hungary/Balkans
@@ -4119,19 +4409,19 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 151 }
                 }
-                localization_key = "Steyr-Daimler-Puch"
+                localization_key = scripted_loc_inline_2114
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 152 }
                 }
-                localization_key = "Skoda"
+                localization_key = scripted_loc_inline_2115
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 153 }
                 }
-                localization_key = "Ganz Works"
+                localization_key = scripted_loc_inline_2116
             }
 
             #British
@@ -4139,31 +4429,31 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 201 }
                 }
-                localization_key = "British Petroleum"
+                localization_key = scripted_loc_inline_2117
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 202 }
                 }
-                localization_key = "Rolls-Royce"
+                localization_key = scripted_loc_inline_2118
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 203 }
                 }
-                localization_key = "Twinings"
+                localization_key = scripted_loc_inline_2119
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 204 }
                 }
-                localization_key = "Wedgwood"
+                localization_key = scripted_loc_inline_2120
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 205 }
                 }
-                localization_key = "Cadbury"
+                localization_key = scripted_loc_inline_2121
             }
 
             #French
@@ -4171,7 +4461,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 251 }
                 }
-                localization_key = "Renault"
+                localization_key = scripted_loc_inline_2122
             }
 
             #Arabian
@@ -4179,7 +4469,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 301 }
                 }
-                localization_key = "Aramco"
+                localization_key = scripted_loc_inline_2123
             }
 
             #Scandinavian
@@ -4187,25 +4477,25 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_name = 351 }
                 }
-                localization_key = "Aker" #Conglomerate (Shipping mostly)
+                localization_key = scripted_loc_inline_2124
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 352 }
                 }
-                localization_key = "Smedvig" #Oil
+                localization_key = scripted_loc_inline_2125
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 353 }
                 }
-                localization_key = "Norske Skog" #Lumber
+                localization_key = scripted_loc_inline_2126
             }
             text = {
                 trigger = {
                     check_variable = { corp_name = 353 }
                 }
-                localization_key = "Christiana Spigerverk" #Steel
+                localization_key = scripted_loc_inline_2127
             }
 
         }
@@ -4216,145 +4506,145 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_first_name = 0 }
                 }
-                localization_key = "Santander"
+                localization_key = scripted_loc_inline_2128
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 1 }
                 }
-                localization_key = "Woolsworths"
+                localization_key = scripted_loc_inline_2129
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 2 }
                 }
-                localization_key = "Eaton"
+                localization_key = scripted_loc_inline_2130
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 3 }
                 }
-                localization_key = "Stryker"
+                localization_key = scripted_loc_inline_2131
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 4 }
                 }
-                localization_key = "Vivendi"
+                localization_key = scripted_loc_inline_2132
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 5 }
                 }
-                localization_key = "BCE"
+                localization_key = scripted_loc_inline_2133
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 6 }
                 }
-                localization_key = "Applied Materials"
+                localization_key = scripted_loc_inline_2134
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 7 }
                 }
-                localization_key = "Inditex"
+                localization_key = scripted_loc_inline_2135
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 8 }
                 }
-                localization_key = "Ericsson"
+                localization_key = scripted_loc_inline_2136
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 9 }
                 }
-                localization_key = "Kering"
+                localization_key = scripted_loc_inline_2137
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 10 }
                 }
-                localization_key = "Diageo"
+                localization_key = scripted_loc_inline_2138
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 11 }
                 }
-                localization_key = "Tesla"
+                localization_key = scripted_loc_inline_2139
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 12 }
                 }
-                localization_key = "Edison"
+                localization_key = scripted_loc_inline_2140
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 13 }
                 }
-                localization_key = "Falcor"
+                localization_key = scripted_loc_inline_2141
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 14 }
                 }
-                localization_key = "Dow"
+                localization_key = scripted_loc_inline_2142
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 15 }
                 }
-                localization_key = "Amgen"
+                localization_key = scripted_loc_inline_2143
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 16 }
                 }
-                localization_key = "3M"
+                localization_key = scripted_loc_inline_2144
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 17 }
                 }
-                localization_key = "Exelon"
+                localization_key = scripted_loc_inline_2145
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 18 }
                 }
-                localization_key = "CNOOC"
+                localization_key = scripted_loc_inline_2146
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 19 }
                 }
-                localization_key = "CK Hutchinson"
+                localization_key = scripted_loc_inline_2147
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 20 }
                 }
-                localization_key = "Travelers"
+                localization_key = scripted_loc_inline_2148
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 21 }
                 }
-                localization_key = "Rio Tinto"
+                localization_key = scripted_loc_inline_2149
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 22 }
                 }
-                localization_key = "UBS"
+                localization_key = scripted_loc_inline_2150
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 23 }
                 }
-                localization_key = "Amazon"
+                localization_key = scripted_loc_inline_2151
             }
         }
 
@@ -4364,169 +4654,169 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_first_name = 0 }
                 }
-                localization_key = "[This.GetName]"
+                localization_key = scripted_loc_inline_2152
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 1 }
                 }
-                localization_key = "Oracle"
+                localization_key = scripted_loc_inline_2153
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 2 }
                 }
-                localization_key = "Summit"
+                localization_key = scripted_loc_inline_2154
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 3 }
                 }
-                localization_key = "Dynamic"
+                localization_key = scripted_loc_inline_2155
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 4 }
                 }
-                localization_key = "Eclipse"
+                localization_key = scripted_loc_inline_2156
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 5 }
                 }
-                localization_key = "Green"
+                localization_key = scripted_loc_inline_2157
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 6 }
                 }
-                localization_key = "Eclipse"
+                localization_key = scripted_loc_inline_2158
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 7 }
                 }
-                localization_key = "Reliance"
+                localization_key = scripted_loc_inline_2159
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 8 }
                 }
-                localization_key = "Anthem"
+                localization_key = scripted_loc_inline_2160
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 9 }
                 }
-                localization_key = "Charter"
+                localization_key = scripted_loc_inline_2161
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 10 }
                 }
-                localization_key = "Abbot"
+                localization_key = scripted_loc_inline_2162
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 11 }
                 }
-                localization_key = "Johnson"
+                localization_key = scripted_loc_inline_2163
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 12 }
                 }
-                localization_key = "Caterpillar"
+                localization_key = scripted_loc_inline_2164
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 13 }
                 }
-                localization_key = "General"
+                localization_key = scripted_loc_inline_2165
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 14 }
                 }
-                localization_key = "Charles"
+                localization_key = scripted_loc_inline_2166
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 15 }
                 }
-                localization_key = "Arkham"
+                localization_key = scripted_loc_inline_2167
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 16 }
                 }
-                localization_key = "Stark"
+                localization_key = scripted_loc_inline_2168
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 17 }
                 }
-                localization_key = "Orange"
+                localization_key = scripted_loc_inline_2169
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 18 }
                 }
-                localization_key = "Wayne"
+                localization_key = scripted_loc_inline_2170
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 19 }
                 }
-                localization_key = "Oliver"
+                localization_key = scripted_loc_inline_2171
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 20 }
                 }
-                localization_key = "Luther"
+                localization_key = scripted_loc_inline_2172
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 21 }
                 }
-                localization_key = "Union"
+                localization_key = scripted_loc_inline_2173
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 22 }
                 }
-                localization_key = "Duke"
+                localization_key = scripted_loc_inline_2174
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 23 }
                 }
-                localization_key = "Hammer"
+                localization_key = scripted_loc_inline_2175
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 24 }
                 }
-                localization_key = "Staine"
+                localization_key = scripted_loc_inline_2176
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 25 }
                 }
-                localization_key = "National"
+                localization_key = scripted_loc_inline_2177
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 26 }
                 }
-                localization_key = "Total"
+                localization_key = scripted_loc_inline_2178
             }
             text = {
                 trigger = {
                     check_variable = { corp_first_name = 27 }
                 }
-                localization_key = "Imperial"
+                localization_key = scripted_loc_inline_2179
             }
         }
 
@@ -4536,7 +4826,7 @@ defined_text = {
                 trigger = {
                     check_variable = { corp_last_name = 0 }
                 }
-                localization_key = ""
+                localization_key = scripted_loc_inline_2180
             }
             text = {
                 trigger = {
@@ -4679,7 +4969,7 @@ defined_text = {
 	defined_text = { # GetRevenueAmount
 		name = GetRevenueAmount
 		text = {
-			localization_key = "[GetRevenueColor][GetAdjustedAmount]"
+			localization_key = scripted_loc_inline_2181
 		}
 	}
 	defined_text = { # GetSpendingAmount
@@ -4688,7 +4978,7 @@ defined_text = {
 			trigger = {
 				multiply_temp_variable = { amount_temp = -1 }
 			}
-			localization_key = "[GetSpendingColor][GetAdjustedAmount]"
+			localization_key = scripted_loc_inline_2182
 		}
 	}
 
@@ -4698,7 +4988,7 @@ defined_text = {
 			trigger = {
 				has_variable = afr_prosperity_mechanic_value
 			}
-			localization_key = "[?afr_prosperity_mechanic_value|0]"
+			localization_key = scripted_loc_inline_2183
 		}
 		text = {
 			trigger = {
@@ -4706,7 +4996,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|0]K"
+			localization_key = scripted_loc_inline_2184
 		}
 		text = {
 			trigger = {
@@ -4714,7 +5004,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|1]K"
+			localization_key = scripted_loc_inline_2185
 		}
 		text = {
 			trigger = {
@@ -4722,28 +5012,28 @@ defined_text = {
 				set_temp_variable = { invest_temp = treasury }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|2]K"
+			localization_key = scripted_loc_inline_2186
 		}
 		text = {
 			trigger = {
 				check_variable = { treasury > 99.999 }
 			}
-			localization_key = "[?treasury|0]"
+			localization_key = scripted_loc_inline_2187
 		}
 		text = {
 			trigger = {
 				check_variable = { treasury > 9.999 }
 			}
-			localization_key = "[?treasury|1]"
+			localization_key = scripted_loc_inline_2188
 		}
 		text = {
 			trigger = {
 				check_variable = { treasury > 0.999 }
 			}
-			localization_key = "[?treasury|2]"
+			localization_key = scripted_loc_inline_2189
 		}
 		text = {
-			localization_key = "[?treasury|3]"
+			localization_key = scripted_loc_inline_2190
 		}
 	}
 	defined_text = { # GetNetBudgetAmount
@@ -4752,7 +5042,7 @@ defined_text = {
 			trigger = {
 				has_variable = afr_prosperity_mechanic_value
 			}
-			localization_key = ""
+			localization_key = scripted_loc_inline_2191
 		}
 		text = {
 			trigger = {
@@ -4763,7 +5053,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|=0]K"
+			localization_key = scripted_loc_inline_2192
 		}
 		text = {
 			trigger = {
@@ -4774,7 +5064,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|=1]K"
+			localization_key = scripted_loc_inline_2193
 		}
 		text = {
 			trigger = {
@@ -4785,7 +5075,7 @@ defined_text = {
 				set_temp_variable = { invest_temp = net_budget }
 				divide_temp_variable = { invest_temp = 1000 }
 			}
-			localization_key = "[?invest_temp|=2]K"
+			localization_key = scripted_loc_inline_2194
 		}
 		text = {
 			trigger = {
@@ -4794,7 +5084,7 @@ defined_text = {
 					check_variable = { net_budget < -99.999 }
 				}
 			}
-			localization_key = "[?net_budget|=0]"
+			localization_key = scripted_loc_inline_2195
 		}
 		text = {
 			trigger = {
@@ -4803,7 +5093,7 @@ defined_text = {
 					check_variable = { net_budget < -9.999 }
 				}
 			}
-			localization_key = "[?net_budget|=1]"
+			localization_key = scripted_loc_inline_2196
 		}
 		text = {
 			trigger = {
@@ -4812,10 +5102,10 @@ defined_text = {
 					check_variable = { net_budget < -0.999 }
 				}
 			}
-			localization_key = "[?net_budget|=2]"
+			localization_key = scripted_loc_inline_2197
 		}
 		text = {
-			localization_key = "[?net_budget|=3]"
+			localization_key = scripted_loc_inline_2198
 		}
 	}
 	defined_text = { # GetNetBudgetColor
@@ -4843,7 +5133,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_upper_strata_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2199
 		}
 	}
 	defined_text = { # GetMiddleStrataIncomeTaxRevenue
@@ -4852,7 +5142,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_middle_strata_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2200
 		}
 	}
 	defined_text = { # GetLowerStrataIncomeTaxRevenue
@@ -4861,7 +5151,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_lower_strata_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2201
 		}
 	}
 	defined_text = { # GetIncomeTaxRevenue
@@ -4870,7 +5160,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2202
 		}
 	}
 	defined_text = { # GetSalesTaxRevenue
@@ -4879,7 +5169,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = sales_tax_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2203
 		}
 	}
 	defined_text = { # GetCorporateTaxRevenue
@@ -4888,7 +5178,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = corporate_tax_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2204
 		}
 	}
 	defined_text = { # GetOtherRevenue
@@ -4897,7 +5187,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = other_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2205
 		}
 	}
 	defined_text = { # GetPublicEnterpriseRevenue
@@ -4906,7 +5196,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = public_enterprise_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2206
 		}
 	}
 	defined_text = { # GetModifierRevenue
@@ -4915,7 +5205,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = modifier_revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2207
 		}
 	}
 	defined_text = { # GetRevenue
@@ -4924,7 +5214,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = revenue }
 			}
-			localization_key = "[GetRevenueAmount]"
+			localization_key = scripted_loc_inline_2208
 		}
 	}
 
@@ -4934,7 +5224,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_upper_strata_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2209
 		}
 	}
 	defined_text = { # GetMiddleStrataIncomeTaxCorruption
@@ -4943,7 +5233,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_middle_strata_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2210
 		}
 	}
 	defined_text = { # GetLowerStrataIncomeTaxCorruption
@@ -4952,7 +5242,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_lower_strata_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2211
 		}
 	}
 	defined_text = { # GetIncomeTaxCorruption
@@ -4961,7 +5251,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2212
 		}
 	}
 	defined_text = { # GetIncomeTaxCorruption
@@ -4970,7 +5260,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = income_tax_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2213
 		}
 	}
 	defined_text = { # GetSalesTaxCorruption
@@ -4979,7 +5269,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = sales_tax_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2214
 		}
 	}
 	defined_text = { # GetCorporateTaxCorruption
@@ -4988,7 +5278,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = corporate_tax_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2215
 		}
 	}
 	defined_text = { # GetOtherCorruption
@@ -4997,7 +5287,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = other_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2216
 		}
 	}
 	defined_text = { # GetPublicEnterpriseCorruption
@@ -5006,7 +5296,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = public_enterprise_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2217
 		}
 	}
 	defined_text = { # GetModifierCorruption
@@ -5015,7 +5305,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = modifier_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2218
 		}
 	}
 	defined_text = { # GetCorruption
@@ -5024,13 +5314,13 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2219
 		}
 	}
 	defined_text = { # GetTaxEffectsLoc
 		name = GetTaxEffectsLoc
 		text = {
-			localization_key = "tax_effects_loc"
+			localization_key = scripted_loc_inline_2220
 		}
 	}
 
@@ -5040,7 +5330,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = import_tariffs }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_inline_2221
 		}
 	}
 	defined_text = { # GetExportTariffs
@@ -5049,7 +5339,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = export_tariffs }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_inline_2222
 		}
 	}
 	defined_text = { # GetNetTariffs
@@ -5058,7 +5348,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = net_tariffs }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_inline_2223
 		}
 	}
 
@@ -5068,7 +5358,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = import_tariffs_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2224
 		}
 	}
 	defined_text = { # GetExportTariffsCorruption
@@ -5077,7 +5367,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = export_tariffs_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2225
 		}
 	}
 	defined_text = { # GetTariffsCorruption
@@ -5086,7 +5376,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = tariff_corruption }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2226
 		}
 	}
 
@@ -5096,7 +5386,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2227
 		}
 	}
 	defined_text = { # GetArmyMilitarySpending
@@ -5105,7 +5395,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_army_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2228
 		}
 	}
 	defined_text = { # GetNavyMilitarySpending
@@ -5114,7 +5404,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_navy_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2229
 		}
 	}
 	defined_text = { # GetAirforceMilitarySpending
@@ -5123,7 +5413,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_airforce_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2230
 		}
 	}
 	defined_text = { # GetResearchSpending
@@ -5132,7 +5422,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = research_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2231
 		}
 	}
 	defined_text = { # GetConstructionSpending
@@ -5141,7 +5431,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = construction_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2232
 		}
 	}
 	defined_text = { # GetProjectsSpending
@@ -5150,7 +5440,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = projects_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2233
 		}
 	}
 	defined_text = { # GetSubsidiesSpending
@@ -5159,7 +5449,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = subsidies_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2234
 		}
 	}
 	defined_text = { # GetDiscretionarySpending
@@ -5168,7 +5458,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = discretionary_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2235
 		}
 	}
 
@@ -5178,7 +5468,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = administration_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2236
 		}
 	}
 	defined_text = { # GetMilitaryMandatorySpending
@@ -5187,7 +5477,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_mandatory_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2237
 		}
 	}
 	defined_text = { # GetMilitaryPayrollSpending
@@ -5196,7 +5486,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_payroll_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2238
 		}
 	}
 	defined_text = { # GetMilitaryIndustrySpending
@@ -5206,7 +5496,7 @@ defined_text = {
 				set_temp_variable = { amount_temp = military_production_payroll_spending }
 				add_to_temp_variable = { amount_temp = military_production_resources_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2239
 		}
 	}
 	defined_text = { # GetMilitaryProductionPayrollSpending
@@ -5215,7 +5505,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_production_payroll_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2240
 		}
 	}
 	defined_text = { # GetMilitaryProductionResourcesSpending
@@ -5224,7 +5514,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = military_production_resources_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2241
 		}
 	}
 	defined_text = { # GetOrderAndIntelSpending
@@ -5233,7 +5523,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = order_and_intel_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2242
 		}
 	}
 	defined_text = { # GetSocialSpending
@@ -5242,7 +5532,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = social_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2243
 		}
 	}
 	defined_text = { # GetEducationSpending
@@ -5251,7 +5541,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = education_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2244
 		}
 	}
 	defined_text = { # GetHealthcareSpending
@@ -5260,7 +5550,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = healthcare_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2245
 		}
 	}
 	defined_text = { # GetOtherSpending
@@ -5269,7 +5559,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = other_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2246
 		}
 	}
 	defined_text = { # GetPublicEnterprisePayrollSpending
@@ -5278,7 +5568,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = public_enterprise_payroll_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2247
 		}
 	}
 	defined_text = { # GetModifierSpending
@@ -5287,7 +5577,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = modifier_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2248
 		}
 	}
 	defined_text = { # GetNationalDebtInterest
@@ -5296,7 +5586,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = national_debt_interest }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2249
 		}
 	}
 	defined_text = { # GetMandatorySpending
@@ -5305,7 +5595,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = mandatory_spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2250
 		}
 	}
 	defined_text = { # GetSpending
@@ -5314,7 +5604,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = spending }
 			}
-			localization_key = "[GetSpendingAmount]"
+			localization_key = scripted_loc_inline_2251
 		}
 	}
 
@@ -5325,7 +5615,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = budget_graph_max }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_inline_2252
 		}
 	}
 	defined_text = { # GetBudgetGraphMin
@@ -5334,7 +5624,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { amount_temp = budget_graph_min }
 			}
-			localization_key = "[GetPositiveAdjustedAmount]"
+			localization_key = scripted_loc_inline_2253
 		}
 	}
 #
@@ -5368,7 +5658,7 @@ defined_text = {
 				check_variable = { debt_amount_temp < 1000 }
 				check_variable = { gdp_amount < 10000 }
 			}
-			localization_key = "[?debt_amount_temp]"
+			localization_key = scripted_loc_inline_2254
 		}
 		text = {
 			trigger = {
@@ -5377,7 +5667,7 @@ defined_text = {
 				multiply_temp_variable = { debt_amount_temp = gdp_amount }
 				divide_temp_variable = { debt_amount_temp = 2 }
 			}
-			localization_key = "[?debt_amount_temp]K"
+			localization_key = scripted_loc_inline_2255
 		}
 	}
 	defined_text = {
@@ -5387,7 +5677,7 @@ defined_text = {
 				set_temp_variable = { debt_amount_temp = debt_level }
 				divide_temp_variable = { debt_amount_temp = 24 }
 			}
-			localization_key = "[?debt_amount_temp|%]"
+			localization_key = scripted_loc_inline_2256
 		}
 	}
 	defined_text = {
@@ -5398,10 +5688,10 @@ defined_text = {
 				divide_temp_variable = { treasury_temp = 1000 }
 				check_variable = { treasury_temp < national_debt_k }
 			}
-			localization_key = "[?treasury_temp]K"
+			localization_key = scripted_loc_inline_2257
 		}
 		text = {
-			localization_key = "[?national_debt_k]K"
+			localization_key = scripted_loc_inline_2258
 		}
 	}
     #Borrowing Money
@@ -5493,16 +5783,16 @@ defined_text = {
 					trigger = {
 						is_in_array = { global.resource_token_array = selected_resource }
 					}
-					localization_key = "[?selected_resource.GetTokenLocalizedKey]"
+					localization_key = scripted_loc_inline_2259
 				}
 				text = {
 					trigger = {
 						has_country_flag = new_trade_route_view_open
 					}
-					localization_key = "selected_resource_choose_loc"
+					localization_key = scripted_loc_inline_2260
 				}
 				text = {
-					localization_key = "selected_resource_all_loc"
+					localization_key = scripted_loc_inline_2261
 				}
 			}
 		#
@@ -5529,7 +5819,7 @@ defined_text = {
 							is_in_array = { global.resource_token_array = selected_resource }
 						}
 					}
-					localization_key = "selected_resource_choose_loc"
+					localization_key = scripted_loc_inline_2262
 				}
 				text = {
 					trigger = {
@@ -5538,7 +5828,7 @@ defined_text = {
 						set_temp_variable = { tmp = offers@var:selected_resource }
 						multiply_temp_variable = { tmp = -1 }
 					}
-					localization_key = "net_exporting"
+					localization_key = scripted_loc_inline_2263
 				}
 				text = {
 					trigger = {
@@ -5548,14 +5838,14 @@ defined_text = {
 						set_temp_variable = { percent_temp = trade@var:selected_resource }
 						divide_temp_variable = { percent_temp = offers@var:selected_resource }
 					}
-					localization_key = "net_exporting_capped"
+					localization_key = scripted_loc_inline_2264
 				}
 				text = {
 					trigger = {
 						check_variable = { offers@var:selected_resource > 0 }
 						check_variable = { offers@var:selected_resource = trade@var:selected_resource }
 					}
-					localization_key = "net_importing"
+					localization_key = scripted_loc_inline_2265
 				}
 				text = {
 					trigger = {
@@ -5563,10 +5853,10 @@ defined_text = {
 						set_temp_variable = { percent_temp = trade@var:selected_resource }
 						divide_temp_variable = { percent_temp = offers@var:selected_resource }
 					}
-					localization_key = "net_importing_capped"
+					localization_key = scripted_loc_inline_2266
 				}
 				text = {
-					localization_key = "net_no_trade"
+					localization_key = scripted_loc_inline_2267
 				}
 			}
 			defined_text = {
@@ -5577,16 +5867,16 @@ defined_text = {
 						set_temp_variable = { tmp = trade@var:selected_resource }
 						multiply_temp_variable = { tmp = -1 }
 					}
-					localization_key = "[?tmp]"
+					localization_key = scripted_loc_inline_2268
 				}
 				text = {
 					trigger = {
 						check_variable = { offers@var:selected_resource > 0 }
 					}
-					localization_key = "[?trade@var:selected_resource]"
+					localization_key = scripted_loc_inline_2269
 				}
 				text = {
-					localization_key = "net_no_trade"
+					localization_key = scripted_loc_inline_2270
 				}
 			}
 		#
@@ -5657,13 +5947,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2271
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^0 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^0|3]"
+						localization_key = scripted_loc_inline_2272
 					}
 					text = {
 						trigger = {
@@ -5671,16 +5961,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2273
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^0 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^0|3]"
+						localization_key = scripted_loc_inline_2274
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^0|3]"
+						localization_key = scripted_loc_inline_2275
 					}
 				}
 			#
@@ -5704,13 +5994,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2276
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^1 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^1|3]"
+						localization_key = scripted_loc_inline_2277
 					}
 					text = {
 						trigger = {
@@ -5718,16 +6008,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2278
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^1 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^1|3]"
+						localization_key = scripted_loc_inline_2279
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^1|3]"
+						localization_key = scripted_loc_inline_2280
 					}
 				}
 			#
@@ -5751,13 +6041,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2281
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^2 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^2|3]"
+						localization_key = scripted_loc_inline_2282
 					}
 					text = {
 						trigger = {
@@ -5765,16 +6055,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2283
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^2 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^2|3]"
+						localization_key = scripted_loc_inline_2284
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^2|3]"
+						localization_key = scripted_loc_inline_2285
 					}
 				}
 			#
@@ -5798,13 +6088,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2286
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^3 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^3|3]"
+						localization_key = scripted_loc_inline_2287
 					}
 					text = {
 						trigger = {
@@ -5812,16 +6102,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2288
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^3 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^3|3]"
+						localization_key = scripted_loc_inline_2289
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^3|3]"
+						localization_key = scripted_loc_inline_2290
 					}
 				}
 			#
@@ -5845,13 +6135,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2291
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^4 > 0 }
 						}
-						localization_key = "[GetGreen]+[?high_balance_amount_array^4|3]"
+						localization_key = scripted_loc_inline_2292
 					}
 					text = {
 						trigger = {
@@ -5859,16 +6149,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = high_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2293
 					}
 					text = {
 						trigger = {
 							check_variable = { high_balance_amount_array^4 < 0 }
 						}
-						localization_key = "[GetRed][?high_balance_amount_array^4|3]"
+						localization_key = scripted_loc_inline_2294
 					}
 					text = {
-						localization_key = "[GetYellow][?high_balance_amount_array^4|3]"
+						localization_key = scripted_loc_inline_2295
 					}
 				}
 			#
@@ -5892,13 +6182,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2296
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^0 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^0|3]"
+						localization_key = scripted_loc_inline_2297
 					}
 					text = {
 						trigger = {
@@ -5906,16 +6196,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^0 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2298
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^0 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^0|3]"
+						localization_key = scripted_loc_inline_2299
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^0|3]"
+						localization_key = scripted_loc_inline_2300
 					}
 				}
 			#
@@ -5939,13 +6229,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2301
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^1 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^1|3]"
+						localization_key = scripted_loc_inline_2302
 					}
 					text = {
 						trigger = {
@@ -5953,16 +6243,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^1 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2303
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^1 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^1|3]"
+						localization_key = scripted_loc_inline_2304
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^1|3]"
+						localization_key = scripted_loc_inline_2305
 					}
 				}
 			#
@@ -5986,13 +6276,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2306
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^2 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^2|3]"
+						localization_key = scripted_loc_inline_2307
 					}
 					text = {
 						trigger = {
@@ -6000,16 +6290,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^2 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2308
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^2 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^2|3]"
+						localization_key = scripted_loc_inline_2309
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^2|3]"
+						localization_key = scripted_loc_inline_2310
 					}
 				}
 			#
@@ -6033,13 +6323,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2311
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^3 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^3|3]"
+						localization_key = scripted_loc_inline_2312
 					}
 					text = {
 						trigger = {
@@ -6047,16 +6337,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^3 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2313
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^3 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^3|3]"
+						localization_key = scripted_loc_inline_2314
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^3|3]"
+						localization_key = scripted_loc_inline_2315
 					}
 				}
 			#
@@ -6080,13 +6370,13 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetGreen]+[?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2316
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^4 > 0 }
 						}
-						localization_key = "[GetGreen]+[?low_balance_amount_array^4|3]"
+						localization_key = scripted_loc_inline_2317
 					}
 					text = {
 						trigger = {
@@ -6094,16 +6384,16 @@ defined_text = {
 							set_temp_variable = { hb_temp = low_balance_amount_array^4 }
 							divide_temp_variable = { hb_temp = 1000 }
 						}
-						localization_key = "[GetRed][?hb_temp|3]K"
+						localization_key = scripted_loc_inline_2318
 					}
 					text = {
 						trigger = {
 							check_variable = { low_balance_amount_array^4 < 0 }
 						}
-						localization_key = "[GetRed][?low_balance_amount_array^4|3]"
+						localization_key = scripted_loc_inline_2319
 					}
 					text = {
-						localization_key = "[GetYellow][?low_balance_amount_array^4|3]"
+						localization_key = scripted_loc_inline_2320
 					}
 				}
 			#
@@ -6150,7 +6440,7 @@ defined_text = {
 						trigger = {
 							check_variable = { selected_market = 0 }
 						}
-						localization_key = "[?global.gdp]K"
+						localization_key = scripted_loc_inline_2321
 					}
 					text = {
 						trigger = {
@@ -6158,10 +6448,10 @@ defined_text = {
 							set_temp_variable = { gdp_temp = selected_market:market_gdp }
 							divide_temp_variable = { gdp_temp = 1000 }
 						}
-						localization_key = "[?gdp_temp]K"
+						localization_key = scripted_loc_inline_2322
 					}
 					text = {
-						localization_key = "[?selected_market:market_gdp]"
+						localization_key = scripted_loc_inline_2323
 					}
 				}
 			#
@@ -6237,10 +6527,10 @@ defined_text = {
 						trigger = {
 							check_variable = { selected_market > 0 }
 						}
-						localization_key = "[?selected_market.GetFlag]"
+						localization_key = scripted_loc_inline_2324
 					}
 					text = {
-						localization_key = "[THIS.GetFlag]"
+						localization_key = scripted_loc_inline_2325
 					}
 				}
 			#
@@ -6249,7 +6539,7 @@ defined_text = {
 					name = GetResourceListBackground
 					text = {
 						trigger = {
-							is_in_array = { global.non_tradeable_resources = v }
+							is_in_array = { global.non_tradeable_resources = resource_temp }
 						}
 						localization_key = "GFX_trade_resource_background"
 					}
@@ -6259,10 +6549,10 @@ defined_text = {
 								limit = {
 									check_variable = { selected_market = 0 }
 								}
-								check_variable = { global_market_balance@var:v > 0 }
+								check_variable = { global_market_balance@var:resource_temp > 0 }
 							}
 							else = {
-								check_variable = { balance@var:v > 0 }
+								check_variable = { balance@var:resource_temp > 0 }
 							}
 						}
 						localization_key = "GFX_trade_resource_background_green"
@@ -6276,7 +6566,7 @@ defined_text = {
 				defined_text = {
 					name = GetResourceListIcon
 					text = {
-						localization_key = "GFX_[?v.GetTokenKey]"
+						localization_key = "GFX_[?resource_temp.GetTokenKey]"
 					}
 				}
 			#
@@ -6284,84 +6574,210 @@ defined_text = {
 				defined_text = {
 					name = GetResourceListTextIcon
 					text = {
-						localization_key = "GFX_[?v.GetTokenKey]_texticon"
+						localization_key = "GFX_[?resource_temp.GetTokenKey]_texticon"
 					}
 				}
 			#
-			#GetResourceListSupply
-				defined_text = {
-					name = GetResourceListSupply
-					text = {
-						trigger = {
-							if = {
-								limit = {
-									check_variable = { selected_market = 0 }
-								}
-								check_variable = { global_market_supply@var:v > 1000 }
-								set_temp_variable = { a_temp = global_market_supply@var:v }
-								divide_temp_variable = { a_temp = 1000 }
+			defined_text = { #GetResourceListSupply
+				name = GetResourceListSupply
+				text = {
+					trigger = {
+						if = {
+							limit = {
+								check_variable = { selected_market = 0 }
 							}
-							else = {
-								check_variable = { selected_market:supply@var:v > 1000 }
-								set_temp_variable = { a_temp = selected_market:supply@var:v }
-								divide_temp_variable = { a_temp = 1000 }
-							}
+							set_temp_variable = { amount_temp = global_market_supply@var:resource_temp }
 						}
-						localization_key = "[?a_temp|3]K"
-					}
-					text = {
-						trigger = {
-							if = {
-								limit = {
-									check_variable = { selected_market = 0 }
-								}
-								set_temp_variable = { b_temp = global_market_supply@var:v }
-							}
-							else = {
-								set_temp_variable = { b_temp = selected_market:supply@var:v }
-							}
+						else = {
+							set_temp_variable = { amount_temp = selected_market:supply@var:resource_temp }
 						}
-						localization_key = "[?b_temp|3]"
 					}
+					localization_key = scripted_loc_inline_2326
 				}
-			#
-			#GetResourceListDemand
-				defined_text = {
-					name = GetResourceListDemand
-					text = {
-						trigger = {
+			}
+			defined_text = { #GetResourceListSupplyProduction
+				name = GetResourceListSupplyProduction
+				text = {
+					trigger = {
+						if = {
+							limit = {
+								check_variable = { selected_market = 0 }
+							}
+							set_temp_variable = { amount_temp = global_market_supply@var:resource_temp }
+						}
+						else = {
+							set_temp_variable = { amount_temp = selected_market:production@var:resource_temp }
 							if = {
 								limit = {
-									check_variable = { selected_market = 0 }
+									check_variable = { amount_temp < 0 }
 								}
-								check_variable = { global_market_demand@var:v > 1000 }
-								set_temp_variable = { a_temp = global_market_demand@var:v }
-								divide_temp_variable = { a_temp = 1000 }
-							}
-							else = {
-								check_variable = { selected_market:demand@var:v > 1000 }
-								set_temp_variable = { a_temp = selected_market:demand@var:v }
-								divide_temp_variable = { a_temp = 1000 }
+								set_temp_variable = { amount_temp = 0 }
 							}
 						}
-						localization_key = "[?a_temp|3]K"
 					}
-					text = {
-						trigger= {
-							if = {
-								limit = {
-									check_variable = { selected_market = 0 }
-								}
-								set_temp_variable = { b_temp = global_market_demand@var:v }
-							}
-							else = {
-								set_temp_variable = { b_temp = selected_market:demand@var:v }
-							}
-						}
-						localization_key = "[?b_temp|3]"
-					}
+					localization_key = scripted_loc_inline_2327
 				}
-			#
+			}
+			defined_text = { #GetResourceListSupplyTradeLoc
+				name = GetResourceListSupplyTradeLoc
+				text = {
+					trigger = {
+						NOT = { check_variable = { selected_market = 0 } }
+						check_variable = { selected_market:trade@var:resource_temp > 0 }
+					}
+					localization_key = trade_resource_imports_loc_tooltip
+				}
+			}
+			defined_text = { #GetResourceListSupplyTrade
+				name = GetResourceListSupplyTrade
+				text = {
+					trigger = {
+						set_temp_variable = { amount_temp = selected_market:trade@var:resource_temp }
+					}
+					localization_key = scripted_loc_inline_2328
+				}
+			}
+			defined_text = { #GetResourceListSupplyStateList
+				name = GetResourceListSupplyStateList
+				text = {
+					trigger = {
+						clear_temp_array = param_array
+						clear_temp_array = percent_temp_array
+						clear_temp_array = number_temp_array
+						if = {
+							limit = {
+								check_variable = { selected_market = 0 }
+							}
+							set_temp_variable = { amount_temp = global_market_supply@var:resource_temp }
+							all_of = { 
+								array = selected_market:market_production_states value = val 
+								
+								add_to_temp_array = { param_array = val }
+							}
+						}
+						else = {
+							all_of = { 
+								array = selected_market:market_production_states@var:resource_temp value = val 
+								
+								add_to_temp_array = { param_array = val }
+								
+								set_temp_variable = { percentage_temp = val:production@var:resource_temp }
+								divide_temp_variable = { percentage_temp = selected_market:production@var:resource_temp }
+								add_to_temp_array = { percent_temp_array = percentage_temp }
+								
+								add_to_temp_array = { number_temp_array = val:production@var:resource_temp }
+							}
+						}
+						set_temp_variable = { param_infix = token:array_infix_newline }
+						set_temp_variable = { param_renderer = token:array_element_renderer_get_name_w_both }
+						set_temp_variable = { param_cutoff = 40 }
+						set_temp_variable = { color_temp = 1 }
+						# set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
+					}
+					localization_key = scripted_loc_inline_2329
+				}
+			}
+			
+			defined_text = { #GetResourceListDemand
+				name = GetResourceListDemand
+				text = {
+					trigger = {
+						if = {
+							limit = {
+								check_variable = { selected_market = 0 }
+							}
+							set_temp_variable = { amount_temp = global_market_demand@var:resource_temp }
+						}
+						else = {
+							set_temp_variable = { amount_temp = selected_market:demand@var:resource_temp }
+						}
+					}
+					localization_key = scripted_loc_inline_2330
+				}
+			}
+			defined_text = { #GetResourceListDemandConsumption
+				name = GetResourceListDemandConsumption
+				text = {
+					trigger = {
+						if = {
+							limit = {
+								check_variable = { selected_market = 0 }
+							}
+							set_temp_variable = { amount_temp = global_market_demand@var:resource_temp }
+						}
+						else = {
+							set_temp_variable = { amount_temp = selected_market:need@var:resource_temp }
+							if = {
+								limit = {
+									check_variable = { amount_temp < 0 }
+								}
+								set_temp_variable = { amount_temp = 0 }
+							}
+						}
+					}
+					localization_key = scripted_loc_inline_2331
+				}
+			}
+			defined_text = { #GetResourceListDemandTradeLoc
+				name = GetResourceListDemandTradeLoc
+				text = {
+					trigger = {
+						NOT = { check_variable = { selected_market = 0 } }
+						check_variable = { selected_market:trade@var:resource_temp < 0 }
+					}
+					localization_key = trade_resource_exports_loc_tooltip
+				}
+			}
+			defined_text = { #GetResourceListDemandTrade
+				name = GetResourceListDemandTrade
+				text = {
+					trigger = {
+						set_temp_variable = { amount_temp = selected_market:trade@var:resource_temp }
+						multiply_temp_variable = { amount_temp = -1 }
+					}
+					localization_key = scripted_loc_inline_2332
+				}
+			}
+			defined_text = { #GetResourceListDemandStateList
+				name = GetResourceListDemandStateList
+				text = {
+					trigger = {
+						clear_temp_array = param_array
+						clear_temp_array = percent_temp_array
+						clear_temp_array = number_temp_array
+						if = {
+							limit = {
+								check_variable = { selected_market = 0 }
+							}
+							set_temp_variable = { amount_temp = global_market_demand@var:resource_temp }
+							all_of = { 
+								array = selected_market:market_consumption_states value = val 
+								
+								add_to_temp_array = { param_array = val }
+							}
+						}
+						else = {
+							all_of = { 
+								array = selected_market:market_consumption_states@var:resource_temp value = val 
+								
+								add_to_temp_array = { param_array = val }
+								
+								set_temp_variable = { percentage_temp = val:demand@var:resource_temp }
+								divide_temp_variable = { percentage_temp = selected_market:need@var:resource_temp }
+								add_to_temp_array = { percent_temp_array = percentage_temp }
+								
+								add_to_temp_array = { number_temp_array = val:demand@var:resource_temp }
+							}
+						}
+						set_temp_variable = { param_infix = token:array_infix_newline }
+						set_temp_variable = { param_renderer = token:array_element_renderer_get_name_w_both }
+						set_temp_variable = { param_cutoff = 40 }
+						set_temp_variable = { color_temp = -1 }
+						# set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
+					}
+					localization_key = scripted_loc_inline_2333
+				}
+			}
 			#GetResourceListBalance
 				defined_text = {
 					name = GetResourceListBalance
@@ -6371,53 +6787,13 @@ defined_text = {
 								limit = {
 									check_variable = { selected_market = 0 }
 								}
-								check_variable = { global_market_balance@var:v > 1000 }
-								set_temp_variable = { ba_temp = global_market_balance@var:v }
-								divide_temp_variable = { ba_temp = 1000 }
-								set_temp_variable = { bb_temp = global_market_balance@var:v }
+								set_temp_variable = { amount_temp = global_market_balance@var:resource_temp }
 							}
 							else = {
-								check_variable = { selected_market:balance@var:v > 1000 }
-								set_temp_variable = { ba_temp = selected_market:balance@var:v }
-								divide_temp_variable = { ba_temp = 1000 }
-								set_temp_variable = { bb_temp = selected_market:balance@var:v }
+								set_temp_variable = { amount_temp = selected_market:balance@var:resource_temp }
 							}
 						}
-						localization_key = "[GetGreen]+[?ba_temp|3]K"
-					}
-					text = {
-						trigger = {
-							if = {
-								limit = {
-									check_variable = { selected_market = 0 }
-								}
-								set_temp_variable = { ba_temp = global_market_balance@var:v }
-								divide_temp_variable = { ba_temp = 1000 }
-								set_temp_variable = { bb_temp = global_market_balance@var:v }
-							}
-							else = {
-								set_temp_variable = { ba_temp = selected_market:balance@var:v }
-								divide_temp_variable = { ba_temp = 1000 }
-								set_temp_variable = { bb_temp = selected_market:balance@var:v }
-							}
-							check_variable = { bb_temp > 0 }
-						}
-						localization_key = "[GetGreen]+[?bb_temp|3]"
-					}
-					text = {
-						trigger = {
-							check_variable = { bb_temp < -1000 }
-						}
-						localization_key = "[GetRed][?ba_temp|3]K"
-					}
-					text = {
-						trigger = {
-							check_variable = { bb_temp < 0 }
-						}
-						localization_key = "[GetRed][?bb_temp|3]"
-					}
-					text = {
-						localization_key = "[GetYellow][?bb_temp|3]"
+						localization_key = scripted_loc_inline_2334
 					}
 				}
 			#
@@ -6430,68 +6806,13 @@ defined_text = {
 								limit = {
 									check_variable = { selected_market = 0 }
 								}
-								set_temp_variable = { a_temp = global_market_price@var:v }
+								set_temp_variable = { a_temp = global_market_price@var:resource_temp }
 							}
 							else = {
-								set_temp_variable = { a_temp = selected_market:price@var:v }
+								set_temp_variable = { a_temp = selected_market:price@var:resource_temp }
 							}
 						}
-						localization_key = "[?a_temp|3]"
-					}
-				}
-			#
-			#GetResourceListPriceIcon
-				defined_text = {
-					name = GetResourceListPriceIcon
-					text = {
-						trigger = {
-							if = {
-								limit = {
-									check_variable = { selected_market = 0 }
-								}
-								set_temp_variable = { selected_p = global_market_price@var:v }
-								divide_temp_variable = { selected_p = global.base_price@var:v }
-							}
-							else = {
-								set_temp_variable = { selected_p = selected_market:price@var:v }
-								divide_temp_variable = { selected_p = global.base_price@var:v }
-							}
-							check_variable = { selected_p < global.very_cheap_price }
-						}
-						localization_key = "GFX_price_very_cheap"
-					}
-					text = {
-						trigger = {
-							check_variable = { selected_p < global.cheap_price }
-						}
-						localization_key = "GFX_price_cheap"
-					}
-					text = {
-						trigger = {
-							check_variable = { selected_p < global.slightly_cheap_price }
-						}
-						localization_key = "GFX_price_slightly_cheap"
-					}
-					text = {
-						trigger = {
-							check_variable = { selected_p < global.slightly_expensive_price }
-						}
-						localization_key = "GFX_price_average"
-					}
-					text = {
-						trigger = {
-							check_variable = { selected_p < global.expensive_price }
-						}
-						localization_key = "GFX_price_slightly_expensive"
-					}
-					text = {
-						trigger = {
-							check_variable = { selected_p < global.very_expensive_price }
-						}
-						localization_key = "GFX_price_expensive"
-					}
-					text = {
-						localization_key = "GFX_price_very_expensive"
+						localization_key = scripted_loc_inline_2335
 					}
 				}
 			#
@@ -6504,13 +6825,13 @@ defined_text = {
 								limit = {
 									check_variable = { selected_market = 0 }
 								}
-								set_temp_variable = { a_temp = global_market_price_compared_to_base@var:v }
+								set_temp_variable = { a_temp = global_market_price_compared_to_base@var:resource_temp }
 							}
 							else = {
-								set_temp_variable = { a_temp = selected_market:price_compared_to_base@var:v }
+								set_temp_variable = { a_temp = selected_market:price_compared_to_base@var:resource_temp }
 							}
 						}
-						localization_key = "[?a_temp|-=%2]"
+						localization_key = scripted_loc_inline_2336
 					}
 				}
 			#
@@ -6523,10 +6844,10 @@ defined_text = {
 						trigger = {
 							is_in_array = { global.resources_token_array = selected_resource }
 						}
-						localization_key = "[?selected_resource.GetTokenLocalizedKey]"
+						localization_key = scripted_loc_inline_2337
 					}
 					text = {
-						localization_key = "new_route_resource_choose_loc"
+						localization_key = scripted_loc_inline_2338
 					}
 				}
 			#
@@ -6545,13 +6866,13 @@ defined_text = {
 						trigger = {
 							NOT = { has_country_flag = new_route_export } #Import
 						}
-						localization_key = "[THIS.GetFlag]"
+						localization_key = scripted_loc_inline_2339
 					}
 					text = {
 						trigger = {
 							set_temp_variable = { tr_c_temp = new_route_list_country_array^i }
 						}
-						localization_key = "[?tr_c_temp.GetFlag]" #Export
+						localization_key = scripted_loc_inline_2340
 					}
 				}
 			#
@@ -6563,10 +6884,10 @@ defined_text = {
 							NOT = { has_country_flag = new_route_export } #Import
 							set_temp_variable = { tr_c_temp = new_route_list_country_array^i }
 						}
-						localization_key = "[?tr_c_temp.GetFlag]"
+						localization_key = scripted_loc_inline_2341
 					}
 					text = {
-						localization_key = "[THIS.GetFlag]" #Export
+						localization_key = scripted_loc_inline_2342
 					}
 				}
 			#
@@ -6578,20 +6899,20 @@ defined_text = {
 							set_temp_variable = { tr_temp = new_route_list_productivity_array^i }
 							check_variable = { tr_temp > 0 }
 						}
-						localization_key = "[GetGreen]+$[?tr_temp|3]"
+						localization_key = scripted_loc_inline_2343
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_temp < 0 }
 							multiply_temp_variable = { tr_temp = -1 }
 						}
-						localization_key = "[GetRed]-$[?tr_temp|3]"
+						localization_key = scripted_loc_inline_2344
 					}
 					text = {
 						trigger = {
 							check_variable = { tr_temp = 0 }
 						}
-						localization_key = "[GetYellow]$[?tr_temp|3]"
+						localization_key = scripted_loc_inline_2345
 					}
 				}
 			#
@@ -6602,10 +6923,10 @@ defined_text = {
 						trigger = {
 							has_country_flag = new_route_export
 						}
-						localization_key = "-[?global.shipping_amount@var:selected_resource|3]"
+						localization_key = scripted_loc_inline_2346
 					}
 					text = {
-						localization_key = "+[?global.shipping_amount@var:selected_resource|3]"
+						localization_key = scripted_loc_inline_2347
 					}
 				}
 			#
@@ -6618,7 +6939,7 @@ defined_text = {
 						trigger = {
 							set_temp_variable = { tr_temp = v }
 						}
-						localization_key = "[?tr_temp.GetTokenLocalizedKey]"
+						localization_key = scripted_loc_inline_2348
 					}
 				}
 			#
@@ -6656,7 +6977,7 @@ defined_text = {
 							multiply_temp_variable = { amount_temp = -1 }
 						}
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_inline_2349
 				}
 			}
 			defined_text = { # GetTradeRouteAmount
@@ -6665,7 +6986,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade@var:v }
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_inline_2350
 				}
 			}
 			defined_text = { # GetTradeRouteAmountCapped
@@ -6674,10 +6995,10 @@ defined_text = {
 					trigger = {
 						check_variable = { offers@var:v = trade@var:v }
 					}
-					localization_key = "trade_route_amount_trade"
+					localization_key = scripted_loc_inline_2351
 				}
 				text = {
-					localization_key = "trade_route_amount_trade_capped"
+					localization_key = scripted_loc_inline_2352
 				}
 			}
 			defined_text = { # GetTradeRoutePortion
@@ -6688,16 +7009,16 @@ defined_text = {
 						divide_temp_variable = { percent_temp = offers@var:v }
 						check_variable = { percent_temp < 0.75 }
 					}
-					localization_key = "[?percent_temp|%R0]"
+					localization_key = scripted_loc_inline_2353
 				}
 				text = {
 					trigger = {
 						check_variable = { percent_temp < 1 }
 					}
-					localization_key = "[?percent_temp|%g0]"
+					localization_key = scripted_loc_inline_2354
 				}
 				text = {
-					localization_key = "[?percent_temp|%G0]"
+					localization_key = scripted_loc_inline_2355
 				}
 			}
 			defined_text = { # GetTradeRouteOffers
@@ -6706,7 +7027,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = offers@var:v }
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_inline_2356
 				}
 			}
 			defined_text = { # GetTradeRouteSupply
@@ -6715,7 +7036,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_supply@var:v }
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_inline_2357
 				}
 			}
 			defined_text = { # GetTradeRouteDemand
@@ -6724,7 +7045,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_demand@var:v }
 					}
-					localization_key = "[GetAdjustedAmount]"
+					localization_key = scripted_loc_inline_2358
 				}
 			}
 			defined_text = { # GetTradeRouteProductivity
@@ -6733,7 +7054,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_productivity@var:v }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2359
 				}
 			}
 			defined_text = { # GetTradeRouteGoodsRevenue
@@ -6752,7 +7073,7 @@ defined_text = {
 							multiply_temp_variable = { amount_temp = global_market_price@var:v }
 						}
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2360
 				}
 			}
 			defined_text = { # GetTradeRouteGoodsExpense
@@ -6771,7 +7092,7 @@ defined_text = {
 							multiply_temp_variable = { amount_temp = price@var:v }
 						}
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2361
 				}
 			}
 			defined_text = { # GetTradeRouteBuyPrice
@@ -6788,7 +7109,7 @@ defined_text = {
 							set_temp_variable = { tr_temp = price@var:v }
 						}
 					}
-					localization_key = "[?tr_temp|2]"
+					localization_key = scripted_loc_inline_2362
 				}
 			}
 			defined_text = { # GetTradeRouteSellPrice
@@ -6805,7 +7126,7 @@ defined_text = {
 							set_temp_variable = { tr_temp = global_market_price@var:v }
 						}
 					}
-					localization_key = "[?tr_temp|2]"
+					localization_key = scripted_loc_inline_2363
 				}
 			}
 			defined_text = { # GetTradeRouteValue
@@ -6814,7 +7135,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_value@var:v }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2364
 				}
 			}
 			defined_text = { # GetTradeRouteTariffs
@@ -6824,14 +7145,14 @@ defined_text = {
 						set_temp_variable = { amount_temp = trade_tariffs@var:v }
 						check_variable = { offers@var:v < 0 }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2365
 				}
 				text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_tariffs@var:v }
 						multiply_temp_variable = { amount_temp = -1 }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2366
 				}
 			}
 			defined_text = { # GetTradeRouteProfit
@@ -6840,7 +7161,7 @@ defined_text = {
 					trigger = {
 						set_temp_variable = { amount_temp = trade_profit@var:v }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2367
 				}
 			}
 			#GetTradeRoutePrice
@@ -6897,7 +7218,7 @@ defined_text = {
 							set_temp_variable = { tr_temp = 1000 }
 							divide_temp_variable = { tr_temp = global.shipping_amount@var:v }
 						}
-						localization_key = "[?tr_temp|2]K"
+						localization_key = scripted_loc_inline_2368
 					}
 				}
 			#
@@ -6919,10 +7240,10 @@ defined_text = {
 					trigger = {
 						check_variable = { trade_ai@var:v = 0 }
 					}
-					localization_key = "trade_route_automation_enabled_tooltip"
+					localization_key = scripted_loc_inline_2369
 				}
 				text = {
-					localization_key = "trade_route_automation_disabled_tooltip"
+					localization_key = scripted_loc_inline_2370
 				}
 			}
 			defined_text = { # GetTradeRouteProductivityUpperBound
@@ -6932,7 +7253,7 @@ defined_text = {
 						set_temp_variable = { amount_temp = workforce_earnings_avg }
 						multiply_temp_variable = { amount_temp = 1.5 }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2371
 				}
 			}
 			defined_text = { # GetTradeRouteProductivityLowerBound
@@ -6942,7 +7263,7 @@ defined_text = {
 						set_temp_variable = { amount_temp = workforce_earnings_avg }
 						divide_temp_variable = { amount_temp = 2 }
 					}
-					localization_key = "[GetPositiveAdjustedAmount]"
+					localization_key = scripted_loc_inline_2372
 				}
 			}
 		#
@@ -6985,59 +7306,80 @@ defined_text = {
 					}
 				}
 			#
-			#GetMarketListBackground
-				defined_text = {
-					name = GetMarketListBackground
-					text = {
-						trigger = {
-							check_variable = { v = market_capital:controller }
-						}
-						localization_key = "GFX_market_entry_background_green"
+		
+			defined_text = { #GetMarketListBackground
+				name = GetMarketListBackground
+				text = {
+					trigger = {
+						check_variable = { country_temp = market_capital:controller }
 					}
-					text = {
-						trigger = {
-							set_temp_variable = { country_temp = v }
-							NOT = {
-								can_trade_with = yes
-							}
-						}
-						localization_key = "GFX_market_entry_background_red"
-					}
-					text = {
-						localization_key = "GFX_market_entry_background"
-					}
+					localization_key = "GFX_market_entry_background_green"
 				}
-			#
-			#GetMarketListSize
-				defined_text = {
-					name = GetMarketListSize
-					text = {
-						trigger = {
-							check_variable = { v:market_countries^num > 1 }
+				text = {
+					trigger = {
+						NOT = {
+							can_trade_with = yes
 						}
-						localization_key = market_entry_size_plural
 					}
-					text = {
-						localization_key = market_entry_size_singular
-					}
+					localization_key = "GFX_market_entry_background_red"
 				}
-			#
-			#GetMarketListGDP
-				defined_text = {
-					name = GetMarketListGDP
-					text = {
-						trigger = {
-							check_variable = { v:market_gdp > 1000 }
-							set_temp_variable = { gdp_temp = v:market_gdp }
-							divide_temp_variable = { gdp_temp = 1000 }
-						}
-						localization_key = "[?gdp_temp]K"
-					}
-					text = {
-						localization_key = "[?v:market_gdp]"
-					}
+				text = {
+					localization_key = "GFX_market_entry_background"
 				}
-			#
+			}
+			defined_text = { #GetMarketListSize
+				name = GetMarketListSize
+				text = {
+					trigger = {
+						check_variable = { country_temp:market_countries^num > 1 }
+					}
+					localization_key = market_entry_size_plural
+				}
+				text = {
+					localization_key = market_entry_size_singular
+				}
+			}
+			defined_text = { # GetMarketListGDP
+				name = GetMarketListGDP
+				text = {
+					trigger = {
+						set_temp_variable = { amount_temp = country_temp:market_gdp }
+					}
+					localization_key = scripted_loc_inline_2373
+				}
+			}
+			defined_text = { # GetMarketListPops
+				name = GetMarketListPops
+				text = {
+					trigger = {
+						set_temp_variable = { amount_temp = country_temp:market_pops }
+					}
+					localization_key = scripted_loc_inline_2374
+				}
+			}
+			defined_text = { # GetMarketListGDPPerCapita
+				name = GetMarketListGDPPerCapita
+				text = {
+					localization_key = scripted_loc_inline_2375
+				}
+			}
+
+			defined_text = { # GetMarketListCountryList
+				name = GetMarketListCountryList
+				text = {
+					trigger = {
+						clear_temp_array = param_array
+						all_of = { array = country_temp:market_countries value = val add_to_temp_array = { param_array = val } }
+						# Set options up for a comma-separated list of rounded integers
+						set_temp_variable = { param_infix = token:array_infix_newline }
+						set_temp_variable = { param_renderer = token:array_element_renderer_get_name_with_flag }
+						# Cutoff at 4 for testing
+						set_temp_variable = { param_cutoff = 40 }
+						# set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
+					}
+					localization_key = scripted_loc_inline_2376
+				}
+			}
 		#
 	#
 	# Markets
@@ -7047,10 +7389,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = "[?market_leader.GetAdjective] Market"
+				localization_key = scripted_loc_inline_2377
 			}
 			text = {
-				localization_key = "[THIS.GetAdjective] Market"
+				localization_key = scripted_loc_inline_2378
 			}
 		}
 		defined_text = {
@@ -7059,10 +7401,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = "[?controller:market_leader.GetAdjective] Market"
+				localization_key = scripted_loc_inline_2379
 			}
 			text = {
-				localization_key = "[?controller.GetAdjective] Market"
+				localization_key = scripted_loc_inline_2380
 			}
 		}
 		defined_text = {
@@ -7071,10 +7413,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = "[?market_leader] Market"
+				localization_key = scripted_loc_inline_2381
 			}
 			text = {
-				localization_key = "[FROM.CONTROLLER.GetFlag] [GetAdjective] Market"
+				localization_key = scripted_loc_inline_2382
 			}
 		}
 		defined_text = {
@@ -7083,10 +7425,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = "[?controller:market_leader.GetFlag] [?controller:market_leader.GetAdjective] Market"
+				localization_key = scripted_loc_inline_2383
 			}
 			text = {
-				localization_key = "[?controller.GetFlag] [?controller.GetAdjective] Market"
+				localization_key = scripted_loc_inline_2384
 			}
 		}
 		defined_text = {
@@ -7095,10 +7437,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = "[?market_leader.GetName]"
+				localization_key = scripted_loc_inline_2385
 			}
 			text = {
-				localization_key = "[GetName]"
+				localization_key = scripted_loc_inline_2386
 			}
 		}
 		defined_text = {
@@ -7107,10 +7449,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = "[?controller:market_leader.GetName]"
+				localization_key = scripted_loc_inline_2387
 			}
 			text = {
-				localization_key = "[?controller.GetName]"
+				localization_key = scripted_loc_inline_2388
 			}
 		}
 		defined_text = {
@@ -7119,10 +7461,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_leader
 				}
-				localization_key = "[?market_leader.GetAdjective]"
+				localization_key = scripted_loc_inline_2389
 			}
 			text = {
-				localization_key = "[THIS.GetAdjective]"
+				localization_key = scripted_loc_inline_2390
 			}
 		}
 		defined_text = {
@@ -7131,10 +7473,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_leader }
 				}
-				localization_key = "[?controller:market_leader.GetAdjective]"
+				localization_key = scripted_loc_inline_2391
 			}
 			text = {
-				localization_key = "[?controller.GetAdjective]"
+				localization_key = scripted_loc_inline_2392
 			}
 		}
 		defined_text = {
@@ -7143,10 +7485,10 @@ defined_text = {
 				trigger = {
 					has_variable = market_capital
 				}
-				localization_key = "[?market_capital.GetCapitalVictoryPointName]"
+				localization_key = scripted_loc_inline_2393
 			}
 			text = {
-				localization_key = "[?capital.GetCapitalVictoryPointName]"
+				localization_key = scripted_loc_inline_2394
 			}
 		}
 		defined_text = {
@@ -7155,10 +7497,10 @@ defined_text = {
 				trigger = {
 					CONTROLLER = { has_variable = market_capital }
 				}
-				localization_key = "[?controller:market_capital.GetCapitalVictoryPointName]"
+				localization_key = scripted_loc_inline_2395
 			}
 			text = {
-				localization_key = "[?owner:capital.GetCapitalVictoryPointName]"
+				localization_key = scripted_loc_inline_2396
 			}
 		}
 		defined_text = {
@@ -7170,14 +7512,14 @@ defined_text = {
 						check_variable = { market_leader = ROOT }
 					}
 				}
-				localization_key = "Leader"
+				localization_key = scripted_loc_inline_2397
 			}
 			text = {
 				trigger = { is_subject = yes }
-				localization_key = "Satellite"
+				localization_key = scripted_loc_inline_2398
 			}
 			text = {
-				localization_key = "Member"
+				localization_key = scripted_loc_inline_2399
 			}
 		}
 		defined_text = {
@@ -7191,14 +7533,14 @@ defined_text = {
 						}
 					}
 				}
-				localization_key = "Leader"
+				localization_key = scripted_loc_inline_2400
 			}
 			text = {
 				trigger = { controller = { is_subject = yes } }
-				localization_key = "Satellite"
+				localization_key = scripted_loc_inline_2401
 			}
 			text = {
-				localization_key = "Member"
+				localization_key = scripted_loc_inline_2402
 			}
 		}
 		defined_text = {
@@ -7216,23 +7558,23 @@ defined_text = {
 						has_war_together_with = ROOT
 					}
 				}
-				localization_key = "In-Block"
+				localization_key = scripted_loc_inline_2403
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { country_temp = THIS }
 					ROOT = { can_trade_with = yes }
 				}
-				localization_key = "Accessible"
+				localization_key = scripted_loc_inline_2404
 			}
 			text = {
 				trigger = {
 					has_war_with = ROOT
 				}
-				localization_key = "Enemy"
+				localization_key = scripted_loc_inline_2405
 			}
 			text = {
-				localization_key = "Not Accessible"
+				localization_key = scripted_loc_inline_2406
 			}
 		}
 		defined_text = {
@@ -7250,14 +7592,14 @@ defined_text = {
 						CONTROLLER = { has_war_together_with = ROOT }
 					}
 				}
-				localization_key = "In-Block"
+				localization_key = scripted_loc_inline_2407
 			}
 			text = {
 				trigger = {
 					set_temp_variable = { country_temp = controller }
 					ROOT = { can_trade_with = yes }
 				}
-				localization_key = "Accessible"
+				localization_key = scripted_loc_inline_2408
 			}
 			text = {
 				trigger = {
@@ -7265,10 +7607,10 @@ defined_text = {
 						has_war_with = ROOT
 					}
 				}
-				localization_key = "Enemy"
+				localization_key = scripted_loc_inline_2409
 			}
 			text = {
-				localization_key = "Not Accessible"
+				localization_key = scripted_loc_inline_2410
 			}
 		}
 		defined_text = {
@@ -7307,7 +7649,7 @@ defined_text = {
 				divide_temp_variable = {treasury_temp = 1000000}
 				check_variable = {treasury > 999999.99}
             }
-            localization_key = "[?treasury_temp|2]M"
+            localization_key = scripted_loc_inline_2411
         }
         text = {
             trigger = {
@@ -7315,10 +7657,10 @@ defined_text = {
 				divide_temp_variable = {treasury_temp = 1000}
 				check_variable = {treasury > 999.99}
             }
-            localization_key = "[?treasury_temp|2]K"
+            localization_key = scripted_loc_inline_2412
         }
         text = {
-            localization_key = "[?treasury|2]"
+            localization_key = scripted_loc_inline_2413
         }
     }
 #

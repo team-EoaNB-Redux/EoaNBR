@@ -1,5 +1,4 @@
 add_namespace = prussiarevolution
-add_namespace = prussia
 
 country_event = {
 	id =  prussiarevolution.1
@@ -92,7 +91,7 @@ country_event = {
 					limit = {
 						has_idea = PRS_Idea_Liberal_Reform
 					}
-					load_focus_tree = prussia_liberal_Democracy_ft
+					# load_focus_tree = prussia_liberal_Democracy_ft
 				}
 			}
 		}

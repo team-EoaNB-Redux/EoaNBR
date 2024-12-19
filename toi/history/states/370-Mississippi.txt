@@ -21,6 +21,10 @@ state = {
 			4464 = {
 				naval_base = 2
 			}
+			10410 = {
+				bunker = 1
+				supply_node = 1
+			}
 		}
 		set_variable = { arable_land = 50 }
 

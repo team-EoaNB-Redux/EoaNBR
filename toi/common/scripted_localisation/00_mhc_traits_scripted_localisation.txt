@@ -5,337 +5,337 @@ defined_text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 1 }
 		}
-		localization_key = "MHC_TRAIT_1"
+		localization_key = scripted_loc_inline_1159
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 2 }
 		}
-		localization_key = "MHC_TRAIT_2"
+		localization_key = scripted_loc_inline_1160
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 3 }
 		}
-		localization_key = "MHC_TRAIT_3"
+		localization_key = scripted_loc_inline_1161
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 4 }
 		}
-		localization_key = "MHC_TRAIT_4"
+		localization_key = scripted_loc_inline_1162
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 5 }
 		}
-		localization_key = "MHC_TRAIT_5"
+		localization_key = scripted_loc_inline_1163
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 6 }
 		}
-		localization_key = "MHC_TRAIT_6"
+		localization_key = scripted_loc_inline_1164
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 7 }
 		}
-		localization_key = "MHC_TRAIT_7"
+		localization_key = scripted_loc_inline_1165
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 8 }
 		}
-		localization_key = "MHC_TRAIT_8"
+		localization_key = scripted_loc_inline_1166
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 9 }
 		}
-		localization_key = "MHC_TRAIT_9"
+		localization_key = scripted_loc_inline_1167
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 10 }
 		}
-		localization_key = "MHC_TRAIT_10"
+		localization_key = scripted_loc_inline_1168
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 11 }
 		}
-		localization_key = "MHC_TRAIT_11"
+		localization_key = scripted_loc_inline_1169
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 12 }
 		}
-		localization_key = "MHC_TRAIT_12"
+		localization_key = scripted_loc_inline_1170
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 13 }
 		}
-		localization_key = "MHC_TRAIT_13"
+		localization_key = scripted_loc_inline_1171
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 14 }
 		}
-		localization_key = "MHC_TRAIT_14"
+		localization_key = scripted_loc_inline_1172
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 15 }
 		}
-		localization_key = "MHC_TRAIT_15"
+		localization_key = scripted_loc_inline_1173
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 16 }
 		}
-		localization_key = "MHC_TRAIT_16"
+		localization_key = scripted_loc_inline_1174
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 17 }
 		}
-		localization_key = "MHC_TRAIT_17"
+		localization_key = scripted_loc_inline_1175
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 18 }
 		}
-		localization_key = "MHC_TRAIT_18"
+		localization_key = scripted_loc_inline_1176
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 19 }
 		}
-		localization_key = "MHC_TRAIT_19"
+		localization_key = scripted_loc_inline_1177
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 20 }
 		}
-		localization_key = "MHC_TRAIT_20"
+		localization_key = scripted_loc_inline_1178
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 21 }
 		}
-		localization_key = "MHC_TRAIT_21"
+		localization_key = scripted_loc_inline_1179
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 22 }
 		}
-		localization_key = "MHC_TRAIT_22"
+		localization_key = scripted_loc_inline_1180
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 23 }
 		}
-		localization_key = "MHC_TRAIT_23"
+		localization_key = scripted_loc_inline_1181
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 24 }
 		}
-		localization_key = "MHC_TRAIT_24"
+		localization_key = scripted_loc_inline_1182
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 25 }
 		}
-		localization_key = "MHC_TRAIT_25"
+		localization_key = scripted_loc_inline_1183
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 26 }
 		}
-		localization_key = "MHC_TRAIT_26"
+		localization_key = scripted_loc_inline_1184
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 27 }
 		}
-		localization_key = "MHC_TRAIT_27"
+		localization_key = scripted_loc_inline_1185
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 28 }
 		}
-		localization_key = "MHC_TRAIT_28"
+		localization_key = scripted_loc_inline_1186
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 29 }
 		}
-		localization_key = "MHC_TRAIT_29"
+		localization_key = scripted_loc_inline_1187
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 30 }
 		}
-		localization_key = "MHC_TRAIT_30"
+		localization_key = scripted_loc_inline_1188
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 31 }
 		}
-		localization_key = "MHC_TRAIT_31"
+		localization_key = scripted_loc_inline_1189
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 32 }
 		}
-		localization_key = "MHC_TRAIT_32"
+		localization_key = scripted_loc_inline_1190
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 33 }
 		}
-		localization_key = "MHC_TRAIT_33"
+		localization_key = scripted_loc_inline_1191
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 34 }
 		}
-		localization_key = "MHC_TRAIT_34"
+		localization_key = scripted_loc_inline_1192
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 35 }
 		}
-		localization_key = "MHC_TRAIT_35"
+		localization_key = scripted_loc_inline_1193
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 36 }
 		}
-		localization_key = "MHC_TRAIT_36"
+		localization_key = scripted_loc_inline_1194
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 37 }
 		}
-		localization_key = "MHC_TRAIT_37"
+		localization_key = scripted_loc_inline_1195
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 38 }
 		}
-		localization_key = "MHC_TRAIT_38"
+		localization_key = scripted_loc_inline_1196
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 39 }
 		}
-		localization_key = "MHC_TRAIT_39"
+		localization_key = scripted_loc_inline_1197
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 40 }
 		}
-		localization_key = "MHC_TRAIT_40"
+		localization_key = scripted_loc_inline_1198
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 41 }
 		}
-		localization_key = "MHC_TRAIT_41"
+		localization_key = scripted_loc_inline_1199
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 42 }
 		}
-		localization_key = "MHC_TRAIT_42"
+		localization_key = scripted_loc_inline_1200
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 43 }
 		}
-		localization_key = "MHC_TRAIT_43"
+		localization_key = scripted_loc_inline_1201
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 44 }
 		}
-		localization_key = "MHC_TRAIT_44"
+		localization_key = scripted_loc_inline_1202
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 45 }
 		}
-		localization_key = "MHC_TRAIT_45"
+		localization_key = scripted_loc_inline_1203
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 46 }
 		}
-		localization_key = "MHC_TRAIT_46"
+		localization_key = scripted_loc_inline_1204
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 47 }
 		}
-		localization_key = "MHC_TRAIT_47"
+		localization_key = scripted_loc_inline_1205
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 48 }
 		}
-		localization_key = "MHC_TRAIT_48"
+		localization_key = scripted_loc_inline_1206
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 49 }
 		}
-		localization_key = "MHC_TRAIT_49"
+		localization_key = scripted_loc_inline_1207
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 50 }
 		}
-		localization_key = "MHC_TRAIT_50"
+		localization_key = scripted_loc_inline_1208
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 51 }
 		}
-		localization_key = "MHC_TRAIT_51"
+		localization_key = scripted_loc_inline_1209
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 52 }
 		}
-		localization_key = "MHC_TRAIT_52"
+		localization_key = scripted_loc_inline_1210
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 53 }
 		}
-		localization_key = "MHC_TRAIT_53"
+		localization_key = scripted_loc_inline_1211
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 54 }
 		}
-		localization_key = "MHC_TRAIT_54"
+		localization_key = scripted_loc_inline_1212
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 138 }
 		}
-		localization_key = "MHC_TRAIT_138"
+		localization_key = scripted_loc_inline_1213
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 139 }
 		}
-		localization_key = "MHC_TRAIT_139"
+		localization_key = scripted_loc_inline_1214
 	}
 }
 
@@ -346,259 +346,259 @@ defined_text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 55 }
 		}
-		localization_key = "MHC_TRAIT_55"
+		localization_key = scripted_loc_inline_1215
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 56 }
 		}
-		localization_key = "MHC_TRAIT_56"
+		localization_key = scripted_loc_inline_1216
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 57 }
 		}
-		localization_key = "MHC_TRAIT_57"
+		localization_key = scripted_loc_inline_1217
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 58 }
 		}
-		localization_key = "MHC_TRAIT_58"
+		localization_key = scripted_loc_inline_1218
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 59 }
 		}
-		localization_key = "MHC_TRAIT_59"
+		localization_key = scripted_loc_inline_1219
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 60 }
 		}
-		localization_key = "MHC_TRAIT_60"
+		localization_key = scripted_loc_inline_1220
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 61 }
 		}
-		localization_key = "MHC_TRAIT_61"
+		localization_key = scripted_loc_inline_1221
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 62 }
 		}
-		localization_key = "MHC_TRAIT_62"
+		localization_key = scripted_loc_inline_1222
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 63 }
 		}
-		localization_key = "MHC_TRAIT_63"
+		localization_key = scripted_loc_inline_1223
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 64 }
 		}
-		localization_key = "MHC_TRAIT_64"
+		localization_key = scripted_loc_inline_1224
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 65 }
 		}
-		localization_key = "MHC_TRAIT_65"
+		localization_key = scripted_loc_inline_1225
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 66 }
 		}
-		localization_key = "MHC_TRAIT_66"
+		localization_key = scripted_loc_inline_1226
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 67 }
 		}
-		localization_key = "MHC_TRAIT_67"
+		localization_key = scripted_loc_inline_1227
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 68 }
 		}
-		localization_key = "MHC_TRAIT_68"
+		localization_key = scripted_loc_inline_1228
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 69 }
 		}
-		localization_key = "MHC_TRAIT_69"
+		localization_key = scripted_loc_inline_1229
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 70 }
 		}
-		localization_key = "MHC_TRAIT_70"
+		localization_key = scripted_loc_inline_1230
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 71 }
 		}
-		localization_key = "MHC_TRAIT_71"
+		localization_key = scripted_loc_inline_1231
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 72 }
 		}
-		localization_key = "MHC_TRAIT_72"
+		localization_key = scripted_loc_inline_1232
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 73 }
 		}
-		localization_key = "MHC_TRAIT_73"
+		localization_key = scripted_loc_inline_1233
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 74 }
 		}
-		localization_key = "MHC_TRAIT_74"
+		localization_key = scripted_loc_inline_1234
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 75 }
 		}
-		localization_key = "MHC_TRAIT_75"
+		localization_key = scripted_loc_inline_1235
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 76 }
 		}
-		localization_key = "MHC_TRAIT_76"
+		localization_key = scripted_loc_inline_1236
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 77 }
 		}
-		localization_key = "MHC_TRAIT_77"
+		localization_key = scripted_loc_inline_1237
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 78 }
 		}
-		localization_key = "MHC_TRAIT_78"
+		localization_key = scripted_loc_inline_1238
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 79 }
 		}
-		localization_key = "MHC_TRAIT_79"
+		localization_key = scripted_loc_inline_1239
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 80 }
 		}
-		localization_key = "MHC_TRAIT_80"
+		localization_key = scripted_loc_inline_1240
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 81 }
 		}
-		localization_key = "MHC_TRAIT_81"
+		localization_key = scripted_loc_inline_1241
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 82 }
 		}
-		localization_key = "MHC_TRAIT_82"
+		localization_key = scripted_loc_inline_1242
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 83 }
 		}
-		localization_key = "MHC_TRAIT_83"
+		localization_key = scripted_loc_inline_1243
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 84 }
 		}
-		localization_key = "MHC_TRAIT_84"
+		localization_key = scripted_loc_inline_1244
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 85 }
 		}
-		localization_key = "MHC_TRAIT_85"
+		localization_key = scripted_loc_inline_1245
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 86 }
 		}
-		localization_key = "MHC_TRAIT_86"
+		localization_key = scripted_loc_inline_1246
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 87 }
 		}
-		localization_key = "MHC_TRAIT_87"
+		localization_key = scripted_loc_inline_1247
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 88 }
 		}
-		localization_key = "MHC_TRAIT_88"
+		localization_key = scripted_loc_inline_1248
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 89 }
 		}
-		localization_key = "MHC_TRAIT_89"
+		localization_key = scripted_loc_inline_1249
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 90 }
 		}
-		localization_key = "MHC_TRAIT_90"
+		localization_key = scripted_loc_inline_1250
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 91 }
 		}
-		localization_key = "MHC_TRAIT_91"
+		localization_key = scripted_loc_inline_1251
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 92 }
 		}
-		localization_key = "MHC_TRAIT_92"
+		localization_key = scripted_loc_inline_1252
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 93 }
 		}
-		localization_key = "MHC_TRAIT_93"
+		localization_key = scripted_loc_inline_1253
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 94 }
 		}
-		localization_key = "MHC_TRAIT_94"
+		localization_key = scripted_loc_inline_1254
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 95 }
 		}
-		localization_key = "MHC_TRAIT_95"
+		localization_key = scripted_loc_inline_1255
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 96 }
 		}
-		localization_key = "MHC_TRAIT_96"
+		localization_key = scripted_loc_inline_1256
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 97 }
 		}
-		localization_key = "MHC_TRAIT_97"
+		localization_key = scripted_loc_inline_1257
 	}
 }
 
@@ -609,241 +609,241 @@ defined_text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 98 }
 		}
-		localization_key = "MHC_TRAIT_98"
+		localization_key = scripted_loc_inline_1258
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 99 }
 		}
-		localization_key = "MHC_TRAIT_99"
+		localization_key = scripted_loc_inline_1259
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 100 }
 		}
-		localization_key = "MHC_TRAIT_100"
+		localization_key = scripted_loc_inline_1260
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 101 }
 		}
-		localization_key = "MHC_TRAIT_101"
+		localization_key = scripted_loc_inline_1261
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 102 }
 		}
-		localization_key = "MHC_TRAIT_102"
+		localization_key = scripted_loc_inline_1262
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 103 }
 		}
-		localization_key = "MHC_TRAIT_103"
+		localization_key = scripted_loc_inline_1263
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 104 }
 		}
-		localization_key = "MHC_TRAIT_104"
+		localization_key = scripted_loc_inline_1264
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 105 }
 		}
-		localization_key = "MHC_TRAIT_105"
+		localization_key = scripted_loc_inline_1265
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 106 }
 		}
-		localization_key = "MHC_TRAIT_106"
+		localization_key = scripted_loc_inline_1266
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 107 }
 		}
-		localization_key = "MHC_TRAIT_107"
+		localization_key = scripted_loc_inline_1267
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 108 }
 		}
-		localization_key = "MHC_TRAIT_108"
+		localization_key = scripted_loc_inline_1268
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 109 }
 		}
-		localization_key = "MHC_TRAIT_109"
+		localization_key = scripted_loc_inline_1269
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 110 }
 		}
-		localization_key = "MHC_TRAIT_110"
+		localization_key = scripted_loc_inline_1270
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 111 }
 		}
-		localization_key = "MHC_TRAIT_111"
+		localization_key = scripted_loc_inline_1271
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 112 }
 		}
-		localization_key = "MHC_TRAIT_112"
+		localization_key = scripted_loc_inline_1272
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 113 }
 		}
-		localization_key = "MHC_TRAIT_113"
+		localization_key = scripted_loc_inline_1273
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 114 }
 		}
-		localization_key = "MHC_TRAIT_114"
+		localization_key = scripted_loc_inline_1274
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 115 }
 		}
-		localization_key = "MHC_TRAIT_115"
+		localization_key = scripted_loc_inline_1275
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 116 }
 		}
-		localization_key = "MHC_TRAIT_116"
+		localization_key = scripted_loc_inline_1276
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 117 }
 		}
-		localization_key = "MHC_TRAIT_117"
+		localization_key = scripted_loc_inline_1277
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 118 }
 		}
-		localization_key = "MHC_TRAIT_118"
+		localization_key = scripted_loc_inline_1278
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 119 }
 		}
-		localization_key = "MHC_TRAIT_119"
+		localization_key = scripted_loc_inline_1279
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 120 }
 		}
-		localization_key = "MHC_TRAIT_120"
+		localization_key = scripted_loc_inline_1280
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 121 }
 		}
-		localization_key = "MHC_TRAIT_121"
+		localization_key = scripted_loc_inline_1281
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 122 }
 		}
-		localization_key = "MHC_TRAIT_122"
+		localization_key = scripted_loc_inline_1282
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 123 }
 		}
-		localization_key = "MHC_TRAIT_123"
+		localization_key = scripted_loc_inline_1283
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 124 }
 		}
-		localization_key = "MHC_TRAIT_124"
+		localization_key = scripted_loc_inline_1284
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 125 }
 		}
-		localization_key = "MHC_TRAIT_125"
+		localization_key = scripted_loc_inline_1285
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 126 }
 		}
-		localization_key = "MHC_TRAIT_126"
+		localization_key = scripted_loc_inline_1286
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 127 }
 		}
-		localization_key = "MHC_TRAIT_127"
+		localization_key = scripted_loc_inline_1287
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 128 }
 		}
-		localization_key = "MHC_TRAIT_128"
+		localization_key = scripted_loc_inline_1288
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 129 }
 		}
-		localization_key = "MHC_TRAIT_129"
+		localization_key = scripted_loc_inline_1289
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 130 }
 		}
-		localization_key = "MHC_TRAIT_130"
+		localization_key = scripted_loc_inline_1290
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 131 }
 		}
-		localization_key = "MHC_TRAIT_131"
+		localization_key = scripted_loc_inline_1291
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 132 }
 		}
-		localization_key = "MHC_TRAIT_132"
+		localization_key = scripted_loc_inline_1292
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 133 }
 		}
-		localization_key = "MHC_TRAIT_133"
+		localization_key = scripted_loc_inline_1293
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 134 }
 		}
-		localization_key = "MHC_TRAIT_134"
+		localization_key = scripted_loc_inline_1294
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 135 }
 		}
-		localization_key = "MHC_TRAIT_135"
+		localization_key = scripted_loc_inline_1295
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 136 }
 		}
-		localization_key = "MHC_TRAIT_136"
+		localization_key = scripted_loc_inline_1296
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 137 }
 		}
-		localization_key = "MHC_TRAIT_137"
+		localization_key = scripted_loc_inline_1297
 	}
 }
 
@@ -854,337 +854,337 @@ defined_text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 1 }
 		}
-		localization_key = "army_chief_defensive_1"
+		localization_key = scripted_loc_inline_1298
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 2 }
 		}
-		localization_key = "army_chief_defensive_2"
+		localization_key = scripted_loc_inline_1299
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 3 }
 		}
-		localization_key = "army_chief_defensive_3"
+		localization_key = scripted_loc_inline_1300
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 4 }
 		}
-		localization_key = "army_chief_offensive_1"
+		localization_key = scripted_loc_inline_1301
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 5 }
 		}
-		localization_key = "army_chief_offensive_2"
+		localization_key = scripted_loc_inline_1302
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 6 }
 		}
-		localization_key = "army_chief_offensive_3"
+		localization_key = scripted_loc_inline_1303
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 7 }
 		}
-		localization_key = "army_chief_old_guard"
+		localization_key = scripted_loc_inline_1304
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 8 }
 		}
-		localization_key = "army_chief_drill_1"
+		localization_key = scripted_loc_inline_1305
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 9 }
 		}
-		localization_key = "army_chief_drill_2"
+		localization_key = scripted_loc_inline_1306
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 10 }
 		}
-		localization_key = "army_chief_drill_3"
+		localization_key = scripted_loc_inline_1307
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 11 }
 		}
-		localization_key = "army_chief_reform_1"
+		localization_key = scripted_loc_inline_1308
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 12 }
 		}
-		localization_key = "army_chief_reform_2"
+		localization_key = scripted_loc_inline_1309
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 13 }
 		}
-		localization_key = "army_chief_reform_3"
+		localization_key = scripted_loc_inline_1310
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 14 }
 		}
-		localization_key = "army_chief_organizational_1"
+		localization_key = scripted_loc_inline_1311
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 15 }
 		}
-		localization_key = "army_chief_organizational_2"
+		localization_key = scripted_loc_inline_1312
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 16 }
 		}
-		localization_key = "army_chief_organizational_3"
+		localization_key = scripted_loc_inline_1313
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 17 }
 		}
-		localization_key = "army_chief_planning_1"
+		localization_key = scripted_loc_inline_1314
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 18 }
 		}
-		localization_key = "army_chief_planning_2"
+		localization_key = scripted_loc_inline_1315
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 19 }
 		}
-		localization_key = "army_chief_planning_3"
+		localization_key = scripted_loc_inline_1316
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 20 }
 		}
-		localization_key = "army_chief_morale_1"
+		localization_key = scripted_loc_inline_1317
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 21 }
 		}
-		localization_key = "army_chief_morale_2"
+		localization_key = scripted_loc_inline_1318
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 22 }
 		}
-		localization_key = "army_chief_morale_3"
+		localization_key = scripted_loc_inline_1319
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 23 }
 		}
-		localization_key = "army_chief_maneuver_1"
+		localization_key = scripted_loc_inline_1320
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 24 }
 		}
-		localization_key = "army_chief_maneuver_2"
+		localization_key = scripted_loc_inline_1321
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 25 }
 		}
-		localization_key = "army_chief_maneuver_3"
+		localization_key = scripted_loc_inline_1322
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 26 }
 		}
-		localization_key = "army_entrenchment_1"
+		localization_key = scripted_loc_inline_1323
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 27 }
 		}
-		localization_key = "army_entrenchment_2"
+		localization_key = scripted_loc_inline_1324
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 28 }
 		}
-		localization_key = "army_entrenchment_3"
+		localization_key = scripted_loc_inline_1325
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 29 }
 		}
-		localization_key = "army_armored_1"
+		localization_key = scripted_loc_inline_1326
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 30 }
 		}
-		localization_key = "army_armored_2"
+		localization_key = scripted_loc_inline_1327
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 31 }
 		}
-		localization_key = "army_armored_3"
+		localization_key = scripted_loc_inline_1328
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 32 }
 		}
-		localization_key = "army_artillery_1"
+		localization_key = scripted_loc_inline_1329
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 33 }
 		}
-		localization_key = "army_artillery_2"
+		localization_key = scripted_loc_inline_1330
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 34 }
 		}
-		localization_key = "army_artillery_3"
+		localization_key = scripted_loc_inline_1331
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 35 }
 		}
-		localization_key = "army_infantry_1"
+		localization_key = scripted_loc_inline_1332
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 36 }
 		}
-		localization_key = "army_infantry_2"
+		localization_key = scripted_loc_inline_1333
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 37 }
 		}
-		localization_key = "army_infantry_3"
+		localization_key = scripted_loc_inline_1334
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 38 }
 		}
-		localization_key = "army_commando_1"
+		localization_key = scripted_loc_inline_1335
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 39 }
 		}
-		localization_key = "army_commando_2"
+		localization_key = scripted_loc_inline_1336
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 40 }
 		}
-		localization_key = "army_commando_3"
+		localization_key = scripted_loc_inline_1337
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 41 }
 		}
-		localization_key = "army_cavalry_1"
+		localization_key = scripted_loc_inline_1338
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 42 }
 		}
-		localization_key = "army_cavalry_2"
+		localization_key = scripted_loc_inline_1339
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 43 }
 		}
-		localization_key = "army_cavalry_3"
+		localization_key = scripted_loc_inline_1340
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 44 }
 		}
-		localization_key = "army_regrouping_1"
+		localization_key = scripted_loc_inline_1341
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 45 }
 		}
-		localization_key = "army_regrouping_2"
+		localization_key = scripted_loc_inline_1342
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 46 }
 		}
-		localization_key = "army_regrouping_3"
+		localization_key = scripted_loc_inline_1343
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 47 }
 		}
-		localization_key = "army_concealment_1"
+		localization_key = scripted_loc_inline_1344
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 48 }
 		}
-		localization_key = "army_concealment_2"
+		localization_key = scripted_loc_inline_1345
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 49 }
 		}
-		localization_key = "army_concealment_3"
+		localization_key = scripted_loc_inline_1346
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 50 }
 		}
-		localization_key = "army_logistics_1"
+		localization_key = scripted_loc_inline_1347
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 51 }
 		}
-		localization_key = "army_logistics_2"
+		localization_key = scripted_loc_inline_1348
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 52 }
 		}
-		localization_key = "army_logistics_3"
+		localization_key = scripted_loc_inline_1349
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 53 }
 		}
-		localization_key = "eoanb_trait_inf_defence_1"
+		localization_key = scripted_loc_inline_1350
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 54 }
 		}
-		localization_key = "eoanb_trait_cav_general_2"
+		localization_key = scripted_loc_inline_1351
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 138 }
 		}
-		localization_key = "eoanb_trait_partisant_killer"
+		localization_key = scripted_loc_inline_1352
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_army_available_traits_array^v = 139 }
 		}
-		localization_key = "eoanb_trait_nation_in_arms"
+		localization_key = scripted_loc_inline_1353
 	}
 }
 
@@ -1195,259 +1195,259 @@ defined_text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 55 }
 		}
-		localization_key = "air_chief_reform_1"
+		localization_key = scripted_loc_inline_1354
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 56 }
 		}
-		localization_key = "air_chief_reform_2"
+		localization_key = scripted_loc_inline_1355
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 57 }
 		}
-		localization_key = "air_chief_reform_3"
+		localization_key = scripted_loc_inline_1356
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 58 }
 		}
-		localization_key = "air_chief_safety_1"
+		localization_key = scripted_loc_inline_1357
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 59 }
 		}
-		localization_key = "air_chief_safety_2"
+		localization_key = scripted_loc_inline_1358
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 60 }
 		}
-		localization_key = "air_chief_safety_3"
+		localization_key = scripted_loc_inline_1359
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 61 }
 		}
-		localization_key = "air_chief_night_operations_1"
+		localization_key = scripted_loc_inline_1360
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 61 }
 		}
-		localization_key = "air_chief_old_guard"
+		localization_key = scripted_loc_inline_1361
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 62 }
 		}
-		localization_key = "air_chief_night_operations_1"
+		localization_key = scripted_loc_inline_1362
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 63 }
 		}
-		localization_key = "air_chief_night_operations_2"
+		localization_key = scripted_loc_inline_1363
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 64 }
 		}
-		localization_key = "air_chief_night_operations_3"
+		localization_key = scripted_loc_inline_1364
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 65 }
 		}
-		localization_key = "air_chief_ground_support_1"
+		localization_key = scripted_loc_inline_1365
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 66 }
 		}
-		localization_key = "air_chief_ground_support_2"
+		localization_key = scripted_loc_inline_1366
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 67 }
 		}
-		localization_key = "air_chief_ground_support_3"
+		localization_key = scripted_loc_inline_1367
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 68 }
 		}
-		localization_key = "air_chief_all_weather_1"
+		localization_key = scripted_loc_inline_1368
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 69 }
 		}
-		localization_key = "air_chief_all_weather_2"
+		localization_key = scripted_loc_inline_1369
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 70 }
 		}
-		localization_key = "air_chief_all_weather_3"
+		localization_key = scripted_loc_inline_1370
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 71 }
 		}
-		localization_key = "air_air_combat_training_1"
+		localization_key = scripted_loc_inline_1371
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 72 }
 		}
-		localization_key = "air_air_combat_training_2"
+		localization_key = scripted_loc_inline_1372
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 73 }
 		}
-		localization_key = "air_air_combat_training_3"
+		localization_key = scripted_loc_inline_1373
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 74 }
 		}
-		localization_key = "air_naval_strike_1"
+		localization_key = scripted_loc_inline_1374
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 75 }
 		}
-		localization_key = "air_naval_strike_2"
+		localization_key = scripted_loc_inline_1375
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 76 }
 		}
-		localization_key = "air_naval_strike_3"
+		localization_key = scripted_loc_inline_1376
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 77 }
 		}
-		localization_key = "air_bomber_interception_1"
+		localization_key = scripted_loc_inline_1377
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 78 }
 		}
-		localization_key = "air_bomber_interception_2"
+		localization_key = scripted_loc_inline_1378
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 79 }
 		}
-		localization_key = "air_bomber_interception_3"
+		localization_key = scripted_loc_inline_1379
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 80 }
 		}
-		localization_key = "air_air_superiority_1"
+		localization_key = scripted_loc_inline_1380
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 81 }
 		}
-		localization_key = "air_air_superiority_2"
+		localization_key = scripted_loc_inline_1381
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 82 }
 		}
-		localization_key = "air_air_superiority_3"
+		localization_key = scripted_loc_inline_1382
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 83 }
 		}
-		localization_key = "air_close_air_support_1"
+		localization_key = scripted_loc_inline_1383
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 84 }
 		}
-		localization_key = "air_close_air_support_2"
+		localization_key = scripted_loc_inline_1384
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 85 }
 		}
-		localization_key = "air_close_air_support_3"
+		localization_key = scripted_loc_inline_1385
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 86 }
 		}
-		localization_key = "air_strategic_bombing_1"
+		localization_key = scripted_loc_inline_1386
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 87 }
 		}
-		localization_key = "air_strategic_bombing_2"
+		localization_key = scripted_loc_inline_1387
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 88 }
 		}
-		localization_key = "air_strategic_bombing_3"
+		localization_key = scripted_loc_inline_1388
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 89 }
 		}
-		localization_key = "air_tactical_bombing_1"
+		localization_key = scripted_loc_inline_1389
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 90 }
 		}
-		localization_key = "air_tactical_bombing_2"
+		localization_key = scripted_loc_inline_1390
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 91 }
 		}
-		localization_key = "air_tactical_bombing_3"
+		localization_key = scripted_loc_inline_1391
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 92 }
 		}
-		localization_key = "air_airborne_1"
+		localization_key = scripted_loc_inline_1392
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 93 }
 		}
-		localization_key = "air_airborne_2"
+		localization_key = scripted_loc_inline_1393
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 94 }
 		}
-		localization_key = "air_airborne_3"
+		localization_key = scripted_loc_inline_1394
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 95 }
 		}
-		localization_key = "air_pilot_training_1"
+		localization_key = scripted_loc_inline_1395
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_airforce_available_traits_array^v = 96 }
 		}
-		localization_key = "air_pilot_training_2"
+		localization_key = scripted_loc_inline_1396
 	}
 }
 
@@ -1458,240 +1458,240 @@ defined_text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 98 }
 		}
-		localization_key = "navy_chief_naval_aviation_1"
+		localization_key = scripted_loc_inline_1397
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 99 }
 		}
-		localization_key = "navy_chief_naval_aviation_2"
+		localization_key = scripted_loc_inline_1398
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 100 }
 		}
-		localization_key = "navy_chief_naval_aviation_3"
+		localization_key = scripted_loc_inline_1399
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 101 }
 		}
-		localization_key = "navy_chief_decisive_battle_1"
+		localization_key = scripted_loc_inline_1400
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 102 }
 		}
-		localization_key = "navy_chief_decisive_battle_2"
+		localization_key = scripted_loc_inline_1401
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 103 }
 		}
-		localization_key = "navy_chief_decisive_battle_3"
+		localization_key = scripted_loc_inline_1402
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 104 }
 		}
-		localization_key = "navy_chief_commerce_raiding_1"
+		localization_key = scripted_loc_inline_1403
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 105 }
 		}
-		localization_key = "navy_chief_commerce_raiding_2"
+		localization_key = scripted_loc_inline_1404
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 106 }
 		}
-		localization_key = "navy_chief_commerce_raiding_3"
+		localization_key = scripted_loc_inline_1405
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 107 }
 		}
-		localization_key = "navy_chief_old_guard"
+		localization_key = scripted_loc_inline_1406
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 108 }
 		}
-		localization_key = "navy_chief_reform_1"
+		localization_key = scripted_loc_inline_1407
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 109 }
 		}
-		localization_key = "navy_chief_reform_2"
+		localization_key = scripted_loc_inline_1408
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 110 }
 		}
-		localization_key = "navy_chief_reform_3"
+		localization_key = scripted_loc_inline_1409
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 111 }
 		}
-		localization_key = "navy_chief_maneuver_1"
+		localization_key = scripted_loc_inline_1410
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 112 }
 		}
-		localization_key = "navy_chief_maneuver_2"
+		localization_key = scripted_loc_inline_1411
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 113 }
 		}
-		localization_key = "navy_chief_maneuver_3"
+		localization_key = scripted_loc_inline_1412
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 114 }
 		}
-		localization_key = "navy_anti_submarine_1"
+		localization_key = scripted_loc_inline_1413
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 115 }
 		}
-		localization_key = "navy_anti_submarine_2"
+		localization_key = scripted_loc_inline_1414
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 116 }
 		}
-		localization_key = "navy_anti_submarine_3"
+		localization_key = scripted_loc_inline_1415
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 117 }
 		}
-		localization_key = "navy_naval_air_defense_1"
+		localization_key = scripted_loc_inline_1416
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 118 }
 		}
-		localization_key = "navy_naval_air_defense_2"
+		localization_key = scripted_loc_inline_1417
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 119 }
 		}
-		localization_key = "navy_naval_air_defense_3"
+		localization_key = scripted_loc_inline_1418
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 120 }
 		}
-		localization_key = "navy_fleet_logistics_1"
+		localization_key = scripted_loc_inline_1419
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 121 }
 		}
-		localization_key = "navy_fleet_logistics_2"
+		localization_key = scripted_loc_inline_1420
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 122 }
 		}
-		localization_key = "navy_fleet_logistics_3"
+		localization_key = scripted_loc_inline_1421
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 123 }
 		}
-		localization_key = "navy_amphibious_assault_1"
+		localization_key = scripted_loc_inline_1422
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 124 }
 		}
-		localization_key = "navy_amphibious_assault_2"
+		localization_key = scripted_loc_inline_1423
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 125 }
 		}
-		localization_key = "navy_amphibious_assault_3"
+		localization_key = scripted_loc_inline_1424
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 126 }
 		}
-		localization_key = "navy_submarine_1"
+		localization_key = scripted_loc_inline_1425
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 127 }
 		}
-		localization_key = "navy_submarine_2"
+		localization_key = scripted_loc_inline_1426
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 128 }
 		}
-		localization_key = "navy_submarine_3"
+		localization_key = scripted_loc_inline_1427
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 129 }
 		}
-		localization_key = "navy_capital_ship_1"
+		localization_key = scripted_loc_inline_1428
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 130 }
 		}
-		localization_key = "navy_capital_ship_2"
+		localization_key = scripted_loc_inline_1429
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 131 }
 		}
-		localization_key = "navy_capital_ship_3"
+		localization_key = scripted_loc_inline_1430
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 132 }
 		}
-		localization_key = "navy_screen_1"
+		localization_key = scripted_loc_inline_1431
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 133 }
 		}
-		localization_key = "navy_screen_2"
+		localization_key = scripted_loc_inline_1432
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 134 }
 		}
-		localization_key = "navy_screen_3"
+		localization_key = scripted_loc_inline_1433
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 135 }
 		}
-		localization_key = "navy_carrier_1"
+		localization_key = scripted_loc_inline_1434
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 136 }
 		}
-		localization_key = "navy_carrier_2"
+		localization_key = scripted_loc_inline_1435
 	}
 	text = {
 		trigger = {
 			check_variable = { local_mhc_navy_available_traits_array^v = 137 }
 		}
-		localization_key = "navy_carrier_3"
+		localization_key = scripted_loc_inline_1436
 	}
 }

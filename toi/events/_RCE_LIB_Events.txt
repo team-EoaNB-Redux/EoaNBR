@@ -81,7 +81,7 @@ country_event = {
 			}
 			hidden_effect = {
 				LIB = {
-					if = { 
+					if = {
 						limit = { owns_state = 1347 }
 						start_civil_war = {
 							ruling_party = centrism
@@ -117,7 +117,7 @@ country_event = {
 			}
 			hidden_effect = {
 				LIB = {
-					if = { 
+					if = {
 						limit = { owns_state = 1347 }
 						start_civil_war = {
 							ruling_party = centrism
@@ -148,7 +148,7 @@ country_event = {
 			}
 			hidden_effect = {
 				LIB = {
-					if = { 
+					if = {
 						limit = { owns_state = 1347 }
 						start_civil_war = {
 							ruling_party = centrism
@@ -251,8 +251,8 @@ country_event = {
 	option = {
 		name = liberia.54.a
 		# log = "option:		name = liberia.54.a"
-		ai_chance = { 
-			factor = 10 
+		ai_chance = {
+			factor = 10
 			modifier = {
 				factor = 3
 				has_government = centrism
@@ -282,8 +282,8 @@ country_event = {
 	option = {
 		name = liberia.54.b
 		# log = "option:		name = liberia.54.b"
-		ai_chance = { 
-			factor = 10 
+		ai_chance = {
+			factor = 10
 			modifier = {
 				factor = 7
 				has_government = centrism
@@ -542,7 +542,7 @@ country_event = {
 			LIB = {
 				set_country_flag = USA_assist_lib_debt
 				country_event = { id = liberia.2 }
-			} 
+			}
 		}
 		else = {
 			add_political_power = 20
@@ -1309,10 +1309,18 @@ country_event = {
 					remove_idea = no_heir
 					add_idea = non_monarchical_system
 				}
-				swap_ideas = {
-					remove_idea = religion_animist
-					add_idea = religion_protestant
+				set_temp_variable = {
+					type_temp = token:religion_protestant
 				}
+				eoanbr_pops_country_primary_culture = yes
+				set_temp_variable = {
+					type_temp = token:religion_protestant
+				}
+				eoanbr_pops_country_primary_culture = yes
+				set_temp_variable = {
+					type_temp = token:religion_animist
+				}
+				eoanbr_pops_country_demote_culture = yes
 				swap_ideas = {
 					remove_idea = no_elections
 					add_idea = limited_elections
@@ -3265,7 +3273,7 @@ country_event = { #Election of 1859
 		tag = LIB
 		#date > 1859.5.1
 	}
-	
+
 	immediate = {
 		# log = "[THIS.GetTag]: firing = liberia.61"
 		hidden_effect = {
@@ -3394,7 +3402,7 @@ country_event = { #Election of 1861
 		TAG = LIB
 		#date > 1861.5.7
 	}
-	
+
 	immediate = {
 		# log = "[THIS.GetTag]: firing = liberia.62"
 		hidden_effect = {
@@ -3526,7 +3534,7 @@ country_event = { #Elecion of 1863
 		TAG = LIB
 		#date > 1863.5.5
 	}
-	
+
 	immediate = {
 		# log = "[THIS.GetTag]: firing = liberia.63"
 		hidden_effect = {
@@ -3658,7 +3666,7 @@ country_event = { #Election of 1865
 		TAG = LIB
 		#date > 1865.5.1
 	}
-	
+
 	immediate = {
 		# log = "[THIS.GetTag]: firing = liberia.64"
 		hidden_effect = {
@@ -3710,9 +3718,9 @@ country_event = { #Election of 1865
 		# log = "option:		name = liberia.64.a"
 		trigger = { check_variable = { var = highest_party_ideology value = token:centrism compare = equals } }
 		custom_effect_tooltip = liberia.64.aa
-		add_popularity = { 
-			ideology = centrism 
-			popularity = 0.01 
+		add_popularity = {
+			ideology = centrism
+			popularity = 0.01
 		}
 		hidden_effect = { #President Warner Re-Elected
 			news_event = liberia.58
@@ -3790,7 +3798,7 @@ country_event = { #Election of 1867
 		TAG = LIB
 		#date > 1867.5.7
 	}
-	
+
 	immediate = {
 		# log = "[THIS.GetTag]: firing = liberia.65"
 		hidden_effect = {
@@ -3851,8 +3859,8 @@ country_event = { #Election of 1867
 		set_country_flag = LIB_Payne_1867
 		custom_effect_tooltip = liberia.65.aa
 		add_popularity = {
-			ideology = centrism 
-			popularity = 0.02 
+			ideology = centrism
+			popularity = 0.02
 		}
 		hidden_effect = { #James Spriggs Payne Elected
 			news_event = liberia.59
@@ -3867,9 +3875,9 @@ country_event = { #Election of 1867
 			factor = 50
 		}
 		set_country_flag = LIB_Roye_1867
-		add_popularity = { 
-			ideology = traditional_conservatism 
-			popularity = 0.05 
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.05
 		}
 		hidden_effect = { #Edward James Roye Elected
 			news_event = liberia.68
@@ -3878,9 +3886,9 @@ country_event = { #Election of 1867
 	option = { #Alt History Outcome
 		name = liberia.65.c
 		# log = "option:		name = liberia.65.c"
-		trigger = { 
-			NOT = { check_variable = { var = highest_party_ideology value = token:centrism compare = equals } } 
-			NOT = { check_variable = { var = highest_party_ideology value = token:traditional_conservatism compare = equals } } 
+		trigger = {
+			NOT = { check_variable = { var = highest_party_ideology value = token:centrism compare = equals } }
+			NOT = { check_variable = { var = highest_party_ideology value = token:traditional_conservatism compare = equals } }
 		}
 		if = {
 			limit = { check_variable = { var = highest_party_ideology value = token:anarchism compare = equals } }
@@ -3945,7 +3953,7 @@ country_event = { #Election of 1869
 		TAG = LIB
 		#date > 1869.5.4
 	}
-	
+
 	immediate = {
 		# log = "[THIS.GetTag]: firing = liberia.66"
 		hidden_effect = {
@@ -4005,12 +4013,12 @@ country_event = { #Election of 1869
 				has_country_flag = LIB_Payne_1867
 			}
 			custom_effect_tooltip = liberia.66.aa
-			add_popularity = { 
-				ideology = centrism 
-				popularity = 0.01 
+			add_popularity = {
+				ideology = centrism
+				popularity = 0.01
 			}
 			hidden_effect = {
-				news_event = liberia.70 
+				news_event = liberia.70
 			}
 		}
 		if = {
@@ -4023,8 +4031,8 @@ country_event = { #Election of 1869
 				news_event = liberia.59
 			}
 			add_popularity = {
-				ideology = centrism 
-				popularity = 0.05 
+				ideology = centrism
+				popularity = 0.05
 			}
 		}
 	}
@@ -4050,9 +4058,9 @@ country_event = { #Election of 1869
 			hidden_effect = { #Edward James Roye Re-Elected
 				news_event = liberia.69
 			}
-			add_popularity = { 
-				ideology = traditional_conservatism 
-				popularity = 0.01 
+			add_popularity = {
+				ideology = traditional_conservatism
+				popularity = 0.01
 			}
 		}
 		if = {
@@ -4064,18 +4072,18 @@ country_event = { #Election of 1869
 			hidden_effect = { #Edward James Roye Elected
 				news_event = liberia.60
 			}
-			add_popularity = { 
-				ideology = traditional_conservatism 
-				popularity = 0.05 
+			add_popularity = {
+				ideology = traditional_conservatism
+				popularity = 0.05
 			}
 		}
 	}
 	option = { #Alt History Outcome
 		name = liberia.66.c
 		# log = "option:		name = liberia.66.c"
-		trigger = { 
-			NOT = { check_variable = { var = highest_party_ideology value = token:centrism compare = equals } } 
-			NOT = { check_variable = { var = highest_party_ideology value = token:traditional_conservatism compare = equals } } 
+		trigger = {
+			NOT = { check_variable = { var = highest_party_ideology value = token:centrism compare = equals } }
+			NOT = { check_variable = { var = highest_party_ideology value = token:traditional_conservatism compare = equals } }
 		}
 		if = {
 			limit = { check_variable = { var = highest_party_ideology value = token:anarchism compare = equals } }
@@ -4125,7 +4133,7 @@ country_event = { #Election of 1869
 
 ###ELECTION NEWS EVENTS###
 
-news_event = { 
+news_event = {
 	id = liberia.67
 	title = liberia.67.t
 	desc = liberia.67.d
@@ -4248,17 +4256,17 @@ country_event = { #Warner Inaugerated
 	id = liberia.71
 	title = liberia.71.t
 	desc = liberia.71.d
-		
+
 	fire_only_once = yes
 	is_triggered_only = yes
 
-		
+
 	trigger = {
 		tag = LIB
 		has_country_flag = LIB_Warner_1863
 		#date > 1864.1.4
 	}
-		
+
 	option = {
 		name = liberia.71.a
 		# log = "option:		name = liberia.71.a"
@@ -4278,16 +4286,16 @@ country_event = { #Payne Inaugerated
 	id = liberia.72
 	title = liberia.72.t
 	desc = liberia.72.d
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
-		
+
 	trigger = {
 		tag = LIB
 		has_country_flag = LIB_Payne_1867
 		#date > 1868.1.6
 	}
-		
+
 	option = {
 		name = liberia.72.a
 		# log = "option:		name = liberia.72.a"
@@ -4307,16 +4315,16 @@ country_event = { #Roye Inaugerated - ALt Hist.
 	id = liberia.74
 	title = liberia.74.t
 	desc = liberia.74.d
-		
+
 	fire_only_once = yes
 	is_triggered_only = yes
-		
+
 	trigger = {
 		tag = LIB
 		has_country_flag = LIB_Roye_1867
 		#date > 1868.1.6
 	}
-		
+
 	option = {
 		name = liberia.74.a
 		# log = "option:		name = liberia.74.a"
@@ -4328,10 +4336,10 @@ country_event = { #Roye Inaugerated - ALt Hist.
 			expire = 1872.2.11
 			ideology = conserv
 		}
-		set_party_name = { 
-			ideology = traditional_conservatism 
+		set_party_name = {
+			ideology = traditional_conservatism
 			long_name = LIB_party_true_whig_long
-			name = LIB_party_true_whig 
+			name = LIB_party_true_whig
 		}
 		set_country_flag = LIB_election_alt_early_whig
 		set_politics = {
@@ -4344,10 +4352,10 @@ country_event = { #Roye Inaugerated - 1869
 	id = liberia.73
 	title = liberia.73.t
 	desc = liberia.73.d
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	trigger = {
 		tag = LIB
 		has_country_flag = LIB_Roye_1869
@@ -4356,7 +4364,7 @@ country_event = { #Roye Inaugerated - 1869
 			has_country_flag = LIB_Roye_1867
 		}
 	}
-	
+
 	option = {
 		name = liberia.73.a
 		# log = "option:		name = liberia.73.a"
@@ -4378,10 +4386,10 @@ country_event = { #Payne Inaugerated - 1869 - ALt Hist.
 	id = liberia.75
 	title = liberia.75.t
 	desc = liberia.75.d
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
-		
+
 	trigger = {
 		tag = LIB
 		has_country_flag = LIB_Payne_1869
@@ -4390,7 +4398,7 @@ country_event = { #Payne Inaugerated - 1869 - ALt Hist.
 			has_country_flag = LIB_Payne_1867
 		}
 	}
-	
+
 	option = {
 		name = liberia.75.a
 		# log = "option:		name = liberia.75.a"
@@ -4427,9 +4435,9 @@ country_event = { #Formation of the Opposition Party (TWP)
 		name = liberia.76.a
 		# log = "option:		name = liberia.76.a"
 		set_party_name = { #Opposition - Opposition Party
-			ideology = traditional_conservatism 
+			ideology = traditional_conservatism
 			long_name = LIB_party_opposition_long
-			name = LIB_party_opposition 
+			name = LIB_party_opposition
 		}
 		create_country_leader = {
 					name = "Edward James Roye"
@@ -4461,9 +4469,9 @@ country_event = { #Formation of the True Whig Party
 		name = liberia.77.a
 		# log = "option:		name = liberia.77.a"
 		set_party_name = { #TWP - True Whig Party
-			ideology = traditional_conservatism 
+			ideology = traditional_conservatism
 			long_name = LIB_party_true_whig_long
-			name = LIB_party_true_whig 
+			name = LIB_party_true_whig
 		}
 		create_country_leader = {
 			name = "Edward James Roye"

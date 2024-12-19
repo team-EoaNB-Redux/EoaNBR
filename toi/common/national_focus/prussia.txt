@@ -91,20 +91,20 @@ focus_tree = {
 		}
 		ai_will_do = { base = 80 }
 		bypass = {
-			OR = {
-				64 = {
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-				951 = {
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
+			# OR = {
+			# 	64 = {
+			# 		free_building_slots = {
+			# 			building = infrastructure
+			# 			size < 1
+			# 		}
+			# 	}
+			# 	951 = {
+			# 		free_building_slots = {
+			# 			building = infrastructure
+			# 			size < 1
+			# 		}
+			# 	}
+			# }
 		}
 
 		prerequisite = { focus = PRS_focus_state_rail }
@@ -134,22 +134,22 @@ focus_tree = {
 		}
 		ai_will_do = { base = 80 }
 		bypass = {
-			OR = {
-				AND = {
-					66 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-					67 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-				}
-			}
+			# OR = {
+			# 	AND = {
+			# 		66 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 		67 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 	}
+			# }
 		}
 
 		prerequisite = { focus = PRS_focus_berlin_anhalt_rail }
@@ -186,34 +186,34 @@ focus_tree = {
 		}
 		ai_will_do = { base = 80 }
 		bypass = {
-			OR = {
-				AND = {
-					5 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-					85 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-					1001 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-					1003 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-				}
-			}
+			# OR = {
+			# 	AND = {
+			# 		5 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 		85 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 		1001 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 		1003 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 	}
+			# }
 		}
 
 		prerequisite = { focus = PRS_focus_silesia_rail }
@@ -244,28 +244,28 @@ focus_tree = {
 		}
 		ai_will_do = { base = 80 }
 		bypass = {
-			OR = {
-				AND = {
-					51 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-					57 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-					1009 = {
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-				}
-			}
+			# OR = {
+			# 	AND = {
+			# 		51 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 		57 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 		1009 = {
+			# 			free_building_slots = {
+			# 				building = infrastructure
+			# 				size < 1
+			# 			}
+			# 		}
+			# 	}
+			# }
 		}
 
 		prerequisite = { focus = PRS_focus_ostbahn_rail }
@@ -508,7 +508,24 @@ focus_tree = {
 		prerequisite = { focus = PRS_focus_economy }
 
 		completion_reward = {
-			add_political_power = 100
+			set_temp_variable = { x_temp = -25000 }
+			add_treasury = yes
+
+			951 = { # Berlin
+				set_temp_variable = { x_temp = 1 }
+				set_temp_variable = { industry_token = token:urban_center }
+				add_x_industries = yes
+			}
+			64 = { # Brandenburg
+				set_temp_variable = { x_temp = 1 }
+				set_temp_variable = { industry_token = token:urban_center }
+				add_x_industries = yes
+			}
+			# 51 = { # Rhineland
+			# 	set_temp_variable = { x_temp = 1 }
+			# 	set_temp_variable = { industry_token = token:urban_center }
+			# 	add_x_industries = yes
+			# }
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
 		}
 	}
@@ -2367,6 +2384,7 @@ focus_tree = {
 			prerequisite = { focus = PRS_Lost_In_Seven_Week_War }
 			completion_reward = {
 				custom_effect_tooltip = alternate_historical_tooltip
+				custom_effect_tooltip = unfinished_tooltip
 			}
 		}
 
@@ -2729,10 +2747,10 @@ focus_tree = {
 						}
 					}
 					PRS_otto_von_bismarck = {
-						swap_ruler_traits = {
-							remove = PRS_trait_Bismarck_Poor_Chancellor
-							add = PRS_trait_Bismarck_Poor_Chancellor_1
-						}
+						# swap_ruler_traits = {
+						# 	remove = PRS_trait_Bismarck_Poor_Chancellor
+						# 	add = PRS_trait_Bismarck_Poor_Chancellor_1
+						# }
 					}
 				}
 				PRS = { country_event = prussiarevolution.2 }			
@@ -2779,10 +2797,10 @@ focus_tree = {
 						}
 					}
 					PRS_otto_von_bismarck = {
-						swap_ruler_traits = {
-							remove = PRS_trait_Bismarck_Poor_Chancellor
-							add = PRS_trait_Bismarck_Poor_Chancellor_1
-						}
+						# swap_ruler_traits = {
+						# 	remove = PRS_trait_Bismarck_Poor_Chancellor
+						# 	add = PRS_trait_Bismarck_Poor_Chancellor_1
+						# }
 					}
 				}
 				PRS = { country_event = prussiarevolution.2 }
@@ -2930,35 +2948,35 @@ focus = {
 	}
 }
 
-focus = { # TBD
-id = PRS_Focus_External_Help
-icon = placeholder
-relative_position_id = PRS_Expand_Our_Knowledge
-x = 0
-y = 1
-cost = 70 #placeholder
-search_filters = {
-	FOCUS_FILTER_POLITICAL
-	FOCUS_FILTER_ALTHISTORY
-}
-allow_branch = {
-	has_country_flag = eoanb_flag_PRS_decentralized_ngc
-}
-available = {
-	NOT = {
-		has_completed_focus = PRS_Focus_Learn_From_Within
+	focus = { # TBD
+		id = PRS_Focus_External_Help
+		icon = placeholder
+		relative_position_id = PRS_Expand_Our_Knowledge
+		x = 0
+		y = 1
+		cost = 70 #placeholder
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ALTHISTORY
+		}
+		allow_branch = {
+			has_country_flag = eoanb_flag_PRS_decentralized_ngc
+		}
+		available = {
+			NOT = {
+				has_completed_focus = PRS_Focus_Learn_From_Within
+			}
+		}
+		ai_will_do = {
+			base = 500
+		}
+		prerequisite = { focus = PRS_Revolution_Expand_Our_Knowledge }
+		completion_reward = {
+			# placeholder
+			custom_effect_tooltip = unfinished_tooltip
+			custom_effect_tooltip = alternate_historical_tooltip
+		}
 	}
-}
-ai_will_do = {
-	base = 500
-}
-prerequisite = { focus = PRS_Revolution_Expand_Our_Knowledge }
-completion_reward = {
-	# placeholder
-	custom_effect_tooltip = unfinished_tooltip
-	custom_effect_tooltip = alternate_historical_tooltip
-}
-}
 
 		focus = {
 			id = PRS_External_Help_Presidential_Model
@@ -3074,20 +3092,18 @@ completion_reward = {
 			search_filters = {
 				FOCUS_FILTER_POLITICAL
 			}
-
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_Triggered_By_Event_tt
 					always = no
 				}
+				# 1862
 			}
 			ai_will_do = { base = 100 }
 			bypass = {
 				has_idea = PRS_Friedrich_III
 			}
-
 			prerequisite = {  }
-
 			completion_reward = {
 				decrease_ps_by_one = yes
 				add_ideas = PRS_idea_constitutional_crisis
@@ -3182,7 +3198,7 @@ completion_reward = {
 				base = 100
 				
 			}
-			prerequisite = { focus = PRS_focus_dissolve_parliament }
+			prerequisite = { focus = PRS_focus_News_Breaks }
 			completion_reward = {
 				# placeholder
 				custom_effect_tooltip = unfinished_tooltip
@@ -3205,9 +3221,9 @@ completion_reward = {
 
 			available = {
 				OR = {
-					has_completed_focus = PRS_Parliamentary_Political_Disaster
+					has_completed_focus = PRS_Deposed_Parliamentary_Political_Disaster
 					has_completed_focus = PRS_Open_Confrontation
-					has_completed_focus = PRS_Parliamentary_Political_Disaster
+					has_completed_focus = PRS_Abdicated_Parliamentary_Political_Disaster
 				}
 			}
 			ai_will_do = {
@@ -3234,9 +3250,9 @@ completion_reward = {
 			}
 			available = {
 				OR = {
-					has_completed_focus = PRS_Parliamentary_Political_Disaster
+					has_completed_focus = PRS_Deposed_Parliamentary_Political_Disaster
 					has_completed_focus = PRS_Open_Confrontation
-					has_completed_focus = PRS_Parliamentary_Political_Disaster
+					has_completed_focus = PRS_Abdicated_Parliamentary_Political_Disaster
 				}
 			}
 			ai_will_do = {
@@ -3329,7 +3345,7 @@ completion_reward = {
 		}
 
 		focus = {
-			id = PRS_Parliamentary_Political_Disaster
+			id = PRS_Deposed_Parliamentary_Political_Disaster
 			icon = placeholder
 			relative_position_id = PRS_focus_king_deposed
 			x = 0
@@ -4612,8 +4628,21 @@ completion_reward = {
 		prerequisite = { focus = PRS_focus_fp_like_ENG }
 
 		completion_reward = {
-			add_political_power = 100
-			ENG = { add_political_power = 100 }
+			ENG = { 
+				country_event = { days = 1 id = prussiaforeign.48 } 
+				effect_tooltip = {
+					custom_effect_tooltip = needs_approval
+					ENG = {
+						add_to_variable = { var = investment_fund value = 40000 tooltip = investment_fund_change_positive_tooltip }
+					}
+					PRS = {
+						add_to_variable = { var = investment_fund value = 20000 tooltip = investment_fund_change_positive_tooltip }
+						hidden_effect = {
+							PRS = { country_event = { days = 1 id = prussiaforeign.49 } }
+						}
+					}
+				}
+			}
 		}
 	}
 

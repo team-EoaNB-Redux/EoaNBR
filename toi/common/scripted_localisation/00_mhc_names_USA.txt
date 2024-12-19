@@ -5,55 +5,55 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = "USA_Ulysses_S_Grant"
+		localization_key = scripted_loc_inline_839
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "USA_George_McClellan"
+		localization_key = scripted_loc_inline_840
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 9 }
 		}
-		localization_key = "USA_William_T_Sherman"
+		localization_key = scripted_loc_inline_841
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "USA_Winfield_Scott"
+		localization_key = scripted_loc_inline_842
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "USA_Henry_Halleck"
+		localization_key = scripted_loc_inline_843
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "USA_Thomas_J_Jackson"
+		localization_key = scripted_loc_inline_844
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "USA_Robert_E_Lee"
+		localization_key = scripted_loc_inline_845
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = "USA_George_H_Thomas"
+		localization_key = scripted_loc_inline_846
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = "USA_John_B_Hood"
+		localization_key = scripted_loc_inline_847
 	}
 	###Army Replacement Marker###
 }
@@ -65,13 +65,13 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "USA_John_Ericsson"
+		localization_key = scripted_loc_inline_848
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "USA_Stephen_Mallory"
+		localization_key = scripted_loc_inline_849
 	}
 	###Navy Replacement Marker###
 }

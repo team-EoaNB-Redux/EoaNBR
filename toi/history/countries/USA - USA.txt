@@ -14,6 +14,10 @@
 		#navy_experience = 5
 		set_political_power = 0
 
+		# Dynamic Modifiers
+		USA_navy_modifier_setup = yes
+		USA_army_modifier_setup = yes
+
 		if = {
 			limit = { date < 1860.1.1 }
 			# System
@@ -87,45 +91,54 @@
 	}
 	# Laws
 	add_ideas = {
-		#POLITICS
+		#State of the Country
 		hos_is_leader
+		non_monarchical_system
+		industrializing
 		victorian_era
 		law_victorian_army
-		industrializing
-		non_monarchical_system
-		presidential_republic
-		#balanced_powers
-		#federalist
-
-		#Economic
-		civilian_economy
-		export_focus
-		two_percent
-		low_taxes
-		cl_legal
-		unlimited_work_day
-
-		#Population
 		fast_growth
-		border_control
-		volunteer_only
-		usa_slavery_law
-		universal_male_suffrage
 
+		#Government
+		presidential_republic
 		constitution_adopted
 		free_elections
 
 		#Culture
 		open_schools
 		secular_state
+		free_press
+		foa_free_assembly
+		tu_free_unions
+		jury_court
+
+		#Economic Policies
+		export_focus
+		low_taxes
+		cl_legal
+		unlimited_work_day
+		lp_land_purchase
+		civilian_economy
+
+		#Population
+		fast_growth
+		border_control
+		usa_slavery_law
+		volunteer_only
+		universal_male_suffrage
+		pp_open_politics
+
+		#Internal Budget
+		hc_no_healthcare
+		law_police_force
+		inframain_basic_maintenance_infrastructure
+		navinfra_low_naval_infrastructure
+		one_percent
+		open_schools
 
 		### National Spirits
-		#institution_rationalism
-		#institution_settlement
-		#institution_centralization
-		#institution_industrialization
 
-		# Politics
+		# Politicial Ideas
 		USA_executive_branch_idea
 		USA_congressional_branch_idea
 		USA_judicial_branch_idea
@@ -798,7 +811,7 @@
 
 		#Population
 		stagnation_growth
-		border_control
+		open_borders
 		volunteer_only
 		usa_slavery_law
 		universal_male_suffrage

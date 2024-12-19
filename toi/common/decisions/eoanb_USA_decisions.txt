@@ -3366,6 +3366,12 @@ USA_clayton_bulwer_treaty_decision = {
 		#NOT = {
 		#has_global_flag = eoanb_flag_sow_ongoing
 		has_completed_focus = USA_clayton_bulwer_treaty_focus
+		NIC = {
+			NOT = { controls_state = 1154 }
+		}
+		HON = {
+			NOT = { controls_state = 1155 }
+		}
 		has_country_leader = {
 			name = "James Buchanan"
 		}
@@ -5954,7 +5960,7 @@ USA_return_from_ashes = {
 				owns_state = 1301
 				owns_state = 1279
 				owns_state = 1288
-				owns_state = 376
+				# owns_state = 376
 			}
 		}
 
@@ -5974,7 +5980,7 @@ USA_return_from_ashes = {
 					1301 = { is_core_of = USA }
 					1279 = { is_core_of = USA }
 					1288 = { is_core_of = USA }
-					376 = { is_core_of = USA }
+					# 376 = { is_core_of = USA }
 				}
 			}
 		}
@@ -6001,7 +6007,7 @@ USA_return_from_ashes = {
 						state = 1301
 						state = 1279
 						state = 1288
-						state = 376
+						# state = 376
 					}
 				}
 				add_core_of = USA

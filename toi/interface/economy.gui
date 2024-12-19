@@ -1056,11 +1056,12 @@ guiTypes = {
 	containerWindowType = { #State Economy Window
 		name = "state_economy_window_container"
 		position = {x=250 y=125}
-		size = { width=1275 height=690 }
+		size = { width=1000 height=690 }
 
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
+		clipping = no
 
 		background = {
 			name = "Background"
@@ -2381,6 +2382,7 @@ guiTypes = {
 						background = {
 							name = "special_buildings_background"
 							spriteType = "GFX_tiled_bg"
+							alwaystransparent = yes
 						}
 
 						containerWindowType = { # Industrial Complex
@@ -2437,6 +2439,7 @@ guiTypes = {
 								spriteType = "GFX_increase_size_button"
 								position = { x = 170 y = 6 }
 								clicksound = click_checkbox
+								pdx_tooltip = industrial_complex_construction_tt
 							}
 
 							iconType ={
@@ -2502,7 +2505,7 @@ guiTypes = {
 								spriteType = "GFX_increase_size_button"
 								position = { x = 170 y = 6 }
 								clicksound = click_checkbox
-
+								pdx_tooltip = arms_factory_construction_tt
 							}
 
 							iconType ={
@@ -2568,7 +2571,7 @@ guiTypes = {
 								spriteType = "GFX_increase_size_button"
 								position = { x = 170 y = 6 }
 								clicksound = click_checkbox
-
+								pdx_tooltip = dockyard_construction_tt
 							}
 
 							iconType ={
@@ -2928,6 +2931,7 @@ guiTypes = {
 						background = {
 							name = "buildings_list_background"
 							spriteType = "GFX_tiled_bg"
+							alwaystransparent = yes
 						}
 						#verticalScrollbar = "right_vertical_slider"
 						#vertical_scroll_step = 5
@@ -2957,6 +2961,7 @@ guiTypes = {
 						background = {
 							name = "buildings_list_background"
 							spriteType = "GFX_eoanbr_tiled_window_2b_border"
+							alwaystransparent = yes
 						}
 						verticalScrollbar = "right_vertical_slider"
 						vertical_scroll_step = 5
@@ -2985,6 +2990,7 @@ guiTypes = {
 						background = {
 							name = "susbs_farms_background"
 							spriteType = "GFX_tiled_bg"
+							alwaystransparent = yes
 						}
 						instantTextBoxType = {
 							name = "arable_land_loc"
@@ -3065,6 +3071,7 @@ guiTypes = {
 					background = {
 						name = "Background"
 						spriteType = "GFX_tiled_header_1"
+						alwaystransparent = yes
 					}
 					instantTextBoxType = {
 						name = "statistics_title"
@@ -3708,6 +3715,23 @@ guiTypes = {
 			#alwaystransparent = yes
 
 			pdx_tooltip = rgo_productivity_tt
+		}
+
+		buttonType ={
+			name ="rgo_prospecting_button"
+			spriteType = "GFX_prospecting_button"
+			position = { x = 239 y = 6 }
+			clicksound = click_checkbox
+
+			pdx_tooltip = rgo_prospecting_tt
+		}
+		buttonType ={
+			name ="rgo_prospecting_button_active"
+			spriteType = "GFX_prospecting_button_active"
+			position = { x = 239 y = 6 }
+			clicksound = click_checkbox
+			
+			pdx_tooltip = rgo_prospecting_tt
 		}
 	}
 	containerWindowType = { #GDP Graph Point
@@ -5231,6 +5255,8 @@ guiTypes = {
 			name = "market_background"
 			quadTextureSprite ="GFX_market_entry_background"
 			position = { x=-5 y=0 }
+
+			pdx_tooltip = market_entry_tt
 		}
 
 		iconType ={

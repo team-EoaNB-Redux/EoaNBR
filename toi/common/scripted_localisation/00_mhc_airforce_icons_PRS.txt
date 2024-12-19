@@ -9,7 +9,7 @@ defined_text = {
 				value = mhc_afc_value
 			}
 		}
-		localization_key = "[GetMHCAirforceAfcImageGeneric]"
+		localization_key = scripted_loc_inline_35
 	}
 	text = {
 		trigger = {
@@ -80,7 +80,7 @@ defined_text = {
 				value = mhc_ach_value
 			}
 		}
-		localization_key = "[GetMHCAirforceAchImageGeneric]"
+		localization_key = scripted_loc_inline_36
 	}
 	text = {
 		trigger = {
@@ -151,7 +151,7 @@ defined_text = {
 				value = mhc_opg_value
 			}
 		}
-		localization_key = "[GetMHCAirforceOpgImageGeneric]"
+		localization_key = scripted_loc_inline_37
 	}
 	text = {
 		trigger = {
@@ -222,7 +222,7 @@ defined_text = {
 				value = mhc_wic_value
 			}
 		}
-		localization_key = "[GetMHCAirforceWicImageGeneric]"
+		localization_key = scripted_loc_inline_38
 	}
 	text = {
 		trigger = {
@@ -293,7 +293,7 @@ defined_text = {
 				value = mhc_supc_value
 			}
 		}
-		localization_key = "[GetMHCAirforceSupcImageGeneric]"
+		localization_key = scripted_loc_inline_39
 	}
 	text = {
 		trigger = {

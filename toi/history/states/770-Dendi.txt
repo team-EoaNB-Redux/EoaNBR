@@ -19,5 +19,10 @@ state = {
 		owner = DDI
 		add_core_of = DDI
 		afr_state_setup_scripted_effect = yes
+
+		1901.1.1 = {
+			owner = FRA
+			remove_core_of = DDI
+		}
 	}
 }

@@ -30,6 +30,7 @@ guiTypes = {
 			spriteType = "GFX_commonwealth_research"
 		}
 	}
+	
 
 	containerWindowType = {
 		name = "countrytechnologyview"
@@ -39,6 +40,7 @@ guiTypes = {
 		hide_animation_type = accelerated
 		animation_time = 300
 		size = { width = 560 height = 100%% }
+		margin = { top = 0 bottom = -5 }
 
 		hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -60,7 +62,7 @@ guiTypes = {
 					quadTextureSprite = "GFX_tiled_header_1"
 				}
 				instantTextboxType = {
-					name = "politics_tab_header_title"
+					name = "research_title"
 					position = { x = 42 y = 5 }
 					textureFile = ""
 					font = "hoi_36header"
@@ -83,136 +85,212 @@ guiTypes = {
 			}
 		#
 
+	
+
 		containerWindowType = {
-			name = "research_slots"
-			position = { x = 0 y = 168 }
-			size = { width = 562 height = -234 }
-			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 0 bottom = 13 }
+				name = "research_slots"
+				position = { x = 0 y = 76 }
+				size = { width = 562 height = -234 }
+				verticalScrollbar = "right_vertical_slider"
+				margin = { top = 0 bottom = 13 }
 
-			background = {
-				name = "Background"
-				quadTextureSprite = "GFX_eoanbr_tiled_window_2b_border"
-			}
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_eoanbr_tiled_window_2b_border"
+				}
 
-			background = {
-				name = "Background"
-				quadTextureSprite = "GFX_tiled_generic_overlay_bg1"
-			}
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_generic_overlay_bg1"
+				}
 
-			gridboxType = {
-				name = "research_slots_grid"
-				position = { x = 16 y = 12 }
-				size = { width = -20 height = 100%% }
-				slotsize = { width = 500 height = 90 }
-				format = "UPPER_LEFT"
+				containerWindowType = {
+					name ="slots_window"
+					position = { x = 0 y=140 }
+					size = { width=550 height=-1 }
+					verticalScrollbar = "right_vertical_slider"
+					scroll_wheel_factor = 40
+					smooth_scrolling = yes
+
+					background = {
+						name = "Background"
+						spriteType = "GFX_tiled_window_transparent"
+					}
+				
+					gridboxType = {
+						name = "research_slots_grid"
+						position = { x =15 y=0 }
+						size = { width = -20 height = 100%% }
+						slotsize = { width = 500 height = 100 }
+						format = "UPPER_LEFT"
+					}
+				}
+
+			containerWindowType = {
+				name = "research_win_top"
+				position = { x = 2 y = 8 }
+				size = { width = 560 height = 130 }
+
+				background = {
+					name = "Background"
+					spriteType = "GFX_tiled_bg"
+				}
+
+				# instantTextboxType = {
+				# 	name = "limited_research_bonus_text"
+				# 	position = { x = -250 y = 110 }
+				# 	textureFile = ""
+				# 	font = "hoi_18mbs"
+				# 	borderSize = {x = 0 y = 0}
+				# 	text = "LIMITED_RESEARCH_BONUS"
+				# 	maxWidth = 130
+				# 	maxHeight = 20
+				# 	format = left 
+				# 	fixedsize = yes
+				# }
+
+				iconType = {
+					name = "institution_decoration"
+					spriteType = "GFX_win_header_short"
+					position = { x = 13 y = 13 }
+					alwaystransparent = yes
+				}
+				#instantTextBoxType = {
+				#	name = "institution_header_title"
+				#	position = { x = 24 y = 11 }
+				#	maxHeight = 20
+				#	maxWidth = 200
+				#	text = "research_header_title"
+				#	font = "hoi_24header"
+				#	pdx_tooltip = "LIMITED_RESEARCH_BONUS"
+				#	# pdx_tooltip_delayed = "institution_header_title_tt_delayed"
+				#}
+
+				instantTextboxType = {
+					name = "limited_research_bonus_text"
+					position = { x = 24 y = 13 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					text = "LIMITED_RESEARCH_BONUS"
+					maxWidth = 130
+					maxHeight = 20
+					format = left
+					fixedsize = yes
+				}
+				instantTextboxType = {
+					name = "limited_research_bonus_value"
+					position = { x = 228 y = 13 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					text = "999"
+					maxWidth = 50
+					maxHeight = 20
+					format = left
+				}
+
+				iconType = {
+					name = "focus_bonuses_bg"
+					position = { x = 286 y = 12 }
+					spriteType = "GFX_win_header_short_right"
+				}
+
+				iconType = {
+					name = "focus_bonuses"
+					position = { x = 180 y = 14 }
+					spriteType = "GFX_focus_bonuses_icon"
+				}
+
+				iconType = {
+					name = "research_speed_icon"
+					position = { x = 465 y = 13 }
+					spriteType = "GFX_research_speed_icon"
+				}
+				instantTextboxType = {
+						name = "research_speed_text"
+						position = { x = 340 y = 14 }
+						textureFile = ""
+						font = "hoi_18mbs"
+						borderSize = {x = 0 y = 0}
+						text = "RESEARCH_SPEED"
+						maxWidth = 125
+						maxHeight = 20
+						format = left
+						fixedsize = yes
+					}
+
+				instantTextboxType = {
+					name = "research_speed_value"
+					position = { x = 484 y = 16 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = { x = 0 y = 0 }
+					text = "999"
+					maxWidth = 50
+					maxHeight = 20
+					format = right
+				}
+
+				gridboxType = {
+					name = "research_groups_grid"
+					position = { x = 328 y = -10 }
+					size = { width = 192 height = 128 }
+					slotsize = { width = 34 height = 34 }
+					format = "RIGHT"
+					max_slots_horizontal = 1
+					max_slots_vertical = 16
+				}
 			}
 		}
 
 		containerWindowType = {
-			name = "research_win_top"
-			position = { x = 2 y = 44 }
-			size = { width = 560 height = 130 }
+			name = "tabs"
+			position = { x=0 y=44 }
+			size = { width = 100%% height = 30 }
 
-			background = {
-				name = "Background"
-				spriteType = "GFX_tiled_bg"
+			buttonType = {
+				name = "research_slots_tab"
+				position = { x = -250 y = -15 }
+				quadTextureSprite = "GFX_eoanbr_header_tab_button_258x45"
+				text = "RESEARCH_TAB_SLOTS"
+				buttonFont = "hoi_20b"
+				frame = 1
+				clicksound = click_default
+				Orientation = "CENTER"
 			}
 
-			# instantTextboxType = {
-			# 	name = "limited_research_bonus_text"
-			# 	position = { x = -250 y = 110 }
-			# 	textureFile = ""
-			# 	font = "hoi_18mbs"
-			# 	borderSize = {x = 0 y = 0}
-			# 	text = "LIMITED_RESEARCH_BONUS"
-			# 	maxWidth = 130
-			# 	maxHeight = 20
-			# 	format = left 
-			# 	fixedsize = yes
-			# }
-
-			iconType = {
-				name = "institution_decoration"
-				spriteType = "GFX_win_header_short"
-				position = { x = 13 y = 13 }
-				alwaystransparent = yes
-			}
-			instantTextBoxType = {
-				name = "institution_header_title"
-				position = { x = 24 y = 11 }
-				maxHeight = 20
-				maxWidth = 200
-				text = "research_header_title"
-				font = "hoi_24header"
-				pdx_tooltip = "LIMITED_RESEARCH_BONUS"
-				# pdx_tooltip_delayed = "institution_header_title_tt_delayed"
-			}
-
-			instantTextboxType = {
-				name = "limited_research_bonus_value"
-				position = { x = 228 y = 11 }
-				textureFile = ""
-				font = "hoi_24header"
-				borderSize = {x = 0 y = 0}
-				text = "999"
-				maxWidth = 50
-				maxHeight = 20
-				format = left
-			}
-
-			iconType = {
-				name = "focus_bonuses_bg"
-				position = { x = 286 y = 12 }
-				spriteType = "GFX_win_header_short_right"
-			}
-
-			iconType = {
-				name = "focus_bonuses"
-				position = { x = 296 y = 14 }
-				spriteType = "GFX_focus_bonuses_icon"
-			}
-
-			iconType = {
-				name = "research_speed_icon"
-				position = { x = 465 y = 13 }
-				spriteType = "GFX_research_speed_icon"
-			}
-
-			instantTextboxType = {
-				name = "research_speed_value"
-				position = { x = 484 y = 16 }
-				textureFile = ""
-				font = "hoi_18mbs"
-				borderSize = { x = 0 y = 0 }
-				text = "999"
-				maxWidth = 50
-				maxHeight = 20
-				format = right
-			}
-
-			gridboxType = {
-				name = "research_groups_grid"
-				position = { x = 328 y = -10 }
-				size = { width = 192 height = 128 }
-				slotsize = { width = 34 height = 34 }
-				format = "RIGHT"
-				max_slots_horizontal = 2
-				max_slots_vertical = 16
+			buttonType = {
+				name = "facilities_tab"
+				position = { x = 0 y = -15 }
+				quadTextureSprite = "GFX_eoanbr_header_tab_button_258x45"
+				buttonFont = "hoi_20b"
+				frame = 2
+				text = "RESEARCH_TAB_FACILITIES"
+				clicksound = click_default
+				Orientation = "CENTER"
 			}
 		}
 
-		#containerWindowType = {
-		#	name = "research_win_bottom"
-		#	position = { x = 1 y = -87 }
-		#	size = { width = 546 height = 87 }
-		#	Orientation = LOWER_LEFT
-		#
-		#	background = {
-		#		name = "Background"
-		#		quadTextureSprite = "GFX_production_win_bottom"
-		#	}
-		#}
+		containerWindowType = {
+			name ="facilities"
+			position = { x=0 y=80 }
+			size = { width=550 height=-5 }
+
+			# containerWindowType facilities_view (cf. facility_roster.gui) is embedded by code here
+		}
+
+		containerWindowType = {
+			name = "research_win_bottom"
+			position = { x = 1 y = -87 }
+			size = { width = 546 height = 87 }
+			Orientation = LOWER_LEFT
+		
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_production_win_bottom"
+			}
+		}
 	}
 
 	containerWindowType = {

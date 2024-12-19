@@ -333,7 +333,7 @@ country_event = { #Welcome back Hispaniola
 	option = {
 		name = spain_hispaniola.1.a
 		# log = "option:		name = spain_hispaniola.1.a"
-		trigger = { NOT = { has_completed_focus = SPR_give_power_to_the_landowners } }
+		trigger = { not = { has_completed_focus = SPR_give_power_to_the_landowners } }
 		ai_chance = { 
 			base = 80
 		}
@@ -703,7 +703,7 @@ country_event = { #Not intervened Masonry in Hispaniola
 	option = {
 		name = spain_caribbean.13.a
 		# log = "option:		name = spain_caribbean.13.a"
-		trigger = { NOT = { has_completed_focus = SPR_give_power_to_the_landowners } }
+		trigger = { not = { has_completed_focus = SPR_give_power_to_the_landowners } }
 		ai_chance = { base = 75 }
 		#Persecuted Masonry
 		if = {
@@ -923,7 +923,7 @@ country_event = {
 		if = {
 			limit = { 1318 = { OWNER = { is_subject_of = SPR } } }
 			if = {
-				limit = { 1318 = { OWNER = { NOT = { has_idea = DOM_the_masonry_lodge_0 } } } }
+				limit = { 1318 = { OWNER = { not = { has_idea = DOM_the_masonry_lodge_0 } } } }
 				add_ideas = DOM_the_masonry_lodge_0
 			}
 		}
@@ -1189,7 +1189,7 @@ country_event = { #Debt system bankrupcy avoiding failiure
 		# log = "option:		name = SPR_bankruptcy_events.3.a"
 		hidden_effect = { 
 			if = {
-				limit = { NOT = { has_dlc = "Man the Guns" } }
+				limit = { not = { has_dlc = "Man the Guns" } }
 				add_political_power = 200 
 			}
 		}
@@ -1262,7 +1262,7 @@ state_event = { #Colonial profits system
 				set_variable = { var = THIS.total_colonial_profits value = THIS.colonial_profits_in_state_temp }
 				clear_variable = THIS.colonial_profits_in_state_temp
 				if = { 
-					limit = { NOT = { has_active_mission = debt_colonial_profits_decision } }
+					limit = { not = { has_active_mission = debt_colonial_profits_decision } }
 					activate_mission = debt_colonial_profits_decision
 				}
 			}
@@ -1342,6 +1342,149 @@ country_event = { #Grito de Yara (1st cuban uprising)
 
 	option = {
 		name = spain_caribbean.22.a
+		# log = "option:		name = spain_caribbean.22.a"
+		ai_chance = { factor = 100 }
+		add_power_balance_modifier = {
+			id = SPR_CUB_ten_years_war
+			modifier = SPR_CUB_guerilla_warfare
+		}
+		set_power_balance={
+			id = SPR_CUB_ten_years_war
+			left_side = SPR_dominion
+			right_side = CUB_independance
+		}
+		CUB={
+			transfer_state = 315
+			division_template = {
+				name = "Mambises Regiment"
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+				}
+			}
+		}
+		315={
+			create_unit = {
+				allow_spawning_on_enemy_provs = yes
+				division = "name = \"Mambises\" division_template = \"Mambises Regiment\" start_experience_factor = 0.5"
+				owner = CUB
+				prioritize_location = 7451
+			}
+			create_unit = {
+				allow_spawning_on_enemy_provs = yes
+				division = "name = \"Mambises\" division_template = \"Mambises Regiment\" start_experience_factor = 0.5"
+				owner = CUB
+				prioritize_location = 1550
+			}
+			create_unit = {
+				allow_spawning_on_enemy_provs = yes
+				division = "name = \"Mambises\" division_template = \"Mambises Regiment\" start_experience_factor = 0.5"
+				owner = CUB
+				prioritize_location = 12347
+			}
+		}
+	}
+}
+country_event = { #Grito de Yara - Spanish Victory
+	id = spain_caribbean.23
+	title = spain_caribbean.23.t
+	desc = spain_caribbean.23.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = spain_caribbean.23.a
+		# log = "option:		name = spain_caribbean.22.a"
+		ai_chance = { factor = 100 }
+		remove_power_balance = {
+			id = SPR_CUB_ten_years_war
+		}
+		transfer_state = 315
+	}
+}
+country_event = { #Grito de Yara - Cuban Victory
+	id = spain_caribbean.24
+	title = spain_caribbean.24.t
+	desc = spain_caribbean.24.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = spain_caribbean.24.a
+		# log = "option:		name = spain_caribbean.22.a"
+		ai_chance = { factor = 100 }
+		remove_power_balance = {
+			id = SPR_CUB_ten_years_war
+		}
+		CUB={
+			transfer_state = 1022
+			transfer_state = 1350
+		}
+	}
+}
+country_event = { #Spanish-Cuban Battle, Spanish Victory
+	id = spain_caribbean.25
+	title = spain_caribbean.25.t
+	desc = spain_caribbean.25.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = spain_caribbean.25.a
+		# log = "option:		name = spain_caribbean.22.a"
+		ai_chance = { factor = 100 }
+		if={
+			limit={
+				not={
+					original_tag = CUB
+				}
+			}
+			SPR={
+				add_power_balance_value = {
+					id = SPR_CUB_ten_years_war
+					value = -0.1
+					tooltip_side = SPR_dominion
+				}
+			}
+		}
+	}
+}
+country_event = { #Spanish-Cuban Battle, Cuban Victory
+	id = spain_caribbean.26
+	title = spain_caribbean.26.t
+	desc = spain_caribbean.26.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = spain_caribbean.26.a
+		# log = "option:		name = spain_caribbean.22.a"
+		ai_chance = { factor = 100 }
+		if={
+			limit={
+				not={
+					original_tag = CUB
+				}
+			}
+			SPR={
+				add_power_balance_value = {
+					id = SPR_CUB_ten_years_war
+					value = 0.05
+					tooltip_side = CUB_independance
+				}
+			}
+		}
+	}
+}
+country_event = { #Spanish-Cuban Battle, Canceled
+	id = spain_caribbean.27
+	title = spain_caribbean.27.t
+	desc = spain_caribbean.27.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = spain_caribbean.27.a
 		# log = "option:		name = spain_caribbean.22.a"
 		ai_chance = { factor = 100 }
 		
@@ -2072,11 +2215,11 @@ news_event = { #spain takes the Chincha Islands  - Peru, global
 		# log = "option:		name = spain.25.e"
 		ai_chance = { factor = 100 }
 		trigger = {
-			NOT = {tag = CHL }
-			NOT = {original_tag = CHL}
-			NOT = {tag = SPR}
-			NOT = {original_tag = SPR}
-			NOT = {tag = PRU}
+			not = {tag = CHL }
+			not = {original_tag = CHL}
+			not = {tag = SPR}
+			not = {original_tag = SPR}
+			not = {tag = PRU}
 		}
 	}
 }
@@ -2223,7 +2366,7 @@ country_event = { #Tensions boil over  - USA
 			}
 		}
 	}
-	option = {#abadon monroe
+	option = {#abandon monroe
 		name = spain.30.b
 		# log = "option:		name = spain.30.b"
 		ai_chance = { factor = 0 }
@@ -2785,6 +2928,11 @@ country_event = { #Revolution victory
 			}
 			promote_character = yes
 		}
+		set_party_name = {
+			ideology = social_egalitarianism
+			long_name = SPR_social_egalitarianism_federalists
+			name = SPR_social_egalitarianism_federalists_short
+		}
 		load_focus_tree = spain_democratic_sexium_ft
 		set_country_flag = SPR_democratic_sexium
 		hidden_effect={
@@ -2817,6 +2965,16 @@ country_event = { #Revolution victory
 			}
 			173={
 				set_demilitarized_zone = no
+			}
+			SPR_francisco_pi_margall={
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = republicanism
+						expire = "1965.1.1.1"
+					}
+				}
+				promote_character = yes
 			}
 		}
 		news_event = {id = spain.38}
@@ -2907,12 +3065,27 @@ country_event = { #69 election
 		ai_chance = { factor = 100 }
 		set_country_flag = SPR_6dy_regency
 		mark_focus_tree_layout_dirty = yes
+		SPR_juan_prim_y_prats={
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = moderatism
+					expire = "1965.1.1.1"
+				}
+			}
+			promote_character = yes
+		}
+		add_ideas = SPR_francisco_serrano_regent
 	}
 	option = {#Federalist
 		name = spain.41.b
 		# log = "option:		name = spain.40.a"
 		ai_chance = { factor = 5 }
 		set_country_flag = SPR_6dy_federal_69
+		set_politics = {
+			ruling_party = social_egalitarianism
+			elections_allowed = no
+		}
 		mark_focus_tree_layout_dirty = yes
 	}
 	option = {#carlist
@@ -3099,13 +3272,1209 @@ country_event = { #Search for a king I
 	option = {#Luis I, the portugese candidate
 		name = spain.46.a
 		# log = "option:		name = spain.40.a"
-		ai_chance = { factor = 100 }
-		
+		ai_chance = { factor = 99 }
+		trigger={
+			date < 1869.1.1
+		}
+		POR={
+			country_event = {id =spain.47 days = 30}
+		}
+	}
+	option = {#Ferdinand IV, the portugese candidate
+		name = spain.46.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 99 }
+		trigger={
+			date > 1869.1.1
+		}
+		POR={
+			country_event = {id = spain.49 days = 60}
+		}
 	}
 	option = {#Antonio I, the Duke of Montpensier
 		name = spain.46.b
 		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		set_country_flag = SPR_antonio_accepted
+		country_event = { id = spain.55}
+	}
+}
+country_event = { #Search for a king - Luis I
+	id = spain.47
+	title = spain.47.t
+	desc = spain.47.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Not our king
+		name = spain.47.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 85 }
+		SPR={
+			country_event = {spain.48 days = 30}
+		}
+	}
+	option = {#agree
+		name = spain.47.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 15 }
+		SPR={
+			set_country_flag = SPR_luis_accepted
+			country_event = { id = spain.55}
+		}
+	}
+}
+country_event = { #Search for a king - Luis rejected
+	id = spain.48
+	title = spain.48.t
+	desc = spain.48.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#try his father
+		name = spain.48.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 85 }
+		POR={
+			country_event = {id = spain.49 days = 30}
+		}
+	}
+	option = {#Iberism is unworkable, try Thomas of Savoy-Genoa
+		name = spain.48.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 14 }
+		PIE={
+			country_event = {id = spain.50 days = 15}
+		}
+	}
+	option = {#The duke is always a option
+		name = spain.48.c
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		set_country_flag = SPR_antonio_accepted
+		country_event = { id = spain.55}
+	}
+}
+country_event = { #Search for a king - Ferdinand IV
+	id = spain.49
+	title = spain.49.t
+	desc = spain.49.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Not the regent either
+		name = spain.49.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 85 }
+		SPR={
+			country_event = {id = spain.51 days = 30}
+		}
+	}
+	option = {#Agree
+		name = spain.49.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 15 }
+		SPR={
+			set_country_flag = SPR_ferdinand_accepted
+			country_event = { id = spain.55}
+		}
+	}
+}
+country_event = { #Search for a king - Tommaso I
+	id = spain.50
+	title = spain.50.t
+	desc = spain.50.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#His mother says no
+		name = spain.50.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 99 }
+		SPR={
+			country_event = {id = spain.52 days = 15}
+		}
+	}
+	option = {#Agree
+		name = spain.50.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		SPR={
+			set_country_flag = SPR_tommaso_accepted
+			country_event = { id = spain.55}
+		}
+	}
+}
+country_event = { #Search for a king - Ferdinand rejected
+	id = spain.51
+	title = spain.51.t
+	desc = spain.51.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Thomas of Savoy-Genoa is the only option before us
+		name = spain.51.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 99 }
+		PIE={
+			country_event = {id = spain.50 days = 15}
+		}
+		custom_effect_tooltip = PIE_generic_event_historical_TT
+	}
+	option = {#i am once again asking for the duke of montpensier
+		name = spain.51.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		set_country_flag = SPR_antonio_accepted
+		country_event = { id = spain.55}
+	}
+}
+country_event = { #Search for a king - Thomas rejected, Baldomero is offered the crown
+	id = spain.52
+	title = spain.52.t
+	desc = spain.52.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Perhaps a Prussian?
+		name = spain.52.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		PRS={
+			country_event = {id = fraprswar.1 days = 12}
+		}
+		custom_effect_tooltip = PIE_generic_event_historical_TT
+	}
+	option = {#he agrees
+		name = spain.52.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 0 }
+		set_country_flag = SPR_baldomero_accepted
+		country_event = { id = spain.55}
+	}
+}
+country_event = { #Search for a king - Leopold withdraws
+	id = spain.53
+	title = spain.53.t
+	desc = spain.53.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Search for a new Candidate
+		name = spain.53.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		SPR={
+			country_event = {id = spain.54 days = 90}
+		}
+	}
+}
+country_event = { #Search for a king - final Choice
+	id = spain.54
+	title = spain.54.t
+	desc = spain.54.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Amadeo I offers acceptance
+		name = spain.54.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		trigger = {
+			FRA={
+				not={
+					has_country_leader = {
+						character = FRA_napoleon_iii
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		set_country_flag = SPR_amadeo_accepted
+		country_event = { id = spain.55}
+		custom_effect_tooltip = PIE_generic_event_historical_TT
+	}
+	option = {#Montpensier is the only option left
+		name = spain.54.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		set_country_flag = SPR_antonio_accepted
+		country_event = { id = spain.55}
+	}
+}
+
+
+country_event = { #Search for a king - Candidate has been chosen
+	id = spain.55
+	title = spain.55.t
+	desc = {#Amadeo I, of Savoy
+		text = spain.55.d.amadeo
+		trigger={
+			has_country_flag = SPR_amadeo_accepted
+		}
+	}
+	desc = {#Antonio I, Duke of Montpensier
+		text = spain.55.d.antonio
+		trigger={
+			has_country_flag = SPR_antonio_accepted
+		}
+	}
+	desc = {#Baldomero I, Hero of Spain
+		text = spain.55.d.baldomero
+		trigger={
+			has_country_flag = SPR_baldomero_accepted
+		}
+	}
+	desc = {#Leopold I, of Hohenzollern-Sigmaringen
+		text = spain.55.d.leopold
+		trigger={
+			has_country_flag = SPR_leopold_accepted
+		}
+	}
+	desc = {#Leopold I, of Hohenzollern-Sigmaringen but Franco-Prussian War
+		text = spain.55.d.leopold_FRA_war
+		trigger={
+			has_country_flag = SPR_leopold_accepted_FRA_contests
+		}
+	}
+	desc = {#Thomas I, of Savoy-Genoa
+		text = spain.55.d.tommaso
+		trigger={
+			has_country_flag = SPR_tommaso_accepted
+		}
+	}
+	desc = {#Ferdinand IV, Regent of Portugal
+		text = spain.55.d.ferdinand
+		trigger={
+			has_country_flag = SPR_ferdinand_accepted
+		}
+	}
+	desc = {#Luis I, King of Portugal
+		text = spain.55.d.luis
+		trigger={
+			has_country_flag = SPR_luis_accepted
+		}
+	}
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.55.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		set_country_flag = SPR_ready_to_crown
+	}
+}
+country_event = { #71 election
+	id = spain.56
+	title = spain.56.t
+	desc = spain.56.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.56"
+		clr_country_flag = SPR_6dy_regency
+		clr_country_flag = SPR_6dy_federal_69
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Liberal Union-Progressive
+		name = spain.56.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		set_country_flag = SPR_6dy_conciliation
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = PIE_generic_event_historical_TT
+	}
+	option = {#Federalist
+		name = spain.56.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 5 }
+		set_country_flag = SPR_6dy_federal
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {#carlist
+		name = spain.56.c
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 3 }
+		set_country_flag = SPR_6dy_carlist_71
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {#Bourbonist
+		name = spain.56.e
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		add_stability = -0.075
+		set_country_flag = SPR_6dy_bourbon_restoration_71
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = { #Assination of Prim y Prats
+	id = spain.57
+	title = spain.57.t
+	desc = spain.57.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#He will be missed
+		name = spain.57.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_stability = -0.1
+		custom_effect_tooltip = death_prim_enable_stress_tt
+		hidden_effect={
+			set_variable = {SPR_stress_level = 5}
+			SPR_juan_prim_y_prats={
+				retire = yes
+			}
+			SPR_francisco_serrano={
+				promote_character = moderatism
+				promote_character = yes
+			}
+		}
+	}
+}
+
+country_event = { #Ignacio Agramonte dies
+	id = spain.58
+	title = spain.58.t
+	desc = spain.58.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#great
+		name = spain.58.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_power_balance_value = {
+			id = SPR_CUB_ten_years_war
+			value = -0.15
+			tooltip_side = SPR_dominion
+		}
+	}
+}
+country_event = { #Céspedes dies
+	id = spain.59
+	title = spain.59.t
+	desc = spain.59.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#great
+		name = spain.59.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_power_balance_value = {
+			id = SPR_CUB_ten_years_war
+			value = -0.15
+			tooltip_side = SPR_dominion
+		}
+	}
+}
+country_event = { #Carlist Riots in Catalonia
+	id = spain.60
+	title = spain.60.t
+	desc = spain.60.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	trigger={
+		NOT={has_country_flag = SPR_6dy_carlist_69}
+	}
+	
+	is_triggered_only = yes
+
+	option = {#great
+		name = spain.60.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		165={
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = { #Federalist Inserrection
+	id = spain.61
+	title = spain.61.t
+	desc = spain.61.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+		
+	}
+	
+	trigger={
+		NOT={has_country_flag = SPR_6dy_federal}
+	}
+	
+	is_triggered_only = yes
+
+	option = {#put them down quick (inserrection is crushed very quickly OTL)
+		name = spain.61.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		if={
+			limit={
+				has_variable = SPR_stress_level
+			}
+			add_to_variable = {
+				var = SPR_stress_level
+				value = 3
+				tooltip = SPR_stress_level_increase
+			}
+		}
+		custom_effect_tooltip = PIE_generic_event_historical_TT
+	}
+	option = {#Civil war
+		name = spain.61.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 0 }
+		if={
+			limit={
+				has_variable = SPR_stress_level
+			}
+			add_to_variable = {
+				var = SPR_stress_level
+				value = 4
+				tooltip = SPR_stress_level_increase
+			}
+		}
+	}
+}
+
+country_event = { #
+	id = spain.62
+	title = spain.62.t
+	desc = spain.62.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.62.a
+		# log = "option:		name = spain.40.a"
 		ai_chance = { factor = 100 }
 		
+	}
+}
+
+country_event = { #
+	id = spain.63
+	title = spain.63.t
+	desc = spain.63.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.63.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		SPR={set_country_flag = has_CAM_protectorate_flag}
+	}
+}
+
+country_event = { #Mass Sale?
+	id = spain.64
+	title = spain.64.t
+	desc = spain.64.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#sell the Rio Tinto mines
+		name = spain.64.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		trigger={
+			not = { 169 = { has_state_flag = SPR_sold_andalusia_mining_rights_flag } }
+			owns_state = 169
+		}
+		custom_effect_tooltip = SPR_sell_andalusia_mining_rights_tooltip
+		ENG = { country_event = { id = SPR_bankruptcy_events.1 days = 15 } }
+	}
+	option = {#if peru then sell guano
+		name = spain.64.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		trigger={
+			not = { 376 = { has_state_flag = SPR_sold_pervian_guano_flag } }
+			owns_state = 376
+		}
+		
+	}
+}
+
+country_event = { #new rail companies, Compañía de los Ferrocarriles Andaluces
+	id = spain.65
+	title = spain.65.t
+	desc = spain.65.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.65.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = { #Start of the Third Carlist War
+	id = spain.66
+	title = spain.66.t
+	desc = spain.66.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+		hidden_effect={
+			BAS={
+				set_cosmetic_tag = BAS_carlist_spain
+				transfer_state = 172
+				declare_war_on = {
+					target = SPR
+					type = civil_war
+				}
+				add_civil_war_target = SPR
+				load_oob = BAS_carlist_1872
+				set_party_name = {
+					ideology = autocracy
+					long_name = SPR_autocracy_carlist
+					name = SPR_autocracy_carlist_short
+				}
+				BAS_Carlos_de_Borbon_y_Austria_Este={
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = absolutism
+							expire = "1965.1.1.1"
+						}
+					}
+					promote_character = yes
+				}
+				set_politics = {
+					ruling_party = autocracy
+					elections_allowed = no
+				}
+				
+			}
+			SPR={
+				set_country_flag = SPR_third_carlist_war
+				every_core_state={
+					add_core_of = BAS
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		if={
+			limit={
+				has_variable = SPR_stress_level
+			}
+			add_to_variable = {
+				var = SPR_stress_level
+				value = 7
+				tooltip = SPR_stress_level_increase
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.66.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		SPR={
+			swap_ideas={
+				remove_idea = SPR_the_carlist_threat
+				add_idea = SPR_carlistwar
+			}
+		}
+		
+	}
+	option = {#
+		name = spain.66.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 0 }
+		SPR={
+			swap_ideas={
+				remove_idea = SPR_the_carlist_threat
+				add_idea = SPR_carlistwar
+			}
+		}
+		BAS={
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = { #Start of the Cantonal Rebellion
+	id = spain.67
+	title = spain.67.t
+	desc = spain.67.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+		hidden_effect={
+			CAT={
+				set_cosmetic_tag = CAT_cantonal_spain
+				transfer_state = 168
+				transfer_state = 167
+				declare_war_on = {
+					target = SPR
+					type = civil_war
+				}
+				add_civil_war_target = SPR
+			}
+			SPR={
+				every_core_state={
+					add_core_of = CAT
+				}
+				set_country_flag = SPR_cantonist_uprising
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		if={
+			limit={
+				has_variable = SPR_stress_level
+			}
+			add_to_variable = {
+				var = SPR_stress_level
+				value = 5
+				tooltip = SPR_stress_level_increase
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.67.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+	}
+	option = {#
+		name = spain.67.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 0 }
+		CAT={
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = { #Petrolum Revolution, Sevilla
+	id = spain.68
+	title = spain.68.t
+	desc = spain.68.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+		hidden_effect={
+			ADU={
+				set_cosmetic_tag = ADU_committee_of_public_health_spain
+				transfer_state = 169
+				declare_war_on = {
+					target = SPR
+					type = civil_war
+				}
+				add_civil_war_target = SPR
+			}
+			SPR={
+				every_core_state={
+					add_core_of = ADU
+				}
+			}
+		}
+		if={
+			limit={
+				has_variable = SPR_stress_level
+			}
+			add_to_variable = {
+				var = SPR_stress_level
+				value = 2
+				tooltip = SPR_stress_level_increase
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.68.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		
+	}
+	option = {#
+		name = spain.68.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 0 }
+		ADU={
+			change_tag_from = ROOT
+		}
+	}
+}
+
+country_event = { #split of union-liberal
+	id = spain.69
+	title = spain.69.t
+	desc = spain.69.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+		hidden_effect={
+			SPR_Ruiz_Zorrilla={
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = radical_liberal
+						expire = "1965.1.1.1"
+					}
+				}
+				promote_character = yes
+			}
+			SPR_Praxedes_Mateo_Sagasta={
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = conserv
+						expire = "1965.1.1.1"
+					}
+				}
+				promote_character = yes
+			}
+			set_party_name = {
+				ideology = centrism
+				long_name = SPR_centrism_radical
+				name = SPR_centrism_radical_short
+			}
+			set_party_name = {
+				ideology = traditional_conservatism
+				long_name = SPR_traditional_conservatism_consitutionals
+				name = SPR_traditional_conservatism_consitutionals_short
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Radicals
+		name = spain.69.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = centrism
+			elections_allowed = no
+		}
+		if={
+			limit={
+				has_variable = SPR_stress_level
+			}
+			add_to_variable = {
+				var = SPR_stress_level
+				value = 2
+				tooltip = SPR_stress_level_increase
+			}
+		}
+		custom_effect_tooltip = PIE_generic_event_historical_TT
+	}
+	option = {#consitituionals
+		name = spain.69.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = traditional_conservatism
+			elections_allowed = no
+		}
+		if={
+			limit={
+				has_variable = SPR_stress_level
+			}
+			add_to_variable = {
+				var = SPR_stress_level
+				value = 2
+				tooltip = SPR_stress_level_increase
+			}
+		}
+	}
+}
+country_event = { #Topete Offers a Pro-Monarchy Coup
+	id = spain.70
+	title = spain.70.t
+	desc = spain.70.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#reject
+		name = spain.70.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 95 }
+		country_event = {id = spain.71 days = 3}
+		custom_effect_tooltip = PIE_generic_event_historical_TT
+	}
+	option = {#accept
+		name = spain.70.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 5 }
+		set_country_flag = SPR_accepted_topete_monarch_coup
+		subtract_from_variable= {
+			var = SPR_stress_level
+			value = 5
+			tooltip = SPR_stress_level_decrease
+		}
+		activate_mission = SPR_mission_stress_increases
+		set_party_name = {
+			ideology = radical_democracy
+			long_name = SPR_radical_democracy_topete_military_gov
+			name = SPR_radical_democracy_topete_military_gov_short
+		}
+		SPR_juan_bautista_topete={
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = military_junta
+					expire = "1965.1.1.1"
+				}
+			}
+			promote_character = yes
+		}
+		set_politics = {
+			ruling_party = radical_democracy
+			elections_allowed = no
+		}
+		
+	}
+}
+country_event = { #Resignation of the King
+	id = spain.71
+	title = spain.71.t
+	desc = spain.71.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#Republicanism is the only option left
+		name = spain.71.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		clear_variable = SPR_stress_level
+		clr_country_flag = SPR_6dy_conciliation
+		set_country_flag = SPR_6dy_federal_system
+		mark_focus_tree_layout_dirty = yes
+		set_politics = {
+			ruling_party = social_egalitarianism
+			elections_allowed = no
+		}
+	}
+}
+country_event = { #post monarchist intrangent coup
+	id = spain.72
+	title = spain.72.t
+	desc = spain.72.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#succeds
+		name = spain.72.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 50 }
+		clr_country_flag = SPR_6dy_conciliation
+		set_country_flag = SPR_6dy_cantonal
+	}
+	option = {#fails
+		name = spain.72.b
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 50 }
+		country_event = spain.67
+	}
+}
+country_event = { #'72 election - apr
+	id = spain.73
+	title = spain.73.t
+	desc = spain.73.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+	#concilidation
+	option = {#Bourbon
+		name = spain.73.a_conciliation
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		trigger={
+			has_country_flag = SPR_6dy_conciliation
+		}
+		set_politics = {
+			ruling_party = autocracy
+			elections_allowed = no
+		}
+		country_event = spain.66
+	}
+	option = {#Federal Democrats
+		name = spain.73.b_conciliation
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		trigger={
+			has_country_flag = SPR_6dy_conciliation
+		}
+		country_event = spain.66
+		set_politics = {
+			ruling_party = social_egalitarianism
+			elections_allowed = no
+		}
+	}
+	option = {#Radical
+		name = spain.73.c_conciliation
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 25 }
+		trigger={
+			has_country_flag = SPR_6dy_conciliation
+		}
+		country_event = spain.66
+		set_politics = {
+			ruling_party = centrism
+			elections_allowed = no
+		}
+	}
+	option = {#Conservative
+		name = spain.73.e_conciliation
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 75 }
+		trigger={
+			has_country_flag = SPR_6dy_conciliation
+		}
+		country_event = spain.66
+		set_politics = {
+			ruling_party = traditional_conservatism
+			elections_allowed = no
+		}
+	}
+	#Federal
+	option = {#Moderate
+		name = spain.73.a_federal
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 25 }
+		trigger={
+			has_country_flag = SPR_6dy_federal
+		}
+		country_event = spain.66
+	}
+	option = {#centrist
+		name = spain.73.b_federal
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 50 }
+		trigger={
+			has_country_flag = SPR_6dy_federal
+		}
+		country_event = spain.66
+	}
+	option = {#intrangent
+		name = spain.73.c_federal
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 25 }
+		trigger={
+			has_country_flag = SPR_6dy_federal
+		}
+		country_event = spain.66
+	}
+	
+	option = {#Carlist, last one
+		name = spain.73.d_conciliation
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 1 }
+		trigger={
+			OR={
+				has_country_flag = SPR_6dy_conciliation
+				has_country_flag = SPR_6dy_federal
+			}
+		}
+	}
+}
+
+
+country_event = { #Spain sends envoys to cameroon tribes
+	id = spain.80
+	title = spain.80.t
+	desc = spain.80.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.80.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		
+	}
+}
+country_event = { #rebellion of the Mantillas
+	id = spain.81
+	title = spain.81.t
+	desc = spain.81.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	trigger={
+		NOT={
+			has_idea = SPR_Antonio_I
+			has_idea = SPR_Baldomero_I
+		}
+		has_country_flag = SPR_6dy_conciliation
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.81.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = SPR_stress_level
+			value = 2
+			tooltip = SPR_stress_level_increase
+		}
+	}
+}
+country_event = { #Amorebieta Convention
+	id = spain.82
+	title = spain.82.t
+	desc = spain.82.d
+	picture = GFX_plan_de_escuadra
+
+	immediate = {
+		# log = "[THIS.GetTag]: firing = spain.40"
+	}
+	
+	is_triggered_only = yes
+
+	option = {#
+		name = spain.81.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = SPR_stress_level
+			value = 2
+			tooltip = SPR_stress_level_increase
+		}
+	}
+	option = {#
+		name = spain.81.a
+		# log = "option:		name = spain.40.a"
+		ai_chance = { factor = 100 }
+		add_stability = -0.05
+		add_to_variable = {
+			var = SPR_stress_level
+			value = 5
+			tooltip = SPR_stress_level_increase
+		}
 	}
 }

@@ -4,3 +4,10 @@ sound = {
 	file = "menu/custom_alerts_sound_mhc.wav"
 	volume = 0.5
 }
+
+sound = {
+	name = "new_building_construction_sound"
+	file = "menu/new_building_construction.wav"
+	always_load = no
+	volume = 0.5
+}

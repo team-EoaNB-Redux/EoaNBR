@@ -89,13 +89,13 @@
  MERGE_NAVIES_ON_A_MISSION: "§RЕсли два и более флотов выполняют задание, их нельзя объединять.§!"
  MERGE_NAVIES_NOT_SAME_LOCATION: "§RВсе выделенные флоты должны находиться в одном месте для объединения.§!"
  MERGE_NAVIES_REFITTING: "§RВы не можете объединять флоты, находящиеся на перевооружении.§!"
- RANDOM_AIR_ACCIDENT_CHANCE_HEADER: "Вероятность происшествий при взлете или посадке:"
- RANDOM_AIR_ACCIDENT_CHANCE_BASE: "\n  — Базовое значение: $CH|R1%$"
- RANDOM_AIR_ACCIDENT_CHANCE_RELIABILITY: "\n  — Надежность техники ($RE|Y%1$): $CH|R%1$"
+ RANDOM_AIR_ACCIDENT_CHANCE_HEADER: "Вероятность случайных аварий при взлете/посадке:" #NT!
+ RANDOM_AIR_ACCIDENT_CHANCE_BASE: "\n - База: $CH|R1%$" #NT!
+ RANDOM_AIR_ACCIDENT_CHANCE_RELIABILITY: "\n - Надежность оборудования ($RE|Y%1$): $CH|R%1$" #NT!
  RANDOM_AIR_ACCIDENT_CHANCE_CARRIER: "\n  — Модификатор авианосца: §R$CAR|1$§!"
- RANDOM_AIR_ACCIDENT_CHANCE_TRAINING: "\n- Коэффициент проведения §Yвоздушных учений§!: §R$VALUE|1$§!"
- RANDOM_AIR_ACCIDENT_CHANCE_WEATHER: "\n  — Погода:"
- RANDOM_AIR_ACCIDENT_CHANCE_TOTAL: "\nВсего: $TOT|R%$"
+ RANDOM_AIR_ACCIDENT_CHANCE_TRAINING: "\n - Выполнение §Yпилотных упражнений§! множитель: §R$VALUE|1$§!" #NT!
+ RANDOM_AIR_ACCIDENT_CHANCE_WEATHER: "\n - Погода:" #NT!
+ RANDOM_AIR_ACCIDENT_CHANCE_TOTAL: "\nВсего: $TOT|R%$" #NT!
  RANDOM_AIR_ACCIDENTS_HAPPENED: "Всего происшествий: $TOT|R$"
  DESELECT_UNIT: "Отменить выбор"
  DISBAND_UNIT: "Расформировать"
@@ -199,7 +199,7 @@
  TASK_FORCE_ACTIVITY_DESC_MOVING_TO_AREA: "£right_arrow  Направляется в регион $REGION|H$"
  TASK_FORCE_ACTIVITY_DESC_MOVING_TO_ASSIGNED_AREA: "£right_arrow  Направляется в назначенный регион $REGION|H$"
  TASK_FORCE_ACTIVITY_DESC_MOVING_TO_ASSIGNED_FLEET_AREA: "£right_arrow  Направляется в назначенный регион флота"
- TASK_FORCE_ACTIVITY_DESC_MOVING_TO_NAVAL_BASE: "£right_arrow  Переезд в военный порт $FLAG$ $NAVAL_BASE|H$" #NT!
+ TASK_FORCE_ACTIVITY_DESC_MOVING_TO_NAVAL_BASE: "£right_arrow  Переезд в военно-морской порт $FLAG$ $NAVAL_BASE|H$" #NT!
  TASK_FORCE_ACTIVITY_DESC_NO_ASSIGNED_REGION: "£trigger_no  §RНет назначенных регионов§!"
  TASK_FORCE_ACTIVITY_DESC_NO_ACCESSIBLE_REGION: "£trigger_no  §RНет доступных регионов§!"
  TASK_FORCE_ACTIVITY_DESC_PERFORMING_MISSION_IN_FLEET_AREA: "Направляется в назначенный регион флота"
@@ -223,11 +223,11 @@
  SHIP_AND_TYPE: "$SHIP|H$ ($TYPE|H$)"
  LEARNING_TRAITS_TITLE: "Изучение способностей:"
  LEARNING_TRAITS: "$NAME$ ($PERC|%0H$ выполнено)"
- UNIT_MOVEMENT_BLOCKED_BY_STRAIGHT: "§RНевозможно двигаться по прямым, заблокированным вражеским флотом.§!" #NT!
- UNIT_BLOCKS_STRAIGHT_WITHIN_FRIENDLY: "Военно-Морской Флот §GBlocks§! прямо в пределах $STATE1|H$" #NT!
- UNIT_BLOCKS_STRAIGHT_WITHIN_HOSTILE: "Военно-Морской Флот §RBlocks§! прямо в пределах $STATE1|H$" #NT!
- UNIT_BLOCKS_STRAIGHT_BETWEEN_FRIENDLY: "Военно-Морской Флот §GBlocks§! прямо между $STATE1|H$ и $STATE2|H$" #NT!
- UNIT_BLOCKS_STRAIGHT_BETWEEN_HOSTILE: "Военно-Морской Флот §RBlocks§! прямо между $STATE1|H$ и $STATE2|H$" #NT!
+ UNIT_MOVEMENT_BLOCKED_BY_STRAIGHT: "§RНевозможно двигаться через проливы, заблокированные вражеским флотом.§!" #NT!
+ UNIT_BLOCKS_STRAIGHT_WITHIN_FRIENDLY: "Военно-морской §GBlocks§! прямо внутри $STATE1|H$" #NT!
+ UNIT_BLOCKS_STRAIGHT_WITHIN_HOSTILE: "Военно-морской §RBlocks§! прямо внутри $STATE1|H$" #NT!
+ UNIT_BLOCKS_STRAIGHT_BETWEEN_FRIENDLY: "Синий §GBlocks§! Прямо между $STATE1|H$ и $STATE2|H$" #NT!
+ UNIT_BLOCKS_STRAIGHT_BETWEEN_HOSTILE: "Синий §RBlocks§! Прямо между $STATE1|H$ и $STATE2|H$" #NT!
  NO_MOVE_IS_IN_HOME_REPAIRING: "Флот $FLEET|H$ сейчас находится на ремонте в районе $TARGET|H$. "
  NO_MOVE_HEADING_HOME_TO_REPAIR: "Флот $FLEET|H$ направляется в район $TARGET|H$ для ремонта. "
  NO_MOVE_HEADING_HOME_TO_REPAIR_RESUME: "После этого он продолжит выполнение последнего задания ($MIS|H$).\n"
@@ -344,8 +344,8 @@
  penal_battalion: "Штрафной батальон"
  penal_battalion_desc: "Идеальное мясо для мясорубки."
  recon_cav: "Кавалерийский разведывательный отряд" #NT!
- recon_cav_desc: "Отправка небольших групп на разведку вперед перед выдвижением основных сил позволяет нам быстрее собирать информацию о том, где находится враг и с каким количеством противников мы столкнулись." #NT!
- recon: "Разведывательный отряд" #NT!
+ recon_cav_desc: "Отправка небольших групп на конную разведку перед выдвижением основных сил позволяет нам быстрее собирать разведданные о том, где находится противник и сколько его противников нам противостоит." #NT!
+ recon: "Отряд разведки" #NT!
  recon_desc: "Отправив небольшой отряд на разведку перед тем как выдвинуть туда основную группу войск, мы получим информацию о количестве и расположении врагов."
  mot_recon: "Моторизированная разведрота"
  mot_recon_desc: "Используя лёгкие грузовики и мотоциклы, разведроты могут действовать на большем расстоянии и покрывать больший радиус, защищая фланги."
@@ -438,13 +438,16 @@
  TRANSPORT_WEIGHT_DESC: "Общий вес дивизий"
  category_all_infantry: "Вся пехота и мотор./механ."
  category_front_line: "Все фронтовые батальоны"
- category_rationalism_infantry: "Пехота эпохи рационализма" #NT!
+ category_feudal_infantry: "Пехота феодальной эпохи" #NT!
+ category_victorian_infantry: "Пехота викторианской эпохи" #NT!
  category_industrial_infantry: "Пехота индустриальной эпохи" #NT!
- category_mechanization_infantry: "Пехота эпохи механизации" #NT!
- category_mass_transit_infantry: "Пехота эпохи общественного транспорта" #NT!
+ category_great_war_infantry: "Пехота времен Великой войны" #NT!
  category_mass_production_infantry: "Пехота эпохи массового производства" #NT!
- category_computing_infantry: "Пехота компьютерной эры" #NT!
- category_internet_infantry: "Пехота эпохи Интернета" #NT!
+ category_modern_infantry: "Современная пехота" #NT!
+ category_Atomic_era_infantry: "Пехота атомной эры" #NT!
+ category_information_era_infantry: "информация Эра Пехота" #NT!
+ category_digital_era_infantry: "цифровая эра пехоты" #NT!
+ category_futuristic_infantry: "Футуристическая пехота" #NT!
  category_support_battalions: "Роты обеспечения"
  category_all_armor: "Варианты бронетехники"
  category_tanks: "Танки"
@@ -459,8 +462,8 @@
  category_tac_bomber: "Тактические бомбардировщики"
  category_strat_bomber: "Стратегические бомбардировщики"
  TRANSPORT_ALREADY_ACTIVE: "Мы уже находимся в пути"
- TRANSPORT_NO_NAVAL_BASE: "Невозможно транспортировать в место, не являющееся военно-морским портом." #NT!
- TRANSPORT_NO_FROM_NAVAL_BASE: "Невозможно транспортировать из места, не являющегося военно-морским портом." #NT!
+ TRANSPORT_NO_NAVAL_BASE: "Невозможно транспортировать в невоенный порт." #NT!
+ TRANSPORT_NO_FROM_NAVAL_BASE: "Невозможно транспортировать из невоенного порта." #NT!
  TRANSPORT_NOT_ENOUGH: "Для переброски этой дивизии необходимы конвои в кол-ве $NEED|Y$, но доступны лишь $FREE|Y$."
  TRANSPORT_ACTIVE_CANT_MOVE: "Нельзя перемещать боевую единицу во время транспортировки."
  TRANSPORT_NOT_DURING_COMBAT: "Невозможно перенаправить конвой, находящийся в бою."
@@ -469,8 +472,8 @@
  TRANSPORT_NO_SEA_ROUTE: "§RНет допустимого морского пути, ведущего в этот район.§!"
  ATTRITION_NAVAL_TRANSFER: "Транспортировка по морю: $ATT|=-1%0$"
  NAVAL_TRANSPORT_INTERCEPT_WARNING: "§RМы находимся в состоянии войны, и есть риск, что враг потопит наши транспорты с войсками. Чтобы этого не произошло, кораблям, находящимся в этом районе, необходимо дать задание по сопровождению.§!\nВероятность обнаружения и перехвата транспортов на этом маршруте составляет $ATTR|%R0$."
- NAVAL_TRANSPORT_MOVE_DESC: "§GRight-click§! на §Y военно-морской значок§! к §Y транспортируйте§! подразделения в этот §Yвоенно-морской порт§!. Для перевозки потребуется $CONVOYS|Y$ конвоев." #NT!
- NAVAL_TRANSPORT_MOVE_DESC_ICON: "§GRight-click§! к §Ytransport§! подразделения в этот §Yвоенно-морской порт§!. Для перевозки потребуются $CONVOYS|Y$ конвоя." #NT!
+ NAVAL_TRANSPORT_MOVE_DESC: "§GRight-click§! на §Yзначке флота§! для §Yтранспортировки§! юнитов в этот §Yвоенно-морской порт§!. Для транспортировки потребуется $CONVOYS|Y$ конвоев." #NT!
+ NAVAL_TRANSPORT_MOVE_DESC_ICON: "§GRight-click§! до §Ytransport§! подразделений в этот §Yвоенно-морской порт§!. Транспортировка потребует $CONVOYS|Y$ конвоев." #NT!
  NAVAL_TRANSPORT_MOVE_DISALLOWED_DESC: "$UNIT_TYPE_PLURAL|U$ не может использовать морской транспорт."
  NAVAL_INVASION_LACK_TRANSPORT: "Зарезервированные конвои: $VAL|R$/$NEED|Y$."
  NAVAL_INVASION_LACK_PREPARATION: "Подготовка к вторжению еще продолжается: $VAL|R0$/$NEED|Y0$ дн."
@@ -489,9 +492,9 @@
  NAVAL_REGION_ACCESS_ALLOWED: "§GРазрешено§!"
  NAVAL_REGION_ACCESS_AVOID: "§HИзбегать§!"
  NAVAL_REGION_ACCESS_BLOCKED: "§RЗаблокировано§!"
- NAVAL_REGION_ACCESS_ALLOWED_DESC: "- §HFleets§! и §HТорговые маршруты§! будут проходить через этот регион как обычно." #NT!
- NAVAL_REGION_ACCESS_AVOID_DESC: "- §HFleets§! и §HТорговые маршруты§! будут пытаться §Hобходить§! этот регион, если нет другого маршрута." #NT!
- NAVAL_REGION_ACCESS_BLOCKED_DESC: "- §HТорговые маршруты§! §Rникогда не пройдут§! через этот регион.\n - §HФлоты§! §Rникогда не пройдут§! через этот регион, если только нет другого маршрута." #NT!
+ NAVAL_REGION_ACCESS_ALLOWED_DESC: "- §HFleets§! и §HТорговые пути§! будут проходить через этот регион как обычно." #NT!
+ NAVAL_REGION_ACCESS_AVOID_DESC: "- §HFleets§! и §HТорговые пути§! будут стараться §Hизбегать§! этого региона, если только нет другого пути." #NT!
+ NAVAL_REGION_ACCESS_BLOCKED_DESC: "- §HТорговые пути§! §Rникогда§! не будут проходить через этот регион.\n - §HФлоты§! §Rникогда§! не будут проходить через этот регион, если только не будет другого маршрута." #NT!
  CAN_NOT_PARADROP_BATALION: "$AMOUNT|H$ из $BATALION|H$ батальонов нельзя сбросить с парашютом"
  CAN_PARADROP_TEMPLATE: "Дивизии, использующие этот шаблон, §GМОЖНО§! сбрасывать с парашютом."
  CAN_NOT_PARADROP_TEMPLATE: "Дивизии, использующие этот шаблон, §RНЕЛЬЗЯ§! сбрасывать с парашютом."
@@ -520,9 +523,9 @@
  SPEED_INFRASTRUCTURE_IMPACT: "Инфраструктура: $VALUE|+=%$"
  SPEED_STRATEGIC_REDEPLOYMENT_DESC: "Скорость стратегической передислокации: $VAUE|H$ км/ч"
  SPEED_RETREATING: "Отступление: $VALUE|+=%$"
- GOOD_ARMOR_DEFENSE_DESC: "Если атакующая нас вражеская дивизия не сможет прорваться, мы потеряем на $ORG|%0G$ меньше организации и получим на $STR|%0G$ меньше урона.\n" #NT!
- GOOD_ARMOR_ATTACK_DESC_STR: "Если мы атакуем вражескую дивизию, которая не может пробить нашу броню, мы нанесем на $VAL|%0G$ больше урона.\n" #NT!
- GOOD_ARMOR_ATTACK_DESC_ORG: "Если вы атакуете вражескую дивизию, которая не может пробить нашу броню, мы уменьшим их организацию на дополнительный $VAL|%G0$.\n" #NT!
+ GOOD_ARMOR_DEFENSE_DESC: "Если атакующая нас вражеская дивизия не сможет прорваться, мы потеряем на $ORG|%0G$ единиц меньше организации и получим на $STR|%0G$ единицу меньше урона.\n" #NT!
+ GOOD_ARMOR_ATTACK_DESC_STR: "При атаке вражеской дивизии, которая не может пробить нашу броню, мы нанесем на $VAL|%0G$ больше урона.\n" #NT!
+ GOOD_ARMOR_ATTACK_DESC_ORG: "При атаке вражеской дивизии, которая не может пробить нашу броню, мы снизим ее организацию еще на $VAL|%G0$.\n" #NT!
  PIERCING_GOOD_DESC: "Дивизия не получит дополнительных бонусов из-за возможности пробить броню вражеской дивизии, но и враг не получит бонусов из-за брони."
  OVERRUN_POPUP: "Захват!"
  PREPERATION_BASE_DAILY_GAIN: "Ежедневный базовый прирост: $VALUE|0%Y$"
@@ -551,50 +554,50 @@
  CLICK_TO_HIDE_ARMIES: "Щелкните, чтобы §Hскрыть§! армии, входящие в эту группу.\n"
  CLICK_TO_SHOW_ARMIES: "Щелкните, чтобы §Hпоказать§! армии, входящие в эту группу.\n"
  TOGGLE_ARMY_GROUP_VIEW_ARMIES_DIVISIONS: "Переключиться между просмотром армий или дивизий в этой группе армий."
- DIVISION_VIEW_SELECT_ARMY: "Нажмите, чтобы выбрать армию этого подразделения." #NT!
+ DIVISION_VIEW_SELECT_ARMY: "Нажмите, чтобы выбрать армию этой дивизии." #NT!
  NEW_FLEET_NAME: "Новый флот"
   
   
  category_tribal_infantry: "Племенная пехота" #NT!
- armor_train_company: "Поддержка бронепоездов" #NT!
+ armor_train_company: "Поддержка бронепоезда" #NT!
  category_armor_train_company: "Бронепоезда" #NT!
- UNIT_LEVEL_0: "Зеленый я" #NT!
+ UNIT_LEVEL_0: "Зеленый Я" #NT!
  UNIT_LEVEL_1: "Зеленый II" #NT!
  UNIT_LEVEL_2: "Зеленый III" #NT!
  UNIT_LEVEL_3: "Зеленый IV" #NT!
- UNIT_LEVEL_4: "тренировался я" #NT!
+ UNIT_LEVEL_4: "Обученный я" #NT!
  UNIT_LEVEL_5: "Обученный II" #NT!
  UNIT_LEVEL_6: "Обученный III" #NT!
  UNIT_LEVEL_7: "Обученный IV" #NT!
- UNIT_LEVEL_8: "Обычный я" #NT!
- UNIT_LEVEL_9: "Обычный II" #NT!
- UNIT_LEVEL_10: "Обычный III" #NT!
- UNIT_LEVEL_11: "Обычный IV" #NT!
+ UNIT_LEVEL_8: "Регулярный I" #NT!
+ UNIT_LEVEL_9: "Регулярный II" #NT!
+ UNIT_LEVEL_10: "Регулярный III" #NT!
+ UNIT_LEVEL_11: "Регулярный IV" #NT!
  UNIT_LEVEL_12: "Опытный я" #NT!
- UNIT_LEVEL_13: "Выдержанный II" #NT!
+ UNIT_LEVEL_13: "Приправленный II" #NT!
  UNIT_LEVEL_14: "Опытный III" #NT!
- UNIT_LEVEL_15: "Опытный IV" #NT!
+ UNIT_LEVEL_15: "Приправленный IV" #NT!
  UNIT_LEVEL_16: "Элита I" #NT!
  UNIT_LEVEL_17: "Элита II" #NT!
  UNIT_LEVEL_18: "Элита III" #NT!
  UNIT_LEVEL_19: "Элита IV" #NT!
  UNIT_LEVEL_20: "Легендарный" #NT!
- SHIP_LEVEL_0: "Свежий я" #NT!
+ SHIP_LEVEL_0: "Свежий Я" #NT!
  SHIP_LEVEL_1: "Свежий II" #NT!
  SHIP_LEVEL_2: "Свежий III" #NT!
  SHIP_LEVEL_3: "Свежий IV" #NT!
- SHIP_LEVEL_4: "тренировался я" #NT!
+ SHIP_LEVEL_4: "Обученный я" #NT!
  SHIP_LEVEL_5: "Обученный II" #NT!
  SHIP_LEVEL_6: "Обученный III" #NT!
  SHIP_LEVEL_7: "Обученный IV" #NT!
- SHIP_LEVEL_8: "Обычный я" #NT!
- SHIP_LEVEL_9: "Обычный II" #NT!
- SHIP_LEVEL_10: "Обычный III" #NT!
- SHIP_LEVEL_11: "Обычный IV" #NT!
+ SHIP_LEVEL_8: "Регулярный I" #NT!
+ SHIP_LEVEL_9: "Регулярный II" #NT!
+ SHIP_LEVEL_10: "Регулярный III" #NT!
+ SHIP_LEVEL_11: "Регулярный IV" #NT!
  SHIP_LEVEL_12: "Опытный я" #NT!
- SHIP_LEVEL_13: "Выдержанный II" #NT!
+ SHIP_LEVEL_13: "Приправленный II" #NT!
  SHIP_LEVEL_14: "Опытный III" #NT!
- SHIP_LEVEL_15: "Опытный IV" #NT!
+ SHIP_LEVEL_15: "Приправленный IV" #NT!
  SHIP_LEVEL_16: "Элита I" #NT!
  SHIP_LEVEL_17: "Элита II" #NT!
  SHIP_LEVEL_18: "Элита III" #NT!
@@ -610,105 +613,109 @@
  AIR_WING_LEVEL_7: "Великие тузы" #NT!
  AIR_WING_LEVEL_8: "Небесные бароны" #NT!
  AIR_WING_LEVEL_9: "Небесные короли" #NT!
- AIR_WING_LEVEL_10: "Легендарный я" #NT!
+ AIR_WING_LEVEL_10: "Легендарный Я" #NT!
  AIR_WING_LEVEL_11: "Легендарный II" #NT!
  AIR_WING_LEVEL_12: "Легендарный III" #NT!
  AIR_WING_LEVEL_13: "Легендарный IV" #NT!
- AIR_WING_LEVEL_14: "Легендарный В." #NT!
+ AIR_WING_LEVEL_14: "Легендарный V" #NT!
  AIR_WING_LEVEL_15: "Легендарный VI" #NT!
  AIR_WING_LEVEL_16: "Легендарный VII" #NT!
  AIR_WING_LEVEL_17: "Легендарный VIII" #NT!
  AIR_WING_LEVEL_18: "Легендарный IX" #NT!
- AIR_WING_LEVEL_19: "Легендарный Икс" #NT!
- AIR_WING_LEVEL_20: "Небесные божества" #NT!
+ AIR_WING_LEVEL_19: "Легендарный X" #NT!
+ AIR_WING_LEVEL_20: "Небесные Божества" #NT!
  category_bicycle_signal_company: "Велосипедные компании" #NT!
- category_motorcycle_signal_company: "Мотоциклетные компании" #NT!
- bicycle_signal_company: "Компания по поддержке велосипедов" #NT!
- bicycle_signal_company_desc: "Рота поддержки, использующая велосипеды для обеспечения мобильности, необходимой для выполнения задач по обмену сообщениями и разведке." #NT!
- motorcycle_signal_company: "Компания по поддержке мотоциклов" #NT!
- motorcycle_signal_company_desc: "Рота поддержки, использующая мотоциклы для обеспечения мобильности, необходимой для выполнения задач по обмену сообщениями и разведке." #NT!
+ category_motorcycle_signal_company: "Компании по производству мотоциклов" #NT!
+ bicycle_signal_company: "Компания поддержки велосипедов" #NT!
+ bicycle_signal_company_desc: "Рота поддержки использует велосипеды для обеспечения мобильности, необходимой для выполнения задач по передаче сообщений и разведке." #NT!
+ motorcycle_signal_company: "Компания поддержки мотоциклов" #NT!
+ motorcycle_signal_company_desc: "Рота поддержки, использующая мотоциклы для обеспечения мобильности, необходимой для выполнения задач по передаче сообщений и разведке." #NT!
  bicycle_infantry: "Велосипедный батальон" #NT!
  bicycle_infantry_desc: "Пехотный батальон, оснащенный велосипедами для повышения мобильности." #NT!
  category_steam_car_support_company: "Компании по производству паровых автомобилей" #NT!
- steam_car_support_company: "Батальон поддержки паровых машин" #NT!
- steam_car_support_company_desc: "Поддержка легкобронированными машинами, способными быстрее передвигаться по местности, с приводом от парового двигателя." #NT!
+ steam_car_support_company: "Батальон поддержки паровых автомобилей" #NT!
+ steam_car_support_company_desc: "Поддержка с помощью легкобронированных автомобилей, которые способны быстрее передвигаться по местности и приводятся в движение паровым двигателем." #NT!
  flamethrower_support_company: "Поддержка огнемета" #NT!
- flamethrower_support_company_desc: "Пехота вооружена огнеметами." #NT!
+ flamethrower_support_company_desc: "Пехота, вооруженная огнеметами." #NT!
  sniper_team_support: "Снайперские команды" #NT!
  sniper_team_support_desc: "Снайперы и корректировщики для уничтожения пехоты." #NT!
  mountaineers: "Горно-стрелковые войска"
  mountaineers_desc: "Боевые действия в горах сопряжены с высокой опасностью для пехоты, но порой их не избежать. Проведя среди наших солдат специальную подготовку для ведения боя в горах, мы минимизируем риск."
  early_marine: "Ранние морские пехотинцы" #NT!
- early_marine_desc: "Ранняя современная военно-морская пехота, используемая для боевых действий в десантных условиях." #NT!
- cannon_artillery: "Полевая пушка" #NT!
- cannon_artillery_desc: "Артиллерийская бригада, предназначенная для переброски на поле боя." #NT!
- cannon_artillery_towed: "Буксируемая полевая пушка" #NT!
- cannon_artillery_towed_desc: "Буксируемые полевые орудия позволяют быстрее перемещаться по полю боя." #NT!
- cannon_artillery_support: "Полевое орудие поддержки" #NT!
- cannon_artillery_support_desc: "Небольшая бригада поддержки с полевыми орудиями." #NT!
- cannon_artillery_towed_support: "Буксируемая полевая пушка поддержки" #NT!
+ early_marine_desc: "Морская пехота раннего Нового времени, использовавшаяся для ведения боевых действий в амфибийных условиях." #NT!
+ field_artillery: "Полевая пушка" #NT!
+ field_artillery_desc: "Артиллерийский полк, предназначенный для развертывания в полевых условиях." #NT!
+ field_artillery_towed: "Буксируемая полевая пушка" #NT!
+ field_artillery_towed_desc: "Буксируемые полевые орудия могут быстрее перемещаться по полю боя." #NT!
+ field_artillery_support: "Полевое орудие поддержки" #NT!
+ field_artillery_support_desc: "Небольшая рота поддержки с полевыми орудиями." #NT!
+ field_artillery_towed_support: "Буксируемая вспомогательная полевая пушка" #NT!
+ field_artillery_towed_support_desc: "Буксируемые полевые орудия могут быстрее перемещаться по полю боя." #NT!
  howitzer_artillery: "Гаубичная артиллерия" #NT!
- howitzer_artillery_desc: "Артиллерийская бригада, оснащенная гаубицами." #NT!
- howitzer_artillery_towed: "Буксируемая гаубица-артиллерия" #NT!
+ howitzer_artillery_desc: "Артиллерийский полк, вооруженный гаубицами." #NT!
+ howitzer_artillery_towed: "Буксируемая гаубичная артиллерия" #NT!
  howitzer_artillery_towed_desc: "Буксируемая гаубичная артиллерия может быстрее перемещаться по полю боя." #NT!
  howitzer_artillery_support: "Поддержка гаубичной артиллерии" #NT!
- howitzer_artillery_support_desc: "Небольшая бригада поддержки с гаубицами." #NT!
- howitzer_artillery_towed_support: "Буксируемая гаубица артиллерийской поддержки" #NT!
+ howitzer_artillery_support_desc: "Небольшая рота поддержки с гаубицами." #NT!
+ howitzer_artillery_towed_support: "Буксируемая гаубичная артиллерийская установка" #NT!
+ howitzer_artillery_towed_support_desc: "Буксируемая гаубичная артиллерия может быстрее перемещаться по полю боя." #NT!
  siege_artillery: "Осадная артиллерия" #NT!
- siege_artillery_desc: "Артиллерийская бригада, оснащенная осадными орудиями." #NT!
+ siege_artillery_desc: "Артиллерийский полк, оснащенный осадными орудиями." #NT!
  siege_artillery_towed: "Буксируемая осадная артиллерия" #NT!
- siege_artillery_towed_desc: "Буксируемая осадная артиллерия позволяет быстрее перемещаться по полю боя." #NT!
+ siege_artillery_towed_desc: "Буксируемая осадная артиллерия будет быстрее выдвигаться на позицию." #NT!
  siege_artillery_support: "Поддержка осадной артиллерии" #NT!
- siege_artillery_support_desc: "Небольшая бригада поддержки с осадной артиллерией." #NT!
- modifier_experience_gain_gunboat_combat_factor: "Прирост боевого опыта канонерской лодки" #NT!
- modifier_experience_gain_gunboat_training_factor: "Прирост опыта при обучении канонерских лодок" #NT!
+ siege_artillery_support_desc: "Небольшая рота поддержки с осадной артиллерией." #NT!
+ siege_artillery_towed_support: "Буксируемая вспомогательная осадная артиллерия" #NT!
+ siege_artillery_towed_support_desc: "Буксируемая осадная артиллерия будет быстрее выдвигаться на позицию." #NT!
+ modifier_experience_gain_gunboat_combat_factor: "Получение опыта в бою за канонерскую лодку" #NT!
+ modifier_experience_gain_gunboat_training_factor: "Получение опыта обучения канонерской лодке" #NT!
  battle_cruiser: "Линейный крейсер"
  battle_cruiser_desc: "Большой, вооруженный и бронированный военный корабль класса крейсер." #NT!
  battleship: "Линкор"
- battleship_desc: "После дредноутов — самый крупный класс военно-морских кораблей." #NT!
+ battleship_desc: "После дредноутов — крупнейший класс военных кораблей." #NT!
  corvette: "Корвет" #NT!
  corvette_desc: "Небольшой военный корабль." #NT!
- cruiser: "Крейсер" #NT!
- cruiser_desc: "Военный корабль средних размеров." #NT!
+ cruiser: "Круизер" #NT!
+ cruiser_desc: "Военный корабль среднего размера." #NT!
  destroyer: "Эсминец"
- destroyer_desc: "Маленькие, универсальные военные корабли." #NT!
+ destroyer_desc: "Малые, универсальные военно-морские суда." #NT!
  dreadnought: "Дредноут" #NT!
  dreadnought_desc: "Гигантские военные корабли." #NT!
  frigate: "Фрегат" #NT!
- frigate_desc: "Малые боевые корабли, выполняющие разнообразные задачи." #NT!
+ frigate_desc: "Малые военные корабли, выполняющие различные задачи." #NT!
  gunboat: "Канонерская лодка" #NT!
  gunboat_desc: "Тяжеловооруженные, тихоходные лодки." #NT!
  heavy_cruiser: "Тяжелый крейсер"
- heavy_cruiser_desc: "Бронированный крейсер, чаще всего несущий больше орудий, чем легкие варианты." #NT!
+ heavy_cruiser_desc: "Крейсер с броней, чаще всего несущий больше орудий, чем легкие варианты." #NT!
  ironclad: "Броненосец" #NT!
- ironclad_desc: "Тяжелобронированный военный корабль. Иногда они даже таскают баранов." #NT!
+ ironclad_desc: "Тяжелобронированный военный корабль. Иногда даже тараны." #NT!
  light_cruiser: "Легкий крейсер"
  light_cruiser_desc: "Легкий военный корабль, на класс выше эсминца." #NT!
- lineship: "Линейная принадлежность" #NT!
- lineship_desc: "Этот большой класс линкоров доминировал на морях в эпоху парусного спорта." #NT!
- monitor: "Монитор Корабль" #NT!
+ lineship: "Родословная" #NT!
+ lineship_desc: "Этот большой класс линейных кораблей доминировал на морях в эпоху парусов." #NT!
+ monitor: "Корабль-монитор" #NT!
  monitor_desc: "Корабли-мониторы небольшие, но хорошо вооруженные." #NT!
  submarine: "Подводная лодка"
  submarine_desc: "Эти суда способны погружаться под воду и атаковать крупные корабли торпедами, а также выполнять другие задачи." #NT!
  torpedo_boat: "Торпедный катер" #NT!
- torpedo_boat_desc: "Очень маленькие, быстрые лодки, несущие торпеды, а иногда и другое вооружение." #NT!
+ torpedo_boat_desc: "Очень маленькие, быстроходные лодки, несущие торпеды, а иногда и другое вооружение." #NT!
  guard_infantry: "Гвардейская пехота" #NT!
- guard_infantry_desc: "Гвардейская пехота имеет лучшую защиту, чем обычная пехота, но ее немного сложнее обучать и экипировать. Гвардейская пехота также получает значительные бонусы при защите городов." #NT!
- camel_cavalry: "Верблюжья кавалерия" #NT!
- camel_cavalry_desc: "Кавалерия, в которой верблюды используются в качестве ездовых животных." #NT!
+ guard_infantry_desc: "У пехоты гвардии обороноспособность лучше, чем у обычной пехоты, но ее немного сложнее тренировать и оснащать. Пехота гвардии также получает значительные бонусы при защите городов." #NT!
+ camel_cavalry: "Кавалерия на верблюдах" #NT!
+ camel_cavalry_desc: "Кавалерия, в которой в качестве верхового животного используются верблюды." #NT!
  redcoat_infantry: "Красные мундиры" #NT!
- redcoat_infantry_desc: "Британских красных мундиров внушают страх за их прекрасную подготовку и высокий уровень организации." #NT!
+ redcoat_infantry_desc: "Британские «красные мундиры» внушают страх своей превосходной подготовкой и высоким уровнем организации." #NT!
  heavy_cavalry: "Тяжелая кавалерия" #NT!
- heavy_cavalry_desc: "Хотя этот тип кавалерии может нанести большой урон, он плохо действует на неблагоприятной местности и менее мобилен, чем его легкобронированный аналог." #NT!
+ heavy_cavalry_desc: "Хотя этот тип кавалерии способен нанести большой урон, он плохо действует на неблагоприятной местности и менее подвижен, чем его легкобронированный аналог." #NT!
  uhlans: "Уланы" #NT!
- uhlans_desc: "Этот тип кавалерии отлично подходит для атаки противника и нарушения его организации, но в обороне действует довольно плохо." #NT!
- native_mountaineers: "Кавказские Альпинисты" #NT!
- native_mountaineers_desc: "Эти храбрые воины будут яростно сопротивляться любой попытке захватить свою родину." #NT!
- kustjagare_battalion: "Кустьягарский батальон" #NT!
- kustjagare_battalion_desc: "Шведские элитные морские пехотинцы, которых боятся как на море, так и на суше." #NT!
+ uhlans_desc: "Этот тип кавалерии отлично подходит для атаки на противника и нарушения его организации, но он довольно плохо действует в обороне." #NT!
+ native_mountaineers: "Кавказские горцы" #NT!
+ native_mountaineers_desc: "Эти храбрые воины будут яростно сопротивляться любым попыткам захватить их родину." #NT!
+ kustjagare_battalion: "Батальон Кустъягаре" #NT!
+ kustjagare_battalion_desc: "Шведская элитная морская пехота, наводящая страх как на море, так и на суше." #NT!
  mot_artillery_brigade: "Моторизированная артиллерия"
  mot_artillery_brigade_desc: ""
- mot_rocket_artillery_brigade: "Моторизованная ракетная артиллерия" #NT!
+ mot_rocket_artillery_brigade: "Моторизованная реактивная артиллерия" #NT!
  mot_rocket_artillery_brigade_desc: ""
  armored_car: "Бронемашина"
  armored_car_desc: ""
@@ -722,9 +729,9 @@
  EFFECT_OF_OUR_MINES_ON_NAVAL_SUPREMACY: "Влияние наших мин на наше превосходство на море"
  EFFECT_OF_ENEMY_MINES_ON_NAVAL_SUPREMACY: "Влияние вражеских мин на их превосходство на море"
  NO_NAVAL_SUPREMACY_INFO: "В этом регионе нет ни дружественных, ни вражеских кораблей"
- damaged_heavy_guns: "Главная тяжелая батарея уничтожена" #NT!
+ damaged_heavy_guns: "Основная тяжелая батарея уничтожена" #NT!
  damaged_medium_guns: "Основная средняя батарея уничтожена" #NT!
- damaged_light_guns: "Батарея основного освещения отключена" #NT!
+ damaged_light_guns: "Аккумулятор основного света отключен" #NT!
  damaged_torpedoes: "Торпедные аппараты повреждены"
  destroyed_ammo_storage: "Попадание в боезапас"
  on_fire: "Сильный пожар"

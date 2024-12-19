@@ -604,6 +604,12 @@
 			industry_throughput_factor = { color_type = good value_type = percentage precision = 1 category = country }
 			industry_attractiveness_modifier = { color_type = good value_type = number precision = 1 category = country }
 			industry_attractiveness_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			
+			prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			mining_prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			oil_prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			logging_prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			agriculture_prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
 		#
 		# Category Modifiers
 			factory_input_factor = { color_type = bad value_type = percentage precision = 1 category = country }
@@ -631,6 +637,8 @@
 			urban_attractiveness_factor = { color_type = good value_type = percentage precision = 1 category = country }
 		#
 		# Agriculture
+			subsistence_farm_output_factor = { color_type = good value_type = percentage precision = 1 category = country }
+
 			crop_farm_input_factor = { color_type = bad value_type = percentage precision = 1 category = country }
 			crop_farm_output_factor = { color_type = good value_type = percentage precision = 1 category = country }
 			crop_farm_throughput_factor = { color_type = good value_type = percentage precision = 1 category = country }
@@ -3215,7 +3223,13 @@
 			category = country
 		}
 	#
-	#Resources
+	#Trade
+		shipping_cost_modifier = {
+			color_type = bad
+			value_type = percentage
+			precision = 2
+			category = country
+		}
 	#
 #
 
@@ -4454,11 +4468,5 @@
 		#
 	#
 	#
-		shipping_cost_modifier = {
-			color_type = good
-			value_type = number
-			precision = 2
-			category = country
-		}
 	#
 #

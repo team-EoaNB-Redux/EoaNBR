@@ -1518,8 +1518,13 @@ political_actions = {
 				has_stability > 0.5
 				has_war_support > 0.25
 				ROOT = {
-					OVERLORD = {
-						has_stability < 0.35
+					if = {
+						limit = {
+							is_subject = yes
+						}
+						overlord = {
+							has_stability < 0.35
+						}
 					}
 				}
 			}
@@ -2400,20 +2405,20 @@ eoanb_category_traditions_celebrations = {
 	}
 }
 
-eoanb_category_options = {
+eoanb_category_options = {  
 	eoanb_decision_open_options = {
 		icon = generic_decision
 		visible = {
 			is_ai = no
 			NOT = {
-				has_country_flag = eoanb_startup_event_marker
+				has_country_flag = eoanbr_startup_event_marker
 			}
 		}
 		fire_only_once = no
 		cost = 0
 		complete_effect = {
-			set_country_flag = eoanb_startup_event_marker
-			set_country_flag = eoanb_startup_event_settings_marker
+			set_country_flag = eoanbr_startup_event_marker
+			set_country_flag = eoanbr_startup_event_settings_marker
 		}
 	}
 	# eoanb_decision_disable_options = {

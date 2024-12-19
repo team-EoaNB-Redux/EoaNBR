@@ -34,7 +34,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		custom_effect_tooltip = eoanb_tt_event_heir_1_careful
 		hidden_effect = {
-			country_event = { id = heir.2 days = 150 random_days = 350 }
+			country_event = { id = heir.3 days = 150 random_days = 350 }
 		}
 	}
 }

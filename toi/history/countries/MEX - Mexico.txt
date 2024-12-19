@@ -19,7 +19,7 @@
 		civilian_economy
 		limited_exports
 		two_percent
-		normal_taxes
+		no_taxes
 		cl_legal
 
 		stagnation_growth
@@ -46,10 +46,10 @@
 		#NATIONAL SPIRITS
 		egy_vic_debt
 		afr_total_detrimental_colonial_impact_idea
-		MEX_idea_military_privileges
-		MEX_idea_large_economic_inequality
-		MEX_idea_influenced_government_without_balances
-		MEX_idea_uncontrolled_catholic_church_0
+		#MEX_idea_military_privileges
+		#MEX_idea_large_economic_inequality
+		#MEX_idea_influenced_government_without_balances
+		#MEX_idea_uncontrolled_catholic_church_0
 	}
 
 
@@ -71,14 +71,14 @@
 	set_popularities = {
 		anarchism = 0
 		vanguard_communism = 0
-		collectivist_socialism = 0
-		social_egalitarianism = 0
-		centrism = 43
-		traditional_conservatism = 57
-		radical_democracy = 0
-		chauvinist_populism = 0
-		autocracy = 0
-		fundamentalism = 0
+		collectivist_socialism = 1
+		social_egalitarianism = 27
+		centrism = 25
+		traditional_conservatism = 0
+		radical_democracy = 22
+		chauvinist_populism = 3
+		autocracy = 9
+		fundamentalism = 13
 	}
 
 	set_tech_victorian_early_industrializing = yes
@@ -87,6 +87,21 @@
 	set_variable = { starting_debt@SPR = 5.5 }
 	set_variable = { starting_debt@FRA = 10.0 }
 	set_variable = { starting_debt@ENG = 6.0 }
+
+	complete_national_focus = MEX_focus_shadow_of_ayutla
+	complete_national_focus = MEX_focus_juarez_law
+	complete_national_focus = MEX_focus_suppression_of_jesuits
+	complete_national_focus = MEX_focus_lerdo_law
+	complete_national_focus = MEX_focus_iglesias_law
+	complete_national_focus = MEX_focus_press_freedom_law
+	complete_national_focus = MEX_focus_registration_law
+	complete_national_focus = MEX_focus_constitution_of_1857
+	complete_national_focus = MEX_focus_constitutional_oath
+
+	set_variable = {
+		var = EOANBSYS_national_crisis_progress_var
+		value = 50
+	}
 
 	# POLITICAL LEADERS
 
@@ -99,15 +114,15 @@
 		id = 18621
 	}
 
-	add_equipment_to_stockpile = { type = infantry_equipment_pre_rifle_3 amount = 1000 producer = MEX }
-	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1000 producer = MEX }
+	add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = MEX }
+	add_equipment_to_stockpile = { type = uniform_equipment amount = 1000 producer = MEX }
 
 	create_country_leader = {
 		name = "Felix Maria Zuloaga"
 		desc = "POLITICS_TEMP_DESC"
 		picture = "Portrait_MEX_Felix_Maria_Zuloaga.dds"
 		expire = 1898.2.11
-		ideology = conserv
+		ideology = reactionary
 		id = 18622
 	}
 
@@ -162,6 +177,12 @@
 	#	planning_skill = 3
 	#	logistics_skill = 2
 	#}
+
+	recruit_character = MEX_Char_Lerdo_de_Tejada
+	recruit_character = MEX_Char_Ponciano_Arriaga
+	recruit_character = MEX_Char_Gutierrez_de_Estrada
+	recruit_character = MEX_Char_Garza_y_Ballesteros
+	recruit_character = MEX_Char_Marquez_Araujo
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		create_equipment_variant = {
@@ -190,5 +211,8 @@
 			set_naval_oob = "MEX_1857_naval_legacy"
 		}
 	}
+
+	# set_country_flag = EOANBSYS_national_crisis_mexican_reform_war_flag
+	# EOANBSYS_national_crisis_setup = yes
 
 }

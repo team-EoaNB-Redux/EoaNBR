@@ -5,121 +5,121 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_1"
+		localization_key = scripted_loc_inline_538
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_2"
+		localization_key = scripted_loc_inline_539
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_3"
+		localization_key = scripted_loc_inline_540
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_4"
+		localization_key = scripted_loc_inline_541
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_5"
+		localization_key = scripted_loc_inline_542
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_6"
+		localization_key = scripted_loc_inline_543
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_7"
+		localization_key = scripted_loc_inline_544
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_8"
+		localization_key = scripted_loc_inline_545
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 9 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_9"
+		localization_key = scripted_loc_inline_546
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 10 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_10"
+		localization_key = scripted_loc_inline_547
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 11 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_11"
+		localization_key = scripted_loc_inline_548
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 12 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_12"
+		localization_key = scripted_loc_inline_549
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 13 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_13"
+		localization_key = scripted_loc_inline_550
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 14 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_14"
+		localization_key = scripted_loc_inline_551
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 15 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_15"
+		localization_key = scripted_loc_inline_552
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 16 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_16"
+		localization_key = scripted_loc_inline_553
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 17 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_17"
+		localization_key = scripted_loc_inline_554
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 18 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_18"
+		localization_key = scripted_loc_inline_555
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 19 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_19"
+		localization_key = scripted_loc_inline_556
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 20 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_ARMY_GENERIC_GERMAN_ENDPOINT_20"
+		localization_key = scripted_loc_inline_557
 	}
 }
 
@@ -130,121 +130,121 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_1"
+		localization_key = scripted_loc_inline_558
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_2"
+		localization_key = scripted_loc_inline_559
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_3"
+		localization_key = scripted_loc_inline_560
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_4"
+		localization_key = scripted_loc_inline_561
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_5"
+		localization_key = scripted_loc_inline_562
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_6"
+		localization_key = scripted_loc_inline_563
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_7"
+		localization_key = scripted_loc_inline_564
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_8"
+		localization_key = scripted_loc_inline_565
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 9 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_9"
+		localization_key = scripted_loc_inline_566
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 10 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_10"
+		localization_key = scripted_loc_inline_567
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 11 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_11"
+		localization_key = scripted_loc_inline_568
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 12 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_12"
+		localization_key = scripted_loc_inline_569
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 13 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_13"
+		localization_key = scripted_loc_inline_570
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 14 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_14"
+		localization_key = scripted_loc_inline_571
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 15 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_15"
+		localization_key = scripted_loc_inline_572
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 16 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_16"
+		localization_key = scripted_loc_inline_573
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 17 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_17"
+		localization_key = scripted_loc_inline_574
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 18 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_18"
+		localization_key = scripted_loc_inline_575
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 19 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_19"
+		localization_key = scripted_loc_inline_576
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 20 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_NAVY_GENERIC_GERMAN_ENDPOINT_20"
+		localization_key = scripted_loc_inline_577
 	}
 }
 
@@ -255,120 +255,120 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 1 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_1"
+		localization_key = scripted_loc_inline_578
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_2"
+		localization_key = scripted_loc_inline_579
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 3 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_3"
+		localization_key = scripted_loc_inline_580
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 4 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_4"
+		localization_key = scripted_loc_inline_581
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 5 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_5"
+		localization_key = scripted_loc_inline_582
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 6 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_6"
+		localization_key = scripted_loc_inline_583
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 7 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_7"
+		localization_key = scripted_loc_inline_584
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 8 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_8"
+		localization_key = scripted_loc_inline_585
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 9 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_9"
+		localization_key = scripted_loc_inline_586
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 10 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_10"
+		localization_key = scripted_loc_inline_587
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 11 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_11"
+		localization_key = scripted_loc_inline_588
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 12 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_12"
+		localization_key = scripted_loc_inline_589
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 13 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_13"
+		localization_key = scripted_loc_inline_590
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 14 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_14"
+		localization_key = scripted_loc_inline_591
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 15 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_15"
+		localization_key = scripted_loc_inline_592
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 16 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_16"
+		localization_key = scripted_loc_inline_593
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 17 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_17"
+		localization_key = scripted_loc_inline_594
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 18 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_18"
+		localization_key = scripted_loc_inline_595
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 19 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_19"
+		localization_key = scripted_loc_inline_596
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 20 }
 		}
-		localization_key = "MHC_SELECTOR_ENTRY_NAME_AIRFORCE_GENERIC_GERMAN_ENDPOINT_20"
+		localization_key = scripted_loc_inline_597
 	}
 }

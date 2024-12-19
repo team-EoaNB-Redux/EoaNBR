@@ -13,6 +13,10 @@ focus_tree = {
 			tag = CSA
 			date > 1867.1.1
 		}
+		modifier = {
+			add = -11
+			has_cosmetic_tag = CSA_KKK
+		}
 	}
 	default = no
 	focus = {
@@ -198,7 +202,7 @@ focus_tree = {
 			focus = CSA_postwar_empower_executive
 		}
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -212,7 +216,10 @@ focus_tree = {
 			focus = CSA_postwar_toombs_plan
 		}
 		completion_reward = {
-			add_political_power = 20
+			add_popularity = {
+				ideology = centrism
+				popularity = 0.025
+			}
 		}
 	}
 	focus = {
@@ -232,7 +239,7 @@ focus_tree = {
 			focus = CSA_postwar_empower_executive
 		}
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -246,7 +253,7 @@ focus_tree = {
 			focus = CSA_postwar_lees_plan
 		}
 		completion_reward = {
-			add_political_power = 20
+			army_experience = 25
 		}
 	}
 	focus = {
@@ -260,7 +267,7 @@ focus_tree = {
 			focus = CSA_postwar_hero_of_CSA
 		}
 		completion_reward = {
-			add_political_power = 20
+			
 		}
 	}
 	focus = {
@@ -344,7 +351,7 @@ focus_tree = {
 			focus = CSA_postwar_empower_executive
 		}
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -358,7 +365,10 @@ focus_tree = {
 			focus = CSA_postwar_breckinridges_plan
 		}
 		completion_reward = {
-			add_political_power = 20
+			add_popularity = {
+				ideology = traditional_conservatism
+				popularity = 0.025
+			}
 		}
 	}
 
@@ -593,7 +603,7 @@ focus_tree = {
 
 	focus = {
 		id = CSA_postwar_looking_to_cuba
-		icon = GFX_Focus_Continent_North_America
+		icon = GFX_Focus_cuban_deal
 		relative_position_id = CSA_postwar_dreams_of_golden_circle
 		cost = 50
 		x = -4
@@ -611,6 +621,9 @@ focus_tree = {
 				}
 				
 			}
+		}
+		mutually_exclusive={
+			focus = CSA_postwar_cuban_invasion
 		}
 		prerequisite = {
 			focus = CSA_postwar_dreams_of_golden_circle
@@ -677,6 +690,28 @@ focus_tree = {
 			SPR = {
 				country_event = { id = csa.33 }
 			}
+		}
+	}
+	focus = {
+		id = CSA_postwar_cuban_invasion
+		icon = GFX_Focus_cuban_deal
+		relative_position_id = CSA_postwar_dreams_of_golden_circle
+		cost = 50
+		x = -6
+		y = 1
+		available = {
+			CUB={
+				controls_state = 1350
+				is_subject = no
+			}
+		}
+		mutually_exclusive={
+			focus = CSA_postwar_looking_to_cuba
+		}
+		prerequisite = {
+			focus = CSA_postwar_dreams_of_golden_circle
+		}
+		completion_reward = {
 		}
 	}
 	focus = {

@@ -3579,12 +3579,13 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_idea = religion_protestant
+					set_temp_variable = { religion_temp = token:religion_protestant }
+					is_primary_religion = yes
 				}
-				swap_ideas = {
-					add_idea = religion_catholic
-					remove_idea = religion_protestant
-				}
+				set_temp_variable = { type_temp = token:religion_catholic }
+				eoanbr_pops_country_primary_culture = yes
+				set_temp_variable = { type_temp = token:religion_protestant }
+				eoanbr_pops_country_demote_culture = yes
 			}
 		}
 	}

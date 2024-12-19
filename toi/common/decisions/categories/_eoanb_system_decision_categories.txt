@@ -31,9 +31,10 @@
 		# Enable Crisises for your country by adding tag here
 		allowed = {
 			# always = yes
-			#OR = {
+			OR = {
 				tag = TSH
-			#}
+				tag = MEX
+			}
 		}
 
 		visible = {

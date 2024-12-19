@@ -27,7 +27,7 @@ state = {
 			remove_core_of = BRN
 		}
 
-		1900.6.1 = {
+		1904.10.18 = {
 			owner = FRA
 			remove_core_of = TOU
 		}

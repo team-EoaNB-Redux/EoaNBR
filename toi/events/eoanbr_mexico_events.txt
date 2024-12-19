@@ -9,7 +9,7 @@ add_namespace = mexico_civil_war
 	country_event = {
 		id = mexico_politics.1
 		title = mexico_politics.1.t
-		desc= mexico_politics.1.d
+		desc = mexico_politics.1.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -27,7 +27,7 @@ add_namespace = mexico_civil_war
 	country_event = {
 		id = mexico_politics.2
 		title = mexico_politics.2.t
-		desc= mexico_politics.2.d
+		desc = mexico_politics.2.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -57,7 +57,7 @@ add_namespace = mexico_civil_war
 	country_event = {
 		id = mexico_politics.3
 		title = mexico_politics.3.t
-		desc= mexico_politics.3.d
+		desc = mexico_politics.3.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -75,7 +75,7 @@ add_namespace = mexico_civil_war
 	country_event = {
 		id = mexico_politics.4
 		title = mexico_politics.4.t
-		desc= mexico_politics.4.d
+		desc = mexico_politics.4.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -90,7 +90,7 @@ add_namespace = mexico_civil_war
 	country_event = {
 		id = mexico_politics.5
 		title = mexico_politics.5.t
-		desc= mexico_politics.5.d
+		desc = mexico_politics.5.d
 		picture = GFX_report_event_ignacio_comonfort
 
 		immediate = {
@@ -113,7 +113,7 @@ add_namespace = mexico_civil_war
 	country_event = {
 		id = mexico_politics.6
 		title = mexico_politics.6.t
-		desc= mexico_politics.6.d
+		desc = mexico_politics.6.d
 		picture = GFX_report_event_felix_maria_zuloaga
 
 		immediate = {
@@ -139,17 +139,16 @@ add_namespace = mexico_civil_war
 			}
 			complete_national_focus = MEX_get_rid_of_confort
 			hidden_effect = {
-				set_politics = { ruling_party = traditional_conservatism elections_allowed = yes }
+				set_politics = { ruling_party = radical_democracy elections_allowed = yes }
 				MEX = { country_event = { id = mexico_politics.7 } }
 			}
 		}
-
 	}
 
 	country_event = {
 		id = mexico_politics.7
 		title = mexico_politics.7.t
-		desc= mexico_politics.7.d
+		desc = mexico_politics.7.d
 		picture = GFX_report_event_felix_maria_zuloaga
 
 		immediate = {
@@ -178,48 +177,6 @@ add_namespace = mexico_civil_war
 			hidden_effect = {
 				MEX = {
 					activate_mission = MEX_mission_reform_war_last_effort
-					add_ai_strategy = {
-						type = front_control
-
-						#you can define a target in following ways. you can define more than one
-
-						tag = MEC 							# target against a specific country
-						state = 277 						# target on a state
-						strategic_region = 123				# target on a strategic region
-						#area = caribbean					# target on a specific ai area
-						country_trigger = { has_global_flag = MEX_MEC_CIVIL_WAR } 	# a trigger to check agaisnt a specific country. scope is enemy country from scope is our country
-						#state_trigger = { always = no } 	# a trigger to check agaisnt a state. scope is state. from scope is enemy country from.from scope is our country
-
-						ratio = 0.0 						# the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
-
-						priority = 200 						# default 0, higher prio strats will override lower
-						ordertype = front	 				# front or invasion. if set this strategy will only apply to that specific order type
-						execution_type = balanced 			# one of careful balanced rush rush_weak. if set will override the execution type of front (only for front orders)
-						execute_order = yes 				# yes or no. if set will override execute or not decision of front
-						manual_attack = yes 				# default yes. if no ai will not do manual pokes at enemy (only for front orders)
-					}
-				}
-				MEC = {
-					add_ai_strategy = {
-						type = front_control
-
-						#you can define a target in following ways. you can define more than one
-
-						tag = MEX 							# target against a specific country
-						state = 477 						# target on a state
-						strategic_region = 123				# target on a strategic region
-						#area = caribbean					# target on a specific ai area
-						country_trigger = { has_global_flag = MEX_MEC_CIVIL_WAR } 	# a trigger to check agaisnt a specific country. scope is enemy country from scope is our country
-						#state_trigger = { always = no } 	# a trigger to check agaisnt a state. scope is state. from scope is enemy country from.from scope is our country
-
-						ratio = 0.0 						# the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
-
-						priority = 200 						# default 0, higher prio strats will override lower
-						ordertype = front 					# front or invasion. if set this strategy will only apply to that specific order type
-						execution_type = careful 			# one of careful balanced rush rush_weak. if set will override the execution type of front (only for front orders)
-						execute_order = yes 				# yes or no. if set will override execute or not decision of front
-						manual_attack = yes 				# default yes. if no ai will not do manual pokes at enemy (only for front orders)
-					}
 				}
 			}
 		}
@@ -304,6 +261,598 @@ add_namespace = mexico_civil_war
 		}
 	}
 
+	country_event = {
+		id = mexico_politics.20
+		title = mexico_politics.20.t
+		desc = mexico_politics.20.d
+		# picture = placeholder
+
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.20.a
+			
+			every_country = {
+				limit = {
+					set_temp_variable = {
+						religion_temp = token:religion_catholic
+					}
+					is_primary_religion = yes
+				}
+				custom_effect_tooltip = effects_every_catholic_nation_tt
+				add_opinion_modifier = {
+					target = MEX
+					modifier = MEX_opinion_papal_legation
+				}
+				# set_cosmetic_tag = MEX_cosmetic_tacubaya
+				# drop_cosmetic_tag = yes
+			}
+		}
+	}
+
+	country_event = { #congressional elections of 1857
+		id = mexico_politics.21
+		title = mexico_politics.21.t
+		desc = mexico_politics.21.d
+		# picture = placeholder
+
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.21.a
+			complete_national_focus = MEX_focus_1857_congressional_elections
+		}
+	}
+
+	country_event = { #dealing with viadurri
+		id = mexico_politics.22
+		title = mexico_politics.22.t
+		desc = mexico_politics.22.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {#negotiate
+			name = mexico_politics.22.a
+			custom_effect_tooltip = MEX_negotiate_with_viadurri_tt
+			swap_ideas = {
+				remove_idea = MEX_idea_provisional_funding_efforts
+				add_idea = MEX_idea_dealt_with_viadurri
+			}
+		}
+
+		option = {#confront
+			name = mexico_politics.22.b
+			set_country_flag = MEX_flag_viadurri_confronted
+			custom_effect_tooltip = MEX_confront_viadurri_tt
+			swap_ideas = {
+				remove_idea = MEX_idea_provisional_funding_efforts
+				add_idea = MEX_idea_dealt_with_viadurri
+			}
+		}
+	}
+
+	country_event = { #congress denies emergency powers
+		id = mexico_politics.23
+		title = mexico_politics.23.t
+		desc = mexico_politics.23.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.23.a
+			every_core_state = {
+				# decrease_resistance_la_reforma = yes
+				set_occupation_law = local_police_force_garrison
+				set_state_flag = generic_state_flag_garrison_laws_locked
+			}
+		}
+	}
+
+	country_event = { #national insurrection
+		id = mexico_politics.24
+		title = mexico_politics.24.t
+		desc = mexico_politics.24.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.24.a
+			every_core_state = {
+				limit = {
+					OR = {
+						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_1 }
+						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_2 }
+					}
+				}
+				increase_resistance_la_reforma = yes
+			}
+			every_core_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_3 }
+				}
+				random_list = {
+					5 = {
+						modifier = {
+							add = 1
+							compliance < 50
+						}
+						modifier = {
+							add = 1
+							compliance < 40
+						}
+						modifier = {
+							add = 1
+							compliance < 30
+						}
+						modifier = {
+							add = 1
+							compliance < 20
+						}
+						modifier = {
+							add = 1
+							compliance < 10
+						}
+						modifier = {
+							add = -1
+							resistance < 50
+						}
+						modifier = {
+							add = -1
+							resistance < 40
+						}
+						modifier = {
+							add = -1
+							resistance < 30
+						}
+						modifier = {
+							add = -1
+							resistance < 20
+						}
+						modifier = {
+							add = -1
+							resistance < 10
+						}
+						increase_resistance_la_reforma = yes
+					}
+					5 = {
+						modifier = {
+							add = -1
+							compliance < 50
+						}
+						modifier = {
+							add = -1
+							compliance < 40
+						}
+						modifier = {
+							add = -1
+							compliance < 30
+						}
+						modifier = {
+							add = -1
+							compliance < 20
+						}
+						modifier = {
+							add = -1
+							compliance < 10
+						}
+						modifier = {
+							add = 1
+							resistance < 50
+						}
+						modifier = {
+							add = 1
+							resistance < 40
+						}
+						modifier = {
+							add = 1
+							resistance < 30
+						}
+						modifier = {
+							add = 1
+							resistance < 20
+						}
+						modifier = {
+							add = 1
+							resistance < 10
+						}
+						decrease_resistance_la_reforma = yes
+					}
+				}
+			}
+			every_core_state = {
+				limit = {
+					OR = {
+						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_4 }
+						has_dynamic_modifier = { modifier = dynmod_MEX_resistance_modifier_5 }
+					}
+				}
+				decrease_resistance_la_reforma = yes
+			}
+		}
+	}
+
+	country_event = { #6 events to make states swing left/right, 4 more as flavor
+		id = mexico_politics.30
+		title = mexico_politics.30.t
+		desc = mexico_politics.30.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.30.a
+			474 = {
+				increase_resistance_la_reforma = yes
+			}
+			475 = {
+				increase_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_1
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.31
+		title = mexico_politics.31.t
+		desc = mexico_politics.31.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.31.a
+			479 = {
+				decrease_resistance_la_reforma = yes
+			}
+			480 = {
+				increase_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_2
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.32
+		title = mexico_politics.32.t
+		desc = mexico_politics.32.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.32.a
+			481 = {
+				decrease_resistance_la_reforma = yes
+			}
+			1125 = {
+				increase_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_3
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.33
+		title = mexico_politics.33.t
+		desc = mexico_politics.33.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.33.a
+			1112 = {
+				decrease_resistance_la_reforma = yes
+			}
+			478 = {
+				decrease_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_4
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.34
+		title = mexico_politics.34.t
+		desc = mexico_politics.34.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.34.a
+			485 = {
+				decrease_resistance_la_reforma = yes
+			}
+			1114 = {
+				increase_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_5
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.35
+		title = mexico_politics.35.t
+		desc = mexico_politics.35.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.35.a
+			277 = {
+				increase_resistance_la_reforma = yes
+			}
+			1124 = {
+				decrease_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_6
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.36
+		title = mexico_politics.36.t
+		desc = mexico_politics.36.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.36.a
+			1123 = {
+				increase_resistance_la_reforma = yes
+			}
+			482 = {
+				decrease_resistance_la_reforma = yes
+			}
+			483 = {
+				decrease_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_7
+			}
+		}
+	}
+
 #----------------------------------------------------
 #Mexico In Debt? Finding Relief
 #----------------------------------------------------
@@ -366,374 +915,444 @@ country_event = { #Debt system initial announcement
 #----------------------------------------------------
 
 	#Tacubaya Coup Erupts
-	country_event = {
-		id = mexico_civil_war.1
-		title = mexico_civil_war.1.t
-		desc = mexico_civil_war.1.d
-		picture = GFX_report_event_plan_tacubaya
+	# country_event = { ############### edit this one
+	# 	id = mexico_civil_war.1
+	# 	title = mexico_civil_war.1.t
+	# 	desc = mexico_civil_war.1.d
+	# 	picture = GFX_report_event_plan_tacubaya
 
-		immediate = {
-			# log = "[THIS.GetTag]: firing  = mexico_civil_war.1"
-		}
-		fire_only_once = yes
+	# 	immediate = {
+	# 		# log = "[THIS.GetTag]: firing  = mexico_civil_war.1"
+	# 	}
+	# 	fire_only_once = yes
 
-		is_triggered_only = yes
-		trigger = {
-			MXE = { exists = no }
-			MEX = { exists = yes }
-		}
-		immediate={
-			# log = "[THIS.GetTag]: firing  = mexico_civil_war.1"
-			set_global_flag = MEX_MEC_CIVIL_WAR
-		}
+	# 	is_triggered_only = yes
+	# 	trigger = {
+	# 		MXE = { exists = no }
+	# 		MEX = { exists = yes }
+	# 	}
+	# 	immediate={
+	# 		# log = "[THIS.GetTag]: firing  = mexico_civil_war.1"
+	# 		set_global_flag = MEX_MEC_CIVIL_WAR
+	# 	}
 
-		option = {
-			name = mexico_civil_war.1.a
-			# log = "option:			name = mexico_civil_war.1.a"
-			custom_effect_tooltip = MEX_1857_Civilwar
-			hidden_effect = {
-				set_global_flag = MEX_MEC_CIVIL_WAR_side_chosen
-				set_politics = { ruling_party = centrism elections_allowed = yes }
-				add_popularity = { ideology = centrism popularity = 0.4}
-				increase_ps_by_one = yes
-				MEC = { transfer_state = 277 }
-				277 = { add_core_of = MEC }
-				MEC = { transfer_state = 1114 }
-				1114 = { add_core_of = MEC }
-				MEC = { transfer_state = 1113 }
-				1113 = { add_core_of = MEC }
-				MEC = { inherit_technology = MEX }
+	# 	option = {
+	# 		name = mexico_civil_war.1.a
+	# 		# log = "option:			name = mexico_civil_war.1.a"
+	# 		#custom_effect_tooltip = MEX_1857_Civilwar
+	# 		hidden_effect = {
+	# 			# set_global_flag = MEX_MEC_CIVIL_WAR_side_chosen
+	# 			# set_politics = { ruling_party = centrism elections_allowed = yes }
+	# 			# add_popularity = { ideology = centrism popularity = 0.4}
+	# 			# increase_ps_by_one = yes
+	# 			# MEC = { transfer_state = 277 }
+	# 			# 277 = { add_core_of = MEC }
+	# 			# MEC = { transfer_state = 1114 }
+	# 			# 1114 = { add_core_of = MEC }
+	# 			# MEC = { transfer_state = 1113 }
+	# 			# 1113 = { add_core_of = MEC }
+	# 			# MEC = { inherit_technology = MEX }
 
-				MEC = {
-					set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
-					set_variable = { global.mex_civil_war_debt@FRA = MEX.debt_to_bank_k@FRA }
-					set_variable = { global.mex_civil_war_debt@SPR = MEX.debt_to_bank_k@SPR }
-					set_variable = { global.mex_civil_war_debt@USA = MEX.debt_to_bank_k@USA }
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@ENG }
-					set_temp_variable = { country_temp = ENG }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@FRA }
-					set_temp_variable = { country_temp = FRA }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@SPR }
-					set_temp_variable = { country_temp = SPR }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@USA }
-					set_temp_variable = { country_temp = USA }
-					add_debt = yes
-					set_country_flag = SPR_paying_debt_interest_flag
-				}
+	# 			MEC = {
+	# 				# set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
+	# 				# set_variable = { global.mex_civil_war_debt@FRA = MEX.debt_to_bank_k@FRA }
+	# 				# set_variable = { global.mex_civil_war_debt@SPR = MEX.debt_to_bank_k@SPR }
+	# 				# set_variable = { global.mex_civil_war_debt@USA = MEX.debt_to_bank_k@USA }
+	# 				# set_temp_variable = { x_temp = MEX.debt_to_bank_k@ENG }
+	# 				# set_temp_variable = { country_temp = ENG }
+	# 				# add_debt = yes
+	# 				# set_temp_variable = { x_temp = MEX.debt_to_bank_k@FRA }
+	# 				# set_temp_variable = { country_temp = FRA }
+	# 				# add_debt = yes
+	# 				# set_temp_variable = { x_temp = MEX.debt_to_bank_k@SPR }
+	# 				# set_temp_variable = { country_temp = SPR }
+	# 				# add_debt = yes
+	# 				# set_temp_variable = { x_temp = MEX.debt_to_bank_k@USA }
+	# 				# set_temp_variable = { country_temp = USA }
+	# 				# add_debt = yes
+	# 				# set_country_flag = SPR_paying_debt_interest_flag
+	# 			}
 
-				MEX = {
-					every_owned_state = {
-						limit = { is_core_of = MEX }
-						add_core_of = MEC
-					}
-					transfer_units_fraction= {
-						target = MEC
-						size = 0.5
-						stockpile_ratio = 0
-						army_ratio = 0.5
-						navy_ratio = 0
-						air_ratio = 0
-						keep_unit_leaders_trigger = {
-							OR = {
-								has_id = 18625
-								has_id = 186210
-							}
-						}
-					}
-					every_unit_leader = {
-						limit = {
-							OR = {
-								has_id = 18626
-								has_id = 186211
-							}
-						}
-						set_nationality = MEC
-					}
-					load_oob = "MEX_civil_war_liberals"
-					country_event = { id = mexico.15 days = 2 }
-				}
-				MEC = {
-					load_oob = "MEX_civil_war_conservatives"
-					MEX = { country_event = { id = mexico.14 days = 2 } }
-					news_event = news.4
-					if = {
-						limit = { ROOT = { is_ai = no } }
-						MEC = { change_tag_from = ROOT }
-					}
-					set_war_support = 0.6
-				}
-				MEX = { complete_national_focus = MEX_defend_the_constitution }
-				#Southern States
-				random_state = {
-					limit = { STATE = 476 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 475 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 474 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
-				}
-				#Northern States
-				random_state = {
-					limit = { STATE = 481 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 5 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 482 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 5 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 483 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 4 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 484 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 6 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 1125 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 4 trigger_for = controller } } }
-				}
-				MEX = { country_event = { id = mexico.2 days = 3 } }
-				MEC = { country_event = { id = mexico.2 days = 3 } }
-			}
-			MEC = { complete_national_focus = MEX_support_tacubaya_plan }
-			hidden_effect = {
-				MEC = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = MEX
-						value = 200
-					}
-				}
-				MEX = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = MEC
-						value = 200
-					}
-				}
-			}
-		}
-		option = {
-			name = mexico_civil_war.1.b
-			# log = "option:			name = mexico_civil_war.1.b"
-			custom_effect_tooltip = MEX_1857_Civilwar
-			MEX = { complete_national_focus = MEX_defend_the_constitution }
-			hidden_effect = {
-				set_global_flag = MEX_MEC_CIVIL_WAR_side_chosen
-				set_politics = { ruling_party = centrism elections_allowed = yes }
-				increase_ps_by_one = yes
-				MEC = { transfer_state = 277 }
-				277 = { add_core_of = MEC }
-				MEC = { transfer_state = 1114 }
-				1114 = { add_core_of = MEC }
-				MEC = { transfer_state = 1113 }
-				1113 = { add_core_of = MEC }
-				MEX = {
-					every_owned_state = {
-						limit = { is_core_of = MEX }
-						add_core_of = MEC
-					}
-					transfer_units_fraction= {
-						target = MEC
-						size = 0.5
-						stockpile_ratio = 0
-						army_ratio = 0.5
-						navy_ratio = 0
-						air_ratio = 0
-						keep_unit_leaders_trigger = {
-							OR = {
-								has_id = 18625
-								has_id = 186210
-							}
-						}
-					}
-					every_unit_leader = {
-						limit = {
-							OR = {
-								has_id = 18626
-								has_id = 186211
-							}
-						}
-						set_nationality = MEC
-					}
-					load_oob = "MEX_civil_war_liberals"
-					country_event = { id = mexico.15 days = 2  }
-					set_war_support = 0.6
-				}
-				MEC = {
-					load_oob = "MEX_civil_war_conservatives"
-					country_event = { id = mexico.14 days = 2 }
-					news_event = news.4
-				}
-				MEC = {
-					set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
-					set_variable = { global.mex_civil_war_debt@FRA = MEX.debt_to_bank_k@FRA }
-					set_variable = { global.mex_civil_war_debt@SPR = MEX.debt_to_bank_k@SPR }
-					set_variable = { global.mex_civil_war_debt@USA = MEX.debt_to_bank_k@USA }
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@ENG }
-					set_temp_variable = { country_temp = ENG }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@FRA }
-					set_temp_variable = { country_temp = FRA }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@SPR }
-					set_temp_variable = { country_temp = SPR }
-					add_debt = yes
-					set_temp_variable = { x_temp = MEX.debt_to_bank_k@USA }
-					set_temp_variable = { country_temp = USA }
-					add_debt = yes
-					set_country_flag = SPR_paying_debt_interest_flag
-				}
-				MEC = { complete_national_focus = MEX_support_tacubaya_plan }
-				#Southern States
-				random_state = {
-					limit = { STATE = 476 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 475 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 474 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
-				}
-				#Northern States
-				random_state = {
-					limit = { STATE = 481 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 5 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 482 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 5 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 483 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 4 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 484 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 6 trigger_for = controller } } }
-				}
-				random_state = {
-					limit = { STATE = 1125 }
-					OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 4 trigger_for = controller } } }
-				}
-				MEX = { country_event = { id = mexico.2 days = 3 } }
-				MEC = { country_event = { id = mexico.2 days = 3 } }
-			}
-			hidden_effect = {
-				MEC = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = MEX
-						value = 200
-					}
-				}
-				MEX = {
-					add_ai_strategy = {
-						type = prepare_for_war
-						id = MEC
-						value = 200
-					}
-				}
-			}
-		}
-	}
+	# 			MEX = {
+	# 				# every_owned_state = {
+	# 				# 	limit = { is_core_of = MEX }
+	# 				# 	add_core_of = MEC
+	# 				# }
+	# 				# transfer_units_fraction= {
+	# 				# 	target = MEC
+	# 				# 	size = 0.5
+	# 				# 	stockpile_ratio = 0
+	# 				# 	army_ratio = 0.5
+	# 				# 	navy_ratio = 0
+	# 				# 	air_ratio = 0
+	# 				# 	keep_unit_leaders_trigger = {
+	# 				# 		OR = {
+	# 				# 			has_id = 18625
+	# 				# 			has_id = 186210
+	# 				# 		}
+	# 				# 	}
+	# 				# }
+	# 				# every_unit_leader = {
+	# 				# 	limit = {
+	# 				# 		OR = {
+	# 				# 			has_id = 18626
+	# 				# 			has_id = 186211
+	# 				# 		}
+	# 				# 	}
+	# 				# 	set_nationality = MEC
+	# 				# }
+	# 				# load_oob = "MEX_civil_war_liberals"
+	# 				# country_event = { id = mexico.15 days = 2 }
+	# 			}
+	# 			MEC = {
+	# 				# load_oob = "MEX_civil_war_conservatives"
+	# 				# MEX = { country_event = { id = mexico.14 days = 2 } }
+	# 				# news_event = news.4
+	# 				# if = {
+	# 				# 	limit = { ROOT = { is_ai = no } }
+	# 				# 	MEC = { change_tag_from = ROOT }
+	# 				# }
+	# 				# set_war_support = 0.6
+	# 			}
+	# 			# MEX = { complete_national_focus = MEX_defend_the_constitution }
+	# 			#Southern States
+	# 			random_state = {
+	# 				limit = { STATE = 476 } #oaxaca
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 475 } #chiapas
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 474 } #yucatan
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
+	# 			}
+	# 			#Northern States
+	# 			random_state = {
+	# 				limit = { STATE = 481 } #durango
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 5 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 482 } #chihuahua
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 5 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 483 } #sonora
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 4 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 484 } #north baja
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 6 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 1125 } #sinaloa
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 4 trigger_for = controller } } }
+	# 			}
+	# 			MEX = { country_event = { id = mexico.2 days = 3 } }
+	# 			MEC = { country_event = { id = mexico.2 days = 3 } }
+	# 		}
+	# 		# MEC = { complete_national_focus = MEX_support_tacubaya_plan }
+	# 		hidden_effect = {
+	# 			MEC = {
+	# 				add_ai_strategy = {
+	# 					type = prepare_for_war
+	# 					id = MEX
+	# 					value = 200
+	# 				}
+	# 			}
+	# 			MEX = {
+	# 				add_ai_strategy = {
+	# 					type = prepare_for_war
+	# 					id = MEC
+	# 					value = 200
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	option = {
+	# 		name = mexico_civil_war.1.b
+	# 		# log = "option:			name = mexico_civil_war.1.b"
+	# 		custom_effect_tooltip = MEX_1857_Civilwar
+	# 		MEX = { complete_national_focus = MEX_defend_the_constitution }
+	# 		hidden_effect = {
+	# 			set_global_flag = MEX_MEC_CIVIL_WAR_side_chosen
+	# 			set_politics = { ruling_party = centrism elections_allowed = yes }
+	# 			increase_ps_by_one = yes
+	# 			MEC = { transfer_state = 277 }
+	# 			277 = { add_core_of = MEC }
+	# 			MEC = { transfer_state = 1114 }
+	# 			1114 = { add_core_of = MEC }
+	# 			MEC = { transfer_state = 1113 }
+	# 			1113 = { add_core_of = MEC }
+	# 			MEX = {
+	# 				every_owned_state = {
+	# 					limit = { is_core_of = MEX }
+	# 					add_core_of = MEC
+	# 				}
+	# 				transfer_units_fraction= {
+	# 					target = MEC
+	# 					size = 0.5
+	# 					stockpile_ratio = 0
+	# 					army_ratio = 0.5
+	# 					navy_ratio = 0
+	# 					air_ratio = 0
+	# 					keep_unit_leaders_trigger = {
+	# 						OR = {
+	# 							has_id = 18625
+	# 							has_id = 186210
+	# 						}
+	# 					}
+	# 				}
+	# 				every_unit_leader = {
+	# 					limit = {
+	# 						OR = {
+	# 							has_id = 18626
+	# 							has_id = 186211
+	# 						}
+	# 					}
+	# 					set_nationality = MEC
+	# 				}
+	# 				load_oob = "MEX_civil_war_liberals"
+	# 				country_event = { id = mexico.15 days = 2  }
+	# 				set_war_support = 0.6
+	# 			}
+	# 			MEC = {
+	# 				load_oob = "MEX_civil_war_conservatives"
+	# 				country_event = { id = mexico.14 days = 2 }
+	# 				news_event = news.4
+	# 			}
+	# 			MEC = {
+	# 				set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
+	# 				set_variable = { global.mex_civil_war_debt@FRA = MEX.debt_to_bank_k@FRA }
+	# 				set_variable = { global.mex_civil_war_debt@SPR = MEX.debt_to_bank_k@SPR }
+	# 				set_variable = { global.mex_civil_war_debt@USA = MEX.debt_to_bank_k@USA }
+	# 				set_temp_variable = { x_temp = MEX.debt_to_bank_k@ENG }
+	# 				set_temp_variable = { country_temp = ENG }
+	# 				add_debt = yes
+	# 				set_temp_variable = { x_temp = MEX.debt_to_bank_k@FRA }
+	# 				set_temp_variable = { country_temp = FRA }
+	# 				add_debt = yes
+	# 				set_temp_variable = { x_temp = MEX.debt_to_bank_k@SPR }
+	# 				set_temp_variable = { country_temp = SPR }
+	# 				add_debt = yes
+	# 				set_temp_variable = { x_temp = MEX.debt_to_bank_k@USA }
+	# 				set_temp_variable = { country_temp = USA }
+	# 				add_debt = yes
+	# 				set_country_flag = SPR_paying_debt_interest_flag
+	# 			}
+	# 			MEC = { complete_national_focus = MEX_support_tacubaya_plan }
+	# 			#Southern States
+	# 			random_state = {
+	# 				limit = { STATE = 476 }
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 475 }
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 474 }
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 3 trigger_for = controller } } }
+	# 			}
+	# 			#Northern States
+	# 			random_state = {
+	# 				limit = { STATE = 481 }
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 5 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 482 }
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 5 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 483 }
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 4 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 484 }
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 6 trigger_for = controller } } }
+	# 			}
+	# 			random_state = {
+	# 				limit = { STATE = 1125 }
+	# 				OWNER = { PREV = { state_event = { id = mexico_civil_war.2 days = 1 random_days = 4 trigger_for = controller } } }
+	# 			}
+	# 			MEX = { country_event = { id = mexico.2 days = 3 } }
+	# 			MEC = { country_event = { id = mexico.2 days = 3 } }
+	# 		}
+	# 		hidden_effect = {
+	# 			MEC = {
+	# 				add_ai_strategy = {
+	# 					type = prepare_for_war
+	# 					id = MEX
+	# 					value = 200
+	# 				}
+	# 			}
+	# 			MEX = {
+	# 				add_ai_strategy = {
+	# 					type = prepare_for_war
+	# 					id = MEC
+	# 					value = 200
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	#State Breaks Off
-	state_event = {
-		id = mexico_civil_war.2
-		hidden = yes
-		is_triggered_only = yes
+	# state_event = {
+	# 	id = mexico_civil_war.2
+	# 	hidden = yes
+	# 	is_triggered_only = yes
 
-		immediate = {
-		# log = "[THIS.GetTag]: firing  = mexico_civil_war.2"
-			hidden_effect = {
-				OWNER = {
-					random_state = {
-						limit = { STATE = ROOT }
-						OWNER = { PREV = { state_event = { id = mexico_civil_war.3 } } }
-					}
-				}
-			}
-		}
-	}
-	state_event = {
+	# 	immediate = {
+	# 	# log = "[THIS.GetTag]: firing  = mexico_civil_war.2"
+	# 		hidden_effect = {
+	# 			OWNER = {
+	# 				random_state = {
+	# 					limit = { STATE = ROOT }
+	# 					OWNER = { PREV = { state_event = { id = mexico_civil_war.3 } } }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	state_event = { #state abandons Tacubaya
 		id = mexico_civil_war.3
 		hidden = yes
 		is_triggered_only = yes
 
 		immediate = {
-		# log = "[THIS.GetTag]: firing  = mexico_civil_war.3"
-			hidden_effect = {
-				MEC = { country_event = { id = mexico_civil_war.4 } }
-				MEX = { country_event = { id = mexico_civil_war.4 } }
-				MEC = { transfer_state = ROOT }
-				ROOT = { add_core_of = MEC }
-				if = {
-					limit = { ROOT = { STATE = 484 } }
-					MEC = { transfer_state = 1359 }
-					1359 = { add_core_of = MEC }
-				}
+			transfer_state_to = MEX
+			MEC = {
+				set_state_controller = THIS
+				country_event = mexico_civil_war.2
 			}
+			MEX = {
+				country_event = mexico_civil_war.2
+			}
+			# log = "[THIS.GetTag]: firing  = mexico_civil_war.2"
+			
 		}
+
+		# option = {
+		# 	name = mexico_civil_war.2.a
+		# 	# log = "option:			name = mexico_civil_war.2.a"
+		# 	trigger = { TAG = MEX }
+		# 	add_war_support = 0.015
+		# 	OWNER = {
+		# 		create_unit = {
+		# 			division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.50"
+		# 			owner = MEX
+
+		# 		}
+		# 	}
+		# }
+		# option = {
+		# 	name = mexico_civil_war.2.b
+		# 	# log = "option:			name = mexico_civil_war.2.b"
+		# 	trigger = { TAG = MEC }
+		# 	add_stability = -0.01
+		# }
 	}
+
 	country_event = {
-		id = mexico_civil_war.4
-		title = mexico_civil_war.4.t
+		id = mexico_civil_war.2
+		title = mexico_civil_war.2.t
 		desc = {
-			text = mexico_civil_war.4.d
+			text = mexico_civil_war.2.d
 			trigger = { TAG = MEX }
 		}
 		desc = {
-			text =mexico_civil_war.4.e
+			text = mexico_civil_war.2.e
 			trigger = { TAG = MEC }
-		}
-		picture = GFX_report_event_treaty_of_coche
-
-		immediate = {
-			# log = "[THIS.GetTag]: firing  = mexico_civil_war.4"
 		}
 		is_triggered_only = yes
 
+		# immediate = {
+		# # log = "[THIS.GetTag]: firing  = mexico_civil_war.3"
+		# 	hidden_effect = {
+		# 		MEC = { country_event = { id = mexico_civil_war.4 } }
+		# 		MEX = { country_event = { id = mexico_civil_war.4 } }
+		# 		MEC = { transfer_state = ROOT }
+		# 		ROOT = { add_core_of = MEC }
+		# 		if = {
+		# 			limit = { ROOT = { STATE = 484 } }
+		# 			MEC = { transfer_state = 1359 }
+		# 			1359 = { add_core_of = MEC }
+		# 		}
+		# 	}
+		# }
+
+		
+
 		option = {
-			name = mexico_civil_war.4.a
-		# log = "option:			name = mexico_civil_war.4.a"
+			name = mexico_civil_war.2.a
+			# log = "option:			name = mexico_civil_war.2.a"
 			trigger = { TAG = MEX }
-			add_stability = -0.01
-		}
-		option = {
-			name = mexico_civil_war.4.b
-		# log = "option:			name = mexico_civil_war.4.b"
-			trigger = { TAG = MEC }
 			add_war_support = 0.015
-			FROM = {
+			MEX = {
 				create_unit = {
-					division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.70"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.70"
-					owner = ROOT
+					division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.01 start_equipment_factor = 0.50"
+					owner = MEX
+
 				}
 			}
 		}
+		option = {
+			name = mexico_civil_war.2.b
+			# log = "option:			name = mexico_civil_war.2.b"
+			trigger = { TAG = MEC }
+			add_stability = -0.01
+		}
 	}
+	# country_event = {
+	# 	id = mexico_civil_war.4
+	# 	title = mexico_civil_war.4.t
+	# 	desc = {
+	# 		text = mexico_civil_war.4.d
+	# 		trigger = { TAG = MEX }
+	# 	}
+	# 	desc = {
+	# 		text =mexico_civil_war.4.e
+	# 		trigger = { TAG = MEC }
+	# 	}
+	# 	picture = GFX_report_event_treaty_of_coche
+
+	# 	immediate = {
+	# 		# log = "[THIS.GetTag]: firing  = mexico_civil_war.4"
+	# 	}
+	# 	is_triggered_only = yes
+
+	# 	option = {
+	# 		name = mexico_civil_war.4.a
+	# 	# log = "option:			name = mexico_civil_war.4.a"
+	# 		trigger = { TAG = MEX }
+	# 		add_stability = -0.01
+	# 	}
+	# 	option = {
+	# 		name = mexico_civil_war.4.b
+	# 	# log = "option:			name = mexico_civil_war.4.b"
+	# 		trigger = { TAG = MEC }
+	# 		add_war_support = 0.015
+	# 		FROM = {
+	# 			create_unit = {
+	# 				division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.70"
+	# 				owner = ROOT
+	# 			}
+	# 			create_unit = {
+	# 				division = "name = \"Local Militia\" division_template = \"Local Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.70"
+	# 				owner = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	#Enact Five Laws
 	country_event = {
 		id = mexico_civil_war.5
 		title = mexico_civil_war.5.t
-		desc= mexico_civil_war.5.d
+		desc = mexico_civil_war.5.d
 		picture = GFX_report_event_mex_civil_war
 
 		immediate = {
@@ -773,7 +1392,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.6
 		title = mexico_civil_war.6.t
-		desc= mexico_civil_war.6.d
+		desc = mexico_civil_war.6.d
 		picture = GFX_report_event_mex_civil_war
 
 		immediate = {
@@ -794,7 +1413,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.7
 		title = mexico_civil_war.7.t
-		desc= mexico_civil_war.7.d
+		desc = mexico_civil_war.7.d
 		picture = GFX_report_event_mex_civil_war
 
 		immediate = {
@@ -815,7 +1434,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.8
 		title = mexico_civil_war.8.t
-		desc= mexico_civil_war.8.d
+		desc = mexico_civil_war.8.d
 		picture = GFX_report_event_mex_civil_war
 
 		immediate = {
@@ -837,7 +1456,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.9
 		title = mexico_civil_war.9.t
-		desc= mexico_civil_war.9.d
+		desc = mexico_civil_war.9.d
 
 		fire_only_once = yes
 
@@ -868,12 +1487,12 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.10
 		title = mexico_civil_war.10.t
-		desc= mexico_civil_war.10.d
+		desc = mexico_civil_war.10.d
 		picture = GFX_report_event_mex_civil_war
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing  = mexico_civil_war.10"
-	}
+		immediate = {
+			# log = "[THIS.GetTag]: firing  = mexico_civil_war.10"
+		}
 
 		fire_only_once = yes
 
@@ -908,7 +1527,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.11
 		title = mexico_civil_war.11.t
-		desc= mexico_civil_war.11.d
+		desc = mexico_civil_war.11.d
 
 		fire_only_once = yes
 
@@ -979,7 +1598,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.12
 		title = mexico_civil_war.12.t
-		desc= mexico_civil_war.12.d
+		desc = mexico_civil_war.12.d
 
 		fire_only_once = yes
 
@@ -1014,7 +1633,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.13
 		title = mexico_civil_war.13.t
-		desc= mexico_civil_war.13.d
+		desc = mexico_civil_war.13.d
 
 		fire_only_once = yes
 
@@ -1030,7 +1649,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.14
 		title = mexico_civil_war.14.t
-		desc= mexico_civil_war.14.d
+		desc = mexico_civil_war.14.d
 
 		fire_only_once = yes
 
@@ -1046,7 +1665,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.15
 		title = mexico_civil_war.15.t
-		desc= mexico_civil_war.15.d
+		desc = mexico_civil_war.15.d
 
 		fire_only_once = yes
 
@@ -1062,12 +1681,12 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.16
 		title = mexico_civil_war.16.t
-		desc= mexico_civil_war.16.d
+		desc = mexico_civil_war.16.d
 		picture = GFX_report_event_royal_blockade
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing  = mexico_civil_war.16"
-	}
+		immediate = {
+			# log = "[THIS.GetTag]: firing  = mexico_civil_war.16"
+		}
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -1105,12 +1724,12 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.17
 		title = mexico_civil_war.17.t
-		desc= mexico_civil_war.17.d
+		desc = mexico_civil_war.17.d
 		picture = GFX_report_event_royal_blockade
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing  = mexico_civil_war.17"
-	}
+		immediate = {
+			# log = "[THIS.GetTag]: firing  = mexico_civil_war.17"
+		}
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -1131,12 +1750,12 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.18
 		title = mexico_civil_war.18.t
-		desc= mexico_civil_war.18.d
+		desc = mexico_civil_war.18.d
 		picture = GFX_report_event_royal_blockade
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing  = mexico_civil_war.18"
-	}
+		immediate = {
+			# log = "[THIS.GetTag]: firing  = mexico_civil_war.18"
+		}
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -1191,7 +1810,7 @@ country_event = { #Debt system initial announcement
 	news_event = {
 		id = mexico_civil_war.19
 		title = mexico_civil_war.19.t
-		desc= mexico_civil_war.19.d
+		desc = mexico_civil_war.19.d
 		major = yes
 		show_major = {
 			OR = {
@@ -1287,7 +1906,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.20
 		title = mexico_civil_war.20.t
-		desc= mexico_civil_war.20.d
+		desc = mexico_civil_war.20.d
 
 		is_triggered_only = yes
 
@@ -1320,9 +1939,9 @@ country_event = { #Debt system initial announcement
 					priority = 1
 					regiments = {
 						early_marine = { x = 0 y = 0 }
-						early_marine = { x = 0 y = 1 }
-						early_marine = { x = 1 y = 0 }
-						early_marine = { x = 1 y = 1 }
+						# early_marine = { x = 0 y = 1 }
+						# early_marine = { x = 1 y = 0 }
+						# early_marine = { x = 1 y = 1 }
 					}
 					is_locked = yes
 				}
@@ -1361,7 +1980,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.21
 		title = mexico_civil_war.21.t
-		desc= mexico_civil_war.21.d
+		desc = mexico_civil_war.21.d
 
 		is_triggered_only = yes
 
@@ -1395,7 +2014,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.22
 		title = mexico_civil_war.22.t
-		desc= mexico_civil_war.22.d
+		desc = mexico_civil_war.22.d
 
 		is_triggered_only = yes
 
@@ -1419,7 +2038,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.23
 		title = mexico_civil_war.23.t
-		desc= mexico_civil_war.23.d
+		desc = mexico_civil_war.23.d
 
 		is_triggered_only = yes
 
@@ -1453,9 +2072,9 @@ country_event = { #Debt system initial announcement
 					priority = 1
 					regiments = {
 						early_marine = { x = 0 y = 0 }
-						early_marine = { x = 0 y = 1 }
-						early_marine = { x = 1 y = 0 }
-						early_marine = { x = 1 y = 1 }
+						# early_marine = { x = 0 y = 1 }
+						# early_marine = { x = 1 y = 0 }
+						# early_marine = { x = 1 y = 1 }
 					}
 					is_locked = yes
 				}
@@ -1494,7 +2113,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.24
 		title = mexico_civil_war.24.t
-		desc= mexico_civil_war.24.d
+		desc = mexico_civil_war.24.d
 
 		is_triggered_only = yes
 
@@ -1533,7 +2152,7 @@ country_event = { #Debt system initial announcement
 	country_event = {
 		id = mexico_civil_war.31
 		title = mexico_civil_war.31.t
-		desc= mexico_civil_war.31.d
+		desc = mexico_civil_war.31.d
 
 		is_triggered_only = yes
 
@@ -1602,7 +2221,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #No - But I'll try to convince my husband
 		id = mexico_civil_war.26
 		title = mexico_civil_war.26.t
-		desc= mexico_civil_war.26.d
+		desc = mexico_civil_war.26.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -1615,7 +2234,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #Yes - But we must try to find someone
 		id = mexico_civil_war.27
 		title = mexico_civil_war.27.t
-		desc= mexico_civil_war.27.d
+		desc = mexico_civil_war.27.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -1631,7 +2250,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #Empress of France is in Charge now - But we must try to find someone
 		id = mexico_civil_war.28
 		title = mexico_civil_war.28.t
-		desc= mexico_civil_war.28.d
+		desc = mexico_civil_war.28.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -1647,7 +2266,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #Maximillian is found!
 		id = mexico_civil_war.29
 		title = mexico_civil_war.29.t
-		desc= mexico_civil_war.29.d
+		desc = mexico_civil_war.29.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -1661,6 +2280,234 @@ country_event = { #Debt system initial announcement
 		}
 	}
 
+	##########################
+	country_event = { #tacubaya plan is executed
+		id = mexico_civil_war.39
+		title = mexico_civil_war.39.t
+		desc = mexico_civil_war.39.d
+
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		immediate = {
+			# log = "[THIS.GetTag]: firing = mexico_civil_war.39"
+			set_cosmetic_tag = MEX_cosmetic_tacubaya
+			country_event = {
+				id = mexico_civil_war.40
+				days = 8
+			}
+			hidden_effect = {
+				every_core_state = {
+					limit = {
+						owner = MEX
+					}
+					decrease_resistance_la_reforma = yes
+					decrease_resistance_la_reforma = yes
+				}
+			}
+		}
+
+		option = {
+			name = mexico_civil_war.39.a
+		}
+	}
+
+	country_event = { #congress reconvenes
+		id = mexico_civil_war.40
+		title = mexico_civil_war.40.t
+		desc = mexico_civil_war.40.d
+
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		immediate = {
+			set_cosmetic_tag = MEX_cosmetic_tacubaya
+			# log = "[THIS.GetTag]: firing = mexico_civil_war.40"
+			country_event = {
+				id = mexico_civil_war.41
+				days = 8
+			}
+		}
+
+		option = {
+			name = mexico_civil_war.40.a
+		}
+	}
+	
+	country_event = {#vera cruz abandons tacubaya
+		id = mexico_civil_war.41
+		title = mexico_civil_war.41.t
+		desc = mexico_civil_war.41.d
+
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		immediate = {
+			# log = "[THIS.GetTag]: firing = mexico_civil_war.41"
+			drop_cosmetic_tag = yes
+			# country_event = {
+			custom_effect_tooltip = MEX_1857_Civilwar
+			every_controlled_state = {
+				limit = { NOT = { state = 477 } }
+				add_core_of = MEC
+				transfer_state_to = MEC
+			}
+			add_popularity = { ideology = radical_democracy popularity = -0.2 }
+			add_popularity = { ideology = centrism popularity = -0.05 }
+			add_popularity = { ideology = autocracy popularity = -0.075 }
+			add_popularity = { ideology = fundamentalism popularity = -0.08 }
+			decrease_ps_by_two = yes
+			MEC = {
+				inherit_technology = MEX
+				set_variable = { global.mex_civil_war_debt@ENG = MEX.debt_to_bank_k@ENG }
+				set_variable = { global.mex_civil_war_debt@FRA = MEX.debt_to_bank_k@FRA }
+				set_variable = { global.mex_civil_war_debt@SPR = MEX.debt_to_bank_k@SPR }
+				set_variable = { global.mex_civil_war_debt@USA = MEX.debt_to_bank_k@USA }
+				set_temp_variable = { x_temp = MEX.debt_to_bank_k@ENG }
+				set_temp_variable = { country_temp = ENG }
+				add_debt = yes
+				set_temp_variable = { x_temp = MEX.debt_to_bank_k@FRA }
+				set_temp_variable = { country_temp = FRA }
+				add_debt = yes
+				set_temp_variable = { x_temp = MEX.debt_to_bank_k@SPR }
+				set_temp_variable = { country_temp = SPR }
+				add_debt = yes
+				set_temp_variable = { x_temp = MEX.debt_to_bank_k@USA }
+				set_temp_variable = { country_temp = USA }
+				add_debt = yes
+				set_country_flag = SPR_paying_debt_interest_flag
+				decrease_ps_by_one = yes
+				load_oob = "MEX_civil_war_conservatives"
+			}
+			transfer_units_fraction= {
+				target = MEC
+				size = 0.5
+				stockpile_ratio = 0
+				army_ratio = 0.9
+				navy_ratio = 0.5
+				air_ratio = 0
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_id = 18625
+						has_id = 186210
+					}
+				}
+			}
+			every_unit_leader = {
+				limit = {
+					OR = {
+						has_id = 18626
+						has_id = 186211
+					}
+				}
+				set_nationality = MEC
+			}
+			load_oob = "MEX_civil_war_liberals"
+			event = mexico_civil_war.42
+			days = 15
+			hidden_effect = {
+				MEC = {
+					every_controlled_state = {
+						limit = {
+							OR = {
+								NOT = {
+									OR = { #states Cons should keep
+										state = 475
+										state = 474
+										state = 481
+										state = 484
+										state = 1359
+										state = 277
+										state = 1124
+										state = 1113
+										state = 1114
+									}
+								}
+								AND = {
+									state = 480
+									MEX = {
+										NOT = {
+											has_country_flag = MEX_flag_viadurri_confronted
+										}
+									}
+								}
+							}
+							
+						}
+						state_event = { id = mexico_civil_war.3 days = 2 random_days = 5 }
+					}
+				}
+			}
+		}
+
+		option = { #stay with liberals
+			name = mexico_civil_war.41.a
+			hidden_effect = {
+				set_global_flag = MEX_MEC_CIVIL_WAR_side_chosen
+				MEX = {
+					load_oob = "MEX_civil_war_liberals"
+					country_event = { id = mexico.15 days = 2 }
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = MEC
+						value = 200
+					}
+				}
+				MEC = {
+					load_oob = "MEX_civil_war_conservatives"
+					MEX = { country_event = { id = mexico.14 days = 2 } }
+					news_event = news.4
+					set_war_support = 0.6
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = MEX
+						value = 200
+					}
+				}
+			}
+			MEX = {
+				complete_national_focus = MEX_defend_the_constitution
+				country_event = { id = mexico.2 days = 3 }
+			}
+			MEC = {
+				complete_national_focus = MEX_support_tacubaya_plan
+				country_event = { id = mexico.2 days = 3 }
+			}
+		}
+
+		option = { #go with reactionaries
+			name = mexico_civil_war.41.b
+			hidden_effect = {
+				set_global_flag = MEX_MEC_CIVIL_WAR_side_chosen
+				MEX = {
+					load_oob = "MEX_civil_war_liberals"
+					country_event = { id = mexico.15 days = 2 }
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = MEC
+						value = 200
+					}
+				}
+				MEC = {
+					load_oob = "MEX_civil_war_conservatives"
+					MEX = { country_event = { id = mexico.14 days = 2 } }
+					news_event = news.4
+					set_war_support = 0.6
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = MEX
+						value = 200
+					}
+				}
+			}
+			if = { #changes player to conservative mexico
+				limit = { ROOT = { is_ai = no } }
+				MEC = { change_tag_from = ROOT }
+			} 
+		}
+	}
+	##########################
+
 
 #----------------------------------------------------
 #Reform War Consv ask for Spanish Monarchy
@@ -1669,7 +2516,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #Meet with Spain
 		id = mexico_civil_war.30
 		title = mexico_civil_war.30.t
-		desc= mexico_civil_war.30.d
+		desc = mexico_civil_war.30.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -1743,7 +2590,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #No
 		id = mexico_civil_war.32
 		title = mexico_civil_war.32.t
-		desc= mexico_civil_war.32.d
+		desc = mexico_civil_war.32.d
 
 		fire_only_once = no
 		is_triggered_only = yes
@@ -1756,7 +2603,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #Yes
 		id = mexico_civil_war.33
 		title = mexico_civil_war.33.t
-		desc= mexico_civil_war.33.d
+		desc = mexico_civil_war.33.d
 
 		fire_only_once = no
 		is_triggered_only = yes
@@ -1775,28 +2622,6 @@ country_event = { #Debt system initial announcement
 				}
 			}
 			USA = { custom_effect_tooltip = mexico_civil_war_usa_stops_guarantee_tooltip }
-			hidden_effect = {
-					add_ai_strategy = {
-						type = front_control
-
-						#you can define a target in following ways. you can define more than one
-
-						tag = MEX 							# target against a specific country
-						state = 477 						# target on a state
-						strategic_region = 123				# target on a strategic region
-						#area = caribbean					# target on a specific ai area
-						country_trigger = { has_global_flag = MEX_MEC_CIVIL_WAR } 	# a trigger to check agaisnt a specific country. scope is enemy country from scope is our country
-						#state_trigger = { always = no } 	# a trigger to check agaisnt a state. scope is state. from scope is enemy country from.from scope is our country
-
-						ratio = 0.0 						# the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
-
-						priority = 200 						# default 0, higher prio strats will override lower
-						ordertype = invasion 				# front or invasion. if set this strategy will only apply to that specific order type
-						execution_type = balanced 			# one of careful balanced rush rush_weak. if set will override the execution type of front (only for front orders)
-						execute_order = yes 				# yes or no. if set will override execute or not decision of front
-						manual_attack = yes 				# default yes. if no ai will not do manual pokes at enemy (only for front orders)
-					}
-			}
 		}
 
 		option = {
@@ -1822,7 +2647,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #Yes
 		id = mexico_civil_war.35
 		title = mexico_civil_war.35.t
-		desc= mexico_civil_war.35.d
+		desc = mexico_civil_war.35.d
 
 		fire_only_once = no
 		is_triggered_only = yes
@@ -1839,7 +2664,7 @@ country_event = { #Debt system initial announcement
 	news_event = {
 		id = mexico_civil_war.34
 		title = mexico_civil_war.34.t
-		desc= mexico_civil_war.34.d
+		desc = mexico_civil_war.34.d
 		major = yes
 		show_major = {
 			OR = {
@@ -2014,7 +2839,7 @@ country_event = { #Debt system initial announcement
 	country_event = { #Mexico Falls
 		id = mexico_civil_war.36
 		title = mexico_civil_war.36.t
-		desc= mexico_civil_war.36.d
+		desc = mexico_civil_war.36.d
 
 		fire_only_once = yes
 		is_triggered_only = yes
@@ -2038,14 +2863,25 @@ country_event = { #Debt system initial announcement
 		option = {
 			name = mexico_civil_war.36.a
 		# log = "option:			name = mexico_civil_war.36.a"
+			every_country = {
+				limit = { 
+					OR = { 
+						TAG = SPR 
+						is_subject_of = SPR 
+					} 
+				}
+				white_peace = MEX
+			}
+			MEX={
+				annex_country = {
+					target = MEC
+				}
+			}
 			if = {
 				limit = { has_dlc = "Man the Guns" }
 				MEC = { become_exiled_in = { target = SPR legitimacy = 50 } }
 			}
-			every_country = {
-				limit = { OR = { TAG = SPR is_subject_of = SPR } }
-				white_peace = MEX
-			}
+			
 			news_event = { id = mexico_civil_war.37 }
 		}
 	}
@@ -2053,7 +2889,7 @@ country_event = { #Debt system initial announcement
 	news_event = { #Mexico Falls
 		id = mexico_civil_war.37
 		title = mexico_civil_war.37.t
-		desc= mexico_civil_war.37.d
+		desc = mexico_civil_war.37.d
 		major = yes
 		show_major = {
 			OR = {
@@ -2194,7 +3030,7 @@ country_event = { #Debt system initial announcement
 country_event = {
 		id = mexico.1
 		title = mexico.1.t
-		desc= mexico.1.d
+		desc = mexico.1.d
 		picture = GFX_report_event_plan_tacubaya
 
 	immediate = {
@@ -2224,7 +3060,7 @@ country_event = {
 country_event = {
 		id = mexico.2
 		title = mexico.2.t
-		desc= mexico.2.d
+		desc = mexico.2.d
 		picture = GFX_report_event_constitution_of_1857
 
 	immediate = {
@@ -2302,7 +3138,7 @@ country_event = {
 country_event = {
 		id = mexico.4
 		title = mexico.4.t
-		desc= mexico.4.d
+		desc = mexico.4.d
 		picture = GFX_report_event_ignacio_comonfort
 
 	immediate = {
@@ -2326,7 +3162,7 @@ country_event = {
 country_event = {
 		id = mexico.5
 		title = mexico.5.t
-		desc= mexico.5.d
+		desc = mexico.5.d
 		picture = GFX_report_event_felix_maria_zuloaga
 
 	immediate = {
@@ -2555,7 +3391,7 @@ country_event = {
 country_event = {
 		id = mexico.7
 		title = mexico.7.t
-		desc= mexico.7.d
+		desc = mexico.7.d
 		picture = GFX_report_event_plan_de_navidad
 
 	immediate = {
@@ -2590,7 +3426,7 @@ country_event = {
 country_event = {
 		id = mexico.8
 		title = mexico.8.t
-		desc= mexico.8.d
+		desc = mexico.8.d
 		picture = GFX_report_event_jose_mariano_salas
 
 	immediate = {
@@ -2629,7 +3465,7 @@ country_event = {
 country_event = {
 		id = mexico.9
 		title = mexico.9.t
-		desc= mexico.9.d
+		desc = mexico.9.d
 		picture = GFX_report_event_miguel_miramon
 
 	immediate = {
@@ -2665,7 +3501,7 @@ country_event = {
 country_event = {
 		id = mexico.10
 		title = mexico.10.t
-		desc= mexico.10.d
+		desc = mexico.10.d
 		picture = GFX_report_event_melchor_ocampo_execution
 
 	immediate = {
@@ -2693,7 +3529,7 @@ country_event = {
 country_event = {
 		id = mexico.11
 		title = mexico.11.t
-		desc= mexico.11.d
+		desc = mexico.11.d
 		picture = GFX_report_event_map_of_veracruz
 
 	immediate = {
@@ -2720,7 +3556,7 @@ country_event = {
 country_event = {
 		id = mexico.12
 		title = mexico.12.t
-		desc= mexico.12.d
+		desc = mexico.12.d
 		picture = GFX_report_event_reform_war_end
 
 		immediate = {
@@ -2841,7 +3677,7 @@ country_event = {
 country_event = {
 		id = mexico.13
 		title = mexico.13.t
-		desc= mexico.13.d
+		desc = mexico.13.d
 		picture = GFX_report_event_mexican_recruitment_1857
 
 		immediate = {
@@ -2882,7 +3718,7 @@ country_event = {
 country_event = {
 		id = mexico.14
 		title = mexico.14.t
-		desc= mexico.14.d
+		desc = mexico.14.d
 		picture = GFX_report_event_mexican_recruitment_1857
 
 		immediate = {
@@ -2902,9 +3738,9 @@ country_event = {
   					name = "Miguel Miramón"
   					picture = "Portrait_MEC_Miguel_Miramon.dds"
 					traits = { }
- 					skill = 1
+ 					skill = 2
  					id = 18628
- 					attack_skill = 2
+ 					attack_skill = 3
 					defense_skill = 2
 					planning_skill = 2
 					logistics_skill = 1
@@ -2917,7 +3753,7 @@ country_event = {
 country_event = {
 		id = mexico.15
 		title = mexico.15.t
-		desc= mexico.15.d
+		desc = mexico.15.d
 		picture = GFX_report_event_mexican_recruitment_1857
 
 	immediate = {
@@ -2952,7 +3788,7 @@ country_event = {
 country_event = {
 		id = mexico.16
 		title = mexico.16.t
-		desc= mexico.16.d
+		desc = mexico.16.d
 		picture = GFX_report_event_mexican_recruitment_1857
 
 	immediate = {
@@ -3027,7 +3863,7 @@ country_event = {
 country_event = {
 		id = mexico.18
 		title = mexico.18.t
-		desc= mexico.18.d
+		desc = mexico.18.d
 		picture = GFX_report_event_jose_santos_degollado_death
 
 	immediate = {
@@ -3057,7 +3893,7 @@ country_event = {
 country_event = {
 		id = mexico.19
 		title = mexico.19.t
-		desc= mexico.19.d
+		desc = mexico.19.d
 		picture = GFX_report_event_leandro_valle_martinez_death
 
 	immediate = {
@@ -3088,7 +3924,7 @@ country_event = {
 country_event = {
 		id = mexico.20
 		title = mexico.20.t
-		desc= mexico.20.d
+		desc = mexico.20.d
 		picture = GFX_report_event_reform_war_end
 
 	immediate = {
@@ -3198,7 +4034,7 @@ country_event = {
 country_event = {
 		id = mexico.21
 		title = mexico.21.t
-		desc= mexico.21.d
+		desc = mexico.21.d
 		picture = GFX_report_event_jose_santos_degollado_death
 
 	immediate = {
@@ -3235,7 +4071,7 @@ country_event = {
 country_event = {
 		id = mexico.22
 		title = mexico.22.t
-		desc= mexico.22.d
+		desc = mexico.22.d
 
 		is_triggered_only = yes
 
@@ -3257,7 +4093,7 @@ country_event = {
 	country_event = {
 		id = mexico.23
 		title = mexico.23.t
-		desc= mexico.23.d
+		desc = mexico.23.d
 		picture = GFX_report_event_jose_santos_degollado_death
 
 	immediate = {
@@ -3281,7 +4117,7 @@ country_event = {
 	country_event = {
 		id = mexico.24
 		title = mexico.24.t
-		desc= mexico.24.d
+		desc = mexico.24.d
 		picture = GFX_report_event_jose_santos_degollado_death
 
 	immediate = {
@@ -3307,7 +4143,7 @@ country_event = {
 	country_event = {
 		id = mexico.25
 		title = mexico.25.t
-		desc= mexico.25.d
+		desc = mexico.25.d
 		picture = GFX_report_event_luis_gonzaga_osollo_death
 
 	immediate = {
@@ -3329,7 +4165,7 @@ country_event = {
 	country_event = {
 		id = mexico.26
 		title = mexico.26.t
-		desc= mexico.26.d
+		desc = mexico.26.d
 		picture = GFX_report_event_luis_gonzaga_osollo_death
 
 	immediate = {
@@ -3354,7 +4190,7 @@ country_event = {
 	country_event = { # Mexico Requests naval guidance (UK)
 		id = mexico.27
 		title = mexico.27.t
-		desc= mexico.27.d
+		desc = mexico.27.d
 		picture = GFX_britain_admiral_cap
 
 	immediate = {
@@ -3407,7 +4243,7 @@ country_event = {
 	country_event = { # Mexico Requests naval guidance (UK Accepted)
 		id = mexico.28
 		title = mexico.28.t
-		desc= mexico.28.d
+		desc = mexico.28.d
 		picture = GFX_britain_admiral_cap
 
 	immediate = {
@@ -3444,7 +4280,7 @@ country_event = {
 	country_event = { # Mexico Requests naval guidance (UK Refused)
 		id = mexico.29
 		title = mexico.29.t
-		desc= mexico.29.d
+		desc = mexico.29.d
 		picture = GFX_britain_admiral_cap
 
 	immediate = {
@@ -3464,7 +4300,7 @@ country_event = {
 	country_event = {
 		id = mexico.80
 		title = mexico.80.t
-		desc= mexico.80.d
+		desc = mexico.80.d
 		picture = GFX_report_event_leandro_valle_martinez_death
 
 	immediate = {

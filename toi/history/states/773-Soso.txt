@@ -23,9 +23,15 @@ state = {
 		owner = KAB
 		add_core_of = KAB
 
-		1882.1.1 = {
-			owner = FRA
+		1865.1.1 = {
+			owner = FTJ
+			add_core_of = FTJ
 			remove_core_of = KAB
+		}
+
+		1885.11.1 = {
+			owner = FRA
+			remove_core_of = FTJ
 		}
 
 		afr_state_setup_scripted_effect = yes

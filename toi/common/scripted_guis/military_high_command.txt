@@ -31,7 +31,7 @@ scripted_gui = {
 			officer_corps_intel_button_visible = {
 				NOT = { has_country_flag = eoanbr_officer_corps_menu_flag }
 			}
-			
+
 			officer_corps_intel_text2_visible = {
 				NOT = { has_country_flag = eoanbr_officer_corps_menu_flag }
 			}

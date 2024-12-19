@@ -5,34 +5,115 @@
  PIE_Risorgimento_desc: "Italy has been divided for long enough. Our nation will take up the task of unifying it under our banner! The Risorgimento shall commence!"
  PIE_Form_Italy: "Form Italy"
  PIE_Form_Italy_desc: "The time has come to claim the title of Italy for our nation!"
- 
-### Note to whomever looks at this, im going to most likely nuke 60% of the shit in here, so if it fucks up...you know why now###
 
-###EVENTS SCHEDULED FOR REMOVAL###
-sardinia.1.t: "The Crimean War"
-sardinia.1.d: "Camillo di Cavour was under orders of Victor Emmanuel when 15,000 soldiers under the command of General Alfonso La Marmora landed in Russia. The intervention in the war was in a bid to gain recognition from major nations - France especially - to assist in the issue of Italian Unification. The bravery and courage of the soldiers who fought in the Battle of the Chernaya and the siege of the Sevastapol earned Sardinia a seat at the Peace Conference, and the dream of unification was becoming a reality."
-sardinia.1.a: "Let us Remind Europe of this"
-sardinia.2.t: "Sardinian Diplomacy"
-sardinia.2.d: "Sardinia-Piedmont, the up-and-coming kingdom in Italy was, until recently, a lesser nation with little to no diplomatic power. Known only for it's failure to defeat the Austrians in the past, the entrance and performance of Sardinia in the Crimean War changed this completely. Now that the Sardinians hope to undertake steps towards unification, they have been insistent that Europe not forget their actions in this war."
-sardinia.2.a: "They fought well"
+#_________________________________________________________#
+###                                                     ###
+###                 Regional Name Change                ###
+###                   STARTING EVENT                    ###
+###                                                     ###
+sardinia.1.t: "State Names: English, Regional or Italian?"
+sardinia.1.d: "This mod gives you the option to play with Italian names for victory-points within Italian territories. Do you want to enable this? For immersion purposes, enabling the regional is highly encouraged! If enabled, all VP’s will appear under their regional dialect denominations, with further decisions upon unification to standardize the Italian language across the peninsula, in part, changing the names of cities. You should be warned that these “dialects” for most of history have been considered languages of their own, and in some instances can vastly differ from their modern designations."
+sardinia.1.a: "Italian, please."
+sardinia.1.b: "Regional, please"
+sardinia.1.c: "English, please."
+ 
+###DO NOT REMOVE  ###
+sardinia.265.t: "A note from the developers"
+sardinia.265.d: "Hi,\n\nBefore you click off. I wish to make a small note in regards to the developer whom created the content which I now act as caretaker for at the time of writing. My Name is Silenceofdragons, I am the main developer for the Australian content, but have spent my time acting as caretaker for Italy in End of a New Beginning Redux.\n\nOn Early September, 2024. Imperalism, the main developer for Italy on EoaNB, passed away. As such, this is a way for myself and all of us in the Redux crew.\nTo simply pay our respects.\n\n\nOne more thing, thank you for reading this. God speed and good health."
+sardinia.265.a: "Thank you"
+
+
+### Note to whomever looks at this, im going to most likely nuke 60% of the shit in here, so if it fucks up...you know why now###
+##event number is 264, overflow is 300 for events to fix
+
+
+##  §O[AUS.GetNameWithFlag]§!
+##  §G[RUS.GetNameWithFlag]§!
+##  §t[ENG.GetNameWithFlag]§!
+##  §2[PRS.GetNameWithFlag]§!
+##  §4[BAV.GetNameWithFlag]§!
+##  §b[PIE.GetNameWithFlag]§!
+##  §3[FRA.GetNameWithFlag]§! 
+##  §M[NSC.GetNameWithFlag]§!
+##  §S[PAP.GetNameWithFlag]§!
+##  §R[TUS.GetNameWithFlag]§!
+
+#_________________________________________________________#
+###                                                     ###
+###       PIEDMONT - SARDINIA STARTING NEWS EVENTS      ###
+###                   STARTING EVENTS                   ###
+###                                                     ###
+
+sardinia.2.t: "Sardinia-Piedmont"
+sardinia.2.d: "§G[PIE.GetNameWithFlag]§! has, since the end of the Napoleonic Wars, has prospered. The Crimean War has placed us in a rather unique position. The §t[ENG.GetNameWithFlag]§! and the §3[FRA.GetNameWithFlag]§! are now more willing to talk and do business with us then ever before. However, one question burns deep in the heart of Italy.\n\nAnd that is of a unified state, a §GReso§!§grgim§!§Rento!§! of sorts. While this idea burns brightly in the hearts and minds of our countrymen far and wide throughout Italy, the practicality of such a feat is not workable at the moment. We would need to seek a strong and willing ally, which we luckily see in Napoleon III of §3[FRA.GetNameWithFlag]§! as he has shown signs that he is willing to help our cause...for compensation. The issue now is when and how to start the fire, as once it starts.\n\n\t§RIt becomes very hard to control§!."
+sardinia.2.a: "Learn more"
+sardinia.2.b: "No, thank you"
+sardinia.3.t: "The Revolutions of 1848 in Italy"
+sardinia.3.d: "Roughly 9 years ago, Revolution swept Europe. Within two years, every nation was affected. Those whom made it out intact became republics or constituional monarchies. Italy however, was perminantly affected. §G[PIE.GetNameWithFlag]§! under Ferdinand II paved the way for Liberal reforms and constitutionalism throughout Italy. §R[TUS.GetNameWithFlag]§!, §S[PAP.GetNameWithFlag]§! and §G[PIE.GetNameWithFlag]§! reformed into modern systems of government.\n\nWhile some saw it as the Old Guard giving way, many more saw it as another way for them to hold on to their fading power. One did not have to look far to see it in Italy. \n\nThe garrisons along the borders of Lombardy-Venetia controlled by §O[AUS.GetNameWithFlag]§! were being reinforced, leading to opposition leaders in Venice and Milan being arrested or simply vanishing. Not long after, waves of anarchy and radicalism swept across the §O[AUS.GetNameWithFlag]§!. The people of Venice and Milan wasted no time and deposed their Austrian overlords. By weeks end the §O[AUS.GetNameWithFlag]§! Army of Italy was in full retreat back to Austria itself, with nearly all of Lombardy-Venetia in the control of the revolutionaries."
+sardinia.3.a: "Tell me more..."
+sardinia.4.t: "The Consequence of 1848 "
+sardinia.4.d: "While the campaign begun with victory after victory, reality came bearing down as the §O[AUS.GetNameWithFlag]§! Army of Italy returned to their Italian Stations en masse. With the Defeat at Custoza and the signing of a humiliating armistice.\nPeace talks began shortly after, with the defeat of the campaign of liberation against §O[AUS.GetNameWithFlag]§! rule in Italy, it gridlocked the Italian states into the current borders. Most importantly for our kingdom, was that the former king. His Majesty King Charles Albert, signed and established our young Constitutional Monarchy during this time.\nThe leading question, is if this young system can weather the storm that Italy now finds herself in.\n\n §RAnd if she can get out of it alive...§!"
+sardinia.4.a: "That brings us to now..."
+sardinia.5.t: "Rally against the Austrians"
+sardinia.5.d: "§G[PIE.GetNameWithFlag]§! remains as one of the last truely independent Italian states, standing defiantly against Habsburg influence. §P[NSC.GetNameWithFlag]§! recently married into the §O[AUS.GetNameWithFlag]§!, Venezia which was awarded to the Austrians after the Congress of Vienna, along with the central Italian states are under the §O[AUS.GetNameWithFlag]§! protection, continues to add fuel to the fire of Italian liberation.\n\nOur people continue to hold an unwaverable spirit for goals of liberation to be achieved, and that our King and the young government can lead the way forward, with each person vowing to fulfill the dreams of a united Kingdom of Italy. As we stand as the last true bastion between §O[AUS.GetNameWithFlag]§! and §3[FRA.GetNameWithFlag]§! spheres. If we play our cards right, perhaps we can tumble the Austrian tower of cards?\n\n§ROnly time will tell of this matter.§!"
+sardinia.5.a: "Let's make it count, or die trying."
+sardinia.6.t: "The Protectorate of Monaco"
+sardinia.6.d: "The Congress of Vienna had transferred the protection of Monaco from §3[FRA.GetNameWithFlag]§! to §G[PIE.GetNameWithFlag]§! via the Treaty of Stupinigi, as well as full dominion over the state. The treaty states, “This land shall never fall under a foreign government,” which was unanimously agreed upon in negotiations despite an uneven relationship between our king and the King of Monaco. With the people, we are feared, as we have sent many garrisons to destabilize and annex parts of the Principality."
+sardinia.6.a: "More things to handle..."
+
+### industry one time events  ###
+
+sardinia.7.t: "Reconstruction of Prismates in Alessandria"
+sardinia.7.d: "Alessandria has long been a victim to the floods of the Tanaro. Luckily, the parliament of Sardinia-Piedmont took note of the damage caused by the floods and passed a bill to reconstruct \"prismates\" to protect the fortifications of Alessandria against the floods of the Tanaro. The new bolstered defenses will afford us the ability to build safer in the city and provide security to those who had been effected."
+sardinia.7.a: "Alessandria is safer now"
+
+### political one time events ###
+
+sardinia.8.t: "Closing of the V Legislature"
+sardinia.8.d: "Today King Victor Emmanuel announced the official closing of the fifth legislature of the Kingdom of Sardinia-Piedmont. The legislature lasted three years, ten months, and seven days, holding three sessions per article 9 of the Albertine Statute. Camillo Benso, Count of Cavour, proceeded over the entirety of this Legislature. The elections for the VI legislature will begin soon as our legislative bodies prepare to undertake the steps necessary to get the Risorgimento underway."
+sardinia.8.a: "Let the VI Legislature Begin!"
+
+### research one time events ###
+
+sardinia.9.t: "The Turin Exhibition"
+sardinia.9.d: "Following an unsuccessful exhibition in Turin in 1850, it was decided that another exhibition should be held in Turin in 1858. The innovations present in the exhibitions and fairs in Paris and London give much prestige to the minds of those respective nations. The Turin Exhibition included many public industrial representatives, showing off work done by Cavour over the last decade to increase the industrial capabilities of Piedmont. However, despite the impressive changes since 1858, it is still evident that Italy is struggling to implement innovations already present in Europe into the industrial sector. King Victor Emmanuel and Cavour were seen together during the exhibition."
+sardinia.9.a: "Someday, we will reach greatness"
+
+###################################
+###                             ###
+###  British starter Diplomacy  ###
+###                             ###
+###################################
+
+sardinia.10.t: "Diplomacy with the British"
+sardinia.10.d: "Diplomacy with the British rests largely in the friendship of Camillo Benso and the British Legation in Turin - James Hudson. James Hudson himself is quite the italophile, and his position in Turin - held since the days before Benso was prime minister - has convinced him of the need of support for the unification movement. Though he faces some ridicule at home for his position as a favorable ally of Camillo Benso, he will be a key instrument for Sardinia in the attempts to get British support for Unification."
+sardinia.10.a: "Tell Hudson that Cavour needs to see him"
+sardinia.11.t: "Diplomacy with Sardinia"
+sardinia.11.d: "James Hudson - the British Legation to Sardinia-Piedmont - has an equal number of allies in enemies in the British Government. The Queen herself is rumored to claim he is too much a friend of the Italians than the British, but nobody in the government will tell you that he is a bad diplomat. Despite his friendship with Cavour and support for Italian unification, Hudson has always kept British interests in mind. Now that the Sardinians are looking for allies in their hopes for Unification communication between our nations is at an all time high. \n The most pressing matter for the Sardinians currently in which they hope to see our position in the case of the Cagliari - a Piedmontese mailing ship with two Brits in the crew which was captured by the neapolitans. The Case is meant to go to parliament where Sardinian officials will make their plea and the fate of British and Sardinian relations will be decided. The date of the session is set for mid-1858."
+sardinia.11.a: "Now we wait"
+sardinia.12.t: "The Cagliari Case"
+sardinia.12.d: "Despite the good relation shared between Cavour and James Hudson, much of the future of the British stake in the peninsula will come down to the Cagliari Case. The Cagliari ship was a Piedmontese Mailing ship captured by the Neapolitans following the failed Sapri Expedition. The British are interested because the crew contained two Brits. The British parliament has agreed to hear the case during the Spring of 1858. It will be here that Sardinian officials will finally be able to plead their case directly to the British Government. Hudson has put in his best words for our cause, but the outcome of this arrangement will be uncertain until it is over."
+sardinia.12.a: "Now we wait, and pray for the best"
+PIE_British_Diplomacy_yes: "The British have decided to support us"
+PIE_bypass_focus_british_alliance: "§YBypasses Naval Cooperation Focus§!"
+PIE_bypass_focus_russian_alliance: "§YBypasses Unexpected Ally Focus§!"
 
 ###EVENTS REQUIRING LOCALISATION FIXES OR RESTRUCTURING###
-sardinia.3.t: "The Cagliari Case"
-sardinia.3.d: "The Cagliari Case has reached parliament and now we wait to see how the British will rule on this matter. Camillo Benso and a few other Sardinian officials have given testimony in this case, though some sources say they have been rather arrogant about it. Nonetheless this case could prove as an important stepping stone in relations with Britain."
-sardinia.3.a: "How do they rule?"
-sardinia.4.t: "The Cagliari Case"
-sardinia.4.d: "The Cagliari Case - the case of the Sardinian ship with a crew that included a few Brits being captured by Naples - has finally reached Parliament. Though most members of Parliament are skeptical that a ruling further than a denouncement of the actions of the Neapolitans is a smart move, James Hudson has managed to convince many that an alliance with the Sardinian state would be smart and beneficial. The arrogance of the Count of Cavour in this case is not helping his position."
-sardinia.4.a: "Withdraw the case, denounce the capture of Brits"
-sardinia.4.b: "Side with Piedmont"
-sardinia.5.t: "England Withdraws the Case!"
-sardinia.5.d: "The British Parliament has withdrawn the Cagliari Case and has not made any statement in our support. Out of fears that a war would come out of this case, many of the Earls spoke against siding with our government. Despite some strong calls in our favor, and the argument that the British have an obligation to uphold Maritime Law, they remain unconvinced."
-sardinia.5.a: "Disappointing"
+
+sardinia.13.t: "The Cagliari Case"
+sardinia.13.d: "The Cagliari Case has reached parliament and now we wait to see how the British will rule on this matter. Camillo Benso and a few other Sardinian officials have given testimony in this case, though some sources say they have been rather arrogant about it. Nonetheless this case could prove as an important stepping stone in relations with Britain."
+sardinia.13.a: "How do they rule?"
+sardinia.14.t: "The Cagliari Case"
+sardinia.14.d: "The Cagliari Case - the case of the Sardinian ship with a crew that included a few Brits being captured by Naples - has finally reached Parliament. Though most members of Parliament are skeptical that a ruling further than a denouncement of the actions of the Neapolitans is a smart move, James Hudson has managed to convince many that an alliance with the Sardinian state would be smart and beneficial. The arrogance of the Count of Cavour in this case is not helping his position."
+sardinia.14.a: "Withdraw the case, denounce the capture of Brits"
+sardinia.14.b: "Side with Piedmont"
+sardinia.15.t: "England Withdraws the Case!"
+sardinia.15.d: "The British Parliament has withdrawn the Cagliari Case and has not made any statement in our support. Out of fears that a war would come out of this case, many of the Earls spoke against siding with our government. Despite some strong calls in our favor, and the argument that the British have an obligation to uphold Maritime Law, they remain unconvinced."
+sardinia.15.a: "Disappointing"
 sardinia.24.t: "The British Side with us!"
 sardinia.24.d: "In a surprising turn of events the British parliament has declared that it supports the efforts of Sardinia-Piedmont in demanding the release of the Cagliari, and have promised to uphold Maritime Law. This ruling comes even after skepticism from many of the Earls, but thanks to the efforts of Hudson and our other allies in parliament. This will allow us to open up further cooperation between our governments."
 sardinia.24.a: "To a Strong Maritime Alliance!"
-two_sicilies.4.t: "The Sapri Expedition"
-two_sicilies.4.d: "An expedition led by Mazzinian Carlo Pisacane into Sapri, Campania, has been put down. Much of the work to apprehend the criminals involved was done by the local populace. Having been informed of a prison break on the island of Ponza prior, the local peasants massacred over 20 of the conspirators and handed 150 over to the gendarmes. Following clashes with the local peasants, Piscane and the rest of his band retreated to Sanza, where they were attacked again by the local populace, losing almost 100 more men. It was there that the sub-chief of Sanza, Sabino Lavegilia, killed Piscane, while one of the other leaders of this expedition, Giovan Falcone, committed suicide.\n\n It has been said of the expedition that the populace of these towns and their city guards were incredibly brutal. Some reported cannibalism, ferocious women chasing men into the forests, and the barbarous slaughtering of the conspirators."
-two_sicilies.4.a: "The Mazzinians have been defeated"
+
 two_sicilies.11.t: "The Cagliari Case"
 two_sicilies.11.d: "Though not an original fear of our government, the capture of the Cagliari - a Sardinian ship captured in early 1857 which happened to have a crew that contained a few Brits - has caused the British Parliament to denounce our actions and side with Piedmont in their threats. The harbormasters are intent on keeping the Cagliari under condemnation, despite these new threats. We are at a dangerous position."
 two_sicilies.11.a: "These threats are baseless"
@@ -40,22 +121,25 @@ two_sicilies.11.b: "Get the legislature to send an apology, and release the ship
 
 #_________________________________________________________#
 ###                                                     ###
-###       PIEDMONT - SARDINIA STARTING NEWS EVENTS      ###
+###           PIEDMONT-SARDINIA BIG NEWS EVENTS         ###
 ###                                                     ###
 
-sardinia.9.t: "Sardinia-Piedmont"
-sardinia.9.d: "The Kingdom of Sardinia-Piedmont has, since the end of the Napoleonic Wars, more or less prospered. However, the events of the Crimean War have placed us in a unique position. The United Kingdom and the French Empire are now more than willing to talk and do business with us then ever before. However one question burns deep in the heart of Italy.\n\nAnd that is of a unified state, a §GReso§!§grgim§!§Rento!§! of sorts. While this idea burns brightly in the hearts and minds of our countrymen far and wide throughout Italy, the practicality of such a feat is not workable at the moment. We would need to seek a strong and willing ally, which we luckily see in Napoleon III of France as he has shown signs that he is willing to help our cause...for compensation. The issue now is when and how to start the fire, as once it starts.\n\n\t§RIt becomes very hard to control§!."
-sardinia.9.a: "Alla Vittoria"
-sardinia.250.t: "The Revolutions of 1848 in Italy"
-sardinia.250.d: "9 years ago, Revolution swept Europe. Within two years, there wasn't a Nation affected by them, and those who made it out intact had turned into republics or constituional monarchies. Italy however, was changed forever. The Kingdom of Two Sicilies under Ferdinand II paved the way for Liberal reforms and constitutionalism throughout Italy. The Grand Duchy of Tuscany, The Papacy and of our own Kingdom of Sardinia-Piedmont followed and adopted reform after reform.\n\nWhile some saw it as the Old Guard giving way, many more saw it as another way for them to hold on to their fading power. And one did not have to look far to see it in Italy. \n\nThe garrisons along the borders of Lombardy-Venetia were reinforced and opposition leaders in Venice and Milan were arrested or vanished into hiding. Not too long after, waves of anarchy and radicalism swept across the Austrian Empire while Venetian and Milanese rebels moved to depose their Austrian overlords. By weeks end the Austrian army of Italy retreated back to Austria itself, and nearly all of Lombardy-Venetia was in control of the revolutionaries."
-sardinia.250.a: "Tell me more..."
-sardinia.251.t: "The Consequence of 1848 "
-sardinia.251.d: "While the campaign begun with victory after victory, reality came bearing down as the Austrian Army returned to their Italian Stations on mass. With the Defeat at Custoza and the signing of a humiliating armastice while peace talks were being made, the defeat of the campaign of liberation against Austrian rule in Italy. ____Calamitous discord had swathed across European soil and the Austrian Empire had suffered the worst in its Italian land of Lombardy-Venetia. More importantly, King Charles Albert had conceded to the liberals who aimed to establish a constitutional monarchy. Following the transition, he would go on to march his army into Austrian territory to support the rebels in Venice and Milan. His army was joined by soldiers from the then liberalized governments of Duke Leopold II in Tuscany, King Ferdinand in the Two Sicilies, and volunteers from Sicily and the Papal States. Despite some success in the dawn of his campaign, King Charles’ army would later be defeated at the Battle of Custoza, forcing a humiliating armistice until peace negotiations could be made. The defeat saw all the liberal governments but Sardinia-Piedmont crumble to the Austrian demand for the renouncement of constitutions and the confirmation of absolutism."
-sardinia.251.a: "That brings us to now..."
-sardinia.252.t: "Rally against the Austrians"
-sardinia.252.d: "The kingdom of Piedmont-Sardinia stands as the last independent Italian state, defiantly against Habsburg influence. The southern Kingdom of Two Sicilies has married into the Habsburg Empire, Venezia was awarded to the Austrians after the Congress of Vienna, and the central Italian states are under Austrian protection. Our people stand in support of our government and of our king. Vowing to fulfill the dreams of a united Italy. As we stand as a barrier between Austrian and French spheres, if we play our cards right, perhaps we can tumble the Austrian tower of cards."
-sardinia.252.a: "The time has come"
+sardinia_news.1.t: "Sardinia-Piedmont Defeats Austria!"
+sardinia_news.1.d: "Sardinia-Piedmont and her allies have defeated Austria and their puppet Kingdom in Lombardy-Venetia. Just a decade ago the forces of Sardinia-Piedmont were defeated as they invaded Lombardy and many assumed the liberal goals of the Revolutions in 1848 had failed. After the Crimean War, Sardinia-Piedmont took their claims of Italian Unification to the peace talks. Now, the possibility of a unified Italian state is more real than ever. Not only has Austria's influence in the Italian Peninsula been weakened, but the Central Autocratic states have seen revolutions by popular movements hoping to see a unified Italian state."
+sardinia_news.1.a: "A Shift of Power in Italy..."
+sardinia_news.1.b: "A Shift of Power in Italy..."
 
+sardinia_news.19.t: "Sardinia-Piedmont Annexes Monaco"
+sardinia_news.19.d: "Following the Congress of Vienna, Monaco had been made a protectorate of Sardinia-Piedmont. The treaty of Stupinigi in 1817 formalized the relationship between the Kingdom of Sardinia and the Protectorate of Monaco. The treaty was seen to be detrimental to the economy of Monaco and caused many citizens to lose trust in Prince Charles III. Ever since the Revolutions of 1848, Sardinia-Piedmont has been occupying Menton and Rocabrüna, two regions that declared unification with Sardinia-Piedmont. Now the rest of Monaco has been formerly annexed into the Sardinia-Piedmont. Many question if this was the will of the people of Monaco or the will of politicians in Turin."
+sardinia_news.19.a: "Monaco never was very significant..."
+
+sardinia_news.20.t: "Sardinia-Piedmont Invades Monaco"
+sardinia_news.20.d: "Following the Congress of Vienna, Monaco had been made a protectorate of Sardinia-Piedmont. The treaty of Stupinigi in 1817 formalized the relationship between the Kingdom of Sardinia and the Protectorate of Monaco. The treaty was seen to be detrimental to the economy of Monaco and caused many citizens to lose trust in Prince Charles III. Ever since the Revolutions of 1848, Sardinia-Piedmont has been occupying Menton and Rocabrüna, two regions that declared unification with Sardinia-Piedmont. Now the rest of Monaco has been formerly annexed into the Sardinia-Piedmont. Many question if this was the will of the people of Monaco or the will of politicians in Turin."
+sardinia_news.20.a: "Monaco never was very significant..."
+
+sardinia_news.21.t: "The Failure of the Pisacane Expedition"
+sardinia_news.21.d: "Carlo Pisacane, along with his band of Sicilian political prisoners and petty theives, has parished following his attempted expedition into Sapri in the Kingdom of the Two Sicilies. Pisacane was though to have been working with Mazzinian circles to attempt to invoke an insurrection against the Bourbon monarchy in the Two Sicilies. The local peasants had been warned ahead of time of the expedition and were told that the members were raiders looking to pillage the local towns. Thanks to the propaganda from the Bourbon authorities, Pisacane and his band were immediately attached by the locals. Despite being able to flee the initial attack, Pisacane and his remaining band were brutally slaughtered by local militia and peasants just days later, with some reports even claiming that cannabilism and other wicked activities were done to members of the expedition.\nFollowing the expedition, pro-Mazzini riots broke out in Genoa and Florence before supporters were arrested. In Piedmont, supporters of the plot are rumored to be facing charges that could lead to their exile to England."
+sardinia_news.21.a: "The Era of Radicalism in Italy is still upon us"
 
 #_________________________________________________________#
 ###                                                     ###
@@ -75,6 +159,93 @@ ITA_PIE_legislative_alessandria_college: "Expansion of the Alessandria College"
 
 #_________________________________________________________#
 ###                                                     ###
+###     PIEDMONT-SARDINIA DIPLOMATIC ENDEAVORS EVENT    ###
+###                                                     ###
+
+### switzerland ###
+
+sardinia.211.t: "Annecy-Geneva Railroad"
+sardinia.211.d: "Negotiated in part by private companies and the respective parliaments of our nations, it has been determined that a railroad between Annecy and Geneva would benefit the Swiss and Savoy people greatly. Annecy is a hub for current trade between Switzerland and Sardinia-Piedmont, and so serves an important role in the economies of both cities. "
+sardinia.211.a: "A Worthwhile investment"
+sardinia.215.t: "Border Infrastructure Investments"
+sardinia.215.d: "The Sardinia-Piedmont parliament has suggested that infrastructure in the bordering areas of our nations be upgraded. National roads near the border are significantly lacking in proper maintenance and with increased traffic between our nations, whether that be trade or movement of people, an upgrade is likely in order. A joint Swiss-Sardinian project could make quick work to upgrade the existing roads."
+sardinia.215.a: "A smart investment"
+
+### United Kingdom  ###
+
+sardinia.236.t: "Postal Convention with England"
+sardinia.236.d: "The Parliament has recently negotiated a new postal convention with the English. This will help international mail travel much quicker and with less hoops to jump through. Part of the agreement details increased communication between our two nations and the creation of mail lines supported by steam ships."
+sardinia.236.a: "Give me some paper, I'm going to send a letter to the queen!"
+sardinia.238.t: "Signal Law with England"
+sardinia.238.d: "A new law has been signed with the English regarding the construction of signals for dangerous parts of the Italian coasts. As naval cooperation and trade between our nations has increased, so have accidents and incidents that could have been avoided."
+sardinia.238.a: "The seas will be much safer now"
+
+### modena  ###
+
+sardinia.240.t: "Postal Agreement with Modena"
+sardinia.240.d: "Our Parliament recently negotiated a new postal convention in cooperation with the Duchy of Modena. This new accord is expected to improve the promptness of the flow of international mail between our two states due to the removal of prior inflated bureaucracy regarding the traversal of merchandise. The agreement in-part details extended cooperation in the fields of communication and the creation of mail lines supported by steam ships along with vestigial land routes."
+sardinia.240.a: "I'll send a letter to the Duke"
+
+### belgium ###
+sardinia.216.t: "Treaty of Navigation and Trade with Belgium"
+sardinia.216.d: "At the suggestion of our parliament, our diplomats have opened up negotiations with Belgium for a trade treaty to be negotiated. The Belgians have been receptive of our proposals and a new treaty is expected to go into effect soon."
+sardinia.216.a: "The benefit of good diplomacy"
+
+### United States ###
+sardinia.212.t: "U.S. Consular Relations Report"
+sardinia.212.d: "As of yet, the relationship between the Kingdom of Sardinia-Piedmont and the United States of America have been generally cordial. Since the initial act of Mutual recognition in 1802 through U.S. Consular Agent François de Navoni, cooperation between our two states has vastly expanded. On February 7, 1839, the United states accepted the credentials of Count Augusto Avogadro de Collobiano as the first charge d'affaires in Washington from the Kingdom of Sardinia-Piedmont, one year later, the United States established a legation in Turin with the first U.S. charge d'affaires presenting his credentials on September 15, 1840. U.S. involvement in the evacuation of Italian Patriots during the wars of 1848 still lingers in the memories of many Sardinian citizens, as well as the minds of the Austrian authorities. The United States, being a fervent defender of self determination and democracy, very well favors our nation. Although, it has become apparent that any direct support from the United States is unlikely, as internal strife and the ideals of manifest destiny gripe the increasingly divided young nation."
+sardinia.212.a: "Review Sardinian-American Commercial Relations."
+sardinia.213.t: "Commercial Assessment"
+sardinia.213.d: "The United States has, as of recently, grown to become a vital and lucrative partner in commerce for our kingdom. Since signing a universally amiable treaty of trade and commerce on November 16, 1838 when U.S. delegates met with King Carlo Alberto, Emanuele II’s father, our two states have enjoyed a pleasant and increasingly advantageous relationship. Shipments of cotton depart the southern states for Sardinian textile manufacturers, where the material plays a pivotal role as a prime material in the production of Piedmontese textile products. Similarly to other northern italian textiles, the textiles from our manufacturers themselves are held amongst the highest regard in the consumerist economies of the northern states. The periodical increase in demand for raw materials, especially cotton due to our ever-expanding industries over the past couple of decades has left Sardinia-Piedmont in a state of near dependency on the lucrative cotton trade with the United States."
+sardinia.213.a: "Intriguing..."
+sardinia.214.t: "Strategic Assessment"
+sardinia.214.d: "In June of 1848, Carlo Alberto granted the U.S. docking privileges in the port town of La Spezia after intense negotiations. The United States greatly values this arrangement, seeing the continuity of its usage as a U.S. docking bay and refueling station within the Mediterranean Sea as of utmost strategic importance. Many conservative politicians in parliament see the agreement as a breach of Sardinia-Piedmont’s national security, citing that in addition to the arrangement displaying subordination, the United States may use its preemptive advantage against us in the case of future conflict between our two states, and advocate for its immediate repeal. While it is universally understood that the United States would be understanding of our rapid change in policy, and retaliation is not a concern, withdrawing such a concession would surely strain relations with the United States, a nation widely considered to be a close confrère of our kingdom."
+sardinia.214.a: "This is a direct breach in our national security! Repeal U.S. docking permissions immediately!"
+sardinia.214.b: "We have enough enemies as is, best not to cause trouble where it isn’t due."
+
+### Denmark
+sardinia.234.t: "Sound Toll Payments"
+sardinia.234.d: "As part of the Copenhagen Convention, which granted free passage to European shipping companies through the Sound Dunes, we are expected to pay a portion of the fees. Though costly, the agreement will make merchant deals between our nations much easier."
+sardinia.234.a: "Let the Trading Begin!"
+#_________________________________________________________#
+###                                                     ###
+###     PIEDMONT-SARDINIA INDUSTRIAL DEVELOPMENT EVENT  ###
+###                                                     ###
+
+sardinia.232.t: "State of the Economy"
+sardinia.232.d: "Sardinia-Piedmont has come a long way since Camillo Benso di Cavour’s appointment in 1850. Cavour immediately began work on constructing a modern economy for the nation- Closing excessive monasteries, reducing the amount of benefices, and correcting the nation's lopsided spending deficit. In order to finance major public works projects and extensive industrial expansion, as well as to pay off war indemnities to Austria acquired after the war of 1848, Cavour masterfully floated vast internal and international loans, particularly from France and the United Kingdom. The subsequent subsidization of private railway companies and Sardinia-Piedmont diverse artisan-based Industrial sectors has led to the nation’s rise to becoming the most advanced and modern state within the Italian peninsula."
+sardinia.232.a: "We must continue to strengthen the economy"
+### RAILWAY EVENTS  ###
+sardinia.233.t: "Infrastructural Developments"
+sardinia.233.d: "Sardinia-Piedmont began subsidizing broad rail projects in the mid 1840s, connecting many major economic sectors throughout the nation such as Genoa and Turin, which in-turn lowered the cost of the transport of goods and persons, as well as provided a broad array of occupations to support middle class Piedmontese citizens.Cavour’s cabinet has identified connecting Turin to French and Swiss economic centers, such as Geneva and Lyon as of primary economic concern."
+sardinia.233.a: "Very well, authorize drafting for the Rail lines"
+
+### Sardinia  ###
+sardinia.45.t: "Agriculture in Sardinia"
+sardinia.45.d: "Agrarianism has constituted the vast majority of the Sardinian economy for as long as many can remember. As the economies of Europe begin to shift towards Industrialization—and Piedmont along with it, the island of Sardinia has been left underdeveloped and to be exploited for resources to fuel mainland Industries. The situation in Sardinia is considered volatile by much of the Piedmontese ruling class, hampering any efforts to change the economic or political makeup of the island any further. The question remains on whether Industrialization efforts should be forwarded to the island, or if it can remain strictly a strategic installment, and be of use in other sectors of our economy."
+sardinia.45.a: "Best to not agitate them any further..."
+sardinia.45.b: "They will need to learn to get with the times"
+
+#_________________________________________________________#
+###                                                     ###
+###     PIEDMONT-SARDINIA MARITIME DEVELOPMENT EVENT    ###
+###                                                     ###
+
+sardinia.231.t: "Maritime Assets"
+sardinia.231.d: "The urgent exigency for modern steam or other screw-driven vessels to substitute the since antiquated models of the Sardinian fleet has become ever apparent to the Sardinian legislature since Cavour’s inauguration in 1850. Efforts to revitalize the maritime capabilities of Sardinia-Piedmont by the Cavour cabinet have been substantial, with many preeminent warships being added to Sardinia’s minimal array of naval assets. As acting Minister of the Navy, in 1853 Cavour signed a series of accords with the United Kingdom including a variety of orders for vessels to be constructed in the United Kingdom for the Sardinian fleet, including that of four advanced screw-propeller driven steam frigates. Two of these vessels have since been commissioned in the Regia Marina."
+sardinia.231.a: "Il Mar Tirreno è nostro a governare!"
+
+#_________________________________________________________#
+###                                                     ###
+###     PIEDMONT-SARDINIA EMMANUEL'S MILITARY CODE      ###
+###                                                     ###
+
+sardinia.146.t: "King Victor Emmanuel's Military Code"
+sardinia.146.d: "King Victor Emmanuel has long wanted to create a new military code. With war seemingly on the horizon the need for such a law has finally been brought into fruition. The new codification will mandate five years of active service with six years in reserve, up to the age of thirty, with fifty days of obligatory training and instruction per year. Active service will be divided into ordinanza and provinciale. The new code also regulates those who qualify to join the army, leaving criminals or exiles from joining the military."
+sardinia.146.a: "Long Live the King!"
+
+#_________________________________________________________#
+###                                                     ###
 ###        PIEDMONT - SARDINIA INFLUENCE DECISION/S     ###
 ###                                                     ###
 
@@ -84,17 +255,18 @@ ITA_decisions_category_PIE_influence_minor_states_desc: "Central Italy, containi
 ITA_decisions_category_PIE_diplomatic_endeavors: "Diplomatic Endeavors"
 ITA_decisions_category_PIE_diplomatic_endeavors_desc: "[ITADIplomaticEndeavors]"
 
+sardinia.242.t: "Influence in Italy"
+sardinia.242.d: "Our agents are spread throughout the North of the Italian Peninsula. Through cooperation with local national societies and hunting clubs our agents have been able to build a network of resistance to the autocratic governments of the North. This network spreads support for our unification movement, while arming resistance movements."
+sardinia.242.a: "We must cripple these nations from the inside"
+sardinia.243.t: "Large-Scale Resistance"
+sardinia.243.d: "Suspected to be supported by Sardinian agents, networks of pro-unification radicals have managed to increase distrust of our government and the monarchy. A large network of resistance has formed in the North of Italy that is crippling the stability of our nation."
+sardinia.243.a: "This must be stopped!"
 #_________________________________________________________#
 ###                                                     ###
 ###         PIEDMONT - SARDINIA MONACO NEWS EVENTS      ### 
 ###                                                     ###
 
-sardinia_news.19.t: "Sardinia-Piedmont Annexes Monaco"
-sardinia_news.19.d: "Following the Congress of Vienna, Monaco had been made a protectorate of Sardinia-Piedmont. The treaty of Stupinigi in 1817 formalized the relationship between the Kingdom of Sardinia and the Protectorate of Monaco. The treaty was seen to be detrimental to the economy of Monaco and caused many citizens to lose trust in Prince Charles III. Ever since the Revolutions of 1848, Sardinia-Piedmont has been occupying Menton and Rocabrüna, two regions that declared unification with Sardinia-Piedmont. Now the rest of Monaco has been formerly annexed into the Sardinia-Piedmont. Many question if this was the will of the people of Monaco or the will of politicians in Turin."
-sardinia_news.19.a: "Monaco never was very significant..."
-sardinia_news.20.t: "Sardinia-Piedmont Invades Monaco"
-sardinia_news.20.d: "Following the Congress of Vienna, Monaco had been made a protectorate of Sardinia-Piedmont. The treaty of Stupinigi in 1817 formalized the relationship between the Kingdom of Sardinia and the Protectorate of Monaco. The treaty was seen to be detrimental to the economy of Monaco and caused many citizens to lose trust in Prince Charles III. Ever since the Revolutions of 1848, Sardinia-Piedmont has been occupying Menton and Rocabrüna, two regions that declared unification with Sardinia-Piedmont. Now the rest of Monaco has been formerly annexed into the Sardinia-Piedmont. Many question if this was the will of the people of Monaco or the will of politicians in Turin."
-sardinia_news.20.a: "Monaco never was very significant..."
+
 
 #_________________________________________________________#
 ###                                                     ###
@@ -118,17 +290,17 @@ ita_swfi_level_3_icon_tt_delayed: "[GetITAswfi3CheckTrigger]  §C[PIE.GetNameWit
 ita_swfi_level_4_icon_tt: "£GFX_SWI_military_readiness_text_icon §YLevel 4§!"
 ita_swfi_level_4_icon_tt_delayed: "[GetITAswfi4CheckTrigger]  §C[PIE.GetNameWithFlag]§! has rejected §Y[AUS.GetNameWithFlag]§! Peace Negotiations!"
 ita_swfi_level_5_icon_tt: "£GFX_SWI_military_readiness_text_icon §YLevel 5§!"
-ita_swfi_level_5_icon_tt_delayed: "[GetITAswfi5CheckTrigger]  §C[PIE.GetNameWithFlag]§! has rejected Desperate §Y[AUS.GetNameWithFlag]§! Negotiations, §b[BAV.GetNameWithFlag]§! Begins to build a South German Coalition."
+ita_swfi_level_5_icon_tt_delayed: "[GetITAswfi5CheckTrigger]  §C[PIE.GetNameWithFlag]§! has rejected Desperate §Y[AUS.GetNameWithFlag]§! Negotiations, §b[BAV.GetNameWithFlag]§! Begins to build a South German Coalition and §G[RUS.GetNameWithFlag]§! threatens war if the any German state joins."
 ita_swfi_level_6_icon_tt: "£GFX_SWI_military_readiness_text_icon §YLevel 6§!"
-ita_swfi_level_6_icon_tt_delayed: "§b[BAV.GetNameWithFlag]§! South German Coalition force arrives, North German States start to do similar."
+ita_swfi_level_6_icon_tt_delayed: "§b[BAV.GetNameWithFlag]§! South German Coalition force arrives, §G[RUS.GetNameWithFlag]§! declares war and the North German States start to prepare against possible Russian advances. §t[ENG.GetNameWithFlag]§! watches in horror and rallies the Channel and Mediterranean Squadrons."
 ita_swfi_level_7_icon_tt: "£GFX_SWI_military_readiness_text_icon §YLevel 7§!"
 ita_swfi_level_7_icon_tt_delayed: "North German Coalition Force Arrives, and §2[PRS.GetNameWithFlag]§! is concerned"
 ita_swfi_level_8_icon_tt: "£GFX_SWI_military_readiness_text_icon §YLevel 8§!"
-ita_swfi_level_8_icon_tt_delayed: "§2[PRS.GetNameWithFlag]§! intervenes, §t[ENG.GetNameWithFlag]§! watches in horror"
+ita_swfi_level_8_icon_tt_delayed: "§2[PRS.GetNameWithFlag]§! intervenes, §t[ENG.GetNameWithFlag]§! Braces for a war footing"
 ita_swfi_level_9_icon_tt: "£GFX_SWI_military_readiness_text_icon §YLevel 9§!"
-ita_swfi_level_9_icon_tt_delayed: "§t[ENG.GetNameWithFlag]§! Strengthens mediterranean Fleet"
+ita_swfi_level_9_icon_tt_delayed: "§t[ENG.GetNameWithFlag]§! Strengthens Mediterranean and Channel Squadrons"
 ita_swfi_level_10_icon_tt: "£GFX_SWI_military_readiness_text_icon §YLevel 10§!"
-ita_swfi_level_10_icon_tt_delayed: "§t[ENG.GetNameWithFlag]§! demands an end, or face total continenal war."
+ita_swfi_level_10_icon_tt_delayed: "§t[ENG.GetNameWithFlag]§! demands an end, or face total continental war."
 
 ITA_time_based_war_escalation_mission:1 "Gradual War Escalation"
 ITA_time_based_war_escalation_mission_desc:1 "The longer the war runs, the more concerned the world will be. For each six months that pass, since the start in October 1935, War Escalation will increase by one."
@@ -144,11 +316,49 @@ ITA_Mission_AUS_PIE_Peace_Treaty_1860_ITA_VICTORY_Russia_tt: "§Y[PIE.GetFlag]Sa
 ITA_Mission_AUS_PIE_Peace_Treaty_1860_AUS_VICTORY_tt: "§Y[AUS.GetFlag]Austrian Victory Conditions:§!\n\n - §gSardinia is more than 25% towards surrender.§!\n\n§YTimeout Conditions:§!\n\n - §gIf the war lasts longer than 300 days, Austria must retain control of Milan and Venice to win. Additionally, if Sardinia is allied to Russia, Austria must also hold both West and East Galicia.§!"
 ITA_Mission_AUS_PIE_Peace_Treaty_1860_tt: "§CWill Fire the Peace§!"
 
+#######################
+### LEAD UP TO WAR  ###
+#######################
+
+sardinia.63.t: "The Arrival of Bixio"
+sardinia.63.d: "Jacques Alexandre Bixio has arrived in Turin. A friend of both Napoleon III and Cavour, he has brought news that the French are seeking an alliance with our nation against the Austrians in order to finally remove them from the Italian Peninsula and support our cause for unification. The Orsini Affair is likely to have increased the urgency for the French to take a side in the Risorgimento, and it seems that have made the correct choice of siding with us."
+sardinia.63.a: "Send Nigra to Paris"
+sardinia.63.b: "Decline the French Alliance"
+sardinia.64.t: "Meeting of Nigra and Henri Conneau"
+sardinia.64.d: "[SardiniaPiedmontRussianDFranceDeniedLoc]"
+PIE_French_Ally_Regular_TT: "At the first word of an alliance proposal from France diplomat Costantino Nigra was sent to Paris to confirm these rumors. He met with Henri Conneau, Napoleon III's personal physician, and confirmed that there was ample support in the French leadership for further talks for an alliance between our nations."
+PIE_Russian_French_Deny_TT: "At the first word of an alliance proposal from France diplomat Costantino Nigra was sent to Paris to confirm these rumors. He met with Henri Conneau, Napoleon III's personal physician, and confirmed that there was ample support in the French leadership for further talks for an alliance between our nations. However, Nigra informed Henri of an already existing alliance between Russia and Sardinia-Piedmont which is now cause for concern in the French leadership. While a joint war with Russia and Sardinia against Austria would be enough to demolish the remaining power of Austria, it would be increasingly likely to create a wider European conflict."
+sardinia.64.a: "We should propose a proper meeting"
+sardinia.64.b: "We have no choice but to step away"
+sardinia.65.t: "A Meeting at Plombieres"
+sardinia.65.d: "The French has proposed a meeting between our representatives in the town of Plombeires in secret. This meeting will be the final step in an alliance with France, as negotiations will begin on the terms of the alliance. It is expected that the main discussions will center around how the war with Austria will come to be, and the result which will come out of it."
+sardinia.65.a: "Time to Prepare"
+
+#sardinia2iw.1.t: "Search for an ally"
+#sardinia2iw.1.d: "In order for us to achieve the goals of the resogrimento, we must ensure, that an ally on the european continent can support us in our endeavours against §Y[AUS.GetNameWithFlag]§! and her client states in Northern Italy"
+#sardinia2iw.1.a: "The search begins"
+#sardinia2iw.2.t: "Where to look"
+#sardinia2iw.2.d: "Many nations in Europe do not enjoy the §Y[AUS.GetNameWithFlag]§! stay in Northern Italy, let alone, their attempts to 'control' the population. Our choices for possible supporters are.\n §BThe French Empire§! to our west, they have proven to be a strong supporter of pushing §WAustria§! out of Northern Italy. However, the desires of Napoleon III are still a mystery to us.\n To our East, is §GThe Russian Empire§!. Whom we fought not too long ago in the Crimean War, while this may cause some issues in possible negotiations with the Tsar's ministers. The anger from §Y[AUS.GetNameWithFlag]§! refusal to join the war with russia can play into our hands.\n §t[ENG.GetNameWithFlag]§! shows no interest publicly on the matter, internally via the Foreign office. Their desire for the maintaining of the Balance of power and control of the Mediterranian sea means they can play a powerful ally if we can win them over. However, that option is not possible in a out right war with Austria.\n As for §2[PRS.GetNameWithFlag]§!, they would join the war against §Y[AUS.GetNameWithFlag]§!. The main concern established by their ministers is that doing so would alienate them from their fellow germanic brothers with their own unification to rival §Y[AUS.GetNameWithFlag]§!.\n At the end of it all, we can either go with the steady hand of §B[FRA.GetNameWithFlag]§! or the great Bear called §G[RUS.GetNameWithFlag]§!.\n Whom do we pick?"
+#sardinia2iw.2.a: "The Safe Option, France"
+#sardinia2iw.2.b: "The Great Bear, Russia" - DO NOT PICK, BROKEN LINE
+#sardinia2iw.3.t: "Meeting with Napoleon III"
+#sardinia2iw.3.d: "Discussions around Italy with Napoleon III have been a great success, mainly due to Count Cavour being able to sway the Emperor on the matter to our benifit. He has asked if we could establish a meeting for future deabtes on how and when to start. Count cavour has counted this as a blessing to see such as quick response from the §B[FRA.GetNameWithFlag]§! on such matters. However, he did mention possible concerns he has on the endeavour of ours which need to be addressed."
+#sardinia2iw.3.a: "Scheduele the meeting"
+#sardinia2iw.4.t: "Message from Prussia"
+#sardinia2iw.4.d: "A message has arrived from the §2[PRS.GetNameWithFlag]§! foreign office.\n It states that they would be willing to enter into talks on how to push §Y[AUS.GetNameWithFlag]§! out of italy along with supporting us if §B[FRA.GetNameWithFlag]§! has ulterior motives with northern Italy.\n However, they stated that it may place them in an anstranged position to their neighbours, as they also have plans to incorperate them into a larger power block.\n In other words, §2[PRS.GetNameWithFlag]§! will turn a blind eye to whats going on."
+#sardinia2iw.4:a: "I see..."
+#sardinia2iw.5.t: "The meeting"
+#sardinia2iw.5.d: "Like clockwork, the meeting started without delay with §B[FRA.GetNameWithFlag]§!, Many topics were discussed "
+
+#############################
+### THE START OF THE WAR  ###
+#############################
+
 sardinia2iw.1.t: "Austria demands demobilization"
 sardinia2iw.1.d: "The Austrian's have demanded the complete demobilization of our army, claiming that our army is a 'destabilising force'. They have given us some time to complete their demand...This demand however, shall be given no ear to speak too."
 sardinia2iw.1.a: "The clock ticks"
 sardinia2iw.2.t: "Moment of truth"
-sardinia2iw.2.d: "The time for the Austrian demand to demobilize has ended, now is the moment of truth, can we and our ally push Austria out of austria and for us to be sole heir on northern italy."
+sardinia2iw.2.d: "The time for the Austrian demand to demobilize has ended, now is the moment of truth, can we and our ally push Austria out of austria and for us to be sole heir on northern Italy."
 sardinia2iw.2.a: "So it begins"
 sardinia2iw.3.t: "Milan surrenders"
 sardinia2iw.3.d: "Our forces have forced the garrison of Milan to either surrender or withdraw. We now hold a fortified location over the Tricino River, our next goal is to hit the fortress city of Mantua."
@@ -941,6 +1151,12 @@ ITA_MOD_Diplomacy_Begin: "Open Diplomatic Channels with Modena"
 ITA_MOD_Postal_Agreement: "Postal Agreement with Modena"
 ITA_FRA_Seek_French_Recognition: "Seek French Recognition"
 ITA_FRA_PAP_Roman_Question_French_Garrison_Leave: "French Garrison Leaves the Papal States"
+ITA_decisions_category_build_recognition_in_europe: "Build Recognition in Europe"
+ITA_seek_recognition_from_britain: "Seek Recognition From Britain"
+ITA_seek_recognition_from_france: "Seek Recognition From France"
+ITA_seek_recognition_from_prussia: "Seek Recognition From Prussia"
+ITA_seek_recognition_from_austria: "Seek Recognition From Austria"
+ITA_seek_recognition_from_san_marino: "Seek Recognition From San Marino"
 
 
 #####################
@@ -1206,7 +1422,7 @@ tuscany.4.d: "Cosimo Ridofli operates a fine winery in Tuscany. As the issues wi
 tuscany.4.a: "We must introduce wage labor"
 tuscany.4.b: "Our reforms must be elsewhere"
 tuscany.5.t: "The Political Scene"
-tuscany.5.d: "Leopold II is not a very popular leader. His dynasty is propped up by Austria and their empire influences our nation a great deal. One condition of his return was the removal of the constitution, something the liberal politicians seek to have returned. There are minor legislative powers in the government but much power is centralized. As rumors that Sardinia-Piedmont will make its attempt to unify Italy soon are spreading, so is discontent and shadow organizations."
+tuscany.5.d: "Leopold II is not a very popular leader. His dynasty is propped up by Austria and their empire influences our nation a great deal. One condition of his return was the removal of the constitution, something the liberal politicians seek to have returned. There are minor legislative powers in the government but much power is centralised. As rumors that Sardinia-Piedmont will make its attempt to unify Italy soon are spreading, so is discontent and shadow organizations."
 tuscany.5.a: "The future is unknown"
 tuscany.6.t: "Memories of 1848"
 tuscany.6.d: "Following the revolutions of 1848 the Grand Duchy of Tuscany joined the Sardinian coalition in the fight against Austria. Our troops eventually pulled out along with those of the Two Sicilies and Papal States, and our people revolted against Duke Leopold II. The Austrian Empire eventually put down the revolt and reinstated Leopold, at the cost of removing the constitution granted after the revolutions. The people do not have fond memories of the events that unfolded."
@@ -2418,6 +2634,9 @@ sardinia.263.a: "We must prepare"
 sardinia.264.t: "Italian National Exhibition of [GetYear]"
 sardinia.264.d: "Following the Unification of Italy, Victor Emmanuel and other politicians were hoping to for a show of the might of the new Italian Nation. Talented Scientist and former Finance Minister Quintino Sella commissioned the Italian National Exhibition which took place in Florence. Using the Stazione Leopolda as a base, the exhibition will run for multilpe months. Over 8,000 exhibitors are expected to show off the best of the best Italy has to offer in the fields of the arts, sciences, agriculture, and Italian industries. Most impressive so far has been the display from the agriculture field and the magnificant gardens put forward by some of those benefactories."
 sardinia.264.a: "What a great showcase of the Italian Nation!"
+sardinia.266.t: "Austria Demands Demobilization!"
+sardinia.266.d: "§O[AUS.GetNameWithFlag]§!, fearful of our troop movements on the border of §O[LVN.GetNameWithFlag]§!, has demanded that we demobilize immediately or face war. This only fuels the fire of Risorgimento more, and with §3[FRA.GetNameWithFlag]§! on our side, it seems that Austrian defeat is all but certain in a war against them."
+sardinia.266.a: "Stand our ground."
 
 
 
@@ -2506,6 +2725,8 @@ TUS_another_banner_TT: "§CWe will search for another cause in the peninsula to 
 ITA_PIE_focus_unlocks_political_branch_TT: "§CUnlocks More of the Political Branch (Will require reopening the FT)§!"
 ITA_Rattazzi_Victory_TT: "§GWe will entrust Rattazzi with organizing the new Italian Nation!§!"
 ITA_Cavour_Victory_TT: "§GWe will entrust Cavour with organizing the new Italian Nation!§!"
+ITA_PIE_focus_unlocks_recognition_decisions_TT: "§GUnlock decisions to seek recognition from other European nations.§"
+ITA_PIE_focus_reduce_southern_revolt_risk_3_TT: "§GDecrease the southern revolt risk by 3.§"
 
 
 #################
@@ -2515,6 +2736,8 @@ ITA_Cavour_Victory_TT: "§GWe will entrust Cavour with organizing the new Italia
 PIE_Victor_Emmanuel_Army_HC: "Victor Emmanuel II"
 POLITICS_Camillo_Benso_di_Cavour_DESC: "Genevan by birth, his mother brought into the Cavour family the influence of Geneva, a city open to all the political, religious, and social movements of the period. The French Revolution imperiled the possessions of the Cavours because of their close ties with the Ancien Régime, but Camillo's father reestablished the family in an eminent position in Napoleonic society. As the younger son who could not hope for the economic and social position that would fall to his elder brother, Camillo saw a brilliant career open up before him under the protection of the court of Charles Albert, Prince of Savoy. \n\n His lack of enthusiasm for the court position and his open ridicule of the page-boy's uniform he was obliged to wear created controversy and confirmed the growing suspicions of rebellious intent within the young Camillo. He was influenced by the liberal ideas of the French writers Benjamin Constant and François Guizot, and his adversaries remained those of his childhood: paternalistic absolutism; legitimist reactionaries representing the landed interests, the aristocracy, and the clergy; and the union of throne and altar. His father got him appointed mayor of a village south of Turin. Social interests began to absorb him; the problems of poverty and prisoner education became the subjects of his research. In 1834, he wrote a memoir on poverty in Piedmont, which was published the following year in London in the 'Report from His Majesty's Commissioners for Inquiring into the Administration and Practical Operation of the Poor Laws.' A second pamphlet on the history of the Poor Laws in England was edited and published by Cavour in 1835 in Turin.\n\n His transition to politics was completed when King Charles Albert decided to embark on measures of reform and to concede a certain amount of freedom to the press. This prompted Cavour to offer his services as a volunteer until, on being elected a deputy in the Third Legislature, he began to fight for the approval of a peace treaty with Austria, although the extremists of the left wanted to continue a war that was, in effect, already lost. In October 1850, he was offered the post of Minister of Agriculture and soon became the most active and influential member of the Cabinet. The European drama into which Cavour was drawn against his will began in 1854 with the Crimean War, with the combined efforts of France, Great Britain, and Piedmont to secure the prosperity of the Ottoman Empire against the encroaching Russian Empire.\n\n Cavour advocates a complete anti-Austrian movement across the Piedmontese lands to fulfill the Risorgimento and unite the Italian lands, a promise he is willing to keep."
 PRM_italian_revolutionaries: "Italian Revolutionaries"
+PIE_luigi_farini_name: "Luigi Carlo Farini"
+PIE_marco_minghetti_name: "Marco Minghetti"
 
 ### Factions
 FRA_PIE_alliance_faction: "Franco-Sardinian Alliance"
@@ -2539,6 +2762,9 @@ PIE_trait_Father_of_the_Fatherland: "Father of the Fatherland"
 
 PIE_revoke_naval_access: "Repealed Naval Docking Rights"
 PIE_renew_naval_access: "Renewed Naval Access"
+ITA_Reformed_the_Siccardi_Laws: "Reformed the Siccardi Laws"
+ITA_The_Subversive_Laws: "The Subversive Laws"
+ITA_Altered_the_Deal: "Altered the Deal"
 
 
 
@@ -2580,7 +2806,7 @@ ita.2.t: "Application of the Statuto Albertino"
 ita.2.d: "The Statute of the Kingdom, also known as the Fundamental Statute of the Monarchy of Savoy of March 4, 1848, is the title of the constitutional statute adopted by the Kingdom of Sardinia in Turin under Carlo Alberto of Savoy. Now that the Kingdom of Sardinia has become the Kingdom of Italy, the statute will need to be applied to the Kingdom."
 ita.2.a: "What is a Nation Without a Constitution?"
 ita.3.t: "Extension of the Casati Law"
-ita.3.d: "The Casati Law, taking its name from former Minister of Public Education Gabrio Francesco Casati, reformed the entire education system of the Kingdom of Sardinia. The law gave the state the right and duty to intervene in school matters, challenging the long standing tradition of Catholic Church schooling within Italy. The law is inspire in part by the Prussian system, mirroring its highly hierarchical and centralized organizational system. Though it may see some resistance from Catholics and the church, it is necessary to apply this law throughout the Kingdom."
+ita.3.d: "The Casati Law, taking its name from former Minister of Public Education Gabrio Francesco Casati, reformed the entire education system of the Kingdom of Sardinia. The law gave the state the right and duty to intervene in school matters, challenging the long standing tradition of Catholic Church schooling within Italy. The law is inspire in part by the Prussian system, mirroring its highly hierarchical and centralised organizational system. Though it may see some resistance from Catholics and the church, it is necessary to apply this law throughout the Kingdom."
 ita.3.a: "A Necessary Step for Education"
 ita.4.t: "Expansion of the Botanical Garden of Catania"
 ita.4.d: "The Botanical Gardens of Catania were started by Benedictine librarian monk Francesco Tornabene Roccaforte. Appointed chair of Botany in 1843, Roccaforte recieved land from the Royal University of Catania to construct the Botanical gardens, which were innaugurated in 1858. Recently, the Gardens have recieved a major expansion. The collections of the garden now include many succulent plants, palms, Siciliian endemisms, trees, shrubs, and some exotic speciies."
@@ -2617,7 +2843,7 @@ ita.15.t: "Signing of the Pepoli Law"
 ita.15.d: "The Pepoli Law has officially been signed into action today, marking a great shift in the future of the Italian Economy and Banking. The law extends the lira of the Kingdom of Sardinia, now the Italian Lira, across the entire peninsula. It also states that all circulation of pre-unification currencies must stop by the end of the year. This is just one part of the movement towards Piedmontization which strenghtens the Piedmontese politicians and holdings while threatening the economies of the South."
 ita.15.a: "One Italy Requires One Currency"
 ita.16.t: "Ricasoli Offers His Resignation"
-ita.16.d: "Dissensions within the government have reached a boiling point for Prime Minister Ricasoli. The Iron Baron has been tormented by dissent formented by Minister Cordova and many of his cabinet have offered their resignation. The King, indisposed by poor health, recieved a letter from the Prime Minister in which Ricasoli expects "that Vittorio Emanuele and the King deign to hive him freedom, peace, and rest." Victor Emmanuel is expected to accept the resignation of Ricasoli momentarily."
+ita.16.d: "Dissensions within the government have reached a boiling point for Prime Minister Ricasoli. The Iron Baron has been tormented by dissent formented by Minister Cordova and many of his cabinet have offered their resignation. The King, indisposed by poor health, recieved a letter from the Prime Minister in which Ricasoli expects "that Vittorio Emanuele and the King deign to have him freedom, peace, and rest." Victor Emmanuel is expected to accept the resignation of Ricasoli momentarily."
 ita.16.a: "The Iron Baron Gave us his Best"
 ita.17.t: "Formation of the Rattazzi Government"
 ita.17.d: "Following the resignation of Baron Ricasoli, Urbano Rattazzi has been called upon to form a new government in Italy. His cabinet is formed almost entirely of Piedmontese politicians, and contains many independents close to the left. Prior to Cavour's death, Rattazzi had a massive break with the Count but became close to King Victor Emmanuel. The main issue for Rattazzi, it seems, is the Italian lands still under foreign control."
@@ -2654,14 +2880,14 @@ ita.27.t: "Italy Proposes Meeting in Paris on the Future of Rome"
 ita.27.d: "It is no secret that the Kingdom of Italy has aspirations to bring Lazio and Rome into their lands. New Prime Minister of Italy Bettino Ricasoli has proposed that our nations, and our French protectors, meet in Paris to talk on the future of Rome. While the Pontificate has been rash when dealing with the Italians in diplomacy, our French protectors have already agreed to this meeting and resisting could upset them."
 ita.27.a: "This Meeting Could be Beneficial"
 ita.27.b: "The Very Idea is an Insult!"
- ita.28.t: "War Again?"
- ita.28.d: "With Prussia at war with Austria the opportunity for further expansion to liberate Italian lands is upon us. The people of Italy are not yet fully united and our independence fight is not yet won. It comes time to show our strength as a nation in Europe and we will dominate!"
- ita.28.a: "To War!"
+ita.28.t: "War Again?"
+ita.28.d: "With Prussia at war with Austria the opportunity for further expansion to liberate Italian lands is upon us. The people of Italy are not yet fully united and our independence fight is not yet won. It comes time to show our strength as a nation in Europe and we will dominate!"
+ita.28.a: "To War!"
 ita.29.t: "France Declines a Meeting on Rome"
 ita.29.d: "The French have declined to host a meeting on the future of the Papal State in Paris. For reasons likely relating to their current status of the protector of the Papal State, the French have not shown any interest to continue the talks first started by Cavour. This is a great setback for the hope to solve the Roman Question with diplomacy."
 ita.29.a: "This is Very Unfortunate"
- ita.30.t: "Peace"
- ita.30.d: "Following hard fought battles in lands wrongfully occupied by the Austrian Empire we have finally secured enough land and victories to consider bringing demands to the peace table. Our government is not enough radical to push for support to seek out a longer war at the risk of Prussia exiting the war before us, and leaving us to face the Austrian menace alone."
+ita.30.t: "Peace"
+ita.30.d: "Following hard fought battles in lands wrongfully occupied by the Austrian Empire we have finally secured enough land and victories to consider bringing demands to the peace table. Our government is not enough radical to push for support to seek out a longer war at the risk of Prussia exiting the war before us, and leaving us to face the Austrian menace alone."
 ita.31.t: "The Papal States Refuse to Meet in Paris"
 ita.31.d: "Our delegates have informed us that the Papal States' diplomats are reluctant to attend a meeting on the existance of their state in Paris, finding the very idea insulting. While some believe we should respect the wishes of the Pope, others have relayed that not hearing the Italian proposal could simply be delaying the inevitable. We could still hear the Italian proposal without the Papal delegates in attendance."
 ita.31.a: "There is no Point in Delaying the Issue"
@@ -2713,7 +2939,7 @@ ita.44.a: "We Have Failed"
 ita.45.t: "Transfer of the Capital to Rome"
 ita.45.d: "With Rome now under our control, the time has come to finally transfer our capital to Rome. It was Cavour who boldy claimed in one of his first speeches as Prime Minister of Italy that Rome is the natural capital of Italy, and now that has become reality. Crowds are expected to gather in Rome as King Victor Emmanuel prepares to make a speech on the momentous occasion."
 ita.45.a: "This is a Joyous Day!"
-ita.46.t: "Garibadlini Gather in Trentino"
+ita.46.t: "Garibaldi Gather in Trentino"
 ita.46.d: "[ITATrentinoProtestEvent]"
 ita.46.a: "Arrest Them!"
 ita.46.b: "Arrest Them? We Need to Organize Them!"
@@ -2749,8 +2975,31 @@ ita.54.a: "There is Work to be Done"
 ita.55.t: "Meeting of Dissendent Ministers"
 ita.55.d: "Reports are coming in that a meeting has taken place in [GetCapitalVictoryPointName] between ministers currently in groups dissenting from support of Rattazzi's government. While exact numbers are not certain, there is certainly reason to be worried. Now is the time for Rattazzi to take control of the situation and gain strenght for his government or risk being forced into resignation, and preferably before Victor Emmanuel loses favor with him."
 ita.55.a: "Time is of the Essence"
-
-
+ita.56.t: "The Southern Question"
+ita.56.d: "With a newly unified Italy many new problems arise. One of these is the difference in economic development between northern and southern Italy. Another problem notable to the south are roaming brigands terrorizing the countryside, looting towns and villages and attacking Italian authorities. These problems were less noticeable when they were divided along the border of a country. But now, with that border broken down, an answer to the Southern Question must come from the combined will of everyone on the Italian peninsula, not just those in the south."
+ita.56.a: "Let Us Integrate the South"
+ita.57.t: "The September Convention"
+ita.57.d: "France's protection of Rome has been an issue for us in our goal of the conquest of Rome. If we want to end the Pope's temporal reign, we need to first convince France to remove their garrisons from the Papal States. Unfortunately, a stipulation of this treat would requires us to recognize and respect the independence of the Papal States. We can afford to break this promise in the future, though."
+ita.57.a: "Hopefully They Use Their Best Judgement"
+ita.58.t: "France Accepts the September Convention"
+ita.58.d: "Finally! Rome now sits practically undefended by any greater power that could defeat us in a war. While there is much work to be done, an invasion of Rome is now a real possibility in our lifetime."
+ita.58.a: "Great Success!"
+ita.59.t: "France Rejects the September Convention"
+ita.59.d: "Much to our dismay, France has rejected our proposal at the September Convention. While this has angered many to the point of war, we don't think it's necessary to go to war over this. What shall we do?"
+ita.59.a: "A War Would be too Costly"
+ita.59.b: "War!"
+ita.60.t: "Day of Aspromonte"
+ita.60.d: "A few days ago, Garibaldi gathered a volunteer force and landed at Aspromonte. His ship being detected by the navy prior to the landing, a part of his army marched to camp at Gambarie. A day later, before his army could be reunited, Bersaglieri from the Italian army attacked the camp. This resulted in a short battle that ended with 12 dead and 43 injured across both sides. This has forced Rattazzi to resign his position as prime minister of Italy. Farini is planned to take power in his place."
+ita.60.a: "Farini Takes Power"
+ita.61.t: "Farini Demands the King Declare War on Russia"
+ita.61.d: "In response to the violent suppression of the Polish revolution in Russia by the kremlin, an angered Farini demands that the king of Italy declare war on Russia for this. While he obviously did not heed this request, this was contrary to the urges caused due to the knife he was being threatened with by Farini. This has been a great embarrasment to the Farini government, and may lead to a resignation in the near future."
+ita.61.a: "That was an Overreaction"
+ita.62.t: "Farini Resigns"
+ita.62.d: "Farini's time as prime minister of Italy has come to an end. His attempt to coerce the king into declaring war on Russia ended miserably, and overexertion has led to the softening of his brain. With this resignation, Marco Minghetti now leads the Right coalition."
+ita.62.a: "Minghetti Becomes Prime Minister"
+ita.63.t: "Aftermath of the Turin Massacre"
+ita.63.d: "After the signing of the September Conventions, an agreement that requires we move our capital from Turin to Florence, demonstrators in Turin protested this decision outside the headquarters of the Ministry of the Interior. This protest ended in violence with carabinieri defending the building. A similar event happpened the next day at the Piazza San Carlo. Over these two days, many demonstrators were beaten, shot, injured, and murdered by Italian authorities. This incident persuaded the king to commission a new government to be formed by La Marmora, under the Royal Italian Army."
+ita.63.a: "That's awful..."
 
 
 
@@ -2762,75 +3011,143 @@ is_literally_italy: "Formed Italy"
 ita_news.4.t: "The Death of Camillo Benso, Count of Cavour"
 ita_news.4.d: "Prime Minister Camillo Benso, count di Cavour, and the coined father of the unified Italian nation and its people has passed away at the Palazzo Benso di Cavour Turin. The Count of Cavour was an acclaimed figure throughout Europe and the wider world for pushing the Kingdom of Sardinia-Piedmont towards a more offensive standpoint in European politics for the last decade. Benso's notorious efforts to include the kingdom into European politics came to fruition with the subsequent arrival of the Crimean War between the Russians and a unified force of Britain, France, and Piedmont-Sardinia. While their participation came to be seen as morally just, the true purpose was to allow the suggestion of a unified Italian peninsula at the peace discussions. More recently, Cavour has navigated European diplomacy to secure alliances for the Kingdom of Sardinia-Piedmont, allowing for the conquest of the rest of the Italian Peninsula; the defeat of the Austrian Empire; and the political unification and alliances made to further Italian unification. \n\n The whole of Europe now joins the Italian Peninsula in its deep anguish as it stops its celebrations to lament the passing of a great leader—the father of unified Italy."
 ita_news.4.a: "Europe has lost one of its greatest leaders"
+ita_news.6.t: "Turin Massacre; Military Takes Power in Italy"
+ita_news.6.d: "After two days of demonstrations that led to many injured and dead at the hands of the Italian carabinieri, the current government of Italy has been forced to resign and let the military, led by Alfonso Ferrero La Marmora, take power. These protests, taking place in Turin, were in response to the proposed move of the Italian capital from the forementioned city to Florence. This was due to a clause in the September Convention, an agreement between Italy and France. It is not yet known how this will affect Italy moving forward."
+ita_news.6.a: "Interesting"
 
 ##########################
 ### UNIFIED ITALY TREE ###
 ##########################
 ITA_PIE_focus_The_Italian_Economy: "The Italian Economy"
+ITA_PIE_focus_The_Italian_Economy_desc: "As a newly united country, we have many issues to resolve in relation to the economy. One of the most important of these issues is the economic divide between the north and south, with the south being behind the north economically and dependent on agriculture."
 ITA_PIE_focus_State_of_the_Armed_Forces: "State of the Armed Forces"
+ITA_PIE_focus_State_of_the_Armed_Forces_desc: "Since unification, the Italian armed forces have been incredibly disorganised due to the conflicting doctrines and organisational structures between former Italian states. It is our goal to turn our fragmented military into one coherent, organised, and devastatingly effective unit."
 ITA_PIE_focus_Regio_Esercito: "Regio Esercito"
+ITA_PIE_focus_Regio_Esercito_desc: "Regio Esercito, or the Royal Italian Army, is our main fighting force on the ground. Having been created from the pieces of the armies of former Italian states across the peninsula, it is our goal to turn it into a professional, organised, force."
 ITA_PIE_focus_Fanti_Decree: "Fanti Decree"
+ITA_PIE_focus_Fanti_Decree_desc: "This decree, signed by Manfredo Fanti, denotes the official creation of the Royal Italian Army, the successor to the Royal Sardinian Army and the Army of the Two Sicilies."
 ITA_PIE_focus_Unification_of_the_Army: "Unification of the Army"
-ITA_PIE_focus_Organize_the_Army: "Organize the Army"
+ITA_PIE_focus_Unification_of_the_Army_desc: "Now that we have an official organisation to unify our fragmented army into, it's about time we do it. We will officially dissolve the Royal Sardinian Army and the Army of the Two Sicilies, and merge them into the Royal Italian Army."
+ITA_PIE_focus_Organize_the_Army: "Organise the Army"
+ITA_PIE_focus_Organize_the_Army_desc: "While the armies of Italy are now officialy one unit, there is still a rift between sections of the army that have come from different Italian states. If we want to really unify the Italian army, we need to smooth out these gaps."
 ITA_PIE_focus_Requisition_Old_Equipment: "Requisition of Old Equipment"
-ITA_PIE_focus_Organization_of_the_General_Staff: "Organization of the General Staff"
+ITA_PIE_focus_Requisition_Old_Equipment_desc: "While older equipment can have its flaws, it's better than no equipment for some of our troops. We shall 'requisition' some older weapons and other gear to help supply our young army."
+ITA_PIE_focus_Organization_of_the_General_Staff: "Organisation of the General Staff"
+ITA_PIE_focus_Organization_of_the_General_Staff_desc: "General staff coming from many different Italian states aren't particularly fond of, or good at, working with each other. Organising our staff to better work with each other will be of great help to our army."
 ITA_PIE_focus_Lessons_from_the_Third_Independence_War: "Lessons from the Third Independence War"
+ITA_PIE_focus_Lessons_from_the_Third_Independence_War_desc: "The Third Independence War taught us many lessons about how we should run our army. It would be to our benefit to use what we learned from this war with a great power to further improve our army."
 ITA_PIE_focus_Carabinieri: "Carabinieri"
+ITA_PIE_focus_Carabinieri_desc: "Based in many ways off of the French gendarmerie, our own Carabinieri will serve to carry out policing duties domestically. With our issue of brigandry, there isn't a better time to expand this branch of the Italian military."
 ITA_PIE_focus_Law_no_616: "Law no. 616"
 ITA_PIE_focus_Bersaglieri: "Bersaglieri"
+ITA_PIE_focus_Bersaglieri_desc: "In order to gain an advantage in our land combat, a special unit of shock troops will be employed to flank and overwhelm the enemy. Called the Bersaglieri, they specialize in running between positions and will serve an important role in supporting our main force."
 ITA_PIE_focus_Law_no_143: "Law no. 143"
-ITA_PIE_focus_Regio_Marina: "Regio Marina"
+ITA_PIE_focus_Regio_Marina: "Regia Marina"
+ITA_PIE_focus_Regio_Marina_desc: "Regia Marina, or the Royal Italian Navy is the newly created organization meant to handle Italy's naval affairs. Our goal is to eventually merge the navies of the former Italian states into this one branch of the military."
 ITA_PIE_focus_Merger_of_the_Italian_Fleets: "Merger of the Italian Fleets"
+ITA_PIE_focus_Merger_of_the_Italian_Fleets_desc: "To start with the unification of the navies, we will merge the fleets from each navy into one under the Royal Italian Navy."
 ITA_PIE_focus_Foreign_Ship_Commissions: "Foreign Ship Commissions"
+ITA_PIE_focus_Foreign_Ship_Commissions_desc: "Buying foreign ships to supplement our own navy could prove beneficial, as we may have issues producing enough on our own to develop a strong enough navy for a highly coastal country such as ourselves."
 ITA_PIE_focus_Militarize_Merchant_Vessels: "Militarize Merchant Vessels"
+ITA_PIE_focus_Militarize_Merchant_Vessels_desc: "While not the cleanest solution, retrofitting civilian ships with military hardware and using them in warfare would benefit us in naval combat."
 ITA_PIE_focus_Minor_Technological_Advances: "Minor Technological Advances"
+ITA_PIE_focus_Minor_Technological_Advances_desc: "While volume of ships can be important, we should also make strides to improve our individual ships and give them an advantage in combat when we can't supply an overwhelming naval force."
 ITA_PIE_focus_The_Ironclad_Race: "The Ironclad Race"
+ITA_PIE_focus_The_Ironclad_Race_desc: "Ironclads have proven to be the dominant warship in modern naval warfare. Not adapting and beginning to design and produce these ourselves would leave us at a serious disadvantage in a future war."
 ITA_PIE_focus_Creation_of_the_Naval_Departments: "Creation of the Naval Departments"
+ITA_PIE_focus_Creation_of_the_Naval_Departments_desc: "In an effort to further the unification and technological advances of the Royal Italian Navy, we must form departments within the navy with separate responsibilities and specializations to best carry out the task of developing and maintaining an Italian navy."
 ITA_PIE_focus_Expand_the_Arsenal_in_La_Spezia: "Expand the Arsenal in La Spezia"
+ITA_PIE_focus_Expand_the_Arsenal_in_La_Spezia_desc: "An idea originally conceived by Napoleon Bonaparte, an expansion of the naval base in La Spezia will serve an imporant infrastructural role in supporting our growing navy."
 ITA_PIE_focus_Results_from_the_Third_Independence_War: "Results from the Third Independence War"
+ITA_PIE_focus_Results_from_the_Third_Independence_War_desc: "The Third Independence War taught us a lot about our navy. Just as with our army, getting a chance to test our performance against a great power gave us insight into potential improvements that could be made with our navy."
 ITA_PIE_focus_Develop_Coastal_Fortifications: "Develop Coastal Fortifications"
+ITA_PIE_focus_Develop_Coastal_Fortifications_desc: "Defending the Italian people from potential amphibious assault or shore bombardment is of the utmost importance. Fortifying and arming our coasts would help dispel would-be invaders."
 ITA_PIE_focus_Commission_on_the_Admirals: "Commission on the Admirals"
+ITA_PIE_focus_Commission_on_the_Admirals_desc: "We will commission our admirals to consider a change in the budget of the Italian navy, whether to expand its budget or cut it due to unrelated fiscal issues."
 ITA_PIE_focus_Approve_Naval_Expansion_Measures: "Approve Naval Expansion Measures"
+ITA_PIE_focus_Approve_Naval_Expansion_Measures_desc: "It has become clear that more funds need to be poured into our navy before we are ready to fight another war on the same scale as the Third War of Independence."
 ITA_PIE_focus_Budget_Restrictions_on_the_Navy: "Budget Restrictions on the Navy"
+ITA_PIE_focus_Budget_Restrictions_on_the_Navy_desc: "Unfortunately, we cannot afford to continue funding our navy at the level we are currently. We're going to have to cut funding for our navy in order to keep other parts of our government running properly."
 ITA_PIE_focus_The_Southern_Question: "The Southern Question"
+ITA_PIE_focus_The_Southern_Question_desc: "Southern Italy has significant problems and differences compared to the north. The debate over what to do about this is known as the Southern Question."
 ITA_PIE_focus_Tackling_Brigandage: "Tackling Brigandage"
+ITA_PIE_focus_Tackling_Brigandage_desc: "Brigandage has been a major problem in southern Italy ever since unification. We should take step to address these issues."
 ITA_PIE_focus_Work_with_Local_Governments: "Work with Local Governments"
+ITA_PIE_focus_Work_with_Local_Governments_desc: "Coordinating with local provincial and town governments will help with identifying and arresting brigands in the south."
 ITA_PIE_focus_Gather_Military_Leaders: "Gather Military Leaders"
+ITA_PIE_focus_Gather_Military_Leaders_desc: "Use of the military may be necessary in the destruction of brigandage. We will organize our military leaders to help fight it."
 ITA_PIE_focus_Work_with_Papal_Authorities: "Work with Papal Authorities"
+ITA_PIE_focus_Work_with_Papal_Authorities_desc: "While not a country we are on the best of terms with, cooperation from the Papal States will of great importance when fighting brigandage."
 ITA_PIE_focus_Negotiate_with_Bourbons: "Negotiate with the Bourbons"
+ITA_PIE_focus_Negotiate_with_Bourbons_desc: "French assistance in fighting brigands may prove useful if our own resources are outstretched."
 ITA_PIE_focus_Gather_Political_Leaders: "Gather Political Leaders"
+ITA_PIE_focus_Gather_Political_Leaders_desc: "Getting cooperation from members of Italian parliament and other areas of government, both national and local, will help in putting an end to brigandage."
 ITA_PIE_focus_Bypass_the_Law: "Bypass the Law"
+ITA_PIE_focus_Bypass_the_Law_desc: "The law has only been a drag on our work to put a stop to brigandage in southern Italy. We need to take some questionably legal measures to stop this crisis."
 ITA_PIE_focus_Southern_Development: "Southern Development"
+ITA_PIE_focus_Southern_Development_desc: "In order to curb brigandage, we cannot simply use force. We need to give incentive to those in southern Italy to work legal jobs rather than make money through brigandage. Of course, though, we can also starve out the south instead."
 ITA_PIE_focus_Move_Southern_Industry_North: "Move Southern Industry North"
+ITA_PIE_focus_Move_Southern_Industry_North_desc: "By moving southern industry north, we can make very clear our preference for northern Italians."
 ITA_PIE_focus_Utilize_Piedmontese_Workers: "Utilize Piedmontese Workers"
+ITA_PIE_focus_Utilize_Piedmontese_Workers_desc: "We will continue to starve out the south by utilizing Piedmontese workers rather than those of the south."
 ITA_PIE_focus_Regional_Economic_Administrations: "Regional Economic Administrations"
+ITA_PIE_focus_Regional_Economic_Administrations_desc: "The first step in economic equality in Italy will be to set up regional economic administrations who can specialize in and take advantage of unique elements of the geography of the regions they administer."
 ITA_PIE_focus_End_Elitist_Economic_Policies: "End Elitist Economic Policies"
+ITA_PIE_focus_End_Elitist_Economic_Policies_desc: "We will ease class tensions by implementing economic policy that favors workers more than previous policy."
 ITA_PIE_focus_Increase_Military_Protection: "Increase Military Protection"
+ITA_PIE_focus_Increase_Military_Protection_desc: "By increasing our garrisons in the south we can make a significant dent in brigandage."
 ITA_PIE_focus_Declare_End_of_Brigandage: "Declare the End of Brigandage"
+ITA_PIE_focus_Declare_End_of_Brigandage_desc: "Finally, by curbing brigandage directly and improving the quality of life in the south, we can finally declare the end of major brigandage in Italy."
 ITA_PIE_focus_Foreign_Policy: "Foreign Policy"
+ITA_PIE_focus_Foreign_Policy_desc: "As a new country, we will have a long road ahead to reach the status of other great powers in Europe. An important element of this will be diplomacy and the recognition from other states."
 ITA_PIE_focus_The_Roman_Question: "The Roman Question"
+ITA_PIE_focus_The_Roman_Question_desc: "Cavour believes that Italy cannot be truly united without the lands of Lazio and the capital of Rome within the kingdom. The decision on how to approach Rome will be known as the Roman Question."
 ITA_PIE_focus_Free_Church_in_Free_State: "Free Church in a Free State"
+ITA_PIE_focus_Free_Church_in_Free_State_desc: "The Papal States shall no longer hold power as a politcal force, but should instead operate strictly as a church under the Italian government."
 ITA_PIE_focus_Diplomacy_with_the_Papal_States: "Diplomacy with the Papal States"
+ITA_PIE_focus_Diplomacy_with_the_Papal_States_desc: "A voluntary annexation of Rome will be much cleaner and easier than a war, and the first step to that is diplomacy."
 ITA_PIE_focus_Meetings_with_Garibaldi: "Meetings with Garibaldi"
+ITA_PIE_focus_Meetings_with_Garibaldi_desc: "Garibaldi, a very outwardly anti-Papal member of Italian politics, will be a great help in the taking of Rome."
 ITA_PIE_focus_The_September_Convention: "The September Convention"
+ITA_PIE_focus_The_September_Convention_desc: "French protection of the Pope has stifled our ability to take Rome, as a war with France would be disastrous for the Italian nation. We shall sign a treaty with France that requires they remove their garrisons from the Papal States. This agreement also requires we guarantee the territory of the Papal States, but this is a promise we can break."
 ITA_PIE_focus_Reform_the_Siccardi_Laws: "Reform the Siccardi Laws"
+ITA_PIE_focus_Reform_the_Siccardi_Laws_desc: "The Siccardi laws were a great misstep in Italian history. We should reform them, and make Italy more welcoming towards Catholics."
 ITA_PIE_focus_The_Subversive_Laws: "The Subversive Laws"
+ITA_PIE_focus_The_Subversive_Laws_desc: "We shall implement laws to further crack down on the Catholic church and Pope loyalists within Italy. We cannot have this dissent in the pursuit of unification."
 ITA_PIE_focus_Build_Recognition_in_Europe: "Build Recognition in Europe"
+ITA_PIE_focus_Build_Recognition_in_Europe_desc: "Many nations in Europe are still having trouble adjusting to the existence of a new unified Italy. It's about time we make them adjust."
 ITA_PIE_focus_Diplomacy_with_Prussia: "Diplomacy with Prussia"
+ITA_PIE_focus_Diplomacy_with_Prussia_desc: "Prussia may not be at the same status of a great power that is shared by Britain and France, however they have shown promise as a new power in Europe."
 ITA_PIE_focus_Further_Diplomacy_France: "Further Diplomacy with France"
+ITA_PIE_focus_Further_Diplomacy_France_desc: "As a great power on the continent, good relations and recognition from France will be extremely beneficial in the preservation of Italy. It may also help in the taking of the Papal States."
 ITA_PIE_focus_The_Bucharest_Revolution: "The Bucharest Revolution"
+ITA_PIE_focus_The_Bucharest_Revolution_desc: "Prince Cuza of Romania has been forced to abdicate by a coalition led by the Liberals. While still in many ways under Ottoman control, their full independence may yet be possible."
 ITA_PIE_focus_The_Brigandry_Cases: "The Brigandry Cases"
+ITA_PIE_focus_The_Brigandry_Cases_desc: "Cases of brigandry have been brought before the Italian courts. One of the most high profile is the case of the La Gala's."
 ITA_PIE_focus_Strengthen_British_Relations: "Strengthen British Relations"
+ITA_PIE_focus_Strengthen_British_Relations_desc: "While not on the continent, Britain's expansive empire and extreme influence on Europe may give reason to be on good terms with them."
 ITA_PIE_focus_Treaties_with_San_Marino: "Treaties with San Marino"
+ITA_PIE_focus_Treaties_with_San_Marino_desc: "As we have previously guaranteed the independence of San Marino, we will do our best to keep good diplomatic relations with them."
 ITA_PIE_focus_Diplomacy_with_Austria: "Diplomacy with Austria"
+ITA_PIE_focus_Diplomacy_with_Austria_desc: "While Austria controls land we claim to be our own, it may be possible to get this land via diplomacy rather than war."
 ITA_PIE_focus_Reaction_to_Gastein_Conference: "Reaction to the Gastein Conference"
+ITA_PIE_focus_Reaction_to_Gastein_Conference_desc: "Austria and Prussia have signed an agreement to jointly administer Schleswig-Holstein, with Prussia controlling Schleswig and Austria controlling Holstein. We will see how this agreement turns out."
 ITA_PIE_focus_Open_Negotiations_for_the_Sale: "Open Negotiations for the Sale"
+ITA_PIE_focus_Open_Negotiations_for_the_Sale_desc: "Venetia is a rightful part of the Kingdom of Italy. Unfortunately, this land is controlled by Austria. We will send Malaguzzi to Vienna in an attempt to buy the land from them."
 ITA_PIE_focus_News_from_Count_Malaguzzi: "News from Count Malaguzzi"
+ITA_PIE_focus_News_from_Count_Malaguzzi_desc: "Count Malaguzzi has news relating to the purchase of Venetia. Hopefully it's good..."
 ITA_PIE_focus_News_from_Nigra: "News from Nigra"
+ITA_PIE_focus_News_from_Nigra_desc: "After the failure to purchase Venetia, we have news of another opportunity to annex Venetia. All we have to do is sell out Romania to Austria."
 ITA_PIE_focus_Send_an_Agent_to_Berlin: "Send an Agent to Berlin"
+ITA_PIE_focus_Send_an_Agent_to_Berlin_desc: "With war brewing between Austria and Prussia, joining Prussia in a victory against Austria could be our chance at taking Venetia."
 ITA_PIE_focus_Approach_our_Old_Enemies: "Approach Our Old Enemies"
+ITA_PIE_focus_Approach_our_Old_Enemies_desc: "Approachment with Austria would be a strange choice at this time, however it may lead to a diplomatic path towards the annexation of Venetia. This is no guarantee, of course.\n\n§RThis path is currently a WIP and non-functional. It may be added in a future update.§"
 ITA_PIE_focus_The_Third_War_of_Independence: "The Third War of Independence"
+ITA_PIE_focus_The_Third_War_of_Independence_desc: "The time has now come for Italian unification to continue. Venetia shall no longer be held hostage by Austria, and will be returned Italy."
+ITA_PIE_focus_An_Exchange_of_Territory: "An Exchange of Territory"
+ITA_PIE_focus_An_Exchange_of_Territory_desc: "With our reapproachment with Austria, they may be willing to exchange Venetia for Sardinia. While we value Sardinia being a part of Italy, we feel that Venetia is more important to us, but not worth going through a war with a great power for."
 ITA_PIE_focus_Armistice_of_Cormons: "Armistice of Cormons"
+ITA_PIE_focus_Armistice_of_Cormons_desc: "Finally, after much bloodshed, the Kingdom of Lombardy-Venetia will be dissolved, and Venetia will be united with the Kingdom of Italy."
 ITA_PIE_focus_Elections_of_1861: "Elections of 1861"
 ITA_PIE_focus_Elections_of_1861_desc: "The first round of elections were held recently followed by a second round of voting. The elections were held according to the 1848 electoral law of the Kingdom of Sardinia, meaning that only men aged 25 or older and paying a certain level of taxation were allowed to vote. The Voters had to choose between the Conservative Right, the Liberal Left and the Radical Far Left."
 ITA_PIE_focus_The_Left_Coalition: "The Left Coalition"
@@ -2852,50 +3169,95 @@ ITA_PIE_focus_Close_Custom_Barriers_desc: "Having custom barriers towards neighb
 ITA_PIE_focus_Death_of_Cavour: "Death of Cavour"
 ITA_PIE_focus_Death_of_Cavour_desc: "After only three months as Prime Minister, with many sleepless nights, Cavour’s health deteriorated. After falling ill and with his regular doctor being away, he asked to being bled by the doctors available. He was bled several times in a futile attempt to cure him until they couldn’t get a drop of blood more out of him. So passed one of Italy’s greatest statesmen."
 ITA_PIE_focus_Pepoli_Law: "Pepoli Law"
+ITA_PIE_focus_Pepoli_Law_desc: "In order to further centralise the country of Italy, we must unify our economy under one currency, the Sardinian, now Italian, lira."
 ITA_PIE_focus_Letters_to_King: "Letters to the King"
+ITA_PIE_focus_Letters_to_King_desc: "Ricasoli has made it clear to the king that he is not fit to lead the Kingdom of Italy, nor does he want to. We can only hope the king uses his best judgement and allows Ricasoli's resignation. The only question is who will come next."
 ITA_PIE_focus_Call_on_Rattazzi: "Call on Rattazzi"
-ITA_PIE_focus_Arrests_in_Trentino: "Garibaldini Gather in Trentino"
+ITA_PIE_focus_Call_on_Rattazzi_desc: "It has become clear that the next prime minister fit to run Italy is Urbano Ratazzi. May he guide our country well."
+ITA_PIE_focus_Arrests_in_Trentino: "Garibaldi Gather in Trentino"
+ITA_PIE_focus_Arrests_in_Trentino_desc: "Garibaldi, his supporters in the Action Party, and other radical populations have organised in Trentino to proclaim their support of Garibaldi in his fight against the Austrians and Romans. While a campaign in regions such as Trentino, South Tyrol, Venetia, and Lazio would favor us, a foreign power noticing the wave of support for this could put them on high alert and result in an armed conflict. We must decide if we arrest or bolster these protesters."
 ITA_PIE_focus_Strengthen_the_Government: "Strengthen the Government"
+ITA_PIE_focus_Strengthen_the_Government_desc: "The government in Turin must continue to solidify power to guarantee that Italy continues to exist well into the future."
 ITA_PIE_focus_Rise_of_Farini: "Rise of Farini"
-ITA_PIE_focus_Begin_the_Inquiry: "Begin the Inquiry"
-ITA_PIE_focus_Demand_the_King_Declare_on_Russia: "Demand the King Declare war on Russia"
-ITA_PIE_focus_Reorganize_the_Cabinet: "Reorganize the Cabinet"
-ITA_PIE_focus_Propose_Decentralization_Laws: "Propose Decentralization Laws"
+ITA_PIE_focus_Rise_of_Farini_desc: "Luigi Carlo Farini is an up-and-coming Italian politician who may be a good choice for the next prime minister of Italy."
+ITA_PIE_focus_Begin_the_Inquiry: "Day of Aspromonte"
+ITA_PIE_focus_Begin_the_Inquiry_desc: "After collecting a volunteer force and landing at Aspromonte, Garibaldi was attacked by our own troops and forced to surrender after being shot in his hip and malleolus. This incident forced Ratazzi out of office and resulted in Farini becoming the prime minister."
+ITA_PIE_focus_Demand_the_King_Declare_on_Russia: "Demand the King Declare War on Russia"
+ITA_PIE_focus_Demand_the_King_Declare_on_Russia_desc: "Poland has taken their shot an independence from Russia in the January Uprising of 1863. Farini is in strong support of this rebellion and has threatened the king with a knife to declare war on Russia."
+ITA_PIE_focus_Reorganize_the_Cabinet: "The Resignation of Farini"
+ITA_PIE_focus_Reorganize_the_Cabinet_desc: "After the embarassing attempt to make the king declare war on Russia, and overexertion that has softened his brain, Farini has made the decision to resign. The new prime minister of Italy is now Marco Minghetti."
+ITA_PIE_focus_Propose_Decentralization_Laws: "Propose Decentralisation Laws"
+ITA_PIE_focus_Propose_Decentralization_Laws_desc: "Minghetti wants to allow more regional autonomy within the Kingdom of Italy. He will propose these laws, but it is not clear if they will ever be passed."
 ITA_PIE_focus_Pica_Law: "Pica Law"
+ITA_PIE_focus_Pica_Law_desc: "The Pica Act is a law that has the goal of suppressing brigandage and crime in southern Italy. This, combined with our more concentrated efforts towards the destruction of brigandage will assist in ensuring the safety of those in Sicily."
 ITA_PIE_focus_Propose_Conference_on_Rome: "Propose Conference on Rome"
+ITA_PIE_focus_Propose_Conference_on_Rome_desc: "A conference on Rome may lead to progress towards their inevitable annexation. A key factor we want to change is France's protection of the pope. Perhaps we could convince them to "let go of" the Papal States..."
 ITA_PIE_focus_Aftermath_of_the_Turin_Massacre: "Aftermath of the Turin Massacre"
-ITA_PIE_focus_Lanza_Law: "Lanza Law"
+ITA_PIE_focus_Aftermath_of_the_Turin_Massacre_desc: "In response to the proposed move of the Italian capital from Turin to Florence, many demonstrators protested it outside of the headquarters of the Ministry of the Interior and in the Piazza San Carlo over 2 days. A number of protestors were shot, beaten, injured and murdered by carabinieri during these demonstrations. This may severely affect Minghetti's ability to hold office."
+ITA_PIE_focus_Lanza_Law: "Alter the Deal"
+ITA_PIE_focus_Lanza_Law_desc: "Marmora feels it is time to make clear our intentions on Rome. While we agreed to respect the pope's independence, we can no longer hold this promise as we now declare we have full reign to take Rome in whatever manner we see fit."
 ITA_PIE_focus_Move_Chamber_to_Florence: "Move the Chamber to Florence"
+ITA_PIE_focus_Move_Chamber_to_Florence_desc: "Turin, historically the capital of Sardinia-Piedmonte, can no longer serve as the capital of Italy. It is simply too far from southern Italy, and has too much locational bias towards the north. While the announcement of this change sparked rioting, it is still clear that this is the right decision."
 ITA_PIE_focus_Arrival_of_the_King_Florence: "Arrival of the King in Florence"
+ITA_PIE_focus_Arrival_of_the_King_Florence_desc: "Finally! The king of Italy has arrived in Florence to declare it the new capital of our country."
 ITA_PIE_focus_Government_in_Crisis: "Government in Crisis"
+ITA_PIE_focus_Government_in_Crisis_desc: "Many problems have cropped up as a result of the move to Florence. Many parts of the city had to be altered or torn down, and new housing had to be quickly constructed to accomodate the new influx of people into the city."
 ITA_PIE_focus_III_La_Marmora_Government: "III La Marmora Government"
+ITA_PIE_focus_III_La_Marmora_Government_desc: "A third cabinet led by La Marmora is the best choice for Italy going forward."
 ITA_PIE_focus_Dissolution_of_the_chamber: "Dissolution of the Chamber"
+ITA_PIE_focus_Dissolution_of_the_chamber_desc: "A full dissolution of the chamber is best for Italy going forward. The king and the king alone can lead this country to victory."
 ITA_PIE_focus_Replace_La_Marmora: "Replace La Marmora"
+ITA_PIE_focus_Replace_La_Marmora_desc: "Our current government of La Marmora isn't serving the Italian people effectively. We shall replace his government with one friendlier towards Austria, one that may result in the taking of Venetia without a war with them."
 ITA_PIE_focus_Begin_the_Infastructure_project: "Begin the Infastructure Project"
+ITA_PIE_focus_Begin_the_Infastructure_project_desc: "Seeing as many states on the Italian peninsula have all become one, we must connect the former territory of these states to each other to a degree not possible when they were separate nations."
 ITA_PIE_focus_Importation_of_Machinery_Iron: "Importation of Machinery Iron"
+ITA_PIE_focus_Importation_of_Machinery_Iron_desc: "In order to build trains to use on new railroads, we need to import iron as raw materials to use in their production."
 ITA_PIE_focus_encourage_foreign_investments: "Encourage Foreign Investments"
+ITA_PIE_focus_encourage_foreign_investments_desc: "Foreign investments and loans could seriously accelerate the building of industry and rail in Italy."
 ITA_PIE_focus_Embrace_Foreign_Technology: "Embrace Foreign Technology"
+ITA_PIE_focus_Embrace_Foreign_Technology_desc: "It would be a waste to spend time developing our own technology when foreign countries have done the work for us."
 ITA_PIE_focus_Rail_Lines_of_the_Center: "Rail Lines of the Center"
+ITA_PIE_focus_Rail_Lines_of_the_Center_desc: "Rail lines at the center of the peninsula will connect northern and southern Italy."
 ITA_PIE_focus_Northern_Rail_Lines: "Northern Rail Lines"
+ITA_PIE_focus_Northern_Rail_Lines_desc: "Rail lines in the north of Italy will assist in the transportation of raw and manufactured products between industrial centers."
 ITA_PIE_focus_Southern_Rail_Lines: "Sourthern Rail Lines"
+ITA_PIE_focus_Southern_Rail_Lines_desc: "While not as integral as the northern rail lines, southern rail can still be used for transporting people and agricultural goods."
 ITA_PIE_focus_1865_Railways_Act: "1865 Railways Act"
+ITA_PIE_focus_1865_Railways_Act_desc: "The 1865 Railways Act will help connect the formerly separated rail lines into one grand railway network connecting all of Italy."
 ITA_PIE_focus_Agriculture_of_Italy: "Agriculture of Italy"
+ITA_PIE_focus_Agriculture_of_Italy_desc: "Italy has a long history of agriculture. While industrialization is also important, development and modernization of our agriculture will be of great benefit."
 ITA_PIE_focus_Approve_the_Sale_of_Church_Estates: "Approve the Sale of Church Estates"
+ITA_PIE_focus_Approve_the_Sale_of_Church_Estates_desc: "While not the most ethical thing we could do, approving the sale of church land would provide much more space for grazing and farming."
 ITA_PIE_focus_The_Growth_of_Agrarianism: "The Growth of Agrarianism"
+ITA_PIE_focus_The_Growth_of_Agrarianism_desc: "With the new land for agricultural endeavours, agrarianism has grown significantly."
 ITA_PIE_focus_Canali_Cavour: "Canali Cavour"
+ITA_PIE_focus_Canali_Cavour_desc: "The Cavour Canal will serve an important role in agriculture in Italy. It will be used to transport raw crops and products made out of the raw crops."
 ITA_PIE_focus_Embrace_Northern_Agricultural_Revolution: "Embrace Northern Agricultural Revolution"
+ITA_PIE_focus_Embrace_Northern_Agricultural_Revolution_desc: "While industrialization is the main focus for our economy right now, an expansion of agriculture in the north will make significant economic impact and provide more food for the Italian people, or that can be sold."
 ITA_PIE_focus_Invest_in_Technological_Advancements: "Invest in Technological Advancements"
+ITA_PIE_focus_Invest_in_Technological_Advancements_desc: "We cannot simply continue on with our current technology when trying to increase our production efficiency. Improvements on a technical level will bring with it increased safety and yields of products, both in and outside the factories."
 ITA_PIE_focus_Continue_Textile_Developments: "Continue Textile Developments"
+ITA_PIE_focus_Continue_Textile_Developments_desc: "Northern Italy has historically relied on artisans and the wider production of textiles for much of its economic activity. Advancements in the designing and production of textiles may prove beneficial in the future."
 ITA_PIE_focus_Introduce_the_new_Ruling_Class: "Introduce the New Ruling Class"
+ITA_PIE_focus_Introduce_the_new_Ruling_Class_desc: "The Italian people are tired of the aristocratic ruling class in the north. We shall introduce a new ruling class of farmers and southerners by distributing publicly held land to Italian citizens in the south."
 ITA_PIE_focus_Initial_Land_Reforms: "Initial Land Reforms"
+ITA_PIE_focus_Initial_Land_Reforms_desc: "Finally, it has come time to redistribute land to those in the south of Italy."
 ITA_PIE_focus_Focus_on_the_South: "Focus on the South"
+ITA_PIE_focus_Focus_on_the_South_desc: "The south of Italy has for millenia been neglected and behind its northern counterpart. A focus on the south will help bring it closer to the north economically."
 ITA_PIE_focus_Exploit_Existing_Land_Holdings: "Exploit Existing Land Holdings"
+ITA_PIE_focus_Exploit_Existing_Land_Holdings_desc: "While the distribution of land has been of great benefit to those in southern Italy, we should make an attempt to get the most out of existing agricultural land in the south."
 ITA_PIE_focus_Introduce_Agriculture_to_Rail: "Utilize the Rail for Agriculture"
+ITA_PIE_focus_Introduce_Agriculture_to_Rail_desc: "After constructing miles and miles of rail on the Italian peninsula, encouraging its use for agricultural purposes could prove beneficial."
 ITA_PIE_focus_Resource_Extraction_Techniques: "Resource Extraction Techniques"
+ITA_PIE_focus_Resource_Extraction_Techniques_desc: "In order to power a new industrial economy, we need lots of mineral resources. We will develop new techniques to extract reources like coal and crude oil to power our factories."
 ITA_PIE_focus_The_Industrialization_of_Italy: "The Industrialization of Italy"
+ITA_PIE_focus_The_Industrialization_of_Italy_desc: "Italy, with a large agricultural economy, could benefit greatly from developments in heavy industry."
 ITA_PIE_focus_Address_the_Sine_Qua_Non: "Address the Sine Qua Non"
+ITA_PIE_focus_Address_the_Sine_Qua_Non_desc: "The basis of an strong industrial economy are the factories where our citizens will be paid for their work and important products and materials are produced. We can't get carried away constructing rail without building the industry that will use it."
 ITA_PIE_focus_Investments_into_Hydroelectric_Power: "Investments into Hydroelectric Power"
+ITA_PIE_focus_Investments_into_Hydroelectric_Power_desc: "Investments into hydroelectric power could be beneficial for Italy, a country with a vast coastline."
 ITA_PIE_focus_Ricchezza_Mobile_Offsets: "Ricchezza Mobile Offsets"
+ITA_PIE_focus_Ricchezza_Mobile_Offsets_desc: "Subsidizing the purchase of property by Italian citizens may prove to succeed at increasing economic output."
 
 
 

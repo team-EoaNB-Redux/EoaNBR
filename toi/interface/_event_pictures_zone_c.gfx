@@ -613,6 +613,16 @@ spriteTypes = {
 		name = "GFX_event_ITA_Victor_Emanuel"
 		texturefile = "gfx/event_pictures/italy/new_event_ITA_Victor_Emanuel.dds"
 	}
+
+	spriteType = {
+		name = "GFX_event_ITA_Turin_Massacre"
+		texturefile = "gfx/event_pictures/italy/event_ITA_Turin_Massacre.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_ITA_Turin_Massacre"
+		texturefile = "gfx/event_pictures/italy/news_event_ITA_Turin_Massacre.png"
+	}
 	#Spain
 	spriteType = {
 		name = "GFX_event_SPR_glorious_revolution"
