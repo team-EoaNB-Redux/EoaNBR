@@ -43,6 +43,18 @@ technologies = {
 			level = 1
 		}
 	}
+	
+	nuclear_reactor_heavy_water_tech = {
+		allow = {
+			always = no
+		}
+
+		start_year = 1936
+		enable_building = {
+			building = nuclear_reactor_heavy_water
+			level = 1
+		}
+	}
 
 	stronghold_network_tech = {
 		allow = {
