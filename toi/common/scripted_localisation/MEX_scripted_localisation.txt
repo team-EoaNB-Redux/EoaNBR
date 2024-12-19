@@ -1,0 +1,32 @@
+defined_text = {
+	name = scripted_loc_MEX_la_reforma_title
+	text = {
+		trigger = { MEX = { has_war_with = MEC } }
+		localization_key = EOANBSYS_national_crisis_name_mexican_reform_war_2
+	}
+	text = {
+		trigger = { MEX = { has_war = no } }
+		localization_key = EOANBSYS_national_crisis_name_mexican_reform_war_1
+	}
+}
+defined_text = {
+	name = scripted_loc_MEX_la_reforma_desc
+	text = {
+		trigger = { MEX = { has_war = no } }
+		localization_key = EOANBSYS_national_crisis_desc_mexican_reform_war_1
+	}
+	text = {
+		trigger = {
+			MEX = { has_war_with = MEC }
+			tag = MEX
+		}
+		localization_key = EOANBSYS_national_crisis_name_mexican_reform_war_2
+	}
+	text = {
+		trigger = {
+			MEX = { has_war_with = MEC }
+			tag = MEC
+		}
+		localization_key = EOANBSYS_national_crisis_name_mexican_reform_war_3
+	}
+}

@@ -57,6 +57,7 @@ decrease_resistance_la_reforma = {
 			limit = {
 				MEX = {
 					has_war = yes
+					has_completed_focus = MEX_focus_unite_the_states
 				}
 				NOT = { state = 277 }
 			}

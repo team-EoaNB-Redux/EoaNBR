@@ -960,6 +960,13 @@ EOANBSYS_national_crisis_decision_category = {
 
 		complete_effect = {
 			set_temp_variable = { x_temp = 0.1 }
+			if = {
+				limit = {
+					has_war = yes
+					has_completed_focus = MEX_focus_national_insurrection
+				}
+				multiply_temp_variable = { x_temp = 2.5 }
+			}
 			add_months_of_income = yes
 			random_core_state = {
 				limit = {
