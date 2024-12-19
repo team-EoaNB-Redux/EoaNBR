@@ -1233,9 +1233,9 @@ equipments = {
 		module_slots = inherit
 		
 		default_modules = {
-			fixed_ship_battery_slot = ship_cannon_battery_4
-			fixed_ship_fire_control_system_slot = fire_control_system_0
-			fixed_ship_engine_slot = ship_engine_steam_turbines_screen_1
+			fixed_ship_battery_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = empty
 			fixed_ship_armor_slot = empty
 			fixed_ship_torpedo_slot = ship_torpedo_0
 			front_1_custom_slot = empty
@@ -1251,19 +1251,38 @@ equipments = {
 
 
 		module_slots = {
-			fixed_ship_battery_slot = inherit
-			fixed_ship_fire_control_system_slot = inherit
-			fixed_ship_engine_slot = inherit
-			fixed_ship_armor_slot = inherit
-			fixed_ship_torpedo_slot = inherit
-			front_1_custom_slot = inherit
+			fixed_ship_battery_slot = {
+				required = no
+				allowed_module_categories = { naval_automatic_weapons }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = {  }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { ship_engine_screen }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = {  }	
+			}
+			fixed_ship_torpedo_slot = {
+				required = yes
+				allowed_module_categories = { ship_torpedo }
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					
+				}
+			}
 		}
-		
 		default_modules = {
-			fixed_ship_battery_slot = ship_cannon_battery_4
-			fixed_ship_fire_control_system_slot = fire_control_system_0
-			fixed_ship_engine_slot = ship_engine_steam_turbines_screen_1
-			fixed_ship_armor_slot = ship_armor_screen_hardwood_0
+			fixed_ship_battery_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = ship_engine_steam_screw_screen_4
+			fixed_ship_armor_slot = empty
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			front_1_custom_slot = empty
 		}
@@ -1299,29 +1318,34 @@ equipments = {
 
 
 		module_slots = {
-			fixed_ship_battery_slot = inherit
-			fixed_ship_fire_control_system_slot = inherit
-			fixed_ship_engine_slot = inherit
-			fixed_ship_armor_slot = inherit
-			fixed_ship_torpedo_slot = inherit
-			front_1_custom_slot = inherit
-			mid_1_custom_slot = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { secondary_47mm_early naval_automatic_weapons }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = {  }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { ship_engine_screen }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = {  }	
+			}
+			fixed_ship_torpedo_slot = {
+				required = yes
+				allowed_module_categories = { ship_torpedo }
+			}
+			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_torpedo
-					ship_anti_air
+					
 				}
 			}
 		}
-		
-		default_modules = {
-			fixed_ship_battery_slot = ship_cannon_battery_5
-			fixed_ship_fire_control_system_slot = fire_control_system_0
-			fixed_ship_engine_slot = ship_engine_steam_turbines_screen_1
-			fixed_ship_armor_slot = ship_armor_screen_hardwood_0
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			front_1_custom_slot = ship_cannon_battery_5
-		}
+		default_modules = inherit
 		
 		armor_value = 0
 		
