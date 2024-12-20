@@ -99,6 +99,10 @@ spriteTypes = {
 		name = "GFX_SD_tv_monitor"
 		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_monitor.dds"
 	}
+	spriteType = {
+		name = "GFX_SD_tv_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_torpedob.dds"
+	}
 
 #######################
 # Extras

@@ -151,6 +151,41 @@ spriteTypes = {
 		name = "GFX_SM_light_hull_torpedo@highlight"
 		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/light_hull/light_hull_torpedo@highlight.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_SM_tb_spar_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/torpedo/tb_spar_torpedo.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_tb_spar_torpedo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/torpedo/tb_spar_torpedo@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_tb_single_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/torpedo/tb_single_torpedo.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_tb_single_torpedo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/torpedo/tb_single_torpedo@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_tb_dual_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/torpedo/tb_dual_torpedo.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_tb_dual_torpedo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/torpedo/tb_dual_torpedo@highlight.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_SM_torpedo_fixed_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/torpedo/tb_fixed_battery.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_torpedo_fixed_battery@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/torpedo/tb_fixed_battery@highlight.dds"
+	}
 
 
 	spriteType = {
