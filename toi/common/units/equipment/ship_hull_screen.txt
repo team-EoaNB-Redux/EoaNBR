@@ -1240,6 +1240,18 @@ equipments = {
 			fixed_ship_torpedo_slot = ship_torpedo_0
 			front_1_custom_slot = empty
 		}
+
+		naval_speed = 8
+
+		module_count_limit = {
+			module = ship_torpedo_1
+			count < 1
+		}
+
+		module_count_limit = {
+			module = ship_torpedo_2
+			count < 1
+		}
 	}
 	
 	ship_hull_torpedo_boat_1 = {
@@ -1276,6 +1288,18 @@ equipments = {
 				allowed_module_categories = {
 					
 				}
+			}
+
+			naval_speed = 10
+
+			module_count_limit = {
+				module = ship_torpedo_1
+				count < 1
+			}
+	
+			module_count_limit = {
+				module = ship_torpedo_2
+				count < 1
 			}
 		}
 		default_modules = {
@@ -1343,6 +1367,18 @@ equipments = {
 				allowed_module_categories = {
 					
 				}
+			}
+
+			naval_speed = 12
+
+			module_count_limit = {
+				module = ship_torpedo_1
+				count < 1
+			}
+	
+			module_count_limit = {
+				module = ship_torpedo_2
+				count < 1
 			}
 		}
 		default_modules = inherit
