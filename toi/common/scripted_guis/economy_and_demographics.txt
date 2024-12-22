@@ -273,7 +273,11 @@ scripted_gui = {
 			rgo_prospecting_button_click_enabled = {
 				is_fully_controlled_by = ROOT
 				
-				always = no
+				ROOT = {
+					set_temp_variable = { cost_temp = global.base_price@var:v }
+					multiply_temp_variable = { cost_temp = 10 }
+					check_variable = { cost_temp < treasury }
+				}
 			}
 			rgo_prospecting_button_active_click_enabled = {
 				is_fully_controlled_by = ROOT
@@ -281,10 +285,11 @@ scripted_gui = {
 				always = no
 			}
 			rgo_prospecting_button_visible = {
-				check_variable = { prospecting@var:v = 0 }
+				# check_variable = { prospecting@var:v = 0 }
 			}
 			rgo_prospecting_button_active_visible = {
-				check_variable = { prospecting@var:v = 1 }
+				# check_variable = { prospecting@var:v = 1 }
+				always = no
 			}
 
 			building_construction_icon_visible = {
@@ -616,7 +621,22 @@ scripted_gui = {
 			rgo_prospecting_button_click = {
 				set_variable = { prospecting@var:v = 1 }
 				set_temp_variable = { r_token = v }
-				update_prospecting = yes
+				ROOT = {
+					set_temp_variable = { x_temp = global.base_price@var:v }
+					multiply_temp_variable = { x_temp = -10 }
+					add_treasury = yes
+				}
+				# update_prospecting = yes
+				meta_effect = {
+					text = {
+						add_resource = {
+							type = [RESOURCE]
+							amount = 1
+						}
+					}
+					RESOURCE = "[?v.GetTokenKey]"
+				}
+				update_base_resource_count = yes
 				add_to_variable = { update_state_econ_window = 1 }
 			}
 			rgo_prospecting_button_active_click = {
