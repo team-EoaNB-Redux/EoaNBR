@@ -181,7 +181,7 @@ guiTypes = {
 					}
 				}
 				containerWindowType = {
-					name = "ship_torpedo_1"
+					name = "ship_torpedo_3"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
@@ -193,7 +193,7 @@ guiTypes = {
 				}
 
 				containerWindowType = {
-					name = "ship_torpedo_1@highlight"
+					name = "ship_torpedo_3@highlight"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					

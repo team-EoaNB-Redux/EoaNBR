@@ -34,11 +34,17 @@ state = {
 				naval_base = 1
 			}
 		}
+		add_dynamic_modifier = {
+			modifier = dynmod_local_slavery
+		}
 		1869.1.1 = {
 			owner = CUB
 		}
-		1885.11.1 = {
+		1878.11.1 = {
 			owner = SPR
+			remove_dynamic_modifier = {
+				modifier = dynmod_local_slavery
+			}
 		}
 
 		1900.6.1 = {

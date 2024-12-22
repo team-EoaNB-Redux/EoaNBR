@@ -2792,7 +2792,7 @@ focus = {
 
 		available = {
 			OR={
-				has_stability > 0.5
+				has_stability > 0.6
 				date > 1877.1.1
 			}
 		}
@@ -3137,6 +3137,37 @@ focus = {
 	}
 }
 focus = {
+	id = SPR_6dy_guns_of_trubia
+	icon = GFX_Goal_military_procurement_focus
+	relative_position_id = SPR_6dy_army_recruitment_and_replacment_law
+	x = 0
+	y = 1
+	cost = 30
+
+	ai_will_do = { base = 100 }
+
+	prerequisite = { 
+		focus = SPR_6dy_army_recruitment_and_replacment_law 
+	}
+
+	available={
+		controls_state = 41
+		has_completed_focus = SPR_6dy_expand_41_steel_production
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			technology = tech_RBL_iron_artillery_equipment_0
+			technology = tech_steel_RBL_artillery_equipment_1
+			technology = tech_field_breech_blocks
+			technology = tech_steel_RBL_artillery_equipment_2
+		}
+	}
+}
+
+focus = {
 	id = SPR_6dy_new_naval_program
 	icon = GFX_Focus_Navy_Restriction_1
 	relative_position_id = SPR_6dy_reform_the_army
@@ -3190,6 +3221,35 @@ focus = {
 		}
 		set_temp_variable = { x_temp = 10 }
 		add_debt = yes
+	}
+}
+focus = {
+	id = SPR_6dy_hontoria_and_ordonez
+	icon = GFX_Focus_high_speed_heavy_artillery
+	relative_position_id = SPR_6dy_guns_of_trubia
+	x = -1
+	y = 1
+	cost = 30
+
+	ai_will_do = { base = 100 }
+
+	available={
+		controls_state = 41
+	}
+
+	prerequisite = { 
+		focus = SPR_6dy_guns_of_trubia 
+	}
+	prerequisite = { 
+		focus = SPR_6dy_bilbao_dockyards 
+	}
+
+	completion_reward = {
+		set_technology = {
+			tech_naval_mtg_G1_light_batteries = 1
+			tech_naval_mtg_G1_medium_batteries = 1
+			tech_naval_mtg_G1_heavy_batteries = 1
+		}
 	}
 }
 ###################################
@@ -3634,7 +3694,16 @@ focus = {
 		prerequisite = { focus = SPR_6dy_calming_planters }
 
 		completion_reward = {
-			
+			315={
+				remove_dynamic_modifier = {
+					modifier = dynmod_local_slavery
+				}
+			}
+			1350={
+				remove_dynamic_modifier = {
+					modifier = dynmod_local_slavery
+				}
+			}
 		}
 	}
 	focus = {
@@ -3697,7 +3766,9 @@ focus = {
 
 		completion_reward = {
 			686={
-
+				remove_dynamic_modifier = {
+					modifier = dynmod_local_slavery
+				}
 			}
 		}
 	}
@@ -4082,7 +4153,16 @@ focus = {
 		}
 		allow_branch = {
 			277={
-				owns_or_subject_of = yes
+				OR={
+					owns_or_subject_of = yes
+					owner={
+						check_variable = {
+							var = market_leader
+							value = SPR
+							tooltip = is_in_x_market_tt
+						}
+					}
+				}
 			}
 		}
 		ai_will_do = { base = 75 }

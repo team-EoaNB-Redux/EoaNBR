@@ -339,6 +339,7 @@ spain.80.t: "[FROM.GetName] sends Envoys"
 spain.81.t: "Rebellion of the Mantillas"
 spain.81.d: "A series of protests marches have been held along the Paseo del Prado in Madrid. These marches have been carried out by the Ladies of our aristocracy wearing white mantillas fastened with Fleur-de-lis pins in support for the bourbon monarchy. While our supporters have managed to blunt this message, it has still had an effect on our Kings Legitimacy."
 spain.81.a: "Yet another problem for the King"
+spain.83.t: "Cuba Restored to the Captaincy"
 
 ##### DECISIONS #####
 SPR_FLAVOUR: "Spain in XIXth century"
@@ -686,6 +687,11 @@ SPR_6dy_old_claims_on_acre: "Our Old Claims on Acre"
 SPR_6dy_taking_antofagasta: "Taking Antofagasta"
 SPR_6dy_army_recruitment_and_replacment_law: "Army Recruitment and Replacment Law"
 SPR_6dy_vineyard_expansions: "Vineyard Expnasions"
+SPR_6dy_guns_of_trubia: "Guns of Trubia"
+SPR_6dy_hontoria_and_ordonez: "Hontoria and Ordõñez"
+SPR_6dy_push_towards_protectionism: "Push Towards Protectionism"
+SPR_6dy_reintgrating_cuba: "Reintegrating Cuba"
+SPR_6dy_abolishment_cuban_slavery: "Abolishment of Cuban Slavery"
 
 ##### IDEAS #####
 #Country Ideas
@@ -699,6 +705,8 @@ SPR_a_divided_country_iii: "A Divided Country"
 SPR_a_divided_country_iii_desc: "Since the Napoleonic invasion of the peninsula, the confrontation between Liberals and King Fernando VII has completely divided the country. However, with the death of Fernando VII the confrontation did not end. Now Moderates and Progressives struggle to take the reins of the country towards liberalism."
 SPR_a_divided_country_iv: "A Divided Country"
 SPR_a_divided_country_iv_desc: "Since the Napoleonic invasion of the peninsula, the confrontation between Liberals and King Fernando VII has completely divided the country. However, with the death of Fernando VII the confrontation did not end. Now Moderates and Progressives struggle to take the reins of the country towards liberalism."
+SPR_a_divided_country_v: "A Divided Country"
+SPR_a_divided_country_v_desc: "Since the Napoleonic invasion of the peninsula, the confrontation between Liberals and King Fernando VII has completely divided the country. However, with the death of Fernando VII the confrontation did not end. Now Moderates and Progressives struggle to take the reins of the country towards liberalism."
 SPR_the_carlist_threat: "The Carlist Threat"
 SPR_the_carlist_threat_desc: ""God, Country and King" That is the motto of those conservatives who do not accept the liberal Queen Isabel II and believe that the true heir of King Fernando VII is his brother Carlos."
 SPR_the_madozs_confiscation: "The Madoz's Confiscation"
@@ -1010,3 +1018,5 @@ SPR_petrolum_revolution: "the §YPetrolum Revolution§! is ongoing"
 SPR_not_in_crisis_tt: "§Y[SPR.GetName]§! is not dealing with a Pressing Conflict"
 
 eoanb_decision_establish_cambodian_protectorate: "Establish Cambodian Protectorate"
+
+dynmod_local_slavery: "Local Slavery Legal"

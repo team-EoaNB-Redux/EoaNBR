@@ -870,4 +870,16 @@ RAJ_agrarianism = {
 			compliance_gain = 0.0008
 		}
 	}
+	
+	dynmod_local_slavery = {
+		icon = GFX_idea_population_discrimination_laws_slavery
+		enable = {
+			always = no
+		}
+
+		local_building_factory_attractiveness_factor = -0.05
+		local_building_resource_output_factor = -0.05
+		local_building_plantation_attractiveness_modifier = 2
+		local_building_plantation_output_factor = 0.15
+	}
 ###

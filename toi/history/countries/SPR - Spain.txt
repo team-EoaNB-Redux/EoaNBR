@@ -458,6 +458,7 @@
 	}
 	remove_ideas={
 		SPR_pragmatica_sancion
+		SPR_the_carlist_threat
 	}
 	add_ideas={
 		SPR_provisional_government
@@ -465,6 +466,7 @@
 		SPR_capitation_tax
 		SPR_peseta
 		limited_constitution
+		SPR_carlistmenace
 	}
 	add_power_balance_modifier = {
 		id = SPR_CUB_ten_years_war
