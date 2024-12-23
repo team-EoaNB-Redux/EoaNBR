@@ -763,6 +763,7 @@ SPR_debt_management_category = {
 			if = {
 				limit = { has_country_leader = { name = "Ignacio Comonfort" ruling_only = yes } }
 				# not = { has_country_leader = { name = "Ignacio Comonfort" ruling_only = yes } }
+				always = no
 			}
 			else = { has_government = centrism }
 			
@@ -780,7 +781,7 @@ SPR_debt_management_category = {
 		complete_effect = {
 			custom_effect_tooltip = MEX_cease_foreign_debt_repayments_decision_tooltip
 			hidden_effect = {
-				set_country_flag = MEX_cease_foreign_debt_repayments_decision_flag
+				#set_country_flag = MEX_cease_foreign_debt_repayments_decision_flag
 
 				set_variable = { global.eng_mexico_debt = debt_to_bank_k@ENG }
 				set_variable = { global.fra_mexico_debt = debt_to_bank_k@FRA }

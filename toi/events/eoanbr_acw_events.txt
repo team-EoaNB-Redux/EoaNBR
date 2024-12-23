@@ -4224,6 +4224,28 @@ news_event = {
 				every_other_country = {
 					news_event = acw_generic.1
 				}
+				custom_effect_tooltip = USA_cant_defend_monroe_doctrine_tt
+				hidden_effect = {
+					every_country = {
+						limit = {
+							OR = {
+								capital_scope = {
+									is_on_continent = south_america
+								}
+								capital_scope = {
+									is_on_continent = north_america
+								}
+							}
+						}
+						USA = {
+							diplomatic_relation = {
+								country = PREV
+								relation = guarantee
+								active = no
+							}
+						}
+					}
+				}
 			}
 			else_if = {
 				limit = { tag = CSA }

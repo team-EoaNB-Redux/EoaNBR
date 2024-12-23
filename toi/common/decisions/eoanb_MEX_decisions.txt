@@ -1184,3 +1184,9 @@ EOANBSYS_national_crisis_decision_category = {
 		}
 	}
 }
+
+# MEX_decision_category_reform_war = {
+# 	MEX_decision_call_out_state_guards = {
+
+# 	}
+# }
