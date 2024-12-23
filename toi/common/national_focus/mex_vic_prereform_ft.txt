@@ -2289,6 +2289,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#switch laws
+			country_event = { id = mexico_civil_war.5 days = 1 }
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2634,6 +2635,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#Cogg content around this, fails to accomplish much i beleive
+			FRA = { country_event = { id = mexico_civil_war.25 days = 1 } }
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya
@@ -2663,6 +2665,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			#Cogg content around this, leads to spanish PU???
+			SPR = { country_event = { id = mexico_civil_war.30 days = 1 } }
+			custom_effect_tooltip = MEX_accept_hispanic_monarch_tooltip
 		}
 		allow_branch = {
 			has_completed_focus = MEX_focus_plan_of_tacubaya

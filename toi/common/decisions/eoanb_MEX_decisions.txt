@@ -528,7 +528,6 @@ MEX_decision_category_republican_forces = {
 			}
 		}
 	}
-
 	MEX_southern_militias = {
 		allowed = {
 			tag = MEX

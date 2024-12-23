@@ -1413,25 +1413,40 @@ country_event = { #Debt system initial announcement
 		option = {
 			name = mexico_civil_war.5.a
 		# log = "option:			name = mexico_civil_war.5.a"
-			swap_ideas = {
-				remove_idea = MEX_idea_uncontrolled_catholic_church_2
-				add_idea = MEX_idea_uncontrolled_catholic_church_0
-			}
-			swap_ideas = {
-				remove_idea = free_trade
-				add_idea = limited_exports
-			}
+			# swap_ideas = {
+			# 	remove_idea = MEX_idea_uncontrolled_catholic_church_2
+			# 	add_idea = MEX_idea_uncontrolled_catholic_church_0
+			# }
+			# swap_ideas = {
+			# 	remove_idea = free_trade
+			# 	add_idea = limited_exports
+			# }
 			swap_ideas = {
 				remove_idea = secular_state
 				add_idea = state_religion
 			}
-			swap_ideas = {
-				remove_idea = foa_free_assembly
-				add_idea = foa_non_socialist
-			}
-			swap_ideas = {
-				remove_idea = pp_open_politics
-				add_idea = pp_ban_extremist_parties
+			# swap_ideas = {
+			# 	remove_idea = foa_free_assembly
+			# 	add_idea = foa_non_socialist
+			# }
+			# swap_ideas = {
+			# 	remove_idea = pp_open_politics
+			# 	add_idea = pp_ban_extremist_parties
+			# }
+			completion_reward = { 
+				
+				swap_ideas = {#repealed ley juarez
+					remove_idea = high_judge_courtroom 
+					add_idea = biased_courtroom
+				}
+				swap_ideas = {#repealed ley lerdo
+					remove_idea = lp_land_purchase
+					add_idea = lp_land_estates
+				}
+				swap_ideas = {#repealed 1857 constitution
+					remove_idea = constitution_adopted
+					add_idea = no_constitution
+				}
 			}
 		}
 	}
