@@ -1000,7 +1000,7 @@ ITA_decisions_category_wars_and_conflicts = {
 							RUS = {
 								controls_province = 442
 								controls_province = 6522
-								controls_province = 11478
+								controls_province = 11479
 							}
 							AUS = {
 								surrender_progress > 0.5
