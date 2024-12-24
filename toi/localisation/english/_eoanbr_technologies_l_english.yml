@@ -2189,6 +2189,8 @@
   tech_scientific_management_desc: ""
   tech_shift_work: "[IC - 1865] Shift Work"
   tech_shift_work_desc: ""
+  tech_time_zones: "[IC - 1870] Time Zones"
+  tech_time_zones_desc: ""
   tech_electrical_lighting: "[IC - 1880] Electrical Lighting"
   tech_electrical_lighting_desc: ""
   tech_time_clock: "[IC - 1890] Time Clock"

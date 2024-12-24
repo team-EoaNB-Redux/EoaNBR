@@ -189,10 +189,10 @@ spriteTypes = {
 				name = "GFX_tech_continuous_distillation_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_continuous_distillation.dds"
 			}
-			# spriteType = {
-			# 	name = "GFX_tech_pressure_cracking_medium"
-			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_pressure_cracking.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_pressure_cracking_medium"
+				textureFile = "gfx/interface/technologies/41_extraction/tech_pressure_cracking.dds"
+			}
 			spriteType = {
 				name = "GFX_tech_partial_condensation_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_partial_condensation.dds"
@@ -453,22 +453,22 @@ spriteTypes = {
 				name = "GFX_tech_prospecting_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_prospecting.dds"
 			}
-			# spriteType = {
-			# 	name = "GFX_tech_steam_pump_medium"
-			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_steam_pump.dds"
-			# }
-			# spriteType = {
-			# 	name = "GFX_tech_mine_organization_medium"
-			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_mine_organization.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_steam_pump_medium"
+				textureFile = "gfx/interface/technologies/41_extraction/tech_atmospheric_steam_engine.dds"
+			}
+			spriteType = {
+				name = "GFX_tech_mine_organization_medium"
+				textureFile = "gfx/interface/technologies/41_extraction/tech_mine_organization.dds"
+			}
 			spriteType = {
 				name = "GFX_tech_diamond_core_drill_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_diamond_core_drill.dds"
 			}
-			# spriteType = {
-			# 	name = "GFX_tech_drilling_fluid_medium"
-			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_drilling_fluid.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_drilling_fluid_medium"
+				textureFile = "gfx/interface/technologies/41_extraction/tech_drilling_fluid.dds"
+			}
 			# spriteType = {
 			# 	name = "GFX_tech_pneumatic_drill_medium"
 			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_pneumatic_drill.dds"
@@ -593,18 +593,18 @@ spriteTypes = {
 				name = "GFX_tech_river_powered_sawmill_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_river_powered_sawmill.dds"
 			}
-			# spriteType = {
-			# 	name = "GFX_tech_wind_powered_sawmill_medium"
-			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_wind_powered_sawmill.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_wind_powered_sawmill_medium"
+				textureFile = "gfx/interface/technologies/41_extraction/tech_wind_powered_sawmill.dds"
+			}
 			spriteType = {
 				name = "GFX_tech_circular_saw_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_circular_saw.dds"
 			}
-			# spriteType = {
-			# 	name = "GFX_tech_insertable_saw_tooth_medium"
-			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_insertable_saw_tooth.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_insertable_saw_tooth_medium"
+				textureFile = "gfx/interface/technologies/41_extraction/tech_insertable_saw_tooth.dds"
+			}
 			spriteType = {
 				name = "GFX_tech_muley_saw_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_muley_saw.dds"

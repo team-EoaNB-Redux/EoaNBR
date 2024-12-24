@@ -279,10 +279,10 @@ spriteTypes = {
 			name = "GFX_tech_early_plant_hybridization_medium"
 			textureFile = "gfx/interface/technologies/40_agronomy/tech_early_plant_hybridization.dds"
 		}
-		# spriteType = {
-		# 	name = "GFX_tech_plant_breeding_medium"
-		# 	textureFile = "gfx/interface/technologies/40_agronomy/tech_plant_breeding.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_plant_breeding_medium"
+			textureFile = "gfx/interface/technologies/40_agronomy/tech_plant_breeding.dds"
+		}
 		spriteType = {
 			name = "GFX_tech_rubber_tapping_techniques_medium"
 			textureFile = "gfx/interface/technologies/40_agronomy/tech_rubber_tapping_techniques.dds"
@@ -511,10 +511,10 @@ spriteTypes = {
 			name = "GFX_tech_riding_cultivator_medium"
 			textureFile = "gfx/interface/technologies/40_agronomy/tech_riding_cultivator.dds"
 		}
-		# spriteType = {
-		# 	name = "GFX_tech_stump_jump_plow_medium"
-		# 	textureFile = "gfx/interface/technologies/40_agronomy/tech_stump_jump_plow.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_stump_jump_plow_medium"
+			textureFile = "gfx/interface/technologies/40_agronomy/tech_stump_jump_plow.dds"
+		}
 		# spriteType = {
 		# 	name = "GFX_tech_reversible_plow_medium"
 		# 	textureFile = "gfx/interface/technologies/40_agronomy/tech_reversible_plow.dds"
@@ -555,10 +555,10 @@ spriteTypes = {
 			name = "GFX_tech_mechanical_reaper_medium"
 			textureFile = "gfx/interface/technologies/40_agronomy/tech_mechanical_reaper.dds"
 		}
-		# spriteType = {
-		# 	name = "GFX_tech_early_combine_harvesters_medium"
-		# 	textureFile = "gfx/interface/technologies/40_agronomy/tech_early_combine_harvesters.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_early_combine_harvesters_medium"
+			textureFile = "gfx/interface/technologies/40_agronomy/tech_early_combine_harvesters.dds"
+		}
 		spriteType = {
 			name = "GFX_tech_traction_engine_medium"
 			textureFile = "gfx/interface/technologies/40_agronomy/tech_traction_engine.dds"
