@@ -9,7 +9,7 @@ d_print_variables = {
 }
 d_print_demographics = {
 	every_state = {
-		log = "([THIS.ID]/[OWNER.GetTag]: [THIS.GetName])"
+		log = "([THIS.GetID]/[OWNER.GetTag]: [THIS.GetName])"
 		log = "  Cultures:"
 		set_variable = { c_total = 0 }
 		for_each_loop = {
