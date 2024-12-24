@@ -97,6 +97,7 @@ characters = {
 				old_guard
 				inflexible_strategist
 				defensive_doctrine
+				eoanbr_napoleonic_general
 			}
 			skill = 9
 			#legacy_id = 5001
@@ -131,6 +132,7 @@ characters = {
 				fast_planner
 				organisational_leader
 				skilled_staffer
+				eoanbr_napoleonic_general
 			}
 			skill = 9
 			legacy_id = 5002
