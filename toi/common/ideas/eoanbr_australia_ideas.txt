@@ -229,7 +229,7 @@ ideas = {
 
 			picture = Worker_strikes
 
-			modifer = {
+			modifier = {
 				political_power_gain = -0.5
 				stability_factor = -0.2
 				war_support_factor = -0.4

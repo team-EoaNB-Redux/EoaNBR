@@ -52,7 +52,7 @@ MEX_intervention_invade_veracruz = {
 
 	ai_strategy = {
 		type = invade
-		target = MEX
+		id = MEX
 		value = 580
 	}
 	ai_strategy = {
@@ -103,7 +103,7 @@ SPR_invade_vietnam_during_war = {
 	}
 	ai_strategy = {
 		type = invade
-		target = VIN
+		id = VIN
 		value = 580
 	}
 	ai_strategy = {
@@ -161,7 +161,7 @@ FRA_invade_vietnam_during_war = {
 	# }
 	ai_strategy = {
 		type = invade
-		tag = VIN
+		id = VIN
 		value = 5000
 	}
 }

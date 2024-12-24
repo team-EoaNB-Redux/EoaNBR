@@ -1622,7 +1622,7 @@ focus_tree = {
 		completion_reward = {
 			#fires tacubaya event
 			MEX = { country_event = { id = mexico_civil_war.39 } }
-			mark_focus_tree_dirty = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 		bypass = { tag = MEC }
 	}

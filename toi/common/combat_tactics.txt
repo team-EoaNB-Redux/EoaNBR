@@ -1180,7 +1180,7 @@
 		}
 
 		defender = 0.15
-		defender_movement_speed = -0.1
+		# defender_movement_speed = -0.1
 	}
 
 	tactic_cavalry_charge_attack = {
@@ -1239,7 +1239,7 @@
 
 		attacker = -0.15
 		defender = 0.15
-		defender_movement_speed = -0.2
+		# defender_movement_speed = -0.2
 	}
 
 	tactic_counterbattery_defence = {
@@ -1262,7 +1262,7 @@
 
 		attacker = -0.2
 		defender = -0.05
-		defender_movement_speed = -0.1
+		# defender_movement_speed = -0.1
 	}
 
 	tactic_infantry_column = {
@@ -1328,7 +1328,7 @@
 
 		attacker = -0.05
 		defender = 0.1
-		defender_movement_speed = -0.05
+		# defender_movement_speed = -0.05
 		combat_width = -0.2
 	}
 
@@ -1503,7 +1503,7 @@
 
 		attacker = -0.075
 		defender = 0.15
-		defender_movement_speed = -0.04
+		# defender_movement_speed = -0.04
 		combat_width = -0.1
 	}#
 
@@ -1542,7 +1542,7 @@
 
 		defender = 0.4
 		attacker = -0.2
-		defender_movement_speed = 0.15
+		# defender_movement_speed = 0.15
 		combat_width = 0.2
 	}#
 

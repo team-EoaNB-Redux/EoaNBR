@@ -923,18 +923,13 @@ EOANBSYS_national_crisis_decision_category = {
 			base = 10
 			modifier = {
 				factor = 0
-				every_controlled_state = {
-					limit = { has_resistance = yes }
+				any_controlled_state = {
 					resistance < 10
 				}
 			}
 			modifier = {
 				factor = 2
 				any_controlled_state = {
-					limit = {
-						has_resistance = yes
-						resistance > 10
-					}
 					resistance > 20
 				}
 			}
@@ -1088,7 +1083,7 @@ EOANBSYS_national_crisis_decision_category = {
 				factor = 0
 				NOT = {
 					any_controlled_state = {
-						limit = { has_resistance = yes }
+						has_resistance = yes
 						has_dynamic_modifier = {
 							modifier = dynmod_MEX_resistance_modifier_5
 						}
@@ -1099,7 +1094,7 @@ EOANBSYS_national_crisis_decision_category = {
 				factor = 0.5
 				NOT = {
 					any_controlled_state = {
-						limit = { has_resistance = yes }
+						has_resistance = yes
 						has_dynamic_modifier = {
 							modifier = dynmod_MEX_resistance_modifier_4
 						}
