@@ -390,7 +390,7 @@ technologies = {
 		start_year = 2050
 
 		field_artillery = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -399,7 +399,7 @@ technologies = {
 			weight = 1
 		}
 		field_artillery_towed = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -408,7 +408,7 @@ technologies = {
 			weight = 1
 		}
 		field_artillery_support = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -417,7 +417,7 @@ technologies = {
 			weight = 1
 		}
 		field_artillery_towed_support = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -426,7 +426,7 @@ technologies = {
 			weight = 1
 		}
 		howitzer_artillery = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -435,7 +435,7 @@ technologies = {
 			weight = 1
 		}
 		howitzer_artillery_towed = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -444,7 +444,7 @@ technologies = {
 			weight = 1
 		}
 		howitzer_artillery_support = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -453,7 +453,7 @@ technologies = {
 			weight = 1
 		}
 		howitzer_artillery_towed_support = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -471,7 +471,7 @@ technologies = {
 		start_year = 2050
 		
 		field_artillery = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -480,7 +480,7 @@ technologies = {
 			weight = 1
 		}
 		field_artillery_towed = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -489,7 +489,7 @@ technologies = {
 			weight = 1
 		}
 		howitzer_artillery = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -498,7 +498,7 @@ technologies = {
 			weight = 1
 		}
 		howitzer_artillery_towed = {
-			defence = 0.5
+			defense = 0.5
 			breakthrough = 0.5
 			soft_attack = 1
 			hard_attack = 1
@@ -516,7 +516,7 @@ technologies = {
 		start_year = 2050
 
 		light_cavalry = {
-			defence = 0.075
+			defense = 0.075
 			soft_attack = 0.2
 			hard_attack = 0.2
 			supply_consumption_factor = 0.2
@@ -524,7 +524,7 @@ technologies = {
 			weight = 0.2
 		}
 		dragoon = {
-			defence = 0.075
+			defense = 0.075
 			soft_attack = 0.2
 			hard_attack = 0.2
 			supply_consumption_factor = 0.2
@@ -532,7 +532,7 @@ technologies = {
 			weight = 0.2
 		}
 		heavy_cavalry = {
-			defence = 0.075
+			defense = 0.075
 			soft_attack = 0.2
 			hard_attack = 0.2
 			supply_consumption_factor = 0.2
@@ -540,7 +540,7 @@ technologies = {
 			weight = 0.2
 		}
 		uhlans = {
-			defence = 0.075
+			defense = 0.075
 			soft_attack = 0.2
 			hard_attack = 0.2
 			supply_consumption_factor = 0.2

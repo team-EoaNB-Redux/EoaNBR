@@ -108,7 +108,16 @@ equipments = {
 
 
 		module_slots = {
-			fixed_ship_battery_slot = inherit
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_early_heavy
+					combat_monitor_arms
+					battery_10in_early
+					battery_92in_early
+					battery_8in_early
+				}
+			}
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_engine_slot = inherit
 			fixed_ship_armor_slot = inherit
@@ -118,10 +127,10 @@ equipments = {
 					ship_secondaries
 				}
 			}
-			mid_1_custom_slot = inherit
+			mid_1_custom_slot = fixed_ship_battery_slot
 			mid_2_custom_slot = inherit
-			rear_1_custom_slot = mid_1_custom_slot
-			front_1_custom_slot = mid_1_custom_slot
+			# rear_1_custom_slot = mid_1_custom_slot
+			# front_1_custom_slot = mid_1_custom_slot
 		}
 		
 		module_count_limit = {

@@ -1358,6 +1358,10 @@ technologies = {
 			ship_hull_monitor_1
 		}
 
+		enable_equipment_modules = {
+			monitor_armor_2
+		}
+
 		path = {
 			leads_to_tech = tech_naval_mtg_1880_monitor
 			research_cost_coeff = 1
