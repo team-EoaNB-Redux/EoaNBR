@@ -1181,35 +1181,40 @@ EOANBSYS_national_crisis_decision_category = {
 }
 
 MEX_decision_category_reform_war = {
-#	MEX_decision_call_out_state_guards = {
-#		allowed = {
-#			tag = MEX
-#		}
-#		target_root_trigger = {
-#			has_completed_focus = MEX_focus_addressing_media_campaign
-#		}
-#
-#		targets = {
-#			MEX
-#		}
-#
-#		fixed_random_seed = no
-#		cost = 5
-#		days_re_enable = 7
-#
-	#	complete_effect = {
-	#		random_owned_state = {
-	#			limit = {
-	#				any_state_division = {
-	#					division_has_majority_template = militia
-	#				}
-	#			}
-	#			delete_unit = {
-	#				state = THIS
-	#				disband = yes
-	#				division_template = "Local Militia"
-	#			}
-	#		}
-	#	}
-	#}
+	MEX_decision_call_out_state_guards = {
+		allowed = {
+			tag = MEX
+		}
+		target_root_trigger = {
+			has_completed_focus = MEX_focus_addressing_media_campaign
+		}
+
+		targets = {
+			MEX
+		}
+
+		fixed_random_seed = no
+		cost = 5
+		days_re_enable = 7
+
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					any_state_division = {
+						division_has_majority_template = militia
+					}
+				}
+				delete_unit = {
+					state = THIS
+					disband = yes
+					division_template = "Local Militia"
+				}
+				create_unit = {
+					division = "name = \"National Guard\" division_template \"Republican Infantry\" start_experience_factor 0.5 start_equipment_factor = 0.5"
+					owner = MEX
+					id = 997
+				}
+			}
+		}
+	}
 }

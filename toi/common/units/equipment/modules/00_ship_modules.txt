@@ -1372,7 +1372,7 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 1.0
-			hg_attack = 3.95
+			hg_attack = 5.4
 			build_cost_ic = 580
 			armor_value = 12.5
 			surface_visibility = 4
@@ -1384,8 +1384,8 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 8.25 # piercing will be normalized around 9" gun
-			hg_armor_piercing = 8.25
+			lg_armor_piercing = 20.73 # piercing will be normalized around 9" gun
+			hg_armor_piercing = 20.73
 		}
 
 		multiply_stats = {
@@ -1453,8 +1453,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 2.0
-			hg_attack = 7.0
+			lg_attack = 0.75
+			hg_attack = 7.25
 			build_cost_ic = 935
 			surface_visibility = 5.5
 			armor_value = 13.5
@@ -1466,8 +1466,8 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 17.0
-			hg_armor_piercing = 17.0
+			lg_armor_piercing = 27.7
+			hg_armor_piercing = 27.7
 		}
 
 		multiply_stats = {
