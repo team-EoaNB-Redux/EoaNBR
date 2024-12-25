@@ -1556,6 +1556,12 @@ guiTypes = {
 			name = "Background"
 			spriteType = "GFX_building_entry_stateview"
 		}
+		
+		iconType = {
+			name = "level_bg"
+			position = { x=8 y=50 }	
+			spriteType = "GFX_generic_text_bg_48"
+		}
 
 		instantTextboxType = {
 			name = "level"

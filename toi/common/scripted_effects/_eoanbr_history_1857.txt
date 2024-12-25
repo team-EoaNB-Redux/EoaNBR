@@ -5036,10 +5036,10 @@ eoanbr_history_1857 = {
 
 
 			# Religion
-				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_orthodox = 0.89 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
-				set_variable = { percentage@token:religion_sunni = 0.11 }
+				set_variable = { percentage@token:religion_sunni = 0.89 }
+				add_to_array = { pops_religion_array = token:religion_orthodox }
+				set_variable = { percentage@token:religion_orthodox = 0.11 }
 
 
 			#
@@ -23284,9 +23284,9 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_orthodox = 0.71 }
+				set_variable = { percentage@token:religion_orthodox = 0.61 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
-				set_variable = { percentage@token:religion_sunni = 0.29 }
+				set_variable = { percentage@token:religion_sunni = 0.39 }
 
 
 			#
