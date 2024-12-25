@@ -194,6 +194,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_factory_icon_with_wrench"
+		textureFile = "gfx//interface//factory_wrench_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_military_factory_icon"
 		textureFile = "gfx/interface/military_factory_icon.dds"
 	}
@@ -643,6 +648,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_naval_production_item"
+		textureFile = "gfx//interface//naval_production_item.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
 		name = "GFX_naval_production_item_bg_strip"
 		textureFile = "gfx/interface/country_interface/production/naval_production_item_slots_strip.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -726,5 +737,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_add_10"
 		textureFile = "gfx/interface/add_10.dds"
+	}
+
+	spriteType = {
+		name = "GFX_production_prohibition_sign_icon"
+		textureFile = "gfx/interface/equipmentdesigner/production_prohibition_sign_icon.dds"
 	}
 }

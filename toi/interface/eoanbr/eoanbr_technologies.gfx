@@ -558,10 +558,10 @@ spriteTypes = {
 			name = "GFX_tech_recon11_medium"
 			texturefile = "gfx/interface/technologies/01_support/tech_scout_company_11.dds"
 		}
-		spriteType = {
-			name = "GFX_tech_recon12_medium"
-			texturefile = "gfx/interface/technologies/01_support/tech_scout_company_12.dds"
-		}
+		# spriteType = {
+		# 	name = "GFX_tech_recon12_medium"
+		# 	texturefile = "gfx/interface/technologies/01_support/tech_scout_company_12.dds"
+		# }
 
 		spriteType = {
 			name = "GFX_tech_military_police_medium"
@@ -875,10 +875,10 @@ spriteTypes = {
 				name = "GFX_tech_field_hydraulic_recoil_mechanisms_medium"
 				texturefile = "gfx/interface/technologies/10_artillery/field_hydraulic_recoil_mechanisms.dds"
 			}
-			spriteType = {
-				name = "GFX_tech_field_combined_fire_regiments_medium"
-				texturefile = "gfx/interface/technologies/10_artillery/field_combined_fire_regiments.dds"
-			}
+			# spriteType = {
+			# 	name = "GFX_tech_field_combined_fire_regiments_medium"
+			# 	texturefile = "gfx/interface/technologies/10_artillery/field_combined_fire_regiments.dds"
+			# }
 		#
 		# Howitzers
 			spriteType = {

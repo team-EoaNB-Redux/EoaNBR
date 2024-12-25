@@ -455,7 +455,7 @@ spriteTypes = {
 			}
 			spriteType = {
 				name = "GFX_tech_steam_pump_medium"
-				textureFile = "gfx/interface/technologies/41_extraction/tech_atmospheric_steam_engine.dds"
+				textureFile = "gfx/interface/technologies/42_industry/tech_atmospheric_steam_engine.dds"
 			}
 			spriteType = {
 				name = "GFX_tech_mine_organization_medium"
