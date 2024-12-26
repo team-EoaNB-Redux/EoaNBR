@@ -4463,6 +4463,7 @@ focus_tree = {
 				limit = { has_idea = USA_Spirit_Civil_War_Attack1 }
 				add_ideas = USA_Spirit_Civil_War_Defend1
 			}
+			#recruit character emory upton
 		}
 	}
 	focus = {

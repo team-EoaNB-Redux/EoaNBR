@@ -2356,3 +2356,6 @@ USA_FN_trade_modifier: "Trade with the First Nations"
 # DYNAMIC MODIFIERS TOOLTIPS
 usa_modify_united_states_navy_ns_intro: "Modify §Y$USA_navy_modifier$§! by"
 usa_modify_fn_trade_ns_intro: "Modify §Y$USA_FN_trade_modifier$§! by"
+
+#US Traits
+USA_trait_emory_upton: "Army Tactics Theorist"

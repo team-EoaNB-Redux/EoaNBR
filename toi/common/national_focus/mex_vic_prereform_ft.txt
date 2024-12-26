@@ -1748,7 +1748,10 @@ focus_tree = {
 			# nationalization no longer generates unrest, increased yield
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1774,7 +1777,10 @@ focus_tree = {
 			#small stability malus
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1800,7 +1806,10 @@ focus_tree = {
 			#small stability malus, social egal boost
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1826,7 +1835,10 @@ focus_tree = {
 			#small stability malus, social egal boost
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1852,7 +1864,10 @@ focus_tree = {
 			#remove other religions from discrimination
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1881,7 +1896,10 @@ focus_tree = {
 			#timed idea to gain money
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1907,7 +1925,10 @@ focus_tree = {
 			#unrest can now be removed
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1941,7 +1962,10 @@ focus_tree = {
 			}
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1967,7 +1991,10 @@ focus_tree = {
 			#pre existing events for seeking US loans, also activates decisions for money and equipment
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -1993,7 +2020,10 @@ focus_tree = {
 			# events covering this
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2020,7 +2050,10 @@ focus_tree = {
 			# hurts Con access to stuff and reduces interest rates
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2050,7 +2083,10 @@ focus_tree = {
 			}
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2076,7 +2112,10 @@ focus_tree = {
 			# new divs with special buffs
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2102,7 +2141,10 @@ focus_tree = {
 			# raise some funds but obvs cause issues
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2144,7 +2186,10 @@ focus_tree = {
 			# something manpower
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2304,7 +2349,10 @@ focus_tree = {
 			country_event = { id = mexico_civil_war.5 days = 1 }
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2330,7 +2378,10 @@ focus_tree = {
 			#advisors become available, lp?
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2356,7 +2407,10 @@ focus_tree = {
 			#funding national spirit
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2382,7 +2436,10 @@ focus_tree = {
 			#weaker version of liberal decision to fund government
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2408,7 +2465,10 @@ focus_tree = {
 			#big pile of money, huge relation malus, requires miramon, blocks liberal "european acknowledgement", maybe make it a decision that allows ticking off each nation
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2434,7 +2494,10 @@ focus_tree = {
 			#fires an event, stability malus, war support malus
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2460,7 +2523,10 @@ focus_tree = {
 			# starts event chain for navidad plan
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2489,7 +2555,10 @@ focus_tree = {
 			#unblocks division recruiting for solely militia
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2515,7 +2584,10 @@ focus_tree = {
 			# unlocks decisions for gaining equipment and cash from europe
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2527,7 +2599,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_spanish_help
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_Focus_colonial_power_SPA
 		x = 0
 		y = 1
 		relative_position_id = MEC_focus_european_recognition
@@ -2541,7 +2613,10 @@ focus_tree = {
 			#various help MEC can get from spain, volunteers apparently, maybe enhances help from spain?
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2568,7 +2643,10 @@ focus_tree = {
 			# can go historical route, or if US is hostile then MEC deletes ~4k worth of divs and respawns them ON veracruz
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2594,7 +2672,10 @@ focus_tree = {
 			#spawn 2 corvettes in cuba
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2620,7 +2701,10 @@ focus_tree = {
 			#event chain around this
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2632,7 +2716,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_seek_french_monarch
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_goal_focus_french_empire
 		x = -1
 		y = 1
 		relative_position_id = MEC_focus_mon_almonte_treaty
@@ -2650,7 +2734,10 @@ focus_tree = {
 			FRA = { country_event = { id = mexico_civil_war.25 days = 1 } }
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no
@@ -2681,7 +2768,10 @@ focus_tree = {
 			custom_effect_tooltip = MEX_accept_hispanic_monarch_tooltip
 		}
 		allow_branch = {
-			has_completed_focus = MEX_focus_plan_of_tacubaya
+			OR = {
+				has_completed_focus = MEX_focus_plan_of_tacubaya
+				is_debug = yes
+			}
 		}
 		bypass = { 
 			has_war = no

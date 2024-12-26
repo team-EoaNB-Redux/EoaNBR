@@ -163,7 +163,9 @@ add_namespace = mexico_civil_war
 		immediate = {
 			# log = "[THIS.GetTag]: firing  = mexico_politics.7"
 			hidden_effect = {
-				promote_character = MEC_Char_Felix_Zuloaga
+				MEC = {
+					promote_character = MEC_Char_Felix_Zuloaga
+				}
 			}
 		}
 
@@ -195,9 +197,9 @@ add_namespace = mexico_civil_war
 				type = annex_everything
 			}
 			hidden_effect = {
-				MEX = {
-					activate_mission = MEX_mission_reform_war_last_effort
-				}
+				# MEX = {
+				# 	activate_mission = MEX_mission_reform_war_last_effort
+				# }
 				MEC = {
 					every_controlled_state = {
 						create_unit = {
