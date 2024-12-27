@@ -340,7 +340,6 @@ ideas = {
 			}
 		}
 		
-		
 		MEX_idea_scars_of_the_civil_war = {
 			allowed = {
 				always = no
@@ -468,6 +467,22 @@ ideas = {
 				war_support_factor = 0.03
 			}
 		}
+
+		#####Reform War Ideas
+		MEX_idea_dissolution_monastaries = {
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				treasury_gain_monthly_per_gdp = 0.025
+			}
+		}
+
+		##### Post Reform War Ideas
     }
 	political_advisor = {
 

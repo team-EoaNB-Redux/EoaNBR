@@ -1746,6 +1746,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			# nationalization no longer generates unrest, increased yield
+			custom_effect_tooltip = MEX_nationalize_church_property_tt
 		}
 		allow_branch = {
 			OR = {
@@ -1775,6 +1776,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			#small stability malus
+			add_stability = -0.1
+			#add idea to decrease bureaucratic efficiency for 1y
 		}
 		allow_branch = {
 			OR = {
@@ -1804,6 +1807,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			#small stability malus, social egal boost
+			add_stability = -0.075
+			add_popularity = {
+				ideology = social_egalitarianism
+				popularity = 0.05
+			}
 		}
 		allow_branch = {
 			OR = {
@@ -1833,6 +1841,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			#small stability malus, social egal boost
+			add_stability = -0.05
+			add_popularity = {
+				ideology = social_egalitarianism
+				popularity = 0.025
+			}
 		}
 		allow_branch = {
 			OR = {
@@ -1894,6 +1907,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			#timed idea to gain money
+			add_timed_idea = {
+				idea = MEX_idea_dissolution_monastaries
+				days = 360
+			}
 		}
 		allow_branch = {
 			OR = {
@@ -1923,6 +1940,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#unrest can now be removed
+			custom_effect_tooltip = MEX_unite_the_states_tt
 		}
 		allow_branch = {
 			OR = {
@@ -1989,6 +2007,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#pre existing events for seeking US loans, also activates decisions for money and equipment
+			USA = { country_event = { id = mexico_civil_war.8 days = 1 } }
 		}
 		allow_branch = {
 			OR = {
