@@ -260,9 +260,9 @@ technologies = {
 				}
 			#
 			#Modifier
-				category_artillery = {
+				# category_artillery = {
 
-				}
+				# }
 			#
 		}
 		tech_field_studded_shells = {

@@ -1215,6 +1215,10 @@ MEX_decision_category_reform_war = {
 					id = 997
 				}
 			}
+
+			set_temp_variable = { x_temp = 500 }
+			set_temp_variable = { country_temp = USA }
+			borrow_money = yes
 		}
 	}
 }
