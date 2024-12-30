@@ -2556,7 +2556,7 @@ focus_tree = {
 					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 					set_temp_variable = { x_temp = 1 }
 					set_temp_variable = { financer_temp = ROOT }
-					set_temp_variable = { building_token = token:infrastructure }
+					set_temp_variable = { industry_token = token:urban_center }
 					set_temp_variable = { production_method_temp = -1 }
 					add_x_industries = yes
 				}
@@ -2567,7 +2567,7 @@ focus_tree = {
 					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 					set_temp_variable = { x_temp = 1 }
 					set_temp_variable = { financer_temp = ROOT }
-					set_temp_variable = { building_token = token:infrastructure }
+					set_temp_variable = { industry_token = token:urban_center }
 					set_temp_variable = { production_method_temp = -1 }
 					add_x_industries = yes
 				}

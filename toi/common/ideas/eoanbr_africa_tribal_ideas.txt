@@ -83,7 +83,10 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				treasury_cost_monthly_per_gdp = 0.05
+				interest_rate_factor = 1
+				administration_cost_factor = -0.25
+				military_payroll_cost_factor = -0.25
+				military_equipment_cost_factor = -0.25
 				production_factory_max_efficiency_factor = -0.5
 				production_speed_buildings_factor = -0.5
 				# min_export = -0.05
@@ -113,7 +116,10 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				treasury_cost_monthly_per_gdp = 0.025
+				interest_rate_factor = 0.5
+				administration_cost_factor = -0.25
+				military_payroll_cost_factor = -0.25
+				military_equipment_cost_factor = -0.25
 				production_factory_max_efficiency_factor = -0.25
 				production_speed_buildings_factor = -0.25
 				# min_export = -0.025

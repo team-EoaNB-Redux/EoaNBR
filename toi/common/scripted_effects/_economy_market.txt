@@ -1,4 +1,10 @@
 
+# Ways to optimize:
+#	only update when necessary/things have changed
+#	Caching
+#	Avoid unnecessary computations
+#	
+
 #Market Updates
 	market_update = { # The master market update script. Adds up all values from every state up to the market leader 
 		# Scope: Market Leader
@@ -380,38 +386,11 @@
 				}
 			}
 		}
-
-		# Special Buildings
-			# for_each_loop = { # Subsistence Farms
-			#	 array = global.building_base_production@token:subsistence_farm
-			#	 value = br_token
-			#	 index = ii
-
-			#	 add_to_variable = { production@var:br_token = production@token:subsistence_farm^ii }
-			# }
-		#
-		
-		set_temp_variable = { local_resources_temp = modifier@local_resources }
-		add_to_temp_variable = { local_resources_temp = 1 }
-
-		# for_each_loop = { # Mil Resources
-		#	 array = global.resource_token_array
-		#	 value = r_type
-
-		#	 set_temp_variable = { resource_temp = resource@var:r_type }
-		#	 multiply_temp_variable = { resource_temp = local_resources_temp }
-		#	 subtract_from_temp_variable = { resource_temp = 0.499 }
-		#	 round_temp_variable = resource_temp
-		#	 add_to_variable = { production@var:r_type = resource_temp }
-		# }
 		
 		for_each_loop = { # Adds values together
 			array = global.resource_token_array
 			value = r_type
 			add_to_variable = { demand@var:r_type = demand_input@var:r_type }
-
-			set_variable = { balance@var:r_type = supply@var:r_type }
-			subtract_from_variable = { balance@var:r_type = demand@var:r_type }
 		}
 	}
 
@@ -974,6 +953,73 @@
 		set_trade = yes
 	}
 
+	global_market_update = {
+		for_each_loop = {
+			array = global.resource_token_array
+			value = r_type
+			set_variable = { global.market_supply@var:r_type = 0 }
+			set_variable = { global.market_demand@var:r_type = 0 }
+			set_variable = { global.trade_demand@var:r_type = 0 }
+			set_variable = { global.trade_supply@var:r_type = 0 }
+
+			set_temp_variable = { offers_temp = offers@var:r_type }
+			multiply_temp_variable = { offers_temp = shipping_efficiency }
+
+			add_to_variable = { global_market_supply@var:r_type = production@var:r_type }
+			add_to_variable = { global_market_demand@var:r_type = need@var:r_type }
+			if = { # This country is importing
+				limit = {
+					check_variable = { offers@var:r_type > 0 }
+				}
+				add_to_variable = { trade_demand@var:r_type = offers_temp }
+			}
+			else = { # This country is exporting
+				subtract_from_variable = { trade_supply@var:r_type = offers_temp }
+			}
+		}
+
+		for_each_scope_loop = {
+			array = global.markets
+			for_each_loop = {
+				array = global.resource_token_array
+				value = r_type
+				set_temp_variable = { offers_temp = offers@var:r_type }
+				multiply_temp_variable = { offers_temp = shipping_efficiency }
+
+				add_to_variable = { global.market_supply@var:r_type = production@var:r_type }
+				add_to_variable = { global.market_demand@var:r_type = need@var:r_type }
+				if = { # This country is importing
+					limit = {
+						check_variable = { offers@var:r_type > 0 }
+					}
+					add_to_variable = { global.trade_demand@var:r_type = offers_temp }
+				}
+				else = { # This country is exporting
+					subtract_from_variable = { global.trade_supply@var:r_type = offers_temp }
+				}
+			}
+		}
+
+		global_market_calculations = yes
+	}
+	global_market_calculations = {
+		for_each_loop = {
+			array = global.resource_token_array
+			value = r_type
+			set_variable = { global.market_balance@var:r_type = global.market_supply@var:r_type }
+			subtract_from_variable = { global.market_balance@var:r_type = global.market_demand@var:r_type }
+
+			set_temp_variable = { s_temp = global.market_supply@var:r_type }
+			set_temp_variable = { d_temp = global.market_demand@var:r_type }
+			get_price = yes
+			set_variable = { global.market_price@var:r_type = p_return_temp }
+			
+			set_variable = { global.market_price_compared_to_base@var:r_type = global.market_price@var:r_type }
+			divide_variable = { global.market_price_compared_to_base@var:r_type = global.base_price@var:r_type }
+			subtract_from_variable = { global.market_price_compared_to_base@var:r_type = 1 }
+		}
+	}
+
 	trade_update = {
 		# Normal Trade Update Script
 
@@ -992,10 +1038,10 @@
 
 		calc_shipping_capacity_use = yes # Would normally be executed on every country before the next two
 
-		global_market_update = yes
+		local_global_market_update = yes
 		trade_update_quantity = yes
 		trade_update_value = yes
-		global_market_calculations = yes
+		local_global_market_calculations = yes
 		trade_step_calc = yes
 
 		if = {
@@ -1245,38 +1291,25 @@
 			divide_variable = { trade_productivity = trade_jobs }
 		}
 	}
-	global_market_update = { # Updates global market-related variables for a country
+	local_global_market_update = { # Updates global market-related variables for a country
 		# Country Scope
 		for_each_loop = {
 			array = global.resource_token_array
 			value = r_type
-			set_variable = { global_market_supply@var:r_type = 0 }
-			set_variable = { global_market_demand@var:r_type = 0 }
-			set_variable = { trade_supply@var:r_type = 0 }
-			set_variable = { trade_demand@var:r_type = 0 }
-
-			set_temp_variable = { offers_temp = offers@var:r_type }
-			multiply_temp_variable = { offers_temp = shipping_efficiency }
-
-			add_to_variable = { global_market_supply@var:r_type = production@var:r_type }
-			add_to_variable = { global_market_demand@var:r_type = need@var:r_type }
-			if = { # This country is importing
-				limit = {
-					check_variable = { offers@var:r_type > 0 }
-				}
-				add_to_variable = { trade_demand@var:r_type = offers_temp }
-			}
-			else = { # This country is exporting
-				subtract_from_variable = { trade_supply@var:r_type = offers_temp }
-			}
+			set_variable = { global_market_supply@var:r_type = global.market_supply@var:r_type }
+			set_variable = { global_market_demand@var:r_type = global.market_demand@var:r_type }
+			set_variable = { trade_supply@var:r_type = global.trade_supply@var:r_type }
+			set_variable = { trade_demand@var:r_type = global.trade_demand@var:r_type }
 		}
-
+		
 		set_temp_variable = { country_temp = THIS }
 		for_each_scope_loop = {
 			array = global.markets
+			# Remove countries you cannot trade with
 			if = {
 				limit = {
-					can_trade_with = yes
+					NOT = { check_variable = { country_temp = THIS } }
+					can_trade_with = no
 				}
 				for_each_loop = {
 					array = global.resource_token_array
@@ -1284,24 +1317,24 @@
 					set_temp_variable = { offers_temp = offers@var:r_type }
 					multiply_temp_variable = { offers_temp = shipping_efficiency }
 
-					add_to_variable = { PREV.global_market_supply@var:r_type = production@var:r_type }
-					add_to_variable = { PREV.global_market_demand@var:r_type = need@var:r_type }
+					subtract_from_variable = { PREV.global_market_supply@var:r_type = production@var:r_type }
+					subtract_from_variable = { PREV.global_market_demand@var:r_type = need@var:r_type }
 					if = { # This country is importing
 						limit = {
 							check_variable = { offers@var:r_type > 0 }
 						}
-						add_to_variable = { PREV.trade_demand@var:r_type = offers_temp }
+						subtract_from_variable = { PREV.trade_demand@var:r_type = offers_temp }
 					}
 					else = { # This country is exporting
-						subtract_from_variable = { PREV.trade_supply@var:r_type = offers_temp }
+						add_to_variable = { PREV.trade_supply@var:r_type = offers_temp }
 					}
 				}
 			}
 		}
 
-		global_market_calculations = yes
+		local_global_market_calculations = yes
 	}
-	global_market_calculations = {
+	local_global_market_calculations = {
 		for_each_loop = {
 			array = global.resource_token_array
 			value = r_type

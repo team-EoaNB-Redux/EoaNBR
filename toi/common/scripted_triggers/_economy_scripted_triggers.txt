@@ -384,8 +384,6 @@ can_trade_with = {
 	# Not at war with country
 	# Not embargoing each other
 	# Other Country Can Trade
-	# Either neighbors or coastal
-	# If not neighbors, then neither under blockade
 
 	set_temp_variable = { country_market_leader_temp = country_temp:market_leader }
 
@@ -400,23 +398,23 @@ can_trade_with = {
 		can_trade = yes
 	}
 
-	OR = {
-		# is_neighbor_of = var:country_temp
-		var:country_temp = {
-			any_neighbor_country = {
-				check_variable = { market_leader = PREV.PREV.market_leader }
-			}
-		}
-		any_neighbor_country = {
-			check_variable = { market_leader = country_temp:market_leader }
-		}
-		AND = {
-			market_can_trade_by_sea = yes
-			var:country_temp = {
-				market_can_trade_by_sea = yes
-			}
-		}
-	}
+	# OR = {
+	# 	# is_neighbor_of = var:country_temp
+	# 	var:country_temp = {
+	# 		any_neighbor_country = {
+	# 			check_variable = { market_leader = PREV.PREV.market_leader }
+	# 		}
+	# 	}
+	# 	any_neighbor_country = {
+	# 		check_variable = { market_leader = country_temp:market_leader }
+	# 	}
+	# 	AND = {
+	# 		market_can_trade_by_sea = yes
+	# 		var:country_temp = {
+	# 			market_can_trade_by_sea = yes
+	# 		}
+	# 	}
+	# }
 }
 is_in_x_market = {
 	# x_temp : check if current country is in x market

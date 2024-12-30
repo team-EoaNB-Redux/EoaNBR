@@ -866,6 +866,56 @@ scripted_gui = {
 					refresh_construction_list = yes
 					add_to_variable = { update_state_econ_window = 1 }
 				}
+				
+				arms_factory_increase_size_button_click = {
+					set_temp_variable = { x_temp = 1 }
+					set_temp_variable = { financer_temp = ROOT }
+					set_temp_variable = { industry_token = token:arms_factory }
+					set_temp_variable = { production_method_temp = token:pm_arms_factory }
+					construct_x_industries = yes
+
+					ROOT = { budget_update = yes }
+				}
+				arms_factory_decrease_size_button_click = {
+					subtract_from_variable = { construction@token:arms_factory = 1 }
+					if = {
+						limit = {
+							check_variable = { construction@token:arms_factory = 0 }
+							check_variable = { size@token:arms_factory = 0 }
+						}
+						remove_from_array = { industries = v }
+						remove_from_array = { buildings = v }
+					}
+
+					ROOT = { budget_update = yes }
+					refresh_construction_list = yes
+					add_to_variable = { update_state_econ_window = 1 }
+				}
+				
+				dockyard_increase_size_button_click = {
+					set_temp_variable = { x_temp = 1 }
+					set_temp_variable = { financer_temp = ROOT }
+					set_temp_variable = { industry_token = token:dockyard }
+					set_temp_variable = { production_method_temp = token:pm_dockyard }
+					construct_x_industries = yes
+
+					ROOT = { budget_update = yes }
+				}
+				dockyard_decrease_size_button_click = {
+					subtract_from_variable = { construction@token:dockyard = 1 }
+					if = {
+						limit = {
+							check_variable = { construction@token:dockyard = 0 }
+							check_variable = { size@token:dockyard = 0 }
+						}
+						remove_from_array = { industries = v }
+						remove_from_array = { buildings = v }
+					}
+
+					ROOT = { budget_update = yes }
+					refresh_construction_list = yes
+					add_to_variable = { update_state_econ_window = 1 }
+				}
 			#
 
 			time_button_click = {
@@ -1344,7 +1394,7 @@ scripted_gui = {
 
 		triggers = {
 			trade_resource_background_click_enabled = {
-				NOT = { is_in_array = { global.non_tradeable_resources = resource_list_token_array^i } }
+				NOT = { is_in_array = { global.non_tradeable_resources = resource_list_token_array^i_type } }
 			}
 
 			global_market_icon_visible = {
@@ -1549,10 +1599,9 @@ scripted_gui = {
 			trade_resource_background_click = {
 				if = {
 					limit = {
-						NOT = { is_in_array = { global.non_tradeable_resources = v } }
+						NOT = { is_in_array = { global.non_tradeable_resources = resource_temp } }
 					}
 					set_country_flag = trade_view_open
-					set_temp_variable = { resource_temp = v }
 					log = "Resource: [?v.GetTokenLocalizedKey]"
 					add_trade = yes
 				}
@@ -1583,16 +1632,16 @@ scripted_gui = {
 				image = "[GetResourceListIcon]"
 			}
 			trade_resource_balance_bar_negative = {
-				frame = resource_list_right_balance_bar_array^i
+				frame = resource_list_right_balance_bar_array^i_type
 			}
 			trade_resource_balance_bar_positive = {
-				frame = resource_list_left_balance_bar_array^i
+				frame = resource_list_left_balance_bar_array^i_type
 			}
 			trade_resource_price_bar_negative = {
-				frame = resource_list_left_price_bar_array^i
+				frame = resource_list_left_price_bar_array^i_type
 			}
 			trade_resource_price_bar_positive = {
-				frame = resource_list_right_price_bar_array^i
+				frame = resource_list_right_price_bar_array^i_type
 			}
 
 			trade_resource_price_icon = {
@@ -1604,6 +1653,7 @@ scripted_gui = {
 				array = resource_list_token_array
 				entry_container = trade_resource_entry
 				value = resource_temp
+				index = i_type
 			}
 		}
 	}

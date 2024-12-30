@@ -70,6 +70,9 @@
 
 	set_tech_victorian_middle_industrializing = yes
 
+	set_variable = { starting_am@wood = token:pm_muscle_power }
+	set_variable = { starting_am@coal = token:pm_hand_picks_and_tools }
+
 	# POLITICAL LEADERS
 	recruit_character = NFL_sir_alexander_bannerman
 	recruit_character = NFL_charles_fox_bennett

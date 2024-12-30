@@ -4,9 +4,12 @@ on_actions = {
 			UCT = {
 				_reset = yes # Economy Reset
 
-				_advance_time = yes # Get things going
-				_advance_time = yes 
-				_advance_time = yes 
+				# Get things going
+				# r_weekly_trade = yes
+				# _advance_time = yes
+				# r_weekly_trade = yes
+				# _advance_time = yes 
+				# _advance_time = yes 
 			}
 		}
 	}
