@@ -5079,7 +5079,7 @@ country_event = {
 		name = acw_generic.10.a
 		# log = "option:		name = acw_generic.10.a"
 		trigger = { tag = USA }
-		army_experience = -20
+		#army_experience = -20
 		hidden_effect = {
 			# Remove Jackson as MHC
 			set_temp_variable = { temp_advisor_frame = 4 }
