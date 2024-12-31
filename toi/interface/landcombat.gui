@@ -11,59 +11,69 @@ guiTypes = {
 			spriteType = "GFX_tactics_list_entry_bg"
 		}
 
+		buttonType = {
+			name = "button_background"
+			spriteType = "GFX_tactics_list_entry_bg"
+			enabled = no
+		}
+		
 		iconType =	{
 			name = "tactics_icon"
 			spriteType = "GFX_empty_tactics"
-			position = { x = 15 y = 28 }
+			position = { x = 15 y = 33 }
 			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
 		}
 
 		iconType =	{
 			name = "defender_damage_icon"
 			spriteType = "GFX_defender_damage_icon"
-			position = { x = 210 y = 28 }
+			position = { x = 210 y = 33 }
 			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
 		}
 
 		instantTextboxType = {
 			name = "defender_damage_value"
-			position = { x = 235 y = 30 }
+			position = { x = 235 y = 35 }
 			font = "hoi_16mbs"
 			maxWidth = 280
 			maxHeight = 20
 			format = left
-			alwaystransparent = yes
 			text = "TEEST"
-		}
-
+			alwaystransparent = yes
+		}		
+		
 		iconType =	{
 			name = "combat_width_change_icon"
 			spriteType = "GFX_combat_width_change_icon"
-			position = { x = 108 y = 56 }
+			position = { x = 108 y = 61 }
 			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
 		}
 
 		instantTextboxType = {
 			name = "combat_width_change_value"
-			position = { x = 140 y = 57 }
+			position = { x = 140 y = 61 }
 			font = "hoi_16mbs"
 			maxWidth = 280
 			maxHeight = 20
 			format = left
 			alwaystransparent = yes
 			text = "TEEST"
-		}
-
+		}		
+		
 		iconType =	{
 			name = "attacker_damage_icon"
 			spriteType = "GFX_attacker_damage_icon"
-			position = { x = 115 y = 28 }
+			position = { x = 115 y = 33 }
 			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
 		}
 
 		instantTextboxType = {
 			name = "attacker_damage_value"
-			position = { x = 140 y = 30 }
+			position = { x = 140 y = 33 }
 			font = "hoi_16mbs"
 			maxWidth = 280
 			maxHeight = 20
@@ -71,25 +81,26 @@ guiTypes = {
 			alwaystransparent = yes
 			text = "TEEST"
 		}
-
+		
 		iconType =	{
 			name = "attacker_speed_icon"
 			spriteType = "GFX_attacker_speed_icon"
-			position = { x = 210 y = 55 }
+			position = { x = 210 y = 61 }
 			Orientation = "UPPER_LEFT"
-		}
+			alwaystransparent = yes
+		}	
 
 		instantTextboxType = {
 			name = "attacker_speed_value"
-			position = { x = 235 y = 57 }
+			position = { x = 235 y = 62 }
 			font = "hoi_16mbs"
 			maxWidth = 280
 			maxHeight = 20
 			format = left
 			alwaystransparent = yes
 			text = "TEEST"
-		}
-
+		}		
+		
 		instantTextboxType = {
 			name = "tactics_name"
 			position = { x = 14 y = 6 }
@@ -100,11 +111,23 @@ guiTypes = {
 			alwaystransparent = yes
 			text = "Tactics Name"
 		}
-
+		
 		iconType = {
 			name = "locked_icon"
 			spriteType = "GFX_locked_icon"
+			position = { x = 275 y = 50 }
+			alwaystransparent = no
+		}
+
+		instantTextboxType = {
+			name = "tactics_chance"
 			position = { x = 275 y = 30 }
+			font = "hoi_18mbs"
+			maxWidth = 50
+			maxHeight = 20
+			format = left
+			alwaystransparent = yes
+			text = ""
 		}
 
 		instantTextboxType = {
@@ -117,8 +140,18 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		instantTextboxType = {
+			name = "command_power_cost"
+			position = { x = 255 y = 35 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			maxWidth = 100
+			maxHeight = 20
+			format = centre
+			text = ""
+		}	
 	}
-
+	
 	containerWindowType = {
 		name = "tactics_list_view"
 		position = { x = -512 y = -256 }
@@ -137,7 +170,7 @@ guiTypes = {
 			position = { x = 0 y = 2 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
-		}
+		}		
 
 		buttonType = {
 			name = "filter_all"
@@ -175,9 +208,10 @@ guiTypes = {
 			frame = 2
 		}
 
+
 		buttonType = {
 			name = "close"
-			quadTextureSprite = "GFX_closebutton_small"
+			quadTextureSprite = "GFX_closebutton_small" 
 			buttonFont = "Main_14_black"
 			position = { x = -31 y = 5 }
 			Orientation = "UPPER_RIGHT"
@@ -186,17 +220,17 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "window_title"
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 8 }
 			textureFile = ""
-			font = "hoi_30header"
-			borderSize = { x = 0 y = 0 }
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
 			text = "TACTICS_LIST_VIEW_TITLE"
 			maxWidth = 358
 			maxHeight = 20
 			format = centre
 			alwaystransparent = yes
 		}
-
+		
 		instantTextboxType = {
 			name = "current_phase"
 			position = { x = 0 y = 42 }
@@ -212,7 +246,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "preferred_tactic_desc_text"
 			text = "PREFERRED_TACTIC_DESC"
-			position = { x=20 y=66}
+			position = { x= 20 y= 66}
 			font = "hoi_18mbs"
 			maxWidth = 340
 			maxHeight = 20
@@ -222,16 +256,18 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "tactics_list_container"
-			position = { x = 0 y = 65 }
-			size = { width = 393 height = 535 }
-			margin = { top = 0 left = 13 bottom = 0 right = 25 }
+			position = { x = 0 y = 125 }
+			size = { width = 393 height = 474 }
+			margin = { top = 0 left = 13 bottom = 0 right = 25}
 			verticalScrollbar = "right_vertical_slider"
-
+			scroll_wheel_factor = 47
+			smooth_scrolling = yes
+			
 			background = {
 				name = "Background"
 				spriteType = "GFX_tiled_window_transparent"
-			}
-
+			} 
+			
 			gridBoxType = {
 				name = "tactics_list_gridbox"
 				position = { x = 0 y = 0 }
