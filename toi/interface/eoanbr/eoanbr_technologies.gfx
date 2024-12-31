@@ -848,6 +848,10 @@ spriteTypes = {
 				texturefile = "gfx/interface/technologies/10_artillery/field_armstrong_screw.dds"
 			}
 			spriteType = {
+				name = "GFX_tech_field_artillery_equipment_bronze_SB_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/field_artillery_equipment_bronze_SB.png"
+			}
+			spriteType = {
 				name = "GFX_tech_field_artillery_equipment_4_medium"
 				texturefile = "gfx/interface/technologies/10_artillery/field_artillery_equipment_4.dds"
 			}
@@ -923,14 +927,14 @@ spriteTypes = {
 				name = "GFX_tech_siege_artillery_equipment_0_medium"
 				texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_0.dds"
 			}
-			# spriteType = {
-			# 	name = "GFX_tech_siege_artillery_equipment_1_medium"
-			# 	texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_1.dds"
-			# }
-			# spriteType = {
-			# 	name = "GFX_tech_siege_artillery_equipment_2_medium"
-			# 	texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_2.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_siege_artillery_equipment_1_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_1.png"
+			}
+			spriteType = {
+				name = "GFX_tech_siege_artillery_equipment_2_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_2.png"
+			}
 			spriteType = {
 				name = "GFX_tech_siege_artillery_equipment_3_medium"
 				texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_3.png"
@@ -939,14 +943,14 @@ spriteTypes = {
 			# 	name = "GFX_tech_siege_grounded_shells_medium"
 			# 	texturefile = "gfx/interface/technologies/10_artillery/siege_grounded_shells.dds"
 			# }
-			# spriteType = {
-			# 	name = "GFX_tech_siege_artillery_equipment_4_medium"
-			# 	texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_4.dds"
-			# }
-			# spriteType = {
-			# 	name = "GFX_tech_siege_artillery_equipment_5_medium"
-			# 	texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_5.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_siege_artillery_equipment_4_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_4.png"
+			}
+			spriteType = {
+				name = "GFX_tech_siege_artillery_equipment_5_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_5.png"
+			}
 			# spriteType = {
 			# 	name = "GFX_tech_siege_artillery_equipment_6_medium"
 			# 	texturefile = "gfx/interface/technologies/10_artillery/siege_artillery_equipment_6.dds"
