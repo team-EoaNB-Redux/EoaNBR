@@ -845,7 +845,27 @@ spriteTypes = {
 			}
 			spriteType = {
 				name = "GFX_tech_field_armstrong_screw_medium"
-				texturefile = "gfx/interface/technologies/10_artillery/field_armstrong_screw.dds"
+				texturefile = "gfx/interface/technologies/10_artillery/wedge_breech.png"
+			}
+			spriteType = {
+				name = "GFX_tech_field_interrupted_screw_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/field_breech_blocks.dds"
+			}
+			spriteType = {
+				name = "GFX_field_artillery_equipment_bronze_SB_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/field_artillery_equipment_bronze_SB.png"
+			}
+			spriteType = {
+				name = "GFX_tech_bronze_artillery_equipment_0_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/field_artillery_equipment_bronze_SB.png"
+			}
+			spriteType = {
+				name = "GFX_tech_field_artillery_equipment_bronze_RBL_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/field_artillery_equipment_bronze_RBL.png"
+			}
+			spriteType = {
+				name = "GFX_tech_bronze_artillery_equipment_2_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/field_artillery_equipment_bronze_RBL.png"
 			}
 			spriteType = {
 				name = "GFX_field_artillery_equipment_bronze_SB_medium"
@@ -869,7 +889,15 @@ spriteTypes = {
 			}
 			spriteType = {
 				name = "GFX_tech_field_breech_blocks_medium"
-				texturefile = "gfx/interface/technologies/10_artillery/field_breech_blocks.dds"
+				texturefile = "gfx/interface/technologies/10_artillery/field_armstrong_screw.dds"
+			}
+			spriteType = {
+				name = "GFX_tech_steel_RBL_artillery_equipment_2_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/steel_RBL_artillery_equipment_2.png"
+			}
+			spriteType = {
+				name = "GFX_field_artillery_equipment_steel_RBL_2_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/steel_RBL_artillery_equipment_2.png"
 			}
 			spriteType = {
 				name = "GFX_tech_field_artillery_equipment_7_medium"
@@ -896,6 +924,10 @@ spriteTypes = {
 			spriteType = {
 				name = "GFX_tech_field_studded_shells_medium"
 				texturefile = "gfx/interface/technologies/10_artillery/howitzer_studded_shells.dds"
+			}
+			spriteType = {
+				name = "GFX_tech_howitzer_artillery_equipment_0_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/howitzer_artillery_equipment_00.png"
 			}
 			spriteType = {
 				name = "GFX_tech_howitzer_artillery_equipment_1_medium"
