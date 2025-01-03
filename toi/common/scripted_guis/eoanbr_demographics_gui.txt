@@ -607,15 +607,10 @@ scripted_gui = {
 	eoanbr_religion_mapmode_country_gui = {
 		context_type = country_mapicon
 		mapmode = religion_map_mode
-		window_name = "eoanbr_religion_mapmode_country_container"
+		window_name = eoanbr_religion_mapmode_country_container
 
 		mapicon_targets = {
 			target_array = global.countries
-			target_trigger = {
-				# FROM = {
-					has_array = pops_religion_array
-				# }
-			}
 		}
 
 		properties = {
@@ -632,16 +627,11 @@ scripted_gui = {
 
 		mapicon_targets = {
 			target_array = global.countries
-			target_trigger = {
-				FROM = {
-					has_array = pops_culture_array
-				}
-			}
 		}
 
 		properties = {
 			country_culture_icon = {
-				image = "GFX_[?pops_primary_culture_array^0.GetTokenKey]"
+				image = "GFX_[?FROM.pops_primary_culture_array^0.GetTokenKey]"
 			}
 		}
 	}

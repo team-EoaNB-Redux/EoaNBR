@@ -461,8 +461,8 @@
  culture_montubio_desc: "§HFamily:§!\n [?global.family@token:culture_montubio.GetTokenLocalizedKey]\n\n§HGroup:§!\n [?global.group@token:culture_montubio.GetTokenLocalizedKey]" #NT!
  culture_norteno: "Norteño" #NT!
  culture_norteno_desc: "§HFamily:§!\n [?global.family@token:culture_norteno.GetTokenLocalizedKey]\n\n§HGroup:§!\n [?global.group@token:culture_norteno.GetTokenLocalizedKey]" #NT!
- culture_north_platinean: "Северный Плантиниан" #NT!
- culture_north_platinean_desc: "§HFamily:§!\n [?global.family@token:culture_north_platinean.GetTokenLocalizedKey]\n\n§HGroup:§!\n [?global.group@token:culture_north_platinean.GetTokenLocalizedKey]" #NT!
+ culture_platinean: "Плантиниан" #NT!
+ culture_platinean_desc: "§HFamily:§!\n [?global.family@token:culture_platinean.GetTokenLocalizedKey]\n\n§HGroup:§!\n [?global.group@token:culture_platinean.GetTokenLocalizedKey]" #NT!
  culture_patagonian: "Патагонский" #NT!
  culture_patagonian_desc: "§HFamily:§!\n [?global.family@token:culture_patagonian.GetTokenLocalizedKey]\n\n§HGroup:§!\n [?global.group@token:culture_patagonian.GetTokenLocalizedKey]" #NT!
  culture_peruvian: "перуанский" #NT!

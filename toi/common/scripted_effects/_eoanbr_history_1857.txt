@@ -10722,8 +10722,8 @@ eoanbr_history_1857 = {
 		511 = { #Mendoza
 			#Demographics
 				# Culture
-					add_to_array = { pops_culture_array = token:culture_rioplatense }
-					set_variable = { percentage@token:culture_rioplatense = 1.00 }
+					add_to_array = { pops_culture_array = token:culture_platinean }
+					set_variable = { percentage@token:culture_platinean = 1.00 }
 
 				# Religion
 					add_to_array = { pops_religion_array = token:religion_catholic }

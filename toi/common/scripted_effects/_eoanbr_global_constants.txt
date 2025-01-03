@@ -1472,16 +1472,6 @@ eoanbr_pops_constant_setup = {
 					set_variable = { global.red@token:culture_norteno = 0.184 }
 					set_variable = { global.green@token:culture_norteno = 0.776 }
 					set_variable = { global.blue@token:culture_norteno = 0.290 }
-				add_to_array = { array = global.culture_array value = token:culture_platinean }
-				add_to_array = { array = global.culture_romance_array value = token:culture_platinean }
-				add_to_array = { array = global.culture_romance_spanish_colonial_array value = token:culture_platinean }
-					# set_variable = { global.desc@token:culture_platinean = token:culture_platinean_desc }
-					set_variable = { global.group@token:culture_platinean = token:culture_group_romance_spanish_colonial }
-					set_variable = { global.family@token:culture_platinean = token:culture_family_romance }
-					set_variable = { global.country@token:culture_platinean = UCT.id }
-					set_variable = { global.red@token:culture_platinean = 0.155 }
-					set_variable = { global.green@token:culture_platinean = 0.411 }
-					set_variable = { global.blue@token:culture_platinean = 0.522 }
 				add_to_array = { array = global.culture_array value = token:culture_patagonian }
 				add_to_array = { array = global.culture_romance_array value = token:culture_patagonian }
 				add_to_array = { array = global.culture_romance_spanish_colonial_array value = token:culture_patagonian }
@@ -1492,6 +1482,16 @@ eoanbr_pops_constant_setup = {
 					set_variable = { global.red@token:culture_patagonian = 0.277 }
 					set_variable = { global.green@token:culture_patagonian = 0.356 }
 					set_variable = { global.blue@token:culture_patagonian = 0.355 }
+				add_to_array = { array = global.culture_array value = token:culture_platinean }
+				add_to_array = { array = global.culture_romance_array value = token:culture_platinean }
+				add_to_array = { array = global.culture_romance_spanish_colonial_array value = token:culture_platinean }
+					# set_variable = { global.desc@token:culture_platinean = token:culture_platinean_desc }
+					set_variable = { global.group@token:culture_platinean = token:culture_group_romance_spanish_colonial }
+					set_variable = { global.family@token:culture_platinean = token:culture_family_romance }
+					set_variable = { global.country@token:culture_platinean = UCT.id }
+					set_variable = { global.red@token:culture_platinean = 0.155 }
+					set_variable = { global.green@token:culture_platinean = 0.411 }
+					set_variable = { global.blue@token:culture_platinean = 0.522 }
 				add_to_array = { array = global.culture_array value = token:culture_peruvian }
 				add_to_array = { array = global.culture_romance_array value = token:culture_peruvian }
 				add_to_array = { array = global.culture_romance_spanish_colonial_array value = token:culture_peruvian }
