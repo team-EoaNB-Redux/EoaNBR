@@ -1,0 +1,10 @@
+# Example
+govt_reform_autarchy_article = {
+	if = {
+		limit = { is_ai = yes }
+		set_variable = { }
+	}
+	else = {
+		#Fire Event Choice
+	}
+}

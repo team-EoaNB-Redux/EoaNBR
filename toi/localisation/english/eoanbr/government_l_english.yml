@@ -1,0 +1,28 @@
+﻿l_english:
+
+# Articles
+ autarchy_token: "Autarchy"
+ autarchy_token_desc: "Autarchy is the organization and centralization of political power."
+  govt_autarchy_absolutism: "Absolutism"
+  govt_autarchy_absolutism_desc: ""
+  govt_autarchy_delegated_authority: "Delegated Authority"
+  govt_autarchy_delegated_authority_desc: ""
+  govt_autarchy_delegated_representation: "Delegated Representation"
+  govt_autarchy_delegated_representation_desc: ""
+  govt_autarchy_democratic_centralization: "Democratic Centralization"
+  govt_autarchy_democratic_centralization_desc: ""
+  govt_autarchy_democratic_representation: "Democratic Representation"
+  govt_autarchy_democratic_representation_desc: ""
+  govt_autarchy_anarchy: "Anarchy"
+  govt_autarchy_anarchy_desc: ""
+#
+
+# Trigger Tooltips
+ govt_article_locked_tooltip: " is locked from changing $ARTICLE_TYPE|Y$ Article"
+ govt_article_invalid_threshold_less_than_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be less than $AUTARCHY_MAX_VALUE|Y%%$)"
+ govt_article_invalid_threshold_between_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be between $AUTARCHY_MIN_VALUE|Y%%$ and $AUTARCHY_MAX_VALUE|Y%%$)"
+ govt_article_invalid_threshold_greater_than_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be greater than $AUTARCHY_MIN_VALUE|Y%%$ )"
+#
+# Modifiers
+ government_article_all_unlocked_rule: "Enable Rule: §YChange All Articles§!"
+ government_article_autarchy_locked_rule: "Disable Rule: §YChange Autarchy Article§!"

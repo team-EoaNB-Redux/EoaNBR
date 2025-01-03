@@ -1,0 +1,117 @@
+guiTypes = {
+	containerWindowType = {
+		name = government_tab
+		position = { x = -606 y = 142 }
+		show_position = { x = -6 y = 142 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width = 540 height = 100%% }
+
+		background = {
+			name = "bg"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		# Header
+			containerWindowType = {
+				name = "tab_header"
+
+				size = { width = 536 height = 44 }
+				position = { x = 5 y = 3 }
+
+				background = {
+					name = "production_header_bg"
+					quadTextureSprite = "GFX_tiled_header_1"
+				}
+				instantTextboxType = {
+					name = "government_tab_header_title"
+					position = { x = 42 y = 5 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "GOVERNMENT_TAB_TITLE"
+					maxWidth = 400
+					maxHeight = 20
+					fixedsize = yes
+				}
+			}
+			buttonType = {
+				name = "close_button"
+				position = { x = -42 y = 9 }
+				quadTextureSprite = "GFX_closebutton"
+				buttonFont = "Main_14_black"
+				shortcut = "ESCAPE"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+			}
+		#
+
+		containerWindowType = {
+			name = government_summary
+			position = { x = 0 y = 45 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_eoanbr_tiled_window_transparent"
+			}
+
+			iconType = {
+				name = govt_leader_portrait
+				spriteType = GFX_blank_leader_portrait
+				position = { x = 4 y = 4 }
+				context_aware_tooltip = {
+					localization_key = govt_character_tooltip
+					TITLE = [Country.GetGovtRulingLeaderTitle]
+					NAME = [Country.GetGovtRulingLeaderName]
+					AGE = [Country.GetGovtRulingLeaderAge]
+					AFFILIATION = [Country.GetGovtRulingLeaderAffiliation]
+					IDEOLOGY = [Country.GetGovtRulingLeaderIdeology]
+				}
+				scale = 0.65			
+			}
+			iconType = {
+				name = govt_leader_portrait_frame
+				spriteType = GFX_pol_leader_frame
+				position = { x = 3 y = 3 }
+				scale = 0.6
+			}
+			iconType = {
+				name = govt_secondary_leader_portrait
+				spriteType = GFX_blank_leader_portrait
+				position = { x = 30 y = 45 }
+				context_aware_tooltip = {
+					localization_key = govt_character_tooltip
+					TITLE = [Country.GetGovtSecondaryLeaderTitle]
+					NAME = [Country.GetGovtSecondaryLeaderName]
+					AGE = [Country.GetGovtSecondaryLeaderAge]
+					AFFILIATION = [Country.GetGovtSecondaryLeaderAffiliation]
+					IDEOLOGY = [Country.GetGovtSecondaryLeaderIdeology]
+				}
+				scale = 0.35
+				rotation = 0.15
+			}
+			iconType = {
+				name = govt_secondary_leader_portrait_frame
+				spriteType = GFX_pol_leader_frame
+				position = { x = 30 y = 45 }
+				scale = 0.37
+			}
+
+			instantTextBoxType = {
+				name = goverment_type_title
+				position = { x = 40 y = 10 }
+				context_aware_text =  {
+					localization_key = government_type_title_text
+					GOVT_TYPE = [Country.GetGovtType]
+					RULING_PARTY = [Country.GetGovtRulingLeaderAffiliation]
+					IDEOLOGY = [Country.GetGovernmentRulingLeaderIdeology]
+				}
+				context_aware_tooltip = {
+					localization_key = government_type_title_tooltip
+				}
+			}
+		}
+	}
+}

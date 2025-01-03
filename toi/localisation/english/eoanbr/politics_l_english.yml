@@ -1,0 +1,8 @@
+﻿l_english:
+# Trigger Tooltips
+ govt_political_legitimacy_is_greater_than_tooltip: "£political_stability_texticon §YPolitical Legitimacy§! is Greater Than $VALUE|Y$"
+ govt_political_legitimacy_is_less_than_tooltip: "£political_stability_texticon §YPolitical Legitimacy§! is Less Than $VALUE|Y$"
+ govt_political_stability_is_greater_than_tooltip: "£political_stability_texticon §YPolitical Stability§! is Greater Than $VALUE|Y$"
+ govt_political_stability_is_less_than_tooltip: "£political_stability_texticon §YPolitical Stability§! is Less Than $VALUE|Y$"
+ govt_political_strength_is_greater_than_tooltip: "£political_stability_texticon §YPolitical Strength§! is Greater Than $VALUE|Y$"
+ govt_political_strength_is_less_than_tooltip: "£political_stability_texticon §YPolitical Strength§! is Less Than $VALUE|Y$"

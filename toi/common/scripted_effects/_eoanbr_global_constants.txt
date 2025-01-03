@@ -2,6 +2,14 @@ eoanbr_constants_setup = {
 	eoanbr_institutions_constants_setup = yes
 	eoanbr_pops_constant_setup = yes
 }
+eoanbr_government_constants_setup = {
+	
+	#Government Types
+		add_to_array = { array = global.eoanbr_government_types_array value = token:govt_absolute_monarchy }
+			set_variable = { var = global.autarchy_min@token: value = constant:govt_autarchy_threshold:absolutist_min }
+			set_variable = { var = global.autarchy_max value = constant:govt_autarchy_threshold:absolutist_max }
+
+}
 eoanbr_institutions_constants_setup = {
 	clear_array = eoanbr_institutions_array
 	clear_array = eoanbr_institutions_innovative_array
