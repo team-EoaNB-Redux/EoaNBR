@@ -737,8 +737,8 @@ spriteTypes = {
 				texturefile = "gfx/interface/demographics/culture/romance/culture_norteno.dds"
 			}
 			spriteType = {
-				name = "GFX_culture_north_platinean"
-				texturefile = "gfx/interface/demographics/culture/romance/culture_north_platinean.dds"
+				name = "GFX_culture_platinean"
+				texturefile = "gfx/interface/demographics/culture/romance/culture_platinean.dds"
 			}
 			spriteType = {
 				name = "GFX_culture_patagonian"

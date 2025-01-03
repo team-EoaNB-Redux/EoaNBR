@@ -7,12 +7,12 @@ scripted_gui = {
 		visible = {
 			always = yes
 		}
-		
+
 		triggers = {
 			# topbar_page_bg_visible = {
 				# check_variable = { show_local_topbar_page > 1 }
 			# }
-		
+
 			#custom button triggers go here
 			mhc_button_click_enabled = {
 				mhc_system_active_trigger = yes
@@ -31,14 +31,14 @@ scripted_gui = {
 				NOT={has_variable = afr_prosperity_mechanic_value}
 			}
 		}
-		
+
 		dynamic_lists = {
 			statistics_budget_graph = {
 				array = budget_graph_amount_array
 				entry_container = state_gdp_point_entry
 			}
 		}
-		
+
 		effects = {
 			# page_button_click = {
 				# if = {
@@ -59,7 +59,7 @@ scripted_gui = {
 				# }
 			# }
 			open_budget_screen_click={
-				if = { 
+				if = {
 					limit = {
 						NOT = {
 							ROOT = {
@@ -77,7 +77,7 @@ scripted_gui = {
 					}
 				}
 			}
-			
+
 			mhc_button_click = {
 				if = {
 					limit = {
@@ -114,7 +114,7 @@ scripted_gui = {
 					clr_country_flag = eoanbr_ledger_view_flag
 				}
 			}
-			
+
 			open_internal_politics_click = {
 				if = {
 					limit = { NOT = { has_country_flag = TTT_opened } }
@@ -149,7 +149,7 @@ scripted_gui = {
 					clr_country_flag = eoanbr_ledger_view_flag
 				}
 			}
-			
+
 			open_strata_screen_click = {
 				if = {
 					limit = { NOT = { has_country_flag = population_economy_view_open } }
@@ -227,6 +227,10 @@ scripted_gui = {
 					clr_country_flag = eoanbr_ledger_view_flag
 				}
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 }

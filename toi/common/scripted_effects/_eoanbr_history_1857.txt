@@ -2315,7 +2315,7 @@ eoanbr_history_1857 = {
 		99 = { #Jutland
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_danish } # Danish
-					set_variable = { percentage@token:culture_danish = 1 }
+					set_variable = { percentage@token:culture_danish = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant } # Protestant
 				set_variable = { percentage@token:religion_protestant = 1.0 }
@@ -3095,7 +3095,7 @@ eoanbr_history_1857 = {
 		142 = { #Vestlandet
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_norwegian }
-				set_variable = { percentage@token:culture_norwegian = 1 }
+				set_variable = { percentage@token:culture_norwegian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant }
 				set_variable = { percentage@token:religion_protestant = 1.0 }
@@ -4112,9 +4112,9 @@ eoanbr_history_1857 = {
 		197 = { #Kherson
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_ruthenian } # Ukrainian
-					set_variable = { percentage@token:culture_ruthenian = 0.72 }
+					set_variable = { percentage@token:culture_ruthenian = 0.59 }
 					add_to_array = { pops_culture_array = token:culture_ashkenazi } # Jewish
-					set_variable = { percentage@token:culture_ashkenazi = 0.28 }
+					set_variable = { percentage@token:culture_ashkenazi = 0.23 }
 					add_to_array = { pops_culture_array = token:culture_russian } # russian
 					set_variable = { percentage@token:culture_russian = 0.12 }
 					add_to_array = { pops_culture_array = token:culture_moldavian } # Moldovan-Romanian
@@ -4125,11 +4125,11 @@ eoanbr_history_1857 = {
 					set_variable = { percentage@token:culture_polish = 0.01 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_orthodox } # Orthodox
-				set_variable = { percentage@token:religion_orthodox = 0.78 }
+				set_variable = { percentage@token:religion_orthodox = 0.72 }
 				add_to_array = { pops_religion_array = token:religion_jewish } # Jewish
-				set_variable = { percentage@token:religion_sunni = 0.18 }
+				set_variable = { percentage@token:religion_sunni = 0.23 }
 				add_to_array = { pops_religion_array = token:religion_catholic } # Catholic
-				set_variable = { percentage@token:religion_jewish = 0.03 }
+				set_variable = { percentage@token:religion_jewish = 0.04 }
 				add_to_array = { pops_religion_array = token:religion_protestant } # Protestant
 				set_variable = { percentage@token:religion_protestant = 0.01 }
 			#
@@ -4282,7 +4282,7 @@ eoanbr_history_1857 = {
 					add_to_array = { pops_culture_array = token:culture_ashkenazi } # Jewish
 					set_variable = { percentage@token:culture_ashkenazi = 0.107 }
 					add_to_array = { pops_culture_array = token:culture_russian } # russian
-					set_variable = { percentage@token:culture_russian = 0.045 }
+					set_variable = { percentage@token:culture_russian = 0.05 }
 					add_to_array = { pops_culture_array = token:culture_polish } # Polish
 					set_variable = { percentage@token:culture_polish = 0.014 }
 					add_to_array = { pops_culture_array = token:culture_crimean_german } # Volga-German
@@ -4496,14 +4496,14 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		211 = { #Angora
+		211 = { #Southern Tulcea
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_bulgarian }#bulgarian
 				set_variable = { percentage@token:culture_bulgarian = 0.49 }
 				add_to_array = { pops_culture_array = token:culture_thracian }#thracian Turkish
 				set_variable = { percentage@token:culture_thracian = 0.28 }
-				add_to_array = { pops_culture_array = token:culture_avar }#caucasian
-				set_variable = { percentage@token:culture_avar = 0.12 }
+				add_to_array = { pops_culture_array = token:culture_crimean_tartar }#caucasian
+				set_variable = { percentage@token:culture_crimean_tartar = 0.12 }
 				add_to_array = { pops_culture_array = token:culture_armenian }#armenians
 				set_variable = { percentage@token:culture_armenian = 0.08 }
 				add_to_array = { pops_culture_array = token:culture_ashkenazi } #jews (european)
@@ -4837,9 +4837,9 @@ eoanbr_history_1857 = {
 		225 = { # Kostroma
 			# Culture
 					add_to_array = { pops_culture_array = token:culture_russian } # russian
-					set_variable = { percentage@token:culture_russian = 0.68 }
+					set_variable = { percentage@token:culture_russian = 0.64 }
 					add_to_array = { pops_culture_array = token:culture_mari } # Komi
-					set_variable = { percentage@token:culture_mari = 0.18 }
+					set_variable = { percentage@token:culture_mari = 0.16 }
 					add_to_array = { pops_culture_array = token:culture_volga_tatar } # Tatars
 					set_variable = { percentage@token:culture_volga_tatar = 0.11 }
 					add_to_array = { pops_culture_array = token:culture_ashkenazi } # Jewish
@@ -4855,6 +4855,8 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:religion_sunni = 0.09 }
 				add_to_array = { pops_religion_array = token:religion_shamanist } # Shamanism
 				set_variable = { percentage@token:religion_shamanist = 0.08 }
+				add_to_array = { pops_religion_array = token:religion_jewish } # Jewish
+				set_variable = { percentage@token:religion_jewish = 0.08 }
 
 			#
 			# Other
@@ -5574,10 +5576,10 @@ eoanbr_history_1857 = {
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_russian } # Russian
 				set_variable = { percentage@token:culture_russian = 0.43 }
-				add_to_array = { pops_culture_array = token:culture_ruthenian } # Mordvins
-				set_variable = { percentage@token:culture_ruthenian = 0.23 }
 				add_to_array = { pops_culture_array = token:culture_volga_tatar } # Volga Tatar
 				set_variable = { percentage@token:culture_volga_tatar = 0.20 }
+				add_to_array = { pops_culture_array = token:culture_ruthenian } # Ruthenian
+				set_variable = { percentage@token:culture_ruthenian = 0.13 }
 				add_to_array = { pops_culture_array = token:culture_mordvin } # Mordvins
 				set_variable = { percentage@token:culture_mordvin = 0.12 }
 				add_to_array = { pops_culture_array = token:culture_ashkenazi } # Jewish
@@ -6054,24 +6056,16 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		278 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		278 = { #Buenos Aires
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -6348,14 +6342,14 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		290 = { #Angora
+		290 = { #Er Rif
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_moroccan }
 				set_variable = { percentage@token:culture_moroccan = 0.934 }
 				add_to_array = { pops_culture_array = token:culture_hassaniya }
 				set_variable = { percentage@token:culture_hassaniya = 0.037 }
 				add_to_array = { pops_culture_array = token:culture_mizrahi }
-				set_variable = { percentage@token:culture_mizrahi = 0.02 }
+				set_variable = { percentage@token:culture_mizrahi = 0.029 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.965 }
@@ -6427,10 +6421,10 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		294 = { #Angora
+		294 = { #Muscat
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_omani }
-				set_variable = { percentage@token:culture_omani = 0.01 }
+				set_variable = { percentage@token:culture_omani = 0.89 }
 				add_to_array = { pops_culture_array = token:culture_gulf }
 				set_variable = { percentage@token:culture_gulf = 0.06 }
 				add_to_array = { pops_culture_array = token:culture_dhofari }
@@ -6532,30 +6526,22 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_southern_english = 1.000 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_anglican }
-				set_variable = { percentage@token:religion_anglican = 1 }
+				set_variable = { percentage@token:religion_anglican = 1.00 }
 
 			#
 			# Other
 			#
 		}
-		300 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		300 = { #Montevideo
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -6590,22 +6576,21 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_bolivan = 1.0 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
 			#
 		}
-		303 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1.0 }
-
+		303 = { #San Martin
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -6613,7 +6598,7 @@ eoanbr_history_1857 = {
 		304 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_central_american } #Central American
-				set_variable = { percentage@token:culture_central_american = 1 }
+				set_variable = { percentage@token:culture_central_american = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 1.0 }
@@ -6625,10 +6610,10 @@ eoanbr_history_1857 = {
 		}
 		305 = { #Angora
 			# Culture
-				add_to_array = { pops_culture_array = token:culture_montubio } #Montubio
-				set_variable = { percentage@token:culture_montubio = 0.8 }
 				add_to_array = { pops_culture_array = token:culture_ecuadorian } #Ecuatorian
-				set_variable = { percentage@token:culture_ecuadorian = 0.2 }
+				set_variable = { percentage@token:culture_ecuadorian = 0.6 }
+				add_to_array = { pops_culture_array = token:culture_montubio } #Montubio
+				set_variable = { percentage@token:culture_montubio = 0.4 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 1.0 }
@@ -6676,7 +6661,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_southern_english = 0.17 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				set_variable = { percentage@token:religion_protestant = 1.00 }
 
 
 			#
@@ -6835,7 +6820,7 @@ eoanbr_history_1857 = {
 		319 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_caribeno } #Caribbean
-				set_variable = { percentage@token:culture_caribeno = 1 }
+				set_variable = { percentage@token:culture_caribeno = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 1.0 }
@@ -7982,14 +7967,14 @@ eoanbr_history_1857 = {
 			#
 		}
 		376 = { #Chincha Islands
-			# Culture
-				add_to_array = { pops_culture_array = token:culture_peruvian }
-				set_variable = { percentage@token:culture_peruvian = 1.00 }
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1.0 }
-
-
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -9529,12 +9514,12 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		446 = { #Angora
+		446 = { #Cairo
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_egyptian }
 				set_variable = { percentage@token:culture_egyptian = 0.88 }
 				add_to_array = { pops_culture_array = token:culture_saidi }
-				set_variable = { percentage@token:culture_saidi = 0.05 }
+				set_variable = { percentage@token:culture_saidi = 0.06 }
 				add_to_array = { pops_culture_array = token:culture_bedouin }
 				set_variable = { percentage@token:culture_bedouin = 0.03 }
 				add_to_array = { pops_culture_array = token:culture_nubian }
@@ -9848,7 +9833,7 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		462 = { #Er Rif
+		462 = { ##Marrakesh
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_moroccan }
 				set_variable = { percentage@token:culture_moroccan = 0.791 }
@@ -10119,7 +10104,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_mayan = 0.433 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10136,7 +10121,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.144 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10151,7 +10136,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_mexican = 0.309 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10166,7 +10151,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.366 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -10180,7 +10165,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.167 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10195,7 +10180,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.138 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10210,7 +10195,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.113 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 			#
 			# Other
 			#
@@ -10223,7 +10208,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.099 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10238,7 +10223,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.127 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10253,7 +10238,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.14 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10270,7 +10255,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.067 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -10286,7 +10271,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.438 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10301,7 +10286,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_amazonic = 0.3 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -10310,10 +10295,10 @@ eoanbr_history_1857 = {
 		487 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_llanero } #Llanero
-				set_variable = { percentage@token:culture_llanero = 1 }
+				set_variable = { percentage@token:culture_llanero = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10323,10 +10308,10 @@ eoanbr_history_1857 = {
 		488 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_guianan } #Guyanan
-				set_variable = { percentage@token:culture_guianan = 1 }
+				set_variable = { percentage@token:culture_guianan = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 			#
 			# Other
 			#
@@ -10341,7 +10326,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_venezuelan = 0.2 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10351,20 +10336,24 @@ eoanbr_history_1857 = {
 		490 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_amazonic } #Amazonic
-				set_variable = { percentage@token:culture_amazonic = 1 }
+				set_variable = { percentage@token:culture_amazonic = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
 			#
 		}
-		491 = { #Angora
+		491 = { #Loreto
 			# Culture
+				add_to_array = { pops_culture_array = token:culture_peruvian } #Amazonic
+				set_variable = { percentage@token:culture_peruvian = 0.85 }
+				add_to_array = { pops_culture_array = token:culture_amazonic } #Amazonic
+				set_variable = { percentage@token:culture_amazonic = 0.15 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10372,15 +10361,16 @@ eoanbr_history_1857 = {
 			#
 		}
 		492 = { #Angora
-			# Culture
-
-
-
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
-
-
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 0.89 }
+					add_to_array = { pops_culture_array = token:culture_aimara }
+					set_variable = { percentage@token:culture_aimara = 0.11 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -10395,20 +10385,24 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_colombian = 0.2 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
 			# Other
 			#
 		}
-		494 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
-
-
+		494 = { #Ucayali
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 0.80 }
+					add_to_array = { pops_culture_array = token:culture_aimara }
+					set_variable = { percentage@token:culture_aimara = 0.20 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -10469,11 +10463,11 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_afro_brazilian }
 				set_variable = { percentage@token:culture_afro_brazilian = 0.088 }
 				add_to_array = { pops_culture_array = token:culture_tupi }
-				set_variable = { percentage@token:culture_tupi = 0.039 }
+				set_variable = { percentage@token:culture_tupi = 0.04 }
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10493,7 +10487,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10515,7 +10509,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -10534,7 +10528,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10556,7 +10550,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10576,7 +10570,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10596,7 +10590,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10616,7 +10610,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -10642,7 +10636,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -10652,41 +10646,40 @@ eoanbr_history_1857 = {
 		506 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_chilean } #Chilean
-				set_variable = { percentage@token:culture_chilean = 1 }
+				set_variable = { percentage@token:culture_chilean = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
 			# Other
 			#
 		}
-		507 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_shamanist } #Shamanism
-				set_variable = { percentage@token:religion_shamanist = 1 }
+		507 = { #Magallanes
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_chon }
+					set_variable = { percentage@token:culture_chon = 1.00 }
 
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_animist }
+					set_variable = { percentage@token:religion_animist = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		508 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+		508 = { #Tucuman
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_platinean }
+					set_variable = { percentage@token:culture_platinean = 1.00 }
 
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -10710,60 +10703,46 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		510 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		510 = { #Santa Fe
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_platinean }
+					set_variable = { percentage@token:culture_platinean = 0.6 }
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 0.4 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
 		511 = { #Mendoza
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		512 = { #Angora
-			# Culture
-				add_to_array = { pops_culture_array = token:culture_tupi }#change to mapuche
-				set_variable = { percentage@token:culture_tupi = 1 }
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_shamanist } #Shamanism
-				set_variable = { percentage@token:religion_shamanist = 1 }
+		512 = { #Patagonia
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_chon }
+					set_variable = { percentage@token:culture_chon = 1.00 }
 
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_animist }
+					set_variable = { percentage@token:religion_animist = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -10948,10 +10927,10 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		521 = { #Angora
+		521 = { #Inner Queensland
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_nyungan }
-				set_variable = { percentage@token:culture_nyungan = 0.521 }
+				set_variable = { percentage@token:culture_nyungan = 0.519 }
 				add_to_array = { pops_culture_array = token:culture_australian }
 				set_variable = { percentage@token:culture_australian = 0.16 }
 				add_to_array = { pops_culture_array = token:culture_southern_english }
@@ -11054,7 +11033,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_confucian }
 				set_variable = { percentage@token:religion_confucian = 0.09 }
 				add_to_array = { pops_religion_array = token:religion_taoist }
-				set_variable = { percentage@token:religion_taoist = 0.08 }
+				set_variable = { percentage@token:religion_taoist = 0.07 }
 
 
 			#
@@ -11176,7 +11155,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_shinto }
 				set_variable = { percentage@token:religion_shinto = 0.59 }
 				add_to_array = { pops_religion_array = token:religion_mahayana }
-				set_variable = { percentage@token:religion_mahayana = 0.31 }
+				set_variable = { percentage@token:religion_mahayana = 0.41 }
 
 
 			#
@@ -11310,7 +11289,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_hokkaido = 0.18 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_shamanist }
-				set_variable = { percentage@token:religion_shamanist = 0.17 }
+				set_variable = { percentage@token:religion_shamanist = 0.82 }
 				add_to_array = { pops_religion_array = token:religion_shinto }
 				set_variable = { percentage@token:religion_shinto = 0.17 }
 				add_to_array = { pops_religion_array = token:religion_mahayana }
@@ -11520,16 +11499,14 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		548 = { #Angora
+		548 = { #Uganda
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_ankole }
-				set_variable = { percentage@token:culture_ankole = 0.88 }
+				set_variable = { percentage@token:culture_ankole = 0.76 }
 				add_to_array = { pops_culture_array = token:culture_basoga }
 				set_variable = { percentage@token:culture_basoga = 0.12 }
 				add_to_array = { pops_culture_array = token:culture_turkana }
-				set_variable = { percentage@token:culture_turkana = 0.88 }
-				add_to_array = { pops_culture_array = token:culture_basoga }
-				set_variable = { percentage@token:culture_basoga = 0.12 }
+				set_variable = { percentage@token:culture_turkana = 0.12 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist }
 				set_variable = { percentage@token:religion_animist = 1.00 }
@@ -11539,14 +11516,14 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		549 = { #Angora
+		549 = { #Sudan
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_sudanese }
 				set_variable = { percentage@token:culture_sudanese = 0.59 }
 				add_to_array = { pops_culture_array = token:culture_dinka }
 				set_variable = { percentage@token:culture_dinka = 0.31 }
 				add_to_array = { pops_culture_array = token:culture_fur }
-				set_variable = { percentage@token:culture_fur = 0.31 }
+				set_variable = { percentage@token:culture_fur = 0.10 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.81 }
@@ -11657,12 +11634,10 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_hokkaido }
 				set_variable = { percentage@token:culture_hokkaido = 0.07 }
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_shamanist }
+				set_variable = { percentage@token:culture_hokkaido = 0.93 }
+				add_to_array = { pops_religion_array = token:religion_shinto }
+				set_variable = { percentage@token:religion_shinto = 0.07 }
 
 
 			#
@@ -12083,9 +12058,9 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_shamanist }
 				set_variable = { percentage@token:religion_shamanist = 0.35 }
 				add_to_array = { pops_religion_array = token:religion_other_pagan }
-				set_variable = { percentage@token:religion_other_pagan = 0.25 }
+				set_variable = { percentage@token:religion_other_pagan = 0.20 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
-				set_variable = { percentage@token:religion_sunni = 0.17 }
+				set_variable = { percentage@token:religion_sunni = 0.07 }
 
 
 
@@ -12271,7 +12246,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_animist }
 				set_variable = { percentage@token:religion_animist = 0.18 }
 				add_to_array = { pops_religion_array = token:religion_other_pagan }
-				set_variable = { percentage@token:religion_other_pagan = 0.01 }
+				set_variable = { percentage@token:religion_other_pagan = 0.09 }
 
 
 			#
@@ -12760,7 +12735,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_amdo }
 				set_variable = { percentage@token:culture_amdo = 0.06 }
 				add_to_array = { pops_culture_array = token:culture_yunnanese }
-				set_variable = { percentage@token:culture_qiang = 0.03 }
+				set_variable = { percentage@token:culture_yunnanese = 0.03 }
 				add_to_array = { pops_culture_array = token:culture_she }
 				set_variable = { percentage@token:culture_she = 0.01 }
 			# Religion
@@ -12853,7 +12828,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_kalmyk }
 				set_variable = { percentage@token:culture_kalmyk = 0.12 }
 				add_to_array = { pops_culture_array = token:culture_hui }
-				set_variable = { percentage@token:culture_hui = 0.11 }
+				set_variable = { percentage@token:culture_hui = 0.10 }
 				add_to_array = { pops_culture_array = token:culture_uyghur }
 				set_variable = { percentage@token:culture_uyghur = 0.08 }
 				add_to_array = { pops_culture_array = token:culture_mongghul }
@@ -12911,7 +12886,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_confucian }
 				set_variable = { percentage@token:religion_confucian = 0.10 }
 				add_to_array = { pops_religion_array = token:religion_mahayana }
-				set_variable = { percentage@token:religion_mahayana = 0.03 }
+				set_variable = { percentage@token:religion_mahayana = 0.04 }
 				add_to_array = { pops_religion_array = token:religion_gelugpa }
 				set_variable = { percentage@token:religion_gelugpa = 0.02 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
@@ -13065,7 +13040,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_taoist }
 				set_variable = { percentage@token:religion_taoist = 0.15 }
 				add_to_array = { pops_religion_array = token:religion_shamanist }
-				set_variable = { percentage@token:religion_shamanist = 0.18 }
+				set_variable = { percentage@token:religion_shamanist = 0.14 }
 				add_to_array = { pops_religion_array = token:religion_shen }
 				set_variable = { percentage@token:religion_shen = 0.05 }
 				add_to_array = { pops_religion_array = token:religion_tengri }
@@ -13211,8 +13186,8 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_jin = 0.76 }
 				add_to_array = { pops_culture_array = token:culture_beijing }
 				set_variable = { percentage@token:culture_beijing = 0.14 }
-				add_to_array = { pops_culture_array = token:culture_jin }
-				set_variable = { percentage@token:culture_jin = 0.08 }
+				add_to_array = { pops_culture_array = token:culture_hui }
+				set_variable = { percentage@token:culture_hui = 0.08 }
 				add_to_array = { pops_culture_array = token:culture_chahar }
 				set_variable = { percentage@token:culture_chahar = 0.02 }
 			# Religion
@@ -13312,7 +13287,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_maonan = 0.02 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_sunni }
-				set_variable = { percentage@token:religion_sunni = 0.58 }
+				set_variable = { percentage@token:religion_sunni = 0.55 }
 				add_to_array = { pops_religion_array = token:religion_tengri }
 				set_variable = { percentage@token:religion_tengri = 0.24 }
 				add_to_array = { pops_religion_array = token:religion_gelugpa }
@@ -13454,7 +13429,7 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		623 = { #Angora
+		623 = { #Luzon
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_ilocano } # Ilocano
 				set_variable = { percentage@token:culture_ilocano = 0.73 }
@@ -13466,7 +13441,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_castillian = 0.02 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist } # Animist
-				set_variable = { percentage@token:religion_animist = 0.46 }
+				set_variable = { percentage@token:religion_animist = 0.52 }
 				add_to_array = { pops_religion_array = token:religion_catholic } # Catholic
 				set_variable = { percentage@token:religion_catholic = 0.28 }
 				add_to_array = { pops_religion_array = token:religion_sunni } # Sunni
@@ -13850,10 +13825,10 @@ eoanbr_history_1857 = {
 		645 = { #Iwo Jima
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_tokai }
-				set_variable = { percentage@token:culture_tokai = 1 }
+				set_variable = { percentage@token:culture_tokai = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_shinto }
-				set_variable = { percentage@token:religion_shinto = 1 }
+				set_variable = { percentage@token:religion_shinto = 1.00 }
 
 			#
 			# Other
@@ -13862,10 +13837,10 @@ eoanbr_history_1857 = {
 		646 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_micronesian } # Micronesian
-				set_variable = { percentage@token:culture_micronesian = 1 }
+				set_variable = { percentage@token:culture_micronesian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist } # Animist
-				set_variable = { percentage@token:religion_animist = 1 }
+				set_variable = { percentage@token:religion_animist = 1.00 }
 
 			#
 			# Other
@@ -13909,24 +13884,13 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		650 = { #Angora
+		650 = { #Attu Island
 			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-
-
-
+				add_to_array = { pops_culture_array = token:culture_chukchi }
+				set_variable = { percentage@token:culture_chukchi = 1.00 }
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				add_to_array = { pops_religion_array = token:religion_shamanist }
+				set_variable = { percentage@token:religion_shamanist = 1.00 }
 			#
 			# Other
 			#
@@ -13994,7 +13958,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_shamanist }
 				set_variable = { percentage@token:religion_shamanist = 0.53 }
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_orthodox = 0.18 }
+				set_variable = { percentage@token:religion_orthodox = 0.28 }
 				add_to_array = { pops_religion_array = token:religion_other_pagan }
 				set_variable = { percentage@token:religion_other_pagan = 0.18 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
@@ -14674,7 +14638,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_tupinamba = 0.063 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -14684,10 +14648,10 @@ eoanbr_history_1857 = {
 		688 = { #Chaco Boreal
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_llanero } #Llanero
-				set_variable = { percentage@token:culture_llanero = 1 }
+				set_variable = { percentage@token:culture_llanero = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -14702,7 +14666,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_southern_english = 0.17 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				set_variable = { percentage@token:religion_protestant = 1.00 }
 
 
 			#
@@ -14719,7 +14683,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_gulf = 0.01 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				set_variable = { percentage@token:religion_protestant = 1.00 }
 
 			#
 			# Other
@@ -14733,7 +14697,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_southern_english = 0.17 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				set_variable = { percentage@token:religion_protestant = 1.00 }
 
 
 			#
@@ -14748,7 +14712,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_southern_english = 0.13 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				set_variable = { percentage@token:religion_protestant  = 1.00 }
 
 
 			#
@@ -14765,7 +14729,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_gulf = 0.01 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				set_variable = { percentage@token:religion_protestant  = 1.00 }
 
 
 			#
@@ -14775,10 +14739,10 @@ eoanbr_history_1857 = {
 		694 = { #French Caribbean
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_afro_caribeno }
-				set_variable = { percentage@token:culture_afro_caribeno = 1 }
+				set_variable = { percentage@token:culture_afro_caribeno = 1.00 }
 			# Religion
-				add_to_array = { pops_religion_array = token:religion_protestant }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				add_to_array = { pops_religion_array = token:religion_catholic }
+				set_variable = { percentage@token:religion_catholic  = 1.00 }
 
 
 			#
@@ -14795,12 +14759,8 @@ eoanbr_history_1857 = {
 
 
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_catholic }
+				set_variable = { percentage@token:religion_catholic  = 1.00 }
 
 
 			#
@@ -14954,22 +14914,14 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		705 = { #Angora
+		705 = { #Sao Tome
 			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-
-
+				add_to_array = { pops_culture_array = token:culture_beirao }
+				set_variable = { percentage@token:culture_beirao = 1.00 }
 
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_catholic }
+				set_variable = { percentage@token:religion_catholic  = 1.00 }
 
 
 			#
@@ -15127,9 +15079,9 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_fengtian }
 				set_variable = { percentage@token:culture_fengtian = 0.08 }
 				add_to_array = { pops_culture_array = token:culture_chahar }
-				set_variable = { percentage@token:culture_khalkha = 0.07 }
+				set_variable = { percentage@token:culture_chahar = 0.07 }
 				add_to_array = { pops_culture_array = token:culture_kharchin }
-				set_variable = { percentage@token:culture_khalkha = 0.04 }
+				set_variable = { percentage@token:culture_kharchin = 0.04 }
 				add_to_array = { pops_culture_array = token:culture_xibe }
 				set_variable = { percentage@token:culture_xibe = 0.04 }
 				add_to_array = { pops_culture_array = token:culture_ruthenian }
@@ -15197,15 +15149,15 @@ eoanbr_history_1857 = {
 		716 = { #Shengjing
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_kharchin }
-				set_variable = { percentage@token:culture_kharchin = 0.36 }
+				set_variable = { percentage@token:culture_kharchin = 0.29 }
 				add_to_array = { pops_culture_array = token:culture_pyongan }
-				set_variable = { percentage@token:culture_pyongan = 0.34 }
+				set_variable = { percentage@token:culture_pyongan = 0.28 }
 				add_to_array = { pops_culture_array = token:culture_jiaoliao }
-				set_variable = { percentage@token:culture_jiaoliao = 0.22 }
+				set_variable = { percentage@token:culture_jiaoliao = 0.18 }
 				add_to_array = { pops_culture_array = token:culture_manchu }
-				set_variable = { percentage@token:culture_manchu = 0.21 }
+				set_variable = { percentage@token:culture_manchu = 0.17 }
 				add_to_array = { pops_culture_array = token:culture_fengtian }
-				set_variable = { percentage@token:culture_fengtian = 0.11 }
+				set_variable = { percentage@token:culture_fengtian = 0.08 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_confucian }
 				set_variable = { percentage@token:religion_confucian = 0.52 }
@@ -15422,7 +15374,7 @@ eoanbr_history_1857 = {
 		726 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_samoan } # Samoan
-					set_variable = { percentage@token:culture_samoan = 1 }
+					set_variable = { percentage@token:culture_samoan = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant } # Protestant
 					set_variable = { percentage@token:religion_protestant = 0.57 }
@@ -15439,10 +15391,10 @@ eoanbr_history_1857 = {
 		727 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_polynesian } # Polynesian
-					set_variable = { percentage@token:culture_polynesian = 1 }
+					set_variable = { percentage@token:culture_polynesian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist } # Animist
-				set_variable = { percentage@token:religion_animist = 1 }
+				set_variable = { percentage@token:religion_animist = 1.00 }
 
 
 			#
@@ -15581,7 +15533,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_melanesian = 1.0 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist } # Animist
-				set_variable = { percentage@token:religion_animist = 1 }
+				set_variable = { percentage@token:religion_animist = 1.00 }
 
 			#
 			# Other
@@ -15617,7 +15569,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_venetian = 0.20 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -15627,10 +15579,10 @@ eoanbr_history_1857 = {
 		737 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_melanesian } # Melanesian
-				set_variable = { percentage@token:culture_melanesian = 1 }
+				set_variable = { percentage@token:culture_melanesian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist } # Animist
-				set_variable = { percentage@token:religion_animist = 1 }
+				set_variable = { percentage@token:religion_animist = 1.00 }
 
 
 			#
@@ -15934,10 +15886,10 @@ eoanbr_history_1857 = {
 		753 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_tupi } #Amazonian
-				set_variable = { percentage@token:culture_tupi = 1 }
+				set_variable = { percentage@token:culture_tupi = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -16333,7 +16285,7 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		772= { #Angora
+		772= { #Ouagadougou
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_senufo }
 				set_variable = { percentage@token:culture_senufo = 0.44 }
@@ -16344,7 +16296,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_bozo }
 				set_variable = { percentage@token:culture_bozo = 0.05 }
 				add_to_array = { pops_culture_array = token:culture_bambara }
-				set_variable = { percentage@token:culture_bambara = 0.03 }
+				set_variable = { percentage@token:culture_bambara = 0.04 }
 				add_to_array = { pops_culture_array = token:culture_fulani }
 				set_variable = { percentage@token:culture_fulani = 0.03 }
 			# Religion
@@ -16367,7 +16319,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_temme }
 				set_variable = { percentage@token:culture_temme = 0.19 }
 				add_to_array = { pops_culture_array = token:culture_balante }
-				set_variable = { percentage@token:culture_malinke = 0.07 }
+				set_variable = { percentage@token:culture_balante = 0.07 }
 
 
 
@@ -16577,7 +16529,7 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		785 = { #Angora
+		785 = { #Vatican City
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_central_italian }
 				set_variable = { percentage@token:culture_central_italian = 0.86 }
@@ -16591,26 +16543,22 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_alemmanic = 0.01 }
 
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_catholic }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
 			# Other
 			#
 		}
-		786 = { #Angora
+		786 = { #Bamako
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_soninke }
 				set_variable = { percentage@token:culture_soninke = 0.41 }
 				add_to_array = { pops_culture_array = token:culture_bambara }
 				set_variable = { percentage@token:culture_bambara = 0.36 }
 				add_to_array = { pops_culture_array = token:culture_fulani }
-				set_variable = { percentage@token:culture_fulani = 0.24 }
+				set_variable = { percentage@token:culture_fulani = 0.23 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.84 }
@@ -16622,19 +16570,15 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		787 = { #Angora
+		787 = { #San Marino
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_tuscan }
 				set_variable = { percentage@token:culture_tuscan = 0.90 }
 				add_to_array = { pops_culture_array = token:culture_central_italian }
 				set_variable = { percentage@token:culture_central_italian = 0.10 }
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_catholic }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -16838,7 +16782,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.14 }
 				add_to_array = { pops_religion_array = token:religion_shiite }
-				set_variable = { percentage@token:religion_shiite = 0.02 }
+				set_variable = { percentage@token:religion_shiite = 0.04 }
 
 
 			#
@@ -17520,16 +17464,16 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		833 = { #Angora
+		833 = { #Bahr el Ghazal
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_dinka }
-				set_variable = { percentage@token:culture_dinka = 0.52 }
+				set_variable = { percentage@token:culture_dinka = 0.50 }
 				add_to_array = { pops_culture_array = token:culture_azande }
-				set_variable = { percentage@token:culture_azande = 0.28 }
+				set_variable = { percentage@token:culture_azande = 0.27 }
 				add_to_array = { pops_culture_array = token:culture_luo }
-				set_variable = { percentage@token:culture_luo = 0.13 }
+				set_variable = { percentage@token:culture_luo = 0.12 }
 				add_to_array = { pops_culture_array = token:culture_turkana }
-				set_variable = { percentage@token:culture_turkana = 0.12 }
+				set_variable = { percentage@token:culture_turkana = 0.11 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist }
 				set_variable = { percentage@token:religion_animist = 0.90 }
@@ -17891,7 +17835,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_shamanist }
 				set_variable = { percentage@token:religion_shamanist = 0.17 }
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_sunni = 0.05 }
+				set_variable = { percentage@token:religion_catholic = 0.04 }
 
 
 			#
@@ -19236,16 +19180,18 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		923 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+		923 = { #Parapaca
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 0.96 }
+					add_to_array = { pops_culture_array = token:culture_aimara }
+					set_variable = { percentage@token:culture_aimara = 0.04 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
 
+				#
 			#
 			# Other
 			#
@@ -19253,10 +19199,10 @@ eoanbr_history_1857 = {
 		924 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_chilean } #Chilean
-				set_variable = { percentage@token:culture_chilean = 1 }
+				set_variable = { percentage@token:culture_chilean = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -19306,10 +19252,10 @@ eoanbr_history_1857 = {
 		927 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_guianan } #Guyanan
-				set_variable = { percentage@token:culture_guianan = 1 }
+				set_variable = { percentage@token:culture_guianan = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -19853,7 +19799,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_austro_bavarian = 0.05 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -19902,7 +19848,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_bulgarian }
 				set_variable = { percentage@token:culture_bulgarian = 0.006 }
 				add_to_array = { pops_culture_array = token:culture_transylvanian_german }
-				set_variable = { percentage@token:culture_transylvanian_german = 0.002 }
+				set_variable = { percentage@token:culture_transylvanian_german = 0.001 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.518 }
@@ -19998,7 +19944,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_occitan = 0.07 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-						set_variable = { percentage@token:religion_catholic = 1 }
+						set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -20140,7 +20086,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_austro_bavarian = 0.055 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -20183,7 +20129,7 @@ eoanbr_history_1857 = {
 		972 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_francien }
-				set_variable = { percentage@token:culture_francien = 1 }
+				set_variable = { percentage@token:culture_francien = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 0.99 }
@@ -20253,7 +20199,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_confucian }
 				set_variable = { percentage@token:religion_confucian = 0.15 }
 				add_to_array = { pops_religion_array = token:religion_theravada }
-				set_variable = { percentage@token:religion_mahayana = 0.12 }
+				set_variable = { percentage@token:religion_theravada = 0.12 }
 				add_to_array = { pops_religion_array = token:religion_animist }
 				set_variable = { percentage@token:religion_animist = 0.08 }
 				add_to_array = { pops_religion_array = token:religion_mahayana }
@@ -20269,7 +20215,7 @@ eoanbr_history_1857 = {
 		975 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_francien }
-				set_variable = { percentage@token:culture_francien = 1 }
+				set_variable = { percentage@token:culture_francien = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 0.995 }
@@ -20349,10 +20295,10 @@ eoanbr_history_1857 = {
 		979 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_lombard } # Lombard
-				set_variable = { percentage@token:culture_lombard = 1 }
+				set_variable = { percentage@token:culture_lombard = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } # Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -20817,7 +20763,7 @@ eoanbr_history_1857 = {
 		998 = { #Champa
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_annamese } # Annamese
-				set_variable = { percentage@token:culture_tonkinese = 0.54 }
+				set_variable = { percentage@token:culture_annamese = 0.54 }
 				add_to_array = { pops_culture_array = token:culture_cham } # Cham
 				set_variable = { percentage@token:culture_cham = 0.23 }
 				add_to_array = { pops_culture_array = token:culture_khmer } # Khmer
@@ -21180,17 +21126,17 @@ eoanbr_history_1857 = {
 		1015 = { #Pyongyang
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_pyongan }
-				set_variable = { percentage@token:culture_pyongan = 0.59 }
+				set_variable = { percentage@token:culture_pyongan = 0.56 }
 				add_to_array = { pops_culture_array = token:culture_hamgyong }
-				set_variable = { percentage@token:culture_hamgyong = 0.35 }
+				set_variable = { percentage@token:culture_hamgyong = 0.32 }
 				add_to_array = { pops_culture_array = token:culture_seoul }
-				set_variable = { percentage@token:culture_seoul = 0.14 }
+				set_variable = { percentage@token:culture_seoul = 0.12 }
 				
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_confucian }
-				set_variable = { percentage@token:religion_confucian = 0.76 }
+				set_variable = { percentage@token:religion_confucian = 0.69 }
 				add_to_array = { pops_religion_array = token:religion_shamanist }
-				set_variable = { percentage@token:religion_shamanist = 0.19 }
+				set_variable = { percentage@token:religion_shamanist = 0.16 }
 				add_to_array = { pops_religion_array = token:religion_mahayana }
 				set_variable = { percentage@token:religion_mahayana  = 0.08 }
 				add_to_array = { pops_religion_array = token:religion_cheondo }
@@ -21643,7 +21589,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -21669,7 +21615,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -21715,7 +21661,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -21735,7 +21681,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -21796,7 +21742,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -22041,7 +21987,7 @@ eoanbr_history_1857 = {
 		1057 = { #East Hubei
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_jianghuai }
-				set_variable = { percentage@token:culture_jianghuai = 0.49 }
+				set_variable = { percentage@token:culture_jianghuai = 0.48 }
 				add_to_array = { pops_culture_array = token:culture_gan }
 				set_variable = { percentage@token:culture_gan = 0.20 }
 				add_to_array = { pops_culture_array = token:culture_huguang }
@@ -22073,24 +22019,16 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1058 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1058 = { #Entre Rios
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22144,46 +22082,28 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1062 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+		1062 = { #Misiones
+			# Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guaranitico }
+					set_variable = { percentage@token:culture_guaranitico = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1063 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+		1063 = { #Chaco Central
+			# Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guaranitico }
+					set_variable = { percentage@token:culture_guaranitico = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22195,57 +22115,39 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_pardo }
 				set_variable = { percentage@token:culture_pardo = 0.081 }
 				add_to_array = { pops_culture_array = token:culture_guarani }
-				set_variable = { percentage@token:culture_guarani = 0.040 }
+				set_variable = { percentage@token:culture_guarani = 0.049 }
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
 			# Other
 			#
 		}
-		1065 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+		1065 = { #Apa
+			# Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guaranitico }
+					set_variable = { percentage@token:culture_guaranitico = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1066 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+		1066 = { #Fromosa
+			# Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guaranitico }
+					set_variable = { percentage@token:culture_guaranitico = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22267,8 +22169,8 @@ eoanbr_history_1857 = {
 		}
 		1068 = { #Angora
 			# Culture
-				add_to_array = { pops_culture_array = token:culture_rioplatense }
-				set_variable = { percentage@token:culture_rioplatense = 0.93 }
+				add_to_array = { pops_culture_array = token:culture_guaranitico }
+				set_variable = { percentage@token:culture_guaranitico = 0.93 }
 				add_to_array = { pops_culture_array = token:culture_afro_caribeno }
 				set_variable = { percentage@token:culture_afro_caribeno = 0.07 }
 			# Religion
@@ -22278,13 +22180,15 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1069 = { #Angora
-			# Culture
-				add_to_array = { pops_culture_array = token:culture_rioplatense }
-				set_variable = { percentage@token:culture_rioplatense = 1.00 }
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1.00 }
+		1069 = { #Conception
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guaranitico }
+					set_variable = { percentage@token:culture_guaranitico = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22308,7 +22212,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_llanero = 1.0 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -22329,7 +22233,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -22339,10 +22243,10 @@ eoanbr_history_1857 = {
 		1073 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_pioneer } #Cascadian
-				set_variable = { percentage@token:culture_pioneer = 1 }
+				set_variable = { percentage@token:culture_pioneer = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant } #Protestant
-				set_variable = { percentage@token:religion_protestant = 1 }
+				set_variable = { percentage@token:religion_protestant = 1.00 }
 
 
 			#
@@ -22520,24 +22424,16 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1081 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1081 = { #Colonia
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22545,23 +22441,26 @@ eoanbr_history_1857 = {
 		1082 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_llanero } #Llanero
-				set_variable = { percentage@token:culture_llanero = 1 }
+				set_variable = { percentage@token:culture_llanero = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
 			# Other
 			#
 		}
-		1083 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_shamanist } #Shamanism
-				set_variable = { percentage@token:religion_shamanist = 1 }
+		1083 = { #Tierra Del Fuego
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_chon }
+					set_variable = { percentage@token:culture_chon = 1.00 }
 
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_animist }
+					set_variable = { percentage@token:religion_animist = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22569,21 +22468,27 @@ eoanbr_history_1857 = {
 		1084 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_chilean } #Chilean
-				set_variable = { percentage@token:culture_chilean = 1 }
+				set_variable = { percentage@token:culture_chilean = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
 			#
 		}
-		1085 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+		1085 = { #Arica
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 0.96 }
+					add_to_array = { pops_culture_array = token:culture_aimara }
+					set_variable = { percentage@token:culture_aimara = 0.04 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
 
+				#
 			#
 			# Other
 			#
@@ -22591,10 +22496,10 @@ eoanbr_history_1857 = {
 		1086 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_chilean } #Chilean
-				set_variable = { percentage@token:culture_chilean = 1 }
+				set_variable = { percentage@token:culture_chilean = 1.00 }
 			# Religion
 		add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-		set_variable = { percentage@token:religion_catholic = 1 }
+		set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -22608,7 +22513,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_southern_english = 0.05 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -22623,20 +22528,23 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_markish = 0.1 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
 			# Other
 			#
 		}
-		1089 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_shamanist } #Shamanism
-				set_variable = { percentage@token:religion_shamanist = 1 }
+		1089 = { #Auracania
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_chon }
+					set_variable = { percentage@token:culture_chon = 1.00 }
 
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_animist }
+					set_variable = { percentage@token:religion_animist = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22649,7 +22557,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_markish = 0.15 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -22713,24 +22621,16 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1094 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1094 = { #Payasandu
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22743,60 +22643,54 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_llanero = 0.4 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
 			# Other
 			#
 		}
-		1096 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1096 = { #Maldonaldo
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1097 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1097 = { #Artigas
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_rioplatense }
+					set_variable = { percentage@token:culture_rioplatense = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1098 = { #Angora
+		1098 = { #Chaco Astral
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guarani }
+					set_variable = { percentage@token:culture_guarani = 1.00 }
+
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_animist }
+					set_variable = { percentage@token:religion_animist = 1.00 }
+				#
+			#
 			# Culture
-			# Religion
+			# Religionculture_guarani
 				add_to_array = { pops_religion_array = token:religion_animist }
 				set_variable = { percentage@token:religion_animist = 1.00 }
 
@@ -22806,124 +22700,100 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1099 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1099 = { #West Formosa
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guaranitico }
+					set_variable = { percentage@token:culture_guaranitico = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1100 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+		1100 = { #Puna de Atacama
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_chilean }
+					set_variable = { percentage@token:culture_chilean = 1.00 }
 
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1101 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1101 = { #Cordoba
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_platinean }
+					set_variable = { percentage@token:culture_platinean = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1102 = { #Salta and Jujuy
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1102 = { #
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guaranitico }
+					set_variable = { percentage@token:culture_guaranitico = 1.00 }
 
-
-
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1.00 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1103 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_shamanist } #Shamanism
-				set_variable = { percentage@token:religion_shamanist = 1 }
+		1103 = { #Neuquen
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_chon }
+					set_variable = { percentage@token:culture_chon = 1.00 }
 
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_animist }
+					set_variable = { percentage@token:religion_animist = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1104 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_shamanist } #Shamanism
-				set_variable = { percentage@token:religion_shamanist = 1 }
+		1104 = { #La Pampa
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_chon }
+					set_variable = { percentage@token:culture_chon = 1.00 }
 
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_animist }
+					set_variable = { percentage@token:religion_animist = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1105 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+		1105 = { #Pampas
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_chon }
+					set_variable = { percentage@token:culture_chon = 1.00 }
 
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
-
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_animist }
+					set_variable = { percentage@token:religion_animist = 1.00 }
+				#
 			#
 			# Other
 			#
@@ -22988,20 +22858,16 @@ eoanbr_history_1857 = {
 		}
 		1109 = { #Angora
 			# Culture
-			#	add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+				add_to_array = { pops_culture_array = token:culture_susa }
+				set_variable = { percentage@token:culture_susa = 0.56 }
+				add_to_array = { pops_culture_array = token:culture_balante }
+				set_variable = { percentage@token:culture_balante = 0.44 }
 
 
 
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_animist }
+				set_variable = { percentage@token:religion_animist = 1.00 }
 
 
 			#
@@ -23035,7 +22901,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_yoruba = 0.49 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist } #Animist
-				set_variable = { percentage@token:religion_animist = 1 }
+				set_variable = { percentage@token:religion_animist = 1.00 }
 
 
 			#
@@ -23050,7 +22916,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.08 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -23065,7 +22931,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.3 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -23082,7 +22948,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_mexican = 0.453 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -23211,7 +23077,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_lezgin } # Lezgins as Udi
 				set_variable = { percentage@token:culture_lezgin = 0.03 }
 			# Religion
-			add_to_array = { pops_religion_array = token:religion_sunni }
+			add_to_array = { pops_religion_array = token:religion_orthodox }
 				set_variable = { percentage@token:religion_orthodox = 0.59 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.38 }
@@ -23301,7 +23167,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.03 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -23316,7 +23182,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.02 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -23405,58 +23271,71 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1129 = { #Angora
+		1129 = { #Huanuco
 			# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
 			# Other
 			#
 		}
-		1130 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
-
-
+		1130 = { #Lima Area
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1131 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
-
-
+		1131 = { #Tacna
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 0.89 }
+					add_to_array = { pops_culture_array = token:culture_aimara }
+					set_variable = { percentage@token:culture_aimara = 0.11 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1132 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
-
-
+		1132 = { #Cusco
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 0.70 }
+					add_to_array = { pops_culture_array = token:culture_aimara }
+					set_variable = { percentage@token:culture_aimara = 0.30 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
-		1133 = { #Angora
-			# Culture
-			# Religion
-				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
-
-			#
-			# Other
+		1133 = { #Lima
+			#Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_peruvian }
+					set_variable = { percentage@token:culture_turkish = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 		}
 		1134 = { #Angora
@@ -23525,10 +23404,10 @@ eoanbr_history_1857 = {
 		1136 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_melanesian } # Melanesian
-				set_variable = { percentage@token:culture_melanesian = 1 }
+				set_variable = { percentage@token:culture_melanesian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_animist } # Animist
-				set_variable = { percentage@token:religion_animist = 1 }
+				set_variable = { percentage@token:religion_animist = 1.00 }
 
 
 
@@ -23558,31 +23437,23 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1138 = { #Angora
-			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-
-
-
-			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
-
+		1138 = { #Bajo Chaco
+			# Demographics
+				# Culture
+					add_to_array = { pops_culture_array = token:culture_guaranitico }
+					set_variable = { percentage@token:culture_guaranitico = 1.00 }
+				# Religion
+					add_to_array = { pops_religion_array = token:religion_catholic }
+					set_variable = { percentage@token:religion_catholic = 1.00 }
+				#
 			#
 			# Other
 			#
 		}
 		1139 = { #Angora
 			# Culture
-				add_to_array = { pops_culture_array = token:culture_rioplatense }
-				set_variable = { percentage@token:culture_rioplatense = 1.00 }
+				add_to_array = { pops_culture_array = token:culture_guaranitico }
+				set_variable = { percentage@token:culture_guaranitico = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 1.00 }
@@ -23847,7 +23718,7 @@ eoanbr_history_1857 = {
 						set_variable = { percentage@token:culture_piedmontese = 0.165 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -23860,7 +23731,7 @@ eoanbr_history_1857 = {
 					set_variable = { percentage@token:culture_central_american = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -23872,7 +23743,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_central_american = 1.00 }
 			# Religion
 		add_to_array = { pops_religion_array = token:religion_catholic }
-		set_variable = { percentage@token:religion_catholic = 1 }
+		set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -23880,22 +23751,23 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1156 = { #Angora
+		1156 = { #Qinzhou
 			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
-
-
-
+				add_to_array = { pops_culture_array = token:culture_cantonese }
+				set_variable = { percentage@token:culture_cantonese = 0.81 }
+				add_to_array = { pops_culture_array = token:culture_zhuang }
+				set_variable = { percentage@token:culture_zhuang = 0.16 }
+				add_to_array = { pops_culture_array = token:culture_tonkinese }
+				set_variable = { percentage@token:culture_tonkinese = 0.03 }
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_shen }
+				set_variable = { percentage@token:religion_shen = 0.47 }
+				add_to_array = { pops_religion_array = token:religion_taoist }
+				set_variable = { percentage@token:religion_taoist = 0.28 }
+				add_to_array = { pops_religion_array = token:religion_mahayana }
+				set_variable = { percentage@token:religion_mahayana = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_confucian }
+				set_variable = { percentage@token:religion_confucian = 0.05 }
 
 
 			#
@@ -23948,7 +23820,7 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1159 = { #Fuizhou
+		1159 = { #Fuzhou
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_min }
 				set_variable = { percentage@token:culture_min = 0.96 }
@@ -23963,7 +23835,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_shen }
 				set_variable = { percentage@token:religion_shen = 0.19 }
 				add_to_array = { pops_religion_array = token:religion_confucian }
-				set_variable = { percentage@token:religion_confucian = 0.10 }
+				set_variable = { percentage@token:religion_confucian = 0.11 }
 				add_to_array = { pops_religion_array = token:religion_taoist }
 				set_variable = { percentage@token:religion_taoist = 0.09 }
 				add_to_array = { pops_religion_array = token:religion_taiping }
@@ -24036,18 +23908,18 @@ eoanbr_history_1857 = {
 		}
 		1162 = { #Hangzhou
 			# Culture
-			add_to_array = { pops_culture_array = token:culture_wu }
-			set_variable = { percentage@token:culture_wu = 0.83 }
-			add_to_array = { pops_culture_array = token:culture_min }
-			set_variable = { percentage@token:culture_min = 0.10 }
-			add_to_array = { pops_culture_array = token:culture_jianghuai }
-			set_variable = { percentage@token:culture_jianghuai = 0.07 }
+				add_to_array = { pops_culture_array = token:culture_wu }
+				set_variable = { percentage@token:culture_wu = 0.83 }
+				add_to_array = { pops_culture_array = token:culture_min }
+				set_variable = { percentage@token:culture_min = 0.10 }
+				add_to_array = { pops_culture_array = token:culture_jianghuai }
+				set_variable = { percentage@token:culture_jianghuai = 0.07 }
 
 
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_mahayana }
-				set_variable = { percentage@token:religion_mahayana = 0.26 }
+				set_variable = { percentage@token:religion_mahayana = 0.27 }
 				add_to_array = { pops_religion_array = token:religion_shen }
 				set_variable = { percentage@token:religion_shen = 0.25 }
 				add_to_array = { pops_religion_array = token:religion_taoist }
@@ -24134,7 +24006,7 @@ eoanbr_history_1857 = {
 		1166 = { #Yancheng
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_jianghuai }
-				set_variable = { percentage@token:culture_beijing = 0.87 }
+				set_variable = { percentage@token:culture_jianghuai = 0.87 }
 				add_to_array = { pops_culture_array = token:culture_wu }
 				set_variable = { percentage@token:culture_wu = 0.10 }
 				add_to_array = { pops_culture_array = token:culture_jeolla }
@@ -24187,7 +24059,7 @@ eoanbr_history_1857 = {
 			# Culture
 				
 			add_to_array = { pops_culture_array = token:culture_jiaoliao }
-			set_variable = { percentage@token:culture_jiaoliao = 1 }
+			set_variable = { percentage@token:culture_jiaoliao = 1.00 }
 
 
 
@@ -24946,7 +24818,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_dalmatian = 0.02 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				set_variable = { percentage@token:religion_orthodox = 1.00 }
 
 
 			#
@@ -24963,7 +24835,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_dalmatian = 0.02 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_orthodox = 1 }
+				set_variable = { percentage@token:religion_orthodox = 1.00 }
 
 
 			#
@@ -25071,7 +24943,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_chugoku }
 				set_variable = { percentage@token:culture_chugoku = 0.84 }
 				add_to_array = { pops_culture_array = token:culture_honichi }
-				set_variable = { percentage@token:culture_honichi = 0.06 }
+				set_variable = { percentage@token:culture_honichi = 0.16 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_mahayana }
 				set_variable = { percentage@token:religion_mahayana = 0.61 }
@@ -25581,7 +25453,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_piedmontese = 0.05 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 			#
 			# Other
@@ -25616,7 +25488,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_venetian = 0.10 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -25634,7 +25506,7 @@ eoanbr_history_1857 = {
 
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_orthodox = 0.995 }
+				set_variable = { percentage@token:religion_orthodox = 0.95 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.05 }
 
@@ -25708,14 +25580,16 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1241 = { #Angora
+		1241 = { #Central Tulcea
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_crimean_tartar } # Crimea Tatar
-					set_variable = { percentage@token:culture_crimean_tartar = 0.31 }
+					set_variable = { percentage@token:culture_crimean_tartar = 0.36 }
 					add_to_array = { pops_culture_array = token:culture_wallachian } # Wallachian
-					set_variable = { percentage@token:culture_wallachian = 0.25 }
+					set_variable = { percentage@token:culture_wallachian = 0.30 }
 					add_to_array = { pops_culture_array = token:culture_bulgarian } # Bulgarian
-					set_variable = { percentage@token:culture_bulgarian = 0.22 }
+					set_variable = { percentage@token:culture_bulgarian = 0.27 }
+					add_to_array = { pops_culture_array = token:culture_avar } # Bulgarian
+					set_variable = { percentage@token:culture_avar = 0.07 }
 					add_to_array = { pops_culture_array = token:culture_aromanian } # Aromanian
 					set_variable = { percentage@token:culture_aromanian = 0.01 }
 			# Religion
@@ -25729,15 +25603,15 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1242 = { #Angora
+		1242 = { #Lasithi
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_cretan }
-				set_variable = { percentage@token:culture_cretan = 0.83 }
+				set_variable = { percentage@token:culture_cretan = 0.17 }
 				add_to_array = { pops_culture_array = token:culture_turkish }
 				set_variable = { percentage@token:culture_turkish = 0.27 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_orthodox = 0.83 }
+				set_variable = { percentage@token:religion_orthodox = 0.17 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.27 }
 
@@ -25845,7 +25719,7 @@ eoanbr_history_1857 = {
 					add_to_array = { pops_culture_array = token:culture_najdi }
 					set_variable = { percentage@token:culture_najdi = 0.33 }
 					add_to_array = { pops_culture_array = token:culture_jordanian }
-					set_variable = { percentage@token:culture_jordanian = 0.05 }
+					set_variable = { percentage@token:culture_jordanian = 0.06 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.98 }
@@ -25892,10 +25766,10 @@ eoanbr_history_1857 = {
 		1249 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_central_american } #Central American
-				set_variable = { percentage@token:culture_central_american = 1 }
+				set_variable = { percentage@token:culture_central_american = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -26025,7 +25899,7 @@ eoanbr_history_1857 = {
 		1255 = { #Jiuquan
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_lanyin }
-				set_variable = { percentage@token:culture_lanyin = 0.75 }
+				set_variable = { percentage@token:culture_lanyin = 0.74 }
 				add_to_array = { pops_culture_array = token:culture_amdo }
 				set_variable = { percentage@token:culture_amdo = 0.11 }
 				add_to_array = { pops_culture_array = token:culture_oirat }
@@ -26064,7 +25938,7 @@ eoanbr_history_1857 = {
 		1256 = { #Ningxia
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_lanyin }
-				set_variable = { percentage@token:culture_lanyin = 0.37 }
+				set_variable = { percentage@token:culture_lanyin = 0.47 }
 				add_to_array = { pops_culture_array = token:culture_hui }
 				set_variable = { percentage@token:culture_hui = 0.33 }
 				add_to_array = { pops_culture_array = token:culture_ordos }
@@ -26077,11 +25951,11 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_tengri }
 				set_variable = { percentage@token:religion_tengri = 0.36 }
 				add_to_array = { pops_religion_array = token:religion_sunni }
-				set_variable = { percentage@token:religion_sunni = 0.35 }
+				set_variable = { percentage@token:religion_sunni = 0.32 }
 				add_to_array = { pops_religion_array = token:religion_gelugpa }
 				set_variable = { percentage@token:religion_gelugpa = 0.18 }
 				add_to_array = { pops_religion_array = token:religion_shamanist }
-				set_variable = { percentage@token:religion_shamanist = 0.18 }
+				set_variable = { percentage@token:religion_shamanist = 0.08 }
 				add_to_array = { pops_religion_array = token:religion_confucian }
 				set_variable = { percentage@token:religion_confucian = 0.03 }
 				add_to_array = { pops_religion_array = token:religion_taoist }
@@ -26102,7 +25976,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_honichi }
 				set_variable = { percentage@token:culture_honichi = 0.16 }
 				add_to_array = { pops_culture_array = token:culture_hichiku }
-				set_variable = { percentage@token:culture_hichiku = 0.06 }
+				set_variable = { percentage@token:culture_hichiku = 0.08 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_shinto }
 				set_variable = { percentage@token:religion_shinto = 0.77 }
@@ -26338,7 +26212,7 @@ eoanbr_history_1857 = {
 		1271 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_magyar }
-				set_variable = { percentage@token:culture_magyar = 1 }
+				set_variable = { percentage@token:culture_magyar = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 0.89 }
@@ -26400,7 +26274,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_culture_array = token:culture_bulgarian }
 				set_variable = { percentage@token:culture_bulgarian = 0.18 }
 				add_to_array = { pops_culture_array = token:culture_thracian }
-				set_variable = { percentage@token:culture_thracian = 0.06 }
+				set_variable = { percentage@token:culture_thracian = 0.09 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_orthodox }
 				set_variable = { percentage@token:religion_orthodox = 0.49 }
@@ -26436,10 +26310,10 @@ eoanbr_history_1857 = {
 		1276 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_nahua } #Nahua?
-				set_variable = { percentage@token:culture_nahua = 1 }
+				set_variable = { percentage@token:culture_nahua = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -27048,7 +26922,7 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1307 = { #Angora
+		1307 = { #Danish East India
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_nicobarese } # Andamanese
 				set_variable = { percentage@token:culture_nicobarese = 0.97 }
@@ -27056,13 +26930,11 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_danish = 0.03 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_shiite } # Shia
-				set_variable = { percentage@token:religion_shiite = 0.51 }
+				set_variable = { percentage@token:religion_shiite = 0.69 }
 				add_to_array = { pops_religion_array = token:religion_hindu } # Hindu
-				set_variable = { percentage@token:religion_hindu = 0.29 }
-				add_to_array = { pops_religion_array = token:religion_shiite } # Shiite
-				set_variable = { percentage@token:religion_shiite = 0.18 }
+				set_variable = { percentage@token:religion_hindu = 0.28 }
 				add_to_array = { pops_religion_array = token:religion_protestant } # Protestant
-				set_variable = { percentage@token:religion_protestant = 0.02 }
+				set_variable = { percentage@token:religion_protestant = 0.03 }
 
 			#
 			# Other
@@ -27089,7 +26961,7 @@ eoanbr_history_1857 = {
 					set_variable = { percentage@token:culture_frisian = 0.32 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant } # Protestant
-				set_variable = { percentage@token:religion_protestant = 1 }
+				set_variable = { percentage@token:religion_protestant = 1.00 }
 
 
 
@@ -27251,8 +27123,8 @@ eoanbr_history_1857 = {
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_hindu } # Hindu
 				set_variable = { percentage@token:religion_hindu = 0.44 }
-				add_to_array = { pops_religion_array = token:religion_shiite } # Sunni
-				set_variable = { percentage@token:religion_shiite = 0.31 }
+				add_to_array = { pops_religion_array = token:religion_sunni } # Sunni
+				set_variable = { percentage@token:religion_sunni = 0.31 }
 				add_to_array = { pops_religion_array = token:religion_vajrayana } # Theravada
 				set_variable = { percentage@token:religion_vajrayana = 0.11 }
 				add_to_array = { pops_religion_array = token:religion_shiite } # Shiite
@@ -27296,10 +27168,10 @@ eoanbr_history_1857 = {
 		1318 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_caribeno } #Caribbean
-				set_variable = { percentage@token:culture_caribeno = 1 }
+				set_variable = { percentage@token:culture_caribeno = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -27374,10 +27246,10 @@ eoanbr_history_1857 = {
 		1322 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_bolivan } #Bolivian
-				set_variable = { percentage@token:culture_bolivan = 1 }
+				set_variable = { percentage@token:culture_bolivan = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -27431,7 +27303,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_llanero = 0.4 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 
@@ -27439,22 +27311,16 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1326 = { #Angora
+		1326 = { #Antartica
 			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+				add_to_array = { pops_culture_array = token:culture_kaifeng }
+				set_variable = { percentage@token:culture_kaifeng = 1.00 }
 
 
 
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_atheist }
+				set_variable = { percentage@token:religion_atheist = 1.00 }
 
 
 			#
@@ -27478,20 +27344,14 @@ eoanbr_history_1857 = {
 		}
 		1328 = { #Angora
 			# Culture
-				#add_to_array = { pops_culture_array = token:culture_turkish }
-				#set_variable = { percentage@token:culture_turkish = 0.96 }
-				#add_to_array = { pops_culture_array = token:culture_cappadocian }
-				#set_variable = { percentage@token:culture_cappadocian = 0.04 }
+				add_to_array = { pops_culture_array = token:culture_danish }
+				set_variable = { percentage@token:culture_danish = 1.00 }
 
 
 
 			# Religion
-				#add_to_array = { pops_religion_array = token:religion_orthodox }
-				#set_variable = { percentage@token:religion_orthodox = 0.43 }
-				#add_to_array = { pops_religion_array = token:religion_sunni }
-				#set_variable = { percentage@token:religion_sunni = 0.37 }
-				#add_to_array = { pops_religion_array = token:religion_jewish }
-				#set_variable = { percentage@token:religion_jewish = 0.20 }
+				add_to_array = { pops_religion_array = token:religion_protestant }
+				set_variable = { percentage@token:religion_protestant = 1.00 }
 
 
 			#
@@ -28033,10 +27893,10 @@ eoanbr_history_1857 = {
 		1354 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_norwegian }
-				set_variable = { percentage@token:culture_norwegian = 1 }
+				set_variable = { percentage@token:culture_norwegian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_protestant }
-				set_variable = { percentage@token:religion_protestant = 1 }
+				set_variable = { percentage@token:religion_protestant = 1.00 }
 
 
 			#
@@ -28138,7 +27998,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nahua = 0.06 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -28443,7 +28303,7 @@ eoanbr_history_1857 = {
 					add_to_array = { pops_culture_array = token:culture_najdi }
 					set_variable = { percentage@token:culture_najdi = 0.33 }
 					add_to_array = { pops_culture_array = token:culture_jordanian }
-					set_variable = { percentage@token:culture_jordanian = 0.05 }
+					set_variable = { percentage@token:culture_jordanian = 0.06 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_sunni }
 				set_variable = { percentage@token:religion_sunni = 0.98 }
@@ -28463,11 +28323,11 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_nenet = 0.14 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_shamanist } # Animist
-				set_variable = { percentage@token:religion_shamanist = 0.45 }
+				set_variable = { percentage@token:religion_shamanist = 0.48 }
 				add_to_array = { pops_religion_array = token:religion_ukonusko } # Ukonusko
-				set_variable = { percentage@token:religion_ukonusko = 0.26 }
+				set_variable = { percentage@token:religion_ukonusko = 0.30 }
 				add_to_array = { pops_religion_array = token:religion_orthodox } # Orthodox
-				set_variable = { percentage@token:religion_orthodox = 0.18 }
+				set_variable = { percentage@token:religion_orthodox = 0.22 }
 
 
 			#
@@ -28542,7 +28402,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_other_pagan }
 				set_variable = { percentage@token:religion_other_pagan = 0.16 }
 				add_to_array = { pops_religion_array = token:religion_tengri }
-				set_variable = { percentage@token:religion_tengri = 0.04 }
+				set_variable = { percentage@token:religion_tengri = 0.14 }
 
 
 			#
@@ -28574,7 +28434,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_tschadian = 0.08 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_sunni }
-				set_variable = { percentage@token:religion_sunni = 1 }
+				set_variable = { percentage@token:religion_sunni = 1.00 }
 
 
 			#
@@ -28835,7 +28695,7 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1393 = { #Angora
+		1393 = { #Kayah
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_karen } # Karen
 				set_variable = { percentage@token:culture_karen = 0.79 }
@@ -28851,7 +28711,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_shamanist } # Shamanist
 				set_variable = { percentage@token:religion_shamanist = 0.07 }
 				add_to_array = { pops_religion_array = token:religion_sunni } # Sunni
-				set_variable = { percentage@token:religion_sunni = 0.03 }
+				set_variable = { percentage@token:religion_sunni = 0.05 }
 
 
 			#
@@ -28878,7 +28738,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_shen }
 				set_variable = { percentage@token:religion_shen = 0.04 }
 				add_to_array = { pops_religion_array = token:religion_confucian }
-				set_variable = { percentage@token:religion_confucian = 0.01 }
+				set_variable = { percentage@token:religion_confucian = 0.02 }
 
 
 			#
@@ -29054,12 +28914,12 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1403 = { #Angora
+		1403 = { #Segou
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_bambara }
 				set_variable = { percentage@token:culture_bambara = 0.56 }
 				add_to_array = { pops_culture_array = token:culture_senufo }
-				set_variable = { percentage@token:culture_fulani = 0.23 }
+				set_variable = { percentage@token:culture_senufo = 0.23 }
 				add_to_array = { pops_culture_array = token:culture_dyula }
 				set_variable = { percentage@token:culture_dyula = 0.11 }
 				add_to_array = { pops_culture_array = token:culture_soninke }
@@ -29348,13 +29208,13 @@ eoanbr_history_1857 = {
 			# Other
 			#
 		}
-		1418 = { #Angora
+		1418 = { #Lower Acre
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_amazonian } #Amazonian
-				set_variable = { percentage@token:culture_amazonian = 1 }
+				set_variable = { percentage@token:culture_amazonian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -29364,10 +29224,10 @@ eoanbr_history_1857 = {
 		1419 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_amazonian } #Amazonian
-				set_variable = { percentage@token:culture_amazonian = 1 }
+				set_variable = { percentage@token:culture_amazonian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -29377,10 +29237,10 @@ eoanbr_history_1857 = {
 		1420 = { #Angora
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_amazonian } #Amazonian
-				set_variable = { percentage@token:culture_amazonian = 1 }
+				set_variable = { percentage@token:culture_amazonian = 1.00 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 
 
 			#
@@ -29395,7 +29255,7 @@ eoanbr_history_1857 = {
 				set_variable = { percentage@token:culture_amazonic = 0.25 }
 			# Religion
 				add_to_array = { pops_religion_array = token:religion_catholic } #Catholic
-				set_variable = { percentage@token:religion_catholic = 1 }
+				set_variable = { percentage@token:religion_catholic = 1.00 }
 			#
 			# Other
 			#
@@ -29799,9 +29659,9 @@ eoanbr_history_1857 = {
 		1439 = { #Dyarbakir
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_turkish }
-				set_variable = { percentage@token:culture_turkish = 0.47 }
+				set_variable = { percentage@token:culture_turkish = 0.45 }
 				add_to_array = { pops_culture_array = token:culture_armenian }
-				set_variable = { percentage@token:culture_armenian = 0.38 }
+				set_variable = { percentage@token:culture_armenian = 0.36 }
 				add_to_array = { pops_culture_array = token:culture_kurmanji }
 				set_variable = { percentage@token:culture_kurmanji = 0.19 }
 			# Religion
@@ -30079,7 +29939,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 0.64 }
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_jewish = 0.15 }
+				set_variable = { percentage@token:religion_orthodox = 0.15 }
 				add_to_array = { pops_religion_array = token:religion_jewish }
 				set_variable = { percentage@token:religion_jewish = 0.12 }
 				add_to_array = { pops_religion_array = token:religion_protestant }
@@ -30110,7 +29970,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 0.53 }
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_jewish = 0.31 }
+				set_variable = { percentage@token:religion_orthodox = 0.31 }
 				add_to_array = { pops_religion_array = token:religion_jewish }
 				set_variable = { percentage@token:religion_jewish = 0.13 }
 				add_to_array = { pops_religion_array = token:religion_protestant }
@@ -30134,7 +29994,7 @@ eoanbr_history_1857 = {
 				add_to_array = { pops_religion_array = token:religion_catholic }
 				set_variable = { percentage@token:religion_catholic = 0.61 }
 				add_to_array = { pops_religion_array = token:religion_orthodox }
-				set_variable = { percentage@token:religion_jewish = 0.31 }
+				set_variable = { percentage@token:religion_orthodox = 0.31 }
 				add_to_array = { pops_religion_array = token:religion_jewish }
 				set_variable = { percentage@token:religion_jewish = 0.05 }
 				add_to_array = { pops_religion_array = token:religion_protestant }
@@ -30147,9 +30007,9 @@ eoanbr_history_1857 = {
 		1455 = { #Olympus
 			# Culture
 				add_to_array = { pops_culture_array = token:culture_greek }#Maceadonian
-				set_variable = { percentage@token:culture_greek = 0.879 }
+				set_variable = { percentage@token:culture_greek = 0.779 }
 				add_to_array = { pops_culture_array = token:culture_aromanian }#Maceadonian
-				set_variable = { percentage@token:culture_aromanian = 0.3 }
+				set_variable = { percentage@token:culture_aromanian = 0.13 }
 				add_to_array = { pops_culture_array = token:culture_thracian }#thracian turkic
 				set_variable = { percentage@token:culture_thracian = 0.068 }
 				add_to_array = { pops_culture_array = token:culture_bulgarian } #bulgarian
@@ -30175,6 +30035,16 @@ eoanbr_history_1857 = {
 					set_variable = { party@token:ideology_solidarist = token:party_ARG_unitarian_party }
 					set_variable = { popularity@token:ideology_solidarist = 10.0 }
 				#
+				#Demographics
+					add_to_array = { pops_primary_culture_array = token:culture_fluminense }
+					add_to_array = { pops_promoted_culture_array = token:culture_amazonic }
+					add_to_array = { pops_promoted_culture_array = token:culture_caipira }
+					add_to_array = { pops_promoted_culture_array = token:culture_gaucho }
+					add_to_array = { pops_promoted_culture_array = token:culture_nordestino }
+					add_to_array = { pops_marginalized_culture_array = token:culture_afro_brazilian }
+					add_to_array = { pops_marginalized_culture_array = token:culture_pardo }
+					add_to_array = { pops_marginalized_culture_array = token:culture_amazonian }
+				#
 			}
 			APA = {
 				#Politics
@@ -30188,7 +30058,6 @@ eoanbr_history_1857 = {
 					add_to_array = { pops_promoted_culture_array = token:culture_amazonic }
 					add_to_array = { pops_promoted_culture_array = token:culture_caipira }
 					add_to_array = { pops_promoted_culture_array = token:culture_gaucho }
-					add_to_array = { pops_promoted_culture_array = token:culture_new_yorker }
 					add_to_array = { pops_promoted_culture_array = token:culture_nordestino }
 					add_to_array = { pops_marginalized_culture_array = token:culture_afro_brazilian }
 					add_to_array = { pops_marginalized_culture_array = token:culture_pardo }
@@ -30562,7 +30431,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 12 }
 			mhc_add_army_advisor = yes
 			###BAV Army Replacement Marker 1857###
@@ -30575,7 +30444,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 5 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
@@ -30612,7 +30481,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 27 }
 			mhc_add_army_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 2 }
@@ -30682,7 +30551,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 9 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
@@ -30716,8 +30585,8 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 } #Albrecht von Österreich-Teschen
-			set_temp_variable = { temp_advisor_trait = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 } #Albrecht von Österreich-Teschen
+			set_temp_variable = { temp_advisor_trait = 1.00 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
 			set_temp_variable = { temp_advisor_frame = 2 } #Ludwig von Gablenz
@@ -30753,7 +30622,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 35 }
 			mhc_add_army_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 2 }
@@ -30778,8 +30647,8 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
-			set_temp_variable = { temp_advisor_trait = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
+			set_temp_variable = { temp_advisor_trait = 1.00 }
 			mhc_add_army_advisor = yes
 			###RYU Army Replacement Marker 1857###
 		}
@@ -30791,7 +30660,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 11 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
@@ -30811,8 +30680,8 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
-			set_temp_variable = { temp_advisor_trait = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
+			set_temp_variable = { temp_advisor_trait = 1.00 }
 			mhc_add_army_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 2 }
 			set_temp_variable = { temp_advisor_trait = 20 }
@@ -30861,7 +30730,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 } #Eduard von Bonin
+			set_temp_variable = { temp_advisor_frame = 1.00 } #Eduard von Bonin
 			set_temp_variable = { temp_advisor_trait = 15 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
@@ -30895,7 +30764,7 @@ mhc_setup_army_officials_1857 = {
 			set_temp_variable = { temp_advisor_trait = 37 }
 			mhc_add_army_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 11 } #Adolf von Bonin
-			set_temp_variable = { temp_advisor_trait = 1 }
+			set_temp_variable = { temp_advisor_trait = 1.00 }
 			mhc_add_army_advisor = yes
 			#set_temp_variable = { temp_advisor_frame = 12 } #Albrecht von Roon
 			#set_temp_variable = { temp_advisor_trait = 36 }
@@ -30915,7 +30784,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 5 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
@@ -30940,7 +30809,7 @@ mhc_setup_army_officials_1857 = {
 		###SIX END###
 		###BAD START###
 		BAD = {
-			set_temp_variable = { temp_advisor_frame = 1 } #Damian Ludwig
+			set_temp_variable = { temp_advisor_frame = 1.00 } #Damian Ludwig
 			set_temp_variable = { temp_advisor_trait = 11 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
@@ -30977,7 +30846,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 } #Bernhard von Rabenhorst
+			set_temp_variable = { temp_advisor_frame = 1.00 } #Bernhard von Rabenhorst
 			set_temp_variable = { temp_advisor_trait = 12 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
@@ -31007,7 +30876,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 } #Carl Lundbye
+			set_temp_variable = { temp_advisor_frame = 1.00 } #Carl Lundbye
 			set_temp_variable = { temp_advisor_trait = 33 }
 			mhc_add_army_advisor = yes
 			mhc_add_mark_advisor_as_high_army_brass = yes
@@ -31045,7 +30914,7 @@ mhc_setup_army_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 37 }
 			mhc_add_army_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 2 }
@@ -31108,7 +30977,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 } #Prinz Adalbert von Preußen
+			set_temp_variable = { temp_advisor_frame = 1.00 } #Prinz Adalbert von Preußen
 			set_temp_variable = { temp_advisor_trait = 110 }
 			mhc_add_navy_advisor = yes
 			mhc_add_mark_advisor_as_high_navy_brass = yes
@@ -31155,7 +31024,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 133 }
 			mhc_add_navy_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 2 }
@@ -31191,7 +31060,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 122 }
 			mhc_add_navy_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 2 }
@@ -31215,7 +31084,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 100 }
 			mhc_add_navy_advisor = yes
 			mhc_add_mark_advisor_as_high_navy_brass = yes
@@ -31235,7 +31104,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 110 }
 			mhc_add_navy_advisor = yes
 			mhc_add_mark_advisor_as_high_navy_brass = yes
@@ -31255,7 +31124,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 } #Maximilian von Österreich
+			set_temp_variable = { temp_advisor_frame = 1.00 } #Maximilian von Österreich
 			set_temp_variable = { temp_advisor_trait = 102 }
 			mhc_add_navy_advisor = yes
 			mhc_add_mark_advisor_as_high_navy_brass = yes
@@ -31293,7 +31162,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 100 }
 			mhc_add_navy_advisor = yes
 			mhc_add_mark_advisor_as_high_navy_brass = yes
@@ -31309,7 +31178,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 102 }
 			mhc_add_navy_advisor = yes
 			mhc_add_mark_advisor_as_high_navy_brass = yes
@@ -31335,7 +31204,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 103 }
 			mhc_add_navy_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 2 }
@@ -31353,7 +31222,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 }
+			set_temp_variable = { temp_advisor_frame = 1.00 }
 			set_temp_variable = { temp_advisor_trait = 100 }
 			mhc_add_navy_advisor = yes
 			set_temp_variable = { temp_advisor_frame = 2 }
@@ -31397,7 +31266,7 @@ mhc_setup_navy_officials_1857 = {
 				index = 0
 				value = 0
 			}
-			set_temp_variable = { temp_advisor_frame = 1 } #Steen Andersen Bille
+			set_temp_variable = { temp_advisor_frame = 1.00 } #Steen Andersen Bille
 			set_temp_variable = { temp_advisor_trait = 107 }
 			mhc_add_navy_advisor = yes
 			mhc_add_mark_advisor_as_high_navy_brass = yes

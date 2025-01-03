@@ -145,6 +145,9 @@ scripted_gui = {
 			}
 		}
 
+		ai_enabled = {
+			always = no
+		}
 	}
 	state_culture_summary_gui = {
 		window_name = "state_culture_details_container"
@@ -416,7 +419,10 @@ scripted_gui = {
 				}
 			}
 		}
-
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 	country_demographics_summary_gui = {
 		window_name = "country_demographics_summary_container"
@@ -459,6 +465,10 @@ scripted_gui = {
 			manage_demographics_religion_button_click = {
 				set_country_flag = eoanbr_country_demographics_religion_menu_flag
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 	country_culture_summary_gui = {
@@ -522,6 +532,10 @@ scripted_gui = {
 				entry_container = country_culture_entry
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 	country_religion_summary_gui = {
 		window_name = "country_demographics_religion_list_container"
@@ -584,12 +598,25 @@ scripted_gui = {
 				entry_container = country_religion_entry
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 #Mapmodes
 	eoanbr_religion_mapmode_country_gui = {
 		context_type = country_mapicon
 		mapmode = religion_map_mode
 		window_name = "eoanbr_religion_mapmode_country_container"
+
+		mapicon_targets = {
+			target_array = global.countries
+			target_trigger = {
+				# FROM = {
+					has_array = pops_religion_array
+				# }
+			}
+		}
 
 		properties = {
 			country_religion_icon = {
@@ -602,6 +629,15 @@ scripted_gui = {
 		mapmode = culture_map_mode
 
 		window_name = "eoanbr_culture_mapmode_country_container"
+
+		mapicon_targets = {
+			target_array = global.countries
+			target_trigger = {
+				FROM = {
+					has_array = pops_culture_array
+				}
+			}
+		}
 
 		properties = {
 			country_culture_icon = {

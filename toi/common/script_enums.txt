@@ -1849,9 +1849,9 @@
 					culture_mexican
 					culture_montubio
 					culture_norteno
-					culture_north_platinean
 					culture_patagonian
 					culture_peruvian
+					culture_platinean
 					culture_rioplatense
 					culture_venezuelan
 				#

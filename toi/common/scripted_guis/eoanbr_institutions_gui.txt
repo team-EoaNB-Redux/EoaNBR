@@ -63,7 +63,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -360,7 +360,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -657,7 +657,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -954,7 +954,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -1251,7 +1251,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -1448,7 +1448,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -1645,7 +1645,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -1942,7 +1942,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -2239,7 +2239,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -2536,7 +2536,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -2833,7 +2833,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -3130,7 +3130,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -3427,7 +3427,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -3724,7 +3724,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -4021,7 +4021,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -4318,7 +4318,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {
@@ -4615,7 +4615,7 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
+			always = no
 		}
 
 		triggers = {

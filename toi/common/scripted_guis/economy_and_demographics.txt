@@ -150,6 +150,10 @@ scripted_gui = {
 			}
 		}
 
+		ai_enabled = {
+			always = no
+		}
+
 	}
 	construction_economy = {
 		window_name = "construction_economy_container"
@@ -186,6 +190,10 @@ scripted_gui = {
 			construction_economy_button_click_enabled = {
 				always = yes
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 
 	}
@@ -272,7 +280,7 @@ scripted_gui = {
 			}
 			rgo_prospecting_button_click_enabled = {
 				is_fully_controlled_by = ROOT
-				
+
 				ROOT = {
 					set_temp_variable = { cost_temp = global.base_price@var:v }
 					multiply_temp_variable = { cost_temp = 10 }
@@ -418,7 +426,7 @@ scripted_gui = {
 				industrial_complex_construction_icon_visible = {
 					NOT = { check_variable = { construction@token:industrial_complex = 0 } }
 				}
-				industrial_complex_increase_size_button_click_enabled = {				
+				industrial_complex_increase_size_button_click_enabled = {
 					set_temp_variable = { industry_token = token:industrial_complex }
 					can_build_industry = yes
 					is_fully_controlled_by = ROOT
@@ -454,7 +462,7 @@ scripted_gui = {
 				arms_factory_construction_icon_visible = {
 					NOT = { check_variable = { construction@token:arms_factory = 0 } }
 				}
-				arms_factory_increase_size_button_click_enabled = {				
+				arms_factory_increase_size_button_click_enabled = {
 					set_temp_variable = { industry_token = token:arms_factory }
 					can_build_industry = yes
 					is_fully_controlled_by = ROOT
@@ -490,7 +498,7 @@ scripted_gui = {
 				dockyard_construction_icon_visible = {
 					NOT = { check_variable = { construction@token:dockyard = 0 } }
 				}
-				dockyard_increase_size_button_click_enabled = {				
+				dockyard_increase_size_button_click_enabled = {
 					set_temp_variable = { industry_token = token:dockyard }
 					can_build_industry = yes
 					is_coastal = yes
@@ -841,7 +849,7 @@ scripted_gui = {
 						}
 					}
 				}
-				
+
 				industrial_complex_increase_size_button_click = {
 					set_temp_variable = { x_temp = 1 }
 					set_temp_variable = { financer_temp = ROOT }
@@ -866,7 +874,7 @@ scripted_gui = {
 					refresh_construction_list = yes
 					add_to_variable = { update_state_econ_window = 1 }
 				}
-				
+
 				arms_factory_increase_size_button_click = {
 					set_temp_variable = { x_temp = 1 }
 					set_temp_variable = { financer_temp = ROOT }
@@ -891,7 +899,7 @@ scripted_gui = {
 					refresh_construction_list = yes
 					add_to_variable = { update_state_econ_window = 1 }
 				}
-				
+
 				dockyard_increase_size_button_click = {
 					set_temp_variable = { x_temp = 1 }
 					set_temp_variable = { financer_temp = ROOT }
@@ -1144,6 +1152,10 @@ scripted_gui = {
 				pie99 = { image = "[?pie_chart_pop_type^99.GetValueToPopType]" }
 			#
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	construction_list = {
 		window_name = "building_construction_container"
@@ -1241,6 +1253,10 @@ scripted_gui = {
 			construction_entry_resource = {
 				image = "[GetIconFromV]"
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 	pm_list = {
@@ -1367,6 +1383,10 @@ scripted_gui = {
 				image = "[GetPMListIcon]"
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	trade_buttons_tab = {
@@ -1380,6 +1400,10 @@ scripted_gui = {
 			trade_button_click = {
 				set_country_flag = trade_view_open
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 	market_tab = {
@@ -1656,6 +1680,10 @@ scripted_gui = {
 				index = i_type
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	market_list_view = {
 		window_name = "market_list_view"
@@ -1742,6 +1770,10 @@ scripted_gui = {
 				entry_container = market_entry
 				value = country_temp
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 	trade_window_tab = {
@@ -1996,6 +2028,10 @@ scripted_gui = {
 				entry_container = trade_route_entry
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	country_view_economy = {
@@ -2038,6 +2074,10 @@ scripted_gui = {
 			military_goods_icon = {
 				image = "[GetCurrencyIcon]"
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 	country_economy_window = {
@@ -3077,6 +3117,10 @@ scripted_gui = {
 				index = segment_idx
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	country_repay_debt_window = {
 		window_name = "country_repay_debt_window_container"
@@ -3340,6 +3384,10 @@ scripted_gui = {
 				change_scope = yes
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	country_borrow_money_window = {
 		window_name = "country_borrow_money_window_container"
@@ -3543,6 +3591,10 @@ scripted_gui = {
 				change_scope = yes
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	military_production_tab_budget_gui = {
@@ -3560,6 +3612,10 @@ scripted_gui = {
 			military_production_icon = {
 				image = "[GetCurrencyIcon]"
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -3683,6 +3739,10 @@ scripted_gui = {
 				value = segment_value
 				index = segment_idx
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 
 	}

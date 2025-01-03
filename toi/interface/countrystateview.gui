@@ -1540,7 +1540,7 @@ guiTypes = {
 
 		iconType = {
 			name = "damage_bar"
-			spriteType = "GFX_damage_bar_small"
+			spriteType = "GFX_damage_bar"
 			position = { x = 7 y = 18 }
 			rotation = 1.5708
 		}
