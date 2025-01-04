@@ -787,79 +787,86 @@ afr_colony_generic_colonial_investments_decisions = {
 		}
 	}
 	
-	afr_colony_generic_regional_resources_decision = {
-		ai_will_do = { factor = 1 }
-		available = {
-			hidden_trigger = {
-				has_country_flag = finish_afr_colony_generic_regional_resources_decision_mission
-			}
-		}
+	# afr_colony_generic_regional_resources_decision = {
+	# 	ai_will_do = { factor = 1 }
+	# 	available = {
+	# 		hidden_trigger = {
+	# 			has_country_flag = finish_afr_colony_generic_regional_resources_decision_mission
+	# 		}
+	# 	}
 		
-		allowed = {
-			
-		}
-		activation = { 
-			has_country_flag = afr_colony_generic_regional_resources_decision_mission
-		}
-		selectable_mission = no
-		is_good = no
-		cancel_trigger = {
-			hidden_trigger = {
-				always = no
-			}
-		}
+	# 	allowed = {
+	# 		NOT = {
+	# 			OR = {
 
-		visible = {
-			has_country_flag = afr_colony_generic_regional_resources_decision_mission
-		}
-		
-		fire_only_once = no
+	# 			}
+	# 		}
+	# 		OR = {
+	# 			tag = SNG
+	# 		}
+	# 	}
+	# 	activation = { 
+	# 		has_country_flag = afr_colony_generic_regional_resources_decision_mission
+	# 	}
+	# 	selectable_mission = no
+	# 	is_good = no
+	# 	cancel_trigger = {
+	# 		hidden_trigger = {
+	# 			always = no
+	# 		}
+	# 	}
 
-		#cost = 1
+	# 	visible = {
+	# 		has_country_flag = afr_colony_generic_regional_resources_decision_mission
+	# 	}
 		
-		days_mission_timeout = 1100
+	# 	fire_only_once = no
+
+	# 	#cost = 1
 		
-		#modifier = {
-		#	political_power_cost = 0.1
-		#}
+	# 	days_mission_timeout = 1100
 		
-		complete_effect = {
-			clr_country_flag = afr_colony_generic_regional_resources_decision_mission
-			random_owned_controlled_state ={
-				limit = { is_core_of = ROOT }
-				add_resource = {
-					type = coal
-					amount = 3
-				}
-			}
-			random_owned_controlled_state ={
-				limit = { is_core_of = ROOT }
-				add_resource = {
-					type = iron
-					amount = 5
-				}
-			}
-			set_country_flag = afr_colony_generic_regional_resources_decision_flag
-		}
-		timeout_effect = {
-			clr_country_flag = afr_colony_generic_regional_resources_decision_mission
-			random_owned_controlled_state ={
-				limit = { is_core_of = ROOT }
-				add_resource = {
-					type = coal
-					amount = 3
-				}
-			}
-			random_owned_controlled_state ={
-				limit = { is_core_of = ROOT }
-				add_resource = {
-					type = iron
-					amount = 5
-				}
-			}
-			set_country_flag = afr_colony_generic_regional_resources_decision_flag
-		}
-	}
+	# 	#modifier = {
+	# 	#	political_power_cost = 0.1
+	# 	#}
+		
+	# 	complete_effect = {
+	# 		clr_country_flag = afr_colony_generic_regional_resources_decision_mission
+	# 		random_owned_controlled_state ={
+	# 			limit = { is_core_of = ROOT }
+	# 			add_resource = {
+	# 				type = coal
+	# 				amount = 3
+	# 			}
+	# 		}
+	# 		random_owned_controlled_state ={
+	# 			limit = { is_core_of = ROOT }
+	# 			add_resource = {
+	# 				type = iron
+	# 				amount = 5
+	# 			}
+	# 		}
+	# 		set_country_flag = afr_colony_generic_regional_resources_decision_flag
+	# 	}
+	# 	timeout_effect = {
+	# 		clr_country_flag = afr_colony_generic_regional_resources_decision_mission
+	# 		random_owned_controlled_state ={
+	# 			limit = { is_core_of = ROOT }
+	# 			add_resource = {
+	# 				type = coal
+	# 				amount = 3
+	# 			}
+	# 		}
+	# 		random_owned_controlled_state ={
+	# 			limit = { is_core_of = ROOT }
+	# 			add_resource = {
+	# 				type = iron
+	# 				amount = 5
+	# 			}
+	# 		}
+	# 		set_country_flag = afr_colony_generic_regional_resources_decision_flag
+	# 	}
+	# }
 	
 	afr_colony_construct_fabric_industry = {
 		ai_will_do = { factor = 1 }
