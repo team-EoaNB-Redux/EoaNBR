@@ -4056,7 +4056,10 @@ shared_focus = {
 	x = -2
 	y = 1
 	completion_reward = {
-		
+		add_to_variable = {
+			SPR_USA_american_tension = 5
+			tooltip = SPR_tension_increase_effect_tooltip
+		}
 	}
 }
 shared_focus = {
@@ -4242,7 +4245,19 @@ shared_focus = {
 		}
 		1306 = {
 			create_unit = { 
-				division = "name = \"1st U.S. Volunteer Cavalry Regiment\" division_template = \"Volunteer Cavalry\" start_experience_factor = 1 start_equipment_factor = 1" owner = OWNER
+			}
+			create_unit = {
+				division = "name = \"1st U.S. Volunteer Cavalry Regiment\" division_template = \"Volunteer Cavalry\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = OWNER
+				officer = {
+					name = "Leonard Wood"
+					portraits = {
+						army = {
+							large = "GFX_Portrait_USA_Generic_land_4"
+							small = "GFX_portrait_europe_generic_17"
+						}
+					}
+				}
 			}
 		}
 	}
