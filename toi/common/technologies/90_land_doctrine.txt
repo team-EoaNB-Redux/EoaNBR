@@ -638,6 +638,24 @@ technologies = {
 		# army_artillery_attack_factor = 0.05
 		enable_tactic = tactic_extended_order_attack
 		enable_tactic = tactic_extended_order_defence
+
+		# on_research_complete = {
+		# 	hidden_effect = {
+				enable_tactic = tactic_artillery_bombardment
+				enable_tactic = tactic_austrian_square
+				enable_tactic = tactic_bayonet_charge_attack
+				enable_tactic = tactic_bayonet_charge_defence
+				enable_tactic = tactic_cavalry_charge_attack
+				enable_tactic = tactic_cavalry_charge_defence
+				enable_tactic = tactic_counterbattery_defence
+				enable_tactic = tactic_infantry_column
+				enable_tactic = tactic_line_attack
+				enable_tactic = tactic_line_defence
+				enable_tactic = tactic_skirmish_order_attack
+				enable_tactic = tactic_skirmish_order_defence
+				enable_tactic = tactic_square
+		# 	}
+		# }
 		category_victorian_infantry = {
 			initiative = 0.005
 		}
@@ -1158,6 +1176,24 @@ technologies = {
 		# army_artillery_attack_factor = 0.05
 		enable_tactic = tactic_thin_red_line_attack
 		enable_tactic = tactic_thin_red_line_defence
+
+		# on_research_complete = {
+		# 	hidden_effect = {
+				enable_tactic = tactic_artillery_bombardment
+				enable_tactic = tactic_austrian_square
+				enable_tactic = tactic_bayonet_charge_attack
+				enable_tactic = tactic_bayonet_charge_defence
+				enable_tactic = tactic_cavalry_charge_attack
+				enable_tactic = tactic_cavalry_charge_defence
+				enable_tactic = tactic_counterbattery_defence
+				enable_tactic = tactic_infantry_column
+				enable_tactic = tactic_line_attack
+				enable_tactic = tactic_line_defence
+				enable_tactic = tactic_skirmish_order_attack
+				enable_tactic = tactic_skirmish_order_defence
+				enable_tactic = tactic_square
+		# 	}
+		# }
 		dependencies = {
 			land_doctrine_victorian = 1
 		}
@@ -1711,6 +1747,24 @@ technologies = {
 		training_time_army_factor = -0.1
 		minimum_training_level = -0.1
 		max_training = -0.1
+
+		# on_research_complete = {
+		# 	hidden_effect = {
+				enable_tactic = tactic_artillery_bombardment
+				enable_tactic = tactic_austrian_square
+				enable_tactic = tactic_bayonet_charge_attack
+				enable_tactic = tactic_bayonet_charge_defence
+				enable_tactic = tactic_cavalry_charge_attack
+				enable_tactic = tactic_cavalry_charge_defence
+				enable_tactic = tactic_counterbattery_defence
+				enable_tactic = tactic_infantry_column
+				enable_tactic = tactic_line_attack
+				enable_tactic = tactic_line_defence
+				enable_tactic = tactic_skirmish_order_attack
+				enable_tactic = tactic_skirmish_order_defence
+				enable_tactic = tactic_square
+		# 	}
+		# }
 		dependencies = {
 			land_doctrine_victorian = 1
 		}
@@ -2091,6 +2145,24 @@ technologies = {
 		enable_tactic = tactic_furia_francese
 		tactic_infantry_column_preferred_weight_factor = 0.5
 		tactic_furia_francese_preferred_weight_factor = 0.5
+
+		# on_research_complete = {
+		# 	hidden_effect = {
+				enable_tactic = tactic_artillery_bombardment
+				enable_tactic = tactic_austrian_square
+				enable_tactic = tactic_bayonet_charge_attack
+				enable_tactic = tactic_bayonet_charge_defence
+				enable_tactic = tactic_cavalry_charge_attack
+				enable_tactic = tactic_cavalry_charge_defence
+				enable_tactic = tactic_counterbattery_defence
+				enable_tactic = tactic_infantry_column
+				enable_tactic = tactic_line_attack
+				enable_tactic = tactic_line_defence
+				enable_tactic = tactic_skirmish_order_attack
+				enable_tactic = tactic_skirmish_order_defence
+				enable_tactic = tactic_square
+		# 	}
+		# }
 		dependencies = {
 			land_doctrine_victorian = 1
 		}

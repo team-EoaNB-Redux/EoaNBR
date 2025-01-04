@@ -380,6 +380,7 @@ diff_very_easy_player = {
 	supply_consumption_factor = -0.1
 	industry_input_factor = -0.04
 	no_supply_grace = 72
+	treasury_gain_monthly_per_gdp = 0.02
 }
 
 diff_easy_player = {
@@ -393,6 +394,7 @@ diff_easy_player = {
 	supply_consumption_factor = -0.05
 	industry_input_factor = 0.02
 	no_supply_grace = 48
+	treasury_gain_monthly_per_gdp = 0.01
 }
 
 diff_normal_player = {
@@ -406,6 +408,7 @@ diff_hard_player = {
 	supply_consumption_factor = 0.05
 	industry_input_factor = 0.02
 	no_supply_grace = 24
+	treasury_cost_monthly_per_gdp = 0.01
 }
 
 diff_very_hard_player = {
@@ -415,6 +418,7 @@ diff_very_hard_player = {
 	supply_consumption_factor = 0.1
 	industry_input_factor = 0.04
 	consumer_confidence_modifier = 20
+	treasury_cost_monthly_per_gdp = 0.02
 }
 
 
