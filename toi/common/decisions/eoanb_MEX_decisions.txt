@@ -39,6 +39,11 @@ war_planning = {
 				amount = 84
 				producer = USA
 			}
+			add_equipment_to_stockpile = {
+				type = field_artillery_equipment
+				amount = 6
+				producer = USA
+			}
 			add_war_support = 0.01
 		}
 		ai_will_do = {

@@ -1435,20 +1435,18 @@ country_event = { #Debt system initial announcement
 			# 	remove_idea = pp_open_politics
 			# 	add_idea = pp_ban_extremist_parties
 			# }
-			completion_reward = { 
 				
-				swap_ideas = {#repealed ley juarez
-					remove_idea = high_judge_courtroom 
-					add_idea = biased_courtroom
-				}
-				swap_ideas = {#repealed ley lerdo
-					remove_idea = lp_land_purchase
-					add_idea = lp_land_estates
-				}
-				swap_ideas = {#repealed 1857 constitution
-					remove_idea = constitution_adopted
-					add_idea = no_constitution
-				}
+			swap_ideas = {#repealed ley juarez
+				remove_idea = high_judge_courtroom 
+				add_idea = biased_courtroom
+			}
+			swap_ideas = {#repealed ley lerdo
+				remove_idea = lp_land_purchase
+				add_idea = lp_land_estates
+			}
+			swap_ideas = {#repealed 1857 constitution
+				remove_idea = constitution_adopted
+				add_idea = no_constitution
 			}
 		}
 	}

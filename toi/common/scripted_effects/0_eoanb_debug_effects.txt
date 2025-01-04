@@ -400,3 +400,6 @@ d_check_religion_use = {
 		add_to_variable = { v = 1 }
 	}
 }
+generic_effect_dirty_focus_tree = {
+	mark_focus_tree_layout_dirty = yes
+}

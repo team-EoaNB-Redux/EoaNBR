@@ -461,6 +461,42 @@ technologies = {
 			max_strength = 0.75
 			weight = 1
 		}
+		siege_artillery = {
+			defense = 0.5
+			breakthrough = 0.5
+			soft_attack = 1
+			hard_attack = 1
+			supply_consumption_factor = 1
+			max_strength = 0.75
+			weight = 1
+		}
+		siege_artillery_towed = {
+			defense = 0.5
+			breakthrough = 0.5
+			soft_attack = 1
+			hard_attack = 1
+			supply_consumption_factor = 1
+			max_strength = 0.75
+			weight = 1
+		}
+		siege_artillery_support = {
+			defense = 0.5
+			breakthrough = 0.5
+			soft_attack = 1
+			hard_attack = 1
+			supply_consumption_factor = 1
+			max_strength = 0.75
+			weight = 1
+		}
+		siege_artillery_towed_support = {
+			defense = 0.5
+			breakthrough = 0.5
+			soft_attack = 1
+			hard_attack = 1
+			supply_consumption_factor = 1
+			max_strength = 0.75
+			weight = 1
+		}
 	}
 	doctrine_corps_artillery_hidden_effect = {
 
