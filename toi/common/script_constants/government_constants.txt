@@ -1,7 +1,7 @@
 govt_political_legitimacy_threshold = {
 	schema = {
 		any_key = yes
-		data = float
+		data = fixed_point
 	}
 	none = 0
 	very_low = 15
@@ -15,7 +15,7 @@ govt_political_legitimacy_threshold = {
 govt_autarchy_threshold = {
 	schema = {
 		any_key = yes
-		data = int
+		data = fixed_point
 	}
 	populist_min = 0
 	populist_max = 40
@@ -27,7 +27,7 @@ govt_autarchy_threshold = {
 govt_zealotry_threshold = {
 	schema = {
 		any_key = yes
-		data = int
+		data = fixed_point
 	}
 	secularist_min = 0
 	secularist_max = 40
