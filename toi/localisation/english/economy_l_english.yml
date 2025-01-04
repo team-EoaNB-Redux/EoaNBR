@@ -502,17 +502,22 @@
     eoanb_decision_cost_300_SPR_blocked: "§RInvalid§!"
     eoanb_decision_cost_300_SPR_tooltip: "[GetCurrencyTextIcon] National Debt to §Y[SPR.GetName]§!: §R+300§!"
   #
+  #Events
+    economy.100.t: "Major [?major_discovery_target:major_discovery_resource.GetTokenLocalizedKey] Discovery in [?major_discovery_target.GetName]!"
+    economy.100.d: "Recent efforts in prospecting at the [?major_discovery_target:major_discovery_resource.GetTokenLocalizedKey] Deposit in [?major_discovery_target.GetName] have yielded a new discovery of immense proportions. New fields of materials have been located and efforts are already underway to attempt to exploit this discovery. There is also talk that this major discovery lends credence to local rumors of greater treasures to be found, waiting to be unearthed."
+    economy.100.o1: "Astounding!"
+  #
 
-  treasury_change_positive_tooltip: "[GetCurrencyTextIcon]  Treasury: §G+$RIGHT$§!"
-  treasury_change_negative_tooltip: "[GetCurrencyTextIcon]  Treasury: §R-$RIGHT$§!"
-  debt_change_positive_tooltip: "[GetCurrencyTextIcon]  National Debt: §G-$RIGHT$K§!"
-  debt_change_negative_tooltip: "[GetCurrencyTextIcon]  National Debt: §R+$RIGHT$K§!"
+  treasury_change_positive_tooltip: "[GetCurrencyTextIcon]  Treasury: §G+$RIGHT$§!\n"
+  treasury_change_negative_tooltip: "[GetCurrencyTextIcon]  Treasury: §R-$RIGHT$§!\n"
+  debt_change_positive_tooltip: "[GetCurrencyTextIcon]  National Debt: §G-$RIGHT$K§!\n"
+  debt_change_negative_tooltip: "[GetCurrencyTextIcon]  National Debt: §R+$RIGHT$K§!\n"
   
-  investment_fund_change_positive_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §G+$RIGHT$§!"
-  investment_fund_change_negative_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §R-$RIGHT$§!"
+  investment_fund_change_positive_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §G+$RIGHT$§!\n"
+  investment_fund_change_negative_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §R-$RIGHT$§!\n"
 
-  inherit_debt_tooltip: "Inherits §Y[?total_debt_temp]K§![GetCurrencyTextIcon]  of debt from §Y[?inheritee_temp.GetNameWithFlag]§!"
-  replace_debt_tooltip: "This will §Yreplace§! your current debt."
+  inherit_debt_tooltip: "Inherits §Y[?total_debt_temp]K§![GetCurrencyTextIcon]  of debt from §Y[?inheritee_temp.GetNameWithFlag]§!\n"
+  replace_debt_tooltip: "This will §Yreplace§! your current debt.\n"
 
   wip_tooltip: "§RUnder Development§!"
   wip_tooltip_delayed: "This is currently §RWIP§!. The §YEconomy System§! is still §Yunder development§! and will be updated with more features over time."
@@ -2115,11 +2120,11 @@
       rgo_employment: "§S[?employment@var:v]K§!"
       rgo_productivity: "[GetIndustryProductivityV]§![GetCurrencyTextIconState]"
 
-      rgo_tt: "§O[?v.GetTokenLocalizedKey] Deposit:§!\n[?v.GetTokenLocalizedKey] Output: £[GetOutputTextIcon0] [?production@var:v^0|Y]\nBase [?v.GetTokenLocalizedKey] Deposit: £[GetOutputTextIcon0] §Y[?base_resource@var:v]§!\nBase Workforce Requirement: §S[GetIndustryBaseWorkforceRequirement]§!\n\nExtraction Output: §Y+0.0%§!\nKnown Reserves: £[GetOutputTextIcon0] §Y0§!\nPotential Reserves: £[GetOutputTextIcon0] §Y0§!\n\n[GetIndustryPMTotalLoc]\n[GetIndustryEmployment]\n§YFinances:§!\nRevenue:     [GetIndustryRevenue]§![GetCurrencyTextIconState] \nExpenses:    [GetIndustryExpenses]§![GetCurrencyTextIconState] \nProfit:            [GetIndustryProfit]§![GetCurrencyTextIconState] \n\nProfitability:  [GetIndustryProfitability] \nProductivity:  [GetIndustryProductivity]§![GetCurrencyTextIconState] \nBase Wage:  §Y[GetBaseWage]§![GetCurrencyTextIconState] \n"
+      rgo_tt: "§O[?v.GetTokenLocalizedKey] Deposit:§!\n[?v.GetTokenLocalizedKey] Output: £[GetOutputTextIcon0] [?production@var:v^0|Y]\nBase [?v.GetTokenLocalizedKey] Deposit: £[GetOutputTextIcon0] §Y[?base_resource@var:v]§!\nBase Workforce Requirement: §S[GetIndustryBaseWorkforceRequirement]§!\n\nExtraction Output: §Y+0.0%§!\nKnown Reserves: £[GetOutputTextIcon0] §Y[?known_reserves@var:v]§!\nPotential Reserves: £[GetOutputTextIcon0] §Y[?potential_reserves@var:v]§!\n\n[GetIndustryPMTotalLoc]\n[GetIndustryEmployment]\n§YFinances:§!\nRevenue:     [GetIndustryRevenue]§![GetCurrencyTextIconState] \nExpenses:    [GetIndustryExpenses]§![GetCurrencyTextIconState] \nProfit:            [GetIndustryProfit]§![GetCurrencyTextIconState] \n\nProfitability:  [GetIndustryProfitability] \nProductivity:  [GetIndustryProductivity]§![GetCurrencyTextIconState] \nBase Wage:  §Y[GetBaseWage]§![GetCurrencyTextIconState] \n"
       rgo_productivity_tt: "[GetIndustryFinances]"
       rgo_production_method_tt: "[GetIndustryPMLoc]\n[GetIndustryPMRetooling]"
       rgo_automation_method_tt: "[GetIndustryAMLoc]\n[GetIndustryAMRetooling]"
-      rgo_prospecting_tt: "§YProspecting:§!\nProspecting Ability: [?controller:modiifer@prospecting_ability_factor|+=1%]\nDiscovery Chance: §Y[?discovery_chance@var:v|1%]§!\nMajor Discovery Chance: §Y[?major_discovery_chance@var:v|1%]§!\n\nExtraction Output: [?extraction_output@var:v|+=1%]\nKnown Reserves: £[GetOutputTextIcon0] §Y[?known_reserves@var:v]§!\nPotential Reserves: £[GetOutputTextIcon0] §Y[?potential_reserves@var:v]§!\n\nNOTE: §RProspecting is Disabled§!"
+      rgo_prospecting_tt: "§YProspecting:§!\nProspecting Ability: [?controller:industry_prospecting_ability_factor@var:v|+=1%]\nDiscovery Chance: §Y[?discovery_chance@var:v|1%]§!\nMajor Discovery Chance: §Y[?major_discovery_chance@var:v|1%]§!\n\nTotal Resources: £[GetOutputTextIcon0] §Y[?reserves_total@var:v]§!\n   Under Extraction: £[GetOutputTextIcon0] §Y[?base_resource@var:v]§!\n   Known Reserves: £[GetOutputTextIcon0] §Y[?known_reserves@var:v]§!\n   Potential Reserves: £[GetOutputTextIcon0] §Y[?potential_reserves@var:v]§!"
 
       # Subsistence Farms & Arable Land
       arable_land_loc: "Arable Land: [?arable_land|0Y]"
@@ -2805,12 +2810,18 @@
   has_steel_foundry_tt: "Has §OSteel Foundry§!"
   has_size_of_industry_tt: "At least §Y[?size_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!"
 
-  construct_x_industries_tt: "Start Construction of §G[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!."
-  add_x_industries_tt: "Add §G[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!."
-  remove_x_industries_tt: "Remove §R[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!."
-  has_treasury_tt: "Has [GetCurrencyTextIcon]  Treasury: §Y[?x_temp|2]§!"
+  construct_x_industries_tt: "Start Construction of §G[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!.\n"
+  add_x_industries_tt: "Add §G[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!.\n"
+  remove_x_industries_tt: "Remove §R[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!.\n"
+  add_x_deposits_tt: "Add £[GetRTokenTextIcon] §G[?x_temp]§! §O[?r_token.GetTokenLocalizedKey] Deposits§!.\n"
+  remove_x_deposits_tt: "Remove £[GetRTokenTextIcon] §R[?x_temp]§! §O[?r_token.GetTokenLocalizedKey] Deposits§!.\n"
+  add_x_known_reserves_tt: "Add £[GetRTokenTextIcon] §G[?x_temp]§! §OKnown [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
+  remove_x_known_reserves_tt: "Remove £[GetRTokenTextIcon] §R[?x_temp]§! §OKnown [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
+  add_x_potential_reserves_tt: "Add £[GetRTokenTextIcon] §G[?x_temp]§! §OPotential [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
+  remove_x_potential_reserves_tt: "Remove £[GetRTokenTextIcon] §R[?x_temp]§! §OPotential [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
+  has_treasury_tt: "Has [GetCurrencyTextIcon]  Treasury: §Y[?x_temp|2]§!\n"
   
-  can_spend_without_default_trigger_tt: "Can spend [GetCurrencyTextIcon] §Y[?x_temp|2]§! without defaulting."
-  no_debt_level_trigger_tt: "Has no §YDebt§!"
+  can_spend_without_default_trigger_tt: "Can spend [GetCurrencyTextIcon] §Y[?x_temp|2]§! without defaulting.\n"
+  no_debt_level_trigger_tt: "Has no §YDebt§!\n"
 
- is_in_x_market_tt: "Is in [?market_leader.GetFlag]§Y[?market_leader.GetAdjective] Market§!"
+ is_in_x_market_tt: "Is in [?market_leader.GetFlag]§Y[?market_leader.GetAdjective] Market§!\n"

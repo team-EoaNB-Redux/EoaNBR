@@ -21,6 +21,14 @@
 
 			industry_update = yes
 		}
+		for_each_loop = {
+			array = rgos
+			value = r_token
+			index = ind
+			break = ind_break
+
+			update_prospecting = yes
+		}
 	}
 	industries_update_workforce = {
 		for_each_loop = {
@@ -1430,17 +1438,18 @@
 		set_temp_variable = { reserves_temp = base_resource@var:r_token }
 		add_to_temp_variable = { reserves_temp = known_reserves@var:r_token }
 		divide_temp_variable = { reserves_temp = reserves_total@var:r_token }
+		multiply_temp_variable = { reserves_temp = 2 }
 
-		set_temp_variable = { chance_temp = 1 }
+		set_temp_variable = { chance_temp = 0.75 }
 		subtract_from_temp_variable = { chance_temp = reserves_temp }
 		
 		# Minor Discoveries
-		set_variable = { discovery_chance@var:r_token = controller:modiifer@prospecting_ability_factor }
+		set_variable = { discovery_chance@var:r_token = controller:industry_prospecting_ability_factor@var:r_token }
 		add_to_variable = { discovery_chance@var:r_token = 0.25 }
 		add_to_variable = { discovery_chance@var:r_token = chance_temp }
 
 		# Major Discoveries
-		set_variable = { major_discovery_chance@var:r_token = controller:modiifer@prospecting_ability_factor }
+		set_variable = { major_discovery_chance@var:r_token = controller:industry_prospecting_ability_factor@var:r_token }
 		multiply_variable = { major_discovery_chance@var:r_token = 0.2 }
 		add_to_variable = { major_discovery_chance@var:r_token = 0.02 }
 		multiply_temp_variable = { chance_temp = 0.25 }
@@ -1449,6 +1458,14 @@
 		set_temp_variable = { major_discoveries_temp = major_discoveries@var:r_token }
 		multiply_temp_variable = { major_discoveries_temp = 0.2 }
 		subtract_from_variable = { major_discovery_chance@var:r_token = major_discoveries_temp }
+		
+		set_temp_variable = { major_discoveries_temp = reserves_total@var:r_token }
+		multiply_temp_variable = { major_discoveries_temp = global.base_price@var:r_token }
+		if = {
+			limit = { check_variable = { major_discoveries_temp < 50 } }
+			subtract_from_variable = { major_discovery_chance@var:r_token = 0.1 }
+			divide_variable = { major_discovery_chance@var:r_token = 2 }
+		}
 
 		# Clamping
 		clamp_variable = { var = major_discovery_chance@var:r_token max = 1 min = 0 }
@@ -1925,7 +1942,11 @@
 			value = rgo_token
 			if = {
 				limit = {
-					check_variable = { base_resource@var:rgo_token > 0 }
+					OR = {
+						check_variable = { base_resource@var:rgo_token > 0 }
+						check_variable = { known_reserves@var:rgo_token > 0 }
+						check_variable = { potential_reserves@var:rgo_token > 0 }
+					}
 				}
 				add_to_array = { industries = rgo_token }
 				add_to_array = { rgos = rgo_token }
@@ -2243,6 +2264,17 @@
 		# production_method_temp - if relevant
 		# automation_method_temp - if relevant
 
+		if = {
+			limit = {
+				check_variable = { base_resource@var:r_token = 0 }
+				check_variable = { known_reserves@var:r_token = 0 }
+				check_variable = { potential_reserves@var:r_token = 0 }
+			}
+			set_variable = { production_method@var:r_token = production_method_temp }
+			set_variable = { automation_method@var:r_token = automation_method_temp }
+		}
+
+		set_temp_variable = { r_token2 = r_token }
 		# Only if changing amount of deposits
 		if = { limit = { NOT = { check_variable = { deposit_temp = 0 } } }
 			meta_effect = {
@@ -2258,11 +2290,89 @@
 			update_base_resource_count = yes
 		}
 
+		set_temp_variable = { r_token = r_token2 }
+		if = { limit = { NOT = { check_variable = { known_temp = 0 } } }
+			add_to_variable = { known_reserves@var:r_token = known_temp }
+
+			if = { limit = { check_variable = { known_reserves@var:r_token < 0 } }
+				set_variable  = { known_reserves@var:r_token = 0 }
+			}
+		}
+		if = { limit = { NOT = { check_variable = { potential_temp = 0 } } }
+			add_to_variable = { potential_reserves@var:r_token = potential_temp }
+			
+			if = { limit = { check_variable = { potential_reserves@var:r_token < 0 } }
+				set_variable  = { potential_reserves@var:r_token = 0 }
+			}
+		}
+
 		# Update prospecting - do this regardless b/c changing any of the above will require this
 		update_prospecting = yes
 
 		set_temp_variable = { bu_token = r_token }
 		industry_update = yes
+	}
+
+	rgo_discovery = {
+		# r_token
+		# Takes some potential deposits and makes them known
+		set_temp_variable = { resource_amount_temp = random }
+		multiply_temp_variable = { resource_amount_temp = 20 }
+		add_to_temp_variable = { resource_amount_temp = 10 }
+		divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+		round_temp_variable = resource_amount_temp
+		clamp_temp_variable = { var = resource_amount_temp min = 0 max = potential_reserves@var:r_token }
+		
+		add_to_variable = { known_reserves@var:r_token = resource_amount_temp }
+		subtract_from_variable = { potential_reserves@var:r_token = resource_amount_temp }
+		set_variable = { prospecting@var:r_token = 0 }
+
+		set_temp_variable = { known_temp = resource_amount_temp }
+		set_temp_variable = { potential_temp = resource_amount_temp }
+		multiply_temp_variable = { potential_temp = -1 }
+		add_rgo_internal = yes
+	}
+	rgo_major_discovery = {
+		# r_token
+		# Adds a random amount of known & potential deposits
+		set_variable = { major_discovery_resource = r_token }
+
+		set_variable = { major_discovery_known = random }
+		multiply_variable = { major_discovery_known = 60 }
+		add_to_variable = { major_discovery_known = 15 }
+		divide_variable = { major_discovery_known = global.base_price@var:r_token }
+
+		set_temp_variable = { random_temp = random }
+		multiply_temp_variable = { random_temp = 50 }
+		add_to_temp_variable = { random_temp = 75 }
+		set_variable = { major_discovery_potential = random_temp }
+		divide_variable = { major_discovery_potential = global.base_price@var:r_token }
+
+		round_variable = major_discovery_known
+		round_variable = major_discovery_potential
+		set_variable = { prospecting@var:r_token = 0 }
+		
+		add_to_variable = { major_discoveries@var:r_token = 1 }
+		set_temp_variable = { known_temp = major_discovery_known }
+		set_temp_variable = { potential_temp = major_discovery_potential }
+		add_rgo_internal = yes
+		if = {
+			limit = {
+				controller = { 
+					is_ai = no 
+					NOT = { has_variable = major_discovery_target }
+				}
+			}
+			controller = {
+				set_variable = { major_discovery_target = PREV }
+				country_event = { id = economy.100 }
+			}
+		}
+		else = {
+			clear_variable = major_discovery_known 
+			clear_variable = major_discovery_potential 
+			clear_variable = major_discovery_resource
+		}
 	}
 #
 

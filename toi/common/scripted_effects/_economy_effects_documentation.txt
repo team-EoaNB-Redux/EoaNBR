@@ -119,8 +119,6 @@
 			# industry_token
 			# production_method_temp
 			# automation_method_temp
-			# no_cost_temp
-
 
 			round_temp_variable = x_temp
 			if = {
@@ -195,16 +193,6 @@
 				refresh_construction_list = yes
 				reload_industries_array = yes
 
-				# Update market
-				var:controller = {
-					var:market_leader = {
-						market_update = yes
-					}
-					every_controlled_state = {
-						industries_update = yes
-						pops_update = yes
-					}
-				}
 				add_to_variable = { update_state_econ_window = 1 }
 
 				set_temp_variable = { bu_token = 0 }
@@ -214,24 +202,144 @@
 			set_temp_variable = { industry_token = 0 }
 		}
 
-		#	Adds/removes deposits to the state - does not decrease known reserves or potential reserves
-		add_deposit = {
+		#	Adds deposits to the state - does not decrease known reserves or potential reserves
+		add_x_deposit = {
 			# r_token
 			# x_temp
 			# financer_temp
 			# production_method_temp
 			# automation_method_temp
+			
+			round_temp_variable = x_temp
+			if = {
+				limit = {
+					is_in_array = { global.rgo_token_array = r_token }
+					check_variable = { x_temp > 0 }
+				}
+				custom_effect_tooltip = add_x_deposits_tt
+
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { is_in_array = { controller:building_unlocked_pms@var:r_token = production_method_temp } }
+						}
+						set_temp_variable = { production_method_temp = controller:latest_production_method@var:r_token }
+					}
+					if = {
+						limit = {
+							NOT = { is_in_array = { controller:building_unlocked_ams@var:r_token = automation_method_temp } }
+						}
+						set_temp_variable = { automation_method_temp = controller:latest_automation_method@var:r_token }
+					}
+
+					set_temp_variable = { deposit_temp = x_temp }
+					add_rgo_internal = yes
+
+					reload_industries_array = yes
+
+					add_to_variable = { update_state_econ_window = 1 }
+					set_temp_variable = { bu_token = 0 }
+					set_temp_variable = { deposit_temp = 0 }
+				}
+			}
+			set_temp_variable = { x_temp = 0 }
+			set_temp_variable = { financer_temp = 0 }
+			set_temp_variable = { r_token = 0 }
+			set_temp_variable = { production_method_temp = 0 }
+			set_temp_variable = { automation_method_temp = 0 }
+		}
+
+		remove_x_deposit = {
+			# r_token
+			# x_temp
 
 			round_temp_variable = x_temp
-			
+			if = {
+				limit = {
+					is_in_array = { global.rgo_token_array = r_token }
+					check_variable = { x_temp > 0 }
+				}
+				if = { limit = { check_variable = { x_temp > size@var:r_token } }
+					set_temp_variable = { x_temp = size@var:r_token }
+				}
+				custom_effect_tooltip = remove_x_deposits_tt
+
+				hidden_effect = {
+					set_temp_variable = { deposit_temp = x_temp }
+					multiply_temp_variable = { deposit_temp = -1 }
+					add_rgo_internal = yes
+
+					if = { limit = { check_variable = { x_temp < 0 } }
+						# Update labor satisfaction (as this may have changed)
+						industries_update_workforce = yes
+						pops_workforce_update = yes
+						industries_update = yes
+					}
+
+					reload_industries_array = yes
+
+					add_to_variable = { update_state_econ_window = 1 }
+					set_temp_variable = { bu_token = 0 }
+					set_temp_variable = { deposit_temp = 0 }
+				}
+			}
+			set_temp_variable = { x_temp = 0 }
+			set_temp_variable = { r_token = 0 }
 		}
-		#	Adds/removes known reserves to the state
+
+		#	Adds known reserves to the state
 		add_known_reserves = {
+			# r_token
+			# x_temp
 
+			round_temp_variable = x_temp
+			if = {
+				limit = {
+					is_in_array = { global.rgo_token_array = r_token }
+					check_variable = { x_temp > 0 }
+				}
+				custom_effect_tooltip = add_x_known_reserves_tt
+				set_temp_variable = { production_method_temp = controller:latest_production_method@var:r_token }
+				set_temp_variable = { automation_method_temp = controller:latest_automation_method@var:r_token }
+
+				set_temp_variable = { known_temp = x_temp }
+				add_rgo_internal = yes
+
+				reload_industries_array = yes
+
+				add_to_variable = { update_state_econ_window = 1 }
+				set_temp_variable = { bu_token = 0 }
+				set_temp_variable = { known_temp = 0 }
+			}
+			set_temp_variable = { x_temp = 0 }
+			set_temp_variable = { r_token = 0 }
 		}
-		#	Adds/removes potential reserves to the state
+		#	Adds potential reserves to the state
 		add_potential_reserves = {
+			# r_token
+			# x_temp
 
+			round_temp_variable = x_temp
+			if = {
+				limit = {
+					is_in_array = { global.rgo_token_array = r_token }
+					check_variable = { x_temp > 0 }
+				}
+				custom_effect_tooltip = add_x_potential_reserves_tt
+				set_temp_variable = { production_method_temp = controller:latest_production_method@var:r_token }
+				set_temp_variable = { automation_method_temp = controller:latest_automation_method@var:r_token }
+
+				set_temp_variable = { potential_temp = x_temp }
+				add_rgo_internal = yes
+
+				reload_industries_array = yes
+
+				add_to_variable = { update_state_econ_window = 1 }
+				set_temp_variable = { bu_token = 0 }
+				set_temp_variable = { potential_temp = 0 }
+			}
+			set_temp_variable = { x_temp = 0 }
+			set_temp_variable = { r_token = 0 }
 		}
 
 		open_industry = {

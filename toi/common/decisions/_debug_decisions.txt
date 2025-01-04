@@ -24,9 +24,8 @@ EOANBSYS_debug_decision_category = {
 		complete_effect = {
 			129 = {
 				set_temp_variable = { x_temp = 1 }
-				set_temp_variable = { financer_temp = ROOT }
-				set_temp_variable = { industry_token = token:mechanical_works }
-				add_x_industries = yes
+				set_temp_variable = { r_token = token:chromium }
+				add_potential_reserves = yes
 			}
 		}
 	}

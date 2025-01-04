@@ -33,6 +33,9 @@ _reset = {
         _init_state = yes
     }
 
+    # Initialize global resources
+    _init_resources = yes
+
     # Update Markets
     every_country = {
         _update_market = yes
@@ -162,6 +165,134 @@ _init_state = {
     # Update Industries & Pops
     industries_update = yes
     pops_update = yes
+}
+_init_resources = {
+    every_state = {
+        for_each_loop = {
+            array = global.rgo_token_array
+            value = resource_temp
+
+            set_temp_variable = { r_token = resource_temp }
+            if = {
+                limit = {
+                    check_variable = { base_resource@var:r_token > 0 }
+                }
+                set_temp_variable = { resource_value_temp = base_resource@var:r_token }
+                multiply_temp_variable = { resource_value_temp = global.base_price@var:r_token }
+                divide_temp_variable = { resource_value_temp = 4 }
+
+                set_temp_variable = { resource_amount_temp = random }
+                multiply_temp_variable = { resource_amount_temp = 50 }
+                add_to_temp_variable = { resource_amount_temp = 50 }
+                subtract_from_temp_variable = { resource_amount_temp = resource_value_temp }
+                divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+                
+                if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+                round_temp_variable = resource_amount_temp
+
+                set_temp_variable = { x_temp = resource_amount_temp }
+                add_potential_reserves = yes
+            }
+        }
+
+        # Checks for resource triggers
+        if = {
+            limit = {
+                has_coal_desposits = yes
+            }
+            set_temp_variable = { resource_amount_temp = random }
+            multiply_temp_variable = { resource_amount_temp = 50 }
+            add_to_temp_variable = { resource_amount_temp = 50 }
+            divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+            if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+            round_temp_variable = resource_amount_temp
+
+            set_temp_variable = { r_token = token:coal }
+            set_temp_variable = { x_temp = resource_amount_temp }
+            add_potential_reserves = yes
+        }
+        if = {
+            limit = {
+                has_oil = yes
+            }
+            set_temp_variable = { resource_amount_temp = random }
+            multiply_temp_variable = { resource_amount_temp = 50 }
+            add_to_temp_variable = { resource_amount_temp = 50 }
+            divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+            if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+            round_temp_variable = resource_amount_temp
+
+            set_temp_variable = { r_token = token:oil }
+            set_temp_variable = { x_temp = resource_amount_temp }
+            add_potential_reserves = yes
+        }
+        # if = {
+        #     limit = {
+        #         has_aluminum = yes
+        #     }
+        #     set_temp_variable = { resource_amount_temp = random }
+        #     multiply_temp_variable = { resource_amount_temp = 50 }
+        #     add_to_temp_variable = { resource_amount_temp = 50 }
+        #     divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+        #     if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+        #     round_temp_variable = resource_amount_temp
+
+        #     set_temp_variable = { r_token = token:aluminum }
+        #     set_temp_variable = { x_temp = resource_amount_temp }
+        #     add_potential_reserves = yes
+        # }
+        if = {
+            limit = {
+                has_tungsten = yes
+            }
+            set_temp_variable = { resource_amount_temp = random }
+            multiply_temp_variable = { resource_amount_temp = 50 }
+            add_to_temp_variable = { resource_amount_temp = 50 }
+            divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+            if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+            round_temp_variable = resource_amount_temp
+
+            set_temp_variable = { r_token = token:tungsten }
+            set_temp_variable = { x_temp = resource_amount_temp }
+            add_potential_reserves = yes
+        }
+        if = {
+            limit = {
+                has_chromium = yes
+            }
+            set_temp_variable = { resource_amount_temp = random }
+            multiply_temp_variable = { resource_amount_temp = 50 }
+            add_to_temp_variable = { resource_amount_temp = 50 }
+            divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+            if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+            round_temp_variable = resource_amount_temp
+
+            set_temp_variable = { r_token = token:chromium }
+            set_temp_variable = { x_temp = resource_amount_temp }
+            add_potential_reserves = yes
+        }
+        # if = {
+        #     limit = {
+        #         has_titanium = yes
+        #     }
+        #     set_temp_variable = { resource_amount_temp = random }
+        #     multiply_temp_variable = { resource_amount_temp = 50 }
+        #     add_to_temp_variable = { resource_amount_temp = 50 }
+        #     divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+        #     if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+        #     round_temp_variable = resource_amount_temp
+
+        #     set_temp_variable = { r_token = token:titanium }
+        #     set_temp_variable = { x_temp = resource_amount_temp }
+        #     add_potential_reserves = yes
+        # }
+    }
 }
 _update_market = {
     # Country

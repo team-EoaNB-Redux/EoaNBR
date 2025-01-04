@@ -94,3 +94,32 @@ country_event = {
 		
 	}
 }
+
+
+#	Major Discovery in [FROM.GetName]!
+country_event = {
+	id = economy.100
+	title = economy.100.t
+	desc = economy.100.d
+	picture = GFX_report_event_FIN_petsamo_mine
+
+	is_triggered_only = yes
+
+	# Astounding!
+	option = {
+		name = economy.100.o1
+		var:major_discovery_target = {
+			set_temp_variable = { r_token = major_discovery_resource }
+			
+			set_temp_variable = { x_temp = major_discovery_known }
+			custom_effect_tooltip = add_x_known_reserves_tt
+			set_temp_variable = { x_temp = major_discovery_potential }
+			custom_effect_tooltip = add_x_potential_reserves_tt
+
+			clear_variable = major_discovery_known 
+			clear_variable = major_discovery_potential 
+			clear_variable = major_discovery_resource
+		}
+		clear_variable = major_discovery_target
+	}
+}
