@@ -555,10 +555,10 @@ spriteTypes = {
 				name = "GFX_tech_hydraulic_mining_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_hydraulic_mining.dds"
 			}
-			# spriteType = {
-			# 	name = "GFX_tech_coal_strip_mining_medium"
-			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_coal_strip_mining.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_coal_strip_mining_medium"
+				textureFile = "gfx/interface/technologies/41_extraction/tech_coal_strip_mining.dds"
+			}
 			# spriteType = {
 			# 	name = "GFX_tech_wheel_cutters_medium"
 			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_wheel_cutters.dds"
@@ -621,10 +621,10 @@ spriteTypes = {
 				name = "GFX_tech_donkey_engine_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_donkey_engine.dds"
 			}
-			# spriteType = {
-			# 	name = "GFX_tech_power_loaders_medium"
-			# 	textureFile = "gfx/interface/technologies/41_extraction/tech_power_loaders.dds"
-			# }
+			spriteType = {
+				name = "GFX_tech_power_loaders_medium"
+				textureFile = "gfx/interface/technologies/42_industry/tech_steam_shovel.dds"
+			}
 			spriteType = {
 				name = "GFX_tech_steam_feed_medium"
 				textureFile = "gfx/interface/technologies/41_extraction/tech_steam_feed.dds"

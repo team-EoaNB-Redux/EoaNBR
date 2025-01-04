@@ -515,10 +515,10 @@ spriteTypes = {
 			name = "GFX_tech_stump_jump_plow_medium"
 			textureFile = "gfx/interface/technologies/40_agronomy/tech_stump_jump_plow.dds"
 		}
-		# spriteType = {
-		# 	name = "GFX_tech_reversible_plow_medium"
-		# 	textureFile = "gfx/interface/technologies/40_agronomy/tech_reversible_plow.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_reversible_plow_medium"
+			textureFile = "gfx/interface/technologies/40_agronomy/tech_reversible_plow.dds"
+		}
 		# spriteType = {
 		# 	name = "GFX_tech_aerial_seed_sowing_medium"
 		# 	textureFile = "gfx/interface/technologies/40_agronomy/tech_aerial_seed_sowing.dds"
