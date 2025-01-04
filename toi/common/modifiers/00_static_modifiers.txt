@@ -371,8 +371,8 @@ attache_sent = {
 
 diff_very_easy_player = {
 	production_factory_max_efficiency_factor = 0.3
-	research_speed_factor = 0.15
-	political_power_factor = 0.5
+	research_speed_factor = 0.10
+	political_power_factor = 0.15
 	production_lack_of_resource_penalty_factor = -0.8
 	army_fuel_consumption_factor = -0.5
 	air_fuel_consumption_factor = -0.5
@@ -384,8 +384,8 @@ diff_very_easy_player = {
 
 diff_easy_player = {
 	production_factory_max_efficiency_factor = 0.2
-	research_speed_factor = 0.07
-	political_power_factor = 0.25
+	research_speed_factor = 0.05
+	political_power_factor = 0.075
 	production_lack_of_resource_penalty_factor = -0.3
 	army_fuel_consumption_factor = -0.25
 	air_fuel_consumption_factor = -0.25
@@ -401,8 +401,8 @@ diff_normal_player = {
 
 diff_hard_player = {
 	production_factory_max_efficiency_factor = -0.2
-	research_speed_factor = -0.15
-	political_power_factor = -0.1
+	research_speed_factor = -0.05
+	political_power_factor = -0.075
 	supply_consumption_factor = 0.05
 	industry_input_factor = 0.02
 	no_supply_grace = 24
@@ -410,7 +410,7 @@ diff_hard_player = {
 
 diff_very_hard_player = {
 	production_factory_max_efficiency_factor = -0.3
-	research_speed_factor = -0.30
+	research_speed_factor = -0.10
 	political_power_factor = -0.15
 	supply_consumption_factor = 0.1
 	industry_input_factor = 0.04
