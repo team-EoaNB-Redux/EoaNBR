@@ -1,4 +1,4 @@
-﻿# add_namespace = tech
+﻿add_namespace = tech
 
 #News about new inventions, patents, etc.
 add_namespace = tech_news

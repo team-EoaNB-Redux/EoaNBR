@@ -659,7 +659,7 @@ country_event = {###natives reached 100% industrialisation
 			custom_effect_tooltip = Oceania_become_industrialised
 		}
 		hidden_effect = {
-			clear_variable = ROOT.innovation_progress ????
+			clear_variable = ROOT.innovation_progress
 			remove_ideas = afr_reforming_kingdom
 			clr_country_flag = Oceania_industrializing
 			clr_country_flag = afr_colony_industrializing

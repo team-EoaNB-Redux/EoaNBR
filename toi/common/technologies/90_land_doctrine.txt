@@ -6229,7 +6229,7 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = 16 y = 32 }
 		}
-		available = {
+		allowed = {
 			has_idea = institution_mass_transit
 			has_idea = institution_imperialism
 		}

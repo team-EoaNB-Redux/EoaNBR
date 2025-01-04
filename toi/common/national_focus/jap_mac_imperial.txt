@@ -3354,8 +3354,10 @@ continuous_focus_position = { x = 400 y = 1250 }
 		available_if_capitulated = yes
 
 		completion_reward = {
-			swap_ideas = { remove_idea = industrializing add_idea = industrialized }
-			swap_ideas = { remove_idea = victorian_era add_idea = machine_era }
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_innovative_change = yes
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_humanitive_change = yes
 			hidden_effect = {
 				add_timed_idea = {
 					idea = JAP_well_oiled_economy_base

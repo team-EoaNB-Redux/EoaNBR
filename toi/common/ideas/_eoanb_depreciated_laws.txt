@@ -1,5 +1,5 @@
 ideas = {
-	industrialization = {
+	hidden = {
 		law = yes
 
 		agrarian = {
@@ -202,7 +202,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
-	tech_era = {
+	hidden = {
 		law = no
 
 		pre_industrial_era = {
@@ -512,7 +512,7 @@ ideas = {
 			}
 		}
 	}
-	gov_structure = {
+	hidden = {
 		law = yes
 
 		colonial_government = {

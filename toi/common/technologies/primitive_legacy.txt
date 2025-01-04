@@ -156,10 +156,6 @@ technologies = {
 
 		research_cost = 0.15
 		start_year = 1800
-		folder = {
-			name = mtg_capital_folder
-			position = { x = @primitive_sails y = 6 }
-		}
 
 		categories = {
 			naval_equipment

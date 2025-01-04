@@ -608,7 +608,6 @@ focus_tree = {
 			OR={
 				custom_trigger_tooltip = {
 					tooltip = afr_reforming_regional_power_regional_victorian_era_tooltip
-					has_idea = victorian_era
 				}
 				AND={
 					if = {
@@ -643,12 +642,6 @@ focus_tree = {
 			}
 			country_event = { id = afr_empire_politics_taxes_regional_power.1 }
 		}
-		#bypass = {
-		#	custom_trigger_tooltip = {
-		#		tooltip = afr_reforming_regional_power_regional_victorian_era_tooltip
-		#		has_idea = victorian_era
-		#	}
-		#}
 	}
 
 	focus = {
@@ -690,7 +683,8 @@ focus_tree = {
 			custom_effect_tooltip = afr_advance_to_victorian
 			hidden_effect = {
 				load_focus_tree = industrialised_african_formed_nation
-				add_ideas = victorian_era
+				set_temp_variable = { institution_progress_temp = 20 }
+				eoanbr_institutions_innovative_change = yes
 			}
 			set_country_flag = afr_rrp_non_colonial_industrialization
 			custom_effect_tooltip = afr_rrp_inspiration_to_africa

@@ -292,15 +292,13 @@ shared_focus = {
 	prerequisite = { focus = afr_colony_generic_regional_resources }
 
 	completion_reward = {
-		swap_ideas={
-			add_idea=victorian_era
-			remove_idea=pre_industrial_era
-		}
+		set_temp_variable = { institution_progress_temp = 20 }
+		eoanbr_institutions_innovative_change = yes
 	}
 	bypass = {
 		custom_trigger_tooltip = {
 			tooltip = afr_colony_generic_regional_victorian_era_tooltip
-			has_idea = victorian_era
+			has_idea = institution_industrialization
 		}
 	}
 }

@@ -1353,10 +1353,6 @@ focus_tree = {
 				# has_institution_progress_complete = yes
 			}
 
-			bypass = {
-				NOT = { has_idea = pre_industrial_era }
-			}
-
 			prerequisite = { focus = JAP_vic_sword_of_the_rising_sun focus = JAP_vic_fleet_of_the_rising_sun }
 			prerequisite = { focus = JAP_vic_industrial_reform }
 			prerequisite = { focus = JAP_vic_yokusuka_weapons_arsenal }
@@ -1365,13 +1361,8 @@ focus_tree = {
 			ai_will_do = { factor = 2 }
 
 			completion_reward = {
-				if = {
-					limit = { has_idea = pre_industrial_era }
-					swap_ideas = {
-						remove_idea = pre_industrial_era
-						add_idea = victorian_era
-					}
-				}
+				set_temp_variable = { institution_progress_temp = 20 }
+		eoanbr_institutions_innovative_change = yes
 				set_country_flag = JAP_machine_era_ft
 				custom_effect_tooltip = VICTORIAN_ERA_FOCUS_TREE_UNLOCK
 				EOANBSYS_national_crisis_clear = yes

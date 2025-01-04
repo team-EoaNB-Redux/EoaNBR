@@ -18,7 +18,7 @@ default_peace = {
 	puppet_randomness = 0
 	take_states_randomness = 0
 	force_government_randomness = 0
-	
+
 	# ROOT = Taker, FROM = Giver
 	annex = {
 		factor = 500
@@ -29,9 +29,9 @@ default_peace = {
 				has_annex_war_goal = FROM
 			}
 			FROM = {
-				any_owned_state = { 
+				any_owned_state = {
 					NOT = {
-						OR = { 
+						OR = {
 							is_claimed_by = ROOT
 							is_core_of = ROOT
 							has_claimed_state_in_peace_conference = ROOT
@@ -60,7 +60,7 @@ default_peace = {
 		factor = 20 #100
 		modifier = {
 			factor = 0
-	
+
 			NOT = {
 				ai_liberate_desire = {
 					target = FROM
@@ -83,7 +83,7 @@ default_peace = {
 			NOT = {
 				FROM = {
 					OR = {
-						TAG = AUS 
+						TAG = AUS
 						TAG = OTO
 						TAG = ENG
 						TAG = SWE
@@ -118,7 +118,7 @@ default_peace = {
 			factor = 0
 			OR = {
 				NOT = { is_owner_neighbor_of = FROM }
-				AND = { 
+				AND = {
 					FROM = {
 						OR = {
 							num_of_factories > 100
@@ -191,7 +191,7 @@ default_peace = {
 		modifier = { #Not if we claim anything
 			factor = 0
 			FROM = {
-				any_owned_state = { 
+				any_owned_state = {
 					is_claimed_by = ROOT
 					NOT = { has_claimed_state_in_peace_conference = ROOT }
 				}
@@ -233,19 +233,19 @@ default_peace = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { 
-				FROM = { 
+			NOT = {
+				FROM = {
 					OR = {
 						is_claimed_by = ROOT
 						is_core_of = ROOT
 					}
-				} 
+				}
 			}
 			FROM = {
-				controller = { 
-					is_ai = no 
-					has_capitulated = no 
-					is_puppet = no 
+				controller = {
+					is_ai = no
+					has_capitulated = no
+					is_puppet = no
 				}
 			}
 		}
@@ -372,7 +372,7 @@ default_peace = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			factor = 0
 			FROM = {
@@ -383,21 +383,14 @@ default_peace = {
 							count > 0
 						}
 						ROOT = { num_of_factories < 5 }
-						NOT = { 
-							ROOT = { 
+						NOT = {
+							ROOT = {
 								OR = {
-									tag = QNG 
+									tag = QNG
 									tag = TRV
 									tag = OFS
 								}
-							} 
-						}
-						OR = {
-							has_idea = pre_industrial_era
-							has_idea = victorian_era
-							has_idea = machine_era
-							has_idea = oil_era
-							has_idea = aviation_era
+							}
 						}
 					}
 					AND = {
@@ -406,21 +399,14 @@ default_peace = {
 							count > 1
 						}
 						ROOT = { num_of_factories < 10 }
-						NOT = { 
-							ROOT = { 
+						NOT = {
+							ROOT = {
 								OR = {
-									tag = QNG 
+									tag = QNG
 									tag = TRV
 									tag = OFS
 								}
-							} 
-						}
-						OR = {
-							has_idea = pre_industrial_era
-							has_idea = victorian_era
-							has_idea = machine_era
-							has_idea = oil_era
-							has_idea = aviation_era
+							}
 						}
 					}
 					AND = {
@@ -429,21 +415,14 @@ default_peace = {
 							count > 2
 						}
 						ROOT = { num_of_factories < 20 }
-						NOT = { 
-							ROOT = { 
+						NOT = {
+							ROOT = {
 								OR = {
-									tag = QNG 
+									tag = QNG
 									tag = TRV
 									tag = OFS
 								}
-							} 
-						}
-						OR = {
-							has_idea = pre_industrial_era
-							has_idea = victorian_era
-							has_idea = machine_era
-							has_idea = oil_era
-							has_idea = aviation_era
+							}
 						}
 					}
 					AND = {
@@ -452,21 +431,14 @@ default_peace = {
 							count > 3
 						}
 						ROOT = { num_of_factories < 50 }
-						NOT = { 
-							ROOT = { 
+						NOT = {
+							ROOT = {
 								OR = {
-									tag = QNG 
+									tag = QNG
 									tag = TRV
 									tag = OFS
 								}
-							} 
-						}
-						OR = {
-							has_idea = pre_industrial_era
-							has_idea = victorian_era
-							has_idea = machine_era
-							has_idea = oil_era
-							has_idea = aviation_era
+							}
 						}
 					}
 					AND = {
@@ -475,21 +447,14 @@ default_peace = {
 							count > 4
 						}
 						ROOT = { num_of_factories < 100 }
-						NOT = { 
-							ROOT = { 
+						NOT = {
+							ROOT = {
 								OR = {
-									tag = QNG 
+									tag = QNG
 									tag = TRV
 									tag = OFS
 								}
-							} 
-						}
-						OR = {
-							has_idea = pre_industrial_era
-							has_idea = victorian_era
-							has_idea = machine_era
-							has_idea = oil_era
-							has_idea = aviation_era
+							}
 						}
 					}
 				}
@@ -497,7 +462,7 @@ default_peace = {
 		}
 
 		modifier = {
-			factor = 0		
+			factor = 0
 			NOT = { FROM = { is_claimed_by = ROOT } }
 			NOT = {
 				FROM = {
@@ -511,7 +476,7 @@ default_peace = {
 			}
 			OR = {
 				NOT = {
-					FROM = { 
+					FROM = {
 						OR = {
 							is_island_state = yes
 							is_coastal = yes
@@ -525,13 +490,13 @@ default_peace = {
 
 		modifier = { #Only take claims - may also take African colonies if already a colonial power or major European country.
 			factor = 0
-			NOT = { 
-				FROM = { 
+			NOT = {
+				FROM = {
 					OR = {
 						is_claimed_by = ROOT
 						is_core_of = ROOT
 					}
-				} 
+				}
 			}
 			OR = {
 				NOT = { FROM = { is_on_continent = africa } }
@@ -557,7 +522,7 @@ default_peace = {
 			is_puppet = yes
 			FROM = {
 				NOT = {
-					OR = { 
+					OR = {
 						is_claimed_by = ROOT
 						is_core_of = ROOT
 					}

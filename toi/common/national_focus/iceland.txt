@@ -1147,11 +1147,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-				remove_idea = pre_industrial_era		
-				add_idea = victorian_era
-			}
-	    }
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_innovative_change = yes
+		}
 	}
 	
 	focus = {

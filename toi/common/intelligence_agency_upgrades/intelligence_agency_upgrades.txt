@@ -21,76 +21,37 @@ branch_command={
 				limit = {
 					NOT = {has_variable = agency_funding_level}
 				}
-				OR = {
-					has_idea = victorian_era
-					has_idea = machine_era
-					has_idea = oil_era
-					has_idea = aviation_era
-					has_idea = modern_era
-					has_idea = atomic_era
-					has_idea = information_era
-					has_idea = digital_era
-					has_idea = post_digital_era
-				}
+				has_idea = institution_nationalism
 			}
 			else_if={
 				limit={
 					check_variable = {agency_funding_level = 1}
 				}
-				OR = {
-					has_idea = oil_era
-					has_idea = aviation_era
-					has_idea = modern_era
-					has_idea = atomic_era
-					has_idea = information_era
-					has_idea = digital_era
-					has_idea = post_digital_era
-				}
+				has_idea = institution_imperialism
 			}
 			else_if={
 				limit={
 					check_variable = {agency_funding_level = 2}
 				}
-				OR = {
-					has_idea = aviation_era
-					has_idea = modern_era
-					has_idea = atomic_era
-					has_idea = information_era
-					has_idea = digital_era
-					has_idea = post_digital_era
-				}
+				has_idea = institution_mass_marketization
 			}
 			else_if={
 				limit={
 					check_variable = {agency_funding_level = 3}
 				}
-				OR = {
-					has_idea = modern_era
-					has_idea = atomic_era
-					has_idea = information_era
-					has_idea = digital_era
-					has_idea = post_digital_era
-				}
+				has_idea = institution_mass_feminism
 			}
 			else_if={
 				limit={
 					check_variable = {agency_funding_level = 4}
 				}
-				OR = {
-					has_idea = atomic_era
-					has_idea = information_era
-					has_idea = digital_era
-					has_idea = post_digital_era
-				}
+				has_idea = institution_dogmatism
 			}
 			else_if={
 				limit={
 					check_variable = {agency_funding_level = 5}
 				}
-				OR = {
-					has_idea = digital_era
-					has_idea = post_digital_era
-				}
+				has_idea = institution_globalization
 			}
 		}
 		

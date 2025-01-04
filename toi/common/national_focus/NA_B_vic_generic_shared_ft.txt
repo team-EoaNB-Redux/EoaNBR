@@ -419,14 +419,7 @@ shared_focus = {
 
   ai_will_do = { base = 10 }
   bypass = {
-    OR = {
-      has_idea = machine_era
-      has_idea = oil_era
-      has_idea = aviation_era
-      has_idea = modern_era
-      has_idea = atomic_era
-      has_idea = information_era
-    }
+		has_idea = institution_mechanization
   }
 
   completion_reward = {

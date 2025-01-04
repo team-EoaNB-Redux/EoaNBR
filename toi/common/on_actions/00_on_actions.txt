@@ -413,23 +413,23 @@ on_actions = {
 						}
 						set_nationality = MXE
 					}
-        				remove_state_core = 277
-        				remove_state_core = 474
-        				remove_state_core = 475
-        				remove_state_core = 476
-        				remove_state_core = 481
-        				remove_state_core = 482
-        				remove_state_core = 483
-        				remove_state_core = 484
-        				remove_state_core = 1113
-        				remove_state_core = 1114
-        				remove_state_core = 477
-        				remove_state_core = 479
-        				remove_state_core = 480
-        				remove_state_core = 1112
-        				remove_state_core = 478
-        				remove_state_core = 1124
-        				remove_state_core = 485
+						remove_state_core = 277
+						remove_state_core = 474
+						remove_state_core = 475
+						remove_state_core = 476
+						remove_state_core = 481
+						remove_state_core = 482
+						remove_state_core = 483
+						remove_state_core = 484
+						remove_state_core = 1113
+						remove_state_core = 1114
+						remove_state_core = 477
+						remove_state_core = 479
+						remove_state_core = 480
+						remove_state_core = 1112
+						remove_state_core = 478
+						remove_state_core = 1124
+						remove_state_core = 485
 				}
 				MEX = {
 					white_peace = ROOT
@@ -460,29 +460,29 @@ on_actions = {
 						}
 						set_nationality = USA
 					}
-        				remove_state_core = 277
-        				remove_state_core = 474
-        				remove_state_core = 475
-        				remove_state_core = 476
-        				remove_state_core = 481
-        				remove_state_core = 482
-        				remove_state_core = 483
-        				remove_state_core = 484
-        				remove_state_core = 1113
-        				remove_state_core = 1114
-        				remove_state_core = 477
-        				remove_state_core = 479
-        				remove_state_core = 480
-        				remove_state_core = 1112
-        				remove_state_core = 478
-        				remove_state_core = 1124
-        				remove_state_core = 485
+						remove_state_core = 277
+						remove_state_core = 474
+						remove_state_core = 475
+						remove_state_core = 476
+						remove_state_core = 481
+						remove_state_core = 482
+						remove_state_core = 483
+						remove_state_core = 484
+						remove_state_core = 1113
+						remove_state_core = 1114
+						remove_state_core = 477
+						remove_state_core = 479
+						remove_state_core = 480
+						remove_state_core = 1112
+						remove_state_core = 478
+						remove_state_core = 1124
+						remove_state_core = 485
 				}
 				MEC = {
 					white_peace = ROOT
-		            annex_country = {
-		       	   		target = MEX
-		           	}
+					annex_country = {
+			   	   		target = MEX
+				   	}
 					increase_ps_by_one = yes
 					country_event = { days = 1 id = mexico.12 }
 					delete_unit_template_and_units = { division_template = "Light Infantry" }
@@ -596,7 +596,7 @@ on_actions = {
 				}
 			}
 			if = {
-                limit = {
+				limit = {
 					FROM = { OR = { tag = PIE tag = TUS } }
 					ROOT = { tag = NSC }
 					NSC = {
@@ -611,57 +611,19 @@ on_actions = {
 					remove_state_core = 115
 					clr_country_flag = NSC_Southern_rebellion_on_capitulation
 				}
-                FROM = {
+				FROM = {
 					annex_country = {
 						target = NSC
 					}
 				}
 			}
-			# if = {
-				# limit = {
-					# ROOT = { tag = PAP }
-					# PAP = {
-						# has_government = fundamentalism
-					# }
-				# }
-				# FROM = {
-					# PAP = {
-						# every_owned_state = {
-							# limit = {
-								# NOT = {
-									# state = 785
-								# }
-							# }
-							# FROM = {
-								# transfer_state = PREV
-							# }
-
-						# }
-					# }
-				# }
-
-			# }
-	        # if = {
-                # limit = {
-					# FROM = { tag = RUS }
-				    # ROOT = { tag = CIR }
-                # }
-                # FROM = { country_event = { id = caucasus.2 } } #event does not exist
-            # }
-	        #if = {
-                #limit = {
-					#ROOT = { tag = AUS }
-					#FROM = { tag = PIE }
-                #}
-                #AUS = { country_event = AUSitalypolitics.1  }
-            #}
 			if = {#British win the Sepoy rebellion
-                limit = {
+				limit = {
 					FROM = { tag = RAJ }
 					ROOT = { tag = SRS }
-                }
-                FROM = { country_event = { id = britishindia.1 } }
-            }
+				}
+				FROM = { country_event = { id = britishindia.1 } }
+			}
 			if = {#spain wins, dom is annexed
 				limit = {
 					TAG = DOM
@@ -778,22 +740,22 @@ on_actions = {
 				}
 			}
 			if = {
-                limit = {
+				limit = {
 					FROM = {
 						tag = OTO
 						has_country_flag = BOS_nevesinje
 					}
 					ROOT = { tag = BOS }
-                }
-                clr_country_flag = BOS_nevesinje
+				}
+				clr_country_flag = BOS_nevesinje
 				FROM={
 					annex_country = {
 						target = BOS
 						transfer_troops = no
 					}
 				}
-            }
-            if = {
+			}
+			if = {
 				limit = {
 					ROOT = { tag = USA }
 					FROM = {
@@ -910,148 +872,6 @@ on_actions = {
 		}
 	}
 
-	#ROOT is winner #FROM gets annexed - This will also fire on_annex
-	on_civil_war_end = {
-		effect = {
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = USA
-						has_government = centrism
-						has_cosmetic_tag = USA_free_states_of_america
-					}
-					FROM = {
-						original_tag = USA
-						has_government = autocracy
-					}
-				}
-				every_state = {
-					remove_core_of = ROOT
-				}
-				drop_cosmetic_tag = yes
-				USA = {
-		            annex_country = {
-		                target = ROOT
-		                transfer_troops = yes
-		            }
-		            add_ideas = {
-	                    hos_is_leader
-	                    victorian_era
-	                    law_victorian_army
-	                    industrializing
-	                    non_monarchical_system
-	                    presidential_republic
-
-	                    civilian_economy
-	                    export_focus
-	                    two_percent
-	                    normal_taxes
-	                    cl_restricted
-	                    twelve_hour_work_day
-
-	                    stagnation_growth
-	                    border_control
-	                    volunteer_only
-	                    racial_laws
-	                    universal_male_suffrage
-
-	                    constitution_adopted
-	                    free_elections
-
-	                    privileged_education
-	                    state_religion
-	                }
-		            set_politics = {
-		                ruling_party = centrism
-		            }
-		            create_country_leader = {
-	                    name = "Ulysses S. Grant"
-	                    desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	                    picture = "Portrait_USA_Ulysses_grant.dds"
-	                    expire = "1947.1.1"
-	                    ideology = radical_liberal
-	                }
-		            add_ideas = {
-									hos_is_leader
-									victorian_era
-									law_victorian_army
-									industrializing
-									non_monarchical_system
-									presidential_republic
-
-									civilian_economy
-									export_focus
-									two_percent
-									normal_taxes
-									cl_restricted
-									twelve_hour_work_day
-
-									stagnation_growth
-									border_control
-									volunteer_only
-									racial_laws
-									universal_male_suffrage
-
-									constitution_adopted
-									free_elections
-
-									privileged_education
-									secular_state
-								}
-		            add_popularity = {
-		                ideology = centrism
-		                popularity = 0.6
-		            }
-		            add_popularity = {
-		                ideology = traditional_conservatism
-		                popularity = 0.4
-		            }
-		        }
-			}
-			if = {
-				limit = {
-					original_tag = TEX
-					has_government = traditional_conservatism
-					TEX = { has_country_flag = TEX_civil_war }
-				}
-				TEX = { clr_country_flag = TEX_civil_war }
-				ROOT = { drop_cosmetic_tag = yes }
-				TEX = { drop_cosmetic_tag = yes }
-				TEX = { remove_ideas = houston_revolt }
-				ROOT = { country_event = { id = acw.62 } }
-				every_owned_state = {
-					remove_core_of = TEX
-				}
-				add_popularity = {
-					ideology = centrism
-					popularity = 0.17
-				}
-			}
-			if = {
-				limit = {
-					original_tag = TEX
-					has_government = centrism
-					TEX = { has_country_flag = TEX_civil_war }
-				}
-				TEX = { clr_country_flag = TEX_civil_war }
-				ROOT = { drop_cosmetic_tag = yes }
-				event_target:TEX_CIVWAR_CSA_target = { drop_cosmetic_tag = yes }
-				TEX = { remove_ideas = houston_revolt }
-				ROOT = { country_event = { id = acw.61 } }
-				every_owned_state = {
-					remove_core_of = event_target:TEX_CIVWAR_CSA_target
-				}
-				add_popularity = {
-					ideology = traditional_conservatism
-					popularity = 0.12
-				}
-				add_popularity = {
-					ideology = radical_democracy
-					popularity = 0.12
-				}
-			}
-		}
-	}
 
 	#used when puppeting in a peace conference
 	#ROOT = nation being puppeted, FROM = overlord
@@ -1120,42 +940,42 @@ on_actions = {
 	#On state control change triggers whenever a province exchanges hands. Very laggy!
 	on_state_control_changed = {
 		effect = {
-            #This has no conditions and can trigger in 2050 even... Please rework (to reduce lag)
+			#This has no conditions and can trigger in 2050 even... Please rework (to reduce lag)
 			#if = {
-            #    limit = {
-            #        tag = SWE
-            #        FROM.FROM = {
-            #            state = 104
-            #        }
-            #    }
-            #    country_event = { id = eoanb_sweden.13 days = 1 }
-            #}
-            if = {
-                limit = {
-                    has_global_flag = eoanb_flag_franco_prussian_war_ongoing
+			#	limit = {
+			#		tag = SWE
+			#		FROM.FROM = {
+			#			state = 104
+			#		}
+			#	}
+			#	country_event = { id = eoanb_sweden.13 days = 1 }
+			#}
+			if = {
+				limit = {
+					has_global_flag = eoanb_flag_franco_prussian_war_ongoing
 					tag = FRA
-                    FROM.FROM = {
-                        is_owned_by = PRS
-                    }
-                }
-                country_event = fraprswar.11
-            }
-            if = {
-                limit = {
+					FROM.FROM = {
+						is_owned_by = PRS
+					}
+				}
+				country_event = fraprswar.11
+			}
+			if = {
+				limit = {
 					FROM.FROM = {
 						state = 18
-                    }
-                    OR = {
-                        tag = PRS
-                        tag = BAD
-                        tag = WUR
-                        tag = BAV
-                    }
-                }
-                FRA = {
-                    country_event = nap_france.397
-                }
-            }
+					}
+					OR = {
+						tag = PRS
+						tag = BAD
+						tag = WUR
+						tag = BAV
+					}
+				}
+				FRA = {
+					country_event = nap_france.397
+				}
+			}
 		}
 	}
 

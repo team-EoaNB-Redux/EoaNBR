@@ -152,7 +152,7 @@ ideas = {
 			}
 			picture = TSH_silk_industry
 			cancel = {
-				has_idea = machine_era
+				has_idea = institution_mechanization
 			}
 			modifier = {
 				treasury_cost_monthly_per_gdp = 0.015

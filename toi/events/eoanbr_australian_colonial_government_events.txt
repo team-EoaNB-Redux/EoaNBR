@@ -20,13 +20,13 @@ country_event = { #4th premier election result
                 country_leader = {
                 ideology = moderatism
                 expire = 1.1.1.1
-                trait = {    }
+                traits = {    }
                 }
             }
         }
 		   set_politics = {
-                ruling_party = centrism
-                    election_allowed = no
+					ruling_party = centrism
+					elections_allowed = no
 					last_election = "1857.09.07"
         }
     }

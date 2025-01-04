@@ -5791,7 +5791,6 @@ TEX_civil_war_acw_setup = {
 		load_focus_tree = TEX_CIVWAR_focus_tree
 		add_ideas = {
 			hos_is_leader
-			victorian_era
 			law_victorian_army
 			non_monarchical_system
 			presidential_republic

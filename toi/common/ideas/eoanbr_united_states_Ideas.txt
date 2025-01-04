@@ -522,7 +522,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = HUN_treaty_of_triannon
 			removal_cost = -1
 
@@ -539,7 +538,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = USA_westpoint_napoleonic_thought
 			removal_cost = -1
 
@@ -560,7 +558,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = USA_westpoint_napoleonic_thought
 			removal_cost = -1
 
@@ -579,7 +576,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = USA_westpoint_reformed
 			removal_cost = -1
 
@@ -599,7 +595,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = generic_oppression
 			removal_cost = -1
 
@@ -615,7 +610,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = saf_history_of_segregation
 			removal_cost = -1
 
