@@ -1,5 +1,5 @@
 ideas = {
-	hidden = {
+	hidden_ideas = {
 		law = yes
 
 		agrarian = {
@@ -202,7 +202,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
-	hidden = {
+	hidden_ideas = {
 		law = no
 
 		pre_industrial_era = {
@@ -512,7 +512,7 @@ ideas = {
 			}
 		}
 	}
-	hidden = {
+	hidden_ideas = {
 		law = yes
 
 		colonial_government = {
