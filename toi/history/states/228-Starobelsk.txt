@@ -13,29 +13,20 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-		
+
 		#Agriculture
-		set_variable = { crop_farm_size = 2 } 
 
-		# set_variable = {
-		# 	building_commercial_farm_size = 1
-
-		# }
-		# set_variable = {
-		# 	building_coal_mine_size = 2
-
-		# }
 		add_core_of = RUS
-		
+
 		victory_points = {
-			9461 1 
+			9461 1
 		}
 	}
 
 	provinces={
-		523 547 570 6505 6519 9446 9461 9476 11487 11513 
+		523 547 570 6505 6519 9446 9461 9476 11487 11513
 	}
-	manpower=330030
+	manpower=290030
 	buildings_max_level_factor=1.000
 	state_category = rural
 	local_supplies=0.000

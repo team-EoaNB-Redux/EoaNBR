@@ -15,13 +15,10 @@ state={
 				infrastructure = 3
 			}
 			set_variable = {
-				building_consumer_goods_factory_size = 2
-			}
-			set_variable = {
-				building_lumber_mill_size = 1
+				consumer_goods_factory_size = 2
 			}
 			victory_points = {
-				3580 5 
+				3580 5
 			}
 
 		}
@@ -29,7 +26,7 @@ state={
 	}
 
 	provinces={
-		457 558 580 3554 3580 6304 6543 6603 9260 9542 9579 11244 11526 
+		457 558 580 3554 3580 6304 6543 6603 9260 9542 9579 11244 11526
 	}
 	manpower=926231
 	buildings_max_level_factor=1.000

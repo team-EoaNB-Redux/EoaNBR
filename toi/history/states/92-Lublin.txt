@@ -6,7 +6,7 @@ state={
 	resources={
 		wood=13.000
 		iron = 0
-		coal = 0
+		coal = 4
 	}
 
 	history={
@@ -22,15 +22,6 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {
-			building_infrastructure_size = 1
-
-		}
-		set_variable = {
-			building_coal_mine_size = 4
-
-		}
-
 	}
 
 	provinces={

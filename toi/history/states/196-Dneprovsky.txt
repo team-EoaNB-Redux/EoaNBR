@@ -24,8 +24,7 @@ state = {
 				infrastructure = 3
 			}
 			#Agriculture
-			set_variable = { crop_farm_size = 3 } 
-			# set_variable = { building_services_building_size = 1 }
+			set_variable = { crop_farm_size = 3 }
 		}
 	}
 }
