@@ -29,7 +29,7 @@
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES
-		#parliamentary_monarchy
+		parliamentary_monarchy
 		constitution_adopted
 		limited_elections
 		# limited_independence
@@ -912,7 +912,7 @@
 		law_victorian_army
 
 		#	GOVERNMENTAL POLICIES	#
-		#parliamentary_monarchy
+		parliamentary_monarchy
 		constitution_adopted
 		limited_elections
 	# limited_independence

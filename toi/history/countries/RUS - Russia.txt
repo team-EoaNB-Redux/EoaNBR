@@ -22,7 +22,7 @@
 		law_traditional_army
 		fast_growth
 
-		#absolute_monarchy
+		absolute_monarchy
 		no_constitution
 		no_elections
 

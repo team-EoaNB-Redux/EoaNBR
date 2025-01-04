@@ -31,7 +31,7 @@
 				stagnation
 			#
 			# Government
-				#absolute_monarchy
+				absolute_monarchy
 				sharia_constitution
 				no_elections
 			#

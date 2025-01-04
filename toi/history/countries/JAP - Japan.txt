@@ -15,7 +15,7 @@
 
 		# Government
 
-		#absolute_monarchy
+		absolute_monarchy
 		no_constitution
 		no_elections
 		# no_separation
@@ -234,7 +234,7 @@
 
 		# Government
 
-		#absolute_monarchy
+		absolute_monarchy
 		no_constitution
 		no_elections
 		# no_separation
