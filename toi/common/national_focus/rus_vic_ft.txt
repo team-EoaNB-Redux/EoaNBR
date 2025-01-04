@@ -17,27 +17,27 @@ focus_tree = {
 	shortcut = {
 		name = RUS_vic_Industrialise_The_Empire
 		target = RUS_vic_Industrialise_The_Empire 
-		scroll_wheel_factor = 0.485
+		scroll_wheel_factor = 0.8
 	}
 	shortcut = {
 		name = RUS_vic_crimean_war_outcome
 		target = RUS_vic_crimean_war_outcome 
-		scroll_wheel_factor = 0.485
+		scroll_wheel_factor = 0.8
 	}
 	shortcut = {
 		name = RUS_vic_Russian_European_Empire
 		target = RUS_vic_Russian_European_Empire 
-		scroll_wheel_factor = 0.485
+		scroll_wheel_factor = 0.8
 	}
 	shortcut = {
 		name = RUS_vic_Third_Rome
 		target = RUS_vic_Third_Rome 
-		scroll_wheel_factor = 0.485
+		scroll_wheel_factor = 0.8
 	}
 	shortcut = {
 		name = RUS_vic_Tsar_Alexander_II
 		target = RUS_vic_Tsar_Alexander_II 
-		scroll_wheel_factor = 0.485
+		scroll_wheel_factor = 0.8
 	}
 
 	### Economy

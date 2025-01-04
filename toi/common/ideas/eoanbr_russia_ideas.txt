@@ -2,6 +2,7 @@ ideas = {
 	country = {
 		### STARTING NATIONAL SPIRITS
 			RUS_spirit_vic_granary_of_europe = {
+				allowed = { always = no }
 				picture = rus_granary_of_europe
 				allowed_civil_war = {
 					always = yes
@@ -9,12 +10,11 @@ ideas = {
 
 				research_bonus = {
 					cat_agriculture_techs = 0.05
-					cat_science_techs = 0.05
 				}
 
 				modifier = {
 					supply_consumption_factor = -0.25
-					military_equipment_cost_factor = -0.05
+					military_equipment_cost_factor = -0.15
 					monthly_population = 0.05
 					agriculture_output_factor = 0.02
 				}
@@ -64,7 +64,7 @@ ideas = {
 			picture = rus_tsarist_vodka_monopoly
 
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = -0.1
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 				production_speed_buildings_factor = -0.05

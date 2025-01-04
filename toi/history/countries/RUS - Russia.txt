@@ -216,6 +216,9 @@
 	set_technology = {
 		tech_infantry_rifle_equipment_1 = 1
 		land_doctrine_victorian = 1
+		tech_condensing_steam_engine = 1
+		tech_high_pressure_steam_engine = 1
+		tech_steam_locomotive = 1
 	}
 
 	#How to set up initial debt_level
