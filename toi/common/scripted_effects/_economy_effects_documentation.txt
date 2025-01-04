@@ -41,55 +41,6 @@
 
 ### STATE SCOPE ###
 	## Industries ##
-
-		# LIST OF BUILDING TOKENS:
-			# Urban:
-			#   building_port
-			#   building_airport
-			#
-			#   building_military_industry
-			#   building_civilian_industry
-			#   building_naval_industry
-			#
-			#   building_consumer_goods_factory
-			#   building_luxury_goods_factory
-			#   building_industrial_goods_factory
-			#   building_services_building
-			#   building_power_plant
-			#
-			# Rural:
-			#   building_infrastructure
-			#   building_railway
-			#
-			#   building_rice_paddy		 NOTE: Not Interactable
-			#   building_subsistence_farm   NOTE: Not Interactable
-			#   building_commercial_farm
-			#   building_food_plantation
-			#   building_material_plantation
-			#   building_luxuries_plantation
-			#
-			#   building_lumber_mill
-			#   building_metals_mine
-			#   building_coal_mine
-			#   building_oil_well
-			#   building_valuables_extractor
-		#
-
-		# LIST OF BUILDING PRODUCTION METHODS:
-			# Roman Num.	Name (Year)					 ID
-			# I			 Basic (Pre-Industrial)		  0
-			# II			Advanced (1800s-1820s)		  1
-			# III		   Industrialized (1830s-50s)	  2
-			# IV			Mechanized (1860s-80s)		  3
-			# V			 Electrified (1890s-1910s)	   4
-			# VI			Motorized (1920s-40s)		   5
-			# VII		   Modernized (1950s-60s)		  6
-			# VIII		  Roboticized (1970s-80s)		 7
-			# IX			Computerized (1990s-2000s)	  8
-			# X			 Digitalized (2010s-2020s)	   9
-			# XI			Automatized (2030s-2040s)	   10
-			# XII		   Futurized (2050s)			   11
-		#
 		
 		# Starts construction of the given industry type in the state. If provided a production/automation method that is too advanced (that you don't have tech for) 
 		# or the building doesn't support, then it will auto adjust.
@@ -202,29 +153,10 @@
 					can_build_industry = yes
 				}
 				hidden_effect = {
-					add_to_variable = { size@var:industry_token = x_temp }
-
-					#Add building to array if it doesn't exist yet
-					if = {
-						limit = {
-							NOT = { is_in_array = { industries = industry_token } }
-						}
-						add_to_array = { industries = industry_token }
-						set_variable = { production_method@var:industry_token = production_method_temp }
-						set_variable = { automation_method@var:industry_token = automation_method_temp }
-					}
+					add_x_industry_internal = yes
 					refresh_construction_list = yes
 					reload_industries_array = yes
 
-					var:controller = {
-						var:market_leader = {
-							market_update = yes
-						}
-						every_controlled_state = {
-							industries_update = yes
-							pops_update = yes
-						}
-					}
 					add_to_variable = { update_state_econ_window = 1 }
 				}
 			}
@@ -252,37 +184,10 @@
 					is_in_array = { global.building_token_array = industry_token }
 					check_variable = { x_temp > 0 }
 				}
-				if = {
-					limit = {
-						check_variable = { x_temp > size@var:industry_token }
-					}
-					set_variable = { size@var:industry_token = 0 }
-				}
-				else = {
-					subtract_from_variable = { size@var:industry_token = x_temp }
-				}
+				multiply_temp_variable = { x_temp = -1 }
+				add_x_industry_internal = yes
 
-				if = { #Keeping the Building
-					limit = {
-						check_variable = { size@var:industry_token > 0 }
-					}
-				}
-				else = { #Removing the Building
-					set_temp_variable = { bu_token = industry_token }
-					industry_update = yes
-
-					remove_from_array = { buildings = industry_token }
-					remove_from_array = { industries = industry_token }
-				}
-				
-				industries_update = yes
-				if = {
-					limit = {
-						check_variable = { money@var:industry_token > money_limit@var:industry_token }
-					}
-					set_variable = { money@var:industry_token = money_limit@var:industry_token }
-				}
-
+				# Update labor satisfaction (as this may have changed)
 				industries_update_workforce = yes
 				pops_workforce_update = yes
 				industries_update = yes
@@ -290,6 +195,7 @@
 				refresh_construction_list = yes
 				reload_industries_array = yes
 
+				# Update market
 				var:controller = {
 					var:market_leader = {
 						market_update = yes
@@ -308,8 +214,76 @@
 			set_temp_variable = { industry_token = 0 }
 		}
 
+		#	Adds/removes deposits to the state - does not decrease known reserves or potential reserves
+		add_deposit = {
+			# r_token
+			# x_temp
+			# financer_temp
+			# production_method_temp
+			# automation_method_temp
+
+			round_temp_variable = x_temp
+			
+		}
+		#	Adds/removes known reserves to the state
+		add_known_reserves = {
+
+		}
+		#	Adds/removes potential reserves to the state
+		add_potential_reserves = {
+
+		}
+
+		open_industry = {
+
+		}
+		close_industry = {
+
+		}
+
+		start_upgrading_production_method = {
+
+		}
+		upgrade_production_method = {
+
+		}
+		start_upgrading_automation_method = {
+			
+		}
+		upgrade_automation_method = {
+
+		}
+
+		#	arable_land_temp
+		set_arable_land = {
+			if = { limit = { check_variable = { arable_land_temp < 0 } }
+				set_temp_variable = { arable_land_temp = 0 }
+			}
+
+			set_variable = { arable_land = arable_land_temp }
+			
+		}
+		change_arable_land = {
+
+		}
+
 
 	## Pops ## bb_20
+
+		#	Adds money to pops in the state
+		inject_pop_stimulus = {
+
+		}
+
+		promote_workforce = {
+
+		}
+		add_population = {
+
+		}
+		migrate_population = {
+
+		}
 	
 	# Removes X money from the investment fund and gives it to the state
 	take_x_from_investment_fund = {
@@ -335,6 +309,46 @@
 
 ### COUNTRY SCOPE ###
 	## Budget ## cc_10
+
+		# 	Adds or subtracts money to your treasury. Subtracting treasury beyond negatives will 
+		# 	add debt
+		add_treasury = {
+			if = {
+				limit = {
+					check_variable = { x_temp > 0 }
+				}
+				add_to_variable = {
+					var = treasury
+					value = x_temp
+					tooltip = treasury_change_positive_tooltip
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { x_temp < 0 }
+				}
+				multiply_temp_variable = { x_temp = -1 }
+				subtract_from_variable = {
+					var = treasury
+					value = x_temp
+					tooltip = treasury_change_negative_tooltip
+				}
+			}
+
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = { treasury < 0 }
+					}
+                    set_temp_variable = { x_temp = treasury }
+                    multiply_temp_variable = { x_temp = -0.001 }
+                    add_to_temp_variable = { x_temp = 0.001 }
+                    set_temp_variable = { country_temp = 0 }
+                    borrow_money = yes
+				}
+			}
+			set_temp_variable = { x_temp = 0 }
+		}
 
 		#   Adds or subtracts money to your treasury. Subtracting treasury beyond negatives will 
 		#   add debt. Amount is relative to your government revenue.
@@ -377,46 +391,6 @@
 			set_temp_variable = { x_temp = 0 }
 		}
 		
-		# Adds or subtracts money to your treasury. Subtracting treasury beyond negatives will 
-		# add debt
-		add_treasury = {
-			if = {
-				limit = {
-					check_variable = { x_temp > 0 }
-				}
-				add_to_variable = {
-					var = treasury
-					value = x_temp
-					tooltip = treasury_change_positive_tooltip
-				}
-			}
-			else_if = {
-				limit = {
-					check_variable = { x_temp < 0 }
-				}
-				multiply_temp_variable = { x_temp = -1 }
-				subtract_from_variable = {
-					var = treasury
-					value = x_temp
-					tooltip = treasury_change_negative_tooltip
-				}
-			}
-
-			hidden_effect = {
-				if = {
-					limit = {
-						check_variable = { treasury < 0 }
-					}
-                    set_temp_variable = { x_temp = treasury }
-                    multiply_temp_variable = { x_temp = -0.001 }
-                    add_to_temp_variable = { x_temp = 0.001 }
-                    set_temp_variable = { country_temp = 0 }
-                    borrow_money = yes
-				}
-			}
-			set_temp_variable = { x_temp = 0 }
-		}
-
 		#   Adds a % of your yearly gdp to your treasury. 1.0 = 1.0%
 		add_treasury_gdp = {
 			multiply_temp_variable = { x_temp = 0.12 }
@@ -458,17 +432,337 @@
 			set_temp_variable = { x_temp = 0 }
 		}
 
+		# 	Sets treasury to a certain amount. Setting it to a negative number will add debt.
+		set_treasury = {
+			subtract_from_temp_variable = { x_temp = treasury }
+
+			add_treasury = yes
+		}
+
+
 		# print_money
 
 		# set_interest_rate
 		# change_interest_rate
 		# add_inflation
 
-		# add_loan
-		# remove_loan
-		# borrow_money
-		# repay_debt
+		# 	Sets the debt to gdp % to x_temp (0-100)
+		set_debt_to_gdp = {
+			# x_temp
+
+			multiply_temp_variable = { x_temp = 0.12 }
+			add_to_temp_variable = { x_temp = 0.001 } # dunno why this is needed to make it exactly the percentage you give it, but apparently it is
+			if = {
+				limit = {
+					check_variable = { x_temp > 1 }
+				}
+				divide_temp_variable = { x_temp = 1000 }
+				multiply_temp_variable = { x_temp = gdp_amount }
+			}
+			else = {
+				multiply_temp_variable = { x_temp = gdp_amount }
+				divide_temp_variable = { x_temp = 1000 }
+			}
+			set_debt = yes
+		}
+		# 	Sets the debt to x_temp (thousands)
+		set_debt = {
+			# x_temp
+			# country_temp
+			
+			if = {
+				limit = { check_variable = { country_temp = 0 } }
+				subtract_from_temp_variable = { x_temp = debt_to_bank_k@THIS }
+			}
+			else = {
+				subtract_from_temp_variable = { x_temp = debt_to_bank_k@var:country_temp }
+			}
+			add_debt = yes
+		}
+		
+		#	Adds debt without granting money. Automatically caps at the maximum amount you can borrow.
+		add_debt = {
+			#Scope: Country
+			#INPUT:
+				#x_temp - Amount of money to borrow in thousands.
+				#country_temp - Which country to specifically borrow from, set to 0 to borrow money from any country
+				#ignore_limits_temp - Ignores borrowing limits
+				
+			if = {
+				limit = {
+					check_variable = { x_temp > 0 }
+				}
+
+				set_temp_variable = { borrow_temp_k = x_temp }
+				add_to_temp_variable = { 
+					var = nonsense_var
+					value = borrow_temp_k
+					tooltip = debt_change_negative_tooltip
+				}
+
+				if = {
+					limit = {
+						check_variable = { country_temp = 0 }
+					}
+					set_temp_variable = { country_temp = THIS }
+				}
+
+				#log = "Country: [?country_temp.GetName]"
+
+				if = {
+					limit = {
+						check_variable = { borrow_temp_k > country_temp:national_bank_amount_left_k }
+						check_variable = { ignore_limits_temp = 0 }
+					}
+					set_temp_variable = { borrow_temp_k = country_temp:national_bank_amount_left_k }
+				}
+				#log = "Borrow Amount: [?borrow_temp_k]K"
+				if = {
+					limit = {
+						check_variable = { borrow_temp_k < 0 }
+					}
+					set_temp_variable = { borrow_temp_k = 0 }
+					set_temp_variable = { borrow_temp = 0 }
+				}
+				else = {
+					set_temp_variable = { borrow_temp = borrow_temp_k }
+					multiply_temp_variable = { borrow_temp = 1000 }
+					if = {
+						limit = {
+							is_in_array = { array = debt_to_bank_country value = country_temp }
+						}
+						add_to_variable = { debt_to_bank_k@var:country_temp = borrow_temp_k }
+						add_to_variable = { country_temp:money_lent_k@THIS = borrow_temp_k }
+					}
+					else = {
+						add_to_array = { debt_to_bank_country = country_temp }
+						set_variable = { debt_to_bank_k@var:country_temp = borrow_temp_k }
+						add_to_array = { country_temp:money_lent_country = THIS }
+						set_variable = { country_temp:money_lent_k@THIS = borrow_temp_k }
+					}
+					#log = "Debt to Bank K ([THIS.GetName]): [?debt_to_bank_k@var:country_temp]K"
+					#log = "Money Lent K ([?country_temp.GetName]): [?country_temp:money_lent_k@THIS]K"
+
+					if = {
+						limit = {
+							NOT = { check_variable = { country_temp = THIS } }
+						}
+						var:country_temp = {
+							national_debt_update = yes
+						}
+					}
+				}
+
+				national_debt_update = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { x_temp < 0 }
+				}
+				multiply_temp_variable = { x_temp = -1 }
+				remove_debt = yes
+			}
+			else = {
+				set_temp_variable = { borrow_temp = 0 }
+			}
+			set_temp_variable = { ignore_limits_temp = 0 }
+			set_temp_variable = { country_temp = 0 }
+		}
+		# 	Adds debt to gdp % at x_temp (0-100)
+		add_debt_to_gdp = { 
+			# x_temp
+
+			multiply_temp_variable = { x_temp = 0.12 }
+			multiply_temp_variable = { x_temp = gdp_amount }
+			divide_temp_variable = { x_temp = 1000 }
+			add_debt = yes
+		}
+		#	Removes oustanding debt.
+		remove_debt = {
+			#Scope: Country
+			#INPUT:
+				#x_temp - Amount of debt to repay. Non-integer amounts are accepted but integers are preferable
+				#country_temp - Which country to specifically repay to, set to 0 to repay debts owed to any country
+				#			  - If the repay amount is higher than the owed amount, only the owed amount is payed. The excess is not payed out further
+
+			set_temp_variable = { debt_repayed_k = 0 }
+			if = {
+				limit = {
+					check_variable = { x_temp > 0 }
+				}
+
+				#log = "Country: [?country_temp.GetName]"
+
+				set_temp_variable = { repay_temp_k = x_temp }
+				subtract_from_temp_variable = { 
+					var = nonsense_var
+					value = repay_temp_k
+					tooltip = debt_change_positive_tooltip
+				}
+
+				if = {
+					limit = {
+						check_variable = { country_temp = 0 }
+					}
+					set_temp_variable = { country_temp = THIS }
+					remove_debt_internal = yes
+					add_to_temp_variable = { debt_repayed_k = repay_temp_k }
+
+					set_temp_variable = { bank_temp = 0 }
+					while_loop_effect = {
+						limit = {
+							check_variable = { debt_repayed_k < x_temp }
+							check_variable = { debt_to_bank_country^num > 0 }
+						}
+						set_temp_variable = { repay_temp_k = x_temp }
+						subtract_from_temp_variable = { repay_temp_k = debt_repayed_k }
+						set_temp_variable = { country_temp = debt_to_bank_country^0 }
+						remove_debt_internal = yes
+						add_to_temp_variable = { debt_repayed_k = repay_temp_k }
+					}
+				}
+				else = {
+					remove_debt_internal = yes
+					add_to_temp_variable = { debt_repayed_k = repay_temp_k }
+				}
+
+
+				national_debt_update = yes
+			}
+			set_temp_variable = { repay_temp = debt_repayed_k }
+			multiply_temp_variable = { repay_temp = 1000 }
+			set_temp_variable = { country_temp = 0 }
+		}
+
+		#	Borrows money. Automatically caps at the maximum amount you can borrow.
+		borrow_money = {
+			#Scope: Country
+			#INPUT:
+				#x_temp - Amount of money to borrow. Non-integer amounts are accepted but integers are preferable
+				#country_temp - Which country to specifically borrow from, set to 0 to borrow money from any country
+
+			add_debt = yes
+			if = {
+				limit = {
+					check_variable = { borrow_temp > 0 }
+				}
+				add_to_variable = { treasury = borrow_temp }
+				add_to_temp_variable = { 
+					var = nonsense_var
+					value = borrow_temp
+					tooltip = treasury_change_positive_tooltip
+				}
+			}
+
+		}
+		#	Repays oustanding debt. Automatically caps at treasury amount.
+		repay_debt = {
+			#Scope: Country
+			#INPUT:
+				#x_temp - Amount of debt to repay. Non-integer amounts are accepted but integers are preferable
+				#country_temp - Which country to specifically repay to, set to 0 to repay debts owed to any country
+				#			  - If the repay amount is higher than the owed amount, only the owed amount is payed. The excess is not payed out further
+
+			multiply_temp_variable = { x_temp = 1000 }
+			if = {
+				limit = {
+					check_variable = { x_temp > treasury }
+				}
+				set_temp_variable = { x_temp = treasury }
+				subtract_from_temp_variable = { x_temp = 0.5 }
+				round_temp_variable = x_temp
+			}
+			divide_temp_variable = { x_temp = 1000 }
+			if = {
+				limit = {
+					check_variable = { treasury > 0.999 }
+				}
+				remove_debt = yes
+				if = {
+					limit = {
+						check_variable = { repay_temp > 0 }
+					}
+					subtract_from_variable = { treasury = repay_temp }
+					subtract_from_temp_variable = { 
+						var = nonsense_var
+						value = repay_temp
+						tooltip = treasury_change_negative_tooltip
+					}
+				}
+			}
+		}
+
+		#	Adds portion_temp of the debt of country_temp to THIS. Set replace_debt_temp to instead replace the debt of the current country. 
+		#	Set remove_debt_temp to remove the debt of the other country.
+		inherit_debt = {
+			set_temp_variable = { inheritee_temp = country_temp }
+
+			clamp_temp_variable = { var = portion_temp max = 1 min = 0 }
+
+			if = {
+				limit = {
+					country_exists = var:inheritee_temp
+					check_variable = { portion_temp > 0 }
+				}
+				set_temp_variable = { total_debt_temp = inheritee_temp:national_debt_k }
+				multiply_temp_variable = { total_debt_temp = portion_temp }
+				custom_effect_tooltip = inherit_debt_tooltip
+
+				# Clears your debt if replace is set to YES
+				if = { limit = { NOT = { check_variable = { replace_debt_temp = 0 } } }
+					clear_debt = yes
+					custom_effect_tooltip = replace_debt_tooltip
+				}
+				# Copies debt from other country
+				for_each_loop = {
+					array = inheritee_temp:debt_to_bank_country
+					value = debtor_temp
+					if = {
+						limit = {
+							check_variable = { debtor_temp = inheritee_temp }
+						}
+						set_temp_variable = { country_temp = THIS }
+					}
+					else = {
+						set_temp_variable = { country_temp = debtor_temp }
+					}
+					set_temp_variable = { x_temp = inheritee_temp:debt_to_bank_k@var:debtor_temp }
+					multiply_temp_variable = { x_temp = portion_temp }
+					set_temp_variable = { ignore_limits_temp = 1 }
+					add_debt = yes
+
+					if = { limit = { NOT = { check_variable = { remove_debt_temp = 0 } } }
+						var:inheritee_temp = {
+							set_temp_variable = { x_temp = debt_to_bank_k@var:debtor_temp }
+							multiply_temp_variable = { x_temp = portion_temp }
+							set_temp_variable = { country_temp = debtor_temp }
+							remove_debt = yes
+						}
+					}
+				}
+			}
+			
+			set_temp_variable = { country_temp = 0 }
+			set_temp_variable = { portion_temp = 0 }
+			set_temp_variable = { replace_debt_temp = 0 }
+			set_temp_variable = { remove_debt_temp = 0 }
+		}
+
+		#	Removes all your debt
+		clear_debt = {
+			while_loop_effect = {
+				limit = {
+					check_variable = { debt_to_bank_country^num > 0 }
+				}
+				set_temp_variable = { country_temp = debt_to_bank_country^0 }
+				set_temp_variable = { x_temp = 0 }
+				set_debt = yes
+			}
+		}
+
+
 		# set_default
+
 	## Trade ## cc_20
 	## Economy ## cc_30
 		improve_economic_situation = {

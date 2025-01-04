@@ -19,6 +19,17 @@ EOANBSYS_debug_decision_category = {
 #			factor = 100000
 #		}
 #	}
+	debug_decision_eco_test = {
+		# Strat's fun times
+		complete_effect = {
+			129 = {
+				set_temp_variable = { x_temp = 1 }
+				set_temp_variable = { financer_temp = ROOT }
+				set_temp_variable = { industry_token = token:mechanical_works }
+				add_x_industries = yes
+			}
+		}
+	}
 	debug_decision_slot_machine = {
 		# we pegi 18 now
 		available = {

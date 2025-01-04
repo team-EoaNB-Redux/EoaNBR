@@ -511,6 +511,9 @@
   investment_fund_change_positive_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §G+$RIGHT$§!"
   investment_fund_change_negative_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §R-$RIGHT$§!"
 
+  inherit_debt_tooltip: "Inherits §Y[?total_debt_temp]K§![GetCurrencyTextIcon]  of debt from §Y[?inheritee_temp.GetNameWithFlag]§!"
+  replace_debt_tooltip: "This will §Yreplace§! your current debt."
+
   wip_tooltip: "§RUnder Development§!"
   wip_tooltip_delayed: "This is currently §RWIP§!. The §YEconomy System§! is still §Yunder development§! and will be updated with more features over time."
 

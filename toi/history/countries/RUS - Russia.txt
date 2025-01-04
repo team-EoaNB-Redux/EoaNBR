@@ -135,19 +135,19 @@
 		set_variable = { starting_pm@token:valuables = token:pm_shaft_mining }
 		set_variable = { starting_am@token:valuables = token:pm_hand_picks_and_tools }
 		
-		set_variable = { starting_pm@token:food = token:pm_basic_planting }
+		set_variable = { starting_pm@token:food = token:pm_intensive_agriculture }
 		set_variable = { starting_am@token:food = token:pm_manual_farming }
-		set_variable = { starting_pm@token:luxuries = token:pm_basic_planting }
+		set_variable = { starting_pm@token:luxuries = token:pm_intensive_agriculture }
 		set_variable = { starting_am@token:luxuries = token:pm_manual_farming }
-		set_variable = { starting_pm@token:fiber = token:pm_basic_planting }
+		set_variable = { starting_pm@token:fiber = token:pm_intensive_agriculture }
 		set_variable = { starting_am@token:fiber = token:pm_manual_farming }
-		set_variable = { starting_pm@token:crop_farm = token:pm_basic_planting }
+		set_variable = { starting_pm@token:crop_farm = token:pm_intensive_agriculture }
 		set_variable = { starting_am@token:crop_farm = token:pm_manual_farming }
-		set_variable = { starting_pm@token:luxuries_plantation = token:pm_basic_planting }
+		set_variable = { starting_pm@token:luxuries_plantation = token:pm_intensive_agriculture }
 		set_variable = { starting_am@token:luxuries_plantation = token:pm_manual_farming }
-		set_variable = { starting_pm@token:cotton_plantation = token:pm_basic_planting }
+		set_variable = { starting_pm@token:cotton_plantation = token:pm_intensive_agriculture }
 		set_variable = { starting_am@token:cotton_plantation = token:pm_manual_farming }
-		set_variable = { starting_pm@token:rice_paddy = token:pm_basic_planting }
+		set_variable = { starting_pm@token:rice_paddy = token:pm_intensive_agriculture }
 		set_variable = { starting_am@token:rice_paddy = token:pm_manual_farming }
 		set_variable = { starting_pm@token:livestock_ranch = token:pm_animal_husbandry }
 		set_variable = { starting_am@token:livestock_ranch = token:pm_open_field }

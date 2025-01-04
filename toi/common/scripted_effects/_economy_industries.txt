@@ -2177,6 +2177,93 @@
 			}
 		}
 	}
+
+	#	Adds x size industry. Limited to the single industry. Assumes everything is set correctly
+	#	Also works with subtraction technically
+	add_x_industry_internal = {
+		# x_temp - amount
+		# financer_temp - owner, if relevant
+		# industry_token - type
+		# production_method_temp - if relevant
+		# automation_method_temp - if relevant
+
+		add_to_variable = { size@var:industry_token = x_temp }
+		if = { limit = { check_variable = { size@var:industry_token < 0 } } set_variable = { size@var:industry_token = 0 } }
+
+		# Add building to array if it doesn't exist yet
+		if = {
+			limit = {
+				NOT = { is_in_array = { industries = industry_token } }
+			}
+			add_to_array = { industries = industry_token }
+			set_variable = { production_method@var:industry_token = production_method_temp }
+			set_variable = { automation_method@var:industry_token = automation_method_temp }
+				
+			# Setting industry target employment
+			set_temp_variable = { portion_temp = x_temp }
+			multiply_temp_variable = { portion_temp = 100 }
+			divide_temp_variable = { portion_temp = size@var:industry_token }
+			subtract_from_variable = { employment_target@var:industry_token = portion_temp }
+			clamp_variable = { var = employment_target@var:industry_token max = 100 min = 0 }
+
+			# Update industry
+			set_temp_variable = { bu_token = industry_token }
+			industry_update = yes
+		}
+		else_if = { # Remove if it's size 0
+			limit = {
+				check_variable = { size@var:industry_token = 0 }
+			}
+			remove_from_array = { buildings = industry_token }
+			remove_from_array = { industries = industry_token }
+			set_variable = { employment_target@var:industry_token = 0 }
+
+			# Update industry
+			set_temp_variable = { bu_token = industry_token }
+			industry_update = yes
+
+			if = {
+				limit = {
+					check_variable = { money@var:industry_token > money_limit@var:industry_token }
+				}
+				set_variable = { money@var:industry_token = money_limit@var:industry_token }
+			}
+		}
+	}
+
+	#	Adds to an RGO. Assumes everything is set correctly
+	#	Also works with subtraction
+	#	NOTE - x_temp is not used with this
+	add_rgo_internal = {
+		# deposit_temp - amount to add to actively extracted deposit
+		# known_temp - amount to add to inactive deposits
+		# potential_temp - amount to add to undiscovered deposits
+		# r_token - resource token
+		# financer_temp - owner, if relevant
+		# production_method_temp - if relevant
+		# automation_method_temp - if relevant
+
+		# Only if changing amount of deposits
+		if = { limit = { NOT = { check_variable = { deposit_temp = 0 } } }
+			meta_effect = {
+				text = {
+					add_resource = {
+						type = [RESOURCE]
+						amount = [AMOUNT]
+					}
+				}
+				RESOURCE = "[?r_token.GetTokenKey]"
+				AMOUNT = "[?deposit_temp|0]"
+			}
+			update_base_resource_count = yes
+		}
+
+		# Update prospecting - do this regardless b/c changing any of the above will require this
+		update_prospecting = yes
+
+		set_temp_variable = { bu_token = r_token }
+		industry_update = yes
+	}
 #
 
 # Industry Functions

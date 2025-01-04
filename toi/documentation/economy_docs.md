@@ -57,7 +57,7 @@ A list of effects that can be used in events, focus tree completion rewards, dec
         <td> Country </td>
     </tr>
     <tr>
-        <td> set_treasury - NOT IMPLEMENTED </td>
+        <td> set_treasury </td>
         <td> <code> x_temp = float </code> <br> Amount to set treasury to. </td>
         <td> <code> set_temp_variable = { x_temp = 500 } <br> set_treasury = yes </code> </td>
         <td> Sets your treasury to this amount. Setting treasury to a negative value will add debt and reset treasury to 0. </td>
@@ -123,17 +123,25 @@ A list of effects that can be used in events, focus tree completion rewards, dec
     <tr>
         <td> repay_debt </td>
         <td> <code> x_temp = float </code> <br> Amount of money to repay (in thousands). Only positive float values accepted. </td>
-        <td> <code> set_temp_variable = { x_temp = 500 } <br> add_treasury = yes </code> </td>
+        <td> <code> set_temp_variable = { x_temp = 500 } <br> repay_debt = yes </code> </td>
         <td> Removes this amount of debt from the countyr. Also subtracts from your treasury. Does not remove more than your treasury. </td>
         <td> </td>
         <td> Country </td>
     </tr>
     <tr>
-        <td> adjust_trade - NOT IMPLEMENTED </td>
-        <td> <code> resource_temp = token:resource </code> <br> Resource to adjust. To set, use token:resource_token. <br> <code> x_temp = float </code> <br> Amount to add/subtract to treasury. </td>
+        <td> inherit_debt </td>
+        <td> <code> country_temp = tag </code> <br> Country whose debt will be copied to THIS. <br> <code> portion_temp = float </code> <br> Portion of country_temp's debt to be copied. <br> <code> replace_debt_temp = 0/1 </code> <br> Set to 1 to replace the debt of THIS instead of adding to it. <br> <code> remove_debt_temp = 0/1 </code> <br> Set to 1 to remove the debt from country_temp instead of merely copying it. </td>
+        <td> <code> set_temp_variable = { country_temp = MEX } <br> set_temp_variable = { portion_temp = 1 } <br> set_temp_variable = { remove_debt_temp = 1 } <br> inherit_debt = yes </code> </td>
+        <td> Duplicates the debt of country_temp to THIS. If replace_debt_temp is set, then it replaces the debt instead. ONLY affects the debt of country_temp if remove_debt_temp is set. </td>
+        <td> </td>
+        <td> Country </td>
+    </tr>
+    <tr>
+        <td> adjust_trade </td>
+        <td> <code> resource_temp = token:resource </code> <br> Resource to adjust. To set, use token:resource_token. <br> <code> x_temp = float </code> <br> Amount to add/subtract to treasury. <br> <code> stop_at_zero_temp = 0/1 </code> Set to non-zero value to allow reductions in exports/imports to go past 0 </td>
         <td> <code> set_temp_variable = { resource_temp = token:resource_consumer_goods } <br> set_temp_variable = { x_temp = 20 } <br> adjust_trade = yes </code> </td>
         <td> Adjusts trade offers. Positive values increase imports/decrease exports while negative values increase exports/decrease imports. </td>
-        <td> Resource tokens are found both under common/resources/00_resources.txt and common/ideas/_economy_tokens.txt</td>
+        <td> Resource tokens are found both under common/resources/00_resources.txt and common/ideas/_economy_tokens.txt <br> <br> If AI trade is enabled, then this is practically redundant.</td>
         <td> Country </td>
     </tr>
     <tr>
