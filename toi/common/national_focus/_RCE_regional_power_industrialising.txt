@@ -2794,7 +2794,7 @@ focus_tree = {
 	#	icon = GFX_goal_generic_construct_civ_factory
 	#	cost = 70
 	#	available = {
-	#		has_idea = industrializing
+	#		has_idea = institution_industrialization
 	#	}
 	#	completion_reward = {
 	#	}

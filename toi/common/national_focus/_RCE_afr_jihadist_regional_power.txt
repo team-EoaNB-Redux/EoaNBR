@@ -2518,7 +2518,7 @@ focus = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = afr_generic_jihadist_skt_islamic_liberation_trigger_tooltip
-				has_idea = industrializing
+				has_idea = institution_centralization
 			}
 		}
 		prerequisite = {

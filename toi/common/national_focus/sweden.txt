@@ -832,27 +832,22 @@ focus_tree = {
 		ai_will_do {
 			factor = 10
 		}
-		bypass = { NOT = { has_idea = industrializing } }
 		available = {
 		date > 1875.1.1
 			OR = {
 				AND = {
-					has_idea = industrializing
 					has_idea = SWE_Johan_August_Gripenstedt
 					num_of_factories > 24
 				}
 				AND = {
-					has_idea = industrializing
 					num_of_factories > 34
 				}
 			}
 		}
 		completion_reward = {
 			unlock_decision_tooltip = SWE_decision_domnarvets_jernverk
-			swap_ideas = {
-				remove_idea = industrializing
-				add_idea = industrialized
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+		eoanbr_institutions_innovative_change = yes
 		}
 	}
 

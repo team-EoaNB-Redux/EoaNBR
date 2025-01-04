@@ -541,10 +541,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAD_focus_military_industry }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = industrializing
-				add_idea = industrialized
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+		eoanbr_institutions_innovative_change = yes
 		}
 	}
 

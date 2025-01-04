@@ -1615,10 +1615,10 @@ spriteTypes = {
 			name = "GFX_humanities_folder_icon"
 			texturefile = "gfx/interface/technologies/techtree/techtree_humanities_folder_icon.dds"
 		}
-		spriteType = {
-			name = "GFX_techtree_humanities_folder_background"
-			texturefile = "gfx/interface/technologies/techtree/techtree_humanities_folder_bg.dds"
-		}
+		# spriteType = {
+		# 	name = "GFX_techtree_humanities_folder_background"
+		# 	texturefile = "gfx/interface/technologies/techtree/techtree_humanities_folder_bg.dds"
+		# }
 		spriteType = {
 			name = "GFX_technology_humanities_folder_small_unavailable_item_bg"
 			textureFile = "gfx/interface/technologies/techtree/techtree_small_unavailable_item.dds"

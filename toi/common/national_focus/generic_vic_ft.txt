@@ -1493,17 +1493,14 @@ focus_tree = {
 			focus = generic_focus_vic_noblesse_oblige
 			focus = generic_focus_vic_allow_foreign_investment
 		}
+
 		bypass = {
-			NOT = { has_idea = agrarian }
+			has_idea = institution_industrialization
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = agrarian
-				add_idea = industrializing
-			}
 			add_ideas = generic_vic_early_stages_of_industrialization
-			set_temp_variable = { institution_progress_temp = 5 }
+			set_temp_variable = { institution_progress_temp = 15 }
 			eoanbr_institutions_industrialization_change = yes
 			add_tech_bonus = { bonus = 1 uses = 2 category = cat_industry_techs }
 			add_stability = -0.05
@@ -2206,7 +2203,7 @@ focus_tree = {
 					}
 				}
 				random_owned_state = {
-					limit = { check_variable = { base_resource@lxuuries > 0 } }
+					limit = { check_variable = { base_resource@luxuries > 0 } }
 					add_resource = {
 						type = luxuries
 						amount = 2
