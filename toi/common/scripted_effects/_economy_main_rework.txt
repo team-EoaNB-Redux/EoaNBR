@@ -4251,7 +4251,7 @@
 			set_temp_variable = { modifier_temp = modifier@interest_rate_factor }
 			add_to_temp_variable = { modifier_temp = modifier@foreign_interest_rate_factor }
 			add_to_temp_variable = { modifier_temp = 1 }
-			multiply_variable = { domestic_interest_rate = modifier_temp }
+			multiply_variable = { foreign_interest_rate = modifier_temp }
 			
 			if = { # 1st rank GP gets 10% cheaper debt (factor)
 				limit = {
