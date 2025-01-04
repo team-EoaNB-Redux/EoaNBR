@@ -60,7 +60,7 @@
 		#pre_industrial_era
 		#agrarian
 		non_monarchical_system
-		semi_presidential_republic
+		semi_#presidential_republic
 
 		war_economy
 		limited_exports

@@ -93,7 +93,7 @@
 		law_pre_industrial_army
 		#agrarian
 		no_heir
-		absolute_monarchy
+		#absolute_monarchy
 
 		civilian_economy
 		limited_exports

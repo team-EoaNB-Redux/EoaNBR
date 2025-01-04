@@ -29,7 +29,7 @@
 		law_victorian_army
 		#agrarian
 		non_monarchical_system
-		absolute_monarchy
+		#absolute_monarchy
 		civilian_economy
 		limited_exports
 		two_percent

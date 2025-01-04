@@ -31,7 +31,7 @@
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES
-		parliamentary_monarchy
+		#parliamentary_monarchy
 		human_rights
 		limited_elections
 		# no_separation

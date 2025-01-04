@@ -18,7 +18,7 @@
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES
-		absolute_monarchy
+		#absolute_monarchy
 		no_constitution
 		no_elections
 		# no_separation
