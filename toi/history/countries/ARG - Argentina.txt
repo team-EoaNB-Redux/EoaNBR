@@ -1,51 +1,51 @@
 ﻿1857.1.1 = {
-  capital = 1058
+	capital = 1058
+	
+	oob = "ARG_1857"
 
-  oob = "ARG_1857"
+	set_convoys = 10
 
-  set_convoys = 10
+	add_ideas = {
+		#POLITICS
+			hos_is_leader
+			#victorian_era
+			law_victorian_army
+			industrializing
+			non_monarchical_system
+			presidential_republic
 
-  add_ideas = {
-    #POLITICS
-      hos_is_leader
-      victorian_era
-	    law_victorian_army
-      industrializing
-      non_monarchical_system
-      presidential_republic
+			#Economic
+				civilian_economy
+				limited_exports
+				two_percent
+				normal_taxes
+				cl_legal
 
-      #Economic
-        civilian_economy
-        limited_exports
-        two_percent
-        normal_taxes
-	      cl_legal
+			#Population
+				stagnation_growth
+				border_control
+				limited_conscription
+				segregation
+				universal_male_suffrage
 
-      #Population
-        stagnation_growth
-        border_control
-	      limited_conscription
-        segregation
-        universal_male_suffrage
+				limited_constitution
+				limited_elections
 
-        limited_constitution
-        limited_elections
-
-      #Culture
-        open_schools
-        state_religion
+			#Culture
+				open_schools
+				state_religion
 				#institution_rationalism
 				#institution_settlement
 				#institution_centralization
 
-    #NATIONAL SPIRITS
-	    ARG_civil_war_calm
-      ARG_decentral_military_2
-	  	ARG_decentral_government
-  }
+		#NATIONAL SPIRITS
+			ARG_civil_war_calm
+			ARG_decentral_military_2
+			ARG_decentral_government
+	}
 
 	set_politics = {
-	  ruling_party = traditional_conservatism
+		ruling_party = traditional_conservatism
 	}
 	
 	#Rivals 
@@ -67,9 +67,9 @@
 		fundamentalism = 0
 	}
 
-  set_cosmetic_tag = ARG_confederation_cosmetic
+	set_cosmetic_tag = ARG_confederation_cosmetic
 
-  set_tech_pre_industrial_middle_industrializing = yes
+	set_tech_pre_industrial_middle_industrializing = yes
 
 	#Economy
 		set_variable = { starting_pm@token:wood = token:pm_saw_mills }
@@ -108,17 +108,17 @@
 
 		set_variable = { starting_pm@token:urban_center = token:pm_brick_buildings }
 		set_variable = { starting_am@token:urban_center = token:pm_no_automation }
-    
-  add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 amount = 1500 producer = ARG }
-  add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1500 producer = ARG }
+		
+	add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 amount = 1500 producer = ARG }
+	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1500 producer = ARG }
 
 	#How to set up initial debt_level
 	#ARG = {
 	#	add_to_variable = {var = debt_level value = 1} #Uruguay's National Debt amounts to 75m Pesos (= 14.581m Pound Sterling) as of 1856; income per year 8.9m Pesos (= 1.73m Pound Sterling; roughly 2m Pesos less than expenses annually) = 8.43 GDP of debt
 	#}
 
-  # POLITICAL LEADERS
+	# POLITICAL LEADERS
 
-  recruit_character = ARG_Justo_Jose_de_Urquiza
-  recruit_character = ARG_Angel_Vicente_Penaloza
+	recruit_character = ARG_Justo_Jose_de_Urquiza
+	recruit_character = ARG_Angel_Vicente_Penaloza
 }

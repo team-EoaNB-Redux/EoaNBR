@@ -12,8 +12,8 @@
 		#STATE OF COUNTRY
 		BAD_Friedrich_I_young
 		no_heir
-		industrializing
-		victorian_era
+		#industrializing
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES

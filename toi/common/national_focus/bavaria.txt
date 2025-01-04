@@ -1046,15 +1046,7 @@ focus_tree = {
 
 			unlock_decision_tooltip = BAV_decision_enact_gewerbefreiheit
 
-			if = {
-				limit = {
-					has_idea = agrarian
-				}
-				activate_mission_tooltip = BAV_mission_industrializing
-				hidden_effect = {
-					activate_mission = BAV_mission_industrializing
-				}
-			}
+			activate_mission = BAV_mission_industrializing
 		}
 	}
 
@@ -1083,15 +1075,7 @@ focus_tree = {
 
 			unlock_decision_tooltip = BAV_decision_enact_gewerbefreiheit
 
-			if = {
-				limit = {
-					has_idea = agrarian
-				}
-				activate_mission_tooltip = BAV_mission_industrializing
-				hidden_effect = {
-					activate_mission = BAV_mission_industrializing
-				}
-			}
+			activate_mission = BAV_mission_industrializing
 		}
 	}
 
@@ -3112,15 +3096,7 @@ focus_tree = {
 				days = 730
 			}
 
-			if = {
-				limit = {
-					has_idea = agrarian
-				}
-				activate_mission_tooltip = BAV_mission_industrializing
-				hidden_effect = {
-					activate_mission = BAV_mission_industrializing
-				}
-			}
+			activate_mission = BAV_mission_industrializing
 		}
 	}
 

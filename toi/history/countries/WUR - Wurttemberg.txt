@@ -12,8 +12,8 @@
 		#STATE OF COUNTRY
 		hos_is_leader
 		has_heir
-		agrarian
-		victorian_era
+		#agrarian
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES
@@ -184,7 +184,7 @@
 
 	remove_ideas = {
 		#STATE OF COUNTRY
-		agrarian
+		#agrarian
 
 		#NATIONAL SPIRITS
 		GER_general_idea_ger_confed
@@ -201,7 +201,7 @@
 
 	add_ideas = {
 		#STATE OF COUNTRY
-		industrializing
+		#industrializing
 	#institution_industrialization
 
 		#GOVERNMENTAL POLICIES

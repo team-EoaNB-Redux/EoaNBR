@@ -9,8 +9,8 @@
 
 		hos_is_leader
 		no_heir
-		industrializing
-		pre_industrial_era
+		#industrializing
+		#pre_industrial_era
 		law_victorian_army
 
 		# Government
@@ -227,9 +227,9 @@
 
 		hos_is_leader
 		has_heir
-		industrializing
+		#industrializing
 		#institution_industrialization
-		victorian_era
+		#victorian_era
 		law_victorian_army
 
 		# Government

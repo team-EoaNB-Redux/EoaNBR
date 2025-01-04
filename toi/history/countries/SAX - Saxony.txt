@@ -14,8 +14,8 @@
 		#STATE OF COUNTRY
 		SAX_Johann
 		has_heir
-		industrializing
-		victorian_era
+		#industrializing
+		#victorian_era
 		#institution_rationalism
 		#institution_settlement
 		#institution_centralization

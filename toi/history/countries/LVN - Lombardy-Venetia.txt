@@ -13,8 +13,8 @@
 		#POLITICS
 		AUS_Franz_Joseph_I
 		has_heir
-		industrializing
-		victorian_era
+		#industrializing
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES

@@ -12,8 +12,8 @@
 		#STATE OF COUNTRY
 		THU_Carl_Alexander_von_Sachsen_Weimar_Eisenach
 		has_heir
-		agrarian
-		victorian_era
+		#agrarian
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES

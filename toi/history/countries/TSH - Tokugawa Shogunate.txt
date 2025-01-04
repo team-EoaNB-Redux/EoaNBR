@@ -8,8 +8,8 @@
 		# State & Country
 		hos_is_leader
 		no_heir
-		agrarian
-		pre_industrial_era
+		#agrarian
+		#pre_industrial_era
 		law_pre_industrial_army
 		stagnation
 		# Government

@@ -11,9 +11,9 @@
 	add_ideas = {
 		#POLITICS
 			FRA_colonial_Napoleon_III
-			pre_industrial_era
+			#pre_industrial_era
 			law_victorian_army
-			agrarian
+			#agrarian
 			non_monarchical_system
 			absolute_monarchy
 

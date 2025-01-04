@@ -27,8 +27,8 @@
 		#POLITICS
 
 		hos_is_leader
-		pre_industrial_era
-		agrarian
+		#pre_industrial_era
+		#agrarian
 		weak_heir
 		absolute_monarchy
 

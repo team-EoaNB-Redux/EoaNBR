@@ -22,12 +22,12 @@
 		#POLITICS
 
 		SWE_Oscar_I
-		victorian_era
+		#victorian_era
 		#institution_rationalism
 		#institution_settlement
 		#institution_centralization
 		law_victorian_army
-		agrarian
+		#agrarian
 		has_heir
 		constitutional_monarchy
 		# no_federalism

@@ -2945,10 +2945,7 @@ scripted_gui = {
 				NOT = {
 					has_country_flag = parl_executive_order_flag
 				}
-				OR = {
-					has_idea = agrarian
-					has_idea = industrializing
-				}
+				has_idea = institution_industrialization
 				has_political_power > 999
 			}
 

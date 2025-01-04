@@ -20,8 +20,8 @@
 			# State of Country
 				hos_is_leader
 				non_monarchical_system
-				agrarian
-				pre_industrial_era
+				#agrarian
+				#pre_industrial_era
 				law_pre_industrial_army
 				stagnation
 			#

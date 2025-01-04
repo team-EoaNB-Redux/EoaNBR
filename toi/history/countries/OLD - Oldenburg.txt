@@ -12,8 +12,8 @@
 		#STATE OF COUNTRY
 		OLD_Peter_II
 		has_heir
-		agrarian
-		victorian_era
+		#agrarian
+		#victorian_era
 		#institution_rationalism
 		#institution_settlement
 		#institution_centralization

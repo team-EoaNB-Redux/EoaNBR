@@ -2389,14 +2389,6 @@ country_event = {
 		SCH = {
 			if = {
 				limit = {
-					has_idea = agrarian
-				}
-				swap_ideas = { remove_idea = agrarian add_idea = industrializing }
-			}
-		}
-		SCH = {
-			if = {
-				limit = {
 					has_idea = absolute_monarchy
 				}
 				swap_ideas = { remove_idea = absolute_monarchy add_idea = parliamentary_monarchy }

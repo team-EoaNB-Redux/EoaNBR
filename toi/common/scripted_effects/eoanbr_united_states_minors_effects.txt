@@ -5793,7 +5793,6 @@ TEX_civil_war_acw_setup = {
 			hos_is_leader
 			victorian_era
 			law_victorian_army
-			agrarian
 			non_monarchical_system
 			presidential_republic
 

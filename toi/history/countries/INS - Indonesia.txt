@@ -12,8 +12,8 @@
 		#POLITICS
 
 		HOL_William_III
-		pre_industrial_era
-		agrarian
+		#pre_industrial_era
+		#agrarian
 		non_monarchical_system
 		absolute_monarchy
 

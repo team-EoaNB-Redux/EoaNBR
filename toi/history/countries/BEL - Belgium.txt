@@ -28,9 +28,9 @@
 	add_ideas = {
 		#POLITICS
 		BEL_Leopold_I
-		victorian_era
+		#victorian_era
 		law_victorian_army
-		industrializing
+		#industrializing
 
 		no_heir
 		parliamentary_monarchy

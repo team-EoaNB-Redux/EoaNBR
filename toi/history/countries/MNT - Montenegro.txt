@@ -51,9 +51,9 @@
 		#POLITICS
 
 		hos_is_leader
-		victorian_era
+		#victorian_era
 		law_pre_industrial_army
-		agrarian
+		#agrarian
 		has_heir
 		constitutional_monarchy
 

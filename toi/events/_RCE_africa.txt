@@ -571,8 +571,7 @@ country_event = {
 				}
 			}
 		}
-		add_ideas = religion_catholic
-		hidden_effect = { add_to_array = { pops_primary_religion_array = global.catholicism } }
+		hidden_effect = { add_to_array = { pops_primary_religion_array = token:religion_catholicism } }
 	}
 
 	option = {
@@ -606,8 +605,7 @@ country_event = {
 				}
 			}
 		}
-		add_ideas = religion_protestant
-		hidden_effect = { add_to_array = { pops_primary_religion_array = global.protestant } }
+		hidden_effect = { add_to_array = { pops_primary_religion_array = token:religion_protestant } }
 	}
 
 }
@@ -628,7 +626,6 @@ country_event = {
 		name = coptic_africa.1.a
 		# log = "option:		name = coptic_africa.1.a"
 		ai_chance = { factor = 100 }
-		add_ideas = religion_copt
 		hidden_effect = { add_to_array = { pops_primary_religion_array = token:religion_copt } }
 	}
 
@@ -650,7 +647,6 @@ country_event = {
 		name = jihadist_africa.1.a
 		# log = "option:		name = jihadist_africa.1.a"
 		ai_chance = { factor = 100 }
-		add_ideas = religion_sunni
 		hidden_effect = { add_to_array = { pops_primary_religion_array = token:religion_sunni } }
 	}
 

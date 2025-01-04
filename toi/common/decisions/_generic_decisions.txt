@@ -548,151 +548,138 @@ eoanb_category_economic = {
 		}
 	}
 	#Start Industrializing
-	eoanb_decision_generic_start_industrializing = {
-		icon = generic_industry
-		allowed = {
-			NOT = {
-				OR = {
-					tag = BAV
-					tag = FRK
-					tag = HAN
-					tag = HES
-					tag = HSD
-					tag = LCK
-					tag = MCK
-					tag = NAS
-					tag = OLD
-					tag = THU
-					tag = WUR
-					tag = PIE
-					tag = TUS
-				}
-			}
-		}
-		visible = {
-			has_idea = agrarian
-			OR = {
-				has_idea = victorian_era
-				has_idea = machine_era
-				has_idea = oil_era
-			}
-			NOT = {
-				has_idea = industrializing
-			}
-			NOT = {
-				has_idea = afr_reforming_kingdom
-				has_country_flag = Oceania_industrializing
-				has_country_flag = afr_colony_industrializing
-				has_country_flag = afr_an_african_industrializing
-			}
-			if = {
-				limit = {
-					tag = SPR
-				}
-				date > 1920.1.1
-			}
-			if = {
-				limit = {
-					tag = NOR
-				}
-				has_completed_focus = NOR_focus_industrialize
-			}
-		}
-		available = {
-			has_stability > 0.5
-			num_of_factories > 5
-		}
-		fire_only_once = yes
-		days_remove = 700
-		custom_cost_trigger = {
-			check_variable = { debt_level < 40 }
-		}
-		custom_cost_text = eoanb_decision_generic_start_industrializing_cost
-		complete_effect = {
-			debt_level_increase_by_10 = yes
-		}
-		remove_effect = {
-			custom_effect_tooltip = eoanb_tt_decision_industrializing
-			swap_ideas = {
-				remove_idea = agrarian
-				add_idea = industrializing
-			}
-		}
-		modifier = {
-			treasury_cost_monthly_per_gdp = 0.005
-		}
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 5
-				date > 1870.1.1
-			}
-			modifier = {
-				factor = 200
-				date > 1880.1.1
-			}
-			modifier = {
-				factor = 0
-				check_variable = {
-					debt_level > 10
-				}
-			}
-		}
-	}
+	# eoanb_decision_generic_start_industrializing = {
+	# 	icon = generic_industry
+	# 	allowed = {
+	# 		NOT = {
+	# 			OR = {
+	# 				tag = BAV
+	# 				tag = FRK
+	# 				tag = HAN
+	# 				tag = HES
+	# 				tag = HSD
+	# 				tag = LCK
+	# 				tag = MCK
+	# 				tag = NAS
+	# 				tag = OLD
+	# 				tag = THU
+	# 				tag = WUR
+	# 				tag = PIE
+	# 				tag = TUS
+	# 			}
+	# 		}
+	# 	}
+	# 	visible = {
+	# 		NOT = {
+	# 			has_idea = afr_reforming_kingdom
+	# 			has_country_flag = Oceania_industrializing
+	# 			has_country_flag = afr_colony_industrializing
+	# 			has_country_flag = afr_an_african_industrializing
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				tag = SPR
+	# 			}
+	# 			date > 1920.1.1
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				tag = NOR
+	# 			}
+	# 			has_completed_focus = NOR_focus_industrialize
+	# 		}
+	# 	}
+	# 	available = {
+	# 		has_stability > 0.5
+	# 		num_of_factories > 5
+	# 	}
+	# 	fire_only_once = yes
+	# 	days_remove = 700
+	# 	custom_cost_trigger = {
+	# 		check_variable = { debt_level < 40 }
+	# 	}
+	# 	custom_cost_text = eoanb_decision_generic_start_industrializing_cost
+	# 	complete_effect = {
+	# 		debt_level_increase_by_10 = yes
+	# 	}
+	# 	remove_effect = {
+	# 		custom_effect_tooltip = eoanb_tt_decision_industrializing
+	# 	}
+	# 	modifier = {
+	# 		treasury_cost_monthly_per_gdp = 0.005
+	# 	}
+	# 	ai_will_do = {
+	# 		base = 1
+	# 		modifier = {
+	# 			factor = 5
+	# 			date > 1870.1.1
+	# 		}
+	# 		modifier = {
+	# 			factor = 200
+	# 			date > 1880.1.1
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			check_variable = {
+	# 				debt_level > 10
+	# 			}
+	# 		}
+	# 	}
+	# }
 	#finish Industrializing
-	eoanb_decision_generic_industrialiation = {
-		icon = generic_industry
-		available = {
-			has_stability > 0.5
-			has_tech = tech_mechanical_production
-			num_of_factories > 10
-		}
-		visible = {
-			has_idea = industrializing
-			OR = {
-				has_idea = machine_era
-				has_idea = oil_era
-				has_idea = aviation_era
-			}
-			NOT = {
-				has_idea = industrialized
-			}
-		}
-		fire_only_once = yes
-		custom_cost_trigger = {
-			check_variable = {
-				debt_level < 30
-			}
-		}
-		custom_cost_text = eoanb_decision_generic_industrialiation_cost
-		complete_effect = {
-			debt_level_increase_by_20 = yes
-			custom_effect_tooltip = eoanb_tt_decision_industrializing
-			hidden_effect = {
-				swap_ideas = {
-					remove_idea = industrializing
-					add_idea = industrialized
-				}
-			}
-		}
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 5
-				date > 1870.1.1
-			}
-			modifier = {
-				factor = 200
-				date > 1880.1.1
-			}
-			modifier = {
-				factor = 0
-				check_variable = {
-					debt_level > 20
-				}
-			}
-		}
-	}
+	# eoanb_decision_generic_industrialiation = {
+	# 	icon = generic_industry
+	# 	available = {
+	# 		has_stability > 0.5
+	# 		has_tech = tech_mechanical_production
+	# 		num_of_factories > 10
+	# 	}
+	# 	visible = {
+	# 		has_idea = industrializing
+	# 		OR = {
+	# 			has_idea = machine_era
+	# 			has_idea = oil_era
+	# 			has_idea = aviation_era
+	# 		}
+	# 		NOT = {
+	# 			has_idea = industrialized
+	# 		}
+	# 	}
+	# 	fire_only_once = yes
+	# 	custom_cost_trigger = {
+	# 		check_variable = {
+	# 			debt_level < 30
+	# 		}
+	# 	}
+	# 	custom_cost_text = eoanb_decision_generic_industrialiation_cost
+	# 	complete_effect = {
+	# 		debt_level_increase_by_20 = yes
+	# 		custom_effect_tooltip = eoanb_tt_decision_industrializing
+	# 		hidden_effect = {
+	# 			swap_ideas = {
+	# 				remove_idea = industrializing
+	# 				add_idea = industrialized
+	# 			}
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		base = 1
+	# 		modifier = {
+	# 			factor = 5
+	# 			date > 1870.1.1
+	# 		}
+	# 		modifier = {
+	# 			factor = 200
+	# 			date > 1880.1.1
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			check_variable = {
+	# 				debt_level > 20
+	# 			}
+	# 		}
+	# 	}
+	# }
 	#Provide Public Education
 	eoanb_decision_generic_public_schools = {
 		icon = generic_research

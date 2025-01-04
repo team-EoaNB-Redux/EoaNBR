@@ -94,8 +94,8 @@
 		#State of the Country
 		hos_is_leader
 		non_monarchical_system
-		industrializing
-		victorian_era
+		#industrializing
+		#victorian_era
 		law_victorian_army
 		fast_growth
 
@@ -765,12 +765,12 @@
 	add_ideas = {
 		#POLITICS
 		hos_is_leader
-		victorian_era
+		#victorian_era
 		#institution_rationalism
 		#institution_settlement
 		#institution_centralization
 		law_victorian_army
-		industrializing
+		#industrializing
 		#institution_industrialization
 		non_monarchical_system
 		presidential_republic

@@ -2,18 +2,20 @@
 
 division_template = {
 	name = "Guard Infantry"
-	#division_names_group = 
+	#division_names_group =
 	priority = 2
+
+	is_locked = yes
 
 	regiments = {
 		guard_infantry = { x = 0 y = 0 }
-        guard_infantry = { x = 0 y = 1 }
-        guard_infantry = { x = 0 y = 2 }
-        guard_infantry = { x = 1 y = 0 }
-        guard_infantry = { x = 1 y = 1 }
-        guard_infantry = { x = 1 y = 2 }
-        guard_infantry = { x = 2 y = 0 }
-        guard_infantry = { x = 2 y = 1 }
+		guard_infantry = { x = 0 y = 1 }
+		guard_infantry = { x = 0 y = 2 }
+		guard_infantry = { x = 1 y = 0 }
+		guard_infantry = { x = 1 y = 1 }
+		guard_infantry = { x = 1 y = 2 }
+		guard_infantry = { x = 2 y = 0 }
+		guard_infantry = { x = 2 y = 1 }
 	}
 	support = {
 		field_artillery_support = { x = 0 y = 0 }
@@ -22,12 +24,14 @@ division_template = {
 
 division_template = {
 	name = "Guard Cavalry"
-	#division_names_group = 
+	#division_names_group =
 	priority = 2
 
+	is_locked = yes
+
 	regiments = {
-		heavy_cavalry = { x = 0 y = 0}
-		heavy_cavalry = { x = 0 y = 1}
+		heavy_cavalry = { x = 0 y = 0 }
+		heavy_cavalry = { x = 0 y = 1 }
 		uhlans = { x = 0 y = 2}
 	}
 	support = {
@@ -37,30 +41,34 @@ division_template = {
 
 division_template = {
 	name = "Guard Light Infantry"
-	#division_names_group = 
+	#division_names_group =
 	priority = 2
 
+	is_locked = yes
+
 	regiments = {
-        light_infantry = { x = 0 y = 0}
-        light_infantry = { x = 0 y = 1}
-        light_infantry = { x = 1 y = 0}
-        light_infantry = { x = 1 y = 1}
-    }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
 }
 
 ### Regular Units
 
 division_template = {
 	name = "Line Infantry (Artillery)"
-	#division_names_group = 
+	#division_names_group =
+
+	is_locked = yes
 
 	regiments = {
-		line_infantry = { x = 0 y = 0}
-		line_infantry = { x = 0 y = 1}
-		line_infantry = { x = 0 y = 2}
-		line_infantry = { x = 1 y = 0}
-		line_infantry = { x = 1 y = 1}
-		line_infantry = { x = 1 y = 2}
+		line_infantry = { x = 0 y = 0 }
+		line_infantry = { x = 0 y = 1 }
+		line_infantry = { x = 0 y = 2 }
+		line_infantry = { x = 1 y = 0 }
+		line_infantry = { x = 1 y = 1 }
+		line_infantry = { x = 1 y = 2 }
 	}
 	support = {
 		field_artillery_support = { x = 0 y = 0 }
@@ -69,38 +77,44 @@ division_template = {
 
 division_template = {
 	name = "Line Infantry"
-	#division_names_group = 
+	#division_names_group =
+
+	is_locked = yes
 
 	regiments = {
-		line_infantry = { x = 0 y = 0}
-		line_infantry = { x = 0 y = 1}
-		line_infantry = { x = 0 y = 2}
-		line_infantry = { x = 1 y = 0}
-		line_infantry = { x = 1 y = 1}
-		line_infantry = { x = 1 y = 2}
+		line_infantry = { x = 0 y = 0 }
+		line_infantry = { x = 0 y = 1 }
+		line_infantry = { x = 0 y = 2 }
+		line_infantry = { x = 1 y = 0 }
+		line_infantry = { x = 1 y = 1 }
+		line_infantry = { x = 1 y = 2 }
 	}
 }
 
 division_template = {
 	name = "Light Infantry"
-	#division_names_group = 
+	#division_names_group =
+
+	is_locked = yes
 
 	regiments = {
-		light_infantry = { x = 0 y = 0}
-		light_infantry = { x = 0 y = 1}
-		light_infantry = { x = 1 y = 0}
-		light_infantry = { x = 1 y = 1}
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
 	}
 }
 
 division_template = {
 	name = "Cavalry (Artillery)"
-	#division_names_group = 
+	#division_names_group =
+
+	is_locked = yes
 
 	regiments = {
-		light_cavalry = { x = 0 y = 0}
-		light_cavalry = { x = 0 y = 1}
-		light_cavalry = { x = 0 y = 2}
+		light_cavalry = { x = 0 y = 0 }
+		light_cavalry = { x = 0 y = 1 }
+		light_cavalry = { x = 0 y = 2 }
 	}
 	support = {
 		field_artillery_support = { x = 0 y = 0 }
@@ -109,22 +123,26 @@ division_template = {
 
 division_template = {
 	name = "Cavalry"
-	#division_names_group = 
+	#division_names_group =
+
+	is_locked = yes
 
 	regiments = {
-		light_cavalry = { x = 0 y = 0}
-		light_cavalry = { x = 0 y = 1}
-		light_cavalry = { x = 0 y = 2}
+		light_cavalry = { x = 0 y = 0 }
+		light_cavalry = { x = 0 y = 1 }
+		light_cavalry = { x = 0 y = 2 }
 	}
 }
 
 division_template = {
 	name = "Cossacks"
-	#division_names_group = 
+	#division_names_group =
+
+	is_locked = yes
 
 	regiments = {
-		uhlans = { x = 0 y = 0}
-		uhlans = { x = 0 y = 1}
+		uhlans = { x = 0 y = 0 }
+		uhlans = { x = 0 y = 1 }
 	}
 }
 
@@ -950,5 +968,5 @@ instant_effect = {
 		progress = 0.40
 		amount = 1
 	}
-	
+
 }

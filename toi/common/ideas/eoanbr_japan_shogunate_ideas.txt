@@ -727,8 +727,8 @@ ideas = {
 
 				picture = TSH_shihaisho_development
 
-				available = {
-					has_idea = agrarian
+				cancel = {
+					has_idea = institution_mechanization
 				}
 				modifier = {
 					treasury_gain_monthly_per_gdp = 0.025

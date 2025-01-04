@@ -1070,9 +1070,6 @@ ideas = {
 		cl_illegal = {
 
 			available = {
-				NOT = {
-					has_idea = agrarian
-				}
 				custom_trigger_tooltip = {
 					tooltip = eoanb_law_reform_tip
 					AND = {
@@ -1307,10 +1304,6 @@ ideas = {
 		lp_serfdom = {
 
 			available = {
-				OR = {
-					has_idea = agrarian
-					has_idea = industrializing
-				}
 				custom_trigger_tooltip = {
 					tooltip = eoanb_law_reform_tip
 					AND = {

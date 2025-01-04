@@ -11,9 +11,9 @@
 
 	add_ideas = {
 		#POLITICS
-			pre_industrial_era
+			#pre_industrial_era
 			law_victorian_army
-			agrarian
+			#agrarian
 			no_heir
 			absolute_monarchy
 

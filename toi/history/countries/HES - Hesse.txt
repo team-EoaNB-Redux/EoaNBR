@@ -12,8 +12,8 @@
 		#STATE OF COUNTRY
 		HES_Friedrich_Wilhelm
 		weak_heir
-		agrarian
-		victorian_era
+		#agrarian
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES

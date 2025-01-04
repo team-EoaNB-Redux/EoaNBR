@@ -20,9 +20,9 @@
 	add_ideas = {
 		#POLITICS
 		SWE_Oscar_I
-		victorian_era
+		#victorian_era
 		law_victorian_army
-		agrarian
+		#agrarian
 		has_heir
 		parliamentary_monarchy
 

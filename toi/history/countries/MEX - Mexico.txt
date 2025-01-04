@@ -11,8 +11,8 @@
 		#POLITICS
 
 		hos_is_leader
-		victorian_era
-		agrarian
+		#victorian_era
+		#agrarian
 		non_monarchical_system
 		presidential_republic
 

@@ -51,9 +51,9 @@
 		#POLITICS
 
 		HOL_William_III
-		victorian_era
+		#victorian_era
 		law_victorian_army
-		industrializing
+		#industrializing
 		has_heir
 		parliamentary_monarchy
 

@@ -21,8 +21,8 @@
 		#POLITICS
 		AUS_Franz_Joseph_I
 		has_heir
-		agrarian
-		victorian_era
+		#agrarian
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES
@@ -559,8 +559,8 @@
 		#POLITICS
 		AUS_Franz_Joseph_I
 		has_heir
-		agrarian
-		victorian_era
+		#agrarian
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES

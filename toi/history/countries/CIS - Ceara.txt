@@ -11,9 +11,9 @@
 		#POLITICS
 
 		hos_is_leader
-		victorian_era
+		#victorian_era
 		law_victorian_army
-		industrializing
+		#industrializing
 		weak_heir
 		constitutional_monarchy
 

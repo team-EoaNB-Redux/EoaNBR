@@ -484,8 +484,6 @@ country_event = {
 				#POLITICS
 
 				hos_is_leader
-				pre_industrial_era
-				agrarian
 				non_monarchical_system
 				semi_presidential_republic
 

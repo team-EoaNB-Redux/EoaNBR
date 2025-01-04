@@ -687,12 +687,7 @@ technologies = {
 			custom_effect_tooltip = eoanb_tt_technology_industrial_society
 		}
 		allow = {
-			OR = {
-				NOT = {
-					has_idea = agrarian
-				}
-				has_idea = institution_industrialization
-			}
+			has_idea = institution_industrialization
 		}
 		path = {
 			leads_to_tech = tech_humanities_social_stratification

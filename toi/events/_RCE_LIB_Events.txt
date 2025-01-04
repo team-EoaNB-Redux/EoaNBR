@@ -197,7 +197,6 @@ country_event = {
 				add_ideas = limited_elections
 				add_ideas = presidential_republic
 				add_ideas = secular_state
-				add_ideas = religion_protestant
 				add_ideas = usa_slavery_law
 				add_ideas = extensive_conscription
 				add_ideas = closed_economy

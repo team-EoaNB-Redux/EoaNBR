@@ -22,8 +22,8 @@ create_country_leader = {
 		#POLITICS
 
 		hos_is_leader
-		pre_industrial_era
-		agrarian
+		#pre_industrial_era
+		#agrarian
 		non_monarchical_system
 		presidential_republic
 

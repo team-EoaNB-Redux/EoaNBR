@@ -15,8 +15,8 @@
 		#POLITICS
 
 		hos_is_leader
-		victorian_era
-		industrializing
+		#victorian_era
+		#industrializing
 		has_heir
 		parliamentary_monarchy
 

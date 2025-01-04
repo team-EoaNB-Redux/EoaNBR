@@ -6,9 +6,9 @@
 	add_ideas = {
 		#POLITICS
 		hos_is_leader
-		victorian_era
+		#victorian_era
 		law_victorian_army
-		agrarian
+		#agrarian
 		has_heir
 		absolute_monarchy
 		civilian_economy

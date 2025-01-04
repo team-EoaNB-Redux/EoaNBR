@@ -16,9 +16,9 @@
 	add_ideas = {
 
 		hos_is_leader
-		victorian_era
+		#victorian_era
 		law_victorian_army
-		industrializing
+		#industrializing
 		non_monarchical_system
 		revolutionary_government
 
