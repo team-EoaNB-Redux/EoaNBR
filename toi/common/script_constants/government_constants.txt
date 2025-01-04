@@ -3,14 +3,42 @@ govt_political_legitimacy_threshold = {
 		any_key = yes
 		data = fixed_point
 	}
-	none = 0
-	very_low = 15
-	low = 30
-	moderate = 45
-	high = 60
-	very_high = 75
-	perfect = 90
+	none_min = 0
+	none_max = 15
+	very_low_min = 15
+	very_low_max = 30
+	low_min = 30
+	low_max = 45
+	moderate_min = 45
+	moderate_max = 60
+	high_min = 60
+	high_max = 75
+	very_high_min = 75
+	very_high_max = 90
+	perfect_min = 90
+	perfect_max = 100
 }
+
+# defined_text = {
+# 	name = GetLegitimacyLevel
+# 	text = {
+# 		trigger = {
+# 			check_variable = {
+# 				political_legitimacy = const:govt_political_legitimacy_threshold.none
+# 			}
+# 		}
+# 		localization_key = none
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = {
+# 				political_legitimacy = const:govt_political_legitimacy_threshold.low
+# 			}
+# 		}
+# 		localization_key = low
+# 	}
+# }
+
 
 govt_autarchy_threshold = {
 	schema = {

@@ -35,20 +35,26 @@ ideas = {
 						}
 					}
 					custom_override_tooltip = {
-						tooltip = govt_political_legitimacy_is_less_than_value_tooltip
-						VALUE = constant:govt_political_legitimacy_threshold.low
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:govt_political_legitimacy_threshold.high_min
+						MAX = constant:govt_political_legitimacy_threshold.perfect_max
 						check_variable = {
 							var = poltical_legitimacy
-							value = constant:govt_political_legitimacy_threshold.low
-							compare = less_than
+							value = constant:govt_political_legitimacy_threshold.high_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:govt_political_legitimacy_threshold.perfect_max
+							compare = less_than_or_equals_to
 						}
 					}
 				}
 				custom_override_tooltip = {
 					tooltip = govt_article_invalid_threshold_between_tooltip
 					ARTICLE_TYPE = "autarchy_token"
-					AUTARCHY_MIN_VALUE = constant:govt_autarchy_threshold.absolutist_min
-					AUTARCHY_MAX_VALUE = constant:govt_autarchy_threshold.absolutist_max
+					MIN = constant:govt_autarchy_threshold.absolutist_min
+					MAX = constant:govt_autarchy_threshold.absolutist_max
 					check_variable = {
 						var = modifier@government_autarchy_modifier
 						value = constant:govt_autarchy_threshold.absolutist_min
@@ -98,20 +104,26 @@ ideas = {
 						}
 					}
 					custom_override_tooltip = {
-						tooltip = govt_political_legitimacy_is_less_than_value_tooltip
-						VALUE = constant:govt_political_legitimacy_threshold.low
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:govt_political_legitimacy_threshold.moderate_min
+						MAX = constant:govt_political_legitimacy_threshold.very_high_max
 						check_variable = {
 							var = poltical_legitimacy
-							value = constant:govt_political_legitimacy_threshold.low
-							compare = less_than
+							value = constant:govt_political_legitimacy_threshold.moderate_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:govt_political_legitimacy_threshold.very_high_max
+							compare = less_than_or_equals_to
 						}
 					}
 				}
 				custom_override_tooltip = {
 					tooltip = govt_article_invalid_threshold_tooltip
 					ARTICLE_TYPE = "autarchy_token"
-					AUTARCHY_MIN_VALUE = constant:govt_autarchy_threshold.absolutist_min
-					AUTARCHY_MAX_VALUE = constant:govt_autarchy_threshold.absolutist_max
+					MIN = constant:govt_autarchy_threshold.absolutist_min
+					MAX = constant:govt_autarchy_threshold.absolutist_max
 					check_variable = {
 						var = modifier@government_autarchy_modifier
 						value = constant:govt_autarchy_threshold.absolutist_min
@@ -161,20 +173,26 @@ ideas = {
 						}
 					}
 					custom_override_tooltip = {
-						tooltip = govt_political_legitimacy_is_less_than_value_tooltip
-						VALUE = constant:govt_political_legitimacy_threshold.low
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:govt_political_legitimacy_threshold.low_min
+						MAX = constant:govt_political_legitimacy_threshold.high_max
 						check_variable = {
 							var = poltical_legitimacy
-							value = constant:govt_political_legitimacy_threshold.low
-							compare = less_than
+							value = constant:govt_political_legitimacy_threshold.low_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:govt_political_legitimacy_threshold.high_max
+							compare = less_than_or_equals_to
 						}
 					}
 				}
 				custom_override_tooltip = {
 					tooltip = govt_article_invalid_threshold_tooltip
 					ARTICLE_TYPE = "autarchy_token"
-					AUTARCHY_MIN_VALUE = constant:govt_autarchy_threshold.absolutist_min
-					AUTARCHY_MAX_VALUE = constant:govt_autarchy_threshold.absolutist_max
+					MIN = constant:govt_autarchy_threshold.absolutist_min
+					MAX = constant:govt_autarchy_threshold.absolutist_max
 					check_variable = {
 						var = modifier@government_autarchy_modifier
 						value = constant:govt_autarchy_threshold.absolutist_min
@@ -224,20 +242,26 @@ ideas = {
 						}
 					}
 					custom_override_tooltip = {
-						tooltip = govt_political_legitimacy_is_less_than_value_tooltip
-						VALUE = constant:govt_political_legitimacy_threshold.low
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:govt_political_legitimacy_threshold.low_min
+						MAX = constant:govt_political_legitimacy_threshold.perfect_max
 						check_variable = {
 							var = poltical_legitimacy
-							value = constant:govt_political_legitimacy_threshold.low
-							compare = less_than
+							value = constant:govt_political_legitimacy_threshold.low_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:govt_political_legitimacy_threshold.perfect_max
+							compare = less_than_or_equals_to
 						}
 					}
 				}
 				custom_override_tooltip = {
 					tooltip = govt_article_invalid_threshold_tooltip
 					ARTICLE_TYPE = "autarchy_token"
-					AUTARCHY_MIN_VALUE = constant:govt_autarchy_threshold.absolutist_min
-					AUTARCHY_MAX_VALUE = constant:govt_autarchy_threshold.absolutist_max
+					MIN = constant:govt_autarchy_threshold.absolutist_min
+					MAX = constant:govt_autarchy_threshold.absolutist_max
 					check_variable = {
 						var = modifier@government_autarchy_modifier
 						value = constant:govt_autarchy_threshold.absolutist_min
@@ -287,20 +311,26 @@ ideas = {
 						}
 					}
 					custom_override_tooltip = {
-						tooltip = govt_political_legitimacy_is_less_than_value_tooltip
-						VALUE = constant:govt_political_legitimacy_threshold.low
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:govt_political_legitimacy_threshold.very_low_min
+						MAX = constant:govt_political_legitimacy_threshold.moderate_max
 						check_variable = {
 							var = poltical_legitimacy
-							value = constant:govt_political_legitimacy_threshold.low
-							compare = less_than
+							value = constant:govt_political_legitimacy_threshold.very_low_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:govt_political_legitimacy_threshold.moderate_max
+							compare = less_than_or_equals_to
 						}
 					}
 				}
 				custom_override_tooltip = {
 					tooltip = govt_article_invalid_threshold_tooltip
 					ARTICLE_TYPE = "autarchy_token"
-					AUTARCHY_MIN_VALUE = constant:govt_autarchy_threshold.absolutist_min
-					AUTARCHY_MAX_VALUE = constant:govt_autarchy_threshold.absolutist_max
+					MIN = constant:govt_autarchy_threshold.absolutist_min
+					MAX = constant:govt_autarchy_threshold.absolutist_max
 					check_variable = {
 						var = modifier@government_autarchy_modifier
 						value = constant:govt_autarchy_threshold.absolutist_min
@@ -317,7 +347,7 @@ ideas = {
 				govt_reform_autarchy_article = yes
 			}
 		}
-		govt_autarchy_anarchy = {
+		govt_autarchy_minarchy = {
 			allowed = { always = no }
 
 			cancel = {
@@ -350,20 +380,26 @@ ideas = {
 						}
 					}
 					custom_override_tooltip = {
-						tooltip = govt_political_legitimacy_is_less_than_value_tooltip
-						VALUE = constant:govt_political_legitimacy_threshold.low
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:govt_political_legitimacy_threshold.none_min
+						MAX = constant:govt_political_legitimacy_threshold.low_max
 						check_variable = {
 							var = poltical_legitimacy
-							value = constant:govt_political_legitimacy_threshold.low
-							compare = less_than
+							value = constant:govt_political_legitimacy_threshold.none_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:govt_political_legitimacy_threshold.low_max
+							compare = less_than_or_equals_to
 						}
 					}
 				}
 				custom_override_tooltip = {
 					tooltip = govt_article_invalid_threshold_tooltip
 					ARTICLE_TYPE = "autarchy_token"
-					AUTARCHY_MIN_VALUE = constant:govt_autarchy_threshold.absolutist_min
-					AUTARCHY_MAX_VALUE = constant:govt_autarchy_threshold.absolutist_max
+					MIN = constant:govt_autarchy_threshold.absolutist_min
+					MAX = constant:govt_autarchy_threshold.absolutist_max
 					check_variable = {
 						var = modifier@government_autarchy_modifier
 						value = constant:govt_autarchy_threshold.absolutist_min
@@ -380,5 +416,15 @@ ideas = {
 				govt_reform_autarchy_article = yes
 			}
 		}
+	}
+	zealotry_token = {
+
+	}
+	legitimacy_token = {
+		govt_legitimacy_divine_right = { allowed = { always = no } }
+		govt_legitimacy_popular_soverignty = { allowed = { always = no } }
+		govt_legitimacy_might_makes_right = { allowed = { always = no } }
+		govt_legitimacy_common_prosperity = { allowed = { always = no } }
+		govt_legitimacy_stability = { allowed = { always = no } }
 	}
 }

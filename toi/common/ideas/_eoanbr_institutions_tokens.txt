@@ -9,6 +9,7 @@ ideas = {
 					political_power_gain = 0.25
 					planning_speed = 0.05
 					production_factory_max_efficiency_factor = 0.05
+					supply_node_range = 0.20
 					research_slot_modifier = 1
 				}
 
@@ -80,10 +81,9 @@ ideas = {
 
 				modifier = {
 					research_speed_factor = 0.05
-					infrastructure_attractiveness_modifier = 2
-					urban_attractiveness_modifier = 2
 					line_change_production_efficiency_factor = 0.35
 					production_factory_start_efficiency_factor = 0.15
+					supply_node_range = 0.30
 					research_slot_modifier = 1
 				}
 
@@ -882,7 +882,8 @@ ideas = {
 					political_power_gain = 0.25
 					drift_defence_factor = 0.1
 					stability_factor = 0.05
-					stability_weekly = 0.001
+					supply_node_range = 0.30
+					banking_confidence_modifier = 10
 					research_slot_modifier = 1
 				}
 
@@ -960,7 +961,7 @@ ideas = {
 					army_core_defence_factor = 0.02
 					research_cost_factor = 0.05
 					conscription_factor = 0.02
-					# chauvinist_populism_drift = 0.05
+					supply_node_range = -0.2
 					special_forces_cap = 0.025
 					war_support_factor = 0.05
 				}
@@ -1033,6 +1034,7 @@ ideas = {
 				modifier = {
 					political_power_gain = 0.2
 					land_reinforce_rate = 0.075
+					supply_node_range = -0.2
 					promote_cost_factor = -0.1
 					special_forces_cap = 0.025
 				}
@@ -1107,7 +1109,7 @@ ideas = {
 				allowed = { always = no }
 
 				modifier = {
-
+					supply_node_range = -0.2
 				}
 
 				rule = {
@@ -1176,6 +1178,7 @@ ideas = {
 				allowed = { always = no }
 
 				modifier = {
+					supply_node_range = -0.2
 
 				}
 
@@ -1245,6 +1248,7 @@ ideas = {
 				allowed = { always = no }
 
 				modifier = {
+					supply_node_range = -0.2
 
 				}
 
