@@ -82,7 +82,7 @@ ARG_colonize_lands = {
 					any_other_country = {
 						owns_state = 1098
 						owns_state = 1100
-						NOT = { has_idea = pre_industrial_era }
+						NOT = { has_variable = has_afr_empire_mechanic_system }
 					}
 				}
 				PREV = { country_event = { id = arg.5 } }

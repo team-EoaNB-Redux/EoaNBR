@@ -171,180 +171,169 @@ eoanb_category_institutions = {
 	# }
 
 	#Advance to the Victorian Era
-	eoanb_decision_advance_to_victorian_era = {
-		icon = generic_research
+	# eoanb_decision_advance_to_victorian_era = {
+	# 	icon = generic_research
 
-		available = {
-			OR = {
-				AND = {
-					date > 1850.1.1
-					set_temp_variable = { institution_temp = token:institution_industrialization }
-					set_temp_variable = { progress_temp = 70 }
-					has_institution_progress = yes
-					custom_trigger_tooltip = {
-						tooltip = has_institution_progress_tt
-					}
-	 			}
-	 			AND = {
-	 				date > 1860.1.1
-					set_temp_variable = { institution_temp = token:institution_industrialization }
-					set_temp_variable = { progress_temp = 85 }
-					has_institution_progress = yes
-					custom_trigger_tooltip = {
-						tooltip = has_institution_progress_tt
-					}
-	 			}
-				AND = {
-	 				date > 1870.1.1
-					set_temp_variable = { institution_temp = token:institution_industrialization }
-					set_temp_variable = { progress_temp = 100 }
-					has_institution_progress = yes
-					custom_trigger_tooltip = {
-						tooltip = has_institution_progress_tt
-					}
-	 			}
-	 			date > 1880.1.1
-	 		}
-		}
+	# 	available = {
+	# 		OR = {
+	# 			AND = {
+	# 				date > 1850.1.1
+	# 				set_temp_variable = { institution_temp = token:institution_industrialization }
+	# 				set_temp_variable = { progress_temp = 70 }
+	# 				has_institution_progress = yes
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = has_institution_progress_tt
+	# 				}
+	#  			}
+	#  			AND = {
+	#  				date > 1860.1.1
+	# 				set_temp_variable = { institution_temp = token:institution_industrialization }
+	# 				set_temp_variable = { progress_temp = 85 }
+	# 				has_institution_progress = yes
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = has_institution_progress_tt
+	# 				}
+	#  			}
+	# 			AND = {
+	#  				date > 1870.1.1
+	# 				set_temp_variable = { institution_temp = token:institution_industrialization }
+	# 				set_temp_variable = { progress_temp = 100 }
+	# 				has_institution_progress = yes
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = has_institution_progress_tt
+	# 				}
+	#  			}
+	#  			date > 1880.1.1
+	#  		}
+	# 	}
 
-	 	visible = {
-	 		afr_is_tribal = no
-	 		has_idea = pre_industrial_era
-	 	}
+	#  	visible = {
+	#  		afr_is_tribal = no
+	#  	}
 
-	 	fire_only_once = no
+	#  	fire_only_once = no
 
-	 	cost = 50
+	#  	cost = 50
 
-	 	days_remove = 180
+	#  	days_remove = 180
 
-		remove_effect = {
-			custom_effect_tooltip = eoanb_tt_advance_era_victorian
-			hidden_effect = {
-				swap_ideas = { remove_idea = pre_industrial_era add_idea = victorian_era }
-			}
-		}
+	# 	remove_effect = {
+	# 		custom_effect_tooltip = eoanb_tt_advance_era_victorian
+	# 		hidden_effect = {
+	# 		}
+	# 	}
 
-		ai_will_do = {
-			base = 1000
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 1000
+	# 	}
+	# }
 
 	#Advance to the Machine Era
-	eoanb_decision_advance_to_machine_era = {
-		icon = generic_research
+	# eoanb_decision_advance_to_machine_era = {
+	# 	icon = generic_research
 
-		available = {
-			OR = {
-				AND = {
-					date > 1880.1.1
-					set_temp_variable = { institution_temp = token:institution_mechanization }
-					set_temp_variable = { progress_temp = 50 }
-					has_institution_progress = yes
-					custom_trigger_tooltip = {
-						tooltip = has_institution_progress_tt
-					}
-				}
-				AND = {
-					date > 1890.1.1
-					set_temp_variable = { institution_temp = token:institution_mechanization }
-					set_temp_variable = { progress_temp = 100 }
-					has_institution_progress = yes
-					custom_trigger_tooltip = {
-						tooltip = has_institution_progress_tt
-					}
-				}
-				AND = {
-					date > 1900.1.1
-					custom_trigger_tooltip = {
-						tooltip = eoanb_trigger_tt_law_african_all
-	 				}
-					hidden_trigger = {
-						afr_is_tribal = no
-					}
-	 			}
-	 		}
-	 	}
+	# 	available = {
+	# 		OR = {
+	# 			AND = {
+	# 				date > 1880.1.1
+	# 				set_temp_variable = { institution_temp = token:institution_mechanization }
+	# 				set_temp_variable = { progress_temp = 50 }
+	# 				has_institution_progress = yes
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = has_institution_progress_tt
+	# 				}
+	# 			}
+	# 			AND = {
+	# 				date > 1890.1.1
+	# 				set_temp_variable = { institution_temp = token:institution_mechanization }
+	# 				set_temp_variable = { progress_temp = 100 }
+	# 				has_institution_progress = yes
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = has_institution_progress_tt
+	# 				}
+	# 			}
+	# 			AND = {
+	# 				date > 1900.1.1
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = eoanb_trigger_tt_law_african_all
+	#  				}
+	# 				hidden_trigger = {
+	# 					afr_is_tribal = no
+	# 				}
+	#  			}
+	#  		}
+	#  	}
 
-		visible = {
-	 		has_idea = victorian_era
-	 	}
+	#  	fire_only_once = yes
 
-	 	fire_only_once = yes
+	#  	cost = 50
 
-	 	cost = 50
+	#  	days_remove = 180
 
-	 	days_remove = 180
+	# 	remove_effect = {
+	#  		custom_effect_tooltip = eoanb_tt_advance_era_machine
+	#  		hidden_effect = {
+	# 		}
+	#  	}
 
-		remove_effect = {
-	 		custom_effect_tooltip = eoanb_tt_advance_era_machine
-	 		hidden_effect = {
-	 			swap_ideas = { remove_idea = victorian_era add_idea = machine_era }
-			}
-	 	}
-
-		ai_will_do = {
-	 		base = 1000
-		}
-	}
+	# 	ai_will_do = {
+	#  		base = 1000
+	# 	}
+	# }
 
 	#Advance to the Oil Era
-	eoanb_decision_advance_to_oil_era = {
-		icon = generic_research
+	# eoanb_decision_advance_to_oil_era = {
+	# 	icon = generic_research
 
-	 	available = {
-			OR = {
-				AND = {
-					date > 1900.1.1
-					set_temp_variable = { institution_temp = token:institution_electrification }
-					set_temp_variable = { progress_temp = 45 }
-					has_institution_progress = yes
-					custom_trigger_tooltip = {
-						tooltip = has_institution_progress_tt
-					}
-				}
-				AND = {
-					date > 1905.1.1
-					set_temp_variable = { institution_temp = token:institution_electrification }
-					set_temp_variable = { progress_temp = 100 }
-					has_institution_progress = yes
-					custom_trigger_tooltip = {
-						tooltip = has_institution_progress_tt
-					}
-				}
-				AND = {
-					date > 1925.1.1
-					custom_trigger_tooltip = {
-						tooltip = eoanb_trigger_tt_law_african_all
-					}
-					hidden_trigger = {
-						afr_is_tribal = no
-					}
-				}
-			}
-		}
+	#  	available = {
+	# 		OR = {
+	# 			AND = {
+	# 				date > 1900.1.1
+	# 				set_temp_variable = { institution_temp = token:institution_electrification }
+	# 				set_temp_variable = { progress_temp = 45 }
+	# 				has_institution_progress = yes
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = has_institution_progress_tt
+	# 				}
+	# 			}
+	# 			AND = {
+	# 				date > 1905.1.1
+	# 				set_temp_variable = { institution_temp = token:institution_electrification }
+	# 				set_temp_variable = { progress_temp = 100 }
+	# 				has_institution_progress = yes
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = has_institution_progress_tt
+	# 				}
+	# 			}
+	# 			AND = {
+	# 				date > 1925.1.1
+	# 				custom_trigger_tooltip = {
+	# 					tooltip = eoanb_trigger_tt_law_african_all
+	# 				}
+	# 				hidden_trigger = {
+	# 					afr_is_tribal = no
+	# 				}
+	# 			}
+	# 		}
+	# 	}
 
-		visible = {
-			has_idea = machine_era
-		}
 
-		fire_only_once = yes
+	# 	fire_only_once = yes
 
-		cost = 50
+	# 	cost = 50
 
-		days_remove = 180
+	# 	days_remove = 180
 
-		remove_effect = {
-			custom_effect_tooltip = eoanb_tt_advance_era_oil
-			hidden_effect = {
-				swap_ideas = { remove_idea = machine_era add_idea = oil_era }
-			}
-		}
+	# 	remove_effect = {
+	# 		custom_effect_tooltip = eoanb_tt_advance_era_oil
+	# 		hidden_effect = {
+	# 		}
+	# 	}
 
-		ai_will_do = {
-			base = 1000
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 1000
+	# 	}
+	# }
 
 	#Advance to the Aviation Era
 	# eoanb_decision_advance_to_aviation_era = {
@@ -380,10 +369,6 @@ eoanb_category_institutions = {
 	# 		}
 	# 	}
 
-	# 	visible = {
-	# 		has_idea = oil_era
-	# 	}
-
 	# 	fire_only_once = yes
 
 	# 	cost = 50
@@ -393,7 +378,6 @@ eoanb_category_institutions = {
 	# 	remove_effect = {
 	# 		custom_effect_tooltip = eoanb_tt_advance_era_aviation
 	# 		hidden_effect = {
-	# 			swap_ideas = { remove_idea = oil_era add_idea = aviation_era }
 	# 		}
 	# 	}
 
@@ -411,7 +395,6 @@ eoanb_category_institutions = {
 		}
 
 		visible = {
-			has_idea = victorian_era
 			NOT = { has_tech = du_temple_monoplane }
 			NOT = { has_tech = tatin_aeroplane }
 			NOT = { has_tech = navigable_balloons }

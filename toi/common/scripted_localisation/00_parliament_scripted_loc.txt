@@ -258,35 +258,35 @@ defined_text = {
 	name = political_legitimacy_autocracy_heir
 	text = {
 		trigger = {
-			has_idea = absolute_monarchy
+			#has_idea = absolute_monarchy
 			has_idea = no_heir
 		}
 		localization_key = political_legitimacy_autocracy_no_heir_tt
 	}
 	text = {
 		trigger = {
-			has_idea = absolute_monarchy
+			#has_idea = absolute_monarchy
 			has_idea = dethroned_heir
 		}
 		localization_key = political_legitimacy_autocracy_dethroned_heir_tt
 	}
 	text = {
 		trigger = {
-			has_idea = absolute_monarchy
+			#has_idea = absolute_monarchy
 			has_idea = weak_heir
 		}
 		localization_key = political_legitimacy_autocracy_weak_heir_tt
 	}
 	text = {
 		trigger = {
-			has_idea = absolute_monarchy
+			#has_idea = absolute_monarchy
 			has_idea = nonfamily_heir
 		}
 		localization_key = political_legitimacy_autocracy_nonfamily_heir_tt
 	}
 	text = {
 		trigger = {
-			has_idea = absolute_monarchy
+			#has_idea = absolute_monarchy
 			has_idea = has_heir
 		}
 		localization_key = political_legitimacy_autocracy_has_heir_tt
@@ -297,7 +297,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {	has_government = anarchism }
-			NOT = { has_idea = absolute_monarchy }
+			#NOT = { has_idea = absolute_monarchy }
 			check_variable = { party_popularity@ruling_party < 0.35 }
 			check_variable = { highest_party_popularity@exclude_ruling_party > 0.49 }
 		}
@@ -309,7 +309,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {	has_government = anarchism }
-			NOT = { has_idea = absolute_monarchy }
+			#NOT = { has_idea = absolute_monarchy }
 			has_idea = no_constitution
 		}
 		localization_key = political_legitimacy_government_no_constitution_tt
@@ -317,7 +317,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {	has_government = anarchism }
-			NOT = { has_idea = absolute_monarchy }
+			#NOT = { has_idea = absolute_monarchy }
 			has_idea = human_rights
 		}
 		localization_key = political_legitimacy_government_human_rights_tt
@@ -325,7 +325,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {	has_government = anarchism }
-			NOT = { has_idea = absolute_monarchy }
+			#NOT = { has_idea = absolute_monarchy }
 			has_idea = constitution_adopted
 		}
 		localization_key = political_legitimacy_government_constitution_adopted_tt
@@ -333,7 +333,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {	has_government = anarchism }
-			NOT = { has_idea = absolute_monarchy }
+			#NOT = { has_idea = absolute_monarchy }
 			has_idea = limited_constitution
 		}
 		localization_key = political_legitimacy_government_limited_constitution_tt
@@ -341,7 +341,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {	has_government = anarchism }
-			NOT = { has_idea = absolute_monarchy }
+			#NOT = { has_idea = absolute_monarchy }
 			has_idea = sharia_constitution
 			# OR = {
 			# 	has_idea = religion_sunni
@@ -354,7 +354,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOT = {	has_government = anarchism }
-			NOT = { has_idea = absolute_monarchy }
+			#NOT = { has_idea = absolute_monarchy }
 			has_idea = sharia_constitution
 			# NOT = {
 			# 	OR = {
@@ -578,7 +578,7 @@ defined_text = {
 	text = { # Council
 		trigger = {
 			OR = {
-				has_idea = absolute_monarchy
+				#has_idea = absolute_monarchy
 				has_idea = free_city
 			}
 		}
@@ -680,7 +680,7 @@ defined_text = {
 
 	text = { # Absolute Monarchy
 		trigger = {
-			has_idea = absolute_monarchy
+			#has_idea = absolute_monarchy
 		}
 		localization_key = government_system_loc_4
 	}

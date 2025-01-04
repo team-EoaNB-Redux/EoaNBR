@@ -14,7 +14,7 @@ ideas = {
 
 				modifier = {
 					supply_consumption_factor = -0.25
-					# production_speed_farm_factor = 0.05
+					military_equipment_cost_factor = -0.05
 					monthly_population = 0.05
 					agriculture_output_factor = 0.02
 				}
@@ -27,7 +27,7 @@ ideas = {
 				picture = rus_political_isolation
 
 				modifier = {
-					political_power_factor = -0.05
+					political_power_factor = -0.5
 					improve_relations_maintain_cost_factor = 1
 					military_spending_min_modifier = 5
 					foreign_interest_rate_factor = 0.15
@@ -69,7 +69,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.05
 				production_speed_buildings_factor = -0.05
 				research_speed_factor = -0.05
-				treasury_gain_monthly = 2000
+				treasury_gain_monthly = 200
 				upper_strata_income_tax_max_modifier = -30
 				corporate_tax_max_modifier = -60
 				banking_confidence_modifier = 5
@@ -402,7 +402,7 @@ ideas = {
 				#production_factory_efficiency_gain_factor = 0.05
 				#production_factory_max_efficiency_factor = 0.05
 			#}
-		#}
+		#} 
 
 		#RUS_idea_reforms_pushed_by_financem = {
 			#picture = generic_pp_unity_bonus

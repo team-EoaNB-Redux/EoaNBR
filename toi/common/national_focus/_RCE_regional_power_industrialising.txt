@@ -659,7 +659,6 @@ focus_tree = {
 		cost = 75
 
 		available = {
-			has_idea = industrializing
 			has_country_flag = afr_reforming_regional_power_regional_resources_completed
 			has_country_flag = afr_reforming_regional_power_regional_industry_completed
 			has_country_flag = afr_reforming_regional_power_regional_infrastructure_completed

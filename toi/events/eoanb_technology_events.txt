@@ -49,16 +49,6 @@ add_namespace = tech_news
 # 	trigger = {
 # 		has_tech = land_doctrine_machine
 # 		has_idea = law_victorian_army
-# 		OR = {
-# 			has_idea = machine_era
-# 			has_idea = oil_era
-# 			has_idea = aviation_era
-# 			has_idea = modern_era
-# 			has_idea = atomic_era
-# 			has_idea = information_era
-# 			has_idea = digital_era
-# 			has_idea = post_digital_era
-# 		}
 # 	}
 	
 # 	mean_time_to_happen = {

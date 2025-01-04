@@ -3796,21 +3796,7 @@ afr_rrp_growing_regional_industry = {
 					any_owned_state = { is_coastal = yes }
 				}
 				any_neighbor_country = {
-					NOT = {
-						has_idea = pre_industrial_era
-					}
-				}
-				AND = {
-					if = {
-						limit={
-							is_subject = yes
-						}
-						OVERLORD = {
-							NOT = {
-								has_idea = pre_industrial_era
-							}
-						}
-					}
+					has_idea = institution_centralization
 				}
 			}
 		}

@@ -5019,12 +5019,6 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = 16 y = 18 }
 		}
-		# allow={
-		# 	NOT ={
-		# 		has_idea = pre_industrial_era
-		# 		has_idea = victorian_era
-		# 	}
-		# }
 
 		# path = {
 			# leads_to_tech = doctrine_machine_asymetric_tatics
@@ -6235,12 +6229,9 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = 16 y = 32 }
 		}
-		allow={
-			NOT={
-				has_idea = pre_industrial_era
-				has_idea = victorian_era
-				has_idea = machine_era
-			}
+		available = {
+			has_idea = institution_mass_transit
+			has_idea = institution_imperialism
 		}
 
 		path = {
@@ -7062,13 +7053,8 @@ technologies = {
 		}
 
 		allow={
-			NOT={
-				has_idea = pre_industrial_era
-				has_idea = victorian_era
-				has_idea = machine_era
-				has_idea = oil_era
-				has_idea = aviation_era
-			}
+			has_idea = institution_telecommunications
+			has_idea = institution_mass_marketization
 		}
 
 		xp_research_type = army
