@@ -17,9 +17,6 @@ state={
 			victory_points = {
 				3578 5 
 			}
-			set_variable = {
-				steel_foundry_size = 2
-			}
 			add_core_of = RUS
 		}
 	}

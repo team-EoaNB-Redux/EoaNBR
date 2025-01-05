@@ -4,7 +4,7 @@ state = {
 	name = "STATE_235"
 
 	local_supplies = 0.0
-	manpower = 768900
+	manpower = 708900
 
 	state_category = sparse_rural
 	resources = {

@@ -8732,6 +8732,7 @@ guiTypes = {
 						format = left
 						maxWidth = 220
 						text = "govt_interest_spending_title"
+						pdx_tooltip = govt_interest_spending_amount_loc_tt
 						maxHeight = 24
 						fixedsize = yes
 						#alwaystransparent = yes
@@ -8805,7 +8806,7 @@ guiTypes = {
 				text = "govt_national_bank_title"
 				maxHeight = 24
 				fixedsize = yes
-				#alwaystransparent = yes
+				#alwaystransparent = yes 
 			}
 
 			iconType ={

@@ -2529,7 +2529,7 @@
 
           govt_interest_spending_title: "Interest"
           govt_interest_spending_amount_loc: "[GetNationalDebtInterest]§![GetCurrencyTextIcon]"
-
+          govt_interest_spending_amount_loc_tt: "Monthly Interest on Debt: [GetNationalDebtInterest]§![GetCurrencyTextIcon] \nAverage Interest Rate: §Y[?national_debt_interest_rate]%§!"
           govt_mandatory_spending_amount_loc: "[GetMandatorySpending]§![GetCurrencyTextIcon]"
         #
         govt_spending_amount_loc: "[GetSpending]§![GetCurrencyTextIcon]"

@@ -14,12 +14,8 @@ state={
 		}
 		
 			#Agriculture
-			set_variable = { crop_farm_size = 4 } 
+			set_variable = { luxuries_plantation_size = 4 } 
 
-		# set_variable = {
-		# 	building_commercial_farm_size = 3
-
-		# }
 		add_core_of = RUS
 
 	}
@@ -27,7 +23,7 @@ state={
 	provinces={
 		449 484 500 509 533 3478 3489 3505 3519 3540 6544 6566 9488 9516 9540 9565 11459 11476 11501 11527 
 	}
-	manpower=437900
+	manpower=337900
 	buildings_max_level_factor=1.000
 	state_category = rural
 	local_supplies=0.000

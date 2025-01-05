@@ -2,11 +2,10 @@
 state={
 	id=259
 	name="STATE_259"
-	
+
 	resources={
 		wood=2.000
-		iron = 0
-		coal = 0
+		chemicals = 3
 	}
 
 	history={
@@ -16,18 +15,10 @@ state={
 			buildings = {
 				infrastructure = 3
 			}
-			
-			#Agriculture
-			set_variable = { crop_farm_size = 3 } 
 
-			# set_variable = {
-			# 	building_infrastructure_size = 1
-			# }
-			# set_variable = {
-			# 	building_metals_mine_size = 8
-			# }
+			#Agriculture
 			victory_points = {
-				11504 1 
+				11504 1
 			}
 
 		}
@@ -35,7 +26,7 @@ state={
 	}
 
 	provinces={
-		463 501 511 559 3455 3520 3557 3584 6495 6507 6605 9413 9491 9519 11462 11504 11530 
+		463 501 511 559 3455 3520 3557 3584 6495 6507 6605 9413 9491 9519 11462 11504 11530
 	}
 	manpower=1633253
 	buildings_max_level_factor=1.000

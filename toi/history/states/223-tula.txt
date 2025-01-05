@@ -5,7 +5,6 @@ state={
 
 	resources={
 		wood = 60.000
-		iron = 37
 		coal = 1
 	}
 
@@ -18,9 +17,6 @@ state={
 			}
 			buildings = {
 				infrastructure = 3
-			}
-			set_variable = {
-				steel_foundry_size = 2
 			}
 		}
 
