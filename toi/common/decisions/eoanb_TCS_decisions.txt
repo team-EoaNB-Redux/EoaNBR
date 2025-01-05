@@ -146,7 +146,7 @@ eoanb_category_military = {
 		}
 
 		allowed = {
-			tag = ENG
+			tag = TCS
 		}
 
 		#cancel_trigger = {
