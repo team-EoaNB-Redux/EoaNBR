@@ -2582,6 +2582,13 @@ eoanb_category_politics_foreign = {
 			always = no
 		}
 
+		allowed = {
+			OR = {
+				tag = OMA
+				tag = ZAN
+			}
+		}
+
 		activation = {
 			always = no
 		}

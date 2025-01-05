@@ -638,7 +638,7 @@ afr_regional_power_empire_politics_category = {
 				has_idea = afr_stagnant_kingdom
 				has_idea = afr_imperial_decline
 			}
-			NOT = { has_country_flag = afr_fractured_kingdom_opposition_crushed_flag }
+			# NOT = { has_country_flag = afr_fractured_kingdom_opposition_crushed_flag }
 		}
 
 		fire_only_once = no

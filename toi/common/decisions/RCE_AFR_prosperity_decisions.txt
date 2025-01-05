@@ -4387,8 +4387,8 @@ SKT_war_exhaustion = {
 				}
 				OR = {
 					has_variable = has_afr_empire_mechanic_system
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
+					# is_first_nations_tribe = yes
+					# is_south_american_tribe = yes
 				}
 			}
 		}
