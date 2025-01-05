@@ -1768,6 +1768,10 @@
 			multiply_variable = { need_variable@var:pop_r_token = pop_temp }
 			#log = "[?pop_r_token.GetTokenLocalizedKey]: [?need_variable@var:pop_r_token]"
 		}
+
+		set_temp_variable = { modifier_temp = controller:modifier@pops_food_consumption_factor }
+		add_to_temp_variable = { modifier_temp = 1 }
+		multiply_variable = { need_variable@token:food = modifier_temp }
 	}
 
 	pops_balance = {

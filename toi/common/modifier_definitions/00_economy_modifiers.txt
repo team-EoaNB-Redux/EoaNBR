@@ -553,6 +553,12 @@
 			precision = 2
 			category = country
 		}
+		pops_food_consumption_factor = { # Increases/decreases amount of food pops consume. Reducing this will increase SoL relatively speaking
+			color_type = bad
+			value_type = percentage
+			precision = 2
+			category = country
+		}
 	#
 	#Industries
 		# Special Industries

@@ -984,6 +984,7 @@
 
     aristocrats_investment_contribution_factor: "£money_good_texticon  Aristocrats Investment Contribution"
     capitalists_investment_contribution_factor: "£money_good_texticon  Capitalists Investment Contribution"
+    pops_food_consumption_factor: "Pops Food Consumption"
 
     government_investment_efficiency_factor: "£money_good_texticon  Government Investment Efficiency"
 

@@ -94,6 +94,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.02
 			#
 		}
 		tech_icebox_preservation = {
@@ -127,6 +128,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.01
 			#
 		}
 		tech_food_canning = {
@@ -163,6 +165,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.02
 			#
 		}
 		tech_vapor_compression_refrigeration = {
@@ -195,6 +198,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.01
 			#
 		}
 		tech_pasteurization = {
@@ -231,6 +235,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.03
 			#
 		}
 		tech_absorbtion_refrigeration = {
@@ -263,6 +268,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.01
 			#
 		}
 		tech_parrafin_paper = {
@@ -292,6 +298,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.01
 			#
 		}
 		tech_electric_refrigeration = {
@@ -324,6 +331,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.04
 			#
 		}
 		tech_cereal_box = {
@@ -356,6 +364,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.01
 			#
 		}
 		tech_cfcs = {
@@ -388,6 +397,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.02
 			#
 		}
 		tech_dehydrators = {
@@ -417,6 +427,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.01
 			#
 		}
 		tech_freeze_drying = {
@@ -446,6 +457,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.03
 			#
 		}
 		tech_milk_carton = {
@@ -475,6 +487,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.01
 			#
 		}
 		tech_frozen_food_packaging = {
@@ -504,6 +517,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.01
 			#
 		}
 		tech_vacuum_packing = {
@@ -533,6 +547,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.03
 			#
 		}
 		tech_plastic_bottle = {
@@ -562,6 +577,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pops_food_consumption_factor = -0.03
 			#
 		}
 		tech_food_irradiation = {
