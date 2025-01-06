@@ -808,7 +808,6 @@ ideas = {
 					mining_output_factor = 0.1
 					industrial_capacity_factory = 0.2
 					industrial_capacity_dockyard = 0.3
-					resistance_target = 0.3
 					research_slot_modifier = 1
 				}
 
