@@ -6171,7 +6171,6 @@ defined_text = {
 					}
 				}
 			#
-
 			#GetLowBalanceFirstIcon
 				defined_text = {
 					name = GetLowBalanceFirstIcon
@@ -7635,7 +7634,6 @@ defined_text = {
 		}
 		defined_text = {
 			name = GetMarketRankFrame
-
 			text = {
 				trigger = {
 					is_great_power = yes

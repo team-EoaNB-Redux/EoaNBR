@@ -1368,19 +1368,20 @@ equipments = {
 					
 				}
 			}
-		}
 
-		naval_speed = 12
+			naval_speed = 12
 
-		module_count_limit = {
-			module = ship_torpedo_1
-			count < 1
+			module_count_limit = {
+				module = ship_torpedo_1
+				count < 1
+			}
+	
+			module_count_limit = {
+				module = ship_torpedo_2
+				count < 1
+			}
 		}
-
-		module_count_limit = {
-			module = ship_torpedo_2
-			count < 1
-		}
+    
 		default_modules = inherit
 		
 		armor_value = 0

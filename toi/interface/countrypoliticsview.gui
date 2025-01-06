@@ -613,6 +613,8 @@ guiTypes = {
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 14 bottom = 14 }
 
+				clipping = no
+
 				background = {
 					name = "Background"
 					quadTextureSprite = "GFX_eoanbr_tiled_window_2b_border"

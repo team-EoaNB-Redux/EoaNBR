@@ -869,31 +869,6 @@ ideas = {
 				conscription_factor = 0.05
 			}
 		}
-		SPR_petroleum_revolution={
-			allowed = {
-				always = no
-			}
-			picture = generic_intel_bonus
-			modifier = {
-				surrender_limit = 1.00
-				no_supply_grace = 220
-				training_time_factor = 5.0
-				experience_gain_army_factor = -1.0
-			}
-		}
-		SPR_for_the_true_king={
-			allowed = {
-				always = no
-			}
-			picture = generic_intel_bonus
-			modifier = {
-				surrender_limit = 1.00
-				no_supply_grace = 220
-				training_time_factor = 5.0
-				experience_gain_army_factor = -1.0
-			}
-		}
-
 	}
 
 ######################################################

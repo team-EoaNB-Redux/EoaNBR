@@ -2054,6 +2054,9 @@ scripted_gui = {
 				trade_ai_determine_max_trade = yes
 				set_temp_variable = { amount_temp = -1 }
 				adjust_trade = yes
+
+				set_temp_variable = { r_type = v }
+				evaluate_best_trade_quantity = yes
 			}
 			trade_route_decrease_size_shift_click = {
 				set_temp_variable = { resource_temp = v }
@@ -2075,6 +2078,9 @@ scripted_gui = {
 				trade_ai_determine_max_trade = yes
 				set_temp_variable = { amount_temp = 1 }
 				adjust_trade = yes
+
+				set_temp_variable = { r_type = v }
+				evaluate_best_trade_quantity = yes
 			}
 			trade_route_increase_size_shift_click = {
 				set_temp_variable = { resource_temp = v }

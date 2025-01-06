@@ -361,7 +361,6 @@ technologies = {
 				horse_artillery_equipment = 24
 			}
 		}
-
 		on_research_complete = {
 			custom_effect_tooltip = doctrine_victorian_artillery_tt1
 			custom_effect_tooltip = doctrine_victorian_artillery_tt2
@@ -2693,7 +2692,6 @@ technologies = {
 				uniform_equipment = 23
 			}
 		}
-
 		on_research_complete = {
 			custom_effect_tooltip = doctrine_victorian_cavalry_tt1
 			custom_effect_tooltip = doctrine_victorian_cavalry_tt2
