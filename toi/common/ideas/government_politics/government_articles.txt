@@ -417,14 +417,334 @@ ideas = {
 			}
 		}
 	}
-	zealotry_token = {
+	slavery_token = {
+		govt_slavery_allowed = {
+			allowed = { always = no }
+
+			available = {
+
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_slavery_outlawed = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	franchisement_token = {
+		govt_franchisement_none = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_franchisement_only_landed = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_franchisement_weighted_wealthy = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_franchisement_wealth = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_franchisement_weighted_universal = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_franchisement_universal = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	voting_system_token = {
+		govt_voting_system_none = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_voting_system_first_past_the_post = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_voting_system_weighted_proportional = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_voting_system_proportional = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	upper_chamber_token = {
+		govt_upper_chamber_ruling_party_only = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_upper_chamber_appointed = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_upper_chamber_two_per_district = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_upper_chamber_per_popularity = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	lower_chamber_token = {
+		govt_lower_chamber_none = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_lower_chamber_ceremonial = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_lower_chamber_established = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		govt_lower_chamber_xx = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	judiciary_token = {
 
 	}
-	legitimacy_token = {
-		govt_legitimacy_divine_right = { allowed = { always = no } }
-		govt_legitimacy_popular_soverignty = { allowed = { always = no } }
-		govt_legitimacy_might_makes_right = { allowed = { always = no } }
-		govt_legitimacy_common_prosperity = { allowed = { always = no } }
-		govt_legitimacy_stability = { allowed = { always = no } }
+}
+ideas = {
+	press_token = {
+		govt_press_none = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		govt_press_state_only = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		govt_press_restricted = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		govt_press_free = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
 	}
+	labor_union_token = {
+		govt_labor_union_illegal = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		govt_labor_union_state_controlled = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		govt_labor_union_non_socialist = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		govt_labor_union_private_only = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		govt_labor_union_all_allowed = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+	}
+	
 }
