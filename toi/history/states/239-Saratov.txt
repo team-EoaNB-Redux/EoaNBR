@@ -4,7 +4,8 @@ state={
 	name="STATE_239"
 	resources={
 		wood=94.000
-		coal=1.000
+		iron = 35
+		coal=11.000
 	}
 
 	history={
@@ -16,13 +17,8 @@ state={
 			victory_points = {
 				3578 5 
 			}
-			set_variable = {
-				building_metals_mine_size = 4
-			}
 			add_core_of = RUS
-
 		}
-
 	}
 
 	provinces={

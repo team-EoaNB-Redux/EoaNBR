@@ -19,7 +19,7 @@ state = {
 		owner = PUN
 		add_core_of = PUN
 
-		1881.1.1 = {
+		1885.11.1 = {
 			owner = FRA
 			remove_core_of = PUN
 		}

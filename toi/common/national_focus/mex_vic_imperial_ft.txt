@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
 		id = MXE_Mexican_Economy
 		icon = GFX_focus_generic_self_management
-		x = 42
+		x = 18
 		y = 0
 		cost = 14
 		available = {
@@ -37,7 +37,8 @@ focus_tree = {
 	focus = {
 		id = MXE_Banking_In_Mexico
 		icon = GFX_Focus_banks
-		x = 36
+		relative_position_id = MXE_Mexican_Economy
+		x = -6
 		y = 1
 		cost = 14
 		prerequisite = {
@@ -56,8 +57,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Invite_Foreign_Banks
 		icon = GFX_goal_tripartite_pact
-		x = 35
-		y = 2
+		relative_position_id = MXE_Banking_In_Mexico
+		x = -1
+		y = 1
 		cost = 35
 		prerequisite = {
 			focus = MXE_Banking_In_Mexico
@@ -83,8 +85,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Societe_Generale
 		icon = GFX_goal_focus_prussia_paris_declaration
-		x = 34
-		y = 3
+		relative_position_id = MXE_Invite_Foreign_Banks
+		x = -1
+		y = 1
 		cost = 35
 		prerequisite = {
 			focus = MXE_Invite_Foreign_Banks
@@ -100,63 +103,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = { MXE_idea_no_banking_system }
-			### Increase French Influence
-			if = {
-        limit = { has_idea = MXE_idea_massive_french_influence }
-        # if = {
-		# 			limit = { OR = {
-		# 				has_dlc = "Together for Victory"
-		# 				has_dlc = "Waking the Tiger"
-		# 				has_dlc = "Death or Dishonor"
-		# 			} }
-					FRA = {
-						set_autonomy = {
-							target = MXE
-							autonomous_state = autonomy_dominion
-							freedom_level = 0.01
-						}
-					}
-				# }
-				# else = {
-				# 	FRA = { puppet = MXE }
-				# }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_huge_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_huge_french_influence
-                    add_idea = MXE_idea_massive_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_heavy_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_heavy_french_influence
-                    add_idea = MXE_idea_huge_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_medium_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_medium_french_influence
-                    add_idea = MXE_idea_heavy_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_small_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_small_french_influence
-                    add_idea = MXE_idea_medium_french_influence
-                }
-            }
+			MXE_increase_colonial_influence = yes
 		}
 	}
 
 	focus = {
 		id = MXE_London_Bank_of_Mexico
 		icon = GFX_goal_focus_government_glass
-		x = 36
-		y = 3
+		relative_position_id = MXE_Invite_Foreign_Banks
+		x = 1
+		y = 1
 		cost = 35
 		prerequisite = {
 			focus = MXE_Invite_Foreign_Banks
@@ -180,8 +136,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Promote_Mexican_Banking
 		icon = GFX_Focus_Elite
-		x = 37
-		y = 2
+		relative_position_id = MXE_Banking_In_Mexico
+		x = 1
+		y = 1
 		cost = 70
 		prerequisite = {
 			focus = MXE_Banking_In_Mexico
@@ -200,8 +157,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Reestablish_Banco_De_Avio
 		icon = GFX_Focus_Law_Vote_1
-		x = 37
-		y = 4
+		relative_position_id = MXE_Promote_Mexican_Banking
+		x = 0
+		y = 2
 		cost = 35
 		prerequisite = {
 			focus = MXE_Promote_Mexican_Banking
@@ -214,39 +172,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = { MXE_idea_no_banking_system }
 			add_political_power = 50
-			### Decrease French Influence
-			if = {
-                limit = { has_idea = MXE_idea_small_french_influence }
-                add_stability = 0.03
-            }
-            if = {
-                limit = { has_idea = MXE_idea_medium_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_medium_french_influence
-                    add_idea = MXE_idea_small_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_heavy_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_heavy_french_influence
-                    add_idea = MXE_idea_medium_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_huge_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_huge_french_influence
-                    add_idea = MXE_idea_heavy_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_massive_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_massive_french_influence
-                    add_idea = MXE_idea_huge_french_influence
-                }
-            }
+			MXE_decrease_colonial_influence = yes
 		}
 	}
 
@@ -255,7 +181,8 @@ focus_tree = {
 	focus = {
 		id = MXE_Mexican_Railway_System
 		icon = GFX_Focus_transport_railroad_development
-		x = 40
+		relative_position_id = MXE_Mexican_Economy
+		x = -2
 		y = 2
 		cost = 14
 		prerequisite = {
@@ -274,8 +201,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Ask_For_French_Support
 		icon = GFX_Focus_Diplomatic_Ally_FRA
-		x = 39
-		y = 3
+		relative_position_id = MXE_Mexican_Railway_System
+		x = -1
+		y = 1
 		cost = 25
 		prerequisite = {
 			focus = MXE_Mexican_Railway_System
@@ -291,63 +219,16 @@ focus_tree = {
             }
 		}
 		completion_reward = {
-			### Increase French Influence
-			if = {
-        limit = { has_idea = MXE_idea_massive_french_influence }
-        # if = {
-		# 			limit = { OR = {
-		# 				has_dlc = "Together for Victory"
-		# 				has_dlc = "Waking the Tiger"
-		# 				has_dlc = "Death or Dishonor"
-		# 			} }
-					FRA = {
-						set_autonomy = {
-							target = MXE
-							autonomous_state = autonomy_dominion
-							freedom_level = 0.01
-						}
-					}
-				# }
-				# else = {
-				# 	FRA = { puppet = MXE }
-				# }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_huge_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_huge_french_influence
-                    add_idea = MXE_idea_massive_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_heavy_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_heavy_french_influence
-                    add_idea = MXE_idea_huge_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_medium_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_medium_french_influence
-                    add_idea = MXE_idea_heavy_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_small_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_small_french_influence
-                    add_idea = MXE_idea_medium_french_influence
-                }
-            }
+			MXE_increase_colonial_influence = yes
 		}
 	}
 
 	focus = {
 		id = MXE_Repair_Railroads_By_Yourself
 		icon = GFX_goal_generic_production
-		x = 41
-		y = 3
+		relative_position_id = MXE_Mexican_Railway_System
+		x = 1
+		y = 1
 		cost = 25
 		prerequisite = {
 			focus = MXE_Mexican_Railway_System
@@ -359,47 +240,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			### Decrease French Influence
-			if = {
-                limit = { has_idea = MXE_idea_small_french_influence }
-                add_stability = 0.03
-            }
-            if = {
-                limit = { has_idea = MXE_idea_medium_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_medium_french_influence
-                    add_idea = MXE_idea_small_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_heavy_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_heavy_french_influence
-                    add_idea = MXE_idea_medium_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_huge_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_huge_french_influence
-                    add_idea = MXE_idea_heavy_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_massive_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_massive_french_influence
-                    add_idea = MXE_idea_huge_french_influence
-                }
-            }
+			MXE_decrease_colonial_influence = yes
 		}
 	}
 
 	focus = {
 		id = MXE_The_Imperial_Mexican_Railway_Company
 		icon = GFX_goal_generic_production2
-		x = 40
-		y = 4
+		relative_position_id = MXE_Mexican_Railway_System
+		x = 0
+		y = 2
 		cost = 45
 		prerequisite = {
 			focus = MXE_Repair_Railroads_By_Yourself
@@ -418,9 +268,10 @@ focus_tree = {
 
 	focus = {
 		id = MXE_French_Engineers
-		icon = GFX_Focus_Diplomacy_FRA
-		x = 38
-		y = 5
+		icon = GFX_FRA_help_the_development_of_mezzogiorno
+		relative_position_id = MXE_The_Imperial_Mexican_Railway_Company
+		x = -2
+		y = 1
 		cost = 35
 		prerequisite = {
 			focus = MXE_Ask_For_French_Support
@@ -445,8 +296,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Foreign_Engineers
 		icon = GFX_Focus_Diplomatic_foreign
-		x = 40
-		y = 5
+		relative_position_id = MXE_The_Imperial_Mexican_Railway_Company
+		x = 0
+		y = 1
 		cost = 35
 		prerequisite = {
 			focus = MXE_The_Imperial_Mexican_Railway_Company
@@ -473,8 +325,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Domestic_Engineers
 		icon = GFX_focus_research2
-		x = 42
-		y = 5
+		relative_position_id = MXE_The_Imperial_Mexican_Railway_Company
+		x = 2
+		y = 1
 		cost = 70
 		prerequisite = {
 			focus = MXE_Repair_Railroads_By_Yourself
@@ -500,8 +353,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Railway_Expansion_1
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 40
-		y = 6
+		relative_position_id = MXE_Foreign_Engineers
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 			focus = MXE_French_Engineers
@@ -524,8 +378,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Railway_Expansion_2
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 40
-		y = 7
+		relative_position_id = MXE_Railway_Expansion_1
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 			focus = MXE_Railway_Expansion_1
@@ -547,7 +402,8 @@ focus_tree = {
 	focus = {
 		id = MXE_Immigration
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 44
+		relative_position_id = MXE_Mexican_Economy
+		x = 2
 		y = 2
 		cost = 14
 		prerequisite = {
@@ -566,8 +422,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Heavily_Regulated_Immigration
 		icon = GFX_Focus_Government_Decentralized
-		x = 43
-		y = 3
+		relative_position_id = MXE_Immigration
+		x = -1
+		y = 1
 		cost = 35
 		prerequisite = {
 			focus = MXE_Immigration
@@ -580,39 +437,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			reverse_add_opinion_modifier = { target = FRA modifier = eoanb_om_RUS_decrease_small }
-			### Decrease French Influence
-			if = {
-                limit = { has_idea = MXE_idea_small_french_influence }
-                add_stability = 0.03
-            }
-            if = {
-                limit = { has_idea = MXE_idea_medium_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_medium_french_influence
-                    add_idea = MXE_idea_small_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_heavy_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_heavy_french_influence
-                    add_idea = MXE_idea_medium_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_huge_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_huge_french_influence
-                    add_idea = MXE_idea_heavy_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_massive_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_massive_french_influence
-                    add_idea = MXE_idea_huge_french_influence
-                }
-            }
+			MXE_decrease_colonial_influence = yes
 			add_stability = 0.03
 		}
 	}
@@ -620,8 +445,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Promote_National_Unity
 		icon = GFX_goal_generic_national_unity
-		x = 43
-		y = 4
+		relative_position_id = MXE_Heavily_Regulated_Immigration
+		x = 0
+		y = 1
 		cost = 70
 		prerequisite = {
 			focus = MXE_Heavily_Regulated_Immigration
@@ -640,8 +466,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Immigration_Office
 		icon = GFX_focus_generic_treaty
-		x = 45
-		y = 3
+		relative_position_id = MXE_Immigration
+		x = 1
+		y = 1
 		cost = 70
 		prerequisite = {
 			focus = MXE_Immigration
@@ -658,63 +485,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 90
-			### Increase French Influence
-			if = {
-        limit = { has_idea = MXE_idea_massive_french_influence }
-        # if = {
-		# 			limit = { OR = {
-		# 				has_dlc = "Together for Victory"
-		# 				has_dlc = "Waking the Tiger"
-		# 				has_dlc = "Death or Dishonor"
-		# 			} }
-					FRA = {
-						set_autonomy = {
-							target = MXE
-							autonomous_state = autonomy_dominion
-							freedom_level = 0.01
-						}
-					}
-				# }
-				# else = {
-				# 	FRA = { puppet = MXE }
-				# }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_huge_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_huge_french_influence
-                    add_idea = MXE_idea_massive_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_heavy_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_heavy_french_influence
-                    add_idea = MXE_idea_huge_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_medium_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_medium_french_influence
-                    add_idea = MXE_idea_heavy_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_small_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_small_french_influence
-                    add_idea = MXE_idea_medium_french_influence
-                }
-            }
+			MXE_increase_colonial_influence = yes
 		}
 	}
 
 	focus = {
 		id = MXE_European_Immigrants
 		icon = GFX_Focus_Continent_West_Europe
-		x = 45
-		y = 5
+		relative_position_id = MXE_Immigration_Office
+		x = 0
+		y = 2
 		cost = 35
 		prerequisite = {
 			focus = MXE_Immigration_Office
@@ -735,8 +515,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Dixie_Immigrants
 		icon = GFX_Focus_Continent_North_America
-		x = 45
-		y = 6
+		relative_position_id = MXE_European_Immigrants
+		x = 0
+		y = 1
 		cost = 35
 		prerequisite = {
 			focus = MXE_European_Immigrants
@@ -770,7 +551,8 @@ focus_tree = {
 	focus = {
 		id = MXE_Cotton_Trade
 		icon = GFX_Focus_Resource_Cotton
-		x = 48
+		relative_position_id = MXE_Mexican_Economy
+		x = 6
 		y = 1
 		cost = 14
 		prerequisite = {
@@ -801,8 +583,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Supply_Dixie
 		icon = GFX_Focus_Diplomatic_Ally_CSA_2
-		x = 47
-		y = 2
+		relative_position_id = MXE_Cotton_Trade
+		x = -1
+		y = 1
 		cost = 15
 		prerequisite = {
 			focus = MXE_Cotton_Trade
@@ -813,22 +596,21 @@ focus_tree = {
 				has_war = yes
 			}
 			NOT = { has_war_with = CSA }
+			has_manpower = 3000
 		}
 
 		ai_will_do = {
 			factor = 2
 		}
 		completion_reward = {
-			add_stability = 0.02
-			add_political_power = 35
 			add_manpower = -3000
-			CSA = { add_manpower = 3000 }
-			send_equipment = {
-    			equipment = infantry_equipment
-   			 	amount = 150
-    			target = CSA
+			CSA = {
+				add_manpower = 3000
+				set_temp_variable = {var_CSA_temp_increase_supplies = 3}
+				CSA_increase_acw_supplies = yes 
+				set_temp_variable = { acw_weapons_count_change = 2 }
+				ACW_Weapons_Count_Get = yes
 			}
-			add_opinion_modifier = { target = CSA modifier = eoanb_om_RUS_increase_small }
 			reverse_add_opinion_modifier = { target = CSA modifier = eoanb_om_RUS_increase_small }
 		}
 	}
@@ -836,8 +618,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Smuggle_CSA_Goods
 		icon = GFX_Focus_Diplomacy_CSA
-		x = 47
-		y = 3
+		relative_position_id = MXE_Supply_Dixie
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 			focus = MXE_Supply_Dixie
@@ -863,14 +646,19 @@ focus_tree = {
     			amount = 35
     			producer = CSA
 			}
+			CSA={
+				set_temp_variable = {var_CSA_temp_increase_funds = 1}
+				CSA_increase_acw_funds = yes
+			}
 		}
 	}
 
 	focus = {
 		id = MXE_Matamoros_Port
 		icon = GFX_focus_generic_industry_3
-		x = 47
-		y = 4
+		relative_position_id = MXE_Smuggle_CSA_Goods
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 			focus = MXE_Smuggle_CSA_Goods
@@ -903,8 +691,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Trade_ENG
 		icon = GFX_Focus_Diplomacy_UK
-		x = 49
-		y = 2
+		relative_position_id = MXE_Cotton_Trade
+		x = 1
+		y = 1
 		cost = 45
 		prerequisite = {
 			focus = MXE_Cotton_Trade
@@ -925,8 +714,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Open_Market
 		icon = GFX_Focus_Ideology_Support_Liberalism
-		x = 50
-		y = 3
+		relative_position_id = MXE_Trade_ENG
+		x = 1
+		y = 1
 		cost = 70
 		prerequisite = {
 			focus = MXE_Trade_ENG
@@ -968,8 +758,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Foreign_Investors
 		icon = GFX_Focus_Trade_International
-		x = 50
-		y = 6
+		relative_position_id = MXE_Open_Market
+		x = 0
+		y = 3
 		cost = 70
 		prerequisite = {
 			focus = MXE_Open_Market
@@ -996,8 +787,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Import_British_Tech
 		icon = GFX_goal_generic_scientific_exchange
-		x = 49
-		y = 4
+		relative_position_id = MXE_Trade_ENG
+		x = 0
+		y = 2
 		cost = 70
 		prerequisite = {
 			focus = MXE_Open_Market
@@ -1019,8 +811,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Naval_Coop_With_UK
 		icon = GFX_focus_chi_british_cooperation
-		x = 49
-		y = 5
+		relative_position_id = MXE_Import_British_Tech
+		x = 0
+		y = 1
 		cost = 25
 		prerequisite = {
 			focus = MXE_Import_British_Tech
@@ -1096,8 +889,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Trade_FRA
 		icon = GFX_Focus_Diplomacy_FRA
-		x = 51
-		y = 2
+		relative_position_id = MXE_Cotton_Trade
+		x = 3
+		y = 1
 		cost = 45
 		prerequisite = {
 			focus = MXE_Cotton_Trade
@@ -1122,8 +916,9 @@ focus_tree = {
 	focus = {
 		id = MXE_Import_French_Tech
 		icon = GFX_goal_focus_napoleonic_assemblee_nationale
-		x = 51
-		y = 4
+		relative_position_id = MXE_Trade_FRA
+		x = 0
+		y = 2
 		cost = 45
 		prerequisite = {
 			focus = MXE_Open_Market
@@ -1139,63 +934,16 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 55
 			add_tech_bonus = { bonus = 1 uses = 2 category = humanities_tech }
-			### Increase French Influence
-			if = {
-        limit = { has_idea = MXE_idea_massive_french_influence }
-        # if = {
-		# 			limit = { OR = {
-		# 				has_dlc = "Together for Victory"
-		# 				has_dlc = "Waking the Tiger"
-		# 				has_dlc = "Death or Dishonor"
-		# 			} }
-					FRA = {
-						set_autonomy = {
-							target = MXE
-							autonomous_state = autonomy_dominion
-							freedom_level = 0.01
-						}
-					}
-				# }
-				# else = {
-				# 	FRA = { puppet = MXE }
-				# }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_huge_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_huge_french_influence
-                    add_idea = MXE_idea_massive_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_heavy_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_heavy_french_influence
-                    add_idea = MXE_idea_huge_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_medium_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_medium_french_influence
-                    add_idea = MXE_idea_heavy_french_influence
-                }
-            }
-            if = {
-                limit = { has_idea = MXE_idea_small_french_influence }
-                swap_ideas = {
-                    remove_idea = MXE_idea_small_french_influence
-                    add_idea = MXE_idea_medium_french_influence
-                }
-            }
+			MXE_increase_colonial_influence = yes
 		}
 	}
 
 	focus = {
 		id = MXE_French_Army_Expertise
 		icon = GFX_goal_generic_army_doctrines
-		x = 51
-		y = 5
+		relative_position_id = MXE_Import_French_Tech
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 			focus = MXE_Import_French_Tech
@@ -1215,7 +963,7 @@ focus_tree = {
 	focus = {
 		id = MXE_acquring_allies
 		icon = GFX_Focus_Government_Decentralized
-		x = 63
+		x = -2
 		y = 0
 		cost = 45
 		prerequisite = {
@@ -1232,7 +980,8 @@ focus_tree = {
 	focus = {
 		id = MXE_new_friend
 		icon = GFX_Focus_Diplomatic_Ally_CSA_2
-		x = 61
+		relative_position_id = MXE_acquring_allies
+		x = -2
 		y = 1
 		cost = 45
 		prerequisite = {
@@ -1253,7 +1002,8 @@ focus_tree = {
     focus = {
 		id = MXE_old_masters
 		icon = GFX_focus_USA_save_the_republic
-		x = 65
+		relative_position_id = MXE_acquring_allies
+		x = 2
 		y = 1
 		cost = 45
 		prerequisite = {
@@ -1274,8 +1024,9 @@ focus_tree = {
 	focus = {
 		id = MXE_smuggling_weapons
 		icon = GFX_Focus_confederate_slave_trade
-		x = 61
-		y = 2
+		relative_position_id = MXE_new_friend
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		    focus = MXE_new_friend
@@ -1300,8 +1051,9 @@ focus_tree = {
 	focus = {
 		id = MXE_appeasing_uncle_sam
 		icon = GFX_Focus_Law_Vote_1
-		x = 65
-		y = 2
+		relative_position_id = MXE_old_masters
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		    focus = MXE_old_masters
@@ -1323,8 +1075,9 @@ focus_tree = {
 	focus = {
 		id = MXE_economic_rebuild
 		icon = GFX_goal_focus_us_gilded_age
-		x = 65
-		y = 3
+		relative_position_id = MXE_appeasing_uncle_sam
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		    focus = MXE_appeasing_uncle_sam
@@ -1345,13 +1098,15 @@ focus_tree = {
 	focus = {
 		id = MXE_complete_victory
 		icon = GFX_Focus_War_American_Civil_War
-		x = 61
-		y = 3
+		relative_position_id = MXE_smuggling_weapons
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		    focus = MXE_smuggling_weapons
 		}
-		available = { CSA = {
+		available = { 
+			CSA = {
 				exists = yes
 				has_war = no
 			}
@@ -1369,8 +1124,9 @@ focus_tree = {
 	focus = {
 		id = MXE_new_empire
 		icon = GFX_Focus_Monarchy
-		x = 63
-		y = 4
+		relative_position_id = MXE_acquring_allies
+		x = 0
+		y = 3
 		cost = 45
 		prerequisite = {
 		    focus = MXE_acquring_allies
@@ -1388,8 +1144,9 @@ focus_tree = {
 	focus = {
 		id = MXE_counterbalance_to_the_yankees
 		icon = GFX_Focus_Continent_North_America
-		x = 57
-		y = 5
+		relative_position_id = MXE_new_empire
+		x = -6
+		y = 1
 		cost = 45
 		prerequisite = {
 		    focus = MXE_new_empire
@@ -1408,8 +1165,9 @@ focus_tree = {
 	focus = {
 		id = MXE_establish_relations_with_canada
 		icon = GFX_focus_expand_canada
-		x = 57
-		y = 6
+		relative_position_id = MXE_counterbalance_to_the_yankees
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		    focus = MXE_counterbalance_to_the_yankees
@@ -1431,9 +1189,10 @@ focus_tree = {
 
 	focus = {
 		id = MXE_reapproch_the_union
-		icon = GFX_Focus_Diplomatic_foreign
-		x = 59
-		y = 5
+		icon = GFX_Focus_Diplomacy_USA
+		relative_position_id = MXE_new_empire
+		x = -4
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_new_empire
@@ -1453,8 +1212,9 @@ focus_tree = {
     focus = {
 		id = MXE_normalize_relations
 		icon = GFX_Focus_freedom_association
-		x = 59
-		y = 6
+		relative_position_id = MXE_reapproch_the_union
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_reapproch_the_union
@@ -1475,9 +1235,10 @@ focus_tree = {
 
 	focus = {
 		id = MXE_french_debt
-		icon = GFX_goal_focus_trade_france_focus
-		x = 61
-		y = 5
+		icon = GFX_Focus_Diplomacy_FRA
+		relative_position_id = MXE_new_empire
+		x = -2
+		y = 1
 		cost = 90
 		prerequisite = {
 		   focus = MXE_new_empire
@@ -1499,9 +1260,10 @@ focus_tree = {
 
 	focus = {
 		id = MXE_spanish_debt
-		icon = GFX_focus_the_sun_never_sets
-		x = 63
-		y = 5
+		icon = GFX_Focus_Diplomacy_SPR
+		relative_position_id = MXE_new_empire
+		x = 0
+		y = 1
 		cost = 90
 		prerequisite = {
 		   focus = MXE_new_empire
@@ -1524,8 +1286,9 @@ focus_tree = {
 	focus = {
 		id = MXE_english_debt
 		icon = GFX_Focus_Diplomacy_UK
-		x = 65
-		y = 5
+		relative_position_id = MXE_new_empire
+		x = 2
+		y = 1
 		cost = 90
 		prerequisite = {
 		   focus = MXE_new_empire
@@ -1548,8 +1311,9 @@ focus_tree = {
 	focus = {
 		id = MXE_last_debt
 		icon = GFX_Focus_Economy_Growth
-		x = 63
-		y = 6
+		relative_position_id = MXE_new_empire
+		x = 0
+		y = 2
 		cost = 90
 		prerequisite = {
 		   focus = MXE_english_debt
@@ -1573,8 +1337,9 @@ focus_tree = {
 	focus = {
 		id = MXE_finance_recovery
 		icon = GFX_Focus_stimulate_economy
-		x = 63
-		y = 7
+		relative_position_id = MXE_last_debt
+		x = 0
+		y = 1
 		cost = 90
 		prerequisite = {
 		   focus = MXE_last_debt
@@ -1595,8 +1360,9 @@ focus_tree = {
 	focus = {
 		id = MXE_establish_relations_brazil
 		icon = GFX_goal_focus_brazil
-		x = 67
-		y = 5
+		relative_position_id = MXE_new_empire
+		x = 4
+		y = 1
 		cost = 45
 		prerequisite = {
 		    focus = MXE_new_empire
@@ -1615,8 +1381,9 @@ focus_tree = {
 	focus = {
 		id = MXE_economy_and_military_cooperation
 		icon = GFX_goal_focus_ave_imperio
-		x = 67
-		y = 6
+		relative_position_id = MXE_establish_relations_brazil
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		    focus = MXE_establish_relations_brazil
@@ -1646,9 +1413,10 @@ focus_tree = {
 }
 	focus = {
 		id = MXE_confront_brazil
-		icon = GFX_focus_continent_southern_america
-		x = 69
-		y = 5
+		icon = GFX_focus_generic_attack_brazil
+		relative_position_id = MXE_new_empire
+		x = 6
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_new_empire
@@ -1668,8 +1436,9 @@ focus_tree = {
     focus = {
 		id = MXE_establish_relations_argentina
 		icon = GFX_Focus_Diplomatic_Ally_ARG_2
-		x = 69
-		y = 6
+		relative_position_id = MXE_confront_brazil
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_confront_brazil
@@ -1689,7 +1458,7 @@ focus_tree = {
 	focus = {
 		id = MXE_reform_the_imperial_army
 		icon = GFX_Focus_mexican_intervention
-		x = 76
+		x = 32
 		y = 0
 		cost = 45
 
@@ -1706,7 +1475,8 @@ focus_tree = {
 	focus = {
 		id = MXE_expand_the_royal_guard
 		icon = GFX_Focus_Tactics_Death_or_Dishonor
-		x = 74
+		relative_position_id = MXE_reform_the_imperial_army
+		x = -2
 		y = 1
 		cost = 45
 		prerequisite = {
@@ -1733,8 +1503,9 @@ focus_tree = {
 	focus = {
 		id = MXE_imperial_volunteers_corp
 		icon = GFX_Focus_Army_Reformed
-		x = 74
-		y = 2
+		relative_position_id = MXE_expand_the_royal_guard
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_expand_the_royal_guard
@@ -1751,8 +1522,9 @@ focus_tree = {
 	focus = {
 		id = MXE_collaborate_french
 		icon = GFX_Focus_Diplomatic_Invitation_FRA
-		x = 73
-		y = 3
+		relative_position_id = MXE_imperial_volunteers_corp
+		x = -1
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_imperial_volunteers_corp
@@ -1780,8 +1552,9 @@ focus_tree = {
 	focus = {
 		id = MXE_our_own_doctrine
 		icon = GFX_Focus_Army_Victorian_Traditional
-		x = 75
-		y = 3
+		relative_position_id = MXE_imperial_volunteers_corp
+		x = 1
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_imperial_volunteers_corp
@@ -1819,8 +1592,9 @@ focus_tree = {
 	focus = {
 		id = MXE_focus_on_artillery
 		icon = GFX_Focus_Weapon_Canon_7
-		x = 73
-		y = 4
+		relative_position_id = MXE_collaborate_french
+		x = 0
+		y = 1
 		cost = 70
 		prerequisite = {
 		   focus = MXE_collaborate_french
@@ -1841,8 +1615,9 @@ focus_tree = {
 	focus = {
 		id = MXE_prioritize_french_generals
 		icon = GFX_Focus_Army_Napoleonic
-		x = 73
-		y = 5
+		relative_position_id = MXE_focus_on_artillery
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_focus_on_artillery
@@ -1858,8 +1633,9 @@ focus_tree = {
 	focus = {
 		id = MXE_focus_cat_small_arms_techsechs
 		icon = GFX_Focus_gun_sales_BEL
-		x = 75
-		y = 4
+		relative_position_id = MXE_our_own_doctrine
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_our_own_doctrine
@@ -1880,8 +1656,9 @@ focus_tree = {
 	focus = {
 		id = MXE_prioritize_mexican_generals
 		icon = GFX_Focus_Diplomatic_foreign_military
-		x = 75
-		y = 5
+		relative_position_id = MXE_focus_cat_small_arms_techsechs
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_focus_cat_small_arms_techsechs
@@ -1897,8 +1674,9 @@ focus_tree = {
 	focus = {
 		id = MXE_integrate_paramilitary_forces
 		icon = GFX_Focus_Exploration
-		x = 74
-		y = 6
+		relative_position_id = MXE_imperial_volunteers_corp
+		x = 0
+		y = 4
 		cost = 45
 		prerequisite = {
 		   focus = MXE_prioritize_mexican_generals
@@ -1921,7 +1699,8 @@ focus_tree = {
 	focus = {
 		id = MXE_build_up_imperial_armada
 		icon = GFX_Focus_Production_Battleship_Old
-		x = 78
+		relative_position_id = MXE_reform_the_imperial_army
+		x = 2
 		y = 1
 		cost = 45
 		prerequisite = {
@@ -1942,8 +1721,9 @@ focus_tree = {
 	focus = {
 		id = MXE_request_for_openings_ports
 		icon = GFX_Focus_Navy_Restriction_1
-		x = 78
-		y = 2
+		relative_position_id = MXE_build_up_imperial_armada
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_build_up_imperial_armada
@@ -1960,8 +1740,9 @@ focus_tree = {
 	focus = {
 		id = MXE_rebuild_the_docks
 		icon = GFX_Focus_Production_Mass
-		x = 78
-		y = 3
+		relative_position_id = MXE_request_for_openings_ports
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_request_for_openings_ports
@@ -1983,8 +1764,9 @@ focus_tree = {
 	focus = {
 		id = MXE_import_british_models
 		icon = GFX_Focus_commision_monitors
-		x = 78
-		y = 4
+		relative_position_id = MXE_rebuild_the_docks
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_rebuild_the_docks
@@ -2002,8 +1784,9 @@ focus_tree = {
 	focus = {
 		id = MXE_focus_on_steamships
 		icon = GFX_Focus_Victorian_Gunboat
-		x = 78
-		y = 5
+		relative_position_id = MXE_import_british_models
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_import_british_models
@@ -2021,8 +1804,9 @@ focus_tree = {
 	focus = {
 		id = MXE_request_for_french_ships
 		icon = GFX_goal_focus_defy_british_navy
-		x = 78
-		y = 6
+		relative_position_id = MXE_focus_on_steamships
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_focus_on_steamships
@@ -2043,8 +1827,9 @@ focus_tree = {
 	focus = {
 		id = MXE_a_new_imperial_force
 		icon = GFX_Focus_victory_mexico
-		x = 76
-		y = 7
+		relative_position_id = MXE_request_for_french_ships
+		x = -2
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_request_for_french_ships
@@ -2068,11 +1853,13 @@ focus_tree = {
 	focus = {
 		id = MXE_the_powderkeg_of_mexican_politics
 		icon = GFX_Focus_victory_mexico
-		x = 86
+		x = 7
 		y = 0
 		cost = 45
 		available = { NOT = { country_exists = MEX  } }
-
+		allow_branch = {
+        	not={has_country_flag = MXE_empire_without_war}
+        }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2083,7 +1870,8 @@ focus_tree = {
 	focus = {
 		id = MXE_rekindle_our_ties_to_the_church
 		icon = GFX_Focus_Catholism_Papal_Bull
-		x = 84
+		relative_position_id = MXE_the_powderkeg_of_mexican_politics
+		x = -2
 		y = 1
 		cost = 45
 		prerequisite = {
@@ -2101,7 +1889,8 @@ focus_tree = {
 	focus = {
 		id = MXE_ally_with_the_conservatives
 		icon = GFX_Focus_Ideology_Support_Liberty
-		x = 86
+		relative_position_id = MXE_the_powderkeg_of_mexican_politics
+		x = 0
 		y = 1
 		cost = 45
 		prerequisite = {
@@ -2122,7 +1911,8 @@ focus_tree = {
 	focus = {
 		id = MXE_secure_imperial_popularity
 		icon = GFX_Focus_Monarchy_Usurp_Throne
-		x = 88
+		relative_position_id = MXE_the_powderkeg_of_mexican_politics
+		x = 2
 		y = 1
 		cost = 45
 		prerequisite = {
@@ -2140,8 +1930,9 @@ focus_tree = {
 	focus = {
 		id = MXE_dealing_with_the_liberal_opposition
 		icon = GFX_Focus_Ideology_Liberty_purged
-		x = 86
-		y = 2
+		relative_position_id = MXE_ally_with_the_conservatives
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_secure_imperial_popularity
@@ -2164,8 +1955,9 @@ focus_tree = {
 	focus = {
 		id = MXE_the_iron_fist
 		icon = GFX_Focus_Health_Famine
-		x = 85
-		y = 3
+		relative_position_id = MXE_dealing_with_the_liberal_opposition
+		x = -1
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_dealing_with_the_liberal_opposition
@@ -2186,8 +1978,9 @@ focus_tree = {
 	focus = {
 		id = MXE_ask_for_french_support
 		icon = GFX_Focus_Diplomacy_FRA
-		x = 85
-		y = 4
+		relative_position_id = MXE_the_iron_fist
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_the_iron_fist
@@ -2206,15 +1999,16 @@ focus_tree = {
 			    remove_idea = MXE_liberal_hates_2
 				add_idea = MXE_liberal_hates_1
 		    }
-		add_political_power = -50
-		add_stability = -0.05
+			add_political_power = -50
+			add_stability = -0.05
 	    }
     }
 	focus = {
 		id = MXE_suspress_liberal_militias
 		icon = GFX_Focus_refugee_management
-		x = 85
-		y = 5
+		relative_position_id = MXE_ask_for_french_support
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_ask_for_french_support
@@ -2232,8 +2026,9 @@ focus_tree = {
 	focus = {
 		id = MXE_arrest_and_execute_liberal_leaders
 		icon = GFX_Focus_Partisans_Elimination
-		x = 85
-		y = 6
+		relative_position_id = MXE_suspress_liberal_militias
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_suspress_liberal_militias
@@ -2249,8 +2044,9 @@ focus_tree = {
 	focus = {
 		id = MXE_the_soft_fist
 		icon = GFX_Focus_Government_Reform_agenda
-		x = 87
-		y = 3
+		relative_position_id = MXE_dealing_with_the_liberal_opposition
+		x = 1
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_dealing_with_the_liberal_opposition
@@ -2269,8 +2065,9 @@ focus_tree = {
 	focus = {
 		id = MXE_deal_in_our_own_way
 		icon = GFX_Focus_victory_mexico
-		x = 87
-		y = 4
+		relative_position_id = MXE_the_soft_fist
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_the_soft_fist
@@ -2287,8 +2084,9 @@ focus_tree = {
 	focus = {
 		id = MXE_agreement_liberals
 		icon = GFX_Focus_Law_revision
-		x = 87
-		y = 5
+		relative_position_id = MXE_deal_in_our_own_way
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_deal_in_our_own_way
@@ -2308,8 +2106,9 @@ focus_tree = {
 	focus = {
 		id = MXE_liberals_congress
 		icon = GFX_Focus_Vote_generic
-		x = 87
-		y = 6
+		relative_position_id = MXE_agreement_liberals
+		x = 0
+		y = 1
 		cost = 45
 		prerequisite = {
 		   focus = MXE_agreement_liberals
@@ -2328,11 +2127,12 @@ focus_tree = {
 	focus = {
 		id = MXE_allying_the_church_and_the_army
 		icon = GFX_Focus_Catholism_Papal_Bull
-		x = 86
+		relative_position_id = MXE_the_powderkeg_of_mexican_politics
+		x = 0
 		y = 0
 		cost = 45
 		allow_branch = {
-        has_country_flag = MXE_empire_without_war
+        	has_country_flag = MXE_empire_without_war
         }
 		available = {  }
 
@@ -2347,12 +2147,10 @@ focus_tree = {
 	focus = {
 		id = MXE_dealing_with_the_liberal_opposition_1
 		icon = GFX_Focus_victory_mexico
-		x = 84
+		relative_position_id = MXE_allying_the_church_and_the_army
+		x = -2
 		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_allying_the_church_and_the_army
 		}
@@ -2368,12 +2166,10 @@ focus_tree = {
 	focus = {
 		id = MXE_rebuilding_the_mexican_institutions
 		icon = GFX_Focus_victory_mexico
-		x = 88
+		relative_position_id = MXE_allying_the_church_and_the_army
+		x = 2
 		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_allying_the_church_and_the_army
 		}
@@ -2389,12 +2185,10 @@ focus_tree = {
 	focus = {
 		id = MXE_industralization_of_mexico
 		icon = GFX_Focus_industrial_revolution
-		x = 86
-		y = 2
+		relative_position_id = MXE_rebuilding_the_mexican_institutions
+		x = -2
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_rebuilding_the_mexican_institutions
 		}
@@ -2415,12 +2209,10 @@ focus_tree = {
 	focus = {
 		id = MXE_technological_and_education_advances
 		icon = GFX_Focus_victory_mexico
-		x = 86
-		y = 3
+		relative_position_id = MXE_industralization_of_mexico
+		x = 0
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_industralization_of_mexico
 		}
@@ -2441,12 +2233,10 @@ focus_tree = {
 	focus = {
 		id = MXE_long_process_of_independence_from_france
 		icon = GFX_Focus_Diplomatic_Invitation_FRA
-		x = 86
-		y = 4
+		relative_position_id = MXE_technological_and_education_advances
+		x = 0
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_technological_and_education_advances
 		}
@@ -2462,12 +2252,10 @@ focus_tree = {
 	focus = {
 		id = MXE_keep_aliances_and_guarantess_1
 		icon = GFX_focus_financial_domination
-		x = 84
-		y = 5
+		relative_position_id = MXE_long_process_of_independence_from_france
+		x = -1
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_long_process_of_independence_from_france
 		}
@@ -2486,14 +2274,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = MXE_lally_the_csa_approach_the_usa
+		id = MXE_ally_the_csa_approach_the_usa
 		icon = GFX_Focus_Diplomatic_Ally_CSA_2
-		x = 88
-		y = 5
+		relative_position_id = MXE_long_process_of_independence_from_france
+		x = 1
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_long_process_of_independence_from_france
 		}
@@ -2509,14 +2295,12 @@ focus_tree = {
 	focus = {
 		id = MXE_ambitions_and_claims_to_the_south
 		icon = GFX_Focus_victory_mexico
-		x = 86
-		y = 6
+		relative_position_id = MXE_ally_the_csa_approach_the_usa
+		x = -1
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
-		   focus = MXE_lally_the_csa_approach_the_usa
+		   focus = MXE_ally_the_csa_approach_the_usa
 		}
 		prerequisite = {
 		   focus = MXE_keep_aliances_and_guarantess_1
@@ -2533,12 +2317,10 @@ focus_tree = {
 	focus = {
 		id = MXE_border_conflicts
 		icon = GFX_Focus_Exploration
-		x = 86
-		y = 7
+		relative_position_id = MXE_ambitions_and_claims_to_the_south
+		x = 0
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_ambitions_and_claims_to_the_south
 		}
@@ -2554,12 +2336,10 @@ focus_tree = {
 	focus = {
 		id = MXE_the_guatemalan_war
 		icon = GFX_Focus_anything_will_do
-		x = 86
-		y = 8
+		relative_position_id = MXE_border_conflicts
+		x = 0
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_border_conflicts
 		}
@@ -2578,12 +2358,10 @@ focus_tree = {
 	focus = {
 		id = MXE_victory_and_conquest
 		icon = GFX_Focus_imperialism
-		x = 84
-		y = 9
+		relative_position_id = MXE_the_guatemalan_war
+		x = -2
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_the_guatemalan_war
 		}
@@ -2601,12 +2379,10 @@ focus_tree = {
 	focus = {
 		id = MXE_integration
 		icon = GFX_Focus_refugee_management
-		x = 84
-		y = 10
+		relative_position_id = MXE_victory_and_conquest
+		x = 0
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_victory_and_conquest
 		}
@@ -2622,12 +2398,10 @@ focus_tree = {
 	focus = {
 		id = MXE_future
 		icon = GFX_Focus_Monarchy_Usurp_Throne
-		x = 84
-		y = 11
+		relative_position_id = MXE_integration
+		x = 0
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_integration
 		}
@@ -2643,12 +2417,10 @@ focus_tree = {
 	focus = {
 		id = MXE_defeat_and_hummiliation
 		icon = GFX_Focus_Bankruptcy
-		x = 88
-		y = 9
+		relative_position_id = MXE_the_guatemalan_war
+		x = 2
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_the_guatemalan_war
 		}
@@ -2665,12 +2437,10 @@ focus_tree = {
 	focus = {
 		id = MXE_the_army_overthrows_the_empire
 		icon = GFX_Focus_refugee_management
-		x = 88
-		y = 10
+		relative_position_id = MXE_defeat_and_hummiliation
+		x = 0
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_defeat_and_hummiliation
 		}
@@ -2686,12 +2456,10 @@ focus_tree = {
 	focus = {
 		id = MXE_juarez_back
 		icon = GFX_Focus_Monarchy_Violent_Revolution
-		x = 88
-		y = 11
+		relative_position_id = MXE_the_army_overthrows_the_empire
+		x = 0
+		y = 1
 		cost = 45
-		allow_branch = {
-        has_country_flag = MXE_empire_without_war
-        }
 		prerequisite = {
 		   focus = MXE_the_army_overthrows_the_empire
 		}

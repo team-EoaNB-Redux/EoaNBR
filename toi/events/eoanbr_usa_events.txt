@@ -239,6 +239,16 @@ news_event = { #Shoemaker Strike Begins
 	fire_only_once = yes
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = usa_worker_events.6
+				days = 2350
+				random_days = 50
+			}
+		}
+	}
+
 	option = {
 		name = usa_worker_events.4.a
 		# log = "option:		name = usa_worker_events.4.a"
@@ -282,6 +292,42 @@ news_event = { #Shoemaker Strike Ends
 	option = {
 		name = usa_worker_events.5.a
 		# log = "option:		name = usa_worker_events.5.a"
+	}
+}
+country_event = { # Formation of the National Labor Union
+	id = usa_worker_events.6
+	title = usa_worker_events.6.t
+	desc = usa_worker_events.6.desc
+	picture = GFX_report_event_usa_national_labor_union
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = usa_worker_events.7
+				days = 1200
+				random_days = 50
+			}
+		}
+	}
+
+	option = { # An eight hour workday?
+		name = usa_worker_events.6.a
+		add_popularity = { ideology = social_egalitarianism popularity = 0.01 }
+		complete_national_focus = USA_gilded_the_labor_movement
+	}
+}
+country_event = { # Formation of the Knights of Labor
+	id = usa_worker_events.7
+	title = usa_worker_events.7.t
+	desc = usa_worker_events.7.desc
+	picture = GFX_report_event_usa_knights_of_labor
+	is_triggered_only = yes
+
+	option = { # "Noble and Holy Order," eh?
+		name = usa_worker_events.7.a
+		add_popularity = { ideology = social_egalitarianism popularity = 0.01 }
+		add_popularity = { ideology = collectivist_socialism popularity = 0.01 }
 	}
 }
 
@@ -12196,9 +12242,6 @@ country_event = {
 	}
 		add_ideas = {
 		hos_is_leader
-		victorian_era
-		law_victorian_army
-		industrializing
 		non_monarchical_system
 		presidential_republic
 
@@ -12273,9 +12316,6 @@ country_event = {
 			}
 			add_ideas = {
 				hos_is_leader
-				victorian_era
-				law_victorian_army
-				industrializing
 				non_monarchical_system
 				presidential_republic
 
@@ -12351,9 +12391,6 @@ country_event = {
 			}
 			add_ideas = {
 				hos_is_leader
-				victorian_era
-				law_victorian_army
-				industrializing
 				non_monarchical_system
 				presidential_republic
 
@@ -12430,9 +12467,6 @@ country_event = {
 			}
 			add_ideas = {
 				hos_is_leader
-				victorian_era
-				law_victorian_army
-				industrializing
 				non_monarchical_system
 				presidential_republic
 
@@ -12508,9 +12542,6 @@ country_event = {
 			}
 			add_ideas = {
 				hos_is_leader
-				victorian_era
-				law_victorian_army
-				industrializing
 				non_monarchical_system
 				presidential_republic
 
@@ -16281,7 +16312,13 @@ country_event = {
 
 	trigger = {########### this should be triggered differently
 		tag = SPR
-		date > 1900.1.1
+		OR={
+			war_length_with = {
+				tag = USA
+				months > 18
+			}
+			USA={surrender_progress > 0.25}
+		}
 		surrender_progress < 0.01
 		has_war_with = USA
 		has_global_flag = Spanish_American_War_Occured
@@ -16437,10 +16474,6 @@ country_event = {
 		# log = "option:		name = usa.167.a"
 		ai_chance = {
 			factor = 20
-			modifier = {
-				has_government = social_egalitarianism
-				factor = 80
-			}
 		}
 		add_political_power = -200
 		annex_country = {
@@ -16475,6 +16508,10 @@ country_event = {
 		# log = "option:		name = usa.167.b"
 		ai_chance = {
 			factor = 20
+			modifier = {
+				has_government = social_egalitarianism
+				factor = 40
+			}
 		}
 		add_political_power = -100
 		puppet = DOM
@@ -24842,6 +24879,59 @@ country_event = { # Event about the Robber Barons
 	}
 }
 
+country_event = {
+	id = usa_manifest_destiny.1
+	title = usa_manifest_destiny.1.t
+	desc = usa_manifest_destiny.1.desc
+	picture = placeholder
+	immediate = {
+		# log = "[THIS.GetTag]: firing = usa_manifest_destiny.1"
+	}
+	is_triggered_only = yes
+	option = { # Welcome to the Union!
+		name = usa_manifest_destiny.1.a
+		315 = {
+			add_core_of = ROOT
+		}
+		1022 = {
+			add_core_of = ROOT
+		}
+		1350 = {
+			add_core_of = ROOT
+		}
+	}
+	option = { # Free State!
+		name = usa_manifest_destiny.1.b
+		trigger = { has_idea = usa_slavery_law }
+		add_popularity = { ideology = centrism popularity = 0.01 }
+		add_popularity = { ideology = social_egalitarianism popularity = 0.01 }
+		315 = {
+			add_core_of = ROOT
+		}
+		1022 = {
+			add_core_of = ROOT
+		}
+		1350 = {
+			add_core_of = ROOT
+		}
+	}
+	option = { # Slave State!
+		name = usa_manifest_destiny.1.c
+		trigger = { has_idea = usa_slavery_law }
+		add_popularity = { ideology = traditional_conservatism popularity = 0.01 }
+		add_popularity = { ideology = radical_democracy popularity = 0.01 }
+		315 = {
+			add_core_of = ROOT
+		}
+		1022 = {
+			add_core_of = ROOT
+		}
+		1350 = {
+			add_core_of = ROOT
+		}
+	}
+}
+
 ###################
 
 ### DEBUG EVENTS ###########################################################
@@ -25005,6 +25095,7 @@ country_event = { # Load new Reconstruction Tree
 			mark_focus_tree_layout_dirty = yes
 		}
 		set_global_flag = USA_gilded_age_ft
+		set_country_flag = USA_LincolnElected
 	}
 	option = {
 		name = "Breckinridge"

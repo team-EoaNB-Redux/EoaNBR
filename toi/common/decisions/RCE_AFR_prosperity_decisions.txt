@@ -2917,23 +2917,8 @@ afr_prosperity_mechanic_category = {
 				}
 				if = {
 					limit = {
-						# all_owned_state = {
-						# 	if = {
-						# 		limit = { is_core_of = ROOT }
-						# 		logging_camp > 0
-						# 	}
-						# 	else = {
-						# 		always = no
-						# 	}
-						# }
 						NOT = { has_tech = tech_industrial_tools }
 					}
-					# custom_trigger_tooltip = {
-					# 	tooltip = afr_prosperity_mechanic_greater_than_40
-					# 		check_variable = {
-					# 		afr_prosperity_mechanic_value > 39
-					# 	}
-					# }
 					custom_trigger_tooltip = {
 						tooltip = Ocenaia_logging_camp_less_than_1
 						any_owned_state = {
@@ -2949,12 +2934,6 @@ afr_prosperity_mechanic_category = {
 					limit = {
 						has_tech = tech_industrial_tools
 					}
-					# custom_trigger_tooltip = {
-					# 	tooltip = afr_prosperity_mechanic_greater_than_40
-					# 		check_variable = {
-					# 		afr_prosperity_mechanic_value > 39
-					# 	}
-					# }
 					custom_trigger_tooltip = {
 						tooltip = Ocenaia_logging_camp_less_than_5
 						any_owned_state = {
@@ -2963,28 +2942,6 @@ afr_prosperity_mechanic_category = {
 						}
 					}
 				}
-				# if = {
-				# 	limit = {
-				# 		any_owned_state = {
-				# 			is_core_of = ROOT
-				# 			logging_camp < 1
-				# 		}
-				# 		NOT = { has_tech = tech_industrial_tools }
-				# 	}
-				# 	custom_trigger_tooltip = {
-				# 		tooltip = Ocenaia_logging_camp_less_than_1
-				# 		any_state = {
-				# 			logging_camp < 1
-				# 			is_core_of = ROOT
-				# 		}
-				# 	}
-				# }
-				# custom_trigger_tooltip = {
-				# 	tooltip = afr_prosperity_mechanic_greater_than_40
-				# 		check_variable = {
-				# 		afr_prosperity_mechanic_value > 39
-				# 	}
-				# }
 				custom_trigger_tooltip = {
 					tooltip = Ocenaia_has_resource_deposit_for_logging_camp
 					any_owned_state = {
@@ -4430,8 +4387,8 @@ SKT_war_exhaustion = {
 				}
 				OR = {
 					has_variable = has_afr_empire_mechanic_system
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
+					# is_first_nations_tribe = yes
+					# is_south_american_tribe = yes
 				}
 			}
 		}

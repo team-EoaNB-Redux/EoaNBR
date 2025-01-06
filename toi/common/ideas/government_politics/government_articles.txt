@@ -1,0 +1,743 @@
+ideas = {
+	autarchy_token = {
+		law = yes
+
+		autarchy_absolutism = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+
+			}
+
+			cancel = {
+				has_autarchy_absolutism_available = no
+			}
+
+			on_remove = {
+				reform_autarchy_article = yes
+			}
+		}
+		autarchy_delegated_authority = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				
+			}
+
+			cancel = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = govt_article_locked_tooltip
+						ARTICLE_TYPE = "autarchy_token"
+						OR = {
+							check_variable = {
+								var = modifier@government_constitution_unlocked_rule
+								value = 0
+								compare = greater_than
+							}
+							check_variable = {
+								var = modifier@autarchy_article_locked_rule
+								value = 0
+								compare = greater_than
+							}
+						}
+					}
+				}
+				OR = {
+					custom_override_tooltip = {
+						tooltip = govt_political_stability_is_less_than_value_tooltip
+						VALUE = 0
+						check_variable = {
+							var = political_stability
+							value = 0
+							compare = less_than
+						}
+					}
+					custom_override_tooltip = {
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:political_legitimacy_threshold.moderate_min
+						MAX = constant:political_legitimacy_threshold.very_high_max
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.moderate_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.very_high_max
+							compare = less_than_or_equals_to
+						}
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = govt_article_invalid_threshold_tooltip
+					ARTICLE_TYPE = "autarchy_token"
+					MIN = constant:autarchy_threshold.absolutist_min
+					MAX = constant:autarchy_threshold.absolutist_max
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_min
+						compare = less_than
+					}
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_max
+						compare = greater_than
+					}
+				}
+			}
+			on_remove = {
+				reform_autarchy_article = yes
+			}
+		}
+		autarchy_delegated_representation = {
+			allowed = { always = no }
+
+			cancel = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = govt_article_locked_tooltip
+						ARTICLE_TYPE = "autarchy_token"
+						OR = {
+							check_variable = {
+								var = modifier@government_constitution_unlocked_rule
+								value = 0
+								compare = greater_than
+							}
+							check_variable = {
+								var = modifier@autarchy_article_locked_rule
+								value = 0
+								compare = greater_than
+							}
+						}
+					}
+				}
+				OR = {
+					custom_override_tooltip = {
+						tooltip = govt_political_stability_is_less_than_value_tooltip
+						VALUE = 0
+						check_variable = {
+							var = political_stability
+							value = 0
+							compare = less_than
+						}
+					}
+					custom_override_tooltip = {
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:political_legitimacy_threshold.low_min
+						MAX = constant:political_legitimacy_threshold.high_max
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.low_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.high_max
+							compare = less_than_or_equals_to
+						}
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = govt_article_invalid_threshold_tooltip
+					ARTICLE_TYPE = "autarchy_token"
+					MIN = constant:autarchy_threshold.absolutist_min
+					MAX = constant:autarchy_threshold.absolutist_max
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_min
+						compare = less_than
+					}
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_max
+						compare = greater_than
+					}
+				}
+			}
+			on_remove = {
+				reform_autarchy_article = yes
+			}
+		}
+		autarchy_democratic_centralization = {
+			allowed = { always = no }
+
+			cancel = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = govt_article_locked_tooltip
+						ARTICLE_TYPE = "autarchy_token"
+						OR = {
+							check_variable = {
+								var = modifier@government_constitution_unlocked_rule
+								value = 0
+								compare = greater_than
+							}
+							check_variable = {
+								var = modifier@autarchy_article_locked_rule
+								value = 0
+								compare = greater_than
+							}
+						}
+					}
+				}
+				OR = {
+					custom_override_tooltip = {
+						tooltip = govt_political_stability_is_less_than_value_tooltip
+						VALUE = 0
+						check_variable = {
+							var = political_stability
+							value = 0
+							compare = less_than
+						}
+					}
+					custom_override_tooltip = {
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:political_legitimacy_threshold.low_min
+						MAX = constant:political_legitimacy_threshold.perfect_max
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.low_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.perfect_max
+							compare = less_than_or_equals_to
+						}
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = govt_article_invalid_threshold_tooltip
+					ARTICLE_TYPE = "autarchy_token"
+					MIN = constant:autarchy_threshold.absolutist_min
+					MAX = constant:autarchy_threshold.absolutist_max
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_min
+						compare = less_than
+					}
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_max
+						compare = greater_than
+					}
+				}
+			}
+			on_remove = {
+				reform_autarchy_article = yes
+			}
+		}
+		autarchy_democratic_representation = {
+			allowed = { always = no }
+
+			cancel = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = govt_article_locked_tooltip
+						ARTICLE_TYPE = "autarchy_token"
+						OR = {
+							check_variable = {
+								var = modifier@government_constitution_unlocked_rule
+								value = 0
+								compare = greater_than
+							}
+							check_variable = {
+								var = modifier@autarchy_article_locked_rule
+								value = 0
+								compare = greater_than
+							}
+						}
+					}
+				}
+				OR = {
+					custom_override_tooltip = {
+						tooltip = govt_political_stability_is_less_than_value_tooltip
+						VALUE = 0
+						check_variable = {
+							var = political_stability
+							value = 0
+							compare = less_than
+						}
+					}
+					custom_override_tooltip = {
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:political_legitimacy_threshold.very_low_min
+						MAX = constant:political_legitimacy_threshold.moderate_max
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.very_low_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.moderate_max
+							compare = less_than_or_equals_to
+						}
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = govt_article_invalid_threshold_tooltip
+					ARTICLE_TYPE = "autarchy_token"
+					MIN = constant:autarchy_threshold.absolutist_min
+					MAX = constant:autarchy_threshold.absolutist_max
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_min
+						compare = less_than
+					}
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_max
+						compare = greater_than
+					}
+				}
+			}
+			on_remove = {
+				reform_autarchy_article = yes
+			}
+		}
+		autarchy_minarchy = {
+			allowed = { always = no }
+
+			cancel = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = govt_article_locked_tooltip
+						ARTICLE_TYPE = "autarchy_token"
+						OR = {
+							check_variable = {
+								var = modifier@government_constitution_unlocked_rule
+								value = 0
+								compare = greater_than
+							}
+							check_variable = {
+								var = modifier@autarchy_article_locked_rule
+								value = 0
+								compare = greater_than
+							}
+						}
+					}
+				}
+				OR = {
+					custom_override_tooltip = {
+						tooltip = govt_political_stability_is_less_than_value_tooltip
+						VALUE = 0
+						check_variable = {
+							var = political_stability
+							value = 0
+							compare = less_than
+						}
+					}
+					custom_override_tooltip = {
+						tooltip = govt_political_legitimacy_is_between_value_tooltip
+						MIN = constant:political_legitimacy_threshold.none_min
+						MAX = constant:political_legitimacy_threshold.low_max
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.none_min
+							compare = greater_than_or_equals_to
+						}
+						check_variable = {
+							var = poltical_legitimacy
+							value = constant:political_legitimacy_threshold.low_max
+							compare = less_than_or_equals_to
+						}
+					}
+				}
+				custom_override_tooltip = {
+					tooltip = govt_article_invalid_threshold_tooltip
+					ARTICLE_TYPE = "autarchy_token"
+					MIN = constant:autarchy_threshold.absolutist_min
+					MAX = constant:autarchy_threshold.absolutist_max
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_min
+						compare = less_than
+					}
+					check_variable = {
+						var = modifier@government_autarchy_modifier
+						value = constant:autarchy_threshold.absolutist_max
+						compare = greater_than
+					}
+				}
+			}
+			on_remove = {
+				reform_autarchy_article = yes
+			}
+		}
+	}
+	zealotry_token = {
+		zealotry_fundamentalist = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		zealotry_state_religion = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		zealotry_secular = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	slavery_token = {
+		slavery_allowed = {
+			allowed = { always = no }
+
+			available = {
+
+			}
+
+			modifier ={
+
+			}
+		}
+		slavery_outlawed = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	franchisement_token = {
+		franchisement_none = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		franchisement_only_landed = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		franchisement_weighted_wealthy = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		franchisement_wealth = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		franchisement_weighted_universal = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		franchisement_universal = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	voting_system_token = {
+		voting_system_none = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		voting_system_first_past_the_post = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		voting_system_weighted_proportional = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		voting_system_proportional = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	upper_chamber_token = {
+		upper_chamber_ruling_party_only = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		upper_chamber_appointed = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		upper_chamber_two_per_district = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		upper_chamber_per_popularity = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	lower_chamber_token = {
+		lower_chamber_none = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		lower_chamber_ceremonial = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		lower_chamber_established = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+		lower_chamber_xx = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+
+			modifier ={
+
+			}
+		}
+	}
+	judiciary_token = {
+
+	}
+}
+ideas = {
+	press_token = {
+		press_none = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		press_state_only = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		press_restricted = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		press_free = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+	}
+	labor_union_token = {
+		labor_union_illegal = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		labor_union_state_controlled = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		labor_union_non_socialist = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		labor_union_private_only = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+		labor_union_all_allowed = {
+			allowed = { always = no }
+
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+		}
+	}
+	
+}

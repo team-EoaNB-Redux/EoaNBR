@@ -114,6 +114,9 @@ eoanb_category_politics_foreign = {
 			has_country_flag = OTO_treaty_san_stefano
 			NOT={has_global_flag = OTO_berlin_congress}
 		}
+		allowed = {
+			tag = OTO
+		}
 
 		selectable_mission = no
 		days_mission_timeout = 30
@@ -145,6 +148,10 @@ eoanb_category_politics_foreign = {
 
 		activation = {
 			has_country_flag = CET_cretan_revolt_happening
+		}
+		
+		allowed = {
+			tag = OTO
 		}
 
 		selectable_mission = no
@@ -223,6 +230,10 @@ OTO_first_consitutional_era={
 		icon = generic_political_actions
 		available = {
 			NOT={has_country_flag = OTO_parlement_prorogued}
+		}
+		
+		allowed = {
+			tag = OTO
 		}
 
 		ai_will_do = {

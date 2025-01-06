@@ -539,7 +539,7 @@ focus_tree = {
 			has_completed_Focus = PIE_Political_Structure_Planning_FT
 		}
 		relative_position_id = PIE_Plombieres_Meeting
-		x = -2
+		x = -3
 		y = 1
 		ai_will_do = {
 			base = 5
@@ -565,8 +565,8 @@ focus_tree = {
 			FOCUS_FILTER_DIPLOMACY
 		}
 		relative_position_id = PIE_Plombieres_Meeting
-		x = 0
-		y = 1
+		x = -1
+		y = 2
 		ai_will_do = {
 			base = 5
 		}
@@ -589,14 +589,13 @@ focus_tree = {
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
-			FOCUS_FILTER_HISTORICAL
 			FOCUS_FILTER_DIPLOMACY
 		}
 		ai_will_do = {
 			base = 5
 		}
 		relative_position_id = PIE_Political_Structure_Planning_FT
-		x = 0
+		x = 1
 		y = 1
 		completion_reward = {
 			###The British will join in the Expedition of the Thousand
@@ -794,6 +793,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PIE_Start_Border_Operations
 		}
+		prerequisite = {
+			focus = PIE_Political_Structure_Planning_FT
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = PIE_War_Preperations_Second_War_TT
@@ -817,8 +819,8 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 			FOCUS_FILTER_ANNEXATION
 		}
-		relative_position_id = PIE_Accept_Confederation
-		x = 0
+		relative_position_id = PIE_Political_Structure_Planning_FT
+		x = -1
 		y = 1
 		completion_reward = {
 			country_event = {
@@ -1779,10 +1781,8 @@ focus_tree = {
 				uses = 4
 				category = cat_industry_techs
 			}
-			swap_ideas = {
-				remove_idea = agrarian
-				add_idea = industrializing
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_innovative_change = yes
 		}
 	}
 	focus = {

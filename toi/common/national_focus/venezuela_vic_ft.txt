@@ -2828,10 +2828,8 @@ focus_tree = {
 		}
 	
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = agrarian
-				add_idea = industrializing
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_innovative_change = yes
 			swap_ideas = {
 				remove_idea = cl_legal
 				add_idea = cl_illegal

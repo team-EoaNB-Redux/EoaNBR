@@ -44,6 +44,8 @@ NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 6
 NDefines.NProduction.BASE_FACTORY_SPEED = 2.5				-- vanilla 5 Base factory speed multiplier (how much hoi3 style IC each factory gives). --4.5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4       -- vanilla 4.5
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 5      -- vanilla 2.5
+NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 7.5	-- vanilla 10  -- Base start efficiency for factories expressed in %.
+NDefines.NProduction.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 40	-- vanilla 50  -- Base max efficiency for factories expressed in %.
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.5	-- How much fuel will be transferred on annexation
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000	-- How many deployment lines minimum can be training --100k
 NDefines.NProduction.CAPITULATE_FUEL_RATIO = 0.25 -- How much fuel will be transferred on capitulation --.5
@@ -93,6 +95,7 @@ NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 6			-- how many divisions a c
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 6                   -- how many battalions should a division have to count as a full divisions when calculating XP stuff, changed to 6, or 2 full brigades with victorian starting doctrine
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 2				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 2		-- Min height of regiments in division designer, set to 2, 3 with starting victorian doctrine
+NDefines.NMilitary.SLOWEST_SPEED = 1 -- slowest designed div speed?
 
 NDefines.NAir.TOP_SPEED_DAMAGE_BONUS_FACTOR = 0.02 -- 0.025
 NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.45 -- 0.60

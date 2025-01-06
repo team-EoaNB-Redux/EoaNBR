@@ -31,7 +31,7 @@ state = {
 		}
 
 		# Blood and Iron
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = PRS
 			add_core_of = PRS
 			buildings = {

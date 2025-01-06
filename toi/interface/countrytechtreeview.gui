@@ -11859,12 +11859,12 @@ guiTypes = {
 					}
 					clipping = no
 
-					iconType = {
-						name = "humanities_folder_background"
-						spriteType = "GFX_techtree_humanities_folder_background"
-						scale = 1.6
-						alwaystransparent=yes
-					}
+					# iconType = {
+					# 	name = "humanities_folder_background"
+					# 	spriteType = "GFX_techtree_humanities_folder_background"
+					# 	scale = 1.6
+					# 	alwaystransparent=yes
+					# }
 
 					instantTextBoxType = {
 						name = "humanities_title"
@@ -12256,6 +12256,11 @@ guiTypes = {
 				format = center
 			}
 
+			positionType = {
+				name = "tech_info_special_description_bottom_margin"
+				position = { x = 0 y = 14 }
+			}
+
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_paper_bg"
@@ -12421,6 +12426,7 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_paper_bg"
 			}
+
 		}
 	}
 
@@ -12436,7 +12442,10 @@ guiTypes = {
 					name = "bg"
 					quadTextureSprite = "GFX_technology_infantry_folder_small_available_item_bg"
 				}
-				iconType = {
+				gridboxtype = {
+					# contains special_project_specialization
+					name = "special_project_specialization_list"
+				}				iconType = {
 					name = "Icon"
 					position = { x = 3 y = 3 }
 					spriteType = "GFX_technology_medium"
@@ -12473,6 +12482,10 @@ guiTypes = {
 				background = {
 					name = "Background"
 					quadTextureSprite = "GFX_technology_unavailable_item_bg"
+				}
+				gridboxtype = {
+					# contains special_project_specialization
+					name = "special_project_specialization_list"
 				}
 				iconType = {
 					name = "Icon"
@@ -13637,6 +13650,10 @@ guiTypes = {
 				background = {
 					name = "bg"
 					quadTextureSprite = "GFX_technology_screen_folder_small_available_item_bg"
+				}
+				gridboxtype = {
+					# contains special_project_specialization
+					name = "special_project_specialization_list"
 				}
 				iconType = {
 					name = "Icon"

@@ -23,7 +23,7 @@ state={
 			set_variable = { urban_center_size = 5 }
 			set_variable = { consumer_goods_factory_size = 5 }
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = RAJ
 			add_core_of = RAJ
 			remove_core_of = KAR

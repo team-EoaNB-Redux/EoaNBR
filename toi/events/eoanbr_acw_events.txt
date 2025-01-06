@@ -2040,6 +2040,8 @@ country_event = {
 
 						set_variable = { rival_country = USA.id }
 						inherit_technology = USA
+						inherit_institutions = yes
+
 						set_politics = { ruling_party = radical_democracy }
 						add_popularity = { ideology = radical_democracy popularity = 0.35 }
 
@@ -3091,6 +3093,8 @@ country_event = {
 					transfer_state = 372
 					add_state_core = 372
 					inherit_technology = USA
+					USA = { CSA = { inherit_institutions = yes } }
+
 					country_event = { id = NA_B_start.1 days = 2 }
 					if = {
 						limit = { NOT = { has_global_flag = NA_B_test_cuba_free } }
@@ -3126,7 +3130,7 @@ country_event = {
 					}
 					CSA_character_robert_e_lee = {
 						add_corps_commander_role = {
-							traits = { old_guard war_hero politically_connected inflexible_strategist engineer_officer trait_engineer fortress_buster cavalry_officer organizer trickster inspirational_leader }
+							traits = { old_guard war_hero politically_connected inflexible_strategist engineer_officer trait_engineer fortress_buster cavalry_officer organizer trickster inspirational_leader eoanbr_napoleonic_general }
 							skill = 8
 							legacy_id = 5020
 							attack_skill = 5
@@ -3137,7 +3141,7 @@ country_event = {
 					}
 					CSA_character_stonewall_jackson = {
 						add_corps_commander_role = {
-							traits = { war_hero bearer_of_artillery harsh_leader }
+							traits = { war_hero bearer_of_artillery harsh_leader eoanbr_napoleonic_general }
 							skill = 3
 							legacy_id = 5021
 							attack_skill = 6
@@ -3148,7 +3152,7 @@ country_event = {
 					}
 					CSA_character_edmund_kirby_smith = {
 						add_corps_commander_role = {
-							traits = { war_hero infantry_officer cavalry_officer swamp_fox }
+							traits = { war_hero infantry_officer cavalry_officer swamp_fox eoanbr_napoleonic_general }
 							skill = 6
 							legacy_id = 5022
 							attack_skill = 3
@@ -3159,7 +3163,7 @@ country_event = {
 					}
 					CSA_character_leonidas_polk = {
 						add_corps_commander_role = {
-							traits = { politically_connected }
+							traits = { politically_connected eoanbr_napoleonic_general }
 							skill = 2
 							legacy_id = 5023
 							attack_skill = 3
@@ -3170,7 +3174,7 @@ country_event = {
 					}
 					CSA_character_william_j_hardee = {
 						add_corps_commander_role = {
-							traits = { cavalry_officer }
+							traits = { cavalry_officer eoanbr_napoleonic_general }
 							skill = 3
 							legacy_id = 5024
 							attack_skill = 4
@@ -3181,7 +3185,7 @@ country_event = {
 					}
 					CSA_character_john_bell_hood = {
 						add_corps_commander_role = {
-							traits = { infantry_officer trait_reckless }
+							traits = { infantry_officer trait_reckless eoanbr_napoleonic_general }
 							skill = 2
 							legacy_id = 5025
 							attack_skill = 3
@@ -3192,7 +3196,7 @@ country_event = {
 					}
 					CSA_character_albert_sidney_johnson = {
 						add_corps_commander_role = {
-							traits = { old_guard war_hero infantry_officer organizer cavalry_officer }
+							traits = { old_guard war_hero infantry_officer organizer cavalry_officer eoanbr_napoleonic_general }
 							skill = 7
 							legacy_id = 5026
 							attack_skill = 4
@@ -3203,7 +3207,7 @@ country_event = {
 					}
 					CSA_character_braxton_bragg = {
 						add_corps_commander_role = {
-							traits = { old_guard war_hero organizer harsh_leader trait_reckless }
+							traits = { old_guard war_hero organizer harsh_leader trait_reckless eoanbr_napoleonic_general }
 							skill = 6
 							legacy_id = 5027
 							attack_skill = 3
@@ -3214,7 +3218,7 @@ country_event = {
 					}
 					CSA_character_joseph_e_jonston = {
 						add_corps_commander_role = {
-							traits = { old_guard war_hero career_officer engineer_officer trait_engineer urban_assault_specialist swamp_fox adaptable skirmisher trait_reckless cavalry_officer organizer }
+							traits = { old_guard war_hero career_officer engineer_officer trait_engineer urban_assault_specialist swamp_fox adaptable skirmisher trait_reckless cavalry_officer organizer eoanbr_napoleonic_general }
 							skill = 8
 							legacy_id = 5028
 							attack_skill = 2
@@ -3225,7 +3229,7 @@ country_event = {
 					}
 					USA_character_john_breckinridge = {
 						add_corps_commander_role = {
-							traits = { politically_connected }
+							traits = { politically_connected eoanbr_napoleonic_general }
 							skill = 2
 							attack_skill = 1
 							defense_skill = 2
@@ -4508,6 +4512,28 @@ news_event = {
 
 	immediate = {
 		# log = "[THIS.GetTag]: firing = acw_generic.9"
+		custom_effect_tooltip = USA_cant_defend_monroe_doctrine_tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						capital_scope = {
+							is_on_continent = south_america
+						}
+						capital_scope = {
+							is_on_continent = north_america
+						}
+					}
+				}
+				USA = {
+					diplomatic_relation = {
+						country = PREV
+						relation = guarantee
+						active = no
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			set_global_flag = ACW_Confederate_States_Rebelled
 			if = {
@@ -4609,7 +4635,7 @@ news_event = {
 			USA = {
 				USA_character_george_b_mcclellan = {
 					add_corps_commander_role = {
-						traits = { napoleonic_tactician inflexible_strategist politically_connected career_officer engineer_officer expert_administrator aversion_to_offense engineer_officer fortress_buster organizer inspirational_leader }
+						traits = { napoleonic_tactician inflexible_strategist politically_connected career_officer engineer_officer expert_administrator aversion_to_offense engineer_officer fortress_buster organizer inspirational_leader eoanbr_napoleonic_general }
 						skill = 5
 						legacy_id = 5003
 						attack_skill = 1
@@ -4630,7 +4656,7 @@ news_event = {
 				}
 				USA_character_george_meade = {
 					add_corps_commander_role = {
-						traits = { old_guard inflexible_strategist war_hero trait_cautious engineer_officer trait_engineer hill_fighter urban_assault_specialist adaptable }
+						traits = { old_guard inflexible_strategist war_hero trait_cautious engineer_officer trait_engineer hill_fighter urban_assault_specialist adaptable eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5004
 						attack_skill = 2
@@ -4641,7 +4667,7 @@ news_event = {
 				}
 				USA_character_henry_halleck = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero engineer_officer trait_engineer fortress_buster }
+						traits = { old_guard war_hero engineer_officer trait_engineer fortress_buster eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5005
 						attack_skill = 1
@@ -4662,7 +4688,7 @@ news_event = {
 				}
 				USA_character_irvin_mcdowell = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero career_officer organizer skilled_staffer logistics_wizard }
+						traits = { old_guard war_hero career_officer organizer skilled_staffer logistics_wizard eoanbr_napoleonic_general }
 						skill = 7
 						legacy_id = 5006
 						attack_skill = 3
@@ -4673,7 +4699,7 @@ news_event = {
 				}
 				USA_character_ambrose_e_burnside = {
 					add_corps_commander_role = {
-						traits = { aversion_to_offense politically_connected cavalry_officer }
+						traits = { aversion_to_offense politically_connected cavalry_officer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5007
 						attack_skill = 2
@@ -4684,7 +4710,7 @@ news_event = {
 				}
 				USA_character_joseph_hooker = {
 					add_corps_commander_role = {
-						traits = { aversion_to_offense old_guard war_hero career_officer }
+						traits = { aversion_to_offense old_guard war_hero career_officer eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5008
 						attack_skill = 2
@@ -4695,7 +4721,7 @@ news_event = {
 				}
 				USA_character_james_birdeye_mcpherson = {
 					add_corps_commander_role = {
-						traits = { engineer_officer trait_engineer }
+						traits = { engineer_officer trait_engineer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5009
 						attack_skill = 4
@@ -4706,7 +4732,7 @@ news_event = {
 				}
 				USA_character_john_a_logan = {
 					add_corps_commander_role = {
-						traits = { war_hero infantry_officer }
+						traits = { war_hero infantry_officer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5010
 						attack_skill = 2
@@ -4717,7 +4743,7 @@ news_event = {
 				}
 				USA_character_oliver_o_howard = {
 					add_corps_commander_role = {
-						traits = { }
+						traits = { eoanbr_napoleonic_general }
 						skill = 2
 						legacy_id = 5011
 						attack_skill = 3
@@ -4728,7 +4754,7 @@ news_event = {
 				}
 				USA_character_benjamin_f_butler = {
 					add_corps_commander_role = {
-						traits = { }
+						traits = { eoanbr_napoleonic_general }
 						skill = 1
 						legacy_id = 5012
 						attack_skill = 2
@@ -4739,7 +4765,7 @@ news_event = {
 				}
 				USA_character_nathaniel_p_banks = {
 					add_corps_commander_role = {
-						traits = { }
+						traits = { eoanbr_napoleonic_general }
 						skill = 1
 						legacy_id = 5013
 						attack_skill = 2
@@ -4750,7 +4776,7 @@ news_event = {
 				}
 				USA_character_john_pope = {
 					add_corps_commander_role = {
-						traits = { aversion_to_offense old_guard war_hero career_officer engineer_officer trait_engineer ranger trait_mountaineer adaptable }
+						traits = { aversion_to_offense old_guard war_hero career_officer engineer_officer trait_engineer ranger trait_mountaineer adaptable eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5014
 						attack_skill = 3
@@ -4761,7 +4787,7 @@ news_event = {
 				}
 				USA_character_william_s_rosecrans = {
 					add_corps_commander_role = {
-						traits = { engineer_officer trait_engineer }
+						traits = { engineer_officer trait_engineer eoanbr_napoleonic_general }
 						skill = 4
 						legacy_id = 5015
 						attack_skill = 3
@@ -4772,7 +4798,7 @@ news_event = {
 				}
 				USA_character_philip_sheridan = {
 					add_corps_commander_role = {
-						traits = { trait_reckless career_officer infantry_officer cavalry_officer }
+						traits = { trait_reckless career_officer infantry_officer cavalry_officer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5016
 						attack_skill = 4
@@ -4783,7 +4809,7 @@ news_event = {
 				}
 				USA_character_george_h_thomas = {
 					add_corps_commander_role = {
-						traits = { old_guard brilliant_strategist war_hero infantry_officer cavalry_officer organizer trait_engineer cavalry_leader infantry_leader artillery_expert bearer_of_artillery fast_planner }
+						traits = { old_guard brilliant_strategist war_hero infantry_officer cavalry_officer organizer trait_engineer cavalry_leader infantry_leader artillery_expert bearer_of_artillery fast_planner eoanbr_napoleonic_general }
 						skill = 7
 						legacy_id = 5017
 						attack_skill = 4
@@ -4794,7 +4820,7 @@ news_event = {
 				}
 				USA_character_edward_ord = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero bearer_of_artillery trickster trait_engineer commando skirmisher }
+						traits = { old_guard war_hero bearer_of_artillery trickster trait_engineer commando skirmisher eoanbr_napoleonic_general }
 						skill = 4
 						legacy_id = 5018
 						attack_skill = 3
@@ -4805,7 +4831,7 @@ news_event = {
 				}
 				USA_character_john_g_parke = {
 					add_corps_commander_role = {
-						traits = { engineer_officer trait_engineer trait_mountaineer ranger adaptable }
+						traits = { engineer_officer trait_engineer trait_mountaineer ranger adaptable eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5019
 						attack_skill = 3
@@ -4865,7 +4891,7 @@ news_event = {
 			hidden_effect = {
 				USA_character_george_b_mcclellan = {
 					add_corps_commander_role = {
-						traits = { napoleonic_tactician inflexible_strategist politically_connected career_officer engineer_officer expert_administrator aversion_to_offense engineer_officer fortress_buster organizer inspirational_leader }
+						traits = { napoleonic_tactician inflexible_strategist politically_connected career_officer engineer_officer expert_administrator aversion_to_offense engineer_officer fortress_buster organizer inspirational_leader eoanbr_napoleonic_general }
 						skill = 5
 						legacy_id = 5003
 						attack_skill = 1
@@ -4886,7 +4912,7 @@ news_event = {
 				}
 				CSA_character_robert_e_lee = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero politically_connected inflexible_strategist engineer_officer trait_engineer fortress_buster cavalry_officer organizer trickster inspirational_leader }
+						traits = { old_guard war_hero politically_connected inflexible_strategist engineer_officer trait_engineer fortress_buster cavalry_officer organizer trickster inspirational_leader eoanbr_napoleonic_general }
 						skill = 8
 						legacy_id = 5020
 						attack_skill = 5
@@ -4897,7 +4923,7 @@ news_event = {
 				}
 				CSA_character_stonewall_jackson = {
 					add_corps_commander_role = {
-						traits = { war_hero bearer_of_artillery harsh_leader }
+						traits = { war_hero bearer_of_artillery harsh_leader eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5021
 						attack_skill = 6
@@ -4908,7 +4934,7 @@ news_event = {
 				}
 				CSA_character_edmund_kirby_smith = {
 					add_corps_commander_role = {
-						traits = { war_hero infantry_officer cavalry_officer swamp_fox }
+						traits = { war_hero infantry_officer cavalry_officer swamp_fox eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5022
 						attack_skill = 3
@@ -4919,7 +4945,7 @@ news_event = {
 				}
 				CSA_character_leonidas_polk = {
 					add_corps_commander_role = {
-						traits = { politically_connected }
+						traits = { politically_connected eoanbr_napoleonic_general }
 						skill = 2
 						legacy_id = 5023
 						attack_skill = 3
@@ -4930,7 +4956,7 @@ news_event = {
 				}
 				CSA_character_william_j_hardee = {
 					add_corps_commander_role = {
-						traits = { cavalry_officer }
+						traits = { cavalry_officer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5024
 						attack_skill = 4
@@ -4941,7 +4967,7 @@ news_event = {
 				}
 				CSA_character_john_bell_hood = {
 					add_corps_commander_role = {
-						traits = { infantry_officer trait_reckless }
+						traits = { infantry_officer trait_reckless eoanbr_napoleonic_general }
 						skill = 2
 						legacy_id = 5025
 						attack_skill = 3
@@ -4952,7 +4978,7 @@ news_event = {
 				}
 				CSA_character_albert_sidney_johnson = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero infantry_officer organizer cavalry_officer }
+						traits = { old_guard war_hero infantry_officer organizer cavalry_officer eoanbr_napoleonic_general }
 						skill = 7
 						legacy_id = 5026
 						attack_skill = 4
@@ -4963,7 +4989,7 @@ news_event = {
 				}
 				CSA_character_braxton_bragg = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero organizer harsh_leader trait_reckless }
+						traits = { old_guard war_hero organizer harsh_leader trait_reckless eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5027
 						attack_skill = 3
@@ -4974,7 +5000,7 @@ news_event = {
 				}
 				CSA_character_joseph_e_jonston = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero career_officer engineer_officer trait_engineer urban_assault_specialist swamp_fox adaptable skirmisher trait_reckless cavalry_officer organizer }
+						traits = { old_guard war_hero career_officer engineer_officer trait_engineer urban_assault_specialist swamp_fox adaptable skirmisher trait_reckless cavalry_officer organizer eoanbr_napoleonic_general }
 						skill = 8
 						legacy_id = 5028
 						attack_skill = 2
@@ -4985,7 +5011,7 @@ news_event = {
 				}
 				USA_character_john_breckinridge = {
 					add_corps_commander_role = {
-						traits = { politically_connected }
+						traits = { politically_connected eoanbr_napoleonic_general }
 						skill = 2
 						attack_skill = 1
 						defense_skill = 2
@@ -5053,7 +5079,7 @@ country_event = {
 		name = acw_generic.10.a
 		# log = "option:		name = acw_generic.10.a"
 		trigger = { tag = USA }
-		army_experience = -20
+		#army_experience = -20
 		hidden_effect = {
 			# Remove Jackson as MHC
 			set_temp_variable = { temp_advisor_frame = 4 }
@@ -5362,7 +5388,7 @@ country_event = {
 				}
 				add_corps_commander_role = {
 					character = USA_character_ulysses_s_grant
-					traits = { old_guard butcher cavalry_leader infantry_officer organizer war_hero trait_reckless trait_engineer fast_planner skilled_staffer logistics_wizard }
+					traits = { old_guard butcher cavalry_leader infantry_officer organizer war_hero trait_reckless trait_engineer fast_planner skilled_staffer logistics_wizard eoanbr_napoleonic_general }
 					skill = 7
 					legacy_id = 5029
 					attack_skill = 6
@@ -5383,7 +5409,7 @@ country_event = {
 				}
 				add_corps_commander_role = {
 					character = USA_character_william_t_sherman
-					traits = { quick_marcher trickster organizer urban_assault_specialist infantry_officer inspirational_leader }
+					traits = { quick_marcher trickster organizer urban_assault_specialist infantry_officer inspirational_leader eoanbr_napoleonic_general }
 					skill = 7
 					legacy_id = 5030
 					attack_skill = 6
@@ -5960,7 +5986,7 @@ country_event = {
 		ai_chance = { base = 100 }
 		trigger = {
 			NOT = {
-				AND = {
+				OR = {
 					tag = USA
 					tag = CSA
 				}
@@ -6128,6 +6154,8 @@ country_event = {
 						transfer_state = 746
 						add_state_core = 746
 						inherit_technology = USA
+						inherit_institutions = yes
+
 						add_manpower = 7000
 						add_equipment_to_stockpile = {
 							type = infantry_equipment
@@ -8719,7 +8747,7 @@ country_event = {
 			CSA = {
 				add_corps_commander_role = {
 					character = CSA_character_albert_sidney_johnson
-					traits = { desert_fox }
+					traits = { desert_fox eoanbr_napoleonic_general }
 					skill = 3
 					legacy_id = 5026
 					attack_skill = 4
@@ -9977,7 +10005,7 @@ country_event = {
 			CSA = {
 				add_corps_commander_role = {
 					character = CSA_character_john_bell_hood
-					traits = {}
+					traits = { eoanbr_napoleonic_general }
 					skill = 2
 					legacy_id = 5025
 					attack_skill = 3
@@ -10625,7 +10653,7 @@ country_event = {
 			USA_character_george_b_mcclellan = {
 				set_character_flag = mcclellan_character_flag
 				add_corps_commander_role = {
-					traits = { napoleonic_tactician inflexible_strategist politically_connected career_officer engineer_officer expert_administrator aversion_to_offense engineer_officer fortress_buster organizer inspirational_leader }
+					traits = { napoleonic_tactician inflexible_strategist politically_connected career_officer engineer_officer expert_administrator aversion_to_offense engineer_officer fortress_buster organizer inspirational_leader eoanbr_napoleonic_general }
 					skill = 5
 					legacy_id = 5003
 					attack_skill = 1
@@ -10647,7 +10675,7 @@ country_event = {
 			}
 			USA_character_george_meade = {
 				add_corps_commander_role = {
-					traits = { old_guard inflexible_strategist war_hero trait_cautious engineer_officer trait_engineer hill_fighter urban_assault_specialist adaptable }
+					traits = { old_guard inflexible_strategist war_hero trait_cautious engineer_officer trait_engineer hill_fighter urban_assault_specialist adaptable eoanbr_napoleonic_general }
 					skill = 6
 					legacy_id = 5004
 					attack_skill = 2
@@ -10659,7 +10687,7 @@ country_event = {
 			}
 			USA_character_henry_halleck = {
 				add_corps_commander_role = {
-					traits = { old_guard war_hero engineer_officer trait_engineer fortress_buster }
+					traits = { old_guard war_hero engineer_officer trait_engineer fortress_buster eoanbr_napoleonic_general }
 					skill = 6
 					legacy_id = 5005
 					attack_skill = 1
@@ -10681,7 +10709,7 @@ country_event = {
 			}
 			USA_character_irvin_mcdowell = {
 				add_corps_commander_role = {
-					traits = {  }
+					traits = {  eoanbr_napoleonic_general }
 					skill = 2
 					legacy_id = 5006
 					attack_skill = 3
@@ -10693,7 +10721,7 @@ country_event = {
 			}
 			USA_character_philip_sheridan = {
 				add_corps_commander_role = {
-					traits = { trait_reckless career_officer infantry_officer cavalry_officer }
+					traits = { trait_reckless career_officer infantry_officer cavalry_officer eoanbr_napoleonic_general }
 					skill = 3
 					legacy_id = 5016
 					attack_skill = 4
@@ -10705,7 +10733,7 @@ country_event = {
 			}
 			USA_character_edward_ord = {
 				add_corps_commander_role = {
-					traits = { old_guard war_hero bearer_of_artillery trickster trait_engineer commando skirmisher }
+					traits = { old_guard war_hero bearer_of_artillery trickster trait_engineer commando skirmisher eoanbr_napoleonic_general }
 					skill = 4
 					legacy_id = 5018
 					attack_skill = 3
@@ -10717,7 +10745,7 @@ country_event = {
 			}
 			USA_character_john_g_parke = {
 				add_corps_commander_role = {
-					traits = { engineer_officer trait_engineer trait_mountaineer ranger adaptable }
+					traits = { engineer_officer trait_engineer trait_mountaineer ranger adaptable eoanbr_napoleonic_general }
 					skill = 3
 					legacy_id = 5019
 					attack_skill = 3
@@ -11290,7 +11318,7 @@ country_event = {
 			CSA = {
 				CSA_character_robert_e_lee = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero politically_connected inflexible_strategist engineer_officer trait_engineer fortress_buster cavalry_officer organizer trickster inspirational_leader }
+						traits = { old_guard war_hero politically_connected inflexible_strategist engineer_officer trait_engineer fortress_buster cavalry_officer organizer trickster inspirational_leader eoanbr_napoleonic_general }
 						skill = 8
 						legacy_id = 5020
 						attack_skill = 5
@@ -11301,7 +11329,7 @@ country_event = {
 				}
 				CSA_character_stonewall_jackson = {
 					add_corps_commander_role = {
-						traits = { war_hero bearer_of_artillery harsh_leader }
+						traits = { war_hero bearer_of_artillery harsh_leader eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5021
 						attack_skill = 6
@@ -11312,7 +11340,7 @@ country_event = {
 				}
 				CSA_character_edmund_kirby_smith = {
 					add_corps_commander_role = {
-						traits = { war_hero infantry_officer cavalry_officer swamp_fox }
+						traits = { war_hero infantry_officer cavalry_officer swamp_fox eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5022
 						attack_skill = 3
@@ -11323,7 +11351,7 @@ country_event = {
 				}
 				CSA_character_leonidas_polk = {
 					add_corps_commander_role = {
-						traits = { politically_connected }
+						traits = { politically_connected eoanbr_napoleonic_general }
 						skill = 2
 						legacy_id = 5023
 						attack_skill = 3
@@ -11334,7 +11362,7 @@ country_event = {
 				}
 				CSA_character_william_j_hardee = {
 					add_corps_commander_role = {
-						traits = { cavalry_officer }
+						traits = { cavalry_officer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5024
 						attack_skill = 4
@@ -11345,7 +11373,7 @@ country_event = {
 				}
 				CSA_character_john_bell_hood = {
 					add_corps_commander_role = {
-						traits = { infantry_officer trait_reckless }
+						traits = { infantry_officer trait_reckless eoanbr_napoleonic_general }
 						skill = 2
 						legacy_id = 5025
 						attack_skill = 3
@@ -11356,7 +11384,7 @@ country_event = {
 				}
 				CSA_character_albert_sidney_johnson = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero infantry_officer organizer cavalry_officer }
+						traits = { old_guard war_hero infantry_officer organizer cavalry_officer eoanbr_napoleonic_general }
 						skill = 7
 						legacy_id = 5026
 						attack_skill = 4
@@ -11367,7 +11395,7 @@ country_event = {
 				}
 				CSA_character_braxton_bragg = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero organizer harsh_leader trait_reckless }
+						traits = { old_guard war_hero organizer harsh_leader trait_reckless eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5027
 						attack_skill = 3
@@ -11378,7 +11406,7 @@ country_event = {
 				}
 				CSA_character_joseph_e_jonston = {
 					add_corps_commander_role = {
-						traits = { old_guard war_hero career_officer engineer_officer trait_engineer urban_assault_specialist swamp_fox adaptable skirmisher trait_reckless cavalry_officer organizer }
+						traits = { old_guard war_hero career_officer engineer_officer trait_engineer urban_assault_specialist swamp_fox adaptable skirmisher trait_reckless cavalry_officer organizer eoanbr_napoleonic_general }
 						skill = 8
 						legacy_id = 5028
 						attack_skill = 2
@@ -11389,7 +11417,7 @@ country_event = {
 				}
 				USA_character_john_breckinridge = {
 					add_corps_commander_role = {
-						traits = { politically_connected }
+						traits = { politically_connected eoanbr_napoleonic_general }
 						skill = 2
 						attack_skill = 1
 						defense_skill = 2
@@ -11431,11 +11459,13 @@ country_event = {
 					save_global_event_target_as = acw_the_free_states_of_america
 					set_variable = { rival_country = USA.id }
 					inherit_technology = USA
+					USA = { PREV = { inherit_institutions = yes } }
 					add_popularity = { ideology = social_egalitarianism popularity = 0.35 }
 					load_focus_tree = fsa_reconstruction
 					set_cosmetic_tag = USA_free_states_of_america
 					load_oob = "FSA_1861"
 					inherit_technology = USA
+					USA = { PREV = { inherit_institutions = yes } }
 					set_stability = 0.5
 					set_war_support = 0.8
 					add_popularity = {
@@ -11503,9 +11533,7 @@ country_event = {
 					}
 					add_ideas = {
 						hos_is_leader
-						victorian_era
 						law_victorian_army
-						industrializing
 						non_monarchical_system
 						presidential_republic
 
@@ -11550,7 +11578,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_ulysses_s_grant_temp_token
-						traits = { old_guard butcher cavalry_leader infantry_officer organizer war_hero trait_reckless trait_engineer fast_planner skilled_staffer logistics_wizard }
+						traits = { old_guard butcher cavalry_leader infantry_officer organizer war_hero trait_reckless trait_engineer fast_planner skilled_staffer logistics_wizard eoanbr_napoleonic_general }
 						skill = 7
 						legacy_id = 5029
 						attack_skill = 6
@@ -11569,7 +11597,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_william_t_sherman_temp_token
-						traits = { quick_marcher trickster organizer urban_assault_specialist infantry_officer inspirational_leader }
+						traits = { quick_marcher trickster organizer urban_assault_specialist infantry_officer inspirational_leader eoanbr_napoleonic_general }
 						skill = 7
 						legacy_id = 5030
 						attack_skill = 6
@@ -11587,7 +11615,7 @@ country_event = {
 						}
 					}
 					add_corps_commander_role = {
-						traits = { old_guard inflexible_strategist war_hero trait_cautious engineer_officer trait_engineer hill_fighter urban_assault_specialist adaptable }
+						traits = { old_guard inflexible_strategist war_hero trait_cautious engineer_officer trait_engineer hill_fighter urban_assault_specialist adaptable eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5004
 						attack_skill = 2
@@ -11606,7 +11634,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_irvin_mcdowell_temp_token
-						traits = { old_guard war_hero career_officer organizer skilled_staffer logistics_wizard }
+						traits = { old_guard war_hero career_officer organizer skilled_staffer logistics_wizard eoanbr_napoleonic_general }
 						skill = 7
 						legacy_id = 5006
 						attack_skill = 3
@@ -11625,7 +11653,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_philip_sheridan_temp_token
-						traits = { trait_reckless career_officer infantry_officer cavalry_officer }
+						traits = { trait_reckless career_officer infantry_officer cavalry_officer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5016
 						attack_skill = 4
@@ -11644,7 +11672,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_edward_ord_temp_token
-						traits = { old_guard war_hero bearer_of_artillery trickster trait_engineer commando skirmisher }
+						traits = { old_guard war_hero bearer_of_artillery trickster trait_engineer commando skirmisher eoanbr_napoleonic_general }
 						skill = 4
 						legacy_id = 5018
 						attack_skill = 3
@@ -11663,7 +11691,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_john_g_parke_temp_token
-						traits = { engineer_officer trait_engineer trait_mountaineer ranger adaptable }
+						traits = { engineer_officer trait_engineer trait_mountaineer ranger adaptable eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5019
 						attack_skill = 3
@@ -11682,7 +11710,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_ambrose_e_burnside_temp_token
-						traits = { aversion_to_offense politically_connected cavalry_officer }
+						traits = { aversion_to_offense politically_connected cavalry_officer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5007
 						attack_skill = 2
@@ -11701,7 +11729,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_joseph_hooker_temp_token
-						traits = { aversion_to_offense old_guard war_hero career_officer }
+						traits = { aversion_to_offense old_guard war_hero career_officer eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5008
 						attack_skill = 2
@@ -11720,7 +11748,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_james_b_mcpherson_temp_token
-						traits = { engineer_officer trait_engineer }
+						traits = { engineer_officer trait_engineer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5009
 						attack_skill = 4
@@ -11739,7 +11767,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_john_a_logan_temp_token
-						traits = { war_hero infantry_officer }
+						traits = { war_hero infantry_officer eoanbr_napoleonic_general }
 						skill = 3
 						legacy_id = 5010
 						attack_skill = 2
@@ -11758,7 +11786,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_oliver_o_howard_temp_token
-						traits = {	}
+						traits = { eoanbr_napoleonic_general }
 						skill = 3
 						attack_skill = 3
 						defense_skill = 3
@@ -11776,7 +11804,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_benjamin_f_butler_temp_token
-						traits = { politically_connected }
+						traits = { politically_connected eoanbr_napoleonic_general }
 						skill = 2
 						attack_skill = 2
 						defense_skill = 3
@@ -11794,7 +11822,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_nathaniel_p_banks_temp_token
-						traits = { }
+						traits = { eoanbr_napoleonic_general }
 						skill = 1
 						attack_skill = 2
 						defense_skill = 1
@@ -11812,7 +11840,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_john_pope_temp_token
-						traits = { aversion_to_offense old_guard war_hero career_officer engineer_officer trait_engineer ranger trait_mountaineer adaptable }
+						traits = { aversion_to_offense old_guard war_hero career_officer engineer_officer trait_engineer ranger trait_mountaineer adaptable eoanbr_napoleonic_general }
 						skill = 6
 						legacy_id = 5014
 						attack_skill = 3
@@ -11831,7 +11859,7 @@ country_event = {
 					}
 					add_corps_commander_role = {
 						character = USA_william_s_rosecrans_temp_token
-						traits = { engineer_officer trait_engineer }
+						traits = { engineer_officer trait_engineer eoanbr_napoleonic_general }
 						skill = 4
 						legacy_id = 5015
 						attack_skill = 3
@@ -13307,6 +13335,7 @@ country_event = {
 			}
 			CAL = {
 				inherit_technology = USA
+				USA = { PREV = { inherit_institutions = yes } }
 				transfer_state = 1341
 				add_state_core = 1341
 				add_state_core = 1342
@@ -17091,10 +17120,6 @@ country_event = {
 					}
 				}
 				every_owned_state = {
-					create_unit = {
-						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0"
-						owner = CSA
-					}
 					create_unit = {
 						division = "name = \"Klansmen Militia\" division_template = \"Klansmen Militia\" start_experience_factor = 0"
 						owner = CSA

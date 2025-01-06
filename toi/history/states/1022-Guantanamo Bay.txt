@@ -23,7 +23,7 @@ state = {
 		}
 		set_state_flag = NA_B_Disregardable_State
 		
-		1898.12.10 = {
+		1900.6.1 = {
 			owner = USA
 			add_core_of = CUB
 		}

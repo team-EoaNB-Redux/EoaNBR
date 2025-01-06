@@ -89,7 +89,6 @@ news_event = {
 			if = {
 				limit = {
 					NOT = { tag = USA }
-					NOT = { has_idea = agrarian }
 				}
 				set_country_flag = Panic_of_1857_hit
 				if = {#major power

@@ -1,5 +1,18 @@
- ideas = {
+ideas = {
 	country = {
+		afr_colonial_power = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_colonial_power
+
+			modifier ={
+			}
+		}
 		AF_T_road_matienence = {
 			allowed = {
 				always = no
@@ -224,8 +237,7 @@
 				army_org_Factor = 0.10
 				army_speed_factor = 0.10
 				planning_speed = 0.15
-				#high_command_cost_factor = -0.75 -- disabled due to MHC
-
+				military_high_command_cost_factor = -0.75
 			}
 		}
 		afr_fast_forces_3 = {
@@ -242,7 +254,7 @@
 				army_org_Factor = 0.15
 				army_speed_factor = 0.25
 				planning_speed = 0.25
-				#high_command_cost_factor = -0.75 -- disabled due to MHC
+				military_high_command_cost_factor = -0.7
 			}
 		}
 		afr_fast_forces_4 = {
@@ -259,7 +271,7 @@
 				army_org_Factor = 0.15
 				army_speed_factor = 0.25
 				planning_speed = 0.25
-				#high_command_cost_factor = -0.75 -- disabled due to MHC
+				#military_high_command_cost_factor = -0.75 -- disabled due to MHC
 			}
 		}
 		afr_decentralized_command_structure = {
@@ -276,7 +288,7 @@
 				army_org_Factor = 0.15
 				army_speed_factor = 0.25
 				planning_speed = 0.25
-				#high_command_cost_factor = -0.75 -- disabled due to MHC
+				#military_high_command_cost_factor = -0.75 -- disabled due to MHC
 			}
 		}
 		afr_superor_weaponry = {
@@ -602,19 +614,6 @@
 			modifier = {
 				mining_output_factor = 0.05
 				industry_repair_factor = 0.001
-			}
-		}
-		afr_colonial_power = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = generic_colonial_power
-
-			modifier ={
 			}
 		}
 		afr_western_administration = {

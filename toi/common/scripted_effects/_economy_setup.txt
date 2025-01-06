@@ -33,6 +33,9 @@ _reset = {
         _init_state = yes
     }
 
+    # Initialize global resources
+    _init_resources = yes
+
     # Update Markets
     every_country = {
         _update_market = yes
@@ -40,6 +43,14 @@ _reset = {
 
     # Updates the list of market leaders & global variables for markets
     global_economy_update = yes
+
+    # Update the global market
+    global_market_update = yes
+
+    every_country = {
+        update_country_pop_stats = yes
+        local_global_market_update = yes
+    }
 
     # Initialize Trade
     every_country = {
@@ -58,6 +69,12 @@ _reset = {
     # Update Market Again
     every_country = {
         _update_market = yes
+    }
+
+    # Update the global market again
+    global_market_update = yes
+    every_country = {
+        local_global_market_update = yes
     }
     
     # Re-Initialize Trade
@@ -83,6 +100,7 @@ _reset = {
     # Updates the list of market leaders & global variables for markets
     global_economy_update = yes
     every_country = {
+        local_global_market_update = yes
         country_update_trade_display = yes
     }
 }
@@ -143,6 +161,138 @@ _init_state = {
 
     # Standard of Living Setup
     calculate_standard_of_living = yes
+
+    # Update Industries & Pops
+    industries_update = yes
+    pops_update = yes
+}
+_init_resources = {
+    every_state = {
+        for_each_loop = {
+            array = global.rgo_token_array
+            value = resource_temp
+
+            set_temp_variable = { r_token = resource_temp }
+            if = {
+                limit = {
+                    check_variable = { base_resource@var:r_token > 0 }
+                }
+                set_temp_variable = { resource_value_temp = base_resource@var:r_token }
+                multiply_temp_variable = { resource_value_temp = global.base_price@var:r_token }
+                divide_temp_variable = { resource_value_temp = 4 }
+
+                set_temp_variable = { resource_amount_temp = random }
+                multiply_temp_variable = { resource_amount_temp = 50 }
+                add_to_temp_variable = { resource_amount_temp = 50 }
+                subtract_from_temp_variable = { resource_amount_temp = resource_value_temp }
+                divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+                
+                if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+                round_temp_variable = resource_amount_temp
+
+                set_temp_variable = { x_temp = resource_amount_temp }
+                add_potential_reserves = yes
+            }
+        }
+
+        # Checks for resource triggers
+        if = {
+            limit = {
+                has_coal_desposits = yes
+            }
+            set_temp_variable = { resource_amount_temp = random }
+            multiply_temp_variable = { resource_amount_temp = 50 }
+            add_to_temp_variable = { resource_amount_temp = 50 }
+            divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+            if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+            round_temp_variable = resource_amount_temp
+
+            set_temp_variable = { r_token = token:coal }
+            set_temp_variable = { x_temp = resource_amount_temp }
+            add_potential_reserves = yes
+        }
+        if = {
+            limit = {
+                has_oil = yes
+            }
+            set_temp_variable = { resource_amount_temp = random }
+            multiply_temp_variable = { resource_amount_temp = 50 }
+            add_to_temp_variable = { resource_amount_temp = 50 }
+            divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+            if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+            round_temp_variable = resource_amount_temp
+
+            set_temp_variable = { r_token = token:oil }
+            set_temp_variable = { x_temp = resource_amount_temp }
+            add_potential_reserves = yes
+        }
+        # if = {
+        #     limit = {
+        #         has_aluminum = yes
+        #     }
+        #     set_temp_variable = { resource_amount_temp = random }
+        #     multiply_temp_variable = { resource_amount_temp = 50 }
+        #     add_to_temp_variable = { resource_amount_temp = 50 }
+        #     divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+        #     if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+        #     round_temp_variable = resource_amount_temp
+
+        #     set_temp_variable = { r_token = token:aluminum }
+        #     set_temp_variable = { x_temp = resource_amount_temp }
+        #     add_potential_reserves = yes
+        # }
+        if = {
+            limit = {
+                has_tungsten = yes
+            }
+            set_temp_variable = { resource_amount_temp = random }
+            multiply_temp_variable = { resource_amount_temp = 50 }
+            add_to_temp_variable = { resource_amount_temp = 50 }
+            divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+            if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+            round_temp_variable = resource_amount_temp
+
+            set_temp_variable = { r_token = token:tungsten }
+            set_temp_variable = { x_temp = resource_amount_temp }
+            add_potential_reserves = yes
+        }
+        if = {
+            limit = {
+                has_chromium = yes
+            }
+            set_temp_variable = { resource_amount_temp = random }
+            multiply_temp_variable = { resource_amount_temp = 50 }
+            add_to_temp_variable = { resource_amount_temp = 50 }
+            divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+            if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+            round_temp_variable = resource_amount_temp
+
+            set_temp_variable = { r_token = token:chromium }
+            set_temp_variable = { x_temp = resource_amount_temp }
+            add_potential_reserves = yes
+        }
+        # if = {
+        #     limit = {
+        #         has_titanium = yes
+        #     }
+        #     set_temp_variable = { resource_amount_temp = random }
+        #     multiply_temp_variable = { resource_amount_temp = 50 }
+        #     add_to_temp_variable = { resource_amount_temp = 50 }
+        #     divide_temp_variable = { resource_amount_temp = global.base_price@var:r_token }
+            
+        #     if = { limit = { check_variable = { resource_amount_temp < 0 } } set_temp_variable = { resource_amount_temp = 0 } }
+        #     round_temp_variable = resource_amount_temp
+
+        #     set_temp_variable = { r_token = token:titanium }
+        #     set_temp_variable = { x_temp = resource_amount_temp }
+        #     add_potential_reserves = yes
+        # }
+    }
 }
 _update_market = {
     # Country
@@ -170,29 +320,12 @@ _init_trade = {
             array = global.resource_token_array
             value = r_token
 
-            if = {
-                limit = {
-                    has_variable = initial_offers@var:r_token
-                }
-                set_temp_variable = { resource_temp = r_token }
-                set_temp_variable = { amount_temp = initial_offers@var:r_token }
-                set_temp_variable = { no_update_temp = 1 }
-                set_trade = yes
-            }
-            else_if = {
-                limit = {
-                    NOT = { is_in_array = { global.non_tradeable_resources = r_token } }
-                    OR = {
-                        check_variable = { demand@var:r_token > 0 }
-                        check_variable = { supply@var:r_token > 0 }
-                    }
-                }
-                set_temp_variable = { resource_temp = r_token }
-                trade_ai_determine_max_trade = yes
-                multiply_temp_variable = { amount_temp = 0.95 }
-                set_temp_variable = { no_update_temp = 1 }
-                set_trade = yes
-            }
+            set_temp_variable = { resource_temp = r_token }
+            evaluate_best_trade_quantity = yes
+            
+            set_temp_variable = { amount_temp = trade_quantity_temp }
+            set_temp_variable = { no_update_temp = 1 }
+            set_trade = yes
         }
         trade_update = yes
     }
@@ -404,53 +537,17 @@ country_pops_industry_recalc = {
         industries_update = yes
         industry_productivity_sort = yes
         base_wage_calculation = yes
-
-        # Readjust Industries
-        readjust_industries = yes
-        industries_update = yes
-        pops_update = yes
-
-        state_eco_employment_init = yes
-        pops_update = yes
-        industries_update = yes
-
-        industry_productivity_sort = yes
-        base_wage_calculation = yes
         
         # Readjust for SoL
         readjust_standard_of_living = yes
         readjust_standard_of_living = yes
         pops_update = yes
-
-        # Updates national market after only updating this state
-        state_market_update = yes
-        add_to_temp_variable = { count_temp = 1 }
-        if = {
-            limit ={
-                check_variable = { count_temp > max_count_temp }
-            }
-            set_temp_variable = { count_temp = 0 }
-            PREV = {
-                national_market_update = yes
-
-                var:market_leader = {
-                    set_temp_variable = { ignore_national_market_temp = 1 }
-                    market_update = yes
-                }
-            }
-        }
     }
-    if = {
-        limit ={
-            check_variable = { count_temp > 0 }
-        }
-        set_temp_variable = { count_temp = 0 }
-        national_market_update = yes
+    national_market_update = yes
 
-        var:market_leader = {
-            set_temp_variable = { ignore_national_market_temp = 1 }
-            market_update = yes
-        }
+    var:market_leader = {
+        set_temp_variable = { ignore_national_market_temp = 1 }
+        market_update = yes
     }
 }
 
@@ -2148,7 +2245,7 @@ country_pops_industry_recalc = {
         for_each_loop = {
             array = industries
             value = emp_ind_token
-            set_variable = { employment_target@var:emp_ind_token = 100 }
+            set_variable = { employment_target@var:emp_ind_token = 80 }
         }
         pops_workforce_update = yes
         
@@ -2189,49 +2286,49 @@ country_pops_industry_recalc = {
         
         if = { # Specialists
             limit = {
-                check_variable = { specialists_jobs > peasants_workforce }
+                check_variable = { specialists_jobs_available > peasants_workforce }
             }
             set_variable = { specialists_workforce = peasants_workforce }
             set_variable = { peasants_workforce = 0 }
         }
         else = {
-            set_variable = { specialists_workforce = specialists_jobs }
+            set_variable = { specialists_workforce = specialists_jobs_available }
             subtract_from_variable = { peasants_workforce = specialists_workforce }
         }
         
         if = { # Professionals
             limit = {
-                check_variable = { professionals_jobs > peasants_workforce }
+                check_variable = { professionals_jobs_available > peasants_workforce }
             }
             set_variable = { professionals_workforce = peasants_workforce }
             set_variable = { peasants_workforce = 0 }
         }
         else = {
-            set_variable = { professionals_workforce = professionals_jobs }
+            set_variable = { professionals_workforce = professionals_jobs_available }
             subtract_from_variable = { peasants_workforce = professionals_workforce }
         }
         
         if = { # Workers
             limit = {
-                check_variable = { workers_jobs > peasants_workforce }
+                check_variable = { workers_jobs_available > peasants_workforce }
             }
             set_variable = { workers_workforce = peasants_workforce }
             set_variable = { peasants_workforce = 0 }
         }
         else = {
-            set_variable = { workers_workforce = workers_jobs }
+            set_variable = { workers_workforce = workers_jobs_available }
             subtract_from_variable = { peasants_workforce = workers_workforce }
         }
         
         if = { # Laborers
             limit = {
-                check_variable = { laborers_jobs > peasants_workforce }
+                check_variable = { laborers_jobs_available > peasants_workforce }
             }
             set_variable = { laborers_workforce = peasants_workforce }
             set_variable = { peasants_workforce = 0 }
         }
         else = {
-            set_variable = { laborers_workforce = laborers_jobs }
+            set_variable = { laborers_workforce = laborers_jobs_available }
             subtract_from_variable = { peasants_workforce = laborers_workforce }
         }
         
@@ -2534,79 +2631,6 @@ country_pops_industry_recalc = {
         else_if = { limit = { check_variable = { soldiers_earnings > soldiers_spending } } add_to_variable = { soldiers_sol = 1 } }
 
         calculate_pop_needs = yes
-    }
-    readjust_industries = {
-        # Checks if PMs are most productive. Swaps if not
-
-        for_each_loop = {
-            array = industries
-            value = industry_token
-            set_temp_variable = { highest_productivity_temp = 0 }
-            set_temp_variable = { highest_pm_temp = global.building_production_methods@var:industry_token^0 }
-
-            for_each_loop = {
-                array = global.building_production_methods@var:industry_token
-                value = pm_temp
-
-                if = {
-                    limit = {
-                        is_in_array = { controller:building_unlocked_pms@var:industry_token = pm_temp }
-                        get_pm_values = yes
-                        check_variable = { highest_productivity_temp < productivity_temp }
-                    }
-                    set_temp_variable = { highest_productivity_temp = productivity_temp }
-                    set_temp_variable = { highest_pm_temp = pm_temp }
-                }
-            }
-            if = {
-                limit = {
-                    NOT = { check_variable = { production_method@var:industry_token = highest_pm_temp } }
-                    NOT = { has_variable = starting_pm@var:industry_token }
-                    NOT = { has_variable = controller:starting_pm@var:industry_token }
-                    NOT = {
-                        NOT = { is_core_of = var:controller }
-                        has_variable = controller:non_core_starting_pm@var:industry_token
-                    }
-                }
-                # log = "[?industry_token.GetTokenLocalizedKey]: [?highest_pm_temp.GetTokenLocalizedKey]"
-                set_variable = { production_method@var:industry_token = highest_pm_temp }
-            }
-
-            set_temp_variable = { highest_productivity_temp = 0 }
-            set_temp_variable = { highest_pm_temp = global.building_automation_methods@var:industry_token^0 }
-            set_temp_variable = { base_wage_temp = base_wage }
-            multiply_temp_variable = { base_wage_temp = 0.9 }
-
-            for_each_loop = {
-                array = global.building_automation_methods@var:industry_token
-                value = pm_temp
-
-                if = {
-                    limit = {
-                        is_in_array = { controller:building_unlocked_ams@var:industry_token = pm_temp }
-                        get_pm_values = yes
-                        # log = "[?industry_token.GetTokenLocalizedKey]: [?productivity_temp] < [?base_wage_temp]"
-                        check_variable = { highest_productivity_temp < productivity_temp }
-                        check_variable = { productivity_temp < base_wage_temp }
-                    }
-                    set_temp_variable = { highest_productivity_temp = productivity_temp }
-                    set_temp_variable = { highest_pm_temp = pm_temp }
-                }
-            }
-            if = {
-                limit = {
-                    NOT = { check_variable = { automation_method@var:industry_token = highest_pm_temp } }
-                    NOT = { has_variable = starting_am@var:industry_token }
-                    NOT = { has_variable = controller:starting_am@var:industry_token }
-                    NOT = {
-                        NOT = { is_core_of = var:controller }
-                        has_variable = controller:non_core_starting_am@var:industry_token
-                    }
-                }
-                # log = "[?industry_token.GetTokenLocalizedKey]: [?highest_pm_temp.GetTokenLocalizedKey]"
-                set_variable = { automation_method@var:industry_token = highest_pm_temp }
-            }
-        }
     }
 #
 

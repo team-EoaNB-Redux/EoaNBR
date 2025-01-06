@@ -27,8 +27,8 @@ state = {
 		}
 		add_core_of = ZUL
 
-		1881.1.1 = {
-			owner = SAF
+		1885.11.1 = {
+			owner = NAT
 			remove_core_of = ZUL
 		}
 		afr_state_setup_scripted_effect = yes

@@ -4107,7 +4107,8 @@ country_event = { #Anarchists Revolt
 		# log = "[THIS.GetTag]: firing = asa_anarchist_revolt.12"
 		hidden_effect = {
 			PHL = {
-				inherit_technology = ASA	
+				inherit_technology = ASA
+				inherit_institutions = yes
 				set_cosmetic_tag = PHL_revolt
 				set_country_flag = phl_independence_war_flag
 				transfer_state = 1385

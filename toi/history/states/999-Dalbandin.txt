@@ -14,7 +14,7 @@ state={
 				12761 1 
 			}
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = RAJ
 			add_core_of = RAJ
 		}

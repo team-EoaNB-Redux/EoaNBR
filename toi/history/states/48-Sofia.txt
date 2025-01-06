@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			949 15
 		}
-		1879.1.1 = {
+		1885.11.1 = {
 			owner = BUL
 			remove_core_of = OTO
 

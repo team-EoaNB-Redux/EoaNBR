@@ -25,6 +25,11 @@ state = {
 		owner = SKT
 		add_core_of = SKT
 
+		1912.1.1 = {
+			owner = FRA
+			remove_core_of = SKT
+		}
+
 		afr_state_setup_scripted_effect = yes
 	}
 }

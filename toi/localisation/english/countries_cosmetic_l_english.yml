@@ -500,7 +500,7 @@
  PRU_SPR_viceroyalty_DEF: "The Viceroyalty of Peru"
  PRU_SPR_viceroyalty_ADJ: "Pervian"
 
- MEX_cosmetic_tacubaya: "Tacybaya Mexico"
+ MEX_cosmetic_tacubaya: "Tacubaya Mexico"
 
  MEC_SPR_crown_union: "Kingdom of Mexico"
  MEC_SPR_crown_union_social_egalitarianism: "Mexico"
@@ -1416,3 +1416,27 @@
  BAS_carlist_spain: "Carlist Spain"
  BAS_carlist_spain_DEF: "Carlist Spain"
  BAS_carlist_spain_ADJ: "Carlist"
+ 
+ ADU_committee_of_public_health_spain: "Committee of Public Health"
+ ADU_committee_of_public_health_spain_DEF: "The Spanish Committe of Public Health"
+ ADU_committee_of_public_health_spain_ADJ: "Spanish"
+
+ BOT_ENG_Protectorate_Cosmetic: "Bechuanaland"
+ BOT_ENG_Protectorate_Cosmetic_DEF: "Bechuanaland"
+ SOT_ENG_Protectorate_Cosmetic: "Basotholand"
+ SOT_ENG_Protectorate_Cosmetic_DEF: "Basotholand"
+ SWZ_ENG_Protectorate_Cosmetic: "Swaziland"
+ SWZ_ENG_Protectorate_Cosmetic_DEF: "Swaziland"
+ GAB_FRA_Colony_Cosmetic: "French Gabon"
+ GAB_FRA_Colony_Cosmetic_DEF: "French Gabon"
+ COG_FRA_Protectorate_Cosmetic: "French Middle Congo"
+ COG_FRA_Protectorate_Cosmetic_DEF: "French Middle Congo"
+ SNG_FRA_Protectorate_Cosmetic: "French Senegal"
+ SNG_FRA_Protectorate_Cosmetic_DEF: "French Senegal"
+ SNG_FRA_Colony_Cosmetic: "French West Africa"
+ SNG_FRA_Colony_Cosmetic_DEF: "French West Africa"
+ GNA_FRA_Colony_Cosmetic: "French Guinea"
+ GNA_FRA_Colony_Cosmetic_DEF: "French Guinea"
+ DAH_FRA_Protectorate_Cosmetic: "French Dahomey"
+ DAH_FRA_Protectorate_Cosmetic_DEF: "French Dahomey"
+ 

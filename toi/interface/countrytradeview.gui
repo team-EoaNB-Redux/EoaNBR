@@ -669,8 +669,26 @@ guiTypes = {
 		}
 
 		instantTextboxType = {
+			name = "special_project"
+			font = "hoi_16mbs"
+			position = { x=20 y=96 }
+			maxWidth = 50
+			maxHeight = 18
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "production_line"
+			font = "hoi_16mbs"
+			position = { x=20 y=116 }
+			maxWidth = 50
+			maxHeight = 18
+			format = right
+		}
+
+		instantTextboxType = {
 			name = "needed"
-			position = { x = 20 y = 96 }
+			position = { x = 20 y = 136 }
 			font = "hoi_16mbs"
 			maxWidth = 50
 			maxHeight = 18
@@ -679,7 +697,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "neededType"
-			position = { x = 5 y = 94 }
+			position = { x = 5 y = 136 }
 			font = "hoi_16mbs"
 			maxWidth = 50
 			maxHeight = 28

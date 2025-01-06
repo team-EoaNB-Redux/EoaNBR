@@ -7,6 +7,9 @@ eoanb_category_economic = {
         available = {
 			always = no
 		}
+		allowed = {
+			tag = SPR
+		}
 		cancel_trigger = {
 			always = no
 		}
@@ -105,7 +108,12 @@ eoanb_category_economic = {
 		allowed = { tag = SPR }
 
 		available = {
-			has_completed_focus = SPR_mining_revolution
+			OR={
+				has_idea = SPR_idea_mining_revolution_1
+				has_idea = SPR_idea_mining_revolution_2
+				has_idea = SPR_idea_mining_revolution_3
+				has_idea = SPR_idea_mining_revolution_4
+			}
 			has_stability > 0.2
 		}
 
@@ -642,6 +650,53 @@ eoanb_category_economic = {
 		}
     }
 
+	SPR_mission_seville_railway_concession = {
+        icon = railway
+        allowed = { TAG = SPR }
+        available = {
+			owns_state = 169
+        }
+		visible = {
+			has_completed_focus = SPR_6dy_extend_seville_line
+		}
+        highlight_states = {
+			state = 169
+		}
+		custom_cost_trigger = { check_variable = { debt_level < 50 } }
+		custom_cost_text = eoanb_decision_cost_1_debt_loc
+        fire_only_once = yes
+        days_remove = 180
+
+		complete_effect = {
+			hidden_effect = { debt_level_increase_by_1 = yes }
+		}
+
+        remove_effect = {
+            build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = yes
+				path = { 7183 7098 9891 }
+				start_province = 1048
+				target_province = 875
+			}
+			#hidden_effect = {
+			#	SPR = { country_event = { days = 730 id = SPR_bankruptcy_events.6 } }
+			#}
+        }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				check_variable = { debt_level > 44 }
+			}
+		}
+    }
+
 	SPR_develop_fernando_poo_decision = {
 		icon = generic_construction
 		available = {
@@ -708,8 +763,11 @@ SPR_debt_management_category = {
 			if = {
 				limit = { has_country_leader = { name = "Ignacio Comonfort" ruling_only = yes } }
 				# not = { has_country_leader = { name = "Ignacio Comonfort" ruling_only = yes } }
+				always = no
 			}
 			else = { has_government = centrism }
+			
+			always = no
 		}
 		visible = {
 			has_country_flag = MEX_foreign_debt_repayments_flag
@@ -723,7 +781,7 @@ SPR_debt_management_category = {
 		complete_effect = {
 			custom_effect_tooltip = MEX_cease_foreign_debt_repayments_decision_tooltip
 			hidden_effect = {
-				set_country_flag = MEX_cease_foreign_debt_repayments_decision_flag
+				#set_country_flag = MEX_cease_foreign_debt_repayments_decision_flag
 
 				set_variable = { global.eng_mexico_debt = debt_to_bank_k@ENG }
 				set_variable = { global.fra_mexico_debt = debt_to_bank_k@FRA }
@@ -957,7 +1015,22 @@ SPR_debt_management_category = {
 
 	debt_colonial_profits_decision = {
 		icon = money
-		allowed = { always = yes }
+		allowed = { 
+			# always = yes
+			NOT = {
+				OR = {
+					tag = UCT
+					is_chinese_country = yes
+					is_japanese_country = yes
+					is_indian_country = yes
+					is_nomadic_nation_state = yes
+					is_first_nations_tribe_allowed = yes
+					is_south_american_tribe_allowed = yes
+					oceania_is_tribal_allowed = yes
+					afr_is_tribal_allowed = yes
+				}
+			}
+		}
 		available = {
 			hidden_trigger = { always = no }
 		}
@@ -3004,6 +3077,38 @@ SPR_colonial_affairs_category = {
 			base = 0
 		}
 	}
+
+	SPR_integrate_CHL_state_peru = {
+		available = {
+			FROM={
+				compliance > 50
+			}
+		}
+		state_target = yes
+		allowed = { TAG = SPR }
+		visible = {
+			has_completed_focus = SPR_6dy_integrating_captaincy_of_chile
+			PRU={has_cosmetic_tag = PRU_SPR_viceroyalty}
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_owned_by = PRU
+				NOT={is_core_of = PRU}
+			}
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 50
+		remove_effect = {
+			FROM={
+				add_core_of = PRU
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }
 
 SPR_american_affairs_category={
@@ -3553,7 +3658,7 @@ SPR_CUB_ten_years_war_category={
 			1350={
 				owner={
 					army_manpower_in_state = {
-						amount > 7500
+						amount > 6000
 						state = 1350
 					}
 					not={

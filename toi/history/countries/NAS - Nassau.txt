@@ -12,8 +12,8 @@
 		#STATE OF COUNTRY
 		NAS_Adolph_I
 		has_heir
-		agrarian
-		victorian_era
+		#agrarian
+		#victorian_era
 		#institution_rationalism
 		#institution_settlement
 		#institution_centralization

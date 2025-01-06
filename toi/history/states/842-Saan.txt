@@ -22,6 +22,10 @@ state = {
 		add_core_of = SAA
 		add_core_of = BOT
 
+		1885.11.1 = {
+			owner = BOT
+			remove_core_of = SAA
+		}
 		afr_state_setup_scripted_effect = yes
 	}
 }

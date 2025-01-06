@@ -13,12 +13,12 @@
 		#POLITICS
 
 		hos_is_leader
-		victorian_era
+		#victorian_era
 		#institution_rationalism
 		#institution_settlement
 		#institution_centralization
 		law_victorian_army
-		agrarian
+		#agrarian
 		weak_heir
 		absolute_monarchy
 
@@ -86,6 +86,43 @@
 	}
 
 	set_tech_pre_industrial_middle_industrializing = yes
+	#Economy
+		set_variable = { starting_pm@token:wood = token:pm_saw_mills }
+		set_variable = { starting_am@token:wood = token:pm_muscle_power }
+		set_variable = { starting_pm@token:iron = token:pm_blasting }
+		set_variable = { starting_am@token:iron = token:pm_hand_picks_and_tools }
+		set_variable = { starting_pm@token:coal = token:pm_blasting }
+		set_variable = { starting_am@token:coal = token:pm_hand_picks_and_tools }
+		set_variable = { starting_pm@token:copper = token:pm_blasting }
+		set_variable = { starting_am@token:copper = token:pm_hand_picks_and_tools }
+		set_variable = { starting_pm@token:valuables = token:pm_blasting }
+		set_variable = { starting_am@token:valuables = token:pm_hand_picks_and_tools }
+		
+		set_variable = { starting_pm@token:food = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:food = token:pm_manual_farming }
+		set_variable = { starting_pm@token:luxuries = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:luxuries = token:pm_manual_farming }
+		set_variable = { starting_pm@token:fiber = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:fiber = token:pm_manual_farming }
+		set_variable = { starting_pm@token:crop_farm = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:crop_farm = token:pm_manual_farming }
+		set_variable = { starting_pm@token:luxuries_plantation = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:luxuries_plantation = token:pm_manual_farming }
+		set_variable = { starting_pm@token:cotton_plantation = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:cotton_plantation = token:pm_manual_farming }
+		set_variable = { starting_pm@token:rice_paddy = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:rice_paddy = token:pm_manual_farming }
+		set_variable = { starting_pm@token:livestock_ranch = token:pm_slaughterhouses }
+		set_variable = { starting_am@token:livestock_ranch = token:pm_open_field }
+		
+		set_variable = { starting_am@token:textile_mill = token:pm_no_automation }
+		set_variable = { starting_am@token:tooling_workshop = token:pm_no_automation }
+		set_variable = { starting_am@token:steel_foundry = token:pm_no_automation }
+		set_variable = { starting_am@token:chemical_plant = token:pm_no_automation }
+		set_variable = { starting_am@token:consumer_goods_factory = token:pm_no_automation }
+
+		set_variable = { starting_pm@token:urban_center = token:pm_brick_buildings }
+		set_variable = { starting_am@token:urban_center = token:pm_no_automation }
 
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_1 amount = 4000 producer = NSC }
 	add_equipment_to_stockpile = { type = uniform_equipment_2 amount = 4000 producer = NSC }

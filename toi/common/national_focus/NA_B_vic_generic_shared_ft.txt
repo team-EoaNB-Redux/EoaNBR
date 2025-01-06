@@ -230,13 +230,8 @@ shared_focus = {
 		else = {
 			add_political_power = -100
 		}
-		if = {
-			limit = { has_idea = industrializing }
-			swap_ideas = {
-				remove_idea = industrializing
-				add_idea = industrialized
-			}
-		}
+		set_temp_variable = { institution_progress_temp = 20 }
+		eoanbr_institutions_innovative_change = yes
 	}
 }
 shared_focus = {
@@ -419,14 +414,7 @@ shared_focus = {
 
   ai_will_do = { base = 10 }
   bypass = {
-    OR = {
-      has_idea = machine_era
-      has_idea = oil_era
-      has_idea = aviation_era
-      has_idea = modern_era
-      has_idea = atomic_era
-      has_idea = information_era
-    }
+		has_idea = institution_mechanization
   }
 
   completion_reward = {

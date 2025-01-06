@@ -93,13 +93,13 @@ state={
 
 		}
 			
-		1870.1.1 = {
+		1870.5.11 = {
 			buildings = {
 				infrastructure = 7
 				industrial_complex = 3 
 			}
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = PRS
 			add_core_of = PRS
 			remove_core_of = BAD

@@ -1,13 +1,14 @@
 can_call_idea_votes = {
-	OR={
-		has_idea = kongsi_federation
-		has_idea = constitutional_monarchy
-		has_idea = parliamentary_monarchy
-		has_idea = parliamentary_republic
-		has_idea = semi_presidential_republic
-		has_idea = presidential_republic
-		has_idea = socialist_republic
-		has_idea = revolutionary_government
-		has_idea = free_city
-	}
+	# OR={
+	# 	has_idea = kongsi_federation
+	# 	has_idea = constitutional_monarchy
+	# 	has_idea = parliamentary_monarchy
+	# 	has_idea = parliamentary_republic
+	# 	has_idea = semi_presidential_republic
+	# 	has_idea = presidential_republic
+	# 	has_idea = socialist_republic
+	# 	has_idea = revolutionary_government
+	# 	has_idea = free_city
+	# }
+	always = no
 }

@@ -28,8 +28,18 @@ state = {
 
 		set_variable = { port_size = 1 }
 		set_variable = { luxuries_plantation_size = 3 }
+		
+		add_dynamic_modifier = {
+			modifier = dynmod_local_slavery
+		}
+		
+		1878.1.1 = {
+			remove_dynamic_modifier = {
+				modifier = dynmod_local_slavery
+			}
+		}
 
-		1898.12.10 = {
+		1900.6.1 = {
 			owner = USA
 		}
 	}

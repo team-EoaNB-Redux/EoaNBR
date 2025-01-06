@@ -211,74 +211,65 @@ RUS_Industrialisation_decisions = {
 			}
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				add_political_power = -50
-				add_stability = -0.02
+			build_railway = {
+				level = 1
+				path = { 11202 415 319 222 341 310 }
+				start_province = 11202
+				target_province = 310
 			}
-			else = {
-				build_railway = {
-  					level = 1
-  					path = { 11202 415 319 222 341 310 }
-  					start_province = 11202
-  					target_province = 310
-				}
-				build_railway = {
-  					level = 1
-  					path = { 310 11358 11226 11498 9295 3320 9274 3393 }
-  					start_province = 310
-  					target_province = 3393
-				}
-				build_railway = {
-  					level = 1
-  					path = { 3393 347 11357 11274 11385 524 3544 }
-  					start_province = 3393
-  					target_province = 3544
-				}
-				add_stability = 0.03
-				1314 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-					add_compliance = 10
-					add_resistance = -30
-				}
-				11 = {
-					add_extra_state_shared_building_slots = 1
-					add_compliance = 10
-					add_resistance = -30
-				}
-				1134 = {
-					add_compliance = 15
-				}
-				10 = {
-					add_compliance = 7
-					add_resistance = -8
-				}
-				87 = {
-					add_compliance = 7
-				}
-				90 = {
-					add_compliance = 6
-				}
-				98 = {
-					add_compliance = 7
-				}
-				1313 = {
-					add_compliance = 6
-				}
-				92 = {
-					add_compliance = 5
-				}
-				set_temp_variable = { institution_progress_temp = 2 }
-				eoanbr_institutions_innovative_change = yes
-				set_temp_variable = {
-					eoanb_prestige_change = 5
-				}
-				eoanb_change_prestige_score = yes
-				add_tech_bonus = { bonus = 0.5 uses = 1 category = humanities_tech }
+			build_railway = {
+					level = 1
+					path = { 310 11358 11226 11498 9295 3320 9274 3393 }
+					start_province = 310
+					target_province = 3393
 			}
+			build_railway = {
+					level = 1
+					path = { 3393 347 11357 11274 11385 524 3544 }
+					start_province = 3393
+					target_province = 3544
+			}
+			add_stability = 0.03
+			1314 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				add_compliance = 10
+				add_resistance = -30
+			}
+			11 = {
+				add_extra_state_shared_building_slots = 1
+				add_compliance = 10
+				add_resistance = -30
+			}
+			1134 = {
+				add_compliance = 15
+			}
+			10 = {
+				add_compliance = 7
+				add_resistance = -8
+			}
+			87 = {
+				add_compliance = 7
+			}
+			90 = {
+				add_compliance = 6
+			}
+			98 = {
+				add_compliance = 7
+			}
+			1313 = {
+				add_compliance = 6
+			}
+			92 = {
+				add_compliance = 5
+			}
+			set_temp_variable = { institution_progress_temp = 2 }
+			eoanbr_institutions_innovative_change = yes
+			set_temp_variable = {
+				eoanb_prestige_change = 5
+			}
+			eoanb_change_prestige_score = yes
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
 		}
 		complete_effect = {
 			add_stability = 0.03
@@ -315,7 +306,7 @@ RUS_Industrialisation_decisions = {
 			92 = {
 				add_compliance = 5
 			}
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = humanities_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
 			set_temp_variable = { institution_progress_temp = 2 }
 			eoanbr_institutions_innovative_change = yes
 			set_temp_variable = {
@@ -383,10 +374,10 @@ RUS_Industrialisation_decisions = {
 
 		remove_effect = {
 			build_railway = {
-  				level = 1
-  				path = { 310 7482 10323 9340 }
-  				start_province = 310
-  				target_province = 9340
+				level = 1
+				path = { 310 7482 10323 9340 }
+				start_province = 310
+				target_province = 9340
 			}
 			set_temp_variable = { institution_progress_temp = 1 }
 			eoanbr_institutions_innovative_change = yes
@@ -1475,44 +1466,36 @@ RUS_Industrialisation_decisions = {
 			}
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				add_political_power = -50
-				add_stability = -0.02
+
+			build_railway = {
+				level = 1
+				path = { 6380 6414 9348 6290 6396 6262 6315 9313 6279 6230 6398 6341 9448 6553 9529 11512 544 3539 11485 11423 6602 3555 3529 }
+				start_province = 6380
+				target_province = 3529
 			}
-			else = {
-				build_railway = {
+			260 = {
+				add_building_construction = {
+					type = supply_node
+					province = 413
 					level = 1
-					path = { 6380 6414 9348 6290 6396 6262 6315 9313 6279 6230 6398 6341 9448 6553 9529 11512 544 3539 11485 11423 6602 3555 3529 }
-					start_province = 6380
-					target_province = 3529
+					instant_build = yes
 				}
-				260 = {
-					add_building_construction = {
-						type = supply_node
-						province = 413
-						level = 1
-						instant_build = yes
-					}
-					set_temp_variable = { industry_token = token:railway }
-					set_temp_variable = { x_temp = 1 }
-					add_x_industries = yes
-				}
-				build_railway = {
-					level = 1
-					path = { 3529 9504 3505 }
-					start_province = 3529
-					target_province = 3505
-				}
-				set_temp_variable = {
-					eoanb_prestige_change = 5
-				}
-				eoanb_change_prestige_score = yes
-				set_temp_variable = { institution_progress_temp = 2 }
-				eoanbr_institutions_innovative_change = yes
+				set_temp_variable = { industry_token = token:railway }
+				set_temp_variable = { x_temp = 1 }
+				add_x_industries = yes
 			}
+			build_railway = {
+				level = 1
+				path = { 3529 9504 3505 }
+				start_province = 3529
+				target_province = 3505
+			}
+			set_temp_variable = {
+				eoanb_prestige_change = 5
+			}
+			eoanb_change_prestige_score = yes
+			set_temp_variable = { institution_progress_temp = 2 }
+			eoanbr_institutions_innovative_change = yes
 		}
 		complete_effect = {
 			260 = {
@@ -1841,46 +1824,37 @@ RUS_Industrialisation_decisions = {
 			}
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				add_political_power = -50
-				add_stability = -0.02
+			build_railway = {
+				level = 1
+				path = { 310 6459 3219 6326 6249 9323 11241 11353 3247 306 }
+				start_province = 310
+				target_province = 306
 			}
-			else = {
-				build_railway = {
-					level = 1
-					path = { 310 6459 3219 6326 6249 9323 11241 11353 3247 306 }
-					start_province = 310
-					target_province = 306
-				}
-				build_railway = {
-					level = 1
-					path = { 306 3210 11336 6305 3390 3335 6411 9384 9355 }
-					start_province = 306
-					target_province = 9355
-				}
-				set_temp_variable = {
-					eoanb_prestige_change = 4
-				}
-				eoanb_change_prestige_score = yes
-				set_temp_variable = { institution_progress_temp = 2 }
-				eoanbr_institutions_innovative_change = yes
-				1134 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-				}
-				242 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-				}
-				222 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-				}
-				add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
+			build_railway = {
+				level = 1
+				path = { 306 3210 11336 6305 3390 3335 6411 9384 9355 }
+				start_province = 306
+				target_province = 9355
 			}
+			set_temp_variable = {
+				eoanb_prestige_change = 4
+			}
+			eoanb_change_prestige_score = yes
+			set_temp_variable = { institution_progress_temp = 2 }
+			eoanbr_institutions_innovative_change = yes
+			1134 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			242 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			222 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_industry_techs }
 		}
 		complete_effect = {
 			1134 = {
@@ -2107,41 +2081,32 @@ RUS_Industrialisation_decisions = {
 			}
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				add_political_power = -50
-				add_stability = -0.02
+			build_railway = {
+				level = 1
+				path = { 6380 6414 9348 6290 6396 6262 3292 11242 9411 9355 }
+				start_province = 6380
+				target_province =  9355
 			}
-			else = {
-				build_railway = {
-					level = 1
-					path = { 6380 6414 9348 6290 6396 6262 3292 11242 9411 9355 }
-					start_province = 6380
-					target_province =  9355
-				}
-				build_railway = {
-					level = 1
-					path = { 9355 9328 9260 580 9542 6565 9477 11425 9437 5458 11557 525 }
-					start_province = 9355
-					target_province = 525
-				}
-				222 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-				}
-				220 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-				}
-				set_temp_variable = {
-					eoanb_prestige_change = 5
-				}
-				eoanb_change_prestige_score = yes
-				set_temp_variable = { institution_progress_temp = 2 }
-				eoanbr_institutions_innovative_change = yes
+			build_railway = {
+				level = 1
+				path = { 9355 9328 9260 580 9542 6565 9477 11425 9437 5458 11557 525 }
+				start_province = 9355
+				target_province = 525
 			}
+			222 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			220 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			set_temp_variable = {
+				eoanb_prestige_change = 5
+			}
+			eoanb_change_prestige_score = yes
+			set_temp_variable = { institution_progress_temp = 2 }
+			eoanbr_institutions_innovative_change = yes
 		}
 		complete_effect = {
 			222 = {
@@ -2234,46 +2199,37 @@ RUS_Industrialisation_decisions = {
 			}
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				add_political_power = -50
-				add_stability = -0.02
+			build_railway = {
+				level = 1
+				path = { 6380 11282 9302 366 401 11384 3279 9399 6387 3362 306 }
+				start_province = 6380
+				target_province = 3392
 			}
-			else = {
-				build_railway = {
-					level = 1
-					path = { 6380 11282 9302 366 401 11384 3279 9399 6387 3362 306 }
-					start_province = 6380
-					target_province = 3392
-				}
-				build_railway = {
-					level = 1
-					path = { 306 11290 11220 3331 11322 294 11370 11216 9236 14726 9304 6306 3256 3392 }
-					start_province = 306
-					target_province = 3392
-				}
-				94 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-					add_building_construction = {
-						type = supply_node
-						province = 3392
-						level = 1
-						instant_build = yes
-					}
-					set_temp_variable = { industry_token = token:railway }
-					set_temp_variable = { x_temp = 1 }
-					add_x_industries = yes
-				}
-				set_temp_variable = {
-					eoanb_prestige_change = 5
-				}
-				eoanb_change_prestige_score = yes
-				set_temp_variable = { institution_progress_temp = 2 }
-				eoanbr_institutions_innovative_change = yes
+			build_railway = {
+				level = 1
+				path = { 306 11290 11220 3331 11322 294 11370 11216 9236 14726 9304 6306 3256 3392 }
+				start_province = 306
+				target_province = 3392
 			}
+			94 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				add_building_construction = {
+					type = supply_node
+					province = 3392
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { industry_token = token:railway }
+				set_temp_variable = { x_temp = 1 }
+				add_x_industries = yes
+			}
+			set_temp_variable = {
+				eoanb_prestige_change = 5
+			}
+			eoanb_change_prestige_score = yes
+			set_temp_variable = { institution_progress_temp = 2 }
+			eoanbr_institutions_innovative_change = yes
 		}
 		complete_effect = {
 			94 = {
@@ -2399,41 +2355,32 @@ RUS_Industrialisation_decisions = {
 			}
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				add_political_power = -50
-				add_stability = -0.02
+			build_railway = {
+				level = 1
+				path = { 11314 397 9376 3302 275 232 3389 3360 6353 6328 9460 3426 3578 }
+				start_province = 11314
+				target_province = 3578
 			}
-			else = {
-				build_railway = {
+			239 = {
+				add_building_construction = {
+					type = supply_node
+					province = 3578
 					level = 1
-					path = { 11314 397 9376 3302 275 232 3389 3360 6353 6328 9460 3426 3578 }
-					start_province = 11314
-					target_province = 3578
+					instant_build = yes
 				}
-				239 = {
-					add_building_construction = {
-						type = supply_node
-						province = 3578
-						level = 1
-						instant_build = yes
-					}
-					set_temp_variable = { industry_token = token:railway }
-					set_temp_variable = { x_temp = 1 }
-					add_x_industries = yes
-				}
-				set_temp_variable = {
-					eoanb_prestige_change = 4
-				}
-				eoanb_change_prestige_score = yes
-				set_temp_variable = { institution_progress_temp = 2 }
-				eoanbr_institutions_innovative_change = yes
-				239 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
-				}
+				set_temp_variable = { industry_token = token:railway }
+				set_temp_variable = { x_temp = 1 }
+				add_x_industries = yes
+			}
+			set_temp_variable = {
+				eoanb_prestige_change = 4
+			}
+			eoanb_change_prestige_score = yes
+			set_temp_variable = { institution_progress_temp = 2 }
+			eoanbr_institutions_innovative_change = yes
+			239 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
 			}
 		}
 		complete_effect = {
@@ -2728,43 +2675,34 @@ RUS_Industrialisation_decisions = {
 			}
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				add_political_power = -50
-				add_stability = -0.02
+			build_railway = {
+				level = 1
+				path = { 9290 6567 3544 }
+				start_province = 9290
+				target_province = 3544
 			}
-			else = {
-				build_railway = {
-					level = 1
-					path = { 9290 6567 3544 }
-					start_province = 9290
-					target_province = 3544
-				}
-				build_railway = {
-					level = 1
-					path = { 3544 12562 3521 14741 6484 9452 11441 3412 }
-					start_province = 3544
-					target_province = 3412
-				}
-				set_temp_variable = {
-					eoanb_prestige_change = 4
-				}
-				eoanb_change_prestige_score = yes
-				set_temp_variable = { institution_progress_temp = 2 }
-				eoanbr_institutions_innovative_change = yes
-				92 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-					add_resistance = -15
-					add_compliance = 8
-				}
-				1314 = {
-					add_extra_state_shared_building_slots = 1
-					add_resistance = -12
-					add_compliance = 6
-				}
+			build_railway = {
+				level = 1
+				path = { 3544 12562 3521 14741 6484 9452 11441 3412 }
+				start_province = 3544
+				target_province = 3412
+			}
+			set_temp_variable = {
+				eoanb_prestige_change = 4
+			}
+			eoanb_change_prestige_score = yes
+			set_temp_variable = { institution_progress_temp = 2 }
+			eoanbr_institutions_innovative_change = yes
+			92 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				add_resistance = -15
+				add_compliance = 8
+			}
+			1314 = {
+				add_extra_state_shared_building_slots = 1
+				add_resistance = -12
+				add_compliance = 6
 			}
 		}
 		complete_effect = {

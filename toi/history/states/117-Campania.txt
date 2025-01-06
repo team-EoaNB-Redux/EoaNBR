@@ -125,7 +125,7 @@ state = {
 
 		add_core_of = NSC
 
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = PIE
 			add_core_of = PIE
 		}

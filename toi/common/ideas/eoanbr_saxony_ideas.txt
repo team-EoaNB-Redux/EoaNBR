@@ -480,19 +480,11 @@ ideas = {
 		
 		#Construction Bonuses
 		SAX_idea_boost_coal = {
-            allowed = {
-                original_tag = SAX
-            }
+			allowed = {
+					original_tag = SAX
+			}
 			
 			picture = generic_business_regulation
-            
-            cancel = {
-                SAX = {
-                    NOT = {
-                        has_variable = coal_total_bonus
-                    }
-                }
-            }
             
             allowed_civil_war = {
                 OR = {
@@ -515,14 +507,6 @@ ideas = {
 			}
 			
 			picture = generic_build_infrastructure
-			
-			cancel = {
-				SAX = {
-					NOT = {
-						has_variable = infra_total_bonus
-					}
-				}
-			}
 			
 			allowed_civil_war = {
 				OR = {

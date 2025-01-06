@@ -19,11 +19,8 @@ state={
 			}
 			
 			#Agriculture
-			set_variable = { crop_farm_size = 3 } 
+			set_variable = { crop_farm_size = 2 } 
 
-			# set_variable = {
-			# 	building_commercial_farm_size = 5
-			# }
 			victory_points = {
 				3430 1 
 			}
@@ -35,7 +32,7 @@ state={
 	provinces={
 		462 3430 3457 3511 6429 6509 14757 
 	}
-	manpower=676690
+	manpower=476690
 	buildings_max_level_factor=1.000
 	state_category = rural
 	local_supplies=0.000

@@ -299,7 +299,7 @@ country_event = { #Crow Accepts Refuge
 		# log = "option:	    name = NA_N_nez_perce_war.11.a"
 		if = {
 			limit = { NEZ = { is_ai = yes } }
-			CRW = { inherit_technology = NEZ }
+			CRW = { inherit_technology = NEZ inherit_institutions = yes }
 			USA = {
 				annex_country = {
 					target = NEZ
@@ -315,6 +315,7 @@ country_event = { #Crow Accepts Refuge
 			CRW = {
 				change_tag_from = ROOT
 				inherit_technology = NEZ
+				inherit_institutions = yes
 			}
 			USA = {
 				annex_country = {

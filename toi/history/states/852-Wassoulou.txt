@@ -27,6 +27,16 @@ state = {
 			8008 3
 		}
 
+		1885.11.1 = {
+			owner = WAS
+			add_core_of = WAS
+			remove_core_of = MND
+		}
+		
+		1900.6.1 = {
+			owner = FRA
+			remove_core_of = WAS
+		}
 		afr_state_setup_scripted_effect = yes
 	}
 }

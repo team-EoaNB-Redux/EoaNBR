@@ -435,16 +435,9 @@ ideas = {
 					has_government = traditional_conservatism
 				}
 			}
-
-			cancel = {
-				NOT = {
-					has_variable = infra_total_bonus
-				}
-			}
-			
 			
 			modifier = {
-                production_speed_infrastructure_factor = 0.70
+				production_speed_infrastructure_factor = 0.70
 			}
 		}
 	
@@ -457,12 +450,6 @@ ideas = {
 					has_government = autocracy
 					has_government = collectivist_socialism
 					has_government = traditional_conservatism
-				}
-			}
-			
-			cancel = {
-				NOT = {
-					has_variable = civ_total_bonus
 				}
 			}
 			
@@ -480,12 +467,6 @@ ideas = {
 					has_government = autocracy
 					has_government = collectivist_socialism
 					has_government = traditional_conservatism
-				}
-			}
-			
-			cancel = {
-				NOT = {
-					has_variable = mil_total_bonus
 				}
 			}
 			

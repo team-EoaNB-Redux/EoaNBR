@@ -1629,10 +1629,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = { bonus = 1 uses = 1 category = cat_industry_techs }
-			swap_ideas = {
-				add_idea = industrializing
-				remove_idea = agrarian
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_innovative_change = yes
 		}
 	}
 

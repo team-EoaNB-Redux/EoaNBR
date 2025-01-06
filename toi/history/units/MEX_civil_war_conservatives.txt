@@ -9,6 +9,26 @@
 }
 
 division_template = {
+	name = "Line Infantry Regiment"
+	is_locked = yes
+
+	regiments = {
+		line_infantry = { x = 0 y = 0}
+		# light_infantry = { x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Line Infantry Brigade"
+	is_locked = yes
+
+	regiments = {
+		line_infantry = { x = 0 y = 0}
+		line_infantry = { x = 0 y = 1}
+	}
+}
+
+division_template = {
 	name = "Local Militia"
 	is_locked = yes
 
@@ -19,53 +39,81 @@ division_template = {
 }
 
 units = {
-		division = {
-			name = "1st Mexican Light Infantry"
-			location = 1952
-			division_template = "Light Infantry Regiment"
-			start_experience_factor = 0.3
-			start_equipment_factor = 0.5
-		}
-		division = {
-			name = "2nd Mexican Light Infantry"
-			location = 4956
-			division_template = "Light Infantry Regiment"
-			start_experience_factor = 0.3
-			start_equipment_factor = 0.5
-		}
-		division = {
-			name = "3rd Mexican Light Infantry"
-			location =	13670
-			division_template =	"Light Infantry Regiment"
-			start_experience_factor =	0.3
-			start_equipment_factor =	0.5
-		}
-		division =	{
-			name =	"4th Mexican Light Infantry"
-			location =	7913
-			division_template =	"Light Infantry Regiment"
-			start_experience_factor =	0.3
-			start_equipment_factor =	0.5
-		}
-		division =	{
-			name =	"5th Mexican Light Infantry"
-			location =	1965
-			division_template =	"Light Infantry Regiment"
-			start_experience_factor =	0.3
-			start_equipment_factor =	0.5
-		}
-		division =	{
-			name =	"6th Mexican Light Infantry"
-			location =	12755
-			division_template =	"Light Infantry Regiment"
-			start_experience_factor =	0.3
-			start_equipment_factor =	0.5
-		}
-		division =	{
-			name =	"7th Mexican Light Infantry"
-			location =	8089
-			division_template =	"Light Infantry Regiment"
-			start_experience_factor =	0.3
-			start_equipment_factor =	0.5
-		}
+	division = {
+		name = "1st Mexican Light Infantry"
+		location = 1952
+		division_template = "Light Infantry Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2nd Mexican Light Infantry"
+		location = 4956
+		division_template = "Light Infantry Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3rd Mexican Light Infantry"
+		location =	13670
+		division_template =	"Light Infantry Regiment"
+		start_experience_factor =	0.3
+		start_equipment_factor =	0.5
+	}
+	division =	{
+		name =	"4th Mexican Light Infantry"
+		location =	7913
+		division_template =	"Light Infantry Regiment"
+		start_experience_factor =	0.3
+		start_equipment_factor =	0.5
+	}
+	division =	{
+		name =	"5th Mexican Light Infantry"
+		location =	1965
+		division_template =	"Light Infantry Regiment"
+		start_experience_factor =	0.3
+		start_equipment_factor =	0.5
+	}
+	division =	{
+		name =	"6th Mexican Light Infantry"
+		location =	12755
+		division_template =	"Light Infantry Regiment"
+		start_experience_factor =	0.3
+		start_equipment_factor =	0.5
+	}
+	division =	{
+		name =	"7th Mexican Light Infantry"
+		location =	8089
+		division_template =	"Light Infantry Regiment"
+		start_experience_factor =	0.3
+		start_equipment_factor =	0.5
+	}
+	division = {
+		name = "1st Mexican Infantry Brigade"
+		location = 4956
+		division_template = "Line Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2nd Mexican Infantry Brigade"
+		location = 1965
+		division_template = "Line Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3rd Mexican Infantry Brigade"
+		location = 12867
+		division_template = "Line Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "4th Mexican Infantry Brigade"
+		location = 1945
+		division_template = "Line Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
 }

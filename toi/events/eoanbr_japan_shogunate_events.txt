@@ -2231,14 +2231,28 @@ add_namespace = JAP_tokugawa_shogunate
 		# log = "option:				name = JAP_tokugawa_shogunate.57.f"
 				trigger = { NOT = { OR = { tag = TSH tag = USA tag = QNG tag = KOR is_subject_of = TSH } } }
 				# unlock_decision_tooltip = TSH_decision_european_amity_treaty
-				activate_targeted_decision = {
-					target = TSH
-					decision = TSH_decision_european_amity_treaty
+				if = {
+					limit = {
+						TSH = {
+							is_subject = no
+							NOT = { has_idea = institution_imperialism }
+							has_navy_size = {
+								size < 50
+							}
+						}
+					}
+					activate_targeted_decision = {
+						target = TSH
+						decision = TSH_decision_european_amity_treaty
+					}
+				}
+				else = {
+					add_political_power = 100
 				}
 			}
 		}
 	# Generic Amity Treaty Event (West)
-		news_event = {
+		news_event = { 
 			id = JAP_tokugawa_shogunate.58
 			title = JAP_tokugawa_shogunate.58.t
 			desc = JAP_tokugawa_shogunate.58.d
@@ -8245,8 +8259,10 @@ add_namespace = JAP_tokugawa_shogunate
 									}
 								}
 							}
-							eoanbr_institutions_inherit = yes
 							inherit_technology = TSH
+							eoanbr_institutions_inherit = yes
+							set_temp_variable = { institution_progress_temp = 30 }
+							eoanbr_institutions_humanitive_change = yes
 							SAT = {
 								transfer_navy = {
 									target = JAP
@@ -8286,15 +8302,6 @@ add_namespace = JAP_tokugawa_shogunate
 								transfer_navy = {
 									target = JAP
 								}
-							}
-
-							if = {
-								limit = {
-									TSH = {
-										has_idea = victorian_era
-									}
-								}
-								add_ideas = victorian_era
 							}
 							set_cosmetic_tag = JAP_meiji_rebellion_cosmetic
 

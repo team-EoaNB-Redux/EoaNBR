@@ -826,7 +826,7 @@ focus_tree = {
 			focus = afr_asphalting_roads
 		}
 		available = {
-			has_idea = machine_era
+			has_idea = institution_mechanization
 		}
 		completion_reward = {
 			random_owned_controlled_state = {

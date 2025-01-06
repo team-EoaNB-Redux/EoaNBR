@@ -2116,11 +2116,6 @@
  heir.7.d: "[Root.GetName] is still in shock after news spread this morning that our heir was found dead. We do not know what got to him, it might have been an assassin, a sudden illness or simply old age, but the succession of our country is once again in shaky hands..."
  heir.7.a: "Our nation mourns today."
 
- #Religion System
- religion.1.t: "Religious Tensions at our border"
- religion.1.d: "For quite some time now we have been bordering a nation in which the majority religion is one of the denominations of Islam, and our country believes in a denomination of Christianity. This has led to major religious tensions erupting at our border, and we have gotten word that one or two skirmishes have taken place. Should we do something?"
- religion.1.a: "These things happen."
- religion.1.b: "We need to prepare for war!"
 
  #System
  system.1.t: "DEBUG: Init Event"
@@ -3145,14 +3140,6 @@
  aushun.4.b: "No, Slovakia rightfully belongs to us!"
 
  #Technology
- eoanb_tt_tech_1: "We will switch from §YTraditional Army§! to §YVictorian Army§!."
- eoanb_tt_tech_2: "We will switch from §YVictorian Army§! to §YIndustrial Army§!."
- tech.1.t: "Our Army"
- tech.1.d: "Since we and the world have advanced technologically lately, our traditional army structure just doesn't cut it anymore. We should make some reforms to make our Army fit in with current technology and tactics."
- tech.1.a: "We will restructure our army!"
- tech.2.t: "The Age of Machines"
- tech.2.d: "The massive industrial revolution that has taken place in the world, and in our country lately, has left our army a bit out of date. We must adjust to those changes by restructuring the way our army is organized and we must adapt to the new realities of warfare by developing new tactics."
- tech.2.a: "Time for a reform..."
  tech.3.t: "New Publication by Charles Darwin"
  tech.3.d: "A well-known biologist and author in our country by the name of Charles Darwin has published yet another one of his works, entitled \"On the Origin of Species\". This book deals with evolutionary theory, and how species in our world came along to look like and behave as they do. The initial reactions to the book have been overwhelmingly positive, although some members of the church want to see it banned for opposing the story of creation."
  tech.3.a: "He is doing important work."

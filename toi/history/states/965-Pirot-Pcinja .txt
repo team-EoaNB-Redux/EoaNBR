@@ -18,7 +18,7 @@ state={
 			building_infrastructure_size = 1
 
 		}
-		1879.1.1 = {
+		1885.11.1 = {
 			owner = SER
 			add_core_of = SER
 

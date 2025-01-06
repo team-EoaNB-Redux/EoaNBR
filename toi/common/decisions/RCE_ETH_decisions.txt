@@ -3314,7 +3314,6 @@ ETH_Company = {
 		ai_will_do = { factor = 1 }
 		available = {
 			AND = {
-				has_idea = industrializing
 				custom_trigger_tooltip = {
 					tooltip = AFR_detrimental_colonial_impact_greater_10
 					check_variable = {

@@ -27,7 +27,7 @@ state = {
 			4286 1
 		}
 
-		1874.10.10 = {
+		1885.11.1 = {
 			owner = ENG
 			remove_core_of = UCT
 		}

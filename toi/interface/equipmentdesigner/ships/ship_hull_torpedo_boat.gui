@@ -16,7 +16,7 @@ guiTypes = {
 
 		iconType = {
 			name = "equipment_image"
-			spriteType = "GFX_SD_tv_heavy"
+			spriteType = "GFX_SD_tv_torpedo"
 			position = { x = 0 y = 0 }
 		}
 
@@ -126,26 +126,26 @@ guiTypes = {
 				size = { width = 100% height = 100% }
 				
 				containerWindowType = {
-					name = "ship_light_battery"
+					name = "naval_automatic_weapons"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery"
-						position = { x = 332 y = 0 }
+						spriteType = "GFX_SM_torpedo_fixed_battery"
+						position = { x = 330 y = 0 }
 					}
 				}
 
 				containerWindowType = {
-					name = "ship_light_battery@highlight"
+					name = "naval_automatic_weapons@highlight"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
 					iconType = {
 						name = "highlight"
-						spriteType = "GFX_SM_heavy_hull_fixed_heavy_battery@highlight"
-						position = { x = 332 y = 0 }
+						spriteType = "GFX_SM_torpedo_fixed_battery@highlight"
+						position = { x = 330 y = 0 }
 					}
 				}
 
@@ -158,14 +158,60 @@ guiTypes = {
 				size = { width = 100% height = 100% }
 
 				containerWindowType = {
+					name = "ship_torpedo_0"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_tb_spar_torpedo"
+						position = { x = 368 y = 0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_torpedo_0@highlight"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_tb_spar_torpedo@highlight"
+						position = { x = 368 y = 0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_torpedo_3"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_tb_single_torpedo"
+						position = { x = 150 y = 0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_torpedo_3@highlight"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_tb_single_torpedo@highlight"
+						position = { x = 150 y = 0 }
+					}
+				}
+				containerWindowType = {
 					name = "ship_torpedo"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 100% }
 					
 					iconType = {
 						name = "blueprint"
-						spriteType = "GFX_SM_light_hull_torpedo"
-						position = { x = 240 y = 0 }
+						spriteType = "GFX_SM_tb_dual_torpedo"
+						position = { x = 200 y = 0 }
 					}
 				}
 
@@ -176,8 +222,8 @@ guiTypes = {
 					
 					iconType = {
 						name = "blueprint_highlight"
-						spriteType = "GFX_SM_light_hull_torpedo@highlight"
-						position = { x = 240 y = 0 }
+						spriteType = "GFX_SM_tb_dual_torpedo@highlight"
+						position = { x = 200 y = 0 }
 					}
 				}
 			}

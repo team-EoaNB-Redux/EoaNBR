@@ -1289,18 +1289,18 @@ equipments = {
 					
 				}
 			}
+		}
 
-			naval_speed = 10
+		naval_speed = 10
 
-			module_count_limit = {
-				module = ship_torpedo_1
-				count < 1
-			}
-	
-			module_count_limit = {
-				module = ship_torpedo_2
-				count < 1
-			}
+		module_count_limit = {
+			module = ship_torpedo_1
+			count < 1
+		}
+
+		module_count_limit = {
+			module = ship_torpedo_2
+			count < 1
 		}
 		default_modules = {
 			fixed_ship_battery_slot = empty
@@ -1381,6 +1381,7 @@ equipments = {
 				count < 1
 			}
 		}
+    
 		default_modules = inherit
 		
 		armor_value = 0
@@ -1421,7 +1422,7 @@ equipments = {
 			fixed_ship_armor_slot = inherit
 			fixed_ship_torpedo_slot = inherit
 			front_1_custom_slot = inherit
-			mid_1_custom_slot = inherit
+			# mid_1_custom_slot = inherit
 		}
 		
 		default_modules = {
@@ -1466,7 +1467,7 @@ equipments = {
 			fixed_ship_armor_slot = inherit
 			fixed_ship_torpedo_slot = inherit
 			front_1_custom_slot = inherit
-			mid_1_custom_slot = inherit
+			# mid_1_custom_slot = inherit
 		}
 		
 		default_modules = {

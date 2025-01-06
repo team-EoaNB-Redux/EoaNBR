@@ -1765,6 +1765,8 @@ eoanb_category_diplomatic_actions = {
 		activation = {
 			always = no
 		}
+		
+		allowed = { tag = USA }
 
 		is_good = yes
 
@@ -1789,6 +1791,8 @@ eoanb_category_diplomatic_actions = {
 		activation = {
 			always = no
 		}
+		
+		allowed = { tag = USA }
 
 		is_good = yes
 	}
@@ -1807,6 +1811,8 @@ eoanb_category_diplomatic_actions = {
 		activation = {
 			always = no
 		}
+		
+		allowed = { tag = USA }
 
 		is_good = yes
 	}
@@ -1825,6 +1831,8 @@ eoanb_category_diplomatic_actions = {
 		activation = {
 			always = no
 		}
+		
+		allowed = { tag = USA }
 
 		is_good = yes
 	}
@@ -5449,7 +5457,10 @@ USA_return_from_ashes = {
 					USA = { change_tag_from = ROOT }
 				}
 				load_focus_tree = generic_vic_ft
-				USA = { inherit_technology = ROOT }
+				USA = {
+					inherit_technology = ROOT
+					inherit_institutions = yes
+				}
 				every_state = {
 					limit = {
 						OR = {

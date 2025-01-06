@@ -364,7 +364,6 @@ ideas = {
 						}
 					}
 				}
-				has_idea = pre_industrial_era
 				custom_trigger_tooltip = {
 					tooltip = eoanb_law_reform_tip
 					AND = {

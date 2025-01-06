@@ -114,7 +114,7 @@ state = {
 		}
 
 		# Blood and Iron
-		1870.1.1 = {
+		1870.5.11 = {
 			buildings = {
 				infrastructure = 6
 				# farm = 1

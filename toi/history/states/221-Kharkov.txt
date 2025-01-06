@@ -14,21 +14,14 @@ state={
 				infrastructure = 3
 				industrial_complex = 1
 			}
-			
-			#Agriculture
-			set_variable = { crop_farm_size = 3 } 
 
-			# set_variable = {
-			# 	building_infrastructure_size = 1
-			# }
-			# set_variable = {
-			# 	building_industrial_goods_factory_size = 3
-			# }
+			#Agriculture
+			set_variable = { crop_farm_size = 1 }
 			victory_points = {
-				418 5 
+				418 5
 			}
 			victory_points = {
-				11462 1 
+				11462 1
 			}
 
 		}
@@ -36,9 +29,9 @@ state={
 	}
 
 	provinces={
-		418 3409 3508 3531 6530 6554 6578 9531 9556 11397 11541 
+		418 3409 3508 3531 6530 6554 6578 9531 9556 11397 11541
 	}
-	manpower=746158
+	manpower=646158
 	buildings_max_level_factor=1.000
 	state_category = rural
 	local_supplies=0.000

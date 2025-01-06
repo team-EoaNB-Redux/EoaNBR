@@ -28,7 +28,7 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = SIA
 		}
 		afr_state_setup_scripted_effect = yes
@@ -53,7 +53,7 @@ state = {
 		set_variable = { building_oil_well_size = 0 }
 		set_variable = { building_valuables_extractor_size = 0 }
 
-		1905.1.1 = {
+		1912.1.1 = {
 			owner = CCH
 			add_core_of = CCH
 		}

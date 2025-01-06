@@ -55,7 +55,7 @@ state = {
 		set_variable = { building_valuables_extractor_size = 1 }
 
 		afr_state_setup_scripted_effect = yes
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = CCH
 			add_core_of = CCH
 		}

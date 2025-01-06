@@ -39,6 +39,11 @@ war_planning = {
 				amount = 84
 				producer = USA
 			}
+			add_equipment_to_stockpile = {
+				type = field_artillery_equipment
+				amount = 6
+				producer = USA
+			}
 			add_war_support = 0.01
 		}
 		ai_will_do = {
@@ -243,7 +248,7 @@ political_actions = {
 				}
 				MEX = {
 					inherit_technology = PREV
-					eoanbr_institutions_inherit = yes
+					inherit_institutions = yes
 					
 					change_tag_from = PREV
 				}
@@ -528,7 +533,6 @@ MEX_decision_category_republican_forces = {
 			}
 		}
 	}
-
 	MEX_southern_militias = {
 		allowed = {
 			tag = MEX
@@ -886,36 +890,53 @@ MEX_foreign_policy = {
 EOANBSYS_national_crisis_decision_category = {
 	MEX_decision_comonfort_interim_resistance_quell = {
 		icon = power_struggle
-		state_target = yes
+		# state_target = yes
 		
 		allowed = {
 			tag = MEX
 		}
 
-		# visible = {
-		# 	always = no
+		visible = {
+			always = no
+		}
+		# target_root_trigger = {
+		# 	has_completed_focus = MEX_focus_comonforts_interim_powers
 		# }
-		target_root_trigger = {
-			has_completed_focus = MEX_focus_comonforts_interim_powers
-		}
-		target_array = MEX.core_states
-		target_trigger = {
-			has_resistance = yes
-			resistance > 0
-		}
+		# target_array = MEX.core_states
+		# target_trigger = {
+		# 	has_resistance = yes
+		# 	resistance > 0
+		# }
     	on_map_mode = map_and_decisions_view
 		# available = {
 
 		# }
 		fixed_random_seed = no
 		cost = 5
-		days_re_enable = 7
+		days_re_enable = 1
 		complete_effect = {
 			random_core_state = {
 				limit = {
-					owner = MEX
+					OWNER = {
+						tag = MEX
+					}
 				}
 				decrease_resistance_la_reforma = yes
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				any_controlled_state = {
+					resistance < 10
+				}
+			}
+			modifier = {
+				factor = 2
+				any_controlled_state = {
+					resistance > 20
+				}
 			}
 		}
 	}
@@ -938,10 +959,26 @@ EOANBSYS_national_crisis_decision_category = {
 
 		complete_effect = {
 			set_temp_variable = { x_temp = 0.1 }
+			if = {
+				limit = {
+					# has_war = yes
+					has_completed_focus = MEX_focus_nationalize_church_property
+				}
+				multiply_temp_variable = { x_temp = 2.5 }
+			}
+			if = {
+				limit = {
+					has_war = no
+					has_completed_focus = MEX_liberate_juarez
+				}
+				multiply_temp_variable = { x_temp = 2 }
+			}
 			add_months_of_income = yes
 			random_core_state = {
 				limit = {
-					owner = MEX
+					owner = {
+						tag = MEX
+					}
 				}
 				random_list = {
 					3 = {
@@ -955,7 +992,66 @@ EOANBSYS_national_crisis_decision_category = {
 						}
 						increase_resistance_la_reforma = yes
 						EOANBSYS_national_crisis_progress_add_one = yes
-						
+						hidden_effect = {
+							random_list = {
+								1 = {
+									modifier = {
+										add = 1
+										resistance > 50
+									}
+									modifier = {
+										add = 1
+										resistance > 60
+									}
+									modifier = {
+										add = 1
+										resistance > 70
+									}
+									modifier = {
+										add = 1
+										resistance > 80
+									}
+									modifier = {
+										add = 1
+										resistance > 90
+									}
+									EOANBSYS_national_crisis_progress_add_three = yes
+								}
+								1 = {
+									modifier = {
+										add = 1
+										resistance > 25
+									}
+									modifier = {
+										add = 1
+										resistance > 35
+									}
+									modifier = {
+										add = 1
+										resistance > 45
+									}
+									EOANBSYS_national_crisis_progress_add_one = yes
+								}
+								1 = {
+									modifier = {
+										add = 1
+										resistance < 25
+									}
+									modifier = {
+										add = 1
+										resistance < 20
+									}
+									modifier = {
+										add = 1
+										resistance < 15
+									}
+									modifier = {
+										add = 1
+										resistance < 10
+									}									
+								}
+							}
+						}
 					}
 					3 = {
 						modifier = {
@@ -972,6 +1068,43 @@ EOANBSYS_national_crisis_decision_category = {
 			add_popularity = {
 				ideology = fundamentalism
 				popularity = -0.0025
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				check_variable = {ROOT.debt_level > 10}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {ROOT.debt_level > 20}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {ROOT.debt_level > 30}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_controlled_state = {
+						has_resistance = yes
+						has_dynamic_modifier = {
+							modifier = dynmod_MEX_resistance_modifier_5
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					any_controlled_state = {
+						has_resistance = yes
+						has_dynamic_modifier = {
+							modifier = dynmod_MEX_resistance_modifier_4
+						}
+					}
+				}
 			}
 		}
 	}
@@ -999,7 +1132,9 @@ EOANBSYS_national_crisis_decision_category = {
 			}
 			random_core_state = {
 				limit = {
-					owner = MEX
+					owner = {
+						tag = MEX
+					}
 				}
 				random_list = {
 					4 = {
@@ -1027,6 +1162,68 @@ EOANBSYS_national_crisis_decision_category = {
 					}
 				}
 			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				any_controlled_state = {
+					has_dynamic_modifier = {
+						modifier = dynmod_MEX_resistance_modifier_2
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				any_controlled_state = {
+					has_dynamic_modifier = {
+						modifier = dynmod_MEX_resistance_modifier_1
+					}
+				}
+			}
+		}
+	}
+}
+
+MEX_decision_category_reform_war = {
+	MEX_decision_call_out_state_guards = {
+		allowed = {
+			tag = MEX
+		}
+		target_root_trigger = {
+			has_completed_focus = MEX_focus_addressing_media_campaign
+		}
+
+		targets = {
+			MEX
+		}
+
+		fixed_random_seed = no
+		cost = 5
+		days_re_enable = 7
+
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					any_state_division = {
+						division_has_majority_template = militia
+					}
+				}
+				delete_unit = {
+					state = THIS
+					disband = yes
+					division_template = "Local Militia"
+				}
+				create_unit = {
+					division = "name = \"National Guard\" division_template \"Republican Infantry\" start_experience_factor 0.5 start_equipment_factor = 0.5"
+					owner = MEX
+					id = 997
+				}
+			}
+
+			set_temp_variable = { x_temp = 500 }
+			set_temp_variable = { country_temp = USA }
+			borrow_money = yes
 		}
 	}
 }

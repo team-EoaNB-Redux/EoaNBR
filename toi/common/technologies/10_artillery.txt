@@ -1,4 +1,4 @@
-#!gfx:interface\eoanbr_technologies.gfx
+#!gfx:interface\eoanbr\eoanbr_technologies.gfx
 #!localisation:localisation\_eoanbr_technologies_l_english.yml
 #do not delete above line!!!!!!
 
@@ -260,9 +260,9 @@ technologies = {
 				}
 			#
 			#Modifier
-				category_artillery = {
+				# category_artillery = {
 
-				}
+				# }
 			#
 		}
 		tech_field_studded_shells = {

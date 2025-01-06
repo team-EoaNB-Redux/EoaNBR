@@ -14,7 +14,7 @@
 
 		ENG_colonial_victoria
 		non_monarchical_system
-		industrializing
+		#industrializing
 		#institution_rationalism
 		#institution_settlement
 		#institution_centralization

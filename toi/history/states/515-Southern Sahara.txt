@@ -19,7 +19,7 @@ state = {
 		add_core_of = TUG
 		owner = TUG
 
-		1906.1.1 = {
+		1912.1.1 = {
 			owner = FRA
 			remove_core_of = TUG
 		}

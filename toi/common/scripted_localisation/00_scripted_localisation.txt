@@ -687,78 +687,78 @@ defined_text = {
 
 defined_text = {
 	name = GetGovTypeName
-	text = {
-		trigger = {
-			has_idea = absolute_monarchy
-		}
-		localization_key = scripted_loc_inline_1470
-	}
-	text = {
-		trigger = {
-			has_idea = constitutional_monarchy
-		}
-		localization_key = scripted_loc_inline_1471
-	}
-	text = {
-		trigger = {
-			has_idea = parliamentary_monarchy
-		}
-		localization_key = scripted_loc_inline_1472
-	}
-	text = {
-		trigger = {
-			has_idea = parliamentary_republic
-		}
-		localization_key = scripted_loc_inline_1473
-	}
-	text = {
-		trigger = {
-			has_idea = semi_presidential_republic
-		}
-		localization_key = scripted_loc_inline_1474
-	}
-	text = {
-		trigger = {
-			has_idea = presidential_republic
-		}
-		localization_key = scripted_loc_inline_1475
-	}
-	text = {
-		trigger = {
-			has_idea = socialist_republic
-		}
-		localization_key = scripted_loc_inline_1476
-	}
-	text = {
-		trigger = {
-			has_idea = socialist_state
-		}
-		localization_key = scripted_loc_inline_1477
-	}
-	text = {
-		trigger = {
-			has_idea = revolutionary_government
-		}
-		localization_key = scripted_loc_inline_1478
-	}
-	text = {
-		trigger = {
-			has_idea = totalitarian_dictatorship
-		}
-		localization_key = scripted_loc_inline_1479
-	}
-	text = {
-		trigger = {
-			has_idea = free_city
-		}
-		localization_key = scripted_loc_inline_1480
-	}
-	text = {
-		trigger = {
-			has_idea = military_junta
-		}
-		localization_key = scripted_loc_inline_1481
-	}
+	# text = {
+	# 	trigger = {
+	# 		#has_idea = absolute_monarchy
+	# 	}
+	# 	localization_key = scripted_loc_inline_1470
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = constitutional_monarchy
+	# 	}
+	# 	localization_key = scripted_loc_inline_1471
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = parliamentary_monarchy
+	# 	}
+	# 	localization_key = scripted_loc_inline_1472
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = parliamentary_republic
+	# 	}
+	# 	localization_key = scripted_loc_inline_1473
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = semi_presidential_republic
+	# 	}
+	# 	localization_key = scripted_loc_inline_1474
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = presidential_republic
+	# 	}
+	# 	localization_key = scripted_loc_inline_1475
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = socialist_republic
+	# 	}
+	# 	localization_key = scripted_loc_inline_1476
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = socialist_state
+	# 	}
+	# 	localization_key = scripted_loc_inline_1477
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = revolutionary_government
+	# 	}
+	# 	localization_key = scripted_loc_inline_1478
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = totalitarian_dictatorship
+	# 	}
+	# 	localization_key = scripted_loc_inline_1479
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = free_city
+	# 	}
+	# 	localization_key = scripted_loc_inline_1480
+	# }
+	# text = {
+	# 	trigger = {
+	# 		has_idea = military_junta
+	# 	}
+	# 	localization_key = scripted_loc_inline_1481
+	# }
 	text = {
 		localization_key = scripted_loc_inline_1482
 	}
@@ -1123,7 +1123,7 @@ defined_text = {
 	name = GetHoGTitle
 	text = {
 		trigger = {
-			has_idea = absolute_monarchy
+			#has_idea = absolute_monarchy
 		}
 		localization_key = scripted_loc_inline_1522
 	}
@@ -1189,7 +1189,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_idea = absolute_monarchy
+				#has_idea = absolute_monarchy
 				has_idea = constitutional_monarchy
 				has_idea = parliamentary_monarchy
 			}
@@ -1224,7 +1224,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_idea = absolute_monarchy
+				#has_idea = absolute_monarchy
 				has_idea = constitutional_monarchy
 				has_idea = parliamentary_monarchy
 			}
@@ -1238,7 +1238,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_idea = absolute_monarchy
+				#has_idea = absolute_monarchy
 				has_idea = constitutional_monarchy
 				has_idea = parliamentary_monarchy
 			}
@@ -1252,7 +1252,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_idea = absolute_monarchy
+				#has_idea = absolute_monarchy
 				has_idea = constitutional_monarchy
 				has_idea = parliamentary_monarchy
 			}
@@ -1266,7 +1266,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				has_idea = absolute_monarchy
+				#has_idea = absolute_monarchy
 				has_idea = constitutional_monarchy
 				has_idea = parliamentary_monarchy
 			}

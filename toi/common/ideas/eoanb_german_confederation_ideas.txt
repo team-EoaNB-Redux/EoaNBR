@@ -943,13 +943,6 @@
 # 				original_tag = GEC
 # 			}
 			
-# 			cancel = {
-# 				GEC = {
-# 					NOT = {
-# 						has_variable = infra_total_bonus
-# 					}
-# 				}
-# 			}
 			
 # 			allowed_civil_war = {
 # 				OR = {

@@ -12,11 +12,6 @@ country_event = {
 	}
 
 	trigger = {
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 		NOT = { has_idea = non_monarchical_system }
 		has_idea = no_heir
 		has_government = autocracy
@@ -56,11 +51,6 @@ country_event = {
 	trigger = {
 		has_stability > 0.8
 		has_war = no
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -103,7 +93,6 @@ country_event = {
 
 	trigger = {
 		has_idea = five_percent
-		NOT = { has_idea = pre_industrial_era }
 		has_stability > 0.5
 	}
 
@@ -143,8 +132,6 @@ country_event = {
 	}
 
 	trigger = {
-		has_idea = industrializing
-		has_idea = victorian_era
 		NOT = {
 			has_government = collectivist_socialism
 			has_government = vanguard_communism
@@ -241,11 +228,6 @@ country_event = {
 			ic_ratio = { tag = OTO ratio < 0.5 }
 			strength_ratio = { tag = OTO ratio < 0.75 }
 		}
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -283,11 +265,6 @@ country_event = {
 			has_idea = open_schools
 			has_idea = compulsory_education
 		}
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -324,7 +301,6 @@ country_event = {
 	trigger = {
 		NOT = { has_war = yes }
 		has_stability > 0.4
-		has_idea = victorian_era
 		OR = {
 			has_idea = privileged_education
 			has_idea = open_schools
@@ -360,37 +336,6 @@ country_event = {
 	immediate = {
 		# log = "[THIS.GetTag]: firing = random.9"
 	}
-
-	# trigger = {
-	# 	has_idea = absolutism
-	# 	autocracy < 0.9
-	# 	has_stability < 0.6
-	# 	OR = {
-	# 		has_idea = pre_industrial_era
-	# 		has_idea = victorian_era
-	# 		has_idea = machine_era
-	# 	}
-	# }
-
-	# mean_time_to_happen = {
-	# 	days = 1500
-	# 	#modifier = {
-	# 	#	factor = 0.7
-	# 	#	has_war = yes
-	# 	#}
-	# 	#modifier = {
-	# 	#	factor = 1.1
-	# 	#	has_stability > 0.5
-	# 	#}
-	# 	#modifier = {
-	# 	#	factor = 0.9
-	# 	#	has_stability < 0.5
-	# 	#}
-	# 	#modifier = {
-	# 	#	factor = 0.8
-	# 	#	has_stability < 0.4
-	# 	#}
-	# }
 	is_triggered_only = yes
 
 	option = {
@@ -432,11 +377,6 @@ country_event = {
 			has_idea = universal_male_suffrage
 			has_idea = universal_suffrage
 		}
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -472,7 +412,6 @@ country_event = {
 
 	trigger = {
 		has_war = yes
-		has_idea = victorian_era
 		has_stability < 0.85
 	}
 
@@ -501,7 +440,7 @@ country_event = {
 
 	immediate = {
 		# log = "[THIS.GetTag]: firing = random.12"
-	}
+	} 
 
 	trigger = {
 		NOT = {
@@ -513,11 +452,6 @@ country_event = {
 				TAG = SAX
 			}
 		}
-		OR = {
-			has_idea = industrializing
-			has_idea = agrarian
-		}
-		has_idea = victorian_era
 		NOT = {
 			has_government = collectivist_socialism
 			has_government = vanguard_communism
@@ -532,10 +466,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 5000
-		#modifier = {
-		#	factor = 0.9
-		#	centrism > 0.3
-		#}
 	}
 
 	option = {
@@ -558,7 +488,10 @@ country_event = {
 	}
 
 	trigger = {
-		has_idea = victorian_era
+		OR = {
+			tag = ENG
+			tag = USA
+		}
 	}
 
 	mean_time_to_happen = {
@@ -607,12 +540,6 @@ country_event = {
 	}
 
 	trigger = {
-		has_idea = industrializing
-		OR = {
-			has_idea = victorian_era
-			has_idea = machine_era
-			has_idea = oil_era
-		}
 		NOT = { has_idea = tribal_slavery }
 		num_of_controlled_states > 3
 	}
@@ -660,11 +587,6 @@ country_event = {
 		has_idea = constitution_adopted
 		NOT = { has_idea = absolutism }
 		has_stability < 0.9
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -709,11 +631,6 @@ country_event = {
 	trigger = {
 		has_idea = open_schools
 		has_stability < 0.7
-		OR = {
-			has_idea = victorian_era
-			has_idea = machine_era
-			has_idea = oil_era
-		}
 		NOT = {
 			OR = {
 				tag = AUS
@@ -766,11 +683,6 @@ country_event = {
 
 	trigger = {
 		has_idea = high_taxes
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -809,11 +721,6 @@ country_event = {
 	trigger = {
 		has_war = no
 		has_idea = tot_economic_mobilisation
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -868,11 +775,6 @@ country_event = {
 	trigger = {
 		has_war = no
 		has_idea = war_economy
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -927,11 +829,6 @@ country_event = {
 	trigger = {
 		has_war = no
 		has_idea = partial_economic_mobilisation
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -987,11 +884,6 @@ country_event = {
 		NOT = { TAG = PRS }
 		has_war = no
 		has_idea = low_economic_mobilisation
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -1046,11 +938,6 @@ country_event = {
 	trigger = {
 		has_war = no
 		has_idea = civilian_economy
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-		}
 		NOT = { has_idea = economic_boom }
 	}
 
@@ -1169,12 +1056,6 @@ country_event = {
 			is_coastal = yes
 			infrastructure > 0
 		}
-		OR = {
-			has_idea = pre_industrial_era
-			has_idea = victorian_era
-			has_idea = machine_era
-			has_idea = oil_era
-		}
 	}
 
 	mean_time_to_happen = {
@@ -1274,7 +1155,6 @@ country_event = {
 
 	trigger = {
 		has_war = yes
-		has_idea = victorian_era
 		amount_research_slots > 1
 	}
 

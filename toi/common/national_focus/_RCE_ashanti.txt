@@ -364,7 +364,7 @@ focus_tree = {
 		prerequisite = { focus = ASH_cotton_plantations }
 
 		completion_reward = {
-							if = {
+			if = {
 				limit = { ROOT = { NOT = { num_of_civilian_factories > 0 } } }
 				random_owned_controlled_state ={
 					limit = {
@@ -397,8 +397,8 @@ focus_tree = {
 		prerequisite = { focus = ASH_construct_logging_camps }
 
 		completion_reward = {
-													add_stability = -0.02
-													add_manpower = 1000
+			add_stability = -0.02
+			add_manpower = 1000
 		}
 	}
 

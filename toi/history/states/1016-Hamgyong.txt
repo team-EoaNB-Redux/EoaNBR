@@ -39,7 +39,7 @@ state = {
 		set_variable = { building_oil_well_size = 0 }
 		set_variable = { building_valuables_extractor_size = 0 }
 
-		1910.1.1 = {
+		1912.1.1 = {
 			owner = JAP
 			add_claim_by = JAP
 		}

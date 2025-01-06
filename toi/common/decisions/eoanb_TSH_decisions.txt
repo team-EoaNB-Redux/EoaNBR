@@ -90,9 +90,9 @@ eoanb_category_politics_foreign = {
 		visible = {
 			TSH = {
 				is_subject = no
-				has_idea = pre_industrial_era
+				NOT = { has_idea = institution_imperialism }
 				has_navy_size = {
-					size < 25
+					size < 50
 				}
 			}
 		}
@@ -2495,7 +2495,6 @@ eoanb_category_military = {
 		allowed = { tag = TSH }
 
 		visible = {
-			hidden_trigger = { has_idea = victorian_era }
 			has_completed_focus = JAP_vic_firearms_research
 		}
 
@@ -2532,7 +2531,6 @@ eoanb_category_military = {
 		allowed = { tag = TSH }
 
 		visible = {
-			hidden_trigger = { has_idea = victorian_era }
 			has_completed_focus = JAP_vic_western_field_training
 		}
 
@@ -2569,7 +2567,6 @@ eoanb_category_military = {
 		icon = artillery
 
 		visible = {
-			hidden_trigger = { has_idea = victorian_era }
 			has_completed_focus = JAP_vic_field_gun_research
 		}
 

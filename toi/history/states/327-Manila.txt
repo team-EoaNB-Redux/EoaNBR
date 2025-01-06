@@ -31,7 +31,7 @@ state = {
 		}
 		add_core_of = SPH
 
-		1898.12.10 = {
+		1900.6.1 = {
 			owner = USA
 			remove_core_of = SPH
 		}

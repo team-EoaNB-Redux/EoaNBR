@@ -19,7 +19,7 @@ state = {
 		}
 		add_core_of = SIX
 		#add_claim_by = USA
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = USA
 		}
 		set_state_flag = NA_B_Disregardable_State

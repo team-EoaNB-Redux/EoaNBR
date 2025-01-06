@@ -3735,7 +3735,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		ai_will_do = { base = 4 }
+		ai_will_do = { base = 1000 }
 
 		prerequisite = { focus = USA_Focus_ACW_The_South }
 		prerequisite = { focus = USA_Focus_American_Civil_War }
@@ -3819,6 +3819,9 @@ focus_tree = {
 		prerequisite = { focus = USA_Focus_American_Civil_War }
 		bypass = {
 			has_global_flag = ACW_American_Civil_War_Happened
+			NOT = {
+				controls_state = 1091
+			}
 		}
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -3831,6 +3834,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			increase_military_spendage_by_one = yes
 		}
 	}
 	focus = {
@@ -3842,7 +3846,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		ai_will_do = { base = 4 }
+		ai_will_do = { base = 1000 }
 
 		prerequisite = { focus = USA_Focus_ACW_Defend_Washington }
 		available = {
@@ -3859,6 +3863,7 @@ focus_tree = {
 				remove_idea = USA_idea_morill_tariff_law
 				add_idea = USA_Revenue_Act_Of_1861
 			}
+			increase_military_spendage_by_one = yes
 			add_1_milfac_random_state = yes
 			add_political_power = -50
 		}
@@ -3931,7 +3936,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		ai_will_do = { base = 4 }
+		ai_will_do = { base = 1000 }
 
 		prerequisite = { focus = USA_Focus_ACW_Defend_Washington }
 		available = {
@@ -3956,7 +3961,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		ai_will_do = { base = 40 }
+		ai_will_do = { base = 1000 }
 
 		prerequisite = { focus = USA_Focus_ACW_Martial_Law }
 		prerequisite = { focus = USA_Focus_ACW_Revenue_Act }
@@ -3996,6 +4001,7 @@ focus_tree = {
 			set_temp_variable = { acw_draft_count_change = 2 }
 			ACW_Draft_Count_Get = yes
 			add_command_power = 100
+			increase_military_spendage_by_one = yes
 		}
 		allow_branch = {
 			if = {
@@ -4285,6 +4291,7 @@ focus_tree = {
 			ACW_Weapons_Count_Get = yes
 			set_temp_variable = { acw_draft_count_change = 5 }
 			ACW_Draft_Count_Get = yes
+			increase_military_spendage_by_one = yes
 		}
 	}
 	focus = {
@@ -4456,6 +4463,8 @@ focus_tree = {
 				limit = { has_idea = USA_Spirit_Civil_War_Attack1 }
 				add_ideas = USA_Spirit_Civil_War_Defend1
 			}
+			#recruit character emory upton
+			recruit_character =  USA_character_emory_upton
 		}
 	}
 	focus = {

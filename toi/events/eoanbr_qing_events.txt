@@ -2270,6 +2270,7 @@ country_event = { #Qing shattered
 					}
 					set_cosmetic_tag = TAN_uryankhay_republic
 					inherit_technology = ROOT
+					inherit_institutions = yes
 					set_popularities = {
 						anarchism = 0
 						vanguard_communism = 0

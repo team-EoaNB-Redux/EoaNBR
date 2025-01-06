@@ -14,7 +14,7 @@ state = {
 			#industrial_complex = 1
 		}
 
-		1898.12.10 = {
+		1900.6.1 = {
 			owner = USA
 			remove_core_of = SPH
 		}

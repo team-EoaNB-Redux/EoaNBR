@@ -15,6 +15,11 @@ state = {
 		owner = BET
 		add_core_of = BET
 
+		1885.11.1 = {
+			owner = PRS
+			remove_core_of = BET
+		}
+
 		afr_state_setup_scripted_effect = yes
 	}
 	local_supplies = 0.0

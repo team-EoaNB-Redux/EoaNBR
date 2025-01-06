@@ -145,6 +145,10 @@ eoanb_category_military = {
 			always = no
 		}
 
+		allowed = {
+			tag = ENG
+		}
+
 		#cancel_trigger = {
 		#
 		#}

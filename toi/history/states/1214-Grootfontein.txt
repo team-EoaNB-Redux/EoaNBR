@@ -18,6 +18,10 @@ state = {
 		add_core_of = OVB
 		owner = OVB
 
+		1885.11.1 = {
+			owner = PRS
+			remove_core_of = OVB
+		}
 		afr_state_setup_scripted_effect = yes
 	}
 }

@@ -2820,6 +2820,7 @@ country_event = {
 				transfer_state = 132
 				set_capital = { state = 128 }
 				inherit_technology = ENG
+				inherit_institutions = yes
 				load_oob = "BWR_revolt"
 			}
 			BWR = {
@@ -3522,6 +3523,7 @@ news_event = {
 			transfer_state = 135
 			transfer_state = 134
 			inherit_technology = ENG
+			inherit_institutions = yes
 			load_oob = "IRE_1857"
 		}
 		set_country_flag = IRE_in_revolt

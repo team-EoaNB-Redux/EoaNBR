@@ -26,7 +26,7 @@ state = {
 		}
 		afr_state_setup_scripted_effect = yes
 
-		1881.1.1 = {
+		1885.11.1 = {
 			owner = FRA
 			add_claim_by = TYO
 			remove_core_of = TYO

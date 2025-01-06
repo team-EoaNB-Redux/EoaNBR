@@ -19,7 +19,7 @@ state = {
 		}
 
 		set_variable = { port_size = 1 }
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = CHL
 			add_core_of = CHL
 			remove_core_of = BOL

@@ -27,10 +27,10 @@ state = {
 			infrastructure = 2
 		}
 		# Blood and Iron
-		1870.1.1 = {
+		1870.5.11 = {
 			remove_core_of = LAO
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = CCH
 			add_core_of = CCH
 			remove_core_of = VNM

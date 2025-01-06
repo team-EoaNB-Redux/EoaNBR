@@ -479,26 +479,14 @@ focus_tree = {
 				controls_state = 54
 				controls_state = 53
 			}
-
-			NOT = {
-				building_total_bonus_present_infra = yes
-			}
 		}
 
 		completion_reward = {
 			#54 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			#53 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			hidden_effect = {
-				set_variable = { infra_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.infra_total = infrastructure_level }
-				}
-				set_variable = { infra_total_bonus = infra_total }
-				add_to_variable = { infra_total_bonus = 2 }
-				add_ideas = BAV_boost_infra
+			add_ideas = BAV_boost_infra
 
-				country_event = { id = bavariafocus.38 days = 3 }
-			}
+			country_event = { id = bavariafocus.38 days = 3 }
 			custom_effect_tooltip = BAV_customeffect_infra_bonus_two
 		}
 	}
@@ -521,25 +509,10 @@ focus_tree = {
 			BAV = {
 				controls_state = 52
 			}
-
-			NOT = {
-				building_total_bonus_present_civ = yes
-			}
 		}
 
 		completion_reward = {
-			#52 = { add_extra_state_shared_building_slots = 1  }
-			#52 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			hidden_effect = {
-				set_variable = { civ_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.civ_total = building_level@industrial_complex }
-				}
-				set_variable = { civ_total_bonus = civ_total }
-				add_to_variable = { civ_total_bonus = 1 }
-
-				add_ideas = BAV_boost_civs
-			}
+			add_ideas = BAV_boost_civs
 			custom_effect_tooltip = BAV_customeffect_civ_bonus
 		}
 	}
@@ -591,27 +564,10 @@ focus_tree = {
 			BAV = {
 				controls_state = 52
 			}
-
-			NOT = {
-				building_total_bonus_present_mil = yes
-			}
 		}
 
 		completion_reward = {
-			#52 = { add_extra_state_shared_building_slots = 1  }
-			#52 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-
-			hidden_effect = {
-				set_variable = { mil_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.mil_total = building_level@arms_factory }
-				}
-				set_variable = { mil_total_bonus = mil_total }
-				add_to_variable = { mil_total_bonus = 1 }
-
-				add_ideas = BAV_boost_mils
-			}
-			custom_effect_tooltip = BAV_customeffect_mil_bonus
+			add_ideas = BAV_boost_mils
 		}
 	}
 
@@ -801,35 +757,18 @@ focus_tree = {
 				controls_state = 54
 				controls_state = 53
 			}
-
-			NOT = {
-				building_total_bonus_present_infra = yes
-			}
 		}
 
 		completion_reward = {
-			#54 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
-			#53 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
-
 			if = {
 				limit = {
 					has_idea = NA_B_small_scale_railways
 				}
 				unlock_decision_tooltip = BAV_decision_railway_upgrade
 			}
+			add_ideas = BAV_boost_infra
 
-			hidden_effect = {
-				set_variable = { infra_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.infra_total = infrastructure_level }
-				}
-				set_variable = { infra_total_bonus = infra_total }
-				add_to_variable = { infra_total_bonus = 4 }
-				add_ideas = BAV_boost_infra
-
-				country_event = { id = bavariafocus.39 days = 3 }
-			}
-			custom_effect_tooltip = BAV_customeffect_infra_bonus_four
+			country_event = { id = bavariafocus.39 days = 3 }
 		}
 	}
 
@@ -851,25 +790,10 @@ focus_tree = {
 			BAV = {
 				controls_state = 42
 			}
-			NOT = {
-				building_total_bonus_present_civ = yes
-			}
 		}
 
 		completion_reward = {
-			#42 = { add_extra_state_shared_building_slots = 1  }
-			#42 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			hidden_effect = {
-				set_variable = { civ_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.civ_total = building_level@industrial_complex }
-				}
-				set_variable = { civ_total_bonus = civ_total }
-				add_to_variable = { civ_total_bonus = 1 }
-
-				add_ideas = BAV_boost_civs
-			}
-			custom_effect_tooltip = BAV_customeffect_civ_bonus
+			add_ideas = BAV_boost_civs
 		}
 	}
 
@@ -919,27 +843,10 @@ focus_tree = {
 			BAV = {
 				controls_state = 54
 			}
-
-			NOT = {
-				building_total_bonus_present_mil = yes
-			}
 		}
 
 		completion_reward = {
-			#54 = { add_extra_state_shared_building_slots = 1  }
-			#54 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-
-			hidden_effect = {
-				set_variable = { mil_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.mil_total = building_level@arms_factory }
-				}
-				set_variable = { mil_total_bonus = mil_total }
-				add_to_variable = { mil_total_bonus = 1 }
-
-				add_ideas = BAV_boost_mils
-			}
-			custom_effect_tooltip = BAV_customeffect_mil_bonus
+			add_ideas = BAV_boost_mils
 		}
 	}
 
@@ -1107,26 +1014,10 @@ focus_tree = {
 			BAV = {
 				controls_state = 53
 			}
-
-			NOT = {
-				building_total_bonus_present_civ = yes
-			}
 		}
 
 		completion_reward = {
-			#53 = { add_extra_state_shared_building_slots = 1  }
-			#53 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			hidden_effect = {
-				set_variable = { civ_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.civ_total = building_level@industrial_complex }
-				}
-				set_variable = { civ_total_bonus = civ_total }
-				add_to_variable = { civ_total_bonus = 1 }
-
-				add_ideas = BAV_boost_civs
-			}
-			custom_effect_tooltip = BAV_customeffect_civ_bonus
+			add_ideas = BAV_boost_civs
 		}
 	}
 
@@ -1155,15 +1046,7 @@ focus_tree = {
 
 			unlock_decision_tooltip = BAV_decision_enact_gewerbefreiheit
 
-			if = {
-				limit = {
-					has_idea = agrarian
-				}
-				activate_mission_tooltip = BAV_mission_industrializing
-				hidden_effect = {
-					activate_mission = BAV_mission_industrializing
-				}
-			}
+			activate_mission = BAV_mission_industrializing
 		}
 	}
 
@@ -1192,15 +1075,7 @@ focus_tree = {
 
 			unlock_decision_tooltip = BAV_decision_enact_gewerbefreiheit
 
-			if = {
-				limit = {
-					has_idea = agrarian
-				}
-				activate_mission_tooltip = BAV_mission_industrializing
-				hidden_effect = {
-					activate_mission = BAV_mission_industrializing
-				}
-			}
+			activate_mission = BAV_mission_industrializing
 		}
 	}
 
@@ -1332,27 +1207,10 @@ focus_tree = {
 			BAV = {
 				controls_state = 53
 			}
-
-			NOT = {
-				building_total_bonus_present_mil = yes
-			}
 		}
 
 		completion_reward = {
-			#53 = { add_extra_state_shared_building_slots = 1  }
-			#53 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-
-			hidden_effect = {
-				set_variable = { mil_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.mil_total = building_level@arms_factory }
-				}
-				set_variable = { mil_total_bonus = mil_total }
-				add_to_variable = { mil_total_bonus = 1 }
-
-				add_ideas = BAV_boost_mils
-			}
-			custom_effect_tooltip = BAV_customeffect_mil_bonus
+			add_ideas = BAV_boost_mils
 		}
 	}
 
@@ -3238,15 +3096,7 @@ focus_tree = {
 				days = 730
 			}
 
-			if = {
-				limit = {
-					has_idea = agrarian
-				}
-				activate_mission_tooltip = BAV_mission_industrializing
-				hidden_effect = {
-					activate_mission = BAV_mission_industrializing
-				}
-			}
+			activate_mission = BAV_mission_industrializing
 		}
 	}
 

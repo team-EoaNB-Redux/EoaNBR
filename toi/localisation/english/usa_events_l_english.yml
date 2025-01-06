@@ -1070,6 +1070,7 @@
 11_ACW_tt: "§GThis will calm tensions§!\n"
 12_ACW_tt: "§RThe United Kingdom and France will intervene in the American Civil War!§!\n"
 13_ACW_tt: "§RThe United Kingdom will intervene in the American Civil War!§!\n"
+USA_cant_defend_monroe_doctrine_tt: "§RThe US will not be able to enforce the Monroe Doctrine while in the grips of a Civil War§!"
 
  usa_news.1.t: "Lincoln-Douglas Debates"
  usa_news.1.d: "As 1858 rolls around, Congressional Positions are tossed up to the state elections. One particular election was the Senate Election in Illinois. Democratic Senator Stephen Douglas sought re-election in Illinois, but he was challenged by a politician named Abraham Lincoln. Famously, Abraham delivered his \"House Divided\" speech, and exemplified the disunity that Slavery has brought to the nation. \n \nAlthough Lincoln would lose and Stephen would get another term as Senator, the Lincoln-Douglas debates brought him nationwide attention."
@@ -1657,7 +1658,7 @@
  USA_clayton_conspiracy.20.a: "Send [?inf_equip_total] Rifles!\nSend [?uni_equip_total] Uniforms"
  USA_clayton_conspiracy.20.b: "Send [?inf_equip_total_med] Rifles!\nSend [?uni_equip_total_med] Uniforms and some additional equipment"
  USA_clayton_conspiracy.20.c: "Send [?inf_equip_total_lg] Rifles!\nSend [?uni_equip_total_lg] Uniforms and more!"
-USA_clayton_conspiracy.20.d1: "Our fellow conspirator, [FROM.GetName], is requesting an infusion of military equipment to they can better prepare their armed forces for the coming struggle. We should keep in mind that not sending enough equipment could potentially discourage them from joining."
+ USA_clayton_conspiracy.20.d1: "Our fellow conspirator, [FROM.GetName], is requesting an infusion of military equipment to they can better prepare their armed forces for the coming struggle. We should keep in mind that not sending enough equipment could potentially discourage them from joining."
  USA_clayton_conspiracy.20.d2: "The armed forces of [FROM.GetName] would benefit greatly from some an infusion of equipment, how much should we send? We should keep in mind that not sending enough could potentially discourage them from joining."
  USA_clayton_conspiracy.22.a: "It is nice to see the Americanos being proactive"
  USA_clayton_conspiracy.22.b: "Perhaps later"

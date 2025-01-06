@@ -437,15 +437,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = agrarian
-				}
-				activate_mission_tooltip = WUR_mission_industrializing
-				hidden_effect = {
-					activate_mission = WUR_mission_industrializing
-				}
-			}
+			activate_mission = WUR_mission_industrializing
 
 			add_timed_idea = {
 				idea = WUR_victorian_stimulate_economy

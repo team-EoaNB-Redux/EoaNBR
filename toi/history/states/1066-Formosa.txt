@@ -16,7 +16,7 @@ state = {
 		}
 		add_core_of = PAR
 		add_core_of = ARG
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = ARG
 		}
 		

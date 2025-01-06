@@ -66,7 +66,18 @@ sub_units = {
 			}
 
 			fort = {
-				attack = 0.1
+				attack = 0.2
+				defence = 0.3
+			}
+
+			urban = {
+				attack = 0.2
+				defence = 0.3
+			}
+
+			metropolis = {
+				attack = 0.2
+				defence = 0.3
 			}
 
 			river = {
@@ -147,7 +158,18 @@ sub_units = {
 			}
 
 			fort = {
-				attack = 0.1
+				attack = 0.2
+				defence = 0.3
+			}
+
+			urban = {
+				attack = 0.2
+				defence = 0.3
+			}
+
+			metropolis = {
+				attack = 0.2
+				defence = 0.3
 			}
 
 			river = {
@@ -341,8 +363,18 @@ sub_units = {
 			}
 
 			fort = {
-				attack = 0.05
-				defence = 0.05
+				attack = 0.1
+				defence = 0.3
+			}
+
+			urban = {
+				attack = 0.1
+				defence = 0.3
+			}
+
+			metropolis = {
+				attack = 0.1
+				defence = 0.3
 			}
 
 			river = {
@@ -436,8 +468,18 @@ sub_units = {
 			}
 
 			fort = {
-				attack = 0.05
-				defence = 0.05
+				attack = 0.1
+				defence = 0.3
+			}
+
+			urban = {
+				attack = 0.1
+				defence = 0.3
+			}
+
+			metropolis = {
+				attack = 0.1
+				defence = 0.3
 			}
 
 			river = {
@@ -530,8 +572,18 @@ sub_units = {
 			}
 
 			fort = {
-				attack = 0.05
-				defence = 0.15
+				attack = 0.1
+				defence = 0.3
+			}
+
+			urban = {
+				attack = 0.1
+				defence = 0.3
+			}
+
+			metropolis = {
+				attack = 0.1
+				defence = 0.3
 			}
 		}
 		howitzer_artillery_towed_support = {
@@ -618,8 +670,18 @@ sub_units = {
 			}
 
 			fort = {
-				attack = 0.05
-				defence = 0.15
+				attack = 0.1
+				defence = 0.3
+			}
+
+			urban = {
+				attack = 0.1
+				defence = 0.3
+			}
+
+			metropolis = {
+				attack = 0.1
+				defence = 0.3
 			}
 		}
 	#
@@ -669,8 +731,8 @@ sub_units = {
 			maximum_speed = 2.0
 	
 			fort = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 			}
 
 			desert = {
@@ -695,14 +757,14 @@ sub_units = {
 			}
 	
 			urban = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 				movement = -0.05
 			}
 
 			metropolis = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 				movement = -0.05
 			}
 	
@@ -769,8 +831,8 @@ sub_units = {
 			maximum_speed = 4.0
 	
 			fort = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 			}
 
 			desert = {
@@ -795,14 +857,14 @@ sub_units = {
 			}
 	
 			urban = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 				movement = -0.05
 			}
 
 			metropolis = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 				movement = -0.05
 			}
 	
@@ -900,14 +962,14 @@ sub_units = {
 			}
 	
 			urban = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 				movement = -0.05
 			}
 
 			metropolis = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 				movement = -0.05
 			}
 	
@@ -1005,14 +1067,14 @@ sub_units = {
 			}
 	
 			urban = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 				movement = -0.05
 			}
 
 			metropolis = {
-				attack = 0.25
-				defence = 0.05
+				attack = 0.5
+				defence = 0.1
 				movement = -0.05
 			}
 	
@@ -1343,7 +1405,7 @@ sub_units = {
 				artillery
 			}
 
-			group = infantry
+			group = support
 
 			categories = {
 				category_army

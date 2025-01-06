@@ -12,8 +12,8 @@
 		#POLITICS
 
 		hos_is_leader
-		pre_industrial_era
-		agrarian
+		#pre_industrial_era
+		#agrarian
 		non_monarchical_system
 		chiefdom
 
@@ -75,6 +75,12 @@
 	}
 
 	set_tech_pre_industrial_late_kingdom = yes
+
+	#Economy
+		set_variable = { starting_pm@token:wood = token:pm_simple_forestry }
+		set_variable = { starting_am@token:wood = token:pm_muscle_power }
+		set_variable = { starting_pm@token:coal = token:pm_shaft_mining }
+		set_variable = { starting_am@token:coal = token:pm_hand_picks_and_tools }
 
 	# POLITICAL LEADERS
 

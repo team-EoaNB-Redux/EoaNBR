@@ -11,11 +11,11 @@ state={
 		victory_points = {
 			4686 3 
 		}
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = RUS
 			remove_core_of = KOK
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			add_core_of = RUS
 		}
 	}

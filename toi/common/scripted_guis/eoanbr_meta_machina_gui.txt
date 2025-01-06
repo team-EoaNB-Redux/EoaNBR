@@ -176,6 +176,10 @@ scripted_gui = {
 				set_variable = { eoanbr_startup_event_sidebar_page = 2 }
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	startup_event_container_submod_window = {
 		window_name = "startup_event_submod_container"
@@ -205,6 +209,10 @@ scripted_gui = {
 				set_variable = { eoanbr_startup_event_sidebar_page = 2 }
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	startup_event_container_partners_window = {
 		window_name = "startup_event_partners_container"
@@ -227,6 +235,10 @@ scripted_gui = {
 			submod_button_click = {
 				set_variable = { eoanbr_startup_event_sidebar_page = 1 }
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 	ingame_wiki = {
@@ -254,6 +266,10 @@ scripted_gui = {
 					set_variable = { show_local_ingame_wiki = 0 }
 				}
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 	local_ingame_wiki = {
@@ -306,6 +322,10 @@ scripted_gui = {
 			}
 
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	overall_score_info = {
 		context_type = diplomacy_target_context
@@ -326,7 +346,7 @@ scripted_gui = {
 		ai_weights = {
 		}
 		ai_enabled = {
-		    always = no
+			always = no
 		}
 	}
 
@@ -349,7 +369,7 @@ scripted_gui = {
 		ai_weights = {
 		}
 		ai_enabled = {
-		    always = no
+			always = no
 		}
 	}
 }

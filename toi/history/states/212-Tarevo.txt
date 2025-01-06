@@ -6,6 +6,7 @@ state = {
 	local_supplies = 0.0 
 	resources = {
 		wood = 2.000
+		iron = 6
 	}
 
 	history = {
@@ -15,10 +16,6 @@ state = {
 		}
 		add_core_of = OTO
 		add_core_of = BUL
-		
-		set_variable = { building_lumber_mill_size = 3 }
-		set_variable = { building_metals_mine_size = 3 }
-		set_variable = { building_coal_mine_size = 7 }
 	}
 
 	provinces = {

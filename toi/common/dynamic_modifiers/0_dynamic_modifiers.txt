@@ -795,7 +795,8 @@ RAJ_agrarianism = {
 		resistance_decay = -0.2
 		required_garrison_factor = -0.75
 		hidden_modifier = {
-			resistance_activity = -1.1
+			resistance_garrison_penetration_chance = -1.2
+			resistance_activity = -1.2
 		}
 	}
 
@@ -809,6 +810,7 @@ RAJ_agrarianism = {
 		resistance_growth = 0.05
 		required_garrison_factor = 0.5
 		hidden_modifier = {
+			resistance_garrison_penetration_chance = 0.1
 			resistance_activity = 0.1
 		}
 	}
@@ -823,6 +825,7 @@ RAJ_agrarianism = {
 		resistance_growth = 0.025
 		required_garrison_factor = 0.25
 		hidden_modifier = {
+			resistance_garrison_penetration_chance = 0.05
 			resistance_activity = 0.05
 		}
 	}
@@ -844,7 +847,10 @@ RAJ_agrarianism = {
 		resistance_growth = -0.025
 		required_garrison_factor = -0.25
 		hidden_modifier = {
+			resistance_garrison_penetration_chance = -0.05
 			resistance_activity = -0.05
+			compliance_growth = 0.1
+			compliance_gain = 0.0004
 		}
 	}
 
@@ -858,7 +864,22 @@ RAJ_agrarianism = {
 		resistance_growth = -0.05
 		required_garrison_factor = -0.5
 		hidden_modifier = {
+			resistance_garrison_penetration_chance = -0.1
 			resistance_activity = -0.1
+			compliance_growth = 0.2
+			compliance_gain = 0.0008
 		}
+	}
+	
+	dynmod_local_slavery = {
+		icon = GFX_idea_population_discrimination_laws_slavery
+		enable = {
+			always = no
+		}
+
+		local_building_factory_attractiveness_factor = -0.05
+		local_building_resource_output_factor = -0.05
+		local_building_plantation_attractiveness_modifier = 2
+		local_building_plantation_output_factor = 0.15
 	}
 ###

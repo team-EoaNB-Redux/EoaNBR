@@ -790,6 +790,8 @@
  historical_option: "§CHistorical Option§!"
  unfinished_content_tt: "§RUnfinished Content§!"
  eoanb_incompent_commander: "Incompetent Commander"
+ eoanbr_napoleonic_general: "School of Napoleonic Thought"
+ eoanbr_general_staff: "Subordinate to The General Staff"
  DCI_STATE_TOOLTIP: "Current State §YDetrimental Impact§!"
  DCI_STATE_TOOLTIP_DELAYED: ""
  DCI_value_state: "[This.GetDciRisk]"

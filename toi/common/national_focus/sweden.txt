@@ -36,20 +36,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		bypass = { NOT = { has_idea = agrarian } }
+		bypass = {
+			has_idea = institution_mechanization
+		}
 		available = {
 			date > 1860.1.1
-			AND = {
-				has_idea = agrarian
-				num_of_factories > 7 
-			}
+			num_of_factories > 7
 		}
-		
+
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = agrarian
-				add_idea = industrializing
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_innovative_change = yes
 		}
 	}
 
@@ -757,7 +754,7 @@ focus_tree = {
 			add_political_power = -25
 		}
 	}
-	
+
 	focus = {
 		id = SWE_swe_men
 		x = 20
@@ -774,7 +771,7 @@ focus_tree = {
 			add_manpower = 1500
 		}
 	}
-	
+
 	focus = {
 		id = SWE_support_tra_patronerna
 		x = 12
@@ -798,7 +795,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_limmit_the_tra_patronerna
 		x = 14
@@ -822,7 +819,7 @@ focus_tree = {
 		    }
 		}
 	}
-	
+
 	focus = {
 		id = SWE_industrialise
 		x = 13
@@ -835,30 +832,25 @@ focus_tree = {
 		ai_will_do {
 			factor = 10
 		}
-		bypass = { NOT = { has_idea = industrializing } }
 		available = {
 		date > 1875.1.1
 			OR = {
 				AND = {
-					has_idea = industrializing
 					has_idea = SWE_Johan_August_Gripenstedt
 					num_of_factories > 24
 				}
 				AND = {
-					has_idea = industrializing
 					num_of_factories > 34
 				}
 			}
 		}
 		completion_reward = {
 			unlock_decision_tooltip = SWE_decision_domnarvets_jernverk
-			swap_ideas = {
-				remove_idea = industrializing
-				add_idea = industrialized
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+		eoanbr_institutions_innovative_change = yes
 		}
 	}
-	
+
 	focus = {
 		id = SWE_scania_railways
 		x = 12
@@ -878,7 +870,7 @@ focus_tree = {
 			unlock_decision_tooltip = SWE_decision_scania_freight_corridor
 		}
 	}
-	
+
 	focus = {
 		id = SWE_upsala_lenna_jernvag
 		x = 14
@@ -898,7 +890,7 @@ focus_tree = {
 			unlock_decision_tooltip = SWE_decision_upsala_railway
 		}
 	}
-	
+
 	focus = {
 		id = SWE_jamtland_railway
 		x = 11
@@ -918,7 +910,7 @@ focus_tree = {
 			unlock_decision_tooltip = SWE_decision_jamtland_railway
 		}
 	}
-	
+
 	focus = {
 		id = SWE_vega_expedition
 		x = 13
@@ -937,7 +929,7 @@ focus_tree = {
 			navy_experience = 50
 		}
 	}
-	
+
 	focus = {
 		id = SWE_chemical_society
 		x = 15
@@ -1419,7 +1411,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_carolean_heritage
 		cost = 70
@@ -1629,7 +1621,7 @@ focus_tree = {
 			}
 
 		}
-		icon = GFX_goal_SWE_sweden_army_reform		
+		icon = GFX_goal_SWE_sweden_army_reform
 		completion_reward = {
 			if = {
 				limit = { has_idea = SWE_Inept_Army }
@@ -1864,7 +1856,7 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_tooltip = SWE_decision_order_ericsson_class_monitors
 			unlock_decision_tooltip = SWE_decision_order_non_ericsson_class_monitors
-			
+
 			add_tech_bonus = {
 				bonus = 0.5 uses = 1 category = naval_equipment
 			}
@@ -2102,7 +2094,7 @@ focus_tree = {
 		#		add_manpower = -200
 		#	}
 		#}
-		
+
 		focus = {
 			id = SWE_repay_loan
 			relative_position_id = SWE_colonial_ambition
@@ -2128,7 +2120,7 @@ focus_tree = {
 			# } moved state to sicily
 			add_timed_idea = { idea = SWE_repayed_loan days = 365 }
 			MCK = { add_timed_idea = { idea = SWE_payed_loan days = 365 } }
-			add_political_power = -252	
+			add_political_power = -252
 			MCK = { add_political_power = 252 }
 			# SWE = {
 	   	# 		  transfer_state = 1380 moved state to sicily
@@ -2337,7 +2329,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_Manipulation_CON
-		x = 55	
+		x = 55
 		y = 3
 		cost = 70
 		ai_will_do = { factor = 1 }
@@ -2701,14 +2693,14 @@ focus_tree = {
 			add_timed_idea = { idea = SWE_I_Hate_Capitalism days = 7300 }
 		}
 	}
-	
+
 	focus = {
 		id = SWE_give_up_our_claims
 		x = 54
 		y = 10
 		cost = 70
-		ai_will_do = { 
-		factor = 10 
+		ai_will_do = {
+		factor = 10
 		modifier={
 				is_historical_focus_on = yes
 				add = 100
@@ -2728,7 +2720,7 @@ focus_tree = {
 			remove_state_claim = 146
 		}
 	}
-	
+
 	focus = {
 		id = SWE_prepere_to_take_land_back
 		x = 56
@@ -2747,7 +2739,7 @@ focus_tree = {
 			add_state_claim = 191
 		}
 	}
-	
+
 	focus = {
 		id = SWE_for_sverige
 		x = 56
@@ -2919,7 +2911,7 @@ focus_tree = {
 					}
 				}
 			}
-			
+
 			add_to_variable = {
 				var = conservative_support
 				value = 2

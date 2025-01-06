@@ -85,7 +85,7 @@ state = {
 				industrial_complex = 2
 			}
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = PRS
 			add_core_of = PRS
 			remove_core_of = BAV

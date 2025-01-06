@@ -119,32 +119,10 @@ KRU_US_Investment_Diplomacy = {
 
 		remove_effect = {
 			298 = {
-				if={
-					limit = {
-						free_building_slots = {
-							building = naval_base
-							size > 0
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = naval_base
-											size > 0
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_building_construction = {
-						type = naval_base
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
 				}
 			}
 		}

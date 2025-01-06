@@ -22,12 +22,13 @@ state = {
 		owner = FTT
 		1857.1.1 = {
 			add_core_of = FTT
+			add_claim_by = SNG
 			buildings = {
 				infrastructure = 1
 			}
 		}
 		# Blood and Iron
-		1870.5.19 = {
+		1870.5.11 = {
 			owner = SNG
 			remove_core_of = FTT
 		}

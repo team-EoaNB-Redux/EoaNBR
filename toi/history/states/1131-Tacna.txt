@@ -17,11 +17,11 @@ state = {
 		}
 		add_core_of = PRU
 
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = PRU
 		}
 
-		1884.1.1 = {
+		1885.11.1 = {
 			owner = CHL
 			add_core_of = CHL
 		}

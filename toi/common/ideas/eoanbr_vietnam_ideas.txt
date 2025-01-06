@@ -199,8 +199,7 @@ ideas = {
 			allowed = { tag = JAI }
 			available = {
 				has_government = fundamentalism
-				has_idea = pre_industrial_era
-				has_idea = agrarian
+				NOT = { has_idea = institution_centralization }
 				OR = {
 					is_subject = no
 					OVERLORD = {

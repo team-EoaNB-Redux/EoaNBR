@@ -71,6 +71,8 @@ ideologies = {
 			natconserv = { }
 			
 			tribal_western_industrialist = { }
+
+			dixie_progressivism = { can_be_randomly_selected = no } # probably just for Woodrow Wilson
 		}
 
 		dynamic_faction_names = {

@@ -16,7 +16,7 @@ state = {
 		}
 		add_core_of = SIX
 		#add_claim_by = USA
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = USA
 		}
 		victory_points = {

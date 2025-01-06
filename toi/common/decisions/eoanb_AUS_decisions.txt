@@ -5112,7 +5112,7 @@ AUS_decision_category_habsburg_industry = {
 
 		available = {
 			controls_state = 956
-			956 = { free_building_slots = { building = infrastructure size > 1 include_locked = yes } }
+			956 = { free_building_slots = { building = infrastructure size > 1 } }
 			num_of_civilian_factories_available_for_projects > 1
 		}
 

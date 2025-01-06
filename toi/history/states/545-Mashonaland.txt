@@ -30,7 +30,7 @@ state = {
 
 		afr_state_setup_scripted_effect = yes
 
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = NDE
 			add_core_of = NDE
 		}

@@ -1356,10 +1356,10 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "dynamic_modifiers_grid"
-				position = { x = 400 y = 180 }
+				position = { x = 300 y = 140 }
 				size = { width = 0 height = 0 }
 				format = "LOWER_LEFT"
-				slotsize = { width = 40 height = 47 }
+				slotsize = { width = 50 height = 47 }
 				max_slots_vertical = 1
 			}
 			containerWindowType = {
@@ -1540,7 +1540,7 @@ guiTypes = {
 
 		iconType = {
 			name = "damage_bar"
-			spriteType = "GFX_damage_bar_small"
+			spriteType = "GFX_damage_bar"
 			position = { x = 7 y = 18 }
 			rotation = 1.5708
 		}
@@ -1555,6 +1555,12 @@ guiTypes = {
 		background = {
 			name = "Background"
 			spriteType = "GFX_building_entry_stateview"
+		}
+		
+		iconType = {
+			name = "level_bg"
+			position = { x=8 y=50 }	
+			spriteType = "GFX_generic_text_bg_48"
 		}
 
 		instantTextboxType = {
@@ -1578,6 +1584,38 @@ guiTypes = {
 			spriteType = "GFX_damage_bar"
 			position = { x = 12 y = 36  }
 			rotation = 1.5708
+		}
+	}
+
+	containerWindowType = {
+		name = "province_building_special_icon_entry"
+		position = { x=-8 y=18 }
+		size = { width=50 height= 43 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			spriteType ="GFX_province_landmark_bg"
+		}
+
+		# Since the province building and facility icons are not the same size.
+		# For now use the position type X value as a scale, where 1 = 0.1 scale.
+		positionType = {
+			name = "facility_building_button_scale"
+			position = { x = 4 y = 0}
+		}
+
+		buttonType = {
+			name = "building_button"
+			quadTextureSprite = "GFX_placeholder_bg"
+			position = { x = 14 y = 7 }
+			scale = 1.0
+		}
+		
+		iconType = {
+			name = "damage_bar"
+			spriteType = "GFX_province_landmark_damage_bar"
+			position = { x=6 y=8  }
 		}
 	}
 

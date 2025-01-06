@@ -2182,4 +2182,5 @@ OPERATION_OPEN: "§GClick§! to open"
  RETAIN_CORES: "Retain States With Our Core"
  DIVISION_VIEW_HAS_MEDALS: "This division can be awarded a §HMedal§!.\n§GClick to open Medals view.§!"
  SERVER_LOADING_WAIT: "Pkease be paitent while the server is initializing..."
+ FOCUS_SHORTCUT_TOOLTIP: "§GLeft-click§! to pan to the $PATH|H$ path."
 

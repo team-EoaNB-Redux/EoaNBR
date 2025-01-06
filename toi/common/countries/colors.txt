@@ -1150,3 +1150,7 @@ NIR = {
 	color = rgb { 0 56 132 }
 	color_ui = rgb { 0 56 132 }
 }
+WES = {
+	color = rgb { 210 210 210 }
+	color_ui = rgb { 248 21 92 }
+}

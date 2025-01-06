@@ -3851,6 +3851,11 @@ USAROD_Reconstruction_Zone_Setup1 = {
 	set_country_flag = USA_unintegrated_seceded_state_country_flag
 	load_focus_tree = usa_reconstruction_occupation
 	inherit_technology = USA
+	USA = {
+		PREV = {
+			inherit_institutions = yes
+		}
+	}
 
 	# Cosmetics
 	if = {

@@ -290,7 +290,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CSA_postwar_expand_road_networks
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_transport_tarmac_roads
 		cost = 50
 		relative_position_id = CSA_postwar_keeping_out_rail_barons
 		x = 0
@@ -304,7 +304,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CSA_postwar_embracing_rail_investments
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_transport_railroad_development
 		cost = 50
 		relative_position_id = CSA_postwar_lees_plan
 		x = 2
@@ -322,7 +322,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CSA_postwar_rail_building
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_transport_prefecture_lines_railway
 		cost = 50
 		relative_position_id = CSA_postwar_embracing_rail_investments
 		x = 0
@@ -2212,9 +2212,6 @@ focus_tree = {
 		cost = 50
 		x = -1
 		y = 0
-		prerequisite = {
-			focus = CSA_postwar_giants_traitor_democrats
-		}
 		available = {
 			NOT = { has_war_with = USA }
 			USA = { exists = yes }

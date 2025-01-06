@@ -14,9 +14,9 @@
 		#POLITICS
 
 		hos_is_leader
-		pre_industrial_era
+		#pre_industrial_era
 		law_victorian_army
-		agrarian
+		#agrarian
 		no_heir
 		constitutional_monarchy
 

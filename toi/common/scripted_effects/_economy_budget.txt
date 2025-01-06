@@ -993,6 +993,15 @@
                     }
                     add_to_variable = { PREV.construction_spending = retooling_cost@var:sp_token }
                 }
+
+                # TEMPORARY - Prospecting
+                if = {
+                    limit = {
+                        check_variable = { prospecting@var:sp_token = 1 }
+                    }
+                    add_to_variable = { PREV.construction_spending = 100 }
+                }
+
             }
             add_to_variable = { PREV.military_production_payroll_spending = expenses@token:arms_factory }
             add_to_variable = { PREV.military_production_payroll_spending = expenses@token:dockyard }

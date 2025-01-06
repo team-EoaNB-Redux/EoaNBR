@@ -1,31 +1,83 @@
-# INDOC_Colonial_Aggression_Category = {
-# 	eoanb_decision_indochina_catholic_missions = {
-# 		allowed = {
-# 			OR = {
-# 				tag = FRA
-# 				tag = SPR
-# 				tag = VIN
-# 			}
-# 		}
+INDOC_Colonial_Aggression_Category = {
+	eoanb_decision_establish_cambodian_protectorate = {
+		allowed = {
+			OR = {
+				tag = FRA
+				tag = SPR
+			}
+		}
 
-# 		cost = 0
-# 		fire_only_once = yes
+		cost = 25
+		fire_only_once = yes
 
-# 		available = {
-# 			OR = {
-# 				is_indochina_country = yes
-# 				has_country_flag = INDOC_Missionary_Sender_Country_Flag
-# 			}
-# 			always = no
-# 		}
+		available = {
+			
+		}
 
-# 		visible = { always = yes }
+		visible = { 
+			has_country_flag = has_CAM_protectorate_flag
+		}
 
-# 		complete_effect = {
-# 			add_political_power = 50
-# 		}
-# 	}
-# }
+		complete_effect = {
+			CAM={
+				store_current_ideologies = yes
+			}
+			set_autonomy = {
+				target = CAM
+				autonomous_state = autonomy_imperial_protectorate
+				end_wars = no
+				end_civil_wars = no
+			}
+			CAM={
+				if={
+					limit={
+						ROOT = {tag = FRA}
+					}
+					add_ideas = {AFR_french_protectorate}
+					741={set_variable = {INDOC_Influence_Frame_Var = 1} }
+				}
+				if={
+					limit={
+						ROOT = {tag = SPR}
+					}
+					add_ideas = {AFR_spanish_protectorate}
+					741={set_variable = {INDOC_Influence_Frame_Var = 6} }
+				}
+				load_prevous_ideologies = yes
+			}
+			741={
+				set_demilitarized_zone = no
+			}
+		}
+	}
+}
+
+	# eoanb_decision_indochina_catholic_missions = {
+		# allowed = {
+			# OR = {
+				# tag = FRA
+				# tag = SPR
+				# tag = VIN
+			# }
+		# }
+
+		# cost = 0
+		# fire_only_once = yes
+
+		# available = {
+			# OR = {
+				# is_indochina_country = yes
+				# has_country_flag = INDOC_Missionary_Sender_Country_Flag
+			# }
+			# always = no
+		# }
+
+		# visible = { always = yes }
+
+		# complete_effect = {
+			# add_political_power = 50
+		# }
+	# }
 
 # VIN_Nguyen_Dynasty_Dynastic_Category = {
 # 	eoanb_VIN_tuc_duc_heir_crisis_mission = {

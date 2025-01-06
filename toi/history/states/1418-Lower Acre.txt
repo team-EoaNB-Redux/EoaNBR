@@ -20,7 +20,7 @@ state = {
 		add_core_of = BOL
 		add_claim_by = BRA
 
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = BRA
 			remove_claim_by = BRA
 			add_claim_by = BOL

@@ -24,8 +24,8 @@
 		#STATE OF COUNTRY
 	 	ENG_Victoria
 		has_heir
-		industrializing
-		victorian_era
+		#industrializing
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES
@@ -143,12 +143,18 @@
 
 	# Economy Techs
 	set_tech_victorian_late_industrializing = yes
-	set_variable = { starting_pm@token:steel_foundry = token:pm_hot_blast_process } # Britain starts with the Bessemer Process tech, but almost no furnace in the country was using it at this point.
-	set_variable = { starting_pm@token:textile_mill = token:pm_sewing_machines } # Forcing modern PMs
-	set_variable = { starting_pm@token:consumer_goods_factory = token:pm_mechanical_goods }
-	set_variable = { starting_pm@token:iron = token:pm_blasting }
-	set_variable = { starting_pm@token:coal = token:pm_blasting }
-	set_variable = { starting_pm@token:copper = token:pm_blasting }
+		set_variable = { starting_pm@token:steel_foundry = token:pm_hot_blast_process } # Britain starts with the Bessemer Process tech, but almost no furnace in the country was using it at this point.
+		set_variable = { starting_am@token:crop_farm = token:pm_farm_equipment }
+		
+		set_variable = { starting_am@token:textile_mill = token:pm_steam_engine }
+		set_variable = { starting_am@token:tooling_workshop = token:pm_steam_engine }
+		set_variable = { starting_am@token:steel_foundry = token:pm_steam_engine }
+		set_variable = { starting_am@token:chemical_plant = token:pm_steam_engine }
+		set_variable = { starting_am@token:mechanical_works = token:pm_steam_engine }
+		set_variable = { starting_am@token:consumer_goods_factory = token:pm_steam_engine }
+		set_variable = { starting_am@token:urban_center = token:pm_gas_streetlights }
+
+
 	set_technology = {
 		tech_bessemer_process = 1
 		tech_mechanical_production = 1 
@@ -168,6 +174,8 @@
 		early_alternators = 1
 		woolrich_electrical_generator = 1
 		early_dynamo_generator = 1
+
+		doctrine_victorian_fire_tactics = 1
 	}
 
 	if = {
@@ -895,9 +903,9 @@
 		#	STATE OF COUNTRY	#
 	 	ENG_Victoria
 		has_heir
-		industrialized
+		# industrialized
 	#institution_mechanization
-		victorian_era
+		# #victorian_era
 	#institution_rationalism
 	#institution_settlement
 	#institution_centralization

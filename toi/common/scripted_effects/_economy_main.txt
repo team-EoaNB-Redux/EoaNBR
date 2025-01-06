@@ -79,6 +79,43 @@ _country_advance_time = {
         base_wage_calculation = yes
         on_monthly_industry_ai = yes # Adjusts employment_target
 
+        # TEMPORARY - prospecting
+        for_each_loop = {
+            array = rgos
+            value = r_temp
+
+            set_temp_variable = { r_token = r_temp }
+            if = {
+                limit = {
+                    check_variable = { prospecting@var:r_token = 1 }
+                }
+                set_temp_variable = { roll_temp = random }
+
+                if = {
+                    limit = { check_variable = { roll_temp < discovery_chance@var:r_token } }
+                    rgo_discovery = yes
+                }
+                else_if = {
+                    limit = {
+                        subtract_from_temp_variable = { roll_temp = discovery_chance@var:r_token }
+                        check_variable = { roll_temp < major_discovery_chance@var:r_token }
+                    }
+                    rgo_major_discovery = yes
+                }
+            }
+
+            set_temp_variable = { r_token = r_temp }
+            if = {
+                limit = {
+                    check_variable = { known_reserves@var:r_token > 0 }
+                }
+                set_temp_variable = { known_temp = known_reserves@var:r_token }
+                set_temp_variable = { deposit_temp = known_temp }
+                multiply_temp_variable = { known_temp = -1 }
+                add_rgo_internal = yes
+            }
+        }
+
         pops_balance = yes
         fix_negative_workforce = yes
 
@@ -348,6 +385,8 @@ r_weekly_trade = {
             market_update = yes
         }
     }
+
+    global_market_update = yes
 
     for_each_scope_loop = {
         array = global.econ_order_array

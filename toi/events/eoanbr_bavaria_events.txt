@@ -387,7 +387,6 @@ country_event = {
 					OR = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -398,7 +397,6 @@ country_event = {
 					NOT = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -425,7 +423,6 @@ country_event = {
 					OR = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -436,7 +433,6 @@ country_event = {
 					NOT = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -467,7 +463,6 @@ country_event = {
 					OR = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -478,7 +473,6 @@ country_event = {
 					NOT = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -519,7 +513,6 @@ country_event = {
 					OR = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -530,7 +523,6 @@ country_event = {
 					NOT = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -582,7 +574,6 @@ country_event = {
 				OR = {
 					has_completed_focus = BAV_focusoncivilianindustry
 					has_completed_focus = BAV_focusonmilitaryindustry
-					has_idea = industrializing
 				}
 			}
 			modifier = {
@@ -592,7 +583,6 @@ country_event = {
 					NOT = {
 						has_completed_focus = BAV_focusoncivilianindustry
 						has_completed_focus = BAV_focusonmilitaryindustry
-						has_idea = industrializing
 					}
 				}
 			}
@@ -822,6 +812,7 @@ country_event = {
 				}
 				change_tag_from = BAV
 				inherit_technology = BAV
+				BAV = { GEC = { inherit_institutions = yes } }
 			}
 			
 			puppet = GEC
@@ -962,6 +953,7 @@ country_event = {
 				}
 				change_tag_from = BAV
 				inherit_technology = BAV
+				BAV = { GEC = { inherit_institutions = yes } }
 			}
 		
 			puppet = GEC

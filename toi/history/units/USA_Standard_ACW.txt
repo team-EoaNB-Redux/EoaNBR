@@ -69,7 +69,7 @@ division_template = {
 	regiments = {
 		field_artillery_towed = { x = 0 y = 0 }
 		field_artillery_towed = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
+		mounted_infantry = { x = 0 y = 2 }
 	}
 }
 
@@ -80,6 +80,7 @@ division_template = {
 	regiments = {
 		field_artillery = { x = 0 y = 0 }
 		field_artillery = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
 	}
 }
 

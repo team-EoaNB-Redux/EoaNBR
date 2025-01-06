@@ -131,45 +131,20 @@ eoanb_score_system_calc = {
 					modified_industrial_score = PREV.modified_industrial_score
 				}
 			}
-			
 		}
-		else_if = {
-			limit = { has_idea = agrarian }
-			set_temp_variable = { modified_industrial_score_temp = modified_industrial_score }
-			multiply_temp_variable = { modified_industrial_score_temp = 0.50 }
-			set_variable = { modified_industrial_score = modified_industrial_score_temp }
-		}
-		else_if = {
-			limit = { has_idea = industrializing }
-			set_temp_variable = { modified_industrial_score_temp = modified_industrial_score }
-			multiply_temp_variable = { modified_industrial_score_temp = 0.75 }
-			set_variable = { modified_industrial_score = modified_industrial_score_temp }
-		}
-		else_if = {
-			limit = { has_idea = industrialized }
-			set_temp_variable = { modified_industrial_score_temp = modified_industrial_score }
-			multiply_temp_variable = { modified_industrial_score_temp = 0.85 }
-			set_variable = { modified_industrial_score = modified_industrial_score_temp }
-		}
-		else_if = {
-			limit = { has_idea = electrification }
-			set_temp_variable = { modified_industrial_score_temp = modified_industrial_score }
-			multiply_temp_variable = { modified_industrial_score_temp = 0.90 }
-			set_variable = { modified_industrial_score = modified_industrial_score_temp }
-		}
-		
+
 		#debt
 		if = {
 			limit = {
 				check_variable = {debt_level > 0}
 			}
-			set_temp_variable = { debt_level_temp = debt_level } 
-			set_temp_variable = { debt_level_temp_mod = 1 } 
+			set_temp_variable = { debt_level_temp = debt_level }
+			set_temp_variable = { debt_level_temp_mod = 1 }
 			divide_temp_variable = { debt_level_temp = 150 }
-			subtract_from_temp_variable = { debt_level_temp_mod = debt_level_temp } 
+			subtract_from_temp_variable = { debt_level_temp_mod = debt_level_temp }
 			multiply_variable = { modified_industrial_score = debt_level_temp_mod }
 		}
-		
+
 		add_to_variable = { industrial_score = modified_industrial_score }
 		set_variable = { modified_industrial_score = 0 }
 
@@ -267,7 +242,7 @@ eoanb_score_system_calc = {
 			multiply_temp_variable = { modified_military_score_temp = 0.95 }
 			set_variable = { modified_military_score = modified_military_score_temp }
 		}
-		
+
 		add_to_variable = { military_score = modified_military_score }
 		set_variable = { modified_military_score = 0 }
 
@@ -356,7 +331,7 @@ eoanb_score_system_calc = {
 			add = 1
 			value = v
 			break = b
-				
+
 			if = {
 				limit = { check_variable = { global.score_tag_array^v = THIS } }
 				set_variable = { score_array_position_var = v }
@@ -369,7 +344,7 @@ eoanb_score_system_calc = {
 
 eoanb_ledger_system_calc = {
 
-    clear_array = global.population_array 
+    clear_array = global.population_array
 	clear_array = global.factories_array
 	clear_array = global.divisions_array
 	clear_array = global.ships_array
@@ -378,13 +353,13 @@ eoanb_ledger_system_calc = {
             start = 0
             end = length_temp
             add = 1
-            value = v  
-			add_to_array = { global.population_array = 1 }	
-		    add_to_array = { global.factories_array = 1 }	
+            value = v
+			add_to_array = { global.population_array = 1 }
+		    add_to_array = { global.factories_array = 1 }
 	     	add_to_array = { global.divisions_array = 1 }
             add_to_array = { global.ships_array = 1 }
 	}
-    every_country = {	
+    every_country = {
 		limit = {
 				NOT={
 					tag = UCT
@@ -395,22 +370,22 @@ eoanb_ledger_system_calc = {
             start = 0
             end = length_temp
             add = 1
-            value = v  
-            break = b 
-				
+            value = v
+            break = b
+
 		    if = {
 				limit = { check_variable = { global.score_tag_array^v = THIS } }
 				set_variable = { score_array_position_var_real = score_array_position_var}
 				subtract_from_variable = {score_array_position_var_real = 1}
-			    set_variable = { global.population_array^v = max_manpower_k } 
-				multiply_variable = { global.population_array^v = 0.001 }	
-				set_variable = { global.population_array_b^v = global.population_array^v } 
-				multiply_variable = { global.population_array_b^v = 0.001 }				
+			    set_variable = { global.population_array^v = max_manpower_k }
+				multiply_variable = { global.population_array^v = 0.001 }
+				set_variable = { global.population_array_b^v = global.population_array^v }
+				multiply_variable = { global.population_array_b^v = 0.001 }
                 set_variable = { global.factories_array^v = num_of_factories }
 			    set_variable = { global.divisions_array^v = num_divisions }
 				set_variable = { global.ships_array^v = num_ships }
 				set_variable = { b = 0 }
-			}		
-        }		
+			}
+        }
     }
 }

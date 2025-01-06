@@ -2540,6 +2540,10 @@ eoanb_category_politics_foreign = {
 			always = no
 		}
 
+		allowed = {
+			tag = OMA
+		}
+
 		selectable_mission = no
 		days_mission_timeout = 30
 		is_good = no
@@ -2576,6 +2580,13 @@ eoanb_category_politics_foreign = {
 
 		available = {
 			always = no
+		}
+
+		allowed = {
+			OR = {
+				tag = OMA
+				tag = ZAN
+			}
 		}
 
 		activation = {

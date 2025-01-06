@@ -12,8 +12,8 @@
 		#POLITICS
 
 		hos_is_leader
-		pre_industrial_era
-		agrarian
+		#pre_industrial_era
+		#agrarian
 		non_monarchical_system
 		chiefdom
 
@@ -51,6 +51,10 @@
 		CAU_supply_node_nerf
 	}
 
+	#Economy
+		set_variable = { starting_pm@token:wood = token:pm_saw_mills }
+		set_variable = { starting_am@token:wood = token:pm_muscle_power }
+		
 	#Rivals
 	set_variable = { rival_country = RUS.id }
 	#Most Favoured Country

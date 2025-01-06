@@ -12,7 +12,7 @@ state={
 				infrastructure = 2 }
 
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = KAS
 			add_core_of = KAS
 			remove_core_of = BKS

@@ -98,10 +98,7 @@ ideas = {
 				allowed = { is_japanese_country = yes }
 
 				available = {
-					OR = {
-						has_idea = pre_industrial_era
-						has_idea = victorian_era
-					}
+					NOT = { has_idea = institution_imperialism }
 				}
 
 				modifier = {
@@ -584,10 +581,7 @@ ideas = {
 
 				allowed = { is_japanese_country = yes }
 				available = {
-					OR = {
-						has_idea = pre_industrial_era
-						has_idea = victorian_era
-					}
+					NOT = { has_idea = institution_imperialism }
 				}
 
 				modifier = {
@@ -611,10 +605,7 @@ ideas = {
 				picture = TSH_kabunakama_monopoly
 				allowed = { is_japanese_country = yes }
 				available = {
-					OR = {
-						has_idea = pre_industrial_era
-						has_idea = victorian_era
-					}
+					NOT = { has_idea = institution_imperialism }
 				}
 
 				modifier = {
@@ -627,10 +618,7 @@ ideas = {
 				allowed = { is_japanese_country = yes }
 
 				available = {
-					OR = {
-						has_idea = pre_industrial_era
-						has_idea = victorian_era
-					}
+					NOT = { has_idea = institution_imperialism }
 					is_subject = no
 				}
 
@@ -681,10 +669,7 @@ ideas = {
 				picture = generic_central_management
 
 				available = {
-					OR = {
-						has_idea = pre_industrial_era
-						has_idea = victorian_era
-					}
+					NOT = { has_idea = institution_imperialism }
 				}
 
 				modifier = {
@@ -727,8 +712,8 @@ ideas = {
 
 				picture = TSH_shihaisho_development
 
-				available = {
-					has_idea = agrarian
+				cancel = {
+					has_idea = institution_mechanization
 				}
 				modifier = {
 					treasury_gain_monthly_per_gdp = 0.025
@@ -790,7 +775,9 @@ ideas = {
 
 				allowed = { tag = TSH }
 
-				available = { OR = { has_idea = pre_industrial_era has_idea = pre_industrial_era } }
+				available = {
+					NOT = { has_idea = institution_mass_marketization}
+				}
 				modifier = {
 					# min_export = -0.10
 					mining_output_factor = 0.10
@@ -970,10 +957,7 @@ ideas = {
 			allowed = { tag = TSH }
 
 			available = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			visible = {
@@ -1002,10 +986,7 @@ ideas = {
 			}
 
 			visible = {
-					OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			cost = 150
@@ -1022,12 +1003,11 @@ ideas = {
 			allowed = { original_tag = TSH }
 
 			available = {
-				has_idea = pre_industrial_era
 				NOT = { has_country_flag = TSH_Bakumatsu_Debate_Purge_Hotta_Masayoshi }
 			}
 
 			visible = {
-				has_idea = pre_industrial_era
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			modifier = {
@@ -1044,18 +1024,12 @@ ideas = {
 			allowed = { original_tag = TSH }
 
 			available = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 				NOT = { has_country_flag = TSH_Bakumatsu_Debate_Purge_Yokoi_Shonan }
 			}
 
 			visible = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			traits = { influencial_writer trait_bakumatsu_party }
@@ -1067,18 +1041,12 @@ ideas = {
 			allowed = { original_tag = TSH }
 
 			available = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 				NOT = { has_country_flag = TSH_Bakumatsu_Debate_Purge_Sakuma_Shoznan }
 			}
 
 			visible = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			research_bonus = {
@@ -1094,17 +1062,11 @@ ideas = {
 			allowed = { original_tag = TSH }
 
 			visible = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			available = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 				NOT = { has_country_flag = TSH_Bakumatsu_Debate_Purge_Nagai_Naoyuki }
 			}
 
@@ -1116,17 +1078,11 @@ ideas = {
 			allowed = { original_tag = TSH }
 
 			visible = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			available = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			cost = 150
@@ -1140,17 +1096,11 @@ ideas = {
 			allowed = { original_tag = TSH }
 
 			available = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 				NOT = { has_country_flag = TSH_Bakumatsu_Debate_Kuroda_Nagahiro }
 			}
 			visible = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			traits = { technocrat trait_sonno_joi_party }
@@ -1162,19 +1112,13 @@ ideas = {
 			allowed = { original_tag = TSH }
 
 			available = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 				JAP = { exists = no }
 				NOT = { has_country_flag = TSH_Bakumatsu_Debate_Purge_Saigo_Takamori }
 			}
 
 			visible = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			traits = { eoanb_trait_patriotic_orator indomitable_perseverance trait_sonno_joi_party }
@@ -1217,17 +1161,11 @@ ideas = {
 			available = {
 				owns_state = 1260
 				has_completed_focus	= JAP_vic_nagasaki_iron_foundry
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			visible = {
-				OR = {
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			cost = 150
@@ -1308,9 +1246,7 @@ ideas = {
 			cost = 150
 
 			available = {
-				OR = {
-					has_idea = pre_industrial_era
-				}
+				NOT = { has_idea = institution_imperialism }
 			}
 
 			allowed = { original_tag = TSH }

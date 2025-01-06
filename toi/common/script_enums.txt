@@ -1849,9 +1849,9 @@
 					culture_mexican
 					culture_montubio
 					culture_norteno
-					culture_north_platinean
 					culture_patagonian
 					culture_peruvian
+					culture_platinean
 					culture_rioplatense
 					culture_venezuelan
 				#
@@ -2690,8 +2690,8 @@
 			religion_voodoo
 			religion_persona_cultist
 			religion_idolist
-			religion_secular
 			religion_atheist
+			religion_secular
 		#
 		#Pandemics
 			germ_bacterial
@@ -2720,9 +2720,9 @@
 			none_alignment
 		#
 		#National Environment
-			status_quo
-			reform
 			revolution
+			reform
+			status_quo
 
 			moderatization
 			radicalization
@@ -2731,8 +2731,40 @@
 			ideological
 
 			centrism
-			ideological
+		#
+		# Constitutional Articles
+			#Government Type
+				absolute_monarchy
+				oligarchial_monarchy
+				constitutional_monarchy
+				parliamentary_monarchy
 
+				totalitarian_republic
+				presidential_republic
+				semi_presidential_republic
+				parliamentary_republic
 
+				totalitarian_chiefdom
+				hierarchical_chiefdom
+				decentralized_chiefdom
+
+				anarchy
+				military_junta
+				colonial_authority
+			#
+			#Succession
+				hereditary
+				appointed
+				elected
+			#
+			#Legitimacy
+				divine_right
+				theocratic
+				oligarchic
+				democratic
+				revolutionary
+
+			#
+		#
 	}
 #

@@ -14,6 +14,32 @@ focus_tree = {
 		y = 1600
 	}
 
+	shortcut = {
+		name = RUS_vic_Industrialise_The_Empire
+		target = RUS_vic_Industrialise_The_Empire 
+		scroll_wheel_factor = 0.8
+	}
+	shortcut = {
+		name = RUS_vic_crimean_war_outcome
+		target = RUS_vic_crimean_war_outcome 
+		scroll_wheel_factor = 0.8
+	}
+	shortcut = {
+		name = RUS_vic_Russian_European_Empire
+		target = RUS_vic_Russian_European_Empire 
+		scroll_wheel_factor = 0.8
+	}
+	shortcut = {
+		name = RUS_vic_Third_Rome
+		target = RUS_vic_Third_Rome 
+		scroll_wheel_factor = 0.8
+	}
+	shortcut = {
+		name = RUS_vic_Tsar_Alexander_II
+		target = RUS_vic_Tsar_Alexander_II 
+		scroll_wheel_factor = 0.8
+	}
+
 	### Economy
 
 	# Radical Reforms
@@ -805,6 +831,11 @@ focus_tree = {
 
 		ai_will_do = { factor = 10 }
 
+		initial_show_position = {
+			x = 20
+			y = 0
+		}
+
 		completion_reward = {
 			add_tech_bonus = { bonus = 1.5 uses = 2 category = cat_industry_techs }
 			add_tech_bonus = { bonus = 1.5 uses = 2 category = electronics_devices_tech }
@@ -818,15 +849,7 @@ focus_tree = {
 		id = RUS_vic_Industrialise_The_Empire
 		icon = GFX_Focus_Worker
 		cost = 70
-
-		available = {
-			OR = {
-				has_idea = industrializing
-				has_idea = industrialized
-				has_idea = electrification
-				has_idea = mass_production
-			}
-		}
+		
 		prerequisite = { focus = RUS_vic_Support_The_Coal_Mining_Industry }
 		prerequisite = { focus = RUS_vic_Industrial_Innovations }
 

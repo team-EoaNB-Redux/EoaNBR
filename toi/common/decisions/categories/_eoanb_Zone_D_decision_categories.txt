@@ -12,6 +12,7 @@ CHI_wuchang_uprising = {
 
 	icon = generic_political_actions
 	
+	allowed = { tag = CHI }
 }
 
 CHI_industrialization_category = {
@@ -19,9 +20,7 @@ CHI_industrialization_category = {
 
 	priority = 100
 
-	allowed = {
-		tag = QNG
-	}
+	allowed = { tag = CHI }
 }
 
 #### Taiping Decision Categories ####
@@ -218,7 +217,7 @@ INDOC_Colonial_Aggression_Category = {
 
 	priority = 149
 	
-	scripted_gui = indochina_influence_gui
+	#scripted_gui = indochina_influence_gui
 }
 
 ins_indonesia_wars_category = {

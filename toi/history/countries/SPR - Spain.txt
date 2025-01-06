@@ -26,8 +26,8 @@
 		#POLITICS
 		SPR_Isabella_II
 		weak_heir
-		agrarian
-		victorian_era
+		#agrarian
+		#victorian_era
 		law_victorian_army
 
 		#GOVERNMENTAL POLICIES
@@ -116,6 +116,43 @@
 	}
 
 	set_tech_victorian_early_industrializing = yes
+	#Economy
+		set_variable = { starting_pm@token:wood = token:pm_saw_mills }
+		set_variable = { starting_am@token:wood = token:pm_muscle_power }
+		set_variable = { starting_pm@token:iron = token:pm_blasting }
+		set_variable = { starting_am@token:iron = token:pm_hand_picks_and_tools }
+		set_variable = { starting_pm@token:coal = token:pm_blasting }
+		set_variable = { starting_am@token:coal = token:pm_hand_picks_and_tools }
+		set_variable = { starting_pm@token:copper = token:pm_blasting }
+		set_variable = { starting_am@token:copper = token:pm_hand_picks_and_tools }
+		set_variable = { starting_pm@token:valuables = token:pm_blasting }
+		set_variable = { starting_am@token:valuables = token:pm_hand_picks_and_tools }
+		
+		set_variable = { starting_pm@token:food = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:food = token:pm_manual_farming }
+		set_variable = { starting_pm@token:luxuries = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:luxuries = token:pm_manual_farming }
+		set_variable = { starting_pm@token:fiber = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:fiber = token:pm_manual_farming }
+		set_variable = { starting_pm@token:crop_farm = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:crop_farm = token:pm_manual_farming }
+		set_variable = { starting_pm@token:luxuries_plantation = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:luxuries_plantation = token:pm_manual_farming }
+		set_variable = { starting_pm@token:cotton_plantation = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:cotton_plantation = token:pm_manual_farming }
+		set_variable = { starting_pm@token:rice_paddy = token:pm_intensive_agriculture }
+		set_variable = { starting_am@token:rice_paddy = token:pm_manual_farming }
+		set_variable = { starting_pm@token:livestock_ranch = token:pm_slaughterhouses }
+		set_variable = { starting_am@token:livestock_ranch = token:pm_open_field }
+		
+		set_variable = { starting_am@token:textile_mill = token:pm_no_automation }
+		set_variable = { starting_am@token:tooling_workshop = token:pm_no_automation }
+		set_variable = { starting_am@token:steel_foundry = token:pm_no_automation }
+		set_variable = { starting_am@token:chemical_plant = token:pm_no_automation }
+		set_variable = { starting_am@token:consumer_goods_factory = token:pm_no_automation }
+
+		set_variable = { starting_pm@token:urban_center = token:pm_brick_buildings }
+		set_variable = { starting_am@token:urban_center = token:pm_no_automation }
 
 	set_technology = {
 		###Naval
@@ -210,6 +247,10 @@
 	recruit_character = SPR_Estanislao_Figueras
 	recruit_character = SPR_Emilio_Castellar
 	recruit_character = SPR_Carlos_de_Borbon_y_Austria_Este
+	recruit_character = SPR_Manuel_Garcia_Barzanallana
+	recruit_character = SPR_Rafael_Perez_del_Alamon
+	recruit_character = SPR_Aureliano_Maestre_de_San_Juan
+	recruit_character = SPR_Jose_de_Salamanca
 
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -454,6 +495,7 @@
 	}
 	remove_ideas={
 		SPR_pragmatica_sancion
+		SPR_the_carlist_threat
 	}
 	add_ideas={
 		SPR_provisional_government
@@ -461,6 +503,7 @@
 		SPR_capitation_tax
 		SPR_peseta
 		limited_constitution
+		SPR_carlistmenace
 	}
 	add_power_balance_modifier = {
 		id = SPR_CUB_ten_years_war

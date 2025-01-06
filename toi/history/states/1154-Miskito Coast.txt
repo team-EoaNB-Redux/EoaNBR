@@ -18,6 +18,9 @@ state = {
 			controller = ENG
 			buildings = {
 				infrastructure = 2
+				13723 = {
+					naval_base = 1
+				}
 			}
 			set_variable = { building_infrastructure_size = 0 }
 			
@@ -41,7 +44,7 @@ state = {
 			add_core_of = NIC
 		}
 
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = NIC
 			add_core_of = NIC
 		}

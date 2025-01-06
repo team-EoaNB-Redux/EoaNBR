@@ -562,15 +562,14 @@ country_event = {
 					add_to_variable = {Tribal_army_num = 2000}
 					set_cosmetic_tag = ORO_south_eritrea_oromo_tribe
 					set_country_flag = ORO_south_eritrea_oromo_tribe
-					add_to_array = { pops_primary_culture_array = global.oromo }
-					add_to_array = { pops_primary_religion_array = global.sunni }
+					add_to_array = { pops_primary_culture_array = token:culture_oromo }
+					add_to_array = { pops_primary_religion_array = token:religion_sunni }
 					set_technology = { tech_infantry_pre_rifle_equipment_0 = 1 }
 					add_ideas = AF_T_unorganized_tribal_nation
 					add_ideas = AFR_history_of_colonial_resistance
 					add_ideas={AF_T_Tribal_Army}
 					load_focus_tree = africa_tribe
 					add_ideas = state_religion
-					add_ideas = religion_sunni
 					add_ideas = tribal_slavery
 					add_ideas = manpower_tribal_everyone
 					add_ideas = law_army_tribal_neolithic
@@ -579,8 +578,6 @@ country_event = {
 					add_ideas = very_low_taxes
 					add_ideas = state_controlled_press
 					add_ideas = no_heir
-					add_ideas = pre_industrial_era
-					add_ideas = agrarian
 					add_ideas = oral_tradition
 					add_ideas = absolute_monarchy
 					add_ideas = hc_no_healthcare
@@ -748,15 +745,14 @@ country_event = {
 					add_to_variable = {Tribal_army_num = 2000}
 					set_cosmetic_tag = ORO_gedaref_oromo_tribe
 					set_country_flag = ORO_gedaref_oromo_tribe
-					add_to_array = { pops_primary_culture_array = global.oromo }
-					add_to_array = { pops_primary_religion_array = global.sunni }
+					add_to_array = { pops_primary_culture_array = token:culture_oromo }
+					add_to_array = { pops_primary_religion_array = token:religion_sunni }
 					set_technology = { tech_infantry_pre_rifle_equipment_0 = 1 }
 					add_ideas = AF_T_unorganized_tribal_nation
 					add_ideas = AFR_history_of_colonial_resistance
 					add_ideas={AF_T_Tribal_Army}
 					load_focus_tree = africa_tribe
 					add_ideas = state_religion
-					add_ideas = religion_sunni
 					add_ideas = tribal_slavery
 					add_ideas = manpower_tribal_everyone
 					add_ideas = law_army_tribal_neolithic
@@ -765,8 +761,6 @@ country_event = {
 					add_ideas = very_low_taxes
 					add_ideas = state_controlled_press
 					add_ideas = no_heir
-					add_ideas = pre_industrial_era
-					add_ideas = agrarian
 					add_ideas = oral_tradition
 					add_ideas = absolute_monarchy
 					add_ideas = hc_no_healthcare
@@ -1896,14 +1890,13 @@ country_event = {
 					set_country_flag = EGY_mahdist_insurgency_flag
 					country_event = { id = EGY_mahdist_insurgency.1 days = 1 }
 					set_country_flag = afr_jihadist_tree
-					add_to_array = { pops_primary_religion_array = global.sunni }
+					add_to_array = { pops_primary_religion_array = token:religion_sunni }
 					set_technology = { tech_infantry_pre_rifle_equipment_0 = 1 }
 					add_ideas = afr_reforming_kingdom
 					add_ideas={AF_T_Tribal_Army}
 					add_ideas = Mahdist_State_jihad_prelude
 					load_focus_tree = afr_generic_jihadist_1
 					add_ideas = theocratic_state
-					add_ideas = religion_sunni
 					add_ideas = slavery
 					add_ideas = manpower_tribal_every_fifth
 					add_ideas = law_army_tribal_advanced
@@ -1912,8 +1905,6 @@ country_event = {
 					add_ideas = very_low_taxes
 					add_ideas = state_controlled_press
 					add_ideas = no_heir
-					add_ideas = pre_industrial_era
-					add_ideas = agrarian
 					add_ideas = oral_tradition
 					add_ideas = absolute_monarchy
 					add_ideas = hc_no_healthcare
@@ -2334,7 +2325,7 @@ country_event = {
 		name = ethiopia_religion.1.a
 		# log = "option:		name = ethiopia_religion.1.a"
 		ai_chance = { factor = 100 }
-		add_ideas = religion_protestant
+		add_to_array = { pops_primary_religion_array = token:religion_protestant }
 	}
 
 }
@@ -2357,7 +2348,7 @@ country_event = {
 		name = ethiopia_religion.2.a
 		# log = "option:		name = ethiopia_religion.2.a"
 		ai_chance = { factor = 100 }
-		add_ideas = religion_catholic
+		add_to_array = { pops_primary_religion_array = token:religion_catholic }
 	}
 
 }
@@ -2379,7 +2370,7 @@ country_event = {
 		name = ethiopia_religion.3.a
 		# log = "option:		name = ethiopia_religion.3.a"
 		ai_chance = { factor = 100 }
-		add_ideas = religion_sunni
+		add_to_array = { pops_primary_religion_array = token:religion_sunni }
 	}
 
 }
@@ -2401,7 +2392,7 @@ country_event = {
 		name = ethiopia_religion.4.a
 		# log = "option:		name = ethiopia_religion.4.a"
 		ai_chance = { factor = 100 }
-		add_ideas = religion_sunni
+		add_to_array = { pops_primary_religion_array = token:religion_sunni }
 	}
 
 }

@@ -22,3 +22,40 @@ debug_trade = {
     if = { limit = { has_global_flag = debug_trade } clr_global_flag = debug_trade }
     else = { set_global_flag = debug_trade }
 }
+
+debug_pass_time = {
+    for_loop_effect = {
+        end = 12
+
+        _advance_time = yes
+        r_weekly_trade = yes
+        r_weekly_trade = yes
+    }
+}
+
+# Dirty var for eco topbar
+
+# OLD
+# _advance_time - 12517 ms
+# r_weekly_trade - 8343 ms for 4x
+#
+# market_update - 4130 ms for 4x
+# 
+# trade_ai_calculation - 183 ms for 4x
+#
+# trade_update - 3423 ms for 4x
+
+debug_testing = {
+    for_loop_effect = {
+        end = 10
+        for_each_scope_loop = {
+            array = global.econ_order_array
+            if = {
+                limit = {
+                    check_variable = { market_leader = THIS }
+                }
+                market_update = yes
+            }
+        }
+    }
+}

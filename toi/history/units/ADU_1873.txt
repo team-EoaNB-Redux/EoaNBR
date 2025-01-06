@@ -1,0 +1,47 @@
+﻿division_template = {
+	name = "Workers Milita"
+
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Workers Milita of Sevilla"
+		location = 7183
+		division_template = "Workers Milita"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "1st Alcoy Revolutionaries"
+		location = 962
+		division_template = "Workers Milita"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "2nd Alcoy Revolutionaries"
+		location = 962
+		division_template = "Workers Milita"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "3rd Alcoy Revolutionaries"
+		location = 962
+		division_template = "Workers Milita"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "4th Alcoy Revolutionaries"
+		location = 962
+		division_template = "Workers Milita"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "5th Alcoy Revolutionaries"
+		location = 962
+		division_template = "Workers Milita"
+		start_experience_factor = 0.0
+	}
+}

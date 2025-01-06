@@ -22,11 +22,8 @@ state={
 			}
 			
 			#Agriculture
-			set_variable = { crop_farm_size = 4 } 
+			set_variable = { crop_farm_size = 3 } 
 
-			# set_variable = {
-			# 	building_commercial_farm_size = 2
-			# }
 			victory_points = {
 				3755 1 
 			}

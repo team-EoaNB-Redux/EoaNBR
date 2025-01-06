@@ -670,6 +670,17 @@ KNS_american_trade_association_category = {
 
 #### Mexico Decision Categories ####
 
+MEX_decision_category_reform_war = {
+	icon = placeholder
+
+	allowed = {
+		tag = MEX
+		tag = MEC
+	}
+
+	visible = { always = no }
+}
+
 MEX_decision_category_republican_forces = {
 	icon = generic_political_actions
 

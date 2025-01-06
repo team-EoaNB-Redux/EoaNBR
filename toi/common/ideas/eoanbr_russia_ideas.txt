@@ -2,6 +2,7 @@ ideas = {
 	country = {
 		### STARTING NATIONAL SPIRITS
 			RUS_spirit_vic_granary_of_europe = {
+				allowed = { always = no }
 				picture = rus_granary_of_europe
 				allowed_civil_war = {
 					always = yes
@@ -9,12 +10,11 @@ ideas = {
 
 				research_bonus = {
 					cat_agriculture_techs = 0.05
-					cat_science_techs = 0.05
 				}
 
 				modifier = {
 					supply_consumption_factor = -0.25
-					# production_speed_farm_factor = 0.05
+					military_equipment_cost_factor = -0.20
 					monthly_population = 0.05
 					agriculture_output_factor = 0.02
 				}
@@ -27,10 +27,10 @@ ideas = {
 				picture = rus_political_isolation
 
 				modifier = {
-					political_power_factor = -0.05
+					political_power_factor = -0.5
 					improve_relations_maintain_cost_factor = 1
 					military_spending_min_modifier = 5
-					foreign_interest_rate_factor = 0.15
+					domestic_interest_rate_modifier = 2.5
 				}
 			}
 			RUS_spirit_vic_caucasian_wars = {
@@ -64,15 +64,14 @@ ideas = {
 			picture = rus_tsarist_vodka_monopoly
 
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = -0.1
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 				production_speed_buildings_factor = -0.05
 				research_speed_factor = -0.05
-				treasury_gain_monthly = 2000
+				treasury_gain_monthly = 750
 				upper_strata_income_tax_max_modifier = -30
 				corporate_tax_max_modifier = -60
-				banking_confidence_modifier = 5
 				corruption_factor = 0.015
 			}
 		}
@@ -124,7 +123,6 @@ ideas = {
 			}
 
 			modifier = {
-				military_equipment_cost_factor = 0.015
 				cavalry_attack_factor = 0.05
 				cavalry_defence_factor = 0.05
 				army_speed_factor = 0.02
@@ -147,7 +145,6 @@ ideas = {
 			}
 
 			modifier = {
-				military_equipment_cost_factor = 0.02
 				military_payroll_cost_factor = 0.005
 				cavalry_attack_factor = 0.07
 				cavalry_defence_factor = 0.07
@@ -222,8 +219,7 @@ ideas = {
 				army_org_regain = -0.25
 				weekly_manpower = -840
 				experience_gain_army_factor = -0.4
-				military_leader_cost_factor = -0.5
-				military_payroll_cost_factor = -0.05
+				military_leader_cost_factor = 0.25
 			}
 		}
 
@@ -239,7 +235,6 @@ ideas = {
 				army_org_regain = -0.15
 				weekly_manpower = -840
 				experience_gain_army_factor = -0.4
-				military_leader_cost_factor = -0.5
 			}
 		}
 
@@ -254,7 +249,6 @@ ideas = {
 				army_org_factor = -0.10
 				army_org_regain = -0.10
 				experience_gain_army_factor = -0.4
-				military_leader_cost_factor = -0.5
 			}
 		}
 
@@ -267,7 +261,6 @@ ideas = {
 
 			modifier = {
 				experience_gain_army_factor = -0.4
-				military_leader_cost_factor = -0.5
 			}
 		}
 
@@ -279,11 +272,10 @@ ideas = {
 			picture = rus_crimean_war_aftermath
 
 			modifier = {
-				treasury_cost_monthly = 200
 				army_org_Factor = -0.1
 				army_morale_factor = -0.1
 				administration_cost_per_c = 0.002
-				military_spending_min_modifier = 2.5
+				military_spending_min_modifier = 10
 			}
 		}
 
@@ -298,6 +290,7 @@ ideas = {
 				treasury_cost_monthly = 125
 				army_org_Factor = -0.07
 				army_morale_factor = -0.07
+				military_spending_min_modifier = 5
 			}
 		}
 
@@ -402,7 +395,7 @@ ideas = {
 				#production_factory_efficiency_gain_factor = 0.05
 				#production_factory_max_efficiency_factor = 0.05
 			#}
-		#}
+		#} 
 
 		#RUS_idea_reforms_pushed_by_financem = {
 			#picture = generic_pp_unity_bonus

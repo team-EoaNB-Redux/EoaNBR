@@ -22,6 +22,10 @@ scripted_gui = {
 				NOT = { has_country_flag = TTT_daily_refresh }
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_civ_lib_religion_screen = {
@@ -268,6 +272,10 @@ scripted_gui = {
 				has_government = fundamentalism
 				has_political_power > 449
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -531,6 +539,10 @@ scripted_gui = {
 				has_political_power > 449
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_civ_lib_press_screen = {
@@ -716,6 +728,10 @@ scripted_gui = {
 				}
 				has_political_power > 449
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -1009,6 +1025,10 @@ scripted_gui = {
 				has_political_power > 449
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_civ_lib_trade_union_screen = {
@@ -1300,6 +1320,10 @@ scripted_gui = {
 				}
 				has_political_power > 449
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -1593,6 +1617,10 @@ scripted_gui = {
 				has_political_power > 449
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_eco_trade_laws_screen = {
@@ -1830,6 +1858,10 @@ scripted_gui = {
 				}
 				has_political_power > 99
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -2123,6 +2155,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_eco_child_labour_screen = {
@@ -2326,6 +2362,10 @@ scripted_gui = {
 				}
 				has_political_power > 99
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -2619,6 +2659,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_eco_land_property_screen = {
@@ -2901,10 +2945,7 @@ scripted_gui = {
 				NOT = {
 					has_country_flag = parl_executive_order_flag
 				}
-				OR = {
-					has_idea = agrarian
-					has_idea = industrializing
-				}
+				has_idea = institution_industrialization
 				has_political_power > 999
 			}
 
@@ -2958,6 +2999,10 @@ scripted_gui = {
 				}
 				has_political_power > 999
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -3251,6 +3296,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_pop_border_laws_screen = {
@@ -3488,6 +3537,10 @@ scripted_gui = {
 				}
 				has_political_power > 99
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -3780,6 +3833,10 @@ scripted_gui = {
 				}
 				has_political_power > 99
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -4230,6 +4287,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_pop_mobilization_laws_screen = {
@@ -4675,6 +4736,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_pop_suffrage_screen = {
@@ -4967,6 +5032,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_pop_political_parties_screen = {
@@ -5204,6 +5273,10 @@ scripted_gui = {
 				}
 				has_political_power > 99
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -5497,6 +5570,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_int_bud_law_and_order_screen = {
@@ -5788,6 +5865,10 @@ scripted_gui = {
 				}
 				has_political_power > 99
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -6081,6 +6162,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_int_bud_naval_infrastructure_screen = {
@@ -6372,6 +6457,10 @@ scripted_gui = {
 				}
 				has_political_power > 99
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -6773,6 +6862,10 @@ scripted_gui = {
 				has_political_power > 99
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_reform_int_bud_scientific_funding_screen = {
@@ -7012,6 +7105,10 @@ scripted_gui = {
 				}
 				has_political_power > 99
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 
@@ -7791,6 +7888,10 @@ scripted_gui = {
 				has_idea = sfund_excellent_state_sponsorship
 			}
 		}
+		
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_screen = {
@@ -8025,6 +8126,10 @@ scripted_gui = {
 			internal_politics_ideology_icon_fundamentalism_visible = {
 				has_government = fundamentalism
 			}
+		}
+		
+		ai_enabled = {
+			always = no
 		}
 	}
 }

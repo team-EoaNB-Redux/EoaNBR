@@ -24,7 +24,7 @@ state = {
 		}
 		add_core_of = MDN
 
-		1898.12.30 = {
+		1900.6.1 = {
 			owner = USA
 			remove_core_of = MDN
 		}

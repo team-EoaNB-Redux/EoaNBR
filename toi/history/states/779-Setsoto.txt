@@ -25,13 +25,9 @@ state = {
 			13245 1
 		}
 
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = OFS
 			add_core_of = OFS
-		}
-
-		1881.1.1 = {
-			remove_core_of = SOT
 		}
 		afr_state_setup_scripted_effect = yes
 	}

@@ -214,7 +214,7 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				stability_weekly = -0.005
+				stability_weekly = -0.002
 				war_support_weekly = -0.001
 			}
 		}
@@ -229,7 +229,7 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				stability_weekly = -0.01
+				stability_weekly = -0.003
 				war_support_weekly = -0.002
 			}
 		}
@@ -244,7 +244,7 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				stability_weekly = -0.02
+				stability_weekly = -0.005
 				war_support_weekly = -0.003
 			}
 		}
@@ -259,8 +259,8 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				stability_weekly = -0.05
-				war_support_weekly = -0.005
+				stability_weekly = -0.007
+				war_support_weekly = -0.004
 			}
 		}
 		egy_public_consered_debt_5 = {
@@ -274,8 +274,8 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				stability_weekly = -0.1
-				war_support_weekly = -0.01
+				stability_weekly = -0.01
+				war_support_weekly = -0.005
 			}
 		}
 		egy_industry_cuts={
@@ -289,7 +289,8 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				treasury_cost_monthly_per_gdp = 0.01
+				industry_construction_speed_factor = -0.5
+				industry_upgrade_speed_factor = -0.5
 				production_factory_max_efficiency_factor = -0.05
 			}
 		}

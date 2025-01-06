@@ -1609,16 +1609,14 @@ focus_tree = {
 		available = {
 		}
 		bypass={
-			NOT={has_idea = agrarian}
+			has_idea = institution_mechanization
 		}
 		relative_position_id = ofs_vic_industrialising_our_nation
 		x = -1
 		y = 3
 		completion_reward = {
-			swap_ideas={
-				add_idea = industrializing
-				remove_idea = agrarian
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_innovative_change = yes
 		}
 	}
 	focus = {
@@ -3378,28 +3376,8 @@ focus_tree = {
 				limit = { 545 = { OWNER = { afr_is_tribal = yes } } }
 				545={
 					owner = {
-						custom_effect_tooltip = afr_become_industrialised_tooltip
-						hidden_effect = {
-							clear_variable = THIS.innovation_progress
-							if = {
-								limit = { has_idea = afr_reforming_kingdom }
-								remove_ideas = afr_reforming_kingdom
-							}
-							if = {
-								limit = { has_country_flag = Oceania_industrializing }
-								hidden_effect = { clr_country_flag = Oceania_industrializing }
-							}
-							if = {
-								limit = { has_country_flag = afr_colony_industrializing }
-								hidden_effect = { clr_country_flag = afr_colony_industrializing }
-							}
-							if = {
-								limit = { has_country_flag = afr_an_african_industrializing }
-								hidden_effect = { clr_country_flag = afr_an_african_industrializing }
-							}
-							add_ideas = industrializing
-							add_ideas = afr_post_tribal
-						}
+						set_temp_variable = { institution_progress_temp = 20 }
+						eoanbr_institutions_innovative_change = yes
 					}
 				}
 			}

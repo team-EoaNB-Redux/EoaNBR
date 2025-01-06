@@ -18,7 +18,7 @@ default_culture = {
 	icon = "GFX_temp_culture_icon"
 	enable = { always = yes }
 
-	local_productivity_throughput_factor = -0.1
+	#local_productivity_throughput_factor = -0.1
 }
 marginalized_culture = {
 	icon = "GFX_temp_culture_icon"
@@ -26,7 +26,7 @@ marginalized_culture = {
 
 	local_bureaucracy_cost_factor = -0.20
 	local_ruling_coalition_support_factor = -0.35
-	local_productivity_throughput_factor = -0.30
+	#local_productivity_throughput_factor = -0.30
 	monthly_manpower_factor = -0.10
 }
 primary_religion = {
@@ -49,7 +49,7 @@ default_religion = {
 	icon = "GFX_temp_religion_icon"
 	enable = { always = yes }
 
-	local_productivity_throughput_factor = -0.1
+	#local_productivity_throughput_factor = -0.1
 }
 marginalized_religion = {
 	icon = "GFX_temp_religion_icon"
@@ -57,7 +57,7 @@ marginalized_religion = {
 
 	local_bureaucracy_cost_factor = -0.20
 	local_ruling_coalition_support_factor = -0.35
-	local_productivity_throughput_factor = -0.30
+	#local_productivity_throughput_factor = -0.30
 	monthly_manpower_factor = -0.10
 }
 
@@ -65,14 +65,14 @@ colonial_state = {
 	icon = "GFX_colonial_state_icon"
 	enable = { always = yes }
 
-	local_building_metals_mine_output_factor = 0.02
-	local_building_coal_mine_output_factor = 0.02
-	local_building_material_plantation_output_factor = 0.02
-	local_building_resource_output_factor = 0.02
-	local_building_valuables_extractor_output_factor = 0.02
-	local_building_services_building_throughput_factor = -0.05
-	local_building_industrial_goods_factory_throughput_factor = -0.05
-	local_building_consumer_goods_factory_throughput_factor = -0.05
+	#local_building_metals_mine_output_factor = 0.02
+	#local_building_coal_mine_output_factor = 0.02
+	#local_building_material_plantation_output_factor = 0.02
+	#local_building_resource_output_factor = 0.02
+	#local_building_valuables_extractor_output_factor = 0.02
+	#local_building_services_building_throughput_factor = -0.05
+	#local_building_industrial_goods_factory_throughput_factor = -0.05
+	#local_building_consumer_goods_factory_throughput_factor = -0.05
 	monthly_manpower_factor = -0.75
 	local_bureaucracy_cost_factor = -0.50
 }
@@ -80,14 +80,14 @@ frontier_state = {
 	icon = "GFX_frontier_state_icon"
 	enable = { always = yes }
 
-	local_building_metals_mine_output_factor = 0.02
-	local_building_coal_mine_output_factor = 0.02
-	local_building_material_plantation_output_factor = 0.02
-	local_building_resource_output_factor = 0.02
-	local_building_valuables_extractor_output_factor = 0.02
-	local_building_services_building_throughput_factor = -0.05
-	local_building_industrial_goods_factory_throughput_factor = -0.05
-	local_building_consumer_goods_factory_throughput_factor = -0.05
+	#local_building_metals_mine_output_factor = 0.02
+	#local_building_coal_mine_output_factor = 0.02
+	#local_building_material_plantation_output_factor = 0.02
+	#local_building_resource_output_factor = 0.02
+	#local_building_valuables_extractor_output_factor = 0.02
+	#local_building_services_building_throughput_factor = -0.05
+	#local_building_industrial_goods_factory_throughput_factor = -0.05
+	#local_building_consumer_goods_factory_throughput_factor = -0.05
 	monthly_manpower_factor = -0.75
 	local_bureaucracy_cost_factor = -0.50
 }

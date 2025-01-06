@@ -553,6 +553,12 @@
 			precision = 2
 			category = country
 		}
+		pops_food_consumption_factor = { # Increases/decreases amount of food pops consume. Reducing this will increase SoL relatively speaking
+			color_type = bad
+			value_type = percentage
+			precision = 2
+			category = country
+		}
 	#
 	#Industries
 		# Special Industries
@@ -3124,22 +3130,26 @@
             # Chemicals
 			pm_lead_chamber_process_output_modifier = { color_type = good value_type = percentage precision = 1 category = country }
 			pm_lead_chamber_process_industrial_capacity_use_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_lead_chamber_process_wood_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_lead_chamber_process_iron_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			
 			pm_leblanc_process_output_modifier = { color_type = good value_type = percentage precision = 1 category = country }
 			pm_leblanc_process_industrial_capacity_use_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_leblanc_process_food_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_leblanc_process_iron_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_leblanc_process_tools_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_leblanc_process_coal_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			
 			pm_ammonia_soda_process_output_modifier = { color_type = good value_type = percentage precision = 1 category = country }
 			pm_ammonia_soda_process_industrial_capacity_use_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
-			pm_ammonia_soda_process_iron_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_ammonia_soda_process_food_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_ammonia_soda_process_tools_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_ammonia_soda_process_machinery_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_ammonia_soda_process_coal_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			
 			pm_brine_electrolysis_output_modifier = { color_type = good value_type = percentage precision = 1 category = country }
 			pm_brine_electrolysis_industrial_capacity_use_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
-			pm_brine_electrolysis_iron_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_brine_electrolysis_food_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_brine_electrolysis_tools_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_brine_electrolysis_electricity_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_brine_electrolysis_machinery_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
@@ -3224,7 +3234,7 @@
 		}
 	#
 	#Trade
-		shipping_cost_modifier = {
+		shipping_cost_factor = {
 			color_type = bad
 			value_type = percentage
 			precision = 2

@@ -1,0 +1,41 @@
+political_legitimacy_level = {
+	schema = {
+		any_key = yes
+		data = fixed_point
+	}
+	none = 0
+	extremely_low = 15
+	very_low = 30
+	low = 45
+	moderate = 60
+	high = 75
+	very_high = 90
+	perfect = 100
+}
+
+autarchy_level = {
+	schema = {
+		any_key = yes
+		data = fixed_point
+	}
+	none = 0
+	extremely_low = 15
+	very_low = 30
+	low = 45
+	moderate = 60
+	high = 75
+	very_high = 90
+	perfect = 100
+}
+zealotry_level = {
+	schema = {
+		any_key = yes
+		data = fixed_point
+	}
+	secularist_min = 0
+	secularist_max = 40
+	neutral_min = 30
+	neutral_max = 70
+	fundamentalist_min = 60
+	fundamentalist_max = 100
+}

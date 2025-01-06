@@ -148,9 +148,9 @@ increase_military_spendage_by_one = {
 		swap_ideas = { remove_idea = five_percent add_idea = ten_percent }
 	}
 	else = {
-		#nicht
+		#nicht, prussian is not generically achievable
 	}
-	custom_effect_tooltip = increase_military_spendage_by_one_tt
+	custom_effect_tooltip = increase_military_spending_by_one_tt
 }
 
 decrease_military_spendage_by_one = {
@@ -181,7 +181,7 @@ decrease_military_spendage_by_one = {
 	else = {
 		#nicht
 	}
-	custom_effect_tooltip = decrease_military_spendage_by_one_tt
+	custom_effect_tooltip = decrease_military_spending_by_one_tt
 }
 
 increase_mobilization_by_one = {

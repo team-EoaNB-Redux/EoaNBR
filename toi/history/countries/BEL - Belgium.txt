@@ -28,9 +28,9 @@
 	add_ideas = {
 		#POLITICS
 		BEL_Leopold_I
-		victorian_era
+		#victorian_era
 		law_victorian_army
-		industrializing
+		#industrializing
 
 		no_heir
 		parliamentary_monarchy
@@ -88,6 +88,17 @@
 	}
 
 	set_tech_victorian_middle_industrializing = yes
+	#Economy
+		set_variable = { starting_am@token:crop_farm = token:pm_farm_equipment }
+		
+		set_variable = { starting_am@token:textile_mill = token:pm_steam_engine }
+		set_variable = { starting_am@token:tooling_workshop = token:pm_steam_engine }
+		set_variable = { starting_am@token:steel_foundry = token:pm_steam_engine }
+		set_variable = { starting_am@token:chemical_plant = token:pm_steam_engine }
+		set_variable = { starting_am@token:mechanical_works = token:pm_steam_engine }
+		set_variable = { starting_am@token:consumer_goods_factory = token:pm_steam_engine }
+
+		set_variable = { starting_am@token:urban_center = token:pm_no_automation }
 
 	set_technology = {
 		#Infantry

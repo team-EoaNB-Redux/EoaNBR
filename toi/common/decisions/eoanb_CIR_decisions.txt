@@ -5,13 +5,10 @@ eoanb_category_politics_internal = {
 		icon = generic_nationalism
 
 		allowed = { tag = CIR }
-		visible = {
-			has_idea = chiefdom
-		}
 
 		available = {
 			OR = {
-				NOT = { has_idea = pre_industrial_era }
+				has_idea = institution_centralization
 				CAU = { exists = no }
 			}
 		}
@@ -26,47 +23,47 @@ eoanb_category_politics_internal = {
 			add_war_support = 0.2
 			set_politics = {
 				ruling_party = traditional_conservatism
-        		elections_allowed = yes
-        		election_frequency = 48
+				elections_allowed = yes
+				election_frequency = 48
 			}
 			add_country_leader_role = {
-  				Character = CIR_1857_Berzeg
-  				Promote_leader = yes
-  				Country_leader = {
+				Character = CIR_1857_Berzeg
+				Promote_leader = yes
+				Country_leader = {
 					ideology = islamist
-    				expire = "1965.1.1"
-    				traits = {}
-      			}
+					expire = "1965.1.1"
+					traits = {}
+				}
 			}
 			set_party_name = {
-    			ideology = traditional_conservatism
-    			long_name = CIR_1860_REP
-    			name = CIR_1860_REP
+				ideology = traditional_conservatism
+				long_name = CIR_1860_REP
+				name = CIR_1860_REP
 			}
 			set_party_name = {
-    			ideology = centrism
-    			long_name = CIR_1860_REP
-    			name = CIR_1860_REP
+				ideology = centrism
+				long_name = CIR_1860_REP
+				name = CIR_1860_REP
 			}
-  			army_experience = 15
-  			add_doctrine_cost_reduction = { cost_reduction = 1 uses = 1 category = land_doctrine }
-  			add_ideas = {
-  				parliamentary_republic
-  				limited_elections
-  				parliamentary_suffrage
-  			}
-  			hidden_effect = {
-  				country_event = { id = circassia.10 days = 30 }
-  				retire_ideology_leader = fundamentalism
-  				add_popularity = {
-    				ideology = traditional_conservatism
-    				popularity = 0.4
+			army_experience = 15
+			add_doctrine_cost_reduction = { cost_reduction = 1 uses = 1 category = land_doctrine }
+			add_ideas = {
+				parliamentary_republic
+				limited_elections
+				parliamentary_suffrage
+			}
+			hidden_effect = {
+				country_event = { id = circassia.10 days = 30 }
+				retire_ideology_leader = fundamentalism
+				add_popularity = {
+					ideology = traditional_conservatism
+					popularity = 0.4
 				}
 				add_popularity = {
-    				ideology = centrism
-    				popularity = 0.2
+						ideology = centrism
+					popularity = 0.2
 				}
-  			}
+			}
 		}
 
 		ai_will_do = {

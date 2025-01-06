@@ -212,8 +212,6 @@ country_event = {
 					add_ideas = {
 
 						hos_is_leader
-						pre_industrial_era
-						agrarian
 						no_heir
 						semi_presidential_republic
 
@@ -332,8 +330,6 @@ country_event = {
 					add_ideas = {
 
 						hos_is_leader
-						pre_industrial_era
-						agrarian
 						no_heir
 						semi_presidential_republic
 
@@ -757,8 +753,6 @@ country_event = {
 
 					add_ideas = {
 						hos_is_leader
-						pre_industrial_era
-						agrarian
 						weak_heir
 						absolute_monarchy
 
@@ -856,8 +850,6 @@ country_event = {
 
 					add_ideas = {
 						hos_is_leader
-						pre_industrial_era
-						agrarian
 						weak_heir
 						absolute_monarchy
 
@@ -1124,8 +1116,6 @@ country_event = {
 
 					add_ideas = {
 						hos_is_leader
-						pre_industrial_era
-						agrarian
 						weak_heir
 						semi_presidential_republic
 
@@ -1237,8 +1227,6 @@ country_event = {
 
 					add_ideas = {
 						hos_is_leader
-						pre_industrial_era
-						agrarian
 						weak_heir
 						absolute_monarchy
 

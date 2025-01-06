@@ -9329,6 +9329,7 @@ country_event = {
 				transfer_state = 981
 				transfer_state = 1153
 				inherit_technology = SAR
+				SAR = { PIE = { inherit_institutions = yes } }
 				retire_country_leader = yes
 				PIE_archduke_karl_ludwig = {
 					add_country_leader_role = {
@@ -11428,8 +11429,9 @@ country_event = {
 				index = 1
 				value = global.magyar
 			}
-			add_to_array = { pops_primary_culture_array = global.croat }
-			add_to_array = { pops_primary_culture_array = global.galician_polish }
+			add_to_array = { pops_primary_culture_array = token:culture_croat }
+			add_to_array = { pops_primary_culture_array = token:culture_volhynian }
+			add_to_array = { pops_primary_culture_array = token:culture_silesian_polish }
 			#every_owned_state = {
 				#limit = { is_core_of = HUN }
 				#remove_core_of = HUN

@@ -5,7 +5,7 @@ state = {
 	state_category = sparse_rural
 	manpower = 34232
 	provinces = {
-		1663 1740 1756 4668 4742 4865 7764 7818 10582 10651 10662 12573 12699 13153
+		1663 1740 1756 4668 4742 4865 7764 7818 10582 10651 10662 12573 12699
 	}
 
 	local_supplies = 0.0
@@ -18,7 +18,7 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		1870.1.1 = {
+		1870.5.11 = {
 			owner = USA
 		}
 

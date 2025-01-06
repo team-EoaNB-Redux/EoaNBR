@@ -343,7 +343,7 @@ war_planning = {
 			}
 		}
 		timeout_effect = {
-			#Mexico Holds Out
+			#Vietnam Holds Out
 			hidden_effect = {
 				if = {
 					limit = {

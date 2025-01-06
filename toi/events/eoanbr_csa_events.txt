@@ -100,6 +100,7 @@ add_namespace = csa_member_state_select_platform
 # # 				transfer_state = 364
 # # 				set_capital = 364
 # # 				inherit_technology = USA
+# #					inherit_institutions = yes
 # # 				set_politics = { ruling_party = traditional_conservatism }
 # # 				add_popularity = {
 # # 					ideology = traditional_conservatism
@@ -147,6 +148,7 @@ add_namespace = csa_member_state_select_platform
 # # 				transfer_state = 364
 # # 				set_capital = 364
 # # 				inherit_technology = USA
+# #					inherit_institutions = yes
 # # 				set_politics = { ruling_party = traditional_conservatism }
 # # 				add_popularity = {
 # #   				ideology = traditional_conservatism

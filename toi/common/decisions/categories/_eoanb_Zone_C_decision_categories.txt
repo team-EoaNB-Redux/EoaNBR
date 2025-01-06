@@ -1677,14 +1677,20 @@ SPR_debt_management_category = {
 SPR_FLAVOUR = {
 	icon = generic_political_actions
 
-		visible = {
-			tag = SPR
-		}
+	visible = {
+		tag = SPR
+	}
+	allowed = {
+		tag = SPR
+	}
 }
 SPR_stress_level = {
 	icon = generic_political_actions
 	
 	priority = 95
+	allowed = {
+		tag = SPR
+	}
 
 	visible = {
 		tag = SPR
@@ -1699,6 +1705,20 @@ SPR_CUB_ten_years_war_category = {
 
 	allowed = {
 		tag = SPR
+	}
+}
+
+SPR_POR_iberianism = {
+	icon = generic_political_actions
+
+	visible = {
+		has_global_flag = IBR_path_to_union
+	}
+	allowed = {
+		OR={
+			tag = SPR
+			tag = POR
+		}
 	}
 }
 

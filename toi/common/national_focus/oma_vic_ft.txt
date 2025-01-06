@@ -813,10 +813,8 @@ focus_tree = {
 			remove_ideas={
 				OMA_economic_irrelevence_3
 			}
-			swap_ideas={
-				remove_idea = pre_industrial_era
-				add_idea = victorian_era
-			}
+			set_temp_variable = { institution_progress_temp = 20 }
+			eoanbr_institutions_innovative_change = yes
 		}
 
 		ai_will_do = {

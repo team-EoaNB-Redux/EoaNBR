@@ -28,7 +28,7 @@ state = {
 		}
 		afr_state_setup_scripted_effect = yes
 
-		1909.1.9 = {
+		1912.1.1 = {
 			owner = FRA
 			remove_core_of = ARR
 		}

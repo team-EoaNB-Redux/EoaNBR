@@ -510,7 +510,7 @@ ideas = {
 			modifier = {
 				import_tariff_max_modifier = -28
 				import_tariff_min_modifier = 160
-				export_tariff_max_modifier = -80
+				export_tariff_max_modifier = -100
 				export_tariff_min_modifier = 100
 			}
 		}
@@ -522,7 +522,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = HUN_treaty_of_triannon
 			removal_cost = -1
 
@@ -539,7 +538,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = USA_westpoint_napoleonic_thought
 			removal_cost = -1
 
@@ -560,7 +558,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = USA_westpoint_napoleonic_thought
 			removal_cost = -1
 
@@ -579,7 +576,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = USA_westpoint_reformed
 			removal_cost = -1
 
@@ -599,7 +595,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = generic_oppression
 			removal_cost = -1
 
@@ -615,7 +610,6 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = { always = no }
-			cancel = { NOT = { OR = { has_idea = victorian_era has_idea = machine_era } } }
 			picture = saf_history_of_segregation
 			removal_cost = -1
 
@@ -754,7 +748,7 @@ ideas = {
 				treasury_gain_monthly_per_gdp = 0.007
 				import_tariff_max_modifier = -28
 				import_tariff_min_modifier = 160
-				export_tariff_max_modifier = -80
+				export_tariff_max_modifier = -100
 				export_tariff_min_modifier = 10
 				bureaucratic_efficiency_factor = 0.1
 				upper_strata_income_tax_max_modifier = -97
@@ -783,7 +777,7 @@ ideas = {
 				treasury_gain_monthly_per_gdp = 0.01
 				import_tariff_max_modifier = -28
 				import_tariff_min_modifier = 160
-				export_tariff_max_modifier = -80
+				export_tariff_max_modifier = -100
 				export_tariff_min_modifier = 10
 				bureaucratic_efficiency_factor = 0.1
 				upper_strata_income_tax_max_modifier = -95
@@ -816,7 +810,7 @@ ideas = {
 				treasury_gain_monthly_per_gdp = 0.012
 				import_tariff_max_modifier = -28
 				import_tariff_min_modifier = 160
-				export_tariff_max_modifier = -80
+				export_tariff_max_modifier = -100
 				export_tariff_min_modifier = 10
 				bureaucratic_efficiency_factor = 0.1
 				upper_strata_income_tax_max_modifier = -92.5
@@ -846,6 +840,9 @@ ideas = {
 				mobilization_speed = 0.15
 				army_core_defence_factor = 0.05
 				##enemy_partisan_effect = -0.1
+				military_equipment_cost_factor = 0.5
+				military_payroll_cost_factor = 1.0
+				military_spending_min_factor = 0.25
 			}
 		}
 
@@ -3243,6 +3240,63 @@ ideas = {
 				tag = SPR
 				army_attack_factor = 0.10
 				army_defence_factor = 0.10
+			}
+		}
+
+		USA_labor_movement_1 = {
+			picture = usa_labor_movement_1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.025
+				social_egalitarianism_drift = 0.001
+			}
+		}
+
+		USA_labor_movement_2 = {
+			picture = usa_labor_movement_2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.05
+				social_egalitarianism_drift = 0.002
+				collectivist_socialism_drift = 0.001
+			}
+		}
+
+		USA_labor_movement_3 = {
+			picture = usa_labor_movement_3
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.075
+				social_egalitarianism_drift = 0.003
+				collectivist_socialism_drift = 0.002
+				vanguard_communism_drift = 0.001
 			}
 		}
 	}

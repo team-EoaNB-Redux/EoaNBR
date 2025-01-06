@@ -101,14 +101,14 @@ state = {
 	#   set_variable = { rubber_plantation_size = 0 }
 
 		# Blood and Iron
-		1870.1.1 = {
+		1870.5.11 = {
 			buildings = {
 				infrastructure = 7
 				industrial_complex = 1
 			}
 		}
 
-		1871.1.18 = {
+		1885.11.1 = {
 			owner = PRS
 			add_core_of = PRS
 			remove_core_of = HSD

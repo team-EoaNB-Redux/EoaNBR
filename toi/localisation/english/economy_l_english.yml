@@ -502,14 +502,22 @@
     eoanb_decision_cost_300_SPR_blocked: "§RInvalid§!"
     eoanb_decision_cost_300_SPR_tooltip: "[GetCurrencyTextIcon] National Debt to §Y[SPR.GetName]§!: §R+300§!"
   #
+  #Events
+    economy.100.t: "Major [?major_discovery_target:major_discovery_resource.GetTokenLocalizedKey] Discovery in [?major_discovery_target.GetName]!"
+    economy.100.d: "Recent efforts in prospecting at the [?major_discovery_target:major_discovery_resource.GetTokenLocalizedKey] Deposit in [?major_discovery_target.GetName] have yielded a new discovery of immense proportions. New fields of materials have been located and efforts are already underway to attempt to exploit this discovery. There is also talk that this major discovery lends credence to local rumors of greater treasures to be found, waiting to be unearthed."
+    economy.100.o1: "Astounding!"
+  #
 
-  treasury_change_positive_tooltip: "[GetCurrencyTextIcon]  Treasury: §G+$RIGHT$§!"
-  treasury_change_negative_tooltip: "[GetCurrencyTextIcon]  Treasury: §R-$RIGHT$§!"
-  debt_change_positive_tooltip: "[GetCurrencyTextIcon]  National Debt: §G-$RIGHT$K§!"
-  debt_change_negative_tooltip: "[GetCurrencyTextIcon]  National Debt: §R+$RIGHT$K§!"
+  treasury_change_positive_tooltip: "[GetCurrencyTextIcon]  Treasury: §G+$RIGHT$§!\n"
+  treasury_change_negative_tooltip: "[GetCurrencyTextIcon]  Treasury: §R-$RIGHT$§!\n"
+  debt_change_positive_tooltip: "[GetCurrencyTextIcon]  National Debt: §G-$RIGHT$K§!\n"
+  debt_change_negative_tooltip: "[GetCurrencyTextIcon]  National Debt: §R+$RIGHT$K§!\n"
   
-  investment_fund_change_positive_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §G+$RIGHT$§!"
-  investment_fund_change_negative_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §R-$RIGHT$§!"
+  investment_fund_change_positive_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §G+$RIGHT$§!\n"
+  investment_fund_change_negative_tooltip: "[GetCurrencyTextIcon]  Investment Fund: §R-$RIGHT$§!\n"
+
+  inherit_debt_tooltip: "Inherits §Y[?total_debt_temp]K§![GetCurrencyTextIcon]  of debt from §Y[?inheritee_temp.GetNameWithFlag]§!\n"
+  replace_debt_tooltip: "This will §Yreplace§! your current debt.\n"
 
   wip_tooltip: "§RUnder Development§!"
   wip_tooltip_delayed: "This is currently §RWIP§!. The §YEconomy System§! is still §Yunder development§! and will be updated with more features over time."
@@ -704,8 +712,8 @@
     pm_power_tools_unlock_tt: "§bEnable§! §OTools§! §YProduction Method:§!\n §o$pm_power_tools$§!"
     pm_cordless_tools_unlock_tt: "§bEnable§! §OTools§! §YProduction Method:§!\n §o$pm_cordless_tools$§!"
     pm_smart_tools_unlock_tt: "§bEnable§! §OTools§! §YProduction Method:§!\n §o$pm_smart_tools$§!"
-    pm_industrial_tools_iron_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_iron_tools$§!\n  Tools Output: £tools_texticon  §G+150.0%§!\n  Iron Input: £iron_texticon  §R+50.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+20.0%§!"
-    pm_mechanical_tools_iron_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_iron_tools$§!\n  Tools Output: £tools_texticon  §G+150.0%§!\n  Wood Input: £wood_texticon  §G-10.0%§!\n  Iron Input: £iron_texticon  §R+50.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+20.0%§!"
+    pm_industrial_tools_iron_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_iron_tools$§!\n  Tools Output: £tools_texticon  §G+120.0%§!\n  Iron Input: £iron_texticon  §R+30.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+10.0%§!"
+    pm_mechanical_tools_iron_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_iron_tools$§!\n  Tools Output: £tools_texticon  §G+120.0%§!\n  Wood Input: £wood_texticon  §G-10.0%§!\n  Iron Input: £iron_texticon  §R+30.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+10.0%§!"
     pm_pneumatic_tools_steel_tools_tt: "§OTools§! §YProduction Method:§!\n §o$pm_steel_tools$§!\n  Tools Output: £tools_texticon  §G+150.0%§!\n  Wood Input: £wood_texticon  §G-10.0%§!\n  Steel Input: £steel_texticon  §R+60.0%§!\n  Industrial Capacity Use: £GFX_boxcar_texticon  §R+20.0%§!"
    #
    #Consumer Goods Factories
@@ -976,6 +984,7 @@
 
     aristocrats_investment_contribution_factor: "£money_good_texticon  Aristocrats Investment Contribution"
     capitalists_investment_contribution_factor: "£money_good_texticon  Capitalists Investment Contribution"
+    pops_food_consumption_factor: "Pops Food Consumption"
 
     government_investment_efficiency_factor: "£money_good_texticon  Government Investment Efficiency"
 
@@ -2112,11 +2121,11 @@
       rgo_employment: "§S[?employment@var:v]K§!"
       rgo_productivity: "[GetIndustryProductivityV]§![GetCurrencyTextIconState]"
 
-      rgo_tt: "§O[?v.GetTokenLocalizedKey] Deposit:§!\n[?v.GetTokenLocalizedKey] Output: £[GetOutputTextIcon0] [?production@var:v^0|Y]\nBase [?v.GetTokenLocalizedKey] Deposit: £[GetOutputTextIcon0] §Y[?base_resource@var:v]§!\nBase Workforce Requirement: §S[GetIndustryBaseWorkforceRequirement]§!\n\nExtraction Output: §Y+0.0%§!\nKnown Reserves: £[GetOutputTextIcon0] §Y0§!\nPotential Reserves: £[GetOutputTextIcon0] §Y0§!\n\n[GetIndustryPMTotalLoc]\n[GetIndustryEmployment]\n§YFinances:§!\nRevenue:     [GetIndustryRevenue]§![GetCurrencyTextIconState] \nExpenses:    [GetIndustryExpenses]§![GetCurrencyTextIconState] \nProfit:            [GetIndustryProfit]§![GetCurrencyTextIconState] \n\nProfitability:  [GetIndustryProfitability] \nProductivity:  [GetIndustryProductivity]§![GetCurrencyTextIconState] \nBase Wage:  §Y[GetBaseWage]§![GetCurrencyTextIconState] \n"
+      rgo_tt: "§O[?v.GetTokenLocalizedKey] Deposit:§!\n[?v.GetTokenLocalizedKey] Output: £[GetOutputTextIcon0] [?production@var:v^0|Y]\nBase [?v.GetTokenLocalizedKey] Deposit: £[GetOutputTextIcon0] §Y[?base_resource@var:v]§!\nBase Workforce Requirement: §S[GetIndustryBaseWorkforceRequirement]§!\n\nExtraction Output: §Y+0.0%§!\nKnown Reserves: £[GetOutputTextIcon0] §Y[?known_reserves@var:v]§!\nPotential Reserves: £[GetOutputTextIcon0] §Y[?potential_reserves@var:v]§!\n\n[GetIndustryPMTotalLoc]\n[GetIndustryEmployment]\n§YFinances:§!\nRevenue:     [GetIndustryRevenue]§![GetCurrencyTextIconState] \nExpenses:    [GetIndustryExpenses]§![GetCurrencyTextIconState] \nProfit:            [GetIndustryProfit]§![GetCurrencyTextIconState] \n\nProfitability:  [GetIndustryProfitability] \nProductivity:  [GetIndustryProductivity]§![GetCurrencyTextIconState] \nBase Wage:  §Y[GetBaseWage]§![GetCurrencyTextIconState] \n"
       rgo_productivity_tt: "[GetIndustryFinances]"
       rgo_production_method_tt: "[GetIndustryPMLoc]\n[GetIndustryPMRetooling]"
       rgo_automation_method_tt: "[GetIndustryAMLoc]\n[GetIndustryAMRetooling]"
-      rgo_prospecting_tt: "§YProspecting:§!\nProspecting Ability: [?controller:modiifer@prospecting_ability_factor|+=1%]\nDiscovery Chance: §Y[?discovery_chance@var:v|1%]§!\nMajor Discovery Chance: §Y[?major_discovery_chance@var:v|1%]§!\n\nExtraction Output: [?extraction_output@var:v|+=1%]\nKnown Reserves: £[GetOutputTextIcon0] §Y[?known_reserves@var:v]§!\nPotential Reserves: £[GetOutputTextIcon0] §Y[?potential_reserves@var:v]§!\n\nNOTE: §RProspecting is Disabled§!"
+      rgo_prospecting_tt: "§YProspecting:§!\nProspecting Ability: [?controller:industry_prospecting_ability_factor@var:v|+=1%]\nDiscovery Chance: §Y[?discovery_chance@var:v|1%]§!\nMajor Discovery Chance: §Y[?major_discovery_chance@var:v|1%]§!\n\nTotal Resources: £[GetOutputTextIcon0] §Y[?reserves_total@var:v]§!\n   Under Extraction: £[GetOutputTextIcon0] §Y[?base_resource@var:v]§!\n   Known Reserves: £[GetOutputTextIcon0] §Y[?known_reserves@var:v]§!\n   Potential Reserves: £[GetOutputTextIcon0] §Y[?potential_reserves@var:v]§!"
 
       # Subsistence Farms & Arable Land
       arable_land_loc: "Arable Land: [?arable_land|0Y]"
@@ -2471,7 +2480,7 @@
             govt_military_spending_title: "Military Spending"
             govt_military_spending_percentage_loc: "[?military_spending_percentage|0]%"
             govt_military_spending_amount_loc: "[GetMilitarySpending]§![GetCurrencyTextIcon]"
-            govt_military_spending_tt: "Military: [GetMilitarySpending]§![GetCurrencyTextIcon] \n   - Army: [GetArmyMilitarySpending]§![GetCurrencyTextIcon] \n   - Navy: [GetNavyMilitarySpending]§![GetCurrencyTextIcon] \n   - Airforce: [GetAirforceMilitarySpending]§![GetCurrencyTextIcon] \n\nBureaucratic Efficiency: [?modifier@bureaucratic_efficiency_factor|Y%2] \n\n§YSpending Effects:§!\nSupply Consumption: [?military_spending_supply_consumption_factor|1%-=]\nFleet Coordination: [?military_spending_naval_coordination|1%+=]\nDivision Training Time: [?military_spending_training_time_army_factor|1Y%=]\nDivision Organiztation: [?military_spending_army_org_factor|1%+=]\nAir Superiority: [?military_spending_army_bonus_air_superiority_factor|1+%=]\nAir Accidents Chance: [?military_spending_air_accidents_factor|1%-=]\nAttrition: [?military_spending_attrition|1%-=]\nCommand Power Gain: [?military_spending_command_power_gain_mult|1%+=]\nMax Command Power: [?military_spending_max_command_power_mult|1+%=]\nArmy Recovery Rate: [?military_spending_army_morale_factor|1%+=]\nNavy Recovery Rate: [?military_spending_naval_morale_factor|1%+=]"
+            govt_military_spending_tt: "Military: [GetMilitarySpending]§![GetCurrencyTextIcon] \n   - Army: [GetArmyMilitarySpending]§![GetCurrencyTextIcon] \n   - Navy: [GetNavyMilitarySpending]§![GetCurrencyTextIcon] \n   - Airforce: [GetAirforceMilitarySpending]§![GetCurrencyTextIcon] \n\nBureaucratic Efficiency: [?modifier@bureaucratic_efficiency_factor|Y%1] \n\n§YSpending Effects:§!\nSupply Consumption: [?military_spending_supply_consumption_factor|1%-=]\nFleet Coordination: [?military_spending_naval_coordination|1%+=]\nDivision Training Time: [?military_spending_training_time_army_factor|1Y%=]\nDivision Organiztation: [?military_spending_army_org_factor|1%+=]\nAir Superiority: [?military_spending_army_bonus_air_superiority_factor|1+%=]\nAir Accidents Chance: [?military_spending_air_accidents_factor|1%-=]\nAttrition: [?military_spending_attrition|1%-=]\nCommand Power Gain: [?military_spending_command_power_gain_mult|1%+=]\nMax Command Power: [?military_spending_max_command_power_mult|1+%=]\nArmy Recovery Rate: [?military_spending_army_morale_factor|1%+=]\nNavy Recovery Rate: [?military_spending_naval_morale_factor|1%+=]"
             govt_military_spending_long_tt: "§CMilitary Spending§! affects what portion of §YGoods§! you buy from your market that your military needs to maintain itself. Lowering §CMilitary Spending§! will have negative effects on §YCombat Capabilities§!. Updates to those effects are only applied §YMonthly§!.\n\n§CMilitary Spending§! costs are increased by low §YBureaucratic Efficiency§!."
           #
           #Research Spending
@@ -2507,7 +2516,7 @@
 
           govt_military_mandatory_spending_title: "Military Payroll & Prod"
           govt_military_mandatory_spending_amount_loc: "[GetMilitaryMandatorySpending]§![GetCurrencyTextIcon]"
-          govt_military_mandatory_spending_tt: "Spending: [GetMilitaryMandatorySpending]§![GetCurrencyTextIcon] \n   - Military Payroll: [GetMilitaryPayrollSpending]§![GetCurrencyTextIcon]  \n   - Industry Payroll: [GetMilitaryProductionPayrollSpending]§![GetCurrencyTextIcon] \n   - Equipment & Ship Production: [GetMilitaryProductionResourcesSpending]§![GetCurrencyTextIcon] \n\nBureaucratic Efficiency: [?modifier@bureaucratic_efficiency_factor|Y%2]"
+          govt_military_mandatory_spending_tt: "Spending: [GetMilitaryMandatorySpending]§![GetCurrencyTextIcon] \n   - Military Payroll: [GetMilitaryPayrollSpending]§![GetCurrencyTextIcon]  \n   - Industry Payroll: [GetMilitaryProductionPayrollSpending]§![GetCurrencyTextIcon] \n   - Equipment & Ship Production: [GetMilitaryProductionResourcesSpending]§![GetCurrencyTextIcon] \n\nBureaucratic Efficiency: [?modifier@bureaucratic_efficiency_factor|Y%1]"
 
           govt_order_and_intel_spending_title: "Order & Intel"
           govt_order_and_intel_spending_amount_loc: "[GetOrderAndIntelSpending]§![GetCurrencyTextIcon]"
@@ -2517,11 +2526,11 @@
 
           govt_other_spending_title: "Other"
           govt_other_spending_amount_loc: "[GetOtherSpending]§![GetCurrencyTextIcon]"
-          govt_other_spending_tt: "Spending: [GetOtherSpending]§![GetCurrencyTextIcon] \n   - Industry Payroll: [GetPublicEnterprisePayrollSpending]§![GetCurrencyTextIcon] \n   - Modifiers: [GetModifierSpending]§![GetCurrencyTextIcon] \n\nBureaucratic Efficiency: [?modifier@bureaucratic_efficiency_factor|Y%2]"
+          govt_other_spending_tt: "Spending: [GetOtherSpending]§![GetCurrencyTextIcon] \n   - Industry Payroll: [GetPublicEnterprisePayrollSpending]§![GetCurrencyTextIcon] \n   - Modifiers: [GetModifierSpending]§![GetCurrencyTextIcon] \n\nBureaucratic Efficiency: [?modifier@bureaucratic_efficiency_factor|Y%1]"
 
           govt_interest_spending_title: "Interest"
           govt_interest_spending_amount_loc: "[GetNationalDebtInterest]§![GetCurrencyTextIcon]"
-
+          govt_interest_spending_amount_loc_tt: "Monthly Interest on Debt: [GetNationalDebtInterest]§![GetCurrencyTextIcon] \nAverage Interest Rate: §Y[?national_debt_interest_rate]%§!"
           govt_mandatory_spending_amount_loc: "[GetMandatorySpending]§![GetCurrencyTextIcon]"
         #
         govt_spending_amount_loc: "[GetSpending]§![GetCurrencyTextIcon]"
@@ -2802,10 +2811,18 @@
   has_steel_foundry_tt: "Has §OSteel Foundry§!"
   has_size_of_industry_tt: "At least §Y[?size_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!"
 
-  construct_x_industries_tt: "Start Construction of §G[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!."
-  add_x_industries_tt: "Add §G[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!."
-  remove_x_industries_tt: "Remove §R[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!."
-  has_treasury_tt: "Has [GetCurrencyTextIcon]  Treasury: §Y[?x_temp|2]§!"
+  construct_x_industries_tt: "Start Construction of §G[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!.\n"
+  add_x_industries_tt: "Add §G[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!.\n"
+  remove_x_industries_tt: "Remove §R[?x_temp]§! §O[?industry_token.GetTokenLocalizedKey]§!.\n"
+  add_x_deposits_tt: "Add £[GetRTokenTextIcon] §G[?x_temp]§! §O[?r_token.GetTokenLocalizedKey] Deposits§!.\n"
+  remove_x_deposits_tt: "Remove £[GetRTokenTextIcon] §R[?x_temp]§! §O[?r_token.GetTokenLocalizedKey] Deposits§!.\n"
+  add_x_known_reserves_tt: "Add £[GetRTokenTextIcon] §G[?x_temp]§! §OKnown [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
+  remove_x_known_reserves_tt: "Remove £[GetRTokenTextIcon] §R[?x_temp]§! §OKnown [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
+  add_x_potential_reserves_tt: "Add £[GetRTokenTextIcon] §G[?x_temp]§! §OPotential [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
+  remove_x_potential_reserves_tt: "Remove £[GetRTokenTextIcon] §R[?x_temp]§! §OPotential [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
+  has_treasury_tt: "Has [GetCurrencyTextIcon]  Treasury: §Y[?x_temp|2]§!\n"
   
-  can_spend_without_default_trigger_tt: "Can spend [GetCurrencyTextIcon] §Y[?x_temp|2]§! without defaulting."
-  no_debt_level_trigger_tt: "Has no §YDebt§!"
+  can_spend_without_default_trigger_tt: "Can spend [GetCurrencyTextIcon] §Y[?x_temp|2]§! without defaulting.\n"
+  no_debt_level_trigger_tt: "Has no §YDebt§!\n"
+
+ is_in_x_market_tt: "Is in [?market_leader.GetFlag]§Y[?market_leader.GetAdjective] Market§!\n"

@@ -2,18 +2,3169 @@ shared_focus = {
 	id = USA_gilded_age_start
 	icon = GFX_goal_focus_us_gilded_age
 	cost = 40
-	x = 45
+	x = 47
 	y = 0
 	completion_reward = {
 		add_stability = 0.02
 	}
 }
 shared_focus = {
-	id = USA_gilded_industrial_revolution
-	icon = placeholder
+	id = USA_gilded_social_reforms
+	icon = GFX_Focus_social_reforms
 	cost = 40
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
+	x = -12
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_enforce_federal_election_security
+	icon = GFX_Focus_Law_Vote_1
+	cost = 40
+	relative_position_id = USA_gilded_social_reforms
+	prerequisite = { focus = USA_gilded_social_reforms }
+	available = {
+		always = no
+		# has_leader_trait = feminist
+		# states that have enacted women's suffrage > 50%
+	}
+	x = -2
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_enact_womens_suffrage
+	icon = GFX_focus_usa_the_suffragette_movement
+	cost = 40
+	relative_position_id = USA_gilded_enforce_federal_election_security
+	prerequisite = { focus = USA_gilded_enforce_federal_election_security }
+	available = {
+		always = no
+		# has_leader_trait = feminist
+		# states that have enacted women's suffrage > 50%
+	}
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_establish_a_public_school_system
+	icon = GFX_Focus_Renovate_School
+	cost = 40
+	relative_position_id = USA_gilded_social_reforms
+	prerequisite = { focus = USA_gilded_social_reforms }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_ban_aid_to_religious_schools
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_establish_a_public_school_system
+	prerequisite = { focus = USA_gilded_establish_a_public_school_system }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_chinese_immigration_question
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_social_reforms
+	prerequisite = { focus = USA_gilded_social_reforms }
+	x = 2
+	y = 1
+	completion_reward = {
+		# Event to decide whether or not to ban chinese immigration
+	}
+}
+shared_focus = {
+	id = USA_gilded_bureaucratic_reforms
+	icon = GFX_Focus_Reform_Government
+	cost = 40
+	relative_position_id = USA_gilded_age_start
+	prerequisite = { focus = USA_gilded_age_start }
+	x = -5
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_establish_civil_service_commission
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_bureaucratic_reforms
+	prerequisite = { focus = USA_gilded_bureaucratic_reforms }
+	x = -3
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_anti_moiety_acts
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_establish_civil_service_commission
+	prerequisite = { focus = USA_gilded_establish_civil_service_commission }
+	x = -2
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_cut_federal_workforce
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_establish_civil_service_commission
+	prerequisite = { focus = USA_gilded_establish_civil_service_commission }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_root_out_interior_department_corruption
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_establish_civil_service_commission
+	prerequisite = { focus = USA_gilded_establish_civil_service_commission }
+	x = 2
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_establish_justice_department
+	icon = GFX_focus_usa_establish_justice_department
+	cost = 40
+	relative_position_id = USA_gilded_bureaucratic_reforms
+	prerequisite = { focus = USA_gilded_bureaucratic_reforms }
+	x = 2
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_prosecute_mormons
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_establish_justice_department
+	prerequisite = { focus = USA_gilded_establish_justice_department }
+	x = -1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_address_fraud_in_southern_courts
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_establish_justice_department
+	prerequisite = { focus = USA_gilded_establish_justice_department }
+	x = 1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_prosecute_whiskey_ring
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_address_fraud_in_southern_courts
+	prerequisite = { focus = USA_gilded_address_fraud_in_southern_courts }
+	x = 0
+	y = 1
+	completion_reward = {
+		# Remove state modifier in Missouri 'The Whiskey Ring'
+	}
+}
+shared_focus = {
+	id = USA_gilded_economic_reforms
+	icon = GFX_Focus_Reform_Economy
+	cost = 40
+	relative_position_id = USA_gilded_age_start
+	prerequisite = { focus = USA_gilded_age_start }
+	x = 8
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_impose_graduated_income_tax
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_economic_reforms
+	prerequisite = { focus = USA_gilded_economic_reforms }
+	x = -8
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_federal_eight_hour_workday
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_economic_reforms
+	prerequisite = { focus = USA_gilded_economic_reforms }
+	x = -6
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_the_labor_movement
+	icon = placeholder
+	cost = 0
+	relative_position_id = USA_gilded_federal_eight_hour_workday
+	prerequisite = { focus = USA_gilded_federal_eight_hour_workday }
+	available = { always = no } # by event
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_support_unions
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_the_labor_movement
+	prerequisite = { focus = USA_gilded_the_labor_movement }
+	mutually_exclusive = { focus = USA_gilded_union_busting }
+	x = -1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_union_busting
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_the_labor_movement
+	prerequisite = { focus = USA_gilded_the_labor_movement }
+	mutually_exclusive = { focus = USA_gilded_support_unions }
+	x = 1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_dependent_and_disability_pension_act
+	icon = placeholder
+	cost = 70
+	relative_position_id = USA_gilded_economic_reforms
+	prerequisite = { focus = USA_gilded_economic_reforms }
+	x = -3
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_return_to_the_gold_standard
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_economic_reforms
+	prerequisite = { focus = USA_gilded_economic_reforms }
+	mutually_exclusive = { focus = USA_gilded_support_the_greenbacks }
+	x = -1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_increase_silver_coinage
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_return_to_the_gold_standard
+	prerequisite = { focus = USA_gilded_return_to_the_gold_standard }
+	mutually_exclusive = { focus = USA_gilded_reduce_silver_coinage }
+	x = -2
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_adopt_free_silver
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_increase_silver_coinage
+	prerequisite = { focus = USA_gilded_increase_silver_coinage }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_reduce_silver_coinage
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_return_to_the_gold_standard
+	prerequisite = { focus = USA_gilded_return_to_the_gold_standard }
+	mutually_exclusive = { focus = USA_gilded_increase_silver_coinage }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_support_the_greenbacks
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_economic_reforms
+	prerequisite = { focus = USA_gilded_economic_reforms }
+	mutually_exclusive = { focus = USA_gilded_return_to_the_gold_standard }
+	x = 1
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_increase_protective_tariffs
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_return_to_the_gold_standard
+	prerequisite = {
+		focus = USA_gilded_support_the_greenbacks
+		focus = USA_gilded_return_to_the_gold_standard
+	}
+	mutually_exclusive = { focus = USA_gilded_reduce_protective_tariffs }
+	x = 2
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_reduce_protective_tariffs
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_support_the_greenbacks
+	prerequisite = {
+		focus = USA_gilded_support_the_greenbacks
+		focus = USA_gilded_return_to_the_gold_standard
+	}
+	mutually_exclusive = { focus = USA_gilded_increase_protective_tariffs }
+	x = 2
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_restrict_prison_labor
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_economic_reforms
+	prerequisite = { focus = USA_gilded_economic_reforms }
+	x = 3
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_begin_business_regulations
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_economic_reforms
+	prerequisite = { focus = USA_gilded_economic_reforms }
+	x = 5
+	y = 1
+	available = {
+		NOT = {
+			has_government = centrism
+		}
+	}
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_establish_interstate_commerce_commission
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_begin_business_regulations
+	prerequisite = { focus = USA_gilded_begin_business_regulations }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_trust_busting_measures
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_establish_interstate_commerce_commission
+	prerequisite = { focus = USA_gilded_establish_interstate_commerce_commission }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_services_nationalization
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_economic_reforms
+	prerequisite = { focus = USA_gilded_economic_reforms }
+	x = 7
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_establish_postal_savings_bank
+	icon = placeholder
+	cost = 40
+	relative_position_id = USA_gilded_services_nationalization
+	prerequisite = { focus = USA_gilded_services_nationalization }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+### FUND THE ACADEMIA ###
+shared_focus = {
+	id = USA_research_civilian
+	icon = GFX_focus_research
+	cost = 40
+	available = {
+		OR = {
+			has_global_flag = ACW_American_Civil_War_Avoided
+			has_global_flag = ACW_American_Civil_War_Happened
+		}
+	}
+	x = 29
+	y = 2
+	completion_reward = {
+		add_political_power = -25
+	}
+	allow_branch = {
+		if = {
+			limit = { is_debug = no }
+			OR = {
+				has_global_flag = ACW_American_Civil_War_Avoided
+				has_global_flag = ACW_American_Civil_War_Happened
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_engineer
+	icon = GFX_goal_generic_production2
+	cost = 40
+	prerequisite = {
+		focus = USA_research_civilian
+	}
+	relative_position_id = USA_research_civilian
+	x = 0
+	y = 1
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = cat_industry_techs
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = cat_refinement_techs
+		}
+		add_political_power = -10
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_train
+	icon = GFX_Focus_transport_railroad_development
+	cost = 40
+	prerequisite = {
+		focus = USA_research_civilian
+	}
+	relative_position_id = USA_research_civilian
+	x = 2
+	y = 1
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = cat_transportation_techs
+		}
+		add_political_power = -10
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_excavation
+	icon = GFX_goal_generic_construction2
+	cost = 40
+	prerequisite = {
+		focus = USA_research_civilian
+	}
+	relative_position_id = USA_research_civilian
+	x = -2
+	y = 1
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = cat_extraction_techs
+		}
+		add_political_power = -10
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_chemistry
+	icon = GFX_goal_generic_scientific_exchange
+	cost = 60
+	prerequisite = {
+		focus = USA_research_civilian_train
+	}
+	prerequisite = {
+		focus = USA_research_civilian_engineer
+	}
+	relative_position_id = USA_research_civilian
+	x = 1
+	y = 2
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = cat_science_techs
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = cat_science_techs
+		}
+		add_political_power = -10
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_explosives
+	icon = GFX_goal_generic_occupy_start_war
+	cost = 60
+	prerequisite = {
+		focus = USA_research_civilian_train
+	}
+	prerequisite = {
+		focus = USA_research_civilian_excavation
+	}
+	relative_position_id = USA_research_civilian
+	x = -1
+	y = 2
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = cat_explosives_science_techs
+		}
+		add_political_power = -10
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_electronics
+	icon = GFX_goal_generic_production
+	cost = 50
+	prerequisite = {
+		focus = USA_research_civilian_chemistry
+	}
+	prerequisite = {
+		focus = USA_research_civilian_explosives
+	}
+	relative_position_id = USA_research_civilian
+	x = 0
+	y = 3
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = electronics_devices_tech
+		}
+		add_political_power = -10
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_aviation
+	icon = GFX_goal_generic_air_doctrine
+	cost = 50
+	prerequisite = {
+		focus = USA_research_civilian_chemistry
+	}
+	prerequisite = {
+		focus = USA_research_civilian_explosives
+	}
+	relative_position_id = USA_research_civilian
+	x = 2
+	y = 3
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = aviation_tech
+		}
+		add_political_power = -10
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_air_equipment
+	icon = GFX_goal_generic_air_production
+	cost = 50
+	prerequisite = {
+		focus = USA_research_civilian_chemistry
+	}
+	prerequisite = {
+		focus = USA_research_civilian_explosives
+	}
+	relative_position_id = USA_research_civilian
+	x = -2
+	y = 3
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = air_equipment
+		}
+		add_political_power = -10
+	}
+}
+shared_focus = {
+	id = USA_research_civilian_finish
+	icon = GFX_focus_research2
+	cost = 70
+	relative_position_id = USA_research_civilian
+	x = 0
+	y = 4
+	prerequisite = {
+		focus = USA_research_civilian_electronics
+	}
+	prerequisite = {
+		focus = USA_research_civilian_aviation
+	}
+	prerequisite = {
+		focus = USA_research_civilian_air_equipment
+	}
+	completion_reward = {
+		add_timed_idea = { idea = USA_technological_ascendence days = 365 }
+	}
+}
+### FOREIGN DIPLOMACY ###
+shared_focus = {
+	id = USA_foreign_diplomacy
+	icon = GFX_goal_generic_intelligence_exchange
+	cost = 35
+	available = {
+		OR = {
+			has_global_flag = ACW_American_Civil_War_Avoided
+			has_global_flag = ACW_American_Civil_War_Happened
+		}
+	}
+	x = 89
+	y = 0
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_monroe
+	icon = GFX_Focus_Continent_North_America
+	cost = 35
+	prerequisite = {
+		focus = USA_foreign_diplomacy
+	}
+	relative_position_id = USA_foreign_diplomacy
+	x = -17
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_political_power = 25
+		if = {
+			limit = {
+				has_country_flag = USA_ACW_monroe_broken
+			}
+			country_event = { id = acw.42 }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_natives
+	icon = GFX_focus_renounce_the_treaty_of_trianon
+	cost = 35
+	prerequisite = {
+		focus = USA_foreign_diplomacy
+	}
+	mutually_exclusive = { focus = USA_maintain_native_treaties }
+	available = {
+		NOT = { has_war_with = CSA }
+		NOT = { has_war_with = USA }
+	}
+	relative_position_id = USA_foreign_diplomacy
+	x = -9
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_political_power = -25
+		if = {
+			limit = {
+				has_completed_focus = USA_FN_appeasing2
+			}
+			add_political_power = -100
+			add_stability = -0.025
+		}
+		1045 = {
+			add_claim_by = USA
+		}
+		1046 = {
+			add_claim_by = USA
+		}
+		1047 = {
+			add_claim_by = USA
+		}
+		1048 = {
+			add_claim_by = USA
+		}
+		1049 = {
+			add_claim_by = USA
+		}
+		1050 = {
+			add_claim_by = USA
+		}
+		1051 = {
+			add_claim_by = USA
+		}
+		1052 = {
+			add_claim_by = USA
+		}
+		1278 = {
+			add_claim_by = USA
+		}
+		1279 = {
+			add_claim_by = USA
+		}
+		1280 = {
+			add_claim_by = USA
+		}
+		1281 = {
+			add_claim_by = USA
+		}
+		1282 = {
+			add_claim_by = USA
+		}
+		1283 = {
+			add_claim_by = USA
+		}
+		1286 = {
+			add_claim_by = USA
+		}
+		1288 = {
+			add_claim_by = USA
+		}
+		1289 = {
+			add_claim_by = USA
+		}
+		1290 = {
+			add_claim_by = USA
+		}
+		1291 = {
+			add_claim_by = USA
+		}
+		1292 = {
+			add_claim_by = USA
+		}
+		1293 = {
+			add_claim_by = USA
+		}
+		# 1295 = {
+		# 	add_claim_by = USA
+		# }
+		1296 = {
+			add_claim_by = USA
+		}
+		1298 = {
+			add_claim_by = USA
+		}
+		1301 = {
+			add_claim_by = USA
+		}
+		# 376 = {
+		# 	add_claim_by = USA
+		# }
+		381 = {
+			add_claim_by = USA
+		}
+		387 = {
+			add_claim_by = USA
+		}
+		1074 = {
+			add_claim_by = USA
+		}
+
+		hidden_effect = {
+			custom_effect_tooltip = FNT_raid_likelihood_var_increased
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@SHO value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@NEZ value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@BFT value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@CRW value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@SIX value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@CHY value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@COM value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@APA value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@NAV value = 4 }
+			add_to_variable = { var = USA.FNT_raid_likelihood_var@SEM value = 4 }
+			if = {
+				limit = {
+					NOT = { country_exists = SIX }
+				}
+				unlock_national_focus = USA_diplomacy_sioux
+				unlock_national_focus = USA_diplomacy_attack_sioux
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = CHY }
+				}
+				unlock_national_focus = USA_diplomacy_cheyenne
+				unlock_national_focus = USA_diplomacy_attack_cheyenne
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = NEZ }
+				}
+				unlock_national_focus = USA_diplomacy_nez
+				unlock_national_focus = USA_diplomacy_attack_nez
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = COM }
+				}
+				unlock_national_focus = USA_diplomacy_com
+				unlock_national_focus = USA_diplomacy_attack_com
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = NAV }
+				}
+				unlock_national_focus = USA_diplomacy_nav
+				unlock_national_focus = USA_diplomacy_attack_nav
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = APA }
+				}
+				unlock_national_focus = USA_diplomacy_apa
+				unlock_national_focus = USA_diplomacy_attack_apa
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = SHO }
+				}
+				unlock_national_focus = USA_diplomacy_sho
+				unlock_national_focus = USA_diplomacy_attack_sho
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = crw }
+				}
+				unlock_national_focus = USA_diplomacy_crw
+				unlock_national_focus = USA_diplomacy_attack_crw
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = BFT }
+				}
+				unlock_national_focus = USA_diplomacy_bft
+				unlock_national_focus = USA_diplomacy_attack_bft
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = SEM }
+				}
+				unlock_national_focus = USA_diplomacy_attack_seminole
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = UTA }
+				}
+				unlock_national_focus = USA_diplomacy_attack_utah
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_sioux
+	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = SIX
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = -4
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = SIX
+			modifier = usa_bad_relations
+		}
+		SIX = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_sioux
+	icon = GFX_goal_generic_more_territorial_claims
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_sioux
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		num_divisions > 5
+		USA = {
+			is_neighbor_of = SIX
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = -4
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = SIX
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = SIX
+				is_owned_by = SIX
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_cheyenne
+	icon = GFX_goal_generic_dangerous_deal
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	CHY = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = CHY
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = -2
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = CHY
+			modifier = usa_bad_relations
+		}
+		CHY = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_cheyenne
+	icon = GFX_goal_generic_military_deal
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_cheyenne
+	}
+	# bypass = {
+	# 	CHY = { exists = no }
+	# }
+	available = {
+		num_divisions > 5
+		USA = {
+			is_neighbor_of = CHY
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = -2
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = CHY
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = CHY
+				is_owned_by = CHY
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_nez
+	icon = GFX_goal_generic_military_sphere
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	NEZ = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = NEZ
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 0
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = NEZ
+			modifier = usa_bad_relations
+		}
+		NEZ = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_nez
+	icon = GFX_goal_generic_major_war
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_nez
+	}
+	# bypass = {
+	# 	NEZ = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = NEZ
+		}
+	}
+	available = { num_divisions > 5 }
+	relative_position_id = USA_diplomacy_natives
+	x = 0
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = NEZ
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = NEZ
+				is_owned_by = NEZ
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_com
+	icon = GFX_focus_generic_provoke_border_clashes
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	COM = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = COM
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 2
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = COM
+			modifier = usa_bad_relations
+		}
+		COM = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_com
+	icon = GFX_Focus_imperialism
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_com
+	}
+	# bypass = {
+	# 	COM = { exists = no }
+	# }
+	available = {
+		num_divisions > 5
+		USA = {
+			is_neighbor_of = SEM
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 2
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = COM
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = COM
+				is_owned_by = COM
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_nav
+	icon = GFX_focus_generic_support_the_left_right
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	NAV = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = NAV
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 1
+	y = 3
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = NAV
+			modifier = usa_bad_relations
+		}
+		NAV = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_nav
+	icon = GFX_goal_anschluss
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_nav
+	}
+	# bypass = {
+	# 	NAV = { exists = no }
+	# }
+	available = {
+		num_divisions > 5
+		USA = {
+			is_neighbor_of = NAV
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 1
+	y = 4
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = NAV
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = NAV
+				is_owned_by = NAV
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_apa
+	icon = GFX_goal_generic_defence
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	APA = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = APA
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = -1
+	y = 3
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = APA
+			modifier = usa_bad_relations
+		}
+		APA = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_apa
+	icon = GFX_goal_generic_political_pressure
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_apa
+	}
+	# bypass = {
+	# 	APA = { exists = no }
+	# }
+	available = {
+		num_divisions > 5
+		USA = {
+			is_neighbor_of = APA
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = -1
+	y = 4
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = APA
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = APA
+				is_owned_by = APA
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_sho
+	icon = GFX_goal_tripartite_pact
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	SHO = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = SHO
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = -3
+	y = 3
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = SHO
+			modifier = usa_bad_relations
+		}
+		SHO = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_sho
+	icon = GFX_goal_generic_small_arms
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_sho
+	}
+	# bypass = {
+	# 	SHO = { exists = no }
+	# }
+	available = {
+		num_divisions > 5
+		USA = {
+			is_neighbor_of = SEM
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = -3
+	y = 4
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = SHO
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = SHO
+				is_owned_by = SHO
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_crw
+	icon = GFX_goal_generic_allies_build_infantry
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	CRW = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = CRW
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 3
+	y = 3
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = CRW
+			modifier = usa_bad_relations
+		}
+		CRW = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_crw
+	icon = GFX_goal_generic_army_artillery
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_crw
+	}
+	# bypass = {
+	# 	CRW = { exists = no }
+	# }
+	available = {
+		num_divisions > 5
+		USA = {
+			is_neighbor_of = CRW
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 3
+	y = 4
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = CRW
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = CRW
+				is_owned_by = CRW
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_bft
+	icon = GFX_goal_continuous_suppression
+	cost = 49
+	prerequisite = {
+		focus = USA_diplomacy_natives
+	}
+	# bypass = {
+	# 	BFT = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = BFT
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 4
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = BFT
+			modifier = usa_bad_relations
+		}
+		BFT = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_bad_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_bft
+	icon = GFX_goal_generic_army_artillery2
+	cost = 56
+	prerequisite = {
+		focus = USA_diplomacy_bft
+	}
+	# bypass = {
+	# 	BFT = { exists = no }
+	# }
+	available = {
+		num_divisions > 5
+		USA = {
+			is_neighbor_of = BFT
+		}
+	}
+	relative_position_id = USA_diplomacy_natives
+	x = 4
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = BFT
+			type = annex_everything
+		}
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = BFT
+				is_owned_by = BFT
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_seminole
+	icon = GFX_goal_generic_attack_allies
+	cost = 40
+	prerequisite = {
+		focus = USA_diplomacy_attack_sioux
+		focus = USA_diplomacy_attack_cheyenne
+		focus = USA_diplomacy_attack_nez
+		focus = USA_diplomacy_attack_com
+		focus = USA_diplomacy_attack_bft
+		focus = USA_diplomacy_attack_sho
+		focus = USA_diplomacy_attack_apa
+		focus = USA_diplomacy_attack_nav
+		focus = USA_diplomacy_attack_crw
+	}
+	# bypass = {
+	# 	SEM = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = SEM
+		}
+	}
+	available = { num_divisions > 10 }
+	relative_position_id = USA_diplomacy_natives
+	x = -3
+	y = 5
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		set_country_flag = PS_war_immunity_temp
+		declare_war_on = {
+			target = SEM
+			type = annex_everything
+		}
+		add_state_core = 1211
+		remove_state_claim = 1211
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		every_state = {
+			limit = {
+				is_core_of = SEM
+				is_owned_by = SEM
+			}
+			custom_effect_tooltip = AFR_Racial_Tension_plus_2
+			hidden_effect = { state_event = { id = afr_rrp_racial_tension_increase.2 } }
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_attack_utah
+	icon = GFX_focus_generic_strike_at_democracy2
+	cost = 70
+	prerequisite = {
+		focus = USA_diplomacy_attack_sioux
+		focus = USA_diplomacy_attack_cheyenne
+		focus = USA_diplomacy_attack_nez
+		focus = USA_diplomacy_attack_com
+		focus = USA_diplomacy_attack_bft
+		focus = USA_diplomacy_attack_sho
+		focus = USA_diplomacy_attack_apa
+		focus = USA_diplomacy_attack_nav
+		focus = USA_diplomacy_attack_crw
+	}
+	# bypass = {
+	# 	UTA = { exists = no }
+	# }
+	available = { num_divisions > 10 }
+	relative_position_id = USA_diplomacy_natives
+	x = 3
+	y = 5
+	completion_reward = {
+		declare_war_on = {
+			target = UTA
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_native_cleaning
+	icon = GFX_Focus_Continent_North_America
+	cost = 70
+	prerequisite = {
+		focus = USA_diplomacy_attack_sioux
+	}
+	prerequisite = {
+		focus = USA_diplomacy_attack_cheyenne
+	}
+	prerequisite = {
+		focus = USA_diplomacy_attack_nez
+	}
+	prerequisite = {
+		focus = USA_diplomacy_attack_com
+	}
+	prerequisite = {
+		focus = USA_diplomacy_attack_bft
+	}
+	prerequisite = {
+		focus = USA_diplomacy_attack_sho
+	}
+	prerequisite = {
+		focus = USA_diplomacy_attack_apa
+	}
+	prerequisite = {
+		focus = USA_diplomacy_attack_nav
+	}
+	prerequisite = {
+		focus = USA_diplomacy_attack_crw
+	}
+	available = {
+		AND = {
+			SIX = { exists = no }
+			CHY = { exists = no }
+			NEZ = { exists = no }
+			COM = { exists = no }
+			BFT = { exists = no }
+			SHO = { exists = no }
+			APA = { exists = no }
+			NAV = { exists = no }
+			CRW = { exists = no }
+		}
+	}
+	available = { num_divisions > 10 }
+	relative_position_id = USA_diplomacy_natives
+	x = 0
+	y = 5
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_mexico
+	icon = GFX_Focus_mexican_intervention
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_monroe
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = -2
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = MEX
+			modifier = usa_improved_relations
+		}
+		MEX = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_improved_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_maintain_native_treaties
+	icon = GFX_focus_na_n_diplomatic_ties_with_the_us
+	cost = 30
+	relative_position_id = USA_foreign_diplomacy
+	x = 1
+	y = 1
+	available = {
+		NOT = { has_war_with = CSA }
+		NOT = { has_war_with = USA }
+		OR = {
+			has_country_flag = completed_USA_FN_appeasing1
+		}
+	}
+	prerequisite = {
+		focus = USA_foreign_diplomacy
+	}
+	mutually_exclusive = { focus = USA_diplomacy_natives }
+	completion_reward = {
+		add_political_power = -100
+		add_stability = -0.025
+		custom_effect_tooltip = FNT_raid_likelihood_var_decreased
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@SHO value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@NEZ value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@BFT value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@CRW value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@SIX value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@CHY value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@COM value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@APA value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@NAV value = -6 }
+		add_to_variable = { var = USA.FNT_raid_likelihood_var@SEM value = -6 }
+		set_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 }
+		set_variable = { USA_FN_trade_modifier_cavalry_attack_factor = 0 }
+		set_variable = { USA_FN_trade_modifier_cavalry_defence_factor = 0 }
+		set_variable = { USA_FN_trade_modifier_country_resource_food = 0 }
+		set_variable = { USA_FN_trade_modifier_country_resource_fiber = 0 }
+		set_variable = { USA_FN_trade_modifier_country_resource_consumer_goods = 0 }
+		set_variable = { USA_FN_trade_modifier_country_resource_textiles = 0 }
+		set_variable = { USA_FN_trade_modifier_country_resource_luxuries = 0 }
+		set_variable = { USA_FN_trade_modifier_country_resource_valuables = 0 }
+		add_dynamic_modifier = { modifier = USA_FN_trade_modifier }
+		#add_to_variable = { var = USA.FNT_raid_likelihood_var@OKL value = -6 }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_sioux
+	icon = GFX_focus_usa_diplomacy_trade_sioux
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = SIX
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = -4
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = SIX
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_food = 2 tooltip = country_resource_food_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_fiber = 2 tooltip = country_resource_fiber_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_valuables = 1 tooltip = country_resource_valuables_tt }
+		SIX = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_sioux
+	icon = GFX_focus_usa_diplomacy_recognize_sioux
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_sioux
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = SIX
+			has_opinion = {
+				target = SIX
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_sioux
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = SIX
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = SIX
+		SIX = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_cheyenne_arapaho
+	icon = GFX_focus_usa_diplomacy_trade_cheyenne_arapaho
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = CHY
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = -2
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = CHY
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_cavalry_attack_factor = 0.025 tooltip = cavalry_attack_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_cavalry_defence_factor = 0.025 tooltip = cavalry_defence_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_food = 1 tooltip = country_resource_food_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_fiber = 2 tooltip = country_resource_fiber_tt }
+		CHY = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_cheyenne_arapaho
+	icon = GFX_focus_usa_diplomacy_recognize_cheyenne_arapaho
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_cheyenne_arapaho
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = CHY
+			has_opinion = {
+				target = CHY
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_cheyenne_arapaho
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = CHY
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = CHY
+		CHY = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_nez_perce
+	icon = GFX_focus_usa_diplomacy_trade_nez_perce
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = NEZ
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = NEZ
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_food = 3 tooltip = country_resource_food_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_consumer_goods = 2 tooltip = country_resource_consumer_goods_tt }
+		NEZ = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_nez_perce
+	icon = GFX_focus_usa_diplomacy_recognize_nez_perce
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_nez_perce
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = NEZ
+			has_opinion = {
+				target = NEZ
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_nez_perce
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = NEZ
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = NEZ
+		NEZ = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_comanche
+	icon = GFX_focus_usa_diplomacy_trade_comanche
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = COM
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = 2
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = COM
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_cavalry_attack_factor = 0.025 tooltip = cavalry_attack_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_cavalry_defence_factor = 0.025 tooltip = cavalry_defence_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_food = 2 tooltip = country_resource_food_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_fiber = 1 tooltip = country_resource_fiber_tt }
+		COM = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_comanche
+	icon = GFX_focus_usa_diplomacy_recognize_comanche
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_comanche
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = COM
+			has_opinion = {
+				target = COM
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_comanche
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = COM
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = COM
+		COM = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_blackfoot
+	icon = GFX_focus_usa_diplomacy_trade_blackfoot
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = BFT
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = 4
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = BFT
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_food = 4 tooltip = country_resource_food_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_consumer_goods = 1 tooltip = country_resource_consumer_goods_tt }
+		BFT = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_blackfoot
+	icon = GFX_focus_usa_diplomacy_recognize_blackfoot
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_blackfoot
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = BFT
+			has_opinion = {
+				target = BFT
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_blackfoot
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = BFT
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = BFT
+		BFT = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_shoshone
+	icon = GFX_focus_usa_diplomacy_trade_shoshone
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = SHO
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = -3
+	y = 3
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = SHO
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_cavalry_attack_factor = 0.025 tooltip = cavalry_attack_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_cavalry_defence_factor = 0.025 tooltip = cavalry_defence_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_food = 2 tooltip = country_resource_food_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_fiber = 1 tooltip = country_resource_fiber_tt }
+		SHO = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_shoshone
+	icon = GFX_focus_usa_diplomacy_recognize_shoshone
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_shoshone
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = SHO
+			has_opinion = {
+				target = SHO
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_shoshone
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = SHO
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = SHO
+		SHO = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_apache
+	icon = GFX_focus_usa_diplomacy_trade_apache
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = APA
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = -1
+	y = 3
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = APA
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_food = 3 tooltip = country_resource_food_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_fiber = 2 tooltip = country_resource_fiber_tt }
+		APA = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_apache
+	icon = GFX_focus_usa_diplomacy_recognize_apache
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_apache
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = APA
+			has_opinion = {
+				target = APA
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_apache
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = APA
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = APA
+		APA = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_navajo
+	icon = GFX_focus_usa_diplomacy_trade_navajo
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = NAV
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = 1
+	y = 3
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = APA
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_valuables = 2 tooltip = country_resource_valuables_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_textiles = 3 tooltip = country_resource_textiles_tt }
+		APA = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_navajo
+	icon = GFX_focus_usa_diplomacy_recognize_navajo
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_navajo
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = NAV
+			has_opinion = {
+				target = NAV
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_navajo
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = NAV
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = NAV
+		NAV = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_trade_crow
+	icon = GFX_focus_usa_diplomacy_trade_crow
+	cost = 98
+	prerequisite = {
+		focus = USA_maintain_native_treaties
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = CRW
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = 3
+	y = 3
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = APA
+			modifier = usa_fn_trade
+		}
+		custom_effect_tooltip = usa_modify_fn_trade_ns_intro
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_cavalry_attack_factor = 0.025 tooltip = cavalry_attack_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_cavalry_defence_factor = 0.025 tooltip = cavalry_defence_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_valuables = 1 tooltip = country_resource_valuables_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_textiles = 2 tooltip = country_resource_textiles_tt }
+		APA = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_trade
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_crow
+	icon = GFX_focus_usa_diplomacy_recognize_crow
+	cost = 112
+	prerequisite = {
+		focus = USA_diplomacy_trade_crow
+	}
+	# bypass = {
+	# 	SIX = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = CRW
+			has_opinion = {
+				target = CRW
+				value > 0
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_trade_crow
+	x = 0
+	y = 1
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = CRW
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = CRW
+		CRW = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_seminole
+	icon = GFX_focus_usa_diplomacy_recognize_seminole
+	cost = 40
+	prerequisite = {
+		focus = USA_diplomacy_recognize_sioux
+		focus = USA_diplomacy_recognize_cheyenne_arapaho
+		focus = USA_diplomacy_recognize_nez_perce
+		focus = USA_diplomacy_recognize_comanche
+		focus = USA_diplomacy_recognize_blackfoot
+		focus = USA_diplomacy_recognize_shoshone
+		focus = USA_diplomacy_recognize_apache
+		focus = USA_diplomacy_recognize_navajo
+		focus = USA_diplomacy_recognize_crow
+	}
+	# bypass = {
+	# 	SEM = { exists = no }
+	# }
+	available = {
+		USA = {
+			is_neighbor_of = SEM
+			has_opinion = {
+				target = SIX
+				value > 0
+			}
+		}
+		OR = {
+			AND = {
+				ROOT = {
+					is_neighbor_of = SEM
+				}
+				SEM = { exists = yes }
+			}
+			AND = {
+				1211 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = -3
+	y = 5
+	search_filters = { }
+	completion_reward = {
+		if = {
+			limit = {
+				SEM = { exists = no }
+			}
+			SEM = {
+				transfer_state = 1211
+			}
+		}
+		add_opinion_modifier = {
+			target = SEM
+			modifier = usa_fn_recognition
+		}
+		give_guarantee = SEM
+		add_to_variable = { USA_FN_trade_modifier_consumer_goods_factor = -0.005 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_food = 2 tooltip = country_resource_food_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_luxuries = 1 tooltip = country_resource_luxuries_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_fiber = 1 tooltip = country_resource_fiber_tt }
+		add_to_variable = { USA_FN_trade_modifier_country_resource_valuables = 1 tooltip = country_resource_valuables_tt }
+		SEM = {
+			add_ideas = FN_trade_with_USA
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_fn_recognition
+			}
+			drop_cosmetic_tag = yes
+			set_temp_variable = { eoanb_prestige_change = 10 }
+			eoanb_change_prestige_score = yes
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_recognize_ute
+	icon = placeholder
+	cost = 40
+	prerequisite = {
+		focus = USA_diplomacy_recognize_sioux
+		focus = USA_diplomacy_recognize_cheyenne_arapaho
+		focus = USA_diplomacy_recognize_nez_perce
+		focus = USA_diplomacy_recognize_comanche
+		focus = USA_diplomacy_recognize_blackfoot
+		focus = USA_diplomacy_recognize_shoshone
+		focus = USA_diplomacy_recognize_apache
+		focus = USA_diplomacy_recognize_navajo
+		focus = USA_diplomacy_recognize_crow
+	}
+	# bypass = {
+	# 	SEM = { exists = no }
+	# }
+	available = {
+		always = no
+		OR = {
+			AND = {
+				ROOT = {
+					is_neighbor_of = UTA
+				}
+				UTA = { exists = yes }
+			}
+			AND = {
+				380 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				258 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				1092 = {
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = 3
+	y = 5
+	search_filters = { }
+	completion_reward = {
+		# Free the Ute people in Utah
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_close_residential_schools
+	icon = GFX_focus_usa_diplomacy_close_residential_schools
+	cost = 40
+	prerequisite = {
+		focus = USA_diplomacy_recognize_sioux
+		focus = USA_diplomacy_recognize_cheyenne_arapaho
+		focus = USA_diplomacy_recognize_nez_perce
+		focus = USA_diplomacy_recognize_comanche
+		focus = USA_diplomacy_recognize_blackfoot
+		focus = USA_diplomacy_recognize_shoshone
+		focus = USA_diplomacy_recognize_apache
+		focus = USA_diplomacy_recognize_navajo
+		focus = USA_diplomacy_recognize_crow
+	}
+	# bypass = {
+	# 	SEM = { exists = no }
+	# }
+	available = {
+		
+	}
+	relative_position_id = USA_maintain_native_treaties
+	x = 0
+	y = 5
+	search_filters = { }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = SIX
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = CHY
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = NEZ
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = COM
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = BFT
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = SHO
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = APA
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = NAV
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = CRW
+			modifier = usa_fn_schools_closed
+		}
+		add_opinion_modifier = {
+			target = SEM
+			modifier = usa_fn_schools_closed
+		}
+		# add_opinion_modifier = {
+		# 	target = UTE
+		# 	modifier = usa_fn_schools_closed
+		# }
+		reverse_add_opinion_modifier = {
+			target = SIX
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = CHY
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = NEZ
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = COM
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = BFT
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = SHO
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = APA
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = NAV
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = CRW
+			modifier = usa_fn_schools_closed
+		}
+		reverse_add_opinion_modifier = {
+			target = SEM
+			modifier = usa_fn_schools_closed
+		}
+		# reverse_add_opinion_modifier = {
+		# 	target = UTE
+		# 	modifier = usa_fn_schools_closed
+		# }
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_culture
+	icon = GFX_goal_generic_defence
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_mexico
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = -2
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		MEX = { country_event = { id = usa.63 } }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_europe
+	icon = GFX_Focus_Continent_West_Europe
+	cost = 35
+	prerequisite = {
+		focus = USA_foreign_diplomacy
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = -6
+	y = 0
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_political_power = 25
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_uk
+	icon = GFX_focus_chi_british_cooperation
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_europe
+	}
+	relative_position_id = USA_diplomacy_europe
+	x = 0
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = ENG
+			modifier = usa_improved_relations
+		}
+		ENG = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_improved_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_pig_war
+	icon = GFX_goal_focus_us_resolve_pig_war
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_uk
+	}
+	available = {
+		USA = { owns_state = 386 }
+		OR = {
+			# VAN = { owns_state = 740 }
+			BCO = { owns_state = 740 }
+			CAN = { owns_state = 740 }
+			ENG = { owns_state = 740 }
+		}
+		NOT = {
+			USA = { has_war_with = ENG }
+		}
+	}
+	relative_position_id = USA_diplomacy_europe
+	x = 0
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		country_event = { id = usa.27 }
+		ENG = { country_event = { id = usa.27 } }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_russia
+	icon = GFX_Focus_Diplomatic_Ally_RUS_2
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_europe
+	}
+	relative_position_id = USA_diplomacy_europe
+	x = -2
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = RUS
+			modifier = usa_improved_relations
+		}
+		RUS = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_improved_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_alaska
+	icon = GFX_goal_focus_us_purchase_alaska
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_russia
+	}
+	bypass = {
+		OR = {
+			owns_state = 463
+			RUS = { NOT = { owns_state = 463 } }
+		}
+	}
+	relative_position_id = USA_diplomacy_europe
+	x = -2
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		country_event = { id = usa.40 }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_greenland
+	icon = GFX_Focus_imperialism
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_counter
+		focus = USA_diplomacy_mend
+	}
+	available = {
+		owns_state = 463
+		OR = {
+			NOT = {
+				owns_state = 101
+			}
+			NOT = {
+				owns_state = 100
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_europe
+	x = -1
+	y = 4
+	completion_reward = {
+		country_event = { id = usa.146 }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_france
+	icon = GFX_focus_chi_reach_out_to_france
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_europe
+	}
+	relative_position_id = USA_diplomacy_europe
+	x = 2
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = usa_improved_relations
+		}
+		FRA = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_improved_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_ideals
+	icon = GFX_focus_rom_parties_end
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_france
+	}
+	relative_position_id = USA_diplomacy_europe
+	x = 2
+	y = 2
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		FRA = { country_event = { id = usa.63 } }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_brazil
+	icon = GFX_goal_focus_brazil
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_monroe
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = 0
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+			target = BRA
+			modifier = usa_improved_relations
+		}
+		BRA = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_improved_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_argentina
+	icon = GFX_Focus_Diplomatic_Ally_ARG_2
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_monroe
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = 2
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+			target = ARG
+			modifier = usa_improved_relations
+		}
+		ARG = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_improved_relations
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_liberals
+	icon = GFX_Focus_victory_mexico
+	cost = 70
+	prerequisite = {
+		focus = USA_diplomacy_culture
+	}
+	mutually_exclusive = {
+		focus = USA_diplomacy_conservatives
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = -2
+	y = 3
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		MEX = { country_event = { id = usa.60 } }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_conservatives
+	icon = GFX_goal_focus_crown_maximilian_austria
+	cost = 70
+	prerequisite = {
+		focus = USA_diplomacy_ideals
+	}
+	mutually_exclusive = {
+		focus = USA_diplomacy_liberals
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = -4
+	y = 3
+	completion_reward = {
+		FRA = { country_event = { id = usa.60 } }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_visit
+	icon = GFX_focus_generic_treaty
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_brazil
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = 0
+	y = 2
+	completion_reward = {
+		custom_effect_tooltip = USA_Brazil_trade
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = BRA
+				modifier = usa_brazil_trade
+			}
+			BRA = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = usa_brazil_trade
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_support
+	icon = GFX_Focus_Partisans_Fund
+	cost = 35
+	prerequisite = {
+		focus = USA_diplomacy_argentina
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = 2
+	y = 2
+	completion_reward = {
+		ARG = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			capital_scope = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_pick_brazil
+	icon = GFX_goal_generic_major_alliance
+	cost = 70
+	prerequisite = {
+		focus = USA_diplomacy_visit
+	}
+	mutually_exclusive = {
+		focus = USA_diplomacy_pick_argentina
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = 0
+	y = 3
+	completion_reward = {
+		BRA = { country_event = { id = usa.63 } }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_pick_argentina
+	icon = GFX_goal_continuous_def_against_influence
+	cost = 70
+	prerequisite = {
+		focus = USA_diplomacy_support
+	}
+	mutually_exclusive = {
+		focus = USA_diplomacy_pick_brazil
+	}
+	relative_position_id = USA_diplomacy_monroe
+	x = 2
+	y = 3
+	completion_reward = {
+		ARG = { country_event = { id = usa.63 } }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_mend
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	cost = 70
+	prerequisite = {
+		focus = USA_diplomacy_pig_war
+	}
+	mutually_exclusive = {
+		focus = USA_diplomacy_counter
+	}
+	ai_will_do = {
+		factor = 60
+		modifier = {
+			factor = 0
+			has_war_with = ENG
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				has_war_with = RUS
+				has_war_together_with = ENG
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_pig_war
+	x = 0
+	y = 1
+	search_filters = { FOCUS_FILTER_HISTORICAL }
+	completion_reward = {
+		country_event = { id = usa.61 }
+	}
+}
+shared_focus = {
+	id = USA_diplomacy_counter
+	icon = GFX_goal_focus_the_great_game
+	cost = 70
+	prerequisite = {
+		focus = USA_diplomacy_alaska
+	}
+	mutually_exclusive = {
+		focus = USA_diplomacy_mend
+	}
+	ai_will_do = {
+		factor = 40
+		modifier = {
+			factor = 0
+			OR = {
+				has_war_with = RUS
+				is_historical_focus_on = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				has_war_with = ENG
+				has_war_together_with = RUS
+			}
+		}
+	}
+	relative_position_id = USA_diplomacy_alaska
+	x = 0
+	y = 1
+	completion_reward = {
+		RUS = { country_event = { id = usa.63 } }
+	}
+}
+### RISE COLUMBIA (HISTORICAL, INTERNATIONAL FOCUS)
+shared_focus = {
+	id = USA_gilded_rise_columbia_columbia_brave_and_free
+	icon = GFX_focus_usa_rise_columbia_columbia_brave_and_free
+	cost = 40
+	prerequisite = { focus = USA_foreign_diplomacy }
+	relative_position_id = USA_foreign_diplomacy
+	x = 15
+	y = 1
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = USA_gilded_bless_the_globe_and_rule_the_sea
+	icon = GFX_focus_usa_bless_the_globe_and_rule_the_sea
+	cost = 40
+	relative_position_id = USA_gilded_rise_columbia_columbia_brave_and_free
+	prerequisite = { focus = USA_gilded_rise_columbia_columbia_brave_and_free }
 	x = 0
 	y = 1
 	completion_reward = {
@@ -21,529 +3172,1137 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = USA_gilded_technological_innovations
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_industrial_revolution
-	prerequisite = { focus = USA_gilded_industrial_revolution }
-	x = -4
-	y = 1
-	completion_reward = {
-		
-	}
-}
-shared_focus = {
-	id = USA_gilded_web_offset_printing
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_technological_innovations
-	prerequisite = { focus = USA_gilded_technological_innovations }
-	x = -3
-	y = 1
-	completion_reward = {
-		add_ideas = USA_printing_techology_1
-	}
-}
-shared_focus = {
-	id = USA_gilded_typewriter
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_web_offset_printing
-	prerequisite = { focus = USA_gilded_web_offset_printing }
-	x = 0
-	y = 1
-	completion_reward = {
-		swap_ideas = {
-			remove_idea = USA_printing_techology_1
-			add_idea = USA_printing_techology_2
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_barbed_wire
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_technological_innovations
-	available = { has_tech = tech_animal_feed_formula }
-	prerequisite = { focus = USA_gilded_technological_innovations }
-	x = 0
-	y = 1
-	completion_reward = {
-		if = {
-			limit = {
-				has_tech = tech_barbed_wire
-			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = cat_science_techs
-			}
-		}
-		else = {
-			set_technology = {
-				tech_barbed_wire = 1
-			}
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_medical_innovations
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_barbed_wire
-	prerequisite = { focus = USA_gilded_barbed_wire }
-	x = 0
-	y = 1
-	completion_reward = {
-		add_tech_bonus = {
-			bonus = 0.25
-			uses = 2
-			category = cat_health_techs
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_mimeograph
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_medical_innovations
-	prerequisite = { focus = USA_gilded_typewriter }
-	prerequisite = { focus = USA_gilded_medical_innovations }
-	x = -1
-	y = 1
-	completion_reward = {
-		add_tech_bonus = {
-			bonus = 0.50
-			uses = 1
-			category = comms_tech
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_toward_urbanization
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_industrial_revolution
-	prerequisite = { focus = USA_gilded_industrial_revolution }
-	x = 0
-	y = 1
-	completion_reward = {
-		
-	}
-}
-shared_focus = {
-	id = USA_gilded_pneumatic_subway
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_toward_urbanization
-	prerequisite = { focus = USA_gilded_technological_innovations }
-	prerequisite = { focus = USA_gilded_toward_urbanization }
-	x = -1
-	y = 1
-	completion_reward = {
-		add_political_power = -25
-		if = {
-			limit = {
-				954 = {
-					is_owned_and_controlled_by = ROOT
+	id = USA_gilded_the_european_on_an_american_throne
+	icon = GFX_focus_mxe_imperial_throne
+	cost = 49
+	relative_position_id = USA_gilded_bless_the_globe_and_rule_the_sea
+	prerequisite = { focus = USA_gilded_bless_the_globe_and_rule_the_sea }
+	available = {
+		OR = {
+			country_exists = MXE
+			MEX = {
+				overlord = {
+					capital_scope  = { is_on_continent = europe }
 				}
 			}
-			954 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_dynamic_modifier = { modifier = usa_fledgeling_subway_system }
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					has_state_category = dense_urban
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_dynamic_modifier = { modifier = usa_fledgeling_subway_system }
-			}
-		}
-	}
-}
-shared_focus = {
-	id = USA_gilded_structural_steel_bridge
-	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_pneumatic_subway
-	prerequisite = { focus = USA_gilded_pneumatic_subway }
-	x = 0
-	y = 1
-	completion_reward = {
-		if = {
-			limit = {
-				373 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				395 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				controller_priority = {
-					base = 1
-					modifier = {
-						tag = USA
-						add = 2
+			AND = {
+				country_exists = MEC
+				MEC = {
+					overlord = {
+						capital_scope  = { is_on_continent = europe }
 					}
 				}
-				fallback = yes
-				path = { 4569 12305 }
-				start_province = 4569
-				target_province = 12305
-			}
-			373 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 		}
-		else = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+	}
+	x = -7
+	y = 1
+	completion_reward = {
+		add_war_support = 0.05
+		if = { # Union de la Corona
+			limit = {
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
 				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 1
+				tooltip = SPR_tension_increase_effect_tooltip
 			}
 		}
 	}
 }
 shared_focus = {
-	id = USA_gilded_skyscrapers
+	id = USA_gilded_exercise_on_southern_border
 	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_structural_steel_bridge
-	available = { has_tech = tech_reinforced_concrete }
-	prerequisite = { focus = USA_gilded_medical_innovations }
-	prerequisite = { focus = USA_gilded_structural_steel_bridge }
+	cost = 21
+	relative_position_id = USA_gilded_the_european_on_an_american_throne
+	prerequisite = { focus = USA_gilded_the_european_on_an_american_throne }
+	x = 0
+	y = 1
+	completion_reward = {
+		army_experience = 25
+		if = { # Union de la Corona
+			limit = {
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 3
+				tooltip = SPR_tension_increase_effect_tooltip
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_military_aid_to_mexican_liberals
+	icon = placeholder
+	cost = 49
+	relative_position_id = USA_gilded_exercise_on_southern_border
+	available = {
+		has_equipment = {
+			infantry_equipment > 999
+		}
+	}
+	prerequisite = { focus = USA_gilded_exercise_on_southern_border }
 	x = -2
 	y = 1
 	completion_reward = {
+		# Unlock decisions to militarily assist the Mexican liberals with an escalation mechanic
 		if = {
-			limit = { has_tech = tech_arc_welding }
-			set_technology = {
-				tech_steel_girder_construction = 1
+			limit = {
+				MEX = {
+					AND = {
+						exists = yes
+						has_government = centrism 
+					}
+				}
 			}
+			country_event = usa_diplomacy.15
 		}
-		else = {
-			set_technology = {
-				tech_arc_welding = 1
+		if = {
+			limit = {
+				MEC = {
+					exists = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				producer = USA
+			}
+			MEC = {
+				every_controlled_state = {
+					add_resistance = 30
+				}
 			}
 		}
 		if = {
 			limit = {
-				954 = {
-					is_owned_and_controlled_by = ROOT
+				MXE = {
+					exists = yes
 				}
 			}
-			954 = {
-				add_extra_state_shared_building_slots = 2
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				producer = USA
 			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					has_state_category = dense_urban
+			MXE = {
+				every_controlled_state = {
+					add_resistance = 30
 				}
-				add_extra_state_shared_building_slots = 1
 			}
-		}
-		random_owned_controlled_state = {
-			limit = {
-				has_state_category = dense_urban
-			}
-			add_extra_state_shared_building_slots = 1
 		}
 	}
 }
 shared_focus = {
-	id = USA_gilded_telephone
+	id = USA_gilded_reestablish_army_of_observation
 	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_skyscrapers
-	available = { has_tech = electrical_telegraph }
-	prerequisite = { focus = USA_gilded_mimeograph }
-	prerequisite = { focus = USA_gilded_skyscrapers }
+	cost = 49
+	relative_position_id = USA_gilded_exercise_on_southern_border
+	available = {
+		OR = {
+			owns_state = 482
+			owns_state = 483
+		}
+	}
+	prerequisite = { focus = USA_gilded_exercise_on_southern_border }
+	x = 2
+	y = 1
+	completion_reward = {
+		if = { # Union de la Corona
+			limit = {
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 2
+				tooltip = SPR_tension_increase_effect_tooltip
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_diplomatic_support_for_mexican_liberals
+	icon = placeholder
+	cost = 49
+	relative_position_id = USA_gilded_exercise_on_southern_border
+	prerequisite = { focus = USA_gilded_exercise_on_southern_border }
+	x = 0
+	y = 1
+	completion_reward = {
+		if = {
+			limit = {
+				MEX = {
+					exists = yes
+					OR = {
+						has_government = centrism
+						has_government = social_egalitarianism
+					}
+					is_subject = no
+				}
+			}
+			MEX = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = usa_diplo_support_for_mexican_libs_positive
+				}
+			}
+			every_other_country = {
+				limit = {
+					has_war_with = MEX
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = usa_diplo_support_for_mexican_libs_negative
+				}
+			}
+		}
+		if = { # Union de la Corona
+			limit = {
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 1
+				tooltip = SPR_tension_increase_effect_tooltip
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_meet_with_mexican_president
+	icon = placeholder
+	cost = 49
+	relative_position_id = USA_gilded_diplomatic_support_for_mexican_liberals
+	prerequisite = { focus = USA_gilded_military_aid_to_mexican_liberals }
+	prerequisite = { focus = USA_gilded_diplomatic_support_for_mexican_liberals }
 	x = -1
 	y = 1
 	completion_reward = {
 		if = {
 			limit = {
-				has_tech = telephone
+				MEX = {
+					AND = {
+						exists = yes
+						has_government = centrism 
+					}
+				}
 			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = electronics_devices_tech
-			}
+			country_event = usa_diplomacy.25
 		}
 		else = {
-			set_technology = {
-				telephone = 1
+			country_event = usa_diplomacy.24
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_mobilize_on_the_border
+	icon = placeholder
+	cost = 49
+	relative_position_id = USA_gilded_diplomatic_support_for_mexican_liberals
+	prerequisite = { focus = USA_gilded_reestablish_army_of_observation }
+	prerequisite = { focus = USA_gilded_diplomatic_support_for_mexican_liberals }
+	x = 1
+	y = 1
+	completion_reward = {
+		if = { # Union de la Corona
+			limit = {
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 3
+				tooltip = SPR_tension_increase_effect_tooltip
 			}
 		}
 	}
 }
 shared_focus = {
-	id = USA_gilded_phonograph
+	id = USA_gilded_reaffirm_the_monroe_doctrine
 	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_telephone
-	available = { has_tech = photographic_film }
-	prerequisite = { focus = USA_gilded_telephone }
+	cost = 49
+	relative_position_id = USA_gilded_diplomatic_support_for_mexican_liberals
+	prerequisite = {
+		focus = USA_gilded_meet_with_mexican_president
+		focus = USA_gilded_mobilize_on_the_border
+	}
+	x = 0
+	y = 2
+	completion_reward = {
+		every_other_country = {
+			limit = {
+				AND = {
+					capital_scope = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+						}
+					}
+					NOT = {
+						AND = {
+							is_subject = yes
+							overlord = {
+								capital_scope = {
+									NOT = {
+										OR = {
+											is_on_continent = north_america
+											is_on_continent = south_america
+										}
+									}
+								}
+							}
+						}
+						overlord = {
+							original_tag = ROOT
+						}
+						original_tag = NEZ
+						original_tag = SHO
+						original_tag = BFT
+						original_tag = CRW
+						original_tag = SIX
+						original_tag = CHY
+						original_tag = COM
+						original_tag = NAV
+						original_tag = APA
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_reaffirmed_monroe_doctrine
+			}
+			reverse_add_opinion_modifier = {
+				target = USA
+				modifier = usa_reaffirmed_monroe_doctrine
+			}
+		}
+		if = { # Union de la Corona
+			limit = {
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 5
+				tooltip = SPR_tension_increase_effect_tooltip
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_joint_mexican_american_military_committee
+	icon = placeholder
+	cost = 49
+	relative_position_id = USA_gilded_reaffirm_the_monroe_doctrine
+	available = {
+		MEX = {
+			has_opinion = {
+				target = USA
+				value > 49
+			}
+			OR = {
+				has_war_with = MEC
+				has_war_with = MXE
+				any_country = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+					has_war_with = MEX
+				}
+			}
+		}
+	}
+	prerequisite = { focus = USA_gilded_reaffirm_the_monroe_doctrine }
+	x = -1
+	y = 1
+	completion_reward = {
+		army_experience = 15
+		add_timed_idea = {
+			idea = USA_idea_joint_mexican_american_military_committee
+			days = 3650
+		}
+		MEX = {
+			army_experience = 15
+			add_timed_idea = {
+				idea = USA_idea_joint_mexican_american_military_committee
+				days = 3650
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_formalize_alliance_with_mexico
+	icon = placeholder
+	cost = 49
+	relative_position_id = USA_gilded_joint_mexican_american_military_committee
+	available = {
+		MEX = {
+			has_opinion = {
+				target = USA
+				value > 49
+			}
+		}
+	}
+	prerequisite = { focus = USA_gilded_joint_mexican_american_military_committee }
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_prepare_to_invade_mexico
+	icon = placeholder
+	cost = 35
+	relative_position_id = USA_gilded_reaffirm_the_monroe_doctrine
+	available = {
+		MEX = {
+			OR = {
+				exists = no
+				AND = {
+					is_subject = yes
+					overlord = {
+						capital_scope = {
+							NOT = {
+								OR = {
+									is_on_continent = north_america
+									is_on_continent = south_america
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	prerequisite = { focus = USA_gilded_reaffirm_the_monroe_doctrine }
+	x = 1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.025
+		if = { # Union de la Corona
+			limit = {
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 5
+				tooltip = SPR_tension_increase_effect_tooltip
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_probe_southern_defenses
+	icon = placeholder
+	cost = 35
+	relative_position_id = USA_gilded_prepare_to_invade_mexico
+	available = {
+		MEX = {
+			OR = {
+				exists = no
+				AND = {
+					is_subject = yes
+					overlord = {
+						capital_scope = {
+							NOT = {
+								OR = {
+									is_on_continent = north_america
+									is_on_continent = south_america
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	prerequisite = { focus = USA_gilded_prepare_to_invade_mexico }
 	x = 0
 	y = 1
 	completion_reward = {
 		if = {
 			limit = {
-				has_tech = phonograph
+				owns_state = 482
 			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = electronics_devices_tech
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 482
+					num_provinces = 2
+					on_win = usa_diplomacy.20
+					on_lose = usa_diplomacy.21
+					on_cancel = usa_diplomacy.21
+				}	
+				defender = {
+					state = 480
+					num_provinces = 2
+					on_win = usa_diplomacy.23
+					on_lose = usa_diplomacy.22
+					on_cancel = usa_diplomacy.23
+				}
 			}
 		}
 		else = {
-			set_technology = {
-				phonograph = 1
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 1304
+					num_provinces = 2
+					on_win = usa_diplomacy.20
+					on_lose = usa_diplomacy.21
+					on_cancel = usa_diplomacy.21
+				}	
+				defender = {
+					state = 480
+					num_provinces = 2
+					on_win = usa_diplomacy.21
+					on_lose = usa_diplomacy.20
+					on_cancel = usa_diplomacy.21
+				}
+			}
+		}
+		if = { # Union de la Corona
+			limit = {
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 5
+				tooltip = SPR_tension_increase_effect_tooltip
 			}
 		}
 	}
 }
 shared_focus = {
-	id = USA_gilded_open_new_coal_mines
+	id = USA_gilded_send_the_word_across_the_rio_grande
 	icon = placeholder
-	cost = 40
-	relative_position_id = USA_gilded_toward_urbanization
-	prerequisite = { focus = USA_gilded_toward_urbanization }
-	prerequisite = { focus = USA_gilded_the_gilded_tycoons }
-	x = 1
-	y = 1
+	cost = 49
+	relative_position_id = USA_gilded_reaffirm_the_monroe_doctrine
+	# available = { check_variable = { usa_mexico_escalation > 90 } }
+	available = {
+		OR = {
+			country_exists = MEC
+		}
+	}
+	prerequisite = {
+		focus = USA_gilded_formalize_alliance_with_mexico
+		focus = USA_gilded_probe_southern_defenses
+	}
+	x = 0
+	y = 3
 	completion_reward = {
 		if = {
 			limit = {
-				360 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-			if = {
-				limit = {
-					has_idea = carnegie_steel
-				}
-				360 = {
-					add_resource = {
-						type = coal
-						amount = 6
+				AND = {
+					country_exists = MEC
+					MEC = {
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
 					}
 				}
 			}
-			else = {
-				360 = {
-					add_resource = {
-						type = coal
-						amount = 4
-					}
-				}
-			}
-		}
-		else = {
-			if = {
-				limit = {
-					has_idea = carnegie_steel
-				}
-				random_owned_controlled_state = {
-					limit = {
-						has_state_category = urban
-					}
-					add_resource = {
-						type = coal
-						amount = 6
-					}
-				}
-			}
-			else = {
-				random_owned_controlled_state = {
-					limit = {
-						has_state_category = urban
-					}
-					add_resource = {
-						type = coal
-						amount = 4
-					}
-				}
-			}
+			declare_war_on = {
+                target = MEC
+                type = liberate_wargoal
+            }
 		}
 	}
 }
 shared_focus = {
-	id = USA_gilded_new_blast_furnace
-	icon = placeholder
+	id = USA_gilded_the_new_navy
+	icon = GFX_focus_usa_the_new_navy
 	cost = 40
-	relative_position_id = USA_gilded_open_new_coal_mines
-	prerequisite = { focus = USA_gilded_open_new_coal_mines }
+	relative_position_id = USA_gilded_bless_the_globe_and_rule_the_sea
+	prerequisite = { focus = USA_gilded_bless_the_globe_and_rule_the_sea }
 	x = 0
 	y = 1
 	completion_reward = {
+		add_dynamic_modifier = { modifier = USA_navy_modifier }
 		if = {
 			limit = {
-				360 = {
-					is_owned_and_controlled_by = ROOT
-				}
+				has_dlc = "Man the Guns"
 			}
-			if = {
-				limit = {
-					has_idea = carnegie_steel
-				}
-				360 = {
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-				}
-			}
-			else = {
-				360 = {
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-				}
+			add_tech_bonus = {
+				bonus = 0.30
+				uses = 1
+				category = naval_mtg_heavy_cruiser_tech
 			}
 		}
 		else = {
-			if = {
-				limit = {
-					has_idea = carnegie_steel
-				}
-				random_owned_controlled_state = {
-					limit = {
-						has_state_category = urban
-					}
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-				}
-			}
-			else = {
-				random_owned_controlled_state = {
-					limit = {
-						has_state_category = urban
-					}
-					set_temp_variable = { industry_token = token:steel_foundry }
-					add_x_industries = yes
-				}
+			add_tech_bonus = {
+				bonus = 0.30
+				uses = 1
+				category = naval_mtg_lineship_hulls_tech
 			}
 		}
 	}
 }
 shared_focus = {
-	id = USA_gilded_menlo_park_laboratory
-	icon = placeholder
+	id = USA_gilded_expand_the_navys_funding
+	icon = GFX_focus_usa_expand_the_navys_funding
 	cost = 40
-	relative_position_id = USA_gilded_structural_steel_bridge
-	prerequisite = { focus = USA_gilded_structural_steel_bridge }
-	prerequisite = { focus = USA_gilded_new_blast_furnace }
-	x = 1
+	relative_position_id = USA_gilded_the_new_navy
+	prerequisite = { focus = USA_gilded_the_new_navy }
+	x = 0
+	y = 1
+	completion_reward = {
+		increase_navalinf_by_one = yes
+	}
+}
+shared_focus = {
+	id = USA_gilded_construct_abcd_ships
+	icon = GFX_Focus_Production_Mass
+	cost = 40
+	relative_position_id = USA_gilded_expand_the_navys_funding
+	prerequisite = { focus = USA_gilded_expand_the_navys_funding }
+	x = -1
+	y = 1
+	completion_reward = {
+		# start mission to build the USS Atlanta, Boston, Chicago, and Dolphin
+	}
+}
+shared_focus = {
+	id = USA_gilded_launch_new_naval_exercises
+	icon = GFX_Focus_Navy_Tactics
+	cost = 40
+	relative_position_id = USA_gilded_expand_the_navys_funding
+	prerequisite = { focus = USA_gilded_expand_the_navys_funding }
+	x = -3
 	y = 1
 	completion_reward = {
 		add_timed_idea = {
-			idea = USA_menlo_park_laboratory_idea
-			days = 3650
+			idea = USA_new_naval_exercises
+			days = 1825
 		}
 	}
 }
 shared_focus = {
-	id = USA_gilded_edison_illuminating_company
-	icon = placeholder
+	id = USA_gilded_construct_new_battleships
+	icon = GFX_Focus_Production_Battleship_1940
 	cost = 40
-	relative_position_id = USA_gilded_menlo_park_laboratory
-	prerequisite = { focus = USA_gilded_menlo_park_laboratory }
+	relative_position_id = USA_gilded_expand_the_navys_funding
+	prerequisite = { focus = USA_gilded_expand_the_navys_funding }
+	x = 1
+	y = 1
+	completion_reward = {
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			add_tech_bonus = {
+				bonus = 0.30
+				uses = 1
+				category = naval_mtg_battleship_tech
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.30
+				uses = 1
+				category = naval_mtg_lineship_hulls_tech
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_develop_long_range_gunnery
+	icon = GFX_Focus_Turret_Early
+	cost = 40
+	relative_position_id = USA_gilded_expand_the_navys_funding
+	prerequisite = { focus = USA_gilded_expand_the_navys_funding }
+	x = 3
+	y = 1
+	completion_reward = {
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = naval_mtg_module_batteries_heavy_tech
+			}
+		}
+		else = {
+			navy_experience = 50
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_general_board_of_the_us_navy
+	icon = GFX_focus_usa_general_board_of_the_us_navy
+	cost = 40
+	available = {
+		has_global_flag = Spanish_American_War_Occured
+	}
+	relative_position_id = USA_gilded_expand_the_navys_funding
+	prerequisite = { focus = USA_gilded_construct_abcd_ships }
+	prerequisite = { focus = USA_gilded_launch_new_naval_exercises }
+	prerequisite = { focus = USA_gilded_construct_new_battleships }
+	prerequisite = { focus = USA_gilded_develop_long_range_gunnery }
+	x = 0
+	y = 2
+	completion_reward = {
+		# add navy xp gain to U.S. Navy Dynamic Modifier
+		custom_effect_tooltip = usa_modify_united_states_navy_ns_intro
+		add_to_variable = { USA_navy_modifier_experience_gain_navy_factor = 0.05 tooltip = experience_gain_navy_factor_tt }
+	}
+}
+shared_focus = { # should require like 18 line ships if possible
+	id = USA_gilded_the_great_white_fleet
+	icon = GFX_focus_usa_the_great_white_fleet
+	cost = 40
+	relative_position_id = USA_gilded_general_board_of_the_us_navy
+	prerequisite = { focus = USA_gilded_general_board_of_the_us_navy }
 	x = 0
 	y = 1
 	completion_reward = {
-		set_country_flag = USA_edison_illuminating_company_available
-		custom_effect_tooltip = generic_unlock_company_partnership_tt
-		show_ideas_tooltip = edison_illuminating_company
+		# event chain for the Great White Fleet's journey
 	}
 }
 shared_focus = {
-	id = USA_gilded_the_beginning_of_electrification
-	icon = placeholder
+	id = USA_gilded_friends_made_on_the_way
+	icon = GFX_focus_usa_friends_made_on_the_way
 	cost = 40
-	relative_position_id = USA_gilded_edison_illuminating_company
-	prerequisite = { focus = USA_gilded_edison_illuminating_company }
-	available = {
-		NOT = {
-			has_idea = USA_menlo_park_laboratory_idea
+	relative_position_id = USA_gilded_the_great_white_fleet
+	prerequisite = { focus = USA_gilded_the_great_white_fleet }
+	x = -2
+	y = 1
+	completion_reward = {
+		# gain opinion modifier with countries visited by the GWF
+	}
+}
+shared_focus = {
+	id = USA_gilded_address_logistical_deficiencies
+	icon = GFX_focus_usa_address_logistical_deficiencies
+	cost = 40
+	relative_position_id = USA_gilded_the_great_white_fleet
+	prerequisite = { focus = USA_gilded_the_great_white_fleet }
+	x = 0
+	y = 1
+	completion_reward = {
+		custom_effect_tooltip = usa_modify_united_states_navy_ns_intro
+		add_to_variable = { USA_navy_modifier_navy_max_range_factor = 0.05 tooltip = navy_max_range_factor_tt }
+	}
+}
+shared_focus = {
+	id = USA_gilded_redesign_our_capital_ships
+	icon = GFX_Focus_commision_monitors
+	cost = 40
+	relative_position_id = USA_gilded_the_great_white_fleet
+	prerequisite = { focus = USA_gilded_the_great_white_fleet }
+	x = 2
+	y = 1
+	completion_reward = {
+		navy_experience = 50
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = naval_mtg_capital_ship_tech
 		}
 	}
+}
+shared_focus = {
+	id = USA_gilded_a_rise_in_american_prestige
+	icon = GFX_focus_usa_a_rise_in_american_prestige
+	cost = 40
+	relative_position_id = USA_gilded_friends_made_on_the_way
+	prerequisite = { focus = USA_gilded_friends_made_on_the_way }
 	x = 0
 	y = 1
 	completion_reward = {
 		add_political_power = 150
-		set_temp_variable = { institution_progress_temp = 1.0 }
-        eoanbr_institutions_electrification_change = yes
+		set_temp_variable = { eoanb_prestige_change = prestige_score }
+		multiply_temp_variable = { eoanb_prestige_change = 0.05 }
+		eoanb_change_prestige_score = yes
 	}
 }
 shared_focus = {
-	id = USA_gilded_the_gilded_tycoons
-	icon = placeholder
+	id = USA_gilded_improve_the_coal_economy
+	icon = GFX_Focus_coal_mines
+	cost = 25
+	relative_position_id = USA_gilded_address_logistical_deficiencies
+	prerequisite = { focus = USA_gilded_address_logistical_deficiencies }
+	x = 0
+	y = 1
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_resource = {
+				type = coal
+				amount = 10
+			}
+		}
+		random_owned_controlled_state = {
+			add_resource = {
+				type = coal
+				amount = 10
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_formation_improvements
+	icon = GFX_focus_usa_formation_improvements
 	cost = 40
-	relative_position_id = USA_gilded_industrial_revolution
-	prerequisite = { focus = USA_gilded_industrial_revolution }
-	x = 4
-	y = 1
-	completion_reward = {
-		country_event = usa_gilded_age.1
-	}
-}
-shared_focus = {
-	id = USA_gilded_the_labor_movement
-	icon = placeholder
-	cost = 70
-	relative_position_id = USA_gilded_the_gilded_tycoons
-	prerequisite = { focus = USA_gilded_the_gilded_tycoons }
-	available = {
-		always = no
-	}
+	relative_position_id = USA_gilded_redesign_our_capital_ships
+	prerequisite = { focus = USA_gilded_redesign_our_capital_ships }
 	x = 0
 	y = 1
 	completion_reward = {
-		# Event about organized labor
+		custom_effect_tooltip = usa_modify_united_states_navy_ns_intro
+		add_to_variable = { USA_navy_modifier_navy_org_factor = 0.05 tooltip = navy_org_factor_tt }
 	}
 }
 shared_focus = {
-	id = USA_gilded_support_an_eight_hour_workday
-	icon = placeholder
-	cost = 70
-	relative_position_id = USA_gilded_the_labor_movement
-	prerequisite = { focus = USA_gilded_the_labor_movement }
-	available = {
-		always = no
+	id = USA_gilded_columbia_gem_of_the_ocean
+	icon = GFX_focus_usa_columbia_gem_of_the_ocean
+	cost = 40
+	relative_position_id = USA_gilded_the_great_white_fleet
+	prerequisite = { focus = USA_gilded_a_rise_in_american_prestige }
+	prerequisite = { focus = USA_gilded_improve_the_coal_economy }
+	prerequisite = { focus = USA_gilded_formation_improvements }
+	prerequisite = { focus = USA_gilded_general_board_of_the_us_navy }
+	x = 0
+	y = 3
+	completion_reward = {
+		navy_experience = 100
+		# buffs to U.S. Navy Dynamic Modifier
 	}
+}
+shared_focus = {
+	id = USA_gilded_la_senora_abrasadora
+	icon = GFX_focus_usa_la_senora_abrasadora
+	cost = 40
+	relative_position_id = USA_gilded_bless_the_globe_and_rule_the_sea
+	prerequisite = { focus = USA_gilded_bless_the_globe_and_rule_the_sea }
+	x = 7
+	y = 1
+	completion_reward = {
+		# Event about Spain
+		add_war_support = 0.05
+	}
+}
+shared_focus = {
+	id = USA_gilded_assert_our_position_in_the_caribbean
+	icon = GFX_focus_usa_assert_our_position_in_the_caribbean
+	cost = 40
+	relative_position_id = USA_gilded_la_senora_abrasadora
+	prerequisite = { focus = USA_gilded_la_senora_abrasadora }
 	x = 0
 	y = 1
 	completion_reward = {
-		# Add 8-hour Workday Bill to Decisions/Parliament
+		
+	}
+}
+shared_focus = {
+	id = USA_gilded_santo_domingo_forward_operating_base
+	icon = GFX_focus_usa_santo_domingo_forward_operating_base
+	cost = 40
+	available = {
+		owns_state = 1318
+	}
+	relative_position_id = USA_gilded_assert_our_position_in_the_caribbean
+	prerequisite = { focus = USA_gilded_assert_our_position_in_the_caribbean }
+	x = -2
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			SPR_USA_american_tension = 5
+			tooltip = SPR_tension_increase_effect_tooltip
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_yet_another_offer
+	icon = GFX_focus_usa_gilded_yet_another_offer
+	cost = 40
+	relative_position_id = USA_gilded_assert_our_position_in_the_caribbean
+	mutually_exclusive = { focus = USA_gilded_fund_cuban_rebels }
+	prerequisite = { focus = USA_gilded_assert_our_position_in_the_caribbean }
+	x = 0
+	y = 1
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = USA_gilded_a_peaceful_resolution
+	icon = GFX_focus_usa_gilded_a_peaceful_resolution
+	cost = 0
+	available = { always = no } # triggered by event
+	mutually_exclusive = { focus = USA_gilded_position_the_navy }
+	relative_position_id = USA_gilded_yet_another_offer
+	prerequisite = { focus = USA_gilded_yet_another_offer }
+	x = -1
+	y = 1
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = USA_gilded_cuban_statehood
+	icon = GFX_focus_usa_cuban_statehood
+	cost = 40
+	available = {
+		OR = {
+			1350 = {
+				AND = {
+					owner = ROOT
+					compliance > 70
+				}
+			}
+			315 = {
+				AND = {
+					owner = ROOT
+					compliance > 70
+				}
+			}
+		}
+	}
+	relative_position_id = USA_gilded_a_peaceful_resolution
+	prerequisite = { focus = USA_gilded_a_peaceful_resolution }
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = usa_manifest_destiny.1
+	}
+}
+shared_focus = {
+	id = USA_gilded_fund_cuban_rebels
+	icon = GFX_focus_usa_fund_cuban_rebels
+	cost = 40
+	relative_position_id = USA_gilded_assert_our_position_in_the_caribbean
+	mutually_exclusive = { focus = USA_gilded_yet_another_offer }
+	prerequisite = { focus = USA_gilded_assert_our_position_in_the_caribbean }
+	x = 2
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			SPR_USA_american_tension = 5
+			tooltip = SPR_tension_increase_effect_tooltip
+		}
+		if = {
+			limit = {
+				1350 = {
+					is_owned_and_controlled_by = SPR
+				}
+			}
+			1350 = {
+				add_resistance = 10
+			}
+		}
+		if = {
+			limit = {
+				315 = {
+					is_owned_and_controlled_by = SPR
+				}
+			}
+			315 = {
+				add_resistance = 10
+			}
+		}
+		if = {
+			limit = {
+				1022 = {
+					is_owned_and_controlled_by = SPR
+				}
+			}
+			1022 = {
+				add_resistance = 10
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_position_the_navy
+	icon = GFX_focus_usa_gilded_position_the_navy
+	cost = 40
+	mutually_exclusive = { focus = USA_gilded_a_peaceful_resolution }
+	relative_position_id = USA_gilded_fund_cuban_rebels
+	available = {
+		ships_in_area = { area = 170 size > 9 }
+	}
+	cancel_if_invalid = yes
+	prerequisite = {
+		focus = USA_gilded_fund_cuban_rebels
+		focus = USA_gilded_yet_another_offer
+	}
+	x = -1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			SPR_USA_american_tension = 5
+			tooltip = SPR_tension_increase_effect_tooltip
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_an_explosion_in_havana
+	icon = GFX_focus_usa_an_explosion_in_havana
+	cost = 0
+	relative_position_id = USA_gilded_position_the_navy
+	available = { always = no }
+	prerequisite = { focus = USA_gilded_position_the_navy }
+	x = 0
+	y = 1
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = USA_gilded_blockade_cuba
+	icon = GFX_focus_usa_gilded_blockade_cuba
+	cost = 25
+	relative_position_id = USA_gilded_an_explosion_in_havana
+	prerequisite = { focus = USA_gilded_an_explosion_in_havana }
+	available = {
+		AND = {
+			ships_in_area = { area = 170 size > 9 }
+			ships_in_area = { area = 53 size > 9 }
+		}
+	}
+	cancel_if_invalid = yes
+	x = -1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			SPR_USA_american_tension = 10
+			tooltip = SPR_tension_increase_effect_tooltip
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_call_for_volunteers
+	icon = GFX_focus_usa_call_for_volunteers
+	cost = 25
+	relative_position_id = USA_gilded_an_explosion_in_havana
+	prerequisite = { focus = USA_gilded_an_explosion_in_havana }
+	x = 1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			SPR_USA_american_tension = 10
+			tooltip = SPR_tension_increase_effect_tooltip
+		}
+		add_manpower = 10000
+		division_template = {
+			name = "Volunteer Cavalry"
+			is_locked = yes
+
+			regiments = {
+				mounted_infantry = { x = 0 y = 0 }
+			}
+		}
+		1306 = {
+			create_unit = { 
+			}
+			create_unit = {
+				division = "name = \"1st U.S. Volunteer Cavalry Regiment\" division_template = \"Volunteer Cavalry\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = OWNER
+				officer = {
+					name = "Leonard Wood"
+					portraits = {
+						army = {
+							large = "GFX_Portrait_USA_Generic_land_4"
+							small = "GFX_portrait_europe_generic_17"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_remember_the_maine
+	icon = GFX_focus_usa_remember_the_maine
+	cost = 7
+	relative_position_id = USA_gilded_an_explosion_in_havana
+	prerequisite = { focus = USA_gilded_blockade_cuba }
+	prerequisite = { focus = USA_gilded_call_for_volunteers }
+	x = 0
+	y = 2
+	completion_reward = {
+		add_war_support = 0.05
+	}
+}
+shared_focus = {
+	id = USA_gilded_to_hell_with_spain
+	icon = GFX_focus_usa_to_hell_with_spain
+	cost = 7
+	relative_position_id = USA_gilded_remember_the_maine
+	prerequisite = { focus = USA_gilded_remember_the_maine }
+	x = 0
+	y = 1
+	completion_reward = {
+		add_timed_idea = {
+			idea = USA_to_hell_with_spain
+			days = 240
+		}
+	}
+}
+shared_focus = {
+	id = USA_gilded_into_an_american_century
+	icon = GFX_focus_usa_into_an_american_century
+	cost = 40
+	relative_position_id = USA_gilded_bless_the_globe_and_rule_the_sea
+	prerequisite = {
+		focus = USA_gilded_send_the_word_across_the_rio_grande
+		focus = USA_gilded_to_hell_with_spain
+	}
+	prerequisite = { focus = USA_gilded_columbia_gem_of_the_ocean }
+	x = 0
+	y = 9
+	completion_reward = {
+
 	}
 }
