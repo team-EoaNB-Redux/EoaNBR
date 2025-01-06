@@ -1,0 +1,85 @@
+# General
+	has_locked_constitution = {
+		custom_trigger_tooltip = {
+			tooltip = has_locked_constitution_tooltip
+			check_variable = {
+				var = modifier@government_constitution_unlocked_rule
+				value = 0
+				compare = greater_than
+			}
+		}
+	}
+	has_revolution = {
+		OR = {
+			AND = {
+				check_variable = {
+					var = political_stability
+					value = -4
+					compare = less_than
+					tooltip = political_stability_is_less_than_value_tooltip
+				}
+				check_variable = {
+					var = poltical_legitimacy
+					value = constant:political_legitimacy_threshold.low
+					compare = less_than
+					tooltip = political_legitimacy_is_less_than_value_tooltip
+				}
+			}
+			has_country_flag = eoanbr_ongoing_revolution_flag
+		}
+	}
+#
+# Autarchy
+	has_locked_autarchy_article	= {
+		custom_trigger_tooltip = {
+			tooltip = has_locked_article_tooltip
+			ARTICLE_TYPE = autarchy_token
+			check_variable = {
+				var = modifier@autarchy_article_locked_rule
+				value = 0
+				compare = greater_than
+			}
+		}
+	}
+	# Absolutism
+		has_autarchy_absolutism_enable = {
+			always = yes
+		}
+		has_autarchy_absolutism_available = {
+			if = {
+				limit = {
+					OR = {
+						has_locked_constitution = yes
+						has_locked_autarchy_article = yes
+					}
+					custom_trigger_tooltip = {
+						tooltip = has_locked_article_tooltip
+						ARTICLE_TYPE = autarchy_token
+						always = no
+					}
+				}
+			}
+			custom_override_tooltip = {
+				tooltip = has_invalid_article_greater_than_threshold_tooltip
+				ARTICLE_TYPE = "autarchy_token"
+				MIN_VALUE = constant:autarchy_level.moderate
+				check_variable = {
+					var = modifier@public_autarchy_preference_modifier
+					value = constant:autarchy_level.moderate
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		has_autarchy_absolutism_selectable = {
+			custom_override_tooltip = {
+				tooltip = has_invalid_article_greater_than_threshold_tooltip
+				ARTICLE_TYPE = "autarchy_token"
+				MIN_VALUE = constant:autarchy_level.high
+				check_variable = {
+					var = modifier@government_autarchy_modifier
+					value = constant:autarchy_level.high
+					compare = greater_than_or_equals
+				}
+			}
+		}
+	#

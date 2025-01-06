@@ -1,41 +1,92 @@
-
-# Coalitions
-	ruling_coalition_support_modifier = {
+# Constitution
+	government_constitution_unlocked_rule = {
 		color_type = good
-		value_type = percentage
+		value_type = yes_no
+		category = country
+		category = politics
+	}
+	public_constitution_consciousness_modifier = {
+		color_type = good
+		value_type = number
 		precision = 2
 		category = country
+		category = politics
 	}
-	ruling_coalition_support_factor = {
+	public_constitution_consciousness_factor = {
 		color_type = good
 		value_type = percentage
 		precision = 1
 		category = country
+		category = politics
 	}
-	local_ruling_coalition_support_factor = {
+	autarchy_article_locked_rule = {
 		color_type = good
-		value_type = percentage
-		precision = 1
-		category = state
-	}
-	opposition_coalition_support_modifier = {
-		color_type = neutral
-		value_type = percentage
-		precision = 2
+		value_type = yes_no
 		category = country
+		category = politics
 	}
-	opposition_coalition_support_factor = {
-		color_type = neutral
-		value_type = percentage
-		precision = 1
-		category = country
-	}
-	local_opposition_coalition_support_factor = {
-		color_type = neutral
-		value_type = percentage
-		precision = 1
-		category = state
-	}
+	# Articles
+		government_autarchy_modifier = {
+			color_type = bad
+			value_type = number
+			precision = 2
+			category = country
+			category = politics
+		}
+		public_autarchy_preference_modifier = {
+			color_type = bad
+			value_type = number
+			precision = 2
+			category = country
+			category = politics
+		}
+		public_autarchy_preference_factor = {
+			color_type = good
+			value_type = percentage
+			precision = 2
+			category = country
+			category = politics
+		}
+	#
+# Elections
+	# Coalitions
+		ruling_coalition_support_modifier = {
+			color_type = good
+			value_type = percentage
+			precision = 2
+			category = country
+		}
+		ruling_coalition_support_factor = {
+			color_type = good
+			value_type = percentage
+			precision = 1
+			category = country
+		}
+		local_ruling_coalition_support_factor = {
+			color_type = good
+			value_type = percentage
+			precision = 1
+			category = state
+		}
+		opposition_coalition_support_modifier = {
+			color_type = neutral
+			value_type = percentage
+			precision = 2
+			category = country
+		}
+		opposition_coalition_support_factor = {
+			color_type = neutral
+			value_type = percentage
+			precision = 1
+			category = country
+		}
+		local_opposition_coalition_support_factor = {
+			color_type = neutral
+			value_type = percentage
+			precision = 1
+			category = state
+		}
+	#
 #
 #Legitimacy
 	political_legitimacy_modifier = {

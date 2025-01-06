@@ -1,4 +1,17 @@
 ﻿l_english:
+##State Categories
+ pastoral: "Pastoral"
+ sparse_rural: "Sparse Rural"
+ rural: "Rural"
+ dense_rural: "Dense Rural"
+ sparse_urban: "Sparse Urban"
+ urban: "Urban"
+ dense_urban: "Dense Urban"
+ metropolis: "Metropolis"
+ megalopolis: "Megalopolis"
+#
+ generic_unlock_company_partnership_tt: "Unlocks the following §YCompany Partnership§!:"
+l_english:
  VICTORIAN_ERA_FOCUS_TREE_UNLOCK: "§GUnlock Victorian Era Focus Tree§!"
 #Institutions
   institutions: "Institutions"

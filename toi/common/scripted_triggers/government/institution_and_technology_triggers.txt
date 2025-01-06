@@ -1,0 +1,13 @@
+	has_institution_progress = {
+		# set_temp_variable = { institution_temp = token:<institution_token> }
+		# set_temp_variable = { progress_temp = <progress> }
+		# has_institution_progress = yes
+		custom_trigger_tooltip = {
+			tooltip = has_institution_progress_tt
+			check_variable = {
+				var = progress@var:institution_temp
+				value = progress_temp
+				compare = greater_than_or_equals
+			}
+		}
+	}

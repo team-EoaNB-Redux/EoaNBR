@@ -2734,35 +2734,35 @@
 		#
 		# Constitutional Articles
 			#Government Type
-				govt_absolute_monarchy
-				#govt_oligarchial_monarchy
-				govt_constitutional_monarchy
-				govt_parliamentary_monarchy
+				absolute_monarchy
+				oligarchial_monarchy
+				constitutional_monarchy
+				parliamentary_monarchy
 
-				govt_totalitarian_republic
-				govt_presidential_republic
-				govt_semi_presidential_republic
-				govt_parliamentary_republic
+				totalitarian_republic
+				presidential_republic
+				semi_presidential_republic
+				parliamentary_republic
 
-				govt_totalitarian_chiefdom
-				govt_hierarchical_chiefdom
-				govt_decentralized_chiefdom
+				totalitarian_chiefdom
+				hierarchical_chiefdom
+				decentralized_chiefdom
 
-				govt_anarchy
-				govt_military_junta
-				govt_colonial_authority
+				anarchy
+				military_junta
+				colonial_authority
 			#
 			#Succession
-				govt_hereditary
-				govt_appointed
-				govt_elected
+				hereditary
+				appointed
+				elected
 			#
 			#Legitimacy
-				govt_divine_right
-				govt_theocratic
-				govt_oligarchic
-				govt_democratic
-				govt_revolutionary
+				divine_right
+				theocratic
+				oligarchic
+				democratic
+				revolutionary
 
 			#
 		#

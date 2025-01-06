@@ -1,5 +1,5 @@
 ﻿l_english:
-
+ eoanbr_ongoing_revolution_flag
 # Articles
  autarchy_token: "Autarchy"
  autarchy_token_desc: "Autarchy is the organization and centralization of political power."
@@ -18,11 +18,9 @@
 #
 
 # Trigger Tooltips
- govt_article_locked_tooltip: " is locked from changing $ARTICLE_TYPE|Y$ Article"
- govt_article_invalid_threshold_less_than_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be less than $AUTARCHY_MAX_VALUE|Y%%$)"
- govt_article_invalid_threshold_between_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be between $AUTARCHY_MIN_VALUE|Y%%$ and $AUTARCHY_MAX_VALUE|Y%%$)"
- govt_article_invalid_threshold_greater_than_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be greater than $AUTARCHY_MIN_VALUE|Y%%$ )"
+ has_locked_constitution_tooltip: " Has Locked £constitution_texticon §YConstitution§!"
+ has_locked_article_tooltip: " is locked from changing $ARTICLE_TYPE|Y$ Article"
+ has_invalid_article_less_than_threshold_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be less than $MAX_VALUE|Y%%$)"
+ has_invalid_article_between_threshold_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be between $MIN_VALUE|Y%%$ and $MAX_VALUE|Y%%$)"
+ has_invalid_article_greater_than_threshold_tooltip: " has invalid $ARTICLE_TYPE|Y$ Threshold. (Must be greater than $MIN_VALUE|Y%%$)"
 #
-# Modifiers
- government_article_all_unlocked_rule: "Enable Rule: §YChange All Articles§!"
- government_article_autarchy_locked_rule: "Disable Rule: §YChange Autarchy Article§!"

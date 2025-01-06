@@ -1,5 +1,26 @@
 # Example
-govt_reform_autarchy_article = {
+reform_autarchy_article = {
+	if = {
+		limit = { is_ai = yes }
+		random_list = {
+			20 = {
+				modifier = {
+					OR = {
+						has_autarchy_absolutism_enable = no
+						has_autarchy_absolutism_available = no
+					}
+					factor = 0
+				}
+				modifier = {
+					has_autarchy_absolutism_selectable = no
+					factor = 0.25
+				}
+				add_ideas = autarchy_absolutism
+			}
+		}
+
+	}
+
 	if = {
 		limit = { is_ai = yes }
 		# set_variable = { }
