@@ -93,7 +93,7 @@ eoanb_category_military = {
 						}
 					}
 				}
-				hidden_effect = { RUS = { country_event = { id = tsushima.13 } } }
+				hidden_effect = { RUS = { country_event = { id = JAP_tokugawa_shogunate.173 } } }
 			}
 			if = {
 				limit = {
@@ -107,7 +107,7 @@ eoanb_category_military = {
 						ENG = { NOT = { controls_state = 952 } }
 					}
 				}
-				hidden_effect = { RUS = { country_event = { id = tsushima.16 } } }
+				hidden_effect = { RUS = { country_event = { id = JAP_tokugawa_shogunate.176 } } }
 			}
 			if = {
 				limit = { TAG = RUS }
@@ -4269,7 +4269,7 @@ eoanb_category_politics_foreign = {
 		cost = 0
 
 		complete_effect = {
-			TSH = { country_event = { id = tsushima.1 days = 1 } }
+			TSH = { country_event = { id = JAP_tokugawa_shogunate.171 days = 1 } }
 		}
 
 		ai_will_do = {

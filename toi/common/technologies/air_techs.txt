@@ -4,54 +4,49 @@
 
 technologies = {
 	#### Years ####
-		@1500 = 2
-		@1700 = 5
-		@1750 = 8
-		@1800 = 11
-		@1820 = 14
-		@1840 = 18
-		@1850 = 21
-		@1860 =	24
-		@1865 = 27
-		@1870 = 31
-		@1875 = 34
-		@1880 = 37
-		@1885 = 40
-		@1890 = 44
-		@1895 = 47
-		@1900 = 50
-		@1905 = 54
-		@1910 = 57
-		@1915 = 60
-		@1920 = 64
-		@1925 = 67
-		@1930 = 70
-		@1935 = 73
-		@1940 = 77
-		@1945 = 80
-		@1950 = 83
-		@1955 = 86
-		@1960 = 90
-		@1965 = 93
-		@1970 = 96
-		@1975 = 99
-		@1980 = 102
-		@1985 = 106
-		@1990 = 109
-		@1995 = 112
-		@2000 = 115
-		@2005 = 118
-		@2010 = 122
-		@2015 = 125
-		@2020 = 128
-		@2025 = 131
-		@2030 = 134
-		@2035 = 137
-		@2040 = 141
-		@2045 = 144
-		@2050 = 147
-		@2055 = 150
-		@2060 = 153
+		@1840 = 2
+		@1850 = 5
+		@1860 =	8
+		@1865 = 11
+		@1870 = 15
+		@1875 = 18
+		@1880 = 21
+		@1885 = 24
+		@1890 = 28
+		@1895 = 31
+		@1900 = 34
+		@1905 = 38
+		@1910 = 41
+		@1915 = 44
+		@1920 = 48
+		@1925 = 51
+		@1930 = 54
+		@1935 = 57
+		@1940 = 61
+		@1945 = 64
+		@1950 = 67
+		@1955 = 70
+		@1960 = 74
+		@1965 = 77
+		@1970 = 80
+		@1975 = 83
+		@1980 = 86
+		@1985 = 90
+		@1990 = 93
+		@1995 = 96
+		@2000 = 99
+		@2005 = 102
+		@2010 = 106
+		@2015 = 109
+		@2020 = 112
+		@2025 = 115
+		@2030 = 118
+		@2035 = 121
+		@2040 = 125
+		@2045 = 128
+		@2050 = 131
+		@2055 = 134
+		@2060 = 137
 	#
 	early_balloon = {
 
@@ -72,7 +67,7 @@ technologies = {
 		start_year = 1860
 		folder = {
 			name = air_folder
-			position = { x = 6 y = @1860 }
+			position = { x = 5 y = @1860 }
 		}
 
 		categories = {
@@ -144,7 +139,7 @@ technologies = {
 		start_year = 1870
 		folder = {
 			name = air_folder
-			position = { x = 6 y = @1870 }
+			position = { x = 5 y = @1870 }
 		}
 
 		categories = {
@@ -203,7 +198,7 @@ technologies = {
 		start_year = 1885
 		folder = {
 			name = air_folder
-			position = { x = 6 y = @1885 }
+			position = { x = 5 y = @1885 }
 		}
 
 		categories = {
@@ -261,7 +256,7 @@ technologies = {
 		start_year = 1900
 		folder = {
 			name = air_folder
-			position = { x = 6 y = @1900 }
+			position = { x = 5 y = @1900 }
 		}
 
 		categories = {
@@ -317,7 +312,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = air_folder
-			position = { x = 6 y = @1910 }
+			position = { x = 5 y = @1910 }
 		}
 
 		categories = {
@@ -365,7 +360,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = air_folder
-			position = { x = 4 y = @1905 }
+			position = { x = 3 y = @1905 }
 		}
 
 		categories = {
@@ -422,7 +417,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = air_folder
-			position = { x = 10 y = @1905 }
+			position = { x = 9 y = @1905 }
 		}
 		sub_technologies = {
 			cv_monoplane_scout
@@ -528,7 +523,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = air_folder
-			position = { x = 10 y = @1910 }
+			position = { x = 9 y = @1910 }
 		}
 		sub_technologies = {
 			cv_monoplane_fighter
@@ -607,7 +602,7 @@ technologies = {
 		start_year = 1930
 		folder = {
 			name = air_folder
-			position = { x = 10 y = @1930 }
+			position = { x = 9 y = @1930 }
 		}
 
 		dependencies = {
@@ -653,7 +648,7 @@ technologies = {
 		start_year = 1915
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1915 }
+			position = { x = 4 y = @1915 }
 		}
 
 		categories = {
@@ -741,7 +736,7 @@ technologies = {
 		start_year = 1920
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1920 }
+			position = { x = 4 y = @1920 }
 		}
 
 		categories = {
@@ -837,7 +832,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1930 }
+			position = { x = 4 y = @1930 }
 		}
 
 		categories = {
@@ -922,7 +917,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1935 }
+			position = { x = 4 y = @1935 }
 		}
 
 		categories = {
@@ -1039,7 +1034,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1940 }
+			position = { x = 4 y = @1940 }
 		}
 
 		categories = {
@@ -1177,7 +1172,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1945 }
+			position = { x = 4 y = @1945 }
 		}
 
 		categories = {
@@ -1298,7 +1293,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1945 }
+			position = { x = 4 y = @1945 }
 		}
 
 		categories = {
@@ -1340,7 +1335,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1950 }
+			position = { x = 4 y = @1950 }
 		}
 		path = {
 			leads_to_tech = jet_fighter3
@@ -1401,7 +1396,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1955 }
+			position = { x = 4 y = @1955 }
 		}
 		path = {
 			leads_to_tech = jet_fighter4
@@ -1467,7 +1462,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1960 }
+			position = { x = 4 y = @1960 }
 		}
 		path = {
 			leads_to_tech = jet_fighter5
@@ -1531,7 +1526,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1965 }
+			position = { x = 4 y = @1965 }
 		}
 		path = {
 			leads_to_tech = jet_fighter6
@@ -1592,7 +1587,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1975 }
+			position = { x = 4 y = @1975 }
 		}
 		path = {
 			leads_to_tech = jet_fighter7
@@ -1656,7 +1651,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1980 }
+			position = { x = 4 y = @1980 }
 		}
 		path = {
 			leads_to_tech = jet_fighter8
@@ -1717,7 +1712,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @1990 }
+			position = { x = 4 y = @1990 }
 		}
 		path = {
 			leads_to_tech = jet_fighter9
@@ -1781,7 +1776,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @2000 }
+			position = { x = 4 y = @2000 }
 		}
 		path = {
 			leads_to_tech = multipurpose_fighter_bomber
@@ -1838,7 +1833,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1950 }
+			position = { x = 1 y = @1950 }
 		}
 		path = {
 			leads_to_tech = naval_jet_fighter2
@@ -1872,7 +1867,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1955 }
+			position = { x = 1 y = @1955 }
 		}
 		dependencies = {
 			variable_stators = 1
@@ -1909,7 +1904,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1960 }
+			position = { x = 1 y = @1960 }
 		}
 		dependencies = {
 			tech_fan_jet_engines = 1
@@ -1946,7 +1941,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1965 }
+			position = { x = 1 y = @1965 }
 		}
 		path = {
 			leads_to_tech = naval_jet_fighter5
@@ -1980,7 +1975,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1975 }
+			position = { x = 1 y = @1975 }
 		}
 		path = {
 			leads_to_tech = naval_jet_fighter6
@@ -2017,7 +2012,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1980 }
+			position = { x = 1 y = @1980 }
 		}
 		path = {
 			leads_to_tech = naval_jet_fighter7
@@ -2051,7 +2046,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1990 }
+			position = { x = 1 y = @1990 }
 		}
 		path = {
 			leads_to_tech = naval_jet_fighter8
@@ -2088,7 +2083,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @2000 }
+			position = { x = 1 y = @2000 }
 		}
 		dependencies = {
 			advanced_digital_avionics = 1
@@ -2121,7 +2116,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @2005 }
+			position = { x = 4 y = @2005 }
 		}
 		path = {
 			leads_to_tech = multipurpose_fighter_bomber2
@@ -2157,7 +2152,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @2010 }
+			position = { x = 4 y = @2010 }
 		}
 		path = {
 			leads_to_tech = multipurpose_fighter_bomber3
@@ -2190,7 +2185,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @2015 }
+			position = { x = 4 y = @2015 }
 		}
 		path = {
 			leads_to_tech = multipurpose_fighter_bomber4
@@ -2223,7 +2218,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @2020 }
+			position = { x = 4 y = @2020 }
 		}
 		path = {
 			leads_to_tech = multipurpose_fighter_bomber5
@@ -2259,7 +2254,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 5 y = @2025 }
+			position = { x = 4 y = @2025 }
 		}
 		# path = {
 			# leads_to_tech = space_age_fighter_bomber
@@ -2299,7 +2294,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1935 }
+			position = { x = 1 y = @1935 }
 		}
 
 		sub_technologies = {
@@ -2409,7 +2404,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1940 }
+			position = { x = 1 y = @1940 }
 		}
 
 		sub_technologies = {
@@ -2524,7 +2519,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_folder
-			position = { x = 2 y = @1945 }
+			position = { x = 1 y = @1945 }
 		}
 
 		sub_technologies = {
@@ -2633,7 +2628,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = air_folder
-			position = { x = 8 y = @1935 }
+			position = { x = 7 y = @1935 }
 		}
 
 		sub_technologies = {
@@ -2744,7 +2739,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_folder
-			position = { x = 8 y = @1940 }
+			position = { x = 7 y = @1940 }
 		}
 
 		sub_technologies = {
@@ -2859,7 +2854,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_folder
-			position = { x = 8 y = @1945 }
+			position = { x = 7 y = @1945 }
 		}
 
 		sub_technologies = {
@@ -2974,7 +2969,7 @@ technologies = {
 		start_year = 1915
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1915 }
+			position = { x = 14 y = @1915 }
 		}
 
 		categories = {
@@ -3011,7 +3006,7 @@ technologies = {
 		start_year = 1920
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1920 }
+			position = { x = 14 y = @1920 }
 		}
 
 		categories = {
@@ -3057,7 +3052,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1930 }
+			position = { x = 14 y = @1930 }
 		}
 
 		categories = {
@@ -3092,7 +3087,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = air_folder
-			position = { x = 12 y = @1935 }
+			position = { x = 11 y = @1935 }
 		}
 
 		categories = {
@@ -3127,7 +3122,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_folder
-			position = { x = 12 y = @1940 }
+			position = { x = 11 y = @1940 }
 		}
 
 		categories = {
@@ -3162,7 +3157,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_folder
-			position = { x = 12 y = @1945 }
+			position = { x = 11 y = @1945 }
 		}
 
 		categories = {
@@ -3198,7 +3193,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1935 }
+			position = { x = 14 y = @1935 }
 		}
 
 		categories = {
@@ -3257,7 +3252,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1940 }
+			position = { x = 14 y = @1940 }
 		}
 
 		categories = {
@@ -3316,7 +3311,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1945 }
+			position = { x = 14 y = @1945 }
 		}
 
 		categories = {
@@ -3375,7 +3370,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1945 }
+			position = { x = 14 y = @1945 }
 		}
 
 		categories = {
@@ -3414,7 +3409,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1950 }
+			position = { x = 14 y = @1950 }
 		}
 
 		categories = {
@@ -3448,7 +3443,7 @@ technologies = {
 		start_year = 1955
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1955 }
+			position = { x = 14 y = @1955 }
 		}
 		dependencies = {
 			variable_stators = 1
@@ -3489,7 +3484,7 @@ technologies = {
 		start_year = 1962
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1960 }
+			position = { x = 14 y = @1960 }
 		}
 
 		categories = {
@@ -3523,7 +3518,7 @@ technologies = {
 		start_year = 1967
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1965 }
+			position = { x = 14 y = @1965 }
 		}
 
 		categories = {
@@ -3557,7 +3552,7 @@ technologies = {
 		start_year = 1975
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1975 }
+			position = { x = 14 y = @1975 }
 		}
 		dependencies = {
 			fly_by_wire_systems=1
@@ -3598,7 +3593,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @1990 }
+			position = { x = 14 y = @1990 }
 		}
 
 		categories = {
@@ -3632,7 +3627,7 @@ technologies = {
 		start_year = 2005
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @2005 }
+			position = { x = 14 y = @2005 }
 		}
 
 		dependencies = {
@@ -3670,7 +3665,7 @@ technologies = {
 		start_year = 2010
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @2010 }
+			position = { x = 14 y = @2010 }
 		}
 
 		categories = {
@@ -3704,7 +3699,7 @@ technologies = {
 		start_year = 2020
 		folder = {
 			name = air_folder
-			position = { x = 15 y = @2020 }
+			position = { x = 14 y = @2020 }
 		}
 		dependencies = {
 			smart_skin_fuselage=1
@@ -3744,7 +3739,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @1935 }
+			position = { x = 17 y = @1935 }
 		}
 
 		categories = {
@@ -3789,7 +3784,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @1940 }
+			position = { x = 17 y = @1940 }
 		}
 
 		categories = {
@@ -3834,7 +3829,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @1945 }
+			position = { x = 17 y = @1945 }
 		}
 
 		categories = {
@@ -3884,7 +3879,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @1950 }
+			position = { x = 17 y = @1950 }
 		}
 
 		categories = {
@@ -3921,7 +3916,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @1955 }
+			position = { x = 17 y = @1955 }
 		}
 		path = {
 			leads_to_tech = jet_strategic_bomber3
@@ -3962,7 +3957,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @1965 }
+			position = { x = 17 y = @1965 }
 		}
 
 		path = {
@@ -4012,7 +4007,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @1980 }
+			position = { x = 17 y = @1980 }
 		}
 
 		categories = {
@@ -4057,7 +4052,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @1990 }
+			position = { x = 17 y = @1990 }
 		}
 
 		categories = {
@@ -4099,7 +4094,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @2000 }
+			position = { x = 17 y = @2000 }
 		}
 
 		categories = {
@@ -4144,7 +4139,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @2005 }
+			position = { x = 17 y = @2005 }
 		}
 
 		categories = {
@@ -4186,7 +4181,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @2010 }
+			position = { x = 17 y = @2010 }
 		}
 
 		categories = {
@@ -4231,7 +4226,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @2020 }
+			position = { x = 17 y = @2020 }
 		}
 
 		categories = {
@@ -4273,7 +4268,7 @@ technologies = {
 
 		folder = {
 			name = air_folder
-			position = { x = 18 y = @2025 }
+			position = { x = 17 y = @2025 }
 		}
 
 		categories = {

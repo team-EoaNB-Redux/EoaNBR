@@ -1132,3 +1132,18 @@ generic_decision_category_clayton_conspiracy = { #maybe cass conspiracy? he was 
 		}
 	}
 }
+HAI_foreign_opinion_propaganda = {
+	icon = category_generic_propaganda
+
+	allowed = {
+		tag = HAI
+	}
+
+	visible = {
+		date < 1879.7.17
+		NOT = {
+			has_completed_focus = HAI_preserve_sovereignty
+		}
+	}
+	
+}

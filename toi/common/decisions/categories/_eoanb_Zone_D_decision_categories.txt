@@ -109,6 +109,7 @@ eoanb_category_sepoy_rebellion = {
 			tag = KAS
 		}
 	}
+	priority = 75
 }
 
 ### RAJ

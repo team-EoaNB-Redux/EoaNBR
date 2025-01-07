@@ -1,3 +1,183 @@
+#### Zone A Decision Categories ####
+
+#### First Nations Decision Categories ####
+NA_N_depopulation_decision_cateogory = {
+
+	icon = border_conflicts
+
+	priority = 95
+
+	allowed = {
+		OR = {
+			TAG = SEM
+			TAG = APA
+			TAG = NAV
+			TAG = COM
+			TAG = CHY
+			TAG = SIX
+			TAG = CRW
+			TAG = SHO
+			TAG = BFT
+			TAG = NEZ
+		}
+	}
+
+	visible = {
+		has_country_flag = NA_N_depop_flag_1
+	}
+	visible_when_empty = yes
+
+	scripted_gui = na_n_depopulation_decision_category_gui
+}
+NA_N_neo_nativism_category = {
+
+	icon = border_conflicts
+
+	priority = 95
+
+	allowed = {
+		OR = {
+			TAG = SEM
+			TAG = APA
+			TAG = NAV
+			TAG = COM
+			TAG = CHY
+			TAG = SIX
+			TAG = CRW
+			TAG = SHO
+			TAG = BFT
+			TAG = NEZ
+		}
+	}
+
+	visible = {
+		has_country_flag = NA_N_neo_nativism_flag_1
+	}
+	visible_when_empty = yes
+
+}
+tribal_decisions_eoanb = {
+	icon = army_reform
+	allowed = {
+		OR = {
+			has_idea = AF_T_unorganized_tribal_nation
+			has_idea = AF_T_unorganized_tribal_nation_2
+			has_idea = AF_T_unorganized_tribal_nation_3
+			has_idea = AF_T_unorganized_tribal_nation_4
+			has_idea = AF_T_unorganized_tribal_nation_5
+			has_idea = AF_T_organized_tribal_nation
+			has_idea = AF_T_organized_tribal_nation_2
+			has_idea = AF_T_organized_tribal_nation_3
+			has_idea = AF_T_small_kingdom
+			has_idea = afr_large_kingdom
+			has_idea = afr_reforming_kingdom
+			oceania_is_tribal = yes
+			is_first_nations_tribe = yes
+			is_south_american_tribe = yes
+		}
+	}
+}
+first_nations_tribal_conflict_category = {
+	icon = generic_crisis
+
+	visible = {
+		OR = {
+			is_first_nations_tribe = yes
+			AND = {
+				NOT = { is_first_nations_tribe = yes }
+				any_neighbor_country = {
+					is_first_nations_tribe = yes
+				}
+			}
+		}
+	}
+}
+
+first_nations_tribal_american_civil_war_category = {
+	icon = generic_crisis
+
+	allowed = {
+		is_first_nations_tribe_allowed = yes
+	}
+
+	visible = {
+		acw_has_started_scripted_trigger = yes
+		OR = {
+			has_chosen_USA_side_in_acw_trigger = yes
+			has_chosen_CSA_side_in_acw_trigger = yes
+		}
+	}
+}
+
+NA_FN_raids = {
+	icon = saf_anti_colonialist_crusade
+
+	allowed = {
+		OR = {
+			tag = NAV
+			tag = APA
+			tag = COM
+			tag = CHY
+			tag = SIX
+			tag = SHO
+			tag = NEZ
+			tag = BFT
+			tag = CRW
+		}
+	}
+}
+
+NA_N_war_operations_category = {
+	 icon = decision_railway
+	 visible = {
+		is_first_nations_tribe = yes
+		# has_country_flag = NA_N_native_military_flag_1
+	}
+     available = { 
+		  has_country_flag = NA_N_native_military_flag_1
+    }
+}
+
+NA_N_war_operations_category_2 = {
+	 icon = decision_railway
+	 visible = {
+		is_first_nations_tribe = yes
+		# has_country_flag = NA_N_native_military_flag_2
+	}
+     available = { 
+		  has_country_flag = NA_N_native_military_flag_2
+    }
+}
+
+NA_N_city_development_category = {
+    icon = decision_railway
+	#  visible = {
+	# 	is_first_nations_tribe = yes
+	# 	has_country_flag = NA_N_political_flag_1
+	# }
+    #  available = { 
+    #       num_of_civilian_factories > 5
+	# 	  has_country_flag = NA_N_political_flag_1
+    # }
+	allowed = {
+		OR = {
+			tag = NAV
+			tag = APA
+			tag = COM
+			tag = CHY
+			tag = SIX
+			tag = SHO
+			tag = NEZ
+			tag = BFT
+			tag = CRW
+		}
+	}
+}
+USA_kkk_uprising = {
+	icon = generic_crisis
+	
+	allowed = { tag = USA }
+}
 #### Zone B Decision Categories ####
 
 #### Africa Colonial Decision Categories ####

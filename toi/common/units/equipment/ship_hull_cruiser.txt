@@ -25,7 +25,7 @@ equipments = {
 			}
 			fixed_ship_armor_slot = {
 				required = no
-				allowed_module_categories = { ship_capital_armor }	
+				allowed_module_categories = { ship_capital_armor }
 			}
 			rear_1_custom_slot = {
 				required = no
@@ -40,7 +40,7 @@ equipments = {
 				required = no
 			}
 		}
-		
+
 		default_modules = {
 			fixed_ship_battery_slot = empty
 			fixed_ship_fire_control_system_slot = empty
@@ -51,39 +51,39 @@ equipments = {
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
-		
+
 		lg_armor_piercing = 0
 		lg_attack = 0
-		
+
 		hg_armor_piercing = 0
 		hg_attack = 0
-		
+
 		torpedo_attack = 0
 		sub_attack = 0
-		
+
 		anti_air_attack = 0
-		
+
 		#armor_value = 3
-		
+
 		surface_detection = 20
 		sub_detection = 0
 		surface_visibility = 25
 		naval_speed = 0
 		reliability = 0.8
-		
+
 		#naval_range =  3000
-		
-		max_strength = 100	
+
+		max_strength = 100
 
 		fuel_consumption = 0
-		
+
 		build_cost_ic = 3670
 		resources = {
 			wood = 23
 			copper = 2
 			fiber = 2
 		}
-		
+
 		manpower = 450
 	}
 ##################non-MTG frigates
@@ -101,7 +101,7 @@ equipments = {
 			# mid_2_custom_slot = inherit
 			front_1_custom_slot = inherit
 		}
-		
+
 		default_modules = {
 			fixed_ship_battery_slot = ship_cannon_battery_0
 			fixed_ship_fire_control_system_slot = fire_control_system_0
@@ -112,41 +112,41 @@ equipments = {
 			mid_2_custom_slot = ship_cannon_battery_0
 			rear_1_custom_slot = empty
 		}
-		
+
 		lg_armor_piercing = 0
 		lg_attack = 0
-		
+
 		hg_armor_piercing = 0
 		hg_attack = 0
-		
+
 		torpedo_attack = 0
 		sub_attack = 0
-		
+
 		anti_air_attack = 0
-		
+
 		#armor_value = 3
 
-		
+
 		surface_detection = 20
 		sub_detection = 0
 		surface_visibility = 25
 		naval_speed = 0
 		reliability = 0.8
-		
+
 		#naval_range =  3000
-		
-		max_strength = 100		
-		
+
+		max_strength = 100
+
 
 		fuel_consumption = 0
-		
+
 		build_cost_ic = 3670
 		resources = {
 			wood = 23
 			copper = 2
 			fiber = 2
 		}
-		
+
 		manpower = 450
 	}
 
@@ -170,7 +170,7 @@ equipments = {
 			}
 			fixed_ship_armor_slot = {
 				required = no
-				allowed_module_categories = { ship_capital_armor }	
+				allowed_module_categories = { ship_capital_armor }
 			}
 			rear_1_custom_slot = {
 				required = no
@@ -196,34 +196,34 @@ equipments = {
 		upgrades = {
 			# frigate_paddlewheel_upgrade_enable
 		}
-		
+
 		lg_armor_piercing = 0
 		lg_attack = 0
-		
+
 		hg_armor_piercing = 0
 		hg_attack = 0
-		
+
 		torpedo_attack = 0
 		sub_attack = 0
-		
+
 		anti_air_attack = 0
-		
+
 		#armor_value = 3
 
-		
+
 		surface_detection = 20
 		sub_detection = 0
 		surface_visibility = 25
 		naval_speed = 0
 		reliability = 0.8
-		
+
 		#naval_range =  3750
-		
-		max_strength = 120		
-		
+
+		max_strength = 120
+
 
 		fuel_consumption = 0
-		
+
 		build_cost_ic = 4670
 		resources = {
 			wood = 20
@@ -231,7 +231,7 @@ equipments = {
 			copper = 2
 			fiber = 2
 		}
-		
+
 		manpower = 500
 	}
 
@@ -251,34 +251,34 @@ equipments = {
 			# mid_2_custom_slot = ship_cannon_battery_1
 			rear_1_custom_slot = empty
 		}
-		
+
 		lg_armor_piercing = 0
 		lg_attack = 0
-		
+
 		hg_armor_piercing = 0
 		hg_attack = 0
-		
+
 		torpedo_attack = 0
 		sub_attack = 0
-		
+
 		anti_air_attack = 0
-		
+
 		#armor_value = 6
 
-		
+
 		surface_detection = 22
 		sub_detection = 0
 		surface_visibility = 26
 		naval_speed = 0
 		reliability = 0.8
-		
+
 		#naval_range =  4500
-		
-		max_strength = 140		
-		
+
+		max_strength = 140
+
 
 		fuel_consumption = 0
-		
+
 		build_cost_ic = 5670
 		resources = {
 			wood = 10
@@ -286,16 +286,16 @@ equipments = {
 			copper = 2
 			fiber = 2
 		}
-		
+
 		manpower = 520
 	}
-#####################end non-MTG frigates	
+#####################end non-MTG frigates
 	ship_hull_frigate_0 = {
 		year = 1800
 		visual_level = 0
 		archetype = ship_hull_frigate
 		priority = 1900
-		
+
 		module_slots = inherit
 		default_modules = {
 			fixed_ship_battery_slot = ship_cannon_battery_0
@@ -361,9 +361,9 @@ equipments = {
 				required = no
 			}
 		}
-		
+
 		default_modules = {
-			fixed_ship_battery_slot = ship_cannon_battery_1 
+			fixed_ship_battery_slot = ship_cannon_battery_1
 			fixed_ship_fire_control_system_slot = fire_control_system_0
 			fixed_ship_engine_slot = ship_engine_sail_frigate_1
 			fixed_ship_secondaries_slot = ship_secondary_guns_0
@@ -407,21 +407,21 @@ equipments = {
 			module = ship_RBL_battery_1
 			count < 3
 		}
-		
+
 		#armor_value = 5
-		
+
 		surface_detection = 20
 		sub_detection = 0
 		surface_visibility = 25
 		naval_speed = 0
 		reliability = 0.8
-		
+
 		#naval_range =  3750
-		
-		max_strength = 120	
+
+		max_strength = 120
 
 		fuel_consumption = 0
-		
+
 		build_cost_ic = 4670
 		resources = {
 			wood = 20
@@ -429,7 +429,7 @@ equipments = {
 			copper = 2
 			fiber = 2
 		}
-		
+
 		manpower = 480
 	}
 
@@ -465,20 +465,20 @@ equipments = {
 	# 	surface_visibility = 20
 	# 	naval_speed = 0
 	# 	reliability = 0.8
-		
+
 	# 	#naval_range =  3000
-		
-	# 	max_strength = 90	
+
+	# 	max_strength = 90
 
 	# 	fuel_consumption = 0
-		
+
 	# 	build_cost_ic = 3420
 	# 	resources = {
 	# 		wood = 1
 	# 		iron = 1
 	# 		steel = 3
 	# 	}
-		
+
 	# 	manpower = 200
 	# }
 
@@ -508,17 +508,17 @@ equipments = {
 			}
 			fixed_ship_engine_slot = {
 				required = yes
-				allowed_module_categories = { 
-					ship_engine_sail_frigate 
-					ship_engine_cruiser 
+				allowed_module_categories = {
+					ship_engine_sail_frigate
+					ship_engine_cruiser
 				}
 			}
 			fixed_ship_armor_slot = {
 				required = yes
-				allowed_module_categories = { 
+				allowed_module_categories = {
 					#protected_cruiser_armor
-					armored_cruiser_armor 
-				}	
+					armored_cruiser_armor
+				}
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
@@ -567,7 +567,7 @@ equipments = {
 			}
 			front_1_custom_slot = mid_1_custom_slot
 		}
-		
+
 		default_modules = {
 			fixed_ship_engine_slot = ship_engine_cruiser_1
 		}
@@ -603,23 +603,23 @@ equipments = {
 			}
 			fixed_ship_fire_control_system_slot = {
 				required = yes
-				allowed_module_categories = { 
-					ship_fire_control_system 
+				allowed_module_categories = {
+					ship_fire_control_system
 				}
 			}
 			fixed_ship_engine_slot = {
 				required = yes
-				allowed_module_categories = { 
-					ship_engine_sail_frigate 
-					ship_engine_cruiser 
+				allowed_module_categories = {
+					ship_engine_sail_frigate
+					ship_engine_cruiser
 				}
 			}
 			fixed_ship_armor_slot = {
 				required = yes
-				allowed_module_categories = { 
-					protected_cruiser_armor 
-					armored_cruiser_armor 
-				}	
+				allowed_module_categories = {
+					protected_cruiser_armor
+					armored_cruiser_armor
+				}
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
@@ -711,23 +711,23 @@ equipments = {
 			}
 			fixed_ship_fire_control_system_slot = {
 				required = yes
-				allowed_module_categories = { 
-					ship_fire_control_system 
+				allowed_module_categories = {
+					ship_fire_control_system
 				}
 			}
 			fixed_ship_engine_slot = {
 				required = yes
-				allowed_module_categories = { 
-					ship_engine_sail_frigate 
-					ship_engine_cruiser 
+				allowed_module_categories = {
+					ship_engine_sail_frigate
+					ship_engine_cruiser
 				}
 			}
 			fixed_ship_armor_slot = {
 				required = yes
-				allowed_module_categories = { 
-					protected_cruiser_armor 
-					armored_cruiser_armor 
-				}	
+				allowed_module_categories = {
+					protected_cruiser_armor
+					armored_cruiser_armor
+				}
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
@@ -789,5 +789,5 @@ equipments = {
 			fiber = 1
 		}
 	}
-	
+
 }

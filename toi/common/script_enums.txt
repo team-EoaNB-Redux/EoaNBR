@@ -349,7 +349,9 @@
 		mtb_4
 		mtb_5
 		mtb_6
-
+		naval_capital
+		naval_capital_bb
+		naval_capital_bc
 
 		#Vanilla
 

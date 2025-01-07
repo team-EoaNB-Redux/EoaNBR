@@ -1206,7 +1206,7 @@ MEX_decision_category_reform_war = {
 			random_owned_state = {
 				limit = {
 					any_state_division = {
-						division_has_majority_template = militia
+						division_has_majority_template = irregular_infrantry
 					}
 				}
 				delete_unit = {
