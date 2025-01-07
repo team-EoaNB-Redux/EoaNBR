@@ -49,10 +49,10 @@ This site is the official respository (cloud) for sharing and cooperating in the
 
 <hr>
 
-## Installing the Mod
+## Installing EoaNBR
 
 Get easy access to our open-source development, with just a few quick steps!
-Here's a useful installation video by one of our lead developers: 
+Here's a useful installation video by one of our lead developers, Vanadium: 
 
 **Video Link:** https://www.youtube.com/watch?v=gEEKq-Rwn84
 
@@ -77,6 +77,9 @@ We do not tolerate using content developed for EoaNBR for other purposes. Any ot
 ### Crashes
 `Smuggling Opium Crash`: The current build of our mod crashes during the game-booting process between the launcher window and the main menu for some users with incompatible graphics cards. A good fix for most users has been to enter the Steam Library and enter the option `-opengl` into Hearts of Iron 4's launch settings. <a href="https://github.com/team-EoaNB-Redux/EoaNBR/wiki/Common-Troubleshooting-Actions"> Instructions Here</a>
 
+
+`Air Squadron Crash`: Planes are currently unavailable to be build in EoaNBR and opening the create squadron screen may cause crashes.
+
 ### Other notable issues
 `Save Game Load Times`: It is a notable issue of how long save games take to load. Our average developer notices it takes them 5-10 minutes to load a save; longer as the game progresses past 1880. This issue is to be addressed with Ars Bellica.
 
@@ -92,7 +95,7 @@ Have more questions, comments or feedback? You can contact us by joining our dis
 
 ## Join the Team
 
-If you wish to contribute to the development of the mod, supprt us on Patreon or join the team. The links to support/apply can be found in our `#faq` channel on Discord. Donators will be given the special Auxillaires role on Discord which gives backdoor access to most of our development process/work and given special personalized easter eggs in our mod. Applicant Developers will be given the `Patrician` Team Member Role and the `Disciplio` Trial Role. After passing the Trial Period, members will be fully accepted into the team and be given GitHub write access if applicable.
+If you wish to contribute to the development of the mod, support us on Patreon or join the team. The links to support/apply can be found in our `#faq` channel on Discord. Donators will be given the special Patreonus role on Discord which gives backdoor access to most of our development process/work and given special personalized easter eggs in our mod. Applicant Developers will be given the `Patrician` Team Member Role and the `Disciplio` Trial Role. After passing the Trial Period, members will be fully accepted into the team and be given GitHub write access if applicable.
 
 ### Rules for Developers
 - Current General Development for EoaNBR shall be pushed onto the `(0.3)-Ars-Bellica` branch.
@@ -100,7 +103,6 @@ If you wish to contribute to the development of the mod, supprt us on Patreon or
 - Merging should be done carefully and procedurely. Do not override other developers' work without acknowledgment of the team.
 - If procedural pushing (including incomplete content) is crucial to development, request a new branch.
 - Merging any branch into the master branch (the distributed branch) will require a pull request which can only be initialised by a *Centurion*, and requires the approval of at least another Centurion. Errors are to be checked and minimalised by the Centurion who does the request.
-- Additional rules in the **Developer Bible**
 
 ### Meet the Lead-Developers
 *aka Senatores*
@@ -116,7 +118,7 @@ If you wish to contribute to the development of the mod, supprt us on Patreon or
 </td>
 <td align="center">
   <a href = "https://github.com/Vanadium-GITHUB"><strong>Vanadium</strong></a>
-  <img src="https://cdn.discordapp.com/attachments/520351376963010560/1014327160426741780/AKaede_New_Years.png" width="80px;" alt="Vanadium"/>
+  <img src="https://avatars.githubusercontent.com/u/67757372?v=4" width="80px;" alt="Vanadium"/>
 </td>
 </tr>
 </table>
