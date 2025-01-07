@@ -2247,10 +2247,10 @@
 
 		completion_reward = {
 			# event 900 (arms factory construction speed)
-			add_timed_idea = {
-				idea = GRE_idea_victorian_military_construction
-				days = 2000
-			}
+			# add_timed_idea = {
+			# 	idea = GRE_idea_victorian_military_construction
+			# 	days = 2000
+			# }
 		}
 
 	}

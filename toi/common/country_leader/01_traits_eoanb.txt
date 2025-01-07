@@ -320,10 +320,10 @@ leader_traits = {
 			synthetic_rubber_refinery_output_factor = 0.1
 			synthetic_oil_refinery_output_factor = 0.1
 
-			research_bonus = {
-				cat_inorganic_chemistry_science_techs = 0.1
-				cat_organic_chemistry_science_techs = 0.1
-			}
+			# research_bonus = {
+			# 	cat_inorganic_chemistry_science_techs = 0.1
+			# 	cat_organic_chemistry_science_techs = 0.1
+			# }
 			ai_will_do = {
 				factor = 1
 			}
@@ -333,9 +333,9 @@ leader_traits = {
 				
 			textile_mill_output_factor = 0.1
 
-			research_bonus = {
-				cat_textiles_industry_techs = 0.2
-			}
+			# research_bonus = {
+			# 	cat_textiles_industry_techs = 0.2
+			# }
 			ai_will_do = {
 				factor = 1
 			}
@@ -464,9 +464,9 @@ leader_traits = {
 		random = yes
 		
 		monthly_population = 0.05
-		research_bonus = {
-			cat_medicine_health_techs = 0.15
-		}
+		# research_bonus = {
+		# 	cat_medicine_health_techs = 0.15
+		# }
 
 		ai_will_do = {
 			factor = 1

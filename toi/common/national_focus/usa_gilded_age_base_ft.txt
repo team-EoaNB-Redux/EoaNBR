@@ -3767,7 +3767,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	completion_reward = {
-		add_dynamic_modifier = { modifier = USA_navy_modifier }
+		# add_dynamic_modifier = { modifier = USA_navy_modifier }
 		if = {
 			limit = {
 				has_dlc = "Man the Guns"

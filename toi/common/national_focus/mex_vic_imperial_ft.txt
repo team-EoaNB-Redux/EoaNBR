@@ -596,7 +596,7 @@ focus_tree = {
 				has_war = yes
 			}
 			NOT = { has_war_with = CSA }
-			has_manpower = 3000
+			has_manpower > 3000
 		}
 
 		ai_will_do = {

@@ -1258,8 +1258,8 @@ focus_tree = {
 			else_if = { limit = { has_idea = foa_state_only }
 				swap_ideas = { add_idea = foa_free_assembly remove_idea = foa_state_only }
 			}
-			else_if = { limit = { has_idea = foa_restricted_attendence }
-				swap_ideas = { add_idea = foa_free_assembly remove_idea = foa_restricted_attendence }
+			else_if = { limit = { has_idea = foa_restricted_attendance }
+				swap_ideas = { add_idea = foa_free_assembly remove_idea = foa_restricted_attendance }
 			}
 			else_if = { limit = { has_idea = foa_non_socialist }
 				swap_ideas = { add_idea = foa_free_assembly remove_idea = foa_non_socialist }

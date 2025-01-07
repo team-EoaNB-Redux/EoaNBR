@@ -5196,15 +5196,6 @@ focus_tree = {
 					id = usa_event_check.9
 					days = 75
 				}
-				if = {
-					limit = {
-						has_country_leader = {
-							name = "James Buchanan"
-							ruling_only = yes
-						}
-					}
-					activate_mission = USA_buchanan_cuban_purchase_2
-				}
 			}
 		}
 	}

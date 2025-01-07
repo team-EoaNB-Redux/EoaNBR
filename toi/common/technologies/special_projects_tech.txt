@@ -79,8 +79,8 @@ technologies = {
 		categories = {
 			nuclear
 		}
-		sp_nuclear_bomb_speed_factor = 0.05
-		sp_thermo_nuclear_bomb_speed_factor = 0.05
+		# sp_nuclear_bomb_speed_factor = 0.05
+		# sp_thermo_nuclear_bomb_speed_factor = 0.05
 		nuclear_production_factor = 0.5
 	}
 

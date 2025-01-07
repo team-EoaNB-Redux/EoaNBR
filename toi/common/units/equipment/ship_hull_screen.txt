@@ -1306,8 +1306,6 @@ equipments = {
 			}
 		}
 
-		naval_speed = 10
-
 		module_count_limit = {
 			module = ship_torpedo_1
 			count < 1
@@ -1383,8 +1381,6 @@ equipments = {
 					
 				}
 			}
-
-			naval_speed = 12
 
 			module_count_limit = {
 				module = ship_torpedo_1

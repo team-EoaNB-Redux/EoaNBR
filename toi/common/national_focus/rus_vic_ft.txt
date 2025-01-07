@@ -13,6 +13,11 @@ focus_tree = {
 		x = 0
 		y = 1600
 	}
+	
+	initial_show_position = {
+		x = 20
+		y = 0
+	}
 
 	shortcut = {
 		name = RUS_vic_Industrialise_The_Empire
@@ -830,11 +835,6 @@ focus_tree = {
 		y = 9
 
 		ai_will_do = { factor = 10 }
-
-		initial_show_position = {
-			x = 20
-			y = 0
-		}
 
 		completion_reward = {
 			add_tech_bonus = { bonus = 1.5 uses = 2 category = cat_industry_techs }

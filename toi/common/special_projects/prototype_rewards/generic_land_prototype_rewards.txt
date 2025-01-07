@@ -754,12 +754,12 @@ sp_land_generic_reward_artillery_tech_1 = {
 		
 		iteration_output = {
 			country_effects = {
-				add_tech_bonus = {
-					name = sp_land_generic_reward_option_artillery_tech_bonus_name
-					bonus = 0.1
-					uses = 1
-					category = mio_cat_artillery
-				}
+				# add_tech_bonus = {
+				# 	name = sp_land_generic_reward_option_artillery_tech_bonus_name
+				# 	bonus = 0.1
+				# 	uses = 1
+				# 	category = mio_cat_artillery
+				# }
 
 				FROM = { set_project_flag = sp_land_generic_reward_artillery_tech_flag }
 			}
@@ -794,12 +794,12 @@ sp_land_generic_reward_artillery_tech_2 = {
 		
 		iteration_output = {
 			country_effects = {
-				add_tech_bonus = {
-					name = sp_land_generic_reward_option_artillery_tech_bonus_name
-					bonus = 0.2
-					uses = 1
-					category = mio_cat_artillery
-				}
+				# add_tech_bonus = {
+				# 	name = sp_land_generic_reward_option_artillery_tech_bonus_name
+				# 	bonus = 0.2
+				# 	uses = 1
+				# 	category = mio_cat_artillery
+				# }
 
 				FROM = { set_project_flag = sp_land_generic_reward_artillery_tech_flag }
 			}
@@ -834,12 +834,12 @@ sp_land_generic_reward_artillery_tech_3 = {
 		
 		iteration_output = {
 			country_effects = {
-				add_tech_bonus = {
-					name = sp_land_generic_reward_option_artillery_tech_bonus_name
-					bonus = 0.35
-					uses = 1
-					category = mio_cat_artillery
-				}
+				# add_tech_bonus = {
+				# 	name = sp_land_generic_reward_option_artillery_tech_bonus_name
+				# 	bonus = 0.35
+				# 	uses = 1
+				# 	category = mio_cat_artillery
+				# }
 
 				add_breakthrough_progress = {
 					specialization = specialization_land
