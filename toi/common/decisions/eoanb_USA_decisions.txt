@@ -5181,7 +5181,7 @@ USA_decision_category_clayton_conspiracy = {
 		complete_effect = {
 			set_country_flag = clayton_decision_flag
 			FROM = {
-				country_event = { id = USA_clyaton_conspiracy.22 }
+				country_event = { id = USA_clayton_conspiracy.22 }
 			}
 		}
 
@@ -5392,7 +5392,7 @@ USA_decision_category_clayton_conspiracy = {
 			always = no
 		}
 		selectable_mission = no
-		is_good = yes
+		is_good = no
 
 		fire_only_once = no
 
@@ -5444,7 +5444,7 @@ USA_decision_category_clayton_conspiracy = {
 			always = no
 		}
 		selectable_mission = no
-		is_good = yes
+		is_good = no
 
 		fire_only_once = no
 
@@ -5496,7 +5496,7 @@ USA_decision_category_clayton_conspiracy = {
 			always = no
 		}
 		selectable_mission = no
-		is_good = yes
+		is_good = no
 
 		fire_only_once = no
 
@@ -5548,7 +5548,7 @@ USA_decision_category_clayton_conspiracy = {
 			always = no
 		}
 		selectable_mission = no
-		is_good = yes
+		is_good = no
 
 		fire_only_once = no
 

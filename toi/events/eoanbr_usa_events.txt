@@ -24459,6 +24459,9 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 						controls_state = 1154
 					}
 				}
+				NIC = {
+					has_country_flag = clayton_conspiracy_participant
+				}
 			}
 			1154 = { transfer_state_to = NIC }
 			custom_effect_tooltip = clayton_conspiracy_NIC_seized_tt
@@ -24478,6 +24481,9 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 					ENG = {
 						controls_state = 1155
 					}
+				}
+				HON = {
+					has_country_flag = clayton_conspiracy_participant
 				}
 			}
 			1155 = { transfer_state_to = HON }
@@ -24499,6 +24505,9 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 						controls_state = 311
 					}
 				}
+				GUA = {
+					has_country_flag = clayton_conspiracy_participant
+				}
 			}
 			311 = { transfer_state_to = GUA }
 			custom_effect_tooltip = clayton_conspiracy_GUA_seized_tt
@@ -24518,6 +24527,9 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 					ENG = {
 						controls_state = 687
 					}
+				}
+				VEN = {
+					has_country_flag = clayton_conspiracy_participant
 				}
 			}
 			687 = { transfer_state_to = VEN }

@@ -1219,7 +1219,7 @@ afr_colony_generic_colonial_investments_decisions = {
 		ai_will_do = { factor = 1 }
 		available = {
 			has_country_flag = afr_colony_generic_regional_infrastructure_decision_flag
-			exists = yes
+			# exists = yes
 		}
 
 		visible = {

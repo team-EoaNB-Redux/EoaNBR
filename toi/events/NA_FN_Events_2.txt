@@ -1475,10 +1475,10 @@ country_event = {
 			hidden_effect = { subtract_from_variable = { afr_border_war_defender_flag = 1 } }
 		}
 		random_list = {
-			96 = {}
-			4 = {
-				add_tech_bonus = {
-					bonus = 0.1
+			9 = {}
+			1 = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.1
 					uses = 1
 					category = doctrine_victorian_support_cavalry_category
 				}
