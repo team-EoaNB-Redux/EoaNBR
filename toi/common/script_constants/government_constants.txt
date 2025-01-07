@@ -13,29 +13,17 @@ political_legitimacy_level = {
 	perfect = 100
 }
 
-autarchy_level = {
+political_support_level = {
 	schema = {
 		any_key = yes
 		data = fixed_point
 	}
-	none = 0
-	extremely_low = 15
-	very_low = 30
-	low = 45
-	moderate = 60
-	high = 75
-	very_high = 90
-	perfect = 100
-}
-zealotry_level = {
-	schema = {
-		any_key = yes
-		data = fixed_point
-	}
-	secularist_min = 0
-	secularist_max = 40
-	neutral_min = 30
-	neutral_max = 70
-	fundamentalist_min = 60
-	fundamentalist_max = 100
+	complete = 100
+	very_high = 80
+	high = 50
+	moderate = 20
+	low = -10
+	very_low = -40
+	extremely_low = -70
+	none = -100
 }
