@@ -1109,6 +1109,7 @@ eoanb_category_worker_unrest_ENG = {
 	visible = {
 		trigger_ENG_worker_unrest = yes
 	}
+	priority = 45
 }
 
 eoanb_category_irish_unrest_ENG = {
@@ -1123,6 +1124,8 @@ eoanb_category_irish_unrest_ENG = {
 	visible = {
 		has_idea = ENG_unrest_in_ireland
 	}
+
+	priority = 50
 }
 
 eoanb_category_british_parliament_ENG = {

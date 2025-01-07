@@ -88,6 +88,8 @@ eoanb_category_second_opium_war = {
 	icon = generic_propaganda
 	picture = GFX_decision_cat_opium_war
 	allowed = { always = yes }
+
+	priority = 50
 }
 
 #### Sepoy Rebellion Decision Categories ####
