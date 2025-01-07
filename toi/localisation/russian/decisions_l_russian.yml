@@ -631,7 +631,7 @@
  eoanb_decision_sow_QNG_develop_tc_desc: "Мы будем развивать городской квартал Тунчхун на нашей стороне земли недалеко от Гонконга, чтобы повысить наши шансы на победу в осаде." #NT!
  eoanb_tt_decision_QNG_strengthen_tianjin_troops: "Укрепить гарнизон Тяньцзиня" #NT!
  eoanb_decision_sow_QNG_strenghten_tianjin_troops: "Мы ожидаем, что англичане в следующий раз нападут на нас в Тяньцзине. Нам следует усилить гарнизон там." #NT!
- eoanb_decision_sow_QNG_strenghten_tianjin_troops_desc: "§Y[QNG.GetNameDef]§! получит §G2§! §YRegiments§! в §YTianjin§!." #NT!
+ eoanb_decision_sow_QNG_strenghten_tianjin_troops_desc: "§Y[QNG.GetNameDef]§! получит §G2§! §YRegiments§! в §YTientsin§!." #NT!
  eoanb_decision_sow_ENG_draft_tianjin_treaty: "Тяньцзиньский договор" #NT!
  eoanb_decision_sow_ENG_draft_tianjin_treaty_desc: "После наших побед в Гуанчжоу и Тяньцзине мы готовы разработать договор для Китая." #NT!
  eoanb_decision_sow_QNG_relieve_tianjin_garrison: "Освободить гарнизон Тяньцзинь" #NT!

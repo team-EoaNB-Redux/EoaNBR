@@ -7465,16 +7465,16 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.171.d
 			picture = GFX_report_event_generic_sailship
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.171"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.171"
+			}
 
 			is_triggered_only = yes
 
 			#Call Britain for Help
 			option = {
 				name = JAP_tokugawa_shogunate.171.a
-		# log = "option:				name = JAP_tokugawa_shogunate.171.a"
+				# log = "option:				name = JAP_tokugawa_shogunate.171.a"
 				ai_chance = { factor = 95 }
 				ENG = { country_event = { id = JAP_tokugawa_shogunate.173 days = 1 } }
 			}
@@ -7482,7 +7482,7 @@ add_namespace = JAP_tokugawa_shogunate
 			#Back down and give Russia Tsushima
 			option = {
 				name = JAP_tokugawa_shogunate.171.b
-		# log = "option:				name = JAP_tokugawa_shogunate.171.b"
+				# log = "option:				name = JAP_tokugawa_shogunate.171.b"
 				ai_chance = {
 					factor = 5
 					modifier = {
@@ -7495,23 +7495,23 @@ add_namespace = JAP_tokugawa_shogunate
 
 		}
 
-	# Japan gives Tsushima to Russia
+	# Tokugawa gives Tsushima to Russia
 		country_event = {
 			id = JAP_tokugawa_shogunate.172
 			title = JAP_tokugawa_shogunate.172.t
 			desc = JAP_tokugawa_shogunate.172.d
 			picture = GFX_report_event_generic_sign_treaty2
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.172"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.172"
+			}
 
 			is_triggered_only = yes
 
 			#How nice of them
 			option = {
 				name = JAP_tokugawa_shogunate.172.a
-		# log = "option:				name = JAP_tokugawa_shogunate.172.a"
+				# log = "option:				name = JAP_tokugawa_shogunate.172.a"
 				ai_chance = { factor = 100 }
 				RUS = { transfer_state = 1231 }
 				TSH = {
@@ -7519,7 +7519,7 @@ add_namespace = JAP_tokugawa_shogunate
 					add_state_claim = 1231
 				}
 				hidden_effect = {
-					news_event = news.18
+					news_event = JAP_tokugawa_shogunate.187
 				}
 			}
 
@@ -7532,16 +7532,16 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.173.d
 			picture = GFX_report_event_generic_sign_treaty2
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.173"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.173"
+			}
 
 			is_triggered_only = yes
 
 			#Britain will help
 			option = {
 				name = JAP_tokugawa_shogunate.173.a
-		# log = "option:				name = JAP_tokugawa_shogunate.173.a"
+				# log = "option:				name = JAP_tokugawa_shogunate.173.a"
 				ai_chance = {
 					factor = 85
 					modifier = {
@@ -7585,9 +7585,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.174.d
 			picture = GFX_report_event_dead_soldiers
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.174"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.174"
+			}
 
 			fire_only_once = yes
 			is_triggered_only = yes
@@ -7622,9 +7622,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.175.d
 			picture = GFX_report_event_chinese_soldiers_city_ruin
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.175"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.175"
+			}
 
 			is_triggered_only = yes
 
@@ -7649,9 +7649,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.176.d
 			picture = GFX_report_event_generic_read_write
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.176"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.176"
+			}
 
 			is_triggered_only = yes
 
@@ -7700,9 +7700,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.177.d
 			picture = GFX_report_event_canada_treaty
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.177"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.177"
+			}
 
 			is_triggered_only = yes
 
@@ -7723,9 +7723,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.178.d
 			picture = GFX_report_event_generic_sign_treaty1
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.178"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.178"
+			}
 
 			is_triggered_only = yes
 
@@ -7772,9 +7772,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.179.d
 			picture = GFX_report_event_usa_election_generic
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.179"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.179"
+			}
 
 			is_triggered_only = yes
 
@@ -7788,7 +7788,7 @@ add_namespace = JAP_tokugawa_shogunate
 						limit = {
 							TAG = TSH
 						}
-						news_event = news.19
+						news_event = JAP_tokugawa_shogunate.188
 					}
 				}
 			}
@@ -7802,9 +7802,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.180.d
 			picture = GFX_report_event_soldiers_marching
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.180"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.180"
+			}
 
 			is_triggered_only = yes
 
@@ -7849,9 +7849,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.181.d
 			picture = GFX_report_event_king_speech
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.181"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.181"
+			}
 
 			is_triggered_only = yes
 
@@ -7884,7 +7884,7 @@ add_namespace = JAP_tokugawa_shogunate
 						}
 						ENG = { country_event = { id = JAP_tokugawa_shogunate.182 days = 1 } }
 					}
-					news_event = news.20
+					news_event = JAP_tokugawa_shogunate.189
 				}
 			}
 
@@ -7897,9 +7897,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.182.d
 			picture = GFX_report_event_nationalist_china_machinegun_firing
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.182"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.182"
+			}
 
 			is_triggered_only = yes
 
@@ -7940,9 +7940,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.183.d
 			picture = GFX_report_event_generic_sign_treaty1
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.183"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.183"
+			}
 
 			fire_only_once = yes
 			is_triggered_only = yes
@@ -8033,9 +8033,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.184.d
 			picture = GFX_report_event_generic_read_write
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.184"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.184"
+			}
 
 			is_triggered_only = yes
 
@@ -8064,9 +8064,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.185.d
 			picture = GFX_report_event_generic_read_write
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.185"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.185"
+			}
 
 			is_triggered_only = yes
 
@@ -8095,9 +8095,9 @@ add_namespace = JAP_tokugawa_shogunate
 			desc = JAP_tokugawa_shogunate.186.d
 			picture = GFX_report_event_generic_sign_treaty1
 
-	immediate = {
-		# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.186"
-	}
+			immediate = {
+				# log = "[THIS.GetTag]: firing d = JAP_tokugawa_shogunate.186"
+			}
 
 			fire_only_once = yes
 			is_triggered_only = yes
@@ -8117,7 +8117,7 @@ add_namespace = JAP_tokugawa_shogunate
 			#We have won
 			option = {
 				name = JAP_tokugawa_shogunate.186.a
-		# log = "option:				name = JAP_tokugawa_shogunate.186.a"
+				# log = "option:				name = JAP_tokugawa_shogunate.186.a"
 				ai_chance = { factor = 100 }
 				RUS = {
 					transfer_state = 1231
@@ -8175,6 +8175,133 @@ add_namespace = JAP_tokugawa_shogunate
 							has_global_flag = eoanb_flag_tsushima_ENG_denied_TSH
 						}
 						clr_global_flag = eoanb_flag_tsushima_ENG_denied_TSH
+					}
+				}
+			}
+
+		}
+	#Japan backs down and gives Tsushima to Russia
+		news_event = {
+			id = JAP_tokugawa_shogunate.187
+			title = JAP_tokugawa_shogunate.187.t
+			desc = JAP_tokugawa_shogunate.187.d
+			picture = GFX_news_event_military_planning
+
+			immediate = {
+				# log = "[THIS.GetTag]: firing = JAP_tokugawa_shogunate.187"
+			}
+
+			is_triggered_only = yes
+
+			major = yes
+
+			option = {
+				name = JAP_tokugawa_shogunate.187.a
+				# log = "option:		name = JAP_tokugawa_shogunate.187.a"
+				trigger = { TAG = RUS }
+				effect_tooltip = {
+
+				}
+			}
+
+			option = {
+				name = JAP_tokugawa_shogunate.187.b
+				# log = "option:		name = JAP_tokugawa_shogunate.187.b"
+				trigger = { TAG = TSH }
+			}
+
+			option = {
+				name = JAP_tokugawa_shogunate.187.c
+				# log = "option:		name = JAP_tokugawa_shogunate.187.c"
+				trigger = {
+					NOT = {
+						OR = {
+							TAG = TSH
+							TAG = RUS
+						}
+					}
+				}
+			}
+		}
+
+	#Russia backs down
+		news_event = {
+			id = JAP_tokugawa_shogunate.188
+			title = JAP_tokugawa_shogunate.188.t
+			desc = JAP_tokugawa_shogunate.188.d
+			picture = GFX_news_event_military_planning
+
+			immediate = {
+				# log = "[THIS.GetTag]: firing = JAP_tokugawa_shogunate.188"
+			}
+
+			is_triggered_only = yes
+
+			major = yes
+
+			option = {
+				name = JAP_tokugawa_shogunate.188.a
+				# log = "option:		name = JAP_tokugawa_shogunate.188.a"
+				trigger = { TAG = RUS }
+			}
+
+			option = {
+				name = JAP_tokugawa_shogunate.188.b
+				# log = "option:		name = JAP_tokugawa_shogunate.188.b"
+				trigger = { TAG = TSH }
+			}
+
+			option = {
+				name = JAP_tokugawa_shogunate.188.c
+				# log = "option:		name = JAP_tokugawa_shogunate.188.c"
+				trigger = {
+					NOT = {
+						OR = {
+							TAG = TSH
+							TAG = RUS
+						}
+					}
+				}
+			}
+
+		}
+
+	#Russia and Japan go to war over Tsushima
+		news_event = {
+			id = JAP_tokugawa_shogunate.189
+			title = JAP_tokugawa_shogunate.189.t
+			desc = JAP_tokugawa_shogunate.189.d
+			picture = GFX_news_event_military_planning
+
+			immediate = {
+				# log = "[THIS.GetTag]: firing = JAP_tokugawa_shogunate.189"
+			}
+
+			is_triggered_only = yes
+
+			major = yes
+
+			option = {
+				name = JAP_tokugawa_shogunate.189.a
+				# log = "option:		name = JAP_tokugawa_shogunate.189.a"
+				trigger = { TAG = RUS }
+			}
+
+			option = {
+				name = JAP_tokugawa_shogunate.189.b
+				# log = "option:		name = JAP_tokugawa_shogunate.189.b"
+				trigger = { TAG = TSH }
+			}
+
+			option = {
+				name = JAP_tokugawa_shogunate.189.c
+				# log = "option:		name = JAP_tokugawa_shogunate.189.c"
+				trigger = {
+					NOT = {
+						OR = {
+							TAG = TSH
+							TAG = RUS
+						}
 					}
 				}
 			}

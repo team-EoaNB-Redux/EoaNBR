@@ -229,9 +229,6 @@
  JAP_deaths_is_greater_than_tt: "More Japanese Deaths than §Y250§!"
  test_tt: "test"
 
- decision_cost_treasury_100: "[GetCurrencyTextIcon]  §Y100.0§!"
- decision_cost_treasury_100_blocked: "[GetCurrencyTextIcon]  §R100.0§!"
- decision_cost_treasury_100_tooltip: "It costs [GetCurrencyTextIcon] §Y100.0§! to take the decision"
  decision_cost_treasury_expedition_vary_soldiers: "[GetCurrencyTextIcon]  §Y[GetCurrentExpeditionCostSoldiers]§!"
  decision_cost_treasury_expedition_vary_soldiers_blocked: "[GetCurrencyTextIcon]  §Y[GetCurrentExpeditionCostSoldiers]§!"
  decision_cost_treasury_expedition_vary_soldiers_tooltip: "It costs [GetCurrencyTextIcon] §Y[GetCurrentExpeditionCostSoldiers]§! to take the decision"

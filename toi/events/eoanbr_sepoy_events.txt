@@ -175,7 +175,7 @@ country_event = {
 		custom_effect_tooltip = BIK_join_SRS_mutiny
 		hidden_effect = {
 			if = {
-				limit = {}
+				limit = { is_subject = yes }
 				set_autonomy = {
 					target = ROOT
 					autonomy_state = autonomy_free

@@ -228,10 +228,6 @@
  JAP_expedition_back_down_tt: "§RЭто дестабилизирует наше правительство§!" #NT!
  JAP_deaths_is_greater_than_tt: "Больше смертей в Японии, чем §Y250§!" #NT!
  test_tt: "тест" #NT!
-  
- decision_cost_treasury_100: "[GetCurrencyTextIcon] §Y100.0§!" #NT!
- decision_cost_treasury_100_blocked: "[GetCurrencyTextIcon] §R100.0§!" #NT!
- decision_cost_treasury_100_tooltip: "Принять решение стоит [GetCurrencyTextIcon] §Y100.0§!" #NT!
  decision_cost_treasury_expedition_vary_soldiers: "[GetCurrencyTextIcon] §Y[GetCurrentExpeditionCostSoldiers]§!" #NT!
  decision_cost_treasury_expedition_vary_soldiers_blocked: "[GetCurrencyTextIcon] §Y[GetCurrentExpeditionCostSoldiers]§!" #NT!
  decision_cost_treasury_expedition_vary_soldiers_tooltip: "Принять решение стоит [GetCurrencyTextIcon] §Y[GetCurrentExpeditionCostSoldiers]§!" #NT!

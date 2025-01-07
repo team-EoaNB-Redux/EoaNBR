@@ -1,4 +1,7 @@
-﻿add_namespace = secondopiumwarnew
+﻿#!gfx:interface\eoanbr\event_pictures\_event_pictures_zone_c.gfx
+#!localisation:localisation\_eoanbr_technologies_l_english.yml
+
+add_namespace = secondopiumwarnew
 
 #ENG: Prep for the Assault
 country_event = {
