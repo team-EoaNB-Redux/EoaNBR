@@ -1,5 +1,89 @@
-political_actions = {
-	
+eoanb_category_sepoy_rebellion = {
+	SRS_mission_sepoy_rebellion_victory_treaty = {
+		icon = generic_political_discourse
+
+		allowed = { always = no }
+		activation = { always = no }
+		available = {
+			OR = {
+				RAJ = { surrender_progress > 0.5 }
+				AND = {
+					RAJ = {
+						NOT = { controls_state = 431 }
+						NOT = { controls_state = 433 }
+						NOT = { controls_state = 435 }
+						NOT = { controls_state = 436 }
+						NOT = { controls_state = 1006 }
+					}
+				}
+			}
+		}
+
+		is_good = no
+
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			hidden_effect = {
+				if = {
+					limit = { SRS = { has_war_with = RAJ } }
+					activate_mission = SRS_mission_sepoy_rebellion_victory_treaty
+				}
+				else = {
+					clr_global_flag = eoanb_flag_sepoy_rebellion_ongoing
+				}
+			}
+		}
+		complete_effect = {
+			clr_global_flag = eoanb_flag_sepoy_rebellion_ongoing
+			if = {
+				limit = { tag = ENG }
+				country_event = britishindia.14
+			}
+			else = {
+				effect_tooltip = {
+					country_event = britishindia.14
+				}
+			}
+		}
+	}
+	SRS_mission_sepoy_rebellion_loss_treaty = {
+		icon = generic_political_discourse
+
+		allowed = { always = no }
+		activation = { always = no }
+		available = {
+			SRS = { surrender_progress > 0.9 }
+		}
+
+		is_good = no
+
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			hidden_effect = {
+				if = {
+					limit = { SRS = { has_war_with = RAJ } }
+					activate_mission = SRS_mission_sepoy_rebellion_loss_treaty
+				}
+				else = {
+					clr_global_flag = eoanb_flag_sepoy_rebellion_ongoing
+				}
+			}
+		}
+		complete_effect = {
+			clr_global_flag = eoanb_flag_sepoy_rebellion_ongoing
+			if = {
+				limit = { tag = ENG }
+				country_event = britishindia.1
+			}
+			else = {
+				effect_tooltip = {
+					country_event = britishindia.1
+				}
+			}
+		}
+	}
 	#Defense of Delhi
 	eoanb_decision_SRS_defend_delhi = {
 

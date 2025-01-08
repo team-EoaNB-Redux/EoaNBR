@@ -3752,9 +3752,9 @@ shared_focus = {
 				}
 			}
 			declare_war_on = {
-                target = MEC
-                type = liberate_wargoal
-            }
+				target = MEC
+				type = liberate_wargoal
+			}
 		}
 	}
 }

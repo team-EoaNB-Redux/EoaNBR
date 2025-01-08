@@ -1,5 +1,5 @@
 #Government
-idea_category = {
+idea_categories = {
 	autarchy_tokens = {
 		hidden = yes
 

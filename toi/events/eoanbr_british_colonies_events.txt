@@ -7556,6 +7556,29 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			RAJ = {
+				annex_country = {
+					target = SRS
+					transfer_troops = no
+				}
+			}
+			every_country = {
+				limit = {
+					has_war_together_with = SRS
+					has_war_with = RAJ
+				}
+				RAJ = {
+					annex_country = {
+						target = PREV
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
+
 	option = {
 		name = britishindia.1.a
 		# log = "option:		name = britishindia.1.a"
@@ -7599,6 +7622,38 @@ country_event = {
 			}
 			else = {
 				RAJ = { add_stability = 0.05 }
+			}
+			country_event = second_opium_war.1
+		}
+		every_country = {
+			limit = { has_idea = SRS_idea_princely_neutrality }
+			RAJ = {
+				set_autonomy = {
+					target = PREV
+					autonomous_state = autonomy_princely_state
+					freedom_level = 0.1
+				}
+			}
+			remove_ideas = SRS_idea_princely_neutrality
+		}
+		effect_tooltip = {
+			RAJ = {
+				annex_country = {
+					target = SRS
+					transfer_troops = no
+				}
+			}
+			every_country = {
+				limit = {
+					has_war_together_with = SRS
+					has_war_with = RAJ
+				}
+				RAJ = {
+					annex_country = {
+						target = PREV
+						transfer_troops = no
+					}
+				}
 			}
 		}
 	}
@@ -8005,38 +8060,9 @@ country_event = {
 		# log = "[THIS.GetTag]: firing = britishindia.14"
 	}
 
+	is_triggered_only = yes
+
 	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	trigger = {
-		TAG = SRS
-		has_global_flag = eoanb_flag_sepoy_rebellion_ongoing
-		# OR = {
-			# AND = {
-				# 431 = { is_controlled_by = SRS }
-				# 435 = { is_controlled_by = SRS }
-				# 433 = { is_controlled_by = SRS }
-				# 436 = { is_controlled_by = SRS }
-				# 1006 = { is_controlled_by = SRS }
-			# }
-			# AND = {
-				# any_country = {
-					# has_war_together_with = SRS
-					# controls_state = 431
-					# controls_state = 435
-					# controls_state = 433
-					# controls_state = 436
-					# controls_state = 1006
-				# }
-			# }
-		# }
-		RAJ={
-			surrender_progress > 0.5
-		}
-	}
 
 	option = {
 		name = britishindia.14.a
@@ -8052,9 +8078,9 @@ country_event = {
 				add_state_core = 438
 				white_peace = ENG
 				white_peace = RAJ
-				country_event = {id= sepoy.7 days = 5}#under a mughal yoke
+				country_event = { id = sepoy.7 days = 5 } #under a mughal yoke
 			}
-			#Deal with gwalor
+			#Deal with gwalior
 			GWA = {
 				set_cosmetic_tag = GWA_maratha_confed
 				white_peace = ENG
@@ -8063,7 +8089,7 @@ country_event = {
 				add_state_core = 436
 				transfer_state = 1424
 				add_state_core = 1424
-				country_event = {id= sepoy.7 days = 5}#under a mughal yoke
+				country_event = { id = sepoy.7 days = 5 } #under a mughal yoke
 			}
 			#deal with rajaputana(if sided)
 			RJP={
@@ -8077,7 +8103,7 @@ country_event = {
 					add_state_core = 1006
 					transfer_state = 759
 					add_state_core = 759
-					country_event = {id= sepoy.7 days = 5}#under a mughal yoke
+					country_event = { id = sepoy.7 days = 5 } #under a mughal yoke
 				}
 				else={
 					SRS={
@@ -8102,21 +8128,21 @@ country_event = {
 			##Sikh event chain
 			KAR={
 				if = {
-					limit = {has_war_with = RAJ}
+					limit = { has_war_with = RAJ }
 					white_peace = ENG
 					white_peace = RAJ
 				}
-				else={
-					SRS={
+				else = {
+					SRS ={
 						transfer_state = 1426
 						add_state_core = 1426
 					}
 				}
-				country_event = {id= sepoy.9 days = 30}#threat from the south
+				country_event = { id= sepoy.9 days = 30 } #threat from the south
 			}
-			KAS={
+			KAS ={
 				if = {
-					limit = {has_war_with = RAJ}
+					limit = { has_war_with = RAJ }
 					white_peace = ENG
 					white_peace = RAJ
 				}

@@ -632,24 +632,19 @@ country_event = {
 		ai_chance = { factor = 95 }
 		ENG = {
 			country_event = secondopiumwarnew.16
-			remove_ideas = CHI_idea_tianjin_treaty
+			remove_ideas = CHI_idea_tianjin_treaty_euro
 		}
-		if = {
-			limit = {
-				has_global_flag = SOW_anglo_french_yes
-			}
-			FRA = {
-				country_event = secondopiumwarnew.16
-				remove_ideas = CHI_idea_tianjin_treaty
-			}
+		FRA = {
+			country_event = secondopiumwarnew.16
+			remove_ideas = CHI_idea_tianjin_treaty_euro
 		}
 		remove_ideas = CHI_idea_tianjin_treaty
 		RUS = {
-			remove_ideas = CHI_idea_tianjin_treaty
+			remove_ideas = CHI_idea_tianjin_treaty_euro
 			country_event = secondopiumwarnew.16
 		}
 		USA = {
-			remove_ideas = CHI_idea_tianjin_treaty
+			remove_ideas = CHI_idea_tianjin_treaty_euro
 			country_event = secondopiumwarnew.16
 		}
 		hidden_effect = {
