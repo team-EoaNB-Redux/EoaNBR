@@ -4718,6 +4718,26 @@ spriteTypes = {
 		name = "GFX_focus_csa_deo_vindice"
 		texturefile = "gfx/interface/goals/csa/focus_csa_deo_vindice.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_golden_circle"
+		texturefile = "gfx/interface/goals/csa/focus_golden_circle.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_golden_circle_target_central_america"
+		texturefile = "gfx/interface/goals/csa/focus_golden_circle_target_central_america.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_golden_circle_target_cuba"
+		texturefile = "gfx/interface/goals/csa/focus_golden_circle_target_cuba.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_golden_circle_target_mexico"
+		texturefile = "gfx/interface/goals/csa/focus_golden_circle_target_mexico.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_golden_circle_deal_cuba"
+		texturefile = "gfx/interface/goals/csa/focus_golden_circle_deal_cuba.png"
+	}
 	### WVG
 	SpriteType = {
 		name = "GFX_focus_wvg_montani_semper_liberi"

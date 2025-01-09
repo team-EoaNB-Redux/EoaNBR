@@ -11,7 +11,7 @@ focus_tree = {
 		modifier = {
 			add = 2
 			tag = CSA
-			date > 1867.1.1
+			#date > 1867.1.1
 		}
 		modifier = {
 			add = -11
@@ -27,7 +27,7 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -374,9 +374,9 @@ focus_tree = {
 
 	focus = {
 		id = CSA_postwar_dreams_of_golden_circle
-		icon = GFX_Focus_Continent_North_America
+		icon = GFX_focus_golden_circle
 		cost = 50
-		x = -10
+		x = -8
 		y = 0
 		
 		completion_reward = {
@@ -385,11 +385,17 @@ focus_tree = {
 	}
 	focus = {
 		id = CSA_postwar_looking_to_mexico
-		icon = GFX_Focus_Continent_North_America
+		icon = GFX_focus_golden_circle_target_mexico
 		relative_position_id = CSA_postwar_dreams_of_golden_circle
 		cost = 50
 		x = 0
 		y = 1
+		available={
+			OR={
+				has_completed_focus = CSA_postwar_international_recognition_mexico_liberal
+				has_completed_focus = CSA_postwar_international_recognition_mexico_conservative
+			}
+		}
 		prerequisite = {
 			focus = CSA_postwar_dreams_of_golden_circle
 		}
@@ -407,23 +413,12 @@ focus_tree = {
 			focus = CSA_postwar_looking_to_mexico
 		}
 		available = {
-			if={
-				limit={
-					MEX={exists = yes}
+			277={
+				owner={
+					has_war = no
+					owns_state = 482
+					owns_state = 483
 				}
-				MEX = { has_war = no }
-			}
-			if={
-				limit={
-					MXE={exists = yes}
-				}
-				MXE = { has_war = no }
-			}
-			if={
-				limit={
-					MEC={exists = yes}
-				}
-				MEC = { has_war = no }
 			}
 			has_war = no
 			OR = {
@@ -437,34 +432,46 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = CSA_purchase_sonora_chihuahua_tt
 			hidden_effect = {
-				MEX = { country_event = { id = csa.24 hours = 3 } }
+				277={
+					owner = { country_event = { id = csa.24 hours = 3 } }
+				}
 			}
 		}
 	}
 	focus = {
 		id = CSA_postwar_integration_of_sonora
-		icon = GFX_Focus_Continent_North_America
+		icon = GFX_Focus_Partisans_Elimination_2
 		relative_position_id = CSA_postwar_international_recognition_mexico_purchase
-		cost = 50
+		cost = 100
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_mexico_purchase
 		}
+		available={
+			controls_state = 483
+			has_war = no
+		}
 		completion_reward = {
+			483={add_core_of=CSA}
 		}
 	}
 	focus = {
 		id = CSA_postwar_integration_of_chihuahua
-		icon = GFX_Focus_Continent_North_America
+		icon = GFX_Focus_Partisans_Elimination_2
 		relative_position_id = CSA_postwar_international_recognition_mexico_purchase
-		cost = 50
+		cost = 100
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_mexico_purchase
 		}
+		available={
+			controls_state = 482
+			has_war = no
+		}
 		completion_reward = {
+			482={add_core_of=CSA}
 		}
 	}
 	focus = {
@@ -485,7 +492,8 @@ focus_tree = {
 		id = CSA_postwar_mexican-confederate_war
 		icon = GFX_Focus_mexican_intervention
 		cost = 50
-		x = -21
+		relative_position_id = CSA_postwar_international_recognition_second_mexican_war
+		x = -4
 		y = 0
 		mutually_exclusive = {
 			focus = CSA_postwar_international_recognition_second_mexican_war
@@ -531,7 +539,7 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_second_mexican_war
 		icon = GFX_Focus_War_American_Civil_War
 		cost = 50
-		x = -17
+		x = -15
 		y = 0
 		mutually_exclusive = {
 			focus = CSA_postwar_mexican-confederate_war
@@ -603,10 +611,10 @@ focus_tree = {
 
 	focus = {
 		id = CSA_postwar_looking_to_cuba
-		icon = GFX_Focus_cuban_deal
+		icon = GFX_focus_golden_circle_deal_cuba
 		relative_position_id = CSA_postwar_dreams_of_golden_circle
 		cost = 50
-		x = -4
+		x = -3
 		y = 1
 		available = {
 			OR={
@@ -641,12 +649,34 @@ focus_tree = {
 		prerequisite = {
 			focus = CSA_postwar_looking_to_cuba
 		}
+		available={
+			set_temp_variable = {x_temp = 10000}
+			can_spend_without_default = yes
+		}
 		completion_reward = {
+			set_temp_variable = {x_temp = -10000}
+			add_treasury = yes
+			if={
+				limit={
+					SPR={
+						has_power_balance = {
+							id = SPR_CUB_ten_years_war
+						}
+					}
+				}
+				SPR={
+					add_power_balance_value = {
+						id = SPR_CUB_ten_years_war
+						value = -0.075
+						tooltip_side = SPR_dominion
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = CSA_postwar_open_diplomacy_SPR
-		icon = GFX_Focus_Continent_North_America
+		icon = GFX_Focus_Diplomacy_SPR
 		relative_position_id = CSA_postwar_looking_to_cuba
 		cost = 50
 		x = 1
@@ -655,6 +685,12 @@ focus_tree = {
 			focus = CSA_postwar_looking_to_cuba
 		}
 		completion_reward = {
+			SPR = {
+				add_opinion_modifier = {
+					target = CSA
+					modifier = CSA_embassy
+				}
+			}
 		}
 	}
 	focus = {
@@ -683,6 +719,13 @@ focus_tree = {
 				}
 				
 			}
+			SPR={
+				not={
+					has_power_balance = {
+						id = SPR_CUB_ten_years_war
+					}
+				}
+			}
 			NOT = { has_idea = CSA_paying_civilwar_debt }
 			NOT = { has_idea = CSA_payment_for_states }
 		}
@@ -694,10 +737,10 @@ focus_tree = {
 	}
 	focus = {
 		id = CSA_postwar_cuban_invasion
-		icon = GFX_Focus_cuban_deal
+		icon = GFX_focus_golden_circle_target_cuba
 		relative_position_id = CSA_postwar_dreams_of_golden_circle
 		cost = 50
-		x = -6
+		x = -5
 		y = 1
 		available = {
 			CUB={
@@ -715,11 +758,24 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = CSA_postwar_striking_havana
+		icon = GFX_Focus_Continent_North_America
+		relative_position_id = CSA_postwar_cuban_invasion
+		cost = 50
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = CSA_postwar_cuban_invasion
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = CSA_postwar_SPR_CSA_war
 		icon = GFX_Focus_Continent_North_America
 		relative_position_id = CSA_postwar_international_recognition_purchase_cuba
 		cost = 50
-		x = 0
+		x = 1
 		y = 1
 		available={
 			NOT={
@@ -748,10 +804,10 @@ focus_tree = {
 	}
 	focus = {
 		id = CSA_postwar_integratation_cuba
-		icon = GFX_Focus_Continent_North_America
+		icon = GFX_Focus_Partisans_Elimination_2
 		relative_position_id = CSA_postwar_international_recognition_purchase_cuba
 		cost = 50
-		x = -2
+		x = -3
 		y = 1
 		available={
 			OR={
@@ -761,6 +817,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_purchase_cuba
+			focus = CSA_postwar_striking_havana
 		}
 		completion_reward = {
 		}
@@ -809,6 +866,12 @@ focus_tree = {
 			focus = CSA_postwar_accepting_spanish_planters
 		}
 		completion_reward = {
+			315={
+				add_core_of = CSA
+			}
+			1350={
+				add_core_of = CSA
+			}
 		}
 	}
 	focus = {
@@ -816,13 +879,14 @@ focus_tree = {
 		icon = GFX_Focus_Continent_North_America
 		relative_position_id = CSA_postwar_international_recognition_purchase_cuba
 		cost = 50
-		x = 2
+		x = -1
 		y = 1
 		available={
 			has_country_flag = CSA_SPR_war_failed
 		}
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_purchase_cuba
+			focus = CSA_postwar_striking_havana
 		}
 		completion_reward = {
 		}
@@ -831,10 +895,10 @@ focus_tree = {
 	
 	focus = {
 		id = CSA_postwar_looking_to_central_america
-		icon = GFX_Focus_Continent_North_America
+		icon = GFX_focus_golden_circle_target_central_america
 		relative_position_id = CSA_postwar_dreams_of_golden_circle
 		cost = 50
-		x = 5
+		x = 4
 		y = 1
 		prerequisite = {
 			focus = CSA_postwar_dreams_of_golden_circle
@@ -860,24 +924,18 @@ focus_tree = {
 		icon = GFX_Focus_Continent_North_America
 		relative_position_id = CSA_postwar_the_fallout_of_walker
 		cost = 50
-		x = -2
+		x = -1
 		y = 1
+		allow_branch={
+			event_target:USA_william_walker_target = {exists = yes}
+		}
 		available = {
-			OR={
-				HON={
-					has_country_leader = {
-						character = USA_william_walker
-						ruling_only = yes
-					}
-					has_war = yes
+			event_target:USA_william_walker_target={
+				has_country_leader = {
+					character = USA_william_walker
+					ruling_only = yes
 				}
-				NIC={
-					has_country_leader = {
-						character = USA_william_walker
-						ruling_only = yes
-					}
-					has_war = yes
-				}
+				has_war = yes
 			}
 		}
 		prerequisite = {
@@ -897,6 +955,11 @@ focus_tree = {
 			focus = CSA_postwar_funding_walker
 		}
 		completion_reward = {
+			add_manpower = -2500
+			event_target:USA_william_walker_target={
+				add_manpower = 2500
+				army_experience = 25
+			}
 		}
 	}
 	focus = {
@@ -910,6 +973,11 @@ focus_tree = {
 			focus = CSA_postwar_funding_walker
 		}
 		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = event_target:USA_william_walker_target
+			}
 		}
 	}
 	focus = {
@@ -930,24 +998,18 @@ focus_tree = {
 		icon = GFX_Focus_Continent_North_America
 		relative_position_id = CSA_postwar_the_fallout_of_walker
 		cost = 50
-		x = 0
+		x = 1
 		y = 1
+		allow_branch={
+			event_target:USA_william_walker_target = {exists = yes}
+		}
 		available = {
-			OR={
-				HON={
-					has_country_leader = {
-						character = USA_william_walker
-						ruling_only = yes
-					}
-					has_war = no
+			event_target:USA_william_walker_target = {
+				has_country_leader = {
+					character = USA_william_walker
+					ruling_only = yes
 				}
-				NIC={
-					has_country_leader = {
-						character = USA_william_walker
-						ruling_only = yes
-					}
-					has_war = no
-				}
+				has_war = no
 			}
 		}
 		prerequisite = {
@@ -961,8 +1023,11 @@ focus_tree = {
 		icon = GFX_Focus_Continent_North_America
 		relative_position_id = CSA_postwar_the_fallout_of_walker
 		cost = 50
-		x = 2
+		x = 0
 		y = 1
+		allow_branch={
+			not={event_target:USA_william_walker_target = {exists = yes}}
+		}
 		available = {
 			HON={
 				NOT={
@@ -1035,7 +1100,7 @@ focus_tree = {
 		id = CSA_postwar_dealing_with_neo_feudalism
 		icon = GFX_focus_generic_self_management
 		cost = 50
-		x = 34
+		x = 33
 		y = 0
 		completion_reward = {
 			add_political_power = 20
@@ -1443,10 +1508,10 @@ focus_tree = {
 		id = CSA_postwar_maintaining_army
 		icon = GFX_Focus_Army_Generic_Coalition_Army
 		cost = 50
-		x = 45
+		x = 41
 		y = 0
 		completion_reward = {
-			
+			army_experience = 25
 		}
 	}
 	focus = {
@@ -1510,10 +1575,28 @@ focus_tree = {
 		id = CSA_postwar_confederate_navy
 		icon = GFX_Focus_naval_school
 		cost = 50
-		x = 52
+		x = 50
 		y = 0
 		completion_reward = {
 			navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = CSA_postwar_expanding_CSMC
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 50
+		relative_position_id = CSA_postwar_maintaining_army
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = CSA_postwar_maintaining_army
+		}
+		prerequisite = {
+			focus = CSA_postwar_confederate_navy
+		}
+		completion_reward = {
+			add_political_power = 20
 		}
 	}
 	focus = {
@@ -1742,7 +1825,7 @@ focus_tree = {
 		id = CSA_postwar_international_recognition
 		icon = GFX_Focus_Diplomacy_CSA
 		cost = 50
-		x = 18
+		x = 16
 		y = 0
 		completion_reward = {
 			add_political_power = 20
@@ -1752,7 +1835,8 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_america
 		icon = GFX_Focus_Continent_North_America
 		cost = 50
-		x = 15
+		relative_position_id = CSA_postwar_international_recognition
+		x = -4
 		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition
@@ -1764,8 +1848,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_brazil
 		icon = GFX_goal_focus_brazil
 		cost = 50
-		x = 11
-		y = 2
+		relative_position_id = CSA_postwar_international_recognition_america
+		x = -2
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_america
 		}
@@ -1782,8 +1867,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_great_countries_think_alike
 		icon = GFX_goal_focus_brazil
 		cost = 50
-		x = 11
-		y = 3
+		relative_position_id = CSA_postwar_international_recognition_brazil
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_brazil
 		}
@@ -1797,8 +1883,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_brazilian_alliance
 		icon = GFX_goal_focus_brazil
 		cost = 50
-		x = 10
-		y = 4
+		relative_position_id = CSA_postwar_international_recognition_great_countries_think_alike
+		x = -1
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_great_countries_think_alike
 		}
@@ -1812,8 +1899,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_free_trade_agreements
 		icon = GFX_goal_focus_brazil
 		cost = 50
-		x = 12
-		y = 4
+		relative_position_id = CSA_postwar_international_recognition_great_countries_think_alike
+		x = 1
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_great_countries_think_alike
 		}
@@ -1827,8 +1915,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_slave_trade
 		icon = GFX_Focus_confederate_slave_trade
 		cost = 50
-		x = 11
-		y = 5
+		relative_position_id = CSA_postwar_international_recognition_great_countries_think_alike
+		x = 0
+		y = 2
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_free_trade_agreements
 		}
@@ -1869,8 +1958,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_mexico
 		icon = GFX_Focus_failure_mexico
 		cost = 50
-		x = 14
-		y = 2
+		relative_position_id = CSA_postwar_international_recognition_america
+		x = 1
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_america
 		}
@@ -1887,14 +1977,21 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_mexico_liberal
 		icon = GFX_Focus_mexican_intervention
 		cost = 50
-		x = 13
-		y = 3
+		x = -1
+		y = 1
+		relative_position_id = CSA_postwar_international_recognition_mexico
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_mexico
 		}
+		mutually_exclusive={
+			focus = CSA_postwar_international_recognition_mexico_conservative
+		}
 		available = {
-			MEX = { has_government = centrism }
-			MEX = { has_war = no }
+			MEX = { 
+				exists = yes
+				has_government = centrism
+				has_war = no 
+			}
 		}
 		completion_reward = {
 			MEX = {
@@ -1906,24 +2003,20 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_mexico_conservative
 		icon = GFX_goal_focus_crown_maximilian_austria
 		cost = 50
-		x = 15
-		y = 3
+		x = 1
+		y = 1
+		relative_position_id = CSA_postwar_international_recognition_mexico
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_mexico
 		}
 		available = {
 			OR = {
-				AND = {
-					MEX = { has_government = centrism }
-					MEX = { has_war_with = FRA }
-				}
-				AND = {
-					MEX = { has_government = traditional_conservatism }
-				}
+				MEC={exists = yes}
+				MXE={exists = yes}
 			}
 		}
 		completion_reward = {
-			MEX = {
+			MEC = {
 				add_political_power = 25
 			}
 			add_political_power = 25
@@ -1934,8 +2027,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_natives
 		icon = GFX_goal_demand_sudetenland
 		cost = 50
-		x = 19
-		y = 2
+		relative_position_id = CSA_postwar_international_recognition_america
+		x = 6
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_america
 		}
@@ -1946,8 +2040,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_comanche
 		icon = GFX_focus_generic_concessions
 		cost = 50
-		x = 17
-		y = 3
+		relative_position_id = CSA_postwar_international_recognition_natives
+		x = -2
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_natives
 		}
@@ -2051,8 +2146,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_apache
 		icon = GFX_goal_anschluss
 		cost = 50
-		x = 19
-		y = 3
+		relative_position_id = CSA_postwar_international_recognition_natives
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_natives
 		}
@@ -2109,8 +2205,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_navajo
 		icon = GFX_goal_anschluss
 		cost = 50
-		x = 21
-		y = 3
+		relative_position_id = CSA_postwar_international_recognition_natives
+		x = 2
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_natives
 		}
@@ -2138,7 +2235,8 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_europe
 		icon = GFX_Focus_Continent_West_Europe
 		cost = 50
-		x = 23
+		relative_position_id = CSA_postwar_international_recognition
+		x = 6
 		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition
@@ -2150,8 +2248,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_france
 		icon = GFX_Focus_Diplomatic_Ally_FRA
 		cost = 50
-		x = 22
-		y = 2
+		relative_position_id = CSA_postwar_international_recognition_europe
+		x = -1
+		y = 1
 		available={
 			NOT={FRA = {has_country_flag = FRA_flag_support_csa}}
 		}
@@ -2171,8 +2270,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_uk
 		icon = GFX_Focus_Diplomatic_Ally_ENG
 		cost = 50
-		x = 24
-		y = 2
+		relative_position_id = CSA_postwar_international_recognition_europe
+		x = 1
+		y = 1
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_europe
 		}
@@ -2192,8 +2292,9 @@ focus_tree = {
 		id = CSA_postwar_international_recognition_prussia
 		icon = GFX_Focus_Diplomatic_Ally_PRS
 		cost = 50
-		x = 23
-		y = 3
+		relative_position_id = CSA_postwar_international_recognition_europe
+		x = 0
+		y = 2
 		prerequisite = {
 			focus = CSA_postwar_international_recognition_europe
 		}
@@ -2450,6 +2551,191 @@ focus_tree = {
 			has_country_flag = CSA_73_election
 		}
 		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = CSA_73_KGC
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_election_results
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = CSA_73_election_results
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_expanding_golden_ciricle
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_KGC
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_KGC
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_influnencing_dominica
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_expanding_golden_ciricle
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_expanding_golden_ciricle
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_putting_down_the_haiti_slaves
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_expanding_golden_ciricle
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_expanding_golden_ciricle
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_votes_from_slaves
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_KGC
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_KGC
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_dixiecrats
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_election_results
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CSA_73_election_results
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_uphold_status_quo
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_dixiecrats
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_dixiecrats
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_party_of_revolution
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_dixiecrats
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_dixiecrats
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_continue_down_the_road
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_party_of_revolution
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_party_of_revolution
+		}
+		prerequisite = {
+			focus = CSA_73_uphold_status_quo
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_whig
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_election_results
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = CSA_73_election_results
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_drift_towards_centralization
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_whig
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_whig
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_whig
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_whig
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CSA_73_found_central_bank
+		icon = GFX_focus_generic_self_management
+		cost = 50
+		relative_position_id = CSA_73_drift_towards_centralization
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CSA_73_drift_towards_centralization
+		}
 		completion_reward = {
 			add_political_power = 20
 		}

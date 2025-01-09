@@ -15,6 +15,7 @@ country_event = {#Death of Ignacio Agramonte
 				id = SPR_CUB_ten_years_war
 			}
 		}
+		tag = CUB
 	}
 	
     option = { 
@@ -42,6 +43,7 @@ country_event = {#Death of Carlos Manuel de Céspedes
 				id = SPR_CUB_ten_years_war
 			}
 		}
+		tag = CUB
 	}
 	
     option = { 

@@ -219,6 +219,9 @@
  CSA_postwar_internal_civilian_desc: "Richmond has grown, and it has become more of an economic point of interest than it has ever been before. We must invest in this, and hopefully ensure that Richmond is an important center of trade."
  CSA_postwar_internal_kgc_founding: "Founding of the KGC"
  CSA_postwar_internal_kgc_founding_desc: "The KGC is a new party, forged by the fire of young aristocrats and plantation owners. It seeks to spread the institution of slavery and create a great empire, a great 'Golden Circle' of slavery around the Carribean"
+ CSA_postwar_confederate_navy: "Confederate Navy"
+ CSA_postwar_dreams_of_golden_circle: "Dreams of the Golden Circle"
+ CSA_postwar_open_diplomacy_SPR: "Open Diplomacy with [SPR.GetName]"
 
  #Ideas/Effects parts
  CSA_confederate_government: "Weak Central Authority"
@@ -452,8 +455,8 @@
  csa.20.a: "Decentralize!"
  csa.20.b: "Decentralize!"
  csa.21.t: "Election of [GetYear]"
- csa.21.d: "The time has finally come, for the first true election of our great nation. It has been pitted between 3 different candidates. The first is Jefferson Davis, who wishes to keep his seat as President of the Confederacy. Opposing him is John Breckinridge, who was robbed of his victory in the infamous Election of 1860. Also attempting to seize the position is Robert Toombs, a former officer and an outspoken critic of Davis. \n \nAlthough he did not run for office, there is also the possibility of Robert E. Lee of being elected as President. Many see him as the new Washington of our nation, and his rejection of running for office is more proof of that. Perhaps history will repeat again? \n \nNevertheless, the choice is now made..."
- csa.21.d_unitarian: "The time has finally come, for the first true election of our great nation. It has been pitted between 3 different candidates. The first is, Jefferson Davis, who wishes to keep his seat as President of the Confederacy. Opposing him is John Breckinridge, who was robbed of his victory in the infamous Election of 1860. Also attempting to seize the position is Robert Toombs, a former officer and an outspoken critic of Davis. \n \nAlthough some have attempted to get into contact with him, Robert E. Lee has adamantly refused to be elected as President, likely due to the shift toward Centralization that the state has been undergoing."
+ csa.21.d: "The time has finally come, for the first true election of our great nation. It has been pitted between 3 different candidates. The first is John Breckinridge, who was robbed of his victory in the infamous Election of 1860. Opposing him is Robert Toombs, a former officer and an outspoken critic of Davis. \n \nAlthough he did not wish the posistion, there is also the possibility of Robert E. Lee of being elected as President. Many see him as the new Washington of our nation, and his first rejection of running for office is more proof of that. Perhaps history will repeat again? \n \nNevertheless, the choice is now made..."
+ csa.21.d_unitarian: "The time has finally come, for the first true election of our great nation. It has been pitted between two different candidates. The first is John Breckinridge, who was robbed of his victory in the infamous Election of 1860. Opposing him is Robert Toombs, a former officer and an outspoken critic of Davis. \n \nAlthough some have attempted to get into contact with him, Robert E. Lee has adamantly refused to be elected as President, likely due to the shift toward Centralization that the state has been undergoing."
  csa.21.a: "Reelect Davis!"
  csa.21.b: "Elect Breckinridge!"
  csa.21.c: "Elect Toombs!"
@@ -576,6 +579,8 @@
  CAS_postwar_lairds_monopoly: "Lairds Monopoly"
  CSA_postwar_commissioning_new_ships: "Commissioning New Ships"
  CSA_postwar_following_in_ENG_footsteps: "Following in the footsteps of [ENG.GetNameDef]"
+ 
+ CSA_SPR_war_failed: "§RFailure§! in the §YConfederate-Spanish War§!"
  
  CSA_reduce_acw_funds_amount: "Lose §R$RIGHT|0$§! months of §YConfederate Funding§!."
  CSA_increase_acw_funds_amount: "Gain §G$RIGHT|0$§! months of §YConfederate Funding§!."

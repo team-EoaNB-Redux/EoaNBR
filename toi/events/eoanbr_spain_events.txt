@@ -2782,20 +2782,20 @@ country_event = {
 }
 
 country_event = { #Prado declares war on Spain  - SPR
-	id = spain.32
-	title = spain.32.t
-	desc = spain.32.d
+	id = spain.84
+	title = spain.84.t
+	desc = spain.84.d
 	picture = GFX_plan_de_escuadra
 
 	immediate = {
-		# log = "[THIS.GetTag]: firing = spain.32"
+		# log = "[THIS.GetTag]: firing = spain.84"
 	}
 	
 	is_triggered_only = yes
 
 	option = {#War it is
-		name = spain.32.a
-		# log = "option:		name = spain.32.a"
+		name = spain.84.a
+		# log = "option:		name = spain.84.a"
 		ai_chance = { factor = 100 }
 		#
 	}
