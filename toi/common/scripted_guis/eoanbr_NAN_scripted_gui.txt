@@ -59,5 +59,9 @@ scripted_gui = {
 		properties = {
 
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 }

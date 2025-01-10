@@ -476,7 +476,10 @@ scripted_gui = {
 				check_variable = { global.great_game_afghan < 7}
 			}
 		}
-		
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	
 	indochina_influence_gui = {
@@ -604,6 +607,10 @@ scripted_gui = {
 			indochina_influence_tonkin = {
 				frame = 671.INDOC_Influence_Frame_Var
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 }

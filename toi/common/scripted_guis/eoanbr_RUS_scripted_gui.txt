@@ -22,6 +22,10 @@ scripted_gui = {
 				}
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	RUS_ENG_great_game_decision_category_guis = {
 		context_type = player_context
@@ -339,6 +343,10 @@ scripted_gui = {
 			rus_eng_great_game_map_gujarat_icon_click = {
 				set_variable = { rus_eng_great_game_region_selected_var = GUJ.id }
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 }

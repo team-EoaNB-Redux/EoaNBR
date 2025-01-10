@@ -3678,33 +3678,6 @@ scripted_loc_inline_3263: "([?OWNER.GetTag]) "
 
 
 
-# start of file _eoanbr_renderer_localisation.txt
-scripted_loc_inline_3264: "[RenderArray]"
-scripted_loc_inline_3265: "[render_array_inner]"
-scripted_loc_inline_3266: "[render_array_infix][render_array_element][render_array_inner]"
-scripted_loc_inline_3267: "[?param_cutoff_suffix.GetTokenLocalizedKey]"
-scripted_loc_inline_3268: ""
-scripted_loc_inline_3269: ""
-scripted_loc_inline_3270: "[?param_last_infix.GetTokenLocalizedKey]"
-scripted_loc_inline_3271: "[?param_infix.GetTokenLocalizedKey]"
-scripted_loc_inline_3272: "[?v]"
-scripted_loc_inline_3273: "[?v.GetTokenLocalizedKey]"
-scripted_loc_inline_3274: "[?v.GetTokenKey]"
-scripted_loc_inline_3275: "[?v.GetName]"
-scripted_loc_inline_3276: "[?v.GetNameDef]"
-scripted_loc_inline_3277: "[?v.GetNameDefCap]"
-scripted_loc_inline_3278: "[?v.GetAdjective]"
-scripted_loc_inline_3279: "[?v.GetAdjectiveCap]"
-scripted_loc_inline_3280: "[?v.GetNameWithFlag]"
-scripted_loc_inline_3281: "[?v.GetFlag]"
-scripted_loc_inline_3282: "[?v.GetTag]"
-scripted_loc_inline_3283: "[?v.GetID]"
-scripted_loc_inline_3284: "[?v|0]"
-scripted_loc_inline_3285: "[?v]"
-scripted_loc_inline_3286: "[modifier_mutation_render]"
-scripted_loc_inline_3287: "[?v]"
-
-
 
 # start of file _eoanb_afr_scripted_localisation.txt
 scripted_loc_inline_3288: "GetSuezConstructionAvailibleComplete"

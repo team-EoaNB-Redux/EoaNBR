@@ -16,6 +16,10 @@ scripted_gui = {
 				NOT = { has_global_flag = TTT_daily_refresh }
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	internal_politics_screen = {
@@ -31,6 +35,10 @@ scripted_gui = {
 		}
 
 		triggers = {
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 }

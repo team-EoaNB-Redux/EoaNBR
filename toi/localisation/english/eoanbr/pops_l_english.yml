@@ -13,6 +13,8 @@
   culture_type_primary_desc: "§Y[?v.GetCultureName]§! is the Primary Culture"
   culture_type_primary_desc_owner: "§Y[?v.GetCultureName]§! is the Primary Culture in [OWNER.GetName]"
   culture_type_primary_desc_controller: "§Y[?v.GetCultureName]§! is the Primary Culture in [CONTROLLER.GetName]"
+  culture_type_primary: "[?pops_primary_religion_array^0.GetTokenLocalizedKey]"
+  culture_type_primary_icon: "GFX_[?pops_primary_religion_array^0.GetTokenKey]"
   culture_type_primary_list: "$culture_type_primary$ [RenderCultureGroupList]"
   culture_type_primary_list_no_title: "[RenderCultureGroupList]"
   culture_type_promoted: "§GPromoted§!"

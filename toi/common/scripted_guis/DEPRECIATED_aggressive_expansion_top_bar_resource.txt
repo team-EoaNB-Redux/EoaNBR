@@ -16,6 +16,10 @@ scripted_gui = {
 		triggers = {
 		}
 
+		ai_enabled = {
+			always = no
+		}
+
 		ai_weights = {
 		}
 	}

@@ -25,7 +25,7 @@ defined_text = {
       set_temp_variable = { param_cutoff = 4 }
       # set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_none }
 		}
-		localization_key = scripted_loc_inline_3264
+		localization_key = render_array
 	}
 }
 
@@ -53,7 +53,7 @@ defined_text = {
       # If we haven't got a valid param_cutoff_suffix, use the default, which is array_cutoff_suffix_ellipsis ("...").
       if = { limit = { check_variable = { param_cutoff_suffix?0 = 0 } } set_temp_variable = { param_cutoff_suffix = token:array_cutoff_suffix_ellipsis } }
 		}
-		localization_key = scripted_loc_inline_3265
+		localization_key = render_array_text
 	}
 }
 
@@ -73,15 +73,15 @@ defined_text = {
       }
       set_temp_variable = { v = param_array^i }
 		}
-		localization_key = scripted_loc_inline_3266
+		localization_key = render_array_inner_text
 	}
   text = { # Cutoff case: when we have exceeded param_cutoff without reaching the end of the array, render the cutoff suffix and stop recursing.
     trigger = { check_variable = { i = param_cutoff } check_variable = { i < param_array^num }       log = "[?param_cutoff_suffix.GetTokenKey]"
-}
-    localization_key = scripted_loc_inline_3267
+  }
+    localization_key = render_cutoff_text
   }
   text = { # Base case: when we have reached the end of the array, stop recursing.
-    localization_key = scripted_loc_inline_3268
+    localization_key = ""
   }
 }
 
@@ -91,18 +91,18 @@ defined_text = {
 	name = render_array_infix
 	text = { # No infix precedes the first element
 		trigger = { check_variable = { i = 0 } }
-		localization_key = scripted_loc_inline_3269
+		localization_key = ""
 	}
 	text = { # If we have a custom last-infix defined, for things like ", and", use it if this is the last index (num - 1)
 		trigger = {
 			has_variable = param_last_infix
 			check_variable = { i = last_index?-1 }
 		}
-		localization_key = scripted_loc_inline_3270
+		localization_key = render_last_infix_text
 	}
 	text = { # If we have a custom infix defined, use it
 		trigger = { has_variable = param_infix }
-		localization_key = scripted_loc_inline_3271
+		localization_key = render_infix_text
 	}
 	text = { # Otherwise, fall back to a newline-separated list
 		localization_key = array_infix_newline
@@ -117,59 +117,59 @@ defined_text = {
 	name = render_array_element
   text = {
     trigger = { check_variable = { param_renderer?0 = 0 } }
-		localization_key = scripted_loc_inline_3272
+		localization_key = render_v_iterate
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_token } }
-		localization_key = scripted_loc_inline_3273
+		localization_key = render_v_localized_key
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_token_raw } }
-		localization_key = scripted_loc_inline_3274
+		localization_key = render_v_token_key
 	}
 	text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name } }
-		localization_key = scripted_loc_inline_3275
+		localization_key = render_v_name
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_def } }
-		localization_key = scripted_loc_inline_3276
+		localization_key = render_v_name_def
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_def_cap } }
-		localization_key = scripted_loc_inline_3277
+		localization_key = render_v_name_def_cap
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_adjective } }
-		localization_key = scripted_loc_inline_3278
+		localization_key = render_v_adjective
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_adjective_cap } }
-		localization_key = scripted_loc_inline_3279
+		localization_key = render_v_adjective_cap
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_name_with_flag } }
-		localization_key = scripted_loc_inline_3280
+		localization_key = render_v_name_with_flag
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_flag } }
-		localization_key = scripted_loc_inline_3281
+		localization_key = render_v_flag
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_tag } }
-		localization_key = scripted_loc_inline_3282
+		localization_key = render_v_tag
   }
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_get_id } }
-		localization_key = scripted_loc_inline_3283
+		localization_key = render_v_id
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_int } }
-		localization_key = scripted_loc_inline_3284
+		localization_key = render_v_rounded
 	}
   text = {
 		trigger = { check_variable = { param_renderer = token:array_element_renderer_numeric } }
-		localization_key = scripted_loc_inline_3285
+		localization_key = render_v_iterate
 	}
   ############################################
   ### DEFINE CUSTOM ELEMENT RENDERERS HERE ###
@@ -188,7 +188,7 @@ defined_text = {
 			set_temp_variable = { temp_previous = final_prev_vals^i }
 			set_temp_variable = { temp_current = final_new_vals^i }
 		}
-		localization_key = scripted_loc_inline_3286
+		localization_key = render_v_modifier
 	}
 	text = {
 		trigger = {
@@ -261,7 +261,4 @@ defined_text = {
 	}
   ####### END CUSTOM ELEMENT RENDERERS #######
   ############################################
-	text = {
-		localization_key = scripted_loc_inline_3287
-	}
 }

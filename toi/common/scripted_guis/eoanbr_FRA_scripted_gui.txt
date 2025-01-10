@@ -13,11 +13,19 @@ scripted_gui = {
 				frame = FRA_political_main_politicalmeter
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	FRA_SE_cabinet_ui = {
 		context_type = decision_category
 		window_name = "fra_SE_cabinet_ui_window"
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	
 }

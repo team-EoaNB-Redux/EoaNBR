@@ -20,6 +20,10 @@ scripted_gui = {
 				frame = SOV_poster_right_icon_frame
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	
 }

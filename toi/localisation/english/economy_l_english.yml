@@ -2791,12 +2791,7 @@
   surplus_loc: "§GSurplus§!"
   deficit_loc: "§RDeficit§!"
   balanced_loc: "§YBalanced§!"
-
-  render_goods: "£[GetTextIconFromV] [?v.GetTokenLocalizedKey]"
-  render_goods_w_percent: "[?percent_temp|%Y1] - £[GetTextIconFromV] [?v.GetTokenLocalizedKey]"
-  render_goods_w_number: "§Y[GetAdjustedAmountNoSign]§! - £[GetTextIconFromV] [?v.GetTokenLocalizedKey]"
-  render_goods_w_both: "([?percent_temp|%Y1]) §Y[GetAdjustedAmountNoSign]§! - £[GetTextIconFromV] [?v.GetTokenLocalizedKey]"
-  render_name_w_number: "§Y[GetAdjustedAmountNoSign]§! - [?v.GetName]§!"
+§!"
   render_name_w_percent: "[?percent_temp|%Y1] - [?v.GetName]"
   render_name_w_both: "([?percent_temp|%Y1]) §Y[GetAdjustedAmountNoSign]§! - [?v.GetName]"
   render_name_w_both_g: "([?percent_temp|%Y1]) §G[GetAdjustedAmountNoSign]§! - [?v.GetName]"

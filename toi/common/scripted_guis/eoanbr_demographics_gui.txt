@@ -618,6 +618,10 @@ scripted_gui = {
 				image = "GFX_[?pops_primary_religion_array^0.GetTokenKey]"
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	eoanbr_culture_mapmode_country_gui = {
 		context_type = country_mapicon

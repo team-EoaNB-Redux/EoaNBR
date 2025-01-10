@@ -47,6 +47,10 @@ scripted_gui = {
 				set_country_flag = eoanbr_officer_corps_menu_flag
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	military_high_command = {
 		context_type = player_context
@@ -2663,6 +2667,10 @@ scripted_gui = {
 			}
 			###NAVY - END###
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	military_high_command_selector = {
@@ -3189,6 +3197,10 @@ scripted_gui = {
 				}
 				#scoped_sound_effect = "assign_leader"
 			}
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 

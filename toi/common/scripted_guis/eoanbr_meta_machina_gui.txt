@@ -349,7 +349,6 @@ scripted_gui = {
 			always = no
 		}
 	}
-
 	power_status = {
 		context_type = diplomacy_target_context
 

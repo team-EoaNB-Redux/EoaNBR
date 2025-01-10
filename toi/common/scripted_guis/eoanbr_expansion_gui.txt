@@ -59,6 +59,10 @@ scripted_gui = {
 			has_country_flag = eoanbr_imperialism_expansion_project_mapmode_colonies_list_container
 			has_tech = tech_projects_overseas_interests
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 	eoanbr_imperialism_expansion_project_frontiers_list = {
 		window_name = "eoanbr_imperialism_expansion_project_mapmode_frontiers_list_container"
@@ -70,6 +74,10 @@ scripted_gui = {
 		visible = {
 			has_country_flag = eoanbr_imperialism_expansion_project_mapmode_frontiers_list_container
 			has_tech = tech_projects_hinterland_expansion
+		}
+
+		ai_enabled = {
+			always = no
 		}
 	}
 }

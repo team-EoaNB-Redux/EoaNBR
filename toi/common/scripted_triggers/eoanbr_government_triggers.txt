@@ -34,10 +34,13 @@
 		custom_trigger_tooltip = {
 			tooltip = has_locked_article_tooltip
 			ARTICLE_TYPE = autarchy_token
-			check_variable = {
-				var = modifier@autarchy_article_locked_rule
-				value = 0
-				compare = greater_than
+			OR = {
+				check_variable = {
+					var = modifier@autarchy_article_locked_rule
+					value = 0
+					compare = greater_than
+				}
+				has_country_flag = reform_autarchy_paused_flag
 			}
 		}
 	}
@@ -59,14 +62,16 @@
 					}
 				}
 			}
-			custom_override_tooltip = {
-				tooltip = has_invalid_article_greater_than_threshold_tooltip
-				ARTICLE_TYPE = "autarchy_token"
-				MIN_VALUE = constant:autarchy_level.moderate
-				check_variable = {
-					var = modifier@public_autarchy_preference_modifier
-					value = constant:autarchy_level.moderate
-					compare = greater_than_or_equals
+			else = {
+				custom_override_tooltip = {
+					tooltip = has_invalid_article_greater_than_threshold_tooltip
+					ARTICLE_TYPE = "autarchy_token"
+					MIN_VALUE = constant:autarchy_level.moderate
+					check_variable = {
+						var = coalition_autarchy_preference
+						value = constant:autarchy_level.moderate
+						compare = greater_than_or_equals
+					}
 				}
 			}
 		}
@@ -74,10 +79,10 @@
 			custom_override_tooltip = {
 				tooltip = has_invalid_article_greater_than_threshold_tooltip
 				ARTICLE_TYPE = "autarchy_token"
-				MIN_VALUE = constant:autarchy_level.high
+				MIN_VALUE = global.min_threshold@autarchy_absolutism
 				check_variable = {
 					var = modifier@government_autarchy_modifier
-					value = constant:autarchy_level.high
+					value = global.min_threshold@autarchy_absolutism
 					compare = greater_than_or_equals
 				}
 			}

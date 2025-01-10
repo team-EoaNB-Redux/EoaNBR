@@ -23,6 +23,10 @@ scripted_gui = {
 				goto_state = 529
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	formosa_campaign_gui = {
@@ -65,11 +69,19 @@ scripted_gui = {
 		effects = {
 
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 
 	ministry_of_public_works_gui = {
 		context_type = decision_category
 		window_name = "JAP_ministry_of_public_works_container"
+
+		ai_enabled = {
+			always = no
+		}
 
 	}
 }

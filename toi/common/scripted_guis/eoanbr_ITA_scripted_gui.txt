@@ -115,6 +115,10 @@ scripted_gui = {
 				frame = 160.swfi_state_map_frame
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 }
 

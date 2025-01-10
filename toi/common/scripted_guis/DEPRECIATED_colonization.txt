@@ -21,8 +21,7 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-			colonial_power_bg_click_enabled = { always = yes
-			}
+			colonial_power_bg_click_enabled = { always = yes }
 		}
 	}
 	colonisation_powers_in_colonial_state = {
@@ -32,23 +31,6 @@ scripted_gui = {
 		parent_window_token = selected_state_view
 		ai_enabled = { 
 			always= no
-			# OR = {
-				# tag = PRS
-				# tag = GEC
-				# tag = ENG
-				# tag = HOL
-				# tag = FRA
-				# tag = BEL
-				# tag = POR
-				# tag = SPA
-				# tag = RUS
-				# tag = AUS
-				# tag = OTO
-				# tag = PIE
-			# }
-		}
-		ai_check = {
-			is_colonial_nation = yes
 		}
 
 		visible = {

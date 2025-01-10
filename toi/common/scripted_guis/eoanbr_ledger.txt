@@ -170,5 +170,9 @@ scripted_gui = {
 				clr_country_flag = ledger_select_open
 			}
 		}
+
+		ai_enabled = {
+			always = no
+		}
 	}
 }

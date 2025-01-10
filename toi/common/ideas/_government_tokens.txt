@@ -1974,7 +1974,91 @@ ideas = {
 
 
 			cancel = {
-				has_infrastructure_funding_generous_available = no
+				has_infrastructure_funding_none_available = no
+			}
+
+			on_remove = {
+				reform_infrastructure_funding_law = yes
+			}
+		}
+		infrastructure_funding_minimal = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_infrastructure_funding_paused_flag
+				set_variable = { infrastructure_funding_policy = token:infrastructure_funding_minimal }
+			}
+
+
+			cancel = {
+				has_infrastructure_funding_minimal_available = no
+			}
+
+			on_remove = {
+				reform_infrastructure_funding_law = yes
+			}
+		}
+		infrastructure_funding_basic = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_infrastructure_funding_paused_flag
+				set_variable = { infrastructure_funding_policy = token:infrastructure_funding_basic }
+			}
+
+
+			cancel = {
+				has_infrastructure_funding_basic_available = no
+			}
+
+			on_remove = {
+				reform_infrastructure_funding_law = yes
+			}
+		}
+		infrastructure_funding_extensive = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_infrastructure_funding_paused_flag
+				set_variable = { infrastructure_funding_policy = token:infrastructure_funding_extensive }
+			}
+
+
+			cancel = {
+				has_infrastructure_funding_extensive_available = no
+			}
+
+			on_remove = {
+				reform_infrastructure_funding_law = yes
+			}
+		}
+		infrastructure_funding_monumental = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_infrastructure_funding_paused_flag
+				set_variable = { infrastructure_funding_policy = token:infrastructure_funding_monumental }
+			}
+
+
+			cancel = {
+				has_infrastructure_funding_monumental_available = no
 			}
 
 			on_remove = {

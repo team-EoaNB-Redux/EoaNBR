@@ -1,4 +1,64 @@
 scripted_gui = {
+	custom_alerts = {
+		context_type = player_context
+		#parent_window_token = politics_tab
+		window_name = "global_alerticon_window_custom"
+
+		visible = {
+			always = yes
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		triggers = {
+			alert_button_visible = {
+				always = yes
+			}
+
+			yellow_alert_glow_visible = {
+				always = yes
+			}
+		}
+
+		dynamic_lists = {
+			global_alerticon_window_custom_list = {
+				array = local_alerts_array
+				entry_container = global_alerticon_window_custom_entry
+			}
+		}
+
+		properties = {
+			alert_button = {
+				frame = v
+			}
+		}
+
+		effects = {
+			alert_button_right_click = {
+				set_temp_variable = { custom_alerts_target = v }
+				custom_alerts_disable_alert = yes
+				country_event = { id = c_alerts.2 days = 30 }
+			}
+
+			alert_button_alt_right_click = {
+				set_temp_variable = { custom_alerts_target = v }
+				custom_alerts_disable_alert = yes
+				country_event = { id = c_alerts.2 days = 365 }
+			}
+
+			alert_button_click = {
+				meta_effect = {
+					text = {
+						custom_alerts_effect_[ID] = yes
+					}
+					ID = "[?v]"
+					debug = yes
+				}
+			}
+		}
+	}
 	custom_tabview_container_topbar = {
 		context_type = player_context
 		parent_window_token = top_bar
@@ -9,17 +69,11 @@ scripted_gui = {
 		}
 
 		triggers = {
-			# topbar_page_bg_visible = {
-				# check_variable = { show_local_topbar_page > 1 }
-			# }
-
-			#custom button triggers go here
 			mhc_button_click_enabled = {
 				mhc_system_active_trigger = yes
 			}
 			open_strata_screen_click_enabled = {
 				always = yes
-				#has_country_flag = enable_econ
 			}
 			nmissle_button_click_enabled = {
 				has_country_flag = nuclear_capable
@@ -40,24 +94,6 @@ scripted_gui = {
 		}
 
 		effects = {
-			# page_button_click = {
-				# if = {
-					# limit = {
-						# NOT = {
-							# has_variable = show_local_topbar_page
-						# }
-					# }
-					# set_variable = { show_local_topbar_page = 1 }
-				# }
-				# add_to_variable = { show_local_topbar_page = 1 }
-				# #max amount of pages, increase if in need
-				# if = {
-					# limit = {
-						# check_variable = { show_local_topbar_page > 2 }
-					# }
-					# set_variable = { show_local_topbar_page = 1 }
-				# }
-			# }
 			open_budget_screen_click={
 				if = {
 					limit = {
