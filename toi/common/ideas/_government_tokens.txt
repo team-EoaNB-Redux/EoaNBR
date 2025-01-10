@@ -6,12 +6,13 @@ ideas = {
 		autarchy_absolutism = {
 			allowed = { always = no }
 
-			modifier = {
+			modifier = { 
 
 			}
 
 			on_add = {
-
+				set_country_flag = reform_autarchy_paused_flag
+				set_variable = { autarchy_article = token:autarchy_absolutism }
 			}
 
 			cancel = {
@@ -19,7 +20,13 @@ ideas = {
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					reform_autarchy_article = yes
+				}
 			}
 		}
 		autarchy_delegated_authority = {
@@ -30,15 +37,23 @@ ideas = {
 			}
 
 			on_add = {
-
+				set_country_flag = reform_autarchy_paused_flag
+				set_variable = { autarchy_article = token:autarchy_delegated_authority }
 			}
+
 
 			cancel = {
 				has_autarchy_delegated_authority_available = no
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					reform_autarchy_article = yes
+				}
 			}
 		}
 		autarchy_delegated_representation = {
@@ -49,15 +64,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_autarchy_paused_flag
+				set_variable = { autarchy_article = token:autarchy_delegated_representation }
 			}
+
 
 			cancel = {
 				has_autarchy_delegated_representation_available = no
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					reform_autarchy_article = yes
+				}
 			}
 		}
 		autarchy_democratic_centralization = {
@@ -68,15 +91,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_autarchy_paused_flag
+				set_variable = { autarchy_article = token:autarchy_democratic_centralization }
 			}
+
 
 			cancel = {
 				has_autarchy_democratic_centralization_available = no
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					reform_autarchy_article = yes
+				}
 			}
 		}
 		autarchy_democratic_representation = {
@@ -87,15 +118,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_autarchy_paused_flag
+				set_variable = { autarchy_article = token:autarchy_democratic_representation }
 			}
+
 
 			cancel = {
 				has_autarchy_democratic_representation_available = no
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					reform_autarchy_article = yes
+				}
 			}
 		}
 		autarchy_minarchy = {
@@ -106,15 +145,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_autarchy_paused_flag
+				set_variable = { autarchy_article = token:autarchy_minarchy }
 			}
+
 
 			cancel = {
 				has_autarchy_minarchy_available = no
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					reform_autarchy_article = yes
+				}
 			}
 		}
 	}
@@ -127,15 +174,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_zealotry_paused_flag
+				set_variable = { zealotry_article = token:zealotry_fundamentalist }
 			}
+
 
 			cancel = {
 				has_zealotry_fundamentalist_available = no
 			}
 
 			on_remove = {
-				reform_zealotry_article = yes
+				if = {
+					limit = { has_country_flag = reform_zealotry_paused_flag }
+					clr_country_flag = reform_zealotry_paused_flag
+				}
+				else = {
+					reform_zealotry_article = yes
+				}
 			}
 		}
 		zealotry_state_religion = {
@@ -146,15 +201,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_zealotry_paused_flag
+				set_variable = { zealotry_article = token:zealotry_state_religion }
 			}
+
 
 			cancel = {
 				has_zealotry_state_religion_available = no
 			}
 
 			on_remove = {
-				reform_zealotry_article = yes
+				if = {
+					limit = { has_country_flag = reform_zealotry_paused_flag }
+					clr_country_flag = reform_zealotry_paused_flag
+				}
+				else = {
+					reform_zealotry_article = yes
+				}
 			}
 		}
 		zealotry_secular = {
@@ -165,15 +228,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_zealotry_paused_flag
+				set_variable = { zealotry_article = token:zealotry_secular }
 			}
+
 
 			cancel = {
 				has_zealotry_secular_available = no
 			}
 
 			on_remove = {
-				reform_zealotry_article = yes
+				if = {
+					limit = { has_country_flag = reform_zealotry_paused_flag }
+					clr_country_flag = reform_zealotry_paused_flag
+				}
+				else = {
+					reform_zealotry_article = yes
+				}
 			}
 		}
 	}
@@ -186,15 +257,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_franchisement_paused_flag
+				set_variable = { franchisement_article = token:franchisement_none }
 			}
+
 
 			cancel = {
 				has_franchisement_none_available = no
 			}
 
 			on_remove = {
-				reform_zealotry_article = yes
+				if = {
+					limit = { has_country_flag = reform_franchisement_paused_flag }
+					clr_country_flag = reform_franchisement_paused_flag
+				}
+				else = {
+					reform_franchisement_article = yes
+				}
 			}
 		}
 		franchisement_landed = {
@@ -205,15 +284,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_franchisement_paused_flag
+				set_variable = { franchisement_article = token:franchisement_landed }
 			}
+
 
 			cancel = {
 				has_franchisement_landed_available = no
 			}
 
 			on_remove = {
-				reform_franchisement_article = yes
+				if = {
+					limit = { has_country_flag = reform_franchisement_paused_flag }
+					clr_country_flag = reform_franchisement_paused_flag
+				}
+				else = {
+					reform_franchisement_article = yes
+				}
 			}
 		}
 		franchisement_wealth = {
@@ -224,15 +311,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_franchisement_paused_flag
+				set_variable = { franchisement_article = token:franchisement_wealth }
 			}
+
 
 			cancel = {
 				has_franchisement_wealth_available = no
 			}
 
 			on_remove = {
-				reform_franchisement_article = yes
+				if = {
+					limit = { has_country_flag = reform_franchisement_paused_flag }
+					clr_country_flag = reform_franchisement_paused_flag
+				}
+				else = {
+					reform_franchisement_article = yes
+				}
 			}
 		}
 		franchisement_census = {
@@ -243,15 +338,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_franchisement_paused_flag
+				set_variable = { franchisement_article = token:franchisement_census }
 			}
+
 
 			cancel = {
 				has_franchisement_census_available = no
 			}
 
 			on_remove = {
-				reform_franchisement_article = yes
+				if = {
+					limit = { has_country_flag = reform_franchisement_paused_flag }
+					clr_country_flag = reform_franchisement_paused_flag
+				}
+				else = {
+					reform_franchisement_article = yes
+				}
 			}
 		}
 		franchisement_universal = {
@@ -262,15 +365,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_franchisement_paused_flag
+				set_variable = { franchisement_article = token:franchisement_universal }
 			}
+
 
 			cancel = {
 				has_franchisement_universal_available = no
 			}
 
 			on_remove = {
-				reform_franchisement_article = yes
+				if = {
+					limit = { has_country_flag = reform_franchisement_paused_flag }
+					clr_country_flag = reform_franchisement_paused_flag
+				}
+				else = {
+					reform_franchisement_article = yes
+				}
 			}
 		}
 	}
@@ -283,15 +394,29 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_voting_system_paused_flag
+				set_variable = { voting_system_article = token:voting_system_none }
 			}
+
 
 			cancel = {
 				has_voting_system_none_available = no
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					if = {
+						limit = { has_country_flag = reform_franchisement_paused_flag }
+						clr_country_flag = reform_franchisement_paused_flag
+					}
+					else = {
+						reform_voting_system_article = yes
+					}
+				}
 			}
 		}
 		voting_system_first_past_the_post = {
@@ -302,8 +427,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_voting_system_paused_flag
+				set_variable = { voting_system_article = token:voting_system_first_past_the_post }
 			}
+
 
 			cancel = {
 				has_voting_system_first_past_the_post_available = no
@@ -321,8 +448,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_voting_system_paused_flag
+				set_variable = { voting_system_article = token:voting_system_weighted_proportional }
 			}
+
 
 			cancel = {
 				has_voting_system_weighted_proportional_available = no
@@ -340,8 +469,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_voting_system_paused_flag
+				set_variable = { voting_system_article = token:voting_system_proportional }
 			}
+
 
 			cancel = {
 				has_voting_system_proportional_available = no
@@ -361,8 +492,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_upper_chamber_paused_flag
+				set_variable = { upper_chamber_article = token:upper_chamber_ruling_party_only }
 			}
+
 
 			cancel = {
 				has_upper_chamber_ruling_party_only_available = no
@@ -380,8 +513,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_upper_chamber_paused_flag
+				set_variable = { upper_chamber_article = token:upper_chamber_appointed }
 			}
+
 
 			cancel = {
 				has_upper_chamber_appointed_available = no
@@ -399,8 +534,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_upper_chamber_paused_flag
+				set_variable = { upper_chamber_article = token:upper_chamber_two_per_district }
 			}
+
 
 			cancel = {
 				has_upper_chamber_two_per_district_available = no
@@ -418,8 +555,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_upper_chamber_paused_flag
+				set_variable = { upper_chamber_article = token:upper_chamber_per_popularity }
 			}
+
 
 			cancel = {
 				has_upper_chamber_per_popularity_available = no
@@ -439,15 +578,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_lower_chamber_paused_flag
+				set_variable = { lower_chamber_article = token:lower_chamber_none }
 			}
+
 
 			cancel = {
 				has_lower_chamber_none_available = no
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					reform_autarchy_article = yes
+				}
 			}
 		}
 		lower_chamber_ceremonial = {
@@ -458,8 +605,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_lower_chamber_paused_flag
+				set_variable = { lower_chamber_article = token:lower_chamber_ceremonial }
 			}
+
 
 			cancel = {
 				has_lower_chamber_ceremonial_available = no
@@ -477,8 +626,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_lower_chamber_paused_flag
+				set_variable = { lower_chamber_article = token:lower_chamber_established }
 			}
+
 
 			cancel = {
 				has_lower_chamber_established_available = no
@@ -496,8 +647,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_lower_chamber_paused_flag
+				set_variable = { lower_chamber_article = token:lower_chamber_executive }
 			}
+
 
 			cancel = {
 				has_lower_chamber_executive_available = no
@@ -517,15 +670,23 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_judiciary_paused_flag
+				set_variable = { judiciary_article = token:judiciary_no_court }
 			}
+
 
 			cancel = {
 				has_judiciary_no_court_available = no
 			}
 
 			on_remove = {
-				reform_autarchy_article = yes
+				if = {
+					limit = { has_country_flag = reform_autarchy_paused_flag }
+					clr_country_flag = reform_autarchy_paused_flag
+				}
+				else = {
+					reform_autarchy_article = yes
+				}
 			}
 		}
 		judiciary_kangaroo_court = {
@@ -536,8 +697,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_judiciary_paused_flag
+				set_variable = { judiciary_article = token:judiciary_kangaroo_court }
 			}
+
 
 			cancel = {
 				has_judiciary_kangaroo_court_available = no
@@ -555,8 +718,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_judiciary_paused_flag
+				set_variable = { judiciary_article = token:judiciary_high_judge_court }
 			}
+
 
 			cancel = {
 				has_judiciary_high_judge_court_available = no
@@ -574,8 +739,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_judiciary_paused_flag
+				set_variable = { judiciary_article = token:judiciary_quasi_jury_court }
 			}
+
 
 			cancel = {
 				has_judiciary_quasi_jury_court_available = no
@@ -593,8 +760,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_judiciary_paused_flag
+				set_variable = { judiciary_article = token:judiciary_jury_court }
 			}
+
 
 			cancel = {
 				has_judiciary_jury_court_available = no
@@ -614,8 +783,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_press_paused_flag
+				set_variable = { press_article = token:press_none }
 			}
+
 
 			cancel = {
 				has_press_none_available = no
@@ -633,8 +804,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_press_paused_flag
+				set_variable = { press_article = token:press_state_only }
 			}
+
 
 			cancel = {
 				has_press_state_only_available = no
@@ -652,8 +825,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_press_paused_flag
+				set_variable = { press_article = token:press_restricted }
 			}
+
 
 			cancel = {
 				has_press_restricted_available = no
@@ -671,8 +846,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_press_paused_flag
+				set_variable = { press_article = token:press_free }
 			}
+
 
 			cancel = {
 				has_press_free_available = no
@@ -692,8 +869,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_elections_frequency_paused_flag
+				set_variable = { elections_frequency_article = token:elections_frequency_none }
 			}
+
 
 			cancel = {
 				has_elections_frequency_none_available = no
@@ -711,8 +890,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_elections_frequency_paused_flag
+				set_variable = { elections_frequency_article = token:elections_frequency_ten }
 			}
+
 
 			cancel = {
 				has_elections_frequency_ten_available = no
@@ -730,8 +911,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_elections_frequency_paused_flag
+				set_variable = { elections_frequency_article = token:elections_frequency_eight }
 			}
+
 
 			cancel = {
 				has_elections_frequency_eight_available = no
@@ -749,8 +932,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_elections_frequency_paused_flag
+				set_variable = { elections_frequency_article = token:elections_frequency_six }
 			}
+
 
 			cancel = {
 				has_elections_frequency_six_available = no
@@ -768,8 +953,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_elections_frequency_paused_flag
+				set_variable = { elections_frequency_article = token:elections_frequency_five }
 			}
+
 
 			cancel = {
 				has_elections_frequency_five_available = no
@@ -787,8 +974,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_elections_frequency_paused_flag
+				set_variable = { elections_frequency_article = token:elections_frequency_four }
 			}
+
 
 			cancel = {
 				has_elections_frequency_four_available = no
@@ -806,8 +995,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_elections_frequency_paused_flag
+				set_variable = { elections_frequency_article = token:elections_frequency_three }
 			}
+
 
 			cancel = {
 				has_elections_frequency_three_available = no
@@ -827,8 +1018,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_slavery_paused_flag
+				set_variable = { slavery_article = token:slavery_allowed }
 			}
+
 
 			cancel = {
 				has_slavery_allowed_available = no
@@ -846,8 +1039,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_slavery_paused_flag
+				set_variable = { slavery_article = token:slavery_restricted }
 			}
+
 
 			cancel = {
 				has_slavery_restricted_available = no
@@ -865,8 +1060,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_slavery_paused_flag
+				set_variable = { slavery_article = token:slavery_outlawed }
 			}
+
 
 			cancel = {
 				has_slavery_outlawed_available = no
@@ -886,8 +1083,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_unionization_paused_flag
+				set_variable = { unionization_article = token:unionization_illegal }
 			}
+
 
 			cancel = {
 				has_unionization_illegal_available = no
@@ -905,8 +1104,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_unionization_paused_flag
+				set_variable = { unionization_article = token:unionization_state_controlled }
 			}
+
 
 			cancel = {
 				has_unionization_state_controlled_available = no
@@ -924,8 +1125,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_unionization_paused_flag
+				set_variable = { unionization_article = token:unionization_non_socialist }
 			}
+
 
 			cancel = {
 				has_unionization_non_socialist_available = no
@@ -943,8 +1146,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_unionization_paused_flag
+				set_variable = { unionization_article = token:unionization_private_only }
 			}
+
 
 			cancel = {
 				has_unionization_private_only_available = no
@@ -962,8 +1167,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_unionization_paused_flag
+				set_variable = { unionization_article = token:unionization_all_allowed }
 			}
+
 
 			cancel = {
 				has_unionization_all_allowed_available = no
@@ -977,6 +1184,7 @@ ideas = {
 }
 #Laws
 ideas = {
+  #National
 	land_property_tokens = {
 		land_property_tribal = {
 			allowed = { always = no }
@@ -986,8 +1194,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_land_property_paused_flag
+				set_variable = { land_property_article = token:land_property_tribal }
 			}
+
 
 			cancel = {
 				has_land_property_tribal_available = no
@@ -1005,8 +1215,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_land_property_paused_flag
+				set_variable = { land_property_article = token:land_property_serfdom }
 			}
+
 
 			cancel = {
 				has_land_property_serfdom_available = no
@@ -1024,8 +1236,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_land_property_paused_flag
+				set_variable = { land_property_article = token:land_property_land_estates }
 			}
+
 
 			cancel = {
 				has_land_property_land_estates_available = no
@@ -1043,8 +1257,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_land_property_paused_flag
+				set_variable = { land_property_article = token:land_property_land_purchase }
 			}
+
 
 			cancel = {
 				has_land_property_land_purchase_available = no
@@ -1062,8 +1278,10 @@ ideas = {
 			}
 
 			on_add = {
-				
+				set_country_flag = reform_land_property_paused_flag
+				set_variable = { land_property_law = token:land_property_collectivization }
 			}
+
 
 			cancel = {
 				has_land_property_collectivization_available = no
@@ -1074,22 +1292,696 @@ ideas = {
 			}
 		}
 	}
-	
+	trade_tokens = {
+		trade_autarky = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_trade_paused_flag
+				set_variable = { trade_law = token:trade_autarky }
+			}
 
 
+			cancel = {
+				has_trade_autarky_available = no
+			}
 
+			on_remove = {
+				reform_trade_law = yes
+			}
+		}
+		trade_restricted = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_trade_paused_flag
+				set_variable = { trade_law = token:trade_restricted }
+			}
+
+
+			cancel = {
+				has_trade_restricted_available = no
+			}
+
+			on_remove = {
+				reform_trade_law = yes
+			}
+		}
+		trade_limited = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_trade_paused_flag
+				set_variable = { trade_law = token:trade_limited }
+			}
+
+
+			cancel = {
+				has_trade_limited_available = no
+			}
+
+			on_remove = {
+				reform_trade_law = yes
+			}
+		}
+		trade_export = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_trade_paused_flag
+				set_variable = { trade_law = token:trade_export }
+			}
+
+
+			cancel = {
+				has_trade_export_available = no
+			}
+
+			on_remove = {
+				reform_trade_law = yes
+			}
+		}
+		trade_import = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_trade_paused_flag
+				set_variable = { trade_law = token:trade_import }
+			}
+
+
+			cancel = {
+				has_trade_import_available = no
+			}
+
+			on_remove = {
+				reform_trade_law = yes
+			}
+		}
+		trade_free = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_trade_paused_flag
+				set_variable = { trade_law = token:trade_free }
+			}
+
+
+			cancel = {
+				has_trade_free_available = no
+			}
+
+			on_remove = {
+				reform_trade_law = yes
+			}
+		}
+		trade_subsidized = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_trade_paused_flag
+				set_variable = { trade_law = token:trade_subsidized }
+			}
+
+
+			cancel = {
+				has_trade_subsidized_available = no
+			}
+
+			on_remove = {
+				reform_trade_law = yes
+			}
+		}
+	}
+	work_hours_tokens = {
+		work_hours_no_regulation = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_work_hours_paused_flag
+				set_variable = { work_hours_law = token:work_hours_no_regulation }
+			}
+
+
+			cancel = {
+				has_work_hours_no_regulation_available = no
+			}
+
+			on_remove = {
+				reform_work_hours_law = yes
+			}
+		}
+		work_hours_sixty = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_work_hours_paused_flag
+				set_variable = { work_hours_law = token:work_hours_sixty }
+			}
+
+
+			cancel = {
+				has_work_hours_sixty_available = no
+			}
+
+			on_remove = {
+				reform_work_hours_law = yes
+			}
+		}
+		work_hours_fifty = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_work_hours_paused_flag
+				set_variable = { work_hours_law = token:work_hours_fifty }
+			}
+
+
+			cancel = {
+				has_work_hours_fifty_available = no
+			}
+
+			on_remove = {
+				reform_work_hours_law = yes
+			}
+		}
+		work_hours_forty_five = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_work_hours_paused_flag
+				set_variable = { work_hours_law = token:work_hours_forty_five }
+			}
+
+
+			cancel = {
+				has_work_hours_forty_five_available = no
+			}
+
+			on_remove = {
+				reform_work_hours_law = yes
+			}
+		}
+		work_hours_forty = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_work_hours_paused_flag
+				set_variable = { work_hours_law = token:work_hours_forty }
+			}
+
+
+			cancel = {
+				has_work_hours_forty_available = no
+			}
+
+			on_remove = {
+				reform_work_hours_law = yes
+			}
+		}
+		work_hours_thirty_six = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_work_hours_paused_flag
+				set_variable = { work_hours_law = token:work_hours_thirty_six }
+			}
+
+
+			cancel = {
+				has_work_hours_thirty_six_available = no
+			}
+
+			on_remove = {
+				reform_work_hours_law = yes
+			}
+		}
+		work_hours_thirty_two = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_work_hours_paused_flag
+				set_variable = { work_hours_law = token:work_hours_thirty_two }
+			}
+
+
+			cancel = {
+				has_work_hours_thirty_two_available = no
+			}
+
+			on_remove = {
+				reform_work_hours_law = yes
+			}
+		}
+	}
+	mobilization_tokens = {
+		mobilization_undisturbed_isolation = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_mobilization_paused_flag
+				set_variable = { mobilization_law = token:mobilization_undisturbed_isolation }
+			}
+
+
+			cancel = {
+				has_mobilization_undisturbed_isolation_available = no
+			}
+
+			on_remove = {
+				reform_mobilization_law = yes
+			}
+		}
+		mobilization_isolation = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_mobilization_paused_flag
+				set_variable = { mobilization_law = token:mobilization_isolation }
+			}
+
+
+			cancel = {
+				has_mobilization_isolation_available = no
+			}
+
+			on_remove = {
+				reform_mobilization_law = yes
+			}
+		}
+		mobilization_minimal = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_mobilization_paused_flag
+				set_variable = { mobilization_law = token:mobilization_minimal }
+			}
+
+
+			cancel = {
+				has_mobilization_minimal_available = no
+			}
+
+			on_remove = {
+				reform_mobilization_law = yes
+			}
+		}
+		mobilization_partial = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_mobilization_paused_flag
+				set_variable = { mobilization_law = token:mobilization_partial }
+			}
+
+
+			cancel = {
+				has_mobilization_partial_available = no
+			}
+
+			on_remove = {
+				reform_mobilization_law = yes
+			}
+		}
+		mobilization_war = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_mobilization_paused_flag
+				set_variable = { mobilization_law = token:mobilization_war }
+			}
+
+
+			cancel = {
+				has_mobilization_war_available = no
+			}
+
+			on_remove = {
+				reform_mobilization_law = yes
+			}
+		}
+		mobilization_total = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_mobilization_paused_flag
+				set_variable = { mobilization_law = token:mobilization_total }
+			}
+
+
+			cancel = {
+				has_mobilization_total_available = no
+			}
+
+			on_remove = {
+				reform_mobilization_law = yes
+			}
+		}
+	}
 	assembly_tokens = {
-		allowed = { always = no }
+		assembly_token = {
+			allowed = { always = no }
 
-		modifier = {
-			
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_defense_paused_flag
+				set_variable = { assembly_law = token:assembly_token }
+			}
+
+
+			cancel = {
+				has_mobilization_undisturbed_isolation_available = no
+			}
+
+			on_remove = {
+				reform_mobilization_law = yes
+			}
 		}
 	}
 
 }
 #Policies
 ideas = {
+	healthcare_spending_tokens = {
+		healthcare_spending_none = {
+			allowed = { always = no }
 
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_healthcare_spending_paused_flag
+				set_variable = { healthcare_spending_policy = token:healthcare_spending_none }
+			}
+
+
+			cancel = {
+				has_healthcare_spending_none_available = no
+			}
+
+			on_remove = {
+				reform_healthcare_spending_law = yes
+			}
+		}
+		healthcare_spending_minimal = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_healthcare_spending_paused_flag
+				set_variable = { healthcare_spending_policy = token:healthcare_spending_minimal }
+			}
+
+
+			cancel = {
+				has_healthcare_spending_minimal_available = no
+			}
+
+			on_remove = {
+				reform_healthcare_spending_law = yes
+			}
+		}
+		healthcare_spending_basic = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_healthcare_spending_paused_flag
+				set_variable = { healthcare_spending_policy = token:healthcare_spending_basic }
+			}
+
+
+			cancel = {
+				has_healthcare_spending_basic_available = no
+			}
+
+			on_remove = {
+				reform_healthcare_spending_law = yes
+			}
+		}
+		healthcare_spending_advanced = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_healthcare_spending_paused_flag
+				set_variable = { healthcare_spending_policy = token:healthcare_spending_advanced }
+			}
+
+
+			cancel = {
+				has_healthcare_spending_advanced_available = no
+			}
+
+			on_remove = {
+				reform_healthcare_spending_law = yes
+			}
+		}
+		healthcare_spending_universal = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_healthcare_spending_paused_flag
+				set_variable = { healthcare_spending_policy = token:healthcare_spending_universal }
+			}
+
+
+			cancel = {
+				has_healthcare_spending_universal_available = no
+			}
+
+			on_remove = {
+				reform_healthcare_spending_law = yes
+			}
+		}
+	}
+	unemployment_subsidies_tokens = {
+		unemployment_subsidies_none = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_unemployment_subsidies_paused_flag
+				set_variable = { unemployment_subsidies_policy = token:unemployment_subsidies_none }
+			}
+
+
+			cancel = {
+				has_unemployment_subsidies_none_available = no
+			}
+
+			on_remove = {
+				reform_unemployment_subsidies_law = yes
+			}
+		}
+		unemployment_subsidies_minimal = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_unemployment_subsidies_paused_flag
+				set_variable = { unemployment_subsidies_policy = token:unemployment_subsidies_minimal }
+			}
+
+
+			cancel = {
+				has_unemployment_subsidies_minimal_available = no
+			}
+
+			on_remove = {
+				reform_unemployment_subsidies_law = yes
+			}
+		}
+		unemployment_subsidies_basic = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_unemployment_subsidies_paused_flag
+				set_variable = { unemployment_subsidies_policy = token:unemployment_subsidies_basic }
+			}
+
+
+			cancel = {
+				has_unemployment_subsidies_basic_available = no
+			}
+
+			on_remove = {
+				reform_unemployment_subsidies_law = yes
+			}
+		}
+		unemployment_subsidies_extensive = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_unemployment_subsidies_paused_flag
+				set_variable = { unemployment_subsidies_policy = token:unemployment_subsidies_extensive }
+			}
+
+
+			cancel = {
+				has_unemployment_subsidies_extensive_available = no
+			}
+
+			on_remove = {
+				reform_unemployment_subsidies_law = yes
+			}
+		}
+		unemployment_subsidies_generous = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_unemployment_subsidies_paused_flag
+				set_variable = { unemployment_subsidies_policy = token:unemployment_subsidies_generous }
+			}
+
+
+			cancel = {
+				has_unemployment_subsidies_generous_available = no
+			}
+
+			on_remove = {
+				reform_unemployment_subsidies_law = yes
+			}
+		}
+	}
+	infrastructure_funding_tokens = {
+		infrastructure_funding_none = {
+			allowed = { always = no }
+
+			modifier = {
+
+			}
+
+			on_add = {
+				set_country_flag = reform_infrastructure_funding_paused_flag
+				set_variable = { infrastructure_funding_policy = token:infrastructure_funding_none }
+			}
+
+
+			cancel = {
+				has_infrastructure_funding_generous_available = no
+			}
+
+			on_remove = {
+				reform_infrastructure_funding_law = yes
+			}
+		}
+	}
 }
 #Parties
 ideas = {

@@ -4,7 +4,7 @@
 			limit = { is_ai = yes }
 			random_list = {
 				20 = {
-					modifier = {
+					modifier = { 
 						OR = {
 							has_autarchy_absolutism_enable = no
 							has_autarchy_absolutism_available = no
@@ -170,30 +170,16 @@
 				20 = {
 					modifier = {
 						OR = {
-							has_franchisement_only_landed_enable = no
-							has_franchisement_only_landed_available = no
+							has_franchisement_landed_enable = no
+							has_franchisement_landed_available = no
 						}
 						factor = 0
 					}
 					modifier = {
-						has_franchisement_only_landed_selectable = no
+						has_franchisement_landed_selectable = no
 						factor = 0.25
 					}
-					add_ideas = franchisement_only_landed
-				}
-				20 = {
-					modifier = {
-						OR = {
-							has_franchisement_weighted_wealthy_enable = no
-							has_franchisement_weighted_wealthy_available = no
-						}
-						factor = 0
-					}
-					modifier = {
-						has_franchisement_weighted_wealthy_selectable = no
-						factor = 0.25
-					}
-					add_ideas = franchisement_weighted_wealthy
+					add_ideas = franchisement_landed
 				}
 				20 = {
 					modifier = {
@@ -212,16 +198,16 @@
 				20 = {
 					modifier = {
 						OR = {
-							has_franchisement_weighted_universal_enable = no
-							has_franchisement_weighted_universal_available = no
+							has_franchisement_census_enable = no
+							has_franchisement_census_available = no
 						}
 						factor = 0
 					}
 					modifier = {
-						has_franchisement_weighted_universal_selectable = no
+						has_franchisement_census_selectable = no
 						factor = 0.25
 					}
-					add_ideas = franchisement_weighted_universal
+					add_ideas = franchisement_census
 				}
 				20 = {
 					modifier = {
@@ -305,8 +291,21 @@
 					}
 					add_ideas = voting_system_proportional
 				}
+				20 = {
+					modifier = {
+						OR = {
+							has_voting_system_proportional_enable = no
+							has_voting_system_proportional_available = no
+						}
+						factor = 0
+					}
+					modifier = {
+						has_voting_system_proportional_selectable = no
+						factor = 0.25
+					}
+					add_ideas = voting_system_proportional
+				}
 			}
-
 		}
 		else = {
 			#Fire Event Choice
@@ -730,6 +729,20 @@
 				20 = {
 					modifier = {
 						OR = {
+							has_slavery_restricted_enable = no
+							has_slavery_restricted_available = no
+						}
+						factor = 0
+					}
+					modifier = {
+						has_slavery_restricted_selectable = no
+						factor = 0.25
+					}
+					add_ideas = slavery_restricted
+				}
+				20 = {
+					modifier = {
+						OR = {
 							has_slavery_outlawed_enable = no
 							has_slavery_outlawed_available = no
 						}
@@ -756,33 +769,74 @@
 				20 = {
 					modifier = {
 						OR = {
-							has_unionization_allowed_enable = no
-							has_unionization_allowed_available = no
+							has_unionization_illegal_enable = no
+							has_unionization_illegal_available = no
 						}
 						factor = 0
 					}
 					modifier = {
-						has_unionization_allowed_selectable = no
+						has_unionization_illegal_selectable = no
 						factor = 0.25
 					}
-					add_ideas = unionization_allowed
+					add_ideas = unionization_illegal
 				}
 				20 = {
 					modifier = {
 						OR = {
-							has_unionization_outlawed_enable = no
-							has_unionization_outlawed_available = no
+							has_unionization_state_controlled_enable = no
+							has_unionization_state_controlled_available = no
 						}
 						factor = 0
 					}
 					modifier = {
-						has_unionization_outlawed_selectable = no
+						has_unionization_state_controlled_selectable = no
 						factor = 0.25
 					}
-					add_ideas = unionization_outlawed
+					add_ideas = unionization_state_controlled
+				}
+				20 = {
+					modifier = {
+						OR = {
+							has_unionization_non_socialist_enable = no
+							has_unionization_non_socialist_available = no
+						}
+						factor = 0
+					}
+					modifier = {
+						has_unionization_non_socialist_selectable = no
+						factor = 0.25
+					}
+					add_ideas = unionization_non_socialist
+				}
+				20 = {
+					modifier = {
+						OR = {
+							has_unionization_private_only_enable = no
+							has_unionization_private_only_available = no
+						}
+						factor = 0
+					}
+					modifier = {
+						has_unionization_private_only_selectable = no
+						factor = 0.25
+					}
+					add_ideas = unionization_private_only
+				}
+				20 = {
+					modifier = {
+						OR = {
+							has_unionization_all_allowed_enable = no
+							has_unionization_all_allowed_available = no
+						}
+						factor = 0
+					}
+					modifier = {
+						has_unionization_all_allowed_selectable = no
+						factor = 0.25
+					}
+					add_ideas = unionization_all_allowed
 				}
 			}
-
 		}
 		else = {
 			#Fire Event Choice
