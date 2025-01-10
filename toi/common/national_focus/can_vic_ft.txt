@@ -2279,205 +2279,290 @@ focus_tree = {
 		}
 	}
 
+	# focus = {
+	# 	id = CAN_Grant_Rights_French
+	# 	icon = GFX_Focus_Diplomatic_Ally_FRA
+	# 	x = 47
+	# 	y = 1
+	# 	cost = 105
+
+	# 	ai_will_do = {
+	# 		factor = 8
+	# 	}
+
+	# 	available = {
+	# 		is_subject_of = ENG
+	# 	}
+
+	# 	prerequisite = { focus = CAN_Way_Confederation }
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_1_refo
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = CAN_idea_quebec_separatism_1_refo
+	# 				add_idea = CAN_idea_quebec_separatism_Rights_refo
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_Chruch_refo
+	# 			}
+	# 				remove_ideas = CAN_idea_quebec_separatism_Chruch_refo
+	# 			}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_1_cons
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = CAN_idea_quebec_separatism_1_cons
+	# 				add_idea = CAN_idea_quebec_separatism_Rights_cons
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_Church_cons
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = CAN_idea_quebec_separatism_Church_cons
+	# 				add_idea = CAN_idea_quebec_separatism_Church_Rights_cons
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_unify
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = CAN_idea_quebec_separatism_unify
+	# 				add_idea = CAN_idea_quebec_separatism_unify_Rights
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_unify_Church
+	# 			}
+	# 			remove_ideas = CAN_idea_quebec_separatism_unify_Church
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism
+	# 			}
+	# 			remove_ideas = CAN_idea_quebec_separatism
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_completed_focus = CAN_Support_Catholic_Church
+	# 			}
+	# 		CAN = {
+	# 			news_event = {
+	# 				id = britishcanada.52
+	# 				days = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = CAN_Support_Catholic_Church
+	# 	icon = GFX_Focus_Law_Vote_1
+	# 	x = 49
+	# 	y = 1
+	# 	cost = 105
+
+	# 	ai_will_do = {
+	# 		factor = 8
+	# 	}
+
+	# 	available = {
+	# 	is_subject_of = ENG
+	# 	}
+
+	# 	prerequisite = { focus = CAN_Way_Confederation }
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_1_refo
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = CAN_idea_quebec_separatism_1_refo
+	# 				add_idea = CAN_idea_quebec_separatism_Chruch_refo
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_Rights_refo
+	# 			}
+	# 				remove_ideas = CAN_idea_quebec_separatism_Rights_refo
+	# 			}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_1_cons
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = CAN_idea_quebec_separatism_1_cons
+	# 				add_idea = CAN_idea_quebec_separatism_Church_cons
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_Rights_cons
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = CAN_idea_quebec_separatism_Rights_cons
+	# 				add_idea = CAN_idea_quebec_separatism_Church_Rights_cons
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_unify
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = CAN_idea_quebec_separatism_unify
+	# 				add_idea = CAN_idea_quebec_separatism_unify_Church
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism_unify_Rights
+	# 			}
+	# 				remove_ideas = CAN_idea_quebec_separatism_unify_Rights
+	# 			}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = CAN_idea_quebec_separatism
+	# 			}
+	# 			remove_ideas = CAN_idea_quebec_separatism
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_completed_focus = CAN_Support_Catholic_Church
+	# 			}
+	# 		CAN = {
+	# 			news_event = {
+	# 				id = britishcanada.52
+	# 				days = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	
 	focus = {
-		id = CAN_Grant_Rights_French
-		icon = GFX_Focus_Diplomatic_Ally_FRA
-		x = 47
+		id = CAN_charlottetown_conference
+		icon = placeholder # GFX_goal_focus_develop_canada
+		x = 0
 		y = 1
-		cost = 105
+		relative_position_id = CAN_Way_Confederation
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
 		}
-
-		available = {
-			is_subject_of = ENG
+		prerequisite = {
+			focus = CAN_Way_Confederation
 		}
-
-		prerequisite = { focus = CAN_Way_Confederation }
-
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_1_refo
-				}
-				swap_ideas = {
-					remove_idea = CAN_idea_quebec_separatism_1_refo
-					add_idea = CAN_idea_quebec_separatism_Rights_refo
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_Chruch_refo
-				}
-					remove_ideas = CAN_idea_quebec_separatism_Chruch_refo
-				}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_1_cons
-				}
-				swap_ideas = {
-					remove_idea = CAN_idea_quebec_separatism_1_cons
-					add_idea = CAN_idea_quebec_separatism_Rights_cons
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_Church_cons
-				}
-				swap_ideas = {
-					remove_idea = CAN_idea_quebec_separatism_Church_cons
-					add_idea = CAN_idea_quebec_separatism_Church_Rights_cons
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_unify
-				}
-				swap_ideas = {
-					remove_idea = CAN_idea_quebec_separatism_unify
-					add_idea = CAN_idea_quebec_separatism_unify_Rights
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_unify_Church
-				}
-				remove_ideas = CAN_idea_quebec_separatism_unify_Church
-			}
+			add_political_power = 25
+			add_stability = 0.01
+		}
+	}
+	
+	focus = {
+		id = CAN_quebec_conference
+		icon = placeholder # GFX_goal_focus_develop_canada
+		x = 0
+		y = 1
+		relative_position_id = CAN_charlottetown_conference
+		cost = 70
+
+		ai_will_do = {
+			factor = 8
+		}
+		prerequisite = {
+			focus = CAN_charlottetown_conference
+		}
+		completion_reward = {
 			if = {
 				limit = {
 					has_idea = CAN_idea_quebec_separatism
 				}
 				remove_ideas = CAN_idea_quebec_separatism
 			}
-			if = {
-				limit = {
-					has_completed_focus = CAN_Support_Catholic_Church
-				}
-			CAN = {
-				news_event = {
-					id = britishcanada.52
-					days = 1
-					}
-				}
-			}
 		}
 	}
-
+	
 	focus = {
-		id = CAN_Support_Catholic_Church
-		icon = GFX_Focus_Law_Vote_1
-		x = 49
+		id = CAN_london_conference
+		icon = placeholder # GFX_goal_focus_develop_canada
+		x = 0
 		y = 1
-		cost = 105
+		relative_position_id = CAN_quebec_conference
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
 		}
-
-		available = {
-		is_subject_of = ENG
+		prerequisite = {
+			focus = CAN_quebec_conference
 		}
-
-		prerequisite = { focus = CAN_Way_Confederation }
-
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_1_refo
-				}
-				swap_ideas = {
-					remove_idea = CAN_idea_quebec_separatism_1_refo
-					add_idea = CAN_idea_quebec_separatism_Chruch_refo
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_Rights_refo
-				}
-					remove_ideas = CAN_idea_quebec_separatism_Rights_refo
-				}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_1_cons
-				}
-				swap_ideas = {
-					remove_idea = CAN_idea_quebec_separatism_1_cons
-					add_idea = CAN_idea_quebec_separatism_Church_cons
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_Rights_cons
-				}
-				swap_ideas = {
-					remove_idea = CAN_idea_quebec_separatism_Rights_cons
-					add_idea = CAN_idea_quebec_separatism_Church_Rights_cons
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_unify
-				}
-				swap_ideas = {
-					remove_idea = CAN_idea_quebec_separatism_unify
-					add_idea = CAN_idea_quebec_separatism_unify_Church
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism_unify_Rights
-				}
-					remove_ideas = CAN_idea_quebec_separatism_unify_Rights
-				}
-			if = {
-				limit = {
-					has_idea = CAN_idea_quebec_separatism
-				}
-				remove_ideas = CAN_idea_quebec_separatism
-			}
-			if = {
-				limit = {
-					has_completed_focus = CAN_Support_Catholic_Church
-				}
-			CAN = {
-				news_event = {
-					id = britishcanada.52
-					days = 1
-					}
-				}
-			}
+			add_political_power = 25
+			add_stability = 0.01
 		}
 	}
-
+	
 	focus = {
-		id = CAN_Prime_Minister
-		icon = GFX_Focus_Vote_Election
-		x = 48
-		y = 2
-		cost = 35
+		id = CAN_first_dominion
+		icon = placeholder # GFX_goal_focus_develop_canada
+		x = 0
+		y = 1
+		relative_position_id = CAN_london_conference
+		cost = 70
 
 		ai_will_do = {
-			factor = 10
+			factor = 8
 		}
-
-		available = {
-		always = no
+		prerequisite = {
+			focus = CAN_london_conference
 		}
-
-		prerequisite = { focus = CAN_Support_Catholic_Church }
-		prerequisite = { focus = CAN_Grant_Rights_French }
-
 		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.01
 		}
 	}
+
+	# focus = {
+	# 	id = CAN_Prime_Minister
+	# 	icon = GFX_Focus_Vote_Election
+	# 	x = 48
+	# 	y = 2
+	# 	cost = 35
+
+	# 	ai_will_do = {
+	# 		factor = 10
+	# 	}
+
+	# 	available = {
+	# 	always = no
+	# 	}
+
+	# 	prerequisite = { focus = CAN_Support_Catholic_Church }
+	# 	prerequisite = { focus = CAN_Grant_Rights_French }
+
+	# 	completion_reward = {
+	# 	}
+	# }
 
 	focus = {
 		id = CAN_Conservative_Prime_Minister
 		icon = GFX_Focus_Ideology_Socialism_disawow
-		x = 45
-		y = 3
+		x = -3
+		y = 1
+		relative_position_id = CAN_first_dominion
 		cost = 21
 
 		ai_will_do = {
@@ -2490,7 +2575,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		prerequisite = { focus = CAN_Prime_Minister }
+		prerequisite = { focus = CAN_first_dominion }
 
 		mutually_exclusive = { focus = CAN_Liberal_Prime_Minister }
 
@@ -2502,8 +2587,9 @@ focus_tree = {
 	focus = {
 		id = CAN_George_Etrienne_Prime_Minister
 		icon = GFX_Focus_Ideology_Support_Liberty
-		x = 44
-		y = 4
+		x = -1
+		y = 1
+		relative_position_id = CAN_Conservative_Prime_Minister
 		cost = 7
 
 		ai_will_do = {
@@ -2524,8 +2610,9 @@ focus_tree = {
 	focus = {
 		id = CAN_John_Macdonald_Prime_Minister
 		icon = GFX_Focus_Ideology_Support_Liberalism
-		x = 46
-		y = 4
+		x = 1
+		y = 1
+		relative_position_id = CAN_Conservative_Prime_Minister
 		cost = 7
 
 		ai_will_do = {
@@ -2557,8 +2644,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Liberal_Prime_Minister
 		icon = GFX_Focus_Ideology_Socialism_ally
-		x = 51
-		y = 3
+		x = 3
+		y = 1
+		relative_position_id = CAN_first_dominion
 		cost = 21
 
 		ai_will_do = {
@@ -2569,7 +2657,7 @@ focus_tree = {
 			NOT = { has_completed_focus = CAN_Blame_Reformers }
 		}
 
-		prerequisite = { focus = CAN_Prime_Minister }
+		prerequisite = { focus = CAN_first_dominion }
 
 		mutually_exclusive = { focus = CAN_Conservative_Prime_Minister }
 
@@ -2581,8 +2669,9 @@ focus_tree = {
 	focus = {
 		id = CAN_George_Brown_Prime_Minister
 		icon = GFX_Focus_Ideology_Support_Liberty
-		x = 51
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = CAN_Liberal_Prime_Minister
 		cost = 7
 
 		ai_will_do = {
@@ -2601,8 +2690,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Dominions_Prime_Minister
 		icon = GFX_Focus_Partisans_Popularize
-		x = 48
-		y = 5
+		x = 0
+		y = 3
+		relative_position_id = CAN_first_dominion
 		cost = 1
 
 		ai_will_do = {
@@ -2620,13 +2710,12 @@ focus_tree = {
 		}
 	}
 
-
-
 	focus = {
-		id = CAN_CPR
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 48
-		y = 6
+		id = CAN_create_dominion_police
+		icon = placeholder # GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = CAN_Dominions_Prime_Minister
 		cost = 105
 
 		ai_will_do = {
@@ -2635,12 +2724,38 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		available = {
-		has_completed_focus = CAN_Modernizing_Infrastructure
-		has_completed_focus = CAN_John_Macdonald_Prime_Minister
-		}
+		# available = {
+		# has_completed_focus = CAN_Modernizing_Infrastructure
+		# has_completed_focus = CAN_John_Macdonald_Prime_Minister
+		# }
 
 		prerequisite = { focus = CAN_Dominions_Prime_Minister }
+
+		completion_reward = {
+			add_ideas = CAN_pacific_railway
+		}
+	}
+
+	focus = {
+		id = CAN_CPR
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = CAN_Takeover_Ruperts_Land
+		cost = 105
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		# available = {
+		# has_completed_focus = CAN_Modernizing_Infrastructure
+		# has_completed_focus = CAN_John_Macdonald_Prime_Minister
+		# }
+
+		prerequisite = { focus = CAN_Takeover_Ruperts_Land }
 
 		completion_reward = {
 			add_ideas = CAN_pacific_railway
@@ -2655,8 +2770,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Enrollment_Old_Militias
 		icon = GFX_focus_generic_military_mission
-		x = 43
-		y = 6
+		x = -5
+		y = 1
+		relative_position_id = CAN_Dominions_Prime_Minister
 		cost = 70
 
 		ai_will_do = {
@@ -2700,8 +2816,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Militia_Act_1868
 		icon = GFX_focus_generic_treaty
-		x = 43
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = CAN_Enrollment_Old_Militias
 		cost = 70
 
 		ai_will_do = {
@@ -2718,8 +2835,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Curtail_Enrollment
 		icon = GFX_Focus_Army_Reforms
-		x = 42
-		y = 8
+		x = -1
+		y = 1
+		relative_position_id = CAN_Militia_Act_1868
 		cost = 105
 
 		ai_will_do = {
@@ -2742,8 +2860,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Increase_Funds
 		icon = GFX_Focus_banks
-		x = 44
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = CAN_Militia_Act_1868
 		cost = 105
 
 		ai_will_do = {
@@ -2789,8 +2908,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Full_Fledged_Canadian_Military
 		icon = GFX_focus_generic_little_entente
-		x = 43
-		y = 9
+		x = 0
+		y = 2
+		relative_position_id = CAN_Militia_Act_1868
 		cost = 70
 
 		ai_will_do = {
@@ -2812,8 +2932,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Trade_Policy
 		icon = GFX_Focus_Trade_International
-		x = 53
-		y = 6
+		x = 5
+		y = 1
+		relative_position_id = CAN_Dominions_Prime_Minister
 		cost = 35
 
 		ai_will_do = {
@@ -2835,8 +2956,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Protective_Tariffs
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 50
-		y = 7
+		x = -3
+		y = 1
+		relative_position_id = CAN_Trade_Policy
 		cost = 105
 
 		ai_will_do = {
@@ -2879,8 +3001,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Trade_Relations_Empire
 		icon = GFX_Focus_Diplomacy_UK
-		x = 50
-		y = 8
+		x = -3
+		y = 2
+		relative_position_id = CAN_Trade_Policy
 		cost = 70
 
 		ai_will_do = {
@@ -2989,8 +3112,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Balanced_Export
 		icon = GFX_Focus_Ideology_Support_Liberalism
-		x = 53
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = CAN_Trade_Policy
 		cost = 70
 
 		ai_will_do = {
@@ -3029,8 +3153,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Balanced_Trade_Relations
 		icon = GFX_goal_generic_neutrality_focus
-		x = 53
-		y = 8
+		x = 0
+		y = 2
+		relative_position_id = CAN_Trade_Policy
 		cost = 70
 
 		ai_will_do = {
@@ -3083,8 +3208,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Free_Trade
 		icon = GFX_Focus_freedom_economy
-		x = 56
-		y = 7
+		x = 3
+		y = 1
+		relative_position_id = CAN_Trade_Policy
 		cost = 105
 
 		ai_will_do = {
@@ -3130,8 +3256,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Outside_Trade_Relations
 		icon = GFX_Focus_Diplomatic_foreign
-		x = 56
-		y = 8
+		x = 3
+		y = 2
+		relative_position_id = CAN_Trade_Policy
 		cost = 70
 
 		ai_will_do = {
@@ -3252,8 +3379,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Defined_Trade_Policy
 		icon = GFX_focus_generic_treaty
-		x = 53
-		y = 9
+		x = 0
+		y = 3
+		relative_position_id = CAN_Trade_Policy
 		cost = 35
 
 		ai_will_do = {
@@ -3271,14 +3399,12 @@ focus_tree = {
 		}
 	}
 
-
-
-
 	focus = {
 		id = CAN_Encourage_Westward_Settlement
 		icon = GFX_focus_generic_support_the_left_right
-		x = 48
-		y = 10
+		x = 0
+		y = 5
+		relative_position_id = CAN_Dominions_Prime_Minister
 		cost = 140
 
 		ai_will_do = {
@@ -3309,8 +3435,9 @@ focus_tree = {
 	focus = {
 		id = CAN_Takeover_Ruperts_Land
 		icon = GFX_idea_ENG_focus_enact_law_uk
-		x = 48
-		y = 11
+		x = 0
+		y = 1
+		relative_position_id = CAN_Encourage_Westward_Settlement
 		cost = 70
 
 		ai_will_do = {
@@ -3328,42 +3455,42 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CAN_Protect_Rights_Native_Citiziens
-		icon = GFX_Focus_Law_Vote_1
-		x = 47
-		y = 12
-		cost = 140
+	# focus = {
+	# 	id = CAN_Protect_Rights_Native_Citiziens
+	# 	icon = GFX_Focus_Law_Vote_1
+	# 	x = -1
+	# 	y = 2
+	# 	relative_position_id = CAN_Takeover_Ruperts_Land
+	# 	cost = 140
 
-		ai_will_do = {
-			factor = 100
-		}
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
 
-		available = {
-		is_subject_of = ENG
-		}
+	# 	available = {
+	# 	is_subject_of = ENG
+	# 	}
 
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+	# 	search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		prerequisite = { focus = CAN_Takeover_Ruperts_Land }
+	# 	prerequisite = { focus = CAN_Takeover_Ruperts_Land }
 
-		mutually_exclusive = { focus = CAN_More_Rights_English_Settlers }
+	# 	completion_reward = {
+	# 	CAN = {
+	# 	country_event = {
+	# 	id = britishcanada.58
+	# 	days = 1
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-		completion_reward = {
-		CAN = {
-		country_event = {
-		id = britishcanada.58
-		days = 1
-				}
-			}
-		}
-	}
-
-	focus = {
+	focus = { #rebellion focus
 		id = CAN_More_Rights_English_Settlers
 		icon = GFX_focus_CZE_german_puppet
-		x = 49
-		y = 12
+		x = 0
+		y = 1
+		relative_position_id = CAN_the_steele_man
 		cost = 70
 
 		ai_will_do = {
@@ -3374,9 +3501,7 @@ focus_tree = {
 		is_subject_of = ENG
 		}
 
-		prerequisite = { focus = CAN_Takeover_Ruperts_Land }
-
-		mutually_exclusive = { focus = CAN_Protect_Rights_Native_Citiziens }
+		prerequisite = { focus = CAN_the_steele_man }
 
 		completion_reward = {
 		CAN = {
@@ -3389,53 +3514,108 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_British_Columbia_For_Railway
-		icon = GFX_goal_generic_improve_relations
-		x = 48
-		y = 13
-		cost = 140
+		id = CAN_the_dominion_wins
+		icon = placeholder # GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 1
+		relative_position_id = CAN_More_Rights_English_Settlers
+		cost = 70
 
 		ai_will_do = {
-			factor = 100
+			factor = 10
 		}
 
-		available = {
-			is_subject_of = ENG
-		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		prerequisite = { focus = CAN_More_Rights_English_Settlers focus = CAN_Protect_Rights_Native_Citiziens }
+		# available = {
+		# has_completed_focus = CAN_Modernizing_Infrastructure
+		# has_completed_focus = CAN_John_Macdonald_Prime_Minister
+		# }
 
-		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = CAN_John_Macdonald_Prime_Minister
-				}
-				activate_decision = CAN_mission_Build_Railway_1
-			}
-			if = {
-				limit = {
-					has_completed_focus = CAN_George_Etrienne_Prime_Minister
-					has_completed_focus = CAN_George_Brown_Prime_Minister
-				}
-				activate_decision = CAN_mission_Build_Railway_2
-			}
+		prerequisite = { focus = CAN_More_Rights_English_Settlers }
 
-			hidden_effect = {
-				CAN = {
-					news_event = {
-						id = britishcanada.60
-						days = 1
-					}
-				}
-			}
-		}
+		# completion_reward = {
+		# 	add_ideas = CAN_pacific_railway
+		# }
 	}
+
+	focus = {
+		id = CAN_resistance_holds_out
+		icon = placeholder # GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+		relative_position_id = CAN_More_Rights_English_Settlers
+		cost = 70
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		# available = {
+		# has_completed_focus = CAN_Modernizing_Infrastructure
+		# has_completed_focus = CAN_John_Macdonald_Prime_Minister
+		# }
+
+		prerequisite = { focus = CAN_More_Rights_English_Settlers }
+
+		# completion_reward = {
+		# 	add_ideas = CAN_pacific_railway
+		# }
+	}
+
+	# focus = {
+	# 	id = CAN_British_Columbia_For_Railway
+	# 	icon = GFX_goal_generic_improve_relations
+	# 	x = 48
+	# 	y = 20
+	# 	cost = 140
+
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+
+	# 	available = {
+	# 		is_subject_of = ENG
+	# 	}
+
+	# 	prerequisite = { focus = CAN_More_Rights_English_Settlers 
+	# 		# focus = CAN_Protect_Rights_Native_Citiziens 
+	# 	}
+
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				has_completed_focus = CAN_John_Macdonald_Prime_Minister
+	# 			}
+	# 			activate_decision = CAN_mission_Build_Railway_1
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_completed_focus = CAN_George_Etrienne_Prime_Minister
+	# 				has_completed_focus = CAN_George_Brown_Prime_Minister
+	# 			}
+	# 			activate_decision = CAN_mission_Build_Railway_2
+	# 		}
+
+	# 		hidden_effect = {
+	# 			CAN = {
+	# 				news_event = {
+	# 					id = britishcanada.60
+	# 					days = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = CAN_Create_North_Mounted_Police
 		icon = GFX_focus_secret_rearmament
-		x = 48
-		y = 14
+		x = 0
+		y = 1
+		relative_position_id = CAN_CPR
 		cost = 70
 
 		ai_will_do = {
@@ -3446,7 +3626,7 @@ focus_tree = {
 		is_subject_of = ENG
 		}
 
-		prerequisite = { focus = CAN_British_Columbia_For_Railway }
+		prerequisite = { focus = CAN_CPR }
 
 		completion_reward = {
 		add_stability = 0.02
@@ -3455,10 +3635,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CAN_the_steele_man
+		icon = placeholder # GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = CAN_Create_North_Mounted_Police
+		cost = 70
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		# available = {
+		# has_completed_focus = CAN_Modernizing_Infrastructure
+		# has_completed_focus = CAN_John_Macdonald_Prime_Minister
+		# }
+
+		prerequisite = { focus = CAN_Takeover_Ruperts_Land }
+
+		# completion_reward = {
+		# 	add_ideas = CAN_pacific_railway
+		# }
+	}
+
+	focus = {
 		id = CAN_Peace_Order_Government
 		icon = GFX_goal_generic_neutrality_focus
 		x = 48
-		y = 15
+		y = 19
 		cost = 70
 
 		ai_will_do = {
@@ -3469,7 +3675,7 @@ focus_tree = {
 		is_subject_of = ENG
 		}
 
-		prerequisite = { focus = CAN_Create_North_Mounted_Police }
+		prerequisite = { focus = CAN_the_dominion_wins focus = CAN_resistance_holds_out }
 
 		completion_reward = {
 		add_stability = 0.03
@@ -3480,7 +3686,7 @@ focus_tree = {
 		id = CAN_Treaties_Indigiounes
 		icon = GFX_Focus_Law_Vote_1
 		x = 48
-		y = 16
+		y = 20
 		cost = 140
 
 		ai_will_do = {
@@ -3501,7 +3707,7 @@ focus_tree = {
 		id = CAN_Canada_British_Rule
 		icon = GFX_focus_generic_home_defense
 		x = 48
-		y = 17
+		y = 21
 		cost = 1
 
 		ai_will_do = {
@@ -3519,6 +3725,177 @@ focus_tree = {
 
 		completion_reward = {
 		custom_effect_tooltip = CAN_END
+		}
+	}
+
+	focus = {
+		id = CAN_focus_klondike_gold_rush
+		icon = placeholder # 
+		x = -7
+		y = 1
+		relative_position_id = CAN_Takeover_Ruperts_Land
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = CAN_Takeover_Ruperts_Land
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = CAN_focus_american_interests
+		icon = placeholder # 
+		x = -1
+		y = 1
+		relative_position_id = CAN_focus_klondike_gold_rush
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = CAN_focus_klondike_gold_rush
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CAN_focus_nwmp_expansion
+		icon = placeholder # 
+		x = 1
+		y = 1
+		relative_position_id = CAN_focus_klondike_gold_rush
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = CAN_focus_klondike_gold_rush
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CAN_focus_send_steele_klondike
+		icon = placeholder # 
+		x = 0
+		y = 2
+		relative_position_id = CAN_focus_klondike_gold_rush
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = CAN_focus_american_interests
+		}
+		prerequisite = {
+			focus = CAN_focus_nwmp_expansion
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CAN_focus_legacy_hudson_bay
+		icon = placeholder # 
+		x = 3
+		y = 1
+		relative_position_id = CAN_focus_klondike_gold_rush
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = CAN_focus_klondike_gold_rush
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CAN_focus_expand_trading_post_network
+		icon = placeholder # 
+		x = 0
+		y = 1
+		relative_position_id = CAN_focus_legacy_hudson_bay
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = CAN_focus_legacy_hudson_bay
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CAN_focus_hudson_bay_store
+		icon = placeholder 
+		x = 0
+		y = 1
+		relative_position_id = CAN_focus_expand_trading_post_network
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = CAN_focus_expand_trading_post_network
+		}
+
+		completion_reward = {
+			
 		}
 	}
 
@@ -5830,7 +6207,7 @@ focus_tree = {
 		id = CAN_Independent_Canada
 		icon = GFX_focus_rom_abdicate
 		x = 70
-		y = 17
+		y = 21
 		cost = 35
 
 		ai_will_do = {
@@ -5857,7 +6234,7 @@ focus_tree = {
 		id = CAN_Independent_Failed
 		icon = GFX_focus_CZE_german_puppet
 		x = 72
-		y = 17
+		y = 21
 		cost = 35
 
 		ai_will_do = {
