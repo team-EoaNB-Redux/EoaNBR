@@ -1,72 +1,80 @@
-#!gfx:interface\eoanbr_technologies.gfx
+#!gfx:interface\eoanbr\eoanbr_technologies.gfx
 #!localisation:localisation\_eoanbr_technologies_l_english.yml
 #do not delete above line!!!!!!
 
 technologies = {
 
-	#Years (x-axis)
-	@1800 = 0
-	@1850 = 3
-	@1857 = 6
-	@1860 = 9
-	@1862 = 12
-	@1865 = 15
-	@1868 = 18
-	@1870 = 21
-	@1871 = 22
-	@1872 = 23
-	@1873 = 24
-	@1874 = 25
-	@1875 = 26
-	@1876 = 27
-	@1877 = 28
-	@1878 = 29
-	@1879 = 30
-	@1880 = 32
-	@1881 = 33
-	@1883 = 35
-	@1884 = 36
-	@1885 = 37
-	@1887 = 39
-	@1888 = 40
-	@1889 = 41
-	@1890 = 42
-	@1893 = 44
-	@1895 = 44.67 #i hope this angers everyones OCD # i'm more angered by the fact that this shows up *after* the 1915 ships - Ormr1
-	@1896 = 45
-	@1900 = 48
-	@1902 = 49
-	@1905 = 51
-	@1908 = 54
-	@1910 = 57
-	@1914 = 60
-	@1915 = 63
-	@1916 = 67
-	@1918 = 71
-	@1922 = 75
-	@1935 = 79
-	@1940 = 83
-	@1944 = 87
-	@1950 = 91
-	@1955 = 95
-	@1960 = 99
-	@1970 = 103
-	@1975 = 107
-	@1980 = 111
-	@1985 = 115
-	@1990 = 119
-	@1995 = 123
-	@2000 = 127
-	@2005 = 131
-	@2010 = 135
-	@2015 = 139
-	@2020 = 143
-	@2025 = 147
-	@2030 = 151
-	@2035 = 155
-	@2040 = 159
-	@2045 = 163
-	@2050 = 167
+	#### Years ####
+		@1840 = 2
+		@1850 = 5
+		@1860 =	8
+		@1865 = 11
+		@1868 = 14
+		@1870 = 15
+		@1872 = 16
+		@1875 = 18
+		@1880 = 21
+		@1885 = 24
+		@1890 = 28
+		@1895 = 31
+		@1900 = 34
+		@1905 = 38
+		@1910 = 41
+		@1915 = 44
+		@1920 = 48
+		@1925 = 51
+		@1930 = 54
+		@1935 = 57
+		@1940 = 61
+		@1945 = 64
+		@1950 = 67
+		@1955 = 70
+		@1960 = 74
+		@1965 = 77
+		@1970 = 80
+		@1975 = 83
+		@1980 = 86
+		@1985 = 90
+		@1990 = 93
+		@1995 = 96
+		@2000 = 99
+		@2005 = 102
+		@2010 = 106
+		@2015 = 109
+		@2020 = 112
+		@2025 = 115
+		@2030 = 118
+		@2035 = 121
+		@2040 = 125
+		@2045 = 128
+		@2050 = 131
+		@2055 = 134
+		@2060 = 137
+	#
+	#### Categories ####
+		@torpedo_boat = 1
+		@torpedo_boat_module = 4
+		@corvette = 1
+		@corvette_module = 4
+		@destroyer_module = 6
+		@destroyer = 9
+		@monitor = 13
+		@monitor_module = 16
+		@gunboat_module = 16
+		@gunboat = 19
+		@intermediate_cruiser = 23
+		@intermediate_cruiser_module = 26
+		@cruiser_module = 26
+		@cruiser = 29
+		@ironclad = 31
+		@lineship = 33
+		@dreadnought = 33
+		@dreadnought_module = 36
+		@carrier_module = 39
+		@carrier = 42
+		@submarine = 46
+		@submarine_module = 49
+	#
 
 	#General Labeling (y-axis)
 	#0 - Reserved Space
@@ -100,9 +108,9 @@ technologies = {
 	#64 - Propulsion Energy
 	@anti_mine=66 #58 - Anti-Mine Warfare
 	@mines=68 #60 - Mines
-	@torpedos=70 #62 - Torpedoes
-	@torpedo_tech=72 #64 - Torpedo Technology
-	@special_torpedo_tech=74 #66 - Detonators and Special Torpedoes
+	@torpedo_boats=70 #62 - Torpedoes
+	@torpedo_boat_tech=72 #64 - Torpedo Technology
+	@special_torpedo_boat_tech=74 #66 - Detonators and Special Torpedoes
 	@fire_control_system = 76 #68 - Fire Control
 	@fire_control_tech = 78 #70 - Fire Control Technology
 	@damage_control = 80 #72 - Damage Control
@@ -124,7 +132,7 @@ technologies = {
 
 	#List of all naval units with ID:
 	#battle_cruiser, battleship, carrier, coastal_submarine, corvette, cruiser, destroyer, dreadnought, frigate, gunboat,
-	#heavy_cruiser, ironclad, light_cruiser, lineship, monitor, primitive_rowboat, primitive_sailing_boat, submarine, torpedo_boat
+	#heavy_cruiser, ironclad, light_cruiser, lineship, monitor, primitive_rowboat, primitive_sailing_boat, submarine, torpedo
 
 	#Targetable (for modifiers):
 	#Individual Unit IDs
@@ -159,10 +167,10 @@ technologies = {
 		}
 
 		research_cost = 0.15
-		start_year = 1800
+		start_year = 1840
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1800 }
+			position = { x = @gunboat y = @1840 }
 		}
 
 		categories = {
@@ -211,7 +219,7 @@ technologies = {
 		start_year = 1850
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1850 }
+			position = { x = @gunboat y = @1850 }
 		}
 
 		categories = {
@@ -256,7 +264,7 @@ technologies = {
 		start_year = 1860
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1860 }
+			position = { x = @gunboat y = @1860 }
 		}
 
 		categories = {
@@ -307,7 +315,7 @@ technologies = {
 		start_year = 1860
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 16 y = @1860 }
+			position = { x = @gunboat_module y = @1860 }
 		}
 
 		categories = {
@@ -363,7 +371,7 @@ technologies = {
 		start_year = 1868
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1868 }
+			position = { x = @gunboat y = @1868 }
 		}
 
 		categories = {
@@ -425,7 +433,7 @@ technologies = {
 		start_year = 1875
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 17 y = @1875 }
+			position = { x = @gunboat y = @1875 }
 		}
 
 		categories = {
@@ -487,7 +495,7 @@ technologies = {
 	# 	start_year = 1884
 	# 	folder = {
 	# 		name = mtg_capital_folder
-	# 		position = { x = 14 y = @1884 }
+	# 		position = { x = @gunboat y = @1884 }
 	# 	}
 
 	# 	categories = {
@@ -546,7 +554,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1890 }
+			position = { x = @gunboat y = @1890 }
 		}
 
 		categories = {
@@ -599,7 +607,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 16 y = @1890 }
+			position = { x = @gunboat_module y = @1890 }
 		}
 
 		categories = {
@@ -659,7 +667,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1905 }
+			position = { x = @gunboat y = @1905 }
 		}
 
 		categories = {
@@ -712,7 +720,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 16 y = @1905 }
+			position = { x = @gunboat_module y = @1905 }
 		}
 
 		categories = {
@@ -767,7 +775,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1914 }
+			position = { x = @gunboat y = @1915 }
 		}
 
 		categories = {
@@ -825,7 +833,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1935 }
+			position = { x = @gunboat y = @1935 }
 		}
 
 		categories = {
@@ -884,7 +892,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1950 }
+			position = { x = @gunboat y = @1950 }
 		}
 
 		categories = {
@@ -931,7 +939,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1970 }
+			position = { x = @gunboat y = @1970 }
 		}
 
 		categories = {
@@ -978,7 +986,7 @@ technologies = {
 		start_year = 1986
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @1985 }
+			position = { x = @gunboat y = @1985 }
 		}
 
 		categories = {
@@ -1027,7 +1035,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @2000 }
+			position = { x = @gunboat y = @2000 }
 		}
 
 		categories = {
@@ -1076,7 +1084,7 @@ technologies = {
 		start_year = 2010
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @2010 }
+			position = { x = @gunboat y = @2010 }
 		}
 
 		categories = {
@@ -1125,7 +1133,7 @@ technologies = {
 		start_year = 2020
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @2020 }
+			position = { x = @gunboat y = @2020 }
 		}
 
 		categories = {
@@ -1172,7 +1180,7 @@ technologies = {
 		start_year = 2030
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @2030 }
+			position = { x = @gunboat y = @2030 }
 		}
 
 		categories = {
@@ -1219,7 +1227,7 @@ technologies = {
 		start_year = 2040
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @2040 }
+			position = { x = @gunboat y = @2040 }
 		}
 
 		categories = {
@@ -1266,7 +1274,7 @@ technologies = {
 		start_year = 2050
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 14 y = @2050 }
+			position = { x = @gunboat y = @2050 }
 		}
 
 		categories = {
@@ -1310,7 +1318,7 @@ technologies = {
 		start_year = 1862
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1862 }
+			position = { x = @monitor y = @1865 }
 		}
 
 		dependencies = {
@@ -1376,7 +1384,7 @@ technologies = {
 		start_year = 1870
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1870 }
+			position = { x = @monitor y = @1870 }
 		}
 
 		dependencies = {
@@ -1431,7 +1439,7 @@ technologies = {
 		start_year = 1870
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 12 y = @1870 }
+			position = { x = @monitor_module y = @1870 }
 		}
 
 		categories = {
@@ -1485,7 +1493,7 @@ technologies = {
 		start_year = 1880
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1880 }
+			position = { x = @monitor y = @1880 }
 		}
 
 		categories = {
@@ -1536,7 +1544,7 @@ technologies = {
 		start_year = 1880
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 12 y = @1880 }
+			position = { x = @monitor_module y = @1880 }
 		}
 
 		categories = {
@@ -1585,7 +1593,7 @@ technologies = {
 		start_year = 1896
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1896 }
+			position = { x = @monitor y = @1895 }
 		}
 
 		categories = {
@@ -1647,7 +1655,7 @@ technologies = {
 		start_year = 1908
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1908 }
+			position = { x = @monitor y = @1910 }
 		}
 
 		categories = {
@@ -1698,7 +1706,7 @@ technologies = {
 		start_year = 1908
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 12 y = @1908 }
+			position = { x = @monitor_module y = @1910 }
 		}
 
 		categories = {
@@ -1757,7 +1765,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1914 }
+			position = { x = @monitor y = @1920 }
 		}
 
 		categories = {
@@ -1813,7 +1821,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1922 }
+			position = { x = @monitor y = @1925 }
 		}
 
 		categories = {
@@ -1865,7 +1873,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 12 y = @1922 }
+			position = { x = @monitor_module y = @1925 }
 		}
 
 		categories = {
@@ -1913,7 +1921,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1944 }
+			position = { x = @monitor y = @1945 }
 		}
 
 		categories = {
@@ -1965,7 +1973,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1960 }
+			position = { x = @monitor y = @1960 }
 		}
 
 		categories = {
@@ -2016,7 +2024,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1980 }
+			position = { x = @monitor y = @1980 }
 		}
 
 		categories = {
@@ -2060,15 +2068,11 @@ technologies = {
 			ship_hull_monitor_10
 		}
 
-		path = {
-			leads_to_tech = tech_naval_mtg_2000_gunboat
-			research_cost_coeff = 1
-		}
 		research_cost = 0.135
 		start_year = 1995
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 10 y = @1995 }
+			position = { x = @monitor y = @1995 }
 		}
 
 		categories = {
@@ -2118,10 +2122,10 @@ technologies = {
 		}
 
 		research_cost = 0.12
-		start_year = 1800
+		start_year = 1840
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1800 }
+			position = { x = @corvette y = @1840 }
 		}
 
 		categories = {
@@ -2161,10 +2165,10 @@ technologies = {
 		}
 
 		research_cost = 0.125
-		start_year = 1857
+		start_year = 1850
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1857 }
+			position = { x = @corvette y = @1850 }
 		}
 
 		categories = {
@@ -2207,7 +2211,7 @@ technologies = {
 		start_year = 1860
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1860 }
+			position = { x = @corvette y = @1860 }
 		}
 
 		categories = {
@@ -2252,10 +2256,6 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = tech_naval_mtg_early_torpedo_boat
-			research_cost_coeff = 1
-		}
-		path = {
 			leads_to_tech = tech_naval_mtg_iron_corvette_hull
 			research_cost_coeff = 1
 		}
@@ -2267,7 +2267,7 @@ technologies = {
 		start_year = 1868
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1868 }
+			position = { x = @corvette y = @1868 }
 		}
 
 		categories = {
@@ -2311,8 +2311,13 @@ technologies = {
 			ship_hull_corvette_4
 		}
 
+		# path = {
+		# 	leads_to_tech = tech_naval_mtg_steel_corvette_hull
+		# 	research_cost_coeff = 1
+		# }
+		
 		path = {
-			leads_to_tech = tech_naval_mtg_steel_corvette_hull
+			leads_to_tech = tech_naval_mtg_early_torpedo_boat
 			research_cost_coeff = 1
 		}
 		dependencies = {
@@ -2323,7 +2328,7 @@ technologies = {
 		start_year = 1872
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1872 }
+			position = { x = @corvette y = @1872 }
 		}
 
 		categories = {
@@ -2375,7 +2380,7 @@ technologies = {
 	# 	start_year = 1877
 	# 	folder = {
 	# 		name = mtg_capital_folder
-	# 		position = { x = 5 y = @1877 }
+	# 		position = { x = @corvette y = @1877 }
 	# 	}
 
 	# 	categories = {
@@ -2428,7 +2433,7 @@ technologies = {
 		start_year = 1875
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 1 y = @1875 }
+			position = { x = @torpedo_boat y = @1875 }
 		}
 
 		categories = {
@@ -2487,7 +2492,7 @@ technologies = {
 		start_year = 1884
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 1 y = @1884 }
+			position = { x = @torpedo_boat y = @1885 }
 		}
 
 		categories = {
@@ -2557,7 +2562,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1890 }
+			position = { x = @destroyer y = @1890 }
 		}
 
 		categories = {
@@ -2609,7 +2614,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = @1890 }
+			position = { x = @destroyer_module y = @1890 }
 		}
 
 		categories = {
@@ -2671,7 +2676,7 @@ technologies = {
 		start_year = 1900
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1900 }
+			position = { x = @destroyer y = @1900 }
 		}
 
 		categories = {
@@ -2722,7 +2727,7 @@ technologies = {
 		start_year = 1900
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = @1900 }
+			position = { x = @destroyer_module y = @1900 }
 		}
 
 		categories = {
@@ -2784,7 +2789,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1910 }
+			position = { x = @destroyer y = @1910 }
 		}
 
 		categories = {
@@ -2836,7 +2841,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = @1910 }
+			position = { x = @destroyer_module y = @1910 }
 		}
 
 		categories = {
@@ -2889,7 +2894,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1914 }
+			position = { x = @destroyer y = @1920 }
 		}
 
 		categories = {
@@ -2954,7 +2959,7 @@ technologies = {
 		start_year = 1916
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1916 }
+			position = { x = @destroyer y = @1920 }
 		}
 
 		categories = {
@@ -3005,7 +3010,7 @@ technologies = {
 		start_year = 1916
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = @1916 }
+			position = { x = @destroyer_module y = @1920 }
 		}
 
 		categories = {
@@ -3069,7 +3074,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1922 }
+			position = { x = @destroyer y = @1925 }
 		}
 
 		categories = {
@@ -3117,7 +3122,7 @@ technologies = {
 
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = 76 }
+			position = { x = @torpedo_boat_module y = @1925 }
 		}
 
 		ai_will_do = {
@@ -3159,7 +3164,7 @@ technologies = {
 
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = 78 }
+			position = { x = @destroyer_module y = @1925 }
 		}
 
 		ai_will_do = {
@@ -3200,7 +3205,7 @@ technologies = {
 
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = @1935 }
+			position = { x = @destroyer_module y = @1935 }
 		}
 
 		ai_will_do = {
@@ -3244,7 +3249,7 @@ technologies = {
 
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = @1940 }
+			position = { x = @destroyer_module y = @1940 }
 		}
 
 		ai_will_do = {
@@ -3285,7 +3290,7 @@ technologies = {
 
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = @1944 }
+			position = { x = @destroyer_module y = @1945 }
 		}
 
 		ai_will_do = {
@@ -3332,7 +3337,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1935 }
+			position = { x = @destroyer y = @1935 }
 		}
 
 		categories = {
@@ -3393,7 +3398,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1940 }
+			position = { x = @destroyer y = @1940 }
 		}
 
 		categories = {
@@ -3454,7 +3459,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1944 }
+			position = { x = @destroyer y = @1945 }
 		}
 
 		categories = {
@@ -3505,7 +3510,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 7 y = @1960 }
+			position = { x = @destroyer_module y = @1960 }
 		}
 
 		categories = {
@@ -3562,7 +3567,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1950 }
+			position = { x = @destroyer y = @1950 }
 		}
 
 		categories = {
@@ -3628,7 +3633,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1960 }
+			position = { x = @destroyer y = @1960 }
 		}
 
 		categories = {
@@ -3689,7 +3694,7 @@ technologies = {
 		start_year = 1975
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1975 }
+			position = { x = @destroyer y = @1975 }
 		}
 
 		categories = {
@@ -3750,7 +3755,7 @@ technologies = {
 		start_year = 1985
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @1985 }
+			position = { x = @destroyer y = @1985 }
 		}
 
 		categories = {
@@ -3811,7 +3816,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @2000 }
+			position = { x = @destroyer y = @2000 }
 		}
 
 		categories = {
@@ -3872,7 +3877,7 @@ technologies = {
 		start_year = 2005
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @2005 }
+			position = { x = @destroyer y = @2005 }
 		}
 
 		categories = {
@@ -3933,7 +3938,7 @@ technologies = {
 		start_year = 2020
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @2020 }
+			position = { x = @destroyer y = @2020 }
 		}
 
 		categories = {
@@ -3994,7 +3999,7 @@ technologies = {
 		start_year = 2030
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @2030 }
+			position = { x = @destroyer y = @2030 }
 		}
 
 		categories = {
@@ -4052,7 +4057,7 @@ technologies = {
 		start_year = 2045
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 5 y = @2045 }
+			position = { x = @destroyer y = @2045 }
 		}
 
 		categories = {
@@ -4116,7 +4121,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 1 y = @1890 }
+			position = { x = @torpedo_boat y = @1890 }
 		}
 
 		categories = {
@@ -4167,7 +4172,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 3 y = @1890 }
+			position = { x = @torpedo_boat_module y = @1890 }
 		}
 
 		categories = {
@@ -4225,7 +4230,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 1 y = @1905 }
+			position = { x = @torpedo_boat y = @1905 }
 		}
 
 		categories = {
@@ -4276,7 +4281,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 3 y = @1905 }
+			position = { x = @torpedo_boat_module y = @1905 }
 		}
 
 		categories = {
@@ -4330,7 +4335,7 @@ technologies = {
 		start_year = 1915
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 1 y = @1915 }
+			position = { x = @torpedo_boat y = @1915 }
 		}
 
 		categories = {
@@ -4381,7 +4386,7 @@ technologies = {
 		start_year = 1915
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 3 y = @1915 }
+			position = { x = @torpedo_boat_module y = @1915 }
 		}
 
 		categories = {
@@ -4431,10 +4436,10 @@ technologies = {
 		}
 
 		research_cost = 0.125
-		start_year = 1800
+		start_year = 1840
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1800 }
+			position = { x = @cruiser y = @1840 }
 		}
 
 		categories = {
@@ -4473,16 +4478,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = ironclad_frigate
-			research_cost_coeff = 1
-		}
-
 		research_cost = 0.12
 		start_year = 1850
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1850 }
+			position = { x = @cruiser y = @1850 }
 		}
 
 		categories = {
@@ -4530,7 +4530,7 @@ technologies = {
 		start_year = 1860
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1860 }
+			position = { x = @ironclad y = @1860 }
 		}
 
 		categories = {
@@ -4587,7 +4587,7 @@ technologies = {
 		start_year = 1865
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1865 }
+			position = { x = @ironclad y = @1865 }
 		}
 
 		categories = {
@@ -4640,11 +4640,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		# path = {
-		# 	leads_to_tech = tech_naval_mtg_protected_cruisers
-		# 	research_cost_coeff = 1
-		# }
-
 		path = {
 			leads_to_tech = tech_naval_mtg_1874_armored_cruiser
 			research_cost_coeff = 1
@@ -4659,7 +4654,7 @@ technologies = {
 		start_year = 1870
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1870 }
+			position = { x = @ironclad y = @1870 }
 		}
 
 		categories = {
@@ -4720,7 +4715,7 @@ technologies = {
 		start_year = 1875
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1875 }
+			position = { x = @dreadnought y = @1875 }
 		}
 
 		categories = {
@@ -4801,7 +4796,7 @@ technologies = {
 		start_year = 1880
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1880 }
+			position = { x = @dreadnought y = @1880 }
 		}
 
 		categories = {
@@ -4862,7 +4857,7 @@ technologies = {
 		start_year = 1885
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1885 }
+			position = { x = @dreadnought y = @1885 }
 		}
 
 		categories = {
@@ -4922,11 +4917,6 @@ technologies = {
 		# }
 
 		path = {
-			leads_to_tech = tech_naval_mtg_1890_gunboat
-			research_cost_coeff = 1
-		}
-
-		path = {
 			leads_to_tech = tech_naval_mtg_small_intermediate_cruiser_2
 			research_cost_coeff = 1
 		}
@@ -4935,7 +4925,7 @@ technologies = {
 		start_year = 1877
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1877 }
+			position = { x = @intermediate_cruiser y = @1880 }
 		}
 
 		categories = {
@@ -4996,11 +4986,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = tech_naval_mtg_1890_gunboat
+			research_cost_coeff = 1
+		}
+
 		research_cost = 0.125
 		start_year = 1883
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1883 }
+			position = { x = @intermediate_cruiser y = @1885 }
 		}
 
 		categories = {
@@ -5065,7 +5060,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1890 }
+			position = { x = @intermediate_cruiser y = @1890 }
 		}
 
 		categories = {
@@ -5127,10 +5122,10 @@ technologies = {
 		}
 
 		research_cost = 0.125
-		start_year = 1896
+		start_year = 1895
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1896 }
+			position = { x = @intermediate_cruiser y = @1895 }
 		}
 
 		categories = {
@@ -5195,7 +5190,7 @@ technologies = {
 		start_year = 1902
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1902 }
+			position = { x = @intermediate_cruiser y = @1905 }
 		}
 
 		categories = {
@@ -5259,7 +5254,7 @@ technologies = {
 	# 	start_year = 1875
 	# 	folder = {
 	# 		name = mtg_capital_folder
-	# 		position = { x = 20 y = @1875 }
+	# 		position = { x = @intermediate_cruiser y = @1875 }
 	# 	}
 
 	# 	categories = {
@@ -5316,7 +5311,7 @@ technologies = {
 	# 	start_year = 1887
 	# 	folder = {
 	# 		name = mtg_capital_folder
-	# 		position = { x = 20 y = @1887 }
+	# 		position = { x = @intermediate_cruiser y = @1887 }
 	# 	}
 
 	# 	categories = {
@@ -5368,7 +5363,7 @@ technologies = {
 	# 	start_year = 1895
 	# 	folder = {
 	# 		name = mtg_capital_folder
-	# 		position = { x = 20 y = @1895 }
+	# 		position = { x = @intermediate_cruiser y = @1895 }
 	# 	}
 
 	# 	categories = {
@@ -5413,7 +5408,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = tech_naval_mtg_1880_protected_cruisers
+			leads_to_tech = tech_naval_mtg_1887_protected_cruisers
 			research_cost_coeff = 1
 		}
 
@@ -5421,7 +5416,7 @@ technologies = {
 		start_year = 1881
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1881 }
+			position = { x = @cruiser y = @1880 }
 		}
 
 		categories = {
@@ -5459,7 +5454,7 @@ technologies = {
 		}
 	}
 
-	tech_naval_mtg_1880_protected_cruisers = {
+	tech_naval_mtg_1887_protected_cruisers = {
 
 		enable_equipments = {
 			ship_hull_intermediate_large_2
@@ -5485,7 +5480,7 @@ technologies = {
 		start_year = 1887
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1887 }
+			position = { x = @cruiser y = @1885 }
 		}
 
 		categories = {
@@ -5546,7 +5541,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1890 }
+			position = { x = @cruiser y = @1890 }
 		}
 
 		categories = {
@@ -5608,7 +5603,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1905 }
+			position = { x = @cruiser y = @1905 }
 		}
 
 		categories = {
@@ -5659,7 +5654,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 26 y = @1905 }
+			position = { x = @cruiser_module y = @1905 }
 		}
 
 		categories = {
@@ -5707,10 +5702,6 @@ technologies = {
 			leads_to_tech = tech_naval_mtg_1915_cruiser_hull
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = tech_naval_mtg_1914_carrier_hull
-			research_cost_coeff = 1
-		}
 
 		path = {
 			leads_to_tech = tech_naval_mtg_cruiser_hull_engineering_1
@@ -5726,7 +5717,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1910 }
+			position = { x = @cruiser y = @1910 }
 		}
 
 		categories = {
@@ -5777,7 +5768,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 26 y = @1910 }
+			position = { x = @cruiser_module y = @1910 }
 		}
 
 		categories = {
@@ -5839,7 +5830,7 @@ technologies = {
 		start_year = 1915
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1915 }
+			position = { x = @cruiser y = @1915 }
 		}
 
 		categories = {
@@ -5890,7 +5881,7 @@ technologies = {
 		start_year = 1915
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 26 y = @1915 }
+			position = { x = @cruiser_module y = @1915 }
 		}
 
 		categories = {
@@ -5952,7 +5943,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1918 }
+			position = { x = @cruiser y = @1920 }
 		}
 
 		categories = {
@@ -6003,7 +5994,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 26 y = @1918 }
+			position = { x = @cruiser_module y = @1920 }
 		}
 
 		categories = {
@@ -6059,7 +6050,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1918 }
+			position = { x = @intermediate_cruiser_module y = @1920 }
 		}
 
 		categories = {
@@ -6104,7 +6095,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1922 }
+			position = { x = @intermediate_cruiser y = @1925 }
 		}
 
 		categories = {
@@ -6161,7 +6152,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1922 }
+			position = { x = @cruiser y = @1925 }
 		}
 
 		categories = {
@@ -6212,7 +6203,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 26 y = @1922 }
+			position = { x = @cruiser_module y = @1925 }
 		}
 
 		categories = {
@@ -6270,7 +6261,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1935 }
+			position = { x = @cruiser y = @1935 }
 		}
 
 		categories = {
@@ -6330,7 +6321,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1935 }
+			position = { x = @cruiser_module y = @1935 }
 		}
 
 		categories = {
@@ -6381,7 +6372,7 @@ technologies = {
 		start_year = 1916
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1916 }
+			position = { x = @intermediate_cruiser_module y = @1915 }
 		}
 
 		categories = {
@@ -6428,7 +6419,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1940 }
+			position = { x = @cruiser_module y = @1940 }
 		}
 
 		path = {
@@ -6484,12 +6475,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 20 y = @1944 }
-		}
-
-		path = {
-			leads_to_tech = tech_naval_mtg_150_60_mm_armor
-			research_cost_coeff = 1
+			position = { x = @cruiser_module y = @1945 }
 		}
 
 		categories = {
@@ -6542,7 +6528,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1940 }
+			position = { x = @cruiser y = @1940 }
 		}
 
 		categories = {
@@ -6599,7 +6585,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1944 }
+			position = { x = @cruiser y = @1945 }
 		}
 
 		categories = {
@@ -6656,7 +6642,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1950 }
+			position = { x = @cruiser y = @1950 }
 		}
 
 		categories = {
@@ -6713,7 +6699,7 @@ technologies = {
 		start_year = 1955
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1955 }
+			position = { x = @cruiser y = @1955 }
 		}
 
 		categories = {
@@ -6770,7 +6756,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1960 }
+			position = { x = @cruiser y = @1960 }
 		}
 
 		categories = {
@@ -6827,7 +6813,7 @@ technologies = {
 		start_year = 1975
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1975 }
+			position = { x = @cruiser y = @1975 }
 		}
 
 		categories = {
@@ -6884,7 +6870,7 @@ technologies = {
 		start_year = 1985
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1985 }
+			position = { x = @cruiser y = @1985 }
 		}
 
 		categories = {
@@ -6941,7 +6927,7 @@ technologies = {
 		start_year = 1995
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @1995 }
+			position = { x = @cruiser y = @1995 }
 		}
 
 		categories = {
@@ -6998,7 +6984,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @2000 }
+			position = { x = @cruiser y = @2000 }
 		}
 
 		categories = {
@@ -7055,7 +7041,7 @@ technologies = {
 		start_year = 2010
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @2010 }
+			position = { x = @cruiser y = @2010 }
 		}
 
 		categories = {
@@ -7112,7 +7098,7 @@ technologies = {
 		start_year = 2020
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @2020 }
+			position = { x = @cruiser y = @2020 }
 		}
 
 		categories = {
@@ -7169,7 +7155,7 @@ technologies = {
 		start_year = 2030
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @2030 }
+			position = { x = @cruiser y = @2030 }
 		}
 
 		categories = {
@@ -7226,7 +7212,7 @@ technologies = {
 		start_year = 2040
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @2040 }
+			position = { x = @cruiser y = @2040 }
 		}
 
 		categories = {
@@ -7278,7 +7264,7 @@ technologies = {
 		start_year = 2045
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 24 y = @2045 }
+			position = { x = @cruiser y = @2045 }
 		}
 
 		categories = {
@@ -7331,10 +7317,10 @@ technologies = {
 		}
 
 		research_cost = 0.15
-		start_year = 1800
+		start_year = 1840
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 32 y = @1800 }
+			position = { x = @lineship y = @1840 }
 		}
 
 		categories = {
@@ -7392,7 +7378,7 @@ technologies = {
 		start_year = 1857
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 32 y = @1857 }
+			position = { x = @lineship y = @1850 }
 		}
 
 		categories = {
@@ -7444,7 +7430,7 @@ technologies = {
 		start_year = 1873
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 26 y = @1874 }
+			position = { x = @cruiser y = @1875 }
 		}
 
 		categories = {
@@ -7501,7 +7487,7 @@ technologies = {
 	# 	start_year = 1888
 	# 	folder = {
 	# 		name = mtg_capital_folder
-	# 		position = { x = 26 y = @1888 }
+	# 		position = { x = @cruiser y = @1888 }
 	# 	}
 
 	# 	categories = {
@@ -7558,7 +7544,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1890 }
+			position = { x = @dreadnought y = @1890 }
 		}
 
 		categories = {
@@ -7616,7 +7602,7 @@ technologies = {
 		start_year = 1900
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1900 }
+			position = { x = @dreadnought y = @1900 }
 		}
 
 		categories = {
@@ -7677,7 +7663,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1905 }
+			position = { x = @dreadnought y = @1905 }
 		}
 
 		categories = {
@@ -7738,7 +7724,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1910 }
+			position = { x = @dreadnought y = @1910 }
 		}
 
 		categories = {
@@ -7785,7 +7771,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1914 }
+			position = { x = @dreadnought y = @1915 }
 		}
 
 		categories = {
@@ -7832,7 +7818,7 @@ technologies = {
 		start_year = 1916
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1916 }
+			position = { x = @dreadnought y = @1920 }
 		}
 
 		categories = {
@@ -7870,11 +7856,6 @@ technologies = {
 			ship_engine_dreadnought_5
 		}
 		path = {
-			leads_to_tech = tech_naval_mtg_inclined_armor
-			research_cost_coeff = 1
-		}
-
-		path = {
 			leads_to_tech = tech_naval_mtg_1922_battleship_hull
 			research_cost_coeff = 1
 		}
@@ -7883,7 +7864,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1918 }
+			position = { x = @dreadnought y = @1925 }
 		}
 
 		categories = {
@@ -7941,7 +7922,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 34 y = @1935 }
+			position = { x = @dreadnought_module y = @1935 }
 		}
 
 		categories = {
@@ -8000,7 +7981,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 34 y = @1940 }
+			position = { x = @dreadnought_module y = @1940 }
 		}
 
 		categories = {
@@ -8048,12 +8029,17 @@ technologies = {
 			leads_to_tech = tech_naval_mtg_1935_battleship_hull
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_naval_mtg_inclined_armor
+			research_cost_coeff = 1
+		}
+
 
 		research_cost = 0.12
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1922 }
+			position = { x = @dreadnought y = @1930 }
 		}
 
 		categories = {
@@ -8100,7 +8086,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1935 }
+			position = { x = @dreadnought y = @1935 }
 		}
 
 		categories = {
@@ -8146,7 +8132,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1940 }
+			position = { x = @dreadnought y = @1940 }
 		}
 
 		categories = {
@@ -8193,7 +8179,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1944 }
+			position = { x = @dreadnought y = @1945 }
 		}
 
 		categories = {
@@ -8240,7 +8226,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1950 }
+			position = { x = @dreadnought y = @1950 }
 		}
 
 		categories = {
@@ -8287,7 +8273,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1970 }
+			position = { x = @dreadnought y = @1970 }
 		}
 
 		categories = {
@@ -8334,7 +8320,7 @@ technologies = {
 		start_year = 1985
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @1985 }
+			position = { x = @dreadnought y = @1985 }
 		}
 
 		categories = {
@@ -8381,7 +8367,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @2000 }
+			position = { x = @dreadnought y = @2000 }
 		}
 
 		categories = {
@@ -8429,7 +8415,7 @@ technologies = {
 		start_year = 2020
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @2020 }
+			position = { x = @dreadnought y = @2020 }
 		}
 
 		categories = {
@@ -8473,7 +8459,7 @@ technologies = {
 		start_year = 2030
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @2030 }
+			position = { x = @dreadnought y = @2030 }
 		}
 
 		categories = {
@@ -8511,7 +8497,7 @@ technologies = {
 		start_year = 2045
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 30 y = @2045 }
+			position = { x = @dreadnought y = @2045 }
 		}
 
 		categories = {
@@ -8547,7 +8533,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_engine_submarine_0
-			ship_torpedo_submarine_spar
+			ship_torpedo_boat_submarine_spar
 		}
 
 		path = {
@@ -8563,7 +8549,7 @@ technologies = {
 		start_year = 1868
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1868 }
+			position = { x = @submarine y = @1868 }
 		}
 
 		categories = {
@@ -8624,7 +8610,7 @@ technologies = {
 		start_year = 1890
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1890 }
+			position = { x = @submarine y = @1890 }
 		}
 
 		categories = {
@@ -8685,7 +8671,7 @@ technologies = {
 		start_year = 1900
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1900 }
+			position = { x = @submarine y = @1900 }
 		}
 
 		categories = {
@@ -8723,66 +8709,61 @@ technologies = {
 		}
 	}
 
-	tech_naval_mtg_1900_coastal_submarine_hull = {
+	# tech_naval_mtg_1900_coastal_submarine_hull = {
 
-		enable_equipments = {
-			ship_hull_coastal_submarine_0
-		}
+	# 	enable_equipments = {
+	# 		ship_hull_coastal_submarine_0
+	# 	}
 
-		enable_equipment_modules = {
-			ship_engine_coastal_submarine_0
-		}
+	# 	enable_equipment_modules = {
+	# 		ship_engine_coastal_submarine_0
+	# 	}
 
-		dependencies = {
-			tech_naval_mtg_early_steam_turbines = 1
-		}
+	# 	dependencies = {
+	# 		tech_naval_mtg_early_steam_turbines = 1
+	# 	}
 
-		path = {
-			leads_to_tech = improved_submarine_mine_laying
-			research_cost_coeff = 1
-		}
+	# 	research_cost = 0.1
+	# 	start_year = 1920
+	# 	# folder = {
+	# 	# 	name = mtg_capital_folder
+	# 	# 	position = { x = @submarine_module y = @1925 }
+	# 	# }
 
-		research_cost = 0.1
-		start_year = 1922
-		folder = {
-			name = mtg_capital_folder
-			position = { x = 38 y = @1922 }
-		}
+	# 	categories = {
+	# 		naval_equipment
+	# 		naval_mtg_submarine_ship_tech
+	# 		naval_mtg_coastal_submarine_tech
+	# 		naval_mtg_coastal_submarine_hulls_tech
+	# 	}
 
-		categories = {
-			naval_equipment
-			naval_mtg_submarine_ship_tech
-			naval_mtg_coastal_submarine_tech
-			naval_mtg_coastal_submarine_hulls_tech
-		}
-
-		ai_will_do = {
-			modifier = {
-				factor = 0
-				afr_is_tribal = yes
-				date < 1875.1.1
-			}
-			modifier = { factor = 0.2 num_of_naval_factories < 3 }
-			modifier = { factor = 1.5 is_great_or_secondary_power = yes has_war = no }
-			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no }
-			modifier = { factor = 1.5 has_war = yes }
-			factor = 1
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 5
-			}
-			modifier = {
-				factor = 0
-				date < 1900.1.1
-				NOT = {
-					has_tech_bonus = { category = naval_equipment }
-					has_tech_bonus = { category = naval_mtg_submarine_ship_tech }
-					has_tech_bonus = { category = naval_mtg_coastal_submarine_tech }
-					has_tech_bonus = { category = naval_mtg_coastal_submarine_hulls_tech }
-				}
-			}
-		}
-	}
+	# 	ai_will_do = {
+	# 		modifier = {
+	# 			factor = 0
+	# 			afr_is_tribal = yes
+	# 			date < 1875.1.1
+	# 		}
+	# 		modifier = { factor = 0.2 num_of_naval_factories < 3 }
+	# 		modifier = { factor = 1.5 is_great_or_secondary_power = yes has_war = no }
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no }
+	# 		modifier = { factor = 1.5 has_war = yes }
+	# 		factor = 1
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 5
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			date < 1900.1.1
+	# 			NOT = {
+	# 				has_tech_bonus = { category = naval_equipment }
+	# 				has_tech_bonus = { category = naval_mtg_submarine_ship_tech }
+	# 				has_tech_bonus = { category = naval_mtg_coastal_submarine_tech }
+	# 				has_tech_bonus = { category = naval_mtg_coastal_submarine_hulls_tech }
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	improved_submarine_mine_laying = {
 
@@ -8796,7 +8777,7 @@ technologies = {
 
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 38 y = @1940 }
+			position = { x = @submarine_module y = @1940 }
 		}
 
 		ai_will_do = {
@@ -8820,8 +8801,6 @@ technologies = {
 				NOT = {
 					has_tech_bonus = { category = naval_equipment }
 					has_tech_bonus = { category = naval_mtg_submarine_ship_tech }
-					has_tech_bonus = { category = naval_mtg_coastal_submarine_tech }
-					has_tech_bonus = { category = naval_mtg_coastal_submarine_hulls_tech }
 				}
 			}
 		}
@@ -8861,7 +8840,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1905 }
+			position = { x = @submarine y = @1905 }
 		}
 
 		categories = {
@@ -8902,7 +8881,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 38 y = @1905 }
+			position = { x = @submarine_module y = @1905 }
 		}
 
 		categories = {
@@ -8956,7 +8935,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1914 }
+			position = { x = @submarine y = @1915 }
 		}
 
 		categories = {
@@ -8994,20 +8973,24 @@ technologies = {
 			ship_engine_submarine_5
 		}
 
+		# subtechnologies = {
+		# 	tech_naval_mtg_1900_coastal_submarine_hull
+		# }
+
 		path = {
 			leads_to_tech = tech_naval_mtg_1935_submarine_hull
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = tech_naval_mtg_1900_coastal_submarine_hull
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = tech_naval_mtg_1900_coastal_submarine_hull
+		# 	research_cost_coeff = 1
+		# }
 
 		research_cost = 0.125
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1922 }
+			position = { x = @submarine y = @1920 }
 		}
 
 		categories = {
@@ -9049,12 +9032,17 @@ technologies = {
 			leads_to_tech = tech_naval_mtg_1940_submarine_hull
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = improved_submarine_mine_laying
+			research_cost_coeff = 1
+		}
+
 
 		research_cost = 0.125
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1935 }
+			position = { x = @submarine y = @1935 }
 		}
 
 		categories = {
@@ -9101,7 +9089,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1940 }
+			position = { x = @submarine y = @1940 }
 		}
 
 		categories = {
@@ -9148,7 +9136,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1944 }
+			position = { x = @submarine y = @1945 }
 		}
 
 		categories = {
@@ -9200,7 +9188,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1950 }
+			position = { x = @submarine y = @1950 }
 		}
 
 		categories = {
@@ -9246,7 +9234,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 38 y = @1950 }
+			position = { x = @submarine_module y = @1950 }
 		}
 
 		categories = {
@@ -9285,7 +9273,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 38 y = @1960 }
+			position = { x = @submarine_module y = @1960 }
 		}
 
 		categories = {
@@ -9330,7 +9318,7 @@ technologies = {
 		start_year = 1955
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1955 }
+			position = { x = @submarine y = @1955 }
 		}
 
 		categories = {
@@ -9377,7 +9365,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1970 }
+			position = { x = @submarine y = @1970 }
 		}
 
 		categories = {
@@ -9424,7 +9412,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1980 }
+			position = { x = @submarine y = @1980 }
 		}
 
 		categories = {
@@ -9471,7 +9459,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @1990 }
+			position = { x = @submarine y = @1990 }
 		}
 
 		categories = {
@@ -9518,7 +9506,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @2000 }
+			position = { x = @submarine y = @2000 }
 		}
 
 		categories = {
@@ -9565,7 +9553,7 @@ technologies = {
 		start_year = 2010
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @2010 }
+			position = { x = @submarine y = @2010 }
 		}
 
 		categories = {
@@ -9612,7 +9600,7 @@ technologies = {
 		start_year = 2020
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @2020 }
+			position = { x = @submarine y = @2020 }
 		}
 
 		categories = {
@@ -9658,7 +9646,7 @@ technologies = {
 		start_year = 2030
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @2030 }
+			position = { x = @submarine y = @2030 }
 		}
 
 		categories = {
@@ -9700,7 +9688,7 @@ technologies = {
 		start_year = 2045
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 36 y = @2045 }
+			position = { x = @submarine y = @2045 }
 		}
 
 		categories = {
@@ -9741,7 +9729,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 38 y = @1914 }
+			position = { x = @submarine_module y = @1915 }
 		}
 
 		categories = {
@@ -9794,7 +9782,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1914 }
+			position = { x = @carrier y = @1915 }
 		}
 
 		categories = {
@@ -9851,7 +9839,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1918 }
+			position = { x = @carrier y = @1920 }
 		}
 
 		categories = {
@@ -9898,7 +9886,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1922 }
+			position = { x = @carrier y = @1925 }
 		}
 
 		categories = {
@@ -9945,7 +9933,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1935 }
+			position = { x = @carrier y = @1935 }
 		}
 
 		categories = {
@@ -9992,7 +9980,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1940 }
+			position = { x = @carrier y = @1940 }
 		}
 
 		categories = {
@@ -10039,7 +10027,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1944 }
+			position = { x = @carrier y = @1945 }
 		}
 
 		categories = {
@@ -10082,7 +10070,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1950 }
+			position = { x = @carrier y = @1950 }
 		}
 
 		categories = {
@@ -10125,7 +10113,7 @@ technologies = {
 		start_year = 1955
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1955 }
+			position = { x = @carrier y = @1955 }
 		}
 
 		categories = {
@@ -10168,7 +10156,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1970 }
+			position = { x = @carrier y = @1970 }
 		}
 
 		categories = {
@@ -10211,7 +10199,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1980 }
+			position = { x = @carrier y = @1980 }
 		}
 
 		categories = {
@@ -10254,7 +10242,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @1990 }
+			position = { x = @carrier y = @1990 }
 		}
 
 		categories = {
@@ -10297,7 +10285,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @2000 }
+			position = { x = @carrier y = @2000 }
 		}
 
 		categories = {
@@ -10340,7 +10328,7 @@ technologies = {
 		start_year = 2005
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @2005 }
+			position = { x = @carrier y = @2005 }
 		}
 
 		categories = {
@@ -10387,7 +10375,7 @@ technologies = {
 		start_year = 2015
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @2015 }
+			position = { x = @carrier y = @2015 }
 		}
 
 		categories = {
@@ -10430,7 +10418,7 @@ technologies = {
 		start_year = 2030
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @2030 }
+			position = { x = @carrier y = @2030 }
 		}
 
 		categories = {
@@ -10473,7 +10461,7 @@ technologies = {
 		start_year = 2040
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @2040 }
+			position = { x = @carrier y = @2040 }
 		}
 
 		categories = {
@@ -10511,7 +10499,7 @@ technologies = {
 		start_year = 2050
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 28 y = @2050 }
+			position = { x = @carrier y = @2050 }
 		}
 
 		categories = {

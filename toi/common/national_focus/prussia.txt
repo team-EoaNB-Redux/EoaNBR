@@ -2703,7 +2703,7 @@ focus_tree = {
 			ai_will_do = {
 				base = 100
 			}
-			mutually_exclusive = { focus = PRS_Focus_Ignore_Protests  focus = PRS_Focus_Via_Military_Force }
+			mutually_exclusive = { focus = PRS_Focus_Ignore_Protests  focus = PRS_Focus_Via_Liberal_Reform }
 			prerequisite = { focus = PRS_Focus_Dealing_With_Protests }
 			completion_reward = {
 				add_ideas = PRS_Idea_Punished_Protests
@@ -2970,7 +2970,7 @@ focus = {
 		ai_will_do = {
 			base = 500
 		}
-		prerequisite = { focus = PRS_Revolution_Expand_Our_Knowledge }
+		prerequisite = { focus = PRS_Expand_Our_Knowledge }
 		completion_reward = {
 			# placeholder
 			custom_effect_tooltip = unfinished_tooltip
@@ -3446,7 +3446,7 @@ focus = {
 			prerequisite = { focus = PRS_focus_king_abdicates focus = PRS_focus_bismarck }
 			mutually_exclusive = {
 				focus = PRS_Open_Confrontation
-				focus = PRS_Parliamentary_Political_Disaster
+				focus = PRS_Deposed_Parliamentary_Political_Disaster
 			}
 			completion_reward = {
 				# placeholder
@@ -4179,7 +4179,7 @@ focus = {
 
 		mutually_exclusive = {
 			focus = PRS_Army_Compromise
-			focus = PRS_Parliamentary_Political_Disaster
+			focus = PRS_Deposed_Parliamentary_Political_Disaster
 		}
 
 		completion_reward = {

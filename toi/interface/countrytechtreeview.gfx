@@ -273,7 +273,6 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-#		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 
@@ -335,7 +334,6 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-#		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 
@@ -629,176 +627,7 @@ spriteTypes = {
 		play_on_show = yes
 		pause_on_loop = 0.0
 	}
-
-#GFX_technology_currently_researching_item_bg
-
-	#### naval tech ######
-
-	spriteType = {
-		name = "GFX_technology_ship_folder_small_unavailable_item_bg"
-		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_ship_folder_small_available_item_bg"
-		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_ship_folder_small_researched_item_bg"
-		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
-	}
-
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_ship_folder_small_currently_researching_item_bg"
-		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-	}
-
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_ship_folder_currently_researching_item_bg"
-		texturefile = "gfx//interface//techtree//tech_naval_currently_researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-	}
-
-	spriteType = {
-		name = "GFX_technology_ship_folder_available_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_available_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_ship_folder_unavailable_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_unavailable_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_ship_folder_researched_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_researched_item_bg.dds"
-	}
-
-
-	spriteType = {
-		name = "GFX_technology_mtg_ship_folder_small_unavailable_item_bg"
-		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_mtg_ship_folder_small_available_item_bg"
-		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_mtg_ship_folder_small_researched_item_bg"
-		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
-	}
-
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_mtg_ship_folder_small_currently_researching_item_bg"
-		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-	}
-
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_mtg_ship_folder_currently_researching_item_bg"
-		texturefile = "gfx//interface//techtree//tech_naval_currently_researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-	}
-
-	spriteType = {
-		name = "GFX_technology_mtg_ship_folder_available_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_available_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_mtg_ship_folder_unavailable_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_unavailable_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_mtg_ship_folder_researched_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_researched_item_bg.dds"
-	}
-
-
-	spriteType = {
-		name = "GFX_technology_mtg_capital_folder_small_unavailable_item_bg"
-		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_technology_mtg_capital_folder_small_branch_item_bg"
-		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_technology_mtg_capital_folder_small_available_item_bg"
-		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_technology_mtg_capital_folder_small_researched_item_bg"
-		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
-	}
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_mtg_capital_folder_small_currently_researching_item_bg"
-		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-	}
-
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_mtg_capital_folder_currently_researching_item_bg"
-		texturefile = "gfx//interface//techtree//tech_naval_currently_researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-	}
-
-	spriteType = {
-		name = "GFX_technology_mtg_capital_folder_available_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_available_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_mtg_capital_folder_unavailable_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_unavailable_item_bg.dds"
-	}
-
-	spriteType = {
-		name = "GFX_technology_mtg_capital_folder_researched_item_bg"
-		textureFile = "gfx/interface/technologies/techtree/tech_naval_researched_item_bg.dds"
-	}
-
+	
 	spriteType = {
 		name = "GFX_technology_mtg_screen_folder_small_unavailable_item_bg"
 		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
