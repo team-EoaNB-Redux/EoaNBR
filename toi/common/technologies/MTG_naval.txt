@@ -8526,6 +8526,9 @@ technologies = {
 	}
 
 	tech_naval_mtg_prototype_submarine_hull = {
+		allow = {
+			has_tech = tech_naval_mtg_1860_gunboat
+		}
 
 		enable_equipments = {
 			ship_hull_submarine_0
@@ -8546,10 +8549,10 @@ technologies = {
 		}
 
 		research_cost = 0.135
-		start_year = 1868
+		start_year = 1865
 		folder = {
 			name = mtg_capital_folder
-			position = { x = @submarine y = @1868 }
+			position = { x = @submarine y = @1865 }
 		}
 
 		categories = {
