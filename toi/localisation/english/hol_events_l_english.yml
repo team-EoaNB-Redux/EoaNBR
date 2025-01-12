@@ -9,7 +9,7 @@
  holland_generals.6.t: "[promotion_name.GetName] is up for a promotion"
  holland_generals.6.d: "By his outstanding performance in the recent period of time [promotion_name.GetName] gets promoted from General to Field Marshal and the king is soon to be granting him his warmedals."
  holland_generals.6.a: "Hoezee!"
- holland_generals.4.t: "the Netherlands requests a general"
+ holland_generals.4.t: "The Netherlands requests a general"
  holland_generals.4.d: "Our homeland of [netherlands_name.GetNameDef] is requesting a colonial general from our renowned Koninklijk Nederlandsch-Indisch Leger (KNIL) as such, we must obey our Fatherland and send of one of our army leaders to serve in the Dutch army for a limited period of 180 days, in the mean time we hope he will learn a lot from his experience in the Royal Dutch Army and that we can use this knowledge to strenghten our power in the East-Indies."
  holland_generals.4.a: "Off you go!"
  holland_generals.8.t: "[taken_name.GetName] is going back"

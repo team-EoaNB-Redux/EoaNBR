@@ -2586,7 +2586,7 @@
       borrow_money_country_will_borrow: "You will borrow"
       borrow_money_country_borrow: "Borrow"
 
-      borrow_money_country_domestic_bank: "the §Y[?THIS.GetFlag][?THIS.GetAdjective] National Bank§!"
+      borrow_money_country_domestic_bank: "The §Y[?THIS.GetFlag][?THIS.GetAdjective] National Bank§!"
       borrow_money_country_foreign_bank: "§Gyour National Bank§!"
     #
 
@@ -2611,7 +2611,7 @@
       repay_debt_country_will_repay: "You will repay"
       repay_debt_country_repay: "Repay"
 
-      repay_debt_country_domestic_bank: "the §Y[?THIS.GetFlag][?THIS.GetAdjective] National Bank§!"
+      repay_debt_country_domestic_bank: "The §Y[?THIS.GetFlag][?THIS.GetAdjective] National Bank§!"
       repay_debt_country_foreign_bank: "§Gyour National Bank§!"
     #
 

@@ -139,10 +139,10 @@
 
  ### THE RIOTS OF RIGHTS
  JAP_shoot_to_kill_tt: "[GetCurrentIssueLoc] have greater than §R10%§! Disorder!"
- disorder_increase_5_tt: "the rioters unrest in [GetCurrentIssueLoc] will increase by §R5%§!"
- disorder_increase_10_tt: "the rioters unrest in [GetCurrentIssueLoc] will increase by §R10%§!"
- disorder_increase_15_tt: "the rioters unrest in [GetCurrentIssueLoc] will increase by §R15%§!"
- disorder_increase_20_tt: "the rioters unrest in [GetCurrentIssueLoc] will increase by §R20%§!"
+ disorder_increase_5_tt: "The rioters unrest in [GetCurrentIssueLoc] will increase by §R5%§!"
+ disorder_increase_10_tt: "The rioters unrest in [GetCurrentIssueLoc] will increase by §R10%§!"
+ disorder_increase_15_tt: "The rioters unrest in [GetCurrentIssueLoc] will increase by §R15%§!"
+ disorder_increase_20_tt: "The rioters unrest in [GetCurrentIssueLoc] will increase by §R20%§!"
  #JAP_monthly_report_on_riots: "Monthly reports on the rioting arrive in..."
  JAP_riots_in_tottori_mission: "Monthly reports on the rioting arrive in..."
  JAP_riots_in_okayama_mission: "Monthly reports on the rioting arrive in..."

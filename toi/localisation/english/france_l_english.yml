@@ -790,7 +790,7 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france_flavor.5.a: "Maybe the name's too much"
 
  nap_france_flavor.6.t: "Publication of 'Les Misérables'"
- nap_france_flavor.6.d: "Today, Victor Hugo published his new novel, named "Les Misérables". This series of stories put in perspective the condition of the poorest classes in France, set in the early 19th century. The publication of this book has already made a lot of noise, and will one day even be considered as "the best French novel of the 19th century"."
+ nap_france_flavor.6.d: "Today, Victor Hugo published his new novel, named "Les Misérables". This series of stories put in perspective the condition of the poorest classes in France, set in the early 19th century. The publication of this book has already made a lot of noise, and will one day even be considered as "The best French novel of the 19th century"."
  nap_france_flavor.6.a: "A beacon of french literature"
 
  nap_france_flavor.7.t: "Seek of the Planet Vulcain"
@@ -902,7 +902,7 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france_flavor.34.a: "Thank God for our Empress!"
 
  nap_france_flavor.35.t: "Napoleon and his urinary problems..."
- nap_france_flavor.35.d: "Napoleon III is at his worst. But no one wants to take the risk of operating on him. Senate President Troplong and Field Marshal Niel, both also suffering from a bladder stone, died as a result of the operation. The seriousness of the disease is underestimated for "the greater good".\nHorseback riding is very painful for Napoleon III, people worried. Especially when our relations with Prussia and it's allies are getting worse. Let's hope it won't negatively influence our military during the coming war."
+ nap_france_flavor.35.d: "Napoleon III is at his worst. But no one wants to take the risk of operating on him. Senate President Troplong and Field Marshal Niel, both also suffering from a bladder stone, died as a result of the operation. The seriousness of the disease is underestimated for "The greater good".\nHorseback riding is very painful for Napoleon III, people worried. Especially when our relations with Prussia and it's allies are getting worse. Let's hope it won't negatively influence our military during the coming war."
  nap_france_flavor.35.a: "We hope that it won't influence him while commanding our forces"
  nap_france_flavor.36.t: "Italy Proposes September Convention"
  nap_france_flavor.36.d: "Italy has proposed an agreement that would require us to remove our garrisons from the Papal States, in exchange for their promised protection and peace with the nation. While Italy's end of the agreement does give some confidence, many within the country have campaigned for the integration of the Papal States into Italy. This raises concerns about if Italy will honor the agreement. Should we accept it, or reject it?"
@@ -1215,7 +1215,7 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france.150.a: "They won, the fighting must cease."
 
  nap_france.151.t: "Our commanders in Algeria abandon the colony"
- nap_france.151.d: "Astounding reports from Algiers has brought back the news of a toal abandonment of the French colony by the local military governor. In a letter sent last week, the Algerian governor has expressed his total disbelief when faced with a foe that both were numerically and technologically inferior, but who managed to completly surround and beat the local French forces.\n\nThe reaction of the Emperor is only outshined by the sheer shock of the French population, seeing their closest colony go in hands of local natives. The Kabyles are free, but for the French, some are already calling it "the beginning of the end" for the Empire."
+ nap_france.151.d: "Astounding reports from Algiers has brought back the news of a toal abandonment of the French colony by the local military governor. In a letter sent last week, the Algerian governor has expressed his total disbelief when faced with a foe that both were numerically and technologically inferior, but who managed to completly surround and beat the local French forces.\n\nThe reaction of the Emperor is only outshined by the sheer shock of the French population, seeing their closest colony go in hands of local natives. The Kabyles are free, but for the French, some are already calling it "The beginning of the end" for the Empire."
  nap_france.151.a: "Merde!"
 
  nap_france.152.t: "The Kabyles are finally free"
