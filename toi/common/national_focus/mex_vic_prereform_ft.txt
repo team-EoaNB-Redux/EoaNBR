@@ -1671,6 +1671,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = { id = mexico_politics.5 days = 1 }
+			mark_focus_tree_layout_dirty = yes
 		}
 		#allow_branch = { TAG = MEX }
 	}
@@ -2265,6 +2266,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			# switch in zuloaga #fuck this guys name
+			mark_focus_tree_layout_dirty = yes
 		}
 		#allow_branch = { TAG = MEC }
 	}

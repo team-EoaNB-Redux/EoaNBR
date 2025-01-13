@@ -2762,7 +2762,7 @@ focus_tree = {
  				expire = 0
 		}
 	}
-}
+	}
 
     focus = {
 		id = SWE_swedish_victory
