@@ -231,11 +231,11 @@
 		autonomous_state = autonomy_afr_protectorate
 		freedom_level = 0.1
 	}
-	set_autonomy = {#nepal
-		target = NEP
-		autonomous_state = autonomy_princely_state
-		freedom_level = 0.1
-	}
+	# set_autonomy = {#nepal
+	# 	target = NEP
+	# 	autonomous_state = autonomy_princely_state
+	# 	freedom_level = 0.1
+	# }
 	set_autonomy = {#raj
 		target = RAJ
 		autonomous_state = autonomy_afr_colonial_company
