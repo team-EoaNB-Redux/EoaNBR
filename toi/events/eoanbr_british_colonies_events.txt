@@ -7703,6 +7703,7 @@ add_namespace = britishindia
 			}
 			GWA = {
 				white_peace = RAJ
+				set_cosmetic_tag = GWA_maratha_confed
 				transfer_state = 436
 				transfer_state = 1424
 				hidden_effect = {
@@ -7973,9 +7974,27 @@ add_namespace = britishindia
 					}
 				}
 			}
-			clr_global_flag = sepoy_rebellion_ongoing_flag
-			set_global_flag = sepoy_rebellion_victorious_flag
-
+			hidden_effect = {
+				clr_global_flag = sepoy_rebellion_ongoing_flag
+				set_global_flag = sepoy_rebellion_victorious_flag
+				every_country = {
+					limit = { has_idea = SRS_idea_princely_neutrality }
+					RAJ = {
+						PREV = { store_current_ideologies = yes }
+						set_autonomy = {
+							target = PREV
+							autonomous_state = autonomy_princely_state
+							freedom_level = 0.1
+						}
+						PREV = {
+							load_prevous_ideologies = yes
+							set_temp_variable = { x_temp = ENG.id }
+							join_market = yes
+						}
+					}
+					remove_ideas = SRS_idea_princely_neutrality
+				}
+			}
 			news_event = britishindia.3
 		}
 	}
