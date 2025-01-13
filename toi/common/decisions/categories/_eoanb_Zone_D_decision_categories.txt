@@ -96,6 +96,7 @@ eoanb_category_second_opium_war = {
 
 eoanb_category_sepoy_rebellion = {
 	icon = generic_propaganda
+	picture = GFX_report_event_sepoy_lucknow_surrender
 	allowed = {
 		OR = {
 			tag = ENG

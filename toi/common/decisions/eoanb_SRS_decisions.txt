@@ -29,13 +29,9 @@ eoanb_category_sepoy_rebellion = {
 					limit = { SRS = { has_war_with = RAJ } }
 					activate_mission = SRS_mission_sepoy_rebellion_victory_treaty
 				}
-				else = {
-					clr_global_flag = eoanb_flag_sepoy_rebellion_ongoing
-				}
 			}
 		}
 		complete_effect = {
-			clr_global_flag = eoanb_flag_sepoy_rebellion_ongoing
 			if = {
 				limit = { tag = ENG }
 				country_event = britishindia.14
@@ -66,13 +62,9 @@ eoanb_category_sepoy_rebellion = {
 					limit = { SRS = { has_war_with = RAJ } }
 					activate_mission = SRS_mission_sepoy_rebellion_loss_treaty
 				}
-				else = {
-					clr_global_flag = eoanb_flag_sepoy_rebellion_ongoing
-				}
 			}
 		}
 		complete_effect = {
-			clr_global_flag = eoanb_flag_sepoy_rebellion_ongoing
 			if = {
 				limit = { tag = ENG }
 				country_event = britishindia.1

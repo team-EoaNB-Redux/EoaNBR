@@ -2224,7 +2224,6 @@ political_actions = {
 			440 = { is_owned_by = KAR }
 			440 = { is_core_of = RAJ }
 			KAR = { is_subject_of = RAJ }
-			NOT={has_global_flag = eoanb_flag_sepoy_victorious}
 		}
 		allowed = { tag = ENG }
 
@@ -2336,7 +2335,6 @@ political_actions = {
 			BIK = { is_subject_of = RAJ }
 			1427 = { is_owned_by = BIK }
 			1427 = { is_core_of = RAJ }
-			NOT={has_global_flag = eoanb_flag_sepoy_victorious}
 		}
 		allowed = { tag = ENG }
 
@@ -2448,7 +2446,6 @@ political_actions = {
 			754 = { is_owned_by = GWA }
 			754 = { is_core_of = RAJ }
 			GWA = { is_subject_of = RAJ }
-			NOT={has_global_flag = eoanb_flag_sepoy_victorious}
 		}
 		allowed = { tag = ENG }
 
@@ -2781,7 +2778,6 @@ political_actions = {
 			756 = { is_owned_by = OUD }
 			756 = { is_core_of = RAJ }
 			OUD = { is_subject_of = RAJ }
-			NOT={has_global_flag = eoanb_flag_sepoy_victorious}
 		}
 		allowed = { tag = ENG }
 

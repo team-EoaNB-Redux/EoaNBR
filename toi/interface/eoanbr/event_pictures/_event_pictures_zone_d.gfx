@@ -352,3 +352,29 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/opium_war/report_event_second_opium_war_tianjin_treaty.png"
 	}
 }
+
+# Mughals 
+spriteTypes = {
+	# News Events
+		spriteType = {
+			name = "GFX_news_event_sepoy_mutiny"
+			texturefile = "gfx/event_pictures/sepoy/news_event_sepoy_mutiny.dds"
+		}
+	# Report Events
+		spriteType = {
+			name = "GFX_event_sepoy_1"
+			texturefile = "gfx/event_pictures/sepoy/event_sepoy_1.dds"
+		}
+		spriteType = {
+			name = "GFX_event_sepoy_2"
+			texturefile = "gfx/event_pictures/sepoy/event_sepoy_2.dds"
+		}
+		spriteType = {
+			name = "GFX_event_sepoy_3"
+			texturefile = "gfx/event_pictures/sepoy/event_sepoy_3.dds"
+		}
+		spriteType = {
+			name = "GFX_event_sepoy_4"
+			texturefile = "gfx/event_pictures/sepoy/event_sepoy_4.dds"
+		}
+}

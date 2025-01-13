@@ -2108,7 +2108,7 @@
  ENG_focus_humiliation_by_sepoy: "Унижение в Индии" #NT!
  ENG_focus_humiliation_by_sepoy_desc: "Восстание сипаев проиграно — это катастрофа!" #NT!
  eoanb_tt_focus_ENG_humiliation_SRS: "§RРиск восстания§! в §Y[RAJ.GetNameDefCap]§! увеличится на §R5§! пунктов" #NT!
- eoanb_flag_sepoy_rebellion_ongoing: "Восстание сипаев продолжается в настоящее время." #NT!
+ sepoy_rebellion_ongoing_flag: "Восстание сипаев продолжается в настоящее время." #NT!
  eoanb_tt_focus_ENG_RAJ_peace: "§Y[SRS.GetNameDefCap]§! проиграет §Ycores§!." #NT!
  fra_orsini_failure: "Атака Орсини провалилась" #NT!
  fra_orsini_success: "Атака Орсини удалась" #NT!
