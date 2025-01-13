@@ -7742,6 +7742,7 @@ add_namespace = britishindia
 			else = {
 				JPR = {
 					white_peace = RAJ
+					set_cosmetic_tag = RJP
 					transfer_state = 433
 					hidden_effect = {
 						white_peace = ENG

@@ -34,11 +34,11 @@ eoanb_category_sepoy_rebellion = {
 		complete_effect = {
 			if = {
 				limit = { tag = ENG }
-				country_event = britishindia.14
+				country_event = britishindia.2
 			}
 			else = {
 				effect_tooltip = {
-					country_event = britishindia.14
+					country_event = britishindia.2
 				}
 			}
 		}
