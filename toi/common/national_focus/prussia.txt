@@ -3147,6 +3147,7 @@ focus = {
 					country_event = { days = 1 id = prussiaconscrisis.22 }
 					set_variable = { var = PRS_election_campaign_success value = 0 }
 					set_country_flag = eoanbr_PRS_King_Stays_Historical
+					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
