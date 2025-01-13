@@ -333,7 +333,7 @@ create_econ_order_array = {
 
         if = {
             limit = {
-                NOT = { has_variable = has_afr_empire_mechanic_system }
+								is_tribal_tag = no
             }
             for_each_loop = {
                 array = global.econ_value_array

@@ -42,6 +42,7 @@
 		#NATIONAL SPIRITS
 		#AF_T_unorganized_tribal_nation
 		AFR_disjointed_tribes
+		UCT_opt_debuffs
 	}
 
 	set_politics = {

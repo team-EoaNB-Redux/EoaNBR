@@ -6,6 +6,26 @@
 #	
 
 #Market Updates
+	join_market = {
+		if = {
+			limit = { NOT = { check_variable = { market_leader = x_temp } } }
+			set_variable = { market_leader = x_temp }
+			market_update = yes
+			if = {
+				limit = {
+					is_in_array = {
+						array = global.markets
+						value = THIS
+					}
+				}
+				remove_from_array = {
+					array = global.markets
+					value = THIS
+				}
+			}
+		}
+		custom_effect_tooltip = join_market_tooltip
+	}
 	market_update = { # The master market update script. Adds up all values from every state up to the market leader 
 		# Scope: Market Leader
 		# Make sure current scope is a market leader by doing check_variable = { market_leader = THIS }
@@ -444,7 +464,7 @@
 		every_country = {
 			limit = {
 				check_variable = { market_leader = THIS }
-				NOT = { has_variable = has_afr_empire_mechanic_system }
+				is_tribal_tag = no
 			}
 			set_temp_variable = { gdp_temp = gdp }
 			divide_temp_variable = { gdp_temp = 1000 }

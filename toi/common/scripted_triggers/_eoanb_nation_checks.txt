@@ -7,6 +7,14 @@ is_non_player_tag = {
 	}
 }
 
+is_tribal_tag = {
+	OR = {
+		tag = AFR
+		tag = UCT
+	}
+	has_variable = has_afr_empire_mechanic_system
+}
+
 
 is_indochina_country = {
 	custom_trigger_tooltip = {

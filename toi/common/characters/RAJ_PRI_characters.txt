@@ -394,6 +394,11 @@ characters = {
 			expire = 1900.1.1
 			ideology = monastic
 		}
+		country_leader = {
+			desc = "POLITICS_TEMP_DESC"
+			expire = 1900.1.1
+			ideology = absolutism
+		}
 		corps_commander = {
 			traits = { }
 			skill = 2

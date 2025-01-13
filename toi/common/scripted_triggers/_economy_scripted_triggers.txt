@@ -344,7 +344,7 @@ can_trade = {
 	# Is not a rebel country (rebel_uprising flag)
 	# Doesn't have trade restricted (trade_restricted flag)
 
-	NOT = { has_variable = has_afr_empire_mechanic_system }
+	NOT = { is_tribal_tag = yes }
 	NOT = { has_country_flag = rebel_uprising }
 	NOT = { has_country_flag = trade_restricted }
 }
