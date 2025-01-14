@@ -81,6 +81,20 @@ ideas = {
 			}
 		}
 
+		MEX_idea_american_loans = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				foreign_interest_rate_factor = -0.33
+			}
+		}
+
 		###########
 		MEX_reform_war_itinerant_government = {
 			allowed = {

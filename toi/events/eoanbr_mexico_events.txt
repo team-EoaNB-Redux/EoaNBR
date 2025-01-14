@@ -1532,6 +1532,7 @@ country_event = { #Debt system initial announcement
 			hidden_effect = {
 				USA = { set_country_flag = USA_mexican_reform_war_loans_flag }
 			}
+			
 		}
 		option = { #Decline Loans
 			name = mexico_civil_war.9.b
