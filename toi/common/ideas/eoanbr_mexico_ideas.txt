@@ -493,6 +493,7 @@ ideas = {
 
 			modifier = {
 				treasury_gain_monthly_per_gdp = 0.025
+				fundamentalism_drift = -0.0001
 			}
 		}
 

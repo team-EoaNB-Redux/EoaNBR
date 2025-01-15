@@ -1912,6 +1912,10 @@ focus_tree = {
 				idea = MEX_idea_dissolution_monastaries
 				days = 360
 			}
+			remove_targeted_decision = {
+				target = MEX
+				decision = MEX_decision_sell_clergy_property
+			}
 		}
 		allow_branch = {
 			OR = {
@@ -2626,7 +2630,7 @@ focus_tree = {
 		relative_position_id = MEC_focus_european_recognition
 		cost = 70
 
-		prerequisite = { focus = MEC_focus_spanish_help }
+		prerequisite = { focus = MEC_focus_european_recognition }
 		ai_will_do = {
 			factor = 1
 		}

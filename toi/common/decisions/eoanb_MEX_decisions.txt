@@ -52,6 +52,19 @@ war_planning = {
 				factor = 0
 				check_variable = { debt_level > 44 }
 			}
+			modifier = {
+				factor = 0
+				AND = {
+					stockpile_ratio = {
+						archetype = infantry_equipment
+						ratio > 2
+					}
+					stockpile_ratio = {
+						archetype = uniform_equipment
+						ratio > 2
+					}
+				}
+			}
 		}
 	}
 	# MEX_mission_reform_war_last_effort = {

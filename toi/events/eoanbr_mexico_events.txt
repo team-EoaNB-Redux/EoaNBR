@@ -1516,6 +1516,7 @@ country_event = { #Debt system initial announcement
 			}
 		}
 	}
+	
 	country_event = {
 		id = mexico_civil_war.9
 		title = mexico_civil_war.9.t
@@ -1532,7 +1533,6 @@ country_event = { #Debt system initial announcement
 			hidden_effect = {
 				USA = { set_country_flag = USA_mexican_reform_war_loans_flag }
 			}
-			
 		}
 		option = { #Decline Loans
 			name = mexico_civil_war.9.b
