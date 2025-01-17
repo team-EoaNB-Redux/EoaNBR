@@ -17052,9 +17052,9 @@ country_event = {
 					priority = 1
 					template_counter = 5
 					regiments = {
-						heavy_cavalry = { x = 0 y = 0 }
-						heavy_cavalry = { x = 0 y = 1 }
-						heavy_cavalry = { x = 0 y = 2 }
+						light_cavalry = { x = 0 y = 0 }
+						light_cavalry = { x = 0 y = 1 }
+						light_cavalry = { x = 0 y = 2 }
 					}
 					support = {
 						field_artillery_towed_support = { x = 0 y = 0 }
@@ -17078,9 +17078,9 @@ country_event = {
 					# division_names_group = CSA_INF_01
 					priority = 0
 					regiments = {
-						light_cavalry = { x = 0 y = 0 }
-						light_cavalry = { x = 0 y = 1 }
-						light_cavalry = { x = 0 y = 2 }
+						mounted_infantry = { x = 0 y = 0 }
+						mounted_infantry = { x = 0 y = 1 }
+						mounted_infantry = { x = 0 y = 2 }
 					}
 				}
 				364 = {
