@@ -2793,7 +2793,7 @@
   surplus_loc: "§GSurplus§!"
   deficit_loc: "§RDeficit§!"
   balanced_loc: "§YBalanced§!"
-§!"
+
   render_name_w_percent: "[?percent_temp|%Y1] - [?v.GetName]"
   render_name_w_both: "([?percent_temp|%Y1]) §Y[GetAdjustedAmountNoSign]§! - [?v.GetName]"
   render_name_w_both_g: "([?percent_temp|%Y1]) §G[GetAdjustedAmountNoSign]§! - [?v.GetName]"
@@ -2818,6 +2818,11 @@
   add_x_potential_reserves_tt: "Add £[GetRTokenTextIcon] §G[?x_temp]§! §OPotential [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
   remove_x_potential_reserves_tt: "Remove £[GetRTokenTextIcon] §R[?x_temp]§! §OPotential [?r_token.GetTokenLocalizedKey] Reserves§!.\n"
   has_treasury_tt: "Has [GetCurrencyTextIcon]  Treasury: §Y[?x_temp|2]§!\n"
+  has_debt_tt: "Has [GetCurrencyTextIcon]  Debt: §Y[?x_temp|2]K§!\n"
+  has_debt_to_gdp_tt: "Has Debt to GDP Ratio: §Y[?x_temp|1%]§!\n"
+  has_revenue_tt: "Has [GetCurrencyTextIcon]  Revenue: §Y[?x_temp|2]§!\n"
+  has_spending_tt: "Has [GetCurrencyTextIcon]  Spending: §Y[?x_temp|2]§!\n"
+  has_net_budget_tt: "Has [GetCurrencyTextIcon]  Net Income: §Y[?net_budget|2]§!\n"
 
   can_spend_without_default_trigger_tt: "Can spend [GetCurrencyTextIcon] §Y[?x_temp|2]§! without defaulting.\n"
   no_debt_level_trigger_tt: "Has no §YDebt§!\n"

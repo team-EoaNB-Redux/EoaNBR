@@ -125,30 +125,98 @@
 	}
 #
 #TREASURY
-has_treasury = {
-	# x_temp - money
-	custom_trigger_tooltip = {
-		tooltip = has_treasury_tt
-		check_variable = {
-			var = treasury
-			value = x_temp
-			compare = greater_than_or_equals
+	has_debt = {
+		# x_temp - debt (in thousands)
+		custom_trigger_tooltip = {
+			tooltip = has_debt_tt
+			check_variable = {
+				var = national_debt_k
+				value = x_temp
+				compare = greater_than_or_equals
+			}
 		}
 	}
-}
-has_treasury_gdp = {
-	# x_temp - money
-	multiply_temp_variable = { x_temp = 0.12 }
-	multiply_temp_variable = { x_temp = gdp_amount }
-	custom_trigger_tooltip = {
-		tooltip = has_treasury_tt
-		check_variable = {
-			var = treasury
-			value = x_temp
-			compare = greater_than_or_equals
+	has_debt_to_gdp = {
+		# x_temp - debt to GDP (percentage)
+		custom_trigger_tooltip = {
+			tooltip = has_debt_to_gdp_tt
+			check_variable = {
+				var = debt_to_gdp_ratio
+				value = x_temp
+				compare = greater_than_or_equals
+			}
 		}
 	}
-}
+	has_treasury = {
+		# x_temp - money
+		custom_trigger_tooltip = {
+			tooltip = has_treasury_tt
+			check_variable = {
+				var = treasury
+				value = x_temp
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	has_months_of_income = {
+		# x_temp - months of income
+		multiply_temp_variable = { x_temp = revenue }
+		custom_trigger_tooltip = {
+			tooltip = has_treasury_tt
+			check_variable = {
+				var = treasury
+				value = x_temp
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	has_treasury_gdp = {
+		# x_temp - money
+		multiply_temp_variable = { x_temp = 0.12 }
+		multiply_temp_variable = { x_temp = gdp_amount }
+		custom_trigger_tooltip = {
+			tooltip = has_treasury_tt
+			check_variable = {
+				var = treasury
+				value = x_temp
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	has_revenue = {
+		# x_temp - revenue amount
+		custom_trigger_tooltip = {
+			tooltip = has_revenue_tt
+			check_variable = {
+				var = revenue
+				value = x_temp
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	has_spending = {
+		# x_temp - spending amount
+		custom_trigger_tooltip = {
+			tooltip = has_spending_tt
+			check_variable = {
+				var = spending
+				value = x_temp
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	has_net_budget = {
+		# x_temp - net budget amount
+		custom_trigger_tooltip = {
+			tooltip = has_net_budget_tt
+			check_variable = {
+				var = net_budget
+				value = x_temp
+				compare = greater_than_or_equals
+			}
+		}
+	}
+#
 return_earliest_production_method = {
 	# building_token
 	# State Scope
