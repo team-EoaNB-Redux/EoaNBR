@@ -1,0 +1,104 @@
+
+Boom Bust Cycles:
+    Consumer Confidence affects target spending
+    If pops overspend -> accumulate debt
+
+    110 confidence:
+
+    1000 income -> 1100 spending
+    100 debt accumulation
+    10% interest?
+
+    After 1 yr: 1000 debt, 100 yrly debt payment, ~8 per month
+
+    Under 100 confidence, underspending, results in paying off debt
+    Higher interest payment -> decreases consumer confidence
+        % of income that is debt payment reduces cons confidence by that amount?
+    
+    8 per month means 0.8 consumer confidence reduction
+        this means 8 of target spending is spent on interest and target spending gets reduced by 8 as well
+        so spending goes down by about 1.6%
+
+    If pops are under 100 CC, they will start withdrawing from savings instead of borrowing money
+    Reducing SoL due to overspending takes longer than increasing SoL
+
+    If pops cannot borrow/withdraw, then their target spending & SoL will drop like a rock
+
+Savings
+    Banking Confidence determines the excess cash (that gets dumped into increasing SoL) that gets put into savings
+    Savings can be withdrawn in times of stress
+
+    Building cash reserves also count as savings
+    Investment Fund can also dump excess cash into the bank
+    
+    All sources of savings earn money from interest on debt currently lent out
+
+
+State Banks
+    Pops' and Buildings' savings will accumulate in state banks
+    Investment Fund savings will accumulate in the national bank
+
+    Pops & Buildings will borrow from state banks
+
+    Disabled by default
+
+National Bank
+    Countries borrow from the national bank. It's an accumulation of the state banks (for ease of calculation)
+
+    If a state doesn't have a state bank, then a penalty is applied to the amount transferred over to the national level
+
+Central Banking
+    Only available if you have Private/Public Central Banking or Nationalized Banking
+
+    Having a central bank will allow state banks to borrow from the central bank to correct pitfalls
+    Also allows setting the interest rate for domestic borrowing (which affects spending)
+    State banks will borrow money until their interest rate is just above the national rate
+        They will pay back money if it's below that
+
+
+Credit Rating
+    Risk of lending to a particular group/individual
+    Each potential borrower is given a credit rating (AAA to SD/D) (100.0-0.0) to assess risk
+        >=90 = AAA
+        >=80 = AA
+        >=70 = A
+        >=60 = BBB
+        >=50 = BB
+        >=40 = B
+        >=30 = CCC
+        >=20 = CC
+        >=10 = C
+        <=00 = SD/D
+
+    Based upon earnings (with different weights given to various sources), current interest payment % of modified revenue, 
+    current available credit, current spending (modified based on sources. More weight given to permanent spending than temporary)
+        Power ranking also affects this. Regionals & Great Powers get higher scores automatically
+
+    Higher risk = higher interest rate
+
+    For countries, higher credit ratings allow greater & cheaper access to borrowing from foreign nations
+    It essentially will provide a cap, probably based on a function of (solid) revenue
+
+    For pops/investment fund, credit ratings affect behavior. 
+    Low credit ratings (below A) will spur pops to cut spending, or even make withdrawals (below B)
+    Same with investment funds
+
+Bank Run
+    The higher your banking confidence, the harder this will hit
+    
+    If the bank isn't bailed out, it fails. This can cause a chain of failures
+        Enable like a panic modifier
+
+    Tanks your banking confidence, increases interest rates
+
+Default
+    A state any borrower can go in. It means that they have reached the maximum amount they can borrow and cannot
+    borrow any further.
+
+    For countries, it will give a scaling modifier which will be more ruinous the less you can fund your govt
+        and an event every month you are in default
+
+    Bankruptcy can then follow. It will wipe the debts & the savings attached to that debt.
+    For countries, it will give a nasty modifier.
+
+    A country can only go bankrupt if it's below a B rating
