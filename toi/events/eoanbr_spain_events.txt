@@ -4283,7 +4283,7 @@ country_event = { #Resignation of the King
 		ai_chance = { factor = 100 }
 		clear_variable = SPR_stress_level
 		clr_country_flag = SPR_6dy_conciliation
-		set_country_flag = SPR_6dy_federal_system
+		set_country_flag = SPR_6dy_federal
 		mark_focus_tree_layout_dirty = yes
 		set_politics = {
 			ruling_party = social_egalitarianism

@@ -863,7 +863,7 @@ focus_tree = {
 		y = 1
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 		prerequisite = {
 			focus = QNG_gxu_issue_of_famine
@@ -879,7 +879,7 @@ focus_tree = {
 		y = 2
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 		prerequisite = {
 			focus = QNG_gxu_rasing_relief_funds
@@ -895,7 +895,7 @@ focus_tree = {
 		y = 3
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_gaining_foreign_aid
@@ -914,7 +914,7 @@ focus_tree = {
 		y = 4
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_deploy_relief_henan
@@ -933,7 +933,7 @@ focus_tree = {
 		y = 5
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_increase_relief_henan
@@ -952,7 +952,7 @@ focus_tree = {
 		y = 3
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_gaining_foreign_aid
@@ -971,7 +971,7 @@ focus_tree = {
 		y = 4
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_deploy_relief_shanxi
@@ -990,7 +990,7 @@ focus_tree = {
 		y = 5
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_increase_relief_shanxi
@@ -1009,7 +1009,7 @@ focus_tree = {
 		y = 3
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_gaining_foreign_aid
@@ -1032,7 +1032,7 @@ focus_tree = {
 		y = 4
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_deploy_relief_zhili
@@ -1055,7 +1055,7 @@ focus_tree = {
 		y = 5
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_increase_relief_zhili
@@ -1078,7 +1078,7 @@ focus_tree = {
 		y = 3
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_gaining_foreign_aid
@@ -1097,7 +1097,7 @@ focus_tree = {
 		y = 4
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_deploy_relief_shandong
@@ -1116,7 +1116,7 @@ focus_tree = {
 		y = 5
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_increase_relief_shandong
@@ -1135,7 +1135,7 @@ focus_tree = {
 		y = 3
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_gaining_foreign_aid
@@ -1154,7 +1154,7 @@ focus_tree = {
 		y = 4
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_deploy_relief_jiangsu
@@ -1173,7 +1173,7 @@ focus_tree = {
 		y = 5
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		prerequisite = {
 			focus = QNG_gxu_increase_relief_jiangsu
@@ -1192,7 +1192,7 @@ focus_tree = {
 		y = 6
 		cost = 70
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		prerequisite = {
 			focus = QNG_gxu_complete_relief_henan

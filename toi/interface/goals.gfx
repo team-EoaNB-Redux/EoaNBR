@@ -4738,6 +4738,14 @@ spriteTypes = {
 		name = "GFX_focus_golden_circle_deal_cuba"
 		texturefile = "gfx/interface/goals/csa/focus_golden_circle_deal_cuba.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_golden_circle_target_dominican_rep"
+		texturefile = "gfx/interface/goals/csa/focus_golden_circle_target_dominican_rep.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_golden_circle_target_haiti"
+		texturefile = "gfx/interface/goals/csa/focus_golden_circle_target_haiti.png"
+	}
 	### WVG
 	SpriteType = {
 		name = "GFX_focus_wvg_montani_semper_liberi"

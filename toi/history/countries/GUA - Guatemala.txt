@@ -4,6 +4,8 @@
 	oob = "GUA_1857"
 
 	set_convoys = 0
+	
+	set_cosmetic_tag = GUA_1858
 
 	add_ideas = {
 		#POLITICS
