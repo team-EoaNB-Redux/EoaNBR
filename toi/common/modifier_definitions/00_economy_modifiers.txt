@@ -539,6 +539,14 @@
 			}
 		#
 	#
+	#Banking
+		reserve_ratio_modifier = { # Determines reserve ratio for the bank (1.0 = 1.0%). Base is 20%
+			color_type = neutral
+			value_type = number
+			precision = 2
+			category = country
+		}
+	#
 
 	#Pops
 		aristocrats_investment_contribution_factor = { # Base of 0.1 (10%). Percentage of building profits (dividends) that go into investment pool

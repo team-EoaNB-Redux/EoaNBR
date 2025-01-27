@@ -1,5 +1,5 @@
 
-Boom Bust Cycles:
+Consumer Confidence:
     Consumer Confidence affects target spending
     If pops overspend -> accumulate debt
 
@@ -33,6 +33,10 @@ Savings
     
     All sources of savings earn money from interest on debt currently lent out
 
+    Pops will begin withdrawing from savings & reduce debt when CC dips below 100, otherwise they will borrow money. 
+    IFs will begin withdrawing from savings & reduce debt when IC dips below 100, otherwise they will borrow money.
+
+    12% savings will be withdrawn per year (1% per month)
 
 State Banks
     Pops' and Buildings' savings will accumulate in state banks

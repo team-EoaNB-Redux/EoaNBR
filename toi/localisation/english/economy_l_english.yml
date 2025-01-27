@@ -888,6 +888,7 @@
     banking_confidence_modifier: "£money_good_texticon  Banking Confidence"
     consumer_confidence_modifier: "£money_good_texticon  Consumer Confidence"
     investment_confidence_modifier: "£money_good_texticon  Investment Confidence"
+    reserve_ratio_modifier: "£money_good_texticon  Reserve Ratio"
     tax_efficiency_factor: "£money_good_texticon  Tax Efficiency"
     corruption_factor: "£money_bad_texticon  Corruption"
     bureaucratic_efficiency_factor: "£money_good_texticon  Bureaucratic Efficiency"
@@ -1921,14 +1922,14 @@
 
       pops_money_loc: "§Y[?pops_money|3]§!"
       pops_earnings_loc: "§G+[?pops_earnings|3]§!"
-      pops_earnings_tt: "§YPops Finances:§!\nTotal Earnings: §G+[?pops_earnings|3]§![GetCurrencyTextIconState] \nAvg Earnings: §Y[?pops_earnings_avg|3]§![GetCurrencyTextIconState] / §S1.000K§! Pops\n\nTotal Spending: §R-[?pops_spending|3]§![GetCurrencyTextIconState] \n   - Goods Spending: §R-[?pops_needs_spending|3]§![GetCurrencyTextIconState] \n   - Income Taxes: §R-[?pops_income_tax_spending|3]§![GetCurrencyTextIconState] \n   - Sales Tax: §R-[?pops_sales_tax_spending|3]§![GetCurrencyTextIconState] "
+      pops_earnings_tt: "§YPops Finances:§!\nTotal Earnings: §G+[?pops_earnings|3]§![GetCurrencyTextIconState] \nAvg Earnings: §Y[?pops_earnings_avg|3]§![GetCurrencyTextIconState] / §S1.000K§! Pops\n\nTotal Spending: §R-[?pops_spending|3]§![GetCurrencyTextIconState] \n   - Goods Spending: §R-[?pops_needs_spending|3]§![GetCurrencyTextIconState] \n   - Income Taxes: §R-[?pops_income_tax_spending|3]§![GetCurrencyTextIconState] \n   - Sales Tax: §R-[?pops_sales_tax_spending|3]§![GetCurrencyTextIconState] \n\nCurrent Savings: §Y[?pops_savings|3]§![GetCurrencyTextIconState] \n   - Deposits: §R+[?pops_savings_deposits|3]§![GetCurrencyTextIconState] \n   - Interest: §G+[?pops_savings_interest|3]§![GetCurrencyTextIconState] \n   - Withdrawals: §R-[?pops_savings_withdrawals|3]§![GetCurrencyTextIconState]"
 
       pops_literacy_percentage_loc: "[?pops_literacy_percentage|1]%"
       pops_education_percentage_loc: "[?pops_education_percentage|1]%"
 
       pops_savings_loc: "§Y[?pops_savings|3]§![GetCurrencyTextIconState]"
       pops_debt_loc: "§R[?pops_debt|3]§![GetCurrencyTextIconState]"
-      pops_bank_tt: "§YLocal Bank:§!\nCurrent Savings: §Y[?pops_savings|3]§![GetCurrencyTextIconState] \n   - Deposits: §G+[?pops_savings_deposits|3]§![GetCurrencyTextIconState] \n   - Interest: §G+[?pops_savings_interest|3]§![GetCurrencyTextIconState] \n   - Withdrawals: §R-[?pops_savings_withdrawals|3]§![GetCurrencyTextIconState] \n\nDebt: §R[?pops_debt|3]§![GetCurrencyTextIconState]"
+      pops_bank_tt: "§YLocal Bank:§!\nCash Reserves: §Y[?bank_reserves_fluid_k|3]K§![GetCurrencyTextIconState] \n   - Deposits: §G+[?bank_deposits|3]§![GetCurrencyTextIconState] \n   - Interest: §G+[?bank_interest|3]§![GetCurrencyTextIconState] \n   - Withdrawals: §R-[?bank_withdrawals|3]§![GetCurrencyTextIconState] \n\nBank Credit: §Y[?bank_credit_available_k|3]K§![GetCurrencyTextIconState] \n   - Current Reserves: §Y[?bank_reserves_k|3]K§![GetCurrencyTextIconState] \n   - Reserve Ratio: §Y[?controller:modifier@reserve_ratio_modifier|1]%§!\n   - Money Lent: §Y[?bank_lent_out_k|3]K§![GetCurrencyTextIconState] \n    - Borrowed from the Central Bank: §Y0§![GetCurrencyTextIconState] \n\nLocal Interest Rate: §Y[?bank_interest_rate|1]%§!\n\nBank Status: §RInsolvent§! §RCritical§! §YDistressed§! §YStrained§! §GSolvent§!"
 
       pops_workforce_loc: "§S[?pops_workforce|3]K§!"
 
