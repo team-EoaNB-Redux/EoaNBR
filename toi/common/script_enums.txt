@@ -1179,6 +1179,18 @@
 #
 #EoaNBR Enums
 	script_enum_eoanbr_mod = {
+		#Pop Types
+			slaves
+			peasants
+			laborers
+			workers
+			professionals
+			specialists
+			capitalists
+			aristocrats
+			bureaucrats
+			soldiers
+		#
 		#Buildings
 			#Infrastructure
 			infrastructure

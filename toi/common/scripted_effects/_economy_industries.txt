@@ -1793,10 +1793,6 @@
 		# Updates arable land use & subsistence farms
 
 		set_variable = { arable_land_use = 0 }
-		if = {
-			limit = { NOT = { has_variable = peasants_workforce } }
-			set_variable = { peasants_workforce = 0 }
-		}
 		for_each_loop = {
 			array = industries
 			value = bu_token
@@ -1829,7 +1825,7 @@
 		multiply_variable = { owner_jobs@token:subsistence_farm = global.building_base_employees@token:subsistence_farm }
 
 		# Peasant Workforce
-		set_variable = { peasants_employed@token:subsistence_farm = peasants_workforce }
+		set_variable = { peasants_employed@token:subsistence_farm = pops_workforce@token:peasants }
 		clamp_variable = { var = peasants_employed@token:subsistence_farm min = 0 max = peasants_jobs@token:subsistence_farm }
 		set_variable = { employed@token:subsistence_farm = peasants_employed@token:subsistence_farm }
 
@@ -1840,9 +1836,9 @@
 		set_variable = { employment_target@token:subsistence_farm = employment_percentage@token:subsistence_farm }
 
 		# Marginal Land Usage
-		set_variable = { peasants_marginal_land = peasants_workforce }
+		set_variable = { peasants_marginal_land = pops_workforce@token:peasants }
 		subtract_from_variable = { peasants_marginal_land = peasants_employed@token:subsistence_farm }
-		clamp_variable = { var = peasants_marginal_land min = 0 max = peasants_workforce }
+		clamp_variable = { var = peasants_marginal_land min = 0 max = pops_workforce@token:peasants }
 
 		# Subsistence Farm Production & Income
 		set_temp_variable = { revenue_temp = 0 }
@@ -2054,18 +2050,18 @@
 
 		# Sourcing all job types
 		set_temp_variable = { total_jobs_weight = 0.1 }
-		add_to_temp_variable = { total_jobs_weight = slaves_workforce }
-		add_to_temp_variable = { total_jobs_weight = peasants_workforce }
-		set_temp_variable = { weight_temp = laborers_workforce }
+		add_to_temp_variable = { total_jobs_weight = pops_workforce@token:slaves }
+		add_to_temp_variable = { total_jobs_weight = pops_workforce@token:peasants }
+		set_temp_variable = { weight_temp = pops_workforce@token:laborers }
 		multiply_temp_variable = { weight_temp = 2 }
 		add_to_temp_variable = { total_jobs_weight = weight_temp }
-		set_temp_variable = { weight_temp = workers_workforce }
+		set_temp_variable = { weight_temp = pops_workforce@token:workers }
 		multiply_temp_variable = { weight_temp = 5 }
 		add_to_temp_variable = { total_jobs_weight = weight_temp }
-		set_temp_variable = { weight_temp = professionals_workforce }
+		set_temp_variable = { weight_temp = pops_workforce@token:professionals }
 		multiply_temp_variable = { weight_temp = 10 }
 		add_to_temp_variable = { total_jobs_weight = weight_temp }
-		set_temp_variable = { weight_temp = specialists_workforce }
+		set_temp_variable = { weight_temp = pops_workforce@token:specialists }
 		multiply_temp_variable = { weight_temp = 20 }
 		add_to_temp_variable = { total_jobs_weight = weight_temp }
 		# log = "Jobs Weight: [?total_jobs_weight]"
@@ -2136,16 +2132,16 @@
 		multiply_variable = { base_wage = wage_factor }
 
 		set_variable = { laborers_wage = base_wage }
-		multiply_variable = { laborers_wage = 2 }
+		multiply_variable = { laborers_wage = global.wage_multiplier@token:laborers }
 
 		set_variable = { workers_wage = base_wage }
-		multiply_variable = { workers_wage = 5 }
+		multiply_variable = { workers_wage = global.wage_multiplier@token:workers }
 
 		set_variable = { professionals_wage = base_wage }
-		multiply_variable = { professionals_wage = 10 }
+		multiply_variable = { professionals_wage = global.wage_multiplier@token:professionals }
 
 		set_variable = { specialists_wage = base_wage }
-		multiply_variable = { specialists_wage = 20 }
+		multiply_variable = { specialists_wage = global.wage_multiplier@token:specialists }
 	}
 
 	industry_get_highest_pm = {

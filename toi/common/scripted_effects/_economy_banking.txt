@@ -23,11 +23,12 @@ bank_loan_money = {
         # If govt - country tag
         # If investment fund - country tag
         # If corporation - state
-        # If pops: 1 - slaves, 2 - peasants, 3 - laborers, 4 - workers, 5 - professionals, 6 - specialists, 7 - capitalists, 8 - aristocrats, 9 - bureaucrats, 10 - soldiers
+        # If pops: pop token
     # x_temp - amount to borrow, in thousands				
     if = {
         limit = {
             check_variable = { x_temp > 0 }
+            check_variable = { bank_status > 1 }
             
             OR = {
                 AND = {
@@ -109,6 +110,11 @@ bank_loan_money = {
                 set_variable = { target_temp:investment_fund_debt_to_state_k@THIS = borrow_temp_k }
             }
         }
+
+        bank_update = yes
+    }
+    else = {
+        set_temp_variable = { borrow_temp_k = 0 }
     }
     
     # Output:
@@ -120,11 +126,57 @@ bank_repay_loan = {
         # If govt - country tag
         # If investment fund - country tag
         # If corporation - state
-        # If pops: 0 - slaves, 1 - peasants, 2 - laborers, 3 - workers, 4 - professionals, 5 - specialists, 6 - capitalists, 7 - aristocrats, 8 - bureaucrats, 9 - soldiers
+        # If pops: pop token
     # x_temp - amount to borrow, in thousands
 
     # Output:
     # repay_temp_k - amount that ends up being repaid
+}
+
+bank_store_money = {
+    # x_temp
+    # target_type - 1 - pops, 3 - corporation
+    # target_temp
+        # If pops: pop token
+        # otherwise, irrelevant
+    
+    if = {
+        limit = {
+            check_variable = { x_temp > 0 }
+            check_variable = { target_type = 1 }
+            check_variable = { NOT = { target_temp = 0 } }
+        }
+        add_to_variable = { pops_savings = x_temp }
+        add_to_variable = { pops_savings@var:target_temp = x_temp }
+
+        bank_update = yes
+    }
+}
+bank_withdraw_money = {
+    # x_temp
+    # target_type - 1 - pops, 3 - corporation
+    # target_temp
+        # If pops: pop token
+        # otherwise, irrelevant
+    
+    # Output: withdraw_temp
+
+    set_temp_variable = { withdraw_temp = 0 }
+    if = {
+        limit = {
+            check_variable = { x_temp > 0 }
+            check_variable = { target_type = 1 }
+        }
+        
+        if = { limit = { check_variable = { pops_savings@var:target_temp < x_temp } set_temp_variable = { x_temp = pops_savings@var:target_temp } } }
+        
+        set_temp_variable = { withdraw_temp = x_temp }
+
+        subtract_from_variable = { pops_savings = x_temp }
+        subtract_from_variable = { pops_savings@var:target_temp = x_temp }
+        
+        bank_update = yes
+    }
 }
 
 bank_update = {
@@ -213,9 +265,8 @@ bank_update = {
         divide_temp_variable = { interest_temp = 1.2 }
         add_to_variable = { bank_interest_countries = interest_temp }
     }
-    for_loop_effect = {
-        start = 1
-        end = 11
+    for_each_loop = {
+        array = global.pops_array
         value = pop_type_temp
 
         set_temp_variable = { interest_temp = bank_interest_rate }

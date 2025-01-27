@@ -655,6 +655,29 @@ country_pops_industry_recalc = {
     }
     pops_global_var_setup = {
         #Defined Vars Default Values
+            clear_array = global.pops_array
+            add_to_array = { global.pops_array = token:slaves }
+            add_to_array = { global.pops_array = token:peasants }
+            add_to_array = { global.pops_array = token:laborers }
+            add_to_array = { global.pops_array = token:workers }
+            add_to_array = { global.pops_array = token:professionals }
+            add_to_array = { global.pops_array = token:specialists }
+            add_to_array = { global.pops_array = token:capitalists }
+            add_to_array = { global.pops_array = token:aristocrats }
+            add_to_array = { global.pops_array = token:bureaucrats }
+            add_to_array = { global.pops_array = token:soldiers }
+
+            set_variable = { global.wage_multiplier@token:slaves = 1 }
+            set_variable = { global.wage_multiplier@token:peasants = 1 }
+            set_variable = { global.wage_multiplier@token:laborers = 2 }
+            set_variable = { global.wage_multiplier@token:workers = 5 }
+            set_variable = { global.wage_multiplier@token:professionals = 10 }
+            set_variable = { global.wage_multiplier@token:specialists = 20 }
+            set_variable = { global.wage_multiplier@token:capitalists = 20 }
+            set_variable = { global.wage_multiplier@token:aristocrats = 10 }
+            set_variable = { global.wage_multiplier@token:bureaucrats = 8 }
+            set_variable = { global.wage_multiplier@token:soldiers = 4 }
+
             set_variable = { global.pops_workforce_participation = 0.35 }
             set_variable = { global.pops_literacy_percentage = 100 } #Unlocks Workers
             set_variable = { global.pops_schooling_percentage = 100 } #Unlocks Professionals

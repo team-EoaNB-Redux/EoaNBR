@@ -387,186 +387,28 @@
         set_variable = { consumer_goods_earnings = 0 }
         every_controlled_state = {
             #Adding to Earnings
-                set_temp_variable = { avg_earnings_temp = slaves_earnings }
-                divide_temp_variable = { avg_earnings_temp = slaves }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = slaves_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = slaves_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = slaves_earnings }
-                }
+			for_each_loop = {
+				array = global.pops_array
+				value = pop_token
 
-                set_temp_variable = { avg_earnings_temp = peasants_earnings }
-                divide_temp_variable = { avg_earnings_temp = peasants }
+                set_temp_variable = { avg_earnings_temp = pops_earnings@pop_token }
+                divide_temp_variable = { avg_earnings_temp = pops@pop_token }
                 if = {
                     limit = {
                         check_variable = { avg_earnings_temp < lower_earnings_limit }
                     }
-                    add_to_temp_variable = { lower_income_earnings = peasants_earnings }
+                    add_to_temp_variable = { lower_income_earnings = pops_earnings@pop_token }
                 }
                 else_if = {
                     limit = {
                         check_variable = { avg_earnings_temp < upper_earnings_limit }
                     }
-                    add_to_temp_variable = { middle_income_earnings = peasants_earnings }
+                    add_to_temp_variable = { middle_income_earnings = pops_earnings@pop_token }
                 }
                 else = {
-                    add_to_temp_variable = { upper_income_earnings = peasants_earnings }
+                    add_to_temp_variable = { upper_income_earnings = pops_earnings@pop_token }
                 }
-
-                set_temp_variable = { avg_earnings_temp = laborers_earnings }
-                divide_temp_variable = { avg_earnings_temp = laborers }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = laborers_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = laborers_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = laborers_earnings }
-                }
-
-                set_temp_variable = { avg_earnings_temp = workers_earnings }
-                divide_temp_variable = { avg_earnings_temp = workers }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = workers_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = workers_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = workers_earnings }
-                }
-
-                set_temp_variable = { avg_earnings_temp = professionals_earnings }
-                divide_temp_variable = { avg_earnings_temp = professionals }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = professionals_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = professionals_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = professionals_earnings }
-                }
-
-                set_temp_variable = { avg_earnings_temp = specialists_earnings }
-                divide_temp_variable = { avg_earnings_temp = specialists }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = specialists_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = specialists_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = specialists_earnings }
-                }
-
-                set_temp_variable = { avg_earnings_temp = capitalists_earnings }
-                divide_temp_variable = { avg_earnings_temp = capitalists }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = capitalists_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = capitalists_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = capitalists_earnings }
-                }
-
-                set_temp_variable = { avg_earnings_temp = aristocrats_earnings }
-                divide_temp_variable = { avg_earnings_temp = aristocrats }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = aristocrats_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = aristocrats_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = aristocrats_earnings }
-                }
-
-                set_temp_variable = { avg_earnings_temp = bureaucrats_earnings }
-                divide_temp_variable = { avg_earnings_temp = bureaucrats }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = bureaucrats_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = bureaucrats_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = bureaucrats_earnings }
-                }
-
-                set_temp_variable = { avg_earnings_temp = soldiers_earnings }
-                divide_temp_variable = { avg_earnings_temp = soldiers }
-                if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < lower_earnings_limit }
-                    }
-                    add_to_temp_variable = { lower_income_earnings = soldiers_earnings }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { avg_earnings_temp < upper_earnings_limit }
-                    }
-                    add_to_temp_variable = { middle_income_earnings = soldiers_earnings }
-                }
-                else = {
-                    add_to_temp_variable = { upper_income_earnings = soldiers_earnings }
-                }
-            #
+            }
 
             add_to_variable = { PREV.consumer_goods_earnings = revenue@token:industrial_complex }
             add_to_variable = { PREV.consumer_goods_earnings = revenue@token:arms_factory }
@@ -653,8 +495,7 @@
         #
 
         #Corporate
-            set_variable = { corporate_tax_revenue = capitalists_dividends }
-            add_to_variable = { corporate_tax_revenue = aristocrats_dividends }
+            set_variable = { corporate_tax_revenue = pops_dividends }
             if = {
                 limit = {
                     check_variable = { corporate_tax_revenue < 0 }
