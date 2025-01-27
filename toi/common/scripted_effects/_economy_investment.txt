@@ -463,7 +463,7 @@
     }
 
     investment_opportunities_cap_calc = {
-        set_variable = { investment_opportunities_cap = aristocrats_workforce }
+        set_variable = { investment_opportunities_cap = pops_workforce@token:aristocrats }
         divide_variable = { investment_opportunities_cap = global.aristocrats_per_investment_opportunity }
         if = {
             limit = {
@@ -472,7 +472,7 @@
             set_variable = { investment_opportunities_cap = global.max_aristocrats_investment_opportunities }
         }
 
-        set_temp_variable = { cap_temp = capitalists_workforce }
+        set_temp_variable = { cap_temp = pops_workforce@token:capitalists }
         divide_temp_variable = { cap_temp = global.capitalists_per_investment_opportunity }
         add_to_variable = { investment_opportunities_cap = cap_temp }
         add_to_variable = { investment_opportunities_cap = global.base_investment_opportunities_cap }
@@ -1175,16 +1175,12 @@
 
 # Investment Funds
     investment_fund_update = {
-        set_variable = { investment_fund_capitalists_investment = 0 }
-        set_variable = { investment_fund_aristocrats_investment = 0 }
         set_variable = { investment_fund_spending_corporate_tax = 0 }
         set_variable = { investment_fund_spending_construction = 0 }
         set_variable = { investment_fund_spending_retooling = 0 }
         every_controlled_state = {
-            add_to_variable = { PREV.investment_fund_capitalists_investment = capitalists_investment }
-            add_to_variable = { PREV.investment_fund_aristocrats_investment = aristocrats_investment }
-            add_to_variable = { PREV.investment_fund_spending_corporate_tax = capitalists_investment_tax }
-            add_to_variable = { PREV.investment_fund_spending_corporate_tax = aristocrats_investment_tax }
+            add_to_variable = { PREV.investment_fund_spending_corporate_tax = pops_investment_tax@token:capitalists }
+            add_to_variable = { PREV.investment_fund_spending_corporate_tax = pops_investment_tax@token:aristocrats }
 
             for_each_loop = {
                 array = industries
@@ -1210,8 +1206,7 @@
         }
 
         # Income
-        set_variable = { investment_fund_income = investment_fund_capitalists_investment }
-        add_to_variable = { investment_fund_income = investment_fund_aristocrats_investment }
+        set_variable = { investment_fund_income = pops_investment }
 
         # Debt
         set_variable = { investment_fund_spending_interest = 0 }

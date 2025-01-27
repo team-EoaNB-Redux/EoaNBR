@@ -2273,87 +2273,34 @@ country_pops_industry_recalc = {
         pops_workforce_update = yes
         
         # Take chunks out of workforce value until it reaches 0
-        set_variable = { peasants_workforce = pops_workforce }
+        set_variable = { pops_workforce@token:peasants = pops_workforce }
 
-        if = { # Capitalists
-            limit = {
-                check_variable = { capitalists_jobs > peasants_workforce }
+        clear_temp_array = temp_pops_array
+        add_to_temp_array = { temp_pops_array = token:capitalists }
+        add_to_temp_array = { temp_pops_array = token:aristocrats }
+        add_to_temp_array = { temp_pops_array = token:specialists }
+        add_to_temp_array = { temp_pops_array = token:professionals }
+        add_to_temp_array = { temp_pops_array = token:workers }
+        add_to_temp_array = { temp_pops_array = token:laborers }
+
+        subtract_from_variable = { pops_jobs@token:aristocrats = owner_jobs@token:subsistence_farm }
+        for_each_loop = {
+            array = temp_pops_array
+            value = pop_token
+
+            if = {
+                limit = {
+                    check_variable = { pops_jobs@var:pop_token > pops_workforce@token:peasants }
+                }
+                set_variable = { pops_workforce@var:pop_token = pops_workforce@token:peasants }
+                set_variable = { pops_workforce@token:peasants = 0 }
             }
-            set_variable = { capitalists_workforce = peasants_workforce }
-            set_variable = { peasants_workforce = 0 }
-        }
-        else = {
-            set_variable = { capitalists_workforce = capitalists_jobs }
-            subtract_from_variable = { peasants_workforce = capitalists_workforce }
-        }
-        
-        set_temp_variable = { aristocrats_jobs_temp = aristocrats_jobs }
-        subtract_from_temp_variable = { aristocrats_jobs_temp = owner_jobs@token:subsistence_farm }
-        if = {
-            limit = {
-                check_variable = { aristocrats_jobs_temp < 0 }
+            else = {
+                set_variable = { pops_workforce@var:pop_token = pops_jobs@var:pop_token }
+                subtract_from_variable = { pops_workforce@token:peasants = pops_workforce@var:pop_token }
             }
-            set_temp_variable = { aristocrats_jobs_temp = 0 }
         }
-        if = { # Aristocrats
-            limit = {
-                check_variable = { aristocrats_jobs_temp > peasants_workforce }
-            }
-            set_variable = { aristocrats_workforce = peasants_workforce }
-            set_variable = { peasants_workforce = 0 }
-        }
-        else = {
-            set_variable = { aristocrats_workforce = aristocrats_jobs_temp }
-            subtract_from_variable = { peasants_workforce = aristocrats_workforce }
-        }
-        
-        if = { # Specialists
-            limit = {
-                check_variable = { specialists_jobs_available > peasants_workforce }
-            }
-            set_variable = { specialists_workforce = peasants_workforce }
-            set_variable = { peasants_workforce = 0 }
-        }
-        else = {
-            set_variable = { specialists_workforce = specialists_jobs_available }
-            subtract_from_variable = { peasants_workforce = specialists_workforce }
-        }
-        
-        if = { # Professionals
-            limit = {
-                check_variable = { professionals_jobs_available > peasants_workforce }
-            }
-            set_variable = { professionals_workforce = peasants_workforce }
-            set_variable = { peasants_workforce = 0 }
-        }
-        else = {
-            set_variable = { professionals_workforce = professionals_jobs_available }
-            subtract_from_variable = { peasants_workforce = professionals_workforce }
-        }
-        
-        if = { # Workers
-            limit = {
-                check_variable = { workers_jobs_available > peasants_workforce }
-            }
-            set_variable = { workers_workforce = peasants_workforce }
-            set_variable = { peasants_workforce = 0 }
-        }
-        else = {
-            set_variable = { workers_workforce = workers_jobs_available }
-            subtract_from_variable = { peasants_workforce = workers_workforce }
-        }
-        
-        if = { # Laborers
-            limit = {
-                check_variable = { laborers_jobs_available > peasants_workforce }
-            }
-            set_variable = { laborers_workforce = peasants_workforce }
-            set_variable = { peasants_workforce = 0 }
-        }
-        else = {
-            set_variable = { laborers_workforce = laborers_jobs_available }
-            subtract_from_variable = { peasants_workforce = laborers_workforce }
-        }
+        add_to_variable = { pops_jobs@token:aristocrats = owner_jobs@token:subsistence_farm }
         
         # Updates Subsistence Farms
         subsist_and_arable_update = yes
@@ -2361,8 +2308,8 @@ country_pops_industry_recalc = {
         # Subs Farm Aristocrats
         set_temp_variable = { aristocrats_jobs_temp = peasants_employed@token:subsistence_farm }
         multiply_temp_variable = { aristocrats_jobs_temp = 0.02 }
-        add_to_variable = { aristocrats_workforce = aristocrats_jobs_temp }
-        subtract_from_variable = { peasants_workforce = aristocrats_jobs_temp }
+        add_to_variable = { pops_workforce@token:aristocrats = aristocrats_jobs_temp }
+        subtract_from_variable = { pops_workforce@token:peasants = aristocrats_jobs_temp }
 
         # Updates Subsistence Farms Again
         subsist_and_arable_update = yes
@@ -2385,9 +2332,12 @@ country_pops_industry_recalc = {
         }
     }
     calculate_standard_of_living = {
-        #Slaves
-            set_temp_variable = { earnings_temp = slaves_earnings }
-            divide_temp_variable = { earnings_temp = slaves }
+        for_each_loop = {
+            array = global.pops_array
+            value = pop_token
+
+            set_temp_variable = { earnings_temp = pops_earnings@var:pop_token }
+            divide_temp_variable = { earnings_temp = pops@var:pop_token }
             for_each_loop = {
                 array = global.pops_spending_at_sol
                 index = sol_temp
@@ -2398,183 +2348,12 @@ country_pops_industry_recalc = {
                     limit = {
                         check_variable = { earnings_temp < col_temp }
                     }
-                    set_variable = { slaves_sol = sol_temp }
+                    set_variable = { pops_sol@var:pop_token = sol_temp }
                     set_temp_variable = { b = 1 }
                 }
             }
-            clamp_variable = { var = slaves_sol min = 1 max = 200 }
-        #
-        #Peasants
-            set_temp_variable = { earnings_temp = peasants_earnings }
-            divide_temp_variable = { earnings_temp = peasants }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { peasants_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = peasants_sol min = 1 max = 200 }
-        #
-        #Laborers
-            set_temp_variable = { earnings_temp = laborers_earnings }
-            divide_temp_variable = { earnings_temp = laborers }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { laborers_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = laborers_sol min = 1 max = 200 }
-        #
-        #Workers
-            set_temp_variable = { earnings_temp = workers_earnings }
-            divide_temp_variable = { earnings_temp = workers }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { workers_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = workers_sol min = 1 max = 200 }
-        #
-        #Professionals
-            set_temp_variable = { earnings_temp = professionals_earnings }
-            divide_temp_variable = { earnings_temp = professionals }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { professionals_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = professionals_sol min = 1 max = 200 }
-        #
-        #Specialists
-            set_temp_variable = { earnings_temp = specialists_earnings }
-            divide_temp_variable = { earnings_temp = specialists }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { specialists_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = specialists_sol min = 1 max = 200 }
-        #
-        #Aristocrats
-            set_temp_variable = { earnings_temp = aristocrats_earnings }
-            divide_temp_variable = { earnings_temp = aristocrats }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { aristocrats_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = aristocrats_sol min = 1 max = 200 }
-        #
-        #Capitalists
-            set_temp_variable = { earnings_temp = capitalists_earnings }
-            divide_temp_variable = { earnings_temp = capitalists }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { capitalists_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = capitalists_sol min = 1 max = 200 }
-        #
-        #Bureaucrats
-            set_temp_variable = { earnings_temp = bureaucrats_earnings }
-            divide_temp_variable = { earnings_temp = bureaucrats }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { bureaucrats_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = bureaucrats_sol min = 1 max = 200 }
-        #
-        #Soldiers
-            set_temp_variable = { earnings_temp = soldiers_earnings }
-            divide_temp_variable = { earnings_temp = soldiers }
-            for_each_loop = {
-                array = global.pops_spending_at_sol
-                index = sol_temp
-                value = col_temp
-                break = b
-
-                if = {
-                    limit = {
-                        check_variable = { earnings_temp < col_temp }
-                    }
-                    set_variable = { soldiers_sol = sol_temp }
-                    set_temp_variable = { b = 1 }
-                }
-            }
-            clamp_variable = { var = soldiers_sol min = 1 max = 200 }
-        #
+            clamp_variable = { var = pops_sol@var:pop_token min = 1 max = 200 }
+        }
 
         calculate_pop_needs = yes
         pops_update = yes
@@ -2582,76 +2361,19 @@ country_pops_industry_recalc = {
     readjust_standard_of_living = {
         pops_update = yes
 
-        if = { #Slaves
-            limit = {
-                check_variable = { slaves_earnings < slaves_spending }
+        for_each_loop = {
+            array = global.pops_array
+            value = pop_token
+
+            if = {
+                limit = { check_variable = { pops_earnings@var:pop_token < pops_spending@var:pop_token } }
+                subtract_from_variable = { pops_sol@var:pop_token = 1 }
             }
-            subtract_from_variable = { slaves_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { slaves_earnings > slaves_spending } } add_to_variable = { slaves_sol = 1 } }
-        if = { #Peasants
-            limit = {
-                check_variable = { peasants_earnings < peasants_spending }
+            else_if = { 
+                limit = { check_variable = { pops_earnings@var:pop_token > pops_spending@var:pop_token } } 
+                add_to_variable = { pops_sol@var:pop_token = 1 } 
             }
-            subtract_from_variable = { peasants_sol = 1 }
         }
-        else_if = { limit = { check_variable = { peasants_earnings > peasants_spending } } add_to_variable = { peasants_sol = 1 } }
-        if = { #Laborers
-            limit = {
-                check_variable = { laborers_earnings < laborers_spending }
-            }
-            subtract_from_variable = { laborers_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { laborers_earnings > laborers_spending } } add_to_variable = { laborers_sol = 1 } }
-        if = { #Workers
-            limit = {
-                check_variable = { workers_earnings < workers_spending }
-            }
-            subtract_from_variable = { workers_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { workers_earnings > workers_spending } } add_to_variable = { workers_sol = 1 } }
-        if = { #Professionals
-            limit = {
-                check_variable = { professionals_earnings < professionals_spending }
-            }
-            subtract_from_variable = { professionals_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { professionals_earnings > professionals_spending } } add_to_variable = { professionals_sol = 1 } }
-        if = { #Specialists
-            limit = {
-                check_variable = { specialists_earnings < specialists_spending }
-            }
-            subtract_from_variable = { specialists_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { specialists_earnings > specialists_spending } } add_to_variable = { specialists_sol = 1 } }
-        if = { #Aristocrats
-            limit = {
-                check_variable = { aristocrats_earnings < aristocrats_spending }
-            }
-            subtract_from_variable = { aristocrats_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { aristocrats_earnings > aristocrats_spending } } add_to_variable = { aristocrats_sol = 1 } }
-        if = { #Capitalists
-            limit = {
-                check_variable = { capitalists_earnings < capitalists_spending }
-            }
-            subtract_from_variable = { capitalists_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { capitalists_earnings > capitalists_spending } } add_to_variable = { capitalists_sol = 1 } }
-        if = { #Bureaucrats
-            limit = {
-                check_variable = { bureaucrats_earnings < bureaucrats_spending }
-            }
-            subtract_from_variable = { bureaucrats_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { bureaucrats_earnings > bureaucrats_spending } } add_to_variable = { bureaucrats_sol = 1 } }
-        if = { #Soldiers
-            limit = {
-                check_variable = { soldiers_earnings < soldiers_spending }
-            }
-            subtract_from_variable = { soldiers_sol = 1 }
-        }
-        else_if = { limit = { check_variable = { soldiers_earnings > soldiers_spending } } add_to_variable = { soldiers_sol = 1 } }
 
         calculate_pop_needs = yes
     }

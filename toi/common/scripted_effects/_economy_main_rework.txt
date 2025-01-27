@@ -8,7 +8,6 @@
 
 		# Reset to 0
 			set_variable = { pops_needs_spending = 0 }
-			set_variable = { pops_employed = 0 }
 			set_variable = { pops_sol = 0 }
 			set_variable = { pops_income_tax_spending = 0 }
 			set_variable = { pops_corporate_tax_spending = 0 }
@@ -57,7 +56,6 @@
 				divide_variable = { pops_percentage@var:pop_token = pops }
 
 				# Employment
-				set_variable = { pops_employed = pops_employed@var:pop_token }
 				set_variable = { pops_unemployed@var:pop_token = pops_workforce@var:pop_token }
 				subtract_from_variable = { pops_unemployed@var:pop_token = pops_employed@var:pop_token }
 
@@ -73,13 +71,23 @@
 				}
 
 				if = {
-					limit = { OR = { check_variable = { pop_token = token:aristocrats } check_variable = { pop_token = token:capitalists } } }
+					limit = { 
+						OR = { 
+							check_variable = { pop_token = token:aristocrats } 
+							check_variable = { pop_token = token:capitalists } 
+						} 
+					}
 					add_to_variable = { pops_earnings@var:pop_token = pops_dividends@var:pop_token }
 
 					if = {
-						limit = { check_variable = { pops_earnings@var:pop_token } > 0 }
-						if = { limit = { check_variable = { pop_token = token:aristocrats } } set_variable = { pops_investment@var:pop_token = controller:modifier@aristocrats_investment_contribution_factor } }
-						if = { limit = { check_variable = { pop_token = token:capitalists } } set_variable = { pops_investment@var:pop_token = controller:modifier@capitalists_investment_contribution_factor } }
+						limit = { check_variable = { pops_earnings@var:pop_token > 0 } }
+						if = { limit = { check_variable = { pop_token = token:aristocrats } }
+							set_variable = { pops_investment@var:pop_token = controller:modifier@aristocrats_investment_contribution_factor } 
+						}
+						if = { 
+							limit = { check_variable = { pop_token = token:capitalists } }
+							set_variable = { pops_investment@var:pop_token = controller:modifier@capitalists_investment_contribution_factor }
+						}
 						
 						clamp_variable = { var = pops_investment@var:pop_token max = 0.8 min = 0 }
 						multiply_variable = { pops_investment@var:pop_token = pops_earnings@var:pop_token }
@@ -136,7 +144,7 @@
 				
 				#Corporate Tax
 				if = {
-					limit = { check_variable = { pops_dividends@var:pop_token } > 0 }
+					limit = { check_variable = { pops_dividends@var:pop_token > 0 } }
 
 					set_variable = { pops_investment_tax@var:pop_token = pops_dividends@var:pop_token }
 					multiply_variable = { pops_investment_tax@var:pop_token = corporate_tax_multiplier }
@@ -160,8 +168,6 @@
 				set_variable = { pops_debt_interest_spending@var:pop_token = 0 }
 			}
 		}
-
-		clamp_variable = { var = pops_employed min = 0 max = pops_workforce }
 
 		set_variable = { pops_employed_percentage = pops_employed }
 		divide_variable = { pops_employed_percentage = pops_workforce }
@@ -418,8 +424,6 @@
 
 		set_variable = { pops_employed@token:capitalists = pops_jobs@token:capitalists }
 		set_variable = { pops_employed@token:aristocrats = pops_jobs@token:aristocrats }
-		clamp_variable = { var = pops_employed@token:capitalists max = pops_workforce@token:capitalists min = 0 }
-		clamp_variable = { var = pops_employed@token:aristocrats max = pops_workforce@token:aristocrats min = 0 }
 
 		set_variable = { pops_jobs_available = 0 }
 		set_variable = { pops_jobs = 0 }
@@ -428,6 +432,9 @@
 		for_each_loop = {
 			array = global.pops_array
 			value = pop_token
+			
+			clamp_variable = { var = pops_employed@var:pop_token max = pops_workforce@var:pop_token min = 0 }
+
 			if = {
 				limit = {
 					check_variable = { pops_workforce@var:pop_token > pops_jobs_available@var:pop_token }
@@ -469,11 +476,11 @@
 		add_to_variable = { pops_jobs_available = pops_jobs_available@token:aristocrats }
 
 		set_variable = { available_workforce = pops_workforce }
-		subtract_from_variable = { available_workforce = jobs_available }
+		subtract_from_variable = { available_workforce = pops_jobs_available }
 		
 		set_variable = { net_workforce = pops_workforce }
 		add_to_variable = { net_workforce = pops_jobs@token:peasants }
-		subtract_from_variable = { net_workforce = jobs }
+		subtract_from_variable = { net_workforce = pops_jobs }
 	}
 
 	calculate_pop_needs = {
@@ -838,23 +845,23 @@
 		# Sets workforce amount depending on ratio of unemployed to non-subsistence jobs		
 		# Peasants & Subsistence Farms have to be handled seperately
 
-		set_temp_variable = { laborers_change = laborers_workforce_balance }
+		set_temp_variable = { laborers_change = pops_workforce_balance@token:laborers }
 		multiply_temp_variable = { laborers_change = -1 }
 		
-		set_temp_variable = { workers_change = workers_workforce_balance }
+		set_temp_variable = { workers_change = pops_workforce_balance@token:workers }
 		multiply_temp_variable = { workers_change = -1 }
 
-		set_temp_variable = { professionals_change = professionals_workforce_balance }
+		set_temp_variable = { professionals_change = pops_workforce_balance@token:professionals }
 		multiply_temp_variable = { professionals_change = -1 }
 		
-		set_temp_variable = { specialists_change = specialists_workforce_balance }
+		set_temp_variable = { specialists_change = pops_workforce_balance@token:specialists }
 		multiply_temp_variable = { specialists_change = -1 }
 
 		set_temp_variable = { aristocrats_change = aristocrats_jobs }
-		subtract_from_temp_variable = { aristocrats_change = aristocrats_workforce }
+		subtract_from_temp_variable = { aristocrats_change = pops_workforce_balance@token:aristocrats }
 		
 		set_temp_variable = { capitalists_change = capitalists_jobs }
-		subtract_from_temp_variable = { capitalists_change = capitalists_workforce }
+		subtract_from_temp_variable = { capitalists_change = pops_workforce_balance@token:capitalists }
 
 		pops_convert = yes
 	}
@@ -1213,12 +1220,12 @@
 				array = global.pops_array
 				value = pop_token
 
-				set_variable = { PREV.pops@var:pop_token = pops@var:pop_token }
-				set_variable = { PREV.pops_workforce@var:pop_token = pops_workforce@var:pop_token }
-				set_variable = { PREV.pops_employed@var:pop_token = pops_employed@var:pop_token }
-				set_variable = { PREV.pops_earnings@var:pop_token = pops_earnings@var:pop_token }
-				set_variable = { PREV.pops_needs_spending@var:pop_token = pops_needs_spending@var:pop_token }
-				set_variable = { PREV.pops_dividends@var:pop_token = pops_dividends@var:pop_token }
+				add_to_variable = { PREV.pops@var:pop_token = pops@var:pop_token }
+				add_to_variable = { PREV.pops_workforce@var:pop_token = pops_workforce@var:pop_token }
+				add_to_variable = { PREV.pops_employed@var:pop_token = pops_employed@var:pop_token }
+				add_to_variable = { PREV.pops_earnings@var:pop_token = pops_earnings@var:pop_token }
+				add_to_variable = { PREV.pops_needs_spending@var:pop_token = pops_needs_spending@var:pop_token }
+				add_to_variable = { PREV.pops_dividends@var:pop_token = pops_dividends@var:pop_token }
 					
 				set_temp_variable = { stat_temp = pops_sol@var:pop_token }
 				multiply_temp_variable = { stat_temp = pops@var:pop_token }

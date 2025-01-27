@@ -391,22 +391,22 @@
 				array = global.pops_array
 				value = pop_token
 
-                set_temp_variable = { avg_earnings_temp = pops_earnings@pop_token }
-                divide_temp_variable = { avg_earnings_temp = pops@pop_token }
+                set_temp_variable = { avg_earnings_temp = pops_earnings@var:pop_token }
+                divide_temp_variable = { avg_earnings_temp = pops@var:pop_token }
                 if = {
                     limit = {
                         check_variable = { avg_earnings_temp < lower_earnings_limit }
                     }
-                    add_to_temp_variable = { lower_income_earnings = pops_earnings@pop_token }
+                    add_to_temp_variable = { lower_income_earnings = pops_earnings@var:pop_token }
                 }
                 else_if = {
                     limit = {
                         check_variable = { avg_earnings_temp < upper_earnings_limit }
                     }
-                    add_to_temp_variable = { middle_income_earnings = pops_earnings@pop_token }
+                    add_to_temp_variable = { middle_income_earnings = pops_earnings@var:pop_token }
                 }
                 else = {
-                    add_to_temp_variable = { upper_income_earnings = pops_earnings@pop_token }
+                    add_to_temp_variable = { upper_income_earnings = pops_earnings@var:pop_token }
                 }
             }
 

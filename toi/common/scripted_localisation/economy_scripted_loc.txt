@@ -1452,7 +1452,7 @@ defined_text = {
 		name = GetEmployed
 		text = {
 			trigger = {
-				set_temp_variable = { amount_temp = employed }
+				set_temp_variable = { amount_temp = pops_employed }
 			}
 			localization_key = scripted_loc_inline_1901
 		}
@@ -1461,7 +1461,7 @@ defined_text = {
 		name = GetJobs
 		text = {
 			trigger = {
-				set_temp_variable = { amount_temp = jobs }
+				set_temp_variable = { amount_temp = pops_jobs }
 			}
 			localization_key = scripted_loc_inline_1902
 		}
@@ -1479,8 +1479,7 @@ defined_text = {
 		name = GetPopDividends
 		text = {
 			trigger = {
-				set_temp_variable = { amount_temp = aristocrats_dividends }
-				add_to_temp_variable = { amount_temp = capitalists_dividends }
+				set_temp_variable = { amount_temp = pops_dividends }
 			}
 			localization_key = scripted_loc_inline_1904
 		}
@@ -1489,7 +1488,7 @@ defined_text = {
 		name = GetAristocratsDividends
 		text = {
 			trigger = {
-				set_temp_variable = { amount_temp = aristocrats_dividends }
+				set_temp_variable = { amount_temp = pops_dividends@token:aristocrats }
 			}
 			localization_key = scripted_loc_inline_1905
 		}
@@ -1498,7 +1497,7 @@ defined_text = {
 		name = GetCapitalistsDividends
 		text = {
 			trigger = {
-				set_temp_variable = { amount_temp = capitalists_dividends }
+				set_temp_variable = { amount_temp = pops_dividends@token:capitalists }
 			}
 			localization_key = scripted_loc_inline_1906
 		}
