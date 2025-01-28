@@ -1532,6 +1532,9 @@ country_event = { #Debt system initial announcement
 			ai_chance = { base = 100 }
 			hidden_effect = {
 				USA = { set_country_flag = USA_mexican_reform_war_loans_flag }
+				MEX = {
+					add_ideas = MEX_idea_american_loans
+				}
 			}
 		}
 		option = { #Decline Loans
@@ -3675,8 +3678,8 @@ country_event = {
 
 		trigger = {
 			original_tag = MEX
-			#date > 1861.6.1
-			has_war_with = MEC
+			date > 1861.6.1
+			#has_war_with = MEC
 		}
 
 		option = {

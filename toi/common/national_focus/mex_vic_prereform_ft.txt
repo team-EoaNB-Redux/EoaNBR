@@ -2101,6 +2101,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			# replace militias
+			set_division_force_allow_recruiting = {
+				division_template = "National Guard"
+			}
 			activate_targeted_decision = {
 				target = MEX
 				decision = MEX_decision_call_out_state_guards
@@ -2134,6 +2137,37 @@ focus_tree = {
 		}
 		completion_reward = {
 			# new divs with special buffs
+			division_template = {
+				name = "Fronterizos Volunteers"
+				regiments = {
+					light_infantry = { x = 0 y = 0 }
+					light_infantry = { x = 0 y = 0 }
+				}
+			}
+			483 = {
+				create_unit = {
+					division = "name = \"Sonoran Fronterizos Volunteers\" division_template \"Fronterizos Volunteers\" start_experience_factor 0.75 start_equipment_factor = 0.9"
+					owner = MEX
+					id = 997
+				}
+				create_unit = {
+					division = "name = \"Sonoran Fronterizos Volunteers\" division_template \"Fronterizos Volunteers\" start_experience_factor 0.75 start_equipment_factor = 0.9"
+					owner = MEX
+					id = 997
+				}
+			}
+			482 = {
+				create_unit = {
+					division = "name = \"Chihuahuan Fronterizos Volunteers\" division_template \"Fronterizos Volunteers\" start_experience_factor 0.75 start_equipment_factor = 0.9"
+					owner = MEX
+					id = 997
+				}
+				create_unit = {
+					division = "name = \"Chihuahuan Fronterizos Volunteers\" division_template \"Fronterizos Volunteers\" start_experience_factor 0.75 start_equipment_factor = 0.9"
+					owner = MEX
+					id = 997
+				}
+			}
 		}
 		allow_branch = {
 			OR = {
@@ -2163,6 +2197,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			# raise some funds but obvs cause issues
+			#Degollado steals 1m pesos from britain, silenceofdragons says thats 66 2/3k pounds, 13 MCUs, gonna make 250
+			# he ends up returning half, guilt makes him pro british, anti-war, juarez takes offense, he gets pushed out
 		}
 		allow_branch = {
 			OR = {
