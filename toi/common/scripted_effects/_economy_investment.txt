@@ -392,7 +392,7 @@
                         check_variable = { state_temp:available_workforce < 0 }
                     }
                     set_temp_variable = { attractiveness_temp = state_temp:available_workforce }
-                    divide_temp_variable = { attractiveness_temp = state_temp:jobs }
+                    divide_temp_variable = { attractiveness_temp = state_temp:pops_jobs }
                     multiply_temp_variable = { attractiveness_temp = 200 }
                     add_to_variable = { investment_opportunity_attractiveness@var:io_num_temp = attractiveness_temp }
                 }
@@ -402,7 +402,7 @@
                         check_variable = { state_temp:available_workforce < 0 }
                     }
                     set_temp_variable = { attractiveness_temp = state_temp:available_workforce }
-                    divide_temp_variable = { attractiveness_temp = state_temp:jobs }
+                    divide_temp_variable = { attractiveness_temp = state_temp:pops_jobs }
                     multiply_temp_variable = { attractiveness_temp = -200 }
                     add_to_variable = { investment_opportunity_attractiveness@var:io_num_temp = attractiveness_temp }
                 }
