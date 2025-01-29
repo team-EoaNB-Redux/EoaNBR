@@ -19,4 +19,21 @@ opinion_modifiers = {
 		years = 5
 		decay = -1
 	}
+	MEX_opinion_legitimate = {
+		value = 50
+		years = 10
+		decay = -5
+	}
+	MEX_opinion_reluctant_legitimate = { #britain reluctantly accepts libs
+
+	}
+	MEX_opinion_outraged_theft_1 = { #britain mad at libs
+
+	}
+	MEX_opinion_outraged_theft_2 = { #britain super livid at cons
+
+	}
+	MEX_opinion_unrecognized = { #MEX or MEC annoyed at unrecognized
+
+	}
 }
