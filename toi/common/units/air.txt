@@ -7,7 +7,7 @@ sub_units = {
 		type = scout_plane
 		need = { balloon_equipment = 1 }
 		land_air_wing_size = 10
-		categories = { category_scout_plane }
+		categories = { category_fighter }
 		land_air_wing_size = 10
 	}
 
@@ -24,7 +24,7 @@ sub_units = {
 		priority = 1
 		active = yes
 		type = fighter
-		need = { small_plane_airframe  = 1 }
+		need = { small_plane_airframe = 1 }
 		categories = { category_fighter }
 		land_air_wing_size = 20
 	}

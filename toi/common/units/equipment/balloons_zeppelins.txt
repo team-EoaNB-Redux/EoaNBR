@@ -142,6 +142,12 @@ equipments = {
 		# 	plane_reliability_upgrade
 		# }
 
+		allowed_types = {
+			fighter
+			scout_plane
+		}
+		allow_mission_type = training
+
 		air_superiority = 0
 		reliability = 0.7
 
@@ -154,7 +160,7 @@ equipments = {
 		build_cost_ic = 90
 		resources = {
 			wood = 1
-			textiles = 2
+			fiber = 2
 		}
 
 		manpower = 5
@@ -181,7 +187,7 @@ equipments = {
 		build_cost_ic = 90
 		resources = {
 			wood = 1
-			textiles = 2
+			fiber = 2
 		}
 	}
 
