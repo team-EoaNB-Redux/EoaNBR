@@ -1971,7 +1971,7 @@ focus_tree = {
 
 		prerequisite = { focus = MEX_liberate_juarez }
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			#add 2 forts in vera cruz
@@ -2244,6 +2244,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			# something manpower
+			# repeating mission, counts states and awards manpower respectively, modifiers for decisions and events
 		}
 		allow_branch = {
 			OR = {
