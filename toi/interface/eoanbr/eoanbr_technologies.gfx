@@ -892,6 +892,14 @@ spriteTypes = {
 				texturefile = "gfx/interface/technologies/10_artillery/field_armstrong_screw.dds"
 			}
 			spriteType = {
+				name = "GFX_tech_RBL_iron_artillery_equipment_0_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/steel_RBL_artillery_equipment_2.png"
+			}
+			spriteType = {
+				name = "GFX_tech_steel_RBL_artillery_equipment_1_medium"
+				texturefile = "gfx/interface/technologies/10_artillery/steel_RBL_artillery_equipment_1.png"
+			}
+			spriteType = {
 				name = "GFX_tech_steel_RBL_artillery_equipment_2_medium"
 				texturefile = "gfx/interface/technologies/10_artillery/steel_RBL_artillery_equipment_2.png"
 			}
