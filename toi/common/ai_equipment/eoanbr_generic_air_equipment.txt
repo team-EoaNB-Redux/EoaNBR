@@ -6,7 +6,7 @@ generic_balloon = {
 	available_for = {}
 
 	roles = {
-		air_scout_plane
+		scout_plane
 	}
 
 	priority = {

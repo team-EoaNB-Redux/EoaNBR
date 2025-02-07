@@ -169,6 +169,7 @@ equipments = {
 	#Recon Balloon
 	balloon_equipment_0 = {
 		year = 1850
+		abbreviation = "bef1"
 
 		archetype = balloon_equipment
 		priority = 5
@@ -178,6 +179,7 @@ equipments = {
 		# air_agility = 3
 		# air_attack = 1
 		# air_defence = 1
+		weight = 2
 
 		surface_detection = 1
 
