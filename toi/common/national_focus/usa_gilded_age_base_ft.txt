@@ -11,9 +11,11 @@ shared_focus = {
 shared_focus = {
 	id = USA_gilded_social_reforms
 	icon = GFX_Focus_social_reforms
-	cost = 40
+	cost = 0
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
+	available = { always = no }
+	bypass_if_unavailable = yes
 	x = -12
 	y = 1
 	completion_reward = {
@@ -93,9 +95,11 @@ shared_focus = {
 shared_focus = {
 	id = USA_gilded_bureaucratic_reforms
 	icon = GFX_Focus_Reform_Government
-	cost = 40
+	cost = 0
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
+	available = { always = no }
+	bypass_if_unavailable = yes
 	x = -5
 	y = 1
 	completion_reward = {
@@ -201,9 +205,11 @@ shared_focus = {
 shared_focus = {
 	id = USA_gilded_economic_reforms
 	icon = GFX_Focus_Reform_Economy
-	cost = 40
+	cost = 0
 	relative_position_id = USA_gilded_age_start
 	prerequisite = { focus = USA_gilded_age_start }
+	available = { always = no }
+	bypass_if_unavailable = yes
 	x = 8
 	y = 1
 	completion_reward = {
@@ -3767,7 +3773,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	completion_reward = {
-		# add_dynamic_modifier = { modifier = USA_navy_modifier }
+		add_dynamic_modifier = { modifier = USA_navy_modifier }
 		if = {
 			limit = {
 				has_dlc = "Man the Guns"

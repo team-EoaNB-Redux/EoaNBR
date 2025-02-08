@@ -20,6 +20,9 @@ state = {
 		set_variable = { crop_farm_size = 2 }
 		set_variable = { arable_land = 50 }
 
+		victory_points = { 1719 2 }
+		victory_points = { 1866 1 }
+
 		buildings = {
 			infrastructure = 3
 		}
