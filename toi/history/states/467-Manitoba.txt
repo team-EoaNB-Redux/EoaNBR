@@ -21,7 +21,7 @@ state = {
 			4872 5
 		}
 		add_core_of = HBC
-		1885.11.1 = {
+		1869.11.1 = {
 			owner = CAN
 			add_core_of = CAN
 			remove_core_of = HBC

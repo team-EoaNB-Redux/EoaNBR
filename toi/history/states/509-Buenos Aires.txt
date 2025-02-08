@@ -30,6 +30,7 @@ state = {
 		1870.5.11 = {
 			owner = ARG
 			add_core_of = ARG
+			remove_core_of = BUE
 		}
 	}
 

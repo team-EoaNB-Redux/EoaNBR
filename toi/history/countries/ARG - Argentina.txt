@@ -122,3 +122,51 @@
 	recruit_character = ARG_Justo_Jose_de_Urquiza
 	recruit_character = ARG_Angel_Vicente_Penaloza
 }
+1863.1.1={
+	drop_cosmetic_tag = yes
+	hidden_effect = { 
+		load_oob = ARG_END_CIVIL_WAR
+		load_focus_tree = argentina_vic_ft
+	}
+	remove_ideas = ARG_civil_war_war
+	remove_ideas = ARG_civil_war_calm
+	remove_ideas = ARG_decentral_military_2
+	remove_ideas = ARG_decentral_military_1
+	remove_ideas = ARG_decentral_government
+	set_capital = { state = 509 } 
+	BUE={
+		BUE_Bartolome_Mitre = {
+			add_corps_commander_role = {
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			set_nationality = ARG
+		}
+	}
+	BUE_Bartolome_Mitre={
+		add_country_leader_role = {
+			Promote_leader = yes
+			Country_leader = {
+				ideology = conserv_liberal
+				expire = "1953.3.1"
+			}
+		}
+		promote_character = {
+			Ideology = conserv_liberal
+			}
+		remove_unit_leader_role = yes
+	}
+	retire_character = ARG_Justo_Jose_de_Urquiza
+	retire_character = ARG_Angel_Vicente_Penaloza
+	set_politics = {
+		ruling_party = centrism
+	}
+
+    set_popularities = {
+    	centrism = 40
+        traditional_conservatism = 60
+    }
+}

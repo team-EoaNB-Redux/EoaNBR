@@ -20,6 +20,7 @@ state = {
 		set_variable = { crop_farm_size = 2 }
 		1870.5.11 = {
 			owner = ARG
+			remove_core_of = BUE
 		}
 	}
 	resources = {
