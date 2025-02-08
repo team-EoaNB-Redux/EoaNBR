@@ -2600,7 +2600,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_raising_militias
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_Focus_mec_raise_militias
 		x = 0
 		y = 1
 		relative_position_id = MEC_focus_implement_five_laws
@@ -2632,7 +2632,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_european_recognition
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_Focus_mec_european_recognition
 		x = 4
 		y = 1
 		relative_position_id = MEX_get_rid_of_confort
@@ -2661,7 +2661,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_spanish_help
-		icon = GFX_Focus_colonial_power_SPA
+		icon = GFX_focus_mec_spanish_help
 		x = 0
 		y = 1
 		relative_position_id = MEC_focus_european_recognition
@@ -2720,7 +2720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_raise_navy
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_Focus_mec_raise_navy
 		x = 0
 		y = 2
 		relative_position_id = MEC_focus_raising_militias
@@ -2749,7 +2749,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_mon_almonte_treaty
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_Focus_mec_mon_almonte
 		x = 0
 		y = 2
 		relative_position_id = MEC_focus_spanish_help
@@ -2811,7 +2811,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_seek_spanish_monarch
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_Focus_spanish_monarch
 		x = 1
 		y = 1
 		relative_position_id = MEC_focus_mon_almonte_treaty

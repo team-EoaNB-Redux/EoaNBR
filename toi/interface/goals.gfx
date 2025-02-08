@@ -3849,6 +3849,30 @@ spriteTypes = {
 		name = "GFX_focus_mex_tacubaya_plan"
 		texturefile = "gfx/interface/goals/mex/tacubaya_plan.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_mec_spanish_help"
+		texturefile = "gfx/interface/goals/mex/mec_focus_assistance_from_spain.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_mec_european_recognition"
+		texturefile = "gfx/interface/goals/mex/mec_focus_european_recognition.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_mec_raise_militias"
+		texturefile = "gfx/interface/goals/mex/mec_focus_raise_militias.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_mec_raise_navy"
+		texturefile = "gfx/interface/goals/mex/mec_focus_raise_a_navy.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_mec_mon_almonte"
+		texturefile = "gfx/interface/goals/mex/mec_focus_mon_almonte.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_spanish_monarch"
+		texturefile = "gfx/interface/goals/mex/mec_focus_spanish_monarch.png"
+	}
 
 	### MXE
 	SpriteType = {
