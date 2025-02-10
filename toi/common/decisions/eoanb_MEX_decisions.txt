@@ -1196,9 +1196,6 @@ EOANBSYS_national_crisis_decision_category = {
 			}
 		}
 	}
-}
-
-MEX_decision_category_reform_war = {
 	MEX_decision_call_out_state_guards = {
 		allowed = {
 			tag = MEX
@@ -1239,4 +1236,54 @@ MEX_decision_category_reform_war = {
 			borrow_money = yes
 		}
 	}
+
+	MEX_mission_reform_war_conscription = {
+		allowed = {
+			OR = {
+				tag = MEX
+				tag = MEC
+			}			
+		}
+		activation = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		cancel_trigger = {
+			has_war = no
+		}
+		modifier = {
+			monthly_population = -0.1
+		}
+
+		fire_only_once = no
+		fixed_random_seed = no
+		is_good = no
+		days_mission_timeout = 7
+
+		timeout_effect = {
+			set_temp_variable = {
+				temp_manpower = 1
+			}
+			multiply_temp_variable = {
+				temp_manpower = num_controlled_states
+			}
+			if = {
+				limit = {
+					tag = MEX
+				}
+				
+			}
+			else = {
+
+			}
+			add_manpower = temp_manpower
+
+			activate_mission = MEX_mission_reform_war_conscription
+		}
+	}
 }
+
+#MEX_decision_category_reform_war = {
+#}
