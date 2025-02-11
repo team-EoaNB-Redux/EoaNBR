@@ -129,6 +129,13 @@ duplicate_archetypes = {
 		type = strategic_bomber
 		air_map_icon_frame = 10
 	}
+
+	balloon_equipment = {
+		archetype = medium_plane_scout_plane_airframe
+		type = strategic_bomber
+		air_map_icon_frame = 10
+
+	}
 }
 
 # equipments = {
