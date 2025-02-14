@@ -3,6 +3,11 @@ focus_tree = {
 
 	country = {
 		factor = 0
+		modifier = {
+			add = 12
+			tag = AUS
+			has_cosmetic_tag = AUS_HUN_dual
+		}
 	}
 
 	continuous_focus_position = { x = 25 y = 1200 }

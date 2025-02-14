@@ -165,6 +165,11 @@ opinion_modifiers = {
 	long_term_alliance = {
 		value = 25
 	}
+	
+	spainsh_rapprochment = {
+		value = 20
+		years = 20
+	}
 
 	caucasian_war = {
 		value = -150

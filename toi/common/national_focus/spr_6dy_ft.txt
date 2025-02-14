@@ -1325,7 +1325,7 @@ focus = {
 ###################################
 focus = {
 	id = SPR_6dy_federal_system
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_focus_government_legislation
 	x = 3
 	y = 0
 	cost = 30
@@ -1345,7 +1345,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_working_reforms
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_social_workers_rights
 	relative_position_id = SPR_6dy_federal_system
 	x = -1
 	y = 1
@@ -1363,7 +1363,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_returning_communal_property
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Reform_Economy
 	relative_position_id = SPR_6dy_working_reforms
 	x = -1
 	y = 1
@@ -1381,7 +1381,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_seperation_of_church_state
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_reduce_church_power
 	relative_position_id = SPR_6dy_federal_system
 	x = -3
 	y = 1
@@ -1399,7 +1399,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_abolition_of_slavery
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Slavery_freedom
 	relative_position_id = SPR_6dy_federal_system
 	x = 3
 	y = 1
@@ -1417,7 +1417,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_education_reforms
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Renovate_School
 	relative_position_id = SPR_6dy_federal_system
 	x = 1
 	y = 1
@@ -1435,7 +1435,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_begin_government_backed_unionisation
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_social_reforms
 	relative_position_id = SPR_6dy_education_reforms
 	x = -1
 	y = 1
@@ -1454,7 +1454,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_completion_of_federal_constituion
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Law_Vote_1
 	relative_position_id = SPR_6dy_federal_system
 	x = 0
 	y = 4
@@ -1529,7 +1529,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_renew_vactican_relations
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Diplomatic_Ally_Pope
 	relative_position_id = SPR_6dy_dicatorship_of_castellar
 	x = -1
 	y = 1
@@ -1549,7 +1549,7 @@ focus = {
 }
 focus = {
 	id = SPR_6dy_bring_order_to_finances
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Economy_Reforms
 	relative_position_id = SPR_6dy_dicatorship_of_castellar
 	x = 1
 	y = 1
@@ -3726,6 +3726,18 @@ focus = {
 				is_core_of = PRT
 			}
 		}
+		bypass={
+			custom_trigger_tooltip = {
+				tooltip = SPR_owns_puerto_rico_tooltip
+				OR = {
+					owns_state = 686
+					686 = { OWNER = { is_subject_of = ROOT } }
+				}
+			}
+			686={
+				not={is_core_of = PRT}
+			}
+		}
 		ai_will_do = { base = 50 }
 
 		prerequisite = { focus = SPR_6dy_colonial_management }
@@ -4033,7 +4045,22 @@ focus = {
 		prerequisite = { focus = SPR_6dy_treaty_with_peru }
 
 		completion_reward = {
-			
+			every_country={
+				limit={
+					capital_scope = {
+						is_on_continent = south_america
+						is_island_state = no
+					}
+					not = {tag = PRU}
+					not = {tag = BRA}
+					not = {tag = CUB}
+					not={is_subject_of =  SPR}
+				}
+				add_opinion_modifier = {
+					target = SPR
+					modifier = spainsh_rapprochment
+				}
+			}
 		}
 	}
 	focus = {
@@ -4156,10 +4183,12 @@ focus = {
 				OR={
 					owns_or_subject_of = yes
 					owner={
-						check_variable = {
-							var = market_leader
-							value = SPR
-							tooltip = is_in_x_market_tt
+						AND={
+							tag = MXE
+							check_variable = {
+								var = market_leader
+								value = SPR
+							}
 						}
 					}
 				}
@@ -4245,6 +4274,28 @@ focus = {
 					}
 				}
 				country_event = spain.80
+			}
+			every_state={
+				limit={
+					OR={
+						state = 297
+						state = 890
+						state = 889
+						state = 891
+						state = 1401
+						state = 1408
+						state = 800
+						state = 893
+						state = 885
+						state = 1206
+						state = 879
+						state = 805
+						state = 1340
+						state = 1409
+						state = 881
+					}
+				}
+				add_claim_by = SPR
 			}
 		}
 	}

@@ -3240,7 +3240,10 @@ country_event = { #Treaty of Friendship with Peru
 		name = spain.45.a
 		# log = "option:		name = spain.40.a"
 		ai_chance = { factor = 100 }
-		
+		add_opinion_modifier = {
+			target = SPR
+			modifier = spainsh_rapprochment
+		}
 	}
 }
 country_event = { #Search for a king I
