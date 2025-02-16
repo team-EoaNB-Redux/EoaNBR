@@ -9469,6 +9469,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/army_doctrine/rifle_is_everything.png"
 	}
 	spriteType = {
+		name = "GFX_doctrine_victorian_flank_seeking_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/flank_seeking.png"
+	}
+	spriteType = {
 		name = "GFX_doctrine_victorian_company_assaults_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/victorian_company_assaults.png"
 	}
