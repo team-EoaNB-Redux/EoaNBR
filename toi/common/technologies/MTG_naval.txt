@@ -2267,7 +2267,7 @@ technologies = {
 		start_year = 1868
 		folder = {
 			name = mtg_capital_folder
-			position = { x = @corvette y = @1868 }
+			position = { x = @corvette y = 12 }
 		}
 
 		categories = {
