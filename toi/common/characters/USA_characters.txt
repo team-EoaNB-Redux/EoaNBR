@@ -494,7 +494,12 @@ characters = {
 	}
 	USA_character_emory_upton = {
 		name = "Emory Upton"
-		portraits = {}
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/portrait_USA_Emory_Upton.png"
+				small = "gfx/leaders/USA/emory_upton_advisor.png"
+			}
+		}
 		advisor = {
 			slot = theorist
 			ledger = army
