@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_category_picture_sepoy_rebellion"
+		texturefile = "gfx/interface/decisions/decision_cat_sepoy_rebellion.dds"
+	}
+}

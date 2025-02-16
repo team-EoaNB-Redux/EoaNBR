@@ -248,7 +248,7 @@ units = {
 		}
 		division = {
 			name = "6th Armed Peasants"
-			location = 12876
+			location = 2076
 			division_template = "Armed Peasants"
 			start_experience_factor = 0.1
 			start_equipment_factor = 0.65
