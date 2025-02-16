@@ -9429,12 +9429,20 @@ spriteTypes = {
 	# }
 	####################### Orderly Decentralization icons
 	spriteType = {
+		name = "GFX_doctrine_victorian_mission_tactics_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/mission_tactics.png"
+	}
+	spriteType = {
 		name = "GFX_doctrine_victorian_general_staff_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/officer_corps.dds"
 	}
 	spriteType = {
 		name = "GFX_doctrine_victorian_mapping_corps_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/recruitment_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_conquered_ground_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/conquered_ground.png"
 	}
 	spriteType = {
 		name = "GFX_doctrine_victorian_encirclement_battles_medium"
@@ -9451,6 +9459,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_doctrine_victorian_marching_fire_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/victorian_marching_fire.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_armed_brotherhood_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/armed_brotherhood.png"
 	}
 	spriteType = {
 		name = "GFX_doctrine_victorian_rifle_everything_medium"
@@ -9515,6 +9527,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/army_doctrine/recruitment.dds"
 	}
 	spriteType = {
+		name = "GFX_doctrine_victorian_early_marksmanship_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/early_marksmanship.png"
+	}
+	spriteType = {
 		name = "GFX_doctrine_victorian_developed_marksmanship_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/new_tactics.dds"
 	}
@@ -9529,12 +9545,52 @@ spriteTypes = {
 	}
 	####################### Cavalry doctrine icons
 	spriteType = {
+		name = "GFX_doctrine_victorian_cavalry_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/victorian_cavalry.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_combat_cavalry_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/combat_cavalry.png"
+	} 
+	spriteType = {
+		name = "GFX_doctrine_victorian_recon_squadrons_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/recon_squadrons.png"
+	}
+	spriteType = {
 		name = "GFX_doctrine_victorian_modern_cuirasses_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/armoured_troops.dds"
 	}
 	spriteType = {
 		name = "GFX_doctrine_victorian_elite_cavalry_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/learn_from_1848.dds"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_heavy_corps_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/heavy_corps.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_shock_attack_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/shock_attack.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_support_cavalry_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/support_cavalry.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_cavalry_recon_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/cavalry_recon.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_flying_squadrons_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/flying_squadrons.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_mounted_skirmishers_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/mounted_skirmishers.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_shock_attack_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/shock_attack.png"
 	}
 	# spriteType = {
 	# 	name = "GFX_doctrine_victorian_tradition_medium"
