@@ -9486,10 +9486,6 @@ spriteTypes = {
 	# 	texturefile = "gfx/interface/technologies/army_doctrine/worldwide_navy.dds"
 	# }
 	spriteType = {
-		name = "GFX_doctrine_victorian_expanded_research_bureau_medium"
-		texturefile = "gfx/interface/technologies/army_doctrine/military_research.dds"
-	}
-	spriteType = {
 		name = "GFX_doctrine_victorian_fire_tactics_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/fire_tactics.png"
 	}
@@ -9521,6 +9517,18 @@ spriteTypes = {
 		name = "GFX_doctrine_victorian_deployment_overseas_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/deployment_overseas.png"
 	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_rbl_preference_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/rbl_preference.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_rml_preference_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/rml_preference.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_expanded_research_bureau_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/military_research.dds"
+	}
 	####################### Adapting Tradition icons
 	spriteType = {
 		name = "GFX_doctrine_victorian_institutionalized_training_medium"
@@ -9529,6 +9537,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_doctrine_victorian_early_marksmanship_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/early_marksmanship.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_rifle_pits_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/rifle_pits.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_modern_defenses_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/modern_fortifications.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_pinpoint_attack_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/pinpoint_attack.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_end_square_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/eliminate_square.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_skirmisher_circle_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/skirmisher_circles.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_single_rank_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/single_rank.png"
 	}
 	spriteType = {
 		name = "GFX_doctrine_victorian_developed_marksmanship_medium"
@@ -9591,6 +9623,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_doctrine_victorian_shock_attack_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/shock_attack.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_recon_front_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/recon_front.png"
 	}
 	# spriteType = {
 	# 	name = "GFX_doctrine_victorian_tradition_medium"

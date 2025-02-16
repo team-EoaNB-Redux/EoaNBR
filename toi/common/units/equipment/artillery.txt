@@ -1094,7 +1094,7 @@ equipments = {
 
 	early_machine_gun_equipment_1 = {
 		archetype = machine_gun_equipment
-		parent = infantry_equipment_early_mg_0
+		parent = early_machine_gun_equipment_0
 		priority = 50
 		visual_level = 0
 		
