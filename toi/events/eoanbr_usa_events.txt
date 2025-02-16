@@ -24891,6 +24891,81 @@ country_event = { # Event about the Robber Barons
 	}
 }
 
+country_event = { # State enacts "Jim Crow" Laws
+	id = usa_gilded_age.2
+	title = usa_gilded_age.2.t
+	desc = usa_gilded_age.2.desc
+	picture = placeholder
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_dynamic_modifier = { modifier = USA_jim_crow_laws_4 }
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						AND = {
+							is_core_of = CSA
+							NOT = {
+								OR = {
+									has_dynamic_modifier = { modifier = USA_jim_crow_laws_4 }
+									has_dynamic_modifier = { modifier = USA_jim_crow_laws_3 }
+									has_dynamic_modifier = { modifier = USA_jim_crow_laws_2 }
+									has_dynamic_modifier = { modifier = USA_jim_crow_laws_1 }
+								}
+							}
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = CSA
+						NOT = {
+							OR = {
+								has_dynamic_modifier = { modifier = USA_jim_crow_laws_4 }
+								has_dynamic_modifier = { modifier = USA_jim_crow_laws_3 }
+								has_dynamic_modifier = { modifier = USA_jim_crow_laws_2 }
+								has_dynamic_modifier = { modifier = USA_jim_crow_laws_1 }
+							}
+						}
+					}
+					owner = {
+						country_event = {
+							id = usa_gilded_age.2
+							days = 30
+							random_days = 30
+						}
+					}
+				}
+			}
+		}
+	}
+	is_triggered_only = yes
+	option = { # We have to do something!
+		name = usa_gilded_age.2.a
+		effect_tooltip = {
+			FROM = {
+				add_dynamic_modifier = { modifier = USA_jim_crow_laws_4 }
+			}
+		}
+	}
+	option = { # It's the people's will
+		name = usa_gilded_age.2.b
+		trigger = {
+			OR = {
+				has_government = traditional_conservatism
+				has_government = radical_democracy
+				has_government = chauvinist_populism
+			}
+		}
+		effect_tooltip = {
+			FROM = {
+				add_dynamic_modifier = { modifier = USA_jim_crow_laws_4 }
+			}
+		}
+	}
+}
+
 country_event = {
 	id = usa_manifest_destiny.1
 	title = usa_manifest_destiny.1.t

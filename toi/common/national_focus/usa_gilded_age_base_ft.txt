@@ -28,15 +28,22 @@ shared_focus = {
 	cost = 40
 	relative_position_id = USA_gilded_social_reforms
 	prerequisite = { focus = USA_gilded_social_reforms }
+	bypass = { has_idea = full_equality }
 	available = {
-		always = no
-		# has_leader_trait = feminist
-		# states that have enacted women's suffrage > 50%
+		NOT = {
+			has_idea = full_equality
+		}
 	}
 	x = -2
 	y = 1
 	completion_reward = {
-		
+		every_owned_state = {
+			limit = {
+				has_dynamic_modifier = { modifier = USA_jim_crow_laws_4 }
+			}
+		}
+		remove_dynamic_modifier = { modifier = USA_jim_crow_laws_4 }
+		add_dynamic_modifier = { modifier = USA_jim_crow_laws_3 }
 	}
 }
 shared_focus = {
@@ -45,6 +52,7 @@ shared_focus = {
 	cost = 40
 	relative_position_id = USA_gilded_enforce_federal_election_security
 	prerequisite = { focus = USA_gilded_enforce_federal_election_security }
+	bypass = { has_idea = universal_suffrage }
 	available = {
 		always = no
 		# has_leader_trait = feminist

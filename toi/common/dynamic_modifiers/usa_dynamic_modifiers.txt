@@ -186,10 +186,28 @@ USA_FN_trade_modifier = { #NATIONAL SPIRIT
 	country_resource_valuables = USA_FN_trade_modifier_country_resource_valuables
 }
 
-USA_jim_crow_laws = {
+USA_jim_crow_laws_4 = {
 	icon = placeholder
 
-	centrism_drift = -0.01
 	social_egalitarianism_drift = -0.01
+	local_building_slots_factor = -0.15
 	local_manpower = -0.30
+}
+USA_jim_crow_laws_3 = {
+	icon = placeholder
+
+	local_building_slots_factor = -0.15
+	local_manpower = -0.30
+}
+USA_jim_crow_laws_2 = {
+	icon = placeholder
+
+	local_building_slots_factor = -0.075
+	local_manpower = -0.15
+}
+USA_jim_crow_laws_1 = {
+	icon = placeholder
+
+	local_building_slots_factor = -0.025
+	local_manpower = -0.05
 }

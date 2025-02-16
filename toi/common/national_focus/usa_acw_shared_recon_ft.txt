@@ -1457,6 +1457,18 @@ shared_focus = {
 			}
 		}
 		set_country_flag = USARECON_Southern_Reconstruction_Over
+		random_owned_state = {
+			limit = {
+				is_core_of = CSA
+			}
+			owner = {
+				country_event = {
+					id = usa_gilded_age.2
+					days = 30
+					random_days = 30
+				}
+			}
+		}
 	}
 }
 shared_focus = {

@@ -1,0 +1,59 @@
+add_local_popularity = {
+	set_temp_variable = { max_popularity_to_add = 1 }
+	subtract_from_temp_variable = { max_popularity_to_add = centrism }
+	add_to_variable = { centrism = popularity_to_add }
+	divide_variable = { popularity_to_add = 10 }
+	clamp_local_popularity = yes
+}
+clamp_local_popularity = {
+	clamp_variable = {
+		var = centrism
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = traditional_conservatism
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = social_egalitarianism
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = autocracy
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = radical_democracy
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = chauvinist_populism
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = vanguard_communism
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = collectivist_socialism
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = fundamentalism
+		max = 1
+		min = 0
+	}
+	clamp_variable = {
+		var = anarchism
+		max = 1
+		min = 0
+	}
+}
