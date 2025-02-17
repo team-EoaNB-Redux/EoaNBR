@@ -265,6 +265,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_gunboat_icon_medium_white"							texturefile = "gfx/interface/counters/ships_small/onmap_gunboat.dds" }
 	spriteType = { name = "GFX_unit_corvette_icon_medium_white"							texturefile = "gfx/interface/counters/ships_small/onmap_corvette.dds" }
 	spriteType = { name = "GFX_unit_lineship_icon_medium_white"							texturefile = "gfx/interface/counters/ships_small/onmap_lineship.dds" }
+	spriteType = { name = "GFX_unit_monitor_icon_medium_white"							texturefile = "gfx/interface/counters/ships_small/onmap_monitor.dds" }
 	############################################
 	### On-map-counters for SHIPS - Inverted ###
 
@@ -282,6 +283,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_gunboat_icon_medium_black"							texturefile = "gfx/interface/counters/ships_small/onmap_gunboat_inverted.dds" }
 	spriteType = { name = "GFX_unit_corvette_icon_medium_black"							texturefile = "gfx/interface/counters/ships_small/onmap_corvette_inverted.dds" }
 	spriteType = { name = "GFX_unit_lineship_icon_medium_black"							texturefile = "gfx/interface/counters/ships_small/onmap_lineship_inverted.dds" }
+	spriteType = { name = "GFX_unit_monitor_icon_medium_black"							texturefile = "gfx/interface/counters/ships_small/onmap_monitor_inverted.dds" }
 	#############################################################################
 	### Large ships images used in NAVAL-COMBAT-VIEW and SELECTED-FLEETS-VIEW ###
 
