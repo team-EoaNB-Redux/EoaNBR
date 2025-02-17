@@ -3873,6 +3873,22 @@ spriteTypes = {
 		name = "GFX_Focus_spanish_monarch"
 		texturefile = "gfx/interface/goals/mex/mec_focus_spanish_monarch.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_MEC_increase_taxes"
+		texturefile = "gfx/interface/goals/mex/mec_focus_conservatives_increase_taxes.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MEC_support_veracruz_invasion"
+		texturefile = "gfx/interface/goals/mex/mec_focus_vera_cruz_invasion.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MEC_navidad_plan"
+		texturefile = "gfx/interface/goals/mex/mec_focus_plan_de_navidad.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MEC_approach_church_for_funding"
+		texturefile = "gfx/interface/goals/mex/mec_focus_approach_church_for_funding.png"
+	}
 
 	### MXE
 	SpriteType = {

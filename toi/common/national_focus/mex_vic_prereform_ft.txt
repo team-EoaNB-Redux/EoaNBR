@@ -2455,7 +2455,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_conservatives_increase_tariffs
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_focus_MEC_increase_taxes
 		x = -2
 		y = 1
 		relative_position_id = MEC_focus_appoint_conservative_cabinet
@@ -2484,7 +2484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_approach_church_for_funds
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_focus_MEC_approach_church_for_funding
 		x = 0
 		y = 1
 		relative_position_id = MEC_focus_conservatives_increase_tariffs
@@ -2571,7 +2571,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_navidad_plan
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_focus_MEC_navidad_plan
 		x = 0
 		y = 1
 		relative_position_id = MEC_focus_provisional_constitution
@@ -2690,7 +2690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEC_focus_support_for_veracruz_invasion
-		# icon = GFX_Focus_victory_mexico
+		icon = GFX_focus_MEC_support_veracruz_invasion
 		x = 1
 		y = 1
 		relative_position_id = MEC_focus_raising_militias
