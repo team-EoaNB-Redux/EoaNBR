@@ -1,0 +1,531 @@
+#!gfx:interface\eoanbr\eoanbr_technologies.gfx
+#!localisation:localisation\_eoanbr_technologies_l_english.yml
+#do not delete above line!!!!!!
+
+technologies = {
+	#### Years ####
+		@1840 = 2
+		@1850 = 5
+		@1860 =	8
+		@1865 = 11
+		@1870 = 15
+		@1875 = 18
+		@1880 = 21
+		@1885 = 24
+		@1890 = 28
+		@1895 = 31
+		@1900 = 34
+		@1905 = 38
+		@1910 = 41
+		@1915 = 44
+		@1920 = 48
+		@1925 = 51
+		@1930 = 54
+		@1935 = 57
+		@1940 = 61
+		@1945 = 64
+		@1950 = 67
+		@1955 = 70
+		@1960 = 74
+		@1965 = 77
+		@1970 = 80
+		@1975 = 83
+		@1980 = 86
+		@1985 = 90
+		@1990 = 93
+		@1995 = 96
+		@2000 = 99
+		@2005 = 102
+		@2010 = 106
+		@2015 = 109
+		@2020 = 112
+		@2025 = 115
+		@2030 = 118
+		@2035 = 121
+		@2040 = 125
+		@2045 = 128
+		@2050 = 131
+		@2055 = 134
+		@2060 = 137
+	#
+	#
+		@scouting = 1
+	#
+	# Scouting
+		tech_early_balloon_designs = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @scouting y = @1820 }
+				}
+				path = {
+					leads_to_tech = tech_observational_balloons
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1820
+				research_cost = 0.01
+
+				categories = {
+					cat_industrialization_balloon_techs
+
+					cat_scouting_air_techs
+					cat_balloon_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 3 }
+					eoanbr_institutions_centralization_change = yes
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_observational_balloons = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1860 }
+				}
+				sub_technologies = {
+					tech_free_flight_balloons
+					tech_captive_balloons
+				}
+				path = {
+					leads_to_tech = tech_free_flight_balloons
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1865
+				research_cost = 0.01
+
+				categories = {
+					cat_industrialization_balloon_techs
+
+					cat_scouting_air_techs
+					cat_balloon_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_nationalism_change = yes
+				}
+				enable_equipments = {
+					balloon_equipment_0
+				}
+
+				enable_subunits = {
+					balloon_company
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_free_flight_balloons = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		tech_infantry_pre_rifle_equipment_0 = {
+			#Tree
+				folder = {
+					name = air_folder
+					position = { x = @rifle y = @1000 }
+				}
+				path = {
+					leads_to_tech = tech_infantry_pre_rifle_equipment_1
+					research_cost_coeff = 3
+				}
+			#
+			#Meta
+				start_year = 1000
+				research_cost = 0.01
+
+				categories = {
+					cat_rationalism_infantry_techs
+
+					cat_small_arms_techs
+					cat_traditional_arms_techs
+				}
+			#
+			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_settlement_change = yes
+				}
+				enable_equipments = {
+					infantry_equipment_pre_rifle_0
+				}
+
+				enable_subunits = {
+					tribal_infantry
+				}
+			#
+			# Modifier
+			#
+		}
+		#
+}
