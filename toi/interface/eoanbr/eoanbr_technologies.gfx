@@ -9579,6 +9579,34 @@ spriteTypes = {
 		name = "GFX_doctrine_victorian_superior_rifles_medium"
 		texturefile = "gfx/interface/technologies/army_doctrine/military_industry.dds"
 	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_advanced_fortifications_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/advanced_fortifications.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_skirmisher_adaptation_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/skirmisher_adaptation.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_limited_volleys_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/limited_volleys.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_battalion_fire_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/battalion_fire.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_everyman_digs_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/every_man_digs.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_defensive_pivot_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/defensive_pivot.png"
+	}
+	spriteType = {
+		name = "GFX_doctrine_victorian_dedicated_experimentalism_medium"
+		texturefile = "gfx/interface/technologies/army_doctrine/dedicated_experimentalism.png"
+	}
 	####################### Cavalry doctrine icons
 	spriteType = {
 		name = "GFX_doctrine_victorian_cavalry_medium"
