@@ -52,6 +52,7 @@ equipments = {
 		air_range = 100
 		maximum_speed = 10
 		weight = 2
+		thurst = 3
 
 		surface_detection = 1
 

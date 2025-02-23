@@ -139,9 +139,6 @@ duplicate_archetypes = {
 }
 
 equipments = {
-
-	
-
 	#Recon Balloon
 	balloon_airframe_0 = {
 		year = 1850

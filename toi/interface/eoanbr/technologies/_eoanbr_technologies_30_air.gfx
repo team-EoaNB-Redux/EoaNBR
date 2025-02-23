@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_balloon_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/30_air/balloon_0.dds"
+	}
+	spriteType = {
+		name = "GFX_balloon_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/30_air/balloon_1.dds"
+	}
+
+	### Air ###
+
+	spriteType = {
+		name = "GFX_early_balloon_medium"
+		texturefile = "gfx/interface/technologies/30_air/balloon_0.dds"
+	}
+
+	spriteType = {
+		name = "GFX_better_balloon_medium"
+		texturefile = "gfx/interface/technologies/30_air/balloon_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_early_zeppelin_medium"
+		texturefile = "gfx/interface/technologies/30_air/zeppelin_0.dds"
+	}
+	spriteType = {
+		name = "GFX_zeppelin_medium"
+		texturefile = "gfx/interface/technologies/30_air/zeppelin_1.dds"
+	}
+	spriteType = {
+		name = "GFX_high_ceiling_zeppelin_medium"
+		texturefile = "gfx/interface/technologies/30_air/zeppelin_2.dds"
+	}
+	spriteType = {
+		name = "GFX_armoured_zeppelin_medium"
+		texturefile = "gfx/interface/technologies/30_air/zeppelin_armored.dds"
+	}
+	spriteType = {
+		name = "GFX_cv_seaplane_fighter_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/30_air/cv_seaplane_fighter_1.dds"
+	}
+}
