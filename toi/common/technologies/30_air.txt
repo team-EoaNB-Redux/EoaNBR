@@ -49,14 +49,14 @@ technologies = {
 		@2060 = 137
 	#
 	#
-		@scouting = 1
+		@balloons = 1
 	#
 	# Scouting
 		tech_early_balloon_designs = {
 			#Tree
 				folder = {
 					name = air_folder
-					position = { x = @scouting y = @1820 }
+					position = { x = @balloons y = @1840 }
 				}
 				path = {
 					leads_to_tech = tech_observational_balloons
@@ -89,16 +89,16 @@ technologies = {
 			#Tree
 				folder = {
 					name = air_folder
-					position = { x = @rifle y = @1860 }
+					position = { x = @balloons y = @1850 }
 				}
 				sub_technologies = {
 					tech_free_flight_balloons
 					tech_captive_balloons
 				}
-				path = {
-					leads_to_tech = tech_free_flight_balloons
-					research_cost_coeff = 3
-				}
+				# path = {
+				# 	leads_to_tech = tech_free_flight_balloons
+				# 	research_cost_coeff = 3
+				# }
 			#
 			#Meta
 				start_year = 1865
@@ -117,7 +117,7 @@ technologies = {
 					eoanbr_institutions_nationalism_change = yes
 				}
 				enable_equipments = {
-					balloon_equipment_0
+					balloon_airframe_0
 				}
 
 				enable_subunits = {
@@ -129,76 +129,60 @@ technologies = {
 		}
 		tech_free_flight_balloons = {
 			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
 			#
 			#Meta
-				start_year = 1000
+				start_year = 1870
 				research_cost = 0.01
 
 				categories = {
-					cat_rationalism_infantry_techs
+					cat_mechanization_balloon_techs
 
-					cat_small_arms_techs
-					cat_traditional_arms_techs
+					cat_scouting_air_techs
+					cat_balloon_techs
 				}
 			#
 			#Effect
 				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
 				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
+				enable_equipment_modules = {
+					module_balloon_semaphores
+					module_balloon_
 				}
 			#
 			# Modifier
 			#
 		}
-		tech_infantry_pre_rifle_equipment_0 = {
+		tech_captive_balloons = {
 			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
+				# folder = {
+				# 	name = air_folder
+				# 	position = { x = @rifle y = @1000 }
+				# }
+				# path = {
+				# 	leads_to_tech = tech_infantry_pre_rifle_equipment_1
+				# 	research_cost_coeff = 3
+				# }
 			#
 			#Meta
 				start_year = 1000
 				research_cost = 0.01
 
 				categories = {
-					cat_rationalism_infantry_techs
+					cat_mechanization_balloon_techs
 
-					cat_small_arms_techs
-					cat_traditional_arms_techs
+					cat_scouting_air_techs
+					cat_balloon_techs
 				}
 			#
 			#Effect
 				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
 				}
+
 				enable_equipments = {
-					infantry_equipment_pre_rifle_0
+
 				}
+
+				enable_equipment_modules
 
 				enable_subunits = {
 					tribal_infantry
@@ -207,325 +191,4 @@ technologies = {
 			# Modifier
 			#
 		}
-		tech_infantry_pre_rifle_equipment_0 = {
-			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
-			#
-			#Meta
-				start_year = 1000
-				research_cost = 0.01
-
-				categories = {
-					cat_rationalism_infantry_techs
-
-					cat_small_arms_techs
-					cat_traditional_arms_techs
-				}
-			#
-			#Effect
-				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
-				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
-				}
-			#
-			# Modifier
-			#
-		}
-		tech_infantry_pre_rifle_equipment_0 = {
-			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
-			#
-			#Meta
-				start_year = 1000
-				research_cost = 0.01
-
-				categories = {
-					cat_rationalism_infantry_techs
-
-					cat_small_arms_techs
-					cat_traditional_arms_techs
-				}
-			#
-			#Effect
-				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
-				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
-				}
-			#
-			# Modifier
-			#
-		}
-		tech_infantry_pre_rifle_equipment_0 = {
-			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
-			#
-			#Meta
-				start_year = 1000
-				research_cost = 0.01
-
-				categories = {
-					cat_rationalism_infantry_techs
-
-					cat_small_arms_techs
-					cat_traditional_arms_techs
-				}
-			#
-			#Effect
-				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
-				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
-				}
-			#
-			# Modifier
-			#
-		}
-		tech_infantry_pre_rifle_equipment_0 = {
-			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
-			#
-			#Meta
-				start_year = 1000
-				research_cost = 0.01
-
-				categories = {
-					cat_rationalism_infantry_techs
-
-					cat_small_arms_techs
-					cat_traditional_arms_techs
-				}
-			#
-			#Effect
-				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
-				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
-				}
-			#
-			# Modifier
-			#
-		}
-		tech_infantry_pre_rifle_equipment_0 = {
-			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
-			#
-			#Meta
-				start_year = 1000
-				research_cost = 0.01
-
-				categories = {
-					cat_rationalism_infantry_techs
-
-					cat_small_arms_techs
-					cat_traditional_arms_techs
-				}
-			#
-			#Effect
-				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
-				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
-				}
-			#
-			# Modifier
-			#
-		}
-		tech_infantry_pre_rifle_equipment_0 = {
-			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
-			#
-			#Meta
-				start_year = 1000
-				research_cost = 0.01
-
-				categories = {
-					cat_rationalism_infantry_techs
-
-					cat_small_arms_techs
-					cat_traditional_arms_techs
-				}
-			#
-			#Effect
-				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
-				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
-				}
-			#
-			# Modifier
-			#
-		}
-		tech_infantry_pre_rifle_equipment_0 = {
-			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
-			#
-			#Meta
-				start_year = 1000
-				research_cost = 0.01
-
-				categories = {
-					cat_rationalism_infantry_techs
-
-					cat_small_arms_techs
-					cat_traditional_arms_techs
-				}
-			#
-			#Effect
-				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
-				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
-				}
-			#
-			# Modifier
-			#
-		}
-		tech_infantry_pre_rifle_equipment_0 = {
-			#Tree
-				folder = {
-					name = air_folder
-					position = { x = @rifle y = @1000 }
-				}
-				path = {
-					leads_to_tech = tech_infantry_pre_rifle_equipment_1
-					research_cost_coeff = 3
-				}
-			#
-			#Meta
-				start_year = 1000
-				research_cost = 0.01
-
-				categories = {
-					cat_rationalism_infantry_techs
-
-					cat_small_arms_techs
-					cat_traditional_arms_techs
-				}
-			#
-			#Effect
-				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_rationalism_change = yes
-					set_temp_variable = { institution_progress_temp = 5 }
-					eoanbr_institutions_settlement_change = yes
-				}
-				enable_equipments = {
-					infantry_equipment_pre_rifle_0
-				}
-
-				enable_subunits = {
-					tribal_infantry
-				}
-			#
-			# Modifier
-			#
-		}
-		#
 }

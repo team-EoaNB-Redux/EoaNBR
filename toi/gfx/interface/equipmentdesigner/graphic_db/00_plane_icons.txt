@@ -1,4 +1,14 @@
 default = {
+	balloon_equipment = {
+		pool = {
+			icons = {
+				GFX_early_balloon_medium
+			}
+			models = {
+				balloon_entity
+			}
+		}
+	}
 	small_plane_airframe = {
 		pool = {
 			icons = {

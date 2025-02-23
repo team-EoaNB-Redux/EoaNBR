@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_balloon_airframe_0"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_balloon_airframe.dds"
+		legacy_lazy_load = no
+	}
+}

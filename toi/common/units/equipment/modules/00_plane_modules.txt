@@ -1,0 +1,20 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	# Balloons
+		module_balloon_semaphores = {
+			abbreviation = "rn1"
+			category = balloon_communication_type
+			gui_category = plane_special_module_electronics
+			sfx = sfx_ui_sd_module_turret
+
+			add_stats = {
+				build_cost_ic = 1
+				
+			}
+			xp_cost = 0
+		}
+	#
+}
