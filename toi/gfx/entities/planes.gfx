@@ -149,7 +149,7 @@ objectTypes = {
 ###### Balloons ###############################
 
 pdxmesh = {
-	name = " generic_balloon_mesh"
+	name = "generic_balloon_mesh"
 	file = "gfx/models/units/planes/generic_balloon.mesh"
 	animation = { id = "idle" type = "fighter_default_idle_animation" }
 }

@@ -50,9 +50,8 @@ equipments = {
 		priority = 5
 
 		air_range = 100
-		maximum_speed = 10
-		weight = 2
-		thurst = 3
+		maximum_speed = 100
+		
 
 		surface_detection = 1
 
@@ -73,6 +72,7 @@ equipments = {
 
 		air_range = 140
 		maximum_speed = 12
+		weight = 2
 
 		surface_detection = 1.5
 
